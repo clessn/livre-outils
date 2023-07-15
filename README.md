@@ -8,6 +8,10 @@
 
 Livre d’outils.
 
+## Getting started
+
+1.  Download the required R packages by running `renv::restore()`
+
 ## Render book
 
 To render the book to pdf, in your terminal, run
