@@ -1,4 +1,7 @@
 /.quarto/
 .Rproj.user
 
+# Ignore output
 /_book/
+
+.DS_Store
