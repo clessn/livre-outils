@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "livre-outils"
-  author: "Norah Jones"
+  title: "Introduction aux sciences sociales numérique"
+  author: "CLESSN"
   date: "7/15/2023"
   chapters:
     - index.qmd
