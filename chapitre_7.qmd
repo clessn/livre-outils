@@ -3,7 +3,7 @@
 Camille Tremblay-Antoine^[Université Laval]
 Nadjim Fréchet^[Université de Montréal]
 
-```{r, echo=T, include=F}
+```{r, echo=T, include=F, eval = F}
 
 #*****************************************#
 #### 0 - Téléchargement des packages ######
@@ -107,7 +107,7 @@ Ce chapitre est plus technique que théorique et permet aux codeurs débutants d
 -->
 
 
-```{r, echo=T, include=T}
+```{r, echo=T, include=T, eval = F}
 
 # Exemple de graphique avec la fonction barplot() du BaseR
 
@@ -126,7 +126,7 @@ Développé par Deepayan Sarkar, *lattice* cherche à faciliter la visualisation
 
 Si la Figure 1 produite à partir du *Base R* nous permet de visualiser le pourcentage de répondants par province dans l'Étude Électorale Canadienne de 2019, le *package lattice* nous permet de visualiser facilement ce même pourcentage de répondants en tenant compte du positionnement idéologique des Canadiens par province sur l'échelle gauche-droite, comme l'illustre la Figure 2 (0 étant la gauche et 10 la droite).
 
-```{r, echo=T, include=T}
+```{r, echo=T, include=T, eval = F}
 
 # Exemple de graphique avec la fonction histogram() du package lattice
 
@@ -154,7 +154,7 @@ La deuxième couche des graphiques *ggplot2* est celle du *geom*, qui spécifie 
 
 Les autres couches des graphiques *ggplot2* dépendent souvent du codeur et des étapes de construction de son graphique[^2] [@wickham2016ggplot2, p. 77 et 89-93]. Le reste de ce chapitre présente la grammaire de *ggplot2* avec un exemple de construction de graphique à bande présenté couche par couche.
 
-```{r, echo=T, include=T}
+```{r, echo=T, include=T, eval = F}
 
 # Première couche de l'exemple de graphique
 # ggplot2 (base de données, variables et geom)
