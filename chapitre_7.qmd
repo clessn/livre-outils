@@ -122,7 +122,7 @@ Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élém
 
 #### Avantages et inconvénients de *lattice*
 
-Développé par Deepayan Sarkar, *lattice* cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce *package* vise à améliorer les graphiques du *Base R* en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce *package* est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables [@kabacoff2010r, p. 373-377; @sarkar2008lattice; @sarkar2020package]. Pour produire un graphique de base avec *Lattice*, le *package lattice* doit préalablement être installé dans la bibliothèque de *packages* du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropri/e[^1]. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (*graph_type(formula | variable en facettes, data=)*).
+Développé par Deepayan Sarkar, *lattice* cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce *package* vise à améliorer les graphiques du *Base R* en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce *package* est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables [@kabacoff2010r, p. 373-377; @sarkar2008lattice; @sarkar2020package]. Pour produire un graphique de base avec *Lattice*, le *package lattice* doit préalablement être installé dans la bibliothèque de *packages* du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropri/e[^10]. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (*graph_type(formula | variable en facettes, data=)*).
 
 Si la Figure 1 produite à partir du *Base R* nous permet de visualiser le pourcentage de répondants par province dans l'Étude Électorale Canadienne de 2019, le *package lattice* nous permet de visualiser facilement ce même pourcentage de répondants en tenant compte du positionnement idéologique des Canadiens par province sur l'échelle gauche-droite, comme l'illustre la Figure 2 (0 étant la gauche et 10 la droite).
 
@@ -152,7 +152,7 @@ La première couche des graphiques *ggplot* est généralement celle des donnée
 
 La deuxième couche des graphiques *ggplot2* est celle du *geom*, qui spécifie le type de graphique souhaité. Les types de graphiques les plus couramment utilisés avec *ggplot2* sont les nuages de points (*geom_point()*), les diagrammes de lignes de tendances ou de séries chronologiques (*geom_line()*), les courbes de densité (*geom_density()*) ainsi que les graphiques à bandes (*geom_bar()*). Mais les possibilités sont infinies (ou presque!) avec ggplot2 et bien plus de types de graphiques existent.
 
-Les autres couches des graphiques *ggplot2* dépendent souvent du codeur et des étapes de construction de son graphique[^2] [@wickham2016ggplot2, p. 77 et 89-93]. Le reste de ce chapitre présente la grammaire de *ggplot2* avec un exemple de construction de graphique à bande présenté couche par couche.
+Les autres couches des graphiques *ggplot2* dépendent souvent du codeur et des étapes de construction de son graphique[^11] [@wickham2016ggplot2, p. 77 et 89-93]. Le reste de ce chapitre présente la grammaire de *ggplot2* avec un exemple de construction de graphique à bande présenté couche par couche.
 
 ```{r, echo=T, include=T, eval = F}
 
@@ -180,9 +180,9 @@ Commentaires de Cloé:
 -->        
 
 
-[^1]: Plusieurs options disponibles comme des histogrammes avec la fonction *histogram()* ou des graphiques de densité avec la fonction *densityplot()*.
+[^10]: Plusieurs options disponibles comme des histogrammes avec la fonction *histogram()* ou des graphiques de densité avec la fonction *densityplot()*.
 
-[^2]: Les étapes (couches) d'un graphique *ggplot2* ne sont pas nécessairement dans le même ordre d'un graphique à un autre.
+[^11]: Les étapes (couches) d'un graphique *ggplot2* ne sont pas nécessairement dans le même ordre d'un graphique à un autre.
 
 \clearpage
 
