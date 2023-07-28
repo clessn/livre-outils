@@ -14,5 +14,4 @@ Livre d’outils.
 
 ## Render book
 
-To render the book to pdf, in your terminal, run
-`quarto render --to pdf`
+To render the book to pdf, in your terminal, run `quarto render`
