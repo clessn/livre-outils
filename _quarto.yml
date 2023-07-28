@@ -8,7 +8,6 @@ book:
   chapters:
     - index.qmd
     - introduction.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
