@@ -6,7 +6,6 @@ book:
   author: "CLESSN"
   date: "7/15/2023"
   chapters:
-    - index.qmd
     - avant_propos.qmd
     - introduction.qmd
     - chapitre_1.qmd
