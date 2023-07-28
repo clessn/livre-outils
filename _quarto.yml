@@ -20,7 +20,7 @@ book:
     - chapitre_9.qmd
     - references.qmd
 
-bibliography: references.bib
+bibliography: _SharedFolder_livre-outils/references.bib
 
 format:
   pdf:
