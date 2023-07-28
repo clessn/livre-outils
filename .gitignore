@@ -1,7 +1,6 @@
 /.quarto/
 .Rproj.user
 
-# Ignore output
-/_book/
+/_SharedFolder_*/
 
 .DS_Store

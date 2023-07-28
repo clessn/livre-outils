@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _SharedFolder_livre-outils
 
 book:
   title: "Introduction aux sciences sociales numérique"

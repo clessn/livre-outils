@@ -1,1 +1,3 @@
 # Avant-propos {.unnumbered}
+
+Ceci est un exemple de citation @adcock2001 .
