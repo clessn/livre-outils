@@ -537,13 +537,4 @@ Chapitres :
     * StackOverflow 
     * GitHub
     
-```{r echo=FALSE, fig.align="center", out.width="100%", fig.cap="\\textbf{Organisation de l'apprentissage}",fig.show='hold'}
-knitr::include_graphics("_graphs/Chapitre10/snakes.jpg")
-```
-    
-
-
-
-
-
 >>>>>>> 0767363f696a8e4a9fac38bd0de1c9327b812608
