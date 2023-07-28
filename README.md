@@ -15,8 +15,9 @@ Livre d’outils.
 3.  Get access to the Dropbox SharedFolder
 4.  Place the Dropbox SharedFolder within the repository
 
-To learn how to use Quarto, please consult
-[quarto.org](https://quarto.org/) .
+To learn how to use Quarto visit [quarto.org](https://quarto.org/) .
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
 ## How to contribute
 
