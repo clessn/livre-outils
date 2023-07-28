@@ -204,15 +204,6 @@ Finalement, le pire serpent de tous est probablement le **douchebagisme techniqu
     * StackOverflow 
     * GitHub
     
-```{r echo=FALSE, fig.align="center", out.width="100%", fig.cap="\\textbf{Organisation de l'apprentissage}",fig.show='hold'}
-knitr::include_graphics("_graphs/Chapitre10/snakes.jpg")
-```
-    
-
-
-
-
-
 =======
 ---
 output:
