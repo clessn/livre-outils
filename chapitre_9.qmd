@@ -205,15 +205,6 @@ Finalement, le pire serpent de tous est probablement le **douchebagisme techniqu
     * GitHub
     
 =======
----
-output:
-  bookdown::pdf_document2:
-    template: templates/brief_template.tex
-  bookdown::word_document2: default
-  bookdown::html_document2: default
-documentclass: book
-bibliography: references.bib
----
 
 # Serpents et échelles
 
