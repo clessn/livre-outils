@@ -1,0 +1,549 @@
+# Serpents et échelles
+
+\begin{center}
+Justine Béchard, William Poirier, Marc-Antoine Rancourt
+\end{center}
+
+<!--
+  - Présentation du guide d'apprentissage
+  - Pour aller plus loin Cotton <- http://duhi23.github.io/Analisis-de-datos/Cotton.pdf
+  - Pour aller plus loin Venables <- https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf
+  - Pour aller plus loin Xie <- https://bookdown.org/yihui/rmarkdown/
+  - Xie 2 <- https://bookdown.org/yihui/bookdown/
+  - Hadley 2 <- https://adv-r.hadley.nz
+  - Chandra <- https://link.springer.com/book/10.1007/978-981-13-3170-1
+  - Westby <- https://pepa.holla.cz/wp-content/uploads/2016/01/Git-for-Teams.pdf
+-->
+
+## Introduction
+
+Alors que les chapitres précédents se sont consacrés à la présentation théorique et pratique des sciences sociales numériques, le présent chapitre s'efforcera à aider le lecteur à faire sens de la grande quantité d'information que contient l'ouvrage et à commencer sa propre aventure numérique. Ce chapitre peut être vu comme le résultat de la rencontre entre un jeu éducatif et un guide d'apprentissage. À ce propos, le titre n'est pas anodin. Il est possible de visualiser l'apprentissage de nouveaux outils numériques à l'aide d'un jeu de serpents et échelles. Généarlement, la progression du protagoniste se fait en toute tranquilité. À certains moments, l'aventure est corsée par des pièges ou des difficultés propres à sa progression -- les serpents. Lorsque cela arrive, le protagoniste régresse ou cesse d'avancer. À d'autres moments, l'aventure est facilitée par des occasions positives particulières -- les échelles. 
+
+En plus d'une représentation visuelle du tableau d'apprentissage de serpents et échelles qui permettra au lecteur de rendre l'acquisition de nouvelles connaissances plus agréable, ce chapitre offre des lectures, des exercices et des travaux pratiques pour les aventuriers numériques débutants, intermédiaires et avancés. Le corps du texte du présent chapitre est divisé en trois parties en lien avec les niveaux de connaissances des outils numériques -- débutant, intermédiaire et avancé -- et chacune d'entre elles comportent une première section concernant sur des lectures, une seconde portant sur des tutoriels à faire en ligne et une troisième sur des travaux pratiques à réaliser dans RStudio. De plus, chaque partie termine par un résumé des principaux « serpents » associés au niveau d'apprentissage qui lui est propre. Le chapitre se termine par une section qui aidera le lecteur à voler de ses propres ailes.  
+
+
+
+
+## Débutant
+
+
+
+### Lectures 
+
+* Chapitres 1 & 3 de Cotton
+
+Le premier chapitre de Cotton est un bon point de départ. Cette introduction permettra de réaliser les premières installations de R et d'un IDE. Cotton décrit plusieurs environnements de développement, mais une attention plus particulière devrait être portée à RStudio, qui facilitera spécifiquement l'utilisation de R. Ensuite, un premier exemple de programme statistique permet de saisir comment fonction, vecteur et argument sont représentés. Différentes méthodes pour obtenir de l'aide avec R sont également abordées. Le troisième chapitre s'intéresse plus particulièrement aux propriétés des variables que l'on peut manipuler avec R et à l'espace de l'utilisateur. Cela comprend l'identification de la classe d'un objet, sa conversion d'une classe à une autre, son inspection détaillée... Pour assurer sa compréhension, mieux vaut tester les différents exemples de l'auteur dans l'IDE choisi au fur et à mesure.
+
+* Chapitre 1 Venables 
+
+Venables met de l'avant l'environnement logiciel de R. Si d'autres outils d'analyse de données sont jugés trop spécifiques et inflexibles, R permet de développer de nouvelles méthodes d'analyse plus interactives, enrichies par une large collection de paquets (*packages*), y compris pour les statistiques. L'annexe A mentionnée se veut une introduction aux caractéristiques de l'environnement R. (À compléter)
+
+* Chapitres 1 & 2 Xie 
+
+L'ouvrage de Xie en est essentiellement un de référence pour l'utilisation de R Markdown. Le premier chapitre se résume à l'installation du paquet *rmarkdown*. On retrouve dans le second chapitre des exemples concrets de la façon dont un fichier de type .Rmd peut être mis à profit. À l'aide de ce deuxième chapitre, vous devriez avoir les outils nécessaires pour compiler un document Rmd. en différents formats, y utiliser la syntaxe appropriée et y insérer du code R. Le paquet *knitr* permet aussi de supporter d'autres langages de programmation. À partir de R Markdown des documents interactifs (HTML widgets et Shiny) peuvent être générés, ce que Xie aborde brièvement dans ce chapitre. 
+    
+### DataCamp 
+
+* Introduction to R
+
+Cette introduction présente les bases du langage R. Les cours interactifs sur DataCamp sont divisés en chapitres. Celui-ci en comporte six.
+
+  + *Intro to basics*
+  + *Vectors*
+  + *Matrices*
+  + *Factors*
+  + *Data frames*
+  + *Lists*
+  
+* Introduction to data in R
+
+On présente ici comment utiliser R pour les premières étapes d'une enquête statistique, soit l'identification d'une question ou d'un problème de recherche et la collecte des données pertinentes sur le sujet. Ce cours comprend 4 chapitres. 
+
+  + *Language of data*
+  + *Study types and cautionary tales*
+  + *Sampling strategies and experimental design* 
+  + *Case study*
+  
+* Introduction to Importing Data in R 
+<!-- Importing data in R -- Part 1 -->
+
+Vous l'aurez deviné, ce cours porte sur l'importation de données dans R à partir de différents types de fichiers. Cela comprend les .csv, les .xls, les .txt, les fichiers de logiciels statistiques, les bases de données et les données HTML. Il y a 4 chapitres à faire pour ce cours. 
+
+  + *Importing data from flat files with utils*
+  + *readr & data.table*
+  + *Importing Excel data*
+  + *Reproducible Excel work with XLConnect*
+
+* Data visualization with ggplot2 -- Part 1
+
+Il s'agit du premier cours sur la visualisation de données en R. Il présente les grands principes et la grammaire d'une bonne représentation graphique à l'aide du paquet *ggplot2*. Pour réaliser un tracé exploratoire, trois premières couches sont essentielles : les données, l'esthétique et les géométries. Ce cours est divisé en 5 chapitres. 
+
+  + *Introduction*
+  + *Data* 
+  + *Aesthetics*
+  + *Geometries*  
+  + *qplot and wrap-up*
+
+### Pratique
+
+* TinyTex, R, RStudio (avec marche à suivre)
+* "HelloWorld" dans console et fichier Rmd.
+
+### Serpents
+
+Beaucoup de nouvelles informations ont été présentées jusqu'à présent dans ce livre. Il est normal de se sentir dépasser et de ne pas tout comprendre. En fait, il aurait été surprenant qu'un lecteur qui débute l'aventure numérique ait tout compris. L'important est de garder une attitude propice à l'apprentissage et se rappeler que rien de ceci n'est inatteignable. C'est au tout début du parcours que se trouve le premier serpent : **croire qu'il sera trop difficile d'apprendre, que c'est un objectif impossible à atteindre**. Même les auteurs de ce livre ont, un jour, commencés par faire *Hello World!* dans la console de RStudio. Le premier serpent est souvent lié à un autre piège qui frappe les codeurs débutants : **la peur de demander de l'aide**. Il faut garder à l'esprit qu'une grande quantité des utilisateurs des outils présentés dans le présent livre sont passés par l'incertitude du début et la crainte du jugement des autres. N'ayez pas peur de poser vos questions, c'est comme cela qu'on apprend.
+
+Une autre catégorie de serpents pour les débutants concerne la pratique des connaissances nouvellement acquises. Les serpents de cette catégorie sont au nombre de trois. Tout d'abord, on retrouve **la croyance qu'il est possible d'apprendre sans pratiquer**. Bien que cela puisse être possible pour quelques personnes ayant une mémoire phénoménale, la réalité est qu'il sera difficile pour le lecteur moyen de retenir l'information contenue dans ce livre et dans les exercices sans pratiquer les nouvelles notions. Le second serpent de cette catégorie est lié à ce dernier point : DataCamp -- où il y a des indices et du code déjà écrit -- ne forme pas à lui seul des codeurs. Il faut faire attention à **ne pas rester pris dans une boucle infinie de tutoriels**. Faire des tests avec des projets personnels aide à assimiler les nouvelles connaissances en plus d'être plus intéressant. 
+
+Le dernier serpent pour débutants est le suivant : **ne pas construire des bases solides avant d’aller plus loin**. Plusieurs nouveaux codeurs, excités par les nouveaux outils qu'ils apprennent, oublient qu'il est primordial de bien comprendre les éléments de base de la programmation et de la gestion de données avant de se lancer dans des projets plus complexes. Bien qu'il ne soit pas requis de connaître la mécanique pour conduire une automobile, il est tout de même parfois utile -- voir nécessaire -- de comprendre comment entretenir celle-ci.  
+
+
+## Intermédiaire
+
+### Lectures :
+    
+* Chapitres 3 & 6 Xie
+    
+Le chapitre 3 se penche sur les formats d’éditions possibles d’un document en R Markdown : HTML, Notebook, PDF, Word... Chacun de ces formats comporte des particularités, par exemple, pour l’insertion d’une table des matières, de figures, d’une certaine apparence visuelle et plus encore. Le style de document Tufte est au cœur du chapitre 6. Il permet d’insérer facilement des commentaires et des figures en employant une typographie définie. Les figures peuvent être insérées dans la marge, toute la largeur de la page ou encore dans la colonne principale. Des notes de marge peuvent être ajoutées de même que des références, des tableaux, des citations... 
+
+    
+* Chapitres 13 & 14 Cotton
+
+Le chapitre 13 de Cotton se concentre sur le nettoyage et la transformation de données. En ordre, ce chapitre offre des exemples sur la façon de manipuler les chaînes de caractères à l’aide du *stringr* *package* et de nettoyer les variables catégorielles, de créer des sous-ensembles et de transformer de *data frames*, de modifier la forme de *data frames* (en longueur ou en largeur) et de comprendre comment trier et organiser des vecteurs. Ensuite, on retrouve dans le chapitre 14 les bases de l’exploration et de la visualisation de données. Il comprend des méthodes de calculs permettant de réaliser des statistiques sommaires à partir de données numériques. En ce qui a trait à la visualisation, trois systèmes de tracés standards sont présentés : *base*, *lattice* et *ggplot2*. Parmi les tracés possibles, on retrouve le diagramme de dispersion, le graphique linéaire, l’histogramme, le diagramme en boîtes et moustaches et le diagramme à bande. Ces tracés peuvent être manipulés à partir de R pour en faciliter la lecture. 
+    
+    
+* Chapitres 6 & 7 Venables
+
+Le chapitre 6 de Venables s’intéresse à la création et la modification de listes. Il s’agit en quelque sorte d’un vecteur générique capable de contenir des éléments de différents types (chaînes de caractères, nombres, vecteurs, matrices, autres listes…). Elles sont donc des structures de données très flexibles. Une liste peut former un *data frame* sous certaines conditions présentées dans ce chapitre (à spécifier?). Le chapitre 7 permet d’apprendre sur les différentes fonctions disponibles pour lire et  organiser des données une fois converties sous la forme de *data frame*. Les fonctions *read.table()* et *scan()* permettent de lire ces *data frames*. Il est à noter que R comprend environ une centaine de *datasets* (accessibles dans le package portant le même nom) à partir desquels pratiquer l’analyse statistique. Il est aussi possible, à l'aide de *packages* conçus par d’autres utilisateurs, d’accéder à davantage d'ensembles de données. 
+
+    
+### DataCamp : 
+
+* Introduction to the "TidyVerse"
+    
+Il s'agit d'une introduction au langage de programmation R, axée sur un ensemble d'outils connus sous le nom de Tidyverse. Elle permet d'apprendre les processus entrelacés de manipulation et de visualisation des données à l'aide de dplyr et de ggplot2 pour effectuer des analyses de données. Il y a 4 chapitres dans ce cours. 
+
+  + *Data wrangling*
+  + *Data visualization*
+  + *Grouping and summarizing*
+  + *Types of visualizations*
+
+    
+* Intermediate R
+
+Dans cette formation R, présente les *conditional statements*, les *loops* et les fonctions permettant de faire fonctionner vos propres scripts R. Ensuite, vous rendrez votre code R plus efficace et plus lisible en utilisant la fonction apply. Enfin, le chapitre sur les utilitaires vous permettra de vous familiariser avec des expressions récurrentes dans R, les manipulations de la structure des données, et les heures et dates. Ce cours est divisé en 5 chapitres. 
+
+  + *Conditionals and Control Flow*
+  + *Loops*
+  + *Functions*
+  + *The apply family*
+  + *Utilities*
+
+* Intermediate R practice
+
+Plutôt que de couvrir de nouveaux concepts, ce cours reprend les notions vues lors de la formation Intermediate R sous la forme d'exercices complémentaires. Ils sont regroupés de la même façon : *Conditionals and Control Flow*, *Loops*, *Functions*, *The apply family*, *Utilities*. 
+
+* Data visualization with ggplot2 -- Part 2
+
+Cette deuxième partie de la formation sur les visuels dans ggplot2 explore les quatre dernières couches optionnelles, *Statistics*, *Coordinates*, *Facets* et *Themes*. Les couches *Coordinates* et *Facets* peuvent faciliter la communication, tandis que *Themes* permet de réaliser des tracés publiables. En somme, ce cours permet d'acquérir de meilleures pratiques de visualisation combinées aux statistiques pouvant explorer de vastes ensembles de données. On retrouve 5 chapitres.
+
+  + *Statistics* 
+  + *Coordinates and Facets*
+  + *Themes*
+  + *Best Practices*
+  + *Case Study*
+    
+
+  - Pratique :
+    * Importation de données + Nettoyage + un histogramme + dotplot
+    * Ajouter une image dans un fichier Rmd.
+
+### Serpents :
+
+À la suite des différents exercices et lectures complètés dans le cadre de cette familiarisation aux sciences sociales numériques, le lecteur doit s'assurer d'éviter certains pièges qui se dressent sur le chemin des chercheurs de niveau intermédiaire. Le premier d'entre eux est **vouloir apprendre plusieurs langages et n'en maîtriser aucun**. Plusieurs chercheurs, lorsqu'ils commencent à maîtriser de nouveaux outils, s'emballent et souhaitent en apprendre davantage. C'est une bonne chose, mais il faut faire attention à ne pas apprendre que quelques éléments de plusieurs langages de programmation, et plutôt en maîtriser un. Comme le dit un diction populaire, « qui trop embrasse mal étreint ».
+
+Un second serpent auquel de jeunes chercheurs sont la proie est **coder en n'utilisant pas un style et une planification cohérente et constante**. En n'adoptant pas un style standard -- ou en n'utilisant pas le plus souvent le même style -- il peut devenir difficle pour les autres et pour soi-même de se retrouver dans le code. Cela peut causer d'importants problèmes de compréhension ou des problèmes techniques. Il est rare qu'un même code ne serve qu'une seule fois. Il est donc de viser à ce que le code qu'on produit soit compréhensible, transférable et -- idéalement -- optimisé. Un autre serpent s'inscrivant dans la lignée du précédent est **écrire du code mais ne pas le commenter**. Commenter son code contribue grandement à la transférabilité et la pérennité de son travail. Bien que la fonction d'une section de code peut sembler évidente pour son créateur le jour où elle est produite, elle ne le sera pas nécessairement pour d'autres ou pour lui-même dans le futur.
+
+Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédiaire est de **croire qu'il a suffisamment de connaissances et ne pas sortir de sa zone de confort**. L'apprentissage de techniques plus complexes demande de sortir de sa zone de confort et de se confronter à l'inconnu. Cela demande également d'accepter qu'on ne connait pas tout et qu'il y aura des échecs et des frustrations. C'est ainsi qu'un chercheur intermédiaire peut dépasser ses limites et devenir un chercheur de niveau avancé.
+
+## Avancé
+
+  - Lectures :
+    * Chapitres 6, 8 et 9 Cotton
+    * Chapitre 9 & 10 Venables
+    * Chapitre 2 Xie2
+  - DataCamp : 
+    * Writing efficient R code
+    * Importing and cleaning data in R -- Case studies
+    * Data visualization with ggplot2 -- Part 3
+    * Communicating with data in the tidyverse
+  - Pratique :
+    * Faire un bibliographie apa 
+    * Loop et fonction
+    
+### Serpents 
+    
+Il n'y a pas que les programmeurs débutants et intermédiaires qui sont susceptibles d'être les proies de serpents : plusieurs pièges se dressent aussi sur le chemin des programmeurs expérimentés. Un des plus communs et **la peur de partager son code**. Les projets complexes demandent généralement plus de temps et de connaissances. Il peut paraître logique de ne pas vouloir que les fruits de son labeur aient à quelqu'un d'autre. Toutefois, travailler en équipe rend le processus non seulement plus plaisant, mais plus efficace. Il est plus optimal d'avoir d'autres personnes avec qui échanger des morceaux de code et des conseils que de travailler chacun de son côté. Le transfert de connaissances est au coeur de la philosophie du logiciel libre et il est possible de constater que cela a très bien fonctionné.  
+
+Un second piège qui guette les programmeurs expérimentés **laisser le parfait être l’ennemi du bien**. Le coût de la perfection est très élevé; parfois il est mieux d'avoir un bon code qui fonctionne rapidement qu'un code parfait qui arrive trop tard. Évidemment, il est important de commenter son code et de suivre un ordre clair pour éviter de ne plus pouvoir se comprendre. Cependant, s'il faut choisir, l'efficacité est à privilégier sur la finition. 
+
+Un troisième piège guettant les programmeurs expérimentés est lié à un phénomène inhabituel mais tout de même problématique. Il s'agit du **manque d'empathie et de compréhension envers les nouveaux utilisateurs**. Lorsqu'on commence à réaliser des opérations plus complexes, il est possible d'oublier l'époque où on débutait en R. En se mettant dans les souliers des nouveaux utilisateurs, on peut éviter des conflits interpersonnels et être davantage en mesure de supporter les programmeurs débutants dans leur apprentissage. 
+
+Finalement, le pire serpent de tous est probablement le **douchebagisme technique** ou le **douchebagisme méthodologique**. Ni les programmeurs débutants, ni ceux de niveau expérimenté, ont envie de voir un pair fanfaronner à propos de ses prouesses techniques. Le transfert des connaissances et l'engouement pour l'apprentissage de nouvelles techniques, c'est oui. La vantardise, c'est non.
+
+
+## Conclusion
+
+  - Pour aller encore plus loin 
+    * Wickham R for Data Science
+    * Advance R Hadley2
+    * Qualitative Research Using R: A Systematic Approach Chandra
+    * Git for teams Westby
+  - Voler de ses propres ailes
+    * Google is your friend (include funny meme)
+    * StackOverflow 
+    * GitHub
+    
+```{r echo=FALSE, fig.align="center", out.width="100%", fig.cap="\\textbf{Organisation de l'apprentissage}",fig.show='hold'}
+knitr::include_graphics("_graphs/Chapitre10/snakes.jpg")
+```
+    
+
+
+
+
+
+=======
+---
+output:
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+  bookdown::word_document2: default
+  bookdown::html_document2: default
+documentclass: book
+bibliography: references.bib
+---
+
+# Serpents et échelles
+
+\begin{center}
+Justine Béchard, William Poirier, Marc-Antoine Rancourt
+\end{center}
+
+<!--
+  - Présentation du guide d'apprentissage
+  - Pour aller plus loin Cotton <- http://duhi23.github.io/Analisis-de-datos/Cotton.pdf
+  - Pour aller plus loin Venables <- https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf
+  - Pour aller plus loin Xie <- https://bookdown.org/yihui/rmarkdown/
+  - Xie 2 <- https://bookdown.org/yihui/bookdown/
+  - Hadley 2 <- https://adv-r.hadley.nz
+  - Chandra <- https://link.springer.com/book/10.1007/978-981-13-3170-1
+  - Westby <- https://pepa.holla.cz/wp-content/uploads/2016/01/Git-for-Teams.pdf
+-->
+
+## Introduction
+
+Alors que les chapitres précédents se sont consacrés à la présentation théorique et pratique des sciences sociales numériques, le présent chapitre s'efforcera à aider le lecteur à faire sens de la grande quantité d'information que contient l'ouvrage et à commencer sa propre aventure numérique. Ce chapitre peut être vu comme le résultat de la rencontre entre un jeu éducatif et un guide d'apprentissage. À ce propos, le titre n'est pas anodin. Il est possible de visualiser l'apprentissage de nouveaux outils numériques à l'aide d'un jeu de serpents et échelles. Généarlement, la progression du protagoniste se fait en toute tranquilité. À certains moments, l'aventure est corsée par des pièges ou des difficultés propres à sa progression -- les serpents. Lorsque cela arrive, le protagoniste régresse ou cesse d'avancer. À d'autres moments, l'aventure est facilitée par des occasions positives particulières -- les échelles. 
+
+En plus d'une représentation visuelle du tableau d'apprentissage de serpents et échelles qui permettra au lecteur de rendre l'acquisition de nouvelles connaissances plus agréable, ce chapitre offre des lectures, des exercices et des travaux pratiques pour les aventuriers numériques débutants, intermédiaires et avancés. Le corps du texte du présent chapitre est divisé en trois parties en lien avec les niveaux de connaissances des outils numériques -- débutant, intermédiaire et avancé -- et chacune d'entre elles comportent une première section concernant sur des lectures, une seconde portant sur des tutoriels à faire en ligne et une troisième sur des travaux pratiques à réaliser dans RStudio. De plus, chaque partie termine par un résumé des principaux « serpents » associés au niveau d'apprentissage qui lui est propre. Le chapitre se termine par une section qui aidera le lecteur à voler de ses propres ailes.  
+
+
+
+
+## Débutant
+
+
+
+### Lectures 
+
+* Chapitres 1 & 3 de Cotton
+
+Le premier chapitre de Cotton est un bon point de départ. Cette introduction permettra de réaliser les premières installations de R et d'un IDE. Cotton décrit plusieurs environnements de développement, mais une attention plus particulière devrait être portée à RStudio, qui facilitera spécifiquement l'utilisation de R. Ensuite, un premier exemple de programme statistique permet de saisir comment fonction, vecteur et argument sont représentés. Différentes méthodes pour obtenir de l'aide avec R sont également abordées. Le troisième chapitre s'intéresse plus particulièrement aux propriétés des variables que l'on peut manipuler avec R et à l'espace de l'utilisateur. Cela comprend l'identification de la classe d'un objet, sa conversion d'une classe à une autre, son inspection détaillée... Pour assurer sa compréhension, mieux vaut tester les différents exemples de l'auteur dans l'IDE choisi au fur et à mesure.
+
+* Chapitre 1 Venables 
+
+Venables met de l'avant l'environnement logiciel de R. Si d'autres outils d'analyse de données sont jugés trop spécifiques et inflexibles, R permet de développer de nouvelles méthodes d'analyse plus interactives, enrichies par une large collection de paquets (*packages*), y compris pour les statistiques. L'annexe A mentionnée se veut une introduction aux caractéristiques de l'environnement R. (À compléter)
+
+* Chapitres 1 & 2 Xie 
+
+L'ouvrage de Xie en est essentiellement un de référence pour l'utilisation de R Markdown. Le premier chapitre se résume à l'installation du paquet *rmarkdown*. On retrouve dans le second chapitre des exemples concrets de la façon dont un fichier de type .Rmd peut être mis à profit. À l'aide de ce deuxième chapitre, vous devriez avoir les outils nécessaires pour compiler un document Rmd. en différents formats, y utiliser la syntaxe appropriée et y insérer du code R. Le paquet *knitr* permet aussi de supporter d'autres langages de programmation. À partir de R Markdown des documents interactifs (HTML widgets et Shiny) peuvent être générés, ce que Xie aborde brièvement dans ce chapitre. 
+    
+### DataCamp 
+
+* Introduction to R
+
+Cette introduction présente les bases du langage R. Les cours interactifs sur DataCamp sont divisés en chapitres. 
+Chapitres : 
+  + *Intro to basics*
+  + *Vectors*
+  + *Matrices*
+  + *Factors*
+  + *Data frames*
+  + *Lists*
+  
+* Introduction to data in R
+
+On présente ici comment utiliser R pour les premières étapes d'une enquête statistique, soit l'identification d'une question ou d'un problème de recherche et la collecte des données pertinentes sur le sujet. 
+
+Chapitres : 
+  + *Language of data*
+  + *Study types and cautionary tales*
+  + *Sampling strategies and experimental design* 
+  + *Case study*
+  
+* Introduction to Importing Data in R 
+<!-- Importing data in R -- Part 1 -->
+
+Vous l'aurez deviné, ce cours porte sur l'importation de données dans R à partir de différents types de fichiers. Cela comprend les .csv, les .xls, les .txt, les fichiers de logiciels statistiques, les bases de données et les données HTML. Il y a 4 chapitres à faire pour ce cours.
+
+Chapitres : 
+  + *Importing data from flat files with utils*
+  + *readr & data.table*
+  + *Importing Excel data*
+  + *Reproducible Excel work with XLConnect*
+
+* Introduction to Data visualization with ggplot2 
+
+Il s'agit du premier cours sur la visualisation de données en R. Il présente les grands principes et la grammaire d'une bonne représentation graphique à l'aide du paquet *ggplot2*. Pour réaliser un tracé exploratoire, trois premières couches sont essentielles : les données, l'esthétique et les géométries. 
+
+Chapitres : 
+  + *Introduction*
+  + *Data* 
+  + *Aesthetics*
+  + *Geometries*  
+  + *qplot and wrap-up*
+
+### Pratique
+
+* TinyTex, R, RStudio (avec marche à suivre)
+* "HelloWorld" dans console et fichier Rmd.
+
+### Serpents
+
+Beaucoup de nouvelles informations ont été présentées jusqu'à présent dans ce livre. Il est normal de se sentir dépasser et de ne pas tout comprendre. En fait, il aurait été surprenant qu'un lecteur qui débute l'aventure numérique ait tout compris. L'important est de garder une attitude propice à l'apprentissage et se rappeler que rien de ceci n'est inatteignable. C'est au tout début du parcours que se trouve le premier serpent : **croire qu'il sera trop difficile d'apprendre, que c'est un objectif impossible à atteindre**. Même les auteurs de ce livre ont, un jour, commencés par faire *Hello World!* dans la console de RStudio. Le premier serpent est souvent lié à un autre piège qui frappe les codeurs débutants : **la peur de demander de l'aide**. Il faut garder à l'esprit qu'une grande quantité des utilisateurs des outils présentés dans le présent livre sont passés par l'incertitude du début et la crainte du jugement des autres. N'ayez pas peur de poser vos questions, c'est comme cela qu'on apprend.
+
+Une autre catégorie de serpents pour les débutants concerne la pratique des connaissances nouvellement acquises. Les serpents de cette catégorie sont au nombre de trois. Tout d'abord, on retrouve **la croyance qu'il est possible d'apprendre sans pratiquer**. Bien que cela puisse être possible pour quelques personnes ayant une mémoire phénoménale, la réalité est qu'il sera difficile pour le lecteur moyen de retenir l'information contenue dans ce livre et dans les exercices sans pratiquer les nouvelles notions. Le second serpent de cette catégorie est lié à ce dernier point : DataCamp -- où il y a des indices et du code déjà écrit -- ne forme pas à lui seul des codeurs. Il faut faire attention à **ne pas rester pris dans une boucle infinie de tutoriels**. Faire des tests avec des projets personnels aide à assimiler les nouvelles connaissances en plus d'être plus intéressant. 
+
+Le dernier serpent pour débutants est le suivant : **ne pas construire des bases solides avant d’aller plus loin**. Plusieurs nouveaux codeurs, excités par les nouveaux outils qu'ils apprennent, oublient qu'il est primordial de bien comprendre les éléments de base de la programmation et de la gestion de données avant de se lancer dans des projets plus complexes. Bien qu'il ne soit pas requis de connaître la mécanique pour conduire une automobile, il est tout de même parfois utile -- voir nécessaire -- de comprendre comment entretenir celle-ci.  
+
+
+## Intermédiaire
+
+### Lectures :
+    
+* Chapitres 3 & 6 Xie
+    
+Le chapitre 3 se penche sur les formats d’éditions possibles d’un document en R Markdown : HTML, Notebook, PDF, Word... Chacun de ces formats comporte des particularités, par exemple, pour l’insertion d’une table des matières, de figures, d’une certaine apparence visuelle et plus encore. Le style de document Tufte est au cœur du chapitre 6. Il permet d’insérer facilement des commentaires et des figures en employant une typographie définie. Les figures peuvent être insérées dans la marge, toute la largeur de la page ou encore dans la colonne principale. Des notes de marge peuvent être ajoutées de même que des références, des tableaux, des citations... 
+
+    
+* Chapitres 13 & 14 Cotton
+
+Le chapitre 13 de Cotton se concentre sur le nettoyage et la transformation de données. En ordre, ce chapitre offre des exemples sur la façon de manipuler les chaînes de caractères à l’aide du paquet *stringr* et de nettoyer les variables catégorielles, de créer des sous-ensembles et de transformer des trames de données (*data frames*), de modifier la forme de ces trames (en longueur ou en largeur) et de comprendre comment trier et organiser des vecteurs. Ensuite, on retrouve dans le chapitre 14 les bases de l’exploration et de la visualisation de données. Il comprend des méthodes de calculs permettant de réaliser des statistiques sommaires à partir de données numériques. En ce qui a trait à la visualisation, trois systèmes de tracés standards sont présentés : *base*, *lattice* et *ggplot2*. Parmi les tracés possibles, on retrouve le diagramme de dispersion, le graphique linéaire, l’histogramme, le diagramme en boîtes et moustaches et le diagramme à bande. Ces tracés peuvent être manipulés à partir de R pour en faciliter la lecture. 
+    
+    
+* Chapitres 6 & 7 Venables
+
+Le chapitre 6 de Venables s’intéresse à la création et la modification de listes. Il s’agit en quelque sorte d’un vecteur générique capable de contenir des éléments de différents types (chaînes de caractères, nombres, vecteurs, matrices, autres listes…). Elles sont donc des structures de données très flexibles. Une liste peut former une trame de données sous certaines conditions présentées dans ce chapitre (à spécifier?). Le chapitre 7 permet d’apprendre sur les différentes fonctions disponibles pour lire et  organiser des données une fois converties sous la forme de trame de données. Les fonctions *read.table()* et *scan()* permettent de lire ces trames de données. Il est à noter que R comprend environ une centaine d'ensembles de données (accessibles dans le package portant le nom de *dataset*) à partir desquels pratiquer l’analyse statistique. Il est aussi possible, à l'aide de paquets conçus par d’autres utilisateurs, d’accéder à davantage d'ensembles de données. 
+
+    
+### DataCamp : 
+
+* Introduction to the "TidyVerse"
+    
+Il s'agit d'une introduction au langage de programmation R, axée sur un ensemble d'outils connus sous le nom de Tidyverse. Elle permet d'apprendre les processus entrelacés de manipulation et de visualisation des données à l'aide de dplyr et de ggplot2 pour effectuer des analyses de données. 
+
+Chapitres : 
+  + *Data wrangling*
+  + *Data visualization*
+  + *Grouping and summarizing*
+  + *Types of visualizations*
+
+    
+* Intermediate R
+
+Dans cette formation R, présente les énoncés conditionels(*conditional statements*), les boucles (*loops*) et les fonctions permettant de faire fonctionner vos propres scripts R. Ensuite, vous rendrez votre code R plus efficace et plus lisible en utilisant la fonction apply. Enfin, le chapitre sur les utilitaires vous permettra de vous familiariser avec des expressions récurrentes dans R, les manipulations de la structure des données, et les heures et dates. 
+
+Chapitres : 
+  + *Conditionals and Control Flow*
+  + *Loops*
+  + *Functions*
+  + *The apply family*
+  + *Utilities*
+
+<!-- * Intermediate R practice (plus disponible)
+
+Plutôt que de couvrir de nouveaux concepts, ce cours reprend les notions vues lors de la formation Intermediate R sous la forme d'exercices complémentaires. Ils sont regroupés de la même façon : *Conditionals and Control Flow*, *Loops*, *Functions*, *The apply family*, *Utilities*. -->
+
+* Intermediate Importing Data in R (idée de remplacement)
+
+Ce bref cours montre comment il est possible d'exporter le contenu de bases de données relationnelles dans lesquelles l'information est organisée dans des tableaux à deux dimensions. Il présente également des méthodes pour extraire des données à partir du web ou de logiciels statistiques comme SAS, STATA et SPSS. 
+
+Chapitres :
+  + *Importing data from databases (Part 1)*
+  + *Importing data from databases (Part 2)*
+  + *Importing data from the web (Part 1)*
+  + *Importing data from the web (Part 2)*
+  + *Importing data from statistical software packages*
+
+* Intermediate Data Visualization with ggplot2
+
+Cette deuxième partie de la formation sur les visuels dans ggplot2 explore les quatre dernières couches optionnelles, *Statistics*, *Coordinates*, *Facets* et *Themes*. Les couches *Coordinates* et *Facets* peuvent faciliter la communication, tandis que *Themes* permet de réaliser des tracés publiables. En somme, ce cours permet d'acquérir de meilleures pratiques de visualisation combinées aux statistiques pouvant explorer de vastes ensembles de données.
+
+Chapitres : 
+  + *Statistics* 
+  + *Coordinates and Facets*
+  + *Themes*
+  + *Best Practices*
+  + *Case Study*
+    
+
+  - Pratique :
+    * Importation de données + Nettoyage + un histogramme + dotplot
+    * Ajouter une image dans un fichier Rmd.
+
+### Serpents :
+
+À la suite des différents exercices et lectures complètés dans le cadre de cette familiarisation aux sciences sociales numériques, le lecteur doit s'assurer d'éviter certains pièges qui se dressent sur le chemin des chercheurs de niveau intermédiaire. Le premier d'entre eux est **vouloir apprendre plusieurs langages et n'en maîtriser aucun**. Plusieurs chercheurs, lorsqu'ils commencent à maîtriser de nouveaux outils, s'emballent et souhaitent en apprendre davantage. C'est une bonne chose, mais il faut faire attention à ne pas apprendre que quelques éléments de plusieurs langages de programmation, et plutôt en maîtriser un. Comme le dit un diction populaire, « qui trop embrasse mal étreint ».
+
+Un second serpent auquel de jeunes chercheurs sont la proie est **coder en n'utilisant pas un style et une planification cohérente et constante**. En n'adoptant pas un style standard -- ou en n'utilisant pas le plus souvent le même style -- il peut devenir difficle pour les autres et pour soi-même de se retrouver dans le code. Cela peut causer d'importants problèmes de compréhension ou des problèmes techniques. Il est rare qu'un même code ne serve qu'une seule fois. Il est donc de viser à ce que le code qu'on produit soit compréhensible, transférable et -- idéalement -- optimisé. Un autre serpent s'inscrivant dans la lignée du précédent est **écrire du code mais ne pas le commenter**. Commenter son code contribue grandement à la transférabilité et la pérennité de son travail. Bien que la fonction d'une section de code peut sembler évidente pour son créateur le jour où elle est produite, elle ne le sera pas nécessairement pour d'autres ou pour lui-même dans le futur.
+
+Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédiaire est de **croire qu'il a suffisamment de connaissances et ne pas sortir de sa zone de confort**. L'apprentissage de techniques plus complexes demande de sortir de sa zone de confort et de se confronter à l'inconnu. Cela demande également d'accepter qu'on ne connait pas tout et qu'il y aura des échecs et des frustrations. C'est ainsi qu'un chercheur intermédiaire peut dépasser ses limites et devenir un chercheur de niveau avancé.
+
+
+## Avancé
+
+### Lectures :
+
+* Chapitres 6, 8 et 9 Cotton
+
+Le chapitre 6 examine les environnements utilisés pour stocker les variables que nous créons variables. En général, il n’est pas nécessaire de traiter les environnements pour s’en servir, bien qu’il s’agisse en fait d’un autre type de variable. On doit tout de même s’y intéresser pour comprendre comment modifier les endroits depuis lesquels il est possible de voir les variables et régler certains problèmes de code. En plus des multiples fonctions proposées par R, il est possible de créer les vôtres. Elles agissent comme des verbes permettant de réaliser des choses avec les données. Le chapitre passe en revue la création, l’appel et même le transfert de fonctions vers ou depuis d’autres fonctions.   
+  
+On aborde dans le chapitre 8 les fonctions conditionnelles de type *if* et *else*. L’équivalent vectorisé de ces énoncés est *ifelse*. Il nécessite trois arguments. Le premier est un vecteur logique de conditions. Le second contient des valeurs qui sont renvoyées lorsque le premier vecteur est VRAI. Le troisième contient des valeurs qui sont renvoyées lorsque le premier vecteur est FAUX. Le deuxième et troisième argument peut également être des vecteurs de même longueur. Pour alléger le code, on peut utiliser la fonction *switch*. Dans une structure dite itérative, il est possible de réaliser trois types de boucles, soit avec *for*, *repeat* et *while*. Elles permettent d’exécuter des instructions de différentes façons, comme à répétition ou par blocs.   
+  
+Le chapitre 9 entre dans des aspects plus avancés de la création de boucles.  La fonction *apply* et ses variantes sont là pour appliquer une même fonction sur tous éléments de vecteurs, de matrices ou de listes. On montre aussi comment régler un problème courant, soit calculer certaines statistiques sur une variable qui a été divisée en groupes (split-apply-combine). Le package *plyr* est aussi abordé. Il peut simplifier la syntaxe normalement utilisée avec la famille des apply.   
+
+  
+* Chapitre 9 & 10 Venables
+
+On indique dans le chapitre 9 qu’il est possible de faire plusieurs assignations à la fois pour produire de plus grandes expressions. Pour grouper des commandes, on se sert des accolades qui délimiteront les instructions à effectuer ainsi que des parenthèses qui définiront la variable et ses valeurs. On présente également dans ce chapitre certains énoncés de contrôle. Dans une structure conditionnelle, on peut commander, grâce à *if*, de suivre les instructions choisies seulement si la condition donnée est vraie. On revient également sur les fonctions itératives, *for*, *repeat* et *while*.   
+
+Dans le chapitre 10, on présente sommairement comment définir des opérateurs binaires, nommer des arguments et leurs valeurs par défauts, transférer certains paramètres d’une fonction à une autre, passer d’assignations locales et temporaires à globales et permanentes. Ensuite, on s’intéresse aux champs d’applications (*scopes*) et la différence entre S-Plus et R, aux classes de symboles dans le corps d’une fonction (les paramètres formels, les variables locales et les variables libres), à la personnalisation de l’environnement, aux classes, aux fonctions génériques et à l’orientation d’objets.
+
+
+* Chapitre 2 Xie2
+
+Ce chapitre aborde la syntaxe de nouvelles composantes pour l’utilisation de *Pandoc’s Markdown?*, plus particulièrement  l’insertion de codes, de figures et de tableaux, des citations ainsi que de théorèmes et d’équations mathématiques dans un *bookdown*. (À compléter)  
+ 
+  
+### DataCamp :  
+    
+* Writing efficient R code 
+
+Ce cours apporte astuces et solutions pour effectuer des analyses de données avec plus de rapidité. En plus de montrer comment améliorer l'efficacité de son code, il permet aussi de diagnostiquer et résoudre certains problèmes rencontrés.  
+
+Chapitres :  
+
+ + *The Art of Benchmarking* 
+ + *Fine Tuning: Efficient Base R* 
+ + *Diagnosing Problems: Code Profiling* 
+ + *Turbo Charged Code: Parallel Programming* 
+
+
+<!--n* Importing and cleaning data in R -- Case studies (plus disponible)
+
+À travers quatre études de cas, les principaux concepts de l'importation et de la domestication des données seront revisités. Il s'agit d'un prérequis pour toute analyse.  
+
+Chapitres :  
+
+  + *Ticket Sales Data* 
+  + *MBTA Ridership Data* 
+  + *World Food Facts* 
+  + *School Attendance Data* -->
+
+
+<!-- * Data visualization with ggplot2 -- Part 3 (plus disponible)
+
+Les sujets plus avancés de ce cours portent sur les géomes utilisés en mathématiques et en science, les box plots et les diagrammes de densité, les stratégies de traitement des grands ensembles de données, une variété de tracés pour des types de données spécifiques comme les cartes et quelques caractéristiques utiles des *internals* de ggplot2. Le dernier chapitre revient sur des techniques vus dans l'ensemble des cours sur la visualisation de données combinés à des techniques d'exploitation de ces données.
+
+Chapitres :  
+
+  + *Statistical plots* 
+  + *Plots for specific data types (Part 1)* 
+  + *Plots for specific data types (Part 2)* 
+  + *ggplot2 Internals* 
+  + *Data Munging and Visualization Case Study* -->
+
+* Network Analysis in the Tidyverse (idée de remplacement)
+
+À l'issue de ce cours, vous serez outillés pour produire des analyses de réseau en utilisant les paquets R *dplyr*, *ggplot2*, *igraph* et *ggraph* ainsi que *visNetwork*.  
+
+Chapitres : 
++ *The hubs of the network*
++ *In its weakness lies its strength*
++ *Connection patterns*
++ *Similarity clusters*
+
+* Correlation and Regression in R (idée de remplacement)
+
+Ce cours présente des techniques pour l'exploration de relations bivariées entre variables. Ces relations peuvent être quantifiées grâce à la correlation et représentées graphiquement. Finalement, la façon d'interpréter le coeffitient de régression et à évaluer l'adéquation d'un modèkle de régression linéaire simple. 
+
+Chapitres : 
++ *Visualizing two variables*
++ *Correlation*
++ *Simple linear regression*
++ *Interpreting regression models*
++ *Model fit*
+
+* Multiple and Logistic Regression in R (idée de remplacement)
+
+En apprenant les techniques de régression multiple et logistique, vous acquerrez les compétences nécessaires pour modéliser et prédire les résultats numériques et catégoriels à l'aide de multiples variables d'entrée. Vous apprendrez également comment ajuster, visualiser et interpréter ces modèles. 
+
+Chapitres : 
++ *Parallel Slopes*
++ *Evaluating and extending parallel slopes model*
++ *Multiple Regression*
++ *Logistic Regression*
++ *Case Study: Italian restaurants in NYC*
+
+* Communicating with Data in the Tidyverse 
+
+Ce cours aide à mettre à profit ggplot2 pour produire des graphiques d'une grande qualité et qui sortent de l'ordinaire. Vous produirez ensuite dans RMarkdown et CSS un rapport qui présentera les résultats et les graphiques créés précédemment.  
+
+Chapitres : 
+  + *Custom ggplot2 themes* 
+  + *Creating a custom and unique visualization* 
+  + *Introduction to RMarkdown* 
+  + *Customizing your Rmarkdown report* 
+
+
+  - Pratique :
+    * Faire un bibliographie apa 
+    * Loop et fonction
+  - Schnakes :
+    * La peur de partager son code 
+    * Laisser le parfait être l’ennemi du bien
+    * Manquer d'empathie et de compréhension envers les nouveaux utilisateurs
+    * Douchebagisme
+
+## Conclusion
+
+  - Pour aller encore plus loin 
+    * Wickham R for Data Science
+    * Advance R Hadley2
+    * Qualitative Research Using R: A Systematic Approach Chandra
+    * Git for teams Westby
+  - Voler de ses propres ailes
+    * Google is your friend (include funny meme)
+    * StackOverflow 
+    * GitHub
+    
+```{r echo=FALSE, fig.align="center", out.width="100%", fig.cap="\\textbf{Organisation de l'apprentissage}",fig.show='hold'}
+knitr::include_graphics("_graphs/Chapitre10/snakes.jpg")
+```
+    
+
+
+
+
+
+>>>>>>> 0767363f696a8e4a9fac38bd0de1c9327b812608
