@@ -7,7 +7,17 @@ book:
   date: "7/15/2023"
   chapters:
     - index.qmd
+    - avant_propos.qmd
     - introduction.qmd
+    - chapitre_1.qmd
+    - chapitre_2.qmd
+    - chapitre_3.qmd
+    - chapitre_4.qmd
+    - chapitre_5.qmd
+    - chapitre_6.qmd
+    - chapitre_7.qmd
+    - chapitre_8.qmd
+    - chapitre_9.qmd
     - references.qmd
 
 bibliography: references.bib
