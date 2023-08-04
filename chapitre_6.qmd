@@ -9,7 +9,7 @@ Lorsque vous lisez une page Web, un article scientifique ou un curriculum vit&ae
 
 Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou *markup languages*. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l'aide du langage de balisage Markdown. D'entrée de jeu, vous vous demandez peut-être quelle est l'utilité d'apprendre ces langages alors que les logiciels de traitement de texte sont nombreux, simples d'approche et en amélioration constante. Ce chapitre tentera donc de répondre aux questions suivantes&nbsp;: «&nbsp;Pourquoi apprendre à utiliser des langages de balisage? Dans quels contextes sont-ils plus utiles que les logiciels de traitement de texte? Comment les utiliser?&nbsp;» L'accent sera mis sur R Markdown, \LaTeX, BibTeX et HTML.
 
-Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb1999roots]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX\ (1984), HTML (1993), XML (1998) et Markdown (2004).
+Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb96]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX\ (1984), HTML (1993), XML (1998) et Markdown (2004).
 
 Un langage de balisage constitue un ensemble de commandes qui peuvent être entremêlées à du texte afin de produire une action informatique. Chaque langage contient son ensemble de commandes cohérentes et complémentaires. De manière plus formelle, ces commandes sont nommées *balises* (*tags* en anglais) et inscrites par le chercheur lui-même au travers du texte. Les balises constituent une manière de communiquer avec le logiciel que vous utilisez dans un langage qu'il peut comprendre, par exemple pour lui indiquer que vous désirez qu'une section du texte soit écrite en caractères gras, en italique, à double interligne ou encore que vous souhaitez positionner une image d'une certaine manière au travers du texte. Cette interaction est rendue possible par la standardisation des langages de balisage&nbsp;: chaque balise correspond à une action précise, peu importe le logiciel utilisé, la langue dans laquelle le texte est rédigé, le type d'ordinateur utilisé, etc. Dans votre document source, les balises sont entremêlées au contenu de votre document, puis au moment de compiler ce dernier, les balises disparaissent, produisent les actions informatisées qu'elles commandent et ne laissent comme document final que son contenu mis en page tel que vous l'avez défini via les balises utilisées.
 
@@ -119,7 +119,7 @@ Bien que des gabarits Markdown soient disponibles, ceux-ci sont plus rares. Ils 
 Pour sa part, BibTeX a une syntaxe relativement simple. D'emblée, les références BibTeX pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur BibTeX peut ressembler à ceci&nbsp;:
 
 ```
-@book{Darwin1859,
+@book{darwin03,
   address = {London},
   author = {Darwin, Charles},
   publisher = {John Murray},
@@ -128,7 +128,7 @@ or the Preservation of Favoured Races in the Struggle for Life}},
   year = {1859}
 }
 
-@article{goldfarb1999roots,
+@article{goldfarb96,
   title={The Roots of SGML: A Personal Recollection},
   author={Goldfarb, Charles F},
   journal={Technical communication},
@@ -140,7 +140,7 @@ or the Preservation of Favoured Races in the Struggle for Life}},
 }
 ```
 
-Un fichier BibTeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article -- *article*, *book*, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus -- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb1999roots`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb1999roots}` pour voir dans le document PDF compilé @goldfarb1999roots; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document BibTeX a peu d'importance, puisque \LaTeX\ réordonne par défaut la bibliographie en ordre alphabétique.
+Un fichier BibTeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article -- *article*, *book*, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus -- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document BibTeX a peu d'importance, puisque \LaTeX\ réordonne par défaut la bibliographie en ordre alphabétique.
 
 ## Trucs et astuces
 
