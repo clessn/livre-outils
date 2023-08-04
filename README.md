@@ -59,8 +59,13 @@ Lors de l'écriture, vous n'avez qu'a écrire @ dans votre éditeur pour faire s
 Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
 
 - Drag & drop à partir de votre librairie personelle
-- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils
-- Utiliser le connecteur
+- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
+- Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
+- Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
+
+#### Autres raisons d'utiliser Zotero
+- Centralisation des pdf
+- Autre
 
 ## How to contribute
 
