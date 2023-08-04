@@ -36,7 +36,7 @@ Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibte
 
 - La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools > Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
 
-==IMPORTANT== 
+*IMPORTANT* 
 
 - Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero > Settings > Onglet Better Bibtex>Open Better Bibtex preferences...
 
@@ -46,7 +46,7 @@ Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibte
 
 Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries. 
 
-==Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!==
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
 
 Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
 
