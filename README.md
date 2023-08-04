@@ -52,7 +52,15 @@ Clic-droit sur la collection livre-outils > Export Collection choisissez le form
 
 #### Utilisation de Zotero lors de l'écriture
 
-Lors de l'écriture, 
+Lors de l'écriture, vous n'avez qu'a écrire @ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
+
+- Drag & drop à partir de votre librairie personelle
+- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils
+- Utiliser le connecteur
 
 ## How to contribute
 
