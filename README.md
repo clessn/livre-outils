@@ -10,6 +10,7 @@ Livre d’outils.
 
 ## Getting started
 
+### Getting your repo ready
 1.  Install [Quarto](https://quarto.org/docs/get-started/)
 2.  Clone the repository
 3.  Get access to the Dropbox SharedFolder
@@ -18,6 +19,40 @@ Livre d’outils.
 To learn how to use Quarto visit [quarto.org](https://quarto.org/) .
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
+### Installation et configuration de Zotero 
+
+Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
+
+#### Zotero
+
+- Installer [Zotero](https://www.zotero.org/download/)
+- Installer [Zotero Connector](https://www.zotero.org/download/)
+
+- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+
+- Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
+
+#### Better Bibtex
+
+- La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools > Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+==IMPORTANT== 
+
+- Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero > Settings > Onglet Better Bibtex>Open Better Bibtex preferences...
+
+- Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+#### Génération du fichier .bib 
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries. 
+
+==Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!==
+
+Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, 
 
 ## How to contribute
 
