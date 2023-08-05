@@ -46,14 +46,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 \end{figure}
 -->
 ```
-
-\\begin{figure}
-\\begin{center}
-\\caption{Utilité relative de Word et \\LaTeX\\ selon la complexité et la taille du document \\label{latex-vs-word}}
-\\includegraphics\[width=0.75\\textwidth\]{../\_SharedFolder_livre-ssn/Graphiques/Chapitre6/word-vs-latex.png}
-\\end{center}
-\\footnotesize{Source\~: Yannick Dufresne (2015).}
-\\end{figure}
+\\begin{figure} \\begin{center} \\caption{Utilité relative de Word et \\LaTeX\\ selon la complexité et la taille du document \\label{latex-vs-word}} \\includegraphics\[width=0.75\\textwidth\]{../\_SharedFolder_livre-ssn/Graphiques/Chapitre6/word-vs-latex.png} \\end{center} \\footnotesize{Source\~: Yannick Dufresne (2015).} \\end{figure}
 
 *et Markdown sur la figure?*
 
