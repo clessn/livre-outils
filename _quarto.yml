@@ -1,11 +1,11 @@
 project:
   type: book
-  output-dir: _SharedFolder_livre-outils
+  output-dir: book
 
 book:
-  title: "Introduction aux sciences sociales numérique"
+  title: "Outils de recherche en sciences sociales numérique"
   author: "CLESSN"
-  date: "7/15/2023"
+  date: "8/05/2023"
   chapters:
     - index.qmd
     - introduction.qmd
