@@ -166,7 +166,6 @@ _Privatefolder*
 _privatefolder*
 
 # Cossinage
-*.pdf
 *.docx
 *.doc
 *.xlsx
