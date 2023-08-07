@@ -82,8 +82,6 @@ GraphiqueLattice <- Data %>%
 
 ```
 
-# \textbf{Une image vaut mille mots:}  Visualisation graphique en R
-
 ## Introduction
 
 Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique des données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.

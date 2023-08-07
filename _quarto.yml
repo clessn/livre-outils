@@ -8,7 +8,6 @@ book:
   date: "8/05/2023"
   chapters:
     - index.qmd
-    - introduction.qmd
     - chapitre_1.qmd
     - chapitre_2.qmd
     - chapitre_3.qmd
