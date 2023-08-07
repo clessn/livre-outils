@@ -12,10 +12,28 @@ Question: Où et quand s'arrêter?
 
 -   Ce chapitre présentera 2 types d'outils, et proposera une utilisation efficace de ceux-ci:
 
-1.  Outils de stockage de données (Dropbox, Google Drive, etc.)
-2.  Logiciel de gestion de versions décentralisé
+1.  Logiciel de gestion de communication (Slack et autres) --- Jérémy
+2.  Logiciel de gestion de projet (Notion et autres) --- Maria
+3.  Outils de stockage de données (Dropbox, Google Drive, etc.) --- Adrien
+4.  Logiciel de gestion de versions décentralisé (Git et Github) --- Adrien
 
-## Stockage de données
+## Logiciel de gestion de communication (Slack)
+
+-   Revue non exhaustive des outils disponibles et aperçu historique;
+-   Pourquoi choisir Git et Github?
+    -   Avantages
+    -   Inconvénients
+    -   Comment l'utiliser efficacement (en parallèle à Dropbox, etc.)
+
+## Logiciel de gestion de projet
+
+-   Revue non exhaustive des outils disponibles et aperçu historique;
+-   Pourquoi choisir Git et Github?
+    -   Avantages
+    -   Inconvénients
+    -   Comment l'utiliser efficacement (en parallèle à Dropbox, etc.)
+
+## Stockage de données (Hub, AWS, Dropbox == défi éthique)
 
 -   Revue non exhaustive des outils disponibles et aperçu historique;
 -   Pourquoi choisir Dropbox?
