@@ -20,10 +20,36 @@ Question: Où et quand s'arrêter?
 ## Logiciel de gestion de communication (Slack)
 
 -   Revue non exhaustive des outils disponibles et aperçu historique;
--   Pourquoi choisir Git et Github?
+    -   Slack
+
+    -   Teams (Microsoft)
+-   Pourquoi utiliser une de ces plateformes
+    -   La collaboration en recherche est inévitable
+
+    -   Même si le ou la professeur.e avec qui vous travaillez ne l'utilise pas, il est certain que plusieurs chercheurs de votre département l'utilise.
+
+    -   Les courriels sont dépassés et inefficaces dans un contexte de travail collaboratif.
+
+    -   La présence de teamspaces et de chaînes permet de structurer les conversations d'équipe à l'image de vos projets.
+
+    -   On garde et retrace plus facilement les conversations relatives à des projets précis.
+
+    -   La plateforme permet de regrouper au même endroit les conversations écrites et vidéos.
+-   Pourquoi choisir Slack
     -   Avantages
     -   Inconvénients
-    -   Comment l'utiliser efficacement (en parallèle à Dropbox, etc.)
+    -   Comment l'utiliser efficacement (en parallèle à Notion?)
+        -   Penser à la structuration des chaînes.
+
+        -   Faire régulièrement le ménage des chaînes (archivage au besoin).
+
+        -   Privilégier les conversations dans les chaînes plutôt que dans les conversations privées (à l'exception de certains cas)
+
+        -   Utiliser les sections pour tirer ses chaines.
+
+        -   Épingler des messages et des documents.
+
+        -   
 
 ## Logiciel de gestion de projet
 
