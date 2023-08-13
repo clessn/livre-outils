@@ -10,7 +10,7 @@ Question: Où et quand s'arrêter?
 
 -   Il existe une multitude d'outils pour aider le chercheur à optimiser son temps et son efficacité.
 
--   Ce chapitre présentera 2 types d'outils, et proposera une utilisation efficace de ceux-ci:
+-   Ce chapitre présentera 4 types d'outils, et proposera une utilisation efficace de ceux-ci:
 
 1.  Logiciel de gestion de communication (Slack et autres) --- Jérémy
 2.  Logiciel de gestion de projet (Notion et autres) --- Maria
@@ -54,10 +54,10 @@ Question: Où et quand s'arrêter?
 ## Logiciel de gestion de projet
 
 -   Revue non exhaustive des outils disponibles et aperçu historique;
--   Pourquoi choisir Git et Github?
+-   Pourquoi choisir Notion
     -   Avantages
     -   Inconvénients
-    -   Comment l'utiliser efficacement (en parallèle à Dropbox, etc.)
+    -   Comment l'utiliser efficacement
 
 ## Stockage de données (Hub, AWS, Dropbox == défi éthique)
 
@@ -70,11 +70,161 @@ Question: Où et quand s'arrêter?
 
 ## Logiciel de gestion de versions décentralisé
 
--   Revue non exhaustive des outils disponibles et aperçu historique;
--   Pourquoi choisir Git et Github?
-    -   Avantages
-    -   Inconvénients
-    -   Comment l'utiliser efficacement (en parallèle à Dropbox, etc.)
+Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.
+
+**Pourquoi choisir Git et GitHub?**
+
+*Avantages*
+
+Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de "commit", avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet.
+
+GitHub, lancé en 2008, est une plateforme qui utilise Git comme base pour le stockage et la gestion de projets. C'est une vitrine virtuelle où les développeurs peuvent héberger leurs dépôts Git et collaborer de manière transparente. L'aspect social de GitHub, avec sa fonctionnalité de suivi des projets, de gestion des problèmes et de demande de fusion, en fait un lieu de choix pour les projets open source et collaboratifs.
+
+En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches.
+
+De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans leur branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs et facilite la répartition des tâches au sein de l'équipe.
+
+Enfin, l'aspect open source de GitHub permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
+
+*Inconvénients*
+
+Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. De plus, bien que GitHub offre un niveau de gratuité pour les projets open source, des frais peuvent être appliqués pour des fonctionnalités avancées ou pour des projets privés.
+
+**Comment les utiliser efficacement (en parallèle à Dropbox, etc.)**
+
+Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son dépôt Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de commit doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
+
+Il est également conseillé de travailler sur des branches distinctes pour chaque fonctionnalité ou modification majeure. Cela facilite la gestion des changements et minimise les conflits lors de la fusion. Les chercheurs devraient également consulter régulièrement les projets et les problèmes sur GitHub pour encourager une communication ouverte et résoudre rapidement les éventuels problèmes.
+
+L'utilisation de Git et GitHub peut être complémentaire à d'autres outils de stockage, tels que Dropbox ou Google Drive. Ces derniers peuvent être utilisés pour stocker des fichiers non liés au code, tels que des données brutes non-sensibles ou des documents de recherche, tandis que Git et GitHub gèrent le code source et ses évolutions.
+
+Bien qu'il existe plusieurs alternatives à Git et GitHub sur le marché, ces deux plateformes continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub, mais il est important de comprendre pourquoi Git et GitHub restent les choix privilégiés pour les chercheurs en sciences sociales numériques.
+
+**Pourquoi Prioriser Git et GitHub pour les Chercheurs en Sciences Sociales**
+
+*Intégration et Adoption Répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, tutoriels et forums de support sont disponibles en ligne, ce qui facilite l'entrée des chercheurs en sciences sociales dans l'utilisation de cet outil. GitHub, en tant que plateforme leader, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
+
+*Facilité de Collaboration* : Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
+
+*Visibilité et Partage* : GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale. Les projets open source sont visibles et accessibles à tous, favorisant ainsi la collaboration et l'examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires.
+
+*Suivi des Versions et Recherche Reproductible* : Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
+
+*Infrastructure et Sécurité* : GitHub offre une infrastructure robuste pour le stockage sécurisé des dépôts Git. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de GitHub permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
+
+En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce à l'open source. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
+
+**Pratiques à Éviter sur GitHub pour les Chercheurs en Sciences Sociales**
+
+Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l'efficacité de la recherche. Voici quelques points à prendre en considération :
+
+**1. Stocker des Informations Sensibles :** Évitez de stocker des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme.
+
+**2. Inclure des Mots de Passe et Clés d'Accès :** Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes.
+
+**3. Stocker des Fichiers Lourds :** Évitez de stocker des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt. Utilisez plutôt des services de stockage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt.
+
+**4. Inclure des Identifiants Personnels :** Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.
+
+**5. Ignorer les Pratiques de Branches et de Fusion :** Évitez de fusionner directement du code dans la branche principale (habituellement appelée "main" ou "master"). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications.
+
+**6. Ignorer les Commentaires des Collaborateurs :** Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
+
+**7. Ne Pas Documenter :** Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d'autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d'exécuter votre code.
+
+En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l'efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur.
+
+### Exemple d'Utilisation de Git et GitHub pour un Chercheur en Sciences Sociales
+
+Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l'impact des médias sur l'opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.
+
+Étape 1 : Création d'un Répertoire Local et Initialisation de Git
+
+Ouvrez votre terminal et naviguez vers le dossier où vous souhaitez enregistrer votre projet.
+
+``` bash
+cd chemin/vers/votre/dossier
+```
+
+Créez un nouveau répertoire pour votre projet et accédez-y.
+
+``` bash
+mkdir mon_projet
+```
+
+``` bash
+cd mon_projet
+```
+
+Initialisez Git dans ce répertoire.
+
+``` bash
+git init
+```
+
+Étape 2 : Ajout de Votre Code et de Vos Fichiers
+
+Ajoutez vos fichiers R contenant le code pour l'analyse des médias et des sondages dans le répertoire. Par exemple, vous pouvez avoir un fichier « analyse_medias.R » et « analyse_sondages.R ».
+
+Utilisez la commande « git status » pour vérifier l'état de vos fichiers.
+
+``` bash
+git status
+```
+
+\*\*Étape 3 : Ajout, Validation et Commit de Vos Modifications\*\*
+
+Ajoutez vos fichiers pour qu'ils soient prêts à être validés.
+
+``` bash
+git add -A
+```
+
+Validez vos modifications avec un message descriptif.
+
+``` bash
+git commit -m "Ajout du code d'analyse des médias et des sondages"
+```
+
+Étape 4 : Création du Répertoire sur GitHub et Lien avec Votre Répertoire Local
+
+Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom "mon_projet".
+
+De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.
+
+``` bash
+git remote add origin https://github.com/votre-utilisateur/mon_projet.git
+```
+
+Étape 5 : Push de Votre Travail sur GitHub
+
+Envoyez vos commits locaux vers GitHub.
+
+``` bash
+git push -u origin master
+```
+
+Étape 6 : Collaboration avec Vos Collègues
+
+Si vos collègues souhaitent contribuer à votre projet, ils peuvent "forker" votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
+
+Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une "pull request" pour vous demander de fusionner leurs modifications dans votre répertoire principal.
+
+\*\*Étape 7 : Pull des Modifications de Vos Collègues\*\*
+
+Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
+
+``` bash
+git pull origin master
+```
+
+Étape 8 : Répéter le Processus
+
+Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
+
+Conclusion
+
+En utilisant Git et GitHub de manière stratégique, vous pouvez gérer efficacement votre projet de recherche en sciences sociales, collaborer avec vos collègues et rendre votre travail accessible tout en préservant la confidentialité des données sensibles. Ce processus contribue à un environnement de recherche collaboratif et structuré, essentiel pour mener à bien vos analyses sur l'impact des médias sur l'opinion publique.
 
 ## Conclusion: un exemple de l'utilisation des outils
 
