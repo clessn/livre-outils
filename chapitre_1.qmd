@@ -56,7 +56,7 @@ Il est à la portée de toute chercheuse et de tout chercheur de participer à l
 2.  Ensuite, comment puis-je utiliser ces nouveaux outils pour contribuer à l'avancement des théories de mes champs de recherche?
 3.  Enfin, comment puis-je utiliser ces nouveaux outils pour exercer un impact positif sur mes semblables?
 
-## Comment les données massives affectent-elles les sciences sociales? **Changements actuels et quelques réflexions sur l'avenir**
+## Comment les données massives affectent-elles les sciences sociales? Changements actuels et quelques réflexions sur l'avenir
 
 L'apparition des données massives (*big data*) dans le paysage technologique représente un de ces cas de plus en plus commun de phénomène hautement technique dont les effets politiques et sociaux sont remarquables. La discussion publique s'est en effet rapidement emparée du sujet, au point de transformer un moment technologique en phénomène social. Les « données massives » se trouvent ainsi régulièrement présentées dans l'espace public à la fois comme un moyen puissant de développement et d'innovation technoscientifique, de même que comme une menace à la stabilité de certaines normes sociales telles que la confidentialité des informations privées. Il n'est d'ailleurs pas rare que le discours public s'inquiète du danger que poseraient les données massives à la séparation des sphères publique et privée (centrale à la conception libérale du rôle de la politique qui structure la majorité des débats sociaux) en amalgamant parfois de manière trop rapide l'objet et l'utilisation qui en est faite. Toutefois, ce même discours public s'emporte aussi rapidement à propos des gains technologiques monumentaux réalisés par l'utilisation des données massives.
 
@@ -66,7 +66,7 @@ Comment l'utilisation des données massives change-t-elle la pratique des scienc
 
 Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d'une introduction critique à certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, je présente une conceptualisation des données massives. Deuxièmement, je me penche sur les impacts des données massives en sciences sociales et souligne tout particulièrement comment elles affectent les enjeux de la *validité* interne et externe dans la domaine des sciences sociales. Finalement, j'explore quelques pistes de réflexion sur l'avenir des données massives en sciences sociales en analysant quelques changements *épistémologiques* que ces données pourraient potentiellement entraîner.
 
-### **Définition des données massives**
+## Définition des données massives
 
 Ce qui définie les données massives comme concept est souvent mêlé avec le phénomène social qui l'accompagne. Il est toutefois possible de demêler le tout en distinguant trois approches conceptuelles des données massives.
 
@@ -82,11 +82,11 @@ Par ailleurs, plusieurs chercheurs ont élargi cette définition de la compositi
 
 ![](images/Capture d’écran, le 2023-08-11 à 13.15.13.png)
 
-### Les données massives et les sciences sociales
+## Les données massives et les sciences sociales
 
 Dans le domaine des sciences sociales, les changements causés par l'utilisation des données massives en recherche sont significatifs. Plusieurs n'hésitent d'ailleurs pas à les qualifier de changement de paradigme dans l'étude des phénomènes sociaux (Anderson 2008; Chandler 2015; Grimmer 2015; Kitchin 2014; Monroe et al. 2015). Dans le cas qui nous intéresse, deux dimensions majeures méritent d'être abordées : (1) une première relative à la validité (interne et externe) des données massives et (2) une seconde, plus large, relative au potentiel changement de posture ou d'orientation épistémologique causé par l'utilisation de ces données en recherche.
 
-### La validité de la mesure en sciences sociales
+## La validité de la mesure en sciences sociales
 
 La validité de la mesure constitue une exigence méthodologique centrale à la recherche en sciences sociales. Les scientifiques cherchent effectivement à s'assurer que ce qui est mesuré -- par un sondage, une entrevue, un thermostat ou tout autre outil de mesure -- constitue bel et bien ce qui est supposé être mesuré. Adcock et Collier définissent plus spécifiquement l'application de la validité de la mesure en sciences sociales par le biais de « scores (including the results of qualitative classification) \[that\] meaningfully capture the ideas contained in the corresponding concept. » (2001 : 530)
 
@@ -94,7 +94,7 @@ Toutefois, les problèmes liés à la validité de la mesure sont nombreux et on
 
 On a déjà mentionné que la validité de la mesure a de l'importance puisqu'elle garantit que ce qui est mesuré représente réellement ce qu'on croit mesurer. Mais pour être plus spécifique, dans une approche positiviste, la validité de la mesure se traduit généralement par une logique de classification des valeurs attribuées aux différentes manifestations distinctes d'un même phénomène. Par exemple, une mesure de la démocratie comme celle proposée par *Freedom House*, fréquemment utilisée en science politique, classifie les libertés civiles et les droits politiques des états du monde par degré, de 1 à 7, afin de construire un index allant d'autoritarisme complet à démocratie parfaite. Les scores représentent, dans ce contexte, une mesure artificielle, mais ordonnée et logique, des idées contenues dans le concept de démocratie telles que libertés civiles et droits politiques. On peut ainsi dire que le souci avec la validité de la mesure traverse les connexions entre (1) le phénomène social étudié (la démocratie), (2) son opérationnalisation (via les libertés civiles et droits politiques) et (3) la méthode de mesure utilisée pour observer et classifier d'une certaine façon le phénomène et les données qui en découlent (dans le cas de *Freedom House* des codeurs indépendants).
 
-### La validité des données massives
+## La validité des données massives
 
 En ce qui a trait aux données massives, la question de la validité de la mesure constitue un défi nouveau. Les données massives ont en effet pour avantage d'offrir aux chercheur.e.s soit de nouveaux phénomènes à étudier, soit de nouvelles manifestations et nouvelles formes à des phénomènes déjà étudiés. Les données massives permettent donc d'agrandir la connaissance scientifique.
 
@@ -104,7 +104,7 @@ Cependant, il faut aussi souligner que les données massives, de par leur comple
 
 Aux nombres de ces difficultés, trois questions sont particulièrement cruciales : (1) la validité interne, (2) la validité externe, et (3) la question d'un changement de posture ou d'orientation épistémologique en sciences sociales causé par les données massives.
 
-#### Validité interne des données massives
+### Validité interne des données massives
 
 Premièrement, les données massives peuvent représenter un défi à la validité interne des études en sciences sociales en rendant ***pragmatiquement difficile l'établissement d'un mécanisme causal clair***. Ce défi est notamment une conséquence du fait que la plupart des données sont présentement issues d'un processus de génération (*data-generating process*) qui est hors du contrôle des chercheur.e.s. Les données massives proviennent en effet habituellement de sources diverses qui sont externes aux projets de recherche qui les utilisent. Elles ne sont pas donc générées de manière aléatoire sous le contrôle des chercheur.e.s.
 
@@ -114,7 +114,7 @@ Pour le dire autrement, le défi de validité interne avec les données massives
 
 Cependant, dans l'état actuel des choses, le volume et la variété (2 des 4 V) des données massives (textuelles, numériques, vidéos, etc.) peuvent miner la qualité de l'inférence causal entre un cause et une conséquence que permet habituellement un processus contrôlé de génération des données. En somme, la validité interne des données massives est une fonction de la qualité de ces mêmes données. 
 
-#### Validité externe des données massives
+### Validité externe des données massives
 
 Deuxièmement, les données massives représentent un défi plus important pour la validité externe des recherches en sciences sociales (Tufekci 2014; Lazer et Radford 2017; Nagler et Tucker 2015). La préoccupation la plus évidente concerne la ***représentativité*** des données massives collectées. Comme le souligne Lazer et Radford (2017), la quantité ne permet pas de corriger pour la non-représentativité des données. Les données massives sont ainsi soumises au même problème de biais de sélection que les autres types de données observationnelles, telle un sondage ou une série d'entrevues, traditionnellement utilisées en sciences sociales.
 
@@ -122,13 +122,13 @@ Le cas célèbre de l'erreur de prédiction du *Literary Digest* lors de la camp
 
 Aujourd'hui, l'utilisation des données massives est soumise aux mêmes risques méthodologiques. L'accumulation massive de données ne permet pas de compenser pour la qualité des données. Les données massives, comme les données plus traditionnelles, sont soumises aux conséquences induites par le processus de génération des données (*data generating process*) comme un échantillonnage.
 
-#### Données expérimentales
+### Données expérimentales
 
 La question du *processus de génération* des données est plus claire quand on considère comment les *données observationnelles* et les *données expérimentales* permettent d'effectuer des *inférences* de manière distincte.
 
 Premièrement, les données massives ne peuvent pas résoudre les enjeux liés aux inférences causalesou explicatives(Grimmer, 2015). En effet, le processus de génération de données expérimentales assure idéalement la validité de l'inférence causale sur l'ensemble de la population visée. Cela prend plus spécifiquement la forme d'un processus de génération des données au sein duquel les chercheur.e.s assurent la distribution aléatoire du traitement entre les deux groupes traitement et contrôle, garantissant par le fait même une source exogène de variation qui permet d'éliminer l'endogénéité entre la variable indépendante (*x*) et le résidu (*e*) et qui assure donc que l'effet observé n'est pas dû à une variable confondante.
 
-#### Données observationnelles
+### Données observationnelles
 
 En ce qui à trait aux données observationnelles, il y a deux points importants. Premièrement, des méthodes d'inférence basées sur des approches par « design » (*design-based methods*) comme une méthode de régression sur discontinuité, de variable instrumentale, etc. peuvent également garantir des inférences explicatives et causales valides. Elles nécessitent toutefois plusieurs postulats plus restrictifs dont l'objectif est d'imiter ou de récréer, de la manière la plus fidèle possible, une distribution aléatoire du traitement -- ce que la litérature appelle un « *as-if random assignment* » (Dunning, 2008).
 
@@ -138,7 +138,7 @@ Deuxièmement, un échantillon de données massives observationnelles issues d'u
 
 Dans un tel cas, des méthodes de pondération sur des données observationnelles peuvent compenser pour la sur- ou la sous-représentativité de sous-groupes dans un échantillon afin d'assurer la validité de l'inférence entre échantillon et population. Les données massives ont ici une importance puisqu'une pondération fiable nécessite une quantité substantielle d'observations. Une pondération *a posteriori* sera donc plus fiable plus l'échantillon est grand. Les données massives ont ainsi une valeur ajoutée afin d'établir des inférences descriptives plus précises et sophistiquées.
 
-#### Validité écologique et observation par sous-groupes
+### Validité écologique et observation par sous-groupes
 
 Les données massives peuvent aussi jouer d'autres rôles importants relatif à la validité externe. Premièrement, les données massives facilitent effectivement la validité externe de certaines études en accroissant la « validité écologique » (*ecological validity*) des tests expérimentaux, c'est-à-dire le réalisme de la situation expérimentale (Grimmer, 2015 : 81). En effet, la variété des sources et des formats de données permet aux chercheurs d'imiter plus concrètement la réalité « sur le terrain » vécue par les participants aux études.
 
@@ -146,6 +146,6 @@ Deuxièmement, la quantité importante de données rend possible l'observation d
 
 ![](images/Capture d’écran, le 2023-08-11 à 13.19.08.png)
 
-### Vers le futur : les données massives effectueront-elles un changement dans la posture épistémologique en sciences sociales?
+## Vers le futur : les données massives effectueront-elles un changement dans la posture épistémologique en sciences sociales?
 
 Comme nous venons de le voir, la quantité et la variété nouvelle des données massives permettent à la fois un approfondissement de l'analyse de certains phénomènes et l'ouverture de nouvelles avenues de recherche. Il faut toutefois souligner d'une perspective non pas seulement méthodologique/technique mais plutôt ***épistémologique*** les données massives représentent une *complexification* de l'analyse des phénomènes en sciences sociales qui soulève au moins trois questions d'importance pour l'avenir de la recherche en sciences sociales : (1) les données massives entrent-elles (partiellement du moins) en conflit avec l'impératif de parcimonie qui caractérise la science moderne?; (2) ces données sont-elles dans la continuité ou représentent-elles une « coupure » dans la tradition béhavioraliste en sciences sociales (et politique en particulier)?; (3) et finalement, de manière reliée, les données massives proposent-elles ou non une manière de dépasser l'individualisme méthodologique qui caractérise les sciences sociales contemporaines?
