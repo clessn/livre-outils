@@ -24,7 +24,7 @@ bibliography: references.bib
 
 format:
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
 
 editor: visual
 
