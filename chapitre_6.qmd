@@ -2,26 +2,23 @@
 
 [Plan : À quoi sert un outil de référence ?]{.underline}
 
-[#Pourquoi citer ?]{.underline}
+[Pourquoi citer ?]{.underline}
 
-[#À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+[À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
-Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu\'il existe de nombreuses possibilités).
+Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités).
 
-[##Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
+[Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
 
-Facilite le travail de recherche ; économie de temps (données centralisées sur une
-interface, possibilité d\'ajouter des commentaires et de créer des « sous-groupes »)
+Facilite le travail de recherche ; économie de temps (données centralisées sur une interface, possibilité d'ajouter des commentaires et de créer des « sous-groupes »)
 
-Rends le travail d\'équipe et de collaboration plus facile (en travaillant sur le même
-logiciel
+Rends le travail d'équipe et de collaboration plus facile (en travaillant sur le même logiciel
 
 Aucune perte de dossiers
 
-###**BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
+**BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
 
-Insérer des références
-provenant d'une ou plusieurs bases bibliographiques ;
+Insérer des références provenant d'une ou plusieurs bases bibliographiques ;
 
 Citer des références dans le corps du texte; Créer une bibliographie ou une liste de références dans les documents selon différents styles de citation.
 
@@ -29,34 +26,45 @@ Saisir manuellement ou importer automatiquement des références provenant de ba
 
 Importer à partir d'autres logiciels de gestion bibliographique comme : EndNote et Zotero.
 
-###**EndNote
-Online** : EndNote est une application gratuite et libre permettant de générer des bases de données personnelles de références bibliographiques. Ces références doivent être saisies manuellement et peuvent provenir de bases de données ou de catalogues de bibliothèques.
+**EndNote Online** : EndNote est une application gratuite et libre permettant de générer des bases de données personnelles de références bibliographiques. Ces références doivent être saisies manuellement et peuvent provenir de bases de données ou de catalogues de bibliothèques.
 
 Centraliser les références sélectionnées
 
 Citer les références/documents afin de créer des bibliographies inspirées de styles reconnus, tels que APA, MLA, Chicago, etc.
 
-Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d\'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
+Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
 
-Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l\'interface soit seulement dispo en anglais, elle s\'adapte aux besoins de l\'utilisateur ainsi qu\'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu\'il possible de franciser et de modifier manuellement l\'interface ainsi que les champs.
+Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l'interface soit seulement dispo en anglais, elle s'adapte aux besoins de l'utilisateur ainsi qu'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu'il possible de franciser et de modifier manuellement l'interface ainsi que les champs.
 
-###**Carrefour de gestion bibliographique**
-(site Web du Réseau de l\'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
+**Mendeley** : logiciel de gestion de références et de gestion de documents développé par une société spécialisée dans les informations scientifiques et médicales. En parallèle avec les autres logiciels de gestion de référence présentés précédemment, Mendeley permet d'organiser, de stocker, d'annoter et de partager des articles de recherche ainsi que d'autres types de documents.
 
-Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant
-l\'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l\'utilisateur.
+-   Gestion de références : permets d'importer, d'organiser et de stocker des références bibliographiques provenant de différentes bases de données académiques.
+
+-   Permets d'organiser les références en créant des dossiers et des collections en fonction des différents projets de recherche.
+
+-   Annoter et surligner des documents PDF, notamment en ajoutant des commentaires, des notes et des surlignages directement sur l'interface de Mendeley.
+
+-   Gestion de documents (autres que les références). Outre les références, Mendeley permet de stocker et d'organiser des PDF. Cela facilite l'accès aux documents lors d'une recherche en cours.
+
+-   Permets de générer des bibliographies et des citations dans différents styles de format bibliographique.
+
+-   Les utilisateurs de Mendeley peuvent partager des références, des documents ainsi que des dossiers entre eux. Comme mentionné précédemment, cela facilite la collaboration sur des projets de recherche.
+
+-   Enfin, Mendeley offre la possibilité de synchroniser les références, les annotations ainsi que les documents sur plusieurs appareils. Ainsi, cela permet un accès facile et cohérent.
+
+**Carrefour de gestion bibliographique** (site Web du Réseau de l'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
+
+Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant l'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l'utilisateur.
 
 [Mini conclu]{.underline}
 
-Bien que chaque logiciel à ses spécificités, ils sont tous relativement similaires. C\'est-à-dire qu\'ils permettent tous d\'économiser du temps et de rendre le travail d\'équipe plus facile en centralisant les dossiers.
+Bien que chaque logiciel à ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les dossiers.
 
-Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu\'aux exigences de l\'utilisateur, celui-ci doit se demander notamment s\'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s\'il est nécessaire de partager ses résultats avec le restant de son équipe, l\'utilisateur devrait se munir du même logiciel que
-ses collègues. Enfin, il est important d\'utiliser le logiciel que l\'utilisateur préfère, comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent tous des interfaces différentes.
+Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigences de l'utilisateur, celui-ci doit se demander notamment s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, l'utilisateur devrait se munir du même logiciel que ses collègues. Enfin, il est important d'utiliser le logiciel que l'utilisateur préfère, comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent tous des interfaces différentes.
 
 [Transition avec Laurence]{.underline}
 
-**Zotero** (aborder à la fin de cette section du chapitre). Malgré qu\'il existe une multitude d\'outils,
-Zotero est le logiciel de gestion bibliographique que nous privilégions au CAPP. Nous expliquerons ces avantages/inconvénients ainsi que son utilisation dans la prochaine section de ce chapitre.
+**Zotero** (aborder à la fin de cette section du chapitre). Malgré qu'il existe une multitude d'outils, Zotero est le logiciel de gestion bibliographique que nous privilégions au CAPP. Nous expliquerons ces avantages/inconvénients ainsi que son utilisation dans la prochaine section de ce chapitre.
 
 ### Installation et configuration de Zotero
 
