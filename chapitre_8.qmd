@@ -1,6 +1,6 @@
 # Outils de recherche: la quête infinie de l'optimisation
 
-Il est tout simplement impossible de se lancer dans l'accomplissement efficace des méthodes proposées dans cet ouvrage sans d'abord se définir une méthode de travail efficace. Peu importe que l'on travaille seul ou en équipe, des dossiers bien classés, une arborescence claire et un stockage sécuritaire sont gages de succès. Un environnement ordonné pour un travail ordonné.
+Il est tout simplement impossible de se lancer dans l'accomplissement efficace des outils proposées dans cet ouvrage sans d'abord se définir une méthode de travail efficace. Peu importe que l'on travaille seul ou en équipe, des dossiers bien classés, une arborescence claire et un stockage sécuritaire sont gages de succès. Un environnement ordonné pour un travail ordonné.
 
 En science sociale,
 
@@ -12,10 +12,11 @@ Question: Où et quand s'arrêter?
 
 -   Ce chapitre présentera 4 types d'outils, et proposera une utilisation efficace de ceux-ci:
 
-1.  Logiciel de gestion de communication (Slack et autres) --- Jérémy
-2.  Logiciel de gestion de projet (Notion et autres) --- Maria
-3.  Outils de stockage de données (Dropbox, Google Drive, etc.) --- Adrien
-4.  Logiciel de gestion de versions décentralisé (Git et Github) --- Adrien
+1.  Gestion humaine individuelle (santé-bien-être) et collective (Agilité) - Maria et Adrien
+2.  Logiciel de gestion de communication (Slack et autres) --- Jérémy
+3.  Logiciel de gestion de projet (Notion et autres) --- Maria et Adrien
+4.  Outils de stockage de données (Dropbox, Google Drive, etc.) --- Adrien
+5.  Logiciel de gestion de versions décentralisé (Git et Github) --- Adrien
 
 ## Logiciel de gestion de communication (Slack)
 
@@ -221,6 +222,16 @@ git pull origin master
 Étape 8 : Répéter le Processus
 
 Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
+
+### GitHub Desktop
+
+Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.
+
+GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Elle élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
+
+Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhension des commandes Git en ligne de commande, ce qui pourrait devenir un inconvénient si vous devez travailler dans un environnement sans interface visuelle. De plus, GitHub Desktop est spécifiquement conçu pour interagir avec GitHub. Si vous devez travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
+
+La décision entre l'utilisation du terminal et de GitHub Desktop dépend de vos préférences et de vos besoins. Pour les chercheurs qui débutent, GitHub Desktop offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes Git en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
 
 Conclusion
 
