@@ -60,15 +60,6 @@ Question: Où et quand s'arrêter?
     -   Inconvénients
     -   Comment l'utiliser efficacement
 
-## Stockage de données (Hub, AWS, Dropbox == défi éthique)
-
--   Revue non exhaustive des outils disponibles et aperçu historique;
--   Pourquoi choisir Dropbox?
-    -   Avantages
-    -   Inconvénients
-    -   Comment l'utiliser efficacement (arborescence, \_sharedFolders, etc.)
-    -   Mais si on veut avoir un suivi de modifications?
-
 ## Logiciel de gestion de versions décentralisé
 
 Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.
@@ -237,6 +228,70 @@ Conclusion
 
 En utilisant Git et GitHub de manière stratégique, vous pouvez gérer efficacement votre projet de recherche en sciences sociales, collaborer avec vos collègues et rendre votre travail accessible tout en préservant la confidentialité des données sensibles. Ce processus contribue à un environnement de recherche collaboratif et structuré, essentiel pour mener à bien vos analyses sur l'impact des médias sur l'opinion publique.
 
-## Conclusion: un exemple de l'utilisation des outils
+## Stockage des données et gestion de versions
 
--   Faire des liens avec l'ensemble du livre!
+Le stockage des données occupe une place cruciale dans la recherche en sciences sociales numériques. La manière dont vous stockez et gérez vos données peut avoir un impact significatif sur la sécurité, la confidentialité et la reproductibilité de votre travail. Dans cette section, nous allons aborder différents aspects du stockage de données, des outils disponibles et de l'importance d'une gestion efficace des versions.
+
+### Stockage de données sensibles
+
+Au fil du temps, de nombreux outils de stockage ont émergé pour répondre aux besoins variés des chercheurs en sciences sociales. Des solutions populaires incluent Dropbox, Google Drive, OneDrive, et Amazon S3 d'AWS. L'histoire de ces outils témoigne de l'évolution des besoins de stockage et de collaboration.
+
+Lorsqu'il s'agit de stocker des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n'est pas adapté au stockage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source. Une solution courante est d'utiliser des services de cloud sécurisés, tels qu'Amazon Web Services (AWS), qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.
+
+Amazon Web Services, couramment appelé AWS, est un ensemble de services cloud proposés par Amazon. Il offre une vaste gamme de services, allant du stockage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
+
+1.  **Sécurité Robuste :** AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
+
+2.  **Scalabilité :** AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
+
+3.  **Flexibilité :** AWS propose une variété de services adaptés à différentes utilisations, allant du stockage de données au calcul intensif pour l'analyse avancée.
+
+4.  **Collaboration Simplifiée :** Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
+
+AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données stockées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable.
+
+#### Exemple d'Utilisation d'AWS pour Stocker et Accéder à des Données de Sondages en RStudio
+
+Imaginez un jeune chercheur en sciences sociales qui travaille sur une analyse comparative de données de sondages recueillies sur plusieurs décennies. Pour maintenir la sécurité des données sensibles et faciliter l'accès pour les analyses dans RStudio, il décide d'utiliser Amazon Web Services (AWS) pour le stockage et la gestion de ces données.
+
+Étape 1 : Création d'un Compte AWS et Configuration
+
+Le chercheur crée un compte AWS et configure ses paramètres de sécurité, y compris la configuration de l'authentification à deux facteurs pour renforcer la sécurité de son compte.
+
+Étape 2 : Création d'un Espace de Stockage S3
+
+Le chercheur crée un compartiment Amazon S3 (Simple Storage Service) pour stocker ses données de sondage. Il choisit une région AWS et définit les paramètres de sécurité appropriés, tels que le chiffrement des données.
+
+Étape 3 : Transfert des Données vers Amazon S3
+
+Le chercheur transfère les données de sondage dans son compartiment Amazon S3 à l'aide de l'interface en ligne AWS ou d'outils d'importation.
+
+Étape 4 : Configuration des Autorisations
+
+Pour sécuriser davantage les données, le chercheur configure les autorisations d'accès aux données dans Amazon S3. Il attribue des rôles et des politiques d'accès spécifiques aux utilisateurs, garantissant que seules les personnes autorisées peuvent accéder aux données.
+
+Étape 5 : Configuration d'Accès dans RStudio
+
+Le chercheur installe le package "aws.s3" dans RStudio pour accéder à ses données stockées dans Amazon S3. Il configure également les informations d'identification AWS dans son environnement RStudio.
+
+Étape 6 : Accès et Analyse des Données dans RStudio
+
+À l'aide du package "aws.s3", le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements.
+
+Étape 7 : Sécurité et Conservation des Données
+
+Après avoir effectué ses analyses, le chercheur peut choisir de conserver les données de sondage dans Amazon S3 en utilisant les politiques de conservation appropriées. Il peut également archiver des copies de sauvegarde pour garantir l'intégrité des données à long terme.
+
+### Stockage de données non sensibles
+
+Dropbox est connu pour sa simplicité d'utilisation et sa convivialité. Il peut être un choix approprié pour stocker des fichiers non sensibles, partager des documents avec des collègues et faciliter la collaboration.
+
+Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier *.gitignore*.
+
+Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des états précédents si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
+
+Dropbox se concentre principalement sur le stockage et la collaboration de fichiers, alors que AWS offre une gamme de services cloud, y compris le stockage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.
+
+### Conclusion
+
+Le stockage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et le stockage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.
