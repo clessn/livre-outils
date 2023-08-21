@@ -6,15 +6,29 @@
 
 [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
+Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
+
+1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites web et d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
+
+2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
+
+3.  Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
+
+4.  Collaboration : Certains outils permettent la collaboration en ligne, ce qui permet à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement permet une économie de temps par la centralisation des données sur un mpeme interface.
+
+5.  Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
+
+6.  Synchronisation et sauvegarde : Les références et les bibliographies peuvent être synchronisées sur plusieurs appareils, ce qui permet aux utilisateurs d'accéder à leurs références où qu'ils soient. Les sauvegardes régulières assurent que les données ne sont pas perdues en cas de problème technique.
+
+7.  Suivi de lecture : Certains outils permettent aux utilisateurs de suivre les articles et les documents qu'ils ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
+
+8.  Importation et exportation : Les outils de référence bibliographique permettent souvent d'importer et d'exporter des références dans différents formats, ce qui facilite le transfert de données entre différentes plates-formes.
+
+En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de citation correcte et de création de bibliographies cohérentes, ce qui permet aux chercheurs et aux chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage.
+
 Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités).
 
 [Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
-
-Facilite le travail de recherche ; économie de temps (données centralisées sur une interface, possibilité d'ajouter des commentaires et de créer des « sous-groupes »)
-
-Rends le travail d'équipe et de collaboration plus facile (en travaillant sur le même logiciel
-
-Aucune perte de dossiers
 
 **BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
 
