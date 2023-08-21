@@ -1,49 +1,117 @@
 # La gestion des références
 
-### Installation et configuration de Zotero 
+[Plan : À quoi sert un outil de référence ?]{.underline}
+
+[Pourquoi citer ?]{.underline}
+
+[À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+
+Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités).
+
+[Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
+
+Facilite le travail de recherche ; économie de temps (données centralisées sur une interface, possibilité d'ajouter des commentaires et de créer des « sous-groupes »)
+
+Rends le travail d'équipe et de collaboration plus facile (en travaillant sur le même logiciel
+
+Aucune perte de dossiers
+
+**BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
+
+Insérer des références provenant d'une ou plusieurs bases bibliographiques ;
+
+Citer des références dans le corps du texte; Créer une bibliographie ou une liste de références dans les documents selon différents styles de citation.
+
+Saisir manuellement ou importer automatiquement des références provenant de bases de données telles que Compendex, Web of Science, Google Scholar, etc. ;
+
+Importer à partir d'autres logiciels de gestion bibliographique comme : EndNote et Zotero.
+
+**EndNote Online** : EndNote est une application gratuite et libre permettant de générer des bases de données personnelles de références bibliographiques. Ces références doivent être saisies manuellement et peuvent provenir de bases de données ou de catalogues de bibliothèques.
+
+Centraliser les références sélectionnées
+
+Citer les références/documents afin de créer des bibliographies inspirées de styles reconnus, tels que APA, MLA, Chicago, etc.
+
+Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
+
+Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l'interface soit seulement dispo en anglais, elle s'adapte aux besoins de l'utilisateur ainsi qu'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu'il possible de franciser et de modifier manuellement l'interface ainsi que les champs.
+
+**Mendeley** : logiciel de gestion de références et de gestion de documents développé par une société spécialisée dans les informations scientifiques et médicales. En parallèle avec les autres logiciels de gestion de référence présentés précédemment, Mendeley permet d'organiser, de stocker, d'annoter et de partager des articles de recherche ainsi que d'autres types de documents.
+
+-   Gestion de références : permets d'importer, d'organiser et de stocker des références bibliographiques provenant de différentes bases de données académiques.
+
+-   Permets d'organiser les références en créant des dossiers et des collections en fonction des différents projets de recherche.
+
+-   Annoter et surligner des documents PDF, notamment en ajoutant des commentaires, des notes et des surlignages directement sur l'interface de Mendeley.
+
+-   Gestion de documents (autres que les références). Outre les références, Mendeley permet de stocker et d'organiser des PDF. Cela facilite l'accès aux documents lors d'une recherche en cours.
+
+-   Permets de générer des bibliographies et des citations dans différents styles de format bibliographique.
+
+-   Les utilisateurs de Mendeley peuvent partager des références, des documents ainsi que des dossiers entre eux. Comme mentionné précédemment, cela facilite la collaboration sur des projets de recherche.
+
+-   Enfin, Mendeley offre la possibilité de synchroniser les références, les annotations ainsi que les documents sur plusieurs appareils. Ainsi, cela permet un accès facile et cohérent.
+
+**Carrefour de gestion bibliographique** (site Web du Réseau de l'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
+
+Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant l'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l'utilisateur.
+
+[Mini conclu]{.underline}
+
+Bien que chaque logiciel à ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les dossiers.
+
+Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigences de l'utilisateur, celui-ci doit se demander notamment s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, l'utilisateur devrait se munir du même logiciel que ses collègues. Enfin, il est important d'utiliser le logiciel que l'utilisateur préfère, comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent tous des interfaces différentes.
+
+[Transition avec Laurence]{.underline}
+
+**Zotero** (aborder à la fin de cette section du chapitre). Malgré qu'il existe une multitude d'outils, Zotero est le logiciel de gestion bibliographique que nous privilégions au CAPP. Nous expliquerons ces avantages/inconvénients ainsi que son utilisation dans la prochaine section de ce chapitre.
+
+### Installation et configuration de Zotero
 
 Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
 
 #### Zotero
 
-- Installer [Zotero](https://www.zotero.org/download/)
-- Installer [Zotero Connector](https://www.zotero.org/download/)
+-   Installer [Zotero](https://www.zotero.org/download/)
 
-- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
 
-- Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
+-   Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+
+-   Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
 
 #### Better Bibtex
 
-- La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools > Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
 
-*IMPORTANT* 
+*IMPORTANT*
 
-- Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero > Settings > Onglet Better Bibtex>Open Better Bibtex preferences...
+-   Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero \> Settings \> Onglet Better Bibtex\>Open Better Bibtex preferences...
 
-- Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+-   Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
 
-#### Génération du fichier .bib 
+#### Génération du fichier .bib
 
-Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries. 
+Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries.
 
 *Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
 
-Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
 
 #### Utilisation de Zotero lors de l'écriture
 
-Lors de l'écriture, vous n'avez qu'a écrire @ dans votre éditeur pour faire sortir la palette de référencement.
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
 
 #### Ajouter des références à Zotero
 
 Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
 
-- Drag & drop à partir de votre librairie personelle
-- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
-- Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
-- Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
+-   Drag & drop à partir de votre librairie personelle
+-   Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
 
 #### Autres raisons d'utiliser Zotero
-- Centralisation des pdf
-- Autre
+
+-   Centralisation des pdf
+-   Autre
