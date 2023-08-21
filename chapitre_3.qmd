@@ -24,7 +24,7 @@ L'outil permet de lancer une requête de recherche par mots-clés et par date qu
 
 ##### Figure 1. Interface de recherche de Factiva
 
-![](images/Capture d’écran, le 2023-08-18 à 14.30.58.png)
+![](images/Capture%20d’écran,%20le%202023-08-18%20à%2014.30.58.png)
 
 Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour de l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles aux chercheurs.euses, ils deviennent facilement exploitables pour faire de l'analyse de contenu par thèmes ou par ton.
 
@@ -32,7 +32,7 @@ Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dan
 
 ##### Figure 2. Interface de recherche d'Eureka
 
-![](images/Capture d’écran, le 2023-08-18 à 14.31.08.png)
+![](images/Capture%20d’écran,%20le%202023-08-18%20à%2014.31.08.png)
 
 Il existe toutefois une panoplie d'outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licenses permettant d'exploiter la plateforme, plusieurs alternatives existent pour les personnes chercheuses. NexisUni, qui comprend entre autre l'outil LexisNexis Academic particulièrement prisé par les chercheurs en communication américains, représente une excellente alternative. C'est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d'articles médiatiques. Les personnes chercheuses peuvent choisir la plateforme qui leur conviennent le mieux, en prenant en compte notamment l'accès qui peut leur être fourni par l'institution universitaire les employant.
 
@@ -56,4 +56,4 @@ Une fois avoir complété la revue des titres et des résumés, il faut entamer 
 
 La dernière étape, soit celle de l'extraction, consiste à recueillir toute donnée étant utile à l'étude de la littérature désignée. Cette étape demande énormément de temps à codifier et extraire la totalité des articles. Le but est qu'un consensus entre les codeurs émerge de ce processus. Dans les textes, ces derniers renferment plusieurs indices sur les mesures recherchés, des dimensions ainsi que les méthodologies utilisées.
 
-Une fois les étapes de la revue systématique terminées, Covidence facilite l'exportation des résultats de l'extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou la rédaction d'articles scientifiques.
+Une fois les étapes de la revue systématique terminées, Covidence facilite l'exportation des résultats de l'extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou la rédaction d'articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de license, et l'outil est patriculièrement utile et bien construit. Toutefois, d'autres alternatives à Covidence. Le choix de l'outil dépend des coûts de même que des besoins spécifiques des personnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.
