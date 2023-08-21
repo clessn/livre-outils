@@ -1,4 +1,4 @@
-# La gestion des références
+# La gestion des références {#sec-chap6}
 
 [Plan : À quoi sert un outil de référence ?]{.underline}
 
