@@ -1,10 +1,10 @@
 # La gestion des références
 
-[Plan : À quoi sert un outil de référence ?]{.underline}
+## [Pourquoi citer ?]{.underline}
 
-[Pourquoi citer ?]{.underline}
+Référence à l'idée de la science selon KKV, contribuer à ce qui a déjà été fait.
 
-[À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
 Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
@@ -80,11 +80,11 @@ Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigence
 
 **Zotero** (aborder à la fin de cette section du chapitre). Malgré qu'il existe une multitude d'outils, Zotero est le logiciel de gestion bibliographique que nous privilégions au CAPP. Nous expliquerons ces avantages/inconvénients ainsi que son utilisation dans la prochaine section de ce chapitre.
 
-### Installation et configuration de Zotero
+## Installation et configuration de Zotero
 
 Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
 
-#### Zotero
+### Zotero
 
 -   Installer [Zotero](https://www.zotero.org/download/)
 
