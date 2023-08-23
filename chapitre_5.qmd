@@ -29,7 +29,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 ```{r}
 #| label: fig-latex-vs-word
 #| echo: false
-#| fig-cap: "Utilité relative de Word et \\LaTeX\ selon la complexité et la taille du document \\newline \\textit{Source}\~: Yannick Dufresne (2015)."
+#| fig-cap: "Utilité relative de Word et \\LaTeX\ selon la complexité et la taille du document \\newline \\textit{Source}: Yannick Dufresne (2015)."
 knitr::include_graphics("_SharedFolder_livre-outils/Graphiques/Chapitre5/word-vs-latex.png")
 ```
 
