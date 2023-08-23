@@ -116,12 +116,10 @@ Comme plusieurs autres langages de programmation, R est développé grâce à de
 _Figure of RStudio with some code, a plot in the bottom right corner and some data in the top right corner_
 
 RStudio facilite l'utilisation du langage de programmation R en offrant de nombreux outils permettant à son utlisateur d'aisément réaliser ses tâches. Parmi les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur d'espace de travail, une visionneuse de données et une prise en charge de la coloration syntaxique (Horton, Kleinman, 2015). De plus, RStudio permet de coder dans plusieurs langages et supportent un grande quantité de formats. Il fournit également un support pour plusieurs projets ainsi qu'une interface pour utiliser des systèmes de contrôle des versions tels que GitHub (Horton, Kleinman, 2015).
-<!-- >>>>>>> 0767363f696a8e4a9fac38bd0de1c9327b812608 -->
 
 
 ### Avantages et inconvénients de RStudio
 
-<!-- <<<<<<< HEAD -->
 - Exemples de fonctionnalités
   + Files, Plots, Packages, Help, and Viewer Pane
   Layout of the Components
@@ -139,16 +137,6 @@ The Console pane is somewhat privileged: it is always visible, and it has a titl
 
 The user may change the default dimensions for each of the panes, as follows. There is an adjustable divider appearing in the middle of the interface between the left and right sides that allows the user to adjust the horizontal allocation of space. Furthermore, each side then has another divider to adjust the vertical space between its two panes. As well, the title bar of each pane has icons to shade a component, maximize a component vertically, or share the space (Verzani, 2011). **Also check Nierhoff et Hillebrand 2015**
 
-<!-- - Comment personnaliser / se familiariser avec RStudio -->
-<!--   + Changement de couleurs pour le fond -->
-<!--   + Section aide -->
-<!-- ======= -->
-RStudio a plusieurs avantages. L'utilisation de l'IDE est facile à apprendre pour les débutants. Les principaux éléments d'un IDE sont intégrés dans une disposition à quatre volets (Verzani, 2011). Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace pour l'environnement de travail et un quatrième volet où il est possible d'afficher des graphiques ou de la documentation sur différents packages. De plus, on y retrouve la possibilité de créer plusieurs espaces de travail -- appelés projets -- qui facilitent l'organisation de différents workflows.
-
-Un autre aspect de RStudio que de nombreux programmeurs apprécient est le fait qu'il peut être utilisé via un navigateur Web pour un accès à distance (Verzani, 2011). De plus, l'IDE offre de nombreux outils pratiques et faciles à utiliser pour gérer les packages, l'espace de travail et les fichiers. RStudio supporte plusieurs langages de programmation ainsi que différents langages de balisage^[À cet effet, voir le chapitre 6 du présent ouvrage.]. Finalement, de nouvelles fonctionnalités sont souvent ajoutées pour satisfaire aux besoins de la communauté scientifique et le logiciel est régulièrement mis à jour. 
-
-L'IDE comporte toutefois certains inconvénients. En effet, il n'est pas possible de configurer des raccourcis claviers personnalisés, une possibilité que plusieurs autres IDE offrent. De plus, les possibilités de disposition des différents panneaux sont très limitées et la malléabilité de l'espace de travail est restreinte. Finalement, pour certaines opérations, RStudio peut être plus lent que d'autres alternatives.
-
 
 ## Comment utiliser RStudio ?
 
@@ -157,13 +145,10 @@ La première étape pour commencer à utiliser RStudio est de l'installer^[À ce
 **Image de RStudio sans rien, settings de base**. 
 
 Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011). Dans le coin supérieur gauche se trouve le quadran principal. C'est dans celui-ci que l'utilisateur passera la plus grande partie de son temps. On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données. Dans le coin inférieur gauche se trouve la console et le terminal. Dans cette première, on peut interagir avec R de la même manière que dans le cadran principal, mais le code ne sera pas enregistré. Le terminal, pour sa part, est le point d'accès de communication entre un usager et son ordinateur. Bien que les différents systèmes d'exploitation viennent avec un terminal déjà intégré, il est aussi possible d'y accéder a partir de RStudio.
-<!-- >>>>>>> 0767363f696a8e4a9fac38bd0de1c9327b812608 -->
 
 **Image de RStudio qui montre les quatre cadrans. Idéalement avec un projet en cours et les différents cadrans utilisés. Settings personalisés?**. 
 
-<!-- <<<<<<< HEAD -->
-One can easily switch between components using the mouse. As well, the View menu has subitems for this task. For power users, the keyboard shortcuts listed in Table 1-2 are useful. (A full list of keyboard shortcuts is available through the Help > Keyboard Shortcuts menu item.)
-<!-- ======= -->
+
 On retrouve dans le coin supérieur droit l'espace de travail. Ce cadran contient trois éléments : l'*environnement global, l'historique et les connections*. L'*environnement global* est l'endroit où l'utilisateur peut voir les bases de données, les fonctions et les différents autres objets R qui sont actifs. Il peut cliquer sur les divers éléments actifs pour les consulter. L'onglet *historique* permet à l'utilisateur de consulter les derniers morceaux de code R qu'il a roulé ainsi que les dernières commandes écrites dans la console. L'onglet *connections*, pour sa part, permet de connecter son IDE à une variété de sources de données et d'explorer les objets et les données qui la compose. Il est conçu pour fonctionner avec une variété d'autres outils pour travailler avec des bases de données en R dans RStudio. 
 
 Le cadran dans le coin inférieur droit, pour sa part, contient plusieurs outils très utiles pour les usagers de RStudio. L'onglet *Files* permet à l'utilisateur de naviguer dans les fichiers que contient son ordinateur sans avoir à sortir de RStudio. L'onglet *Plots* permet de visualiser les graphiques générer à partir de R, que ce soit en utilisant *ggplot2, lattice ou base R*^[Pour en apprendre davantage sur la visualisation graphique en R, consulter le chapitre 7 du présent ouvrage.]. L'ongliet *Packages* permet de consulter les packages installés précédemment par l'utilisteur en plus de pouvoir en consulter la documentation. C'est aussi un des différents endroits à partir d'où il est possible d'installer des packages avec RStudio. L'onglet *Help* permet à l'utilisateur de chercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages. Pour sa part, l'onglet *Viewer* permet la visualisation de contenu web local.
@@ -177,4 +162,3 @@ One can easily switch between components using the mouse. As well, the View menu
 <!-- - Comment personnaliser / se familiariser avec RStudio -->
 <!--   + Changement de couleurs pour le fond -->
 <!--   + Section aide -->
-<!-- >>>>>>> 0767363f696a8e4a9fac38bd0de1c9327b812608 -->
