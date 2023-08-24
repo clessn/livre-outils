@@ -20,7 +20,7 @@ L'outil permet de lancer une requête de recherche par mots-clés et par date qu
 
 ##### Figure 1. Interface de recherche de Factiva
 
-![](images/Capture%20d’écran,%20le%202023-08-18%20à%2014.30.58.png)
+![](_SharedFolder_livre-outils/Graphiques/Chapitre3/screen_factiva.png)
 
 Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour de l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles aux chercheurs.euses, ils deviennent facilement exploitables pour faire de l'analyse de contenu par thèmes ou par ton.
 
@@ -28,7 +28,7 @@ Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dan
 
 ##### Figure 2. Interface de recherche d'Eureka
 
-![](images/Capture%20d’écran,%20le%202023-08-18%20à%2014.31.08.png)
+![](_SharedFolder_livre-outils/Graphiques/Chapitre3/screen_eureka.png)
 
 Il existe toutefois une panoplie d'outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licenses permettant d'exploiter la plateforme, plusieurs alternatives existent pour les personnes chercheuses. NexisUni, qui comprend entre autre l'outil LexisNexis Academic particulièrement prisé par le champ d'étude de communication aux États-Unis, représente une excellente alternative. C'est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d'articles médiatiques. Les personnes chercheuses peuvent choisir la plateforme qui leur conviennent le mieux, en prenant en compte notamment l'accès qui peut leur être fourni par l'institution universitaire les employant.
 
