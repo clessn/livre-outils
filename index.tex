@@ -214,7 +214,7 @@ numériques (CLESSN)}
 \begin{document}
 \frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, enhanced, breakable, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, frame hidden, interior hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, sharp corners, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -1872,15 +1872,15 @@ formater des sites web. Le langage XML, lui aussi très utilisé, permet
 de structurer de larges volumes de données. \LaTeX~permet pour sa part
 de formater du texte et de créer des documents en format PDF. Markdown
 permet également de créer des documents de format PDF, mais aussi HTML
-et DOCX. Depuis 2014, le \emph{package} \texttt{R} Markdown permet
-d'ajouter des extraits de code \texttt{R} à un fichier en langage
-Markdown. Depuis 2022, le système de publication Quarto permet
-d'intégrer des extraits de code \texttt{R}, Python ou \LaTeX~à un
-fichier en langage Markdown. \LaTeX, Quarto et Markdown permettent aussi
-d'intégrer les références bibliographiques du système de traitement de
-références BibTeX, créé en 1985, qui constitue également un langage de
-balisage. Le Chapter~\ref{sec-chap6} explique la manière de citer les
-références en utilisant BibTeX par le biais de Zotero et Better BibTeX.
+et DOCX. Depuis 2014, le \emph{package} \R Markdown permet d'ajouter des
+extraits de code \texttt{R} à un fichier en langage Markdown. Depuis
+2022, le système de publication Quarto permet d'intégrer des extraits de
+code \texttt{R}, Python ou \LaTeX~à un fichier en langage Markdown.
+\LaTeX, Quarto et Markdown permettent aussi d'intégrer les références
+bibliographiques du système de traitement de références BibTeX, créé en
+1985, qui constitue également un langage de balisage. Le
+Chapter~\ref{sec-chap6} explique la manière de citer les références en
+utilisant BibTeX par le biais de Zotero et Better BibTeX.
 
 Les balises constituent une manière de donner manuellement des commandes
 au logiciel que vous utilisez. Par exemple, si vous utilisez Microsoft
@@ -3254,7 +3254,7 @@ Salut
 
 \begin{center}
 
-Marc-Antoine Rancourt^[X], Flavie Lachance, Justine Béchard, William Poirier
+Marc-Antoine Rancourt, Flavie Lachance, Justine Béchard, William Poirier
 
 \end{center}
 
