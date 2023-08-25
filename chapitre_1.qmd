@@ -80,7 +80,7 @@ Dans les domaines scientifiques et technologiques, la définition courante donn�
 
 Par ailleurs, plusieurs chercheurs ont élargi cette définition de la composition des données massives en y incluant, par exemple, la variabilité et la valeur des points de données (CITE). Deuxièmement, la *fonction* des données massives comprend les innovations relatives à l'optimisation, à la prise de décision et à l'approfondissement des connaissances qui résultent de leur utilisation. Ces fonctions touchent des domaines sociaux disparates, incluant le souci d'efficacité et de rendement du secteur privé et public ainsi que la recherche scientifique pure (Gartner 2012).
 
-![](images/Capture d’écran, le 2023-08-11 à 13.15.13.png)
+![](images/Capture%20d’écran,%20le%202023-08-11%20à%2013.15.13.png)
 
 ## Les données massives et les sciences sociales
 
@@ -144,7 +144,7 @@ Les données massives peuvent aussi jouer d'autres rôles importants relatif à 
 
 Deuxièmement, la quantité importante de données rend possible l'observation d'effets précis, spécifiques et inédits par sous-groupes (Grimmer 2015 : 81). Alors qu'auparavant la taille réduite des échantillons ne permettait pas d'effectuer des inférences valides pour des sous-groupes de la population -- les écart-types par sous-groupes étaient trop grand, rendant difficile l'estimation précise d'un paramètre comme la moyenne et impossible celle d'un coefficient --, la taille énorme des échantillons permet aux chercheurs d'estimer des paramètres qui étaient demeurés extrêmement imprécis jusqu'à aujourd'hui. Notre compréhension des phénomènes sociaux s'en trouve par le fait même approfondi de façon considérable.
 
-![](images/Capture d’écran, le 2023-08-11 à 13.19.08.png)
+![](images/Capture%20d’écran,%20le%202023-08-11%20à%2013.19.08.png)
 
 ## Vers le futur : les données massives effectueront-elles un changement dans la posture épistémologique en sciences sociales?
 

@@ -3,9 +3,9 @@ project:
   output-dir: book
 
 book:
-  title: "Outils de recherche en sciences sociales numérique"
-  author: "CLESSN"
-  date: "8/05/2023"
+  title: "Outils de recherche en sciences sociales numériques"
+  author: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
+  date: today
   chapters:
     - index.qmd
     - chapitre_1.qmd
