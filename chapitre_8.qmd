@@ -1,4 +1,4 @@
-# Outils de recherche: la quête infinie de l'optimisation
+# Outils de recherche: la quête infinie de l'optimisation {#sec-chap8}
 
 Il est tout simplement impossible de se lancer dans l'accomplissement efficace des méthodes proposées dans cet ouvrage sans d'abord se définir une méthode de travail efficace. Peu importe que l'on travaille seul ou en équipe, des dossiers bien classés, une arborescence claire et un stockage sécuritaire sont gages de succès. Un environnement ordonné pour un travail ordonné.
 
