@@ -1,1 +1,131 @@
-# La gestion des références
+# La gestion des références {#sec-chap6}
+
+## [Pourquoi citer ?]{.underline}
+
+Référence à l'idée de la science selon KKV, contribuer à ce qui a déjà été fait.
+
+## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+
+Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
+
+1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites web et d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
+
+2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
+
+3.  Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
+
+4.  Collaboration : Certains outils permettent la collaboration en ligne, ce qui permet à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement permet une économie de temps par la centralisation des données sur un mpeme interface.
+
+5.  Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
+
+6.  Synchronisation et sauvegarde : Les références et les bibliographies peuvent être synchronisées sur plusieurs appareils, ce qui permet aux utilisateurs d'accéder à leurs références où qu'ils soient. Les sauvegardes régulières assurent que les données ne sont pas perdues en cas de problème technique.
+
+7.  Suivi de lecture : Certains outils permettent aux utilisateurs de suivre les articles et les documents qu'ils ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
+
+8.  Importation et exportation : Les outils de référence bibliographique permettent souvent d'importer et d'exporter des références dans différents formats, ce qui facilite le transfert de données entre différentes plates-formes.
+
+En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de citation correcte et de création de bibliographies cohérentes, ce qui permet aux chercheurs et aux chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage.
+
+Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités).
+
+[Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
+
+**BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
+
+Insérer des références provenant d'une ou plusieurs bases bibliographiques ;
+
+Citer des références dans le corps du texte; Créer une bibliographie ou une liste de références dans les documents selon différents styles de citation.
+
+Saisir manuellement ou importer automatiquement des références provenant de bases de données telles que Compendex, Web of Science, Google Scholar, etc. ;
+
+Importer à partir d'autres logiciels de gestion bibliographique comme : EndNote et Zotero.
+
+**EndNote Online** : EndNote est une application gratuite et libre permettant de générer des bases de données personnelles de références bibliographiques. Ces références doivent être saisies manuellement et peuvent provenir de bases de données ou de catalogues de bibliothèques.
+
+Centraliser les références sélectionnées
+
+Citer les références/documents afin de créer des bibliographies inspirées de styles reconnus, tels que APA, MLA, Chicago, etc.
+
+Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
+
+Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l'interface soit seulement dispo en anglais, elle s'adapte aux besoins de l'utilisateur ainsi qu'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu'il possible de franciser et de modifier manuellement l'interface ainsi que les champs.
+
+**Mendeley** : logiciel de gestion de références et de gestion de documents développé par une société spécialisée dans les informations scientifiques et médicales. En parallèle avec les autres logiciels de gestion de référence présentés précédemment, Mendeley permet d'organiser, de stocker, d'annoter et de partager des articles de recherche ainsi que d'autres types de documents.
+
+-   Gestion de références : permets d'importer, d'organiser et de stocker des références bibliographiques provenant de différentes bases de données académiques.
+
+-   Permets d'organiser les références en créant des dossiers et des collections en fonction des différents projets de recherche.
+
+-   Annoter et surligner des documents PDF, notamment en ajoutant des commentaires, des notes et des surlignages directement sur l'interface de Mendeley.
+
+-   Gestion de documents (autres que les références). Outre les références, Mendeley permet de stocker et d'organiser des PDF. Cela facilite l'accès aux documents lors d'une recherche en cours.
+
+-   Permets de générer des bibliographies et des citations dans différents styles de format bibliographique.
+
+-   Les utilisateurs de Mendeley peuvent partager des références, des documents ainsi que des dossiers entre eux. Comme mentionné précédemment, cela facilite la collaboration sur des projets de recherche.
+
+-   Enfin, Mendeley offre la possibilité de synchroniser les références, les annotations ainsi que les documents sur plusieurs appareils. Ainsi, cela permet un accès facile et cohérent.
+
+**Carrefour de gestion bibliographique** (site Web du Réseau de l'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
+
+Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant l'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l'utilisateur.
+
+[Mini conclu]{.underline}
+
+Bien que chaque logiciel à ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les dossiers.
+
+Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigences de l'utilisateur, celui-ci doit se demander notamment s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, l'utilisateur devrait se munir du même logiciel que ses collègues. Enfin, il est important d'utiliser le logiciel que l'utilisateur préfère, comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent tous des interfaces différentes.
+
+[Transition avec Laurence]{.underline}
+
+**Zotero** (aborder à la fin de cette section du chapitre). Malgré qu'il existe une multitude d'outils, Zotero est le logiciel de gestion bibliographique que nous privilégions au CAPP. Nous expliquerons ces avantages/inconvénients ainsi que son utilisation dans la prochaine section de ce chapitre.
+
+## Installation et configuration de Zotero
+
+Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
+
+### Zotero
+
+-   Installer [Zotero](https://www.zotero.org/download/)
+
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
+
+-   Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+
+-   Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
+
+#### Better Bibtex
+
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+-   Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero \> Settings \> Onglet Better Bibtex\>Open Better Bibtex preferences...
+
+-   Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries.
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
+
+-   Drag & drop à partir de votre librairie personelle
+-   Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
+
+#### Autres raisons d'utiliser Zotero
+
+-   Centralisation des pdf
+-   Autre
