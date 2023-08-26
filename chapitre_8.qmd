@@ -220,7 +220,7 @@ Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre proj
 
 Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.
 
-![](images/Capture%20d’écran,%20le%202023-08-21%20à%2011.00.10.png)
+![image2](images/chapitre8_1.png))
 
 GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Elle élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
 
@@ -254,7 +254,7 @@ Dropbox est connu pour sa simplicité d'utilisation et sa convivialité. Il peut
 
 Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier *.gitignore*.
 
-![](images/Capture%20d’écran,%20le%202023-08-21%20à%2011.02.48.png)
+![image1](images/chapitre8_2.png)
 
 Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des états précédents si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
 
