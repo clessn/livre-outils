@@ -19,37 +19,47 @@ Question: Où et quand s'arrêter?
 
 ## Logiciel de gestion de communication (Slack)
 
--   Revue non exhaustive des outils disponibles et aperçu historique;
-    -   Slack
+Dans tout bon projet de recherche, la communication est primordiale. Que ce soit pour décrire les avancements, discuter des étapes à venir, entretenir un partenariat avec des partenaires ou simplement structurer ses pensées, la plateforme par laquelle vous communiquez vous accompagne à chacune des étapes du travail. C'est pourquoi il est important de choisir un outil qui convient bien à vos projets et de prendre le temps de l'apprivoiser et optimiser son utilisation.
 
-    -   Teams (Microsoft)
--   Pourquoi utiliser une de ces plateformes
-    -   La collaboration en recherche est inévitable
+Il y a tellement de plateformes différentes pour communiquer qu'il faut être prudent par rapport au nombre utilisé. Si vous ne faites pas un choix, vous pouvez, sans vous en rendre compte, mêler Teams, courriels, Zoom et autres. Rapidement, vous perdez le contrôle de ce qui est dit. Nous vous proposons d'opter pour un logiciel de gestion de communication. Il existe plusieurs logiciels du genre, tels que Microsoft Teams, Slack, Google Workspace et Workplace. Toutes ces options peuvent vous permettre de collaborer efficacement en équipe. Dans le cadre de nos travaux, nous utilisons Slack. C'est donc principalement de cet outil que nous parlerons dans cette section, mais n'hésitez pas à vérifier quelle plateforme correspond le mieux à vos besoins.
 
-    -   Même si le ou la professeur.e avec qui vous travaillez ne l'utilise pas, il est certain que plusieurs chercheurs de votre département l'utilise.
+### Pourquoi utiliser une de ces plateformes
 
-    -   Les courriels sont dépassés et inefficaces dans un contexte de travail collaboratif.
+Peu importe votre niveau d'implication, la collaboration et la communication sont inévitables en recherche. La science n'est pas une discipline qui se développe seul, elle nécessite des échanges et des débats. Les équipes de recherche sont souvent dispersés géographiquement. Même si vous travaillez actuellement seul avec votre directeur, il est certain que plusieurs équipes de recherche dans votre département utilisent un tel logiciel. Un courriel peut faire pour une discussion ponctuelle qui se règle rapidement. Cependant, dans une équipe de travail dynamique, où plusieurs membres participent à divers projets, les courriels deviennent rapidement chaotiques, il est difficile de retracer ce qui a été dit et de conserver les pièces jointes. Les discussions deviennent rapidement trop complexes pour le médium utilisé.
 
-    -   La présence de teamspaces et de chaînes permet de structurer les conversations d'équipe à l'image de vos projets.
+Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante : une structure simple et adaptée. Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence au même endroit que vos conversations écrites. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connection des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, ça permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
 
-    -   On garde et retrace plus facilement les conversations relatives à des projets précis.
+### Comment utiliser votre logiciel efficacement
 
-    -   La plateforme permet de regrouper au même endroit les conversations écrites et vidéos.
--   Pourquoi choisir Slack
-    -   Avantages
-    -   Inconvénients
-    -   Comment l'utiliser efficacement (en parallèle à Notion?)
-        -   Penser à la structuration des chaînes.
+Une fois que vous êtes convaincu d'aller de l'avant avec un de ces outils, vous devrez apprendre à bien vous en servir. Voici quelques trucs qui pourront vous aider à optimiser son utilisation. Les points ci-dessous font référence à Slack, mais peuvent très bien être adaptés à d'autres plateformes.
 
-        -   Faire régulièrement le ménage des chaînes (archivage au besoin).
+a.  Structuration
 
-        -   Privilégier les conversations dans les chaînes plutôt que dans les conversations privées (à l'exception de certains cas)
+Il est important de bien réfléchir à la structuration de vos chaînes. Si vous ne faites pas ce travail, les chaînes vont se multiplier rapidement et les conversations vont s'entrecroiser, vous perdrez le fil. L'objectif de ces outils étant d'évitez ces problèmes, vous ne voulez pas perdre l'avantage comparatif que vous venez tout juste de gagner face aux courriels! La structuration des chaînes devrait être similaire à celle de votre équipe de recherche. Si vous utilisez Notion ou un autre logiciel du genre, la structure des deux outils devrait être la même. Nous vous proposons d'avoir une chaîne pour chacun des projets. Si le projet est trop gros et que la conversation devient chaotique, pensez à créer une sous-chaîne (un sous-projet) qui vous permettra d'aborder un sujet précis, sans mêler les discussion. Pour faciliter la structuration des chaînes, vous pouvez utiliser des préfixes, pour classer les chaînes par thème, ou autre typologie qui vous convient. Également, utilisez les Espaces d'équipe. Chaque équipe devrait avoir son propre espace, avec ses propres chaînes. Vous pouvez faire partie de plusieurs équipes et naviger à travers les espaces. Si plusieurs équipes partagent un même espace de travail, vous pourriez perdre le contrôle de sa structure.
 
-        -   Utiliser les sections pour tirer ses chaines.
+b.  Maintenance
 
-        -   Épingler des messages et des documents.
+Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n'est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d'équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, vous pourrez toujours les désarchivez quand ce sera nécessaire. Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Mais faites le tour de ce qui est épinglé à l'occasion pour vérifier si c'est encore pertinent. Cela peut paraître énergivore, mais l'efficacité de votre travail d'équipe va en bénificier. Également, rappelez aux membres de votre équipe d'utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes. Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d'équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l'usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux, retournez à la planche à dessin! Assurez-vous que toute l'équipe comprenne bien comment utiliser Slack. Si ce n'est pas le cas, formez-les. Une structure adaptée et une équipe bien formée peut faire des miracles.
 
-        -   
+c.  Collaboration
+
+La grande majorité des conversations devraient se faire dans les chaînes. Les conversations privées ont leur utilité, vous vous en servirez. Il est parfois nécessaire d'avoir des discussions plus confidentielles et de parler rapidement à quelqu'un sur un sujet éphémère. Toutefois, par soucis de transparence et d'inclusion, toute discussion à propos d'un projet devrait se faire dans sa chaîne. Si vous jugez qu'un membre d'une chaîne ne devrait pas lire ce que vous avez à dire sur le projet, c'est qu'il ne devrait pas faire partie de la chaîne. Par rapport aux membres, trouvez le bon équilibre par rapport à qui devrait être dans quelle chaîne. L'objectif n'est pas d'exclure et de cacher du contenu, vous voulez une équipe transparente. Vous voulez que vos membres restent bien informés de l'avancement des projets sans les submerger d'information qui ne leur est pas utile. C'est à vous de trouver la formule gagnante. Inviter vos partenaires externes dans votre espace d'équipe. Créez des chaînes spécifiques aux partenaires pour que les conversations externes soient tout aussi organisées. N'invitez pas vos partenaires dans vos chaînes privées, question de confidentialité. Si un partenaire n'a pas l'habitude d'utiliser Slack (ou l'outil que vous utilisez), proposez-lui de vous y joindre quand même. Moins vous utilisez les outils des autres, plus vous gardez centralisé vos communications et évitez de jongler avec plusieurs plateformes.
+
+d.  Optimisation personnelle
+
+Une fois que la structure d'équipe est définie et que vos membres et vos partenaires sont à l'aise avec l'utilisation de la plateforme, il est temps d'organiser la structure de votre Slack personnel. Créez des sections pour trier les chaînes. La structure d'équipe est essentielle, mais une fois qu'elle est déterminée, chaque membre n'utilise pas forcément les chaînes de la même façon. Vous pouvez vous créer une section de favoris, ou encore différentes sections par rapport aux différents thèmes pour y faciliter la navigation. Également, ajustez vos paramètre de notifications. C'est à vous de déterminer quelle chaînes méritent de produire des alertes, et à quels moments vous souhaitez les recevoir. Slack a plusieurs applications intégrées qui facilitent la compatibilité avec vos autres outils. Vous pouvez connecter votre calendrier, votre Notion et votre github pour recevoir des alertes pertinentes. Allez explorer ces applications pour déterminer lesquelles vous conviennent.
+
+### Pourquoi Slack
+
+Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos besoins. Puisque nous utilisons Slack, voici quelques raisons qui pourraient vous convaincre d'opter pour cette option ou vous en éloigner. Sachez que cette liste n'est pas du tout exhaustive, mais reflète simplement quelques unes de nos observations par rapport à notre outil de travail.
+
+-   Avantages
+
+    L'utilisation de Slack est très intuitive. Nous l'utilisons régulièrement dans des cours, et les étudiants apprènent rapidement à l'utiliser. Également, la distinction entre les chaînes publiques (accessibles à tous les membres d'un espace d'équipe) et les chaînes privées est claire et simple d'utilisation. Slack offre aussi une fonction de recherche, qui vous permet de retrouver des messages à travers les chaînes. Comme il a été mentionné dans la section précédente, l'intégration d'applications avec d'autres outils est fort appréciée. Enfin, Slack est utilisé partout dans le monde par des équipes de toutes les tailles et tous les domaines. C'est un outil très présent en recherche académique qui facilite la collaboration et la multidisciplinarité. Les chances sont élevées que vos partenaires utilisent déjà l'outil, ou au minimum en ait déjà entendu parlé.
+
+-   Inconvénients
+
+    Si vous avez l'habitude d'utiliser les outils d'une suite, comme celles de Microsoft ou de Google, il est possible que vous trouviez l'intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. Elle implique notamment un limite de temps par rapport à l'archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d'outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.
 
 ## Logiciel de gestion de projet
 
