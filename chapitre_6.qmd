@@ -26,9 +26,7 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 
 En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux personnes chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage.
 
-COMMENT CHOISIR SON LOGICIEL : Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités).
-
-[Grands avantages]{.underline} (qui sont communs à tous les logiciels de gestion biblio)
+COMMENT CHOISIR SON LOGICIEL : Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités)
 
 **BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
 
