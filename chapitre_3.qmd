@@ -8,7 +8,72 @@ Le champ d'étude de la science politique repose largement sur l'étude de trois
 
 Chacun de ces champs de recherches se voit confronté à une panoplie de défis théoriques et techniques en lien avec l'émergence des données massives. La révolution technologique permet une étude plus approfondie des phénomènes auxquels sont confrontés les différents acteurs de la société démocratique. Toutefois, la collecte de données permettant de mener à termes de telles études peut s'avérer complexe. Pour chaque pilier de la démocratie, les sections suivantes énumèrent et expliquent les capacités techniques d'outils permettant aux personnes chercheuses d'accéder à des données massives. Bien que d'autres outils existent et offrent des résultats satisfaisants, les méthodes suivantes sont particulièrement pertinentes dans une optique d'étude des sciences sociales numériques.
 
-## Les outils de collecte de données de sondages
+## Plateformes de sondages et collecte de données
+
+Malgré des différences méthodologiques, toute recherche doit analyser et interpréter des données fiables et de bonne qualité afin d\'émettre des résultats (Nayak & K. A., 2019). Notamment, lorsqu\'il est question d\'étudier les citoyens et l\'opinion publique, il est nécessaire d\'accumuler suffisamment de données auprès d\'un échantillon assez grand afin d\'inférer des conclusions sur la population.
+
+\
+Une des méthodes couramment utilisées est le sondage, également appelé panel, enquête, questionnaire, etc. Ils peuvent être manuels ou électroniques, et dans le second cas, peuvent être administrés par ordinateur, par courriel ou via le web (Nayak & K. A., 2019). La différence majeure entre les méthodes manuelles et les méthodes numériques réside dans le fait que les premières impliquent un contact direct entre le chercheur et le répondant, tandis que le contact dans le cas des secondes est indirect (Evans & Mathur, 2018). L'arrivée de données massives et des outils numériques offre une panoplie de nouvelles opportunités de collecte de données pour la communauté scientifique. Lorsque qu\'exécutée manuellement, la collecte de données et la réalisation de sondages peuvent devenir des tâches lourdement fastidieuses, et de facto, demander énormément de ressources pour mener une recherche à grande échelle. C\'est pourquoi les technologies du numérique peuvent faciliter cet aspect de la recherche en fournissant des plateformes de sondages et de collecte de données. De plus, les sondages représentaient en 2016 environ 20% du chiffre d\'affaires de l\'industrie globale du marketing (Evans & Mathur, 2018), ce qui rend pertinent l\'acquisition des compétences nécessaires à la formation de sondages, tant dans le monde académique que professionnel. Le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d\'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s\'il avait été conduit manuellement (Nayak & K. A., 2019). Les sondages en ligne ont également une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions, et permettent d\'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas.
+
+###  Les principales plateformes web.
+
+\
+Il existe un large éventail de plateformes de sondages et de collecte de données qui peuvent être utiles dans un contexte académique. Cet ouvrage se limite à cinq d\'entre elles : Qualtrics, REDCap, SurveyMonkey, Google Forms et Typeform. Cependant, il n\'est pas déconseillé de se renseigner sur les autres plateformes disponibles en fonction de ses besoins et de ses ressources. En voici une liste non-exhaustive d\'autres plateformes de collecte de données en ligne : LimeSurvey, Zoho Survey, Qualaroo, Formstack, Wufoo, Checkbox Survey, SmartSurvey, QuickTapSurvey, SoGoSurvey, Snap Surveys, AskNicely, Opinio, Alchemer, Cognito Forms, Feedbackify.
+
+####  Qualtrics (https://www.qualtrics.com/)
+
+\
+Cette plateforme est une des plus reconnues et utilisées à l\'international, tant dans le milieu académique que dans le secteur privé. En plus d\'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l\'expérience client. Il est donc pertinent de se familiariser avec cet outil car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l\'administration des sondages. Par exemple, Qualtrics s\'adapte à différents formats en fonction de l\'appareil du répondant (Evans & Mathur, 2018).
+
+####  REDCap (https://www.project-redcap.org/)
+
+\
+Research Electronic Data Capture (REDCap) permet de construire, de gérer des sondages ainsi que des bases de données. Pour accéder aux services de cette application, il est nécessaire d\'être un partenaire du REDCap Consortium ou membre d\'une organisation qui en fait partie. Seules les organisations à but non lucratif peuvent adhérer au Consortium. Les données et les sondages qui y sont produits peuvent être partagés et utilisés par différents chercheurs issus de diverses institutions. L\'exportation vers différents types de fichiers (Excel, PDF, SPSS, SAS, Stata, R) est possible. Ce qui distingue REDCap des autres applications est sa compatibilité avec les dossiers médicaux, sa sécurité pour les données sensibles, ainsi que son approche académique à la collecte de données par sondage.
+
+####  SurveyMonkey (https://www.surveymonkey.com/)
+
+\
+SurveyMonkey se distingue des autres applications en permettant de construire et gérer des sondages/formulaires à l\'aide d\'une interface conviviale sans toutefois perdre de ses fonctionnalités. En plus d\'avoir recours aux nouvelles technologies de l\'I.A. pour aider à construire des sondages adaptés à vos besoins, cette application propose plusieurs centaines de modèles personnalisables élaborés par des experts dans le domaine. SurveyMonkey permet également l\'analyse des données et la création de rapports directement sur l\'application, en plus de permettre l\'exportation vers d\'autres types de programmes. Ses forfaits s\'étendent du gratuit (avec des fonctionnalités limitées) aux options payantes pour les individus et les organisations.
+
+####  Google Forms (https://docs.google.com/)
+
+\
+Cette application se distingue par sa simplicité et son accessibilité, en grande partie grâce à l\'omniprésence de google tant dans le monde académique que dans la vie courante. Google Forms est inclus dans le forfait de base du Google Workspace, ce qui le rend largement compatible avec les autres applications de Google, en plus d\'être disponible gratuitement. Bien que ses fonctionnalités soient moins avancées que celles de ses compétiteurs, Google Forms peut convenir pour des sondages plus simples et rapides grâce à son interface conviviale, sa fonction d\'analyse de données directement sur la plateforme, ainsi qu\'à ses modèles préfabriqués.
+
+TypeForm (https://www.typeform.com/) Si votre objectif est de produire des formulaires avec une esthétique attrayante, moderne et interactive, TypeForm est la plateforme idéale. Elle permet de se concentrer sur l\'expérience de l\'utilisateur et de l\'impliquer dans le sondage grâce à son aspect visuel. Cette plateforme dispose d\'une option gratuite, ainsi que plusieurs forfaits payants. Typeform est également compatible avec plusieurs applications de gestion du flux de travail (Zapier, Google Sheets, Slack, etc).
+
+###  Les limites des sondages en ligne
+
+\
+Néanmoins, les sondages en ligne comportent des défis, notamment en ce qui concerne l\'échantillonnage, les taux de réponses et les caractéristiques des non-répondants. Il est également nécessaire de se méfier des enjeux éthiques et de confidentialité (Nayak & K. A., 2019). Comme la généralisation essentielle pour conférer une valeur scientifique à ses résultats de recherche, les sondages en ligne ont leurs limites. En effet, il est crucial de connaitre la population cible pour effectuer des inférences fiables, et l\'échantillonnage doit reposer sur des caractéristiques précises. Même si des informations démographiques peuvent être collectés et des quotas utilisés, il n\'est toutefois pas réellement possible de confirmer les informations sur le répondant (Andrade, 2020). Les sondages traditionnels où l\'on retrouve un contact direct sont plus susceptibles de permettre de brosser un portrait plus complet du répondant (Evans & Mathur, 2018). Les répondants avec des biais peuvent également plus facilement répondre aux sondages en ligne et limiter la généralisation (Andrade, 2020). Les sondages en ligne sont également souvent perçus comme des pourriels, ont généralement de faibles taux de réponses, sont impersonnels et peuvent avoir des instructions peu claires. Ils ont également leurs lots d\'enjeux de confidentialité (Evans & Mathur, 2018).
+
+\
+Conseils méthodologiques à la réalisation d\'un sondage numérique\
+(Evans & Mathur, 2018)\
+L\'article de Evans et Mathur (2018) est une revue de littérature observant l\'évolution des sondages numériques depuis la parution de leur dernier article sur le sujet en 2005. Dans cet article, les auteurs offrent des conseils méthodologiques en fonction de leur analyse de contenu de la littérature scientifique. Les conseils d\'Evans et Mathur (2018) sont résumés ci-dessous. Afin d\'obtenir plus de détails, n\'hésitez pas à approfondir votre lecture de leur article. De plus, bien qu\'il s\'agisse d\'un article crédible et largement documenté, il est toujours pertinent de consulter des sources spécifiques à vos besoins.
+
+\
+1.Définir le but du sondage avant la méthodologie. Lorsque possible, inclure des hypothèses testables et des méthodes basées sur des fondations théoriques.\
+2.Choisir le type de sondage.\
+3.Décider des méthodes d\'échantillonnage, des quotas et des échéances.\
+4.Déterminer le responsable de la construction du sondage.\
+5.Soyez transparent en divulguant le but du sondage, la façon dont les données seront utilisées et l\'auteur du sondage.\
+6.Les questions et les catégories de réponses doivent être élaborées de manière objective et dans une perspective de convivialité.\
+7.Les sondages doivent être assez légers pour favoriser un taux de réponse positif, mais assez complet pour avoir l\'information nécessaire.\
+8.Ils doivent également être attrayant afin de favoriser leur complétion par le répondant\
+9.S\'assurer de l\'anonymat du répondant.\
+10.Il faut régulièrement procéder à des tests afin de corriger les faiblesses du questionnaire.\
+11.Déterminer qui administre le sondage, qui collecte l\'information, et qui analyse les données.\
+12.Établir un échéancier pour les différentes étapes de l\'étude.\
+13.Suite à la collecte de données, entreposer les données brutes dans un fichier électronique. \
+14.Utiliser les méthodes appropriées (qualitatif ou quantitatif), et analyserles données selon les buts de l\'étude\
+15.Dans le cas d\'une recherche académique, il est important d\'avoir avoir une section dédiée aux limites de l\'étude.
+
+16.Conserver l\'anonymat des répondants au sein de l\'analyse et de la publication.\
+17.Agir sur les résultats. Rien ne sert de conduire un sondage qui n\'aide pas à la croissance du savoir ou n\'apporte pas de changement stratégique ou organisationnel.\
+18.Toujours se plier à un code d\'éthique rigide
+
+Il s\'agit donc ici d\'un court résumé des plateformes de sondages et de la collecte de données en ligne, tentant de couvrir l\'essentiel de cet outil afin de vous aider lors de votre parcours académique, ou simplement comme aide-mémoire pour la réalisation d\'un sondage. Les outils énumérés précédemment permettent une étude approfondie de phénomènes concernant les citoyens. Bien sûr, il n\'est pas possible de couvrir l\'entièreté de cet outil très complexe et ayant évolué dans le temps, cette section ne sert donc que de point de départ si vous vous intéressez à l\'élaboration d\'un sondage numérique, ou si vous avez besoin de récolter des données. Il vous est donc recommandé de vous renseigner davantage avec d\'autres ressources afin de compléter ce qui est indiqué dans cet ouvrage.
 
 ## **Factiva : outils de récolte de données médiatiques**
 
@@ -64,6 +129,8 @@ Bibliographie:
 
 Schroeder, R. (2014). Big data and the brave new world of social media research. *Big Data & Society*, *1*(2), 2053951714563194.
 
+Chadwick, A. (2017). The hybrid media system: Politics and power. Oxford University Press.
+
 Connelly, R., Playford, C. J., Gayle, V., & Dibben, C. (2016). The role of administrative data in the big data revolution in social science research. *Social science research*, *59*, 1-12.
 
 Manovich, L. (2011). Trending: The promises and the challenges of big social data. *Debates in the digital humanities*, *2*(1), 460-475.
@@ -71,3 +138,11 @@ Manovich, L. (2011). Trending: The promises and the challenges of big social dat
 Burrows, R., & Savage, M. (2014). After the crisis? Big Data and the methodological challenges of empirical sociology. *Big data & society*, *1*(1), 2053951714540280.
 
 Kramer, A. D., Guillory, J. E., & Hancock, J. T. (2014). Experimental evidence of massive-scale emotional contagion through social networks. *Proceedings of the National academy of Sciences of the United States of America*, *111*(24), 8788.
+
+Andrade, C. (2020). The Limitations of Online Surveys. Indian Journal of Psychological Medicine, 42(6), 575-576. https://doi.org/10.1177/0253717620957496
+
+\
+Evans, J. R., & Mathur, A. (2018). The value of online surveys: A look back and a look ahead. Internet Research, 28(4), 854-887. https://doi.org/10.1108/IntR-03-2018-0089
+
+\
+Nayak, M., & K A, N. (2019). Strengths and Weakness of Online Surveys. 24, 31-38. https://doi.org/10.9790/0837-2405053138
