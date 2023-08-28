@@ -2,7 +2,7 @@
 
 ## [Pourquoi citer ?]{.underline}
 
-Référence à l'idée de la science selon KKV, contribuer à ce qui a déjà été fait.
+Citer ses sources est une pratique incontournable dans le domaine académique. Cette pratique est primordiale et a plusieurs utilités. D'abord, cela permet de s'inscrire dans une littérature existante. Chaque personne chercheuse construit sur ce qui a déjà été fait par d'autres collègues académiques, s'inspirant des recherches précédentes et dialoguant les unes avec les autres. Le référencement aux autres articles offre la possibilité d'aller y chercher des informations utiles à notre propre recherche. En outre, la science doit être publique afin de vérifier la fiabilité des méthodes employées et des résultats obtenus. Une erreur dans la méthodologie ou dans l'analyse des résultats d'une étude peut être corrigée par d'éventuelles contributions scientifiques s'il est possible de s'y référer. Finalement, citer ses sources est une preuve de transparence, d'éthique et donne de la crédibilité à notre contribution. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant l'apport d'autres personnes chercheuses à sa propre contribution scientifique.
 
 ## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
@@ -25,7 +25,6 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 8.  Importation et exportation : Les outils de référence bibliographique permettent souvent d'importer et d'exporter des références dans différents formats, ce qui facilite le transfert de données entre différentes plates-formes.
 
 En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux personnes chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage.
-
 
 ## [Mini conclu]{.underline}
 
