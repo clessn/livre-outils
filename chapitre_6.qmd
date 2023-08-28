@@ -55,11 +55,19 @@ Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibli
 
 -   Enfin, Mendeley offre la possibilité de synchroniser les références, les annotations ainsi que les documents sur plusieurs appareils. Ainsi, cela permet un accès facile et cohérent.
 
+<<<<<<< HEAD
 [Mini conclu]{.underline}
+=======
+**Carrefour de gestion bibliographique** (site Web du Réseau de l'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
 
-Bien que chaque logiciel à ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les dossiers.
+Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant l'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l'utilisateur.
 
-Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigences de l'utilisateur, celui-ci doit se demander notamment s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, l'utilisateur devrait se munir du même logiciel que ses collègues. Enfin, il est important d'utiliser le logiciel que l'utilisateur préfère, comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent tous des interfaces différentes.
+## [Mini conclu]{.underline}
+>>>>>>> 3fcacaa (Changements)
+
+Bien que chaque logiciel ait ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références.
+
+Afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigences de la personne utilisatrice, celle-ci doit se demander s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, la personne utilisatrice devrait se munir du même logiciel que ses collègues. Enfin, il est important d'utiliser le logiciel que la personne utilisatrice préfère. Comme mentionné précédemment, Zotero et EndNote se ressemblent, mais ils comportent des interfaces différentes.
 
 [Transition avec Laurence]{.underline}
 
