@@ -4,11 +4,11 @@
 
 Référence à l'idée de la science selon KKV, contribuer à ce qui a déjà été fait.
 
-## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
 Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
-1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites web ou d'autres types de sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
+1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
 
 2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
 
@@ -26,18 +26,27 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 
 En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux personnes chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage.
 
-## [Comment choisir son logiciel ?] {.underline} 
-Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités)
+COMMENT CHOISIR SON LOGICIEL : Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibliographique (puisqu'il existe de nombreuses possibilités)
+
+**BibTeX** (logiciel auxiliaire de LaTeX) qui permet de : Gérer et traiter des citations et des bases de données bibliographiques personnelles :
+
+Insérer des références provenant d'une ou plusieurs bases bibliographiques ;
+
+Citer des références dans le corps du texte; Créer une bibliographie ou une liste de références dans les documents selon différents styles de citation.
+
+Saisir manuellement ou importer automatiquement des références provenant de bases de données telles que Compendex, Web of Science, Google Scholar, etc. ;
+
+Importer à partir d'autres logiciels de gestion bibliographique comme : EndNote et Zotero.
 
 **EndNote Online** : EndNote est une application permettant de générer des bases de données personnelles de références bibliographiques. Ces références doivent être saisies manuellement et peuvent provenir de bases de données ou de catalogues de bibliothèques.
 
--  Centraliser les références sélectionnées
+Centraliser les références sélectionnées
 
--  Citer les références/documents afin de créer des bibliographies inspirées de styles reconnus, tels que APA, MLA, Chicago, etc.
+Citer les références/documents afin de créer des bibliographies inspirées de styles reconnus, tels que APA, MLA, Chicago, etc.
 
--  Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
+Créer un groupe intelligent (Smart Group) afin de regrouper ses sources dans un groupe particulier. Cette fonction permet d'organiser les références de sa bibliothèque et de faciliter son travail de recherche.
 
--  Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l'interface soit seulement dispo en anglais, elle s'adapte aux besoins de l'utilisateur ainsi qu'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu'il possible de franciser et de modifier manuellement l'interface ainsi que les champs.
+Ce qui distingue EndNote des autres logiciels de traitement bibliographique : bien que l'interface soit seulement dispo en anglais, elle s'adapte aux besoins de l'utilisateur ainsi qu'aux exigences de ces travaux. Comme mentionné précédemment, avec ce logiciel, il est possible de choisir le style bibliographique. En revanche, ce qui la distingue réellement des autres logiciels est qu'il possible de franciser et de modifier manuellement l'interface ainsi que les champs.
 
 **Mendeley** : logiciel de gestion de références et de gestion de documents développé par une société spécialisée dans les informations scientifiques et médicales. En parallèle avec les autres logiciels de gestion de référence présentés précédemment, Mendeley permet d'organiser, de stocker, d'annoter et de partager des articles de recherche ainsi que d'autres types de documents.
 
@@ -55,15 +64,11 @@ Avant même de se pencher sur Zotero, bien choisir son logiciel de gestion bibli
 
 -   Enfin, Mendeley offre la possibilité de synchroniser les références, les annotations ainsi que les documents sur plusieurs appareils. Ainsi, cela permet un accès facile et cohérent.
 
-<<<<<<< HEAD
-[Mini conclu]{.underline}
-=======
 **Carrefour de gestion bibliographique** (site Web du Réseau de l'Université du Québec sur les logiciels de gestion biblio) ? Pertinent ?
 
 Afin de choisir le bon logiciel : page Web qui regroupe toutes les informations concernant l'utilisation des deux logiciels principaux de gestion de référence bibliographique : soit Zotero et EndNote. Il existe également un quiz afin de savoir quel logiciel répond le mieux aux exigences et aux besoins de l'utilisateur.
 
 ## [Mini conclu]{.underline}
->>>>>>> 3fcacaa (Changements)
 
 Bien que chaque logiciel ait ses spécificités, ils sont tous relativement similaires. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références.
 
