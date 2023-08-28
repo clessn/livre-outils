@@ -80,6 +80,13 @@ Ainsi, afin de choisir le logiciel qui répond aux besoins ainsi qu'aux exigence
 
 ## Installation et configuration de Zotero
 
+L'avantage de Zotero est qu'il est gratuit et libre d'accès. Son code est ouvert à tous et son Github compte plus de 13,000 commits. Il offre une grande gamme de fonctionalités ainsi que la possibilité d'y ajouter des extensions, complimentant ainsi son utilisation. Zotero est puissant mais reste facile à utiliser. Il est distribué sur plusieurs plateformes (Windows, Mac, Linux, iOS, Android), permettant ainsi la collaboration entre les membres d'une équipe de recherche utilisant une diversité de plateforme. Il est possible de synchroniser sa bibliothèque Zotero sur plusieurs appareils, soit en utilisant le service cloud payant de Zotero ou en installant son propre espace de stockage infonuagique. Zotero s'intègre parfaitement dans un projet de recherche utilisant LaTeX ou Quarto puisqu'il est possible de générer des fichiers .bib à partir des bibliothèques et les maintenir à jour automatiquement. Il s'intègre aussi aux logiciels de traitement de texte comme LibreOffice et Microsoft Office. Il est possible de générer des bibliographies et des citations dans plus de 9000 styles de citation différents et peut donc convenir à tous.
+
+Un des grand avantage de Zotero est la centralisation des sources bibliographique et de leurs fichiers. Il est possible d'ajouter des PDF à Zotero et de les synchroniser dans des groupes, tel celui de la CLESSN. Cela permet de partager des documents facilement avec les autres membres de l'équipe de recherche. Plus besoin de dossiers partagé ou d'envoyer des documents par courriel ou sur des plateformes de partage de fichiers. Tout est centralisé dans Zotero.
+
+Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies de comportant plusieurs miliers de fichier. 
+
+
 Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
 
 ### Zotero
