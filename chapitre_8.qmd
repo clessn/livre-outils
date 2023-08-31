@@ -6,17 +6,13 @@ Le monde de la recherche en sciences sociales numériques est en constante évol
 
 Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire et un stockage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
 
-Ce chapitre vous emmènera à la découverte d'une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons cinq types d'outils qui vous guideront dans cette quête d'optimisation :
+Ce chapitre vous emmènera à la découverte d'une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation :
 
-1.  **Outils de gestion humaine** : Les chercheurs ont non seulement besoin de techniques pour analyser les données, mais aussi pour gérer leur propre bien-être. Des stratégies pour gérer le stress et maintenir un équilibre sont essentielles. De plus, la gestion de projets collectifs bénéficie de méthodes agiles telles que Scrum pour maintenir une cohésion d'équipe solide.
+1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
 
-2.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
+2.  **Logiciels de gestion de versions décentralisé** : Enfin, nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
 
-3.  **Logiciels de gestion de projets** : La planification, la répartition des tâches et le suivi des projets sont cruciaux pour mener à bien vos recherches. Notion et autres logiciels similaires vous permettront de garder une vue d'ensemble de vos projets et de rester sur la bonne voie.
-
-4.  **Outils de stockage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et AWS offrent des espaces sécurisés pour stocker et partager vos données avec votre équipe.
-
-5.  **Logiciel de gestion de versions décentralisé** : Enfin, nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
+3.  **Outils de stockage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et AWS offrent des espaces sécurisés pour stocker et partager vos données avec votre équipe.
 
 Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
 
@@ -63,14 +59,6 @@ Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos b
 -   Inconvénients
 
     Si vous avez l'habitude d'utiliser les outils d'une suite, comme celles de Microsoft ou de Google, il est possible que vous trouviez l'intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. Elle implique notamment un limite de temps par rapport à l'archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d'outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.
-
-## Logiciel de gestion de projet
-
--   Revue non exhaustive des outils disponibles et aperçu historique;
--   Pourquoi choisir Notion
-    -   Avantages
-    -   Inconvénients
-    -   Comment l'utiliser efficacement
 
 ## Logiciel de gestion de versions décentralisé
 
@@ -242,7 +230,7 @@ Conclusion
 
 En utilisant Git et GitHub de manière stratégique, vous pouvez gérer efficacement votre projet de recherche en sciences sociales, collaborer avec vos collègues et rendre votre travail accessible tout en préservant la confidentialité des données sensibles. Ce processus contribue à un environnement de recherche collaboratif et structuré, essentiel pour mener à bien vos analyses sur l'impact des médias sur l'opinion publique.
 
-## Stockage des données
+## Outils de stockage des données
 
 Le stockage des données occupe une place cruciale dans la recherche en sciences sociales numériques. La manière dont vous stockez et gérez vos données peut avoir un impact significatif sur la sécurité, la confidentialité et la reproductibilité de votre travail. Dans cette section, nous allons aborder différents aspects du stockage de données, des outils disponibles et de l'importance d'une gestion efficace de vos fichiers.
 
