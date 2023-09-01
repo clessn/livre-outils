@@ -13,7 +13,21 @@
 			"**/*.bib",
 			"**/*.qmd",
 			"**/*.tex",
-			"**/*.md"
-		]
+			"**/*.md",
+			"**.md",
+			"**.qmd",
+			"**.Rmd",
+			"**.tex",
+			"**.bib"
+		],
+		"grammarly.config.documentDialect": "canadian",
+		"grammarly.config.documentDomain": "academic",
+		"grammarly.config.suggestions.ConjunctionAtStartOfSentence": true,
+		"grammarly.config.suggestions.InformalPronounsAcademic": false,
+		"grammarly.config.suggestions.OxfordComma": true,
+		"grammarly.config.suggestions.PassiveVoice": true,
+		"grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
+		"grammarly.config.suggestions.StylisticFragments": true,
+		"grammarly.config.suggestions.UnnecessaryEllipses": true
 	}
 }
