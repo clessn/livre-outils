@@ -1,16 +1,28 @@
 # Serpents et échelles
 
+```{=tex}
 \begin{center}
 
 Marc-Antoine Rancourt, Flavie Lachance, Justine Béchard, William Poirier
 
 \end{center}
-
+```
 ## Introduction
 
 Alors que les chapitres précédents se sont consacrés à la présentation théorique et pratique des sciences sociales numériques, le présent chapitre s'efforcera à aider le lecteur à faire sens de la grande quantité d'information que contient l'ouvrage et à commencer sa propre aventure numérique. Ce chapitre peut être vu comme le résultat de la rencontre entre un jeu éducatif et un guide d'apprentissage. À ce propos, le titre n'est pas anodin. Il est possible de visualiser l'apprentissage de nouveaux outils numériques à l'aide d'un jeu de serpents et échelles. Généarlement, la progression du protagoniste se fait en toute tranquilité. À certains moments, l'aventure est corsée par des pièges ou des difficultés propres à sa progression -- les serpents. Lorsque cela arrive, le protagoniste régresse ou cesse d'avancer. À d'autres moments, l'aventure est facilitée par des occasions positives particulières -- les échelles.
 
 En plus d'une représentation visuelle du tableau d'apprentissage de serpents et échelles qui permettra au lecteur de rendre l'acquisition de nouvelles connaissances plus agréable, ce chapitre offre des lectures, des exercices et des travaux pratiques pour les aventuriers numériques débutants, intermédiaires et avancés. Le corps du texte du présent chapitre est divisé en trois parties en lien avec les niveaux de connaissances des outils numériques -- débutant, intermédiaire et avancé -- et chacune d'entre elles comportent une première section concernant sur des lectures, une seconde portant sur des tutoriels à faire en ligne et une troisième sur des travaux pratiques à réaliser dans RStudio. De plus, chaque partie termine par un résumé des principaux « serpents » associés au niveau d'apprentissage qui lui est propre. Le chapitre se termine par une section qui aidera le lecteur à voler de ses propres ailes.
+
+### Datacamp
+
+Tout au long du parcours, des
+exercices Datacamp vous seront proposés. Datacamp est une plateforme d\'apprentissage en ligne proposant des exercices interactifs en ligne variés, axé principalement sur l\'analyse et les données.
+
+Utiliser Datacamp comporte de nombreux avantages. Premièrement, la plateforme est également facile à utiliser et permet un apprentissage ludique. La plateforme a également un forum où il est possible d\'interagir avec les autres utilisateurs et poser des questions. Un autre avantage de Datacamp est son accessibilité. En plus des cours accessibles gratuitement, Datacamp offre des réductions sur les abonnements pour les étudiants et les enseignants. Il est également possible pour les enseignants d\'obtenir gratuitement un compte Datacamp Entreprise à des fins d\'utilisation éducative.
+
+Toutefois, Datacamp comporte certains désavantages. En effet, la plateforme demeure un jeu et, mis à part le forum et les indices fournis dans les exercices, n\'apporte pas beaucoup de soutien. Comme nous le verrons plus tard, il est important de mettre en pratique ses connaissances afin de consolider ses acquis.
+
+Malgré tout, il s\'agit d\'une manière tout autant enrichissante que divertissante pour se familiariser avec le langage R.
 
 ## Débutant
 
@@ -32,12 +44,13 @@ Le dernier serpent pour débutants est le suivant : **ne pas construire des base
 
 ### Visualisation graphique en R
 
-
 ### Serpents :
 
 À la suite des différents exercices et lectures complètés dans le cadre de cette familiarisation aux sciences sociales numériques, le lecteur doit s'assurer d'éviter certains pièges qui se dressent sur le chemin des chercheurs de niveau intermédiaire. Le premier d'entre eux est **vouloir apprendre plusieurs langages et n'en maîtriser aucun**. Plusieurs chercheurs, lorsqu'ils commencent à maîtriser de nouveaux outils, s'emballent et souhaitent en apprendre davantage. C'est une bonne chose, mais il faut faire attention à ne pas apprendre que quelques éléments de plusieurs langages de programmation, et plutôt en maîtriser un. Comme le dit un diction populaire, « qui trop embrasse mal étreint ».
 
 Un second serpent auquel de jeunes chercheurs sont la proie est **coder en n'utilisant pas un style et une planification cohérente et constante**. En n'adoptant pas un style standard -- ou en n'utilisant pas le plus souvent le même style -- il peut devenir difficle pour les autres et pour soi-même de se retrouver dans le code. Cela peut causer d'importants problèmes de compréhension ou des problèmes techniques. Il est rare qu'un même code ne serve qu'une seule fois. Il est donc de viser à ce que le code qu'on produit soit compréhensible, transférable et -- idéalement -- optimisé. Un autre serpent s'inscrivant dans la lignée du précédent est **écrire du code mais ne pas le commenter**. Commenter son code contribue grandement à la transférabilité et la pérennité de son travail. Bien que la fonction d'une section de code peut sembler évidente pour son créateur le jour où elle est produite, elle ne le sera pas nécessairement pour d'autres ou pour lui-même dans le futur.
+
+Le troisième serpent concerne l'utilisation des packages R. De nombreux packages r sont disponibles sur Internet. Dans certaines situations, l\'utilisation de ceux-ci peut représenter un gain de temps et résoudre certains problèmes spécifiques. Toutefois, pour des tâches relativement simples, utiliser un package r risque d\'ajouter une complexité inutile. En effet, comprendre un package R et l\'adapter en fonction de son projet peut être long et laborieux. Il est donc souvent beaucoup plus efficace d\'écrire son propre code plutôt que d\'utiliser un package R.
 
 Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédiaire est de **croire qu'il a suffisamment de connaissances et ne pas sortir de sa zone de confort**. L'apprentissage de techniques plus complexes demande de sortir de sa zone de confort et de se confronter à l'inconnu. Cela demande également d'accepter qu'on ne connait pas tout et qu'il y aura des échecs et des frustrations. C'est ainsi qu'un chercheur intermédiaire peut dépasser ses limites et devenir un chercheur de niveau avancé.
 
@@ -45,18 +58,16 @@ Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédia
 
 ### Gestion de projet et de données
 
-### Outils d’intelligence artificielle
+### Outils d'intelligence artificielle
 
 ### Snakes
 
-* La peur de partager son code
+-   La peur de partager son code
 
-* Laisser le parfait être l'ennemi du bien
+-   Laisser le parfait être l'ennemi du bien
 
-* Manquer d'empathie et de compréhension envers les nouveaux utilisateurs
+-   Manquer d'empathie et de compréhension envers les nouveaux utilisateurs
 
-* Douchebagisme
-
+-   Douchebagisme
 
 ## Conclusion
-
