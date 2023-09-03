@@ -1,4 +1,4 @@
-# R ou ne pas R?
+# R ou ne pas R? {#sec-chap4}
 
 Plusieurs notions liées à l'ère numérique ainsi que certaines opportunités et difficultés que cette dernière peut amenée ont été présentées aux chapitres précédents. C'est un monde de possibilité qui s'offre à ceux qui maîtrisent les nouveaux outils des temps modernes. Mais comment en arriver là ? Le présent chapitre a pour but de présenter certains outils flexibles et péreins permettant la réalisation de nombreux tâches. Une des premières étapes permettant de notamment réaliser la collecte, l'analyse et la visualisation graphique de données ainsi que la rédaction de documents est l'apprentissage d'un langage de programmation. Bien que plusieurs langages de programmation existent, le présent ouvrage priorise le langage **R**. Les sections suivantes présentent ce langage de programmation, ces forces et ces faiblesses, les raisons de l'utiliser ainsi qu'un environnement de programmation qui se prête bien à son utilisation.
 
