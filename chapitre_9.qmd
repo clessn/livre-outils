@@ -1,32 +1,32 @@
 # Outils d'intelligence artificielle
 
-# Sapientia Artificiosa: L'Excellence Cognitive au Service des Études Sociales"
+<!-- # Sapientia Artificiosa: L'Excellence Cognitive au Service des Études Sociales" -->
 
-# En général, c'est quoi l'IA, le ML, le DL, etc.? (en mentionnant que c'est un champ qui change tout le temps) (JOZEF)
+<!-- # En général, c'est quoi l'IA, le ML, le DL, etc.? (en mentionnant que c'est un champ qui change tout le temps) (JOZEF) -->
 
-# La révolution ChatGPT
-   
-- Corpus de textes humains donc possibilité de plagiat
-- Tracer la ligne entre plagiat et outil d'assistance
-- Parler des revues de science po qui veulent qu'on déclare l'utilisation de ce genre de AI
-- Brainstorm
-- l'API de OpenAI
-- Biais de ce genre d'IA
+<!-- # La révolution ChatGPT -->
 
-# Deepl, google traduction, etc,
+<!-- -   Corpus de textes humains donc possibilité de plagiat -->
+<!-- -   Tracer la ligne entre plagiat et outil d'assistance -->
+<!-- -   Parler des revues de science po qui veulent qu'on déclare l'utilisation de ce genre de AI -->
+<!-- -   Brainstorm -->
+<!-- -   l'API de OpenAI -->
+<!-- -   Biais de ce genre d'IA -->
 
-# Midjourney, génération d'images, etc.
-- Parler du plagiat
+<!-- # Deepl, google traduction, etc, -->
 
-# 1 autre exemple?
+<!-- # Midjourney, génération d'images, etc. -->
 
-# Machine Learning, reconnaissance d'images etc 
+<!-- -   Parler du plagiat -->
 
-- AWS, Calcul Québec, etc.
+<!-- # 1 autre exemple? -->
 
-# LLM, chatbots, etc.
+<!-- # Machine Learning, reconnaissance d'images etc -->
 
-- Ce qui s'en vient dans ce domaine?
+<!-- -   AWS, Calcul Québec, etc. -->
 
+<!-- # LLM, chatbots, etc. -->
 
-Salut
+<!-- -   Ce qui s'en vient dans ce domaine? -->
+
+<!-- Salut -->

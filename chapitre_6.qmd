@@ -4,11 +4,11 @@
 
 Citer ses sources est une pratique incontournable dans le domaine académique. Cette pratique est primordiale et a plusieurs utilités. D'abord, cela permet de s'inscrire dans une littérature existante. Chaque personne chercheuse construit sur ce qui a déjà été fait par d'autres collègues académiques, s'inspirant des recherches précédentes et dialoguant les unes avec les autres. Le référencement aux autres articles offre la possibilité d'aller y chercher des informations utiles à notre propre recherche. En outre, la science doit être publique afin de vérifier la fiabilité des méthodes employées et des résultats obtenus. Une erreur dans la méthodologie ou dans l'analyse des résultats d'une étude peut être corrigée par d'éventuelles contributions scientifiques s'il est possible de s'y référer. Finalement, citer ses sources est une preuve de transparence, d'éthique et donne de la crédibilité à notre contribution. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant l'apport d'autres personnes chercheuses à sa propre contribution scientifique.
 
-## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
+## [À quoi sert un logiciel de gestion bibliographique ?]{.underline}
 
 Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
-1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
+1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites Web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
 
 2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
 
@@ -26,17 +26,15 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 
 En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux personnes chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
 
-
-Bien que chaque logiciel de référence présente ses propres caractéristiques distinctes, il est indéniable qu'ils partagent des similitudes notables dans leur objectif principal. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références. Afin de choisir le logiciel qui répond aux besoins de la personne utilisatrice, celle-ci doit se demander s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, la personne utilisatrice devrait se munir du même logiciel que ses collègues. Enfin, il est surtout important d'utiliser le logiciel que la personne préfère. Bien que Zotero, EndNote et Mendeley partagent des similitudes fondamentales, chacun possède des fonctionnalités spécifiques pouvant ainsi mieux répondre aux besoins individuels. Dans ce paysage d'options, l'élément crucial demeure l'adéquation entre les fonctionnalités offertes par le logiciel et les objectifs de l'utilisateur, tout en prenant en considération les aspects de partage, de collaboration et de convivialité. 
-
+Bien que chaque logiciel de référence présente ses propres caractéristiques distinctes, il est indéniable qu'ils partagent des similitudes notables dans leur objectif principal. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références. Afin de choisir le logiciel qui répond aux besoins de la personne utilisatrice, celle-ci doit se demander s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, la personne utilisatrice devrait se munir du même logiciel que ses collègues. Enfin, il est surtout important d'utiliser le logiciel que la personne préfère. Bien que Zotero, EndNote et Mendeley partagent des similitudes fondamentales, chacun possède des fonctionnalités spécifiques pouvant ainsi mieux répondre aux besoins individuels. Dans ce paysage d'options, l'élément crucial demeure l'adéquation entre les fonctionnalités offertes par le logiciel et les objectifs de l'utilisateur, tout en prenant en considération les aspects de partage, de collaboration et de convivialité.
 
 ## Pourquoi Zotero?
 
 L'avantage de Zotero est qu'il est gratuit et libre d'accès. Son code est ouvert à tous et son Github compte plus de 13,000 commits. Il offre une grande gamme de fonctionalités ainsi que la possibilité d'y ajouter des extensions, complimentant ainsi son utilisation. Zotero est puissant mais reste facile à utiliser. Il est distribué sur plusieurs plateformes (Windows, Mac, Linux, iOS, Android), permettant ainsi la collaboration entre tous les membres d'une équipe de recherche utilisant une diversité de plateforme. Il est possible de synchroniser sa bibliothèque Zotero sur plusieurs appareils, soit en utilisant le service cloud payant de Zotero ou en installant son propre espace de stockage infonuagique. Zotero s'intègre parfaitement dans un projet de recherche utilisant LaTeX ou Quarto puisqu'il est possible de générer des fichiers .bib à partir des bibliothèques et les maintenir à jour automatiquement. Il s'intègre aussi aux logiciels de traitement de texte comme LibreOffice et Microsoft Office. Il est possible de générer des bibliographies et des citations dans plus de 9000 styles de citation différents et peut donc convenir à tous.
 
-Un autre grand avantage de Zotero est la centralisation des sources bibliographique et de leurs fichiers. Il est possible d'ajouter des PDF à Zotero et de les synchroniser dans des groupes, tel celui de la CLESSN. Cela permet de partager des documents facilement avec les autres membres de l'équipe de recherche. Plus besoin de dossiers partagé ou d'envoyer des documents par courriel ou sur des plateformes de partage de fichiers. Tout est centralisé dans Zotero. Cette centralisation permet d'accomplir des recherche du type ctrl+f à travers l'ensemble des sources contenues dans une bibliothèque. Vous écrivez une conclusion à propos des radis finlandais et vous désirez dicuster des enjeux internationaux liés à son agriculture en citant une source que vous vous rappelez avoir lu il y a 3 ans? Pas de problème, Zotero vous permet de retrouver cette source en quelques secondes avec une simple recherche.
+Un autre grand avantage de Zotero est la centralisation des sources bibliographique et de leurs fichiers. Il est possible d'ajouter des PDF à Zotero et de les synchroniser dans des groupes, tel celui de la CLESSN. Cela permet de partager des documents facilement avec les autres membres de l'équipe de recherche. Plus besoin de dossiers partagés ou d'envoyer des documents par courriel ou sur des plateformes de partage de fichiers. Tout est centralisé dans Zotero. Cette centralisation permet d'accomplir des recherches du type ctrl+f à travers l'ensemble des sources contenues dans une bibliothèque. Vous écrivez une conclusion à propos des radis finlandais et vous désirez discuter des enjeux internationaux liés à son agriculture en citant une source que vous vous rappelez avoir consultée il y a 3 ans? Pas de problème, Zotero vous permet de retrouver cette source en quelques secondes avec une simple recherche.
 
-Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies de comportant plusieurs miliers de fichier.
+Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers.<!--#Est-ce qu'il y a d'autres désavantages? Par exemple: est-ce qu'on doit parfois corriger des erreurs ou ajouter manuellement des informations dans les sources? -->
 
 ## Pourquoi BibLaTeX? - Cette section a été écrite à l'aide de ChatGPT
 
@@ -44,7 +42,7 @@ BibLaTeX est une extension moderne pour le traitement des bibliographies dans La
 
 Flexibilité et personnalisation: BibLaTeX permet une personnalisation bien plus poussée que BibTeX. Que ce soit pour adapter la présentation des références à des normes spécifiques ou pour créer un style de citation tout à fait unique, BibLaTeX est l'outil de choix.
 
-Compatibilité avec Unicode: Contrairement à BibTeX, BibLaTeX est entièrement compatible avec Unicode, ce qui permet d'utiliser des caractères non-latins (comme le cyrillique, l'arabe ou les idéogrammes asiatiques) dans vos références.
+Compatibilité avec Unicode: Contrairement à BibTeX, BibLaTeX est entièrement compatible avec Unicode, ce qui permet d'utiliser des caractères non-latins (comme le cyrillique, l'arabe ou les idéogrammes asiatiques) dans vos références. <!--# Peut-être ajouter une courte description pour expliquer Unicode (je crois qu'on n'en parle pas dans les chapitres précédents) -->
 
 Intégration avec Biber: BibLaTeX est généralement utilisé avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats.
 
@@ -58,7 +56,7 @@ Intégration avec des outils de gestion de références: Bien que BibLaTeX soit 
 
 Les inconvénients potentiels de BibLaTeX incluent une courbe d'apprentissage pour ceux qui sont habitués à BibTeX, ainsi que la nécessité d'une mise à jour régulière pour rester compatible avec les versions récentes de LaTeX. De plus, certains éditeurs académiques ou revues ont leurs propres styles de citation et n'acceptent pas les soumissions utilisant BibLaTeX, bien que cela devienne de moins en moins courant.
 
-En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
+En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste. 
 
 ## Installation et configuration de Zotero
 
@@ -100,7 +98,9 @@ Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire 
 
 Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
 
--   Drag & drop à partir de votre librairie personelle
+-   Drag & drop à partir de votre librairie personnelle
 -   Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
 -   Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
 -   Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
+
+<!--# Je crois qu'il serait intéressant d'ajouter quelques ressources supplémentaires pour ceux/celles qui veulent aller plus loin dans leur utilisation de Zotero ou BibLaTeXs -->
