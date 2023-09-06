@@ -13,14 +13,14 @@ Camille Tremblay-Antoine[^chapitre_7-1] Nadjim Fréchet[^chapitre_7-2]
 #*****************************************#
 
 library(tidyverse)   # Pour utiliser les packages dplyr et ggplot2
-library(lattice)     # Pour uttiliser le package lattice
+library(lattice)     # Pour utiliser le package lattice
 library(readstata13) # Pour télécharger des bases de données de format dta
 library(grid)        # Pour des grids de graphique
 library(gridExtra)   # Pour des grids de graphique
 
 
 #********************************************************************************************************************************#
-#### 0.1 - Téléchargement la base de données de l'Étude Électorale Canadienne de 2019 diponible sur http://www.ces-eec.ca/  ######
+#### 0.1 - Téléchargement de la base de données de l'Étude Électorale Canadienne de 2019 disponible sur http://www.ces-eec.ca/  ######
 #********************************************************************************************************************************#
 
 Data <- read.dta13("/Users/nadjimfrechet/Dropbox/projet-global_esclean/Canada/Data/RawData/CES19.dta")
@@ -54,7 +54,7 @@ GraphiqueExemple <- Data %>%
   na.omit() %>%
   # Sélection de la variable de regroupement
   group_by(province) %>%
-  # Nombre d'obsertvations par valeur de la variable d'intérêt
+  # Nombre d'observations par valeur de la variable d'intérêt
   summarise(n = n()) %>%
   # Proportion par valeur de la variable d'intérêt
   mutate(prop = round(n/sum(n)*100,2)) %>%
@@ -77,20 +77,20 @@ GraphiqueLattice <- Data %>%
   na.omit() %>%
   # Sélection de la variable de regroupement
   group_by(province, gaucheDroite) %>%
-  # Enlever les valeurs manquante
+  # Enlever les valeurs manquantes
   na.omit()  
 
 ```
 
 ## Introduction
 
-Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique des données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
+Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
 
 L'objectif de ce chapitre est d'apprendre aux codeurs débutants les rudiments de la visualisation graphique en R. Ce chapitre présentera plus particulièrement les packages R *ggplot2* et *dplyr* eux-mêmes téléchargeable à partir du package *tidyverse*. Si *dplyr* permet de préparer les données avant leur visualisation, *ggplot2* est un package dédié à la production de graphiques. Ce chapitre présente sa grammaire avec une série d'exemples [@wickham09; @wickham_etal23].
 
-Ce chapitre est plus technique que théorique et permet aux codeurs débutants d'en apprendre davantage sur la manière de construire des graphiques en R avec des données concrètes. Cependant, la question centrale qui devrait vous guider lorsque vous créez des visualisations est la suivante: **Comment opimiser l'intelligibilité des données?** L'objectif d'un graphique n'est pas seulement d'illustrer les données. Un bon graphique devrait permettre de vulgariser une information ou de mettre en saillance un aspect particulier des données. L'objectif communicationnel devrait toujours être gardé en tête. Les graphiques en exemple dans ce chapitre sont construits avec les données de l'Étude Électorale Canadienne de 2019 qui sont facilement téléchargeables sur leur site\footnote{http://www.ces-eec.ca/}.
+Ce chapitre est plus technique que théorique et permet aux codeurs débutants d'en apprendre davantage sur la manière de construire des graphiques en R avec des données concrètes. La question centrale qui devrait vous guider lorsque vous créez des visualisations est la suivante: **Comment opimiser l'intelligibilité des données?** L'objectif d'un graphique n'est pas seulement d'illustrer les données. Un bon graphique devrait permettre de vulgariser une information ou de mettre en saillance un aspect particulier des données. L'objectif communicationnel devrait toujours être gardé en tête. Les graphiques en exemple dans ce chapitre sont construits avec les données de l'Étude Électorale Canadienne de 2019 qui sont facilement téléchargeables sur leur site\footnote{http://www.ces-eec.ca/}.
 
-La première section de ce chapitre expose les options et packages également disponibles pour la construction de graphiques en R. La deuxième section de ce chapitre compare les avantages et inconvénients de l'utilisation de *ggplot2* par rapport aux autres packages de visualisation de données qui auront été présentés. La troisième section de chapitre montre des exemples de graphiques construits avec la grammaire de *ggplot2* en utilisant les données de l'Étude électorale canadienne de 2019. Les codes employés pour produire les graphiques en exemple sont disponibles dans l'annexe de ce livre. Ces codes reproductibles permettront aux codeurs débutants d'adapter ces derniers pour leurs propres projets.
+La première section de ce chapitre expose les options et packages également disponibles pour la construction de graphiques en R. La deuxième section de ce chapitre compare les avantages et inconvénients de l'utilisation de *ggplot2* par rapport aux autres packages de visualisation de données qui auront été présentés. La troisième section de ce chapitre montre des exemples de graphiques construits avec la grammaire de *ggplot2* en utilisant les données de l'Étude électorale canadienne de 2019. Les codes employés pour produire les graphiques en exemple sont disponibles dans l'annexe de ce livre. Ces codes reproductibles permettront aux codeurs débutants d'adapter ces derniers pour leurs propres projets.
 
 ## Réflexion théorique
 
@@ -100,7 +100,7 @@ De nombreux *packages* ont été développés dans le langage R dans le but de v
 
 #### Avantages et inconvénients de Base R
 
-Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
+Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
 
 ```{=html}
 <!--
@@ -120,11 +120,11 @@ barplot(y,names.arg=x,
 
 ```
 
-Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou visualiser des relations entre plusieurs variables, ce que *lattice* et *ggplot2* permettent plus facilement[@wickham09, p. 3-4].
+Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que *lattice* et *ggplot2* permettent plus facilement[@wickham09, p. 3-4].
 
 #### Avantages et inconvénients de *lattice*
 
-Développé par Deepayan Sarkar, *lattice* cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce *package* vise à améliorer les graphiques du *Base R* en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce *package* est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables [@kabacoff22, p. 373-377; @sarkar08; @sarkar23]. Pour produire un graphique de base avec *Lattice*, le *package lattice* doit préalablement être installé dans la bibliothèque de *packages* du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropri/e[^chapitre_7-3]. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (*graph_type(formula \| variable en facettes, data=)*).
+Développé par Deepayan Sarkar, *lattice* cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce *package* vise à améliorer les graphiques du *Base R* en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce *package* est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables [@kabacoff22, p. 373-377; @sarkar08; @sarkar23]. Pour produire un graphique de base avec *Lattice*, le *package lattice* doit préalablement être installé dans la bibliothèque de *packages* du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée[^chapitre_7-3]. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (*graph_type(formula \| variable en facettes, data=)*).
 
 [^chapitre_7-3]: Plusieurs options disponibles comme des histogrammes avec la fonction *histogram()* ou des graphiques de densité avec la fonction *densityplot()*.
 
@@ -144,15 +144,15 @@ histogram(~gaucheDroite | province, data = GraphiqueLattice, breaks = seq(0, 10,
 
 ```
 
-Cependant, le *package lattice* a pour désavantage d'avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de *ggplot2* lorsque vient le temps d'améliorer l'esthétisme des graphiques. De plus, sa plus faible popularité cause que ce *package* reste moins développé par la communauté de codeurs de R que ne l'est *ggplot2*. Nous examinons plus en détail la grammaire de graphique de ce dernier *package* ainsi que ses avantages et inconvénients dans la prochaine section [@kabacoff22, p. 373-377 et 390; @wickham09, p. 6].
+Cependant, le *package lattice* a pour désavantage d'avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de *ggplot2* lorsque vient le temps d'améliorer l'esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce *package* demeure moins développé par la communauté de codeurs de R que ne l'est *ggplot2*. Nous examinons plus en détail la grammaire de graphique de ce dernier *package* ainsi que ses avantages et inconvénients dans la prochaine section [@kabacoff22, p. 373-377 et 390; @wickham09, p. 6].
 
 #### Avantages et inconvénients de ggplot2
 
-Développé principalement par Hadley Wickham, *ggplot2* est un *package R* faisant partie de la collection de *packages* de *tidyverse*. *Ggplot2* peut être donc utilisé avec les autres *packages* centraux de *tidyverse*, limitant ainsi de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec *ggplot2*. Par exemple, le *package dplyr* de *tidyverse* est très utile pour analyser, organiser et préparer vos données à visualiser avec *ggplot2* [@wickham_etal19; @wickham_etal23, p. 30].
+Développé principalement par Hadley Wickham, *ggplot2* est un *package R* faisant partie de la collection de *packages* de *tidyverse*. Ainsi, *Ggplot2* peut être utilisé avec les autres *packages* centraux de *tidyverse* ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec *ggplot2*. Par exemple, le *package dplyr* de *tidyverse* est très utile pour analyser, organiser et préparer vos données à visualiser avec *ggplot2* [@wickham_etal19; @wickham_etal23, p. 30].
 
-Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateur de rensre ses graphiques beaucoup plus visuellement attrayants en facilitant la personalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques *ggplot2* se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.
+Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques *ggplot2* se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.
 
-La première couche des graphiques *ggplot* est généralement celle des données et des variables à visualiser. Elle contient plusieurs éléments fondamentaux qui sont essentiels à chaque graphique. Le premier élément est la spécification de l'utilisation du *package ggplot2* qui se fait simplement en appelant la fonCtion *ggplot2()*. Dans cette fonction, il faut ensuite mentionner quelle est la base de données (data=<NOM DE LA BASE DE DONNÉES>) ainsi que la fonction qui sera utilisée pour positionner les données (aes(<POSITIONNEMENT DES DONNÉES>). Le positionnement le plus courant est de positionner des données *x* par rapport à des données *y*, ce qui se fait de la sorte: aes(x=<NOM DE LA COLONNE DE X>, y=<NOM DE LA COLONNE DE y>).
+La première couche des graphiques *ggplot* est généralement celle des données et des variables à visualiser. Elle contient plusieurs éléments fondamentaux qui sont essentiels à chaque graphique. Le premier élément est la spécification de l'utilisation du *package ggplot2* qui se fait simplement en appelant la fonction *ggplot2()*. Dans cette fonction, il faut ensuite mentionner quelle est la base de données (data=<NOM DE LA BASE DE DONNÉES>) ainsi que la fonction qui sera utilisée pour positionner les données (aes(<POSITIONNEMENT DES DONNÉES>). Le positionnement le plus courant est de positionner des données *x* par rapport à des données *y*, ce qui se fait de la sorte: aes(x=<NOM DE LA COLONNE DE X>, y=<NOM DE LA COLONNE DE y>).
 
 La deuxième couche des graphiques *ggplot2* est celle du *geom*, qui spécifie le type de graphique souhaité. Les types de graphiques les plus couramment utilisés avec *ggplot2* sont les nuages de points (*geom_point()*), les diagrammes de lignes de tendances ou de séries chronologiques (*geom_line()*), les courbes de densité (*geom_density()*) ainsi que les graphiques à bandes (*geom_bar()*). Mais les possibilités sont infinies (ou presque!) avec ggplot2 et bien plus de types de graphiques existent.
 
@@ -170,7 +170,7 @@ ggplot(data=GraphiqueExemple, aes(x=province, y=prop)) +
 
 ```
 
-Tel que mentionné dans le dernier paragraphe, la première étape est de spécifier la base de données et les variables qu'on souhaite visualiser. Vous vous souviendrez qu'au début de la section nous avons mentionné la collection *tidyverse*, et plus spécifiquement le *package dplyr* qui y est compris. Ce dernier a été utilisé pour nettoyer/calculer la proportion de répondants par province au préalable, ce qui nous permet de positionner directement la variable *prop* dans l'axe y.
+Tel que mentionné dans le dernier paragraphe, la première étape est de spécifier la base de données et les variables qu'on souhaite visualiser. Vous vous souviendrez qu'au début de la section, nous avons mentionné la collection *tidyverse*, et plus spécifiquement le *package dplyr* qui y est compris. Ce dernier a été utilisé pour nettoyer/calculer la proportion de répondants par province au préalable, ce qui nous permet de positionner directement la variable *prop* dans l'axe y.
 
 ```{=html}
 <!--
