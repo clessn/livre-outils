@@ -160,6 +160,9 @@ Les autres couches des graphiques *ggplot2* dépendent souvent du codeur et des 
 
 [^chapitre_7-4]: Les étapes (couches) d'un graphique *ggplot2* ne sont pas nécessairement dans le même ordre d'un graphique à un autre.
 
+## Réflexion méthodologique
+### Comment utiliser ggplot2
+
 ```{r, echo=T, include=T, eval = F}
 
 # Première couche de l'exemple de graphique
@@ -185,6 +188,43 @@ Commentaires de Cloé:
       
 -->
 ```
+
+### Exemples et fonctionnalités
+
+## Trucs et astuces 
+
+```{=html}
+<!--
+### Retour sur la communication des données? À voir. 
+
+La visualisation des données est une étape essentielle de la communication scientifique. Elle permet d'isoler les éléments clés d'une analyse qui mérite notre attention, d'où l'importance de développer cette comptétence. On peut ainsi considérer la visualisation des données comme un mariage entre la science et l'art (Citer Prof. Cooper, ICPSR, 2022). D'une part, il est question de demeurer fidèle aux données et aux mesures des phénomènes observés, tandis que de l'autre part, l'art facilite la communication et la persuasion. 
+
+Quelques principes d'une bonne visualisation : 
+- Précise
+- Claire/Simple
+- Intuitive
+- Réductrice
+- Révélatrice
+- Convaincante
+
+-->
+```
+
+## Pour aller plus loin
+
+```{=html}
+<!--
+### La visualisation interactive des données
+
+Si jusqu'à présent la visualisation des données a été présentée comme une étape permettant de présenter les résultats de recherches, il est également possible de considérer la visualisation comme une utile au processus d'exploration des données comportants de nombreuses dimensions (autres façons de le dire peut-être?). En effet, les formes de visualisations dites interactives permettant d'explorer et même d'analyser les données à même notre graphique ou notre tableau. Cela contribue à mieux comprendre la structures des données, à inspecter plus rapidement ces dernières et même susciter des questions de recherches peut-être omises autrement (citer Sievert, 2020). 
+
+- ggplotly et plotly
+- Tableaux interactifs? fonctions kable() et kableExtra du package knitr
+- Shiny Apps
+
+-->
+```
+
 \clearpage
 
 ## Références
