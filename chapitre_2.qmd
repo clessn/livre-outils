@@ -24,6 +24,9 @@ Plusieurs situent les débuts du mouvement du logiciel libre avec la création d
 
 [^chapitre_2-3]: expliquer ce qu'est GNU en quelques lignes/le modèle collaboratif de développement logiciel initié par le projet GNU
 
+<!--Commentaire Marc: Pas certain que c'est nécessaire d'aller dans GNU et des choses du genre dans un chapitre/livre d'intro. À choisir si vous devez couper je le ferais ici.   --> 
+
+
 Il faut garder en tête que le logiciel libre ne rime pas nécessairement avec gratuité. Bien que plusieurs logiciels libres soient téléchargeables gratuitement \textcolor{red}{(donner des exemples)}, il est aussi possible de (re)distribuer des logiciels libres payants \textcolor{red}{(reformuler, pas clair)}. Par ailleurs, aucun logiciel libre n'est réellement «gratuit» dans la mesure où son déploiement et son utilisation nécessitent généralement différents coûts, dont les degrés sont variables en fonction des compétences et de l'infrastructure dont disposent les utilisateurs (coût d'apprentissage, coûts d'entretien, etc.). Enfin, il est important de garder en tête les logiciels libres possèdent eux aussi une licence - cette dernière est d'ailleurs garante des libertés que confèrent les logiciels libres aux utilisateurs.
 
 ### Logiciel libre et *open source*
@@ -160,6 +163,10 @@ Inconvénient :
 
 -->
 ```
+
+
+<!--Commentaire Marc: Certains des avantages listés ci-haut sont définitivement discutables ou propres à certains trucs seulement. La sécurité et la pérénnité notamment. À considérer. Aussi, dans les inconvénients, ce n'est pas clair ce que "Absence de soutien personnalisé" veut dire.  --> 
+
 La disponibilité du code source et le mode de développement collaboratif du logiciel libre facilitent également le transfert des connaissances, et ce, au-delà des frontières. Où qu'ils soient, les institutions, les entreprises et les particuliers peuvent utiliser ces logiciels et les adapter en fonction de leurs besoins respectifs. Par ailleurs, l'accès libre et égal de tous les internautes à l'ensemble de ces connaissances constitue un enjeu majeur pour la vitalité démocratique des sociétés à l'ère du numérique, caractérisées par une surabondance d'information.
 
 Les logiciels libres, parce qu'ils sont souvent moins coûteux (voire téléchargeables gratuitement) et qu'ils démocratisent l'accès à l'information, contribuent à réduire les disparités en termes d'accessibilité aux nouvelles technologies.
@@ -229,6 +236,8 @@ https://trepo.tuni.fi/bitstream/handle/10024/66646/978-951-44-8216-8.pdf?sequenc
 
 -->
 ```
+
+<!--Commentaire Marc: On retrouve dans le texte une vision un peu utopique du logiciel libre. C'est ok si c'est ça qu'on veut, mais ça me semble fake à certains endroits. Ex. Pas certain que ça démocratise l'accès à l'info de pouvoir télécharger R. --> 
 
 <!-- Commentaires Laurence-Olivier
 
