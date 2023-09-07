@@ -36,7 +36,12 @@ Un autre grand avantage de Zotero est la centralisation des sources bibliographi
 
 Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers.<!--#Est-ce qu'il y a d'autres désavantages? Par exemple: est-ce qu'on doit parfois corriger des erreurs ou ajouter manuellement des informations dans les sources? -->
 
+<!--Commentaire Marc: ^ Je seconde. Et aussi mettre + d'accent sur pourquoi les force sont des forces.   --> 
+
+
 ## Pourquoi BibLaTeX? - Cette section a été écrite à l'aide de ChatGPT
+
+<!--Commentaire Marc: Je mettrais + d'accent sur le lien avec le langage de balisage qu'on présente dans le livre, je trouve ce chapitre un peu déconnecté des autres.   --> 
 
 BibLaTeX est une extension moderne pour le traitement des bibliographies dans LaTeX. Elle offre une flexibilité sans précédent par rapport à son prédécesseur, BibTeX. Voici quelques raisons pour lesquelles les chercheurs et les rédacteurs préfèrent souvent BibLaTeX :
 
@@ -44,13 +49,21 @@ Flexibilité et personnalisation: BibLaTeX permet une personnalisation bien plus
 
 Compatibilité avec Unicode: Contrairement à BibTeX, BibLaTeX est entièrement compatible avec Unicode, ce qui permet d'utiliser des caractères non-latins (comme le cyrillique, l'arabe ou les idéogrammes asiatiques) dans vos références. <!--# Peut-être ajouter une courte description pour expliquer Unicode (je crois qu'on n'en parle pas dans les chapitres précédents) -->
 
+<!--Commentaire Marc: ^ Pas certains qu'on a à s'embarquer dans Unicode mais à vous de voir.  --> 
+
 Intégration avec Biber: BibLaTeX est généralement utilisé avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats.
 
 Citations avancées: Avec BibLaTeX, les utilisateurs peuvent facilement réaliser des citations verbeuses, contextuelles, ou subdivisées, selon leurs besoins.
 
+<!--Commentaire Marc: Qu'est-ce que ça veut dire, une citation avancée?  --> 
+
+
 Localisation: BibLaTeX prend en charge de nombreuses langues, ce qui le rend adapté pour la rédaction d'articles ou de livres destinés à des publics internationaux.
 
 Interactivité: Avec l'usage de paquets additionnels, BibLaTeX permet la création de bibliographies interactives, avec des liens cliquables, particulièrement utiles pour les documents électroniques.
+
+<!--Commentaire Marc: Comme plusieurs autres points ci-haut, il n'est pas le seul. Rendu ici dans la lecture, je ne suis pas certain de ce qui distingue ce qu'on propose des autres alternatives. Ça feel plutôt comme une description plutôt qu'une explication de pourquoi c'est l'outil à utiliser.  --> 
+
 
 Intégration avec des outils de gestion de références: Bien que BibLaTeX soit principalement un paquet pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils comme Zotero sous forme de fichiers .bib, qui peuvent ensuite être utilisés avec BibLaTeX.
 
@@ -82,6 +95,9 @@ Dans cette section, vous serez amené notamment à Installer Zotero ainsi que Be
 
 -   Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
 
+<!--Commentaire Marc: C'est pas un copié-collé du ReadMe ça?  --> 
+
+
 #### Génération du fichier .bib
 
 Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
@@ -104,3 +120,7 @@ Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
 -   Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
 
 <!--# Je crois qu'il serait intéressant d'ajouter quelques ressources supplémentaires pour ceux/celles qui veulent aller plus loin dans leur utilisation de Zotero ou BibLaTeXs -->
+
+<!--Commentaire Marc: ^ C'est à ce dont sert le chap. 10, je ne mettrais pas ça dans ce chapitre.  --> 
+
+
