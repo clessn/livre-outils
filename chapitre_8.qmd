@@ -6,7 +6,7 @@ Le monde de la recherche en sciences sociales numériques est en constante évol
 
 ## L'importance d'une méthode de travail efficace
 
-Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
+Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
 
 Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation&nbsp;:
 
@@ -28,7 +28,7 @@ Il y a tellement de plateformes différentes pour communiquer qu'il faut être p
 
 Peu importe votre niveau d'implication, la collaboration et la communication sont inévitables en recherche. La science n'est pas une discipline qui se développe en solitaire, elle nécessite des échanges et des débats. Les équipes de recherche sont souvent dispersées géographiquement. Même si vous travaillez actuellement seulement avec votre directeur, il est certain que plusieurs équipes de recherche dans votre département<!--AFC: Peut-être un peu poussé. Faculté, école, université? Je suis sûr qu'il y a des petits départements où personne n'utilise ça.--> utilisent un tel logiciel. Un courriel peut faire l'affaire pour une discussion ponctuelle qui se règle rapidement. Cependant, dans une équipe de travail dynamique, où plusieurs membres participent à divers projets, les courriels deviennent rapidement chaotiques, il est difficile de retracer ce qui a été dit<!--AFC: J'ajouterais "dans les nombreuses chaînes de courriels."--> et de conserver les pièces jointes. Les discussions deviennent rapidement trop complexes pour le médium utilisé.
 
-Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante&nbsp;: une structure simple et adaptée. Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l'endroit où vos conversations écrites se trouvent. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connexion des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
+Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante&nbsp;: une structure simple et adaptée. <!-- Drole de structure de phrase ? --> Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l'endroit où vos conversations écrites se trouvent. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connexion des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
 
 ### Comment utiliser votre logiciel efficacement
 
@@ -52,6 +52,8 @@ Une fois que la structure d'équipe est définie et que vos membres et vos parte
 
 <!--AFC: Pour cette première section jusqu’ici, je pense que beaucoup de profs auraient avantage à lire ça tel quel, et je pense qu’il faudrait penser à des avenues de publication séparées pour s’adresser aux profs spécifiquement. Travailler avec des profs organisés, c’est motivant. Mais c’est aussi le gros problème du chapitre jusqu'ici: il faut changer le ton si on veut s’adresser à des étudiants débutants qui font des serpents et échelles, être moins impératif dans la formulation des recommandations et vanter les mérites des outils plutôt que forcer certaines manières de faire (éviter de mêler les chaînes est vraiment important, ça oui, mais faire le ménage régulièrement des messages épinglés, ça sonne un peu dull pour un étudiant au bac). Au-delà des recommandations que j’ai faites, je relirais le texte avec cette idée en tête.-->
 
+<!-- Je suis d'accord avec AFC, -L-O)
+
 ### Pourquoi Slack<!--Je renommerais "Avantages et inconvénients"-->
 
 Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos besoins. Puisque nous utilisons Slack, voici quelques raisons qui pourraient vous convaincre d'opter pour cette option ou de vous en éloigner. Sachez que cette liste n'est pas du tout exhaustive, mais reflète simplement quelques-unes de nos observations par rapport à notre outil de travail.
@@ -62,7 +64,7 @@ Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos b
 
 -   Inconvénients
 
-    Si vous avez l'habitude d'utiliser les outils d'une suite, comme celles de Microsoft ou de Google, il est possible que vous trouviez l'intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. Elle implique notamment un limite de temps par rapport à l'archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d'outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.<!--AFC: Est-ce que c'est commun? Si c'est juste l'ULaval qui fait ça, je ne parlerais pas de financement par le département.--><!--AFC: Autre désavantage: on dit souvent que les fils de discussion dans Slack ne sont pas très intuitifs par rapport à d'autres plateformes. Je n'ai pas testé en Teams et personnellement j'aime bien les fils en Slack, mais peut-être investiguer et demander à Yannick et Cath Ouellet, qui semblent être de cet avis.-->
+    Si vous avez l'habitude d'utiliser les outils d'une suite, comme celles de Microsoft ou de Google, <!-- On parle ici de genre office ou google doc? -L-O -->il est possible que vous trouviez l'intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. <!-- Je le garderai en tête c'est promis. --> Elle implique notamment un limite de temps par rapport à l'archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d'outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.<!--AFC: Est-ce que c'est commun? Si c'est juste l'ULaval qui fait ça, je ne parlerais pas de financement par le département.--><!--AFC: Autre désavantage: on dit souvent que les fils de discussion dans Slack ne sont pas très intuitifs par rapport à d'autres plateformes. Je n'ai pas testé en Teams et personnellement j'aime bien les fils en Slack, mais peut-être investiguer et demander à Yannick et Cath Ouellet, qui semblent être de cet avis.-->
 
 ## Logiciel de gestion de versions décentralisé<!--AFC: Rajouter Git et GitHub si on mentionne Slack dans le titre de la section précédente.-->
 
@@ -72,15 +74,17 @@ Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales
 
 #### Avantages
 
-Git, développé par Linus Torvalds en 2005<!--AFC: Ajouter référence ici-->, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (*commits*), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet.
+Git, développé par Linus Torvalds en 2005<!--AFC: Ajouter référence ici-->, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (*commits*), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet. <!-- Ça pourrait être bien de dire que le bon Linus a aussi développé Linux. Quand même pas pire. -->
 
 GitHub, lancé en 2008<!--AFC: Ajouter référence ici-->, est une plateforme qui utilise Git comme base pour l'entreposage et la gestion de projets. C'est une vitrine virtuelle où les développeurs peuvent héberger leurs dépôts Git et collaborer de manière transparente. L'aspect social de GitHub, avec ses fonctionnalités de suivi des projets, de gestion des problèmes et de demandes de fusion<!--AFC: Ou "requêtes de tirage", comme dit plus loin?-->, en fait un lieu de choix pour les projets en code source ouvert et collaboratifs.
 
-En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches.
+En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. <!-- Peut être expliquer que git crée un fichier .git dans lequel sera inscrit l'ensemble des modifications sur les fichiers contenus dans un dossier? -->
 
 De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs<!--AFC: Définir ce qu'est un conflit. Par exemple, "où deux codeurs ont modifié plusieurs parties de texte chacun et où il faut vérifier paragraphe par paragraphe dans les deux documents quelle est la version la plus récente"... En fait, je décrirais le problème en quelques phrases, ça vaut vraiment la peine d'expliquer à quel point des copies en conflit sur Word sont terribles.--> et facilite la répartition des tâches au sein de l'équipe.
 
 Enfin, l'aspect de code source ouvert de GitHub<!--AFC: Attention! GitHub en soi n'est PAS open source, seuls les projets partagés sur cette plateforme le sont.--> permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
+
+<!-- -->
 
 #### Inconvénients
 
@@ -102,7 +106,7 @@ Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de
 
 2. *Facilité de collaboration*&nbsp;: Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
 
-3. *Visibilité et partage*&nbsp;: GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale.<!--AFC: Je ne comprends pas la phrase précédente et je ne suis pas sûr qu'elle soit vraie.--> Les projets en code source ouvert sont visibles et accessibles à tous, favorisant ainsi la collaboration et l'examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires.
+3. *Visibilité et partage*&nbsp;: GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale.<!--AFC: Je ne comprends pas la phrase précédente et je ne suis pas sûr qu'elle soit vraie.--> Les projets en code source ouvert sont visibles et accessibles à tous, favorisant ainsi la collaboration et l'examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires. <!-- Dans github, le terme projet sert à définir quelque chose d'autre. Ici repository serait plus approprié? -->
 
 4. *Suivi des versions et recherche reproductible*&nbsp;: Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
 
@@ -116,13 +120,13 @@ Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur 
 
 1. *Entreposer des informations sensibles*&nbsp;: Évitez d'entreposer des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme.
 
-2. *Inclure des mots de passe et clés d'accès*&nbsp;: Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes.
+2. *Inclure des mots de passe et clés d'accès*&nbsp;: Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication -->
 
 3. *Entreposer des fichiers lourds*&nbsp;: Évitez d'entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt<!--AFC: Encore incertain de ce qu'est un dépôt.-->. Utilisez plutôt des services d'entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt.
 
 4. *Inclure des identifiants personnels*&nbsp;: Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.-->
 
-5. *Ignorer les pratiques de branches et de fusion*&nbsp;: Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications.
+5. *Ignorer les pratiques de branches et de fusion*&nbsp;: Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO -->
 
 6. *Ignorer les commentaires des collaborateurs*&nbsp;: Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
 
@@ -202,7 +206,7 @@ git push -u origin master
 
 #### Étape 6&nbsp;: Collaboration avec vos collègues
 
-Si vos collègues souhaitent contribuer à votre projet, ils peuvent *forker*<!--AFC: Trouver une traduction et mettre la version en anglais entre parenthèses en italique--> votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
+Si vos collègues souhaitent contribuer à votre projet, ils peuvent *forker*<!--AFC: Trouver une traduction et mettre la version en anglais entre parenthèses en italique | Fourcher ? -LO --> votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
 
 Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *pull request*<!--AFC: Retourner plus haut et utiliser l'expression en français définie à ce moment-là, en mettant pull request entre parenthèses à ce moment-là. Ici, juste utiliser la traduction en français.--> pour vous demander de fusionner leurs modifications dans votre répertoire principal.
 
@@ -220,7 +224,7 @@ Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre proj
 
 ### GitHub Desktop
 
-Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive.<!--AFC: Mentionner que RStudio et VS Code intègrent aussi des éditeurs Git avec boutons plus conviviaux. En fait, je me demande si ces outils ne sont pas meilleurs que GitHub Desktop?--> Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.<!--AFC: Ajoute référence à la figure juste après, et donner un titre à cette figure.-->
+Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive.<!-- AFC: Mentionner que RStudio et VS Code intègrent aussi des éditeurs Git avec boutons plus conviviaux. En fait, je me demande si ces outils ne sont pas meilleurs que GitHub Desktop? --> Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.<!--AFC: Ajoute référence à la figure juste après, et donner un titre à cette figure.-->
 
 ![image2](images/chapitre8_1.png)
 
@@ -268,7 +272,7 @@ Pour les données sensibles, les services cloud tels que Dropbox et Google Drive
 
 Lorsqu'il s'agit d'entreposer des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n'est pas adapté à l'entreposage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source ouvert. Une solution courante est d'utiliser des services de cloud sécurisés, tels qu'AWS, qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.
 
-AWS regroupe un ensemble de services *cloud* proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
+AWS regroupe un ensemble de services *cloud* <!-- Infonuagiques --> proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
 
 1. *Sécurité robuste*&nbsp;: AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
 
@@ -306,7 +310,7 @@ Le chercheur installe le package *aws.s3* dans RStudio pour accéder à ses donn
 
 ##### Étape 6&nbsp;: Accès et analyse des données dans RStudio
 
-À l'aide du package *aws.s3*, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements.
+À l'aide du package *aws.s3*, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements. <!-- C'est quand même plus compliqué que ça. Voir commentaires à la fin.-->
 
 ##### Étape 7&nbsp;: Sécurité et conservation des données
 
@@ -319,3 +323,11 @@ Dropbox se concentre principalement sur l'entreposage et la collaboration de fic
 L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
+
+<!-- Les auteurs devraient aborder d'autres logiciels que Slack, tel que d'autres. -->
+
+<!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
+
+Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
+
+
