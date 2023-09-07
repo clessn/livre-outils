@@ -20,6 +20,8 @@ Cette analogie illustre bien trois concepts au coeur de la philosophie de Richar
 
 Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU[^chapitre_2-3], en 1983, à partir de laquelle va se développer une multitude de programmes libres. Depuis, la popularité des logiciels libres n'a cessé de croître, alors que des dizaines de millions d'usagers à travers le monde utilisent désormais ces logiciels. Parmi les plus populaires, on retrouve notamment le navigateur Firefox, la suite bureautique OpenOffice et l'emblématique système d'exploitation Linux, qui se développe d'ailleurs à partir de la licence GNU. Les logiciels libres ont différents usages (en passant par la conception Web, la gestion de contenu, les systèmes d'exploitation, la bureautique...). Encore une fois, le logiciel libre est avant tout une philosophie, voire un mouvement de société. C'est une façon de concevoir la communauté du logiciel, où le respect de la liberté de l'utilisateur est un impératif éthique central \textcolor{red}{(reformuler?)} (Williams et al., 2020:26). Si ce mouvement fut d'abord initié par quelques militants dans les années 1980, c'est aujourd'hui un véritable phénomène sociétal: des milliers d'entreprises, d'organisations à but non lucratif, d'institutions ou encore de particuliers adoptent tour à tour ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s'arriment avec le virage technologique de plusieurs entreprises à l'ère du numérique \textcolor{red}{(retravailler, mais l'idée est là)}. \[blablabla\]
 
+<!-- Je crois que LIbreOffice est maintenant plus populaire qu'open Office?-->
+
 [^chapitre_2-3]: expliquer ce qu'est GNU en quelques lignes/le modèle collaboratif de développement logiciel initié par le projet GNU
 
 Il faut garder en tête que le logiciel libre ne rime pas nécessairement avec gratuité. Bien que plusieurs logiciels libres soient téléchargeables gratuitement \textcolor{red}{(donner des exemples)}, il est aussi possible de (re)distribuer des logiciels libres payants \textcolor{red}{(reformuler, pas clair)}. Par ailleurs, aucun logiciel libre n'est réellement «gratuit» dans la mesure où son déploiement et son utilisation nécessitent généralement différents coûts, dont les degrés sont variables en fonction des compétences et de l'infrastructure dont disposent les utilisateurs (coût d'apprentissage, coûts d'entretien, etc.). Enfin, il est important de garder en tête les logiciels libres possèdent eux aussi une licence - cette dernière est d'ailleurs garante des libertés que confèrent les logiciels libres aux utilisateurs.
@@ -227,3 +229,15 @@ https://trepo.tuni.fi/bitstream/handle/10024/66646/978-951-44-8216-8.pdf?sequenc
 
 -->
 ```
+
+<!-- Commentaires Laurence-Olivier
+
+Excellent chapitre. 
+
+Si je comprends bien, le but est de mettre l'emphase sur le logiciel libre plus que le Open Source? Est-ce qu'on devrait pas mettre plus l'emphase sur l'open source, qui est plus en lien avec la chaire? (Le libre est mieux selon moi mais aucun de nos projets sont libres)
+
+Il serait bien de fournir des exemples de projets open source utiles dans nos fonctions de chercheur. Genre: "Dans le cadre de mes recherches, j'ai besoin d'accomplir un tâche X. Allons voir sur Github." Les chances sont qu'un projet open source soit disponible. Ex: Scraper twitter de façpon ponctuelle. Un ptit script python sur github et le tour est joué.
+
+Il serait intéressant de faire plus de liens avec la science. La transparence, la réplicabilité, le partage. Genre KKV chapitre 1.
+
+-->
