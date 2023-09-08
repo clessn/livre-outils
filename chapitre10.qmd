@@ -61,12 +61,10 @@ Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédia
 
 ### Snakes
 
--   La peur de partager son code
+-   La peur de partager son code/Douchebagisme
 
 -   Laisser le parfait être l'ennemi du bien
 
 -   Manquer d'empathie et de compréhension envers les nouveaux utilisateurs
-
--   Douchebagisme
 
 ## Conclusion
