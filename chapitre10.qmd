@@ -61,7 +61,9 @@ Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédia
 
 ### Snakes
 
--   La peur de partager son code/Douchebagisme
+L\'un des pièges importants à éviter lorsque le chercheur se retrouve à un niveau avancé est la peur de partager son code. Estimant leur code comme étant une propriété intellectuelle, plusieurs chercheurs développent cette réticence et refusent de partager le fruit de leur labeur. Toutefois, partager son code comporte de nombreux avantages, non seulement pour les autres membres de la communauté, mais également pour le chercheur lui-même. D\'un côté, cela permet de recevoir des rétroactions de la part d\'autres chercheurs et développeurs. Cette collaboration peut donc grandement contribuer à l\'amélioration de son code. De plus, partager son code représente une opportunité d\'apprentissage pour les autres membres de la communauté qui peuvent s\'en inspirer pour développer leurs compétences ou même le réutiliser dans leur propre projet. Cette transparence et cette collaboration sont donc avantageuses pour tous les partis.
+
+• La peur de partager son code/Douchebagisme
 
 -   Laisser le parfait être l'ennemi du bien
 
