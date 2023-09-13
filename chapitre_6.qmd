@@ -1,12 +1,12 @@
 # La gestion des références {#sec-chap6}
 
-## \[Pourquoi citer ?\]
+## Pourquoi citer ?
 
 La citation des sources joue un rôle essentiel dans le milieu académique, offrant de nombreux avantages. Tout d'abord, elle nous permet de nous insérer dans le contexte de la recherche existante. Chaque scientifique s'appuie sur les travaux précédents de ses pairs, en utilisant leurs découvertes comme point de départ et en engageant un dialogue continu. Référencer d'autres articles nous offre également la possibilité d'accéder à des informations pertinentes pour notre propre recherche. De plus, la transparence et la fiabilité de la science sont cruciales. La possibilité de vérifier les méthodes et les résultats d'une étude est indispensable. Si des erreurs sont découvertes dans la méthodologie ou l'analyse des résultats, d'autres scientifiques peuvent les corriger grâce aux références fournies. Enfin, la citation des sources est une démonstration de transparence et d'intégrité, renforçant la crédibilité de notre travail. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant la contribution des autres scientifiques à notre propre travail scientifique.
 
-## \[À quoi sert un logiciel de gestion bibliographique ?\]
+## À quoi sert un logiciel de gestion bibliographique ?
 
-Un outil de référence bibliographique est un logiciel conçu pour aider les chercheurs et chercheuses à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
+Un outil de référence bibliographique est un logiciel conçu pour aider les scientifiques à gérer et organiser les références bibliographiques de manière efficace. Ces outils sont particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres travaux académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
 1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites Web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
 
@@ -14,7 +14,7 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 
 3.  Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Ce processus permet de gagner énormément de temps en formatage. Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
 
-4.  Collaboration : Certains outils offrent la possibilité de collaborer en ligne, ce qui permet à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement permet une économie de temps par la centralisation des données sur un même interface.
+4.  Collaboration : Certains outils offrent la possibilité de collaborer en ligne, ce qui donne l'occasion à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement contribue à économiser du temps par la centralisation des données sur un même interface.
 
 5.  Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
 
@@ -22,9 +22,9 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les ch
 
 7.  Suivi de lecture : Certains outils permettent aux personnes utilisatrices de suivre les articles et les documents qu'elles ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
 
-8.  Importation et exportation : Les outils de référence bibliographique permettent souvent d'importer et d'exporter des références dans différents formats, ce qui facilite le transfert de données entre différentes platesformes.
+8.  Importation et exportation : Les outils de référence bibliographique autorisent généralement l'importation et l'exportation des références dans différents formats, ce qui facilite le transfert de données.
 
-En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux personnes chercheuses de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
+En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux scientifiques de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
 
 Bien que chaque logiciel de référence présente ses propres caractéristiques distinctes, il est indéniable qu'ils partagent des similitudes notables dans leur objectif principal. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références. Afin de choisir le logiciel qui répond aux besoins de la personne utilisatrice, celle-ci doit se demander s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, la personne utilisatrice devrait se munir du même logiciel que ses collègues. Enfin, il est surtout important d'utiliser le logiciel que la personne préfère. Bien que Zotero, EndNote et Mendeley partagent des similitudes fondamentales, chacun possède des fonctionnalités spécifiques pouvant ainsi mieux répondre aux besoins individuels. Dans ce paysage d'options, l'élément crucial demeure l'adéquation entre les fonctionnalités offertes par le logiciel et les objectifs de l'utilisateur, tout en prenant en considération les aspects de partage, de collaboration et de convivialité.
 
@@ -34,9 +34,7 @@ L'avantage de Zotero est qu'il est gratuit et libre d'accès. Son code est ouver
 
 Un autre grand avantage de Zotero est la centralisation des sources bibliographique et de leurs fichiers. Il est possible d'ajouter des PDF à Zotero et de les synchroniser dans des groupes de travail. Cela permet de partager des documents facilement avec les autres membres de l'équipe de recherche. Plus besoin de dossiers partagés ou d'envoyer des documents par courriel ou sur des plateformes de partage de fichiers. Tout est centralisé dans Zotero. Cette centralisation permet d'accomplir des recherches du type ctrl+f à travers l'ensemble des sources contenues dans une bibliothèque. Vous écrivez une conclusion à propos des radis finlandais et vous désirez discuter des enjeux internationaux liés à son agriculture en citant une source que vous vous rappelez avoir consultée il y a 3 ans? Pas de problème, Zotero vous permet de retrouver cette source en quelques secondes avec une simple recherche.
 
-Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers.<!--#Est-ce qu'il y a d'autres désavantages? Par exemple: est-ce qu'on doit parfois corriger des erreurs ou ajouter manuellement des informations dans les sources? -->
-
-<!--Commentaire Marc: ^ Je seconde. Et aussi mettre + d'accent sur pourquoi les force sont des forces.   -->
+Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers. Il est d'ailleurs nécessaire de payer pour avoir un large espace de stockage. En outre, le logiciel n'est pas parfait. Il faut parfois ajouter manuellement des informations manquantes que le logiciel n'a pas repéré directement à l'aide du connecteur intégré.
 
 ## Pourquoi BibLaTeX? - Cette section a été écrite à l'aide de ChatGPT
 
