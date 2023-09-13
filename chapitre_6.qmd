@@ -2,11 +2,7 @@
 
 ## \[Pourquoi citer ?\]
 
-Citer ses sources est une pratique incontournable dans le domaine académique. Cette pratique est primordiale et a plusieurs utilités. D'abord, cela permet de s'inscrire dans une littérature existante. Chaque personne chercheuse construit sur ce qui a déjà été fait par d'autres collègues académiques, s'inspirant des recherches précédentes et dialoguant les unes avec les autres. Le référencement aux autres articles offre la possibilité d'aller y chercher des informations utiles à notre propre recherche. En outre, la science doit être publique afin de vérifier la fiabilité des méthodes employées et des résultats obtenus. Une erreur dans la méthodologie ou dans l'analyse des résultats d'une étude peut être corrigée par d'éventuelles contributions scientifiques s'il est possible de s'y référer. Finalement, citer ses sources est une preuve de transparence, d'éthique et donne de la crédibilité à notre contribution. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant l'apport d'autres personnes chercheuses à sa propre contribution scientifique.
-
-<!--Nouvelle intro-->
-
-La citation des sources joue un rôle essentiel dans le milieu académique, offrant de nombreux avantages. Tout d'abord, elle nous permet de nous insérer dans le contexte de la recherche existante. Chaque personne chercheuse s'appuie sur les travaux précédents de ses pairs, en utilisant leurs découvertes comme point de départ et en engageant un dialogue continu. Référencer d'autres articles nous offre également la possibilité d'accéder à des informations pertinentes pour notre propre recherche. De plus, la transparence et la fiabilité de la science sont cruciales. La possibilité de vérifier les méthodes et les résultats d'une étude est indispensable. Si des erreurs sont découvertes dans la méthodologie ou l'analyse des résultats, d'autres chercheurs et chercheuses peuvent les corriger grâce aux références fournies. Enfin, la citation des sources est une démonstration de transparence et d'intégrité, renforçant la crédibilité de notre travail. Enfin, elle favorise l'honnêteté intellectuelle en reconnaissant la contribution des autres chercheurs à notre propre travail scientifique.
+La citation des sources joue un rôle essentiel dans le milieu académique, offrant de nombreux avantages. Tout d'abord, elle nous permet de nous insérer dans le contexte de la recherche existante. Chaque scientifique s'appuie sur les travaux précédents de ses pairs, en utilisant leurs découvertes comme point de départ et en engageant un dialogue continu. Référencer d'autres articles nous offre également la possibilité d'accéder à des informations pertinentes pour notre propre recherche. De plus, la transparence et la fiabilité de la science sont cruciales. La possibilité de vérifier les méthodes et les résultats d'une étude est indispensable. Si des erreurs sont découvertes dans la méthodologie ou l'analyse des résultats, d'autres scientifiques peuvent les corriger grâce aux références fournies. Enfin, la citation des sources est une démonstration de transparence et d'intégrité, renforçant la crédibilité de notre travail. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant la contribution des autres scientifiques à notre propre travail scientifique.
 
 ## \[À quoi sert un logiciel de gestion bibliographique ?\]
 
@@ -112,7 +108,7 @@ Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire 
 
 #### Ajouter des références à Zotero
 
-Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
+Il y a différentes façon d'ajouter des références au groupe Zotero d'équipe.
 
 -   Drag & drop à partir de votre librairie personnelle
 -   Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
