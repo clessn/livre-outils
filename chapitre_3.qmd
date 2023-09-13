@@ -87,15 +87,13 @@ En outre, cet outil permet également de lancer une requête de recherche par mo
 
 ##### Figure 1. Interface de recherche de Factiva
 
-![](_SharedFolder_livre-outils/Graphiques/Chapitre3/screen_factiva.png)
-
 Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour de l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles aux chercheurs.euses, ils permettent de faire facilement une analyse de contenu par thèmes ou par ton.
 
 Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva. En effet, Eureka permet de filtrer des articles médiatiques par requête de recherche adaptée à la source, la date ou encore l'auteur. Toutefois, les requêtes de recherche doivent être formulées d'une manière quelque peu différente. Elles doivent donc être adaptées au fonctionnement d'Eureka. Les articles doivent être sélectionnés à la main, et peuvent être téléchargés dans un document PDF pouvant contenir un maximum de 50 articles à la fois. La Figure 2 contient l'interface de recherche d'Eureka.
 
 ##### Figure 2. Interface de recherche d'Eureka
 
-![](_SharedFolder_livre-outils/Graphiques/Chapitre3/screen_eureka.png)
+images/screen_factiva.png
 
 Il existe aussi une panoplie d'outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licences permettant d'exploiter la plateforme, plusieurs alternatives existent pour les personnes chercheuses. NexisUni, qui comprend entre autres l'outil LexisNexis Academic particulièrement prisé par le champ d'études de communication aux États-Unis, représente une excellente alternative. C'est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d'articles médiatiques. Les chercheurs.euses peuvent choisir la plateforme qui leur convient le mieux, en prenant en compte notamment l'accès qui peut leur être fourni par l'institution universitaire les employant.
 
