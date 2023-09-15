@@ -96,9 +96,13 @@ Dans cette section, vous serez amené notamment à Installer Zotero ainsi que Be
 
 Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
 
+![](images/Capture%20d%E2%80%99e%CC%81cran,%20le%202023-09-15%20a%CC%80%2015.11.07.png){width="170"}
+
 *Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
 
 Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+![](images/Capture%20d%E2%80%99%C3%A9cran,%20le%202023-09-15%20%C3%A0%2015.20.44%20(2).png){width="300"}
 
 #### Utilisation de Zotero lors de l'écriture
 
