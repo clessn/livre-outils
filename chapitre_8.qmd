@@ -8,13 +8,13 @@ Le monde de la recherche en sciences sociales numériques est en constante évol
 
 Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
 
-Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation&nbsp;:
+Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation :
 
-1. **Logiciels de communication**&nbsp;: La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
+1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
 
-2. **Logiciels de gestion de versions décentralisé**&nbsp;: Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
+2.  **Logiciels de gestion de versions décentralisé** : Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
 
-3. **Outils d'entreposage de données**&nbsp;: Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.
+3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.
 
 Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
 
@@ -28,7 +28,7 @@ Il y a tellement de plateformes différentes pour communiquer qu'il faut être p
 
 Peu importe votre niveau d'implication, la collaboration et la communication sont inévitables en recherche. La science n'est pas une discipline qui se développe en solitaire, elle nécessite des échanges et des débats. Les équipes de recherche sont souvent dispersées géographiquement. Même si vous travaillez actuellement seulement avec votre directeur, il est certain que plusieurs équipes de recherche dans votre département<!--AFC: Peut-être un peu poussé. Faculté, école, université? Je suis sûr qu'il y a des petits départements où personne n'utilise ça.--> utilisent un tel logiciel. Un courriel peut faire l'affaire pour une discussion ponctuelle qui se règle rapidement. Cependant, dans une équipe de travail dynamique, où plusieurs membres participent à divers projets, les courriels deviennent rapidement chaotiques, il est difficile de retracer ce qui a été dit<!--AFC: J'ajouterais "dans les nombreuses chaînes de courriels."--> et de conserver les pièces jointes. Les discussions deviennent rapidement trop complexes pour le médium utilisé.
 
-Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante&nbsp;: une structure simple et adaptée. <!-- Drole de structure de phrase ? --> Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l'endroit où vos conversations écrites se trouvent. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connexion des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
+Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante : une structure simple et adaptée. <!-- Drole de structure de phrase ? --> Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l'endroit où vos conversations écrites se trouvent. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connexion des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
 
 ### Comment utiliser votre logiciel efficacement
 
@@ -52,10 +52,11 @@ Une fois que la structure d'équipe est définie et que vos membres et vos parte
 
 <!--AFC: Pour cette première section jusqu’ici, je pense que beaucoup de profs auraient avantage à lire ça tel quel, et je pense qu’il faudrait penser à des avenues de publication séparées pour s’adresser aux profs spécifiquement. Travailler avec des profs organisés, c’est motivant. Mais c’est aussi le gros problème du chapitre jusqu'ici: il faut changer le ton si on veut s’adresser à des étudiants débutants qui font des serpents et échelles, être moins impératif dans la formulation des recommandations et vanter les mérites des outils plutôt que forcer certaines manières de faire (éviter de mêler les chaînes est vraiment important, ça oui, mais faire le ménage régulièrement des messages épinglés, ça sonne un peu dull pour un étudiant au bac). Au-delà des recommandations que j’ai faites, je relirais le texte avec cette idée en tête.-->
 
+```{=html}
 <!-- Je suis d'accord avec AFC, -L-O)
 
 ### Pourquoi Slack<!--Je renommerais "Avantages et inconvénients"-->
-
+```
 Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos besoins. Puisque nous utilisons Slack, voici quelques raisons qui pourraient vous convaincre d'opter pour cette option ou de vous en éloigner. Sachez que cette liste n'est pas du tout exhaustive, mais reflète simplement quelques-unes de nos observations par rapport à notre outil de travail.
 
 -   Avantages<!--Est-ce nécessaire de mettre en relief les sections avantages et inconvénients? Juste des paragraphes formatés normalement suffiraient, je crois.-->
@@ -102,35 +103,35 @@ Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de
 
 ### Pourquoi prioriser Git et GitHub pour les chercheurs en sciences sociales<!--AFC: Titre plus court--><!--AFC: Important! Section à regrouper avec la section "Avantages". C'est mêlant, ça semble se répéter. Il faut réorganiser ça.-->
 
-1. *Intégration et adoption répandue*&nbsp;: Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage<!--AFC: Ajouter "comme @stackoverflow23" puis référer au chapitre sur Stack Overflow-->, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
+1.  *Intégration et adoption répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage<!--AFC: Ajouter "comme @stackoverflow23" puis référer au chapitre sur Stack Overflow-->, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
 
-2. *Facilité de collaboration*&nbsp;: Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
+2.  *Facilité de collaboration* : Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
 
-3. *Visibilité et partage*&nbsp;: GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale.<!--AFC: Je ne comprends pas la phrase précédente et je ne suis pas sûr qu'elle soit vraie.--> Les projets en code source ouvert sont visibles et accessibles à tous, favorisant ainsi la collaboration et l'examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires. <!-- Dans github, le terme projet sert à définir quelque chose d'autre. Ici repository serait plus approprié? -->
+3.  *Visibilité et partage* : GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale.<!--AFC: Je ne comprends pas la phrase précédente et je ne suis pas sûr qu'elle soit vraie.--> Les projets en code source ouvert sont visibles et accessibles à tous, favorisant ainsi la collaboration et l'examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires. <!-- Dans github, le terme projet sert à définir quelque chose d'autre. Ici repository serait plus approprié? -->
 
-4. *Suivi des versions et recherche reproductible*&nbsp;: Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
+4.  *Suivi des versions et recherche reproductible* : Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
 
-5. *Infrastructure et sécurité*&nbsp;: GitHub offre une infrastructure robuste pour l'entreposage sécurisé des dépôts Git<!--AFC: Vérifier si on parle de commit ou de repos. Peut-être rien à modifier ici, cela ce qui a été défini plus haut.-->. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de GitHub permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
+5.  *Infrastructure et sécurité* : GitHub offre une infrastructure robuste pour l'entreposage sécurisé des dépôts Git<!--AFC: Vérifier si on parle de commit ou de repos. Peut-être rien à modifier ici, cela ce qui a été défini plus haut.-->. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de GitHub permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
 
 En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce à l'open source. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
 
 ### Pratiques à éviter sur GitHub pour les chercheurs en sciences sociales<!--AFC: Même commentaire que pour la section précédente... Titre à revoir. Pourquoi parle-t-on juste de GitHub dans le titre ici mais pas le précédent?-->
 
-Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l'efficacité de la recherche. Voici quelques éléments à éviter&nbsp;:
+Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l'efficacité de la recherche. Voici quelques éléments à éviter :
 
-1. *Entreposer des informations sensibles*&nbsp;: Évitez d'entreposer des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme.
+1.  *Entreposer des informations sensibles* : Évitez d'entreposer des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme.
 
-2. *Inclure des mots de passe et clés d'accès*&nbsp;: Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication -->
+2.  *Inclure des mots de passe et clés d'accès* : Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication -->
 
-3. *Entreposer des fichiers lourds*&nbsp;: Évitez d'entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt<!--AFC: Encore incertain de ce qu'est un dépôt.-->. Utilisez plutôt des services d'entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt.
+3.  *Entreposer des fichiers lourds* : Évitez d'entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt<!--AFC: Encore incertain de ce qu'est un dépôt.-->. Utilisez plutôt des services d'entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt.
 
-4. *Inclure des identifiants personnels*&nbsp;: Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.-->
+4.  *Inclure des identifiants personnels* : Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.-->
 
-5. *Ignorer les pratiques de branches et de fusion*&nbsp;: Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO -->
+5.  *Ignorer les pratiques de branches et de fusion* : Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO -->
 
-6. *Ignorer les commentaires des collaborateurs*&nbsp;: Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
+6.  *Ignorer les commentaires des collaborateurs* : Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
 
-7. *Ne pas documenter*&nbsp;: Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d'autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d'exécuter votre code.
+7.  *Ne pas documenter* : Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d'autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d'exécuter votre code.
 
 En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l'efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur.
 
@@ -138,7 +139,7 @@ En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en 
 
 Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l'impact des médias sur l'opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.
 
-#### Étape 1&nbsp;: Création d'un répertoire<!--définir répertoire. C'était pas dépôt ou entrepôt?--> local et initialisation de Git
+#### Étape 1 : Création d'un répertoire<!--définir répertoire. C'était pas dépôt ou entrepôt?--> local et initialisation de Git
 
 Ouvrez votre terminal<!--AFC: Ajouter "(MacOS, Linux) ou l'application Git Bash (Windows)"--> et naviguez vers le dossier où vous souhaitez enregistrer votre projet.
 
@@ -162,7 +163,7 @@ Initialisez Git dans ce répertoire.
 git init
 ```
 
-#### Étape 2&nbsp;: Ajout de votre code et de vos fichiers
+#### Étape 2 : Ajout de votre code et de vos fichiers
 
 Ajoutez vos fichiers R contenant le code pour l'analyse des médias et des sondages dans le répertoire. Par exemple, vous pouvez avoir des fichiers *analyse_medias.R* et *analyse_sondages.R*.
 
@@ -172,7 +173,7 @@ Utilisez la commande `git status` pour vérifier l'état de vos fichiers.
 git status
 ```
 
-#### Étape 3&nbsp;: Ajout, validation et commit<!--AFC: À traduire!--> de vos modifications
+#### Étape 3 : Ajout, validation et commit<!--AFC: À traduire!--> de vos modifications
 
 Ajoutez vos fichiers pour qu'ils soient prêts à être validés.
 
@@ -186,7 +187,7 @@ Validez vos modifications avec un message descriptif.
 git commit -m "Ajout du code d'analyse des médias et des sondages"
 ```
 
-#### Étape 4&nbsp;: Création du répertoire sur GitHub et du lien avec votre répertoire local
+#### Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
 
 Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom <!--AFC: Ajouter "sous la forme"-->*mon_projet*.
 
@@ -196,7 +197,7 @@ De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local
 git remote add origin https://github.com/votre-utilisateur/mon_projet.git
 ```
 
-#### Étape 5&nbsp;: Push<!--AFC: Pousser (*push*)?--> de votre travail sur GitHub
+#### Étape 5 : Push<!--AFC: Pousser (*push*)?--> de votre travail sur GitHub
 
 Envoyez vos commits<!--AFC: --> locaux vers GitHub.
 
@@ -204,13 +205,13 @@ Envoyez vos commits<!--AFC: --> locaux vers GitHub.
 git push -u origin master
 ```
 
-#### Étape 6&nbsp;: Collaboration avec vos collègues
+#### Étape 6 : Collaboration avec vos collègues
 
 Si vos collègues souhaitent contribuer à votre projet, ils peuvent *forker*<!--AFC: Trouver une traduction et mettre la version en anglais entre parenthèses en italique | Fourcher ? -LO --> votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
 
 Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *pull request*<!--AFC: Retourner plus haut et utiliser l'expression en français définie à ce moment-là, en mettant pull request entre parenthèses à ce moment-là. Ici, juste utiliser la traduction en français.--> pour vous demander de fusionner leurs modifications dans votre répertoire principal.
 
-#### Étape 7&nbsp;: Pull<!--AFC: À traduire--> des modifications de vos collègues
+#### Étape 7 : Pull<!--AFC: À traduire--> des modifications de vos collègues
 
 Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
 
@@ -218,7 +219,7 @@ Lorsque vos collègues ont soumis des modifications et vous ont demandé de les 
 git pull origin master
 ```
 
-#### Étape 8&nbsp;: Répéter le processus
+#### Étape 8 : Répéter le processus
 
 Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
 
@@ -226,7 +227,7 @@ Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre proj
 
 Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive.<!-- AFC: Mentionner que RStudio et VS Code intègrent aussi des éditeurs Git avec boutons plus conviviaux. En fait, je me demande si ces outils ne sont pas meilleurs que GitHub Desktop? --> Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.<!--AFC: Ajoute référence à la figure juste après, et donner un titre à cette figure.-->
 
-![image2](images/chapitre8_1.png)
+![image](images/chapitre8_gitdesktop.png)
 
 GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
 
@@ -246,13 +247,13 @@ L'entreposage des données occupe une place cruciale dans la recherche en scienc
 
 Au fil du temps, de nombreux outils d'entreposage ont émergé pour répondre aux besoins variés des chercheurs en sciences sociales. Des solutions populaires incluent Dropbox, Google Drive, OneDrive et Amazon S3 d'AWS. L'histoire de ces outils témoigne de l'évolution des besoins d'entreposage et de collaboration.
 
-Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage cloud tels que Dropbox, Google Drive et OneDrive se révèlent indispensables. Voici quelques avantages d'un entreposage sur le cloud pour la recherche&nbsp;:
+Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage cloud tels que Dropbox, Google Drive et OneDrive se révèlent indispensables. Voici quelques avantages d'un entreposage sur le cloud pour la recherche :
 
-1. *Sauvegarde automatique*&nbsp;: Les solutions cloud sauvegardent automatiquement vos fichiers, garantissant que vous ne perdrez jamais vos données en cas de panne d'ordinateur ou d'accident.
+1.  *Sauvegarde automatique* : Les solutions cloud sauvegardent automatiquement vos fichiers, garantissant que vous ne perdrez jamais vos données en cas de panne d'ordinateur ou d'accident.
 
-2. *Accessibilité universelle*&nbsp;: Vous pouvez accéder à vos fichiers à partir de n'importe quel appareil avec une connexion Internet, ce qui favorise la flexibilité dans la gestion de vos projets.<!--AFC: J'ajouterais "Vous n'avez pas besoin d'utiliser un disque dur externe, une clé USB ou encore de vous envoyer vos fichiers par courriel."-->
+2.  *Accessibilité universelle* : Vous pouvez accéder à vos fichiers à partir de n'importe quel appareil avec une connexion Internet, ce qui favorise la flexibilité dans la gestion de vos projets.<!--AFC: J'ajouterais "Vous n'avez pas besoin d'utiliser un disque dur externe, une clé USB ou encore de vous envoyer vos fichiers par courriel."-->
 
-3. *Partage facilité*&nbsp;: Les services cloud permettent de partager facilement des fichiers et des dossiers avec des collègues, même en dehors de votre équipe de recherche. Cela favorise la collaboration et la communication.
+3.  *Partage facilité* : Les services cloud permettent de partager facilement des fichiers et des dossiers avec des collègues, même en dehors de votre équipe de recherche. Cela favorise la collaboration et la communication.
 
 Il est important de noter que le choix d'un service cloud dépend de vos besoins et de vos préférences. Considérez des facteurs tels que la capacité d'entreposage, les fonctionnalités de partage, la convivialité et la compatibilité avec vos outils de recherche existants.
 
@@ -260,9 +261,11 @@ Dropbox est connu pour sa simplicité d'utilisation et sa convivialité. Il peut
 
 Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier *.gitignore*<!--AFC: Ajouter "&nbsp;: cela évitera qu'il soit partagé à d'autres personnes ayant accès au [repository à traduire]." Important de préciser aussi que le .gitignore est partagé, donc une personne mal intentionnée pourrait modifier le contenu du .gitignore "par accident" pour avoir accès à un fichier sensible. Il faut rester vigilant avec les commits.-->.
 
-![image1](images/chapitre8_2.png)
+![image1](images/chapitre8_dropbox.png)
 
-<!--AFC: Parler de l'image?-->Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
+<!--AFC: Parler de l'image?-->
+
+Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
 
 Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub.
 
@@ -274,13 +277,13 @@ Lorsqu'il s'agit d'entreposer des données sensibles, tels que des données de s
 
 AWS regroupe un ensemble de services *cloud* <!-- Infonuagiques --> proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
 
-1. *Sécurité robuste*&nbsp;: AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
+1.  *Sécurité robuste* : AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
 
-2. *Scalabilité*&nbsp;:<!--AFC: Trouver une traduction.--> AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
+2.  *Scalabilité* :<!--AFC: Trouver une traduction.--> AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
 
-3. *Flexibilité*&nbsp;: AWS propose une variété de services adaptés à différentes utilisations, allant de l'entreposage de données au calcul intensif pour l'analyse avancée.
+3.  *Flexibilité* : AWS propose une variété de services adaptés à différentes utilisations, allant de l'entreposage de données au calcul intensif pour l'analyse avancée.
 
-4. *Collaboration simplifiée*&nbsp;: Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
+4.  *Collaboration simplifiée* : Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
 
 AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur<!--AFC: Ça s'adresse toujours à des étudiants qui vont faire des serpents et échelles?-->, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable.
 
@@ -288,31 +291,31 @@ AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud 
 
 Imaginez un jeune chercheur en sciences sociales qui travaille sur une analyse comparative de données de sondages recueillies sur plusieurs décennies. Pour maintenir la sécurité des données sensibles et faciliter l'accès pour les analyses dans RStudio, il décide d'utiliser AWS pour l'entreposage et la gestion de ses données.<!--AFC: Est-ce vraiment un scénario réaliste? Je suis ouvert à être convaincu, mais il les avantages mentionnés dans la section précédente me semblent insuffisants pour justifier qu'un jeune étudiant décide d'y investir du temps. C'est vraiment pas quelque chose que je recommanderais à n'importe qui. La section actuelle serait peut-être pertinente, encore une fois, à publier séparément... C'est super bon pour les profs honnêtement, faut pas perdre ça. Mais je pense pas que c'est adapté au public visé. Un étudiant peut se créer son propre Notion, son propre compte GitHub, des repos Git partagés, un site Web avec WordPress, etc. mais il faut vraiment être crinqué pour y aller avec AWS ou pour créer un espace de travail Slack à utiliser par une équipe de travail, non?-->
 
-##### Étape 1&nbsp;: Création d'un compte AWS et configuration
+##### Étape 1 : Création d'un compte AWS et configuration
 
 Le chercheur crée un compte AWS et configure ses paramètres de sécurité, y compris la configuration de l'authentification à deux facteurs pour renforcer la sécurité de son compte.
 
-##### Étape 2&nbsp;: Création d'un espace d'entreposage S3
+##### Étape 2 : Création d'un espace d'entreposage S3
 
 Le chercheur crée un compartiment Amazon S3 (Simple Storage Service) pour entreposer ses données de sondage. Il choisit une région AWS et définit les paramètres de sécurité appropriés, tels que le chiffrement des données.
 
-##### Étape 3&nbsp;: Transfert des données vers Amazon S3
+##### Étape 3 : Transfert des données vers Amazon S3
 
 Le chercheur transfère les données de sondage dans son compartiment Amazon S3 à l'aide de l'interface en ligne AWS ou d'outils d'importation.
 
-##### Étape 4&nbsp;: Configuration des autorisations
+##### Étape 4 : Configuration des autorisations
 
 Pour sécuriser davantage les données, le chercheur configure les autorisations d'accès aux données dans Amazon S3. Il attribue des rôles et des politiques d'accès spécifiques aux utilisateurs, garantissant que seules les personnes autorisées peuvent accéder aux données.
 
-##### Étape 5&nbsp;: Configuration d'accès dans RStudio
+##### Étape 5 : Configuration d'accès dans RStudio
 
 Le chercheur installe le package *aws.s3* dans RStudio pour accéder à ses données entreposées dans Amazon S3. Il configure également les informations d'identification AWS dans son environnement RStudio.
 
-##### Étape 6&nbsp;: Accès et analyse des données dans RStudio
+##### Étape 6 : Accès et analyse des données dans RStudio
 
 À l'aide du package *aws.s3*, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements. <!-- C'est quand même plus compliqué que ça. Voir commentaires à la fin.-->
 
-##### Étape 7&nbsp;: Sécurité et conservation des données
+##### Étape 7 : Sécurité et conservation des données
 
 Après avoir effectué ses analyses, le chercheur peut choisir de conserver les données de sondage dans Amazon S3 en utilisant les politiques de conservation appropriées. Il peut également archiver des copies de sauvegarde pour garantir l'intégrité des données à long terme.
 
@@ -326,8 +329,8 @@ L'entreposage des données est une étape cruciale dans la recherche en sciences
 
 <!-- Les auteurs devraient aborder d'autres logiciels que Slack, tel que d'autres. -->
 
+```{=html}
 <!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
-
-
+```
