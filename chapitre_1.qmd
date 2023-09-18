@@ -12,7 +12,7 @@ Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, m
 
 Ce qui définit les données massives comme concept est souvent <!--JD: Utiliser plutôt les termes "entremêlé" ou "lié"? Et je suis d'accord avec AFC qu'un exemple ou une explication supplémentaire faciliterait la lecture--> mêlé avec le phénomène social qui l'accompagne<!--AFC: Cette phrase veut dire quoi concrètement?-->. Il est toutefois possible de démêler le tout en distinguant trois approches conceptuelles des données massives qui sont décrites dans la Figure 1.1.
 
-![image1](images/chapitre1_1.png)
+![image1_1](images/chapitre1_definitions.png)
 
 1.  Premièrement, les données massives représentent une ***quantité importante de points d'information*** qui varient selon la nature, le type, la source, etc. Ici, la distinction est simplement quantitative. Il s'agit d'une première dimension à la définition des données massives.<!--AFC: J'enlèverais cette phrase. Le texte est déjà formaté.-->
 
@@ -82,7 +82,7 @@ Les données massives peuvent aussi jouer d'autres rôles importants relatifs à
 
 Deuxièmement, la quantité importante de données rend possible l'observation d'effets précis, spécifiques et inédits par sous-groupes (Grimmer 2015: 81). Alors qu'auparavant, la taille réduite des échantillons ne permettait pas d'effectuer des inférences valides pour des sous-groupes de la population --- les écarts-types par sous-groupes étaient trop grands, rendant difficile l'estimation précise d'un paramètre comme la moyenne et impossible celle d'un coefficient ---, la taille énorme des échantillons de données massives permet aux chercheurs d'estimer des paramètres qui étaient demeurés extrêmement imprécis jusqu'à aujourd'hui. Notre compréhension des phénomènes sociaux s'en trouve par le fait même approfondie de façon considérable.<!--AFC: Il faut introduire la Figure 1.2 à quelque part et la renommer.-->
 
-![image2](images/chapitre1_2.png)
+![image2_2](images/chapitre1_tableau.png)
 
 ## Pourquoi ce qui se passe actuellement mérite-t-il que l'on s'y attarde?<!--AFC: Renommer "L'importance des données massives" ou un truc du genre. "Ce qui se passe actuellement" dans un titre, pas très clair.-->
 
