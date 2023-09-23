@@ -28,6 +28,9 @@ Malgré tout, il s'agit d'une manière tout autant enrichissante que divertissan
 ### Environnements de programmation
 
 ### Les alternatives à Word : les langages de balisage
+- le chapitre 5 parle des langages de balisage (markdown, latex, etc.)
+- http://wcours.gel.ulaval.ca/2018/h/GEL1001/default/5chronologie/2017-01%20GEL-1001%20tutoriel%20LaTeX.pdf (powerpoint sur l'utilisation de latex)
+- https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf 
 
 ### Serpents
 
@@ -40,8 +43,12 @@ Le dernier serpent pour débutants est le suivant : **ne pas construire des base
 ## Intermédiaire
 
 ### La gestion des références
+- le chapitre 6 porte entièrement sur la gestion des références (zotero, biblatex, etc.). 
+- https://uottawa.libguides.com/comment_utiliser_zotero (site de l'université d'Ottawa. Beaucoup d'explications sur l'utilisation de Zotero + vidéo)
+- https://www.bibl.ulaval.ca/fichiers_site/aide_recherche/zotero/guide-zotero.pdf (document de l'université laval)
 
 ### Visualisation graphique en R
+- 
 
 ### Serpents :
 
