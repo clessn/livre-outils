@@ -30,3 +30,16 @@
 <!-- -   Ce qui s'en vient dans ce domaine? -->
 
 <!-- Salut -->
+
+# Utilisation du package OpenAI
+
+## Installation du package
+
+install.packages("openai")
+library(openai)
+
+## Configuration de l'API
+
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. 
+
+La fonction principale du package openai est 
