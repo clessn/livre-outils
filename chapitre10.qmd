@@ -43,12 +43,17 @@ Le dernier serpent pour débutants est le suivant : **ne pas construire des base
 ## Intermédiaire
 
 ### La gestion des références
-- le chapitre 6 porte entièrement sur la gestion des références (zotero, biblatex, etc.). 
+- le chapitre 6 porte entièrement sur la gestion des références (zotero, biblatex, etc.).
+
 - https://uottawa.libguides.com/comment_utiliser_zotero (site de l'université d'Ottawa. Beaucoup d'explications sur l'utilisation de Zotero + vidéo)
 - https://www.bibl.ulaval.ca/fichiers_site/aide_recherche/zotero/guide-zotero.pdf (document de l'université laval)
+- http://svn.tug.org/pracjourn/2006-4/fenn/fenn.pdf (explique comment utiliser Biblatex)
+
 
 ### Visualisation graphique en R
-- 
+- Ggplot2 : elegant graphics for data analysis https://ulaval.on.worldcat.org/search/detail/951778044?queryString=ggplot2%3A%20Elegant%20Graphics%20for%20Data%20Analysis%20&clusterResults=true&groupVariantRecords=false (livre qui explique comment utiliser ggplot2)
+
+- https://link-springer-com.acces.bibl.ulaval.ca/book/10.1007/978-0-387-75969-2 (utilisation de Lattice)
 
 ### Serpents :
 
