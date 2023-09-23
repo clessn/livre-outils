@@ -252,8 +252,6 @@ Il serait intéressant de faire plus de liens avec la science. La transparence, 
 
 -->
 ```
-
-
 ```{=html}
 <!-- Commentaires Hubert
 
@@ -263,5 +261,3 @@ En général, j'ai l'impression qu'on devrait rélféchir à comment reframer ce
 
 -->
 ```
-
-
