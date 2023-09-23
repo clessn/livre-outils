@@ -29,8 +29,12 @@ Malgré tout, il s'agit d'une manière tout autant enrichissante que divertissan
 
 ### Les alternatives à Word : les langages de balisage
 - le chapitre 5 parle des langages de balisage (markdown, latex, etc.)
+
 - http://wcours.gel.ulaval.ca/2018/h/GEL1001/default/5chronologie/2017-01%20GEL-1001%20tutoriel%20LaTeX.pdf (powerpoint sur l'utilisation de latex)
-- https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf 
+- https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf (latex)
+
+- https://books.google.ca/books?hl=fr&lr=&id=9jb_DwAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=ddRy2mzCoL&sig=PHQ6sbk-aDPButn0-xoiXKJkwWg&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markown)
+- https://books.google.ca/books?hl=fr&lr=&id=_FwPEAAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=DcUv5Xk47M&sig=js_prAf0BFO5GmH6BEsOtVMRHaQ&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markdown)
 
 ### Serpents
 
