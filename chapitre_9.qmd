@@ -8,7 +8,7 @@ Nous débutons par définir et expliquer ce qu’est l’intelligence artificiel
 
 ## Définition et différents type d'IA
 
-Qu’est-ce que l’intelligence artificielle (IA) ? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles » ? 
+Qu’est-ce que l’intelligence artificielle (IA)? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles »? 
 
 
 
@@ -18,11 +18,16 @@ Qu’est-ce que l’intelligence artificielle (IA) ? Est-ce quelque chose d’
 ## Utilisation du package OpenAI
 
 ### Installation du package
-
 install.packages("openai") library(openai)
 
-### Configuration de l'API
 
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante.
+# Utilisation du package OpenAI
 
-La fonction principale du package openai est
+La fonction principale du package openai est 
+
+## Configuration de l'API
+
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie. 
+
+Lorsque 
+
