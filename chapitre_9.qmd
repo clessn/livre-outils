@@ -1,45 +1,28 @@
 # Outils d'intelligence artificielle
 
-<!-- # Sapientia Artificiosa: L'Excellence Cognitive au Service des Études Sociales" -->
+Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.
 
-<!-- # En général, c'est quoi l'IA, le ML, le DL, etc.? (en mentionnant que c'est un champ qui change tout le temps) (JOZEF) -->
+Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites.
 
-<!-- # La révolution ChatGPT -->
 
-<!-- -   Corpus de textes humains donc possibilité de plagiat -->
-<!-- -   Tracer la ligne entre plagiat et outil d'assistance -->
-<!-- -   Parler des revues de science po qui veulent qu'on déclare l'utilisation de ce genre de AI -->
-<!-- -   Brainstorm -->
-<!-- -   l'API de OpenAI -->
-<!-- -   Biais de ce genre d'IA -->
 
-<!-- # Deepl, google traduction, etc, -->
+## Définition et différents type d'IA
 
-<!-- # Midjourney, génération d'images, etc. -->
+Qu’est-ce que l’intelligence artificielle (IA) ? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles » ? 
 
-<!-- -   Parler du plagiat -->
 
-<!-- # 1 autre exemple? -->
 
-<!-- # Machine Learning, reconnaissance d'images etc -->
 
-<!-- -   AWS, Calcul Québec, etc. -->
 
-<!-- # LLM, chatbots, etc. -->
 
-<!-- -   Ce qui s'en vient dans ce domaine? -->
+## Utilisation du package OpenAI
 
-<!-- Salut -->
+### Installation du package
 
-# Utilisation du package OpenAI
+install.packages("openai") library(openai)
 
-## Installation du package
+### Configuration de l'API
 
-install.packages("openai")
-library(openai)
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante.
 
-## Configuration de l'API
-
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. 
-
-La fonction principale du package openai est 
+La fonction principale du package openai est
