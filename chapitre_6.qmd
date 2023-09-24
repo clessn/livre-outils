@@ -36,19 +36,18 @@ Un autre grand avantage de Zotero est la centralisation des sources bibliographi
 
 Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers. Il est d'ailleurs nécessaire de payer pour avoir un large espace de stockage. En outre, le logiciel n'est pas parfait. Il faut parfois ajouter manuellement des informations manquantes que le logiciel n'a pas repéré directement à l'aide du connecteur intégré.
 
-## Pourquoi BibLaTeX? - Cette section a été écrite à l'aide de ChatGPT
+## Pourquoi BibLaTeX? 
 
 BibLaTeX est une extension moderne pour le traitement des bibliographies dans LaTeX et Quarto généralement utilisé avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats. BibLaTeX prend en charge de nombreuses langues, ce qui le rend adapté pour la rédaction d'articles ou de livres destinés à des publics internationaux. Bien que BibLaTeX soit principalement un paquet pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils comme Zotero sous forme de fichiers .bib, qui peuvent ensuite être utilisés avec BibLaTeX. Betterbibtex peut tenir vos fichiers .bib à jour automatiquement à partir de Zotero. Conservez seulement les références que vous utilisez et organisez votre fichier en ordre alphabétique pour favoriser la coopération et le partage de source.
 
 Voici un exemple d'utilisation de Biblatex en Latex.
 
-````{=latex}
+```{=latex}
 "\usepackage[style=apa,url=false,isbn=false,doi=false,backend=biber,language=english,autolang=other]{biblatex}"
 "\addbibresource{references.bib}"
 "\parencite[page]{citationkey}"
 "\printbibliography{}"
-````
-
+```
 Les inconvénients potentiels de BibLaTeX incluent une courbe d'apprentissage pour ceux qui sont habitués à BibTeX, ainsi que la nécessité d'une mise à jour régulière pour rester compatible avec les versions récentes de LaTeX. De plus, certains éditeurs académiques ou revues ont leurs propres styles de citation et n'acceptent pas les soumissions utilisant BibLaTeX, bien que cela devienne de moins en moins courant.
 
 En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
@@ -73,11 +72,11 @@ Dans cette section, vous serez amené notamment à Installer Zotero ainsi que Be
 
 -   Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero \> Settings \> Onglet Better Bibtex \> Open Better Bibtex preferences...
 
-- Il est important, lors de la collaboration, de s'assurer d'avoir les même cléfs de citation que vos collègues. Betterbibtex peut s'assurer que vous clés respectent un format standard. Pour ce faire, 
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les même cléfs de citation que vos collègues. Betterbibtex peut s'assurer que vous clés respectent un format standard. Pour ce faire,
 
--  Voici une suggestion de clé de citation. Il s'agit simplement du nom de l'auteur et de la date de publication en deux chiffres. Pour l'utiliser, collez ceci Dans la section Citation Key Format: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+-   Voici une suggestion de clé de citation. Il s'agit simplement du nom de l'auteur et de la date de publication en deux chiffres. Pour l'utiliser, collez ceci Dans la section Citation Key Format: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
 
-- Afin de vous assurer d'avoir les mêmes clé de citation, vous pouvez clic-droit sur vos références, allez dans les options Betterbibtex et cliquer sur "Refresh Citation Keys". 
+-   Afin de vous assurer d'avoir les mêmes clé de citation, vous pouvez clic-droit sur vos références, allez dans les options Betterbibtex et cliquer sur "Refresh Citation Keys".
 
 #### Génération du fichier .bib
 
@@ -99,9 +98,11 @@ Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire 
 
 Il y a différentes façons d'ajouter des références à Zotero.
 
-- Drag & drop à partir de votre librairie personnelle
-- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
-- Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
-- Utiliser le connecteur à l'intérieur de votre fureteur. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
+-   Drag & drop à partir de votre librairie personnelle
+-   Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur à l'intérieur de votre fureteur. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
 
+## Conclusion
 
+En résumé, l'utilisation d'un outil de référencement bibliographique apporte son lot d'avantages. Que ce soit pour faciliter le travail de recherche en équipe, pour citer des études et faire une bibliographie plus rapidement ou pour éviter de perdre des sources intéressantes, nous vous encourageons fortement à prendre le temps d'apprendre à utiliser Zotero. D'ailleurs, même si vous ne faites pas encore de recherches exhaustives, Zotero peut être utilisé pour enregistrer les lectures de vos cours ou de vos séminaires. De cette manière, vous pratiquerez l'utilisation de cet outil et vous aurez en main les lectures que vous aurez trouvées intéressantes pour des travaux ultérieurs. Si vous voulez en apprendre encore davantage, il existe plusieurs tutoriels en ligne comprenant des fonctions plus poussées.
