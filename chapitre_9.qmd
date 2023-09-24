@@ -31,6 +31,8 @@
 
 <!-- Salut -->
 
+
+
 # Utilisation du package OpenAI
 
 ## Installation du package
@@ -40,6 +42,10 @@ library(openai)
 
 ## Configuration de l'API
 
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. 
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie. 
+
+Lorsque 
+
+
 
 La fonction principale du package openai est 
