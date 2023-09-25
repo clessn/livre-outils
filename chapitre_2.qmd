@@ -52,7 +52,6 @@ Afin d'illustrer le tout plus concrètement, nous utiliserons ici le cas du logi
 Utilisons un cas d'étude afin de démontrer l'apport des librairies externes. Par exemple, je souhaite savoir la probabilité de survie à bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt avec sous la notatio suivante: $P(Y = Survie | X = Femme)$. Cela se lit "la probabilité de survie étant donné que nous soyons une femme". Pour ce faire, je dois utiliser l'ensemble de données `titanic`, disponible en format csv. Je dois donc installer et télécharger la librairie `readr` afin que `R` puisse importer et lire les données. Ensuite je vais utiliser la commande `table`, offerte dans celles de base, afin de visionner mes données. Cette dernière commande affichera un tableau croisé.
 
 ```{r Exemple 1. Package readr et de base, message=FALSE, error=FALSE}
-install.packages('readr') # <1>
 library(readr) # <1>
 
 dat <- read_csv("~/Documents/GitHub/livre-outils/data/titanic.csv") # <2>
@@ -61,7 +60,7 @@ table(dat$survie, dat$femme) # <3>
 
 ```
 
-1.  Installation et téléchargement de la librairie `readr` qui nous permettra de lire des ensembles de données en format `.csv`.
+1.  Téléchargement de la librairie `readr` qui nous permettra de lire des ensembles de données en format `.csv`.
 2.  Importation d'une banque de données en format `.csv`.
 3.  Impression d'un tableau croisé afin d'observer la distribution des hommes et des femmes (colones), croisé avec la survie (lignes).
 
@@ -70,7 +69,6 @@ Comme nous le voyons ici, la librairie `readr`, développé par plusieurs indivi
 [^4]: Pour avoir la liste complète des contributeurs, les lecteurs peuvent utiliser la commande `?readr` dans `R`, ou bien consulter le lien suivant https://readr.tidyverse.org
 
 ```{r Exemple 2. modelsummary, message=FALSE}
-install.packages('modelsummary') # <1>
 library(modelsummary) # <1>
 
 Tableau.2 <- datasummary_crosstab(survie ~ femme, data = dat) # <2>
@@ -78,7 +76,7 @@ Tableau.2 <- datasummary_crosstab(survie ~ femme, data = dat) # <2>
 Tableau.2
 ```
 
-1.  Installation et téléchargement de la librarie `modelsummary`.
+1.  Téléchargement de la librarie `modelsummary`.
 2.  Création d'un tableau croisé à l'aide de la commande `datasummary_crosstab()`.
 3.  Impression du tableau.
 
@@ -136,13 +134,12 @@ table(dat$femme) # <2>
 2.  Vérification que la manipulation a bien fonctionné.
 
 ```{r Exemple tidyverse, message=FALSE}
-install.packages('tidyverse') # <3>
-library(tidyverse) 
+library(tidyverse) # <3>
 dat$femme <- recode(dat$femme, `0` = "Homme", `1` = "Femme") # <4>
 table(dat$femme) # <5>
 ```
 
-3.  Installation et téléchargement de la libraire `tidyverse`.
+3.  Téléchargement de la libraire `tidyverse`.
 4.  Recodage de la variable femme à l'aide de la commande `recode`.
 5.  Vérification que la manipulation a bien fonctionné.
 
