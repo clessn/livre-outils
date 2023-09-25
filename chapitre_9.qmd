@@ -26,7 +26,7 @@ install.packages("openai") library(openai)
 ## Installation du package
 
 ```{r}
-install.packages("openai")
+#install.packages("openai")
 library(openai)
 ```
 
@@ -37,7 +37,7 @@ Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez 
 Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R. 
 
 ```{r}
-install.packages("usethis")
+#install.packages("usethis")
 usethis::edit_r_environ()
 ```
 
@@ -53,6 +53,7 @@ La fonction principale du package openai est create_chat_completion(). Elle pren
 
 
 ```{r}
+#| eval: false
 chat_prompt <- create_chat_completion(
     model = "gpt-3.5-turbo",
     messages = list(

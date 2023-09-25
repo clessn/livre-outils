@@ -139,6 +139,30 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{siunitx}
+
+  \newcolumntype{d}{S[
+    input-open-uncertainty=,
+    input-close-uncertainty=,
+    parse-numbers = false,
+    table-align-text-pre=false,
+    table-align-text-post=false
+  ]}
+  
 \makeatletter
 \makeatother
 \makeatletter
@@ -193,6 +217,12 @@
 \makeatother
 \makeatletter
 \makeatother
+\makeatletter
+\@ifpackageloaded{tikz}{}{\usepackage{tikz}}
+\makeatother
+        \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+          \node[shape=circle,draw,inner sep=1pt] (char) {{\scriptsize#1}};}}  
+                  
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -208,12 +238,12 @@
 \title{Outils de recherche en sciences sociales numériques}
 \author{Chaire de leadership en enseignement des sciences sociales
 numériques (CLESSN)}
-\date{2023-09-23}
+\date{2023-09-25}
 
 \begin{document}
 \frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, enhanced, frame hidden, sharp corners, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, interior hidden, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -676,7 +706,32 @@ sociales contemporaines?
 \bookmarksetup{startatroot}
 
 \hypertarget{le-monde-du-libre}{%
-\chapter{Le monde du libre}\label{le-monde-du-libre}}
+\chapter{1. Le monde du libre}\label{le-monde-du-libre}}
+
+\begin{center}
+
+"Vers une science numérique plus transparante: l'apport du logiciel libre et du code ouvert dans les sciences sociales"
+author: "Catherine Ouellet et Jozef Rivest"
+
+Catherine Ouellet et Jozef Rivest
+
+\end{center}
+
+Ce chapitre vise à initier les lecteurs et lectrices aux concepts
+fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans
+un premier temps, l'historique de ce mouvement afin de pouvoir le situer
+temporellement. De cette façon, nous pourrons mieux comprendre les
+motivations derrière ce mouvement, mais aussi ses influences actuelles.
+Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que
+les deux soient très près l'un de l'autre, il est important de les
+distinguer puisqu'ils ne renvoient pas aux mêmes caractéristiques et aux
+mêmes fondements. Après coup, nous utiliserons un exemple concret pour
+illustrer le propos: \texttt{R}, et ses différentes librairies. La
+dernière section du chapitre présentera certains avantages, certains
+inconvénients ainsi que des défis qui se posent pour ce monde. En guise
+de conclusion, nous souhaitons mettre l'emphase sur l'apport du logiciel
+libre et du code ouvert afin d'assurer la transparence, la
+reproductibilité ainsi que la qualité des recherches scientifiques.
 
 \emph{« Vous n'avez pas à suivre une recette avec précision. Vous pouvez
 laisser de côté certains ingrédients. Ajouter quelques champignons parce
@@ -688,7 +743,7 @@ un logiciel nécessite encore moins, habituellement quelques clics de
 souris et un minimum d'électricité. Dans tous les cas, la personne qui
 donne l'information y gagne deux choses : davantage d'amitié et la
 possibilité de récupérer en retour d'autres recettes intéressantes. »} -
-Richard Stallman
+Richard Stallman (Williams, Stallman, and Masutti 2010)
 
 Cette analogie illustre bien trois concepts au coeur de la philosophie
 de Richard Stallman, souvent considéré comme le père fondateur du
@@ -700,17 +755,17 @@ quatre coins du globe. Une réflexion éthique est au coeur du mouvement
 du logiciel libre, dont les militants font campagne pour la liberté des
 utilisateurs dès le début des années 1980. La Free Software Foundation
 (FSF), fondée par Richard Stallman en 1985, définit rapidement le
-logiciel «libre» {[}free{]} comme garant de quatre libertés
+logiciel «libre» {[}free{]} comme étant garant de quatre libertés
 fondamentales de l'utilisateur: la liberté d'utiliser le logiciel sans
 restrictions, la liberté de le copier, la liberté de l'étudier, puis la
-liberté de le modifier pour l'adapter à ses besoins puis le redistribuer
-\footnote{La redistribution doit évidemment respecter certaines
-  conditions précises, dont l'enfreint peut mener à des condamnations
-  {[}http://www.softwarefreedom.org/resources/2008/shareware.html{]}.}.
-Il s'agit ainsi d'un logiciel dont le code source\footnote{Pour rester
-  dans les analogies culinaires, le code source est au logiciel est ce
-  que la recette est à un plat: elle indique les actions à effectuer,
-  une par une, pour arriver à un résultat précis. Encore une fois, cette
+liberté de le modifier pour l'adapter à ses besoins puis le
+redistribuer\^{}{[}La redistribution doit évidemment respecter certaines
+conditions précises, dont l'enfreint peut mener à des condamnations
+{[}http://www.softwarefreedom.org/resources/2008/shareware.html{]}. Il
+s'agit ainsi d'un logiciel dont le code source\footnote{Pour rester dans
+  les analogies culinaires, le code source est au logiciel est ce que la
+  recette est à un plat: elle indique les actions à effectuer, une par
+  une, pour arriver à un résultat précis. Encore une fois, cette
   dernière peut-être adaptée, modifiée, bonifiée.} est disponible, afin
 de permettre aux internautes de l'utiliser tel quel ou de le modifier à
 leur guise. Puisque le langage machine est difficilement lisible par
@@ -718,83 +773,581 @@ l'homme et rend la compréhension du logiciel extrêmement complexe,
 l'accès au code source devient essentiel afin de permettre à
 l'utilisateur de savoir ce que le fait programme fait réellement.
 Seulement de cette façon, l'utilisateur peut \emph{contrôler} le
-logiciel, plutôt que de se faire contrôler par ce dernier (Stallman,
+logiciel, plutôt que de se faire contrôler par ce dernier (Stallman
 1986).
 
-\hypertarget{uxe9mergence-et-ascension}{%
-\section{Émergence et ascension}\label{uxe9mergence-et-ascension}}
+\hypertarget{uxe9mergence-et-suxe9mantique-du-libre}{%
+\section{\texorpdfstring{1.1 Émergence et sémantique du
+\emph{libre}}{1.1 Émergence et sémantique du libre}}\label{uxe9mergence-et-suxe9mantique-du-libre}}
 
 Plusieurs situent les débuts du mouvement du logiciel libre avec la
-création de la licence publique générale GNU\footnote{expliquer ce
-  qu'est GNU en quelques lignes/le modèle collaboratif de développement
-  logiciel initié par le projet GNU}, en 1983, à partir de laquelle va
-se développer une multitude de programmes libres. Depuis, la popularité
-des logiciels libres n'a cessé de croître, alors que des dizaines de
-millions d'usagers à travers le monde utilisent désormais ces logiciels.
-Parmi les plus populaires, on retrouve notamment le navigateur Firefox,
-la suite bureautique OpenOffice et l'emblématique système d'exploitation
-Linux, qui se développe d'ailleurs à partir de la licence GNU. Les
-logiciels libres ont différents usages (en passant par la conception
-Web, la gestion de contenu, les systèmes d'exploitation, la
-bureautique\ldots). Encore une fois, le logiciel libre est avant tout
-une philosophie, voire un mouvement de société. C'est une façon de
-concevoir la communauté du logiciel, où le respect de la liberté de
-l'utilisateur est un impératif éthique central
-\textcolor{red}{(reformuler?)} (Williams et al., 2020:26). Si ce
-mouvement fut d'abord initié par quelques militants dans les années
-1980, c'est aujourd'hui un véritable phénomène sociétal: des milliers
-d'entreprises, d'organisations à but non lucratif, d'institutions ou
-encore de particuliers adoptent tour à tour ces logiciels, dont la
-culture globale et les valeurs (entraide, collaboration, partage)
-s'arriment avec le virage technologique de plusieurs entreprises à l'ère
-du numérique \textcolor{red}{(retravailler, mais l'idée est là)}.
-{[}blablabla{]}
+création de la licence publique générale GNU, en 1983, à partir de
+laquelle va se développer une multitude de programmes libres. Parmi les
+plus populaires, on retrouve notamment le navigateur Firefox, la suite
+bureautique OpenOffice et l'emblématique système d'exploitation Linux,
+qui se développe d'ailleurs à partir de la licence GNU. Aujourd'hui, il
+s'agit d'un véritable phénomène sociétal: des milliers d'entreprises,
+d'organisations à but non lucratif, d'institutions ou encore de
+particuliers adoptent tour à tour ces logiciels, dont la culture globale
+et les valeurs (entraide, collaboration, partage) s'arriment avec le
+virage technologique de plusieurs entreprises. Les logiciels libres ont
+différents usages, en passant par la conception Web, la gestion de
+contenu, les systèmes d'exploitation, la bureautique, entre autres. Ils
+permettent donc de répondre à plusieurs types de besoins numériques et
+informatiques.
 
-Il faut garder en tête que le logiciel libre ne rime pas nécessairement
-avec gratuité. Bien que plusieurs logiciels libres soient
-téléchargeables gratuitement \textcolor{red}{(donner des exemples)}, il
-est aussi possible de (re)distribuer des logiciels libres payants
-\textcolor{red}{(reformuler, pas clair)}. Par ailleurs, aucun logiciel
-libre n'est réellement «gratuit» dans la mesure où son déploiement et
-son utilisation nécessitent généralement différents coûts, dont les
-degrés sont variables en fonction des compétences et de l'infrastructure
-dont disposent les utilisateurs (coût d'apprentissage, coûts
-d'entretien, etc.). Enfin, il est important de garder en tête les
-logiciels libres possèdent eux aussi une licence - cette dernière est
-d'ailleurs garante des libertés que confèrent les logiciels libres aux
-utilisateurs.
+``Les principes du logiciel libre ont également inspiré de nombreuses
+initiatives non directement liées à l'informatique et au développement
+des logiciels libres. La plus connue est sans aucun doute Wikipédia, qui
+se définit comme une encyclopédie libre, s'inspirant en cela
+explicitement du modèle du logiciel libre. Soulignons également les
+licences Creative Commons et le mouvement des archives ouvertes et de
+libre accès aux revues scientifique''
 
-\hypertarget{logiciel-libre-et-open-source}{%
-\subsection{\texorpdfstring{Logiciel libre et \emph{open
-source}}{Logiciel libre et open source}}\label{logiciel-libre-et-open-source}}
+Attention, le logiciel libre est avant tout une philosophie, voire un
+mouvement de société. C'est une façon de concevoir la communauté du
+logiciel, où le respect de la liberté de l'utilisateur est un impératif
+éthique (Williams, Stallman, and Masutti 2010). Par conséquent, le terme
+libre, \emph{free} en anglais, porte à confusion. Celui-ci ne signifie
+pas qu'un logiciel libre est nécessairement gratuit. Certes, plusieurs
+sont effectivement téléchargeables gratuitement. Toutefois, il est aussi
+possible de (re)distribuer des logiciels libres payant. Par ailleurs,
+aucun logiciel libre n'est réellement « gratuit » dans la mesure où son
+déploiement et son utilisation nécessitent généralement différents
+coûts, dont les degrés sont variables en fonction des compétences et de
+l'infrastructure dont disposent les utilisateurs (coût d'apprentissage,
+coûts d'entretien, etc.). Enfin, il est important de garder en tête que
+les logiciels libres possèdent eux aussi une licence - cette dernière
+est d'ailleurs garante des libertés que confèrent les logiciels libres
+aux utilisateurs.
 
-``Les deux expressions décrivent à peu près la même catégorie de
-logiciel, mais elles représentent des points de vue basés sur des
-valeurs fondamentalement différentes. L'open source est une méthodologie
-de développement ; le logiciel libre est un mouvement de société.''
+\hypertarget{logiciel-libre-et-code-ouvert}{%
+\section{1.2 Logiciel libre et code
+ouvert}\label{logiciel-libre-et-code-ouvert}}
+
+Parallèlement au logiciel libre, il y a aussi le code ouvert, ou
+\emph{open source}. \emph{A priori}, la dénomination du logiciel libre
+et celle de l'\emph{code ouvert} semble suggérer qu'il s'agit de
+synonymes. Dans les deux cas on dirait que l'on fait référence à des
+logiciels, par exemple, qui sont exempts de restrictions d'utilisations
+et auxqels les utilisateurs peuvent participer au développement.
+Cependant, il y a une distinction importante entre les deux.
+
+Bien que les deux renvoient sensiblement aux mêmes types de logiciels,
+les tenants de ces approches ne partagent pas la même perspective. Comme
+(\textbf{stallman2022?}) l'explique, le logiciel libre est d'abord et
+avant tout un mouvement qui fait ``campagne pour la liberté des
+utilisateurs de l'informatique''. Le code ouvert, quant à lui, met
+l'accent sur les avantages pratiques, plutôt que de militer pour des
+principes.
+
+Le terme \emph{code ouvert} sera introduit seulement en 1998 afin de
+clarifier l'ambiguité dans la dénomination ``logiciel
+libre''\footnote{Soit ceux qui ont été conçus suivant les principes
+  philisophiques et ``moraux'' qui sous-tendent ce mouvement.},
+\emph{free software} en anglais, afin de spécifier que le code source
+était accessible, et non pas que le logiciel était
+``gratuit''(Ballhausen 2019). De plus, les logiciels code ouvert,
+doivent respecter certains critères quant à la distribution de leurs
+logiciels (\textbf{opensourceinitiative2006?}). Nous aborderons ces
+critères dans le prochain paragraphe.
+
+Afin de mieux distinguer les deux, il est utile de faire référence aux
+critères qui composent ces deux éléments, et qui constituent la base de
+leur définition. Tout d'abord, le logiciel libre se définit sur la base
+de quatre libertés: 1) liberté d'utiliser le programme tel que désiré;
+2) liberté d'étudier le fonctionnement du programme et de le modifier
+pour ses propres besoins; 3) liberté de re-distribuer des copies; 4)
+liberté de distribuer des copies de la version ``améliorer'' du
+programme pour ses pairs (Ballhausen 2019). Concernant le \emph{code
+ouvert}, tout logiciel qui souhaite être inclut sous cette appellation
+doit respecter dix critères: 1) Redistribution gratuite; 2) doit inclure
+le code source; 3) doit permettre les modifications et les travaux
+dérivés; 4) intégrité du code source; 5) ne doit pas discriminer des
+personnes et/ou groupes; 6) ne doit pas restreindre personne dans
+l'utilisation du logiciel pour un domaine d'activité; 7) distribution
+d'une license pour l'utilisation; 8) la license ne doit pas être
+spécifique pour un produit; 9) la license ne doit pas placer de
+restriction sur d'autres programmes; 10) la license doit être
+technologiquement neutre\footnote{Pour plus d'informations sur ces
+  caractéristiques, nous encourageons les lecteurs à se référer au lien
+  web de la source. Ils y trouveront un contenu détaillé pour chacunes
+  des caractéristiques sus-mentionnées.}
+(\textbf{opensourceinitiative2006?}).
+
+Il est aussi utile de les distinguer des logiciels ``non-libres'', soit
+les logiciels propriétaires: ``Son utilisation, sa redistribution ou sa
+modification sont interdites, ou exigent une autorisation spécifique, ou
+sont tellement restreintes qu'en pratique vous ne pouvez pas le faire
+librement'' (\textbf{systèmedexploitationgnu2023?}). Par contraste, la
+licence libre confère des droits de propriétaire. L'utilisateur a le
+droit d'installer le logiciel sur autant d'ordinateurs que désiré, le
+modifier selon ses besoins et le distribuer avec ou sans ses
+modifications. Il peut même demander d'être payé pour distribuer des
+copies, avec ou sans ses modifications. Par exemple, le logiciel Ubuntu,
+une version de Linux, peut être téléchargé gratuitement du site
+Ubuntu.com. Il est aussi vendu par Amazon.com pour 12\$ la copie, plus
+les frais d'expédition!
+
+Comme nous le constatons, le logiciel libre et le \emph{code ouvert} ont
+certaines similitudes puisqu'ils adhèrent tous les deux à la même vision
+du logiciel, ainsi que de son accessibilité. Toutefois, il est important
+tout de même de les distinguer puiqu'ils ont des origines différentes,
+et qu'ils mènent à certaines pratiques qui sont différentes. La
+prochaine section utilise un cas concret afin d'expliquer l'effet du
+libre, et l'utilité que cela peut avoir.
+
+\hypertarget{cas-duxe9tude-r}{%
+\section{\texorpdfstring{1.3 Cas d'étude:
+\texttt{R}}{1.3 Cas d'étude: R}}\label{cas-duxe9tude-r}}
+
+Afin d'illustrer le tout plus concrètement, nous utiliserons ici le cas
+du logiciel \texttt{R}. Il s'agit d'un logiciel statistique que tous les
+utilisateurs peuvent télécharger gratuitement, et dans lequel il n'y a
+pas d'achats supplémentaires pour avoir accès à des fonctionnalités
+supplémentaires par exemple. Bien que ce logiciel soit déjà riche en
+fonctions et commandes, plusieurs utilisateurs ont développé des
+\emph{packages}, des libraries externes, afin de bonifier les fonctions
+de base (\textbf{arel-bundock2021?}).
+
+Utilisons un cas d'étude afin de démontrer l'apport des librairies
+externes. Par exemple, je souhaite savoir la probabilité de survie à
+bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt
+avec sous la notatio suivante: \(P(Y = Survie | X = Femme)\). Cela se
+lit ``la probabilité de survie étant donné que nous soyons une femme''.
+Pour ce faire, je dois utiliser l'ensemble de données \texttt{titanic},
+disponible en format csv. Je dois donc installer et télécharger la
+librairie \texttt{readr} afin que \texttt{R} puisse importer et lire les
+données. Ensuite je vais utiliser la commande \texttt{table}, offerte
+dans celles de base, afin de visionner mes données. Cette dernière
+commande affichera un tableau croisé.
+
+\hypertarget{annotated-cell-1}{%
+\label{annotated-cell-1}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(readr) }\hspace*{\fill}\NormalTok{\circled{1}}
+
+\NormalTok{dat }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"data/titanic.csv"}\NormalTok{) }\hspace*{\fill}\NormalTok{\circled{2}}
+
+\FunctionTok{table}\NormalTok{(dat}\SpecialCharTok{$}\NormalTok{survie, dat}\SpecialCharTok{$}\NormalTok{femme) }\hspace*{\fill}\NormalTok{\circled{3}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{description}
+\tightlist
+\item[\circled{1}]
+Téléchargement de la librairie \texttt{readr} qui nous permettra de lire
+des ensembles de données en format \texttt{.csv}.
+\item[\circled{2}]
+Importation d'une banque de données en format \texttt{.csv}.
+\item[\circled{3}]
+Impression d'un tableau croisé afin d'observer la distribution des
+hommes et des femmes (colones), croisé avec la survie (lignes).
+\end{description}
+
+\begin{verbatim}
+   
+      0   1
+  0 709 154
+  1 142 308
+\end{verbatim}
+
+Comme nous le voyons ici, la librairie \texttt{readr}, développé par
+plusieurs individus\footnote{Pour avoir la liste complète des
+  contributeurs, les lecteurs peuvent utiliser la commande
+  \texttt{?readr} dans \texttt{R}, ou bien consulter le lien suivant
+  https://readr.tidyverse.org}, nous a permis d'importer l'ensemble de
+données sur le Titanic. Toutefois, le format du tableau n'est pas très
+esthétique. Pour remédier à ce problème, nous pouvons installer et
+utiliser la librarie \texttt{modelsummary} qui nous permettra de créer
+rapidement des tableaux croisés plus esthétique, et qui contiendrons
+davantage d'informations, facilitant la lecture et notre compréhension
+de la relation qui nous intéresse.
+
+\hypertarget{annotated-cell-2}{%
+\label{annotated-cell-2}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(modelsummary) }\hspace*{\fill}\NormalTok{\circled{1}}
+
+\NormalTok{Tableau}\FloatTok{.2} \OtherTok{\textless{}{-}} \FunctionTok{datasummary\_crosstab}\NormalTok{(survie }\SpecialCharTok{\textasciitilde{}}\NormalTok{ femme, }\AttributeTok{data =}\NormalTok{ dat) }\hspace*{\fill}\NormalTok{\circled{2}}
+
+\NormalTok{Tableau}\FloatTok{.2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{description}
+\tightlist
+\item[\circled{1}]
+Téléchargement de la librarie \texttt{modelsummary}.
+\item[\circled{2}]
+Création d'un tableau croisé à l'aide de la commande
+\texttt{datasummary\_crosstab()}.
+\end{description}
+
+\begin{table}
+\centering
+\begin{tabular}[t]{llrrr}
+\toprule
+survie &   & 0 & 1 & All\\
+\midrule
+0 & N & 709 & 154 & 863\\
+ & \% row & \num{82.2} & \num{17.8} & \num{100.0}\\
+1 & N & 142 & 308 & 450\\
+ & \% row & \num{31.6} & \num{68.4} & \num{100.0}\\
+All & N & 851 & 462 & 1313\\
+ & \% row & \num{64.8} & \num{35.2} & \num{100.0}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Comme nous le voyons, la commande \texttt{datasummary\_crosstab()}
+permet facilement de créer des tableaux non seulement plus esthétiques,
+mais aussi plus informatif. C'est très utile si l'on souhaite incorporer
+des tableaux dans notre rapport finale, surtout que cette commande nous
+permet d'exporter les tableaux sous diffèrents format (.docx,
+\texttt{LaTeX}, .qmd, etc.)
+
+Ces deux librairies que nous venons de présenter en exemple, ne sont que
+deux des 19 897 disponibles pour \texttt{R}. Elles illustrent très bien
+la contribution que les utilisateurs peuvent faire au logiciel. Surtout,
+ces \emph{add on} ont été développés de manière bénévole. Les
+contributeurs le font par ``passion'', et pour en faire profiter la
+collectivité d'utilisateurs.
+
+Les logiciels libres permettent aux utilisateurs de jouir d'une plus
+grande liberté dans leur utilisation, ce qui génère des externalités
+positives puisque ces gens peuvent créer de nouvelles commandes ou
+fonction et en faire bénéficier toute la collectivité. L'exemple que
+nous avons utilisé avec \texttt{R} ici reflète très bien cet avantage.
+La prochaine section de ce chapitre se penche plus en profondeur sur les
+autres avantages ainsi que sur les inconvénients de ces logiciels.
+
+\bookmarksetup{startatroot}
 
 \hypertarget{principaux-avantages-et-inconvuxe9nients}{%
-\section{Principaux avantages et
+\chapter{2. Principaux avantages et
 inconvénients}\label{principaux-avantages-et-inconvuxe9nients}}
 
-La disponibilité du code source et le mode de développement collaboratif
-du logiciel libre facilitent également le transfert des connaissances,
-et ce, au-delà des frontières. Où qu'ils soient, les institutions, les
-entreprises et les particuliers peuvent utiliser ces logiciels et les
-adapter en fonction de leurs besoins respectifs. Par ailleurs, l'accès
-libre et égal de tous les internautes à l'ensemble de ces connaissances
-constitue un enjeu majeur pour la vitalité démocratique des sociétés à
-l'ère du numérique, caractérisées par une surabondance d'information.
+Dans cette section, nous ne dresserons pas un portrait exhaustif de tous
+les avantages et les inconvénients du logiciel libre. Cette tâche serait
+fastidieuse et peu intéressante pour les lecteurs. Notre but ici est de
+présenter les certains avantages qui sont propre aux logiciels, ainsi
+que les inconvénients de ceux-ci.
 
-Les logiciels libres, parce qu'ils sont souvent moins coûteux (voire
-téléchargeables gratuitement) et qu'ils démocratisent l'accès à
-l'information, contribuent à réduire les disparités en termes
-d'accessibilité aux nouvelles technologies.
+\hypertarget{avantages}{%
+\section{2.1 Avantages}\label{avantages}}
 
-Stallman - Lui-même issu du monde de la recherche scientifique. L'esprit
-même du logiciel libre est très proche ; contribution à la culture
-globale de partage, d'entraide, etc. que l'on peut retrouver dans le
-domaine scientifique
+\hypertarget{le-partage-et-co-construction-des-connaissances}{%
+\subsection{2.1.1. Le partage et co-construction des
+connaissances}\label{le-partage-et-co-construction-des-connaissances}}
+
+La grande liberté que ce type de logiciel offre favorise la
+collaboration entre les utilisateurs, et ce à une échelle pouvant être
+internationale. Les interactions entre les chercheurs crées une
+dynamique d'« innovation ascendante » et d'entraide (Couture 2014). Ce
+résultat constitue un important avantage pour le développement de ces
+logiciels. Selon certains, et comparativement aux logiciels privés, les
+logiciels libres ont un niveau plus élevé d'innovation
+(\textbf{smith2002?}). Contrairement à ceux qui se développent de
+manière privé et fermée, les logiciels libres permettent à tous les
+utilisateurs de participer au développement. Ceux-ci partagent ensuite
+leurs améliorations, ce qui stimulent à son tour de nouvelles
+initiatives. Ainsi, un certain savoir est généré dans cette situation.
+De plus, il est raisonable de penser que l'utilité des améliorations,
+ainsi que leur utilisation par les utilisateurs en fonction de leur
+besoin, comme dans le cas de la recherche sociale avec \texttt{R} permet
+de générer un savoir collaboratif (\textbf{couture2020?}). Amélioration
+constante, entraide, savoir partagé et plusieurs milliers de
+contributeurs (Couture 2014), ces éléments résument très bien la
+philosophie du logiciel libre.
+
+Comme nous le verrons dans la section suivante, cet avantage est couplé
+avec ceux économiques. Les bas coûts démocratise l'accès à plusieurs
+logiciels qui sont utiles pour mener des analyses scientifiques. Et ce,
+pour tous les utilisateurs dans le monde.
+
+\hypertarget{avantages-uxe9conomiques-une-plus-grande-accessibilituxe9-pour-tous}{%
+\subsection{2.1.2. Avantages économiques : Une plus grande accessibilité
+pour
+tous}\label{avantages-uxe9conomiques-une-plus-grande-accessibilituxe9-pour-tous}}
+
+Nous pouvons aussi mentionner certains avantages économique dans
+l'utilisation de logiciels libres. Le principal avantage économique des
+logiciels libres est son faible d'acquisition et de renouvellement pour
+les particuliers. Cet avantage individuel génère plusieurs externalités
+positives.
+
+Tout d'abord, certains logiciels statistiques et programmes
+informatiques, tel que Stata et SPSS, coûtent plusieurs centaines, voir
+des miliers de dollar. De plus, la license doit être renouvelée
+annuellement, ce qui limite l'accès à ces logiciels. Comparativement,
+pour les logiciels libres, la license d'acquisition coûte bien souvent
+moins cher, et aucun renouvellement de licence n'est demandé dans la
+plus part des cas. Étant donné que les chercheurs doivent souvent faire
+face à des contraintes budgétaires, les logiciels libres deviennent des
+outils intéressant afin de minimiser les coûts de la recherche
+(\textbf{yu2022?}). Avantage encore plus important pour les chercheurs
+dans les pays du Sud global (\textbf{santillán-anguiano2023?}).
+L'accessibilité de ces ressources permet donc de réduire l'écart dans la
+production scientifique entre les pays du Sud et ceux du Nord. De plus,
+elle permet à tous de bénéficier d'outils pédagogiques accessibles, ce
+qui favorise l'acquisition ainsi que le développement de compétences
+méthodologiques.
+
+Dans le cadre d'une formation universitaire, il peut être pertinent
+d'enseigner aux étudiants à se servir de logiciel statistique ou
+d'analyse de texte. L'acquisition de ces compétences peut être précieux
+tant pour ceux et celles qui souhaitent se diriger vers le milieu
+académique, que pour ceux et celles qui visent le marché professionnel.
+D'ailleurs sur le site web de la banque d'emplois du gouvernement du
+Canada\footnote{Ces informations proviennent du site web suivant:
+  https://www.jobbank.gc.ca/marketreport/outlook-occupation/17882/ca},
+les conditions d'emplois sont en ce moment\footnote{En date d'écire ces
+  lignes, septembre 2023.} très bonnes, et une pénurie de main d'oeuvre
+est anticipé dans ce secteur entre 2022-2031. Ces compétences sont
+d'autant plus précieuses aujourd'hui, dans le monde de données dans
+lequel nous vivons.
+
+Ensuite, le logiciel libre est adaptable et modifiable. Ces coût
+techniques de développement restent néanmoins nettement inférieurs aux
+coûts de renouvellement et de mise à jour des logiciels propriétaires
+dans bien des cas. L'argent sauvée des licences peut alors être investie
+dans le développement du logiciel libre (Béraud 2007).
+
+Cependant, une transition vers les logiciels libres ne doit pas se faire
+seulement sur des bases économiques, mais dans une perspective globale
+de changement de cultures.Changer pour des raisons purements économiques
+viendrait à violer l'essence même de la philosophie du logiciel libre,
+qui se veut davantage être un esprit de collaboration et de
+transparence. Par conséquent, il est important d'incorporer aussi les
+valeurs et la philosophie dans notre utilisation
+
+Pour résumer, les logiciels libres permettent donc une plus grande
+égalité dans l'accès aux nouvelles technologies, puisqu'ils ont dans la
+majorité des cas, des coûts d'acquisition nettement moindre. (Oui et
+non, l'acquisition financière est une chose, mais il y a d'autres
+barrières à l'utilisation tel que l'apprentissage à faire pour apprendre
+un language de programmation, l'achat de matériel informatique, etc. )
+Cependant, considérant cela, donner l'exemple de l'étude qui montre que
+c'est beaucoup plus économique, même si l'on doit compter les coûts de
+formation, le soutien technique, l'entretien et la maintenance. (Couture
+2014; Karjalainen 2010).
+
+\hypertarget{inconvuxe9nients-et-duxe9fis}{%
+\section{2.2. Inconvénients et
+défis:}\label{inconvuxe9nients-et-duxe9fis}}
+
+\hypertarget{couxfbteux-en-temps}{%
+\subsection{2.2.1. Coûteux en temps}\label{couxfbteux-en-temps}}
+
+Dans leur texte, (\textbf{paura2012?}) soulèvent une critique faite
+envers certains logiciels libres, notamment envers \texttt{R}. Le
+problème principal d'enseigner les statistiques avec des logiciels
+libres est qu'ils sont compliqués à apprendre ainsi qu'à utiliser; par
+conséquent, les étudiants passeraient plus de temps à tenter de résoudre
+les erreurs de programmation plutôt que d'apprendre les statistiques. Il
+est vrai que ces logiciels demandent un investissement en temps, afin
+d'être en mesure de mener ses propres analyses statistiques. Par
+exemple, \texttt{R} demande l'apprentissage d'un language de
+programmation afin de pouvoir utiliser le logiciel à son plein
+potentiel.
+
+La synthaxe de certaines libraries demandent aussi un certain temps
+d'adaptation. Par exemple, je souhaite recoder la variable femme, de
+l'ensemble de données \texttt{titanic}, afin de remplacer les valeurs
+numériques actuelles (0, 1) par des valeurs nominales (homme, femme). La
+section de code ci-dessous réalise cette tâche avec les commandes de
+base de \texttt{R} et celle du \texttt{tidyverse}.
+
+\hypertarget{annotated-cell-3}{%
+\label{annotated-cell-3}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{femme[dat}\SpecialCharTok{$}\NormalTok{femme }\SpecialCharTok{==} \DecValTok{0}\NormalTok{] }\OtherTok{\textless{}{-}} \StringTok{"Homme"}  \hspace*{\fill}\NormalTok{\circled{1}}
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{femme[dat}\SpecialCharTok{$}\NormalTok{femme }\SpecialCharTok{==} \DecValTok{1}\NormalTok{] }\OtherTok{\textless{}{-}} \StringTok{"Femme"}
+\FunctionTok{table}\NormalTok{(dat}\SpecialCharTok{$}\NormalTok{femme) }\hspace*{\fill}\NormalTok{\circled{2}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{description}
+\tightlist
+\item[\circled{1}]
+Utilisation de la commande de base dans \texttt{R} pour recoder la
+variable femme.
+\item[\circled{2}]
+Vérification que la manipulation a bien fonctionné.
+\end{description}
+
+\begin{verbatim}
+
+Femme Homme 
+  462   851 
+\end{verbatim}
+
+\hypertarget{annotated-cell-4}{%
+\label{annotated-cell-4}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse) }\hspace*{\fill}\NormalTok{\circled{3}}
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{femme }\OtherTok{\textless{}{-}} \FunctionTok{recode}\NormalTok{(dat}\SpecialCharTok{$}\NormalTok{femme, }\StringTok{\textasciigrave{}}\AttributeTok{0}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"Homme"}\NormalTok{, }\StringTok{\textasciigrave{}}\AttributeTok{1}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{"Femme"}\NormalTok{) }\hspace*{\fill}\NormalTok{\circled{4}}
+\FunctionTok{table}\NormalTok{(dat}\SpecialCharTok{$}\NormalTok{femme) }\hspace*{\fill}\NormalTok{\circled{5}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{description}
+\tightlist
+\item[\circled{3}]
+Téléchargement de la libraire \texttt{tidyverse}.
+\item[\circled{4}]
+Recodage de la variable femme à l'aide de la commande \texttt{recode}.
+\item[\circled{5}]
+Vérification que la manipulation a bien fonctionné.
+\end{description}
+
+\begin{verbatim}
+
+Femme Homme 
+  462   851 
+\end{verbatim}
+
+Toutefois, l'orsque l'on compare le coût d'apprentissage avec les
+bénéfices tirés, il est plus difficile de soutenir qu'il s'agit d'un
+désavantage. L'habileté que nous développons devient très utile par la
+suite, puisqu'elle nous permet de manipuler ainsi que d'analyser des
+données. Surtout, ces compétences s'inscrivent dans la longue durée,
+alors que l'apprentissage est plutôt de courte à moyenne durée. Surtout,
+la logique derrière la synthaxe de base de \texttt{R} et celle d'une
+nouvelle librairie reste sensiblement inchangée. Par conséquent, lorsque
+nous avons une bonne compréhension du fonctionnement de base de
+\texttt{R}, l'apprentissage d'une nouvelle librairie se fait
+relativement rapidement. Certaines, comme \texttt{dplyr} du
+\texttt{tidyverse} facilite grandement la manipulation des données
+comparativement aux commandes de base.
+
+Pour résumer, bien que l'apprentissage d'un language de programmation
+demande un investissement en temps, les bénéfices générées par ces
+nouvelles compétences dépassent le coût initial.
+
+\hypertarget{probluxe8me-de-transparence}{%
+\subsection{2.2.2. Problème de
+transparence}\label{probluxe8me-de-transparence}}
+
+L'arrivé des sciences informatiques à fait émerger des problèmes de
+reproductibilité des protocoles scientifiques (\textbf{janssen2017?}).
+Le problème principal est relatif à l'accès au code utilisé par les
+chercheurs. Par exemple, il est possible de réaliser des analyses
+statistiques avec \texttt{R} sans partager le code utilisé, ce qui
+limite la transparence du processus scientifique. Dans cette situation,
+il est difficile de savoir si des erreurs de codage ont été commises,
+volontairement ou involontairement, affectant ainsi les résultats
+partagés.
+
+Afin de remédier à ce problème, certains logiciels tel que
+GitHub\footnote{une plateforme publique \emph{code ouvert} sur laquelle
+  nous pouvons héberger et partager notre code.} participent à la
+transparence des résultats scientifiques (\textbf{fortunato2021?}). Ce
+logiciel permet aux chercheurs de partager leur code afin qu'il puisse
+être accessible pour tous. Il est important de mentionner ici que
+l'installation et la configuration de GitHub peut s'avérer difficile
+pour ceux et celles qui ne sont pas ignitié à l'informatique. Cela
+constitue une certaine barrière dans l'utilisation de ce logiciel.
+Toutefois, nous souhaitons tout de même présenter l'utilité de ce
+logiciel puisqu'il permet de rendre les processus ainsi que les
+résultats de recherche plus transparent.
+
+Par exemple, si l'on réalise une analyse statistique de la relation
+entre l'économie et le vote, nous pourrions partager l'ensemble du code
+que nous avons utilisé sur GitHub. D'une part cela permettrait aux
+utilisateurs de vérifier si les résultats sont honnêtes, et d'autre part
+de réutiliser le code pour mener leurs propres analyses.
+
+Cependant, le partage du code utilisé reste encore majoritairement
+volontaire. (\textbf{janssen2020?}) soutiennent que plus d'effort et
+d'actions concertés doivent être mise en place afin d'améliorer
+l'accessibilité aux codes. Toujours selon ces auteurs, les journaux
+scientifiques pourraient exiger que les auteurs rendent leur code
+publique lors du processus de publication. D'ailleurs, les résultats
+d'une expérience sur les facteurs qui influencent les chercheurs à
+partager leur code démontre que les initiatives individuelles ne seront
+pas suffisantes pour une agmentation du partage du code
+(\textbf{krähmer2023?}). Par conséquent, rendre le code accessible
+devrait devenir un standard institutionnalisé.
+
+\hypertarget{appropration-capitaliste}{%
+\subsection{2.2.3. Appropration
+capitaliste}\label{appropration-capitaliste}}
+
+Dans ce cas-ci, il s'agit plutôt d'un défis auquel le logiciel libre est
+confronté plutôt qu'une critique quant aux limites de son utilisation.
+En fait, l'accès au code source ainsi que la liberté et la possibilité
+de contribuer au développement du logiciel constitue un avantage
+intéressant pour les compagnies privées. Par conséquent, nous avons
+assisté à une intégration partielle du logiciel libre dans la logique
+capitaliste (\textbf{broca2013?}; \textbf{bessen2002?}). Certaines
+d'entre elles utilisent les utilisateurs comme une main d'oeuvre
+gratuite afin de bonifier leur logiciel, ce qui permet, dans certains
+cas, de générer des revenus commerciaux dont l'entreprise est la seule
+bénéficiaire (\textbf{couture2020?}). Attention, il ne faut pas penser
+que toutes les compagnies agissent de manière prédatrice. Le but ici est
+de souligner que certaines pratiques commerciales trouble l'essence du
+mouvement du logiciel libre, qui se veut davantage être un outil de
+collaboration accessible, plutôt qu'un moyen pour générer des profits.
+Il est important de garder en tête les valeurs et la philosophie qui a
+donné lieu à ce mouvement.
+
+\hypertarget{les-sciences-sociales-uxe0-luxe8re-du-numuxe9rique-les-enseignements-de-la-philosophie-du-logiciel-libre}{%
+\section{3. Les sciences sociales à l'ère du numérique: les
+enseignements de la philosophie du logiciel
+libre}\label{les-sciences-sociales-uxe0-luxe8re-du-numuxe9rique-les-enseignements-de-la-philosophie-du-logiciel-libre}}
+
+Ce chapitre à voulu mettre de l'avant le logiciel libre afin d'initier
+les lecteurs et lectrices à ce monde. Le but n'était pas de présenter de
+manière exhaustive tout ce champ. Plutôt, nous avons préféré nous
+limiter aux bases de compréhension, ainsi qu'à quelques exemples. Par
+conséquent, nous souhaitions qu'à la lecture du chapitre, les lecteurs
+et lectrices soient mieux outillés pour comprendre et réfléchir par
+rapport à ce monde, et ainsi insérer ces réflexions dans leurs démarches
+scientifiques. Générer des idées et des débats nous paraît bien plus
+promoteur pour l'avenir que d'apprendre par coeur.
+
+En guise de conclusion, nous souhaitons résumer ce chapitre tout en
+situant ces différents éléments dans les sciences sociales à l'ère du
+numérique. Le livre de (\textbf{marres2017?}) est très intéressant à ce
+sujet. Face au constat que la vie sociale se trouve affectée par les
+changements numériques, il nous faut en tant que chercheur du monde
+social réfléchir à notre façon de comprendre les changements qui sont
+entrain de s'opérer. Bien que ces réflexions ratissent large
+\footnote{Allant de nos postulats ontologiques, épistémologiques et
+  méthodologiques.}, nous nous concentrons ici sur la dimension
+méthodologique.
+
+Comme nous l'avons présenté ci-haut, les bas coûts associés à
+l'utilisation ainsi que la facilité du partage avec la communauté nous
+semble être deux avantages importants pour l'avenir des sciences
+sociales numériques. Notamment parce qu'ils ont le potentiel d'améliorer
+la transparence des protocoles scientifiques. Dans \emph{Designing
+Social Inquiery}, l'un des livres les plus influents en science
+politique depuis les trente dernières années, les auteurs définissent
+quatre caractéristiques que chaque recherche doit posséder afin d'être
+considérée comme scientifique (\textbf{king2021?}). L'une d'elles, est
+que la \emph{procédure doit être publique}: ``La recherche scientifique
+utilise des méthodes explicites, codifiées et publiques afin de générer
+et analyser des données sur lesquelles la fiabilité peut ensuite être
+déterminer'' (\textbf{king2021?}). Chaque individu qui souhaite
+contribuer à la connaissance et à la compréhension globale que nous
+avons de la réalité sociale doit garder en tête cette caractéristique
+fondamentale. Comme nous l'avons exposé, le partage du code devient un
+impératif pour assurer la transparence, la réplicabilité ainsi que la
+qualité des recherches.
+
+\newpage{}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{bibliographie}{%
+\chapter{Bibliographie}\label{bibliographie}}
 
 \bookmarksetup{startatroot}
 
@@ -2062,7 +2615,7 @@ automatisation, personnalisation, flexibilité et qualité graphique.
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre5_word-vs-latex.png}
+{\centering \includegraphics[width=4.18in,height=\textheight]{images/chapitre5_word-vs-latex.png}
 
 }
 
@@ -2072,8 +2625,8 @@ automatisation, personnalisation, flexibilité et qualité graphique.
 
 \end{figure}
 
-\hypertarget{avantages}{%
-\subsection{Avantages}\label{avantages}}
+\hypertarget{avantages-1}{%
+\subsection{Avantages}\label{avantages-1}}
 
 Premièrement, \LaTeX~et Markdown permettent d'intégrer une bibliographie
 \emph{automatique} et professionnelle en utilisant \textsc{Bib}\TeX.
@@ -2796,9 +3349,8 @@ n'est pas parfait. Il faut parfois ajouter manuellement des informations
 manquantes que le logiciel n'a pas repéré directement à l'aide du
 connecteur intégré.
 
-\hypertarget{pourquoi-biblatex---cette-section-a-uxe9tuxe9-uxe9crite-uxe0-laide-de-chatgpt}{%
-\section{Pourquoi BibLaTeX? - Cette section a été écrite à l'aide de
-ChatGPT}\label{pourquoi-biblatex---cette-section-a-uxe9tuxe9-uxe9crite-uxe0-laide-de-chatgpt}}
+\hypertarget{pourquoi-biblatex}{%
+\section{Pourquoi BibLaTeX?}\label{pourquoi-biblatex}}
 
 BibLaTeX est une extension moderne pour le traitement des bibliographies
 dans LaTeX et Quarto généralement utilisé avec Biber, un programme
@@ -3508,8 +4060,8 @@ leur popularité que par leur efficacité.
 \subsection{Pourquoi choisir Git et
 GitHub?}\label{pourquoi-choisir-git-et-github}}
 
-\hypertarget{avantages-1}{%
-\subsubsection{Avantages}\label{avantages-1}}
+\hypertarget{avantages-2}{%
+\subsubsection{Avantages}\label{avantages-2}}
 
 Git, développé par Linus Torvalds en 2005, s'est imposé comme le système
 de gestion de versions décentralisé de référence. Sa principale force
@@ -4176,25 +4728,197 @@ de vos projets de recherche.
 \chapter{Outils d'intelligence
 artificielle}\label{outils-dintelligence-artificielle}}
 
-\bookmarksetup{startatroot}
+Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
+artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel
+pour les sciences sociales. Nous souhaitons d'abord et avant tout mener
+les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de
+questions que de réponses. Cet état de fait reflète bien l'état de la
+connaissance que nous avons sur l'IA. Nous sommes aussi bien loin d'être
+des spécialistes en la matière. Malgré cela, nous pensons qu'initier la
+réflexion et la discussion s'impose. Se poser des questions et tenter de
+trouver des réponses ne peut que générer des bénéfices. Par conséquent,
+si ce chapitre aura permis d'éclairer certains enjeux, ou s'il stimulera
+davantage de questionnement, alors nous aurons réussi notre objectif.
+
+Nous débutons par définir et expliquer ce qu'est l'intelligence
+artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons
+simplement donner une idée générale de ce qu'il s'agit. Ensuite, nous
+souhaitons mettre l'accent sur l'évolution constante de ce champ de
+recherche, ainsi que les défis que ça pose. La section suivante se
+penche sur certains enjeux éthiques lié à l'utilisation de l'IA,
+notamment en ce qui concerne le plagiat. Cela nous mène à se questionner
+sur la place du chercheur, aujourd'hui et dans le futur, avec l'arrivé
+de ces nouvelles technologies. La dernière section se penchera sur la
+place de cette technologie en sciences sociales. Quel usage pourrait-on
+en faire, et surtout quels en sont les limites.
+
+\hypertarget{duxe9finition-et-diffuxe9rents-type-dia}{%
+\section{Définition et différents type
+d'IA}\label{duxe9finition-et-diffuxe9rents-type-dia}}
+
+Qu'est-ce que l'intelligence artificielle (IA)? Est-ce quelque chose
+d'homogène, ou s'agit-il plutôt « des intelligences artificielles »?
+Dans un premier temps, afin de répondre à ces questions, il est
+important de préciser que l'intelligence artificielle est un champ
+d'études (Devedzic 2022). Par conséquent, il s'agit d'un ensemble
+d'objets, relativement vaste et en constante expansion, qui s'intéresse,
+à sa façon, à l'intelligence artificielle. Pour préciser ce propos,
+prenons l'exemple de la science politique. Malgré la formulation au
+singulier, la science politique est un grand ensemble de différents
+sous-champs d'études, qui ont chacun leur propre objet d'intérêt. La
+philosophie politique, les relations internationales, la politique
+comparée et l'étude de l'opinion publique, par exemple, sont tous des
+sous-champs qui s'intéressent, à leur façon, au phénomène politique.
+Dans le même sens, et compte tenu de cette pluralité de perspectives, il
+est important de noter qu'il n'y a pas de consensus dans la définition
+de l'IA (Wang 2019; König et al.~2022). De plus, la rapidité du
+développement de ce champ rend le traçage de frontières définitionnelles
+plutôt difficile : comment définir, d'une manière précise et
+consensuelle, quelque chose qui évolue constamment ? (Devedzic 2022 ;
+Bertolini 2020, 15).
+
+Malgré ces différents enjeux, il est tout de même possible de spécifier
+ce que nous entendons par intelligence artificielle. Deux définitions de
+l'IA nous seront utiles. La première vient de John McCarthy (2007, 2)~:
+« Il s'agit de la science et de l'ingénierie qui consistent à créer des
+machines intelligentes, en particulier des programmes informatiques
+intelligents. Elle est liée à la tâche similaire consistant à utiliser
+des ordinateurs pour comprendre l'intelligence humaine, mais l'IA ne
+doit pas se limiter aux méthodes qui sont biologiquement observables. »
+{[}Traduction DeepL{]} La seconde définition provient de la compagnie
+IBM (2023)~: « Dans sa forme la plus simple, l'intelligence artificielle
+est un domaine qui combine l'informatique et des ensembles de données
+robustes pour permettre la résolution de problèmes. Elle englobe
+également les sous-domaines de l'apprentissage automatique et de
+l'apprentissage profond, qui sont souvent mentionnés en conjonction avec
+l'intelligence artificielle. Ces disciplines sont composées
+d'algorithmes d'IA qui cherchent à créer des systèmes experts qui font
+des prédictions ou des classifications basées sur des données
+d'entrée. » {[}Traduction DeepL{]} À l'aide de ces extraits, on comprend
+que l'IA consiste à reproduire artificiellement certaines capacités
+cognitives humaines, afin de rendre les machines « intelligentes ». En
+d'autres termes, de leur donner la capacité de résoudre des problèmes
+par elles-mêmes.
 
 \hypertarget{utilisation-du-package-openai}{%
-\chapter{Utilisation du package
+\section{Utilisation du package
 OpenAI}\label{utilisation-du-package-openai}}
 
 \hypertarget{installation-du-package}{%
-\section{Installation du package}\label{installation-du-package}}
+\subsection{Installation du package}\label{installation-du-package}}
 
 install.packages(``openai'') library(openai)
+
+\bookmarksetup{startatroot}
+
+\hypertarget{utilisation-du-package-openai-en-.r}{%
+\chapter{Utilisation du package OpenAI en
+.r}\label{utilisation-du-package-openai-en-.r}}
+
+\hypertarget{installation-du-package-1}{%
+\section{Installation du package}\label{installation-du-package-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#install.packages("openai")}
+\FunctionTok{library}\NormalTok{(openai)}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{configuration-de-lapi}{%
 \section{Configuration de l'API}\label{configuration-de-lapi}}
 
 Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous
 aurez besoin d'une carte de crédit pour vous inscrire et que
-l'utilisation de l'API est payante.
+l'utilisation de l'API est payante. Renseignez-vous sur les modèles
+disponibles et leurs frais d'utilisation. En date de la publication du
+livre, le modèle de tarification d'OpenAi est de charger un prix
+spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé
+que celui des tokens en sortie.
 
-La fonction principale du package openai est
+Lorsque vous aurez votre clé API, utilisez le package usethis pour la
+configurer dans votre environnement R.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#install.packages("usethis")}
+\NormalTok{usethis}\SpecialCharTok{::}\FunctionTok{edit\_r\_environ}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+* Edit '/home/hubcad25/.Renviron'
+* Restart R for changes to take effect
+\end{verbatim}
+
+Ajoutez la ligne suivante à votre fichier .Renviron
+
+\begin{verbatim}
+OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets
+\end{verbatim}
+
+\hypertarget{utilisation-de-lapi}{%
+\section{Utilisation de l'API}\label{utilisation-de-lapi}}
+
+La fonction principale du package openai est create\_chat\_completion().
+Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le
+message que vous souhaitez envoyer au modèle en format list. Voici un
+modèle d'utilisation de la fonction:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{chat\_prompt }\OtherTok{\textless{}{-}} \FunctionTok{create\_chat\_completion}\NormalTok{(}
+    \AttributeTok{model =} \StringTok{"gpt{-}3.5{-}turbo"}\NormalTok{,}
+    \AttributeTok{messages =} \FunctionTok{list}\NormalTok{(}
+        \FunctionTok{list}\NormalTok{(}
+            \StringTok{"role"} \OtherTok{=} \StringTok{"system"}\NormalTok{,}
+            \StringTok{"content"} \OtherTok{=} \StringTok{"You are a helpful assistant."}
+\NormalTok{        ),}
+        \FunctionTok{list}\NormalTok{(}
+            \StringTok{"role"} \OtherTok{=} \StringTok{"user"}\NormalTok{,}
+            \StringTok{"content"} \OtherTok{=} \StringTok{"Please do the following:"}\NormalTok{)}
+\NormalTok{        )}
+\NormalTok{    )}
+\end{Highlighting}
+\end{Shaded}
+
+Le résultat de votre requête sera contenu dans l'objet chat\_prompt
+formatté en JSON. Vous pouvez accéder aux variables de la même façon
+qu'un dataframe normal. Le contenu de la réponse sera dans
+chat\_prompt\(choices\)content.
+
+Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer
+des instructions sur un ensemble d'observations à l'aide de boucles,
+utiliser des fonctions pour générer des messages et les appliquer à
+travers d'autres API, analyser des sites webs en temps réel en scraping
+avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux
+possibilités que vous souhaitez explorer.
+
+\hypertarget{notes}{%
+\section{Notes}\label{notes}}
+
+\begin{itemize}
+\item
+  Il est possible d'accéder aux statistiques d'utilisation de token dans
+  chat\_prompt\(usage\)prompt\_tokens et
+  chat\_prompt\(usage\)completion\_tokens. Vous pouvez donc calculer le
+  coût de votre requête en fonction du modèle que vous utilisez.
+\item
+  Ne pas oublier d'inclure .Renviron dans votre gitignore pour ne pas
+  vous faire voler votre clé API.
+\item
+  Il est possible de créer des images avec la fonction
+  create\_image(``Inserez votre texte ici'')
+\item
+  Il est possible d'effectuer du speech-to-text avec la fonction
+  create\_transcription() et create\_translation()
+\item
+  Plus de documentation est disponible au
+  https://irudnyts.github.io/openai/
+\item
+  Plus de fonctionalités sont disponibles en python mais le package R
+  est suffisant pour la plupart des utilisations.
+\end{itemize}
 
 \bookmarksetup{startatroot}
 
@@ -4278,6 +5002,23 @@ programmation}\label{environnements-de-programmation}}
 \subsection{Les alternatives à Word : les langages de
 balisage}\label{les-alternatives-uxe0-word-les-langages-de-balisage}}
 
+\begin{itemize}
+\item
+  le chapitre 5 parle des langages de balisage (markdown, latex, etc.)
+\item
+  http://wcours.gel.ulaval.ca/2018/h/GEL1001/default/5chronologie/2017-01\%20GEL-1001\%20tutoriel\%20LaTeX.pdf
+  (powerpoint sur l'utilisation de latex)
+\item
+  https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf
+  (latex)
+\item
+  https://books.google.ca/books?hl=fr\&lr=\&id=9jb\_DwAAQBAJ\&oi=fnd\&pg=PP1\&dq=how+to+use+markdown\&ots=ddRy2mzCoL\&sig=PHQ6sbk-aDPButn0-xoiXKJkwWg\&redir\_esc=y\#v=onepage\&q=how\%20to\%20use\%20markdown\&f=false
+  (utilisation de markown)
+\item
+  https://books.google.ca/books?hl=fr\&lr=\&id=\_FwPEAAAQBAJ\&oi=fnd\&pg=PP1\&dq=how+to+use+markdown\&ots=DcUv5Xk47M\&sig=js\_prAf0BFO5GmH6BEsOtVMRHaQ\&redir\_esc=y\#v=onepage\&q=how\%20to\%20use\%20markdown\&f=false
+  (utilisation de markdown)
+\end{itemize}
+
 \hypertarget{serpents}{%
 \subsection{Serpents}\label{serpents}}
 
@@ -4334,9 +5075,35 @@ utile -- voir nécessaire -- de comprendre comment entretenir celle-ci.
 \subsection{La gestion des
 références}\label{la-gestion-des-ruxe9fuxe9rences}}
 
+\begin{itemize}
+\item
+  le chapitre 6 porte entièrement sur la gestion des références (zotero,
+  biblatex, etc.).
+\item
+  https://uottawa.libguides.com/comment\_utiliser\_zotero (site de
+  l'université d'Ottawa. Beaucoup d'explications sur l'utilisation de
+  Zotero + vidéo)
+\item
+  https://www.bibl.ulaval.ca/fichiers\_site/aide\_recherche/zotero/guide-zotero.pdf
+  (document de l'université laval)
+\item
+  http://svn.tug.org/pracjourn/2006-4/fenn/fenn.pdf (explique comment
+  utiliser Biblatex)
+\end{itemize}
+
 \hypertarget{visualisation-graphique-en-r}{%
 \subsection{Visualisation graphique en
 R}\label{visualisation-graphique-en-r}}
+
+\begin{itemize}
+\item
+  Ggplot2 : elegant graphics for data analysis
+  https://ulaval.on.worldcat.org/search/detail/951778044?queryString=ggplot2\%3A\%20Elegant\%20Graphics\%20for\%20Data\%20Analysis\%20\&clusterResults=true\&groupVariantRecords=false
+  (livre qui explique comment utiliser ggplot2)
+\item
+  https://link-springer-com.acces.bibl.ulaval.ca/book/10.1007/978-0-387-75969-2
+  (utilisation de Lattice)
+\end{itemize}
 
 \hypertarget{serpents-1}{%
 \subsection{Serpents :}\label{serpents-1}}
@@ -4416,6 +5183,15 @@ s'en inspirer pour développer leurs compétences ou même le réutiliser
 dans leur propre projet. Cette transparence et cette collaboration sont
 donc avantageuses pour tous les partis.
 
+Le deuxième serpent duquel le chercheur avancé doit se méfier est de
+laisser le parfait devenir l'ennemi du bien. Certains chercheurs ont
+parfois tendance à être perfectionnistes et à perdre du temps et de
+l'énergie sur des détails mineurs qui n'ont, en fin de compte, aucune
+retombée majeure sur la qualité globale du projet, comme chercher à
+optimiser son code de manière excessive. Se soucier de la qualité de son
+travail est essentiel, mais le chercheur avancé doit également apprendre
+à savoir quand s'arrêter.
+
 Après avoir consacré de nombreuses heures et travaillé d'arrache-pied
 pour acquérir des connaissances avancées en codage, le chercheur a de
 quoi être fière. Toutefois, il doit se méfier de l'ultime serpent :
@@ -4461,6 +5237,20 @@ Allaire, JJ. 2022. \emph{Announcing {Quarto}, a New Scientific and
 Technical Publishing System}.
 \url{https://posit.co/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-ballhausen2019}{}}%
+Ballhausen, Miriam. 2019. {``Free and Open Source Software Licenses
+Explained.''} \emph{Computer} 52 (6): 82--86.
+\url{https://doi.org/10.1109/MC.2019.2907766}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-buxe9raud2007}{}}%
+Béraud, Cyrille. 2007. {``Le Logiciel Libre, Une Cause Nationale, Une
+Opportunité Pour Le Québec.''}
+\url{https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-couture2014}{}}%
+Couture, Stéphane. 2014. {``Les logiciels libres, un an plus tard.''}
+\url{https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-encyclopaediabritannica23}{}}%
 Encyclopaedia Britannica. 2023. \emph{{LaTeX}}.
 \url{https://www.britannica.com/technology/LaTeX-computer-programming-language}.
@@ -4477,6 +5267,11 @@ Hameed, Sharqa. 2023. \emph{{HTML History} \textbar{} {Explained}}.
 Kabacoff, Robert. 2022. \emph{R in Action: Data Analysis and Graphics
 with {R} and {Tidyverse}}. Third edition. {Shelter Island, NY}: {Manning
 Publications}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-karjalainen2010}{}}%
+Karjalainen, Martti. 2010. {``Large-Scale Migration to an Open Source
+Office Suite: An Innovation Adoption Study in Finland.''} PhD thesis.
+\url{https://trepo.tuni.fi/bitstream/handle/10024/66646/978-951-44-8216-8.pdf?sequence=1}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-markdownguide23}{}}%
 Markdown Guide. 2023. \emph{Getting {Started}}.
@@ -4516,6 +5311,10 @@ with {R}}. {New York, NY}: {Springer New York}.
 Stack Overflow. 2023. \emph{Stack {Overflow}}.
 \url{https://stackoverflow.com/}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-stallman1986}{}}%
+Stallman, Richard. 1986. {``GNU's Bulletin.''}
+\url{https://www.gnu.org/bulletins/bull1.txt}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-tippmann15}{}}%
 Tippmann, Sylvia. 2015. {``Programming Tools: {Adventures} with {R}.''}
 \emph{Nature} 517 (7532): 109--10.
@@ -4536,6 +5335,12 @@ the {Tidyverse}.''} \emph{Journal of Open Source Software} 4 (43): 1686.
 Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.
 \emph{R for Data Science: Import, Tidy, Transform, Visualize, and Model
 Data}. Second edition. {Beijing}: {O'Reilly}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-williams2010}{}}%
+Williams, Sam, Richard M Stallman, and Christophe Masutti. 2010.
+\emph{Richard Stallman et la révolution du logiciel libre - Une
+biographie autorisée}. s.l.: Eyrolles.
+\url{https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-worldwidewebconsortiumw3c98}{}}%
 World Wide Web Consortium (W3C). 1998. \emph{Extensible {Markup
