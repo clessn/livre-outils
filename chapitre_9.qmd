@@ -1,45 +1,86 @@
 # Outils d'intelligence artificielle
 
-<!-- # Sapientia Artificiosa: L'Excellence Cognitive au Service des Études Sociales" -->
+Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.
 
-<!-- # En général, c'est quoi l'IA, le ML, le DL, etc.? (en mentionnant que c'est un champ qui change tout le temps) (JOZEF) -->
+Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites.
 
-<!-- # La révolution ChatGPT -->
 
-<!-- -   Corpus de textes humains donc possibilité de plagiat -->
-<!-- -   Tracer la ligne entre plagiat et outil d'assistance -->
-<!-- -   Parler des revues de science po qui veulent qu'on déclare l'utilisation de ce genre de AI -->
-<!-- -   Brainstorm -->
-<!-- -   l'API de OpenAI -->
-<!-- -   Biais de ce genre d'IA -->
 
-<!-- # Deepl, google traduction, etc, -->
+## Définition et différents type d'IA
 
-<!-- # Midjourney, génération d'images, etc. -->
+Qu’est-ce que l’intelligence artificielle (IA)? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles »? 
 
-<!-- -   Parler du plagiat -->
 
-<!-- # 1 autre exemple? -->
 
-<!-- # Machine Learning, reconnaissance d'images etc -->
 
-<!-- -   AWS, Calcul Québec, etc. -->
 
-<!-- # LLM, chatbots, etc. -->
 
-<!-- -   Ce qui s'en vient dans ce domaine? -->
+## Utilisation du package OpenAI
 
-<!-- Salut -->
+### Installation du package
+install.packages("openai") library(openai)
 
-# Utilisation du package OpenAI
+
+# Utilisation du package OpenAI en .r
 
 ## Installation du package
 
+```{r}
 install.packages("openai")
 library(openai)
+```
 
 ## Configuration de l'API
 
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. 
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie. 
 
-La fonction principale du package openai est 
+Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R. 
+
+```{r}
+install.packages("usethis")
+usethis::edit_r_environ()
+```
+
+Ajoutez la ligne suivante à votre fichier .Renviron
+
+```
+OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets
+```
+
+## Utilisation de l'API
+
+La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction:
+
+
+```{r}
+chat_prompt <- create_chat_completion(
+    model = "gpt-3.5-turbo",
+    messages = list(
+        list(
+            "role" = "system",
+            "content" = "You are a helpful assistant."
+        ),
+        list(
+            "role" = "user",
+            "content" = "Please do the following:")
+        )
+    )
+```
+
+Le résultat de votre requête sera contenu dans l'objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu'un dataframe normal. Le contenu de la réponse sera dans chat_prompt$choices$content. 
+
+Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites webs en temps réel en scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux possibilités que vous souhaitez explorer.
+
+## Notes
+
+- Il est possible d'accéder aux statistiques d'utilisation de token dans chat_prompt$usage$prompt_tokens et chat_prompt$usage$completion_tokens. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.
+
+- Ne pas oublier d'inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.
+
+- Il est possible de créer des images avec la fonction create_image("Inserez votre texte ici")
+
+- Il est possible d'effectuer du speech-to-text avec la fonction create_transcription() et create_translation()
+
+- Plus de documentation est disponible au https://irudnyts.github.io/openai/
+
+- Plus de fonctionalités sont disponibles en python mais le package R est suffisant pour la plupart des utilisations.
