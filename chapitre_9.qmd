@@ -1,56 +1,53 @@
 # Outils d'intelligence artificielle
 
-Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.
+Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Nous souhaitons d'abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l'état de la connaissance que nous avons sur l'IA. Nous sommes aussi bien loin d'être des spécialistes en la matière. Malgré cela, nous pensons qu'initier la réflexion et la discussion s'impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d'éclairer certains enjeux, ou s'il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.
 
-Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites.
-
-
+Nous débutons par définir et expliquer ce qu'est l'intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu'il s'agit. Ensuite, nous souhaitons mettre l'accent sur l'évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l'utilisation de l'IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd'hui et dans le futur, avec l'arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites.
 
 ## Définition et différents type d'IA
 
-Qu’est-ce que l’intelligence artificielle (IA)? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles »? Dans un premier temps, afin de répondre à ces questions, il est important de préciser que l’intelligence artificielle est un champ d’études (Devedzic 2022). Par conséquent, il s’agit d’un ensemble d’objets, relativement vaste et en constante expansion, qui s’intéresse, à sa façon, à l’intelligence artificielle. Pour préciser ce propos, prenons l’exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d’études, qui ont chacun leur propre objet d’intérêt. La philosophie politique, les relations internationales, la politique comparée et l’étude de l’opinion publique, par exemple, sont tous des sous-champs qui s’intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu’il n’y a pas de consensus dans la définition de l’IA (Wang 2019; König et al. 2022). De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d’une manière précise et consensuelle, quelque chose qui évolue constamment ? (Devedzic 2022 ; Bertolini 2020, 15).
+Qu'est-ce que l'intelligence artificielle (IA)? Est-ce quelque chose d'homogène, ou s'agit-il plutôt « des intelligences artificielles »? Dans un premier temps, afin de répondre à ces questions, il est important de préciser que l'intelligence artificielle est un champ d'études [@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets, relativement vaste et en constante expansion, qui s'intéresse, à sa façon, à l'intelligence artificielle. Pour préciser ce propos, prenons l'exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d'études, qui ont chacun leur propre objet d'intérêt. La philosophie politique, les relations internationales, la politique comparée et l'étude de l'opinion publique, par exemple, sont tous des sous-champs qui s'intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu'il n'y a pas de consensus dans la définition de l'IA \[; \] (Wang 2019; König et al. 2022). De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d'une manière précise et consensuelle, quelque chose qui évolue constamment ? (Devedzic 2022 ; Bertolini 2020, 15).
 
-Malgré ces différents enjeux, il est tout de même possible de spécifier ce que nous entendons par intelligence artificielle. Deux définitions de l’IA nous seront utiles. La première vient de John McCarthy (2007, 2) : « Il s’agit de la science et de l’ingénierie qui consistent à créer des machines intelligentes, en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l’intelligence humaine, mais l’IA ne doit pas se limiter aux méthodes qui sont biologiquement observables. » [Traduction DeepL] La seconde définition provient de la compagnie IBM (2023) : « Dans sa forme la plus simple, l’intelligence artificielle est un domaine qui combine l’informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l’apprentissage automatique et de l’apprentissage profond, qui sont souvent mentionnés en conjonction avec l’intelligence artificielle. Ces disciplines sont composées d’algorithmes d’IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d’entrée. » [Traduction DeepL] À l’aide de ces extraits, on comprend que l’IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines « intelligentes ». En d’autres termes, de leur donner la capacité de résoudre des problèmes par elles-mêmes.
-
-
-
+Malgré ces différents enjeux, il est tout de même possible de spécifier ce que nous entendons par intelligence artificielle. Deux définitions de l'IA nous seront utiles. La première vient de John McCarthy (2007, 2) : « Il s'agit de la science et de l'ingénierie qui consistent à créer des machines intelligentes, en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l'intelligence humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont biologiquement observables. » \[Traduction DeepL\] La seconde définition provient de la compagnie IBM (2023) : « Dans sa forme la plus simple, l'intelligence artificielle est un domaine qui combine l'informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l'apprentissage automatique et de l'apprentissage profond, qui sont souvent mentionnés en conjonction avec l'intelligence artificielle. Ces disciplines sont composées d'algorithmes d'IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d'entrée. » \[Traduction DeepL\] À l'aide de ces extraits, on comprend que l'IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines « intelligentes ». En d'autres termes, de leur donner la capacité de résoudre des problèmes par elles-mêmes.
 
 ## Utilisation du package OpenAI
 
 ### Installation du package
-install.packages("openai") library(openai)
 
+install.packages("openai") library(openai)
 
 # Utilisation du package OpenAI en .r
 
 ## Installation du package
 
 ```{r}
+#| eval: false
 #install.packages("openai")
 library(openai)
 ```
 
 ## Configuration de l'API
 
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie. 
+Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie.
 
-Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R. 
+Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R.
 
 ```{r}
+#| eval: false
 #install.packages("usethis")
 usethis::edit_r_environ()
 ```
 
 Ajoutez la ligne suivante à votre fichier .Renviron
 
-```
+```{r}
+#| eval: false
 OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets
 ```
 
 ## Utilisation de l'API
 
 La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction:
-
 
 ```{r}
 #| eval: false
@@ -68,20 +65,20 @@ chat_prompt <- create_chat_completion(
     )
 ```
 
-Le résultat de votre requête sera contenu dans l'objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu'un dataframe normal. Le contenu de la réponse sera dans chat_prompt$choices$content. 
+Le résultat de votre requête sera contenu dans l'objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu'un dataframe normal. Le contenu de la réponse sera dans chat_prompt$choices$content.
 
 Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites webs en temps réel en scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux possibilités que vous souhaitez explorer.
 
 ## Notes
 
-- Il est possible d'accéder aux statistiques d'utilisation de token dans chat_prompt$usage$prompt_tokens et chat_prompt$usage$completion_tokens. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.
+-   Il est possible d'accéder aux statistiques d'utilisation de token dans chat_prompt$usage$prompt_tokens et chat_prompt$usage$completion_tokens. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.
 
-- Ne pas oublier d'inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.
+-   Ne pas oublier d'inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.
 
-- Il est possible de créer des images avec la fonction create_image("Inserez votre texte ici")
+-   Il est possible de créer des images avec la fonction create_image("Inserez votre texte ici")
 
-- Il est possible d'effectuer du speech-to-text avec la fonction create_transcription() et create_translation()
+-   Il est possible d'effectuer du speech-to-text avec la fonction create_transcription() et create_translation()
 
-- Plus de documentation est disponible au https://irudnyts.github.io/openai/
+-   Plus de documentation est disponible au https://irudnyts.github.io/openai/
 
-- Plus de fonctionalités sont disponibles en python mais le package R est suffisant pour la plupart des utilisations.
+-   Plus de fonctionalités sont disponibles en python mais le package R est suffisant pour la plupart des utilisations.

@@ -36,13 +36,13 @@ Un autre grand avantage de Zotero est la centralisation des sources bibliographi
 
 Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers. Il est d'ailleurs nécessaire de payer pour avoir un large espace de stockage. En outre, le logiciel n'est pas parfait. Il faut parfois ajouter manuellement des informations manquantes que le logiciel n'a pas repéré directement à l'aide du connecteur intégré.
 
-## Pourquoi BibLaTeX? 
+## Pourquoi BibLaTeX?
 
 BibLaTeX est une extension moderne pour le traitement des bibliographies dans LaTeX et Quarto généralement utilisé avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats. BibLaTeX prend en charge de nombreuses langues, ce qui le rend adapté pour la rédaction d'articles ou de livres destinés à des publics internationaux. Bien que BibLaTeX soit principalement un paquet pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils comme Zotero sous forme de fichiers .bib, qui peuvent ensuite être utilisés avec BibLaTeX. Betterbibtex peut tenir vos fichiers .bib à jour automatiquement à partir de Zotero. Conservez seulement les références que vous utilisez et organisez votre fichier en ordre alphabétique pour favoriser la coopération et le partage de source.
 
 Voici un exemple d'utilisation de Biblatex en Latex.
 
-```{=latex}
+```
 "\usepackage[style=apa,url=false,isbn=false,doi=false,backend=biber,language=english,autolang=other]{biblatex}"
 "\addbibresource{references.bib}"
 "\parencite[page]{citationkey}"
