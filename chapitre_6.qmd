@@ -43,10 +43,10 @@ BibLaTeX est une extension moderne pour le traitement des bibliographies dans La
 Voici un exemple d'utilisation de Biblatex en Latex.
 
 ```
-"\usepackage[style=apa,url=false,isbn=false,doi=false,backend=biber,language=english,autolang=other]{biblatex}"
-"\addbibresource{references.bib}"
-"\parencite[page]{citationkey}"
-"\printbibliography{}"
+\usepackage[style=apa,url=false,isbn=false,doi=false,backend=biber,language=english,autolang=other]{biblatex}
+\addbibresource{references.bib}
+\parencite[page]{citationkey}
+\printbibliography{}
 ```
 Les inconvénients potentiels de BibLaTeX incluent une courbe d'apprentissage pour ceux qui sont habitués à BibTeX, ainsi que la nécessité d'une mise à jour régulière pour rester compatible avec les versions récentes de LaTeX. De plus, certains éditeurs académiques ou revues ont leurs propres styles de citation et n'acceptent pas les soumissions utilisant BibLaTeX, bien que cela devienne de moins en moins courant.
 
