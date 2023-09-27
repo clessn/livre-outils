@@ -28,13 +28,16 @@ Malgré tout, il s'agit d'une manière tout autant enrichissante que divertissan
 ### Environnements de programmation
 
 ### Les alternatives à Word : les langages de balisage
-- le chapitre 5 parle des langages de balisage (markdown, latex, etc.)
 
-- http://wcours.gel.ulaval.ca/2018/h/GEL1001/default/5chronologie/2017-01%20GEL-1001%20tutoriel%20LaTeX.pdf (powerpoint sur l'utilisation de latex)
-- https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf (latex)
+-   le chapitre 5 parle des langages de balisage (markdown, latex, etc.)
 
-- https://books.google.ca/books?hl=fr&lr=&id=9jb_DwAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=ddRy2mzCoL&sig=PHQ6sbk-aDPButn0-xoiXKJkwWg&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markown)
-- https://books.google.ca/books?hl=fr&lr=&id=_FwPEAAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=DcUv5Xk47M&sig=js_prAf0BFO5GmH6BEsOtVMRHaQ&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markdown)
+-   http://wcours.gel.ulaval.ca/2018/h/GEL1001/default/5chronologie/2017-01%20GEL-1001%20tutoriel%20LaTeX.pdf (powerpoint sur l'utilisation de latex)
+
+-   https://mirrors.ibiblio.org/CTAN/info/guide-latex-fr/guide-latex-fr.pdf (latex)
+
+-   https://books.google.ca/books?hl=fr&lr=&id=9jb_DwAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=ddRy2mzCoL&sig=PHQ6sbk-aDPButn0-xoiXKJkwWg&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markown)
+
+-   https://books.google.ca/books?hl=fr&lr=&id=\_FwPEAAAQBAJ&oi=fnd&pg=PP1&dq=how+to+use+markdown&ots=DcUv5Xk47M&sig=js_prAf0BFO5GmH6BEsOtVMRHaQ&redir_esc=y#v=onepage&q=how%20to%20use%20markdown&f=false (utilisation de markdown)
 
 ### Serpents
 
@@ -47,17 +50,20 @@ Le dernier serpent pour débutants est le suivant : **ne pas construire des base
 ## Intermédiaire
 
 ### La gestion des références
-- le chapitre 6 porte entièrement sur la gestion des références (zotero, biblatex, etc.).
 
-- https://uottawa.libguides.com/comment_utiliser_zotero (site de l'université d'Ottawa. Beaucoup d'explications sur l'utilisation de Zotero + vidéo)
-- https://www.bibl.ulaval.ca/fichiers_site/aide_recherche/zotero/guide-zotero.pdf (document de l'université laval)
-- http://svn.tug.org/pracjourn/2006-4/fenn/fenn.pdf (explique comment utiliser Biblatex)
+-   le chapitre 6 porte entièrement sur la gestion des références (zotero, biblatex, etc.).
 
+-   https://uottawa.libguides.com/comment_utiliser_zotero (site de l'université d'Ottawa. Beaucoup d'explications sur l'utilisation de Zotero + vidéo)
+
+-   https://www.bibl.ulaval.ca/fichiers_site/aide_recherche/zotero/guide-zotero.pdf (document de l'université laval)
+
+-   http://svn.tug.org/pracjourn/2006-4/fenn/fenn.pdf (explique comment utiliser Biblatex)
 
 ### Visualisation graphique en R
-- Ggplot2 : elegant graphics for data analysis https://ulaval.on.worldcat.org/search/detail/951778044?queryString=ggplot2%3A%20Elegant%20Graphics%20for%20Data%20Analysis%20&clusterResults=true&groupVariantRecords=false (livre qui explique comment utiliser ggplot2)
 
-- https://link-springer-com.acces.bibl.ulaval.ca/book/10.1007/978-0-387-75969-2 (utilisation de Lattice)
+-   Ggplot2 : elegant graphics for data analysis https://ulaval.on.worldcat.org/search/detail/951778044?queryString=ggplot2%3A%20Elegant%20Graphics%20for%20Data%20Analysis%20&clusterResults=true&groupVariantRecords=false (livre qui explique comment utiliser ggplot2)
+
+-   https://link-springer-com.acces.bibl.ulaval.ca/book/10.1007/978-0-387-75969-2 (utilisation de Lattice)
 
 ### Serpents :
 
@@ -79,10 +85,9 @@ Le dernier piège se dressant sur le chemin d'un chercheur de niveau intermédia
 
 L'un des pièges importants à éviter lorsque le chercheur se retrouve à un niveau avancé est la peur de partager son code. Estimant leur code comme étant une propriété intellectuelle, plusieurs chercheurs développent cette réticence et refusent de partager le fruit de leur labeur. Toutefois, partager son code comporte de nombreux avantages, non seulement pour les autres membres de la communauté, mais également pour le chercheur lui-même. D'un côté, cela permet de recevoir des rétroactions de la part d'autres chercheurs et développeurs. Cette collaboration peut donc grandement contribuer à l'amélioration de son code. De plus, partager son code représente une opportunité d'apprentissage pour les autres membres de la communauté qui peuvent s'en inspirer pour développer leurs compétences ou même le réutiliser dans leur propre projet. Cette transparence et cette collaboration sont donc avantageuses pour tous les partis.
 
-Le deuxième serpent duquel le chercheur avancé doit se méfier est de laisser le parfait devenir l’ennemi du bien. Certains chercheurs ont parfois tendance à être perfectionnistes et à perdre du temps et de l’énergie sur des détails mineurs qui n’ont, en fin de compte, aucune retombée majeure sur la qualité globale du projet, comme chercher à optimiser son code de manière excessive. Se soucier de la qualité de son travail est essentiel, mais le chercheur avancé doit également apprendre à savoir quand s’arrêter. 
+Le deuxième serpent duquel le chercheur avancé doit se méfier est de laisser le parfait devenir l'ennemi du bien. Certains chercheurs ont parfois tendance à être perfectionnistes et à perdre du temps et de l'énergie sur des détails mineurs qui n'ont, en fin de compte, aucune retombée majeure sur la qualité globale du projet, comme chercher à optimiser son code de manière excessive. Se soucier de la qualité de son travail est essentiel, mais le chercheur avancé doit également apprendre à savoir quand s'arrêter.
 
-Après avoir consacré de nombreuses heures et travaillé d’arrache-pied pour acquérir des connaissances avancées en codage, le chercheur a de quoi être fière. Toutefois, il doit se méfier de l’ultime serpent : manquer d'empathie et de compréhension envers les nouveaux utilisateurs. Certains chercheurs de niveau avancé peuvent oublier qu’ils ont déjà été, eux aussi, des débutants. Il faut éviter de prendre pour acquis certaines connaissances de base qui peuvent sembler très simple pour un chercheur avancé, mais très complexe pour un débutant. Soutenir les nouveaux utilisateurs dans leur apprentissage avec patients et empathie permet une meilleure transmission des connaissances. 
-
+Après avoir consacré de nombreuses heures et travaillé d'arrache-pied pour acquérir des connaissances avancées en codage, le chercheur a de quoi être fière. Toutefois, il doit se méfier de l'ultime serpent : manquer d'empathie et de compréhension envers les nouveaux utilisateurs. Certains chercheurs de niveau avancé peuvent oublier qu'ils ont déjà été, eux aussi, des débutants. Il faut éviter de prendre pour acquis certaines connaissances de base qui peuvent sembler très simple pour un chercheur avancé, mais très complexe pour un débutant. Soutenir les nouveaux utilisateurs dans leur apprentissage avec patients et empathie permet une meilleure transmission des connaissances.
 
 • La peur de partager son code/Douchebagisme
 
