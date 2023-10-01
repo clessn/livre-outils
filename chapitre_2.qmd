@@ -87,19 +87,19 @@ Ces deux librairies que nous venons de présenter en exemple, ne sont que deux d
 
 Les logiciels libres permettent aux utilisateurs de jouir d'une plus grande liberté dans leur utilisation, ce qui génère des externalités positives puisque ces gens peuvent créer de nouvelles commandes ou fonction et en faire bénéficier toute la collectivité. L'exemple que nous avons utilisé avec `R` ici reflète très bien cet avantage. La prochaine section de ce chapitre se penche plus en profondeur sur les autres avantages ainsi que sur les inconvénients de ces logiciels.
 
-# Principaux avantages et inconvénients
+## Principaux avantages et inconvénients
 
 Dans cette section, nous ne dresserons pas un portrait exhaustif de tous les avantages et les inconvénients du logiciel libre. Cette tâche serait fastidieuse et peu intéressante pour les lecteurs. Notre but ici est de présenter les certains avantages qui sont propre aux logiciels, ainsi que les inconvénients de ceux-ci.
 
-## Avantages
+### Avantages
 
-### Le partage et co-construction des connaissances
+#### Le partage et co-construction des connaissances
 
 La grande liberté que ce type de logiciel offre favorise la collaboration entre les utilisateurs, et ce à une échelle pouvant être internationale. Les interactions entre les chercheurs crées une dynamique d'« innovation ascendante » et d'entraide [@couture14]. Ce résultat constitue un important avantage pour le développement de ces logiciels. Selon certains, et comparativement aux logiciels privés, les logiciels libres ont un niveau plus élevé d'innovation [@smith02]. Contrairement à ceux qui se développent de manière privé et fermée, les logiciels libres permettent à tous les utilisateurs de participer au développement. Ceux-ci partagent ensuite leurs améliorations, ce qui stimulent à son tour de nouvelles initiatives. Ainsi, un certain savoir est généré dans cette situation. De plus, il est raisonable de penser que l'utilité des améliorations, ainsi que leur utilisation par les utilisateurs en fonction de leur besoin, comme dans le cas de la recherche sociale avec `R` permet de générer un savoir collaboratif [@couture20]. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs [@couture14], ces éléments résument très bien la philosophie du logiciel libre.
 
 Comme nous le verrons dans la section suivante, cet avantage est couplé avec ceux économiques. Les bas coûts démocratise l'accès à plusieurs logiciels qui sont utiles pour mener des analyses scientifiques. Et ce, pour tous les utilisateurs dans le monde.
 
-### Avantages économiques : Une plus grande accessibilité pour tous
+#### Avantages économiques : Une plus grande accessibilité pour tous
 
 Nous pouvons aussi mentionner certains avantages économique dans l'utilisation de logiciels libres. Le principal avantage économique des logiciels libres est son faible d'acquisition et de renouvellement pour les particuliers. Cet avantage individuel génère plusieurs externalités positives.
 
@@ -115,9 +115,9 @@ Ensuite, le logiciel libre est adaptable et modifiable. Ces coût techniques de 
 
 Pour résumer, les logiciels libres permettent donc une plus grande égalité dans l'accès aux nouvelles technologies, puisqu'ils ont dans la majorité des cas, des coûts d'acquisition nettement moindre. (Oui et non, l'acquisition financière est une chose, mais il y a d'autres barrières à l'utilisation tel que l'apprentissage à faire pour apprendre un language de programmation, l'achat de matériel informatique, etc. ) Cependant, considérant cela, donner l'exemple de l'étude qui montre que c'est beaucoup plus économique, même si l'on doit compter les coûts de formation, le soutien technique, l'entretien et la maintenance. [@couture14: @karjalainen10].
 
-## Inconvénients et défis:
+### Inconvénients et défis:
 
-### Coûteux en temps
+#### Coûteux en temps
 
 Dans leur texte, @paura_arhipova12 soulèvent une critique faite envers certains logiciels libres, notamment envers `R`. Le problème principal d'enseigner les statistiques avec des logiciels libres est qu'ils sont compliqués à apprendre ainsi qu'à utiliser; par conséquent, les étudiants passeraient plus de temps à tenter de résoudre les erreurs de programmation plutôt que d'apprendre les statistiques. Il est vrai que ces logiciels demandent un investissement en temps, afin d'être en mesure de mener ses propres analyses statistiques. Par exemple, `R` demande l'apprentissage d'un language de programmation afin de pouvoir utiliser le logiciel à son plein potentiel.
 
@@ -146,7 +146,7 @@ Toutefois, l'orsque l'on compare le coût d'apprentissage avec les bénéfices t
 
 Pour résumer, bien que l'apprentissage d'un language de programmation demande un investissement en temps, les bénéfices générées par ces nouvelles compétences dépassent le coût initial.
 
-### Problème de transparence
+#### Problème de transparence
 
 L'arrivé des sciences informatiques à fait émerger des problèmes de reproductibilité des protocoles scientifiques [@janssen17]. Le problème principal est relatif à l'accès au code utilisé par les chercheurs. Par exemple, il est possible de réaliser des analyses statistiques avec `R` sans partager le code utilisé, ce qui limite la transparence du processus scientifique. Dans cette situation, il est difficile de savoir si des erreurs de codage ont été commises, volontairement ou involontairement, affectant ainsi les résultats partagés.
 
@@ -158,7 +158,7 @@ Par exemple, si l'on réalise une analyse statistique de la relation entre l'éc
 
 Cependant, le partage du code utilisé reste encore majoritairement volontaire. @janssen_etal20 soutiennent que plus d'effort et d'actions concertés doivent être mise en place afin d'améliorer l'accessibilité aux codes. Toujours selon ces auteurs, les journaux scientifiques pourraient exiger que les auteurs rendent leur code publique lors du processus de publication. D'ailleurs, les résultats d'une expérience sur les facteurs qui influencent les chercheurs à partager leur code démontre que les initiatives individuelles ne seront pas suffisantes pour une agmentation du partage du code [@krahmer_etal23]. Par conséquent, rendre le code accessible devrait devenir un standard institutionnalisé.
 
-### Appropration capitaliste
+#### Appropration capitaliste
 
 Dans ce cas-ci, il s'agit plutôt d'un défis auquel le logiciel libre est confronté plutôt qu'une critique quant aux limites de son utilisation. En fait, l'accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constitue un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste [@broca13; @bessen02]. Certaines d'entre elles utilisent les utilisateurs comme une main d'oeuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l'entreprise est la seule bénéficiaire [@couture20]. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales trouble l'essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu'un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui a donné lieu à ce mouvement.
 
@@ -174,4 +174,4 @@ Comme nous l'avons présenté ci-haut, les bas coûts associés à l'utilisation
 
 {{< pagebreak >}}
 
-# Bibliographie
+
