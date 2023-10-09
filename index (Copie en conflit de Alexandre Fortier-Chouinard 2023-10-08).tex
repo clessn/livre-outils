@@ -233,7 +233,7 @@ numériques (CLESSN)}
 \begin{document}
 \frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, enhanced, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -2294,10 +2294,10 @@ document Word, vous offrent une plus grande flexibilité.
 Afin d'utiliser un langage de balisage, il est impératif que le logiciel
 que vous utilisez puisse prendre en compte ce langage. Un logiciel
 permet rarement d'utiliser n'importe quel langage. Par exemple, le
-logiciel \TeX\Shop permet seulement d'utiliser le langage \LaTeX. Il est
-aussi impératif de bien utiliser le langage de balisage. En effet, comme
-pour les langages de programmation, les langages de balisage ne peuvent
-pas déduire ce que vous souhaitez leur faire comprendre. Si vous
+logiciel \TeX{}Shop permet seulement d'utiliser le langage \LaTeX. Il
+est aussi impératif de bien utiliser le langage de balisage. En effet,
+comme pour les langages de programmation, les langages de balisage ne
+peuvent pas déduire ce que vous souhaitez leur faire comprendre. Si vous
 souhaitez mettre du texte en gras, vous devez utiliser les bonnes
 balises. La moindre erreur peut être coûteuse, puisqu'une erreur dans la
 balise que vous utilisez risque de produire une commande
@@ -2313,19 +2313,19 @@ compilé, c'est-à-dire d'être traduit dans son format final\footnote{Les
   problématique.}. Chaque caractère dans une balise est important et il
 y a rarement plus d'une seule manière de commander une action. Par
 exemple, en \LaTeX, il n'y a qu'une seule manière de mettre du texte en
-gras. Il faut précisément utiliser cette commande: \(\textbf{}\). Le
-positionnement des balises est lui aussi critique~: il délimite la
-portion de texte à laquelle doit être appliquée l'action commandée par
-la balise.
+gras. Il faut précisément utiliser cette commande:
+\texttt{\textbackslash{}textbf\{\}}. Le positionnement des balises est
+lui aussi critique~: il délimite la portion de texte à laquelle doit
+être appliquée l'action commandée par la balise.
 
 Il est important de distinguer les langages de balisage des langages de
-programmation, qui sont abordés plus en détail dans le
-Chapter~\ref{sec-chap4}. En effet, ceux-ci sont similaires à certains
-égards, mais ont des vocations différentes. Les deux s'appuient sur un
-langage informatisé, mais les langages et leurs objectifs diffèrent. Un
-langage de programmation définit des processus informatisés alors qu'un
-langage de balisage permet d'encoder du contenu de manière à ce que
-celui-ci soit lisible tant pour l'humain que pour son ordinateur.
+programmation, qui sont abordés plus en détail dans le chapitre 4. En
+effet, ceux-ci sont similaires à certains égards, mais ont des vocations
+différentes. Les deux s'appuient sur un langage informatisé, mais les
+langages et leurs objectifs diffèrent. Un langage de programmation
+définit des processus informatisés alors qu'un langage de balisage
+permet d'encoder du contenu de manière à ce que celui-ci soit lisible
+tant pour l'humain que pour son ordinateur.
 
 Dans le contexte de la recherche en sciences sociales, la programmation
 est généralement utilisée afin de récolter, d'analyser et de présenter
@@ -2351,86 +2351,34 @@ fonctions suivantes, qui sont particulièrement importantes dans le
 contexte de la recherche en sciences sociales~: produire des documents
 écrits et formater des pages Web. Dans les deux cas, ces actions peuvent
 être réalisées à partir de logiciels simples, mais ces logiciels ont des
-limites importantes qui ne sont pas présentes en langage de balisage.
+limites importantes auxquelles les langages de balisage apportent des
+solutions\footnote{Les langages de balisage permettent également de
+  créer des pages Web. Bien que les pages Web puissent être créées à
+  partir de sites Web comme WordPress, le langage HTML permet de
+  produire des résultats plus \emph{personnalisables}, plus
+  \emph{automatisables} et avec une plus \emph{grande qualité
+  graphique}. Cette question n'est pas abordée en détail dans ce
+  chapitre.}.
 
 Pour l'écriture de documents très simples comme une liste d'épicerie ou
 des notes rapides pendant une conférence, les logiciels de traitement de
 texte sont tout à fait convenables~: ils sont simples et rapides à
 utiliser, un formatage professionnel du document n'est pas de mise.
 Utiliser un langage de balisage pour des tâches de base peut en effet
-rendre la tâche inutilement longue. Par contre, plus la complexité d'un
-document augmente, plus il devient difficile d'obtenir un résultat
-satisfaisant en utilisant un logiciel de traitement de texte tel que
-Word, Pages ou Writer. A contrario, \LaTeX~permet de produire des
-documents de tous les niveaux de complexité, tel que démontré sur la
-Figure~\ref{fig-latex-vs-word}. Quant à Markdown, sa courbe se situerait
-logiquement entre celles de \LaTeX~et de Word. Plus généralement,
-utiliser un langage de balisage comme \LaTeX~ou Markdown\footnote{Les
-  avantages et désavantages de Markdown cités dans cette section
-  s'appliquent également à Quarto et à \texttt{R} Markdown, puisque ces
-  derniers font appel au langage Markdown.} comporte plusieurs avantages
-par rapport aux logiciels de traitement de texte traditionnels. Ces
-avantages peuvent se résumer en quatre concepts~: automatisation,
-personnalisation, flexibilité et qualité graphique.
-
-La plupart des langages de balisage permettent de remplir l'une des deux
-fonctions suivantes, qui sont particulièrement importantes dans le
-contexte de la recherche en sciences sociales~: produire des documents
-écrits et formater des pages Web. Dans les deux cas, ces actions peuvent
-être réalisées à partir de logiciels simples, mais ces logiciels ont des
-limites importantes auxquelles les langages de balisages apportent des
-solutions.
-
-Pour l'écriture de documents très simples comme une liste d'épicerie ou
-des notes rapides pendant une conférence, les logiciels de traitement de
-texte sont tout à fait convenables~: ils sont simples et rapides à
-utiliser, un formatage professionnel du document n'étant pas de mise.
-Utiliser un langage de balisage pour des tâches de base peut en effet
 rendre la tâche inutilement longue et complexe. Toutefois, plus la
-complexité d'un document s'avère grande, plus il devient difficile
-d'obtenir un résultat satisfaisant en utilisant un logiciel de
-traitement de texte tel que Word, Pages ou Writer. A contrario,
-\LaTeX~permet de produire des documents de tous les niveaux de
-complexité, tel que démontré sur la Figure~\ref{fig-latex-vs-word}.
-Quant à Markdown, sa courbe se situerait logiquement entre celles de
-\LaTeX~et de Word. Plus généralement, utiliser un langage de balisage
-comme \LaTeX~ou Markdown\footnote{Les avantages et désavantages de
-  Markdown cités dans cette section s'appliquent également à Quarto et à
-  \texttt{R} Markdown, puisque ces derniers font appel au langage
-  Markdown.} comporte plusieurs avantages par rapport aux logiciels de
-traitement de texte traditionnels. Ces avantages peuvent se résumer en
-quatre concepts~: automatisation, personnalisation, flexibilité et
-qualité graphique.
-
-La plupart des langages de balisage permettent de remplir l'une des deux
-fonctions suivantes, qui sont particulièrement importantes dans le
-contexte de la recherche en sciences sociales~: produire des documents
-écrits et formater des pages Web. Dans les deux cas, ces actions peuvent
-être réalisées à partir de logiciels simples, mais ces logiciels ont des
-limites importantes auxquelles les langages de balisages apportent des
-alternatives.
-
-Pour l'écriture de documents très simples comme une liste d'épicerie ou
-des notes rapides pendant une conférence, les logiciels de traitement de
-texte sont tout à fait convenables~: ils sont simples et rapides à
-utiliser, un formatage professionnel du document n'étant pas de mise.
-Utiliser un langage de balisage pour des tâches de base peut en effet
-rendre la tâche inutilement longue et complexe. Toutefois, plus la
-complexité d'un document s'avère grande, plus il devient difficile
-d'obtenir un résultat satisfaisant en utilisant un logiciel de
-traitement de texte tel que Word, Pages ou Writer. A contrario,
-\LaTeX~permet de produire des documents de tous les niveaux de
-complexité, tel que démontré sur la Figure~\ref{fig-latex-vs-word}.
-Quant à Markdown, sa courbe d'apprentissage se situerait logiquement
-entre celles de \LaTeX~et de Word, puisque ses balises sont simplifiée.
-Plus généralement, utiliser un langage de balisage comme \LaTeX~ou
-Markdown\footnote{Les logiciels permettent plus ou moins efficacement
-  d'identifier les balises problématiques. Certains ne produisent qu'un
-  message d'erreur sans donner d'indication sur la source du problème,
-  alors que d'autres ciblent très spécifiquement la ligne de syntaxe où
-  se situe la balise problématique.} comporte plusieurs avantages par
-rapport aux logiciels de traitement de texte traditionnels. Ces
-avantages peuvent se résumer en quatre concepts~: automatisation,
+complexité d'un document augmente, plus il devient difficile d'obtenir
+un résultat satisfaisant en utilisant un logiciel de traitement de texte
+tel que Word, Pages ou Writer. A contrario, \LaTeX~permet de produire
+des documents de tous les niveaux de complexité, tel que démontré sur la
+Figure~\ref{fig-latex-vs-word}. Quant à Markdown, sa courbe
+d'apprentissage se situerait logiquement entre celles de \LaTeX~et de
+Word, puisque ses balises sont simplifiées. Plus généralement, utiliser
+un langage de balisage comme \LaTeX~ou Markdown\footnote{Les avantages
+  et désavantages de Markdown cités dans cette section s'appliquent
+  également à Quarto et à \texttt{R} Markdown, puisque ces derniers font
+  appel au langage Markdown.} comporte plusieurs avantages par rapport
+aux logiciels de traitement de texte traditionnels. Ces avantages font
+tous appel à un mélange de quatre concepts principaux~: automatisation,
 personnalisation, flexibilité et qualité graphique.
 
 \begin{figure}
@@ -2456,19 +2404,19 @@ Premièrement, \LaTeX~et Markdown permettent d'intégrer une bibliographie
 Cette bibliographie peut être adaptée très facilement en différents
 styles bibliographiques reconnus ou en un style bibliographique
 \emph{personnalisé} à partir d'un des nombreux gabarits professionnels
-disponibles. Avec \textsc{Bib}\TeX, plus besoin de vérifier si le titre
+disponibles. Avec \textsc{Bib}\TeX, il n'y a pas à vérifier si le titre
 de l'article est toujours en italique, si le numéro de volume est
 toujours entre parenthèses ou si le nom de famille des deuxièmes auteurs
 est toujours avant ou après le prénom puisque toutes ces opérations sont
 effectuées de manière \emph{automatique}. \textsc{Bib}\TeX~comprend
-également les différences entre les types de sources (articles
-scientifiques, livres, sites Internet, etc.) et ajuste leur présentation
-en conséquence. De plus, si une des sources que vous citez n'est pas
-incluse dans la bibliographie, une erreur s'affiche, vous permettant
-d'identifier le problème plutôt que de vous retrouver avec une référence
-manquante. À l'inverse, si une source est retirée du texte, elle
-disparait \emph{automatiquement} de la bibliographie dans le document
-final mais demeure présente dans le fichier où se trouvent les
+également les différences entre les types de sources --- articles
+scientifiques, livres, sites Internet, etc. --- et ajuste leur
+présentation en conséquence. De plus, si une des sources que vous citez
+n'est pas incluse dans la bibliographie, une erreur s'affiche, vous
+permettant d'identifier le problème plutôt que de vous retrouver avec
+une référence manquante. À l'inverse, si une source est retirée du
+texte, elle disparait \emph{automatiquement} de la bibliographie dans le
+document final mais demeure présente dans le fichier où se trouvent les
 références bibliographiques. Cela évite les aller-retour pour vérifier
 que chaque source de la bibliographie se trouve au moins une fois dans
 le texte et que chaque source dans le texte est citée en bibliographie.
@@ -2479,7 +2427,15 @@ Les références \textsc{Bib}\TeX~pour articles scientifiques peuvent être
 copiées-collées à partir de Google Scholar. \textsc{Bib}\TeX~rend donc
 extrêmement simple et efficace l'utilisation des références
 bibliographiques grâce à sa capacité à \emph{personnaliser} et
-\emph{automatiser} leur présentation.
+\emph{automatiser} leur présentation\footnote{L'utilisation d'un
+  logiciel de traitement de texte, en particulier lorsque combiné avec
+  une extension Zotero, peut également produire un résultat automatisé
+  et personnalisé à un certain degré. Cependant, au moment où ce
+  chapitre est écrit, le retrait d'une citation du texte principal en
+  Word avec Zotero n'enlève pas immédiatement cette citation de la
+  bibliographie, et l'ajout de liens vers la bibliographie doit se faire
+  source par source, ce qui prend un temps important et peut occasionner
+  des erreurs humaines.}.
 
 \hypertarget{figures-et-tableaux}{%
 \subsubsection{Figures et tableaux}\label{figures-et-tableaux}}
@@ -2487,25 +2443,25 @@ bibliographiques grâce à sa capacité à \emph{personnaliser} et
 L'intégration de figures et de tableaux dans le texte est aussi rendue
 très simple et professionnelle grâce à \LaTeX~et à Markdown. La taille
 de la figure ou du tableau, son positionnement et son intégration par
-rapport au texte environnant peuvent être réglés avec précision. L'ajout
-de texte avant ou après la figure ou le tableau ne produira pas des
-résultats inattendus tels qu'une demi-page vide avant un graphique ou un
-titre de tableau complètement en bas d'une page. En définissant des
-paramètres pour l'ensemble du texte, le chercheur peut
-\emph{personnaliser} entièrement la présentation des figures et des
-tableaux. De plus, la \emph{qualité des figures et des tableaux} ne
-diminue pas lors de leur intégration~: les figures restent aussi belles
-qu'elles l'étaient originalement, ce qui n'est pas toujours le cas dans
-les logiciels de traitement de texte. Les figures et les tableaux sont
-aussi numérotés \emph{automatiquement}, ce qui veut dire que vous
-n'aurez jamais à vous préoccuper de modifier le numéro en ajoutant une
-figure ou un tableau dans le texte. Grâce aux balises, en cliquant sur
-le numéro associé à la figure ou au tableau dans le texte, le document
-se retrouve automatiquement à l'endroit où se trouve le graphique ou le
-tableau. De plus, les figures peuvent être intégrées en format PDF, ce
-qui permet au lecteur de copier-coller ou de surligner de l'information
-se trouvant sur le graphique directement, incluant les titres des axes
-et les annotations.
+rapport au texte environnant peuvent être réglés avec précision.
+Cependant, l'ajout de texte avant ou après la figure ou le tableau ne
+produira pas des résultats inattendus tels qu'une demi-page vide avant
+un graphique ou un titre de tableau complètement en bas d'une page. En
+définissant des paramètres pour l'ensemble du texte, la chercheuse ou le
+chercheur peut \emph{personnaliser} entièrement la présentation des
+figures et des tableaux. De plus, la \emph{qualité des figures et des
+tableaux} ne diminue pas lors de leur intégration~: les figures restent
+aussi belles qu'elles l'étaient originalement, ce qui n'est pas toujours
+le cas dans les logiciels de traitement de texte. Les figures et les
+tableaux sont aussi numérotés \emph{automatiquement}, ce qui veut dire
+que vous n'aurez jamais à vous préoccuper de modifier les numéros si
+l'ordre des figures et tableaux est modifié dans le texte. Grâce aux
+balises, en cliquant sur le numéro associé à la figure ou au tableau
+dans le texte, le document se retrouve automatiquement à l'endroit où se
+trouve la figure ou le tableau. De plus, les figures peuvent être
+intégrées en format PDF, ce qui permet au lecteur de copier-coller ou de
+surligner de l'information se trouvant sur le graphique directement,
+incluant les titres des axes et les annotations.
 
 Surtout, l'intégration de graphiques produits par \texttt{R} au texte en
 langage de balisage est simplifiée et \emph{automatisée}. En effet, même
@@ -2523,15 +2479,18 @@ L'intégration de figures et de tableaux est particulièrement simple et
 production de tableaux et de figures dans un document en langage de
 programmation (comme \texttt{R}), Quarto permet de créer une figure
 grâce à du code \texttt{R} \emph{et} d'intégrer celle-ci au texte dans
-un seul document. Cela se fait grâce à l'intégration de blocs de code
+un même document. Cela se fait grâce à l'intégration de blocs de code
 \texttt{R} (\emph{code chunks}) dans le document. Le code est produit
 dans le bloc de code et la figure ou le tableau qui en résulte apparait
 à la fois dans le document Quarto, où des balises supplémentaires
 permettent d'adapter le formatage, et sur le document fini.
 
+\hypertarget{uxe9quations}{%
+\subsubsection{Équations}\label{uxe9quations}}
+
 \LaTeX~permet également d'ajouter des équations mathématiques poussées.
 En effet, il existe des balises pour chaque symbole mathématique, et
-ceux-ci peuvent être agencés de manière à former des équations
+celles-ci peuvent être agencées de manière à former des équations
 cohérentes. Ces équations peuvent être intégrées au sein même d'une
 phrase ou être mises de l'avant dans un paragraphe à part centré.
 
@@ -2550,149 +2509,152 @@ dans des sections distinctes de la table des matières sont également
 offertes, encore une fois \emph{personnalisables} au goût du chercheur.
 
 Bien que la mise en page de documents produits via Markdown et
-\LaTeX~puisse être définie entièrement manuellement par un.e
-utilisateur.rice expérimenté.ée, les débutants.antes apprécieront les
-nombreux gabarits (\emph{templates}) qui permettent de gérer
-\emph{automatiquement} la mise en page de manière « clé-en-main ». Les
-gabarits permettent de rendre l'apparence d'un document plus esthétique
-et uniforme et peuvent être utilisés tels quels ou servir de point de
-départ pour un.e chercheur.euse souhaitant y apporter certaines
-modifications sans toutefois partir d'une feuille blanche. La majorité
-des utilisateurs.rices, même les plus expérimentés.es, utilisent ces
-gabarits comme base lorsqu'ils.elles rédigent un document. Ceux-ci
-constituent une mine d'or puisqu'ils rendent accessible le code Markdown
-ou \LaTeX~ayant servi à la conception du gabarit, permettant à la
-personne chercheuse de comprendre comment est obtenu le résultat que lui
-offre le gabarit. Incidemment, la personne chercheuse peut identifier
-les sections de code produisant certains éléments de mise en page (ex~:
-positionnement des numéros de page, positionnement du nom des auteurs en
-début de document, etc.) et les modifier ou s'en inspirer afin de
-modifier d'autres gabarits. L'utilisation de ces gabarits peut s'avérer
-complexe pour les non-initiés.ées, mais il s'agit d'une complexité qui
-s'avère ultimement extrêmement productive puisqu'elle permet à la
-personne chercheuse de devenir autonome et d'ajuster les gabarits à sa
-convenance afin de produire exactement le résultat désiré en termes de
-mise en page. En comparaison, les logiciels de traitement de texte
-rendent souvent très ardue la mise en page uniforme d'un document,
-puisque cet élément ne peut pas être \emph{automatisé}. La liste des
-gabarits disponibles est extrêmement large, et ceux-ci ont une variété
-de fonctions. En effet, une variété de gabarits professionnels et de
-haute \emph{qualité graphique} sont offerts gratuitement en ligne pour
-des articles, des livres, des rapports, des \emph{curriculum vitæs} ou
-encore des feuilles de temps pour des contrats rémunérés.
+\LaTeX~puisse être définie entièrement manuellement par les personnes
+plus expérimentées, les novices apprécieront les nombreux gabarits
+(\emph{templates}) qui permettent de gérer \emph{automatiquement} la
+mise en page clés en main. Les gabarits permettent de rendre l'apparence
+d'un document plus esthétique et uniforme et peuvent être utilisés tels
+quels ou servir de point de départ pour un chercheur ou une chercheuse
+souhaitant y apporter certaines modifications sans toutefois partir
+d'une feuille blanche. La majorité des personnes qui utilisent ces
+langages, même les plus expérimentées, utilisent ces gabarits comme base
+lorsqu'elles rédigent un document. Ceux-ci constituent une mine d'or
+puisqu'ils rendent accessible le code Markdown ou \LaTeX~ayant servi à
+la conception du gabarit, permettant à la chercheuse ou au chercheur de
+comprendre comment est obtenu le résultat que lui offre le gabarit.
+Incidemment, il est possible d'identifier les sections de code
+produisant certains éléments de mise en page --- positionnement des
+numéros de page, positionnement du nom des auteurs en début de document,
+etc. --- et les modifier ou s'en inspirer afin de modifier d'autres
+gabarits. L'utilisation de ces gabarits peut s'avérer complexe au
+départ, mais il s'agit d'une complexité qui s'avère ultimement
+extrêmement productive puisqu'elle vous permettra de devenir autonome et
+d'ajuster les gabarits à votre convenance afin de produire exactement le
+résultat désiré en termes de mise en page. En comparaison, les logiciels
+de traitement de texte rendent souvent très ardue la mise en page
+uniforme d'un document, puisque cet élément ne peut pas être
+\emph{automatisé}. La liste des gabarits disponibles est extrêmement
+large, et ceux-ci ont une variété de fonctions. En effet, une variété de
+gabarits professionnels et de haute \emph{qualité graphique} sont
+offerts gratuitement en ligne pour des articles, des livres, des
+rapports, des \emph{curriculum vitæs} Figure~\ref{fig-cv} ou encore des
+feuilles de temps pour des contrats rémunérés Figure~\ref{fig-invoice}.
 
-Les images ci-haut ne sont qu'un exemple parmi tant d'autres de gabarits
-disponibles en ligne. L'interface en ligne du logiciel Overleaf offre
-une grande variété de ces exemple de gabarits. Libre au chercheur et à
-la chercheuse d'y naviguer et de voir quel gabarit convient le mieux à
-ses besoins. ======= \emph{Images de CVs et feuilles de temps
-professionnels} \includegraphics{images/CVtemp.png}
-\includegraphics{images/TStemp.png} Les images ci-haut ne sont qu'un
-exemple parmi tant d'autres de gabarits disponibles en ligne.
-L'interface en ligne du logiciel Overleaf offre une grande variété de
-ces exemple de gabarits. Libre au chercheur et à la chercheuse d'y
-naviguer et de voir quel gabarit convient le mieux à ses besoins.
+\begin{figure}
 
-\emph{Images de CVs et feuilles de temps professionnels}
-\includegraphics{images/CVtemp.png} \includegraphics{images/TStemp.png}
-Les images ci-haut ne sont qu'un exemple parmi tant d'autres de gabarits
-disponibles en ligne. L'interface en ligne du logiciel Overleaf offre
-une grande variété de ces exemple de gabarits. Libre au chercheur et à
-la chercheuse d'y naviguer et de voir quel gabarit convient le mieux à
-ses besoins.
+{\centering \includegraphics[width=2.02in,height=\textheight]{images/CVtemp.png}
 
-\hypertarget{flexibilituxe9}{%
-\subsubsection{Flexibilité}\label{flexibilituxe9}}
+}
 
-Un autre avantage non-négligeable de Markdown --- qui le distingue à cet
-égard de \LaTeX~--- est la \emph{flexibilité} qu'il offre à ses
-utilisateurs.rices. En effet, en utilisant Pandoc Markdown, qui est une
-extension du langage Markdown de base permettant de combiner plusieurs
-langages de balisage différents en un seul document, il est possible
-d'intégrer dans un seul document plusieurs langages de balisage
-différents tels que Markdown, \LaTeX~ou HTML. Quarto est également
-habilité en plus à travailler avec des extraits de code \texttt{R} ou
-Python. Ceci permet donc à l'utilisateur.rice de bénéficier des
+\caption{\label{fig-cv}Exemple de gabarit \LaTeX~de curriculum vitae
+\newline \textit{Source}~: .}
+
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1.85in,height=\textheight]{images/TStemp.png}
+
+}
+
+\caption{\label{fig-invoice}Exemple de gabarit \LaTeX~de feuille de
+temps \newline \textit{Source}~: .}
+
+\end{figure}
+
+Les Figure~\ref{fig-cv} et Figure~\ref{fig-invoice} ne sont que quelques
+exemples des milliers de gabarits de documents \LaTeX~disponible en
+ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site
+Web d'Overleaf (2023). Vous pouvez y naviguer et voir quel gabarit
+convient le mieux à vos besoins. Certaines manières plutôt spécifiques
+de formater le texte sont présentement disponibles avec \LaTeX~ou
+Markdown bien que non disponibles en Word, ce qui constitue une autre
+preuve de leur grande \emph{flexibilité} et capacité de
+\emph{personnalisation}. Bien qu'il soit rare que nous ayons absolument
+besoin de personnaliser le texte ainsi, ces possibilités peuvent
+s'avérer utiles lorsque vous rédigez un texte qui doit se conformer en
+tout point à un gabarit spécifique. En effet, certaines revues
+scientifiques, maisons d'édition et universités, dans le cadre de la
+rédaction d'articles, de mémoires et de thèses par exemple, imposent ce
+type de gabarit inflexible et parfois plutôt capricieux.
+
+\hypertarget{compatibilituxe9-entre-types-de-documents}{%
+\subsubsection{Compatibilité entre types de
+documents}\label{compatibilituxe9-entre-types-de-documents}}
+
+Un autre avantage non négligeable de Markdown --- qui le distingue à cet
+égard de \LaTeX~--- est la \emph{flexibilité} des formats de documents
+qui peuvent être produits. En effet, Pandoc Markdown, une extension du
+langage Markdown de base, permet d'intégrer dans un seul document
+plusieurs langages de balisage différents tels que Markdown, \LaTeX~et
+HTML. Quarto utilise Pandoc Markdown et est également habilité à
+travailler avec des extraits de code \texttt{R} ou Python. Ceci permet
+donc à l'utilisateur ou à l'utilisatrice de bénéficier des
 fonctionnalités de différents langages dans un seul document, rendant
 ainsi possible une variété de \emph{personnalisations} qui ne seraient
-pas possible autrement. Qui plus est, puisque Markdown permet de créer
+pas possibles autrement. Qui plus est, puisque Markdown permet de créer
 des fichiers Word réguliers, PDF professionnels et HTML à partir d'un
-même document, l'utilisateur.rice peut choisir à sa convenance et à tout
-moment de quelle manière sera compilé le document rédigé. Cette
-possibilité de créer des documents Word est particulièrement pratique
-dans le cadre de collaboration avec des chercheurs.euses n'utilisant pas
-les langages de balisage ainsi que lors de l'envoi de manuscrits à des
+même document, vous pouvez choisir à votre convenance et à tout moment
+de quelle manière sera compilé le document rédigé. Cette possibilité de
+créer des documents Word est particulièrement pratique dans le cadre de
+collaboration avec des chercheuses et chercheurs n'utilisant pas les
+langages de balisage ainsi que lors de l'envoi de manuscrits à des
 revues scientifiques, puisque certaines d'entre elles exigent de
 recevoir ceux-ci sous forme de document Word.
-
-Certaines manières plutôt spécifiques de formater le texte sont
-présentement disponibles avec \LaTeX~ou Markdown bien que non
-disponibles en Word, ce qui constitue une autre preuve de leur grande
-\emph{flexibilité} et capacité de \emph{personnalisation}. Bien qu'il
-soit rare que nous ayons absolument besoin de personnaliser le texte
-ainsi, ces possibilités peuvent s'avérer utiles lorsque vous rédigez un
-texte qui doit se conformer en tout point à un gabarit spécifique. En
-effet, certaines revues scientifiques, maisons d'édition ou universités,
-dans le cadre de la rédaction d'articles, de mémoires et de thèses par
-exemple, imposent ce type de gabarit inflexible et parfois plutôt
-capricieux. C'est dans ce type de contexte que la \emph{flexibilité} des
-langages de balisages peut s'avérer utile.
-
-Les langages de balisage permettent également de créer des pages Web.
-Bien que les pages Web puissent être créées à partir de sites Web comme
-WordPress, le langage HTML permet de produire des résultats plus
-\emph{personnalisables}, plus \emph{automatisables} et avec une plus
-\emph{grande qualité graphique}.
 
 \hypertarget{gestion-des-embuches}{%
 \subsubsection{Gestion des embuches}\label{gestion-des-embuches}}
 
 Bien que l'apprentissage de \LaTeX~et de Markdown puisse être parsemé de
 nombreuses embuches, ces deux langages bénéficient d'une communauté
-d'utilisateurs.rices en ligne sur laquelle il est possible de s'appuyer
-afin de résoudre tout problème rencontré. Les utilisateurs.rices ---
-particulièrement les plus expérimentés.ées --- sont nombreux.euses à
-partager leur expérience à leurs collègues rencontrant des problèmes
-afin de contribuer à régler ceux-ci. Cette communauté est présente sur
-une multitude de sites Web, bien que le point de rencontre principal
-soit le forum Stack Overflow (2023), qui est également utilisé pour
-régler des problèmes de programmation et est abordé plus en détail dans
-le Chapter~\ref{sec-chap4}. Une simple recherche sur Google d'un
-problème rencontré avec \LaTeX~ou Markdown offrira à l'utilisateur.rice
-des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow
-ou encore vers de la documentation technique. L'utilisateur.rice pourra
-donc filtrer les résultats et observer les nombreuses solutions
-envisageables à son problème afin de définir laquelle est la plus
-appropriée dans sa situation. Il est important de noter, toutefois, que
-cette communauté est nettement plus développée pour les utilisateurs de
-\LaTeX~que de Markdown, puisque ce dernier langage est moins répandu que
-le premier.
+d'utilisateurs et d'utilisatrices en ligne sur laquelle il est possible
+de s'appuyer afin de résoudre tout problème rencontré. Ces individus ---
+particulièrement les plus expérimentés --- sont nombreux à partager leur
+expérience à leurs collègues rencontrant des problèmes afin de
+contribuer à régler ceux-ci. Cette communauté est présente sur une
+multitude de sites Web, bien que le point de rencontre principal soit le
+forum Stack Overflow (2023), qui est également utilisé pour régler des
+problèmes de programmation et est abordé plus en détail dans le chapitre
+4. Une simple recherche sur Google d'un problème rencontré avec
+\LaTeX~ou Markdown vous offrira des liens vers des échanges pertinents
+ayant eu lieu sur Stack Overflow ou encore vers de la documentation
+technique. Vous pourrez donc filtrer les résultats et observer les
+nombreuses solutions envisageables à votre problème afin de définir
+laquelle est la plus appropriée dans votre situation. Il est important
+de noter, toutefois, que cette communauté est nettement plus développée
+pour les utilisateurs de \LaTeX~que de Markdown, puisque ce dernier
+langage est moins répandu que le premier.
 
 Également, avec l'émergence de l'intelligence artificielle (IA), de
-nombreux modèles commencent à émerger comme des ressources d'aides
-utiles pour les chercheuses et les chercheurs. Au moment de la rédaction
-du présent chapitre, le \emph{chatbot} ChatGPT, développé par OpenAI et
-basé sur le grand modèle de langage GPT-3.5, est une ressource d'aide en
-émergence en ce qui a trait aux langages de balisage. Le corpus de
-données sur lequel il a été formé inclut une grande variété de langages
-et de styles d'écriture, incluant \LaTeX~et Markdown. Ainsi, il est
-possible de poser des questions en langage courant à ce \emph{chatbot}
-lorsque des problèmes de balisage sont rencontrés. Celui-ci fournira en
-réponse le texte avec les balises adéquates pour régler le problème.
-Cela s'applique même pour des problèmes pour lesquels la réponse n'est
-pas directement indiquée sur Stack Overflow, lorsque la logique des
-langages est comprise par ces modèles basés sur l'IA. ChatGPT est
-toutefois plus outillé en \LaTeX~qu'en Markdown ou en Quarto en raison
-de la plus grande abondance de ressources en \LaTeX~disponibles en
-ligne, bien que ses capacités soient en constante amélioration. Il
-arrive cependant régulièrement que les réponses des modèles de langage
-comme ChatGPT soit erronées --- tout comme certaines réponses sur Stack
-Overflow peuvent ne pas être adaptées à régler le problème d'un.e
-utilisateur.rice. Il demeure donc important de vérifier les réponses des
-modèles basées sur l'IA afin de ne pas avoir de mauvaises surprises lors
-de la compilation du code. Ainsi, il est utile de s'appuyer autant sur
-la communauté d'utilisateurs.rices de langages de balisage qui échange
-des ressources en ligne que sur les modèles de langage basés sur l'IA.
+nombreux modèles d'IA génératifs commencent à émerger comme des
+ressources d'aides utiles pour les chercheuses et les chercheurs. Au
+moment de la rédaction du présent chapitre, le \emph{chatbot} ChatGPT,
+développé par OpenAI et basé sur le grand modèle de langage (\emph{large
+language model}, LLM) GPT-3.5, est une ressource d'aide en émergence en
+ce qui a trait aux langages de balisage. Le corpus de données sur lequel
+il a été formé inclut une grande variété de langages et de styles
+d'écriture, incluant \LaTeX~et Markdown. Ainsi, il est possible de poser
+des questions en langage courant à ce \emph{chatbot} lorsque des
+problèmes de balisage sont rencontrés. Celui-ci fournira en réponse le
+texte avec les balises adéquates pour régler le problème. Cela
+s'applique même pour des problèmes pour lesquels la réponse n'est pas
+directement indiquée sur Stack Overflow, lorsque la logique des langages
+est comprise par ces modèles basés sur l'IA. ChatGPT est toutefois plus
+outillé en \LaTeX~qu'en Markdown ou en Quarto en raison de la plus
+grande abondance de ressources en \LaTeX~disponibles en ligne, bien que
+ses capacités soient en constante amélioration. Il arrive cependant
+régulièrement que les réponses des modèles de langage comme ChatGPT soit
+erronées --- tout comme certaines réponses sur Stack Overflow peuvent ne
+pas être adaptées à régler un problème similaire vécu sur un autre
+ordinateur, avec des paramètres différents. Il demeure donc important de
+vérifier les réponses des modèles basés sur l'IA afin de ne pas avoir de
+mauvaises surprises lors de la compilation du code. Ainsi, il est utile
+de s'appuyer autant sur la communauté d'utilisatrices et d'utilisateurs
+de langages de balisage qui échange des ressources en ligne que sur les
+modèles de langage basés sur l'IA.
+
+\hypertarget{gratuituxe9}{%
+\subsubsection{Gratuité}\label{gratuituxe9}}
 
 Finalement, il est important de mentionner que Markdown, Quarto et
 \LaTeX~sont entièrement gratuits et accessibles aux utilisateurs de tous
@@ -2712,18 +2674,20 @@ directement dans le document \LaTeX~ou Markdown, à l'aide de balises
 spécifiques. Ces commentaires n'apparaissent cependant pas dans le
 fichier sortant. Le suivi des modifications en \LaTeX~et Markdown
 nécessite donc souvent l'utilisation de Git et de GitHub, qui sont
-abordés plus en détail dans le Chapter~\ref{sec-chap8}. Même avec une
-plateforme de gestion des versions comme GitHub, les longs paragraphes
-ayant fait l'objet de plusieurs modifications peuvent être longs à
-comparer par rapport à Word, qui permet de visualiser les propositions
-d'ajouts et de retraits de caractères de manière plus intuitive. Le
-suivi des modifications en Word permet également de distinguer les
-auteurs de différents commentaires par leurs noms, ce que GitHub ne
-permet pas de faire. Pour ces raisons, et aussi pour faciliter la mise
-en page par les éditeurs, certaines revues scientifiques refusent les
-fichiers PDF et demandent que les soumissions soient faites en format
-DOCX --- ce qui pose problème pour les utilisateurs de \LaTeX~mais pas
-ceux de Markdown.
+abordés plus en détail dans le chapitre 9. Même avec une plateforme de
+gestion des versions comme GitHub, les longs paragraphes ayant fait
+l'objet de plusieurs modifications peuvent être longs à comparer par
+rapport aux logiciels de traitement de texte, qui permettent de
+visualiser les propositions d'ajouts et de retraits de caractères de
+manière plus intuitive. Le suivi des modifications en logiciel de
+traitement de texte permet également de distinguer les auteurs de
+différents commentaires par leurs noms, alors que les ajouts et retraits
+itératifs en GitHub peuvent rendre difficile l'identification de
+l'auteur d'une modification. Pour ces raisons, et aussi pour faciliter
+la mise en page par les éditeurs, certaines revues scientifiques
+refusent les fichiers PDF et demandent que les soumissions soient faites
+en format DOCX --- ce qui pose problème pour les utilisateurs de
+\LaTeX~mais pas ceux de Markdown.
 
 Les langages de balisage comportent également un autre désavantage
 important dans certains cas~: l'absence d'un correcteur de fautes de
@@ -2738,16 +2702,16 @@ forme, entre autres. Ces éléments sont pourtant essentiels pour la
 rédaction de textes académiques. Pour les utilisateurs de RStudio, il
 est donc souvent nécessaire de copier-coller le texte dans un logiciel
 externe pour faire une révision linguistique complète, puis d'intégrer
-les corrections en collant le texte corrigé dans le document original
-Markdown ou en \LaTeX.
+les corrections en collant le texte corrigé dans le document original en
+Markdown ou \LaTeX.
 
 Enfin, les langages de balisage, contrairement aux logiciels de
 traitement de texte, nécessitent d'être compilés, ce qui implique que
 deux fichiers coexistent~: le fichier où le langage de balisage est
-utilisé (format \texttt{.tex} pour \LaTeX, \texttt{.md} pour Markdown ou
-encore \texttt{.qmd} pour Quarto) ainsi que le fichier où le texte final
-balisé apparait (généralement \texttt{.pdf}, \texttt{.docx} ou
-\texttt{.html}). La compilation peut prendre un temps variable selon la
+utilisé --- format \texttt{.tex} pour \LaTeX, \texttt{.md} pour Markdown
+ou encore \texttt{.qmd} pour Quarto --- ainsi que le fichier où le texte
+final balisé apparait --- généralement \texttt{.pdf}, \texttt{.docx} ou
+\texttt{.html}. La compilation peut prendre un temps variable selon la
 complexité du document, mais dure typiquement une quinzaine de secondes.
 Le fait de devoir travailler avec deux fichiers en parallèle et de ne
 pas voir immédiatement l'effet des balises sur le document final
@@ -2764,26 +2728,30 @@ erreur de compilation. Markdown est un langage plus simple à apprendre,
 avec des balises plus courtes et intuitives. Il occasionne donc moins
 d'erreurs de compilation.
 
-Deuxièmement, \LaTeX~est incompatible avec les logiciels de traitement
+Deuxièmement, \LaTeX~est peu compatible avec les logiciels de traitement
 de texte comme Word. Pour transférer un fichier créé à partir d'un
 logiciel de traitement de texte vers \LaTeX, les balises doivent être
 ajoutées manuellement une par une. À l'inverse, pour transférer un
-document \LaTeX~vers un fichier de traitement de texte, les balises
-doivent être retirées une par une et le formatage doit être refait en
-utilisant les boutons fournis sur le logiciel de traitement de texte. Il
-est aussi possible de copier le texte directement à partir du fichier
-PDF produit par \LaTeX~vers Word, mais les fins de ligne sont
-interprétées par Word, Pages ou Writer comme des retours plutôt que des
-espaces, et les accents sont souvent mal copiés et doivent être réécrits
-manuellement. Encore une fois, Markdown évite ce problème en permettant
-d'écrire un fichier DOCX à partir du langage de balisage. Le formatage
-du fichier DOCX demeure un peu compliqué cependant et doit être fait à
-partir du modèle d'un autre document DOCX formaté tel que souhaité. De
-plus, les fichiers DOCX ne peuvent pas être transformés en format
-Markdown. Quarto permet d'écrire un texte en format Markdown et de
-produire un fichier DOCX à partir d'un gabarit Word. De plus, pour les
-fichiers Word à transformer en format Markdown, les balises plus simples
-en Markdown qu'en \LaTeX~rendent la tâche plus simple.
+document \LaTeX~vers un fichier de traitement de texte, le convertisseur
+Pandoc peut être utilisé, mais celui-ci ne repère pas toutes les balises
+et il est souvent nécessaire de faire des aller-retour entre le fichier
+\LaTeX~original et le fichier converti en format DOCX pour s'assurer du
+succès de la conversion. Parfois, les balises doivent être retirées une
+par une et le formatage doit être refait en utilisant les boutons
+fournis sur le logiciel de traitement de texte. Il est aussi possible de
+copier le texte directement à partir du fichier PDF produit par
+\LaTeX~vers un logiciel de traitement de texte, mais les fins de ligne
+sont interprétées par Word, Pages ou Writer comme des retours plutôt que
+des espaces, et les accents sont souvent mal copiés et doivent être
+réécrits manuellement. Encore une fois, Markdown évite ce problème en
+permettant d'écrire un fichier DOCX à partir du langage de balisage. Le
+formatage du fichier DOCX demeure un peu compliqué cependant et doit
+être fait à partir du modèle d'un autre document DOCX formaté tel que
+souhaité. De plus, les fichiers DOCX ne peuvent pas être transformés en
+format Markdown. Quarto permet d'écrire un texte en format Markdown et
+de produire un fichier DOCX à partir d'un gabarit Word. De plus, pour
+les fichiers Word à transformer en format Markdown, les balises plus
+simples en Markdown qu'en \LaTeX~rendent la tâche plus simple.
 
 Somme toute, Word n'est pas à antagoniser et demeure très utile pour des
 tâches simples. Cependant, dans le monde académique, la production de
@@ -2807,13 +2775,14 @@ italique et en note de bas de page\footnote{\emph{mot}}, les balises
 \texttt{\textbackslash{}footnote\{\textbackslash{}emph\{mot\}\}} peuvent
 être utilisées. Ainsi, des balises peuvent contenir d'autres balises. En
 langage \LaTeX, une balise commence toujours par une barre oblique
-inversée. Par la suite, le nom de la fonction (\emph{emph},
-\emph{textbf}, \emph{textcolor}, etc.) est appelé. Enfin, généralement,
-le mot à formater est placé entre accolades (\texttt{\{\}}).
+inversée. Par la suite, le nom de la fonction --- \emph{emph},
+\emph{textbf}, \emph{textcolor}, etc. --- est appelé. Enfin,
+généralement, le mot à formater est placé entre accolades
+(\texttt{\{\}}).
 
 Chaque document \LaTeX~commence par un préambule. Celui-ci présente des
-informations telles que la taille des caractères, le type d'article, le
-format de mise en page, la police de caractères, l'utilisation
+informations telles que la taille des caractères, le type de document,
+le format de mise en page, la police de caractères, l'utilisation
 d'en-têtes et de pieds de page, ainsi que l'utilisation de
 \emph{packages} \LaTeX~permettant différentes fonctionnalités de
 personnalisation du document. Il n'est pas nécessaire ni souhaitable
@@ -2821,9 +2790,8 @@ d'apprendre l'ensemble des fonctions et des \emph{packages} \LaTeX~qui
 existent. Au contraire, il est souvent mieux de commencer par un gabarit
 de document qui convient au type de document que vous voulez créer et
 ensuite de rechercher en anglais sur Stack Overflow la manière d'ajouter
-des éléments de formatage que vous ne connaissez pas (par exemple, en
-recherchant \texttt{highlight\ latex\ text}). Des gabarits de documents
-\LaTeX~sont disponibles sur le site Web d'Overleaf (2023).
+des éléments de formatage que vous ne connaissez pas, par exemple en
+recherchant \texttt{highlight\ latex\ text}.
 
 Markdown fonctionne de manière similaire à \LaTeX, mais se démarque par
 sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par
@@ -2833,20 +2801,6 @@ document Markdown débute avec un court bloc de syntaxe \texttt{YAML}
 (acronyme de \texttt{Yet\ Another\ Markup\ Language}) qui définit les
 paramètres généraux du document. Voici un bloc \texttt{YAML} typique
 pour un document Quarto~:
-
-Markdown fonctionne de manière similaire à \LaTeX, mais se démarque par
-sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par
-contre, il nécessite parfois l'utilisation de balises \LaTeX~afin de
-réaliser certaines tâches, comme changer la couleur du texte. Tout
-document Markdown débute avec un court bloc de syntaxe \texttt{YAML}
-(acronyme de \texttt{Yet\ Another\ Markup\ Language}) qui définit les
-paramètres généraux du document. Voici un bloc \texttt{YAML} typique
-pour un document Quarto~:
-
-\bookmarksetup{startatroot}
-
-\hypertarget{section-1}{%
-\chapter{}\label{section-1}}
 
 \begin{verbatim}
 ---
@@ -2967,16 +2921,16 @@ balisage. Ces logiciels fournissent les programmes principaux, les
 extensions essentielles et des outils complémentaires de compilation et
 de visualisation afin de permettre la production de documents écrits en
 langages de balisage. Le logiciel RStudio, également abordé dans le
-chapitre Chapter~\ref{sec-chap4}, permet de produire des documents avec
-différents langages de balisage et programmation, ainsi que de naviguer
-entre eux, à partir d'une même fenêtre. Il suffit d'installer certains
-\emph{packages} contenant les fichiers nécessaires à l'utilisation des
-langages de balisage. Par exemple, il est possible de produire des
-documents en \LaTeX~en utilisant le code suivant dans la console pour
-installer le \emph{package} nécessaire à l'utilisation de la
-distribution \LaTeX~Tiny\TeX~: \texttt{install.packages("tinytex")}.
-Suivant le même principe, il est possible de produire des documents en R
-Markdown sur RStudio en installant le \emph{package} suivant~:
+chapitre 4, permet de produire des documents avec différents langages de
+balisage et programmation, ainsi que de naviguer entre eux, à partir
+d'une même fenêtre. Il suffit d'installer certains \emph{packages}
+contenant les fichiers nécessaires à l'utilisation des langages de
+balisage. Par exemple, il est possible de produire des documents en
+\LaTeX~en utilisant le code suivant dans la console pour installer le
+\emph{package} nécessaire à l'utilisation de la distribution
+\LaTeX~Tiny\TeX~: \texttt{install.packages("tinytex")}. Suivant le même
+principe, il est possible de produire des documents en R Markdown sur
+RStudio en installant le \emph{package} suivant~:
 \texttt{install.packages("rmarkdown")}. Pour Quarto, le téléchargement
 se fait en ligne, directement à partir du site Web de Quarto (2023).
 
