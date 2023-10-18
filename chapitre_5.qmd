@@ -76,14 +76,14 @@ Bien que la mise en page de documents produits via Markdown et \LaTeX puisse ê
 #| label: fig-cv
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de curriculum vitae \\newline \\textit{@liantze23}&nbsp;: ."
-knitr::include_graphics("images/CVtemp.png")
+knitr::include_graphics("images/chapitre5_CVtemp.png")
 ```
 
 ```{r}
 #| label: fig-invoice
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de feuille de temps \\newline \\textit{@roux13}&nbsp;: ."
-knitr::include_graphics("images/TStemp.png")
+knitr::include_graphics("images/chapitre5_TStemp.png")
 ```
 
 Les @fig-cv et @fig-invoice ne sont que quelques exemples des milliers de gabarits de documents \LaTeX disponible en ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site Web d'@overleaf23. Vous pouvez y naviguer et voir quel gabarit convient le mieux à vos besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec \LaTeX ou Markdown bien que non disponibles en Word, ce qui constitue une autre preuve de leur grande *flexibilité* et capacité de *personnalisation*. Bien qu'il soit rare que nous ayons absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s'avérer utiles lorsque vous rédigez un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d'édition et universités, dans le cadre de la rédaction d'articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.
