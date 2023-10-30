@@ -20,7 +20,7 @@ book:
     - chapitre10.qmd
     - references.qmd
 
-bibliography: references.bib
+bibliography: livre-outils.bib
 
 format:
   pdf:
