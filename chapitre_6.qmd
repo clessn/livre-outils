@@ -2,19 +2,7 @@
 
 ## Pourquoi citer ?
 
-La citation des sources joue un rôle essentiel dans le milieu académique, offrant de nombreux avantages. Tout d'abord, elle nous permet de nous insérer dans le contexte de la recherche existante. Chaque scientifique s'appuie sur les travaux précédents de ses pairs, en utilisant leurs découvertes comme point de départ et en engageant un dialogue continu. Référencer d'autres articles nous offre également la possibilité d'accéder à des informations pertinentes pour notre propre recherche. De plus, la transparence et la fiabilité de la science sont cruciales. La possibilité de vérifier les méthodes et les résultats d'une étude est indispensable. Si des erreurs sont découvertes dans la méthodologie ou l'analyse des résultats, d'autres scientifiques peuvent les corriger grâce aux références fournies. Enfin, la citation des sources est une démonstration de transparence et d'intégrité, renforçant la crédibilité de notre travail. Cette pratique favorise l'honnêteté intellectuelle en reconnaissant la contribution des autres scientifiques à notre propre travail scientifique.
-
-<!--
-On pourrait citer KKV ici? Peut-être aussi citer d'autre sources?
-
-- Crédibilité académique
-- Contextualisation
-- Reproductibilité
-- Création d’une base de connaissances
-- Attribution du mérite
-- Éviter le plagiat
-- Éviter les biais 
--->
+La citation des sources est une pratique incontournable dans le monde académique, essentielle à la préservation de la crédibilité académique et au maintien des normes éthiques. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide et dynamique, sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation rigoureuse des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation adéquate des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat, une faute grave dans la recherche académique [@racz_markovic18].Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13].En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : de la crédibilité et la contextualisation à la reproductibilité, de la création d\'une base de connaissances solide à l\'attribution correcte du mérite, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils tels que Zotero prennent toute leur importance, en facilitant la gestion rigoureuse des références et en soutenant les chercheurs dans leur quête de rigueur et d'excellence académiques.
 
 ## À quoi sert un logiciel de gestion bibliographique ?
 
@@ -36,11 +24,7 @@ Un outil de référence bibliographique est un logiciel conçu pour aider les sc
 
 8.  Importation et exportation : Les outils de référence bibliographique autorisent généralement l'importation et l'exportation des références dans différents formats, ce qui facilite le transfert de données.
 
-En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de bonnes pratiques de formatage et de création de bibliographies cohérentes, ce qui permet aux scientifiques de se concentrer davantage sur le contenu de leurs travaux plutôt que sur les détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
-
-<!--
-Mentionner que de ne pas utiliser ces outils peut être considéré comme une perte de temps. Permet de sauver des heures de travail et de ne pas avoir à se soucier des détails de formatage. Pas besoin de mémoriser des détails superflus à propos de styles de citations différents et permet de se concentrer sur le contenu de nos travaux. De plus, utiliser ces outils permet de changer de style instantanément et donc de pouvoir s'adapter aux différentes revues scientifiques.
--->
+En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de formatage ainsi que de création de bibliographies. De plus, ces outils offrent la flexibilité de changer de style de citation instantanément, facilitant l'adaptation aux exigences variées des revues scientifiques et permettant aux chercheurs de se consacrer à l'essence de leurs recherches sans se préoccuper des contraintes formelles et des détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
 
 Bien que chaque logiciel de référence présente ses propres caractéristiques distinctes, il est indéniable qu'ils partagent des similitudes notables dans leur objectif principal. C'est-à-dire qu'ils permettent tous d'économiser du temps et de rendre le travail d'équipe plus facile en centralisant les références. Afin de choisir le logiciel qui répond aux besoins de la personne utilisatrice, celle-ci doit se demander s'il est nécessaire de partager les résultats de ses recherches ainsi que de travailler en collaboration. De ce fait, s'il est nécessaire de partager ses résultats avec le restant de son équipe, la personne utilisatrice devrait se munir du même logiciel que ses collègues. Enfin, il est surtout important d'utiliser le logiciel que la personne préfère. Bien que Zotero, EndNote et Mendeley partagent des similitudes fondamentales, chacun possède des fonctionnalités spécifiques pouvant ainsi mieux répondre aux besoins individuels. Dans ce paysage d'options, l'élément crucial demeure l'adéquation entre les fonctionnalités offertes par le logiciel et les objectifs de l'utilisateur, tout en prenant en considération les aspects de partage, de collaboration et de convivialité.
 
@@ -52,23 +36,11 @@ Un autre grand avantage de Zotero est la centralisation des sources bibliographi
 
 Le désavantage de Zotero est qu'il peine à gérer d'immenses librairies comportant plusieurs milliers de fichiers. Il est d'ailleurs nécessaire de payer pour avoir un large espace de stockage. En outre, le logiciel n'est pas parfait. Il faut parfois ajouter manuellement des informations manquantes que le logiciel n'a pas repéré directement à l'aide du connecteur intégré.
 
-<!--
-Ajouter une transition de Zotero à BibLaTeX
--->
-## Pourquoi BibLaTeX?
+Zotero est utilisé conjointement avec BibLaTeX à travers l'extension Better BibTeX afin d'exporter et de maintenir à jour des collections bibliographiques au format .bib. En effet, BibLaTeX est une extension moderne pour le traitement des bibliographies dans LaTeX et Quarto, généralement utilisée avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats. BibLaTeX prend en charge de nombreuses langues, ce qui le rend adapté pour la rédaction d'articles ou de livres destinés à des publics internationaux. Il est possible d'exporter des bibliothèques depuis des outils comme Zotero sous forme de fichiers .bib, qui peuvent ensuite être utilisés avec BibLaTeX. Ce processus est facilité par l'extension Better BibTeX, qui peut tenir vos fichiers .bib à jour automatiquement à partir de Zotero. Conservez uniquement les références que vous utilisez et organisez votre fichier en ordre alphabétique pour favoriser la coopération et le partage de sources.
+
+## BibLaTeX
 
 BibLaTeX est une extension moderne pour le traitement des bibliographies dans LaTeX et Quarto généralement utilisé avec Biber, un programme moderne de traitement des données bibliographiques pour BibLaTeX. Biber offre des fonctionnalités avancées, telles que le tri avancé, la prise en charge de multiples bibliographies et la capacité de traiter des sources de données bibliographiques dans différents formats. BibLaTeX prend en charge de nombreuses langues, ce qui le rend adapté pour la rédaction d'articles ou de livres destinés à des publics internationaux. Bien que BibLaTeX soit principalement un paquet pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils comme Zotero sous forme de fichiers .bib, qui peuvent ensuite être utilisés avec BibLaTeX. Betterbibtex peut tenir vos fichiers .bib à jour automatiquement à partir de Zotero. Conservez seulement les références que vous utilisez et organisez votre fichier en ordre alphabétique pour favoriser la coopération et le partage de source.
-
-<!-- Ajouter une section sur l'extension Betterbibtex et faire la transition avec BibLaTeX -->
-
-Voici un exemple d'utilisation de Biblatex en Latex.
-
-```{txt}
-\usepackage[style=apa,url=false,isbn=false,doi=false,backend=biber,language=english,autolang=other]{biblatex}
-\addbibresource{references.bib}
-\parencite[page]{citationkey}
-\printbibliography{}
-```
 
 Les inconvénients potentiels de BibLaTeX incluent une courbe d'apprentissage pour ceux qui sont habitués à BibTeX, ainsi que la nécessité d'une mise à jour régulière pour rester compatible avec les versions récentes de LaTeX. De plus, certains éditeurs académiques ou revues ont leurs propres styles de citation et n'acceptent pas les soumissions utilisant BibLaTeX, bien que cela devienne de moins en moins courant.
 
@@ -127,8 +99,4 @@ Il y a différentes façons d'ajouter des références à Zotero.
 
 ## Conclusion
 
-En résumé, l'utilisation d'un outil de référencement bibliographique apporte son lot d'avantages. Que ce soit pour faciliter le travail de recherche en équipe, pour citer des études et faire une bibliographie plus rapidement ou pour éviter de perdre des sources intéressantes, nous vous encourageons fortement à prendre le temps d'apprendre à utiliser Zotero. D'ailleurs, même si vous ne faites pas encore de recherches exhaustives, Zotero peut être utilisé pour enregistrer les lectures de vos cours ou de vos séminaires. De cette manière, vous pratiquerez l'utilisation de cet outil et vous aurez en main les lectures que vous aurez trouvées intéressantes pour des travaux ultérieurs. Si vous voulez en apprendre encore davantage, il existe plusieurs tutoriels en ligne comprenant des fonctions plus poussées.
-
-<!--
-L'avantage principale est que l'utilisation d'un logiciel de gestion des references rend le référencement agréable. 
--->
+Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
