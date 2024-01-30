@@ -12,27 +12,25 @@ Catherine Ouellet et Jozef Rivest
 
 \end{center}
 ```
-Ce chapitre vise à initier les lecteurs et lectrices aux concepts fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans un premier temps, l'historique de ce mouvement afin de pouvoir le situer temporellement. De cette façon, nous pourrons mieux comprendre les motivations derrière ce mouvement, mais aussi ses influences actuelles. Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que les deux soient très près l'un de l'autre, il est important de les distinguer puisqu'ils ne renvoient pas aux mêmes caractéristiques et aux mêmes fondements. Après coup, nous utiliserons un exemple concret pour illustrer le propos: `R`, et ses différentes librairies. La dernière section du chapitre présentera certains avantages, certains inconvénients ainsi que des défis qui se posent pour ce monde. En guise de conclusion, nous souhaitons mettre l'emphase sur l'apport du logiciel libre et du code ouvert afin d'assurer la transparence, la reproductibilité ainsi que la qualité des recherches scientifiques.
+Ce chapitre vise à initier les lecteurs et lectrices aux concepts fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans un premier temps, l'historique de ce mouvement afin de pouvoir le situer temporellement. De cette façon, nous pourrons mieux comprendre les motivations derrière ce mouvement, mais aussi ses influences actuelles. Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que les deux soient très près l'un de l'autre, il est important de les distinguer puisqu'ils ne renvoient pas aux mêmes caractéristiques et aux mêmes fondements. Après coup, nous utiliserons un exemple concret pour illustrer le propos: `R`, et ses différentes librairies. La dernière section du chapitre présentera les avantages et les inconvénients, en plus de défis qui se posent. En guise de conclusion, nous souhaitons mettre l'accent sur l'apport du logiciel libre et du code ouvert afin d'assurer la transparence, la reproductibilité ainsi que la qualité des recherches scientifiques.
 
 # Le monde du libre
 
 *« Vous n'avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel car votre médecin vous le conseille --- peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n'y perd que du temps et le coût du papier sur lequel il l'inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d'électricité. Dans tous les cas, la personne qui donne l'information y gagne deux choses : davantage d'amitié et la possibilité de récupérer en retour d'autres recettes intéressantes. »* - Richard Stallman [@williams_etal10]
 
-Cette analogie illustre bien trois concepts au coeur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s'encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d'une collaboration entre développeurs qui peuvent provenir des quatre coins du globe. Une réflexion éthique est au coeur du mouvement du logiciel libre, dont les militants font campagne pour la liberté des utilisateurs dès le début des années 1980. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel «libre» \[free\] comme étant garant de quatre libertés fondamentales de l'utilisateur: la liberté d'utiliser le logiciel sans restrictions, la liberté de le copier, la liberté de l'étudier, puis la liberté de le modifier pour l'adapter à ses besoins puis le redistribuer\^\[La redistribution doit évidemment respecter certaines conditions précises, dont l'enfreint peut mener à des condamnations \[http://www.softwarefreedom.org/resources/2008/shareware.html\]. Il s'agit ainsi d'un logiciel dont le code source[^1] est disponible, afin de permettre aux internautes de l'utiliser tel quel ou de le modifier à leur guise. Puisque le langage machine est difficilement lisible par l'homme et rend la compréhension du logiciel extrêmement complexe, l'accès au code source devient essentiel afin de permettre à l'utilisateur de savoir ce que le fait programme fait réellement. Seulement de cette façon, l'utilisateur peut *contrôler* le logiciel, plutôt que de se faire contrôler par ce dernier [@stallman86]
+Cette analogie illustre bien trois concepts au coeur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s'encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d'une collaboration entre développeurs qui peuvent provenir des quatre coins du globe. Une réflexion éthique est au coeur du mouvement du logiciel libre, dont les militants font campagne pour la liberté des utilisateurs dès le début des années 1980. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel «libre» \[free\] comme étant garant de quatre libertés fondamentales de l'utilisateur: la liberté d'utiliser le logiciel sans restrictions, la liberté de le copier, la liberté de l'étudier, puis la liberté de le modifier pour l'adapter à ses besoins puis le redistribuer^[La redistribution doit évidemment respecter certaines conditions précises, dont l'enfreint peut mener à des condamnations [http://www.softwarefreedom.org/resources/2008/shareware.html]]. Il s'agit ainsi d'un logiciel dont le code source[^1] est disponible, afin de permettre aux internautes de l'utiliser tel quel ou de le modifier à leur guise. Puisque le langage machine est difficilement lisible par l'homme et rend la compréhension du logiciel extrêmement complexe, l'accès au code source devient essentiel afin de permettre à l'utilisateur de savoir ce que le programme fait réellement. Seulement de cette façon, l'utilisateur peut *contrôler* le logiciel, plutôt que de se faire contrôler par ce dernier [@stallman86].
 
 [^1]: Pour rester dans les analogies culinaires, le code source est au logiciel est ce que la recette est à un plat: elle indique les actions à effectuer, une par une, pour arriver à un résultat précis. Encore une fois, cette dernière peut-être adaptée, modifiée, bonifiée.
 
 ## Émergence et sémantique du *libre*
 
-Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU, en 1983, à partir de laquelle va se développer une multitude de programmes libres. Parmi les plus populaires, on retrouve notamment le navigateur Firefox, la suite bureautique OpenOffice et l'emblématique système d'exploitation Linux, qui se développe d'ailleurs à partir de la licence GNU. Aujourd'hui, il s'agit d'un véritable phénomène sociétal: des milliers d'entreprises, d'organisations à but non lucratif, d'institutions ou encore de particuliers adoptent tour à tour ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s'arriment avec le virage technologique de plusieurs entreprises. Les logiciels libres ont différents usages, en passant par la conception Web, la gestion de contenu, les systèmes d'exploitation, la bureautique, entre autres. Ils permettent donc de répondre à plusieurs types de besoins numériques et informatiques.
-
-"Les principes du logiciel libre ont également inspiré de nombreuses initiatives non directement liées à l'informatique et au développement des logiciels libres. La plus connue est sans aucun doute Wikipédia, qui se définit comme une encyclopédie libre, s'inspirant en cela explicitement du modèle du logiciel libre. Soulignons également les licences Creative Commons et le mouvement des archives ouvertes et de libre accès aux revues scientifique"
+Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU, en 1983, à partir de laquelle va se développer une multitude de programmes libres. Parmi les plus populaires, on retrouve notamment le navigateur Firefox, la suite bureautique OpenOffice et l'emblématique système d'exploitation Linux, qui se développe d'ailleurs à partir de la licence GNU. Aujourd'hui, il s'agit d'un véritable phénomène sociétal: des milliers d'entreprises, d'organisations à but non lucratif, d'institutions ou encore de particuliers adoptent ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s'arriment avec le virage technologique de plusieurs entreprises. Les logiciels libres ont différents usages, en passant par la conception Web, la gestion de contenu, les systèmes d'exploitation, la bureautique, entre autres. Ils permettent donc de répondre à plusieurs types de besoins numériques et informatiques.
 
 Attention, le logiciel libre est avant tout une philosophie, voire un mouvement de société. C'est une façon de concevoir la communauté du logiciel, où le respect de la liberté de l'utilisateur est un impératif éthique [@williams_etal10]. Par conséquent, le terme libre, *free* en anglais, porte à confusion. Celui-ci ne signifie pas qu'un logiciel libre est nécessairement gratuit. Certes, plusieurs sont effectivement téléchargeables gratuitement. Toutefois, il est aussi possible de (re)distribuer des logiciels libres payant. Par ailleurs, aucun logiciel libre n'est réellement « gratuit » dans la mesure où son déploiement et son utilisation nécessitent généralement différents coûts, dont les degrés sont variables en fonction des compétences et de l'infrastructure dont disposent les utilisateurs (coût d'apprentissage, coûts d'entretien, etc.). Enfin, il est important de garder en tête que les logiciels libres possèdent eux aussi une licence - cette dernière est d'ailleurs garante des libertés que confèrent les logiciels libres aux utilisateurs.
 
 ## Logiciel libre et code ouvert
 
-Parallèlement au logiciel libre, il y a aussi le code ouvert, ou *open source*. *A priori*, la dénomination du logiciel libre et celle de l'*code ouvert* semble suggérer qu'il s'agit de synonymes. Dans les deux cas on dirait que l'on fait référence à des logiciels, par exemple, qui sont exempts de restrictions d'utilisations et auxqels les utilisateurs peuvent participer au développement. Cependant, il y a une distinction importante entre les deux.
+Parallèlement au logiciel libre, il y a aussi le code ouvert, ou *open source*. A priori, la dénomination du logiciel libre et celle du *code ouvert* semble suggérer qu'il s'agit de synonymes. Dans les deux cas on dirait que l'on fait référence à des logiciels, par exemple, qui sont exempts de restrictions d'utilisations et auxqels les utilisateurs peuvent participer au développement. Cependant, il y a une distinction importante entre les deux.
 
 Bien que les deux renvoient sensiblement aux mêmes types de logiciels, les tenants de ces approches ne partagent pas la même perspective. Comme @stallman22 l'explique, le logiciel libre est d'abord et avant tout un mouvement qui fait "campagne pour la liberté des utilisateurs de l'informatique". Le code ouvert, quant à lui, met l'accent sur les avantages pratiques, plutôt que de militer pour des principes.
 
@@ -50,36 +48,38 @@ Comme nous le constatons, le logiciel libre et le *code ouvert* ont certaines si
 
 ## Cas d'étude: `R`
 
-Afin d'illustrer le tout plus concrètement, nous utiliserons ici le cas du logiciel `R`. Il s'agit d'un logiciel statistique que tous les utilisateurs peuvent télécharger gratuitement, et dans lequel il n'y a pas d'achats supplémentaires pour avoir accès à des fonctionnalités supplémentaires par exemple. Bien que ce logiciel soit déjà riche en fonctions et commandes, plusieurs utilisateurs ont développé des *packages*, des libraries externes, afin de bonifier les fonctions de base [@arel-bundock21]. Utilisons un cas d'étude afin de démontrer l'apport des librairies externes. Par exemple, je souhaite savoir la probabilité de survie à bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt avec sous la notatio suivante: $P(Y = Survie | X = Femme)$. Cela se lit "la probabilité de survie étant donné que nous soyons une femme". Pour ce faire, je dois utiliser l'ensemble de données `titanic`, disponible en format csv. Je dois donc installer et télécharger la librairie `readr` afin que `R` puisse importer et lire les données. Ensuite je vais utiliser la commande `table`, offerte dans celles de base, afin de visionner mes données. Cette dernière commande affichera un tableau croisé.
+Afin d'illustrer le tout plus concrètement, nous utiliserons ici le cas du logiciel `R`. Il s'agit d'un logiciel statistique que tous les utilisateurs peuvent télécharger gratuitement, et dans lequel aucun achat supplémentaire est nécessaire pour avoir accès à des fonctionnalités additionnels. Bien que ce logiciel soit déjà riche en fonctions et commandes, plusieurs utilisateurs ont développé des *packages*, des libraries externes, afin de bonifier les fonctions de base [@arel-bundock21]. Utilisons un cas d'étude afin de démontrer l'apport des librairies externes. Par exemple, je souhaite savoir la probabilité de survie à bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt avec sous la notation suivante: $P(Y = Survie | X = Femme)$. En d'autres termes, la probabilité de survie étant donné que nous soyons une femme. Pour ce faire, je dois utiliser l'ensemble de données `Titanic`, disponible en format csv. Je dois donc installer et télécharger la librairie `readr` afin que `R` puisse importer et lire les données. Ensuite je vais utiliser la commande `table`, inclue dans les commandes de base de `R`, afin de produire un tableau croisé entre les variables femme et survie. 
 
-```{r Exemple 1. Package readr et de base, message=FALSE, error=FALSE}
-library(readr) # <1>
+```{.r}
+install.packages("readr")
+```
 
-dat <- read_csv("data/titanic.csv") # <2>
+```{r message=FALSE, error=FALSE}
+library(readr) 
 
-table(dat$survie, dat$femme) # <3>
+dat <- read_csv("data/titanic.csv")
+
+table(dat$survie, dat$femme) 
 
 ```
 
-1.  Téléchargement de la librairie `readr` qui nous permettra de lire des ensembles de données en format `.csv`.
-2.  Importation d'une banque de données en format `.csv`.
-3.  Impression d'un tableau croisé afin d'observer la distribution des hommes et des femmes (colones), croisé avec la survie (lignes).
-
-Comme nous le voyons ici, la librairie `readr`, développé par plusieurs individus[^4], nous a permis d'importer l'ensemble de données sur le Titanic. Toutefois, le format du tableau n'est pas très esthétique. Pour remédier à ce problème, nous pouvons installer et utiliser la librarie `modelsummary` qui nous permettra de créer rapidement des tableaux croisés plus esthétique, et qui contiendrons davantage d'informations, facilitant la lecture et notre compréhension de la relation qui nous intéresse.
+Comme nous le voyons ici, la librairie `readr`, développé par plusieurs individus[^4], nous a permis d'importer l'ensemble de données à propos des passagers du Titanic. Toutefois, le format du tableau n'est pas très esthétique. Pour remédier à ce problème, nous pouvons installer et utiliser la librarie `modelsummary` qui nous permettra de créer rapidement des tableaux croisés plus esthétique, et qui contiendrons davantage d'informations, facilitant la lecture et notre compréhension de la relation qui nous intéresse.
 
 [^4]: Pour avoir la liste complète des contributeurs, les lecteurs peuvent utiliser la commande `?readr` dans `R`, ou bien consulter le lien suivant https://readr.tidyverse.org
 
-```{r Exemple 2. modelsummary, message=FALSE}
-library(modelsummary) # <1>
-
-Tableau.2 <- datasummary_crosstab(survie ~ femme, data = dat) # <2>
-
-Tableau.2
+```{.r}
+install.packages("modelsummary")
 ```
 
-1.  Téléchargement de la librarie `modelsummary`.
-2.  Création d'un tableau croisé à l'aide de la commande `datasummary_crosstab()`.
-3.  Impression du tableau.
+```{r message=FALSE, error=FALSE}
+library(modelsummary)
+
+Tableau_2.1 <- datasummary_crosstab(survie ~ femme, data = dat, title = ' ') 
+
+Tableau_2.1
+```
+
+
 
 Comme nous le voyons, la commande `datasummary_crosstab()` permet facilement de créer des tableaux non seulement plus esthétiques, mais aussi plus informatif. C'est très utile si l'on souhaite incorporer des tableaux dans notre rapport finale, surtout que cette commande nous permet d'exporter les tableaux sous diffèrents format (.docx, `LaTeX`, .qmd, etc.)
 
@@ -95,17 +95,17 @@ Dans cette section, nous ne dresserons pas un portrait exhaustif de tous les ava
 
 #### Le partage et co-construction des connaissances
 
-La grande liberté que ce type de logiciel offre favorise la collaboration entre les utilisateurs, et ce à une échelle pouvant être internationale. Les interactions entre les chercheurs crées une dynamique d'« innovation ascendante » et d'entraide [@couture14]. Ce résultat constitue un important avantage pour le développement de ces logiciels. Selon certains, et comparativement aux logiciels privés, les logiciels libres ont un niveau plus élevé d'innovation [@smith02]. Contrairement à ceux qui se développent de manière privé et fermée, les logiciels libres permettent à tous les utilisateurs de participer au développement. Ceux-ci partagent ensuite leurs améliorations, ce qui stimulent à son tour de nouvelles initiatives. Ainsi, un certain savoir est généré dans cette situation. De plus, il est raisonable de penser que l'utilité des améliorations, ainsi que leur utilisation par les utilisateurs en fonction de leur besoin, comme dans le cas de la recherche sociale avec `R` permet de générer un savoir collaboratif [@couture20]. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs [@couture14], ces éléments résument très bien la philosophie du logiciel libre.
+La grande liberté que ce type de logiciel offre favorise la collaboration entre les utilisateurs, et ce à une échelle pouvant être internationale. Les interactions entre les chercheurs crées une dynamique d'« innovation ascendante » et d'entraide [@couture14]. Ce résultat constitue un avantage important pour le développement de ces logiciels. Selon certains, et comparativement aux logiciels privés, les logiciels libres ont un niveau plus élevé d'innovation [@smith02]. Contrairement à ceux qui se développent de manière privé et fermée, les logiciels libres permettent à tous les utilisateurs de participer au développement. Ceux-ci partagent ensuite leurs améliorations, ce qui stimulent à son tour de nouvelles initiatives. Ainsi, un certain savoir est généré dans cette situation. De plus, il est raisonable de penser que l'utilité des améliorations, ainsi que leur utilisation par les utilisateurs en fonction de leur besoin, comme dans le cas de la recherche sociale avec `R` permet de générer un savoir collaboratif [@couture20]. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs [@couture14], ces éléments résument très bien la philosophie du logiciel libre.
 
 Comme nous le verrons dans la section suivante, cet avantage est couplé avec ceux économiques. Les bas coûts démocratise l'accès à plusieurs logiciels qui sont utiles pour mener des analyses scientifiques. Et ce, pour tous les utilisateurs dans le monde.
 
 #### Avantages économiques : Une plus grande accessibilité pour tous
 
-Nous pouvons aussi mentionner certains avantages économique dans l'utilisation de logiciels libres. Le principal avantage économique des logiciels libres est son faible d'acquisition et de renouvellement pour les particuliers. Cet avantage individuel génère plusieurs externalités positives.
+Le principal avantage économique des logiciels libres est son faible d'acquisition et de renouvellement pour les particuliers. Cet avantage individuel génère plusieurs externalités positives.
 
-Tout d'abord, certains logiciels statistiques et programmes informatiques, tel que Stata et SPSS, coûtent plusieurs centaines, voir des miliers de dollar. De plus, la license doit être renouvelée annuellement, ce qui limite l'accès à ces logiciels. Comparativement, pour les logiciels libres, la license d'acquisition coûte bien souvent moins cher, et aucun renouvellement de licence n'est demandé dans la plus part des cas. Étant donné que les chercheurs doivent souvent faire face à des contraintes budgétaires, les logiciels libres deviennent des outils intéressant afin de minimiser les coûts de la recherche [@yu_munoz-justicia22]. Avantage encore plus important pour les chercheurs dans les pays du Sud global [@santillan-anguiano_gonzalez-machado23]. L'accessibilité de ces ressources permet donc de réduire l'écart dans la production scientifique entre les pays du Sud et ceux du Nord. De plus, elle permet à tous de bénéficier d'outils pédagogiques accessibles, ce qui favorise l'acquisition ainsi que le développement de compétences méthodologiques.
+Tout d'abord, certains logiciels statistiques et programmes informatiques, tel que Stata et SPSS, coûtent plusieurs centaines, voir des miliers de dollar. De plus, la license doit être renouvelée annuellement. Ce qui augmente les coûts associés à l'utilisation du logiciel et par conséquent limite son accessibilité. Comparativement, pour les logiciels libres, la license d'acquisition coûte bien souvent moins cher, et aucun renouvellement de licence n'est demandé dans la plus part des cas. Étant donné que les chercheurs doivent souvent faire face à des contraintes budgétaires, les logiciels libres deviennent des outils intéressant afin de minimiser les coûts de la recherche [@yu_munoz-justicia22]. Avantage encore plus important pour les chercheurs dans les pays du Sud global [@santillan-anguiano_gonzalez-machado23]. L'accessibilité de ces ressources permet donc de réduire l'écart dans la production scientifique entre les pays du Sud et ceux du Nord. De plus, elle permet à tous de bénéficier d'outils pédagogiques accessibles, ce qui favorise l'acquisition ainsi que le développement de compétences méthodologiques.
 
-Dans le cadre d'une formation universitaire, il peut être pertinent d'enseigner aux étudiants à se servir de logiciel statistique ou d'analyse de texte. L'acquisition de ces compétences peut être précieux tant pour ceux et celles qui souhaitent se diriger vers le milieu académique, que pour ceux et celles qui visent le marché professionnel. D'ailleurs sur le site web de la banque d'emplois du gouvernement du Canada[^5], les conditions d'emplois sont en ce moment[^6] très bonnes, et une pénurie de main d'oeuvre est anticipé dans ce secteur entre 2022-2031. Ces compétences sont d'autant plus précieuses aujourd'hui, dans le monde de données dans lequel nous vivons.
+Dans le cadre d'une formation universitaire, il peut être pertinent d'enseigner aux étudiants à se servir de logiciel statistique ou d'analyse de texte. L'acquisition de ces compétences peut être précieux tant pour ceux et celles qui souhaitent se diriger vers le milieu académique, que pour ceux et celles qui visent le marché professionnel. D'ailleurs sur le site web de la banque d'emplois du gouvernement du Canada[^5], les conditions d'emplois sont en ce moment[^6] très bonnes, et une pénurie de main d'oeuvre est anticipé, entre 2022-2031, dans les emplois en analyse de données. Ces compétences sont d'autant plus précieuses aujourd'hui, dans le monde de données dans lequel nous vivons.
 
 [^5]: Ces informations proviennent du site web suivant: https://www.jobbank.gc.ca/marketreport/outlook-occupation/17882/ca
 
@@ -113,7 +113,7 @@ Dans le cadre d'une formation universitaire, il peut être pertinent d'enseigner
 
 Ensuite, le logiciel libre est adaptable et modifiable. Ces coût techniques de développement restent néanmoins nettement inférieurs aux coûts de renouvellement et de mise à jour des logiciels propriétaires dans bien des cas. L'argent sauvée des licences peut alors être investie dans le développement du logiciel libre [@beraud07]. Cependant, une transition vers les logiciels libres ne doit pas se faire seulement sur des bases économiques, mais dans une perspective globale de changement de cultures.Changer pour des raisons purements économiques viendrait à violer l'essence même de la philosophie du logiciel libre, qui se veut davantage être un esprit de collaboration et de transparence. Par conséquent, il est important d'incorporer aussi les valeurs et la philosophie dans notre utilisation
 
-Pour résumer, les logiciels libres permettent donc une plus grande égalité dans l'accès aux nouvelles technologies, puisqu'ils ont dans la majorité des cas, des coûts d'acquisition nettement moindre. (Oui et non, l'acquisition financière est une chose, mais il y a d'autres barrières à l'utilisation tel que l'apprentissage à faire pour apprendre un language de programmation, l'achat de matériel informatique, etc. ) Cependant, considérant cela, donner l'exemple de l'étude qui montre que c'est beaucoup plus économique, même si l'on doit compter les coûts de formation, le soutien technique, l'entretien et la maintenance. [@couture14: @karjalainen10].
+Pour résumer, les logiciels libres permettent donc une plus grande égalité dans l'accès aux nouvelles technologies, puisqu'ils ont dans la majorité des cas, des coûts d'acquisition nettement moindre. (Oui et non, l'acquisition financière est une chose, mais il y a d'autres barrières à l'utilisation tel que l'apprentissage à faire pour apprendre un language de programmation, l'achat de matériel informatique, etc. ) Cependant, considérant cela, donner l'exemple de l'étude qui montre que c'est beaucoup plus économique, même si l'on doit compter les coûts de formation, le soutien technique, l'entretien et la maintenance. [@couture14; @karjalainen10].
 
 ### Inconvénients et défis:
 
@@ -124,23 +124,19 @@ Dans leur texte, @paura_arhipova12 soulèvent une critique faite envers certains
 La synthaxe de certaines libraries demandent aussi un certain temps d'adaptation. Par exemple, je souhaite recoder la variable femme, de l'ensemble de données `titanic`, afin de remplacer les valeurs numériques actuelles (0, 1) par des valeurs nominales (homme, femme). La section de code ci-dessous réalise cette tâche avec les commandes de base de `R` et celle du `tidyverse`.
 
 ```{r Exemple base R}
-dat$femme[dat$femme == 0] <- "Homme"  # <1>
+dat$femme[dat$femme == 0] <- "Homme"  
 dat$femme[dat$femme == 1] <- "Femme"
-table(dat$femme) # <2>
+table(dat$femme)
 ```
 
-1.  Utilisation de la commande de base dans `R` pour recoder la variable femme.
-2.  Vérification que la manipulation a bien fonctionné.
-
+```{.r}
+install.packages("tidyverse")
+```
 ```{r Exemple tidyverse, message=FALSE}
-library(tidyverse) # <3>
-dat$femme <- recode(dat$femme, `0` = "Homme", `1` = "Femme") # <4>
-table(dat$femme) # <5>
+library(tidyverse)
+dat$femme <- recode(dat$femme, `0` = "Homme", `1` = "Femme")
+table(dat$femme)
 ```
-
-3.  Téléchargement de la libraire `tidyverse`.
-4.  Recodage de la variable femme à l'aide de la commande `recode`.
-5.  Vérification que la manipulation a bien fonctionné.
 
 Toutefois, l'orsque l'on compare le coût d'apprentissage avec les bénéfices tirés, il est plus difficile de soutenir qu'il s'agit d'un désavantage. L'habileté que nous développons devient très utile par la suite, puisqu'elle nous permet de manipuler ainsi que d'analyser des données. Surtout, ces compétences s'inscrivent dans la longue durée, alors que l'apprentissage est plutôt de courte à moyenne durée. Surtout, la logique derrière la synthaxe de base de `R` et celle d'une nouvelle librairie reste sensiblement inchangée. Par conséquent, lorsque nous avons une bonne compréhension du fonctionnement de base de `R`, l'apprentissage d'une nouvelle librairie se fait relativement rapidement. Certaines, comme `dplyr` du `tidyverse` facilite grandement la manipulation des données comparativement aux commandes de base.
 
@@ -170,7 +166,7 @@ En guise de conclusion, nous souhaitons résumer ce chapitre tout en situant ces
 
 [^8]: Allant de nos postulats ontologiques, épistémologiques et méthodologiques.
 
-Comme nous l'avons présenté ci-haut, les bas coûts associés à l'utilisation ainsi que la facilité du partage avec la communauté nous semble être deux avantages importants pour l'avenir des sciences sociales numériques. Notamment parce qu'ils ont le potentiel d'améliorer la transparence des protocoles scientifiques. Dans *Designing Social Inquiery*, l'un des livres les plus influents en science politique depuis les trente dernières années, les auteurs définissent quatre caractéristiques que chaque recherche doit posséder afin d'être considérée comme scientifique [@king_etal21]. L'une d'elles, est que la *procédure doit être publique*: "La recherche scientifique utilise des méthodes explicites, codifiées et publiques afin de générer et analyser des données sur lesquelles la fiabilité peut ensuite être déterminer" [@king_etal21, 6]. Chaque individu qui souhaite contribuer à la connaissance et à la compréhension globale que nous avons de la réalité sociale doit garder en tête cette caractéristique fondamentale. Comme nous l'avons exposé, le partage du code devient un impératif pour assurer la transparence, la réplicabilité ainsi que la qualité des recherches.
+Comme nous l'avons présenté ci-haut, les bas coûts associés à l'utilisation ainsi que la facilité du partage avec la communauté nous semble être deux avantages importants pour l'avenir des sciences sociales numériques. Notamment parce qu'ils ont le potentiel d'améliorer la transparence des protocoles scientifiques. Dans *Designing Social Inquiery*, l'un des livres les plus influents en science politique depuis les trente dernières années, les auteurs définissent quatre caractéristiques que chaque recherche doit posséder afin d'être considérée comme scientifique. L'une d'elles, est que la *procédure doit être publique*: "La recherche scientifique utilise des méthodes explicites, codifiées et publiques afin de générer et analyser des données sur lesquelles la fiabilité peut ensuite être déterminer" [@king_etal21, 6]. Chaque individu qui souhaite contribuer à la connaissance et à la compréhension globale que nous avons de la réalité sociale doit garder en tête cette caractéristique fondamentale. Comme nous l'avons exposé, le partage du code devient un impératif pour assurer la transparence, la réplicabilité ainsi que la qualité des recherches.
 
 {{< pagebreak >}}
 
