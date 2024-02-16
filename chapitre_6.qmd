@@ -2,7 +2,7 @@
 
 ## Pourquoi citer ?
 
-La citation des sources est une pratique incontournable dans le monde académique, essentielle à la préservation de la crédibilité académique et au maintien des normes éthiques. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide et dynamique, sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation rigoureuse des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation adéquate des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat, une faute grave dans la recherche académique [@racz_markovic18].Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13].En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : de la crédibilité et la contextualisation à la reproductibilité, de la création d\'une base de connaissances solide à l\'attribution correcte du mérite, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils tels que Zotero prennent toute leur importance, en facilitant la gestion rigoureuse des références et en soutenant les chercheurs dans leur quête de rigueur et d'excellence académiques.
+La citation des sources est une pratique incontournable dans le monde académique, essentielle à la préservation de la crédibilité académique et au maintien des normes éthiques. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide et dynamique, sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation rigoureuse des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation adéquate des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat, une faute grave dans la recherche académique [@racz_markovic18].Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13].En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : de la crédibilité et la contextualisation à la reproductibilité, de la création d'une base de connaissances solide à l'attribution correcte du mérite, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils tels que Zotero prennent toute leur importance, en facilitant la gestion rigoureuse des références et en soutenant les chercheurs dans leur quête de rigueur et d'excellence académiques.
 
 ## À quoi sert un logiciel de gestion bibliographique ?
 
@@ -68,13 +68,13 @@ Dans cette section, vous serez amené notamment à installer Zotero ainsi que Be
 
 *IMPORTANT*
 
-- Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero > Préférences > Onglet Better BibTeX > Ouvrir les préférences de Better BibTeX.
+-   Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
 
-- Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
 
-- Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+-   Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
 
-- Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+-   Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
 
 #### Génération du fichier .bib
 
@@ -96,10 +96,10 @@ Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire 
 
 Il y a différentes façons d'ajouter des références à Zotero :
 
-- Glisser-déposer à partir de votre bibliothèque personnelle.
-- Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
-- Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
-- Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
+-   Glisser-déposer à partir de votre bibliothèque personnelle.
+-   Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
 
 ## Conclusion
 
