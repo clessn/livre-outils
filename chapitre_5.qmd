@@ -29,6 +29,78 @@ Il est important de distinguer les langages de balisage des langages de programm
 
 Dans le contexte de la recherche en sciences sociales, la programmation est généralement utilisée afin de récolter, d'analyser et de présenter visuellement des données. Une fois cartes, tableaux et graphiques produits, ceux-ci peuvent être enregistrés --- par exemple en format PDF ou PNG --- et inclus au sein d'un document qui sera formaté en utilisant un langage de balisage. En `R` Markdown et en Quarto, des extraits de langage de programmation peuvent être inclus dans des sections bien délimitées de documents écrits en langage de balisage. Plus généralement, le langage de programmation contribue à l'analyse alors que le langage de balisage est essentiellement utile afin de présenter les travaux de recherche, que ce soit dans un document écrit ou sur un site Web. C'est principalement de cette manière que sont utilisés les langages de programmation et de balisage dans le cadre de la recherche en sciences sociales.
 
+## Comment utiliser un langage de balisage?
+
+En pratique, comment utilise-t-on Markdown, \LaTeX et \textsc{Bib}\TeX? D'emblée, \LaTeX a une syntaxe particulière qui demande un certain temps d'adaptation. Pour écrire une phrase simple comme celle-ci, la phrase peut être écrite telle quelle. Par contre, pour mettre un **mot** en caractères gras, il faut utiliser la balise suivante: `\textbf{mot}`. Pour mettre le \textcolor{red}{mot} en rouge, la balise est `\textcolor{red}{mot}`. Pour le mettre en italique et en note de bas de page[^chapitre_5-5], les balises `\footnote{\emph{mot}}` peuvent être utilisées. Ainsi, des balises peuvent contenir d'autres balises. En langage \LaTeX, une balise commence toujours par une barre oblique inversée. Par la suite, le nom de la fonction --- *emph*, *textbf*, *textcolor*, etc. --- est appelé. Enfin, généralement, le mot à formater est placé entre accolades (`{}`).
+
+[^chapitre_5-5]: *mot*
+
+Chaque document \LaTeX{} commence par un préambule. Celui-ci présente des informations telles que la taille des caractères, le type de document, le format de mise en page, la police de caractères, l'utilisation d'en-têtes et de pieds de page, ainsi que l'utilisation de *packages* \LaTeX permettant différentes fonctionnalités de personnalisation du document. Il n'est pas nécessaire ni souhaitable d'apprendre l'ensemble des fonctions et des *packages* \LaTeX qui existent. Au contraire, il est souvent mieux de commencer par un gabarit de document qui convient au type de document que vous voulez créer et ensuite de rechercher en anglais sur Stack Overflow la manière d'ajouter des éléments de formatage que vous ne connaissez pas, par exemple en recherchant `highlight latex text`.
+
+Markdown fonctionne de manière similaire à \LaTeX, mais se démarque par sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par contre, il nécessite parfois l'utilisation de balises \LaTeX afin de réaliser certaines tâches, comme changer la couleur du texte. Tout document Markdown débute avec un court bloc de syntaxe `YAML` (acronyme de `Yet Another Markup Language`) qui définit les paramètres généraux du document. Voici un bloc `YAML` typique pour un document Quarto :
+
+```         
+---
+title: "Baliser les sciences sociales"
+subtitle: "Langages et pratiques"
+date: today
+author:
+  - Alexandre Fortier-Chouinard^[University of Toronto]
+  - Maxime Blanchard^[McGill University]
+  - Étienne Proulx^[McGill University]
+format: pdf
+toc: true
+date-format: "MMMM D, YYYY"
+bibliography: references.bib
+---
+```
+
+Outre le titre, le sous-titre et le nom des auteurs, on trouve aussi dans l'en-tête YAML la présence d'une table des matières (`toc`), la date et son format, le format du document compilé --- dans ce cas-ci, PDF --- ainsi que le chemin d'arborescence afin d'accéder au document \textsc{Bib}\TeX où sont enregistrées les références utilisées. Il est aussi possible d'y définir la taille de la police de caractères ou encore le gabarit Word servant à définir le format d'un document DOCX à produire. De manière particulièrement importante, c'est l'endroit où sont chargés les *packages* \LaTeX qui seront utilisés. En effet, la majorité des *packages* et fonctions \LaTeX sont utilisables dans Markdown, alors que l'inverse n'est pas vrai. Il est donc possible de personnaliser un document Markdown en utilisant des *packages* ayant été créés pour \LaTeX.
+
+La syntaxe à utiliser au travers du texte est somme toute plutôt simple. Pour mettre un ou plusieurs **mots en gras**, il suffit de les entourer de deux astérisques (`**mots en gras**`); pour les mettre *en italique*, il faut les encadrer d'une seule astérisque (`*en italique*`). Pour définir un titre de section ou de sous-section, il suffit de mettre des `#` devant le titre en question. Plus vous ajoutez de `#`, plus le titre sera petit et plus il sera considéré à un niveau hiérarchique inférieur dans la structure du texte. La syntaxe Markdown est donc plus légère que celle de \LaTeX, dans le but d'en rendre la lecture plus simple pour les utilisateurs et utilisatrices.
+
+Bien que des gabarits Markdown soient disponibles, ceux-ci sont plus rares. Ils se trouvent pour la plupart sur GitHub et sont rendus disponibles par leur créateur. Cela étant dit, leur personnalisation peut s'avérer plutôt complexe. En somme, Markdown est particulièrement pratique pour les documents ne nécessitant pas de respecter un gabarit précis et requérant simplement un document d'allure simple et professionnelle.
+
+Pour sa part, \textsc{Bib}\TeX a une syntaxe relativement simple. D'emblée, les références \textsc{Bib}\TeX pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur \textsc{Bib}\TeX peut ressembler à ceci :
+
+```         
+@book{darwin03,
+  address = {London},
+  author = {Darwin, Charles},
+  publisher = {John Murray},
+  title = {{On the Origin of Species by Means of Natural Selection
+or the Preservation of Favoured Races in the Struggle for Life}},
+  year = {1859}
+}
+
+@article{goldfarb96,
+  title={The Roots of SGML: A Personal Recollection},
+  author={Goldfarb, Charles F},
+  journal={Technical communication},
+  volume={46},
+  number={1},
+  pages={75},
+  year={1999},
+  publisher={Society for Technical Communication}
+}
+```
+
+Un fichier \textsc{Bib}\TeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document \textsc{Bib}\TeX a peu d'importance, puisque \LaTeX réordonne par défaut la bibliographie en ordre alphabétique.
+
+### Environnements d'édition et de compilation
+
+Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne.
+
+D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Le logiciel RStudio, également abordé dans le chapitre 4<!--@sec-chap4-->, permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d'une même fenêtre. Il suffit d'installer certains *packages* contenant les fichiers nécessaires à l'utilisation des langages de balisage. Par exemple, il est possible de produire des documents en \LaTeX en utilisant le code suivant dans la console pour installer le *package* nécessaire à l'utilisation de la distribution \LaTeX Tiny\TeX : `install.packages("tinytex")`. Suivant le même principe, il est possible de produire des documents en `R` Markdown sur RStudio en installant le *package* suivant : `install.packages("rmarkdown")`. Pour Quarto, le téléchargement se fait en ligne, directement à partir du site Web de @quarto23.
+
+Pour l'écriture en \LaTeX, il est également nécessaire d'installer l'une des nombreuses distributions en ligne afin de pouvoir compiler ces documents dans un environnement local. Il existe des distributions telles que Mac\TeX pour Mac, Mik\TeX pour Windows et plusieurs autres [@just13]. Ces distributions se distinguent par les différents *packages* avec lesquelles elles sont compatibles.
+
+Un autre environnement régulièrement utilisé pour travailler en langage de balisage est le logiciel de bureau VS Code. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`.
+
+Lorsque vient le temps de collaborer à plusieurs sur un document écrit en Markdown ou en \LaTeX, les logiciels de bureau évoqués précédemment nécessitent l'utilisation de GitHub et de Git. L'utilisation de ces éditeurs peut présenter un défi supplémentaire pour les équipes de recherche non initiées. Il existe ainsi des éditeurs en ligne qui permettent de collaborer en temps réel sans passer par Git et GitHub, de manière similaire à Google Docs[^chapitre_5-6]. Le plus connu de ces logiciels est Overleaf, qui permet de produire des documents en langage \LaTeX. Puisqu'Overleaf permet d'avoir accès à ses documents \LaTeX à partir de n'importe quel navigateur, il n'y a pas de dépendance à un logiciel local sur un ordinateur, ce qui constitue un avantage important. La contrepartie de cet avantage est qu'en utilisant Overleaf, l'équipe de recherche est dépendante d'une connexion à Internet. En utilisant le package \LaTeX `rmarkdown`, Overleaf peut également inclure du code Markdown. Cependant, Overleaf ne permet pas de créer des documents en format DOCX ou HTML, ce qui constitue une limite de l'application. Overleaf comporte un compteur de mots intégré, ce qui n'est pas le cas des autres logiciels et environnements présentés plus haut.
+
+[^chapitre_5-6]: VS Code possède également une extension, Live Share, qui permet de travailler en temps réel sur un même document.
+
 ## Quand et pourquoi utiliser un langage de balisage?
 
 La plupart des langages de balisage permettent de remplir l'une des deux fonctions suivantes, qui sont particulièrement importantes dans le contexte de la recherche en sciences sociales : produire des documents écrits et formater des pages Web. Dans les deux cas, ces actions peuvent être réalisées à partir de logiciels simples, mais ces logiciels ont des limites importantes auxquelles les langages de balisage apportent des solutions[^chapitre_5-2].
@@ -115,78 +187,6 @@ Enfin, les langages de balisage, contrairement aux logiciels de traitement de te
 Deuxièmement, \LaTeX est peu compatible avec les logiciels de traitement de texte comme Word. Pour transférer un fichier créé à partir d'un logiciel de traitement de texte vers \LaTeX, les balises doivent être ajoutées manuellement une par une. À l'inverse, pour transférer un document \LaTeX vers un fichier de traitement de texte, le convertisseur Pandoc peut être utilisé, mais celui-ci ne repère pas toutes les balises et il est souvent nécessaire de faire des aller-retour entre le fichier \LaTeX original et le fichier converti en format DOCX pour s'assurer du succès de la conversion. Parfois, les balises doivent être retirées une par une et le formatage doit être refait en utilisant les boutons fournis sur le logiciel de traitement de texte. Il est aussi possible de copier le texte directement à partir du fichier PDF produit par \LaTeX vers un logiciel de traitement de texte, mais les fins de ligne sont interprétées par Word, Pages ou Writer comme des retours plutôt que des espaces, et les accents sont souvent mal copiés et doivent être réécrits manuellement. Encore une fois, Markdown évite ce problème en permettant d'écrire un fichier DOCX à partir du langage de balisage. Le formatage du fichier DOCX demeure un peu compliqué cependant et doit être fait à partir du modèle d'un autre document DOCX formaté tel que souhaité. De plus, les fichiers DOCX ne peuvent pas être transformés en format Markdown. Quarto permet d'écrire un texte en format Markdown et de produire un fichier DOCX à partir d'un gabarit Word. De plus, pour les fichiers Word à transformer en format Markdown, les balises plus simples en Markdown qu'en \LaTeX rendent la tâche plus simple.
 
 Somme toute, Word n'est pas à antagoniser et demeure très utile pour des tâches simples. Cependant, dans le monde académique, la production de fichiers de qualité faisant appel à des graphiques, tableaux et blocs de code personnalisés de qualité et automatisés est simplifiée en utilisant des langages de balisage.
-
-## Comment utiliser un langage de balisage?
-
-En pratique, comment utilise-t-on Markdown, \LaTeX et \textsc{Bib}\TeX? D'emblée, \LaTeX a une syntaxe particulière qui demande un certain temps d'adaptation. Pour écrire une phrase simple comme celle-ci, la phrase peut être écrite telle quelle. Par contre, pour mettre un **mot** en caractères gras, il faut utiliser la balise suivante: `\textbf{mot}`. Pour mettre le \textcolor{red}{mot} en rouge, la balise est `\textcolor{red}{mot}`. Pour le mettre en italique et en note de bas de page[^chapitre_5-5], les balises `\footnote{\emph{mot}}` peuvent être utilisées. Ainsi, des balises peuvent contenir d'autres balises. En langage \LaTeX, une balise commence toujours par une barre oblique inversée. Par la suite, le nom de la fonction --- *emph*, *textbf*, *textcolor*, etc. --- est appelé. Enfin, généralement, le mot à formater est placé entre accolades (`{}`).
-
-[^chapitre_5-5]: *mot*
-
-Chaque document \LaTeX commence par un préambule. Celui-ci présente des informations telles que la taille des caractères, le type de document, le format de mise en page, la police de caractères, l'utilisation d'en-têtes et de pieds de page, ainsi que l'utilisation de *packages* \LaTeX permettant différentes fonctionnalités de personnalisation du document. Il n'est pas nécessaire ni souhaitable d'apprendre l'ensemble des fonctions et des *packages* \LaTeX qui existent. Au contraire, il est souvent mieux de commencer par un gabarit de document qui convient au type de document que vous voulez créer et ensuite de rechercher en anglais sur Stack Overflow la manière d'ajouter des éléments de formatage que vous ne connaissez pas, par exemple en recherchant `highlight latex text`.
-
-Markdown fonctionne de manière similaire à \LaTeX, mais se démarque par sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par contre, il nécessite parfois l'utilisation de balises \LaTeX afin de réaliser certaines tâches, comme changer la couleur du texte. Tout document Markdown débute avec un court bloc de syntaxe `YAML` (acronyme de `Yet Another Markup Language`) qui définit les paramètres généraux du document. Voici un bloc `YAML` typique pour un document Quarto :
-
-```         
----
-title: "Baliser les sciences sociales"
-subtitle: "Langages et pratiques"
-date: today
-author:
-  - Alexandre Fortier-Chouinard^[University of Toronto]
-  - Maxime Blanchard^[McGill University]
-  - Étienne Proulx^[McGill University]
-format: pdf
-toc: true
-date-format: "MMMM D, YYYY"
-bibliography: references.bib
----
-```
-
-Outre le titre, le sous-titre et le nom des auteurs, on trouve aussi dans l'en-tête YAML la présence d'une table des matières (`toc`), la date et son format, le format du document compilé --- dans ce cas-ci, PDF --- ainsi que le chemin d'arborescence afin d'accéder au document \textsc{Bib}\TeX où sont enregistrées les références utilisées. Il est aussi possible d'y définir la taille de la police de caractères ou encore le gabarit Word servant à définir le format d'un document DOCX à produire. De manière particulièrement importante, c'est l'endroit où sont chargés les *packages* \LaTeX qui seront utilisés. En effet, la majorité des *packages* et fonctions \LaTeX sont utilisables dans Markdown, alors que l'inverse n'est pas vrai. Il est donc possible de personnaliser un document Markdown en utilisant des *packages* ayant été créés pour \LaTeX.
-
-La syntaxe à utiliser au travers du texte est somme toute plutôt simple. Pour mettre un ou plusieurs **mots en gras**, il suffit de les entourer de deux astérisques (`**mots en gras**`); pour les mettre *en italique*, il faut les encadrer d'une seule astérisque (`*en italique*`). Pour définir un titre de section ou de sous-section, il suffit de mettre des `#` devant le titre en question. Plus vous ajoutez de `#`, plus le titre sera petit et plus il sera considéré à un niveau hiérarchique inférieur dans la structure du texte. La syntaxe Markdown est donc plus légère que celle de \LaTeX, dans le but d'en rendre la lecture plus simple pour les utilisateurs et utilisatrices.
-
-Bien que des gabarits Markdown soient disponibles, ceux-ci sont plus rares. Ils se trouvent pour la plupart sur GitHub et sont rendus disponibles par leur créateur. Cela étant dit, leur personnalisation peut s'avérer plutôt complexe. En somme, Markdown est particulièrement pratique pour les documents ne nécessitant pas de respecter un gabarit précis et requérant simplement un document d'allure simple et professionnelle.
-
-Pour sa part, \textsc{Bib}\TeX a une syntaxe relativement simple. D'emblée, les références \textsc{Bib}\TeX pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur \textsc{Bib}\TeX peut ressembler à ceci :
-
-```         
-@book{darwin03,
-  address = {London},
-  author = {Darwin, Charles},
-  publisher = {John Murray},
-  title = {{On the Origin of Species by Means of Natural Selection
-or the Preservation of Favoured Races in the Struggle for Life}},
-  year = {1859}
-}
-
-@article{goldfarb96,
-  title={The Roots of SGML: A Personal Recollection},
-  author={Goldfarb, Charles F},
-  journal={Technical communication},
-  volume={46},
-  number={1},
-  pages={75},
-  year={1999},
-  publisher={Society for Technical Communication}
-}
-```
-
-Un fichier \textsc{Bib}\TeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document \textsc{Bib}\TeX a peu d'importance, puisque \LaTeX réordonne par défaut la bibliographie en ordre alphabétique.
-
-### Environnements d'édition et de compilation
-
-Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne.
-
-D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Le logiciel RStudio, également abordé dans le chapitre 4<!--@sec-chap4-->, permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d'une même fenêtre. Il suffit d'installer certains *packages* contenant les fichiers nécessaires à l'utilisation des langages de balisage. Par exemple, il est possible de produire des documents en \LaTeX en utilisant le code suivant dans la console pour installer le *package* nécessaire à l'utilisation de la distribution \LaTeX Tiny\TeX : `install.packages("tinytex")`. Suivant le même principe, il est possible de produire des documents en `R` Markdown sur RStudio en installant le *package* suivant : `install.packages("rmarkdown")`. Pour Quarto, le téléchargement se fait en ligne, directement à partir du site Web de @quarto23.
-
-Pour l'écriture en \LaTeX, il est également nécessaire d'installer l'une des nombreuses distributions en ligne afin de pouvoir compiler ces documents dans un environnement local. Il existe des distributions telles que Mac\TeX pour Mac, Mik\TeX pour Windows et plusieurs autres [@just13]. Ces distributions se distinguent par les différents *packages* avec lesquelles elles sont compatibles.
-
-Un autre environnement régulièrement utilisé pour travailler en langage de balisage est le logiciel de bureau VS Code. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`.
-
-Lorsque vient le temps de collaborer à plusieurs sur un document écrit en Markdown ou en \LaTeX, les logiciels de bureau évoqués précédemment nécessitent l'utilisation de GitHub et de Git. L'utilisation de ces éditeurs peut présenter un défi supplémentaire pour les équipes de recherche non initiées. Il existe ainsi des éditeurs en ligne qui permettent de collaborer en temps réel sans passer par Git et GitHub, de manière similaire à Google Docs[^chapitre_5-6]. Le plus connu de ces logiciels est Overleaf, qui permet de produire des documents en langage \LaTeX. Puisqu'Overleaf permet d'avoir accès à ses documents \LaTeX à partir de n'importe quel navigateur, il n'y a pas de dépendance à un logiciel local sur un ordinateur, ce qui constitue un avantage important. La contrepartie de cet avantage est qu'en utilisant Overleaf, l'équipe de recherche est dépendante d'une connexion à Internet. En utilisant le package \LaTeX `rmarkdown`, Overleaf peut également inclure du code Markdown. Cependant, Overleaf ne permet pas de créer des documents en format DOCX ou HTML, ce qui constitue une limite de l'application. Overleaf comporte un compteur de mots intégré, ce qui n'est pas le cas des autres logiciels et environnements présentés plus haut.
-
-[^chapitre_5-6]: VS Code possède également une extension, Live Share, qui permet de travailler en temps réel sur un même document.
 
 ## Conclusion
 
