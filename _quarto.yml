@@ -1,11 +1,21 @@
 project:
   type: book
-  output-dir: book
+  output-dir: _book
 
 book:
   title: "Outils de recherche en sciences sociales numériques"
-  author: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
-  date: today
+  reader-mode: true
+
+  page-footer:
+    left: |
+      Livre-outils
+    right: |
+      Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.
+  cover-image: images/logo_CLESSN_inverse.png
+  favicon: images/logo_CLESSN_inverse.png
+  repo-url: https://github.com/clessn/livre-outils
+  repo-branch: main
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
     - chapitre_1.qmd
@@ -23,8 +33,14 @@ book:
 bibliography: livre-outils.bib
 
 format:
-  pdf:
-    documentclass: scrbook
+  html:
+    theme:
+      - cosmo
+      - r4ds.scss
+    code-link: true
+
+    author-meta: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
+    include-in-header: "plausible.html"
+    callout-appearance: simple
 
 editor: visual
-
