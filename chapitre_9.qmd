@@ -69,22 +69,29 @@ Trois catégories d'outils seront présentées: les « *Large Language Models* �
 
 ### 3. Les Assistants de Revue de littérature
 
-Dans cette section, deux principaux outils seront présentés: *research rabbit* et *ellicit*. Il s'agit de deux ressources gratuites en ligne qui facilite le début d'une revue des écrits, notamment lorsque l'on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champs d'étude. 
+Dans cette section, deux principaux outils seront présentés: *research rabbit* et *ellicit*. Il s'agit de deux ressources gratuites en ligne qui facilite le début d'une revue des écrits, notamment lorsque l'on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champs d'étude. Ces deux outils sont d'ailleurs compatibles aves *Zotero*, qui fut présenté au chapitre 4 de ce livre.
 
 Débutons avec *Ellicit*. Avec l'intelligence artificielle, cet outils suggère des articles et des livres scientifiques à partir d'une question de recherche préliminaire, ou à partir de concepts. L'application offre une version gratuite, mais qui est toutefois limité dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, il faut l'utiliser avec parcimonie. Afin de démontrer l'utilité de ce logiciel, utilision un exemple concret. 
 
 ![Menu d'accueil d'Ellicit](images/chapitre9_image2.png){#fig-ellicit}
 
-Par exemple, disons que je m'intéresse à la question suivante: Qu'est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. Ellicit offre une solution à ce problème. La @fig-ellicit correspond au menu d'accueil du site web. Une fois là, je n'aurais qu'à écrire ma question dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
+Par exemple, disons que je m'intéresse à la question suivante: Qu'est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. *Ellicit* offre une solution à ce problème. La @fig-ellicit correspond au menu d'accueil du site web. Une fois là, je n'aurais qu'à écrire ma question dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
 
-::: {layout="[40,40]"}
 
-![Court résumé du sujet](images/chapitre9_image3.jpeg){#fig-results1}
-![Suggestions de lectures](images/chapitre9_image4.jpeg){#fig-results2}
+::: {layout-ncol=2}
+![Court résumé du sujet](images/chapitre9_image3.png){#fig-results1}
 
-Résultats de recherche
+
+![Suggestions de lectures](images/chapitre9_image4.png){#fig-results2}
 :::
 
+Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins. 
+
+Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, **ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche**. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.
+
+Un autre outils soffre à nous afin de trouver des références supplémentaires: *Research Rabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j'ai lu plusieurs articles et/ou chapitres de livre, et que j'ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans *Research Rabbit*. Reprenons notre exemple de la démocratie de tout à l'heure.
+
+**Mettre les exemples dans Research Rabbit et montrer les différentes fonctionnalités, notamment le mapping**
 
 ## Quelle est la place du chercheur maintenant?
 
