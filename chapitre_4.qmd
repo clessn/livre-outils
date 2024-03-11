@@ -1,45 +1,230 @@
-# R ou ne pas R? {#sec-chap4}
+# Gestion de la littérature {#sec-chap4}
 
-Plusieurs notions liées à l'ère numérique, notamment à ce qui a trait aux opportunités et difficultés que cette dernière peut amener, ont été présentées par l'entremise du chapitre précédent. C'est un monde de possibilité qui s'offre à ceux qui maîtrisent les nouveaux outils des temps modernes. Mais comment en arriver là ? Le présent chapitre a pour but de présenter certains outils flexibles et péreins permettant la réalisation de nombreuses tâches. Une des premières étapes permettant de notamment réaliser la collecte, l'analyse et la visualisation graphique de données ainsi que la rédaction de documents est l'apprentissage d'un langage de programmation. Bien que plusieurs langages de programmation existent, le présent ouvrage priorise le langage **R**. Les sections suivantes présentent ce langage de programmation, ces forces et ces faiblesses ainsi que les raisons de son utilisation. Enfin, la dernière section présente un environnement de programmation qui se prête bien à son utilisation.
+## Straight up from Jedro Arnaud
 
-## Pourquoi R?
+Comme mentionné précédemment, les outils numériques de données mas- sives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d'analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d'autres étapes du cycle de la recherche. Il s'agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d'élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L'outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulière- ment prisé du monde académique lors de l'entreprise de revues de littérature.
+La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d'accomplissement du travail en plus de le rendre plus simple et plus intuitif. L'outil a été développé pour mieux gérer et organiser l'évaluation de quantité importante d'études scientifiques. L'exécution d'une revue de littérature sur Covidence se fait par le biais d'un double codage. C'est- à-dire que l'évaluation des études se fait manuellement par deux codeurs
 
-Comme mentionné précédemment, il existe plusieurs langages de programmation. **R** a deux types de compétiteurs : les logiciels à licences comme SAS, STATA et SPSS, et les langages *OpenSource* tels que Python et Julia. **R** est un langage de programmation *OpenSource* développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. **R** prend ses racines dans le langage de programmation S, créé notamment par Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non orthodoxes lors de l'élaboration du langage, qui font aujourd'hui la popularité de ce logiciel auprès d'un large pan de la communauté académique. En effet, @morandat_etal12 rapporte que le langage a été élaboré afin qu'il soit intuitif et qu'il permette aux nouveaux utilisateurs de rapidement réaliser des analyses.
+3.6 Covidence : outil de récolte d'articles scientifiques
+travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l'exercice. L'outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d'importer des données massives provenant de base de données bibliographiques. En effet, l'outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l'accès à des milliers d'études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adap- tées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique.
+La première étape, soit le « Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage eﬀicace, il est nécessaire d'inclure des critères précis pour analyser les titres et résumés d'articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l'article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s'avère très utile et motivante, puisqu'il est possible de développer un jugement critique davantage raﬀiné et de s'instruire dans une littérature continuellement plus précise.
+Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l'indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d'analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d'exclure l'article, de le retenir ou de l'envoyer à la prochaine étape. D'un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu'elle comporte beaucoup moins de documents, est assez longue et exigeante.
+La dernière étape, soit celle de l'extraction, consiste à recueillir toute donnée étant utile à l'étude de la littérature désignée. Cette étape est deman- dante, car les chercheur.euse.s doivent se conformer à une grille de codi- fication prédéfinie. Le but est qu'un consensus entre les codeurs émerge de ce processus. L'extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues.
+Une fois les étapes de la revue systématique terminées, Covidence facilite l'exportation des résultats de l'extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d'articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l'outil est particulièrement utile et bien construit. Toutefois, il existe d'autres alternatives à Covidence. Le choix de l'outil dépend des coûts de même que des besoins spécifiques des per- sonnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.
 
-Le langage de programmation **R** a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. L'un de ses grands avantages est qu'il est *OpenSource*. Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l'argument, à savoir que : 1) l'*OpenSource* est gratuit d'utilisation; 2) l'*OpenSource* est développé de façon bottom-up, ce qui lui procure une grande flexibilité; et 3) il permet aux utilisateurs de créer leurs propres fonctions. À l'inverse, les logiciels à licences sont coûteux, rigides et l'ajout de fonctionnalités se fait par les développeurs internes à la compagnie. Ces formalités rendent le processus plus lent et réduisent l'éventail des possibilités pour la personne chercheuse. Ceci étant dit, certains avanceront que c'est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, @muenchen11 soulève le point que bien souvent, ce sont des individus atomisés qui développent les nouvelles fonctionnalités de ces langages et que le processus de révisions se fait ensuite par des comités internes de testeurs. Il en va de même pour le développement des *packages* R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. Le fait que SAS et SPSS permettent à leur utilisateur d'intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l'utilité de R [@muenchen11]. Le langage de programmation **R** permet également de réaliser une grande quantité de tâches de recherche. En effet, les personnes programmant en **R** peuvent notamment manipuler et visualiser des données, faire différents types d'analyses, créer des fonctions et faire des boucles en plus de pouvoir combiner **R** avec certains langages de balisages.
+# La gestion des références {#sec-chap6}
 
-D'un autre côté, l'utilisation du langage de programmation **R** peut être perçue comme ayant certains inconvénients. Plusieurs disent que la courbe d'apprentissage peut être plus grande que celle de programmes à licences. La véridicité de cet argument est discutable. Les programmes demandant des licences ont également un coût d'entrée. De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d'adaptation pour la personne chercheuse. D'autres disent que le développement *OpenSource*, spécifiquement celui du langage de programmation **R**, se fait de façon anarchique. Cela est davantage une question d'opinion et de conception du monde qu'une vérité. Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en **R** peut collaborer à cette communauté. Bien qu'il n'y ait pas d'autorité centrale, les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Le site a une politique de dépôt stricte, ainsi les *packages* doivent être suffisamment documentés. Il est également possible d'y télécharger le langage de programmation **R**. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
+## Pourquoi citer ?
 
+La citation des sources est une pratique incontournable dans le monde académique, essentielle à la préservation de la crédibilité académique et au maintien des normes éthiques. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide et dynamique, sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation rigoureuse des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation adéquate des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat, une faute grave dans la recherche académique [@racz_markovic18].Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13].En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : de la crédibilité et la contextualisation à la reproductibilité, de la création d'une base de connaissances solide à l'attribution correcte du mérite, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils tels que Zotero prennent toute leur importance, en facilitant la gestion rigoureuse des références et en soutenant les chercheurs dans leur quête de rigueur et d'excellence académiques.
 
-## Où coder en R ?
+## À quoi sert un logiciel de gestion bibliographique ?
 
-Un environnement de développement intégré (IDE) permet aux programmeurs de consolider les différents aspects de l'écriture d'un programme informatique. Ils permettent de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit. Les environnements de développement intégrés sont conçus pour maximiser la productivité du programmeur. Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique ainsi que le contrôle de version -- pour créer, modifier et compiler du code. Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique. Par conséquent, ils contiennent des fonctionnalités qui sont plus compatibles avec les paradigmes de programmation du langage auquel ils sont associés. Enfin, il existe de nombreux environnements de développement intégré multilingues.
+Un outil de référence bibliographique est un logiciel conçu pour aider les scientifiques à gérer et à organiser leurs références bibliographiques de manière efficace. Ces outils s'avèrent particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres documents académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
-Comme mentionné précédemment, R est un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales. R est pris en charge par de nombreux environnements de programmation. Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- et prennent en charge R via des plugins. Il est également possible de coder en R à partir d'une interface en ligne de commande. Une telle méthode permet la communication entre l'utilisateur et son ordinateur. Cette communication s'effectue en mode texte : l'utilisateur tape une « ligne de commande » -- c'est-à-dire du texte dans le *terminal* -- pour demander à son ordinateur d'effectuer une opération précise, telle que rouler un fichier de code R.
+1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites Web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
 
-La suite du chapitre présente RStudio, notamment à travers ses avantages et inconvénients, mais également des exemples de ses fonctionnalités.
+2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
 
-## Qu'est-ce que RStudio ?
+3.  Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Ce processus permet de gagner énormément de temps en formatage. Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
 
-RStudio est un projet open source destiné à combiner les différentes composantes du langage de programmation R en un seul outil (Allaire, 2011). RStudio fonctionne sur tous les systèmes d'exploitation, y compris Windows, Mac OS et Linux. En plus de l'application de bureau, RStudio peut être déployé en tant que serveur pour permettre l'accès Web aux sessions R s'exécutant sur des systèmes distants (Allaire, 2011). RStudio facilite l'utilisation du langage de programmation R en offrant de nombreux outils permettant à son utilisateur d'aisément réaliser ses tâches. Parmi les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur d'espace de travail, une visionneuse de données et une prise en charge de la coloration syntaxique (Horton, Kleinman, 2015). De plus, RStudio permet de coder dans plusieurs langages et de supporter une grande quantité de formats. Il fournit également un support pour plusieurs projets ainsi qu'une interface pour utiliser des systèmes de contrôle, tels que GitHub (Horton, Kleinman, 2015).
+4.  Collaboration : Certains outils offrent la possibilité de collaborer en ligne, ce qui donne l'occasion à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement contribue à économiser du temps par la centralisation des données sur un même interface.
 
+5.  Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
 
-RStudio a plusieurs avantages. Son utilisation est facile à apprendre pour les débutants. Les principaux éléments d'un IDE sont intégrés dans une disposition à quatre volets (Verzani, 2011). Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace pour l'environnement de travail et un quatrième volet où il est notamment possible d'afficher des graphiques ou de la documentation sur différents packages. Ce volet permet d'ailleurs d'accéder au répertoire des *packages* disponibles pour *R* en plus de permettre à l'utilisateur de consulter l'arborescence de ses fichiers. De plus, on y retrouve la possibilité de créer plusieurs espaces de travail -- appelés projets -- qui facilitent l'organisation de différents *workflows*.
+6.  Synchronisation et sauvegarde : Les références et les bibliographies peuvent être synchronisées sur plusieurs appareils, ce offre la possibilité aux personnes utilisatrices d'accéder à leurs références où qu'elles soient. Les sauvegardes régulières assurent que les données ne soient pas perdues en cas de problème technique.
 
-Il y a plusieurs autres aspects de RStudio que les programmeurs apprécient. Parmi ceux-ci se trouve le fait qu'il peut être utilisé via un navigateur Web pour un accès à distance (Verzani, 2011). De plus, RStudio supporte plusieurs langages de programmation ainsi que différents langages de balisage. Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour satisfaire les besoins de la communauté scientifique. Enfin, R logiciel est également souvent mis à jour.
+7.  Suivi de lecture : Certains outils permettent aux personnes utilisatrices de suivre les articles et les documents qu'elles ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
 
-Parmi ce que certains considèrent comme étant les points faibles de RStudio, on retrouve des éléments liés à la configuration. Certains utilisateurs trouvent que le nombre de raccourcis est limité. D'autres trouvent que le *set up* des différents panneaux n'est pas ergonomique, ou même qu'il n'est pas possible de pouvoir suffisamment personnaliser l'environnement de programmation. De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour quelques opérations, surtout celles comprenant de longs codes.
+8.  Importation et exportation : Les outils de référence bibliographique autorisent généralement l'importation et l'exportation des références dans différents formats, ce qui facilite le transfert de données.
 
-## Comment utiliser RStudio ?
+En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de formatage ainsi que de création de bibliographies. De plus, ces outils offrent la flexibilité de changer de style de citation instantanément, facilitant l'adaptation aux exigences variées des revues scientifiques et permettant aux chercheurs de se consacrer à l'essence de leurs recherches sans se préoccuper des contraintes formelles et des détails de formatage. D'ailleurs, il existe plusieurs outils de référence bibliographique, dont : Endnote, Zotero et Mendeley.
 
-Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011). Dans le coin supérieur gauche se trouve le cadran principal. C'est dans celui-ci que l'utilisateur passera la plus grande partie de son temps. On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données. Dans le coin inférieur gauche se trouve la console ainsi que le terminal. Dans cette première, on peut interagir avec R de la même manière que dans le cadran principal, mais le code ne sera pas enregistré. Le terminal, pour sa part, est le point d'accès de communication entre un usager et son ordinateur. Bien que les différents systèmes d'exploitation viennent avec un terminal déjà intégré, il est aussi possible d'y accéder à partir de RStudio.
+Chaque logiciel offre des caractéristiques uniques tout en partageant des objectifs communs fondamentaux. Ils visent principalement à optimiser l'efficacité et la collaboration en centralisant les références, une commodité indéniable pour les chercheuses et chercheurs et les équipes académiques. Le choix d'un logiciel adapté aux besoins spécifiques des personnes l'utilisants dépend de plusieurs facteurs, notamment la nécessité de partager les résultats de recherche et de collaborer sur des projets communs. Lorsque la collaboration est au cœur d'un projet, il est judicieux que tous les membres de l'équipe adoptent le même outil pour faciliter l'échange d'informations et la cohésion du groupe.
 
-On retrouve, dans le coin supérieur droit, l'espace de travail. Ce cadran contient trois éléments : l'*environnement global, l'historique et les connections*. L'*environnement global* est l'endroit où l'utilisateur peut voir les bases de données, les fonctions et les différents autres objets R qui sont actifs. Il peut cliquer sur les divers éléments actifs pour les consulter. L'onglet *historique* permet à l'utilisateur de consulter les derniers morceaux de code R qu'il a roulé ainsi que les dernières commandes écrites dans la console. L'onglet *connections*, pour sa part, permet de connecter son IDE à une variété de sources de données et d'explorer les objets et les données qui la composent. Il est conçu pour fonctionner avec une variété d'autres outils pour travailler avec des bases de données en R dans RStudio.
+Zotero, EndNote et Mendeley, bien qu'ils partagent des principes de base similaires, se distinguent par des fonctionnalités spécifiques qui peuvent mieux s'aligner sur les préférences et exigences individuelles. La sélection d'un logiciel doit donc être guidée par une évaluation attentive de ses capacités à répondre aux besoins de l'utilisateur, tout en considérant des aspects cruciaux tels que le partage, la collaboration et la facilité d'utilisation.
 
-Le cadran dans le coin inférieur droit, pour sa part, contient plusieurs outils très utiles pour les usagers de RStudio. L'onglet *Files* permet à l'utilisateur de naviguer dans les fichiers que contient son ordinateur sans avoir à sortir de RStudio. L'onglet *Plots* permet de visualiser les graphiques générer à partir de R, que ce soit en utilisant *ggplot2, lattice ou base R*. L'onglet *Packages* permet de consulter les packages installés précédemment par l'utilisateur en plus de pouvoir en consulter la documentation. C'est aussi un des différents endroits à partir d'où il est possible d'installer des packages avec RStudio. L'onglet *Help* permet à l'utilisateur de chercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages. Pour sa part, l'onglet *Viewer* permet la visualisation de contenu web local.
+Il est essentiel de souligner l'importance de la préférence personnelle dans ce choix. L'interface utilisateur, la facilité d'intégration dans les flux de travail existants, et la compatibilité avec d'autres outils numériques sont des critères qui influent grandement sur l'expérience utilisateur et, par conséquent, sur la productivité. En fin de compte, l'outil idéal est celui qui non seulement facilite la gestion des références mais s'intègre de manière transparente dans le quotidien académique de l'utilisateur, lui permettant ainsi de se concentrer pleinement sur la substance de ses recherches.
 
-Enfin, l'utilisateur peut modifier les dimensions par défaut pour chacun des quatre cadrans principaux. En cliquant sur la division des sections, il est possible d'ajuster l'allocation horizontale de l'espace. De plus, chaque côté dispose d'un autre séparateur pour ajuster l'espace vertical. Qui plus est, la barre de titre de chaque cadran comporte des icônes pour ombrer un composant, maximiser un cadran verticalement ou modifier la taille des l'espace de travail (Verzani, 2011; Nierhoff et Hillebrand, 2015).
+## Pourquoi Zotero?
+
+L'avantage de Zotero réside dans sa gratuité et son accessibilité libre. Son code est ouvert et son dépôt GitHub compte plus de 13 000 contributions. Il propose une large gamme de fonctionnalités ainsi que la possibilité d'ajouter des extensions, complétant ainsi son usage. Zotero est puissant tout en restant facile à utiliser. Il est disponible sur plusieurs plateformes (Windows, Mac, Linux, iOS, Android), favorisant ainsi la collaboration entre tous les membres d'une équipe de recherche utilisant des plateformes diverses. Il est possible de synchroniser sa bibliothèque Zotero sur plusieurs appareils, soit en utilisant le service cloud payant de Zotero, soit en configurant son propre espace de stockage cloud. Zotero s'intègre parfaitement dans un projet de recherche utilisant LaTeX ou Quarto, car il permet de générer des fichiers .bib à partir des bibliothèques et de les maintenir à jour automatiquement. Il s'intègre également aux logiciels de traitement de texte tels que LibreOffice et Microsoft Office. Il est possible de générer des bibliographies et des citations dans plus de 9 000 styles de citation différents, ce qui le rend adaptable à tous les besoins.
+
+Un autre grand avantage de Zotero réside dans la centralisation des sources bibliographiques et de leurs fichiers associés. Il est possible d'ajouter des PDF à Zotero et de les synchroniser au sein de groupes de travail, facilitant ainsi le partage de documents avec les autres membres de l'équipe de recherche. Plus besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers : tout est centralisé dans Zotero. Cette centralisation offre la possibilité d'effectuer des recherches par mot-clé (type ctrl+f) à travers l'ensemble des sources d'une bibliothèque. Vous rédigez une conclusion sur les radis finlandais et souhaitez discuter des enjeux internationaux liés à leur agriculture en citant une source consultée il y a trois ans ? Avec Zotero, retrouver cette source ne prend que quelques secondes grâce à une simple recherche.
+
+L'inconvénient de Zotero réside dans sa difficulté à gérer d'immenses bibliothèques contenant plusieurs milliers de fichiers, nécessitant parfois l'achat d'espace de stockage supplémentaire. De plus, bien que performant, le logiciel n'est pas exempt de défauts. Il arrive qu'il faille compléter manuellement des informations non détectées automatiquement par le connecteur intégré.
+
+Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+
+## BibLaTeX
+
+BibLaTeX est une extension destinée au traitement des bibliographies dans LaTeX et Quarto, généralement associée à Biber, un programme conçu pour le traitement des données bibliographiques spécifiquement pour BibLaTeX. Biber propose des fonctionnalités avancées comme le tri poussé, la gestion de multiples bibliographies et la capacité de traiter des sources bibliographiques dans divers formats. Grâce à sa prise en charge étendue des langues, BibLaTeX est particulièrement adapté à la rédaction d'articles ou de livres pour un public international. Bien que BibLaTeX soit avant tout un package pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils tels que Zotero sous forme de fichiers .bib, qui peuvent ensuite être exploités avec BibLaTeX. L'extension Better BibTeX permet de maintenir automatiquement à jour vos fichiers .bib à partir de Zotero. Il est recommandé de conserver uniquement les références utilisées dans votre fichier et de les organiser par ordre alphabétique, facilitant ainsi la coopération et le partage des sources.
+
+Les inconvénients potentiels de BibLaTeX comprennent une courbe d'apprentissage plus accentuée pour ceux habitués à BibTeX, ainsi que le besoin de mises à jour régulières pour assurer la compatibilité avec les versions les plus récentes de LaTeX. En outre, certains éditeurs académiques ou revues possèdent leurs propres styles de citation et peuvent ne pas accepter les soumissions réalisées avec BibLaTeX, même si cette réticence tend à diminuer.
+
+En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
+
+## Installation et configuration de Zotero
+
+Dans cette section, vous serez amené notamment à installer Zotero ainsi que Better BibTeX. Better BibTeX est une extension de Zotero servant à générer et à maintenir à jour des fichiers .bib compatibles avec BibLaTeX, à partir de Zotero.
+
+### Zotero
+
+-   Installer [Zotero](https://www.zotero.org/download/)
+
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
+
+-   Une fois Zotero installé, vous avez l'option de créer un [compte Zotero](https://www.zotero.org/user/register/). L'identifiant que vous utiliserez sera celui que vous partagerez à vos collaborateurs pour créer et joindre des groupes.
+
+#### Better Bibtex
+
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+-   Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
+
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+
+-   Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+-   Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
+
+![](images/chapitre6_zotero.png){width="170"}
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+![](images/chapitre6_biblatex.png){width="300"}
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façons d'ajouter des références à Zotero :
+
+-   Glisser-déposer à partir de votre bibliothèque personnelle.
+-   Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
 
 ## Conclusion
 
-Le langage de programmation R est un outil très utile pour toutes sortes de tâches notamment reliées aux statistiques et à la visualisation graphiques. Sa maîtrise est requise pour accéder à plusieurs emplois, autant dans le monde académique que dans les secteurs publics et privés. Avec un peu de chance, le présent chapitre vous a éclairé sur son utilité et sa pertinence dans le monde du travail contemporain. Bien que le langage de programmation R ne doivent pas obligatoirement être utilisé avec RStudio, nous pensons que pour la plupart des usagers, leur utilisation conjointe est bénéfique et souhaitée. RStudio permet également d'utiliser différents langages de balisage compatibles avec R, facilitant l'utilisation de plusieurs outils complémentaires. L'apprentissage du langage de programmation R apparaît également être une valeur sure. Sa longitivité dans plusieurs sphères ainsi que la forte croissance de sa base d'usagers laisse présager que d'en connaître au moins les bases est un énorme avantage pour tout le monde. Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui désirent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R -- notamment *RConference* and *useR!* -- et un journal académique, *The R Journal*. On retrouve également différentes communautés telle que *R-Ladies* qui met de l'avant la diversité des genres dans la communauté du langage de programmation R. Le langage de programmation R est plus qu'un simple outil statistique, il est le centre d'une grande communauté de gens qui ont à coeur des principes liés à l'inclusion et à l'avancement humain.
+Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
+
+### Revue Systématique
+
+une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question \parencite{kibbee23}. Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
+
+La méthode a été choisie selon le processus décisionnel suggéré par \textcite[16]{cloutier23}. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
+
+La revue systématique sera menée en suivant les 24 étapes décrites par \textcite{muka_etal20}.
+
+```{=tex}
+\begin{enumerate}
+
+  \item Définir la question de recherche. 
+  
+  Dans le cadre de ce projet, la question de recherche est: \og{} Quels sont les éléments constitutifs d'une recherche en science politique? \fg{}.
+
+  \item Établir l'équipe. 
+  
+    L'équipe sera composée de collègues universitaires souhaitant participer au projet et ayant une expérience dans le domaine d'étude.
+  
+  \item Définir la stratégie pour l'obtention des références. 
+  
+    Plusieurs bases de données seront sélectionnées pour effectuer la recherche, dont celle de la bibliothèque de l'université, Web of Science, Google Scholar, JSTOR, etc. L'assistance d'un bibliothécaire sera sollicitée pour optimiser la stratégie de recherche et affiner l'utilisation des mots-clés, comme suggéré par \textcite{cloutier23} et \textcite{dufour23}.
+
+  \item Définir les critères d'inclusion et d'exclusion.
+  
+    Les critères de sélection permettront de circonscrire le nombre de références utilisées pour la revue. Ils pourront concerner un domaine d'étude, un choix de langues de publication ou une période donnée. Dans ce projet, les critères d'inclusion et d'exclusion seront à définir avec l'équipe.
+
+  \item Définir le formulaire d'extraction des données.
+
+    L'objectif de la revue systématique est d'extraire les données des textes analysés. Dans ce projet, il s'agit de construire une base de données composée d'éléments pertinents pour la recherche. Ainsi, les données extraites seront des métadonnées, telles que les sections, leur longueur, leurs titres, leur ordre, les méthodes utilisées, les définitions, les références, etc. Tous ces éléments sont pertinents pour structurer une recherche en science politique.
+
+  \item Écrire le protocole de recherche servant à guider le processus.
+  
+    Le protocole de recherche est essentiel pour guider l'équipe tout au long du processus de filtrage. Avant de commencer la revue, \textcite[4]{muka_etal20} recommandent de consulter différents experts afin de valider le protocole, s'assurant ainsi de sa complétude et de l'absence d'éléments manquants.
+
+  \item Appliquer la stratégie de recherche à diverses bases de données.
+
+    Il faudra mettre en œuvre la stratégie de recherche sur les bases de données choisies et l'ajuster pour chaque base. Il sera important de bien documenter cette étape car elle servira à la preuve de concept d'automatisation de la revue systématique.
+
+  \item Rassembler les références et les résumés.
+
+    Les références seront rassemblées et intégrées dans une bibliothèque de groupe Zotero, un logiciel libre permettant de gérer les références bibliographiques.
+
+  \item Éliminer les doublons.
+  
+    Zotero offre la possibilité d'éliminer les doublons automatiquement.
+
+  \item Filtrer les résultats à partir des titres et résumés.
+
+    À cette étape, deux membres de l'équipe de recherche effectueront le filtrage des résultats. Ils élimineront les références non pertinentes à la question de recherche en se basant sur le titre et le résumé. Les références non écartées par les deux évaluateurs seront conservées pour l'étape suivante.
+
+  \item Comparer les résultats des codeurs.
+
+    Il faudra conserver les références acceptées par au moins deux codeurs, écarter celles jugées non pertinentes par au moins deux d'entre eux et organiser une discussion concernant les références acceptées par un seul codeur pour juger de leur pertinence.
+
+  \item Télécharger les textes entiers et appliquer les critères d'inclusion et d'exclusion
+  
+    Les références retenues seront téléchargées. Les textes difficiles d'accès seront recherchés manuellement. L'assistance d'un bibliothécaire pourrait être nécessaire à cette étape.
+
+  \item Contacter les experts du champs et s'informer à propos des éléments manquants ou non-publiés
+
+    Pour s'assurer qu'aucun élément pertinent n'a été omis, il est recommandé de consulter des experts du domaine.~\textcite[6]{muka_etal20} suggèrent de contacter chaque auteur des articles retenus à l'étape 12.
+
+  \item Rechercher manuellement des références additionelles
+  
+    Il s'agira de réaliser une recherche boulle de neige (\textit{snowballing}) à partir de tous les articles retenus aux étapes 12 et 13. Cette méthode consiste à compiler chaque référence citée dans les articles sélectionnés et chaque article qui cite les articles retenus. Des outils tels qu'Elsevier Scopus peuvent faciliter cette démarche.
+
+  \item Sélectionner les références à inclure et déssiner le diagramme de flux
+  
+    Les articles choisis lors des étapes 12, 13 et 14 constitueront ceux inclus dans la revue systématique. Un diagramme de flux sera réalisé pour documenter le processus de sélection: combien d'articles ont été examinés, combien ont été retenus, à quelle étape ont-ils été écartés, etc.
+
+  \item Extraire les données des articles
+  
+    Les données des articles seront extraites. Il est crucial que chaque membre de l'équipe utilise le même formulaire d'extraction pour assurer la comparabilité des données.
+
+  \item Évaluer la qualité des articles et les risques de biais
+  
+    L'échelle de notation Newcastle-Ottawa de \textcite{wells_etal00} sera utilisée pour évaluer la qualité des articles. Cette échelle fréquemment utilisée en médecine peut être utile en science politique. Elle permet de noter les articles sur la sélection de leurs cas, la comparabilité de leurs données, et la pertinence de leurs résultats. Chaque catégorie est notée sur 5 points, soit un total de 15 points. Les articles ayant obtenu plus de 9 points sont jugés de bonne qualité avec un faible risque de biais. Un score de 6 ou moins indique un risque de biais élevé, ce qui peut remettre en question la pertinence d'inclure l'article dans la revue.
+
+  \item Préparer la base de donnée pour l'analyse.
+  
+    Les données de chaque article seront compilées dans une base de données, laquelle servira pour l'analyse des résultats. Le langage de programmation R pour la gestion de cette base de donnée sera privilégié pour sa facilité d'utilisation et sa popularité en science politique.
+
+  \item Construire une synthèse descriptive des données.
+  
+    Une synthèse descriptive des données sera élaborée. Cela permettra de se familiariser avec elles, de les nettoyer et de les comprendre. Cette synthèse aidera à identifier les tendances et les éléments constitutifs de la recherche en science politique.
+
+  \item Décider si une méta-analyse est appropriée.
+  
+    Selon \textcite[7]{muka_etal20}, les étapes 1 à 19 d'une revue systématique sont identiques à celles d'une méta-analyse. C'est à l'étape 20 que l'on décidera de la pertinence d'une méta-analyse. Si les données s'avèrent trop hétérogènes, leur comparaison et leur analyse pourraient s'avérer impossibles. Dans ce cas, une méta-analyse ne serait pas judicieuse. Dans le cadre de ce projet, les données récoltés seront probablement propices à une méta-analyse puisqu'il s'agira majoritairement de méta-données.
+
+  \item Explorer l'hétérogénéité.
+  
+    Il s'agira d'examiner les différences entre les articles pour déterminer s'il est possible d'harmoniser les données de chaque étude, optimisant ainsi leur comparaison et leur analyse.
+
+  \item Évaluer les biais.
+  
+    Il est essentiel de reconnaître et de traiter les biais. Un biais de publication serait particulièrement susceptible d'affecter une revue systématique en science politique.
+
+  \item Évaluer la qualité des preuves et la confiance dans les résultats
+  
+    La qualité de la base de données sera évaluée pour déterminer si les données sont suffisamment fiables pour une méta-analyse ou une revue systématique. Si la qualité s'avère insuffisante, il pourrait être nécessaire de reprendre le processus depuis la première étape.
+
+  \item Rédiger le rapport de la revue systématique
+  
+    Ce rapport final documentera le processus de peaufinage des GML utilisés lors de la deuxième étape. Les données collectées seront essentielles à la réalisation du projet.
+
+\end{enumerate}
+```

@@ -8,6 +8,7 @@ book:
   date: today
   chapters:
     - index.qmd
+    - Intro.qmd
     - chapitre_1.qmd
     - chapitre_2.qmd
     - chapitre_3.qmd
@@ -16,8 +17,7 @@ book:
     - chapitre_6.qmd
     - chapitre_7.qmd
     - chapitre_8.qmd
-    - chapitre_9.qmd
-    - chapitre10.qmd
+    - conclusion.qmd
     - references.qmd
 
 bibliography: livre-outils.bib
