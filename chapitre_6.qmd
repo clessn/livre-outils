@@ -121,10 +121,11 @@ Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se r�
 
 ### Revue Systématique
 
-une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question \parencite{kibbee23}. Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
+une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question (CITER KIBEE). Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
 
-La méthode a été choisie selon le processus décisionnel suggéré par \textcite[16]{cloutier23}. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
+La méthode a été choisie selon le processus décisionnel suggéré par. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
 
+<<<<<<< HEAD
 La revue systématique sera menée en suivant les 24 étapes décrites par \textcite{muka_etal20}.
 
 ```{=tex}
@@ -228,3 +229,31 @@ La revue systématique sera menée en suivant les 24 étapes décrites par \text
 
 \end{enumerate}
 ```
+=======
+La revue systématique sera menée en suivant les 24 étapes décrites par (Citer muka_etal20).
+
+  1. Définir la question de recherche. 
+  1. Établir l'équipe. 
+  1. Définir la stratégie pour l'obtention des références. 
+  1. Définir les critères d'inclusion et d'exclusion.
+  1. Définir le formulaire d'extraction des données.
+  1. Écrire le protocole de recherche servant à guider le processus.
+  1. Appliquer la stratégie de recherche à diverses bases de données.
+  1. Rassembler les références et les résumés.
+  1. Éliminer les doublons.
+  1. Filtrer les résultats à partir des titres et résumés.
+  1. Comparer les résultats des codeurs.
+  1. Télécharger les textes entiers et appliquer les critères d'inclusion et d'exclusion
+  1. Contacter les experts du champs et s'informer à propos des éléments manquants ou non-publiés
+  1. Rechercher manuellement des références additionelles
+  1. Sélectionner les références à inclure et déssiner le diagramme de flux
+  1. Extraire les données des articles
+  1. Évaluer la qualité des articles et les risques de biais
+  1. Préparer la base de donnée pour l'analyse.
+  1. Construire une synthèse descriptive des données.
+  1. Décider si une méta-analyse est appropriée.
+  1. Explorer l'hétérogénéité.
+  1. Évaluer les biais.
+  1. Évaluer la qualité des preuves et la confiance dans les résultats
+  1. Rédiger le rapport de la revue systématique
+>>>>>>> b6e6248 (changement refs)
