@@ -2,15 +2,9 @@
 
 ## Straight up from Jedro Arnaud
 
-Comme mentionné précédemment, les outils numériques de données mas- sives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d'analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d'autres étapes du cycle de la recherche. Il s'agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d'élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L'outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulière- ment prisé du monde académique lors de l'entreprise de revues de littérature.
-La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d'accomplissement du travail en plus de le rendre plus simple et plus intuitif. L'outil a été développé pour mieux gérer et organiser l'évaluation de quantité importante d'études scientifiques. L'exécution d'une revue de littérature sur Covidence se fait par le biais d'un double codage. C'est- à-dire que l'évaluation des études se fait manuellement par deux codeurs
+Comme mentionné précédemment, les outils numériques de données mas- sives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d'analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d'autres étapes du cycle de la recherche. Il s'agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d'élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L'outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulière- ment prisé du monde académique lors de l'entreprise de revues de littérature. La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d'accomplissement du travail en plus de le rendre plus simple et plus intuitif. L'outil a été développé pour mieux gérer et organiser l'évaluation de quantité importante d'études scientifiques. L'exécution d'une revue de littérature sur Covidence se fait par le biais d'un double codage. C'est- à-dire que l'évaluation des études se fait manuellement par deux codeurs
 
-3.6 Covidence : outil de récolte d'articles scientifiques
-travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l'exercice. L'outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d'importer des données massives provenant de base de données bibliographiques. En effet, l'outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l'accès à des milliers d'études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adap- tées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique.
-La première étape, soit le « Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage eﬀicace, il est nécessaire d'inclure des critères précis pour analyser les titres et résumés d'articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l'article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s'avère très utile et motivante, puisqu'il est possible de développer un jugement critique davantage raﬀiné et de s'instruire dans une littérature continuellement plus précise.
-Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l'indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d'analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d'exclure l'article, de le retenir ou de l'envoyer à la prochaine étape. D'un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu'elle comporte beaucoup moins de documents, est assez longue et exigeante.
-La dernière étape, soit celle de l'extraction, consiste à recueillir toute donnée étant utile à l'étude de la littérature désignée. Cette étape est deman- dante, car les chercheur.euse.s doivent se conformer à une grille de codi- fication prédéfinie. Le but est qu'un consensus entre les codeurs émerge de ce processus. L'extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues.
-Une fois les étapes de la revue systématique terminées, Covidence facilite l'exportation des résultats de l'extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d'articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l'outil est particulièrement utile et bien construit. Toutefois, il existe d'autres alternatives à Covidence. Le choix de l'outil dépend des coûts de même que des besoins spécifiques des per- sonnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.
+3.6 Covidence : outil de récolte d'articles scientifiques travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l'exercice. L'outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d'importer des données massives provenant de base de données bibliographiques. En effet, l'outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l'accès à des milliers d'études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adap- tées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique. La première étape, soit le « Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage eﬀicace, il est nécessaire d'inclure des critères précis pour analyser les titres et résumés d'articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l'article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s'avère très utile et motivante, puisqu'il est possible de développer un jugement critique davantage raﬀiné et de s'instruire dans une littérature continuellement plus précise. Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l'indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d'analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d'exclure l'article, de le retenir ou de l'envoyer à la prochaine étape. D'un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu'elle comporte beaucoup moins de documents, est assez longue et exigeante. La dernière étape, soit celle de l'extraction, consiste à recueillir toute donnée étant utile à l'étude de la littérature désignée. Cette étape est deman- dante, car les chercheur.euse.s doivent se conformer à une grille de codi- fication prédéfinie. Le but est qu'un consensus entre les codeurs émerge de ce processus. L'extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues. Une fois les étapes de la revue systématique terminées, Covidence facilite l'exportation des résultats de l'extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d'articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l'outil est particulièrement utile et bien construit. Toutefois, il existe d'autres alternatives à Covidence. Le choix de l'outil dépend des coûts de même que des besoins spécifiques des per- sonnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.
 
 # La gestion des références {#sec-chap6}
 
@@ -121,11 +115,11 @@ Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se r�
 
 ### Revue Systématique
 
-une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question \parencite{kibbee23}. Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
+une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question @kibbee23 **kibbee23**. Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
 
-La méthode a été choisie selon le processus décisionnel suggéré par \textcite[16]{cloutier23}. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
+La méthode a été choisie selon le processus décisionnel suggéré par \textcite[16] @cloutier23. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
 
-La revue systématique sera menée en suivant les 24 étapes décrites par \textcite{muka_etal20}.
+La revue systématique sera menée en suivant les 24 étapes décrites par @muka_etal20.
 
 ```{=tex}
 \begin{enumerate}
@@ -228,3 +222,107 @@ La revue systématique sera menée en suivant les 24 étapes décrites par \text
 
 \end{enumerate}
 ```
+
+# Nouveau texte
+  
+Un autre grand avantage de Zotero réside dans la centralisation des sources bibliographiques et de leurs fichiers associés. Il est possible d'ajouter des PDF à Zotero et de les synchroniser au sein de groupes de travail, facilitant ainsi le partage de documents avec les autres membres de l'équipe de recherche. Plus besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers : tout est centralisé dans Zotero. Cette centralisation offre la possibilité d'effectuer des recherches par mot-clé (type ctrl+f) à travers l'ensemble des sources d'une bibliothèque. Vous rédigez une conclusion sur les radis finlandais et souhaitez discuter des enjeux internationaux liés à leur agriculture en citant une source consultée il y a trois ans ? Avec Zotero, retrouver cette source ne prend que quelques secondes grâce à une simple recherche.
+
+L'inconvénient de Zotero réside dans sa difficulté à gérer d'immenses bibliothèques contenant plusieurs milliers de fichiers, nécessitant parfois l'achat d'espace de stockage supplémentaire. De plus, bien que performant, le logiciel n'est pas exempt de défauts. Il arrive qu'il faille compléter manuellement des informations non détectées automatiquement par le connecteur intégré.
+
+Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+
+## BibLaTeX
+
+BibLaTeX est une extension destinée au traitement des bibliographies dans LaTeX et Quarto, généralement associée à Biber, un programme conçu pour le traitement des données bibliographiques spécifiquement pour BibLaTeX. Biber propose des fonctionnalités avancées comme le tri poussé, la gestion de multiples bibliographies et la capacité de traiter des sources bibliographiques dans divers formats. Grâce à sa prise en charge étendue des langues, BibLaTeX est particulièrement adapté à la rédaction d'articles ou de livres pour un public international. Bien que BibLaTeX soit avant tout un package pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils tels que Zotero sous forme de fichiers .bib, qui peuvent ensuite être exploités avec BibLaTeX. L'extension Better BibTeX permet de maintenir automatiquement à jour vos fichiers .bib à partir de Zotero. Il est recommandé de conserver uniquement les références utilisées dans votre fichier et de les organiser par ordre alphabétique, facilitant ainsi la coopération et le partage des sources.
+
+Les inconvénients potentiels de BibLaTeX comprennent une courbe d'apprentissage plus accentuée pour ceux habitués à BibTeX, ainsi que le besoin de mises à jour régulières pour assurer la compatibilité avec les versions les plus récentes de LaTeX. En outre, certains éditeurs académiques ou revues possèdent leurs propres styles de citation et peuvent ne pas accepter les soumissions réalisées avec BibLaTeX, même si cette réticence tend à diminuer.
+
+En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
+
+## Installation et configuration de Zotero
+
+Dans cette section, vous serez amené notamment à installer Zotero ainsi que Better BibTeX. Better BibTeX est une extension de Zotero servant à générer et à maintenir à jour des fichiers .bib compatibles avec BibLaTeX, à partir de Zotero.
+
+### Zotero
+
+-   Installer [Zotero](https://www.zotero.org/download/)
+
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
+
+-   Une fois Zotero installé, vous avez l'option de créer un [compte Zotero](https://www.zotero.org/user/register/). L'identifiant que vous utiliserez sera celui que vous partagerez à vos collaborateurs pour créer et joindre des groupes.
+
+#### Better Bibtex
+
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+-   Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
+
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+
+-   Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+-   Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
+
+![](images/chapitre6_zotero.png){width="170"}
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+![](images/chapitre6_biblatex.png){width="300"}
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façons d'ajouter des références à Zotero :
+
+-   Glisser-déposer à partir de votre bibliothèque personnelle.
+-   Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
+
+## Conclusion
+
+Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
+
+### Revue Systématique
+
+une revue systématique est une synthèse méthodique et exhaustive de la littérature centrée sur une question de recherche spécifique. Elle vise à recenser l'ensemble des travaux académiques, publiés ou non, relatifs à cette question (CITER KIBEE). Comme mentionné précédemment, une telle revue requiert un investissement conséquent en temps et en effort, mais, lorsqu'elle est bien menée, elle présente un grand potentiel scientifique.
+
+La méthode a été choisie selon le processus décisionnel suggéré par. Elle répond aux critères suivants: l'objectif est de recenser toutes les données relatives au sujet, l'équipe de recherche compte plus de deux personnes, le calendrier du projet prévoit plus de 12 mois de recherche, et l'analyse porte sur une unique question de recherche.
+
+La revue systématique sera menée en suivant les 24 étapes décrites par (Citer muka_etal20).
+
+  1. Définir la question de recherche. 
+  1. Établir l'équipe. 
+  1. Définir la stratégie pour l'obtention des références. 
+  1. Définir les critères d'inclusion et d'exclusion.
+  1. Définir le formulaire d'extraction des données.
+  1. Écrire le protocole de recherche servant à guider le processus.
+  1. Appliquer la stratégie de recherche à diverses bases de données.
+  1. Rassembler les références et les résumés.
+  1. Éliminer les doublons.
+  1. Filtrer les résultats à partir des titres et résumés.
+  1. Comparer les résultats des codeurs.
+  1. Télécharger les textes entiers et appliquer les critères d'inclusion et d'exclusion
+  1. Contacter les experts du champs et s'informer à propos des éléments manquants ou non-publiés
+  1. Rechercher manuellement des références additionelles
+  1. Sélectionner les références à inclure et déssiner le diagramme de flux
+  1. Extraire les données des articles
+  1. Évaluer la qualité des articles et les risques de biais
+  1. Préparer la base de donnée pour l'analyse.
+  1. Construire une synthèse descriptive des données.
+  1. Décider si une méta-analyse est appropriée.
+  1. Explorer l'hétérogénéité.
+  1. Évaluer les biais.
+  1. Évaluer la qualité des preuves et la confiance dans les résultats
+  1. Rédiger le rapport de la revue systématique
