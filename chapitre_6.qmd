@@ -80,6 +80,7 @@ GraphiqueLattice <- Data %>%
   # Enlever les valeurs manquantes
   na.omit()  
 
+
 ```
 
 ## Introduction
@@ -308,3 +309,5 @@ Avantages: tidyverse, beauté et possibilités infinies (on peut les animer!!!),
       
       -->
 ```
+
+
