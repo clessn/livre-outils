@@ -54,7 +54,8 @@ Comme nous le constatons, le logiciel libre et le *code ouvert* ont certaines si
 
 ## Les sciences sociales à l'ère du numérique: les enseignements de la philosophie du logiciel libre
 
-En quoi est-ce que ces deux concepts, issus du monde de l'informatique, sont-ils intéressants et/ou important pour les sciences sociales? Pour répondre à cette question, il est important de retourner à la base, soit de se questionner sur que sont les sciences sociales. 
+En quoi est-ce que ces deux concepts, issus du monde de l'informatique, sont-ils intéressants et/ou important pour les sciences sociales? Pour répondre à cette question, il est important de retourner à la base, soit de se questionner sur qu'est la recherche dans les sciences sociales. 
+
 
 
 Ce chapitre à voulu mettre de l'avant le logiciel libre afin d'initier les lecteurs et lectrices à ce monde. Le but n'était pas de présenter de manière exhaustive tout ce champ. Plutôt, nous avons préféré nous limiter aux bases de compréhension, ainsi qu'à quelques exemples. Par conséquent, nous souhaitions qu'à la lecture du chapitre, les lecteurs et lectrices soient mieux outillés pour comprendre et réfléchir par rapport à ce monde, et ainsi insérer ces réflexions dans leurs démarches scientifiques. Générer des idées et des débats nous paraît bien plus promoteur pour l'avenir que d'apprendre par coeur.
@@ -120,6 +121,16 @@ Cependant, le partage du code utilisé reste encore majoritairement volontaire. 
 Dans ce cas-ci, il s'agit plutôt d'un défis auquel le logiciel libre est confronté plutôt qu'une critique quant aux limites de son utilisation. En fait, l'accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constitue un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste [@broca13; @bessen02]. Certaines d'entre elles utilisent les utilisateurs comme une main d'oeuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l'entreprise est la seule bénéficiaire [@couture20]. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales trouble l'essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu'un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui a donné lieu à ce mouvement.
 
 ## Critères de sélection
+
+1. Accessibilité (Gratuit ou peu dispendieux)
+
+2. Popularité (Exsitence communauté d'utilisateur?)
+
+3. Compatibilité (Coupler avec d'autres outils? Critère plus arbitraire qui est lié à notre expérience de la CLESSN)
+
+4. Transparence et réplicabilité (Permet de rendre mes résultats accessible au public? Coupler avec autre outils pour que ça soit possible?)
+
+5. Adaptabilité et flexibilité (Est-ce que l'outils est flexible dans son utilisation? Peut-on le modifier pour qu'il puisse correspondre à nos propres besoins?)
 
 
 <!--

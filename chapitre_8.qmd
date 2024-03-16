@@ -12,11 +12,6 @@ Jozef Rivest, Laurence-Olivier Foisy, Hubert Cadieux
 \end{center}
 ```
 
-```{r}
-getwd()
-```
-
-
 Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Nous souhaitons d'abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l'état de la connaissance que nous avons sur l'IA. Nous sommes aussi bien loin d'être des spécialistes en la matière. Malgré cela, nous pensons qu'initier la réflexion et la discussion s'impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d'éclairer certains enjeux, ou s'il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.
 
 Nous débutons par définir et expliquer ce qu'est l'intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu'il s'agit. Ensuite, nous souhaitons mettre l'accent sur l'évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l'utilisation de l'IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd'hui et dans le futur, avec l'arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites.
@@ -89,9 +84,23 @@ Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrag
 
 Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, **ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche**. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.
 
-Un autre outils soffre à nous afin de trouver des références supplémentaires: *Research Rabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j'ai lu plusieurs articles et/ou chapitres de livre, et que j'ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans *Research Rabbit*. Reprenons notre exemple de la démocratie de tout à l'heure.
+Un autre outils soffre à nous afin de trouver des références supplémentaires: *Research Rabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j'ai lu plusieurs articles et/ou chapitres de livre, et que j'ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans *Research Rabbit*. La @fig-rr1 présente le menu principal du site web. 
 
-**Mettre les exemples dans Research Rabbit et montrer les différentes fonctionnalités, notamment le mapping**
+![Menu principal](images/chapitre9_RR1.png){#fig-rr1}
+
+![Importation manuelle de documents](images/chapitre9_rr2.png){#fig-rr2} 
+
+![Présentation de la littérature similaire](images/chapitre9_RR3.png){#fig-rr3}
+
+![Vue « Timeline » des références](images/chapitre9_rr4.png){#fig-rr4}
+
+Avant toute chose, *Research Rabbit* doit être considéré comme un outils qui m'aidera à *complémenter* ma revue des écrits. En d'autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. *Ellicit* peut nous aider pour cette tâche, mais aussi il est pratique de consulter des *handbooks*^[Il s'agit d'ouvrages généraux qui porte sur un sujet quelconque. Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.] afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d'excellente ressource pour débuter une recherche. 
+
+Utilisons un exemple concret afin d'illustrer l'utilisation de *Research Rabbit*. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chaucn éclairer un aspect particulier à propos de cette question. Une fois qu'ils ont été importé dans Zotero et qu'ils ont été lu, je peux importé ma collection Zotero dans *Research Rabbit* en cliquant sur le bouton *Import Zotero Collection*, situé dans le coin supérieur gauche de la @fig-rr1. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert *Add Paper* situé dans la colone de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouter les premiers articles que nous aurons lu, *Research Rabbit* pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec les articles que j'aurai lu. La @fig-rr3 présente cette cartographie.
+
+Nous avons trois possibilités afin de trouver des articles supplémentaires. La première, est de consulter les « Similar Word ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font parties de ma collection. Cependant, ce n'est pas l'option la plus recommandées. Comme nous pouvons le voir dans la @fig-rr3, en fonction des cinq articles que j'ai importé dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d'utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la @fig-rr4. 
+
+Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes: « All References » et « All Citations ». Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l'article que nous avons lu, et de visualiser les articles qui ont cité celui que nous avons lu. Ces options sont donc très utiles pour passer au « peigne fin » chacun de nos articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans notre utilisation de cette méthode. Il y a un risque « d'effet tunnel », soit que notre revue des écrits manque de largeur et de représentativité des différentes recherche sur le sujet. C'est pourquoi il est important de diversifier ces sources et d'utiliser ces deux options d'une façon complémentaire avec plusieurs articles différents. Il est donc utile d'ajouter au fur et à mesure ses sources dans *Research Rabbit* afin de visualiser la couverture de notre revue des écrits.
 
 ## Quelle est la place du chercheur maintenant?
 
