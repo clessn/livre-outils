@@ -188,3 +188,6 @@ _privatefolder*
 .Ruserdata
 .Rproj
 /.quarto/
+
+.json
+.pdf
