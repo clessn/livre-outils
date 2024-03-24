@@ -188,3 +188,7 @@ _privatefolder*
 .Ruserdata
 .Rproj
 /.quarto/
+
+# Trucs qui créaient des conflits
+.json
+.pdf
