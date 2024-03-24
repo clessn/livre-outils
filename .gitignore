@@ -189,5 +189,6 @@ _privatefolder*
 .Rproj
 /.quarto/
 
+# Trucs qui créaient des conflits
 .json
 .pdf
