@@ -35,12 +35,11 @@ bibliography: livre-outils.bib
 format:
   html:
     theme:
-      - cosmo
-      - r4ds.scss
+      light: pulse
+      dark: slate
     code-link: true
 
     author-meta: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
-    include-in-header: "plausible.html"
     callout-appearance: simple
 
 editor: visual
