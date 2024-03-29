@@ -1,5 +1,5 @@
 ---
-bibliography: references.bib
+bibliography: livre-outils.bib
 ---
 
 ```{=tex}

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
-
-<title>Outils de recherche en sciences sociales numériques - 8&nbsp; À la quête de l’optimisation</title>
+<title>Outils de recherche en sciences sociales numériques - 9&nbsp; Outils d’intelligence artificielle</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,8 +52,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
-
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -65,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapitre_9.html" rel="next">
+<link href="./conclusion.html" rel="next">
 <link href="./chapitre_7.html" rel="prev">
 <link href="./images/logo_CLESSN_inverse.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -76,8 +92,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -103,35 +118,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script>
-
-
+}</script><script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script>
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main">
@@ -151,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Avant-propos</span></a>
@@ -159,61 +164,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La gestion des références</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre10.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
   </div>
 </li>
@@ -224,46 +229,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#limportance-dune-méthode-de-travail-efficace" id="toc-limportance-dune-méthode-de-travail-efficace" class="nav-link active" data-scroll-target="#limportance-dune-méthode-de-travail-efficace"><span class="header-section-number">8.1</span> L’importance d’une méthode de travail efficace</a></li>
-  <li><a href="#logiciel-de-gestion-de-communication-slack" id="toc-logiciel-de-gestion-de-communication-slack" class="nav-link" data-scroll-target="#logiciel-de-gestion-de-communication-slack"><span class="header-section-number">8.2</span> Logiciel de gestion de communication (Slack)<!--AFC: Je trouve ça étrange de mettre ça au singulier et d'inclure Slack dans le titre. Soit je mettrais au pluriel, soit je mettrais carrément comme titre "Slack et autres logiciels de gestion de la communication". Le même principe s'applique aux autres titres de sections.--></a>
+<li><a href="#d%C3%A9finition-et-diff%C3%A9rents-type-dia" id="toc-définition-et-différents-type-dia" class="nav-link active" data-scroll-target="#d%C3%A9finition-et-diff%C3%A9rents-type-dia"><span class="header-section-number">9.1</span> Définition et différents type d’IA</a></li>
+  <li><a href="#l%C3%A9volution-constante-de-lia" id="toc-lévolution-constante-de-lia" class="nav-link" data-scroll-target="#l%C3%A9volution-constante-de-lia"><span class="header-section-number">9.2</span> L’évolution constante de l’IA</a></li>
+  <li>
+<a href="#les-diff%C3%A9rents-outils-de-lia" id="toc-les-différents-outils-de-lia" class="nav-link" data-scroll-target="#les-diff%C3%A9rents-outils-de-lia"><span class="header-section-number">9.3</span> Les différents outils de l’IA</a>
   <ul class="collapse">
-  <li><a href="#pourquoi-utiliser-une-de-ces-plateformes" id="toc-pourquoi-utiliser-une-de-ces-plateformes" class="nav-link" data-scroll-target="#pourquoi-utiliser-une-de-ces-plateformes"><span class="header-section-number">8.2.1</span> Pourquoi utiliser une de ces plateformes<!--AFC: Sous-titre à enlever. On vient d'expliquer pourquoi utiliser ces plateformes, la discussion se précise un peu tout simplement.--></a></li>
-  <li><a href="#comment-utiliser-votre-logiciel-efficacement" id="toc-comment-utiliser-votre-logiciel-efficacement" class="nav-link" data-scroll-target="#comment-utiliser-votre-logiciel-efficacement"><span class="header-section-number">8.2.2</span> Comment utiliser votre logiciel efficacement</a></li>
-  </ul></li>
-  <li><a href="#logiciel-de-gestion-de-versions-décentralisé" id="toc-logiciel-de-gestion-de-versions-décentralisé" class="nav-link" data-scroll-target="#logiciel-de-gestion-de-versions-décentralisé"><span class="header-section-number">8.3</span> Logiciel de gestion de versions décentralisé<!--AFC: Rajouter Git et GitHub si on mentionne Slack dans le titre de la section précédente.--></a>
-  <ul class="collapse">
-  <li><a href="#pourquoi-choisir-git-et-github" id="toc-pourquoi-choisir-git-et-github" class="nav-link" data-scroll-target="#pourquoi-choisir-git-et-github"><span class="header-section-number">8.3.1</span> Pourquoi choisir Git et GitHub?</a></li>
-  <li><a href="#comment-les-utiliser-efficacement-en-parallèle-à-dropbox-etc." id="toc-comment-les-utiliser-efficacement-en-parallèle-à-dropbox-etc." class="nav-link" data-scroll-target="#comment-les-utiliser-efficacement-en-parallèle-à-dropbox-etc."><span class="header-section-number">8.3.2</span> Comment les utiliser efficacement (en parallèle à Dropbox, etc.)<!--AFC: Ne jamais mettre de etc. dans un titre. Reformuler pour "Comment utiliser Git et GitHub efficacement"--></a></li>
-  <li><a href="#pourquoi-prioriser-git-et-github-pour-les-chercheurs-en-sciences-sociales" id="toc-pourquoi-prioriser-git-et-github-pour-les-chercheurs-en-sciences-sociales" class="nav-link" data-scroll-target="#pourquoi-prioriser-git-et-github-pour-les-chercheurs-en-sciences-sociales"><span class="header-section-number">8.3.3</span> Pourquoi prioriser Git et GitHub pour les chercheurs en sciences sociales<!--AFC: Titre plus court--><!--AFC: Important! Section à regrouper avec la section "Avantages". C'est mêlant, ça semble se répéter. Il faut réorganiser ça.--></a></li>
-  <li><a href="#pratiques-à-éviter-sur-github-pour-les-chercheurs-en-sciences-sociales" id="toc-pratiques-à-éviter-sur-github-pour-les-chercheurs-en-sciences-sociales" class="nav-link" data-scroll-target="#pratiques-à-éviter-sur-github-pour-les-chercheurs-en-sciences-sociales"><span class="header-section-number">8.3.4</span> Pratiques à éviter sur GitHub pour les chercheurs en sciences sociales<!--AFC: Même commentaire que pour la section précédente... Titre à revoir. Pourquoi parle-t-on juste de GitHub dans le titre ici mais pas le précédent?--></a></li>
-  <li><a href="#exemple-dutilisation-de-git-et-de-github-pour-un-chercheur-en-sciences-sociales" id="toc-exemple-dutilisation-de-git-et-de-github-pour-un-chercheur-en-sciences-sociales" class="nav-link" data-scroll-target="#exemple-dutilisation-de-git-et-de-github-pour-un-chercheur-en-sciences-sociales"><span class="header-section-number">8.3.5</span> Exemple d’utilisation de Git et de GitHub pour un chercheur en sciences sociales</a></li>
-  <li><a href="#github-desktop" id="toc-github-desktop" class="nav-link" data-scroll-target="#github-desktop"><span class="header-section-number">8.3.6</span> GitHub Desktop</a></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.4</span> Conclusion<!--AFC: Renommer cette section, ce n'est pas la conclusion du livre. Aussi, je ne sais pas à quel niveau hiérarchique la placer.--></a></li>
-  <li><a href="#outils-dentreposage-des-données" id="toc-outils-dentreposage-des-données" class="nav-link" data-scroll-target="#outils-dentreposage-des-données"><span class="header-section-number">8.5</span> Outils d’entreposage des données<!--AFC: Mentionner Dropbox?--></a>
-  <ul class="collapse">
-  <li><a href="#entreposage-de-données-non-sensibles" id="toc-entreposage-de-données-non-sensibles" class="nav-link" data-scroll-target="#entreposage-de-données-non-sensibles"><span class="header-section-number">8.5.1</span> Entreposage de données non sensibles</a></li>
-  <li><a href="#entreposage-de-données-sensibles" id="toc-entreposage-de-données-sensibles" class="nav-link" data-scroll-target="#entreposage-de-données-sensibles"><span class="header-section-number">8.5.2</span> Entreposage de données sensibles</a></li>
-  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1"><span class="header-section-number">8.5.3</span> Conclusion</a></li>
-  </ul></li>
+<li><a href="#les-llms" id="toc-les-llms" class="nav-link" data-scroll-target="#les-llms"><span class="header-section-number">9.3.1</span> 1. Les LLMs</a></li>
+  <li><a href="#les-assistants-de-traduction" id="toc-les-assistants-de-traduction" class="nav-link" data-scroll-target="#les-assistants-de-traduction"><span class="header-section-number">9.3.2</span> 2. Les Assistants de Traduction</a></li>
+  <li><a href="#les-assistants-de-revue-de-litt%C3%A9rature" id="toc-les-assistants-de-revue-de-littérature" class="nav-link" data-scroll-target="#les-assistants-de-revue-de-litt%C3%A9rature"><span class="header-section-number">9.3.3</span> 3. Les Assistants de Revue de littérature</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</li>
+  <li><a href="#quelle-est-la-place-du-chercheur-maintenant" id="toc-quelle-est-la-place-du-chercheur-maintenant" class="nav-link" data-scroll-target="#quelle-est-la-place-du-chercheur-maintenant"><span class="header-section-number">9.4</span> Quelle est la place du chercheur maintenant?</a></li>
+  <li><a href="#lia-en-sciences-sociales" id="toc-lia-en-sciences-sociales" class="nav-link" data-scroll-target="#lia-en-sciences-sociales"><span class="header-section-number">9.5</span> L’IA en sciences sociales</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">9.6</span> Conclusion</a></li>
+  <li>
+<a href="#utilisation-du-package-openai" id="toc-utilisation-du-package-openai" class="nav-link" data-scroll-target="#utilisation-du-package-openai"><span class="header-section-number">9.7</span> Utilisation du package OpenAI</a>
+  <ul class="collapse">
+<li><a href="#installation-et-chargement-du-package" id="toc-installation-et-chargement-du-package" class="nav-link" data-scroll-target="#installation-et-chargement-du-package"><span class="header-section-number">9.7.1</span> Installation et chargement du package</a></li>
+  </ul>
+</li>
+  <li><a href="#configuration-de-lapi" id="toc-configuration-de-lapi" class="nav-link" data-scroll-target="#configuration-de-lapi"><span class="header-section-number">9.8</span> Configuration de l’API</a></li>
+  <li><a href="#utilisation-de-lapi" id="toc-utilisation-de-lapi" class="nav-link" data-scroll-target="#utilisation-de-lapi"><span class="header-section-number">9.9</span> Utilisation de l’API</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes"><span class="header-section-number">9.10</span> Notes</a></li>
+  <li><a href="#annexe-1" id="toc-annexe-1" class="nav-link" data-scroll-target="#annexe-1"><span class="header-section-number">9.11</span> Annexe 1</a></li>
+  <li><a href="#annexe-2" id="toc-annexe-2" class="nav-link" data-scroll-target="#annexe-2"><span class="header-section-number">9.12</span> Annexe 2</a></li>
+  <li><a href="#annexe-2-1" id="toc-annexe-2-1" class="nav-link" data-scroll-target="#annexe-2-1"><span class="header-section-number">9.13</span> Annexe 2</a></li>
+  <li>
+<a href="#%C3%A0-voir" id="toc-à-voir" class="nav-link" data-scroll-target="#%C3%A0-voir"><span class="header-section-number">10</span> À voir</a>
+  <ul class="collapse">
+<li><a href="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt" id="toc-défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt" class="nav-link" data-scroll-target="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt"><span class="header-section-number">10.1</span> Défis et enjeux éthiques de l’IA, focus sur ChatGPT</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-chap8" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span>
+</h1>
 </div>
 
 
@@ -277,270 +287,361 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header>
+</header><p>Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.</p>
+<p>Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites. <!--
+Ce chapitre vise à initier les lecteurs et lectrices à l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Nous souhaitons d'abord et avant tout mener les lecteurs vers la réflexion. S’intéresser à l’IA, un domaine complexe et en constante évolution, représente un défi. C’est pourquoi les pages suivantes cherchent avant tout à encourager la réflexion, plutôt qu’à offrir des réponses définitives. Par conséquent, si ce chapitre parvient à éclairer certains enjeux ou simule davantage de questionnements, alors objectif sera atteint.
 
+Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une tâche simple, mais il s’agit d’une étape essentielle pour ensuite aborder les enjeux qui y sont reliés, notamment en raison de son évolution constante. Du point de vue éthique, différentes préoccupations telles que le plagiat à l’aide de l’IA peuvent être abordés. Cela mène à se questionner sur la place du chercheur.euse, aujourd'hui et dans le futur, avec l'arrivée de ces nouvelles technologies. Enfin, la dernière section se penche sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quelles en sont les limites?
+--></p>
+<section id="définition-et-différents-type-dia" class="level2" data-number="9.1"><h2 data-number="9.1" class="anchored" data-anchor-id="définition-et-différents-type-dia">
+<span class="header-section-number">9.1</span> Définition et différents type d’IA</h2>
+<p>Qu’est-ce que l’intelligence artificielle (IA)? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles »? Dans un premier temps, il est important de préciser que l’intelligence artificielle est un champ d’études <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic 2022</a>)</span>. Par conséquent, il s’agit d’un ensemble d’objets, relativement vaste et en constante expansion, qui s’intéressent, à sa façon, à l’intelligence artificielle. Pour préciser ce propos, prenons l’exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d’études, qui ont chacun leur propre objet d’intérêt. La philosophie politique, les relations internationales, la politique comparée et l’étude de l’opinion publique, par exemple, sont tous des sous-champs qui s’intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu’il n’y a pas de consensus dans la définition de l’IA <span class="citation" data-cites="wang19 konig_etal22">(<a href="references.html#ref-wang19" role="doc-biblioref">Wang 2019</a> ; <a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al. 2022</a>)</span>. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d’une manière précise et consensuelle, quelque chose qui évolue constamment <span class="citation" data-cites="devedzic22 bertolini20">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic 2022</a> ; <a href="references.html#ref-bertolini20" role="doc-biblioref">Bertolini 2020, 15</a>)</span>?</p>
+<p>Deux définitions de l’IA peuvent tout de même être retenues. La première vient de John McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007, 2</a>)</span> : « Il s’agit de la science et de l’ingénierie qui consistent à créer des machines intelligentes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l’intelligence humaine, mais l’IA ne doit pas se limiter aux méthodes qui sont biologiquement observables. » [Traduction DeepL] La seconde définition provient de la compagnie IBM <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">2023a</a>)</span> : « Dans sa forme la plus simple, l’intelligence artificielle est un domaine qui combine l’informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l’apprentissage automatique et de l’apprentissage profond, qui sont souvent mentionnés en conjonction avec l’intelligence artificielle. Ces disciplines sont composées d’algorithmes d’IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d’entrée. » [Traduction DeepL] Ces extraits permettent de comprendre que l’IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines « intelligentes » en leur donnant la capacité de résoudre des problèmes par elles-mêmes.</p>
+<p>Ces définitions restent toutefois à préciser, notamment dans le champ d’application de l’IA : qu’en est-il concrètement ? Comment est-ce utilisé ? Comment ça fonctionne ? Si l’IA se distingue enn plusieurs types, en faire la liste et identifier leurs différentes branches et applications possibles serait fastidieux et s’écarterait de l’objectif de ce chapitre introductif. Cependant, pour ceux désirant en savoir plus sur le sujet, les articles de McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007</a>)</span> et de Hanchen et al. <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">2023</a>)</span>, ainsi que le Cambridge Handbook of Artificial Intelligence <span class="citation" data-cites="konig_etal22">(<a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al. 2022</a>)</span> sont très riches et illustratifs sur ce qu’est l’IA ainsi que sur ses champs d’applications.</p>
+<p>Avant toute chose, il est important de distinguer l’IA général (strong) du précis (narrow). Le premier, et le moins populaire en nombre de recherches et d’applications, cherche à développer une machine qui aurait les mêmes capacités cognitives que l’humain, non seulement en termes de résolution de problème, d’apprentissage et de planification, mais aussi qui serait dotée d’une conscience de soi <span class="citation" data-cites="ibm23 konig_etal22">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM 2023a</a> ; <a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al. 2022</a>)</span>. Le deuxième est plus restrictif, se limitant à la réalisation d’un ou de plusieurs objectifs spécifiques. De ces deux visées, il y a trois principaux champs de recherche qui se penchent sur les méthodes de fonctionnement de l’IA : l’apprentissage machine (machine learning), les réseaux neuronaux artificiel (artificial neural networks) ainsi que l’apprentissage profond (deep learning).</p>
+<p>L’apprentissage machine : « […] consiste à programmer des ordinateurs pour optimiser un critère de performance à l’aide de données d’exemple ou d’expériences passées. Nous avons un modèle défini jusqu’à certains paramètres, et l’apprentissage est l’exécution d’un programme informatique pour optimiser les paramètres du modèle à l’aide des données d’entraînement ou de l’expérience passée. » [Traduction DeepL] (Alpaydin et Bach 2014, 3). Le but est d’entraîner le modèle afin qu’il puisse reconnaître des tendances, et qu’il puisse décrire et/ou faire des prédictions à partir de ces tendances <span class="citation" data-cites="alpaydin_bach14">(<a href="references.html#ref-alpaydin_bach14" role="doc-biblioref">Alpaydin and Bach 2014, 3</a>)</span>. Il est le champ le plus populaire dans la recherche faite sur l’IA, notamment parce qu’il constitue une base importante pour les autres recherches dans le domaine <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic 2022</a>)</span>.</p>
+<p>Ensuite, un sous-champ de l’apprentissage machine, l’apprentissage profond : « […] fait référence à un réseau neuronal composé de plus de trois couches […]. L’apprentissage en profondeur automatise une grande partie de l’extraction des caractéristiques, éliminant ainsi une partie de l’intervention humaine manuelle nécessaire et permettant l’utilisation d’ensembles de données plus importants. Il peut ingérer des données non structurées dans leur forme brute et déterminer automatiquement la hiérarchie des caractéristiques qui distinguent les différentes catégories de données les unes des autres, ne nécessitant pas d’intervention humaine. » [Traduction DeepL] <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM 2023a</a>)</span>. Ainsi, l’apprentissage profond permet une certaine forme d’automatisation des tâches demandées à l’IA, en lui fournissant les capacités nécessaires d’apprendre par lui-même pour corriger et améliorer son fonctionnement. Pour ce faire, on doit développer des structures neuronales artificielles, qui s’inspirent des neurones du cerveau humain.</p>
+<p>C’est d’ailleurs la tâche de ceux qui s’intéressent aux réseaux neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA) sont constitués d’une couche de nœuds, contenant une couche d’entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque nœud, ou neurone artificiel, se connecte à un autre et possède un poids et un seuil associés. Si la sortie d’un nœud individuel est supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie des données à la couche suivante du réseau. Dans le cas contraire, aucune donnée n’est transmise à la couche suivante du réseau. » [Traduction DeepL] (IBM 2023b). Ainsi, le but est de reproduire les structures cognitives humaines, afin de permettre à l’IA d’accomplir des tâches plus complexes. L’une des principales utilités de ce sous-champ est qu’il permet d’augmenter la rapidité du classement de données ; la reconnaissance vocale ou d’image, par exemple, ne prend que quelques minutes grâce à cela, contrairement à plusieurs heures lorsque fait par des humains <span class="citation" data-cites="ibm23a">(<a href="references.html#ref-ibm23a" role="doc-biblioref">IBM 2023b</a>)</span>.</p>
+</section><section id="lévolution-constante-de-lia" class="level2" data-number="9.2"><h2 data-number="9.2" class="anchored" data-anchor-id="lévolution-constante-de-lia">
+<span class="header-section-number">9.2</span> L’évolution constante de l’IA</h2>
+<p>Plusieurs chercheurs, dont le professeur Yoshua Bengio de l’Université de Montréal, ont lancé plusieurs avertissements sur le développement de l’IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans The Economist, M. Bengio <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">2023</a>)</span> nous dit qu’il prévoyait le développement d’une IA avec des capacités similaires à celles de l’humain d’ici quelques décennies, peut-être un siècle. Depuis l’arrivée de ChatGPT-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">Bengio 2023</a>)</span>. Dans les dix dernières années seulement, les systèmes de reconnaissance d’images et de langages en sont venus à dépasser les capacités humaines <span class="citation" data-cites="roser22">(<a href="references.html#ref-roser22" role="doc-biblioref">Roser 2022</a>)</span>. La figure 1 présente cette évolution.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/chapitre9_figure1.png" class="img-fluid figure-img"></p>
+<figcaption>Évolution de l’IA depuis 1998</figcaption></figure>
+</div>
+<div style="page-break-after: always;"></div>
+<p>Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi-exponentielle. Cette progression fulgurante nous permet de faire quelque constat pour appréhender l’évolution future. Ce qui est intéressant de la recherche dans ce domaine, c’est que le développement des capacités de l’IA permet, en retour, de la développer encore plus rapidement. L’IA peut rendre l’IA exponentiellement plus puissante <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">Harari 2023</a>)</span>. Elle est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d’auto-améliorassions, que si elle était uniquement dépendante de l’humain.</p>
+<p>En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l’IA? Tout d’abord, il est intéressant de commencer à réfléchir ainsi qu’à analyser les différents impacts que l’IA a sur nos sociétés. Les avancés dans le domaine en plus de l’accessibilité à ces technologies, tel que Large Language Model (LLM), en font de nouveaux objets d’étude actuel, et surtout sans grandes réponses. Yuval Noah Harrari <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">2023</a>)</span>, historien et philosophe, explique dans un article que la capacité de l’IA à manipuler ainsi qu’à générer du langage en font des outils puissants qui ont le potentiel d’avoir de profond impact sur nos civilisations. Par conséquent, l’étude des effets de l’IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » [Traduction libre] <span class="citation" data-cites="bremmer_suleyman23">(<a href="references.html#ref-bremmer_suleyman23" role="doc-biblioref">Bremmer and Suleyman 2023, 32</a>)</span>. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l’interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu’une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.</p>
+</section><section id="les-différents-outils-de-lia" class="level2" data-number="9.3"><h2 data-number="9.3" class="anchored" data-anchor-id="les-différents-outils-de-lia">
+<span class="header-section-number">9.3</span> Les différents outils de l’IA</h2>
+<p>Cette section vise à présenter différents outils de l’intelligence artificielle aux lecteurs. Ce qui est important de comprendre ici, et pour faire suite à la section précédente, c’est que les outils présenté ici risque d’avoir changé entre le moment d’écrire ce chapitre et le moment où les lecteurs liront le chapitre. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d’autres pourraient être complètement nouvelles. Par conséquent, l’objectif ici est de présenter certaines utilités et fonctionnalités de l’IA, et surtout d’inciter les lectuers à développer leurs propres capacités réflexives quant à leur utilisation de l’IA. Cette technologie offre de nouvelles opportunités, mais elle apportea aussi son lot d’enjeux et de questions dont il vaut mieux s’y intéresser afin de développer une utilisation saine et intégre de ces outils.</p>
+<p>Trois catégories d’outils seront présentées: les « <em>Large Language Models</em> » (LLM), les assistants de traduction ainsi que les assistants de revue de littérautre.</p>
+<section id="les-llms" class="level3" data-number="9.3.1"><h3 data-number="9.3.1" class="anchored" data-anchor-id="les-llms">
+<span class="header-section-number">9.3.1</span> 1. Les LLMs</h3>
+</section><section id="les-assistants-de-traduction" class="level3" data-number="9.3.2"><h3 data-number="9.3.2" class="anchored" data-anchor-id="les-assistants-de-traduction">
+<span class="header-section-number">9.3.2</span> 2. Les Assistants de Traduction</h3>
+</section><section id="les-assistants-de-revue-de-littérature" class="level3" data-number="9.3.3"><h3 data-number="9.3.3" class="anchored" data-anchor-id="les-assistants-de-revue-de-littérature">
+<span class="header-section-number">9.3.3</span> 3. Les Assistants de Revue de littérature</h3>
+<p>Dans cette section, deux principaux outils seront présentés: <em>research rabbit</em> et <em>ellicit</em>. Il s’agit de deux ressources gratuites en ligne qui facilite le début d’une revue des écrits, notamment lorsque l’on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champs d’étude. Ces deux outils sont d’ailleurs compatibles aves <em>Zotero</em>, qui fut présenté au chapitre 4 de ce livre.</p>
+<p>Débutons avec <em>Ellicit</em>. Avec l’intelligence artificielle, cet outils suggère des articles et des livres scientifiques à partir d’une question de recherche préliminaire, ou à partir de concepts. L’application offre une version gratuite, mais qui est toutefois limité dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, il faut l’utiliser avec parcimonie. Afin de démontrer l’utilité de ce logiciel, utilision un exemple concret.</p>
+<div id="fig-ellicit" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: Menu d’accueil d’Ellicit
+</figcaption></figure>
+</div>
+<p>Par exemple, disons que je m’intéresse à la question suivante: Qu’est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. <em>Ellicit</em> offre une solution à ce problème. La <a href="#fig-ellicit" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> correspond au menu d’accueil du site web. Une fois là, je n’aurais qu’à écrire ma question dans la case « <em>Ask a research question</em> ». Les résultats générés sont représentés dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>9.2</span></a> et <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>9.3</span></a></p>
+<div>
 
-<!--AFC: Je changerais le titre, il ne m'évoque rien de bien clair. "Plateformes de travail collaboratif&nbsp;: comment travailler efficacement?"-->
-<p>Le monde de la recherche en sciences sociales numériques est en constante évolution, offrant de nouvelles opportunités mais aussi des défis uniques.<!--AFC: Peut-être trouver une phrase moins générique pour commencer?--> Dans cette quête incessante pour optimiser notre efficacité et notre collaboration, l’utilisation des bons outils devient la clé de la réussite. Que vous soyez un chercheur en herbe ou un professionnel chevronné, la manière dont vous organisez vos méthodes de travail et gérez vos ressources peut déterminer la qualité et l’impact de vos résultats.</p>
-<section id="limportance-dune-méthode-de-travail-efficace" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="limportance-dune-méthode-de-travail-efficace"><span class="header-section-number">8.1</span> L’importance d’une méthode de travail efficace</h2>
-<p>Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d’une méthode de travail efficace. <!-- formulation étrange -LO --> Qu’il s’agisse de travailler en solitaire ou en équipe, l’ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.</p>
-<p>Ce chapitre vous emmènera à découvrir une gamme d’outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d’outils qui vous guideront dans cette quête d’optimisation&nbsp;:</p>
-<ol type="1">
-<li><p><strong>Logiciels de communication</strong>&nbsp;: La communication transparente est le cœur d’une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d’idées et d’informations.</p></li>
-<li><p><strong>Logiciels de gestion de versions décentralisé</strong>&nbsp;: Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.</p></li>
-<li><p><strong>Outils d’entreposage de données</strong>&nbsp;: Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.</p></li>
-</ol>
-<p>Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d’optimisation et d’excellence dans notre travail.</p>
-</section>
-<section id="logiciel-de-gestion-de-communication-slack" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="logiciel-de-gestion-de-communication-slack"><span class="header-section-number">8.2</span> Logiciel de gestion de communication (Slack)<!--AFC: Je trouve ça étrange de mettre ça au singulier et d'inclure Slack dans le titre. Soit je mettrais au pluriel, soit je mettrais carrément comme titre "Slack et autres logiciels de gestion de la communication". Le même principe s'applique aux autres titres de sections.--></h2>
-<p>Dans tout bon projet de recherche, la communication est primordiale. Que ce soit pour décrire les avancements, discuter des étapes à venir, entretenir un partenariat avec des partenaires ou simplement structurer ses pensées, la plateforme par laquelle vous communiquez vous accompagne à chacune des étapes du travail. Il est donc important de choisir un outil qui convient bien à vos projets et de prendre le temps de l’apprivoiser et d’optimiser son utilisation.</p>
-<p>Il y a tellement de plateformes différentes pour communiquer qu’il faut être prudent par rapport au nombre utilisé. Si vous ne faites pas un choix, vous pouvez, sans vous en rendre compte, mêler Teams, courriels, Zoom et autres<!--AFC: Mêler les courriels et Zoom... Pas convaincu. Soit nommer des logiciels qui ont la même fonction, soit enlever l'énumération ici.-->. Rapidement, vous perdez le contrôle de ce qui est dit. Nous vous proposons d’opter pour un logiciel de gestion de communication. Il existe plusieurs logiciels du genre, tels que Microsoft Teams, Slack, Google Workspace et Workplace. Toutes ces options peuvent vous permettre de collaborer efficacement en équipe. Dans le cadre de nos travaux, nous utilisons Slack. C’est donc principalement de cet outil que nous parlerons dans cette section, mais n’hésitez pas à vérifier quelle plateforme correspond le mieux à vos besoins.<!--AFC: Je ferais un meilleur plaidoyer pour Slack. C'est l'un des logiciels les plus utilisés et adaptés pour cette tâche. Je me demande si c'est nécessaire de dire qu'on l'utilise "pour nos travaux".--></p>
-<section id="pourquoi-utiliser-une-de-ces-plateformes" class="level3" data-number="8.2.1">
-<h3 data-number="8.2.1" class="anchored" data-anchor-id="pourquoi-utiliser-une-de-ces-plateformes"><span class="header-section-number">8.2.1</span> Pourquoi utiliser une de ces plateformes<!--AFC: Sous-titre à enlever. On vient d'expliquer pourquoi utiliser ces plateformes, la discussion se précise un peu tout simplement.--></h3>
-<p>Peu importe votre niveau d’implication, la collaboration et la communication sont inévitables en recherche. La science n’est pas une discipline qui se développe en solitaire, elle nécessite des échanges et des débats. Les équipes de recherche sont souvent dispersées géographiquement. Même si vous travaillez actuellement seulement avec votre directeur, il est certain que plusieurs équipes de recherche dans votre département<!--AFC: Peut-être un peu poussé. Faculté, école, université? Je suis sûr qu'il y a des petits départements où personne n'utilise ça.--> utilisent un tel logiciel. Un courriel peut faire l’affaire pour une discussion ponctuelle qui se règle rapidement. Cependant, dans une équipe de travail dynamique, où plusieurs membres participent à divers projets, les courriels deviennent rapidement chaotiques, il est difficile de retracer ce qui a été dit<!--AFC: J'ajouterais "dans les nombreuses chaînes de courriels."--> et de conserver les pièces jointes. Les discussions deviennent rapidement trop complexes pour le médium utilisé.</p>
-<p>Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante&nbsp;: une structure simple et adaptée. <!-- Drole de structure de phrase ? --> Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l’endroit où vos conversations écrites se trouvent. Il est aussi possible d’y télécharger l’application mobile, ce qui facilite l’accessibilité et la connexion des membres de l’équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d’éviter les oublis et de réduire le stress.</p>
-</section>
-<section id="comment-utiliser-votre-logiciel-efficacement" class="level3" data-number="8.2.2">
-<h3 data-number="8.2.2" class="anchored" data-anchor-id="comment-utiliser-votre-logiciel-efficacement"><span class="header-section-number">8.2.2</span> Comment utiliser votre logiciel efficacement</h3>
-<p>Une fois que vous êtes convaincu d’aller de l’avant avec un de ces outils, vous devrez apprendre à bien vous en servir. Voici quelques trucs qui pourront vous aider à optimiser son utilisation. Les points ci-dessous font référence à Slack, mais peuvent très bien être adaptés à d’autres plateformes.<!--AFC: Mini-reformulation ici pour une meilleure structure. Ils s'appliquent également à d'autres plateformes? Où ils s'appliquent, moyennant certaines adaptations?--></p>
-<section id="structuration" class="level4" data-number="8.2.2.1">
-<h4 data-number="8.2.2.1" class="anchored" data-anchor-id="structuration"><span class="header-section-number">8.2.2.1</span> Structuration</h4>
-<p>Il est important de bien réfléchir à la structuration de vos chaînes. Si vous ne faites pas ce travail, les chaînes peuvent se multiplier rapidement et les conversations se mettent alors à s’entrecroiser, vous faisant ainsi perdre le fil. L’objectif de ces outils étant d’évitez ces problèmes, vous ne voulez pas perdre l’avantage comparatif que vous venez tout juste de gagner face aux courriels! La structuration des chaînes devrait être similaire à celle de votre équipe de recherche. Si vous utilisez Notion ou un autre logiciel du genre<!--AFC: Ajouter la référence au chapitre sur Notion, et préciser que c'est un outil de gestion des tâches plutôt qu'un outil "du genre".-->, la structure des deux outils devrait être la même<!--AFC: J'ai l'impression que ce conseil, tel que formulé, est plus utile pour les départements que pour les étudiants qui commencent. C'est OK de mentionner l'importance de se structurer, mais il ne faut pas assumer que la structure de la CLESSN, avec autant de projets et de chaînes, est si commune. Je n'enlèverais rien ici, mais je nuancerais peut-être certaines tournures de phrase.-->. Nous vous proposons d’avoir une chaîne pour chacun des projets. Si le projet est trop gros et que la conversation devient chaotique, pensez à créer une sous-chaîne (un sous-projet)<!--AFC: Ou une nouvelle chaîne--> qui vous permettra d’aborder un sujet précis, sans mêler les discussions. Pour faciliter la structuration des chaînes, vous pouvez utiliser des préfixes, pour classer les chaînes par thème, ou autre typologie qui vous convient.<!--AFC: J'enlèverais cette phrase, à part si on donne des exemples concrets. Le regroupement des chaînes par projet (en créant quelques sections) est très faisable dans la plupart des équipes de recherche, qui travaillent sur peu de projets à la fois. Ce serait le conseil que je donnerais à la place... Mais seulement dans les cas où les équipes travaillent sur beaucoup de projets à la fois. Le reste du temps, honnêtement, un étudiant peut très bien se débrouiller en ayant une structuration de base, ce n'est vraiment pas un gros défi quand il y a 5-6 chaînes à suivre.--> Également, utilisez les Espaces d’équipe<!--AFC: C'est quoi un Espace d'équipe? Je ne connais pas ça. Et plus loin, on parle d'espaces de travail... Il faudrait démêler à travers le chapitre ce qu'est un espace d'équipe ou un espace de travail.-->. Chaque équipe devrait avoir son propre espace, avec ses propres chaînes. Vous pouvez faire partie de plusieurs équipes et naviguer à travers les espaces. Si plusieurs équipes partagent un même espace de travail, vous pourriez perdre le contrôle de sa structure.<!--AFC: Ça c'est une notion importante je trouve, car plusieurs projets peut être synonyme de plusieurs espaces de travail Slack. Les étudiants qui travaillent sur plusieurs contrats de recherche risquent d'avoir plusieurs espaces de travail Slack. Il faudrait peut-être expliquer ce qui distingue une chaîne, un regroupement de chaînes par projet (juste de la structuration interne pertinente quand l'espace de travail devient trop gros) et un espace de travail.--></p>
-</section>
-<section id="maintenance" class="level4" data-number="8.2.2.2">
-<h4 data-number="8.2.2.2" class="anchored" data-anchor-id="maintenance"><span class="header-section-number">8.2.2.2</span> Maintenance</h4>
-<p>Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n’est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d’équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, puisque vous pourrez toujours les désarchiver quand cela sera nécessaire<!--AFC: "Si cela est nécessaire." ... En fait, archiver et désarchiver est inutile pour ceux qui n'ont pas la version payante de Slack. Je me demande si ce conseil est utile dans ce cas-là.-->. Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Faites le tour de ce qui est épinglé à l’occasion pour vérifier si c’est encore pertinent. Cela peut paraître énergivore, mais l’efficacité de votre travail d’équipe va en bénéficier. Également, rappelez aux membres de votre équipe d’utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes.<!--AFC: Donner un exemple concret. Par exemple, si on alterne entre une discussion de groupe et une chaîne, les deux incluant les mêmes personnes, on risque rapidement d'être aussi mêlé que si on utilisait une chaîne de courriels! Ce conseil-là me semble beaucoup plus important que le reste.--> Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d’équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l’usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux. Vous pouvez alors retourner à la planche à dessin<!--AFC: Et changer l'organisation des chaînes-->. Assurez-vous que toute l’équipe comprenne bien comment utiliser Slack. Si ce n’est pas le cas, formez-les.<!--AFC: À qui s'adresse ce chapitre? À des profs ou à des élèves?--> Une structure adaptée et une équipe bien formée peuvent faire des miracles.</p>
-</section>
-<section id="collaboration" class="level4" data-number="8.2.2.3">
-<h4 data-number="8.2.2.3" class="anchored" data-anchor-id="collaboration"><span class="header-section-number">8.2.2.3</span> Collaboration</h4>
-<p>La grande majorité des conversations devraient se faire dans les chaînes. Les conversations privées ont leur utilité, vous vous en servirez. Il est parfois nécessaire d’avoir des discussions plus confidentielles et de parler rapidement à quelqu’un sur un sujet éphémère. Toutefois, par soucis de transparence et d’inclusion, toute discussion à propos d’un projet devrait se faire dans sa chaîne. Si vous jugez qu’un membre d’une chaîne ne devrait pas lire ce que vous avez à dire sur le projet, c’est qu’il ne devrait pas faire partie de la chaîne. Par rapport aux membres, trouvez le bon équilibre par rapport à qui devrait être dans quelle chaîne. L’objectif n’est pas d’exclure et de cacher du contenu, vous voulez une équipe transparente. Vous voulez que vos membres restent bien informés de l’avancement des projets sans les submerger d’information qui ne leur est pas utile. C’est à vous de trouver la formule gagnante. Invitez vos partenaires externes dans votre espace d’équipe. Créez des chaînes spécifiques aux partenaires pour que les conversations externes soient tout aussi organisées. N’invitez pas vos partenaires dans vos chaînes privées, question de confidentialité. Si un partenaire n’a pas l’habitude d’utiliser Slack ou l’outil que vous utilisez, proposez-lui de vous y joindre quand même. Moins vous utilisez les outils des autres, plus vous gardez centralisées vos communications et évitez de jongler avec plusieurs plateformes.</p>
-</section>
-<section id="optimisation-personnelle" class="level4" data-number="8.2.2.4">
-<h4 data-number="8.2.2.4" class="anchored" data-anchor-id="optimisation-personnelle"><span class="header-section-number">8.2.2.4</span> Optimisation personnelle</h4>
-<p>Une fois que la structure d’équipe est définie et que vos membres et vos partenaires sont à l’aise avec l’utilisation de la plateforme, il est temps d’organiser la structure de votre Slack personnel. Créez des sections pour trier les chaînes. La structure d’équipe est essentielle, mais une fois qu’elle est déterminée, chaque membre n’utilise pas forcément les chaînes de la même façon. Vous pouvez vous créer une section de favoris, ou encore différentes sections par rapport aux différents thèmes pour y faciliter la navigation. Également, ajustez vos paramètres de notifications. C’est à vous de déterminer quelle chaînes méritent de produire des alertes, et à quels moments vous souhaitez les recevoir. Slack a plusieurs applications intégrées qui facilitent la compatibilité avec vos autres outils. Vous pouvez connecter votre calendrier, votre Notion<!--AFC: Remplacer par "outil de gestion de tâches"--> et votre GitHub pour recevoir des alertes pertinentes. Allez explorer ces applications pour déterminer lesquelles vous conviennent.<!--AFC: Teams offre quant à lui une intégration avec les autres outils et logiciels Microsoft. Peut-être intéressant à mentionner.--></p>
-<!--AFC: Pour cette première section jusqu’ici, je pense que beaucoup de profs auraient avantage à lire ça tel quel, et je pense qu’il faudrait penser à des avenues de publication séparées pour s’adresser aux profs spécifiquement. Travailler avec des profs organisés, c’est motivant. Mais c’est aussi le gros problème du chapitre jusqu'ici: il faut changer le ton si on veut s’adresser à des étudiants débutants qui font des serpents et échelles, être moins impératif dans la formulation des recommandations et vanter les mérites des outils plutôt que forcer certaines manières de faire (éviter de mêler les chaînes est vraiment important, ça oui, mais faire le ménage régulièrement des messages épinglés, ça sonne un peu dull pour un étudiant au bac). Au-delà des recommandations que j’ai faites, je relirais le texte avec cette idée en tête.-->
-<!-- Je suis d'accord avec AFC, -L-O)
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-results1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Court résumé du sujet
+</figcaption></figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-results2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: Suggestions de lectures
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+<p>Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.</p>
+<p>Cependant, il est fortement recommandé d’utiliser le résumé produit par le logiciel, dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>9.2</span></a>, et ceux de chaque suggestion, dans la <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>9.3</span></a>, à titre indicatif et uniquement pour notre propre réflexion. En d’autres termes, <strong>ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche</strong>. Ce logiciel doit impérativement être accompagné d’une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.</p>
+<p>Un autre outils soffre à nous afin de trouver des références supplémentaires: <em>Research Rabbit</em>. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j’ai lu plusieurs articles et/ou chapitres de livre, et que j’ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans <em>Research Rabbit</em>. La <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>9.4</span></a> présente le menu principal du site web.</p>
+<div id="fig-rr1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_RR1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.4: Menu principal
+</figcaption></figure>
+</div>
+<div id="fig-rr2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_rr2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.5: Importation manuelle de documents
+</figcaption></figure>
+</div>
+<div id="fig-rr3" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_RR3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.6: Présentation de la littérature similaire
+</figcaption></figure>
+</div>
+<div id="fig-rr4" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_rr4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.7: Vue « Timeline » des références
+</figcaption></figure>
+</div>
+<p>Avant toute chose, <em>Research Rabbit</em> doit être considéré comme un outils qui m’aidera à <em>complémenter</em> ma revue des écrits. En d’autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. <em>Ellicit</em> peut nous aider pour cette tâche, mais aussi il est pratique de consulter des <em>handbooks</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d’excellente ressource pour débuter une recherche.</p>
+<p>Utilisons un exemple concret afin d’illustrer l’utilisation de <em>Research Rabbit</em>. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chaucn éclairer un aspect particulier à propos de cette question. Une fois qu’ils ont été importé dans Zotero et qu’ils ont été lu, je peux importé ma collection Zotero dans <em>Research Rabbit</em> en cliquant sur le bouton <em>Import Zotero Collection</em>, situé dans le coin supérieur gauche de la <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>9.4</span></a>. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert <em>Add Paper</em> situé dans la colone de notre collection. La <a href="#fig-rr2" class="quarto-xref">Figure&nbsp;<span>9.5</span></a> montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouter les premiers articles que nous aurons lu, <em>Research Rabbit</em> pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec les articles que j’aurai lu. La <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>9.6</span></a> présente cette cartographie.</p>
+<p>Nous avons trois possibilités afin de trouver des articles supplémentaires. La première, est de consulter les « Similar Word ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font parties de ma collection. Cependant, ce n’est pas l’option la plus recommandées. Comme nous pouvons le voir dans la <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>9.6</span></a>, en fonction des cinq articles que j’ai importé dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d’utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la <a href="#fig-rr4" class="quarto-xref">Figure&nbsp;<span>9.7</span></a>.</p>
+<p>Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes: « All References » et « All Citations ». Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l’article que nous avons lu, et de visualiser les articles qui ont cité celui que nous avons lu. Ces options sont donc très utiles pour passer au « peigne fin » chacun de nos articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans notre utilisation de cette méthode. Il y a un risque « d’effet tunnel », soit que notre revue des écrits manque de largeur et de représentativité des différentes recherche sur le sujet. C’est pourquoi il est important de diversifier ces sources et d’utiliser ces deux options d’une façon complémentaire avec plusieurs articles différents. Il est donc utile d’ajouter au fur et à mesure ses sources dans <em>Research Rabbit</em> afin de visualiser la couverture de notre revue des écrits.</p>
+</section></section><section id="quelle-est-la-place-du-chercheur-maintenant" class="level2" data-number="9.4"><h2 data-number="9.4" class="anchored" data-anchor-id="quelle-est-la-place-du-chercheur-maintenant">
+<span class="header-section-number">9.4</span> Quelle est la place du chercheur maintenant?</h2>
+<p>Avec l’avènement de l’IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd’hui. L’avenir du chercheur est-il en danger? Pourrait-on assister au développement des sciences sociales sans chercheur humain derrière? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l’humain? D’une part, certains pensent que l’IA risque de générer des « laboratoires autonomes » <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, et al. 2023, 55</a>)</span>. Il n’est pas difficile d’imaginer un monde où tout le processus scientifique, de la conception jusqu’à la communication, serait fait par l’IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n’être qu’une partie de l’auditoire vers qui les résultats sont présentés.</p>
+<p>Bien que nous n’en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se poseraient dans une telle situation. Par exemple, étant donné que l’IA est, pour l’instant, très opaque dans tout le processus qui le mène de l’intrant vers le résultat, comment pourrait-on s’assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques? A-t-elle eu le consentement libre et éclairé de tous les participants? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené? Sur cette dernière question, l’une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques <span class="citation" data-cites="king_etal21 bourgeois21">(<a href="references.html#ref-king_etal21" role="doc-biblioref">King, Keohane, and Verba 2021</a>; <a href="references.html#ref-bourgeois21" role="doc-biblioref">Bourgeois 2021</a>)</span>. Toutes les recherches doivent présenter, d’une manière très précise, comment les données ont choisi, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l’esprit de toute communication scientifique. Or, c’est une limite importante de l’IA en ce moment: nous n’avons pas accès aux processus qui mènent de l’intrant à l’extrant <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, et al. 2023, 56</a>)</span>. Cette opacité nous empêche d’évaluer correctement la validité d’un protocole scientifique qui serait réalisée par l’IA. La conséquence logique de cette situation est de toujours rester vigilant et de questionner constamment les informations fournies par le robot conversationnel. L’utilisation exclusive de tel logiciel, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n’est pas seulement question d’intégrité et d’éthique, mais de toute la conception de ce que constitue un savoir scientifique. L’utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques. Générer des textes entiers avec l’aide de l’IA ne devrait donc pas être considéré.</p>
+<p>Comme nous le voyons, l’avènement de l’IA en recherche amène des questions et des réflexions épistémologiques<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> et méthodologiques<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheur, nous devons nous questionner par rapport à l’utilisation de ces nouvelles technologies. Il faut être proactif et initier les réflexions sur la place du chercheur maintenant.</p>
+<p>En ce sens, il faut élargir notre perspective et dépasser la question quant à savoir si la profession de chercheur va disparaître ou non. En fait, il faut se questionner par rapport au rôle du chercheur. Qu’est-ce qu’il devient à l’ère de l’intelligence artificielle? Comment se transforme-t-il? Pour l’instant, il est encore difficile de répondre et d’anticiper efficacement ce qui arrivera. Il n’en reste pas moins pour autant qu’initier la réflexion est nécessaire. Encore une fois, les universités sont des lieux privilégiés pour avoir ce genre de réflexion, tant venant des étudiants que des enseignants.</p>
+</section><section id="lia-en-sciences-sociales" class="level2" data-number="9.5"><h2 data-number="9.5" class="anchored" data-anchor-id="lia-en-sciences-sociales">
+<span class="header-section-number">9.5</span> L’IA en sciences sociales</h2>
+<p>Malgré que l’utilisation de l’IA en sciences sociales soit relativement récente, il y a déjà quelques recherches qui se sont penchées sur son utilisation dans un contexte scientifique. Tout d’abord, la recherche de Peterson et al. <span class="citation" data-cites="peterson_etal21">(<a href="references.html#ref-peterson_etal21" role="doc-biblioref">2021</a>)</span>, qui s’intéresse à comprendre comment les individus prennent des décisions, utilise l’IA afin de traiter une importante quantité de donnée rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux patterns présents dans les données. L’utilisation de l’IA dans cette recherche est très intéressante puisqu’elle permet de tester des théories existantes sur un vaste ensemble de données, qui auraient pris beaucoup plus de temps si cela avait été réalisé « manuellement ».</p>
+<p>Ensuite, la recherche de Park et al. <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">2023</a>)</span> utilise l’IA pour créer des “generative agents” qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif et d’en faire des proxys1 pour étudier le comportement humain. Leur modèle prend la forme d’une simulation interactive, similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au point, cette application de l’IA permettrait de tester des prototypes de systèmes sociaux ainsi que des théories <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al. 2023</a>)</span>.</p>
+<p>Similairement, la recherche de Argyle et al. <span class="citation" data-cites="argyle_etal23">(<a href="references.html#ref-argyle_etal23" role="doc-biblioref">2023</a>)</span> utilise ChatGPT comme proxy pour étudier l’opinion publique certains sous-groupes sociaux. Leur objectif est de démontrer que ChatGPT peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses si c’était fait avec des sujets humains. En effet, le déploiement d’un sondage est toujours une sorte pari; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront significatifs. ChatGPT permettrait donc de faire un prétest afin d’améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.</p>
+<p>Malgré ces avantages, il est important de souligner quelques limites quant à l’utilisation de l’IA en sciences sociales. La limite la plus importante est que l’IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l’on se limitait à l’IA pour répondre à nos questions. Par conséquent, un test réalisé avec l’IA ne pourra jamais avoir le même niveau de confiance qu’une recherche réalisée avec des humains. Il est donc important de limiter l’utilisation de l’IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">2023</a>)</span> dans leur recherche, est que l’IA peut être sujette à des hallucinations. En d’autres termes, l’IA peut fabriquer des informations de toute pièce <span class="citation" data-cites="weise_metz23">(<a href="references.html#ref-weise_metz23" role="doc-biblioref">Weise and Metz 2023</a>)</span>. Cela pose un sérieux problème quant à la fiabilité des informations générées par l’IA. C’est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d’attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences vraiment importantes sur le bien-être de nos sociétés. Restons vigilants.</p>
+</section><section id="conclusion" class="level2" data-number="9.6"><h2 data-number="9.6" class="anchored" data-anchor-id="conclusion">
+<span class="header-section-number">9.6</span> Conclusion</h2>
+<p>En guise de conclusion, nous souhaitons lancer une dernière réflexion un peu plus philosophique, mais tout aussi importante: le transhumanisme, «[…] un mouvement international, culturel et intellectuel, prônant l’usage des sciences et des techniques dans le but d’améliorer la condition humaine, notamment par l’augmentation des capacités physiques et mentales des êtres humains » <span class="citation" data-cites="forestier_ansermet21">(<a href="references.html#ref-forestier_ansermet21" role="doc-biblioref">Forestier and Ansermet 2021</a>)</span>. La question principale qui se pose est: est-ce vraiment raisonnable d’augmenter les capacités humaines au-delà de leur limite biologique? Surtout, que deviendront les sciences sociales et humaines si le principal sujet d’étude, soit l’humain, n’est plus tout à fait lui-même? Peut-on faire des sciences sociales sur des sujets qui sont que partiellement humain? Ce qui rend les sciences sociales aussi intéressantes et pertinentes c’est peut-être, justement, parce que l’humain n’a pas d’essence. Pour reprendre les mots de Sartre <span class="citation" data-cites="sartre96">(<a href="references.html#ref-sartre96" role="doc-biblioref">1996, 26</a>)</span>, « l’existence précède l’essence ». En d’autres termes, et comme Sartre l’explique, l’humain n’existe pas pour remplir une fonction prédéterminée, contrairement à un crayon qui a été conçu pour remplir la tâche spécifique d’écrire. C’est dans cette liberté, et c’est par l’expérience, que l’humain se construit et se définit. Notre existence en tant que scientifique du monde social et humain est possible que grâce à cette condition fondamentale : l’absence d’une essence qui précède l’existence. Sinon, à quoi bon étudier le monde social s’il a une fonction prédéterminée et fixe, dans lequel les humains n’auraient aucune agentivité?</p>
+<p>Cependant, avec l’arrivée de l’IA et ce désir de constamment repousser les limites humaines, ne sommes-nous pas en train de prouver à Sartre qu’il a tort? En fait, l’humain se serait imposé une essence, soit celle d’être une pièce indispensable pour faire fonctionner les rouages du système capitaliste. Face à la conception de la « croissance infinie » qui est entretenue par ce système, l’être humain a besoin de quelque chose pour « briser » ses capacités qui elles sont limitées : « […] un remodelage technoscientifique et biomédical des corps et des vies, dans leur matérialité biologique même, afin d’adapter les individus au régime capitaliste globalisé de l’accélération. » <span class="citation" data-cites="devedec21">(<a href="references.html#ref-devedec21" role="doc-biblioref">Dévédec 2021, 100</a>)</span>. L’IA sera-t-elle une pièce de plus vers la réalisation de cet idéal transhumaniste?</p>
+<p>Le propos ici n’est pas d’encourager les lecteurs à ne pas utiliser l’IA. En fait, nous souhaitons tout simplement appeler à une certaine prudence. Le risque que cette technologie nous pose est d’en devenir dépendant, voir trop <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al. 2023</a>)</span>. Bien qu’elle offre de nombreux avantages, elle a aussi le piège d’offrir beaucoup de raccourcis et de nuire à plusieurs de nos capacités intellectuelles et physiques. Il faut donc développer un jugement critique dans notre utilisation de l’IA. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd’hui, le fondement des chercheurs en sciences sociales numériques.</p>
+<p>Toutefois, à moins que la recherche porte directement sur ChatGPT, nous déconseillons fortement d’utiliser uniquement ce que le robot conversationnel fournit comme réponse. Reprenons l’exemple du totalitarisme. Dans ce cas, bien que la définition fournie soit relativement adéquate, nous recommandons d’aller consulter des sources académiques afin de trianguler la définition générée, d’une part, et surtout de présenter une définition qui est reconnue par les pairs scientifiques. Pour ce faire, il est possible d’utiliser ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui portent sur le sujet. À partir de ces recommandations, nous pouvons nous référer directement à ces ouvrages et débuter notre revue des écrits. Surtout, à moins que ce ne soit que pour vous faire une idée du contenu, n’utilisez pas ChatGPT pour résumer un livre et utiliser le résumé pour votre travail ! Cette pratique constitue une forme de plagiat. Aller consulter les ouvrages directement plutôt que d’utiliser les définitions fournies par ChatGPT fait partie des bonnes pratiques. Développer un esprit de synthèse est fondamental pour chaque étudiant.e universitaire, ainsi que pour les futurs chercheur.euse.s. Commencez dès maintenant à développer ces capacités plutôt que de demander à ChatGPT de le faire à votre place.</p>
+<!--
+## Quelle est la place du chercheur maintenant?
 
-### Pourquoi Slack<!--Je renommerais "Avantages et inconvénients"-->
-<p>Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos besoins. Puisque nous utilisons Slack, voici quelques raisons qui pourraient vous convaincre d’opter pour cette option ou de vous en éloigner. Sachez que cette liste n’est pas du tout exhaustive, mais reflète simplement quelques-unes de nos observations par rapport à notre outil de travail.</p>
+Avec l'avènement de l'IA, il est légitime de se demander quel est le rôle du chercheur.euse aujourd'hui. L'avenir du chercheur est-il en danger ? Pourrait-on assister au développement des sciences sociales sans chercheur.euse humain derrière ? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important ? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l'humain ? D'une part, certains pensent que l'IA risque de générer des « laboratoires autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le processus scientifique, de la conception jusqu'à la communication, serait fait par l'IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n'être qu'une partie de l'auditoire vers qui les résultats sont présentés.
+
+Bien que nous n'en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se poseraient dans une telle situation. Par exemple, étant donné que l'IA est, pour l'instant, très opaque dans tout le processus qui le mène de l'intrant vers le résultat, comment pourrait-on s'assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques ? A-t-elle eu le consentement libre et éclairé de tous les participants ? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené ? Sur cette dernière question, l'une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques [@king2021 ; @bourgeois21]. Toutes les recherches doivent présenter, d'une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l'esprit de toute communication scientifique. Or, c'est une limite importante de l'IA en ce moment : nous n'avons pas accès aux processus qui mènent de l'intrant à l'extrant [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56]. Cette opacité nous empêche d'évaluer correctement la validité d'un protocole scientifique qui serait réalisée par l'IA. La conséquence logique de cette situation est de toujours rester vigilant quant aux informations fournies par le robot conversationnel. L'utilisation exclusive de tel logiciel, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n'est pas seulement question d'intégrité et d'éthique, mais de toute la conception de ce que constitue un savoir scientifique. L'utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques[^chapitre_9-4]. L'avènement de l'IA en recherche amène des questions et des réflexions épistémologiques et méthodologiques[^chapitre_9-5] importantes.
+
+[^chapitre_9-4]: L'épistémologie est l'une des branches de la philosophie des sciences qui s'intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l'une des questions fondamentales de l'épistémologie et de se questionner quant à savoir ce qu'est un savoir qui serait scientifique.
+
+[^chapitre_9-5]: La méthodologie fait référence à la branche de la philosophie des sciences qui s'intéresse aux outils de collecte et d'analyse de données.
+
+En ce sens, il faut élargir notre perspective et dépasser la question quant à savoir si la profession de chercheur.euse va disparaître ou non. Qu'est-ce qu'elle devient à l'ère de l'intelligence artificielle ? Comment se transforme-t-elle ? Pour l'instant, il est encore difficile de répondre et d'anticiper efficacement ce qui arrivera. Il n'en reste pas moins pour autant qu'initier la réflexion est nécessaire. Encore une fois, les universités sont des lieux privilégiés pour avoir ce genre de réflexion, tant venant des étudiant.e.s que des professeur.e.s.
+
+## L'IA en sciences sociales
+
+Bien que l'utilisation de l'IA en sciences sociales soit relativement récente, déjà quelques recherches se sont penchées sur son utilisation dans un contexte scientifique. La recherche de Peterson et al. [-@peterson_etal21] s'intéresse à comprendre comment les individus prennent des décisions et utilise l'IA afin de traiter une importante quantité de données rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux patterns présents dans les données. L'utilisation de l'IA dans cette recherche permet de tester des théories existantes sur un vaste ensemble de données, ce qui aurait pris beaucoup plus de temps si cela avait été réalisé « manuellement ».
+
+Ensuite, la recherche de Park et al. [-@park_etal23] utilise l'IA pour créer des "generative agents" qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif est d'en faire des proxys[^7] pour étudier le comportement humain. Leur modèle prend la forme d'une simulation interactive, similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au point, cette application de l'IA permettrait de tester différents prototypes de systèmes sociaux ainsi que des théories [@park_etal23].
+
+[^7]: Selon le Oxford Reference, un proxy est une variable qui est utilisée lorsque la variable d’intérêt ne peut pas être directement observée. Par exemple, le PIB par habitant peut être utilisé comme variable proxy pour la qualité de vie.
+
+Similairement, la recherche de Argyle et al. [-@argyle_etal23] utilise ChatGPT comme proxy pour étudier l'opinion publique chez certains sous-groupes sociaux. Leur objectif est de démontrer que ChatGPT peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses si c'était fait avec des sujets humains. En effet, le déploiement d'un sondage est toujours une sorte de pari ; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront significatifs. ChatGPT permettrait donc de faire un prétest afin d'améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.
+
+Malgré ces avantages, il est important de souligner quelques limites quant à l'utilisation de l'IA en sciences sociales. La limite la plus importante est que l'IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l'on se limitait à l'IA pour répondre à nos questions. Par conséquent, un test réalisé avec l'IA ne pourra jamais avoir le même niveau de confiance qu'une recherche réalisée avec des humains. Il est donc important de limiter l'utilisation de l'IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. [-@park_etal23] dans leur recherche, est que l'IA peut être sujette à des hallucinations. En d'autres termes, l'IA peut fabriquer des informations de toute pièce [@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité des informations générées. Les conséquences d'attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences vraiment importantes sur le bien-être de nos sociétés. Restons vigilants.
+
+## Conclusion
+
+En guise de conclusion, nous souhaitons lancer une dernière réflexion un peu plus philosophique, mais tout aussi importante portant sur le transhumanisme, soit « [...] un mouvement international, culturel et intellectuel, prônant l'usage des sciences et des techniques dans le but d'améliorer la condition humaine, notamment par l'augmentation des capacités physiques et mentales des êtres humains » [@forestier_ansermet21]. La question principale qui se pose est : est-ce vraiment raisonnable d'augmenter les capacités humaines au-delà de leur limite biologique ? Surtout, que deviendront les sciences sociales et humaines si le principal sujet d'étude, soit l'humain, n'est plus tout à fait lui-même ? Peut-on faire des sciences sociales sur des sujets qui sont que partiellement humain ? Ce qui rend les sciences sociales aussi singulières est peut-être, justement, parce que « l'existence précède l'essence » [@sartre96, pp. 26]. Comme Sartre l'explique, l'humain n'existe pas pour remplir une fonction prédéterminée, contrairement à un crayon qui a été conçu pour remplir la tâche spécifique d'écrire. C'est dans cette liberté, et c'est par l'expérience, que l'humain se construit et se définit. Notre existence en tant que scientifique du monde social et humain est possible que grâce à cette condition fondamentale : l'absence d'une essence qui précède l'existence. Sinon, à quoi bon étudier le monde social s'il a une fonction prédéterminée et fixe, dans lequel les humains n'auraient aucune agentivité ?
+
+Cependant, avec l'arrivée de l'IA et ce désir de constamment repousser les limites humaines, ne sommes-nous pas en train de prouver à Sartre qu'il a tort ? En fait, l'humain se serait imposé une essence, soit celle d'être une pièce indispensable pour faire fonctionner les rouages du système capitaliste. Face à la conception de la « croissance infinie » qui est entretenue par ce système, l'être humain a besoin de quelque chose pour « briser » ses capacités qui elles sont limitées : « \[...\] un remodelage technoscientifique et biomédical des corps et des vies, dans leur matérialité biologique même, afin d'adapter les individus au régime capitaliste globalisé de l'accélération. » [@devedec21, pp. 100]. L'IA sera-t-elle une pièce de plus vers la réalisation de cet idéal transhumaniste ?
+
+Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fait, nous souhaitons tout simplement appeler à une certaine prudence. Le risque que cette technologie nous pose est d'en devenir dépendant [@park_etal23] et d'ainsi se dénaturer. Bien qu'elle offre de nombreux avantages, elle a aussi le piège d'offrir beaucoup de raccourcis et de nuire à plusieurs de nos capacités intellectuelles et physiques. Il faut donc développer un jugement critique dans notre utilisation de l'IA. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
+-->
+</section><section id="utilisation-du-package-openai" class="level2" data-number="9.7"><h2 data-number="9.7" class="anchored" data-anchor-id="utilisation-du-package-openai">
+<span class="header-section-number">9.7</span> Utilisation du package OpenAI</h2>
+<section id="installation-et-chargement-du-package" class="level3" data-number="9.7.1"><h3 data-number="9.7.1" class="anchored" data-anchor-id="installation-et-chargement-du-package">
+<span class="header-section-number">9.7.1</span> Installation et chargement du package</h3>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"openai"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/irudnyts/openai">openai</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section><section id="configuration-de-lapi" class="level2" data-number="9.8"><h2 data-number="9.8" class="anchored" data-anchor-id="configuration-de-lapi">
+<span class="header-section-number">9.8</span> Configuration de l’API</h2>
+<p>Procurez vous une clé API sur le site d’OpenAI. Soyez conscient que vous aurez besoin d’une carte de crédit pour vous inscrire et que l’utilisation de l’API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d’utilisation. En date de la publication du livre, le modèle de tarification d’OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie.</p>
+<p>Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/edit.html">edit_r_environ</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ajoutez la ligne suivante à votre fichier <code>.Renviron</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="va">inserez</span><span class="op">-</span><span class="va">votre</span><span class="op">-</span><span class="va">cle</span><span class="op">-</span><span class="va">api</span><span class="op">-</span><span class="va">ici</span><span class="op">-</span><span class="va">sans</span><span class="op">-</span><span class="va">guillemets</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="utilisation-de-lapi" class="level2" data-number="9.9"><h2 data-number="9.9" class="anchored" data-anchor-id="utilisation-de-lapi">
+<span class="header-section-number">9.9</span> Utilisation de l’API</h2>
+<p>La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d’utilisation de la fonction:</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://irudnyts.github.io/openai/reference/create_chat_completion.html">create_chat_completion</a></span><span class="op">(</span></span>
+<span>    model <span class="op">=</span> <span class="st">"gpt-3.5-turbo"</span>,</span>
+<span>    messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="st">"role"</span> <span class="op">=</span> <span class="st">"system"</span>,</span>
+<span>            <span class="st">"content"</span> <span class="op">=</span> <span class="st">"You are a helpful assistant."</span></span>
+<span>        <span class="op">)</span>,</span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="st">"role"</span> <span class="op">=</span> <span class="st">"user"</span>,</span>
+<span>            <span class="st">"content"</span> <span class="op">=</span> <span class="st">"Please do the following:"</span><span class="op">)</span></span>
+<span>        <span class="op">)</span></span>
+<span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Le résultat de votre requête sera contenu dans l’objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu’un dataframe normal. Le contenu de la réponse sera dans <code>chat_prompt$choices$content</code>.</p>
+<p>Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer des instructions sur un ensemble d’observations à l’aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d’autres API, analyser des sites webs en temps réel en scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux possibilités que vous souhaitez explorer.</p>
+</section><section id="notes" class="level2" data-number="9.10"><h2 data-number="9.10" class="anchored" data-anchor-id="notes">
+<span class="header-section-number">9.10</span> Notes</h2>
 <ul>
-<li><p>Avantages<!--Est-ce nécessaire de mettre en relief les sections avantages et inconvénients? Juste des paragraphes formatés normalement suffiraient, je crois.--></p>
-<p>L’utilisation de Slack est très intuitive. Nous l’utilisons régulièrement dans des cours, et les étudiants apprennent rapidement à l’utiliser. La distinction entre les chaînes publiques accessibles à tous les membres d’un espace d’équipe et les chaînes privées est claire et simple d’utilisation. Slack offre aussi une fonction de recherche, qui vous permet de retrouver des messages à travers les chaînes.<!--AFC: La dernière phrase n'est pas très surprenante. Si on veut parler des fonctions de recherche, il faudrait mentionner des aspects particulièrement positifs.--> L’intégration de<!--AFC: Ajouter "nombreuses", surtout! Il y en a beaucoup--> applications qui font le pont avec d’autres outils est fort appréciée. Enfin, Slack est utilisé partout dans le monde par des équipes de toutes les tailles et dans tous les domaines. C’est un outil très présent en recherche académique qui facilite la collaboration et la multidisciplinarité. Les chances sont élevées que vos partenaires utilisent déjà l’outil, ou au minimum en aient déjà entendu parlé.</p></li>
-<li><p>Inconvénients</p>
-<p>Si vous avez l’habitude d’utiliser les outils d’une suite, comme celles de Microsoft ou de Google, <!-- On parle ici de genre office ou google doc? -L-O -->il est possible que vous trouviez l’intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. <!-- Je le garderai en tête c'est promis. --> Elle implique notamment un limite de temps par rapport à l’archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d’outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.<!--AFC: Est-ce que c'est commun? Si c'est juste l'ULaval qui fait ça, je ne parlerais pas de financement par le département.--><!--AFC: Autre désavantage: on dit souvent que les fils de discussion dans Slack ne sont pas très intuitifs par rapport à d'autres plateformes. Je n'ai pas testé en Teams et personnellement j'aime bien les fils en Slack, mais peut-être investiguer et demander à Yannick et Cath Ouellet, qui semblent être de cet avis.--></p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="logiciel-de-gestion-de-versions-décentralisé" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="logiciel-de-gestion-de-versions-décentralisé"><span class="header-section-number">8.3</span> Logiciel de gestion de versions décentralisé<!--AFC: Rajouter Git et GitHub si on mentionne Slack dans le titre de la section précédente.--></h2>
-<p>Lorsque l’on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.</p>
-<section id="pourquoi-choisir-git-et-github" class="level3" data-number="8.3.1">
-<h3 data-number="8.3.1" class="anchored" data-anchor-id="pourquoi-choisir-git-et-github"><span class="header-section-number">8.3.1</span> Pourquoi choisir Git et GitHub?</h3>
-<section id="avantages" class="level4" data-number="8.3.1.1">
-<h4 data-number="8.3.1.1" class="anchored" data-anchor-id="avantages"><span class="header-section-number">8.3.1.1</span> Avantages</h4>
-<p>Git, développé par Linus Torvalds en 2005<!--AFC: Ajouter référence ici-->, s’est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l’évolution d’un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (<em>commits</em>), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet. <!-- Ça pourrait être bien de dire que le bon Linus a aussi développé Linux. Quand même pas pire. --></p>
-<p>GitHub, lancé en 2008<!--AFC: Ajouter référence ici-->, est une plateforme qui utilise Git comme base pour l’entreposage et la gestion de projets. C’est une vitrine virtuelle où les développeurs peuvent héberger leurs dépôts Git et collaborer de manière transparente. L’aspect social de GitHub, avec ses fonctionnalités de suivi des projets, de gestion des problèmes et de demandes de fusion<!--AFC: Ou "requêtes de tirage", comme dit plus loin?-->, en fait un lieu de choix pour les projets en code source ouvert et collaboratifs.</p>
-<p>En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d’abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n’importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l’impact de différentes approches. <!-- Peut être expliquer que git crée un fichier .git dans lequel sera inscrit l'ensemble des modifications sur les fichiers contenus dans un dossier? --></p>
-<p>De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs<!--AFC: Définir ce qu'est un conflit. Par exemple, "où deux codeurs ont modifié plusieurs parties de texte chacun et où il faut vérifier paragraphe par paragraphe dans les deux documents quelle est la version la plus récente"... En fait, je décrirais le problème en quelques phrases, ça vaut vraiment la peine d'expliquer à quel point des copies en conflit sur Word sont terribles.--> et facilite la répartition des tâches au sein de l’équipe.</p>
-<p>Enfin, l’aspect de code source ouvert de GitHub<!--AFC: Attention! GitHub en soi n'est PAS open source, seuls les projets partagés sur cette plateforme le sont.--> permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d’autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.</p>
-<!-- -->
-</section>
-<section id="inconvénients" class="level4" data-number="8.3.1.2">
-<h4 data-number="8.3.1.2" class="anchored" data-anchor-id="inconvénients"><span class="header-section-number">8.3.1.2</span> Inconvénients</h4>
-<p>Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d’apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. De plus, bien que GitHub offre un niveau de gratuité pour les projets en code source ouvert, des frais peuvent être appliqués pour des fonctionnalités avancées ou pour des projets privés.<!--Cette section est trop courte. Il faut mentionner le fait que GitHub n'est pas open source (Git peut être utilisé solo en mode open source je crois mais je ne m'avancerais pas là-dessus).--><!--AFC: Je connais peu de gens qui paient pour GitHub. Sa gratuité rentre selon moi un peu plus dans la section des avantages, contrairement à Slack et sa limite de 90 jours...--></p>
-</section>
-</section>
-<section id="comment-les-utiliser-efficacement-en-parallèle-à-dropbox-etc." class="level3" data-number="8.3.2">
-<h3 data-number="8.3.2" class="anchored" data-anchor-id="comment-les-utiliser-efficacement-en-parallèle-à-dropbox-etc."><span class="header-section-number">8.3.2</span> Comment les utiliser efficacement (en parallèle à Dropbox, etc.)<!--AFC: Ne jamais mettre de etc. dans un titre. Reformuler pour "Comment utiliser Git et GitHub efficacement"--></h3>
-<p>Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d’abord, il est important de structurer son dépôt Git<!--AFC: "entrepôt (*repository*)". Important de mentionner le terme en français suivi par le terme en anglais en italique entre parenthèses lors de la première mention, sinon c'est mêlant. Ensuite, on peut utiliser seulement le terme en français. D'ailleurs, un peu plus haut, j'ai traduit commit par dépôt, puis on parle de dépôt à un autre endroit mais je pensais que ça faisait référence aux commits et non aux repos. À vérifier.--> de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de commit<!--AFC: Dépôt?--> doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.</p>
-<p>Il est également conseillé de travailler sur des branches distinctes pour chaque fonctionnalité ou modification<!--AFC: Enlever "ou modification" je crois.--> majeure. Cela facilite la gestion des changements et minimise les conflits lors de la fusion. Les chercheurs devraient également consulter régulièrement les projets et les problèmes sur GitHub pour encourager une communication ouverte et résoudre rapidement les problèmes.</p>
-<p>L’utilisation de Git et de GitHub peut être complémentaire à d’autres outils d’entreposage, tels que Dropbox ou Google Drive<!--AFC: Rajouter OneDrive et iCloud.-->. Ces derniers peuvent être utilisés pour entreposer des fichiers non liés au code, tels que des données brutes non sensibles ou des documents de recherche, tandis que Git et GitHub gèrent le code source et ses évolutions.</p>
-<p>Bien qu’il existe plusieurs alternatives à l’utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge<!--AFC: Les trois derniers sont open source, Mercurial je sais pas.-->. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub, mais il est important de comprendre pourquoi Git et GitHub restent les choix privilégiés pour les chercheurs en sciences sociales numériques.</p>
-</section>
-<section id="pourquoi-prioriser-git-et-github-pour-les-chercheurs-en-sciences-sociales" class="level3" data-number="8.3.3">
-<h3 data-number="8.3.3" class="anchored" data-anchor-id="pourquoi-prioriser-git-et-github-pour-les-chercheurs-en-sciences-sociales"><span class="header-section-number">8.3.3</span> Pourquoi prioriser Git et GitHub pour les chercheurs en sciences sociales<!--AFC: Titre plus court--><!--AFC: Important! Section à regrouper avec la section "Avantages". C'est mêlant, ça semble se répéter. Il faut réorganiser ça.--></h3>
+<li><p>Il est possible d’accéder aux statistiques d’utilisation de token dans <code>chat_prompt$usage$prompt_tokens</code> et <code>chat_prompt$usage$completion_tokens</code>. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.</p></li>
+<li><p>Ne pas oublier d’inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.</p></li>
+<li><p>Il est possible de créer des images avec la fonction create_image(“Inserez votre texte ici”)</p></li>
+<li><p>Il est possible d’effectuer du speech-to-text avec la fonction create_transcription() et create_translation()</p></li>
+<li><p>Plus de documentation est disponible au https://irudnyts.github.io/openai/</p></li>
+<li><p>Plus de fonctionalités sont disponibles en python mais le package R est suffisant pour la plupart des utilisations.</p></li>
+</ul></section><section id="annexe-1" class="level2" data-number="9.11"><h2 data-number="9.11" class="anchored" data-anchor-id="annexe-1">
+<span class="header-section-number">9.11</span> Annexe 1</h2>
+<p>Bonnes pratiques d’utilisation Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard</p>
+<p>MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/</p>
+</section><section id="annexe-2" class="level2" data-number="9.12"><h2 data-number="9.12" class="anchored" data-anchor-id="annexe-2">
+<span class="header-section-number">9.12</span> Annexe 2</h2>
+<p>Q : Qu’est-ce que le totalitarisme? R : Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique.</p>
+<p>Bonnes pratiques d’utilisation Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard</p>
+<p>MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/</p>
+</section><section id="annexe-2-1" class="level2" data-number="9.13"><h2 data-number="9.13" class="anchored" data-anchor-id="annexe-2-1">
+<span class="header-section-number">9.13</span> Annexe 2</h2>
+<p>Q : Qu’est-ce que le totalitarisme? R : Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique.</p>
+<p>Les caractéristiques clés du totalitarisme comprennent :</p>
 <ol type="1">
-<li><p><em>Intégration et adoption répandue</em>&nbsp;: Git est devenu un standard de facto dans l’industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d’apprentissage<!--AFC: Ajouter "comme @stackoverflow23" puis référer au chapitre sur Stack Overflow-->, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l’utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d’une grande base d’utilisateurs et d’une communauté active, ce qui encourage la collaboration et le partage des connaissances.</p></li>
-<li><p><em>Facilité de collaboration</em>&nbsp;: Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L’interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.</p></li>
-<li><p><em>Visibilité et partage</em>&nbsp;: GitHub brille par sa fonctionnalité de projet open source, qui permet aux chercheurs en sciences sociales de partager leurs travaux avec la communauté mondiale.<!--AFC: Je ne comprends pas la phrase précédente et je ne suis pas sûr qu'elle soit vraie.--> Les projets en code source ouvert sont visibles et accessibles à tous, favorisant ainsi la collaboration et l’examen par les pairs. Cela peut être particulièrement bénéfique pour les chercheurs souhaitant contribuer à des initiatives académiques et collaborer à des projets interdisciplinaires. <!-- Dans github, le terme projet sert à définir quelque chose d'autre. Ici repository serait plus approprié? --></p></li>
-<li><p><em>Suivi des versions et recherche reproductible</em>&nbsp;: Les chercheurs en sciences sociales doivent s’assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l’intégrité des résultats de recherche.</p></li>
-<li><p><em>Infrastructure et sécurité</em>&nbsp;: GitHub offre une infrastructure robuste pour l’entreposage sécurisé des dépôts Git<!--AFC: Vérifier si on parle de commit ou de repos. Peut-être rien à modifier ici, cela ce qui a été défini plus haut.-->. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d’accès et les autorisations granulaires de GitHub permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.</p></li>
+<li><p><strong>Contrôle gouvernemental absolu :</strong> Le gouvernement exerce un contrôle total sur tous les aspects de la vie, y compris l’économie, la culture, l’éducation, les médias, la religion et les activités sociales.</p></li>
+<li><p><strong>Idéologie dominante :</strong> Le régime totalitaire est basé sur une idéologie spécifique qui est imposée à la population. Cette idéologie est souvent promue comme la seule vérité et toute forme de pensée dissidente est sévèrement réprimée.</p></li>
+<li><p><strong>Culte de la personnalité :</strong> Les dirigeants du régime totalitaire sont souvent présentés comme des figures quasi-divines ou héroïques, et un culte de la personnalité est créé autour d’eux pour renforcer leur autorité.</p></li>
+<li><p><strong>Répression politique :</strong> Toute forme d’opposition politique est réprimée de manière brutale. Les opposants sont souvent emprisonnés, torturés, voire exécutés. La surveillance et la dénonciation sont courantes pour empêcher toute critique du régime.</p></li>
+<li><p><strong>Propagande intensive :</strong> Le gouvernement contrôle les médias et utilise la propagande pour manipuler l’opinion publique, répandre sa vision du monde et justifier ses actions.</p></li>
+<li><p><strong>Absence de droits individuels :</strong> Les droits individuels tels que la liberté d’expression, la liberté de la presse, le droit de réunion et d’association sont souvent supprimés au profit de la suprématie de l’État.</p></li>
+<li><p><strong>Contrôle de l’éducation :</strong> L’éducation est utilisée pour propager l’idéologie du régime et façonner la mentalité des citoyens conformément à ses objectifs.</p></li>
+<li><p><strong>Utilisation de la terreur :</strong> La terreur et l’intimidation sont utilisées pour maintenir le contrôle sur la population. Les purges et les arrestations arbitraires sont fréquentes pour maintenir un climat de peur.</p></li>
 </ol>
-<p>En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce à l’open source. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu’ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l’arsenal de tout chercheur moderne.</p>
-</section>
-<section id="pratiques-à-éviter-sur-github-pour-les-chercheurs-en-sciences-sociales" class="level3" data-number="8.3.4">
-<h3 data-number="8.3.4" class="anchored" data-anchor-id="pratiques-à-éviter-sur-github-pour-les-chercheurs-en-sciences-sociales"><span class="header-section-number">8.3.4</span> Pratiques à éviter sur GitHub pour les chercheurs en sciences sociales<!--AFC: Même commentaire que pour la section précédente... Titre à revoir. Pourquoi parle-t-on juste de GitHub dans le titre ici mais pas le précédent?--></h3>
-<p>Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l’efficacité de la recherche. Voici quelques éléments à éviter&nbsp;:</p>
-<ol type="1">
-<li><p><em>Entreposer des informations sensibles</em>&nbsp;: Évitez d’entreposer des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme.</p></li>
-<li><p><em>Inclure des mots de passe et clés d’accès</em>&nbsp;: Ne jamais inclure de mots de passe, de clés d’accès ou d’informations d’identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d’environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication --></p></li>
-<li><p><em>Entreposer des fichiers lourds</em>&nbsp;: Évitez d’entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt<!--AFC: Encore incertain de ce qu'est un dépôt.-->. Utilisez plutôt des services d’entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt.</p></li>
-<li><p><em>Inclure des identifiants personnels</em>&nbsp;: Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d’autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.--></p></li>
-<li><p><em>Ignorer les pratiques de branches et de fusion</em>&nbsp;: Évitez de fusionner directement du code dans la branche principale (habituellement appelée <em>main</em> ou <em>master</em>). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO --></p></li>
-<li><p><em>Ignorer les commentaires des collaborateurs</em>&nbsp;: Lorsque vous travaillez avec d’autres chercheurs, ne négligez pas les commentaires et les suggestions qu’ils fournissent. Les retours d’expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.</p></li>
-<li><p><em>Ne pas documenter</em>&nbsp;: Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d’autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d’exécuter votre code.</p></li>
-</ol>
-<p>En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l’efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur.</p>
-</section>
-<section id="exemple-dutilisation-de-git-et-de-github-pour-un-chercheur-en-sciences-sociales" class="level3" data-number="8.3.5">
-<h3 data-number="8.3.5" class="anchored" data-anchor-id="exemple-dutilisation-de-git-et-de-github-pour-un-chercheur-en-sciences-sociales"><span class="header-section-number">8.3.5</span> Exemple d’utilisation de Git et de GitHub pour un chercheur en sciences sociales</h3>
-<p>Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l’impact des médias sur l’opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.</p>
-<section id="étape-1-création-dun-répertoire-local-et-initialisation-de-git" class="level4" data-number="8.3.5.1">
-<h4 data-number="8.3.5.1" class="anchored" data-anchor-id="étape-1-création-dun-répertoire-local-et-initialisation-de-git"><span class="header-section-number">8.3.5.1</span> Étape 1&nbsp;: Création d’un répertoire<!--définir répertoire. C'était pas dépôt ou entrepôt?--> local et initialisation de Git</h4>
-<p>Ouvrez votre terminal<!--AFC: Ajouter "(MacOS, Linux) ou l'application Git Bash (Windows)"--> et naviguez vers le dossier où vous souhaitez enregistrer votre projet.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> chemin/vers/votre/dossier</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Créez un nouveau répertoire pour votre projet et accédez-y.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> mon_projet</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mon_projet</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Initialisez Git dans ce répertoire.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-2-ajout-de-votre-code-et-de-vos-fichiers" class="level4" data-number="8.3.5.2">
-<h4 data-number="8.3.5.2" class="anchored" data-anchor-id="étape-2-ajout-de-votre-code-et-de-vos-fichiers"><span class="header-section-number">8.3.5.2</span> Étape 2&nbsp;: Ajout de votre code et de vos fichiers</h4>
-<p>Ajoutez vos fichiers R contenant le code pour l’analyse des médias et des sondages dans le répertoire. Par exemple, vous pouvez avoir des fichiers <em>analyse_medias.R</em> et <em>analyse_sondages.R</em>.</p>
-<p>Utilisez la commande <code>git status</code> pour vérifier l’état de vos fichiers.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-3-ajout-validation-et-commit-de-vos-modifications" class="level4" data-number="8.3.5.3">
-<h4 data-number="8.3.5.3" class="anchored" data-anchor-id="étape-3-ajout-validation-et-commit-de-vos-modifications"><span class="header-section-number">8.3.5.3</span> Étape 3&nbsp;: Ajout, validation et commit<!--AFC: À traduire!--> de vos modifications</h4>
-<p>Ajoutez vos fichiers pour qu’ils soient prêts à être validés.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-A</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Validez vos modifications avec un message descriptif.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Ajout du code d'analyse des médias et des sondages"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-4-création-du-répertoire-sur-github-et-du-lien-avec-votre-répertoire-local" class="level4" data-number="8.3.5.4">
-<h4 data-number="8.3.5.4" class="anchored" data-anchor-id="étape-4-création-du-répertoire-sur-github-et-du-lien-avec-votre-répertoire-local"><span class="header-section-number">8.3.5.4</span> Étape 4&nbsp;: Création du répertoire sur GitHub et du lien avec votre répertoire local</h4>
-<p>Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom <!--AFC: Ajouter "sous la forme"--><em>mon_projet</em>.</p>
-<p>De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/votre-utilisateur/mon_projet.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-5-push-de-votre-travail-sur-github" class="level4" data-number="8.3.5.5">
-<h4 data-number="8.3.5.5" class="anchored" data-anchor-id="étape-5-push-de-votre-travail-sur-github"><span class="header-section-number">8.3.5.5</span> Étape 5&nbsp;: Push<!--AFC: Pousser (*push*)?--> de votre travail sur GitHub</h4>
-<p>Envoyez vos commits<!--AFC: --> locaux vers GitHub.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-6-collaboration-avec-vos-collègues" class="level4" data-number="8.3.5.6">
-<h4 data-number="8.3.5.6" class="anchored" data-anchor-id="étape-6-collaboration-avec-vos-collègues"><span class="header-section-number">8.3.5.6</span> Étape 6&nbsp;: Collaboration avec vos collègues</h4>
-<p>Si vos collègues souhaitent contribuer à votre projet, ils peuvent <em>forker</em><!--AFC: Trouver une traduction et mettre la version en anglais entre parenthèses en italique | Fourcher ? -LO --> votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.</p>
-<p>Lorsqu’ils ont fait des modifications dans leur copie, ils peuvent soumettre une <em>pull request</em><!--AFC: Retourner plus haut et utiliser l'expression en français définie à ce moment-là, en mettant pull request entre parenthèses à ce moment-là. Ici, juste utiliser la traduction en français.--> pour vous demander de fusionner leurs modifications dans votre répertoire principal.</p>
-</section>
-<section id="étape-7-pull-des-modifications-de-vos-collègues" class="level4" data-number="8.3.5.7">
-<h4 data-number="8.3.5.7" class="anchored" data-anchor-id="étape-7-pull-des-modifications-de-vos-collègues"><span class="header-section-number">8.3.5.7</span> Étape 7&nbsp;: Pull<!--AFC: À traduire--> des modifications de vos collègues</h4>
-<p>Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="étape-8-répéter-le-processus" class="level4" data-number="8.3.5.8">
-<h4 data-number="8.3.5.8" class="anchored" data-anchor-id="étape-8-répéter-le-processus"><span class="header-section-number">8.3.5.8</span> Étape 8&nbsp;: Répéter le processus</h4>
-<p>Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.</p>
-</section>
-</section>
-<section id="github-desktop" class="level3" data-number="8.3.6">
-<h3 data-number="8.3.6" class="anchored" data-anchor-id="github-desktop"><span class="header-section-number">8.3.6</span> GitHub Desktop</h3>
-<p>Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive.<!-- AFC: Mentionner que RStudio et VS Code intègrent aussi des éditeurs Git avec boutons plus conviviaux. En fait, je me demande si ces outils ne sont pas meilleurs que GitHub Desktop? --> Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.<!--AFC: Ajoute référence à la figure juste après, et donner un titre à cette figure.--></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/chapitre8_gitdesktop.png" class="img-fluid figure-img"></p>
-<figcaption>image</figcaption>
-</figure>
+<p>Des exemples historiques de régimes totalitaires incluent l’Allemagne nazie sous Adolf Hitler, l’Union soviétique sous Joseph Staline, et la Chine sous Mao Zedong. Le totalitarisme est généralement considéré comme une forme extrême et oppressive de gouvernement, en contraste avec les systèmes démocratiques qui mettent l’accent sur les libertés individuelles, la séparation des pouvoirs et la participation citoyenne.</p>
+<p>{&lt;&lt; pagebreak &gt;&gt;}</p>
+</section><section id="à-voir" class="level1" data-number="10"><h1 data-number="10">
+<span class="header-section-number">10</span> À voir</h1>
+<section id="défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt" class="level2" data-number="10.1"><h2 data-number="10.1" class="anchored" data-anchor-id="défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt">
+<span class="header-section-number">10.1</span> Défis et enjeux éthiques de l’IA, focus sur ChatGPT</h2>
+<p>En tant qu’étudiant, professeur, professionnel ou chercheur, il faut se questionner par rapport à notre propre utilisation des différents outils de l’IA. Tout d’abord, il est important de comprendre qu’il y a plus de questions que de réponses pour l’instant. Face à ce constat, nous n’avons pas la prétention d’être en mesure de cibler toutes les questions qui émergent actuellement, et encore moins d’avoir les réponses. Cependant, cela ne justifie pas pour autant d’être passif. Nous devons essayer d’être réflexifs et critiques dans la limite de nos capacités et de nos connaissances. En ce sens, les étudiants et les enseignants doivent aussi être proactifs en entreprenant les démarches nécessaires ainsi qu’en s’engageant dans la réflexion.</p>
+<p>Dans un premier temps, un bon usage de ces outils débute avec une bonne réflexion quant à leur utilisation. Par conséquent, les universités constituent des endroits privilégiés pour favoriser les discussions et les réflexions quant à l’utilisation de ces technologies. D’ailleurs, certaines universités se sont déjà dotées de lignes directrices quant à l’utilisation de robots conversationnels et de l’IA générative<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Nous sommes d’avis que chaque université aurait intérêt à se doter de tel document, afin de fournir les ressources nécessaires aux étudiants ainsi qu’aux membres du corps professoral dans leur utilisation de ces outils. L’accompagnement et l’encadrement dans l’exploration et l’utilisation de l’IA nous paraissent être une bonne stratégie à adopter afin de permettre le développement de bonnes pratiques.</p>
+<p>Actuellement, un enjeu majeur, surtout avec les robots conversationnels, est le plagiat. Notre but ici est de présenter les différentes ressources qui s’offrent aux lecteurs pour qu’ils puissent développer les bonnes pratiques d’utilisation de ces outils tout en restant intègres. Pour ce faire, nous présenterons dans les paragraphes suivants les bonnes pratiques de citation selon l’American Psychological Association et The Chicago Manual of Style. Avant cela, il est important de spécifier que notre point de vue, et les propos tenus dans ce livre, ne remplace en aucun cas les règlements disciplinaires et/ou codes de conduite établis par une institution académique quelconque. Par conséquent, nous invitons fortement les lecteurs à consulter les sites web de ces associations, à se référer aux personnels appropriés pour toutes questions relatives à l’utilisation de texte généré par l’IA ainsi qu’à tout document relatif au plagiat produit par l’institution académique fréquentée. Passons maintenant à la présentation de ces manuels de style.</p>
+<p>L’American Psychological Association (APA) encourage les utilisateurs à être transparents quant à leur utilisation de logiciels tel que ChatGPT. Lorsqu’utilisés, les chercheurs devraient spécifier clairement qu’ils ont utilisé le logiciel, en plus de décrire comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé et quel a été le résultat en plus de fournir des extraits textuels <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo 2023</a>)</span>. Il est recommandé de documenter chaque utilisation. Se créer un document qui inclue la date d’utilisation, la question demandée ainsi que la réponse obtenue doit faire partie des bonnes pratiques de chacun. Ces éléments peuvent être ajoutés en annexe au besoin <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo 2023</a>)</span>. Sans grande surprise, il est impératif de citer l’auteur lorsqu’on utilise des idées qui ne sont pas les nôtres. Dans le cas de robots conversationnels, nous devons citer le développeur <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo 2023</a>)</span>. Par exemple, pour une citation de ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.</p>
+<p>Utilisons un exemple concret afin d’illustrer le tout. Supposons que je m’intéresse au concept du totalitarisme, mais que je n’ai pas une compréhension claire de ce que ça signifie. Je pourrais utiliser ChatGPT pour me fournir une définition du concept. Si je souhaite l’inclure dans mon travail, je procèderais de la façon suivante : nous avons utilisé ChatGPT afin de nous donner une définition du totalitarisme. Pour ce faire, nous lui avons posé la question suivante : « Qu’est-ce que le totalitarisme? ». Le logiciel nous a fourni la définition suivante : « Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique. » (OpenAI 2023)</p>
+<p>En bibliographie, la référence serait insérée comme suit, et ensuite j’irai insérer la question et la réponse complète en annexe<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<p>OpenAI. (2023). ChatGPT (Version du 3 août 2023) [Large Language Model]. https://chat.openai.com/auth/login (exemple tiré de McAdoo 2023)</p>
+<!-- 
+Cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi-exponentielle. Cette progression fulgurante nous permet de faire quelque constat pour appréhender l'évolution future. Ce qui est intéressant de la recherche dans ce domaine, c'est que le développement des capacités de l'IA permet, en retour, de la développer encore plus rapidement. L'IA peut rendre l'IA exponentiellement plus puissante [@harari23]. Elle est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d'auto-améliorations, que si elle était uniquement dépendante de l'humain.
+
+En tant que chercheur.euse.s en sciences sociales, pourquoi devrait-on être préoccupés par le développement de l'IA? Considérons d'abord les différents impacts que l'IA a sur nos sociétés. Les avancées dans le domaine en plus de l'accessibilité à ces technologies, tels que les Large Language Model (LLM), en font de nouveaux objets d'étude actuels, et surtout sans grandes réponses. Yuval Noah Harrari [-@harari23], historien et philosophe, explique dans un article que la capacité de l'IA à manipuler ainsi qu'à générer du langage en font des outils puissants qui ont le potentiel d'avoir de profond impact sur nos civilisations. Par conséquent, l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » \[Traduction libre\] [@bremmer_suleyman23, pp. 32]. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l'interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu'une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.
+
+## Défis et enjeux éthiques de l'IA, accent sur ChatGPT
+
+Étudiant.e.s, professeur.e.s, professionnel.le.s et chercheur.euse.s se doivent d’être proactifs et entreprendre les démarches nécessaires pour questionner leur utilisation des différents outils de l’IA. Les universités constituent des endroits privilégiés pour favoriser les discussions et les réflexions quant à l'utilisation de ces technologies. D'ailleurs, certaines universités se sont déjà dotées de lignes directrices quant à l'utilisation de robots conversationnels et de l'IA générative[^chapitre_9-2]. Nous sommes d'avis que chaque université aurait intérêt à se doter de tel document, afin de fournir les ressources nécessaires aux étudiants ainsi qu'aux membres du corps professoral dans leur utilisation de ces outils. L'accompagnement et l'encadrement dans l'exploration et l'utilisation de l'IA sont des stratégies à adopter afin de permettre le développement de bonnes pratiques.
+
+[^chapitre_9-2]: Sur ce sujet, nous recommandons de consulter les ressources dans la section Bonnes pratiques d'utilisation de l'IA dans l'Annexe 1 du chapitre.
+
+Actuellement, un enjeu majeur, surtout avec les robots conversationnels, est le plagiat. Différentes ressources s'offrent aux lecteurs pour qu'ils puissent développer les bonnes pratiques d'utilisation de ces outils tout en restant intègres. Les paragraphes suivants présentent les bonnes pratiques de citation selon l'American Psychological Association et The Chicago Manual of Style. Or, les propos tenus dans ce livre ne remplacent en aucun cas les règlements disciplinaires et/ou codes de conduite établis par une institution académique quelconque ni aux politiques mises en place dans le cadre des cours. Par conséquent, nous invitons fortement les lecteurs à consulter les sites web de ces associations, à se référer aux personnels appropriés pour toutes questions relatives à l'utilisation de texte généré par l'IA ainsi qu'à tout document relatif au plagiat produit par l'institution académique fréquentée.
+
+L'American Psychological Association (APA) encourage les utilisateurs à être transparents quant à leur utilisation de logiciels tel que ChatGPT. Lorsqu'utilisés, les chercheurs devraient spécifier clairement qu'ils ont utilisé le logiciel, en plus de décrire comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé et quel a été le résultat en plus de fournir des extraits textuels [@mcadoo23]. Il est recommandé de documenter chaque utilisation. Se créer un document qui inclue la date d'utilisation, la question demandée ainsi que la réponse obtenue doit faire partie des bonnes pratiques de chacun. Ces éléments peuvent être ajoutés en annexe au besoin [@mcadoo23]. Sans grande surprise, il est impératif de citer l'auteur lorsqu'on utilise des idées qui ne sont pas les nôtres. Dans le cas de robots conversationnels, nous devons citer le développeur [@mcadoo23]. Par exemple, pour une citation de ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.
+
+Utilisons un exemple concret afin d'illustrer le tout. Supposons que je m'intéresse au concept du totalitarisme, mais que je n'ai pas une compréhension claire de ce que ça signifie. Je pourrais utiliser ChatGPT pour me fournir une définition du concept. Si je souhaite l'inclure dans mon travail, je procèderais de la façon suivante : nous avons utilisé ChatGPT afin de nous donner une définition du totalitarisme. Pour ce faire, nous lui avons posé la question suivante : « Qu'est-ce que le totalitarisme ? ». Le logiciel nous a fourni la définition suivante : « Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d'une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l'homme, et éliminant ou réprimant toute opposition ou critique. » (OpenAI 2023)
+
+En bibliographie, la référence serait insérée comme suit, et ensuite j'irai insérer la question et la réponse complète en annexe[^chapitre_9-3].
+
+[^chapitre_9-3]: Référez-vous à l'Annexe 2 pour un exemple.
+
+OpenAI. (2023). ChatGPT (Version du 3 août 2023) [Large Language Model].
+https://chat.openai.com/auth/login (exemple tiré de McAdoo 2023)
+-->
+<p>Quant au manuel de style Chicago, il est recommandé de mentionner et d’expliquer que nous avons utilisé ChatGPT pour accomplir une certaine tâche dans notre texte. Toutefois, comme le lien généré lors de l’utilisation individuelle de ChatGPT n’est pas public et ne peut pas être consulté par les autres, il n’est pas recommandé d’insérer la référence en bibliographie.</p>
+<p>Toutefois, à moins que la recherche porte directement sur ChatGPT, nous déconseillons fortement d’utiliser uniquement ce que le robot conversationnel fournit comme réponse. Reprenons l’exemple du totalitarisme. Dans ce cas, bien que la définition fournît soit relativement bonne, nous recommandons d’aller consulter des sources académiques afin de trianguler la définition qui a été générée, d’une part, et surtout de présenter une définition qui est reconnue par les pairs scientifiques. Toutefois, pour ce faire, il est possible d’utiliser ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui portent sur le sujet. À partir de ces recommandations, nous pouvons nous référer directement à ces ouvrages et débuter notre revue des écrits. Surtout, à moins que ce ne soit que pour vous faire une idée du contenue, n’utilisez pas ChatGPT pour résumer un livre et utiliser le résumé pour votre travail! Cette pratique constitue une forme de plagiat. Aller consulter les ouvrages directement plutôt que d’utiliser les définitions fournies par ChatGPT fait partie des bonnes pratiques. De plus, développer un esprit de synthèse est fondamental pour chaque étudiant universitaire, ainsi que pour les futurs chercheurs. Commencez dès maintenant à vous pratiquer pour développer ces capacités. Ne demandez pas à ChatGPT de le faire à votre place.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-alpaydin_bach14" class="csl-entry" role="listitem">
+Alpaydin, Ethem, and Francis Bach. 2014. <em>Introduction to <span>Machine Learning</span></em>. 3e ed. Massachusetts: MIT Press. <a href="https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851">https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851</a>.
 </div>
-<p>GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L’application simplifie également la résolution des conflits lors de la fusion des branches.</p>
-<p>Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhension des commandes Git en ligne de commande, ce qui pourrait devenir un inconvénient si vous devez travailler dans un environnement sans interface visuelle. De plus, GitHub Desktop est spécifiquement conçu pour interagir avec GitHub. Si vous devez travailler avec d’autres plateformes de gestion de versions, cela pourrait poser des problèmes.</p>
-<p>La décision entre l’utilisation du terminal et de GitHub Desktop dépend de vos préférences et de vos besoins. Pour les chercheurs qui débutent, GitHub Desktop offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes Git en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d’autres chercheurs qui utilisent des approches basées sur le terminal.</p>
-</section>
-</section>
-<section id="conclusion" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.4</span> Conclusion<!--AFC: Renommer cette section, ce n'est pas la conclusion du livre. Aussi, je ne sais pas à quel niveau hiérarchique la placer.--></h2>
-<p>En utilisant Git et GitHub de manière stratégique, vous pouvez gérer efficacement votre projet de recherche en sciences sociales, collaborer avec vos collègues et rendre votre travail accessible tout en préservant la confidentialité des données sensibles. Ce processus contribue à un environnement de recherche collaboratif et structuré, essentiel pour mener à bien vos analyses sur l’impact des médias sur l’opinion publique.<!--AFC: Enlever la référence à cette recherche en particulier, nous ne sommes plus dans cette sous-section du chapitre.--></p>
-</section>
-<section id="outils-dentreposage-des-données" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="outils-dentreposage-des-données"><span class="header-section-number">8.5</span> Outils d’entreposage des données<!--AFC: Mentionner Dropbox?--></h2>
-<p>L’entreposage des données occupe une place cruciale dans la recherche en sciences sociales numériques. La manière dont vous entreposez et gérez vos données peut avoir un impact significatif sur la sécurité, la confidentialité et la reproductibilité de votre travail. Dans cette section, nous allons aborder différents aspects de l’entreposage de données, des outils disponibles et de l’importance d’une gestion efficace de vos fichiers.</p>
-<section id="entreposage-de-données-non-sensibles" class="level3" data-number="8.5.1">
-<h3 data-number="8.5.1" class="anchored" data-anchor-id="entreposage-de-données-non-sensibles"><span class="header-section-number">8.5.1</span> Entreposage de données non sensibles</h3>
-<p>Au fil du temps, de nombreux outils d’entreposage ont émergé pour répondre aux besoins variés des chercheurs en sciences sociales. Des solutions populaires incluent Dropbox, Google Drive, OneDrive et Amazon S3 d’AWS. L’histoire de ces outils témoigne de l’évolution des besoins d’entreposage et de collaboration.</p>
-<p>Lorsqu’il s’agit d’entreposer vos données de recherche, la règle d’or est de ne jamais perdre d’informations précieuses. Cette préoccupation prend toute son importance lorsqu’un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d’entreposage cloud tels que Dropbox, Google Drive et OneDrive se révèlent indispensables. Voici quelques avantages d’un entreposage sur le cloud pour la recherche&nbsp;:</p>
-<ol type="1">
-<li><p><em>Sauvegarde automatique</em>&nbsp;: Les solutions cloud sauvegardent automatiquement vos fichiers, garantissant que vous ne perdrez jamais vos données en cas de panne d’ordinateur ou d’accident.</p></li>
-<li><p><em>Accessibilité universelle</em>&nbsp;: Vous pouvez accéder à vos fichiers à partir de n’importe quel appareil avec une connexion Internet, ce qui favorise la flexibilité dans la gestion de vos projets.<!--AFC: J'ajouterais "Vous n'avez pas besoin d'utiliser un disque dur externe, une clé USB ou encore de vous envoyer vos fichiers par courriel."--></p></li>
-<li><p><em>Partage facilité</em>&nbsp;: Les services cloud permettent de partager facilement des fichiers et des dossiers avec des collègues, même en dehors de votre équipe de recherche. Cela favorise la collaboration et la communication.</p></li>
-</ol>
-<p>Il est important de noter que le choix d’un service cloud dépend de vos besoins et de vos préférences. Considérez des facteurs tels que la capacité d’entreposage, les fonctionnalités de partage, la convivialité et la compatibilité avec vos outils de recherche existants.</p>
-<p>Dropbox est connu pour sa simplicité d’utilisation et sa convivialité. Il peut être un choix approprié pour entreposer des fichiers non sensibles, partager des documents avec des collègues et faciliter la collaboration.<!--AFC: ... Donc? On va mettre l'accent sur Dropbox dans cette section ou pas?--></p>
-<p>Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier <em>.gitignore</em><!--AFC: Ajouter "&nbsp;: cela évitera qu'il soit partagé à d'autres personnes ayant accès au [repository à traduire]." Important de préciser aussi que le .gitignore est partagé, donc une personne mal intentionnée pourrait modifier le contenu du .gitignore "par accident" pour avoir accès à un fichier sensible. Il faut rester vigilant avec les commits.-->.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/chapitre8_dropbox.png" class="img-fluid figure-img"></p>
-<figcaption>image1</figcaption>
-</figure>
+<div id="ref-argyle_etal23" class="csl-entry" role="listitem">
+Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate. 2023. <span>“Out of <span>One</span>, <span>Many</span>: <span>Using Language Models</span> Ot <span>Simulate Human Samples</span>.”</span> <em>Political Analysis</em> 31 (3): 337–51. <a href="https://doi.org/10.1017/pan.2023.2">https://doi.org/10.1017/pan.2023.2</a>.
 </div>
-<!--AFC: Parler de l'image?-->
-<p>Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l’intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l’archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.</p>
-<p>Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d’utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub.</p>
-<p>Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.--> C’est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l’utilisation d’AWS peut s’avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe.</p>
-</section>
-<section id="entreposage-de-données-sensibles" class="level3" data-number="8.5.2">
-<h3 data-number="8.5.2" class="anchored" data-anchor-id="entreposage-de-données-sensibles"><span class="header-section-number">8.5.2</span> Entreposage de données sensibles</h3>
-<p>Lorsqu’il s’agit d’entreposer des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n’est pas adapté à l’entreposage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source ouvert. Une solution courante est d’utiliser des services de cloud sécurisés, tels qu’AWS, qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.</p>
-<p>AWS regroupe un ensemble de services <em>cloud</em> <!-- Infonuagiques --> proposés par Amazon. Il offre une vaste gamme de services, allant de l’entreposage et de la gestion des données à la computation et à l’analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L’outil présente de multiples avantages:</p>
-<ol type="1">
-<li><p><em>Sécurité robuste</em>&nbsp;: AWS met l’accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.</p></li>
-<li><p><em>Scalabilité</em>&nbsp;:<!--AFC: Trouver une traduction.--> AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.</p></li>
-<li><p><em>Flexibilité</em>&nbsp;: AWS propose une variété de services adaptés à différentes utilisations, allant de l’entreposage de données au calcul intensif pour l’analyse avancée.</p></li>
-<li><p><em>Collaboration simplifiée</em>&nbsp;: Bien que le coût d’entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.</p></li>
-</ol>
-<p>AWS n’est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur<!--AFC: Ça s'adresse toujours à des étudiants qui vont faire des serpents et échelles?-->, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d’utilisation d’AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l’utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable.</p>
-<section id="exemple-dutilisation-daws-pour-entreposer-et-accéder-à-des-données-de-sondages-dans-rstudio" class="level4" data-number="8.5.2.1">
-<h4 data-number="8.5.2.1" class="anchored" data-anchor-id="exemple-dutilisation-daws-pour-entreposer-et-accéder-à-des-données-de-sondages-dans-rstudio"><span class="header-section-number">8.5.2.1</span> Exemple d’utilisation d’AWS pour entreposer et accéder à des données de sondages dans RStudio</h4>
-<p>Imaginez un jeune chercheur en sciences sociales qui travaille sur une analyse comparative de données de sondages recueillies sur plusieurs décennies. Pour maintenir la sécurité des données sensibles et faciliter l’accès pour les analyses dans RStudio, il décide d’utiliser AWS pour l’entreposage et la gestion de ses données.<!--AFC: Est-ce vraiment un scénario réaliste? Je suis ouvert à être convaincu, mais il les avantages mentionnés dans la section précédente me semblent insuffisants pour justifier qu'un jeune étudiant décide d'y investir du temps. C'est vraiment pas quelque chose que je recommanderais à n'importe qui. La section actuelle serait peut-être pertinente, encore une fois, à publier séparément... C'est super bon pour les profs honnêtement, faut pas perdre ça. Mais je pense pas que c'est adapté au public visé. Un étudiant peut se créer son propre Notion, son propre compte GitHub, des repos Git partagés, un site Web avec WordPress, etc. mais il faut vraiment être crinqué pour y aller avec AWS ou pour créer un espace de travail Slack à utiliser par une équipe de travail, non?--></p>
-<section id="étape-1-création-dun-compte-aws-et-configuration" class="level5" data-number="8.5.2.1.1">
-<h5 data-number="8.5.2.1.1" class="anchored" data-anchor-id="étape-1-création-dun-compte-aws-et-configuration"><span class="header-section-number">8.5.2.1.1</span> Étape 1&nbsp;: Création d’un compte AWS et configuration</h5>
-<p>Le chercheur crée un compte AWS et configure ses paramètres de sécurité, y compris la configuration de l’authentification à deux facteurs pour renforcer la sécurité de son compte.</p>
-</section>
-<section id="étape-2-création-dun-espace-dentreposage-s3" class="level5" data-number="8.5.2.1.2">
-<h5 data-number="8.5.2.1.2" class="anchored" data-anchor-id="étape-2-création-dun-espace-dentreposage-s3"><span class="header-section-number">8.5.2.1.2</span> Étape 2&nbsp;: Création d’un espace d’entreposage S3</h5>
-<p>Le chercheur crée un compartiment Amazon S3 (Simple Storage Service) pour entreposer ses données de sondage. Il choisit une région AWS et définit les paramètres de sécurité appropriés, tels que le chiffrement des données.</p>
-</section>
-<section id="étape-3-transfert-des-données-vers-amazon-s3" class="level5" data-number="8.5.2.1.3">
-<h5 data-number="8.5.2.1.3" class="anchored" data-anchor-id="étape-3-transfert-des-données-vers-amazon-s3"><span class="header-section-number">8.5.2.1.3</span> Étape 3&nbsp;: Transfert des données vers Amazon S3</h5>
-<p>Le chercheur transfère les données de sondage dans son compartiment Amazon S3 à l’aide de l’interface en ligne AWS ou d’outils d’importation.</p>
-</section>
-<section id="étape-4-configuration-des-autorisations" class="level5" data-number="8.5.2.1.4">
-<h5 data-number="8.5.2.1.4" class="anchored" data-anchor-id="étape-4-configuration-des-autorisations"><span class="header-section-number">8.5.2.1.4</span> Étape 4&nbsp;: Configuration des autorisations</h5>
-<p>Pour sécuriser davantage les données, le chercheur configure les autorisations d’accès aux données dans Amazon S3. Il attribue des rôles et des politiques d’accès spécifiques aux utilisateurs, garantissant que seules les personnes autorisées peuvent accéder aux données.</p>
-</section>
-<section id="étape-5-configuration-daccès-dans-rstudio" class="level5" data-number="8.5.2.1.5">
-<h5 data-number="8.5.2.1.5" class="anchored" data-anchor-id="étape-5-configuration-daccès-dans-rstudio"><span class="header-section-number">8.5.2.1.5</span> Étape 5&nbsp;: Configuration d’accès dans RStudio</h5>
-<p>Le chercheur installe le package <em>aws.s3</em> dans RStudio pour accéder à ses données entreposées dans Amazon S3. Il configure également les informations d’identification AWS dans son environnement RStudio.</p>
-</section>
-<section id="étape-6-accès-et-analyse-des-données-dans-rstudio" class="level5" data-number="8.5.2.1.6">
-<h5 data-number="8.5.2.1.6" class="anchored" data-anchor-id="étape-6-accès-et-analyse-des-données-dans-rstudio"><span class="header-section-number">8.5.2.1.6</span> Étape 6&nbsp;: Accès et analyse des données dans RStudio</h5>
-<p>À l’aide du package <em>aws.s3</em>, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements. <!-- C'est quand même plus compliqué que ça. Voir commentaires à la fin.--></p>
-</section>
-<section id="étape-7-sécurité-et-conservation-des-données" class="level5" data-number="8.5.2.1.7">
-<h5 data-number="8.5.2.1.7" class="anchored" data-anchor-id="étape-7-sécurité-et-conservation-des-données"><span class="header-section-number">8.5.2.1.7</span> Étape 7&nbsp;: Sécurité et conservation des données</h5>
-<p>Après avoir effectué ses analyses, le chercheur peut choisir de conserver les données de sondage dans Amazon S3 en utilisant les politiques de conservation appropriées. Il peut également archiver des copies de sauvegarde pour garantir l’intégrité des données à long terme.</p>
-<p>Dropbox se concentre principalement sur l’entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services <em>cloud</em>, y compris l’entreposage sécurisé de données sensibles et la mise en place d’infrastructures évolutives. GitHub, d’autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d’expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?--></p>
-</section>
-</section>
-</section>
-<section id="conclusion-1" class="level3" data-number="8.5.3">
-<h3 data-number="8.5.3" class="anchored" data-anchor-id="conclusion-1"><span class="header-section-number">8.5.3</span> Conclusion</h3>
-<p>L’entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l’entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l’intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.</p>
-<!--AFC: Conclusion du chapitre au complet à ajouter!-->
-<!-- Les auteurs devraient aborder d'autres logiciels que Slack, tel que d'autres. -->
-<!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
-
-Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<div id="ref-bengio23" class="csl-entry" role="listitem">
+Bengio, Yoshua. 2023. <span>“One of the "Godfathers of <span>AI</span>" Airs His Concerns.”</span> <em>The Economist</em>, July 21, 2023. <a href="https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns">https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns</a>.
+</div>
+<div id="ref-bertolini20" class="csl-entry" role="listitem">
+Bertolini, Andrea. 2020. <span>“Artificial <span>Intelligence</span> and <span>Civil Liability</span>.”</span> Policy Department for Citizen's Rights and Constitutional Affairs. Brussel: European Union. <a href="https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf">https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf</a>.
+</div>
+<div id="ref-bourgeois21" class="csl-entry" role="listitem">
+Bourgeois, Isabelle. 2021. <span>“Qu’est-Ce Que La Recherche Sociale?”</span> In <em>Recherche Sociale. <span>De</span> La Problématique à La Collecte Des Données</em>, 7e ed., 1–14. Boisbriand: Presses de l’Université du Québec.
+</div>
+<div id="ref-bremmer_suleyman23" class="csl-entry" role="listitem">
+Bremmer, Ian, and Mustafa Suleyman. 2023. <span>“The <span>AI Power Paradox</span>.”</span> <em>Foreign Affairs</em>, 2023.
+</div>
+<div id="ref-devedec21" class="csl-entry" role="listitem">
+Dévédec, Nicolas Le. 2021. <span>“"<span>Sans</span> Limites": Une Critique Politique Et Écologique Du Transhumanisme Et de Son Monde.”</span> <em>Cahiers Société</em> 3: 99–122. <a href="https://doi.org/10.7202/1090180ar">https://doi.org/10.7202/1090180ar</a>.
+</div>
+<div id="ref-devedzic22" class="csl-entry" role="listitem">
+Devedzic, Vladan. 2022. <span>“Identity of <span>AI</span>.”</span> <em>Discover Artificial Intelligence</em> 2 (23). <a href="https://doi.org/10.1007/s44163-022-00038-0">https://doi.org/10.1007/s44163-022-00038-0</a>.
+</div>
+<div id="ref-forestier_ansermet21" class="csl-entry" role="listitem">
+Forestier, François, and François Ansermet. 2021. <span>“Le Transhumanisme.”</span> In <em>La <span>Dévoration Numérique</span></em>, 19–54. Paris: Odile Jacob. <a href="https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm">https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm</a>.
+</div>
+<div id="ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" class="csl-entry" role="listitem">
+Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, Ziming Liu, Payal Chandak, Shengchao Liu, Peter Van Katwyk, Andreea Deac, Anima Anandkumar, Karianne Bergen, Carla P. Gomes, Shirley Ho, Pushmeet Kohli, Joan Lasenby, Jure Leskovec, Tie-Yan Liu, Arjun Manrai, Debora Marks, Bharath Ramsundar, Le Song, Jimeng Sun, Jian Tang, Petar Veličković, Max Welling, Linfeng Zhang, Connor W. Coley, and Yoshua Bengio, &amp; Marinka Zitnik. 2023. <span>“Scientific Discovery in the Age of Artificial Intelligence.”</span> <em>Nature</em> 620: 47–60. <a href="https://www.nature.com/articles/s41586-023-06221-2">https://www.nature.com/articles/s41586-023-06221-2</a>.
+</div>
+<div id="ref-harari23" class="csl-entry" role="listitem">
+Harari, Yuval Noah. 2023. <span>“Yuval <span>Noah Harari</span> Argues That <span>AI</span> Has Hacked the Operating System of Human Civilisation.”</span> <em>The Economist</em>, April 28, 2023. <a href="https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation">https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation</a>.
+</div>
+<div id="ref-ibm23" class="csl-entry" role="listitem">
+IBM. 2023a. <span>“What Are <span>Neural Networks</span>? | <span>IBM</span>.”</span> 2023. <a href="https://www.ibm.com/topics/neural-networks">https://www.ibm.com/topics/neural-networks</a>.
+</div>
+<div id="ref-ibm23a" class="csl-entry" role="listitem">
+———. 2023b. <span>“What Is <span>Artificial Intelligence</span> (<span>AI</span>) ? | <span>IBM</span>.”</span> IBM. 2023. <a href="https://www.ibm.com/topics/artificial-intelligence">https://www.ibm.com/topics/artificial-intelligence</a>.
+</div>
+<div id="ref-king_etal21" class="csl-entry" role="listitem">
+King, Gary, Robert O. Keohane, and Sidney Verba. 2021. <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> Nouvelle édition. Princenton: Princeton University Press.
+</div>
+<div id="ref-konig_etal22" class="csl-entry" role="listitem">
+König, Pascal D., Tobias D. Krafft, Wolfgang Schulz, and Katharina A. Zweig. 2022. <span>“Essence of <span>AI</span>. <span>What Is AI</span>?”</span> In <em>The <span>Cambridge Handbook</span> of <span>Artificial Intelligence</span></em>, edited by and Michel Cannarsa Cristina Poncibò, 18–34. Cambrigde: Cambridge University Press. <a href="https://doi.org/10.1017/9781009072168.005">https://doi.org/10.1017/9781009072168.005</a>.
+</div>
+<div id="ref-mcadoo23" class="csl-entry" role="listitem">
+McAdoo, Timothy. 2023. <span>“How to Cite <span>ChatGPT</span>.”</span> https://apastyle.apa.org. April 7, 2023. <a href="https://apastyle.apa.org/blog/how-to-cite-chatgpt">https://apastyle.apa.org/blog/how-to-cite-chatgpt</a>.
+</div>
+<div id="ref-mccarthy07" class="csl-entry" role="listitem">
+McCarthy, John. 2007. <span>“<span>WHAT IS ARTIFICIAL INTELLIGENCE</span>?”</span>
+</div>
+<div id="ref-park_etal23" class="csl-entry" role="listitem">
+Park, Joon Sung, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. 2023. <span>“Generative <span>Agents</span>: <span>Interactive Simulacra</span> of <span>Human Behavior</span>.”</span> <em>arXiv</em>. <a href="https://doi.org/10.48550/arXiv.2304.03442">https://doi.org/10.48550/arXiv.2304.03442</a>.
+</div>
+<div id="ref-peterson_etal21" class="csl-entry" role="listitem">
+Peterson, Joshua C., David D. Bourgin, Mayank Agrawal, Daniel Reichman, and Thomas L. Griffiths. 2021. <span>“Using <span>Large-Scale Experiments</span> and <span>Machine Learning</span> to <span>Discover Theories</span> of <span>Human Decision-Making</span>.”</span> <em>Science</em> 372 (6547): 1209–14. <a href="https://doi.org/10.1126/science.abe2629">https://doi.org/10.1126/science.abe2629</a>.
+</div>
+<div id="ref-roser22" class="csl-entry" role="listitem">
+Roser, Max. 2022. <span>“The <span>Brief History</span> of <span>Artificial Intelligence</span>: <span>The World Has Changed Fast</span> – <span>What Might Be Next</span>?”</span> Our World in Data. December 6, 2022. <a href="https://ourworldindata.org/brief-history-of-ai">https://ourworldindata.org/brief-history-of-ai</a>.
+</div>
+<div id="ref-sartre96" class="csl-entry" role="listitem">
+Sartre, Jean-Paul. 1996. <em>L’existentialisme Est Un Humanisme</em>. Paris: Gallimard.
+</div>
+<div id="ref-wang19" class="csl-entry" role="listitem">
+Wang, Pei. 2019. <span>“On <span>Defining Artificial Intelligence</span>.”</span> <em>Journal of Artificial General Intelligence</em> 10 (2): 1–37. <a href="https://doi.org/10.2478/jagi-2019-0002">https://doi.org/10.2478/jagi-2019-0002</a>.
+</div>
+<div id="ref-weise_metz23" class="csl-entry" role="listitem">
+Weise, Karen, and Cade Metz. 2023. <span>“When <span>A</span>.<span>I</span>. <span>Chatbots Hallucinate</span>.”</span> <em>The New York Times</em>, May 9, 2023. <a href="https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html">https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html</a>.
+</div>
+</div>
+</section></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
+<ol>
+<li id="fn1"><p>Intelligence étant définit de la façon suivante : « L’intelligence est la partie informatique de la capacité à atteindre des objectifs dans le monde. On trouve différents types et degrés d’intelligence chez l’homme, chez de nombreux animaux et chez certaines machines. » <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">McCarthy 2007, 2</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Il s’agit d’ouvrages généraux qui porte sur un sujet quelconque. Les éditeurs les plus connus sont notamment <em>Oxford</em>, <em>SAGE</em> et <em>Routledge</em>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>L’épistémologie est l’une des branches de la philosophie des sciences qui s’intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l’une des questions fondamentales de l’épistémologie et de se questionner quant à savoir ce qu’est un savoir qui serait scientifique.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>La méthodologie fait référence à la branche de la philosophie des sciences qui s’intéresse aux outils de collecte et d’analyse de données.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Sur ce sujet, nous recommandons de consulter les ressources dans la section Bonnes pratiques d’utilisation de l’IA dans l’Annexe 1 du chapitre.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Référez-vous à l’Annexe 2 pour un exemple.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -948,22 +1049,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./chapitre_7.html" class="pagination-link" aria-label="Une image vaut mille mots">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./chapitre_7.html" class="pagination-link" aria-label="Baliser les sciences sociales&amp;nbsp;: langages et pratiques">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_9.html" class="pagination-link" aria-label="Outils d'intelligence artificielle">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conclusion.html" class="pagination-link" aria-label="Kit de démarrage pour les sciences sociales numériques">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>Livre-outils</p>
 </div>   
@@ -975,8 +1073,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

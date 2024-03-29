@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
-<title>Outils de recherche en sciences sociales numériques - 5&nbsp; Baliser les sciences sociales&nbsp;: langages et pratiques</title>
+
+<title>Outils de recherche en sciences sociales numériques - 6&nbsp; Les outils de collecte de données</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,27 +21,8 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
+
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -58,7 +42,8 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -84,25 +69,35 @@ div.csl-indent {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script>
+}</script>
+<script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script>
+
+
 </head>
+
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main">
@@ -122,7 +117,7 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Avant-propos</span></a>
@@ -130,61 +125,61 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La gestion des références</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre10.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
   </div>
 </li>
@@ -195,35 +190,35 @@ div.csl-indent {
   </div>
 </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#quest-ce-quun-langage-de-balisage" id="toc-quest-ce-quun-langage-de-balisage" class="nav-link active" data-scroll-target="#quest-ce-quun-langage-de-balisage"><span class="header-section-number">5.1</span> Qu’est-ce qu’un langage de balisage?</a></li>
-  <li>
-<a href="#comment-utiliser-un-langage-de-balisage" id="toc-comment-utiliser-un-langage-de-balisage" class="nav-link" data-scroll-target="#comment-utiliser-un-langage-de-balisage"><span class="header-section-number">5.2</span> Comment utiliser un langage de balisage?</a>
+  <li><a href="#le-big-data-et-les-différents-acteurs-de-la-société" id="toc-le-big-data-et-les-différents-acteurs-de-la-société" class="nav-link active" data-scroll-target="#le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">6.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">6.2</span> </a></li>
+  <li><a href="#plateformes-de-sondages-et-collecte-de-données" id="toc-plateformes-de-sondages-et-collecte-de-données" class="nav-link" data-scroll-target="#plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">6.3</span> Plateformes de sondages et collecte de données</a>
   <ul class="collapse">
-<li><a href="#environnements-d%C3%A9dition-et-de-compilation" id="toc-environnements-dédition-et-de-compilation" class="nav-link" data-scroll-target="#environnements-d%C3%A9dition-et-de-compilation"><span class="header-section-number">5.2.1</span> Environnements d’édition et de compilation</a></li>
+  <li><a href="#les-principales-plateformes-web." id="toc-les-principales-plateformes-web." class="nav-link" data-scroll-target="#les-principales-plateformes-web."><span class="header-section-number">6.3.1</span> Les principales plateformes web.</a></li>
+  <li><a href="#les-limites-des-sondages-en-ligne" id="toc-les-limites-des-sondages-en-ligne" class="nav-link" data-scroll-target="#les-limites-des-sondages-en-ligne"><span class="header-section-number">6.3.2</span> Les limites des sondages en ligne</a></li>
+  </ul></li>
+  <li><a href="#factiva-outils-de-récolte-de-données-médiatiques" id="toc-factiva-outils-de-récolte-de-données-médiatiques" class="nav-link" data-scroll-target="#factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">6.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></a></li>
+  <li><a href="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." id="toc-les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="nav-link" data-scroll-target="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">6.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></a></li>
+  <li><a href="#covidence-outil-de-récolte-darticles-scientifiques" id="toc-covidence-outil-de-récolte-darticles-scientifiques" class="nav-link" data-scroll-target="#covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">6.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></a></li>
+  <li><a href="#conclusion-et-discussion" id="toc-conclusion-et-discussion" class="nav-link" data-scroll-target="#conclusion-et-discussion"><span class="header-section-number">6.7</span> Conclusion et discussion:</a></li>
   </ul>
-</li>
-  <li>
-<a href="#quand-et-pourquoi-utiliser-un-langage-de-balisage" id="toc-quand-et-pourquoi-utiliser-un-langage-de-balisage" class="nav-link" data-scroll-target="#quand-et-pourquoi-utiliser-un-langage-de-balisage"><span class="header-section-number">5.3</span> Quand et pourquoi utiliser un langage de balisage?</a>
-  <ul class="collapse">
-<li><a href="#avantages" id="toc-avantages" class="nav-link" data-scroll-target="#avantages"><span class="header-section-number">5.3.1</span> Avantages</a></li>
-  <li><a href="#philosophie-du-code-source-ouvert-et-du-logiciel-libre" id="toc-philosophie-du-code-source-ouvert-et-du-logiciel-libre" class="nav-link" data-scroll-target="#philosophie-du-code-source-ouvert-et-du-logiciel-libre"><span class="header-section-number">5.3.2</span> Philosophie du code source ouvert et du logiciel libre</a></li>
-  <li><a href="#inconv%C3%A9nients" id="toc-inconvénients" class="nav-link" data-scroll-target="#inconv%C3%A9nients"><span class="header-section-number">5.3.3</span> Inconvénients</a></li>
-  </ul>
-</li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.4</span> Conclusion</a></li>
-  <li><a href="#r%C3%A9f%C3%A9rences" id="toc-références" class="nav-link" data-scroll-target="#r%C3%A9f%C3%A9rences"><span class="header-section-number">5.5</span> Références</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title"><span id="sec-chap5" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></h1>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></h1>
 </div>
 
 
@@ -237,204 +232,141 @@ div.csl-indent {
   
 
 
-</header><p>Lorsque vous lisez une page Web, un article scientifique ou un curriculum vitæ professionnel, vous vous doutez peut-être que le texte n’est pas toujours produit à l’aide d’un logiciel de traitement de texte comme Microsoft Word, Apple Pages ou LibreOffice Writer. La mise en page complexe réglée au millimètre près, la qualité des figures et des tableaux, l’utilisation de gabarits professionnels, le style des références ou encore la présence d’éléments interactifs sont difficiles et parfois impossibles à reproduire à l’aide d’un logiciel de traitement de texte régulier. L’ajout d’extraits de code, de tableaux de régression ou encore de figures de haute qualité graphique, ainsi que leur personnalisation, nécessitent une interface particulière.</p>
-<p>Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou <em>markup languages</em>. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l’aide du langage de balisage Markdown avec l’aide du système de publication Quarto. D’entrée de jeu, vous vous demandez peut-être quelle est l’utilité d’apprendre ces langages alors que les logiciels de traitement de texte sont nombreux, simples d’approche et en amélioration constante. Ce chapitre n’a pas pour objectif de décourager l’utilisation de ces logiciels, qui sont utiles et même souvent essentiels pour la production rapide de documents ainsi que pour des tâches de suivi des modifications et de travail avec des équipes multidisciplinaires. Le chapitre tentera plutôt de répondre, tour à tour, aux trois grandes questions suivantes&nbsp;: <em>Qu’est-ce qu’un langage de balisage? Quand et pourquoi utiliser un langage de balisage? Comment utiliser un langage de balisage?</em> L’accent sera mis sur Quarto ainsi que sur les langages Markdown et , bien que d’autres langages soient aussi abordés.</p>
-<section id="quest-ce-quun-langage-de-balisage" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="quest-ce-quun-langage-de-balisage">
-<span class="header-section-number">5.1</span> Qu’est-ce qu’un langage de balisage?</h2>
-<p>Un langage de balisage constitue un ensemble de commandes qui peuvent être entremêlées à du texte afin de produire une action informatique. Chaque langage contient son propre ensemble de commandes cohérentes et complémentaires. De manière plus formelle, ces commandes sont nommées <em>balises</em> (<em>tags</em> en anglais) et inscrites par le chercheur ou la chercheuse au travers du texte. Les balises constituent une manière de communiquer avec le logiciel utilisé dans un langage qu’il peut comprendre. Par exemple, une balise permet d’indiquer au logiciel que vous désirez qu’une section du texte soit écrite en caractères gras, en italique, à double interligne ou encore que vous souhaitez positionner une image d’une certaine manière au travers du texte. Cette interaction est rendue possible par la standardisation des langages de balisage&nbsp;: chaque balise correspond à une action précise, peu importe le logiciel utilisé, la langue dans laquelle le texte est rédigé, le type d’ordinateur utilisé, etc. Dans votre document source, les balises sont entremêlées au contenu de votre document. Au moment de compiler ce dernier, les balises produisent les actions informatisées qu’elles commandent et laissent comme document final le contenu mis en page tel que vous l’avez défini via les balises utilisées. La compilation est le processus par lequel un document écrit en langage de balisage est transformé en fichier textuel, en format PDF dans le cas de &nbsp;par exemple. La <a href="#fig-vscode" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> montre un exemple d’utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme Visual Studio Code. L’écran à droite de l’image montre le fichier PDF résultant du formatage réalisé dans la partie centrale de l’écran. Les balises utilisées sont décrites plus tard dans ce chapitre.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-vscode" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-vscode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre5_vscode.png" class="img-fluid figure-img" width="461">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vscode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: Exemple d’utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code &nbsp;: Auteurs du présent chapitre.
-</figcaption></figure>
-</div>
-</div>
-</div>
-<p>Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d’un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d’interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme <span class="citation" data-cites="goldfarb96">(<a href="references.html#ref-goldfarb96" role="doc-biblioref">Goldfarb 1996</a>)</span>. GML a été amélioré durant les décennies suivantes et a été suivi par d’autres langages de balisage, dont &nbsp;(1985), &nbsp;(1988), HTML (1993), XML (1998), Markdown (2004) et <code>R</code> Markdown (2012) <span class="citation" data-cites="encyclopaediabritannica23 hameed23 markdownguide23 worldwidewebconsortiumw3c98 xie23">(<a href="references.html#ref-encyclopaediabritannica23" role="doc-biblioref">Encyclopaedia Britannica 2023</a>; <a href="references.html#ref-hameed23" role="doc-biblioref">Hameed 2023</a>; <a href="references.html#ref-markdownguide23" role="doc-biblioref">Markdown Guide 2023</a>; <a href="references.html#ref-worldwidewebconsortiumw3c98" role="doc-biblioref">World Wide Web Consortium (W3C) 1998</a>; <a href="references.html#ref-xie23" role="doc-biblioref">Xie 2023</a>)</span>.</p>
-<p>Les langages de balisage permettent d’effectuer différentes tâches. HTML, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. XML, quant à lui, permet de structurer de larges volumes de données. &nbsp;permet pour sa part de formater du texte et de créer des documents en format PDF. Markdown permet également de créer des documents en format PDF, mais aussi en format HTML ou DOCX — format utilisé pour les documents Word —, contrairement à . <code>R</code> Markdown permet d’ajouter des extraits de code <code>R</code> à un fichier en langage Markdown. Enfin, depuis 2022, le système de publication scientifique et technique multilingue Quarto permet de créer des documents qui intègrent des extraits de code <code>R</code>, , Python, Julia ou JavaScript, créés dans différents types d’environnements, à un fichier en langage Markdown <span class="citation" data-cites="allaire22">(<a href="references.html#ref-allaire22" role="doc-biblioref">Allaire 2022</a>)</span>. , Markdown, <code>R</code> Markdown et Quarto permettent aussi d’intégrer les références bibliographiques du système de traitement de références . Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d’un même fichier. Le chapitre 6<!--@sec-chap6--> explique la manière de citer les références en langage &nbsp;par le biais de Zotero et de Better .</p>
-<p>Les balises constituent une manière de donner manuellement des commandes au logiciel que vous utilisez. Si vous utilisez Microsoft Word, vous avez accès à une panoplie de boutons qui vous permettent de formater votre texte. Les balises exercent les mêmes fonctions de formatage pour les fichiers produits en &nbsp;ou en Markdown, mais doivent être ajoutées à l’écrit par l’utilisateur. Lorsque vous appuyez sur un bouton ou utilisez une commande comme <code>Ctrl-G</code> ou <code>Cmd-I</code> dans Word, en réalité, cette commande ajoute des balises au travers de votre texte, mais rend celles-ci invisibles dans l’interface que vous utilisez. Cela permet d’avoir un texte élégant et facile à lire, mais comporte aussi plusieurs inconvénients. Le principal inconvénient est de limiter le pouvoir que vous avez sur le formatage de votre texte. En effet, si les boutons à votre disposition ne vous permettent pas de réaliser une opération, celle-ci sera éternellement impossible à réaliser pour vous. A contrario, les langages de balisage permettent un contrôle presque infini sur les opérations que vous souhaitez réaliser. Incidemment, dans la mesure où vous utilisez le langage approprié pour la tâche que vous souhaitez accomplir, vous devriez être capable de donner exactement la commande nécessaire à votre logiciel. Les langages de balisage, bien qu’ils aient un coût d’apprentissage qui peut s’avérer important et que l’interface de travail soit moins intuitive qu’un document Word, vous offrent une plus grande flexibilité.</p>
-<p>Afin d’utiliser un langage de balisage, il est impératif que le logiciel que vous utilisez puisse prendre en compte ce langage. Un logiciel permet rarement d’utiliser n’importe quel langage. Par exemple, le logiciel Shop permet seulement d’utiliser le langage . Il est aussi impératif de bien utiliser le langage de balisage. En effet, comme pour les langages de programmation, les langages de balisage ne peuvent pas déduire ce que vous souhaitez leur faire comprendre. Si vous souhaitez mettre du texte en gras, vous devez utiliser les bonnes balises. La moindre erreur peut être coûteuse, puisqu’une erreur dans la balise que vous utilisez risque de produire une commande incompréhensible et un message d’erreur, le logiciel ne réussissant pas à associer votre balise mal inscrite à une action informatisée. Conséquemment, il est impératif de bien vérifier les balises utilisées afin d’éviter toute erreur qui empêcherait votre document d’être compilé, c’est-à-dire d’être traduit dans son format final<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Chaque caractère dans une balise est important et il y a rarement plus d’une seule manière de commander une action. Par exemple, en , il n’y a qu’une seule manière de mettre du texte en gras. Il faut précisément utiliser cette commande: <code>\textbf{}</code>. Le positionnement des balises est lui aussi critique&nbsp;: il délimite la portion de texte à laquelle doit être appliquée l’action commandée par la balise.</p>
-<p>Il est important de distinguer les langages de balisage des langages de programmation, qui sont abordés plus en détail dans le chapitre 4<!--@sec-chap4-->. En effet, ceux-ci sont similaires à certains égards, mais ont des vocations différentes. Les deux s’appuient sur un langage informatisé, mais les langages et leurs objectifs diffèrent. Un langage de programmation définit des processus informatisés alors qu’un langage de balisage permet d’encoder du contenu de manière à ce que celui-ci soit lisible tant pour l’humain que pour son ordinateur.</p>
-<p>Dans le contexte de la recherche en sciences sociales, la programmation est généralement utilisée afin de récolter, d’analyser et de présenter visuellement des données. Une fois cartes, tableaux et graphiques produits, ceux-ci peuvent être enregistrés — par exemple en format PDF ou PNG — et inclus au sein d’un document qui sera formaté en utilisant un langage de balisage. En <code>R</code> Markdown et en Quarto, des extraits de langage de programmation peuvent être inclus dans des sections bien délimitées de documents écrits en langage de balisage. Plus généralement, le langage de programmation contribue à l’analyse alors que le langage de balisage est essentiellement utile afin de présenter les travaux de recherche, que ce soit dans un document écrit ou sur un site Web. C’est principalement de cette manière que sont utilisés les langages de programmation et de balisage dans le cadre de la recherche en sciences sociales.</p>
-</section><section id="comment-utiliser-un-langage-de-balisage" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="comment-utiliser-un-langage-de-balisage">
-<span class="header-section-number">5.2</span> Comment utiliser un langage de balisage?</h2>
-<p>En pratique, comment utilise-t-on Markdown, &nbsp;et ? D’emblée, &nbsp;a une syntaxe particulière qui demande un certain temps d’adaptation. Pour écrire une phrase simple comme celle-ci, la phrase peut être écrite telle quelle. Par contre, pour mettre un <strong>mot</strong> en caractères gras, il faut utiliser la balise suivante: <code>\textbf{mot}</code>. Pour mettre le en rouge, la balise est <code>\textcolor{red}{mot}</code>. Pour le mettre en italique et en note de bas de page<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, les balises <code>\footnote{\emph{mot}}</code> peuvent être utilisées. Ainsi, des balises peuvent contenir d’autres balises. En langage , une balise commence toujours par une barre oblique inversée. Par la suite, le nom de la fonction — <em>emph</em>, <em>textbf</em>, <em>textcolor</em>, etc. — est appelé. Enfin, généralement, le mot à formater est placé entre accolades (<code><a href="https://rdrr.io/r/base/Paren.html">{}</a></code>).</p>
-<p>Chaque document commence par un préambule. Celui-ci présente des informations telles que la taille des caractères, le type de document, le format de mise en page, la police de caractères, l’utilisation d’en-têtes et de pieds de page, ainsi que l’utilisation de <em>packages</em> &nbsp;permettant différentes fonctionnalités de personnalisation du document. Il n’est pas nécessaire ni souhaitable d’apprendre l’ensemble des fonctions et des <em>packages</em> &nbsp;qui existent. Au contraire, il est souvent mieux de commencer par un gabarit de document qui convient au type de document que vous voulez créer et ensuite de rechercher en anglais sur Stack Overflow la manière d’ajouter des éléments de formatage que vous ne connaissez pas, par exemple en recherchant <code>highlight latex text</code>.</p>
-<p>Markdown fonctionne de manière similaire à , mais se démarque par sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par contre, il nécessite parfois l’utilisation de balises &nbsp;afin de réaliser certaines tâches, comme changer la couleur du texte. Tout document Markdown débute avec un court bloc de syntaxe <code>YAML</code> (acronyme de <code>Yet Another Markup Language</code>) qui définit les paramètres généraux du document. Voici un bloc <code>YAML</code> typique pour un document Quarto&nbsp;:</p>
-<pre><code>---
-title: "Baliser les sciences sociales"
-subtitle: "Langages et pratiques"
-date: today
-author:
-  - Alexandre Fortier-Chouinard^[University of Toronto]
-  - Maxime Blanchard^[McGill University]
-  - Étienne Proulx^[McGill University]
-format: pdf
-toc: true
-date-format: "MMMM D, YYYY"
-bibliography: references.bib
----</code></pre>
-<p>Outre le titre, le sous-titre et le nom des auteurs, on trouve aussi dans l’en-tête YAML la présence d’une table des matières (<code>toc</code>), la date et son format, le format du document compilé — dans ce cas-ci, PDF — ainsi que le chemin d’arborescence afin d’accéder au document &nbsp;où sont enregistrées les références utilisées. Il est aussi possible d’y définir la taille de la police de caractères ou encore le gabarit Word servant à définir le format d’un document DOCX à produire. De manière particulièrement importante, c’est l’endroit où sont chargés les <em>packages</em> &nbsp;qui seront utilisés. En effet, la majorité des <em>packages</em> et fonctions &nbsp;sont utilisables dans Markdown, alors que l’inverse n’est pas vrai. Il est donc possible de personnaliser un document Markdown en utilisant des <em>packages</em> ayant été créés pour .</p>
-<p>La syntaxe à utiliser au travers du texte est somme toute plutôt simple. Pour mettre un ou plusieurs <strong>mots en gras</strong>, il suffit de les entourer de deux astérisques (<code>**mots en gras**</code>); pour les mettre <em>en italique</em>, il faut les encadrer d’une seule astérisque (<code>*en italique*</code>). Pour définir un titre de section ou de sous-section, il suffit de mettre des <code>#</code> devant le titre en question. Plus vous ajoutez de <code>#</code>, plus le titre sera petit et plus il sera considéré à un niveau hiérarchique inférieur dans la structure du texte. La syntaxe Markdown est donc plus légère que celle de , dans le but d’en rendre la lecture plus simple pour les utilisateurs et utilisatrices.</p>
-<p>Bien que des gabarits Markdown soient disponibles, ceux-ci sont plus rares. Ils se trouvent pour la plupart sur GitHub et sont rendus disponibles par leur créateur. Cela étant dit, leur personnalisation peut s’avérer plutôt complexe. En somme, Markdown est particulièrement pratique pour les documents ne nécessitant pas de respecter un gabarit précis et requérant simplement un document d’allure simple et professionnelle.</p>
-<p>Pour sa part, &nbsp;a une syntaxe relativement simple. D’emblée, les références &nbsp;pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur &nbsp;peut ressembler à ceci&nbsp;:</p>
-<pre><code>@book{darwin03,
-  address = {London},
-  author = {Darwin, Charles},
-  publisher = {John Murray},
-  title = {{On the Origin of Species by Means of Natural Selection
-or the Preservation of Favoured Races in the Struggle for Life}},
-  year = {1859}
-}
-
-@article{goldfarb96,
-  title={The Roots of SGML: A Personal Recollection},
-  author={Goldfarb, Charles F},
-  journal={Technical communication},
-  volume={46},
-  number={1},
-  pages={75},
-  year={1999},
-  publisher={Society for Technical Communication}
-}</code></pre>
-<p>Un fichier &nbsp;ne contient rien de plus qu’une série de publications commençant chacune par la balise <code>@</code> suivie du type d’article — <em>article</em>, <em>book</em> pour un livre, <em>incollection</em> pour un chapitre de livre, <em>inproceedings</em> pour une présentation dans une conférence, <em>unpublished</em> pour un article non publié et <em>online</em> pour un site Web sont parmi les plus connus — et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple <code>goldfarb96</code>. Dans le fichier , l’auteur doit écrire <code>\cite{goldfarb96}</code> pour voir dans le document PDF compilé <span class="citation" data-cites="goldfarb96">Goldfarb (<a href="references.html#ref-goldfarb96" role="doc-biblioref">1996</a>)</span>; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L’ordre des publications dans le document &nbsp;a peu d’importance, puisque &nbsp;réordonne par défaut la bibliographie en ordre alphabétique.</p>
-<section id="environnements-dédition-et-de-compilation" class="level3" data-number="5.2.1"><h3 data-number="5.2.1" class="anchored" data-anchor-id="environnements-dédition-et-de-compilation">
-<span class="header-section-number">5.2.1</span> Environnements d’édition et de compilation</h3>
-<p>Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d’environnements d’édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l’édition, la mise en forme et la compilation de documents dans des langages de balisage tels que &nbsp;et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d’environnements d’édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories&nbsp;: les logiciels de bureau et les éditeurs en ligne.</p>
-<p>D’abord, il existe plusieurs logiciels de bureau qui offrent un environnement d’édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Le logiciel RStudio, également abordé dans le chapitre 4<!--@sec-chap4-->, permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d’une même fenêtre. Il suffit d’installer certains <em>packages</em> contenant les fichiers nécessaires à l’utilisation des langages de balisage. Par exemple, il est possible de produire des documents en &nbsp;en utilisant le code suivant dans la console pour installer le <em>package</em> nécessaire à l’utilisation de la distribution &nbsp;Tiny&nbsp;: <code>install.packages("tinytex")</code>. Suivant le même principe, il est possible de produire des documents en <code>R</code> Markdown sur RStudio en installant le <em>package</em> suivant&nbsp;: <code>install.packages("rmarkdown")</code>. Pour Quarto, le téléchargement se fait en ligne, directement à partir du site Web de <span class="citation" data-cites="quarto23">Quarto (<a href="references.html#ref-quarto23" role="doc-biblioref">2023</a>)</span>.</p>
-<p>Pour l’écriture en , il est également nécessaire d’installer l’une des nombreuses distributions en ligne afin de pouvoir compiler ces documents dans un environnement local. Il existe des distributions telles que Mac&nbsp;pour Mac, Mik&nbsp;pour Windows et plusieurs autres <span class="citation" data-cites="just13">(<a href="references.html#ref-just13" role="doc-biblioref">Just 2013</a>)</span>. Ces distributions se distinguent par les différents <em>packages</em> avec lesquelles elles sont compatibles.</p>
-<p>Un autre environnement régulièrement utilisé pour travailler en langage de balisage est le logiciel de bureau VS Code. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu’RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en <code>R</code>.</p>
-<p>Lorsque vient le temps de collaborer à plusieurs sur un document écrit en Markdown ou en , les logiciels de bureau évoqués précédemment nécessitent l’utilisation de GitHub et de Git. L’utilisation de ces éditeurs peut présenter un défi supplémentaire pour les équipes de recherche non initiées. Il existe ainsi des éditeurs en ligne qui permettent de collaborer en temps réel sans passer par Git et GitHub, de manière similaire à Google Docs<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Le plus connu de ces logiciels est Overleaf, qui permet de produire des documents en langage . Puisqu’Overleaf permet d’avoir accès à ses documents &nbsp;à partir de n’importe quel navigateur, il n’y a pas de dépendance à un logiciel local sur un ordinateur, ce qui constitue un avantage important. La contrepartie de cet avantage est qu’en utilisant Overleaf, l’équipe de recherche est dépendante d’une connexion à Internet. En utilisant le package &nbsp;<code>rmarkdown</code>, Overleaf peut également inclure du code Markdown. Cependant, Overleaf ne permet pas de créer des documents en format DOCX ou HTML, ce qui constitue une limite de l’application. Overleaf comporte un compteur de mots intégré, ce qui n’est pas le cas des autres logiciels et environnements présentés plus haut.</p>
-</section></section><section id="quand-et-pourquoi-utiliser-un-langage-de-balisage" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="quand-et-pourquoi-utiliser-un-langage-de-balisage">
-<span class="header-section-number">5.3</span> Quand et pourquoi utiliser un langage de balisage?</h2>
-<p>La plupart des langages de balisage permettent de remplir l’une des deux fonctions suivantes, qui sont particulièrement importantes dans le contexte de la recherche en sciences sociales&nbsp;: produire des documents écrits et formater des pages Web. Dans les deux cas, ces actions peuvent être réalisées à partir de logiciels simples, mais ces logiciels ont des limites importantes auxquelles les langages de balisage apportent des solutions<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
-<p>Pour l’écriture de documents très simples comme une liste d’épicerie ou des notes rapides pendant une conférence, les logiciels de traitement de texte sont tout à fait convenables&nbsp;: ils sont simples et rapides à utiliser, un formatage professionnel du document n’est pas de mise. Utiliser un langage de balisage pour des tâches de base peut en effet rendre la tâche inutilement longue et complexe. Toutefois, plus la complexité d’un document augmente, plus il devient difficile d’obtenir un résultat satisfaisant en utilisant un logiciel de traitement de texte tel que Word, Pages ou Writer. A contrario, &nbsp;permet de produire des documents de tous les niveaux de complexité, tel que démontré sur la <a href="#fig-latex-vs-word" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>. Quant à Markdown, sa courbe d’apprentissage se situerait logiquement entre celles de &nbsp;et de Word, puisque ses balises sont simplifiées. Plus généralement, utiliser un langage de balisage comme &nbsp;ou Markdown<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> comporte plusieurs avantages par rapport aux logiciels de traitement de texte traditionnels. Ces avantages font tous appel à un mélange de quatre concepts principaux&nbsp;: automatisation, personnalisation, flexibilité et qualité graphique.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-latex-vs-word" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-latex-vs-word-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre5_word-vs-latex.png" class="img-fluid figure-img" width="627">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-latex-vs-word-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.2: Utilité relative de Word et de &nbsp;selon la complexité et la taille du document &nbsp;: Yannick Dufresne (2015).
-</figcaption></figure>
-</div>
-</div>
-</div>
-<section id="avantages" class="level3" data-number="5.3.1"><h3 data-number="5.3.1" class="anchored" data-anchor-id="avantages">
-<span class="header-section-number">5.3.1</span> Avantages</h3>
-<section id="référencement" class="level4" data-number="5.3.1.1"><h4 data-number="5.3.1.1" class="anchored" data-anchor-id="référencement">
-<span class="header-section-number">5.3.1.1</span> Référencement</h4>
-<p>Premièrement, &nbsp;et Markdown permettent d’intégrer une bibliographie <em>automatique</em> et professionnelle en utilisant . Cette bibliographie peut être adaptée très facilement en différents styles bibliographiques reconnus ou en un style bibliographique <em>personnalisé</em> à partir d’un des nombreux gabarits professionnels disponibles. Avec , il n’y a pas à vérifier si le titre de l’article est toujours en italique, si le numéro de volume est toujours entre parenthèses ou si le nom de famille des deuxièmes auteurs est toujours avant ou après le prénom puisque toutes ces opérations sont effectuées de manière <em>automatique</em>. &nbsp;comprend également les différences entre les types de sources — articles scientifiques, livres, sites Internet, etc. — et ajuste leur présentation en conséquence. De plus, si une des sources que vous citez n’est pas incluse dans la bibliographie, une erreur s’affiche, vous permettant d’identifier le problème plutôt que de vous retrouver avec une référence manquante. À l’inverse, si une source est retirée du texte, elle disparait <em>automatiquement</em> de la bibliographie dans le document final mais demeure présente dans le fichier où se trouvent les références bibliographiques. Cela évite les aller-retour pour vérifier que chaque source de la bibliographie se trouve au moins une fois dans le texte et que chaque source dans le texte est citée en bibliographie. Grâce aux balises, en cliquant sur les références incluses dans le document, vous vous retrouverez immédiatement plus loin dans le document, à l’endroit où se trouve l’entrée bibliographique associée. Les références &nbsp;pour articles scientifiques peuvent être copiées-collées à partir de Google Scholar. &nbsp;rend donc extrêmement simple et efficace l’utilisation des références bibliographiques grâce à sa capacité à <em>personnaliser</em> et <em>automatiser</em> leur présentation<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
-</section><section id="figures-et-tableaux" class="level4" data-number="5.3.1.2"><h4 data-number="5.3.1.2" class="anchored" data-anchor-id="figures-et-tableaux">
-<span class="header-section-number">5.3.1.2</span> Figures et tableaux</h4>
-<p>L’intégration de figures et de tableaux dans le texte est aussi rendue très simple et professionnelle grâce à &nbsp;et à Markdown. La taille de la figure ou du tableau, son positionnement et son intégration par rapport au texte environnant peuvent être réglés avec précision. Cependant, l’ajout de texte avant ou après la figure ou le tableau ne produira pas des résultats inattendus tels qu’une demi-page vide avant un graphique ou un titre de tableau complètement en bas d’une page. En définissant des paramètres pour l’ensemble du texte, la chercheuse ou le chercheur peut <em>personnaliser</em> entièrement la présentation des figures et des tableaux. De plus, la <em>qualité des figures et des tableaux</em> ne diminue pas lors de leur intégration&nbsp;: les figures restent aussi belles qu’elles l’étaient originalement, ce qui n’est pas toujours le cas dans les logiciels de traitement de texte. Les figures et les tableaux sont aussi numérotés <em>automatiquement</em>, ce qui veut dire que vous n’aurez jamais à vous préoccuper de modifier les numéros si l’ordre des figures et tableaux est modifié dans le texte. Grâce aux balises, en cliquant sur le numéro associé à la figure ou au tableau dans le texte, le document se retrouve automatiquement à l’endroit où se trouve la figure ou le tableau. De plus, les figures peuvent être intégrées en format PDF, ce qui permet au lecteur de copier-coller ou de surligner de l’information se trouvant sur le graphique directement, incluant les titres des axes et les annotations.</p>
-<p>Surtout, l’intégration de graphiques produits par <code>R</code> au texte en langage de balisage est simplifiée et <em>automatisée</em>. En effet, même lorsque les données ou le code pour produire un graphique changent, <code>R</code> resauvegarde le fichier dans le même chemin d’arborescence (<em>path</em>) particulier que vous avez indiqué, par exemple <code>C:/Users/Jean/Dropbox/projet1/graphs/Figure1.pdf</code>. Le langage de balisage peut ensuite indiquer le même chemin d’arborescence, de sorte qu’il n’est pas nécessaire de recopier-coller la figure à l’intérieur du document chaque fois que des changements y sont apportés; la figure est mise à jour <em>automatiquement</em>.</p>
-<p>L’intégration de figures et de tableaux est particulièrement simple et <em>flexible</em> avec Quarto. Contrairement à , qui nécessite la production de tableaux et de figures dans un document en langage de programmation (comme <code>R</code>), Quarto permet de créer une figure grâce à du code <code>R</code> <em>et</em> d’intégrer celle-ci au texte dans un même document. Cela se fait grâce à l’intégration de blocs de code <code>R</code> (<em>code chunks</em>) dans le document. Le code est produit dans le bloc de code et la figure ou le tableau qui en résulte apparait à la fois dans le document Quarto, où des balises supplémentaires permettent d’adapter le formatage, et sur le document fini. Cependant, certains <em>packages</em> R permettent de créer des tableaux de régression de grande qualité en format . Les tableaux de régression en format Markdown sont pour l’instant plus difficiles à produire au-delà d’un certain niveau de complexité, en raison des limitations du langage Markdown. Il demeure possible de produire des tableaux en langage &nbsp;dans un fichier Markdown ou Quarto.</p>
-</section><section id="équations" class="level4" data-number="5.3.1.3"><h4 data-number="5.3.1.3" class="anchored" data-anchor-id="équations">
-<span class="header-section-number">5.3.1.3</span> Équations</h4>
-<p>&nbsp;permet également d’ajouter des équations mathématiques poussées. En effet, il existe des balises pour chaque symbole mathématique, et celles-ci peuvent être agencées de manière à former des équations cohérentes. Ces équations peuvent être intégrées au sein même d’une phrase ou être mises de l’avant dans un paragraphe à part centré.</p>
-</section><section id="table-des-matières-et-mise-en-page" class="level4" data-number="5.3.1.4"><h4 data-number="5.3.1.4" class="anchored" data-anchor-id="table-des-matières-et-mise-en-page">
-<span class="header-section-number">5.3.1.4</span> Table des matières et mise en page</h4>
-<p>Markdown et &nbsp;permettent aussi la gestion <em>automatisée</em> de la table des matières, et les références aux pages appropriées à partir de la table des matières se mettent à jour en continu. La table des matières prend en compte l’architecture du texte choisie manuellement par le chercheur, qui est définie par des balises définissant différents niveaux hiérarchiques de sections, sous-sections ou chapitres. Des manières <em>automatiques</em> de référencer les figures et les tableaux dans des sections distinctes de la table des matières sont également offertes, encore une fois <em>personnalisables</em> au goût du chercheur.</p>
-<p>Bien que la mise en page de documents produits via Markdown et &nbsp;puisse être définie entièrement manuellement par les personnes plus expérimentées, les novices apprécieront les nombreux gabarits (<em>templates</em>) qui permettent de gérer <em>automatiquement</em> la mise en page clés en main. Les gabarits permettent de rendre l’apparence d’un document plus esthétique et uniforme et peuvent être utilisés tels quels ou servir de point de départ pour un chercheur ou une chercheuse souhaitant y apporter certaines modifications sans toutefois partir d’une feuille blanche. La majorité des personnes qui utilisent ces langages, même les plus expérimentées, utilisent ces gabarits comme base lorsqu’elles rédigent un document. Ceux-ci constituent une mine d’or puisqu’ils rendent accessible le code Markdown ou &nbsp;ayant servi à la conception du gabarit, permettant à la chercheuse ou au chercheur de comprendre comment est obtenu le résultat que lui offre le gabarit. Incidemment, il est possible d’identifier les sections de code produisant certains éléments de mise en page — positionnement des numéros de page, positionnement du nom des auteurs en début de document, etc. — et les modifier ou s’en inspirer afin de modifier d’autres gabarits. L’utilisation de ces gabarits peut s’avérer complexe au départ, mais il s’agit d’une complexité qui s’avère ultimement extrêmement productive puisqu’elle vous permettra de devenir autonome et d’ajuster les gabarits à votre convenance afin de produire exactement le résultat désiré en termes de mise en page. En comparaison, les logiciels de traitement de texte rendent souvent très ardue la mise en page uniforme d’un document, puisque cet élément ne peut pas être <em>automatisé</em>. La liste des gabarits disponibles est extrêmement large, et ceux-ci ont une variété de fonctions. En effet, une variété de gabarits professionnels et de haute <em>qualité graphique</em> sont offerts gratuitement en ligne pour des articles, des livres, des rapports, des <em>curriculum vitæs</em> <a href="#fig-cv" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> ou encore des feuilles de temps pour des contrats rémunérés <a href="#fig-invoice" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-cv" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-cv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre5_CVtemp.png" class="img-fluid figure-img" width="304">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.3: Exemple de gabarit &nbsp;de curriculum vitae &nbsp;: .
-</figcaption></figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-invoice" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-invoice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre5_TStemp.png" class="img-fluid figure-img" width="278">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-invoice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.4: Exemple de gabarit &nbsp;de feuille de temps &nbsp;: .
-</figcaption></figure>
-</div>
-</div>
-</div>
-<p>Les <a href="#fig-cv" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> et <a href="#fig-invoice" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> ne sont que quelques exemples des milliers de gabarits de documents &nbsp;disponible en ligne. Plusieurs d’entre eux peuvent être téléchargés à partir du site Web d’<span class="citation" data-cites="overleaf23">(<a href="references.html#ref-overleaf23" role="doc-biblioref"><strong>overleaf23?</strong></a>)</span>. Vous pouvez y naviguer et voir quel gabarit convient le mieux à vos besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec &nbsp;ou Markdown bien que non disponibles en Word, ce qui constitue une autre preuve de leur grande <em>flexibilité</em> et capacité de <em>personnalisation</em>. Bien qu’il soit rare que nous ayons absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s’avérer utiles lorsque vous rédigez un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d’édition et universités, dans le cadre de la rédaction d’articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.</p>
-</section><section id="compatibilité-entre-types-de-documents" class="level4" data-number="5.3.1.5"><h4 data-number="5.3.1.5" class="anchored" data-anchor-id="compatibilité-entre-types-de-documents">
-<span class="header-section-number">5.3.1.5</span> Compatibilité entre types de documents</h4>
-<p>Un autre avantage non négligeable de Markdown — qui le distingue à cet égard de &nbsp;— est la <em>flexibilité</em> des formats de documents qui peuvent être produits. En effet, Pandoc Markdown, une extension du langage Markdown de base, permet d’intégrer dans un seul document plusieurs langages de balisage différents tels que Markdown, &nbsp;et HTML. Quarto utilise Pandoc Markdown et est également habilité à travailler avec des extraits de code <code>R</code> ou Python. Ceci permet donc à l’utilisateur ou à l’utilisatrice de bénéficier des fonctionnalités de différents langages dans un seul document, rendant ainsi possible une variété de <em>personnalisations</em> qui ne seraient pas possibles autrement. Qui plus est, puisque Markdown permet de créer des fichiers Word réguliers, PDF professionnels et HTML à partir d’un même document, vous pouvez choisir à votre convenance et à tout moment de quelle manière sera compilé le document rédigé. Cette possibilité de créer des documents Word est particulièrement pratique dans le cadre de collaboration avec des chercheuses et chercheurs n’utilisant pas les langages de balisage ainsi que lors de l’envoi de manuscrits à des revues scientifiques, puisque certaines d’entre elles exigent de recevoir ceux-ci sous forme de document Word.</p>
-</section><section id="gestion-des-embuches" class="level4" data-number="5.3.1.6"><h4 data-number="5.3.1.6" class="anchored" data-anchor-id="gestion-des-embuches">
-<span class="header-section-number">5.3.1.6</span> Gestion des embuches</h4>
-<p>Bien que l’apprentissage de &nbsp;et de Markdown puisse être parsemé de nombreuses embuches, ces deux langages bénéficient d’une communauté d’utilisateurs et d’utilisatrices en ligne sur laquelle il est possible de s’appuyer afin de résoudre tout problème rencontré. Ces individus — particulièrement les plus expérimentés — sont nombreux à partager leur expérience à leurs collègues rencontrant des problèmes afin de contribuer à régler ceux-ci. Cette communauté est présente sur une multitude de sites Web, bien que le point de rencontre principal soit le forum <span class="citation" data-cites="stackoverflow23">Stack Overflow (<a href="references.html#ref-stackoverflow23" role="doc-biblioref">2023</a>)</span>, qui est également utilisé pour régler des problèmes de programmation et est abordé plus en détail dans le chapitre 4<!--@sec-chap4-->. Une simple recherche sur Google d’un problème rencontré avec &nbsp;ou Markdown vous offrira des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow ou encore vers de la documentation technique. Vous pourrez donc filtrer les résultats et observer les nombreuses solutions envisageables à votre problème afin de définir laquelle est la plus appropriée dans votre situation. Il est important de noter, toutefois, que cette communauté est nettement plus développée pour les utilisateurs de &nbsp;que de Markdown, puisque ce dernier langage est moins répandu que le premier.</p>
-<p>Également, avec l’émergence de l’intelligence artificielle (IA), de nombreux modèles d’IA génératifs commencent à émerger comme des ressources d’aides utiles pour les chercheuses et les chercheurs. Au moment de la rédaction du présent chapitre, le <em>chatbot</em> ChatGPT, développé par OpenAI et basé sur le grand modèle de langage (<em>large language model</em>, LLM) GPT-3.5, est une ressource d’aide en émergence en ce qui a trait aux langages de balisage. Le corpus de données sur lequel il a été formé inclut une grande variété de langages et de styles d’écriture, incluant &nbsp;et Markdown. Ainsi, il est possible de poser des questions en langage courant à ce <em>chatbot</em> lorsque des problèmes de balisage sont rencontrés. Celui-ci fournira en réponse le texte avec les balises adéquates pour régler le problème. Cela s’applique même pour des problèmes pour lesquels la réponse n’est pas directement indiquée sur Stack Overflow, lorsque la logique des langages est comprise par ces modèles basés sur l’IA. ChatGPT est toutefois plus outillé en &nbsp;qu’en Markdown ou en Quarto en raison de la plus grande abondance de ressources en &nbsp;disponibles en ligne, bien que ses capacités soient en constante amélioration. Il arrive cependant régulièrement que les réponses des modèles de langage comme ChatGPT soit erronées — tout comme certaines réponses sur Stack Overflow peuvent ne pas être adaptées à régler un problème similaire vécu sur un autre ordinateur, avec des paramètres différents. Il demeure donc important de vérifier les réponses des modèles basés sur l’IA afin de ne pas avoir de mauvaises surprises lors de la compilation du code. Ainsi, il est utile de s’appuyer autant sur la communauté d’utilisatrices et d’utilisateurs de langages de balisage qui échange des ressources en ligne que sur les modèles de langage basés sur l’IA.</p>
-</section></section><section id="philosophie-du-code-source-ouvert-et-du-logiciel-libre" class="level3" data-number="5.3.2"><h3 data-number="5.3.2" class="anchored" data-anchor-id="philosophie-du-code-source-ouvert-et-du-logiciel-libre">
-<span class="header-section-number">5.3.2</span> Philosophie du code source ouvert et du logiciel libre</h3>
-<p>L’utilisation des langages de balisage s’inscrit bien dans la philosophie du logiciel libre. Le langage &nbsp;est distribué sous la license <em>&nbsp;project public license</em> (LPPL), alors que Quarto 1.4 est distribué sous la license du Massachusetts Institute of Technology (MIT). Moyennant le respect de leurs licenses respectives, ces licenses permettent ainsi aux utilisateurs de &nbsp;et de Quarto d’utiliser ces langages comme ils le souhaitent, de redistribuer des copies, de modifier le fonctionnement de ces langages et d’en redistribuer des versions améliorées. Bien que &nbsp;et Quarto ne soient pas des logiciels, leur license utilisation est cohérente avec la philosophie du logiciel libre et permet à ces langages d’être utilisés dans de nombreux logiciels.</p>
-<p>D’autre part, &nbsp;et Quarto sont deux langages à code source ouvert (<em>open source</em>). Ainsi, leur distribution est entièrement gratuite, il n’y a rien à payer. Leur code source est disponible et les changements à ce code doivent être indiqués. Les licences LPPL et MIT ne discriminent pas certains groupes ou personnes, et elles ne restreignent personne dans l’utilisation pour un domaine d’activité. Ces deux licences ne sont pas spécifiques pour un produit, ce qui signifie que ces deux langages peuvent être utilisés dans plusieurs logiciels et programmes. Elles sont également technologiquement neutres, rendant ainsi &nbsp;et Quarto accessibles aux utilisateurs de tous les systèmes d’exploitation.</p>
-</section><section id="inconvénients" class="level3" data-number="5.3.3"><h3 data-number="5.3.3" class="anchored" data-anchor-id="inconvénients">
-<span class="header-section-number">5.3.3</span> Inconvénients</h3>
-<p>Il existe toutefois des désavantages inhérents à l’utilisation des langages de balisage. L’un des principaux désavantages de Markdown et de &nbsp;est le fait qu’ils ne comportent aucun système de suivi des modifications lors de travaux collaboratifs. Pour réviser un travail fait en langage de balisage, des commentaires peuvent être ajoutés sur le fichier sortant — nécessairement PDF pour un fichier sortant produit avec . Des commentaires peuvent aussi être faits directement dans le document &nbsp;ou Markdown, à l’aide de balises spécifiques. Ces commentaires n’apparaissent cependant pas dans le fichier sortant. Le suivi des modifications en &nbsp;et Markdown nécessite donc souvent l’utilisation de Git et de GitHub, qui sont abordés plus en détail dans le chapitre 8<!--@sec-chap8-->. Même avec une plateforme de gestion des versions comme GitHub, les longs paragraphes ayant fait l’objet de plusieurs modifications peuvent être longs à comparer par rapport aux logiciels de traitement de texte, qui permettent de visualiser les propositions d’ajouts et de retraits de caractères de manière plus intuitive. Le suivi des modifications en logiciel de traitement de texte permet également de distinguer les auteurs de différents commentaires par leurs noms, alors que les ajouts et retraits itératifs en GitHub peuvent rendre difficile l’identification de l’auteur d’une modification. Pour ces raisons, et aussi pour faciliter la mise en page par les éditeurs, certaines revues scientifiques refusent les fichiers PDF et demandent que les soumissions soient faites en format DOCX — ce qui pose problème pour les utilisateurs de &nbsp;mais pas ceux de Markdown.</p>
-<p>Les langages de balisage comportent également un autre désavantage important dans certains cas&nbsp;: l’absence d’un correcteur de fautes de français complet, en particulier pour corriger les fautes autres que celles d’orthographe en français. Parmi les principaux endroits permettant l’édition en langages de balisage, Visual Studio Code (VS Code) et Overleaf comprennent tous deux une extension LanguageTool, qui permet la révision orthographique et syntaxique dans plusieurs langues. VS Code possède également une extension Antidote pour les personnes qui paient déjà pour ce logiciel. D’autres extensions linguistiques existent également pour VS Code, de même que pour les logiciels de traitement de texte comme Word. Cependant, RStudio ne possède qu’un correcteur <em>orthographique</em> de base, disponible en plusieurs langues. Ce correcteur ne repère pas les erreurs de syntaxe, de grammaire ou de forme, entre autres. Ces éléments sont pourtant essentiels pour la rédaction de textes académiques<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, d’autant plus que les utilisateurs de &nbsp;ont tendance à faire davantage de fautes d’ortographe et de grammaire lors de la rédaction que les utilisateurs de Word <span class="citation" data-cites="knauff_nejasmic14">(<a href="references.html#ref-knauff_nejasmic14" role="doc-biblioref"><strong>knauff_nejasmic14?</strong></a>)</span>. Nous décourageons ainsi l’utilisation de RStudio pour l’édition de fichiers &nbsp;et Quarto, et nous encourageons fortement les utilisateurs d’Overleaf et de VS Code d’utiliser des extensions permettant la correction grammaticale telles que LanguageTool.</p>
-<p>Enfin, les langages de balisage, contrairement aux logiciels de traitement de texte, nécessitent d’être compilés, ce qui implique que deux fichiers coexistent&nbsp;: le fichier où le langage de balisage est utilisé — format <code>.tex</code> pour , <code>.md</code> pour Markdown ou encore <code>.qmd</code> pour Quarto — ainsi que le fichier où le texte final balisé apparait — généralement <code>.pdf</code>, <code>.docx</code> ou <code>.html</code>. La compilation peut prendre un temps variable selon la complexité du document, mais dure typiquement une quinzaine de secondes. Le fait de devoir travailler avec deux fichiers en parallèle et de ne pas voir immédiatement l’effet des balises sur le document final constitue ainsi un autre désavantage des langages de balisage.</p>
-<p>&nbsp;comporte aussi quelques difficultés techniques particulières qui peuvent être réglées ou diminuées en travaillent en Markdown. Premièrement, &nbsp;est difficile à apprendre. Certaines tâches qui peuvent sembler simples comme l’ajout d’un tableau peuvent nécessiter de nombreuses lignes de code. De plus, à la moindre erreur de frappe dans l’utilisation d’une balise, le code risque de ne pas fonctionner et de ne pas produire le document PDF souhaité. C’est ce qu’on appelle une erreur de compilation. Markdown est un langage plus simple à apprendre, avec des balises plus courtes et intuitives. Il occasionne donc moins d’erreurs de compilation.</p>
-<p>Deuxièmement, &nbsp;est peu compatible avec les logiciels de traitement de texte comme Word. Pour transférer un fichier créé à partir d’un logiciel de traitement de texte vers , les balises doivent être ajoutées manuellement une par une. À l’inverse, pour transférer un document &nbsp;vers un fichier de traitement de texte, le convertisseur Pandoc peut être utilisé, mais celui-ci ne repère pas toutes les balises et il est souvent nécessaire de faire des aller-retour entre le fichier &nbsp;original et le fichier converti en format DOCX pour s’assurer du succès de la conversion. Parfois, les balises doivent être retirées une par une et le formatage doit être refait en utilisant les boutons fournis sur le logiciel de traitement de texte. Il est aussi possible de copier le texte directement à partir du fichier PDF produit par &nbsp;vers un logiciel de traitement de texte, mais les fins de ligne sont interprétées par Word, Pages ou Writer comme des retours plutôt que des espaces, et les accents sont souvent mal copiés et doivent être réécrits manuellement. Encore une fois, Markdown évite ce problème en permettant d’écrire un fichier DOCX à partir du langage de balisage. Le formatage du fichier DOCX demeure un peu compliqué cependant et doit être fait à partir du modèle d’un autre document DOCX formaté tel que souhaité. De plus, les fichiers DOCX ne peuvent pas être transformés en format Markdown. Quarto permet d’écrire un texte en format Markdown et de produire un fichier DOCX à partir d’un gabarit Word. De plus, pour les fichiers Word à transformer en format Markdown, les balises plus simples en Markdown qu’en &nbsp;rendent la tâche plus simple.</p>
-<p>Somme toute, Word n’est pas à antagoniser et demeure très utile pour des tâches simples. Cependant, dans le monde académique, la production de fichiers de qualité faisant appel à des graphiques, tableaux et blocs de code personnalisés de qualité et automatisés est simplifiée en utilisant des langages de balisage.</p>
-</section></section><section id="conclusion" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="conclusion">
-<span class="header-section-number">5.4</span> Conclusion</h2>
-<p>Somme toute, les langages de balisage permettent d’effectuer des tâches que vous ne pourriez pas normalement réaliser en utilisant un logiciel de traitement de texte classique. Ils facilitent la production de documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique. Les langages de balisage demandent un certain temps d’apprentissage, entre autres pour , mais peuvent ensuite être utilisés dans différents environnements de travail en ligne comme hors ligne.</p>
-</section><section id="références" class="level2" data-number="5.5"><h2 data-number="5.5" class="anchored" data-anchor-id="références">
-<span class="header-section-number">5.5</span> Références</h2>
+</header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-allaire22" class="csl-entry" role="listitem">
-Allaire, JJ. 2022. <em>Announcing <span>Quarto</span>, a New Scientific and Technical Publishing System</em>. <a href="https://posit.co/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">https://posit.co/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/</a>.
+<p>La révolution numérique engendrée par l’émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l’accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l’accès à ces données représente un défi éthique et théorique, tel qu’explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014). Le chapitre qui suit vise à offrir un portrait de certains outils de collecte de données pouvant être exploités par les chercheurs.euses en sciences sociales visant à tirer profit de la révolution numérique. À travers ce chapitre, il sera question d’outils permettant de collecter des données de sondages, des données médiatiques, de même qu’une panoplie de données textuelles par le biais d’extracteurs. Ce chapitre offre donc un tour d’horizon de certains outils de collecte de données à la disposition de la communauté scientifique souhaitant entamer des recherches en sciences sociales numériques.</p>
+<section id="le-big-data-et-les-différents-acteurs-de-la-société" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">6.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></h2>
+<p>Le champ d’étude de la science politique repose sur l’étude de trois types d’acteurs distincts ayant un impact sur la condition socio-économique et politique d’une société&nbsp;: les décideurs, les médias et les citoyens. La recherche sur les décideurs comprend entre autres l’analyse des politiques publiques, des partis politiques, de stratégies électorales ou encore l’analyse de discours de politiciens ou d’organisations. L’étude des médias repose largement sur le rôle des médias dans la formation des priorités et des jugements des citoyens quant aux enjeux politiques, de même que sur leur capacité d’influencer l’agenda des politiciens. En ce qui concerne les citoyens, le champ d’étude de l’opinion publique se consacre à l’analyse des comportements et des attitudes politiques des individus. De plus, de nombreuses recherches visant à comprendre le rôle des citoyens dans une société démocratique portent sur l’influence de la société civile de même que sur l’effet des mouvements sociaux.</p>
+<p>Chacun de ces champs de recherches se voit confronté à une panoplie de défis théoriques et techniques en lien avec l’émergence des données massives. La révolution technologique permet une étude plus approfondie des phénomènes auxquels sont confrontés les différents acteurs de la société démocratique, en raison de l’importante quantité de données accessible aux chercheurs.euses. Toutefois, la collecte de données permettant de mener à terme de telles études peut s’avérer complexe. Pour chacun des trois acteurs démocratiques énumérés précédemment, les sections suivantes énumèrent et expliquent les capacités techniques d’outils permettant aux chercheurs.euses d’accéder à des données massives. Bien que d’autres outils existent et offrent des résultats satisfaisants, les méthodes suivantes sont particulièrement pertinentes dans une optique d’étude des sciences sociales numériques en raison de leur capacités techniques de même que par la relative simplicité de leur utilisation.</p>
+</section>
+<section id="section" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="section"><span class="header-section-number">6.2</span> </h2>
+</section>
+<section id="plateformes-de-sondages-et-collecte-de-données" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">6.3</span> Plateformes de sondages et collecte de données</h2>
+<p>Malgré certaines différences méthodologiques, toute recherche doit analyser et interpréter des données fiables et de qualité afin d’émettre des résultats (Nayak &amp; K. A., 2019). Notamment lorsqu’il est question d’étudier les citoyens et l’opinion publique, il est nécessaire d’accumuler suffisamment de données auprès d’un échantillon assez grand afin d’inférer des conclusions sur la population.</p>
+<p><br>
+Quelques méthodes sont couramment utilisées pour la collecte de données sont le sondage, le panel, l’enquête, ou le questionnaire. Cette section se concentre sur le sondage. Ils peuvent être manuels ou électroniques, et dans le second cas, peuvent être administrés par ordinateur, par courriel ou via le web (Nayak &amp; K. A., 2019). La différence majeure entre les méthodes manuelles et les méthodes numériques réside dans le fait que les premières impliquent un contact direct entre le chercheur et le répondant, tandis que dans le cas des secondes le contact est indirect (Evans &amp; Mathur, 2018). L’arrivée des données massives et des outils numériques offre une panoplie de nouvelles opportunités de collecte de données pour la communauté scientifique. Lorsqu’exécutée manuellement, la collecte de données et la réalisation de sondages peuvent devenir des tâches lourdement fastidieuses, et de facto, demander énormément de ressources pour mener une recherche à grande échelle. C’est pourquoi les technologies du numérique peuvent faciliter cet aspect de la recherche en fournissant des plateformes de sondages et de collecte de données. De plus, les sondages représentaient en 2016 environ 20% du chiffre d’affaires de l’industrie globale du marketing (Evans &amp; Mathur, 2018). Ces chiffres montrent la pertinence de l’acquisition de compétences nécessaires à la formation de sondages, tant dans le monde académique que professionnel. Le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d’entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s’il avait été conduit manuellement (Nayak &amp; K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d’utiliser des arbres de logique avancés que les sondages manuels ne permettent pas.</p>
+<section id="les-principales-plateformes-web." class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="les-principales-plateformes-web."><span class="header-section-number">6.3.1</span> Les principales plateformes web.</h3>
+<p><br>
+Il existe un large éventail de plateformes de sondages et de collecte de données qui peuvent être utiles dans un contexte académique. Cet ouvrage se limite à cinq d’entre elles: Qualtrics, REDCap, SurveyMonkey, Google Forms et Typeform. Cependant, il n’est pas déconseillé de se renseigner sur les autres plateformes disponibles en fonction de ses besoins et de ses ressources. Voici une liste non-exhaustive: LimeSurvey, Zoho Survey, Qualaroo, Formstack, Wufoo, Checkbox Survey, SmartSurvey, QuickTapSurvey, SoGoSurvey, Snap Surveys, AskNicely, Opinio, Alchemer, Cognito Forms, Feedbackify.</p>
+<section id="qualtrics-httpswww.qualtrics.com" class="level4" data-number="6.3.1.1">
+<h4 data-number="6.3.1.1" class="anchored" data-anchor-id="qualtrics-httpswww.qualtrics.com"><span class="header-section-number">6.3.1.1</span> Qualtrics (https://www.qualtrics.com/)</h4>
+<p><br>
+Cette plateforme est une des plus reconnues et utilisées à l’international, tant dans le milieu académique que dans le secteur privé. En plus d’offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l’expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l’administration des sondages. Par exemple, Qualtrics s’adapte à différents formats en fonction de l’appareil du répondant (Evans &amp; Mathur, 2018).</p>
+</section>
+<section id="redcap-httpswww.project-redcap.org" class="level4" data-number="6.3.1.2">
+<h4 data-number="6.3.1.2" class="anchored" data-anchor-id="redcap-httpswww.project-redcap.org"><span class="header-section-number">6.3.1.2</span> REDCap (https://www.project-redcap.org/)</h4>
+<p><br>
+Research Electronic Data Capture (REDCap) permet de construire et de gérer des sondages ainsi que des bases de données. Pour accéder aux services de cette application, il est nécessaire d’être un partenaire du REDCap Consortium ou membre d’une organisation qui en fait partie. Seules les organisations à but non lucratif peuvent adhérer au Consortium. Les données et les sondages qui y sont produits peuvent être partagés et utilisés par différents chercheurs issus de diverses institutions. L’exportation vers différents types de fichiers (Excel, PDF, SPSS, SAS, Stata, R) est possible. Ce qui distingue REDCap des autres applications est sa compatibilité avec les dossiers médicaux, sa sécurité pour les données sensibles, ainsi que son approche académique à la collecte de données par sondage.</p>
+</section>
+<section id="surveymonkey-httpswww.surveymonkey.com" class="level4" data-number="6.3.1.3">
+<h4 data-number="6.3.1.3" class="anchored" data-anchor-id="surveymonkey-httpswww.surveymonkey.com"><span class="header-section-number">6.3.1.3</span> SurveyMonkey (https://www.surveymonkey.com/)</h4>
+<p><br>
+SurveyMonkey se distingue des autres applications en permettant de construire et gérer des sondages/formulaires à l’aide d’une interface conviviale sans toutefois perdre de ses fonctionnalités. En plus d’avoir recours aux nouvelles technologies de l’I.A. pour aider à construire des sondages adaptés à vos besoins, cette application propose plusieurs centaines de modèles personnalisables élaborés par des experts dans le domaine. SurveyMonkey permet également l’analyse des données et la création de rapports directement sur l’application, en plus de permettre l’exportation vers d’autres types de programmes. Les forfaits varient en gamme de tarifs, allant du gratuit avec des fonctionnalités restreintes, jusqu’aux options payantes destinées aux particuliers et aux entreprises.</p>
+</section>
+<section id="google-forms-httpsdocs.google.com" class="level4" data-number="6.3.1.4">
+<h4 data-number="6.3.1.4" class="anchored" data-anchor-id="google-forms-httpsdocs.google.com"><span class="header-section-number">6.3.1.4</span> Google Forms (https://docs.google.com/)</h4>
+<p><br>
+Cette application se distingue par sa simplicité et son accessibilité, en grande partie grâce à l’omniprésence de google tant dans le monde académique que dans la vie courante. Google Forms est inclus dans le forfait de base du Google Workspace, ce qui le rend largement compatible avec les autres applications de Google, en plus d’être disponible gratuitement. Bien que ses fonctionnalités soient moins avancées que celles de ses compétiteurs, Google Forms peut convenir pour des sondages plus simples et rapides grâce à son interface conviviale, à sa fonction d’analyse de données directement sur la plateforme, ainsi qu’à ses modèles préfabriqués.</p>
+</section>
+<section id="typeform-httpswww.typeform.com" class="level4" data-number="6.3.1.5">
+<h4 data-number="6.3.1.5" class="anchored" data-anchor-id="typeform-httpswww.typeform.com"><span class="header-section-number">6.3.1.5</span> TypeForm (https://www.typeform.com/)</h4>
+<p><br>
+Si votre objectif est de produire des formulaires avec une esthétique attrayante, moderne et interactive, TypeForm est la plateforme idéale. Elle permet de se concentrer sur l’expérience de l’utilisateur et de l’impliquer dans le sondage grâce à son aspect visuel. Cette plateforme dispose d’une option gratuite, ainsi que plusieurs forfaits payants. Typeform est également compatible avec plusieurs applications de gestion du flux de travail (Zapier, Google Sheets, Slack, etc).</p>
+</section>
+</section>
+<section id="les-limites-des-sondages-en-ligne" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="les-limites-des-sondages-en-ligne"><span class="header-section-number">6.3.2</span> Les limites des sondages en ligne</h3>
+<p><br>
+Néanmoins, les sondages en ligne comportent des défis, notamment en ce qui concerne l’échantillonnage, les taux de réponse et les caractéristiques des non-répondants. Il est également nécessaire de se méfier des enjeux éthiques et de confidentialité (Nayak &amp; K. A., 2019). Comme la généralisation est essentielle pour conférer une valeur scientifique à ses résultats de recherche, les sondages en ligne ont leurs limites. En effet, il est crucial de connaitre la population cible pour effectuer des inférences valides, et l’échantillonnage doit reposer sur des caractéristiques précises. Même si des informations démographiques peuvent être collectées et des quotas utilisés, il n’est toutefois pas réellement possible de confirmer les informations sur le répondant (Andrade, 2020). Les sondages traditionnels où l’on retrouve un contact direct sont plus susceptibles de permettre de brosser un portrait plus complet du répondant (Evans &amp; Mathur, 2018). Les répondants avec des biais peuvent également plus facilement répondre aux sondages en ligne et limiter la généralisation (Andrade, 2020). Les sondages en ligne sont également souvent perçus comme des pourriels, ont généralement de faibles taux de réponse, sont impersonnels et peuvent avoir des instructions peu claires. Ils ont également leurs lots d’enjeux de confidentialité (Evans &amp; Mathur, 2018).</p>
+<p><br>
+Conseils méthodologiques à la réalisation d’un sondage numérique<br>
+(Evans &amp; Mathur, 2018)<br>
+L’article de Evans et Mathur (2018) est une revue de littérature observant l’évolution des sondages numériques depuis la parution de leur dernier article sur le sujet en 2005. À travers cet article, les auteurs offrent des conseils méthodologiques en fonction de leur analyse de contenu de la littérature scientifique. Les conseils d’Evans et Mathur (2018) sont résumés ci-dessous. Afin d’obtenir plus de détails, n’hésitez pas à vous référer directement à cet article. De plus, bien qu’il s’agisse d’un article crédible et largement documenté, il est toujours pertinent de consulter des sources spécifiques à vos besoins.</p>
+<p><br>
+1.Définir le but du sondage avant la méthodologie. Lorsque possible, inclure des hypothèses testables et des méthodes basées sur des fondations théoriques.<br>
+2.Choisir le type de sondage.<br>
+3.Décider des méthodes d’échantillonnage, des quotas et des échéances.<br>
+4.Déterminer le responsable de la construction du sondage.<br>
+5.Soyez transparent en divulguant le but du sondage, la façon dont les données seront utilisées ainsi que l’auteur du sondage.<br>
+6.Les questions et les catégories de réponses doivent être élaborées de manière objective et dans une perspective de convivialité.<br>
+7.Les sondages doivent être assez légers pour favoriser un taux de réponse positif, mais assez complet pour avoir l’information nécessaire.<br>
+8.Ils doivent également être attrayant afin de favoriser leur complétion par le répondant.<br>
+9.S’assurer de l’anonymat du répondant.<br>
+10.Il faut régulièrement procéder à des tests afin de corriger les faiblesses du questionnaire.<br>
+11.Déterminer qui administre le sondage, qui collecte l’information, et qui analyse les données.<br>
+12.Établir un échéancier pour les différentes étapes de l’étude.<br>
+13.Suite à la collecte de données, entreposer les données brutes dans un fichier électronique.<br>
+14.Utiliser les méthodes appropriées (qualitatif ou quantitatif), et analyser les données selon les buts de l’étude.<br>
+15.Dans le cas d’une recherche académique, il est important d’avoir une section dédiée aux limites de l’étude.<br>
+16.Conserver l’anonymat des répondants lors de l’analyse et de la publication.<br>
+17.Agir sur les résultats. Rien ne sert de conduire un sondage qui ne contribue pas à la croissance du savoir ou n’apporte pas de changement stratégique ou organisationnel.<br>
+18.Toujours se plier à un code d’éthique rigide.</p>
+<p>Il s’agit donc ici d’un court résumé des plateformes de sondages et de la collecte de données en ligne, tentant de couvrir l’essentiel de cet outil afin de vous aider lors de votre parcours académique, ou simplement comme aide-mémoire pour la réalisation d’un sondage. Les outils énumérés précédemment permettent une étude approfondie de phénomènes concernant les citoyens. Bien sûr, il n’est pas possible de couvrir l’entièreté de cet outil très complexe et ayant évolué dans le temps. Cette section ne sert donc que de point de départ si vous vous intéressez à l’élaboration d’un sondage numérique. Il vous est donc recommandé de vous renseigner davantage avec d’autres ressources afin de compléter ce qui est indiqué dans cet ouvrage.</p>
+</section>
+</section>
+<section id="factiva-outils-de-récolte-de-données-médiatiques" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">6.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></h2>
+<p>L’émergence de nouvelles technologies de même que la fragmentation médiatique, causée notamment par l’apparition de chaînes de nouvelles en continu, ébranlent considérablement les écosystèmes médiatiques occidentaux (Chadwick, 2017). Un récent courant de recherche se penche sur le rôle des médias relativement aux comportements des individus dans une perspective de fragmentation médiatique. Ces changements de dynamique médiatiques permettent aux individus de choisir leurs sources d’information. Cette fragmentation aurait conséquemment pour effet de contribuer à la formation de chambres d’écho. Ainsi, les études sur les effets des médias visent à comparer les agendas de différentes organisations médiatiques de même que de comprendre le cadrage de la nouvelle qu’ils offrent aux citoyens. Pour effectuer de telles études comparées, l’accès à des données médiatiques est essentiel. L’arrivée de données massives permet de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l’importante quantité de données accessibles aux chercheurs.euses, ce qui permet une compréhension accrue des réalités médiatiques modernes.</p>
+<p>L’outil Factiva offre un accès à l’ensemble des articles d’une panoplie de médias provenant d’une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l’accès à des documents d’entreprises. En revanche, l’accès qu’il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l’accès à plus de 15&nbsp;000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu’à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons.</p>
+<p>Additionnellement, cet outil permet également de lancer une requête de recherche par mots-clés et par date qui permet, par exemple, de récolter les articles médiatiques concernant un sujet précis dans une ligne de temps déterminée. De manière plus précise, Factiva permet de filtrer la recherche d’articles par source, par date, par auteur, par sociétés, par sujet, par secteur économique, par région et par langue. Disons qu’un.e chercheur.euse désire comparer la couverture médiatique d’une élection donnée. Il peut, par le biais de Factiva, sélectionner tous les articles contenant le mot «&nbsp;élection&nbsp;» dans une sélection de médias, et ce, durant la période de l’élection. Les mots clés sélectionnés peuvent être adaptés aux désirs de l’utilisateur.ice de manière à inclure des mots qui peuvent être mis ensemble ou à un maximum d’intervalle de mot. L’utilisation des signes «&nbsp;and&nbsp;» et «&nbsp;or&nbsp;», aussi connus sous le nom d’opérateurs booléens, permettent d’ajouter un mot dans la requête de recherche. En ajoutant near5, l’on peut spécifier qu’il doit y avoir un maximum de 5 mots entre les deux mots recherchés. L’on peut également mettre certains signes à la fin de mots, ce qui permet de préciser le champ de recherche. Par exemple, dans une étude récoltant des articles sur les immigrants, le mot immigrant pourrait être écrit de la manière suivante&nbsp;: immigra*. Ainsi, tous les mots débutant par ce suffixe seraient inclus de la recherche d’article, ce qui comprend donc&nbsp;: immigrant, immigration, immigrants, immigrante, etc. La Figure 1 est une capture d’écran de l’interface de recherche de Factiva. Ainsi, en ajoutant un opérateur booléen, l’on peut préciser un champ de recherche. L’utilisateur.rice pourrait, par exemple, rechercher des articles sur les immigrants syriens, et rajoutant les opérateurs “and” ou encore “or”, de même que le mot « syri* », l’étoile étant rajoutée pour inclure le plus de mots possible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre3_factiva.png" class="img-fluid figure-img"></p>
+<figcaption>image3_1</figcaption>
+</figure>
 </div>
-<div id="ref-encyclopaediabritannica23" class="csl-entry" role="listitem">
-Encyclopaedia Britannica. 2023. <em><span>LaTeX</span></em>. <a href="https://www.britannica.com/technology/LaTeX-computer-programming-language">https://www.britannica.com/technology/LaTeX-computer-programming-language</a>.
+<p>Ainsi, Factiva permet d’avoir accès facilement à des données utiles pour de l’analyse textuelle d’articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l’analyse de contenu par thèmes ou par ton.</p>
+<p>Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l’optique ou un média recherché n’est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu’en Europe). La structure d’Eureka est similaire à celle de Factiva. En effet, Eureka permet de filtrer des articles médiatiques par requête de recherche adaptée à la source, la date ou encore l’auteur. Toutefois, les requêtes de recherche doivent être formulées d’une manière quelque peu différente. Elles doivent donc être adaptées au fonctionnement d’Eureka. Les articles doivent être sélectionnés à la main, et peuvent être téléchargés dans un document PDF pouvant contenir un maximum de 50 articles à la fois. La Figure 2 contient l’interface de recherche d’Eureka.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre3_eureka.png" class="img-fluid figure-img"></p>
+<figcaption>image3_2</figcaption>
+</figure>
 </div>
-<div id="ref-goldfarb96" class="csl-entry" role="listitem">
-Goldfarb, Charles F. 1996. <em>The <span>Roots</span> of <span>SGML</span> – <span>A Personal Recollection</span></em>. <a href="http://www.sgmlsource.com/history/roots.htm">http://www.sgmlsource.com/history/roots.htm</a>.
-</div>
-<div id="ref-hameed23" class="csl-entry" role="listitem">
-Hameed, Sharqa. 2023. <em><span>HTML History</span> | <span>Explained</span></em>. <a href="https://linuxhint.com/html-history/">https://linuxhint.com/html-history/</a>.
-</div>
-<div id="ref-just13" class="csl-entry" role="listitem">
-Just, Jérémy. 2013. <span>“Les Distributions - <span>Groupe</span> Francophone Des <span>Utilisateurs</span> de <span>TeX</span>, <span>LaTeX</span> Et Logiciels Compagnons.”</span> March 25, 2013. <a href="https://www.gutenberg-asso.fr/Les-distributions">https://www.gutenberg-asso.fr/Les-distributions</a>.
-</div>
-<div id="ref-markdownguide23" class="csl-entry" role="listitem">
-Markdown Guide. 2023. <em>Getting <span>Started</span></em>. <a href="https://www.markdownguide.org/getting-started/">https://www.markdownguide.org/getting-started/</a>.
-</div>
-<div id="ref-quarto23" class="csl-entry" role="listitem">
-Quarto. 2023. <em>Get <span>Started</span></em>. <a href="https://quarto.org/docs/get-started/">https://quarto.org/docs/get-started/</a>.
-</div>
-<div id="ref-stackoverflow23" class="csl-entry" role="listitem">
-Stack Overflow. 2023. <em>Stack <span>Overflow</span></em>. <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>.
-</div>
-<div id="ref-worldwidewebconsortiumw3c98" class="csl-entry" role="listitem">
-World Wide Web Consortium (W3C). 1998. <em>Extensible <span>Markup Language</span> (<span>XML</span>) 1.0</em>. <a href="https://www.w3.org/TR/1998/REC-xml-19980210.html">https://www.w3.org/TR/1998/REC-xml-19980210.html</a>.
-</div>
-<div id="ref-xie23" class="csl-entry" role="listitem">
-Xie, Yihui. 2023. <em>Markdown</em>. <a href="https://github.com/rstudio/markdown">https://github.com/rstudio/markdown</a>.
-</div>
-</div>
-</section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
-<ol>
-<li id="fn1"><p>Les logiciels permettent plus ou moins efficacement d’identifier les balises problématiques. Certains ne produisent qu’un message d’erreur sans donner d’indication sur la source du problème, alors que d’autres ciblent très spécifiquement la ligne de syntaxe où se situe la balise problématique.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><em>mot</em><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>VS Code possède également une extension, Live Share, qui permet de travailler en temps réel sur un même document.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Les langages de balisage permettent également de créer des pages Web. Bien que les pages Web puissent être créées à partir de sites Web comme WordPress, le langage HTML permet de produire des résultats plus <em>personnalisables</em>, plus <em>automatisables</em> et avec une plus <em>grande qualité graphique</em>. Cette question n’est pas abordée en détail dans ce chapitre.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Les avantages et désavantages de Markdown cités dans cette section s’appliquent également à Quarto et à <code>R</code> Markdown, puisque ces derniers font appel au langage Markdown.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>L’utilisation d’un logiciel de traitement de texte, en particulier lorsque combiné avec une extension Zotero, peut également produire un résultat automatisé et personnalisé à un certain degré. Cependant, au moment où ce chapitre est écrit, le retrait d’une citation du texte principal en Word avec Zotero n’enlève pas immédiatement cette citation de la bibliographie, et l’ajout de liens vers la bibliographie doit se faire source par source, ce qui prend un temps important et peut occasionner des erreurs humaines.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Pour les utilisateurs de RStudio, il est souvent nécessaire de modifier le texte dans un logiciel de traitement de texte externe pour faire une révision linguistique complète, puis d’intégrer les corrections en collant le texte corrigé dans le document original en Markdown ou . Une application de bureau Grammarly peut également être intégrée sur RStudio. Cette application repère les erreurs de syntaxe, mais ne corrige que l’anglais, et certains soucis de repérage des mots aux bons endroits dans le texte en rendent présentement l’utilisation difficile.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<p>Il existe aussi une panoplie d’outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licences permettant d’exploiter la plateforme, plusieurs alternatives s’offrent à la communauté scientifique. NexisUni, qui comprend entre autres l’outil LexisNexis Academic particulièrement prisé par le champ d’études de communication aux États-Unis, représente une excellente alternative. C’est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d’articles médiatiques. Les chercheurs.euses peuvent choisir la plateforme qui leur convient le mieux, en prenant en compte notamment l’accès qui peut leur être fourni par l’institution universitaire les employant.</p>
+<p>En somme, la révolution numérique permet un accès sans précédent aux données médiatiques, ce qui permet des analyses approfondies du rôle des médias traditionnels dans une société démocratique.</p>
+</section>
+<section id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">6.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></h2>
+<p>Chacun des acteurs démocratiques énumérés précédemment peut également être étudié par le biais d’extracteurs qui offrent un accès à des données numériques massives. Les extracteurs de données numériques sont des infrastructures de code permettant d’extraire des données brutes d’une source définie. La section suivante explique comment les extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.</p>
+<p>Les données en lien avec les décideurs sont souvent accessibles sur des sites gouvernementaux. Toutefois, certaines identifications peuvent être nécessaires et l’accès peut être compliqué, particulièrement dans une perspective de données massives. C’est dans cette optique que les extracteurs de données numériques peuvent être utiles. Un code peut extraire de manière automatisée les débats des parlements, les communiqués de presse des gouvernants, les plateformes électorales des partis politiques, ce qui offre un accès inégalé aux chercheurs.euses aux données de décideurs. Dans une autre optique, des extracteurs peuvent également offrir l’accès aux données provenant de médias socionumériques comme Twitter (maintenant X) ou Facebook <!--Capel: Enlever la dernière section de cette phrase ?-->. Un extracteur peut, par exemple, être en mesure de répertorier l’ensemble des Tweets de journalistes, de politiciens ou encore de citoyens de manière automatisée, offrant un accès inégalé aux chercheurs.euses à des données massives exclusives. L’élaboration d’extracteurs est toutefois facilitée par l’existence d’API (Application programming interface) sur les plateformes exploitées. L’API d’un site ou d’une application permet à un tierce parti d’avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l’extraction de données. Par exemple, Twitter possédait avant les changements de directions récents un API qui facilitait l’élaboration d’un extracteur. En contrepartie, Facebook ne possède pas d’API, ce qui rend l’accès à ses données beaucoup plus complexe. Un extracteur peut également offrir l’accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits.</p>
+<p>L’élaboration d’un extracteur est toutefois une tâche complexe qui requiert un certain nombre de connaissances en lien avec les langages de programmation. Les chapitres 4 et 5 du présent ouvrage offrent justement un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l’écriture d’extracteurs. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre.</p>
+</section>
+<section id="covidence-outil-de-récolte-darticles-scientifiques" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">6.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></h2>
+<p>Comme mentionné précédemment, les outils numériques de données massives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d’analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d’autres étapes du cycle de la recherche. Il s’agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d’élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L’outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulièrement prisé du monde académique lors de l’entreprise de revues de littérature.</p>
+<p>La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d’accomplissement du travail en plus de le rendre plus simple et plus intuitif. L’outil a été développé pour mieux gérer et organiser l’évaluation de quantité importante d’études scientifiques. L’exécution d’une revue de littérature sur Covidence se fait par le biais d’un double codage. C’est-à-dire que l’évaluation des études se fait manuellement par deux codeurs travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l’exercice. L’outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d’importer des données massives provenant de base de données bibliographiques. En effet, l’outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l’accès à des milliers d’études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adaptées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique.</p>
+<p>La première étape, soit le «&nbsp;Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage efficace, il est nécessaire d’inclure des critères précis pour analyser les titres et résumés d’articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l’article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s’avère très utile et motivante, puisqu’il est possible de développer un jugement critique davantage raffiné et de s’instruire dans une littérature continuellement plus précise.</p>
+<p>Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l’indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d’analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d’exclure l’article, de le retenir ou de l’envoyer à la prochaine étape. D’un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu’elle comporte beaucoup moins de documents, est assez longue et exigeante.</p>
+<p>La dernière étape, soit celle de l’extraction, consiste à recueillir toute donnée étant utile à l’étude de la littérature désignée. Cette étape est demandante, car les chercheur.euse.s doivent se conformer à une grille de codification prédéfinie. Le but est qu’un consensus entre les codeurs émerge de ce processus. L’extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues.</p>
+<p>Une fois les étapes de la revue systématique terminées, Covidence facilite l’exportation des résultats de l’extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d’articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l’outil est particulièrement utile et bien construit. Toutefois, il existe d’autres alternatives à Covidence. Le choix de l’outil dépend des coûts de même que des besoins spécifiques des personnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.</p>
+</section>
+<section id="conclusion-et-discussion" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="conclusion-et-discussion"><span class="header-section-number">6.7</span> Conclusion et discussion:</h2>
+<p>Le précédent chapitre portait sur les différents outils de collecte de données massives mis à la disposition des chercheur.euse.s s’intéressant au champ des sciences sociales numériques. Les outils relevés se démarquent par leur capacité d’accorder l’accès à des données permettant d’étudier les trois principaux acteurs de la société démocratique, soit: les citoyens, les décideurs et les médias. Comme mentionné à plusieurs reprises lors du chapitre, le but de ce dernier n’est pas d’offrir une liste complète des outils disponibles. Toutefois, les outils énumérés ont été sélectionnés en raison de leur intuitivité, leur relative simplicité d’accès de même que leurs capacités techniques considérées par les auteurs comme étant particulièrement pertinentes dans une optique de recherche en sciences sociales numérique. Ainsi, ce chapitre démontre que la possibilité d’effectuer des recherches en sciences sociales numériques par le biais de données massives est plus que jamais accessible à la communauté scientifique, particulièrement en ce qui a trait à la collecte de données permettant de tels travaux. Une fois les données collectées, le travail d’analyse représente un défi technique supplémentaire se dressant devant les personnes chercheuses. Les chapitres suivants visent à familiariser les chercheurs.euses à des outils méthodologiques permettant l’analyse et la visualisation de données massives au sein des sciences sociales.</p>
+<p>Bibliographie:</p>
+<p>Schroeder, R. (2014). Big data and the brave new world of social media research.&nbsp;<em>Big Data &amp; Society</em>,&nbsp;<em>1</em>(2), 2053951714563194.</p>
+<p>Chadwick, A. (2017). The hybrid media system: Politics and power. Oxford University Press.</p>
+<p>Connelly, R., Playford, C. J., Gayle, V., &amp; Dibben, C. (2016). The role of administrative data in the big data revolution in social science research.&nbsp;<em>Social science research</em>,&nbsp;<em>59</em>, 1-12.</p>
+<p>Manovich, L. (2011). Trending: The promises and the challenges of big social data.&nbsp;<em>Debates in the digital humanities</em>,&nbsp;<em>2</em>(1), 460-475.</p>
+<p>Burrows, R., &amp; Savage, M. (2014). After the crisis? Big Data and the methodological challenges of empirical sociology.&nbsp;<em>Big data &amp; society</em>,&nbsp;<em>1</em>(1), 2053951714540280.</p>
+<p>Kramer, A. D., Guillory, J. E., &amp; Hancock, J. T. (2014). Experimental evidence of massive-scale emotional contagion through social networks.&nbsp;<em>Proceedings of the National academy of Sciences of the United States of America</em>,&nbsp;<em>111</em>(24), 8788.</p>
+<p>Andrade, C. (2020). The Limitations of Online Surveys. Indian Journal of Psychological Medicine, 42(6), 575-576. https://doi.org/10.1177/0253717620957496</p>
+<p><br>
+Evans, J. R., &amp; Mathur, A. (2018). The value of online surveys: A look back and a look ahead. Internet Research, 28(4), 854-887. https://doi.org/10.1108/IntR-03-2018-0089</p>
+<p><br>
+Nayak, M., &amp; K A, N. (2019). Strengths and Weakness of Online Surveys. 24, 31-38. https://doi.org/10.9790/0837-2405053138</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -842,19 +774,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./chapitre_4.html" class="pagination-link" aria-label="R ou ne pas R?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span>
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_4.html" class="pagination-link" aria-label="Gestion de la littérature">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_6.html" class="pagination-link" aria-label="La gestion des références">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La gestion des références</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapitre_6.html" class="pagination-link" aria-label="Une image vaut mille mots">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>Livre-outils</p>
 </div>   
@@ -866,6 +801,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+
+
 
 
 </body></html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
-<title>Outils de recherche en sciences sociales numériques - 2&nbsp; Le monde du libre</title>
+
+<title>Outils de recherche en sciences sociales numériques - 3&nbsp; R ou ne pas R?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -74,6 +43,7 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -92,7 +62,8 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -118,51 +89,35 @@ div.csl-indent {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+}</script>
+<script defer="" data-domain="r4ds.hadley.nz" src="https://plausible.io/js/plausible.js"></script>
+
+
 </head>
+
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main">
@@ -182,7 +137,7 @@ window.Quarto = {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Avant-propos</span></a>
@@ -190,61 +145,61 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+  <a href="./Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La gestion des références</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapitre10.html" class="sidebar-item-text sidebar-link">
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
   </div>
 </li>
@@ -255,31 +210,29 @@ window.Quarto = {
   </div>
 </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#%C3%A9mergence-et-s%C3%A9mantique-du-libre" id="toc-émergence-et-sémantique-du-libre" class="nav-link active" data-scroll-target="#%C3%A9mergence-et-s%C3%A9mantique-du-libre"><span class="header-section-number">2.1</span> Émergence et sémantique du <em>libre</em></a></li>
-  <li><a href="#logiciel-libre-et-code-ouvert" id="toc-logiciel-libre-et-code-ouvert" class="nav-link" data-scroll-target="#logiciel-libre-et-code-ouvert"><span class="header-section-number">2.2</span> Logiciel libre et code ouvert</a></li>
-  <li><a href="#cas-d%C3%A9tude-r" id="toc-cas-détude-r" class="nav-link" data-scroll-target="#cas-d%C3%A9tude-r"><span class="header-section-number">2.3</span> Cas d’étude: <code>R</code></a></li>
-  <li>
-<a href="#principaux-avantages-et-inconv%C3%A9nients" id="toc-principaux-avantages-et-inconvénients" class="nav-link" data-scroll-target="#principaux-avantages-et-inconv%C3%A9nients"><span class="header-section-number">2.4</span> Principaux avantages et inconvénients</a>
-  <ul class="collapse">
-<li><a href="#avantages" id="toc-avantages" class="nav-link" data-scroll-target="#avantages"><span class="header-section-number">2.4.1</span> Avantages</a></li>
-  <li><a href="#inconv%C3%A9nients-et-d%C3%A9fis" id="toc-inconvénients-et-défis" class="nav-link" data-scroll-target="#inconv%C3%A9nients-et-d%C3%A9fis"><span class="header-section-number">2.4.2</span> Inconvénients et défis:</a></li>
+  <li><a href="#pourquoi-r" id="toc-pourquoi-r" class="nav-link active" data-scroll-target="#pourquoi-r"><span class="header-section-number">3.1</span> Pourquoi R?</a></li>
+  <li><a href="#où-coder-en-r" id="toc-où-coder-en-r" class="nav-link" data-scroll-target="#où-coder-en-r"><span class="header-section-number">3.2</span> Où coder en R ?</a></li>
+  <li><a href="#quest-ce-que-rstudio" id="toc-quest-ce-que-rstudio" class="nav-link" data-scroll-target="#quest-ce-que-rstudio"><span class="header-section-number">3.3</span> Qu’est-ce que RStudio ?</a></li>
+  <li><a href="#comment-utiliser-rstudio" id="toc-comment-utiliser-rstudio" class="nav-link" data-scroll-target="#comment-utiliser-rstudio"><span class="header-section-number">3.4</span> Comment utiliser RStudio ?</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.5</span> Conclusion</a></li>
   </ul>
-</li>
-  <li><a href="#les-sciences-sociales-%C3%A0-l%C3%A8re-du-num%C3%A9rique-les-enseignements-de-la-philosophie-du-logiciel-libre" id="toc-les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre" class="nav-link" data-scroll-target="#les-sciences-sociales-%C3%A0-l%C3%A8re-du-num%C3%A9rique-les-enseignements-de-la-philosophie-du-logiciel-libre"><span class="header-section-number">2.5</span> Les sciences sociales à l’ère du numérique: les enseignements de la philosophie du logiciel libre</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">
-<span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span>
-</h1>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap4" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></h1>
 </div>
 
 
@@ -293,254 +246,56 @@ window.Quarto = {
   
 
 
-</header><p>Ce chapitre vise à initier les lecteurs et lectrices aux concepts fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans un premier temps, l’historique de ce mouvement afin de pouvoir le situer temporellement. De cette façon, nous pourrons mieux comprendre les motivations derrière ce mouvement, mais aussi ses influences actuelles. Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que les deux soient très près l’un de l’autre, il est important de les distinguer puisqu’ils ne renvoient pas aux mêmes caractéristiques et aux mêmes fondements. Après coup, nous utiliserons un exemple concret pour illustrer le propos: <code>R</code>, et ses différentes librairies. La dernière section du chapitre présentera les avantages et les inconvénients, en plus de défis qui se posent. En guise de conclusion, nous souhaitons mettre l’accent sur l’apport du logiciel libre et du code ouvert afin d’assurer la transparence, la reproductibilité ainsi que la qualité des recherches scientifiques.</p>
-<p><em>« Vous n’avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel car votre médecin vous le conseille — peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n’y perd que du temps et le coût du papier sur lequel il l’inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d’électricité. Dans tous les cas, la personne qui donne l’information y gagne deux choses : davantage d’amitié et la possibilité de récupérer en retour d’autres recettes intéressantes. »</em> - Richard Stallman <span class="citation" data-cites="williams_etal10">(<a href="references.html#ref-williams_etal10" role="doc-biblioref">Williams, Stallman, and Masutti 2010</a>)</span></p>
-<p>Cette analogie illustre bien trois concepts au coeur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s’encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d’une collaboration entre développeurs qui peuvent provenir des quatre coins du globe. Une réflexion éthique est au coeur du mouvement du logiciel libre, dont les militants font campagne pour la liberté des utilisateurs dès le début des années 1980. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel «libre» [free] comme étant garant de quatre libertés fondamentales de l’utilisateur: la liberté d’utiliser le logiciel sans restrictions, la liberté de le copier, la liberté de l’étudier, puis la liberté de le modifier pour l’adapter à ses besoins puis le redistribuer<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Il s’agit ainsi d’un logiciel dont le code source<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> est disponible, afin de permettre aux internautes de l’utiliser tel quel ou de le modifier à leur guise. Puisque le langage machine est difficilement lisible par l’homme et rend la compréhension du logiciel extrêmement complexe, l’accès au code source devient essentiel afin de permettre à l’utilisateur de savoir ce que le programme fait réellement. Seulement de cette façon, l’utilisateur peut <em>contrôler</em> le logiciel, plutôt que de se faire contrôler par ce dernier <span class="citation" data-cites="stallman86">(<a href="references.html#ref-stallman86" role="doc-biblioref">Stallman 1986</a>)</span>.</p>
-<section id="émergence-et-sémantique-du-libre" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="émergence-et-sémantique-du-libre">
-<span class="header-section-number">2.1</span> Émergence et sémantique du <em>libre</em>
-</h2>
-<p>Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU, en 1983, à partir de laquelle va se développer une multitude de programmes libres. Parmi les plus populaires, on retrouve notamment le navigateur Firefox, la suite bureautique OpenOffice et l’emblématique système d’exploitation Linux, qui se développe d’ailleurs à partir de la licence GNU. Aujourd’hui, il s’agit d’un véritable phénomène sociétal: des milliers d’entreprises, d’organisations à but non lucratif, d’institutions ou encore de particuliers adoptent ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s’arriment avec le virage technologique de plusieurs entreprises. Les logiciels libres ont différents usages, en passant par la conception Web, la gestion de contenu, les systèmes d’exploitation, la bureautique, entre autres. Ils permettent donc de répondre à plusieurs types de besoins numériques et informatiques.</p>
-<p>Attention, le logiciel libre est avant tout une philosophie, voire un mouvement de société. C’est une façon de concevoir la communauté du logiciel, où le respect de la liberté de l’utilisateur est un impératif éthique <span class="citation" data-cites="williams_etal10">(<a href="references.html#ref-williams_etal10" role="doc-biblioref">Williams, Stallman, and Masutti 2010</a>)</span>. Par conséquent, le terme libre, <em>free</em> en anglais, porte à confusion. Celui-ci ne signifie pas qu’un logiciel libre est nécessairement gratuit. Certes, plusieurs sont effectivement téléchargeables gratuitement. Toutefois, il est aussi possible de (re)distribuer des logiciels libres payant. Par ailleurs, aucun logiciel libre n’est réellement « gratuit » dans la mesure où son déploiement et son utilisation nécessitent généralement différents coûts, dont les degrés sont variables en fonction des compétences et de l’infrastructure dont disposent les utilisateurs (coût d’apprentissage, coûts d’entretien, etc.). Enfin, il est important de garder en tête que les logiciels libres possèdent eux aussi une licence - cette dernière est d’ailleurs garante des libertés que confèrent les logiciels libres aux utilisateurs.</p>
-</section><section id="logiciel-libre-et-code-ouvert" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="logiciel-libre-et-code-ouvert">
-<span class="header-section-number">2.2</span> Logiciel libre et code ouvert</h2>
-<p>Parallèlement au logiciel libre, il y a aussi le code ouvert, ou <em>open source</em>. A priori, la dénomination du logiciel libre et celle du <em>code ouvert</em> semble suggérer qu’il s’agit de synonymes. Dans les deux cas on dirait que l’on fait référence à des logiciels, par exemple, qui sont exempts de restrictions d’utilisations et auxqels les utilisateurs peuvent participer au développement. Cependant, il y a une distinction importante entre les deux.</p>
-<p>Bien que les deux renvoient sensiblement aux mêmes types de logiciels, les tenants de ces approches ne partagent pas la même perspective. Comme <span class="citation" data-cites="stallman22">Stallman (<a href="references.html#ref-stallman22" role="doc-biblioref">2022</a>)</span> l’explique, le logiciel libre est d’abord et avant tout un mouvement qui fait “campagne pour la liberté des utilisateurs de l’informatique”. Le code ouvert, quant à lui, met l’accent sur les avantages pratiques, plutôt que de militer pour des principes.</p>
-<p>Le terme <em>code ouvert</em> sera introduit seulement en 1998 afin de clarifier l’ambiguité dans la dénomination “logiciel libre”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, <em>free software</em> en anglais, afin de spécifier que le code source était accessible, et non pas que le logiciel était “gratuit” <span class="citation" data-cites="ballhausen19">(<a href="references.html#ref-ballhausen19" role="doc-biblioref">Ballhausen 2019</a>)</span>. De plus, les logiciels code ouvert, doivent respecter certains critères quant à la distribution de leurs logiciels <span class="citation" data-cites="opensourceinitiative06">(<a href="references.html#ref-opensourceinitiative06" role="doc-biblioref">Open Source Initiative 2006</a>)</span>. Nous aborderons ces critères dans le prochain paragraphe.</p>
-<p>Afin de mieux distinguer les deux, il est utile de faire référence aux critères qui composent ces deux éléments, et qui constituent la base de leur définition. Tout d’abord, le logiciel libre se définit sur la base de quatre libertés: 1) liberté d’utiliser le programme tel que désiré; 2) liberté d’étudier le fonctionnement du programme et de le modifier pour ses propres besoins; 3) liberté de re-distribuer des copies; 4) liberté de distribuer des copies de la version “améliorer” du programme pour ses pairs <span class="citation" data-cites="ballhausen19">(<a href="references.html#ref-ballhausen19" role="doc-biblioref">Ballhausen 2019</a>)</span>. Concernant le <em>code ouvert</em>, tout logiciel qui souhaite être inclut sous cette appellation doit respecter dix critères: 1) Redistribution gratuite; 2) doit inclure le code source; 3) doit permettre les modifications et les travaux dérivés; 4) intégrité du code source; 5) ne doit pas discriminer des personnes et/ou groupes; 6) ne doit pas restreindre personne dans l’utilisation du logiciel pour un domaine d’activité; 7) distribution d’une license pour l’utilisation; 8) la license ne doit pas être spécifique pour un produit; 9) la license ne doit pas placer de restriction sur d’autres programmes; 10) la license doit être technologiquement neutre<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <span class="citation" data-cites="opensourceinitiative06">(<a href="references.html#ref-opensourceinitiative06" role="doc-biblioref">Open Source Initiative 2006</a>)</span>.</p>
-<p>Il est aussi utile de les distinguer des logiciels “non-libres”, soit les logiciels propriétaires: “Son utilisation, sa redistribution ou sa modification sont interdites, ou exigent une autorisation spécifique, ou sont tellement restreintes qu’en pratique vous ne pouvez pas le faire librement” <span class="citation" data-cites="systemedexploitationgnu23">(<a href="references.html#ref-systemedexploitationgnu23" role="doc-biblioref">Système d’exploitation GNU 2023</a>)</span>. Par contraste, la licence libre confère des droits de propriétaire. L’utilisateur a le droit d’installer le logiciel sur autant d’ordinateurs que désiré, le modifier selon ses besoins et le distribuer avec ou sans ses modifications. Il peut même demander d’être payé pour distribuer des copies, avec ou sans ses modifications. Par exemple, le logiciel Ubuntu, une version de Linux, peut être téléchargé gratuitement du site Ubuntu.com. Il est aussi vendu par Amazon.com pour 12$ la copie, plus les frais d’expédition!</p>
-<p>Comme nous le constatons, le logiciel libre et le <em>code ouvert</em> ont certaines similitudes puisqu’ils adhèrent tous les deux à la même vision du logiciel, ainsi que de son accessibilité. Toutefois, il est important tout de même de les distinguer puiqu’ils ont des origines différentes, et qu’ils mènent à certaines pratiques qui sont différentes. La prochaine section utilise un cas concret afin d’expliquer l’effet du libre, et l’utilité que cela peut avoir.</p>
-</section><section id="cas-détude-r" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="cas-détude-r">
-<span class="header-section-number">2.3</span> Cas d’étude: <code>R</code>
-</h2>
-<p>Afin d’illustrer le tout plus concrètement, nous utiliserons ici le cas du logiciel <code>R</code>. Il s’agit d’un logiciel statistique que tous les utilisateurs peuvent télécharger gratuitement, et dans lequel aucun achat supplémentaire est nécessaire pour avoir accès à des fonctionnalités additionnels. Bien que ce logiciel soit déjà riche en fonctions et commandes, plusieurs utilisateurs ont développé des <em>packages</em>, des libraries externes, afin de bonifier les fonctions de base <span class="citation" data-cites="arel-bundock21">(<a href="references.html#ref-arel-bundock21" role="doc-biblioref">Arel-Bundock 2021</a>)</span>. Utilisons un cas d’étude afin de démontrer l’apport des librairies externes. Par exemple, je souhaite savoir la probabilité de survie à bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt avec sous la notation suivante: <span class="math inline">\(P(Y = Survie | X = Femme)\)</span>. En d’autres termes, la probabilité de survie étant donné que nous soyons une femme. Pour ce faire, je dois utiliser l’ensemble de données <code>Titanic</code>, disponible en format csv. Je dois donc installer et télécharger la librairie <code>readr</code> afin que <code>R</code> puisse importer et lire les données. Ensuite je vais utiliser la commande <code>table</code>, inclue dans les commandes de base de <code>R</code>, afin de produire un tableau croisé entre les variables femme et survie.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"readr"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://readr.tidyverse.org">readr</a></span><span class="op">)</span> </span>
-<span></span>
-<span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/titanic.csv"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">survie</span>, <span class="va">dat</span><span class="op">$</span><span class="va">femme</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   
-      0   1
-  0 709 154
-  1 142 308</code></pre>
-</div>
-</div>
-<p>Comme nous le voyons ici, la librairie <code>readr</code>, développé par plusieurs individus<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, nous a permis d’importer l’ensemble de données à propos des passagers du Titanic. Toutefois, le format du tableau n’est pas très esthétique. Pour remédier à ce problème, nous pouvons installer et utiliser la librarie <code>modelsummary</code> qui nous permettra de créer rapidement des tableaux croisés plus esthétique, et qui contiendrons davantage d’informations, facilitant la lecture et notre compréhension de la relation qui nous intéresse.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"modelsummary"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://modelsummary.com">modelsummary</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">Tableau_2.1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://modelsummary.com/reference/datasummary_crosstab.html">datasummary_crosstab</a></span><span class="op">(</span><span class="va">survie</span> <span class="op">~</span> <span class="va">femme</span>, data <span class="op">=</span> <span class="va">dat</span>, title <span class="op">=</span> <span class="st">' '</span><span class="op">)</span> </span>
-<span></span>
-<span><span class="va">Tableau_2.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<thead><tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">survie</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">0</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">1</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">All</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">N</td>
-<td style="text-align: right;">709</td>
-<td style="text-align: right;">154</td>
-<td style="text-align: right;">863</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">% row</td>
-<td style="text-align: right;">82.2</td>
-<td style="text-align: right;">17.8</td>
-<td style="text-align: right;">100.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">N</td>
-<td style="text-align: right;">142</td>
-<td style="text-align: right;">308</td>
-<td style="text-align: right;">450</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">% row</td>
-<td style="text-align: right;">31.6</td>
-<td style="text-align: right;">68.4</td>
-<td style="text-align: right;">100.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">All</td>
-<td style="text-align: left;">N</td>
-<td style="text-align: right;">851</td>
-<td style="text-align: right;">462</td>
-<td style="text-align: right;">1313</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">% row</td>
-<td style="text-align: right;">64.8</td>
-<td style="text-align: right;">35.2</td>
-<td style="text-align: right;">100.0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<p>Comme nous le voyons, la commande <code><a href="https://modelsummary.com/reference/datasummary_crosstab.html">datasummary_crosstab()</a></code> permet facilement de créer des tableaux non seulement plus esthétiques, mais aussi plus informatif. C’est très utile si l’on souhaite incorporer des tableaux dans notre rapport finale, surtout que cette commande nous permet d’exporter les tableaux sous diffèrents format (.docx, <code>LaTeX</code>, .qmd, etc.)</p>
-<p>Ces deux librairies que nous venons de présenter en exemple, ne sont que deux des 19 897 disponibles pour <code>R</code>. Elles illustrent très bien la contribution que les utilisateurs peuvent faire au logiciel. Surtout, ces <em>add on</em> ont été développés de manière bénévole. Les contributeurs le font par “passion”, et pour en faire profiter la collectivité d’utilisateurs.</p>
-<p>Les logiciels libres permettent aux utilisateurs de jouir d’une plus grande liberté dans leur utilisation, ce qui génère des externalités positives puisque ces gens peuvent créer de nouvelles commandes ou fonction et en faire bénéficier toute la collectivité. L’exemple que nous avons utilisé avec <code>R</code> ici reflète très bien cet avantage. La prochaine section de ce chapitre se penche plus en profondeur sur les autres avantages ainsi que sur les inconvénients de ces logiciels.</p>
-</section><section id="principaux-avantages-et-inconvénients" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="principaux-avantages-et-inconvénients">
-<span class="header-section-number">2.4</span> Principaux avantages et inconvénients</h2>
-<p>Dans cette section, nous ne dresserons pas un portrait exhaustif de tous les avantages et les inconvénients du logiciel libre. Cette tâche serait fastidieuse et peu intéressante pour les lecteurs. Notre but ici est de présenter les certains avantages qui sont propre aux logiciels, ainsi que les inconvénients de ceux-ci.</p>
-<section id="avantages" class="level3" data-number="2.4.1"><h3 data-number="2.4.1" class="anchored" data-anchor-id="avantages">
-<span class="header-section-number">2.4.1</span> Avantages</h3>
-<section id="le-partage-et-co-construction-des-connaissances" class="level4" data-number="2.4.1.1"><h4 data-number="2.4.1.1" class="anchored" data-anchor-id="le-partage-et-co-construction-des-connaissances">
-<span class="header-section-number">2.4.1.1</span> Le partage et co-construction des connaissances</h4>
-<p>La grande liberté que ce type de logiciel offre favorise la collaboration entre les utilisateurs, et ce à une échelle pouvant être internationale. Les interactions entre les chercheurs crées une dynamique d’« innovation ascendante » et d’entraide <span class="citation" data-cites="couture14">(<a href="references.html#ref-couture14" role="doc-biblioref">Couture 2014</a>)</span>. Ce résultat constitue un avantage important pour le développement de ces logiciels. Selon certains, et comparativement aux logiciels privés, les logiciels libres ont un niveau plus élevé d’innovation <span class="citation" data-cites="smith02">(<a href="references.html#ref-smith02" role="doc-biblioref">Smith 2002</a>)</span>. Contrairement à ceux qui se développent de manière privé et fermée, les logiciels libres permettent à tous les utilisateurs de participer au développement. Ceux-ci partagent ensuite leurs améliorations, ce qui stimulent à son tour de nouvelles initiatives. Ainsi, un certain savoir est généré dans cette situation. De plus, il est raisonable de penser que l’utilité des améliorations, ainsi que leur utilisation par les utilisateurs en fonction de leur besoin, comme dans le cas de la recherche sociale avec <code>R</code> permet de générer un savoir collaboratif <span class="citation" data-cites="couture20">(<a href="references.html#ref-couture20" role="doc-biblioref">Couture 2020</a>)</span>. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs <span class="citation" data-cites="couture14">(<a href="references.html#ref-couture14" role="doc-biblioref">Couture 2014</a>)</span>, ces éléments résument très bien la philosophie du logiciel libre.</p>
-<p>Comme nous le verrons dans la section suivante, cet avantage est couplé avec ceux économiques. Les bas coûts démocratise l’accès à plusieurs logiciels qui sont utiles pour mener des analyses scientifiques. Et ce, pour tous les utilisateurs dans le monde.</p>
-</section><section id="avantages-économiques-une-plus-grande-accessibilité-pour-tous" class="level4" data-number="2.4.1.2"><h4 data-number="2.4.1.2" class="anchored" data-anchor-id="avantages-économiques-une-plus-grande-accessibilité-pour-tous">
-<span class="header-section-number">2.4.1.2</span> Avantages économiques : Une plus grande accessibilité pour tous</h4>
-<p>Le principal avantage économique des logiciels libres est son faible d’acquisition et de renouvellement pour les particuliers. Cet avantage individuel génère plusieurs externalités positives.</p>
-<p>Tout d’abord, certains logiciels statistiques et programmes informatiques, tel que Stata et SPSS, coûtent plusieurs centaines, voir des miliers de dollar. De plus, la license doit être renouvelée annuellement. Ce qui augmente les coûts associés à l’utilisation du logiciel et par conséquent limite son accessibilité. Comparativement, pour les logiciels libres, la license d’acquisition coûte bien souvent moins cher, et aucun renouvellement de licence n’est demandé dans la plus part des cas. Étant donné que les chercheurs doivent souvent faire face à des contraintes budgétaires, les logiciels libres deviennent des outils intéressant afin de minimiser les coûts de la recherche <span class="citation" data-cites="yu_munoz-justicia22">(<a href="references.html#ref-yu_munoz-justicia22" role="doc-biblioref">Yu and Muñoz-Justicia 2022</a>)</span>. Avantage encore plus important pour les chercheurs dans les pays du Sud global <span class="citation" data-cites="santillan-anguiano_gonzalez-machado23">(<a href="references.html#ref-santillan-anguiano_gonzalez-machado23" role="doc-biblioref">Santillán-Anguiano and González-Machado 2023</a>)</span>. L’accessibilité de ces ressources permet donc de réduire l’écart dans la production scientifique entre les pays du Sud et ceux du Nord. De plus, elle permet à tous de bénéficier d’outils pédagogiques accessibles, ce qui favorise l’acquisition ainsi que le développement de compétences méthodologiques.</p>
-<p>Dans le cadre d’une formation universitaire, il peut être pertinent d’enseigner aux étudiants à se servir de logiciel statistique ou d’analyse de texte. L’acquisition de ces compétences peut être précieux tant pour ceux et celles qui souhaitent se diriger vers le milieu académique, que pour ceux et celles qui visent le marché professionnel. D’ailleurs sur le site web de la banque d’emplois du gouvernement du Canada<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, les conditions d’emplois sont en ce moment<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> très bonnes, et une pénurie de main d’oeuvre est anticipé, entre 2022-2031, dans les emplois en analyse de données. Ces compétences sont d’autant plus précieuses aujourd’hui, dans le monde de données dans lequel nous vivons.</p>
-<p>Ensuite, le logiciel libre est adaptable et modifiable. Ces coût techniques de développement restent néanmoins nettement inférieurs aux coûts de renouvellement et de mise à jour des logiciels propriétaires dans bien des cas. L’argent sauvée des licences peut alors être investie dans le développement du logiciel libre <span class="citation" data-cites="beraud07">(<a href="references.html#ref-beraud07" role="doc-biblioref">Béraud 2007</a>)</span>. Cependant, une transition vers les logiciels libres ne doit pas se faire seulement sur des bases économiques, mais dans une perspective globale de changement de cultures.Changer pour des raisons purements économiques viendrait à violer l’essence même de la philosophie du logiciel libre, qui se veut davantage être un esprit de collaboration et de transparence. Par conséquent, il est important d’incorporer aussi les valeurs et la philosophie dans notre utilisation</p>
-<p>Pour résumer, les logiciels libres permettent donc une plus grande égalité dans l’accès aux nouvelles technologies, puisqu’ils ont dans la majorité des cas, des coûts d’acquisition nettement moindre. (Oui et non, l’acquisition financière est une chose, mais il y a d’autres barrières à l’utilisation tel que l’apprentissage à faire pour apprendre un language de programmation, l’achat de matériel informatique, etc. ) Cependant, considérant cela, donner l’exemple de l’étude qui montre que c’est beaucoup plus économique, même si l’on doit compter les coûts de formation, le soutien technique, l’entretien et la maintenance. <span class="citation" data-cites="couture14 karjalainen10">(<a href="references.html#ref-couture14" role="doc-biblioref">Couture 2014</a>; <a href="references.html#ref-karjalainen10" role="doc-biblioref">Karjalainen 2010</a>)</span>.</p>
-</section></section><section id="inconvénients-et-défis" class="level3" data-number="2.4.2"><h3 data-number="2.4.2" class="anchored" data-anchor-id="inconvénients-et-défis">
-<span class="header-section-number">2.4.2</span> Inconvénients et défis:</h3>
-<section id="coûteux-en-temps" class="level4" data-number="2.4.2.1"><h4 data-number="2.4.2.1" class="anchored" data-anchor-id="coûteux-en-temps">
-<span class="header-section-number">2.4.2.1</span> Coûteux en temps</h4>
-<p>Dans leur texte, <span class="citation" data-cites="paura_arhipova12">Paura and Arhipova (<a href="references.html#ref-paura_arhipova12" role="doc-biblioref">2012</a>)</span> soulèvent une critique faite envers certains logiciels libres, notamment envers <code>R</code>. Le problème principal d’enseigner les statistiques avec des logiciels libres est qu’ils sont compliqués à apprendre ainsi qu’à utiliser; par conséquent, les étudiants passeraient plus de temps à tenter de résoudre les erreurs de programmation plutôt que d’apprendre les statistiques. Il est vrai que ces logiciels demandent un investissement en temps, afin d’être en mesure de mener ses propres analyses statistiques. Par exemple, <code>R</code> demande l’apprentissage d’un language de programmation afin de pouvoir utiliser le logiciel à son plein potentiel.</p>
-<p>La synthaxe de certaines libraries demandent aussi un certain temps d’adaptation. Par exemple, je souhaite recoder la variable femme, de l’ensemble de données <code>titanic</code>, afin de remplacer les valeurs numériques actuelles (0, 1) par des valeurs nominales (homme, femme). La section de code ci-dessous réalise cette tâche avec les commandes de base de <code>R</code> et celle du <code>tidyverse</code>.</p>
-<div class="cell">
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span> <span class="op">==</span> <span class="fl">0</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"Homme"</span>  </span>
-<span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span> <span class="op">==</span> <span class="fl">1</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"Femme"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Femme Homme 
-  462   851 </code></pre>
-</div>
-</div>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/recode.html">recode</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span>, `0` <span class="op">=</span> <span class="st">"Homme"</span>, `1` <span class="op">=</span> <span class="st">"Femme"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">femme</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Femme Homme 
-  462   851 </code></pre>
-</div>
-</div>
-<p>Toutefois, l’orsque l’on compare le coût d’apprentissage avec les bénéfices tirés, il est plus difficile de soutenir qu’il s’agit d’un désavantage. L’habileté que nous développons devient très utile par la suite, puisqu’elle nous permet de manipuler ainsi que d’analyser des données. Surtout, ces compétences s’inscrivent dans la longue durée, alors que l’apprentissage est plutôt de courte à moyenne durée. Surtout, la logique derrière la synthaxe de base de <code>R</code> et celle d’une nouvelle librairie reste sensiblement inchangée. Par conséquent, lorsque nous avons une bonne compréhension du fonctionnement de base de <code>R</code>, l’apprentissage d’une nouvelle librairie se fait relativement rapidement. Certaines, comme <code>dplyr</code> du <code>tidyverse</code> facilite grandement la manipulation des données comparativement aux commandes de base.</p>
-<p>Pour résumer, bien que l’apprentissage d’un language de programmation demande un investissement en temps, les bénéfices générées par ces nouvelles compétences dépassent le coût initial.</p>
-</section><section id="problème-de-transparence" class="level4" data-number="2.4.2.2"><h4 data-number="2.4.2.2" class="anchored" data-anchor-id="problème-de-transparence">
-<span class="header-section-number">2.4.2.2</span> Problème de transparence</h4>
-<p>L’arrivé des sciences informatiques à fait émerger des problèmes de reproductibilité des protocoles scientifiques <span class="citation" data-cites="janssen17">(<a href="references.html#ref-janssen17" role="doc-biblioref">Janssen 2017</a>)</span>. Le problème principal est relatif à l’accès au code utilisé par les chercheurs. Par exemple, il est possible de réaliser des analyses statistiques avec <code>R</code> sans partager le code utilisé, ce qui limite la transparence du processus scientifique. Dans cette situation, il est difficile de savoir si des erreurs de codage ont été commises, volontairement ou involontairement, affectant ainsi les résultats partagés.</p>
-<p>Afin de remédier à ce problème, certains logiciels tel que GitHub<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> participent à la transparence des résultats scientifiques <span class="citation" data-cites="fortunato_galassi21">(<a href="references.html#ref-fortunato_galassi21" role="doc-biblioref">Fortunato and Galassi 2021</a>)</span>. Ce logiciel permet aux chercheurs de partager leur code afin qu’il puisse être accessible pour tous. Il est important de mentionner ici que l’installation et la configuration de GitHub peut s’avérer difficile pour ceux et celles qui ne sont pas ignitié à l’informatique. Cela constitue une certaine barrière dans l’utilisation de ce logiciel. Toutefois, nous souhaitons tout de même présenter l’utilité de ce logiciel puisqu’il permet de rendre les processus ainsi que les résultats de recherche plus transparent.</p>
-<p>Par exemple, si l’on réalise une analyse statistique de la relation entre l’économie et le vote, nous pourrions partager l’ensemble du code que nous avons utilisé sur GitHub. D’une part cela permettrait aux utilisateurs de vérifier si les résultats sont honnêtes, et d’autre part de réutiliser le code pour mener leurs propres analyses.</p>
-<p>Cependant, le partage du code utilisé reste encore majoritairement volontaire. <span class="citation" data-cites="janssen_etal20">Janssen, Pritchard, and Lee (<a href="references.html#ref-janssen_etal20" role="doc-biblioref">2020</a>)</span> soutiennent que plus d’effort et d’actions concertés doivent être mise en place afin d’améliorer l’accessibilité aux codes. Toujours selon ces auteurs, les journaux scientifiques pourraient exiger que les auteurs rendent leur code publique lors du processus de publication. D’ailleurs, les résultats d’une expérience sur les facteurs qui influencent les chercheurs à partager leur code démontre que les initiatives individuelles ne seront pas suffisantes pour une agmentation du partage du code <span class="citation" data-cites="krahmer_etal23">(<a href="references.html#ref-krahmer_etal23" role="doc-biblioref">Krähmer, Schächtele, and Schneck 2023</a>)</span>. Par conséquent, rendre le code accessible devrait devenir un standard institutionnalisé.</p>
-</section><section id="appropration-capitaliste" class="level4" data-number="2.4.2.3"><h4 data-number="2.4.2.3" class="anchored" data-anchor-id="appropration-capitaliste">
-<span class="header-section-number">2.4.2.3</span> Appropration capitaliste</h4>
-<p>Dans ce cas-ci, il s’agit plutôt d’un défis auquel le logiciel libre est confronté plutôt qu’une critique quant aux limites de son utilisation. En fait, l’accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constitue un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste <span class="citation" data-cites="broca13 bessen02">(<a href="references.html#ref-broca13" role="doc-biblioref">Broca 2013</a>; <a href="references.html#ref-bessen02" role="doc-biblioref">Bessen 2002</a>)</span>. Certaines d’entre elles utilisent les utilisateurs comme une main d’oeuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l’entreprise est la seule bénéficiaire <span class="citation" data-cites="couture20">(<a href="references.html#ref-couture20" role="doc-biblioref">Couture 2020</a>)</span>. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales trouble l’essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu’un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui a donné lieu à ce mouvement.</p>
-</section></section></section><section id="les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre">
-<span class="header-section-number">2.5</span> Les sciences sociales à l’ère du numérique: les enseignements de la philosophie du logiciel libre</h2>
-<p>Ce chapitre à voulu mettre de l’avant le logiciel libre afin d’initier les lecteurs et lectrices à ce monde. Le but n’était pas de présenter de manière exhaustive tout ce champ. Plutôt, nous avons préféré nous limiter aux bases de compréhension, ainsi qu’à quelques exemples. Par conséquent, nous souhaitions qu’à la lecture du chapitre, les lecteurs et lectrices soient mieux outillés pour comprendre et réfléchir par rapport à ce monde, et ainsi insérer ces réflexions dans leurs démarches scientifiques. Générer des idées et des débats nous paraît bien plus promoteur pour l’avenir que d’apprendre par coeur.</p>
-<p>En guise de conclusion, nous souhaitons résumer ce chapitre tout en situant ces différents éléments dans les sciences sociales à l’ère du numérique. Le livre de <span class="citation" data-cites="marres17">Marres (<a href="references.html#ref-marres17" role="doc-biblioref">2017</a>)</span> est très intéressant à ce sujet. Face au constat que la vie sociale se trouve affectée par les changements numériques, il nous faut en tant que chercheur du monde social réfléchir à notre façon de comprendre les changements qui sont entrain de s’opérer. Bien que ces réflexions ratissent large <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, nous nous concentrons ici sur la dimension méthodologique.</p>
-<p>Comme nous l’avons présenté ci-haut, les bas coûts associés à l’utilisation ainsi que la facilité du partage avec la communauté nous semble être deux avantages importants pour l’avenir des sciences sociales numériques. Notamment parce qu’ils ont le potentiel d’améliorer la transparence des protocoles scientifiques. Dans <em>Designing Social Inquiery</em>, l’un des livres les plus influents en science politique depuis les trente dernières années, les auteurs définissent quatre caractéristiques que chaque recherche doit posséder afin d’être considérée comme scientifique. L’une d’elles, est que la <em>procédure doit être publique</em>: “La recherche scientifique utilise des méthodes explicites, codifiées et publiques afin de générer et analyser des données sur lesquelles la fiabilité peut ensuite être déterminer” <span class="citation" data-cites="king_etal21">(<a href="references.html#ref-king_etal21" role="doc-biblioref">King, Keohane, and Verba 2021, 6</a>)</span>. Chaque individu qui souhaite contribuer à la connaissance et à la compréhension globale que nous avons de la réalité sociale doit garder en tête cette caractéristique fondamentale. Comme nous l’avons exposé, le partage du code devient un impératif pour assurer la transparence, la réplicabilité ainsi que la qualité des recherches.</p>
-<div style="page-break-after: always;"></div>
+</header>
+
+
+<p>Plusieurs notions liées à l’ère numérique, notamment à ce qui a trait aux opportunités et difficultés que cette dernière peut amener, ont été présentées par l’entremise du chapitre précédent. C’est un monde de possibilité qui s’offre à ceux qui maîtrisent les nouveaux outils des temps modernes. Mais comment en arriver là ? Le présent chapitre a pour but de présenter certains outils flexibles et péreins permettant la réalisation de nombreuses tâches. Une des premières étapes permettant de notamment réaliser la collecte, l’analyse et la visualisation graphique de données ainsi que la rédaction de documents est l’apprentissage d’un langage de programmation. Bien que plusieurs langages de programmation existent, le présent ouvrage priorise le langage <strong>R</strong>. Les sections suivantes présentent ce langage de programmation, ces forces et ces faiblesses ainsi que les raisons de son utilisation. Enfin, la dernière section présente un environnement de programmation qui se prête bien à son utilisation.</p>
+<section id="pourquoi-r" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="pourquoi-r"><span class="header-section-number">3.1</span> Pourquoi R?</h2>
+<p>Comme mentionné précédemment, il existe plusieurs langages de programmation. <strong>R</strong> a deux types de compétiteurs : les logiciels à licences comme SAS, STATA et SPSS, et les langages <em>OpenSource</em> tels que Python et Julia. <strong>R</strong> est un langage de programmation <em>OpenSource</em> développé par des statisticiens, pour des statisticiens, dans les années 1990 <span class="citation" data-cites="tippmann15">(<a href="references.html#ref-tippmann15" role="doc-biblioref">Tippmann 2015</a>)</span>. <strong>R</strong> prend ses racines dans le langage de programmation S, créé notamment par Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non orthodoxes lors de l’élaboration du langage, qui font aujourd’hui la popularité de ce logiciel auprès d’un large pan de la communauté académique. En effet, <span class="citation" data-cites="morandat_etal12">Morandat et al. (<a href="references.html#ref-morandat_etal12" role="doc-biblioref">2012</a>)</span> rapporte que le langage a été élaboré afin qu’il soit intuitif et qu’il permette aux nouveaux utilisateurs de rapidement réaliser des analyses.</p>
+<p>Le langage de programmation <strong>R</strong> a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. L’un de ses grands avantages est qu’il est <em>OpenSource</em>. Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l’argument, à savoir que : 1) l’<em>OpenSource</em> est gratuit d’utilisation; 2) l’<em>OpenSource</em> est développé de façon bottom-up, ce qui lui procure une grande flexibilité; et 3) il permet aux utilisateurs de créer leurs propres fonctions. À l’inverse, les logiciels à licences sont coûteux, rigides et l’ajout de fonctionnalités se fait par les développeurs internes à la compagnie. Ces formalités rendent le processus plus lent et réduisent l’éventail des possibilités pour la personne chercheuse. Ceci étant dit, certains avanceront que c’est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, <span class="citation" data-cites="muenchen11">Muenchen (<a href="references.html#ref-muenchen11" role="doc-biblioref">2011</a>)</span> soulève le point que bien souvent, ce sont des individus atomisés qui développent les nouvelles fonctionnalités de ces langages et que le processus de révisions se fait ensuite par des comités internes de testeurs. Il en va de même pour le développement des <em>packages</em> R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. Le fait que SAS et SPSS permettent à leur utilisateur d’intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l’utilité de R <span class="citation" data-cites="muenchen11">(<a href="references.html#ref-muenchen11" role="doc-biblioref">Muenchen 2011</a>)</span>. Le langage de programmation <strong>R</strong> permet également de réaliser une grande quantité de tâches de recherche. En effet, les personnes programmant en <strong>R</strong> peuvent notamment manipuler et visualiser des données, faire différents types d’analyses, créer des fonctions et faire des boucles en plus de pouvoir combiner <strong>R</strong> avec certains langages de balisages.</p>
+<p>D’un autre côté, l’utilisation du langage de programmation <strong>R</strong> peut être perçue comme ayant certains inconvénients. Plusieurs disent que la courbe d’apprentissage peut être plus grande que celle de programmes à licences. La véridicité de cet argument est discutable. Les programmes demandant des licences ont également un coût d’entrée. De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d’adaptation pour la personne chercheuse. D’autres disent que le développement <em>OpenSource</em>, spécifiquement celui du langage de programmation <strong>R</strong>, se fait de façon anarchique. Cela est davantage une question d’opinion et de conception du monde qu’une vérité. Le développement de <em>package</em> se fait effectivement de manière décentralisée et toute personne sachant programmer en <strong>R</strong> peut collaborer à cette communauté. Bien qu’il n’y ait pas d’autorité centrale, les <em>packages</em> sont regroupés sur le <em>Comprehensive R Archive Network</em> (CRAN) (voir le https://cran.r-project.org/ pour plus d’information). Le site a une politique de dépôt stricte, ainsi les <em>packages</em> doivent être suffisamment documentés. Il est également possible d’y télécharger le langage de programmation <strong>R</strong>. Ce langage, ainsi que ces différents <em>packages</em>, sont disponible sur Windows, macOS et Linux.</p>
+</section>
+<section id="où-coder-en-r" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="où-coder-en-r"><span class="header-section-number">3.2</span> Où coder en R ?</h2>
+<p>Un environnement de développement intégré (IDE) permet aux programmeurs de consolider les différents aspects de l’écriture d’un programme informatique. Ils permettent de réaliser toutes les activités courantes d’un programmeur – l’édition du code, la construction des exécutables et le débogage – au même endroit. Les environnements de développement intégrés sont conçus pour maximiser la productivité du programmeur. Ils fournissent de nombreuses fonctionnalités – notamment la coloration syntaxique ainsi que le contrôle de version – pour créer, modifier et compiler du code. Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique. Par conséquent, ils contiennent des fonctionnalités qui sont plus compatibles avec les paradigmes de programmation du langage auquel ils sont associés. Enfin, il existe de nombreux environnements de développement intégré multilingues.</p>
+<p>Comme mentionné précédemment, R est un des langages de statistiques et d’exploration de données les plus populaires en sciences sociales. R est pris en charge par de nombreux environnements de programmation. Plusieurs ont été spécialement conçus pour la programmation en R – le plus notable étant RStudio – tandis que d’autres sont des environnements de programmation universels – tels que Visual Studio Code – et prennent en charge R via des plugins. Il est également possible de coder en R à partir d’une interface en ligne de commande. Une telle méthode permet la communication entre l’utilisateur et son ordinateur. Cette communication s’effectue en mode texte : l’utilisateur tape une « ligne de commande » – c’est-à-dire du texte dans le <em>terminal</em> – pour demander à son ordinateur d’effectuer une opération précise, telle que rouler un fichier de code R.</p>
+<p>La suite du chapitre présente RStudio, notamment à travers ses avantages et inconvénients, mais également des exemples de ses fonctionnalités.</p>
+</section>
+<section id="quest-ce-que-rstudio" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="quest-ce-que-rstudio"><span class="header-section-number">3.3</span> Qu’est-ce que RStudio ?</h2>
+<p>RStudio est un projet open source destiné à combiner les différentes composantes du langage de programmation R en un seul outil (Allaire, 2011). RStudio fonctionne sur tous les systèmes d’exploitation, y compris Windows, Mac OS et Linux. En plus de l’application de bureau, RStudio peut être déployé en tant que serveur pour permettre l’accès Web aux sessions R s’exécutant sur des systèmes distants (Allaire, 2011). RStudio facilite l’utilisation du langage de programmation R en offrant de nombreux outils permettant à son utilisateur d’aisément réaliser ses tâches. Parmi les plus utiles, on retrouve notamment une fenêtre d’aide, de la documentation sur les différents packages R, un navigateur d’espace de travail, une visionneuse de données et une prise en charge de la coloration syntaxique (Horton, Kleinman, 2015). De plus, RStudio permet de coder dans plusieurs langages et de supporter une grande quantité de formats. Il fournit également un support pour plusieurs projets ainsi qu’une interface pour utiliser des systèmes de contrôle, tels que GitHub (Horton, Kleinman, 2015).</p>
+<p>RStudio a plusieurs avantages. Son utilisation est facile à apprendre pour les débutants. Les principaux éléments d’un IDE sont intégrés dans une disposition à quatre volets (Verzani, 2011). Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d’un projet, un espace pour l’environnement de travail et un quatrième volet où il est notamment possible d’afficher des graphiques ou de la documentation sur différents packages. Ce volet permet d’ailleurs d’accéder au répertoire des <em>packages</em> disponibles pour <em>R</em> en plus de permettre à l’utilisateur de consulter l’arborescence de ses fichiers. De plus, on y retrouve la possibilité de créer plusieurs espaces de travail – appelés projets – qui facilitent l’organisation de différents <em>workflows</em>.</p>
+<p>Il y a plusieurs autres aspects de RStudio que les programmeurs apprécient. Parmi ceux-ci se trouve le fait qu’il peut être utilisé via un navigateur Web pour un accès à distance (Verzani, 2011). De plus, RStudio supporte plusieurs langages de programmation ainsi que différents langages de balisage. Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour satisfaire les besoins de la communauté scientifique. Enfin, R logiciel est également souvent mis à jour.</p>
+<p>Parmi ce que certains considèrent comme étant les points faibles de RStudio, on retrouve des éléments liés à la configuration. Certains utilisateurs trouvent que le nombre de raccourcis est limité. D’autres trouvent que le <em>set up</em> des différents panneaux n’est pas ergonomique, ou même qu’il n’est pas possible de pouvoir suffisamment personnaliser l’environnement de programmation. De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d’autres alternatives pour quelques opérations, surtout celles comprenant de longs codes.</p>
+</section>
+<section id="comment-utiliser-rstudio" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="comment-utiliser-rstudio"><span class="header-section-number">3.4</span> Comment utiliser RStudio ?</h2>
+<p>Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011). Dans le coin supérieur gauche se trouve le cadran principal. C’est dans celui-ci que l’utilisateur passera la plus grande partie de son temps. On y modifie des fichiers de différents formats et il est possible d’y afficher des bases de données. Dans le coin inférieur gauche se trouve la console ainsi que le terminal. Dans cette première, on peut interagir avec R de la même manière que dans le cadran principal, mais le code ne sera pas enregistré. Le terminal, pour sa part, est le point d’accès de communication entre un usager et son ordinateur. Bien que les différents systèmes d’exploitation viennent avec un terminal déjà intégré, il est aussi possible d’y accéder à partir de RStudio.</p>
+<p>On retrouve, dans le coin supérieur droit, l’espace de travail. Ce cadran contient trois éléments : l’<em>environnement global, l’historique et les connections</em>. L’<em>environnement global</em> est l’endroit où l’utilisateur peut voir les bases de données, les fonctions et les différents autres objets R qui sont actifs. Il peut cliquer sur les divers éléments actifs pour les consulter. L’onglet <em>historique</em> permet à l’utilisateur de consulter les derniers morceaux de code R qu’il a roulé ainsi que les dernières commandes écrites dans la console. L’onglet <em>connections</em>, pour sa part, permet de connecter son IDE à une variété de sources de données et d’explorer les objets et les données qui la composent. Il est conçu pour fonctionner avec une variété d’autres outils pour travailler avec des bases de données en R dans RStudio.</p>
+<p>Le cadran dans le coin inférieur droit, pour sa part, contient plusieurs outils très utiles pour les usagers de RStudio. L’onglet <em>Files</em> permet à l’utilisateur de naviguer dans les fichiers que contient son ordinateur sans avoir à sortir de RStudio. L’onglet <em>Plots</em> permet de visualiser les graphiques générer à partir de R, que ce soit en utilisant <em>ggplot2, lattice ou base R</em>. L’onglet <em>Packages</em> permet de consulter les packages installés précédemment par l’utilisateur en plus de pouvoir en consulter la documentation. C’est aussi un des différents endroits à partir d’où il est possible d’installer des packages avec RStudio. L’onglet <em>Help</em> permet à l’utilisateur de chercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages. Pour sa part, l’onglet <em>Viewer</em> permet la visualisation de contenu web local.</p>
+<p>Enfin, l’utilisateur peut modifier les dimensions par défaut pour chacun des quatre cadrans principaux. En cliquant sur la division des sections, il est possible d’ajuster l’allocation horizontale de l’espace. De plus, chaque côté dispose d’un autre séparateur pour ajuster l’espace vertical. Qui plus est, la barre de titre de chaque cadran comporte des icônes pour ombrer un composant, maximiser un cadran verticalement ou modifier la taille des l’espace de travail (Verzani, 2011; Nierhoff et Hillebrand, 2015).</p>
+</section>
+<section id="conclusion" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.5</span> Conclusion</h2>
+<p>Le langage de programmation R est un outil très utile pour toutes sortes de tâches notamment reliées aux statistiques et à la visualisation graphiques. Sa maîtrise est requise pour accéder à plusieurs emplois, autant dans le monde académique que dans les secteurs publics et privés. Avec un peu de chance, le présent chapitre vous a éclairé sur son utilité et sa pertinence dans le monde du travail contemporain. Bien que le langage de programmation R ne doivent pas obligatoirement être utilisé avec RStudio, nous pensons que pour la plupart des usagers, leur utilisation conjointe est bénéfique et souhaitée. RStudio permet également d’utiliser différents langages de balisage compatibles avec R, facilitant l’utilisation de plusieurs outils complémentaires. L’apprentissage du langage de programmation R apparaît également être une valeur sure. Sa longitivité dans plusieurs sphères ainsi que la forte croissance de sa base d’usagers laisse présager que d’en connaître au moins les bases est un énorme avantage pour tout le monde. Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui désirent s’impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R – notamment <em>RConference</em> and <em>useR!</em> – et un journal académique, <em>The R Journal</em>. On retrouve également différentes communautés telle que <em>R-Ladies</em> qui met de l’avant la diversité des genres dans la communauté du langage de programmation R. Le langage de programmation R est plus qu’un simple outil statistique, il est le centre d’une grande communauté de gens qui ont à coeur des principes liés à l’inclusion et à l’avancement humain.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-arel-bundock21" class="csl-entry" role="listitem">
-Arel-Bundock, Vincent. 2021. <em>Analyse Causale Et Méthodes Quantitatives</em>. <span>Montréal</span>: <span>Les Presses de l’Université de Montréal</span>.
+<div id="ref-morandat_etal12" class="csl-entry" role="listitem">
+Morandat, Floréal, Brandon Hill, Leo Osvald, and Jan Vitek. 2012. <span>“Evaluating the <span>Design</span> of the <span>R Language</span>.”</span> In <em><span>ECOOP</span> 2012 – <span>Object-Oriented Programming</span>: 26th <span>European Conference</span>, <span>Beijing</span>, <span>China</span>, <span>June</span> 11-16, 2012. <span>Proceedings</span></em>, edited by James Noble, 7313:104–31. Lecture <span>Notes</span> in <span>Computer Science</span>. Berlin, Heidelberg: Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/978-3-642-31057-7">https://doi.org/10.1007/978-3-642-31057-7</a>.
 </div>
-<div id="ref-ballhausen19" class="csl-entry" role="listitem">
-Ballhausen, Miriam. 2019. <span>“Free and <span>Open Source Software Licenses Explained</span>.”</span> <em>Computer</em> 52 (6): 82–86. <a href="https://doi.org/10.1109/MC.2019.2907766">https://doi.org/10.1109/MC.2019.2907766</a>.
+<div id="ref-muenchen11" class="csl-entry" role="listitem">
+Muenchen, Robert A. 2011. <em>R for <span>SAS</span> and <span>SPSS</span> Users</em>. 2nd ed. Statistics and Computing. New York: Springer.
 </div>
-<div id="ref-beraud07" class="csl-entry" role="listitem">
-Béraud, Cyrille. 2007. <span>“Le Logiciel Libre, Une Cause Nationale, Une Opportunité Pour Le <span>Québec</span>.”</span> <span>FACIL</span>. <a href="https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf">https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf</a>.
-</div>
-<div id="ref-bessen02" class="csl-entry" role="listitem">
-Bessen, James. 2002. <span>“What <span>Good Is Free Software</span>?”</span> In <em>Government <span>Policy</span> Toward <span>Open Source Software</span></em>, edited by Robert W. Hahn, 12–33. <span>Brookings Institution Press</span>. <a href="https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.5">https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.5</a>.
-</div>
-<div id="ref-broca13" class="csl-entry" role="listitem">
-Broca, Sébastien. 2013. <em>Utopie Du Lociel Libre. <span>Du</span> Bricolage Informatique à La Réinvention Sociale.</em> <span>Lyon</span>: <span>Le passage clandestin</span>.
-</div>
-<div id="ref-couture14" class="csl-entry" role="listitem">
-Couture, Stéphane. 2014. <span>“Les logiciels libres, un an plus tard.”</span> <span>Institut de recherche et d’informations socioéconomiques</span>. 2014. <a href="https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/">https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/</a>.
-</div>
-<div id="ref-couture20" class="csl-entry" role="listitem">
-———. 2020. <span>“Free and <span>Open Source Software</span>.”</span> In <em>The <span>Handbook</span> of <span>Peer Production</span></em>, 153–68. <span>John Wiley &amp; Sons, Ltd</span>. <a href="https://doi.org/10.1002/9781119537151.ch12">https://doi.org/10.1002/9781119537151.ch12</a>.
-</div>
-<div id="ref-fortunato_galassi21" class="csl-entry" role="listitem">
-Fortunato, Laura, and Mark Galassi. 2021. <span>“The Case for Free and Open Source Software in Research and Scholarship.”</span> <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 379 (2197): 20200079. <a href="https://doi.org/10.1098/rsta.2020.0079">https://doi.org/10.1098/rsta.2020.0079</a>.
-</div>
-<div id="ref-janssen17" class="csl-entry" role="listitem">
-Janssen, Marco A. 2017. <span>“The <span>Practice</span> of <span>Archiving Model Code</span> of <span>Agent-Based Models</span>.”</span> <em>Journal of Artificial Societies and Social Simulation</em> 20 (1): 2.
-</div>
-<div id="ref-janssen_etal20" class="csl-entry" role="listitem">
-Janssen, Marco A., Calvin Pritchard, and Allen Lee. 2020. <span>“On Code Sharing and Model Documentation of Published Individual and Agent-Based Models.”</span> <em>Environmental Modelling &amp; Software</em> 134 (December): 104873. <a href="https://doi.org/10.1016/j.envsoft.2020.104873">https://doi.org/10.1016/j.envsoft.2020.104873</a>.
-</div>
-<div id="ref-karjalainen10" class="csl-entry" role="listitem">
-Karjalainen, Martti. 2010. <span>“Large-Scale Migration to an Open Source Office Suite: <span>An</span> Innovation Adoption Study in <span>Finland</span>.”</span> <span>University of Tampere</span>. <a href="https://trepo.tuni.fi/bitstream/handle/10024/66646/978-951-44-8216-8.pdf?sequence=1">https://trepo.tuni.fi/bitstream/handle/10024/66646/978-951-44-8216-8.pdf?sequence=1</a>.
-</div>
-<div id="ref-king_etal21" class="csl-entry" role="listitem">
-King, Gary, Robert O. Keohane, and Sidney Verba. 2021. <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> Nouvelle édition. <span>Princenton</span>: <span>Princeton University Press</span>.
-</div>
-<div id="ref-krahmer_etal23" class="csl-entry" role="listitem">
-Krähmer, Daniel, Laura Schächtele, and Andreas Schneck. 2023. <span>“Care to Share? <span>Experimental</span> Evidence on Code Sharing Behavior in the Social Sciences.”</span> <em>PLOS ONE</em> 18 (8): e0289380. <a href="https://doi.org/10.1371/journal.pone.0289380">https://doi.org/10.1371/journal.pone.0289380</a>.
-</div>
-<div id="ref-marres17" class="csl-entry" role="listitem">
-Marres, Noortje. 2017. <em>Digital <span>Sociology</span>. <span>The Reinvention</span> of <span>Social Research</span>.</em> <span>Cambridge</span>: <span>Polity</span>.
-</div>
-<div id="ref-opensourceinitiative06" class="csl-entry" role="listitem">
-Open Source Initiative. 2006. <span>“The <span>Open Source Definition</span>.”</span> <span>Open Source Initiative</span>. July 7, 2006. <a href="https://opensource.org/osd/">https://opensource.org/osd/</a>.
-</div>
-<div id="ref-paura_arhipova12" class="csl-entry" role="listitem">
-Paura, Liga, and Irina Arhipova. 2012. <span>“Advantages and <span>Disadvantages</span> of <span>Professional</span> and <span>Free Software</span> for <span>Teaching Statistics</span>.”</span> <em>Information Technology and Management Science</em> 15 (1). <a href="https://doi.org/10.2478/v10313-012-0001-z">https://doi.org/10.2478/v10313-012-0001-z</a>.
-</div>
-<div id="ref-santillan-anguiano_gonzalez-machado23" class="csl-entry" role="listitem">
-Santillán-Anguiano, Ernesto Israel, and Emilia Cristina González-Machado. 2023. <span>“Advantages of a <span>Free Software Culture</span> for <span>Qualitative Researchers</span> in the <span>Social Sciences</span>.”</span> <em>International Journal of Qualitative Research</em> 3 (1): 97–103. <a href="https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841">https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841</a>.
-</div>
-<div id="ref-smith02" class="csl-entry" role="listitem">
-Smith, Bradford L. 2002. <span>“The <span>Future</span> of <span>Software</span>: <span>Enabling</span> the <span>Marketplace</span> to <span>Decide</span>.”</span> In <em>Government <span>Policy</span> Toward <span>Open Source Software</span></em>, edited by Robert W. Hahn, 69–86. <span>Brookings Institution Press</span>. <a href="https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8">https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8</a>.
-</div>
-<div id="ref-stallman86" class="csl-entry" role="listitem">
-Stallman, Richard. 1986. <span>“<span>GNU</span>’s <span>Bulletin</span>.”</span> 1986. <a href="https://www.gnu.org/bulletins/bull1.txt">https://www.gnu.org/bulletins/bull1.txt</a>.
-</div>
-<div id="ref-stallman22" class="csl-entry" role="listitem">
-———. 2022. <span>“En Quoi l’open Source Perd de Vue l’éthique Du Logiciel Libre - <span>Projet GNU</span> - <span>Free Software Foundation</span>.”</span> <span>Système d’exploitation GNU</span>. 2022. <a href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">https://www.gnu.org/philosophy/open-source-misses-the-point.html</a>.
-</div>
-<div id="ref-systemedexploitationgnu23" class="csl-entry" role="listitem">
-Système d’exploitation GNU. 2023. <span>“Catégories de Logiciels Libres Et Non Libres - <span>Projet GNU</span> - <span>Free Software Foundation</span>.”</span> <span>Système d’exploitation GNU</span>. 2023. <a href="https://www.gnu.org/philosophy/categories.html#">https://www.gnu.org/philosophy/categories.html#</a>.
-</div>
-<div id="ref-williams_etal10" class="csl-entry" role="listitem">
-Williams, Sam, Richard M Stallman, and Christophe Masutti. 2010. <em>Richard Stallman et la révolution du logiciel libre - Une biographie autorisée</em>. <span>s.l.</span>: <span>Eyrolles</span>. <a href="https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf">https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf</a>.
-</div>
-<div id="ref-yu_munoz-justicia22" class="csl-entry" role="listitem">
-Yu, Jingyuan, and Juan Muñoz-Justicia. 2022. <span>“Free and <span>Low-Cost Twitter Research Software Tools</span> for <span>Social Science</span>.”</span> <em>Social Science Computer Review</em> 40 (1): 124–49. <a href="https://doi.org/10.1177/0894439320904318">https://doi.org/10.1177/0894439320904318</a>.
+<div id="ref-tippmann15" class="csl-entry" role="listitem">
+Tippmann, Sylvia. 2015. <span>“Programming Tools: <span>Adventures</span> with <span>R</span>.”</span> <em>Nature</em> 517 (7532): 109–10. <a href="https://doi.org/10.1038/517109a">https://doi.org/10.1038/517109a</a>.
 </div>
 </div>
-</section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
-<ol>
-<li id="fn1"><p>La redistribution doit évidemment respecter certaines conditions précises, dont l’enfreint peut mener à des condamnations [http://www.softwarefreedom.org/resources/2008/shareware.html]<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Pour rester dans les analogies culinaires, le code source est au logiciel est ce que la recette est à un plat: elle indique les actions à effectuer, une par une, pour arriver à un résultat précis. Encore une fois, cette dernière peut-être adaptée, modifiée, bonifiée.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Soit ceux qui ont été conçus suivant les principes philisophiques et “moraux” qui sous-tendent ce mouvement.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Pour plus d’informations sur ces caractéristiques, nous encourageons les lecteurs à se référer au lien web de la source. Ils y trouveront un contenu détaillé pour chacunes des caractéristiques sus-mentionnées.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Pour avoir la liste complète des contributeurs, les lecteurs peuvent utiliser la commande <code><a href="https://readr.tidyverse.org/reference/readr-package.html">?readr</a></code> dans <code>R</code>, ou bien consulter le lien suivant https://readr.tidyverse.org<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Ces informations proviennent du site web suivant: https://www.jobbank.gc.ca/marketreport/outlook-occupation/17882/ca<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>En date d’écire ces lignes, septembre 2023.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>une plateforme publique <em>code ouvert</em> sur laquelle nous pouvons héberger et partager notre code.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Allant de nos postulats ontologiques, épistémologiques et méthodologiques.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -948,19 +703,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./chapitre_1.html" class="pagination-link" aria-label="Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir</span></span>
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_1.html" class="pagination-link" aria-label="Le monde du libre">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Le monde du libre</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_3.html" class="pagination-link" aria-label="Les outils de collecte de données">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapitre_3.html" class="pagination-link" aria-label="À la quête de l'optimisation">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>Livre-outils</p>
 </div>   
@@ -972,6 +730,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+
+
 
 
 </body></html>
