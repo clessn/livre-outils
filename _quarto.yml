@@ -18,7 +18,6 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - Intro.qmd
     - chapitre_1.qmd
     - chapitre_2.qmd
     - chapitre_3.qmd
@@ -31,6 +30,11 @@ book:
     - references.qmd
 
 bibliography: livre-outils.bib
+csl: https://www.zotero.org/styles/apa
+citations-hover: true
+citeproc: true
+
+lang: fr_CA
 
 format:
   html:
@@ -38,6 +42,7 @@ format:
       light: pulse
       dark: slate
     code-link: true
+    code-copy: true
 
     author-meta: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
     callout-appearance: simple

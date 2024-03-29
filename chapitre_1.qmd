@@ -159,7 +159,7 @@ Comme nous le voyons ici, la librairie `readr`, développé par plusieurs indivi
 install.packages("modelsummary")
 ```
 
-```{r message=FALSE, error=FALSE}
+```{r crosstab-analysis, message=FALSE, error=FALSE}
 library(modelsummary)
 
 Tableau_2.1 <- datasummary_crosstab(survie ~ femme, data = dat, title = ' ') 
