@@ -1,8 +1,71 @@
+<!-- 
+
+Sans vouloir vous déléguer notre tâche, nous avons quelques suggestions pour vous. Tout d’abord, l’une des bases du livre est la philosophie du logiciel libre et sur les avantages pratiques de l’open source. Le logiciel libre repose sur ces 4 libertés:
+liberté d’utiliser le programme comme désiré;
+liberté d’étudier le fonctionnement du programme et de le modifier pour ses propres besoins;
+liberté de redistribuer des copies;
+liberté de distribuer des copies de la version “améliorer” du programme pour ses pairs
+Concernant l’open source, tout logiciel qui souhaite être inclus sous cette appellation doit respecter dix critères:
+Redistribution gratuite;
+doit inclure le code source;
+doit permettre les modifications et les travaux dérivés;
+intégrité du code source;
+ne doit pas discriminer des personnes et/ou groupes;
+ne doit pas restreindre personne dans l’utilisation du logiciel pour un domaine d’activité;
+ distribution d’une licence pour l’utilisation;
+la licence ne doit pas être spécifique pour un produit;
+la licence ne doit pas placer de restriction sur d’autres programmes;
+la licence doit être technologiquement neutre
+Ces différents éléments doivent guider votre réflexion, sans pour autant être des absolues. De plus, 
+@adri
+ nous a déjà suggéré des critères à partir desquels vous pouvez réfléchir:
+Logiciel payant VS logiciel libre (on donne un +++ au libre/gratuit?)
+Compatibilité avec les autres outils de notre trousse (Ex: Quarto/Markdown qu’on peut insérer du code et exporter en word)
+Portée de l’utilisation dans le domaine (ex: R est le plus utilisé en science sociale, faudrait présenter des chiffres tho)
+Réseau d’utilisateur et d’aide sur le Web (ex: full d’aide sur LaTeX, moins pour Quarto)
+Difficulté initiale d’apprentissage (R est dur)
+Étendu des possibilités (5 et 6, c’est genre la «courbe d’apprentissage, mais que j’ai divisé en 2. R est dur, mais les possibilités sont infinies).
+Finalement, afin de contribuer à vos réflexions, je vous propose deux critères plus généraux, à partir desquels on peut dériver plusieurs arguments et/ou implications:
+Accessibilité et (popularité) utilisation.
+Gratuité de l’outil, ou du moins pas trop dispendieux
+Collaboration et entraide entre les utilisateurs (existence de réseaux d’utilisateurs qui se partagent leurs problèmes et solutions)
+Popularité de l’utilisation dans un domaine scientifique
+Favorise transparence de la science
+Communication et partage du savoir (open access)
+Partage des données et des analyses (GitHub)
+Adaptabilité de l’outil
+Peut-on le modifier et l’adapter à ses propres besoins?p
+
+-->
+
+
+<!-- Un outil important c'est l'ordinateur. Sans l'ordinateur, tous les outils mentionné dans ce livre sont inutilisables. La programmation est la façon optimale de communiquer directement avec l'ordinateur et tous ses composantes. Les langages de programmation sont la façon de communiquer avec le processeur. De lui envoyer des instruction, de le faire travailler pour sois. Un bon langage de programmation repose sur 4 libertés. 
+
+Discuter des 4 libertés> surtout des deux premières
+
+Les raisons pour choisir un langage: 
+
+lister
+
+POur l'analyse de données, plsueirus langages peuvent permettre: Python est le plus populaire, Julia est en hausse, R est sick
+
+Nous faisons le choix de vous proposer d'utiliser R-->
+
+
 # R ou ne pas R? {#sec-chap4}
 
 Plusieurs notions liées à l'ère numérique, notamment à ce qui a trait aux opportunités et difficultés que cette dernière peut amener, ont été présentées par l'entremise du chapitre précédent. C'est un monde de possibilité qui s'offre à ceux qui maîtrisent les nouveaux outils des temps modernes. Mais comment en arriver là ? Le présent chapitre a pour but de présenter certains outils flexibles et péreins permettant la réalisation de nombreuses tâches. Une des premières étapes permettant de notamment réaliser la collecte, l'analyse et la visualisation graphique de données ainsi que la rédaction de documents est l'apprentissage d'un langage de programmation. Bien que plusieurs langages de programmation existent, le présent ouvrage priorise le langage **R**. Les sections suivantes présentent ce langage de programmation, ces forces et ces faiblesses ainsi que les raisons de son utilisation. Enfin, la dernière section présente un environnement de programmation qui se prête bien à son utilisation.
 
 ## Pourquoi R?
+
+<!-- Ajouter un aspect sur les critères généraux de choix d'un langage de programmation 
+
+En science sociale pour tes besoins R fait la job. R fonctionne avec d'autres outils comme markdown mais aussi c'Est le langage de programmation 
+
+Comprendre du code, répliquer du code, partager du code, en science politique ça se fait en R -
+
+Quand tu utilise R tu fais partie de la communauté de science politique. Utiliiser R c'est participer à la communauté -->
+
 
 Comme mentionné précédemment, il existe plusieurs langages de programmation. **R** a deux types de compétiteurs : les logiciels à licences comme SAS, STATA et SPSS, et les langages *OpenSource* tels que Python et Julia. **R** est un langage de programmation *OpenSource* développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. **R** prend ses racines dans le langage de programmation S, créé notamment par Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non orthodoxes lors de l'élaboration du langage, qui font aujourd'hui la popularité de ce logiciel auprès d'un large pan de la communauté académique. En effet, @morandat_etal12 rapporte que le langage a été élaboré afin qu'il soit intuitif et qu'il permette aux nouveaux utilisateurs de rapidement réaliser des analyses.
 
@@ -13,11 +76,14 @@ D'un autre côté, l'utilisation du langage de programmation **R** peut être pe
 
 ## Où coder en R ?
 
+<!-- On peut coder ou on veut dans R, dans une console, un bloc note, dans VIM, EMACS, dans VSCODE, N'importe ou. Bien que RStudio soit un environnement de développement concu spécifiquement pour R et offre plusieurs outils concus spécifiquement pour l'utilisation en R. Il existe d'autre IDE qui peuvent faire la job. VSCODE est bien pour faire le pont entre les autres langages de programmation -->
+
 Un environnement de développement intégré (IDE) permet aux programmeurs de consolider les différents aspects de l'écriture d'un programme informatique. Ils permettent de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit. Les environnements de développement intégrés sont conçus pour maximiser la productivité du programmeur. Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique ainsi que le contrôle de version -- pour créer, modifier et compiler du code. Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique. Par conséquent, ils contiennent des fonctionnalités qui sont plus compatibles avec les paradigmes de programmation du langage auquel ils sont associés. Enfin, il existe de nombreux environnements de développement intégré multilingues.
 
 Comme mentionné précédemment, R est un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales. R est pris en charge par de nombreux environnements de programmation. Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- et prennent en charge R via des plugins. Il est également possible de coder en R à partir d'une interface en ligne de commande. Une telle méthode permet la communication entre l'utilisateur et son ordinateur. Cette communication s'effectue en mode texte : l'utilisateur tape une « ligne de commande » -- c'est-à-dire du texte dans le *terminal* -- pour demander à son ordinateur d'effectuer une opération précise, telle que rouler un fichier de code R.
 
 La suite du chapitre présente RStudio, notamment à travers ses avantages et inconvénients, mais également des exemples de ses fonctionnalités.
+
 
 ## Qu'est-ce que RStudio ?
 
@@ -31,6 +97,26 @@ Il y a plusieurs autres aspects de RStudio que les programmeurs apprécient. Par
 Parmi ce que certains considèrent comme étant les points faibles de RStudio, on retrouve des éléments liés à la configuration. Certains utilisateurs trouvent que le nombre de raccourcis est limité. D'autres trouvent que le *set up* des différents panneaux n'est pas ergonomique, ou même qu'il n'est pas possible de pouvoir suffisamment personnaliser l'environnement de programmation. De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour quelques opérations, surtout celles comprenant de longs codes.
 
 ## Comment utiliser RStudio ?
+
+<!-- Ajouter une photo ou deux des fenêtre, ou on decrit les quadrants 
+
+Possible d'utiliser TAB pour utiliser l'explorateur de fichier.
+
+Faire des encadrés avec les raccourcis
+
+Un avec des astuces genre faire attention aux serpents
+
+1. Essayer d'apprendre plusieurs langages de programmation en même temps. Commencer avec un et maitrisez le. Ensuite en apprendre un sera un jeu d'enfant
+2. Sentiment de devoir cacher du code comme si c'était ta propriété. 
+3. La peur de demander de l'aide. 
+4. Trop demander d'aider sans chercher à comprendre.
+5. C'est nécessaire de struggle pour apprendre
+6. La résolution de problème en programmation
+7. Comprendre que quand ça marche pas c'est pas de la faute au code. C'est de la faute de l'usager. Si ton ordinateur ne fait pas ce que tu lui demande c'est que tu ne demande pas la bonne chose.
+8. La boucle des tutoriels infini. Il faut sortir de l'environnement de pouponnage.
+
+Faire des Rproj
+-->
 
 Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011). Dans le coin supérieur gauche se trouve le cadran principal. C'est dans celui-ci que l'utilisateur passera la plus grande partie de son temps. On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données. Dans le coin inférieur gauche se trouve la console ainsi que le terminal. Dans cette première, on peut interagir avec R de la même manière que dans le cadran principal, mais le code ne sera pas enregistré. Le terminal, pour sa part, est le point d'accès de communication entre un usager et son ordinateur. Bien que les différents systèmes d'exploitation viennent avec un terminal déjà intégré, il est aussi possible d'y accéder à partir de RStudio.
 
