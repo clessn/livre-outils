@@ -22,6 +22,16 @@ Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner
 
 ### Gestion de tâches (Notion, Monday)
 
+Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, les travaux s'échelonnent souvent sur plusieurs années, et il est facile de perdre ses objectifs de vue, ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches convenablement facilite la mesure des progrès, et permet de constamment vérifer si ceux-ci sont encore alignés avec les objectifs finaux. 
+
+#### Comment
+
+Gérer ses tâches de façon efficace passe par la structuration des objectifs du projet. Il faut connaître la destination afin de choisir la direction. Pour se faire, il est bien de dessiner, ou de faire une liste de la conception de la version finale du projet. Dans l'idéal, à quoi ressemble le projet dans sa dernière version. Une fois cette étape franchie, il est possible de désagréger le projet en grandes étapes. Que faut-il faire, à l'échelle macro, pour atteindre les objectifs du projet? À cette étape, il est important de prendre en compte les ressources financières, temporelles et humaines, afin de déterminer de façon réaliste ce qui est possible. En suivant ce processus dès le début de votre projet, vous évitez de faire des erreurs conceptuelles qui vous obligent à reculer et à retourner à la planche à dessin. 
+
+##### Quand
+
+Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d'autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d'autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L'agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l'avancement et des blocants des objectifs. 
+
 ### Enregistrement de protocole
 
 ### Code en open access (Repository github)
