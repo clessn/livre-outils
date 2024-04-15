@@ -1,1 +1,0 @@
-; Fortement en désaccord  (1); En désaccord  (2); Ni en accord ni en désaccord  (3); En accord  (4); Fortement en accord  (5); Je préfère ne pas répondre  (6) 

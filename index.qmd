@@ -10,7 +10,9 @@ Dans le domaine des sciences sociales, les avancées dues à l'utilisation des d
 
 Comment l'utilisation des données massives change-t-elle la pratique des sciences sociales? Les données massives causeront-elles un changement de paradigme scientifique?
 
-Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d'une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles affectent les enjeux de la *validité* interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l'avenir des données massives en sciences sociales en identifiant certains changements *épistémologiques* que ces données pourraient potentiellement entraîner.
+Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d'une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles
+￼
+ affectent les enjeux de la *validité* interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l'avenir des données massives en sciences sociales en identifiant certains changements *épistémologiques* que ces données pourraient potentiellement entraîner.
 
 ## Définition des données massives
 
