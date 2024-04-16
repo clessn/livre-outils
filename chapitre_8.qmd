@@ -57,20 +57,51 @@ Trois catégories d'outils seront présentées: les « *Large Language Models* �
 
 ### 2. Les Assistants de Traduction
 
-4 types de trad auto, description brève des 4 sans mention de l'IA
-neural massive data
-Les outils utilisant de l'IA =\> neural et transformer.
-Prend une phrase, contexte, intention, etc. plutôt que mots individuels
-Forme de generative AI, nlp, deep learning, self-attention (focus sur des parties d'une phrase) etc.
+L'IA a aussi permis la création d'outils de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine, des ordinateurs, etc. sans aucune aide d'un humain [@glover24 ; @tabsharani23]. Il existe différents types ou approches de traduction automatique:
 
-Pertinence ssn: francais vers anglais
+1.  Basée sur des règles (*rules-based*): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d'une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux mais efficace pour les langues à grammaire bien définie [@glover24 ; @tabsharani23].
+2.  Statistique (*statistical*): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d'apprentissage. Fonctionne bien avec des données volumineuses mais peut parfois produire des traductions imprécises faute de contextualisation [@glover24 ; @tabsharani23].
+3.  Basée sur des exemples (*example-based*) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs [@glover24 ; @tabsharani23].
+4.  Neuronale (*neural*) : utilise des modèles d'apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu'elle ne remplace pas entièrement les traducteurs humains [@glover24 ; @tabsharani23].
+5.  Hybride : les quatres approches peuvent également être combinées [@glover24 ; @tabsharani23].
 
-AI vs Humain
+C'est au sein de l'approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (*transformer neural networks*) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions [@glover24 ; @tabsharani23]. En tant que forme d'IA générative, ces outils exploitent le traitement du langage naturel (*natural language processing*), l'apprentissage profond (*deep learning*) et l'auto-attention (*self-attention*) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites web, des documents, etc. en quelques secondes, sans avoir besoin de connaître la langue cible.
 
-Exploration de quelques-uns des outils les plus populaires, forces faiblesses Google translate, deepl, chatgpt
+Il est essentiel pour les chercheurs en sciences sociales numériques de connaître et d'utiliser les outils de traduction automatique car ils facilitent la recherche, la communication et la collaboration à l'échelle internationale, particulièrement dans le contexte d'un monde académique dominé par l'anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d'une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine [@glover24]:
 
+| Avantages                                                                                        | Inconvénients                                                                               |
+|-------------------------------|-----------------------------------------|
+| Amélioration de la productivité : traductions rapides et de grande échelle                       | Données biaisées : reproduction de stéréotypes et erreurs de genre                          |
+| Apprentissage autonome : amélioration continue grâce à l'apprentissage non supervisé             | Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique |
+| Réduction des coûts : minimise le besoin d'intervention humaine                                  | Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle           |
+| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux |                                                                                             |
 
-L'IA a aussi permis la création d'outils de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine, des ordinateurs, etc. sans aucune aide d'un humain [@glover24][].
+Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire.
+
+::: callout-tip
+## Banques de données terminologiques
+Bien que ces outils n'utilisent pas l'intelligence artificielle, il nous semble essentiel de mentionner des ressources telles que TERMIUM Plus et Interactive Terminology for Europe (IATE), qui sont des bases de données terminologiques de référence. Ces bases de données, gérées par des langagiers professionels, facilitent la compréhension des termes spécifiques à une discipline en fournissant des définitions claires et des équivalents dans plusieurs langues et assurent également une cohérence terminologique dans les traductions. D'ailleurs, TERMIUM Plus a été fréquemment sollicité pour la traduction de plusieurs termes présents dans ce chapitre.
+:::
+
+#### Google Traduction
+
+Très connu, l'une des forces de Google Traduction est son support d'une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. Google Traduction est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d'une phrase en considération. De plus, il supporte aussi la traduction de documents complets.
+
+#### DeepL
+
+DeepL se démarque par une qualité supérieure de traduction mais dans un nombre de langues plus restreint que d'autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d'une structure de phrase.
+
+#### Mate Translate
+
+Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d'utilisation et sa rapidité.
+
+#### ChatGPT
+
+Évidemment, CHatGPT est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.
+
+#### Autres outils
+
+Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer Microsoft Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.
 
 ### 3. Les Assistants de Revue de littérature
 
