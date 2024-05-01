@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
+
+<title>Outils de recherche en sciences sociales numériques - 5&nbsp; Les outils de collecte de données</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_6.html" rel="next">
+<link href="./chapitre_4.html" rel="prev">
+<link href="./images/logo_CLESSN_inverse.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avant-propos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Le monde du libre</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Installation de Biblatex et configuration de Zotero</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#le-big-data-et-les-différents-acteurs-de-la-société" id="toc-le-big-data-et-les-différents-acteurs-de-la-société" class="nav-link active" data-scroll-target="#le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">5.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">5.2</span> </a></li>
+  <li><a href="#plateformes-de-sondages-et-collecte-de-données" id="toc-plateformes-de-sondages-et-collecte-de-données" class="nav-link" data-scroll-target="#plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">5.3</span> Plateformes de sondages et collecte de données</a>
+  <ul class="collapse">
+  <li><a href="#les-principales-plateformes-web." id="toc-les-principales-plateformes-web." class="nav-link" data-scroll-target="#les-principales-plateformes-web."><span class="header-section-number">5.3.1</span> Les principales plateformes web.</a></li>
+  <li><a href="#les-limites-des-sondages-en-ligne" id="toc-les-limites-des-sondages-en-ligne" class="nav-link" data-scroll-target="#les-limites-des-sondages-en-ligne"><span class="header-section-number">5.3.2</span> Les limites des sondages en ligne</a></li>
+  </ul></li>
+  <li><a href="#factiva-outils-de-récolte-de-données-médiatiques" id="toc-factiva-outils-de-récolte-de-données-médiatiques" class="nav-link" data-scroll-target="#factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">5.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></a></li>
+  <li><a href="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." id="toc-les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="nav-link" data-scroll-target="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">5.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></a></li>
+  <li><a href="#covidence-outil-de-récolte-darticles-scientifiques" id="toc-covidence-outil-de-récolte-darticles-scientifiques" class="nav-link" data-scroll-target="#covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">5.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></a></li>
+  <li><a href="#conclusion-et-discussion" id="toc-conclusion-et-discussion" class="nav-link" data-scroll-target="#conclusion-et-discussion"><span class="header-section-number">5.7</span> Conclusion et discussion:</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>La révolution numérique engendrée par l’émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l’accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l’accès à ces données représente un défi éthique et théorique, tel qu’explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014). Le chapitre qui suit vise à offrir un portrait de certains outils de collecte de données pouvant être exploités par les chercheurs.euses en sciences sociales visant à tirer profit de la révolution numérique. À travers ce chapitre, il sera question d’outils permettant de collecter des données de sondages, des données médiatiques, de même qu’une panoplie de données textuelles par le biais d’extracteurs. Ce chapitre offre donc un tour d’horizon de certains outils de collecte de données à la disposition de la communauté scientifique souhaitant entamer des recherches en sciences sociales numériques.</p>
+<section id="le-big-data-et-les-différents-acteurs-de-la-société" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">5.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></h2>
+<p>Le champ d’étude de la science politique repose sur l’étude de trois types d’acteurs distincts ayant un impact sur la condition socio-économique et politique d’une société&nbsp;: les décideurs, les médias et les citoyens. La recherche sur les décideurs comprend entre autres l’analyse des politiques publiques, des partis politiques, de stratégies électorales ou encore l’analyse de discours de politiciens ou d’organisations. L’étude des médias repose largement sur le rôle des médias dans la formation des priorités et des jugements des citoyens quant aux enjeux politiques, de même que sur leur capacité d’influencer l’agenda des politiciens. En ce qui concerne les citoyens, le champ d’étude de l’opinion publique se consacre à l’analyse des comportements et des attitudes politiques des individus. De plus, de nombreuses recherches visant à comprendre le rôle des citoyens dans une société démocratique portent sur l’influence de la société civile de même que sur l’effet des mouvements sociaux.</p>
+<p>Chacun de ces champs de recherches se voit confronté à une panoplie de défis théoriques et techniques en lien avec l’émergence des données massives. La révolution technologique permet une étude plus approfondie des phénomènes auxquels sont confrontés les différents acteurs de la société démocratique, en raison de l’importante quantité de données accessible aux chercheurs.euses. Toutefois, la collecte de données permettant de mener à terme de telles études peut s’avérer complexe. Pour chacun des trois acteurs démocratiques énumérés précédemment, les sections suivantes énumèrent et expliquent les capacités techniques d’outils permettant aux chercheurs.euses d’accéder à des données massives. Bien que d’autres outils existent et offrent des résultats satisfaisants, les méthodes suivantes sont particulièrement pertinentes dans une optique d’étude des sciences sociales numériques en raison de leur capacités techniques de même que par la relative simplicité de leur utilisation.</p>
+</section>
+<section id="section" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="section"><span class="header-section-number">5.2</span> </h2>
+</section>
+<section id="plateformes-de-sondages-et-collecte-de-données" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">5.3</span> Plateformes de sondages et collecte de données</h2>
+<p>Malgré certaines différences méthodologiques, toute recherche doit analyser et interpréter des données fiables et de qualité afin d’émettre des résultats (Nayak &amp; K. A., 2019). Notamment lorsqu’il est question d’étudier les citoyens et l’opinion publique, il est nécessaire d’accumuler suffisamment de données auprès d’un échantillon assez grand afin d’inférer des conclusions sur la population.</p>
+<p><br>
+Quelques méthodes sont couramment utilisées pour la collecte de données sont le sondage, le panel, l’enquête, ou le questionnaire. Cette section se concentre sur le sondage. Ils peuvent être manuels ou électroniques, et dans le second cas, peuvent être administrés par ordinateur, par courriel ou via le web (Nayak &amp; K. A., 2019). La différence majeure entre les méthodes manuelles et les méthodes numériques réside dans le fait que les premières impliquent un contact direct entre le chercheur et le répondant, tandis que dans le cas des secondes le contact est indirect (Evans &amp; Mathur, 2018). L’arrivée des données massives et des outils numériques offre une panoplie de nouvelles opportunités de collecte de données pour la communauté scientifique. Lorsqu’exécutée manuellement, la collecte de données et la réalisation de sondages peuvent devenir des tâches lourdement fastidieuses, et de facto, demander énormément de ressources pour mener une recherche à grande échelle. C’est pourquoi les technologies du numérique peuvent faciliter cet aspect de la recherche en fournissant des plateformes de sondages et de collecte de données. De plus, les sondages représentaient en 2016 environ 20% du chiffre d’affaires de l’industrie globale du marketing (Evans &amp; Mathur, 2018). Ces chiffres montrent la pertinence de l’acquisition de compétences nécessaires à la formation de sondages, tant dans le monde académique que professionnel. Le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d’entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s’il avait été conduit manuellement (Nayak &amp; K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d’utiliser des arbres de logique avancés que les sondages manuels ne permettent pas.</p>
+<section id="les-principales-plateformes-web." class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="les-principales-plateformes-web."><span class="header-section-number">5.3.1</span> Les principales plateformes web.</h3>
+<p><br>
+Il existe un large éventail de plateformes de sondages et de collecte de données qui peuvent être utiles dans un contexte académique. Cet ouvrage se limite à cinq d’entre elles: Qualtrics, REDCap, SurveyMonkey, Google Forms et Typeform. Cependant, il n’est pas déconseillé de se renseigner sur les autres plateformes disponibles en fonction de ses besoins et de ses ressources. Voici une liste non-exhaustive: LimeSurvey, Zoho Survey, Qualaroo, Formstack, Wufoo, Checkbox Survey, SmartSurvey, QuickTapSurvey, SoGoSurvey, Snap Surveys, AskNicely, Opinio, Alchemer, Cognito Forms, Feedbackify.</p>
+<section id="qualtrics-httpswww.qualtrics.com" class="level4" data-number="5.3.1.1">
+<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="qualtrics-httpswww.qualtrics.com"><span class="header-section-number">5.3.1.1</span> Qualtrics (https://www.qualtrics.com/)</h4>
+<p><br>
+Cette plateforme est une des plus reconnues et utilisées à l’international, tant dans le milieu académique que dans le secteur privé. En plus d’offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l’expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l’administration des sondages. Par exemple, Qualtrics s’adapte à différents formats en fonction de l’appareil du répondant (Evans &amp; Mathur, 2018).</p>
+</section>
+<section id="redcap-httpswww.project-redcap.org" class="level4" data-number="5.3.1.2">
+<h4 data-number="5.3.1.2" class="anchored" data-anchor-id="redcap-httpswww.project-redcap.org"><span class="header-section-number">5.3.1.2</span> REDCap (https://www.project-redcap.org/)</h4>
+<p><br>
+Research Electronic Data Capture (REDCap) permet de construire et de gérer des sondages ainsi que des bases de données. Pour accéder aux services de cette application, il est nécessaire d’être un partenaire du REDCap Consortium ou membre d’une organisation qui en fait partie. Seules les organisations à but non lucratif peuvent adhérer au Consortium. Les données et les sondages qui y sont produits peuvent être partagés et utilisés par différents chercheurs issus de diverses institutions. L’exportation vers différents types de fichiers (Excel, PDF, SPSS, SAS, Stata, R) est possible. Ce qui distingue REDCap des autres applications est sa compatibilité avec les dossiers médicaux, sa sécurité pour les données sensibles, ainsi que son approche académique à la collecte de données par sondage.</p>
+</section>
+<section id="surveymonkey-httpswww.surveymonkey.com" class="level4" data-number="5.3.1.3">
+<h4 data-number="5.3.1.3" class="anchored" data-anchor-id="surveymonkey-httpswww.surveymonkey.com"><span class="header-section-number">5.3.1.3</span> SurveyMonkey (https://www.surveymonkey.com/)</h4>
+<p><br>
+SurveyMonkey se distingue des autres applications en permettant de construire et gérer des sondages/formulaires à l’aide d’une interface conviviale sans toutefois perdre de ses fonctionnalités. En plus d’avoir recours aux nouvelles technologies de l’I.A. pour aider à construire des sondages adaptés à vos besoins, cette application propose plusieurs centaines de modèles personnalisables élaborés par des experts dans le domaine. SurveyMonkey permet également l’analyse des données et la création de rapports directement sur l’application, en plus de permettre l’exportation vers d’autres types de programmes. Les forfaits varient en gamme de tarifs, allant du gratuit avec des fonctionnalités restreintes, jusqu’aux options payantes destinées aux particuliers et aux entreprises.</p>
+</section>
+<section id="google-forms-httpsdocs.google.com" class="level4" data-number="5.3.1.4">
+<h4 data-number="5.3.1.4" class="anchored" data-anchor-id="google-forms-httpsdocs.google.com"><span class="header-section-number">5.3.1.4</span> Google Forms (https://docs.google.com/)</h4>
+<p><br>
+Cette application se distingue par sa simplicité et son accessibilité, en grande partie grâce à l’omniprésence de google tant dans le monde académique que dans la vie courante. Google Forms est inclus dans le forfait de base du Google Workspace, ce qui le rend largement compatible avec les autres applications de Google, en plus d’être disponible gratuitement. Bien que ses fonctionnalités soient moins avancées que celles de ses compétiteurs, Google Forms peut convenir pour des sondages plus simples et rapides grâce à son interface conviviale, à sa fonction d’analyse de données directement sur la plateforme, ainsi qu’à ses modèles préfabriqués.</p>
+</section>
+<section id="typeform-httpswww.typeform.com" class="level4" data-number="5.3.1.5">
+<h4 data-number="5.3.1.5" class="anchored" data-anchor-id="typeform-httpswww.typeform.com"><span class="header-section-number">5.3.1.5</span> TypeForm (https://www.typeform.com/)</h4>
+<p><br>
+Si votre objectif est de produire des formulaires avec une esthétique attrayante, moderne et interactive, TypeForm est la plateforme idéale. Elle permet de se concentrer sur l’expérience de l’utilisateur et de l’impliquer dans le sondage grâce à son aspect visuel. Cette plateforme dispose d’une option gratuite, ainsi que plusieurs forfaits payants. Typeform est également compatible avec plusieurs applications de gestion du flux de travail (Zapier, Google Sheets, Slack, etc).</p>
+</section>
+</section>
+<section id="les-limites-des-sondages-en-ligne" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="les-limites-des-sondages-en-ligne"><span class="header-section-number">5.3.2</span> Les limites des sondages en ligne</h3>
+<p><br>
+Néanmoins, les sondages en ligne comportent des défis, notamment en ce qui concerne l’échantillonnage, les taux de réponse et les caractéristiques des non-répondants. Il est également nécessaire de se méfier des enjeux éthiques et de confidentialité (Nayak &amp; K. A., 2019). Comme la généralisation est essentielle pour conférer une valeur scientifique à ses résultats de recherche, les sondages en ligne ont leurs limites. En effet, il est crucial de connaitre la population cible pour effectuer des inférences valides, et l’échantillonnage doit reposer sur des caractéristiques précises. Même si des informations démographiques peuvent être collectées et des quotas utilisés, il n’est toutefois pas réellement possible de confirmer les informations sur le répondant (Andrade, 2020). Les sondages traditionnels où l’on retrouve un contact direct sont plus susceptibles de permettre de brosser un portrait plus complet du répondant (Evans &amp; Mathur, 2018). Les répondants avec des biais peuvent également plus facilement répondre aux sondages en ligne et limiter la généralisation (Andrade, 2020). Les sondages en ligne sont également souvent perçus comme des pourriels, ont généralement de faibles taux de réponse, sont impersonnels et peuvent avoir des instructions peu claires. Ils ont également leurs lots d’enjeux de confidentialité (Evans &amp; Mathur, 2018).</p>
+<p><br>
+Conseils méthodologiques à la réalisation d’un sondage numérique<br>
+(Evans &amp; Mathur, 2018)<br>
+L’article de Evans et Mathur (2018) est une revue de littérature observant l’évolution des sondages numériques depuis la parution de leur dernier article sur le sujet en 2005. À travers cet article, les auteurs offrent des conseils méthodologiques en fonction de leur analyse de contenu de la littérature scientifique. Les conseils d’Evans et Mathur (2018) sont résumés ci-dessous. Afin d’obtenir plus de détails, n’hésitez pas à vous référer directement à cet article. De plus, bien qu’il s’agisse d’un article crédible et largement documenté, il est toujours pertinent de consulter des sources spécifiques à vos besoins.</p>
+<p><br>
+1.Définir le but du sondage avant la méthodologie. Lorsque possible, inclure des hypothèses testables et des méthodes basées sur des fondations théoriques.<br>
+2.Choisir le type de sondage.<br>
+3.Décider des méthodes d’échantillonnage, des quotas et des échéances.<br>
+4.Déterminer le responsable de la construction du sondage.<br>
+5.Soyez transparent en divulguant le but du sondage, la façon dont les données seront utilisées ainsi que l’auteur du sondage.<br>
+6.Les questions et les catégories de réponses doivent être élaborées de manière objective et dans une perspective de convivialité.<br>
+7.Les sondages doivent être assez légers pour favoriser un taux de réponse positif, mais assez complet pour avoir l’information nécessaire.<br>
+8.Ils doivent également être attrayant afin de favoriser leur complétion par le répondant.<br>
+9.S’assurer de l’anonymat du répondant.<br>
+10.Il faut régulièrement procéder à des tests afin de corriger les faiblesses du questionnaire.<br>
+11.Déterminer qui administre le sondage, qui collecte l’information, et qui analyse les données.<br>
+12.Établir un échéancier pour les différentes étapes de l’étude.<br>
+13.Suite à la collecte de données, entreposer les données brutes dans un fichier électronique.<br>
+14.Utiliser les méthodes appropriées (qualitatif ou quantitatif), et analyser les données selon les buts de l’étude.<br>
+15.Dans le cas d’une recherche académique, il est important d’avoir une section dédiée aux limites de l’étude.<br>
+16.Conserver l’anonymat des répondants lors de l’analyse et de la publication.<br>
+17.Agir sur les résultats. Rien ne sert de conduire un sondage qui ne contribue pas à la croissance du savoir ou n’apporte pas de changement stratégique ou organisationnel.<br>
+18.Toujours se plier à un code d’éthique rigide.</p>
+<p>Il s’agit donc ici d’un court résumé des plateformes de sondages et de la collecte de données en ligne, tentant de couvrir l’essentiel de cet outil afin de vous aider lors de votre parcours académique, ou simplement comme aide-mémoire pour la réalisation d’un sondage. Les outils énumérés précédemment permettent une étude approfondie de phénomènes concernant les citoyens. Bien sûr, il n’est pas possible de couvrir l’entièreté de cet outil très complexe et ayant évolué dans le temps. Cette section ne sert donc que de point de départ si vous vous intéressez à l’élaboration d’un sondage numérique. Il vous est donc recommandé de vous renseigner davantage avec d’autres ressources afin de compléter ce qui est indiqué dans cet ouvrage.</p>
+</section>
+</section>
+<section id="factiva-outils-de-récolte-de-données-médiatiques" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">5.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></h2>
+<p>L’émergence de nouvelles technologies de même que la fragmentation médiatique, causée notamment par l’apparition de chaînes de nouvelles en continu, ébranlent considérablement les écosystèmes médiatiques occidentaux (Chadwick, 2017). Un récent courant de recherche se penche sur le rôle des médias relativement aux comportements des individus dans une perspective de fragmentation médiatique. Ces changements de dynamique médiatiques permettent aux individus de choisir leurs sources d’information. Cette fragmentation aurait conséquemment pour effet de contribuer à la formation de chambres d’écho. Ainsi, les études sur les effets des médias visent à comparer les agendas de différentes organisations médiatiques de même que de comprendre le cadrage de la nouvelle qu’ils offrent aux citoyens. Pour effectuer de telles études comparées, l’accès à des données médiatiques est essentiel. L’arrivée de données massives permet de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l’importante quantité de données accessibles aux chercheurs.euses, ce qui permet une compréhension accrue des réalités médiatiques modernes.</p>
+<p>L’outil Factiva offre un accès à l’ensemble des articles d’une panoplie de médias provenant d’une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l’accès à des documents d’entreprises. En revanche, l’accès qu’il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l’accès à plus de 15&nbsp;000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu’à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons.</p>
+<p>Additionnellement, cet outil permet également de lancer une requête de recherche par mots-clés et par date qui permet, par exemple, de récolter les articles médiatiques concernant un sujet précis dans une ligne de temps déterminée. De manière plus précise, Factiva permet de filtrer la recherche d’articles par source, par date, par auteur, par sociétés, par sujet, par secteur économique, par région et par langue. Disons qu’un.e chercheur.euse désire comparer la couverture médiatique d’une élection donnée. Il peut, par le biais de Factiva, sélectionner tous les articles contenant le mot «&nbsp;élection&nbsp;» dans une sélection de médias, et ce, durant la période de l’élection. Les mots clés sélectionnés peuvent être adaptés aux désirs de l’utilisateur.ice de manière à inclure des mots qui peuvent être mis ensemble ou à un maximum d’intervalle de mot. L’utilisation des signes «&nbsp;and&nbsp;» et «&nbsp;or&nbsp;», aussi connus sous le nom d’opérateurs booléens, permettent d’ajouter un mot dans la requête de recherche. En ajoutant near5, l’on peut spécifier qu’il doit y avoir un maximum de 5 mots entre les deux mots recherchés. L’on peut également mettre certains signes à la fin de mots, ce qui permet de préciser le champ de recherche. Par exemple, dans une étude récoltant des articles sur les immigrants, le mot immigrant pourrait être écrit de la manière suivante&nbsp;: immigra*. Ainsi, tous les mots débutant par ce suffixe seraient inclus de la recherche d’article, ce qui comprend donc&nbsp;: immigrant, immigration, immigrants, immigrante, etc. La Figure 1 est une capture d’écran de l’interface de recherche de Factiva. Ainsi, en ajoutant un opérateur booléen, l’on peut préciser un champ de recherche. L’utilisateur.rice pourrait, par exemple, rechercher des articles sur les immigrants syriens, et rajoutant les opérateurs “and” ou encore “or”, de même que le mot « syri* », l’étoile étant rajoutée pour inclure le plus de mots possible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre3_factiva.png" class="img-fluid figure-img"></p>
+<figcaption>image3_1</figcaption>
+</figure>
+</div>
+<p>Ainsi, Factiva permet d’avoir accès facilement à des données utiles pour de l’analyse textuelle d’articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l’analyse de contenu par thèmes ou par ton.</p>
+<p>Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l’optique ou un média recherché n’est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu’en Europe). La structure d’Eureka est similaire à celle de Factiva. En effet, Eureka permet de filtrer des articles médiatiques par requête de recherche adaptée à la source, la date ou encore l’auteur. Toutefois, les requêtes de recherche doivent être formulées d’une manière quelque peu différente. Elles doivent donc être adaptées au fonctionnement d’Eureka. Les articles doivent être sélectionnés à la main, et peuvent être téléchargés dans un document PDF pouvant contenir un maximum de 50 articles à la fois. La Figure 2 contient l’interface de recherche d’Eureka.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre3_eureka.png" class="img-fluid figure-img"></p>
+<figcaption>image3_2</figcaption>
+</figure>
+</div>
+<p>Il existe aussi une panoplie d’outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licences permettant d’exploiter la plateforme, plusieurs alternatives s’offrent à la communauté scientifique. NexisUni, qui comprend entre autres l’outil LexisNexis Academic particulièrement prisé par le champ d’études de communication aux États-Unis, représente une excellente alternative. C’est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d’articles médiatiques. Les chercheurs.euses peuvent choisir la plateforme qui leur convient le mieux, en prenant en compte notamment l’accès qui peut leur être fourni par l’institution universitaire les employant.</p>
+<p>En somme, la révolution numérique permet un accès sans précédent aux données médiatiques, ce qui permet des analyses approfondies du rôle des médias traditionnels dans une société démocratique.</p>
+</section>
+<section id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">5.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></h2>
+<p>Chacun des acteurs démocratiques énumérés précédemment peut également être étudié par le biais d’extracteurs qui offrent un accès à des données numériques massives. Les extracteurs de données numériques sont des infrastructures de code permettant d’extraire des données brutes d’une source définie. La section suivante explique comment les extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.</p>
+<p>Les données en lien avec les décideurs sont souvent accessibles sur des sites gouvernementaux. Toutefois, certaines identifications peuvent être nécessaires et l’accès peut être compliqué, particulièrement dans une perspective de données massives. C’est dans cette optique que les extracteurs de données numériques peuvent être utiles. Un code peut extraire de manière automatisée les débats des parlements, les communiqués de presse des gouvernants, les plateformes électorales des partis politiques, ce qui offre un accès inégalé aux chercheurs.euses aux données de décideurs. Dans une autre optique, des extracteurs peuvent également offrir l’accès aux données provenant de médias socionumériques comme Twitter (maintenant X) ou Facebook <!--Capel: Enlever la dernière section de cette phrase ?-->. Un extracteur peut, par exemple, être en mesure de répertorier l’ensemble des Tweets de journalistes, de politiciens ou encore de citoyens de manière automatisée, offrant un accès inégalé aux chercheurs.euses à des données massives exclusives. L’élaboration d’extracteurs est toutefois facilitée par l’existence d’API (Application programming interface) sur les plateformes exploitées. L’API d’un site ou d’une application permet à un tierce parti d’avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l’extraction de données. Par exemple, Twitter possédait avant les changements de directions récents un API qui facilitait l’élaboration d’un extracteur. En contrepartie, Facebook ne possède pas d’API, ce qui rend l’accès à ses données beaucoup plus complexe. Un extracteur peut également offrir l’accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits.</p>
+<p>L’élaboration d’un extracteur est toutefois une tâche complexe qui requiert un certain nombre de connaissances en lien avec les langages de programmation. Les chapitres 4 et 5 du présent ouvrage offrent justement un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l’écriture d’extracteurs. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre.</p>
+</section>
+<section id="covidence-outil-de-récolte-darticles-scientifiques" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">5.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></h2>
+<p>Comme mentionné précédemment, les outils numériques de données massives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d’analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d’autres étapes du cycle de la recherche. Il s’agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d’élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L’outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulièrement prisé du monde académique lors de l’entreprise de revues de littérature.</p>
+<p>La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d’accomplissement du travail en plus de le rendre plus simple et plus intuitif. L’outil a été développé pour mieux gérer et organiser l’évaluation de quantité importante d’études scientifiques. L’exécution d’une revue de littérature sur Covidence se fait par le biais d’un double codage. C’est-à-dire que l’évaluation des études se fait manuellement par deux codeurs travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l’exercice. L’outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d’importer des données massives provenant de base de données bibliographiques. En effet, l’outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l’accès à des milliers d’études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adaptées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique.</p>
+<p>La première étape, soit le «&nbsp;Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage efficace, il est nécessaire d’inclure des critères précis pour analyser les titres et résumés d’articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l’article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s’avère très utile et motivante, puisqu’il est possible de développer un jugement critique davantage raffiné et de s’instruire dans une littérature continuellement plus précise.</p>
+<p>Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l’indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d’analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d’exclure l’article, de le retenir ou de l’envoyer à la prochaine étape. D’un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu’elle comporte beaucoup moins de documents, est assez longue et exigeante.</p>
+<p>La dernière étape, soit celle de l’extraction, consiste à recueillir toute donnée étant utile à l’étude de la littérature désignée. Cette étape est demandante, car les chercheur.euse.s doivent se conformer à une grille de codification prédéfinie. Le but est qu’un consensus entre les codeurs émerge de ce processus. L’extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues.</p>
+<p>Une fois les étapes de la revue systématique terminées, Covidence facilite l’exportation des résultats de l’extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d’articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l’outil est particulièrement utile et bien construit. Toutefois, il existe d’autres alternatives à Covidence. Le choix de l’outil dépend des coûts de même que des besoins spécifiques des personnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.</p>
+</section>
+<section id="conclusion-et-discussion" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="conclusion-et-discussion"><span class="header-section-number">5.7</span> Conclusion et discussion:</h2>
+<p>Le précédent chapitre portait sur les différents outils de collecte de données massives mis à la disposition des chercheur.euse.s s’intéressant au champ des sciences sociales numériques. Les outils relevés se démarquent par leur capacité d’accorder l’accès à des données permettant d’étudier les trois principaux acteurs de la société démocratique, soit: les citoyens, les décideurs et les médias. Comme mentionné à plusieurs reprises lors du chapitre, le but de ce dernier n’est pas d’offrir une liste complète des outils disponibles. Toutefois, les outils énumérés ont été sélectionnés en raison de leur intuitivité, leur relative simplicité d’accès de même que leurs capacités techniques considérées par les auteurs comme étant particulièrement pertinentes dans une optique de recherche en sciences sociales numérique. Ainsi, ce chapitre démontre que la possibilité d’effectuer des recherches en sciences sociales numériques par le biais de données massives est plus que jamais accessible à la communauté scientifique, particulièrement en ce qui a trait à la collecte de données permettant de tels travaux. Une fois les données collectées, le travail d’analyse représente un défi technique supplémentaire se dressant devant les personnes chercheuses. Les chapitres suivants visent à familiariser les chercheurs.euses à des outils méthodologiques permettant l’analyse et la visualisation de données massives au sein des sciences sociales.</p>
+<p>Bibliographie:</p>
+<p>Schroeder, R. (2014). Big data and the brave new world of social media research.&nbsp;<em>Big Data &amp; Society</em>,&nbsp;<em>1</em>(2), 2053951714563194.</p>
+<p>Chadwick, A. (2017). The hybrid media system: Politics and power. Oxford University Press.</p>
+<p>Connelly, R., Playford, C. J., Gayle, V., &amp; Dibben, C. (2016). The role of administrative data in the big data revolution in social science research.&nbsp;<em>Social science research</em>,&nbsp;<em>59</em>, 1-12.</p>
+<p>Manovich, L. (2011). Trending: The promises and the challenges of big social data.&nbsp;<em>Debates in the digital humanities</em>,&nbsp;<em>2</em>(1), 460-475.</p>
+<p>Burrows, R., &amp; Savage, M. (2014). After the crisis? Big Data and the methodological challenges of empirical sociology.&nbsp;<em>Big data &amp; society</em>,&nbsp;<em>1</em>(1), 2053951714540280.</p>
+<p>Kramer, A. D., Guillory, J. E., &amp; Hancock, J. T. (2014). Experimental evidence of massive-scale emotional contagion through social networks.&nbsp;<em>Proceedings of the National academy of Sciences of the United States of America</em>,&nbsp;<em>111</em>(24), 8788.</p>
+<p>Andrade, C. (2020). The Limitations of Online Surveys. Indian Journal of Psychological Medicine, 42(6), 575-576. https://doi.org/10.1177/0253717620957496</p>
+<p><br>
+Evans, J. R., &amp; Mathur, A. (2018). The value of online surveys: A look back and a look ahead. Internet Research, 28(4), 854-887. https://doi.org/10.1108/IntR-03-2018-0089</p>
+<p><br>
+Nayak, M., &amp; K A, N. (2019). Strengths and Weakness of Online Surveys. 24, 31-38. https://doi.org/10.9790/0837-2405053138</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_4.html" class="pagination-link" aria-label="Gestion de la littérature">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_6.html" class="pagination-link" aria-label="Une image vaut mille mots">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Livre-outils</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
