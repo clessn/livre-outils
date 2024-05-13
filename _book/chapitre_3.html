@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.8">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
 
-<title>Outils de recherche en sciences sociales numériques – 3&nbsp; À la quête de l’optimisation</title>
+<title>Outils de recherche en sciences sociales numériques - 3&nbsp; À la quête de l’optimisation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -287,6 +287,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="3.2" class="anchored" data-anchor-id="gestion-individuelle"><span class="header-section-number">3.2</span> Gestion Individuelle</h2>
 <section id="gestion-de-tâches-notion-monday" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="gestion-de-tâches-notion-monday"><span class="header-section-number">3.2.1</span> Gestion de tâches (Notion, Monday)</h3>
+<p>Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, les travaux s’échelonnent souvent sur plusieurs années, et il est facile de perdre ses objectifs de vue, ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches convenablement facilite la mesure des progrès, et permet de constamment vérifer si ceux-ci sont encore alignés avec les objectifs finaux.</p>
+<section id="comment" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="comment"><span class="header-section-number">3.2.1.1</span> Comment</h4>
+<p>Gérer ses tâches de façon efficace passe par la structuration des objectifs du projet. Il faut connaître la destination afin de choisir la direction. Pour se faire, il est bien de dessiner, ou de faire une liste de la conception de la version finale du projet. Dans l’idéal, à quoi ressemble le projet dans sa dernière version. Une fois cette étape franchie, il est possible de désagréger le projet en grandes étapes. Que faut-il faire, à l’échelle macro, pour atteindre les objectifs du projet? À cette étape, il est important de prendre en compte les ressources financières, temporelles et humaines, afin de déterminer de façon réaliste ce qui est possible. En suivant ce processus dès le début de votre projet, vous évitez de faire des erreurs conceptuelles qui vous obligent à reculer et à retourner à la planche à dessin.</p>
+<section id="quand" class="level5" data-number="3.2.1.1.1">
+<h5 data-number="3.2.1.1.1" class="anchored" data-anchor-id="quand"><span class="header-section-number">3.2.1.1.1</span> Quand</h5>
+<p>Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d’autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d’autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L’agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l’avancement et des blocants des objectifs.</p>
+</section>
+</section>
 </section>
 <section id="enregistrement-de-protocole" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="enregistrement-de-protocole"><span class="header-section-number">3.2.2</span> Enregistrement de protocole</h3>
@@ -766,6 +775,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -800,7 +827,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

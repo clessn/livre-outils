@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.8">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <p>L’apparition des données massives (<em>big data</em>) dans le paysage technologique représente un cas de phénomène hautement technique dont les effets politiques et sociaux sont remarquables. Depuis quelques années, la discussion publique s’est en effet rapidement emparée du sujet, au point de transformer un développement technologique en phénomène social. Les données massives se trouvent ainsi régulièrement présentées dans l’espace public à la fois comme un moyen puissant de développement et d’innovation technoscientifique, de même que comme une menace à la stabilité de certaines normes sociales telles que la confidentialité des informations privées. Il n’est d’ailleurs pas rare que le discours public s’inquiète du danger que poseraient les données massives à la séparation des sphères publique et privée, pourtant centrale à la conception libérale du rôle de la politique qui structure la majorité des débats sociaux, en amalgamant parfois de manière trop rapide l’objet et l’utilisation qui en est faite. Toutefois, ce même discours public s’emporte aussi rapidement à propos des gains technologiques monumentaux réalisés par l’utilisation des données massives.</p>
 <p>Dans le domaine des sciences sociales, les avancées dues à l’utilisation des données massives se font de plus en plus fréquentes et l’impact des données massives dans le domaine de la recherche sociale est en ce sens indéniable. Toutefois, d’un point de vue épistémologique, l’utilisation des données massives en recherche en sciences sociales dans les dernières années laisse plusieurs questions ouvertes dans son sillage.</p>
 <p>Comment l’utilisation des données massives change-t-elle la pratique des sciences sociales? Les données massives causeront-elles un changement de paradigme scientifique?</p>
-<p>Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d’une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles affectent les enjeux de la <em>validité</em> interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l’avenir des données massives en sciences sociales en identifiant certains changements <em>épistémologiques</em> que ces données pourraient potentiellement entraîner.</p>
+<p>Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d’une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles ￼ affectent les enjeux de la <em>validité</em> interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l’avenir des données massives en sciences sociales en identifiant certains changements <em>épistémologiques</em> que ces données pourraient potentiellement entraîner.</p>
 <section id="définition-des-données-massives" class="level2">
 <h2 class="anchored" data-anchor-id="définition-des-données-massives">Définition des données massives</h2>
 <p>Il existe au moins trois approches conceptuelles permettant de définir les « données massives » (voir Figure 1.1.).</p>
@@ -547,6 +547,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -581,7 +599,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
