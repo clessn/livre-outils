@@ -20,23 +20,84 @@ Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner
 
 ## Gestion Individuelle
 
-### Gestion de tâches (Notion, Monday)
+### Gestion de tâches
 
-Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, les travaux s'échelonnent souvent sur plusieurs années, et il est facile de perdre ses objectifs de vue, ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches convenablement facilite la mesure des progrès, et permet de constamment vérifer si ceux-ci sont encore alignés avec les objectifs finaux. 
+Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, où les travaux s'échelonnent souvent sur plusieurs années, il est facile de perdre de vue ses objectifs ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches de manière efficace facilite la mesure des progrès et permet de constamment vérifier si ceux-ci sont encore alignés avec les objectifs finaux.
 
 #### Comment
 
-Gérer ses tâches de façon efficace passe par la structuration des objectifs du projet. Il faut connaître la destination afin de choisir la direction. Pour se faire, il est bien de dessiner, ou de faire une liste de la conception de la version finale du projet. Dans l'idéal, à quoi ressemble le projet dans sa dernière version. Une fois cette étape franchie, il est possible de désagréger le projet en grandes étapes. Que faut-il faire, à l'échelle macro, pour atteindre les objectifs du projet? À cette étape, il est important de prendre en compte les ressources financières, temporelles et humaines, afin de déterminer de façon réaliste ce qui est possible. En suivant ce processus dès le début de votre projet, vous évitez de faire des erreurs conceptuelles qui vous obligent à reculer et à retourner à la planche à dessin. 
+Gérer ses tâches de façon efficace passe par une structuration claire des objectifs du projet. Il est important de connaître la destination finale afin de choisir la meilleure direction pour y parvenir. Pour ce faire, il est utile de schématiser ou de lister la conception de la version finale du projet. Dans l'idéal, à quoi ressemble-t-il dans sa forme aboutie? Une fois cette vision clairement définie, il est possible de désagréger le projet en grandes étapes. Que faut-il accomplir, à l'échelle macro, pour atteindre les objectifs fixés?
 
-##### Quand
+À cette étape, il est crucial de prendre en compte les ressources financières, temporelles et humaines disponibles. Cela permet de déterminer de manière réaliste ce qui est possible. Identifier ces grandes étapes contribue à la création d'un plan de projet structuré où chaque phase est clairement définie. Cela aide à anticiper les besoins en ressources et à ajuster les échéances en conséquence.
 
-Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d'autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d'autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L'agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l'avancement et des blocants des objectifs. 
+La révision continue est également un élément clé du processus de gestion des tâches. En réévaluant régulièrement l'état d'avancement du projet par rapport au plan initial, il est possible d'apporter des ajustements nécessaires pour rester sur la bonne voie. Cet astuce permet de répondre aux changements inévitables qui surviennent au cours de la recherche, qu'ils soient dus à des découvertes inattendues, des changements dans les directives institutionnelles ou des feedbacks des pairs.
+
+#### Quand
+
+Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d'autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d'autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L'agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l'avancement et des blocants des objectifs.
+
+Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d'autres. Un projet est généralement composé de tâches qui doivent être réalisées dans un ordre spécifique, où certaines doivent impérativement précéder d'autres. Le défi est de déterminer efficacement ce qui doit être priorisé pour maintenir une progression fluide et efficace.
+
+L'agilité est un processus de travail qui facilite cette priorisation. En adoptant une approche agile, les objectifs sont fixés dans le temps et sont constamment évalués. Cela permet une adaptation rapide et une réponse aux changements sans compromettre les résultats finaux. De cette façon, les tâches sont déterminées et ajustées en fonction de l'avancement du projet et des éventuels obstacles rencontrés. Le projet avance de façon incrémentale.
+
+Pour une mise en œuvre efficace de l'agilité, il est utile de planifier ses objectifs sur une période de quelques semaines, connues sous le nom de sprints en méthode Scrum, où on évalue le travail accompli et on redéfinit les priorités pour la prochaine période. Ces sprints permettent de s'assurer de rester concentré sur les tâches qui apportent le plus de valeur au projet et d'ajuster les plans en temps réel en fonction des résultats obtenus.
+
+#### Où
+
+Toutes ces pratiques deviennent rapidement complexes si elles ne sont pas encadrées dans un environnement qui permet d'en faire le suivi. Il peut être judicieux de faire appel à des outils de gestion de projet qui supportent l'agilité, tels que Notion ou Mondays. Ces outils permettent de visualiser les tâches à faire sous forment de tableaux de bords intéractifs, dans lesquels il est possible de les déplacer en fonction de leur statut d'avancement. Ces outils permettent de structurer les tâches d'un projet et d'en faire le suivi facilement du début à la fin.
+
+Il est également judicieux de faire appel à des outils de gestion de projet qui supportent l'agilité, tels q. Ces outils permettent de visualiser les tâches sous forme de tableaux de bord interactifs où les tâches peuvent être déplacées, modifiées ou mises à jour en temps réel. Ils favorisent la transparence et la communication entre les membres de l'équipe, essentielles pour une gestion agile des tâches.
+
+Enfin, il est crucial d'intégrer des pratiques de réflexion et d'amélioration continue. Après chaque sprint, l'équipe devrait se réunir pour une rétrospective afin de discuter de ce qui a bien fonctionné et de ce qui pourrait être amélioré. Cette culture de l'amélioration continue est au cœur de l'agilité et contribue à l'efficacité et à la réussite du projet à long terme.
+
+Pour déterminer quelles tâches accomplir et dans quel ordre, voici une court processus par étapes :
+
+1.  Éllaborer les tâches en fonction des objectifs de sprint.
+2.  Déterminer la linéarité des tâches, c'est-à-dire, quelle tâche doit être accomplie afin d'en début une autre.
+3.  Quantifier le poids de chaque tâche. Certaines tâches sont plus longues que d'autres. Adopter un système qui vous permet d'identifier quelles tâches prendront quelques minutes seulement (comme l'envoi du courriel), et quelles tâches prennent plusieurs jours. Si une tâche est trop longue, c'est un signe qu'elle pourrait être désagrégée en plusieurs tâches plus petites. Cela facilite également le suivi.
+4.  Donner une échéance réaliste à chaque tâche, en fonction des étapes précédentes. Idéalement, toutes les tâches ne sont pas dues pour la même date, pour éviter un goulot d'étranglement. Les échéances aident à prioriser les tâches.
+5.  Prioriser les tâches qui ont l'échéance le plus sérré. Si certaines tâches accumulent un retard, c'est peut-être parce que vous devez réévaluer les échéances, les objectifs, ou encore parce qu'il y a des blocants dans vos méthodes de travail. Faire un tel suivi permet d'évaluer sa propre efficacité dans ses méthodes de travail.
+
+L'utilisation d'outils numériques pour la gestion des tâches ne signifie pas qu'il faut abandonner l'agenda papier ou le cahier de notes. Plusieurs trouvent essentiels de prendre des notes et de se faire des listes de tâches à la main. Il est tout à fait possible de combiner les méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de tâches, puis faites votre liste de tâches à la main en conséquence, et planifiez votre semaine. De cette façon, vous savez chaque jour le travail à prioriser.
 
 ### Enregistrement de protocole
 
+Après avoir établi l'importance de la gestion des tâches et comment une approche agile peut optimiser ce processus, il est complémentaire de d'aborder l'enregistrement méthodique de ces tâches et des étapes du projet. Cette documentation assure la transparence, la réplicabilité et la rigueur scientifique de la recherche. L'enregistrement du protocole de recherche sert plusieurs objectifs clés qui se connectent directement à la gestion agile des tâches. Il agit comme une archive vivante des décisions prises, des méthodes utilisées et des modifications apportées tout au long du projet. Cela permet la vérification et la validation des résultats, et de maintenir une vision claire de l'évolution du projet.
+
+L'enregistrement de protocole en science est une pratique facultative, mais de plus en plus populaire, qui consiste à documenter et à déposer de manière détaillée le plan de recherche d'une étude avant que celle-ci ne soit menée. Cette démarche s'inscrit dans le cadre des pratiques de recherche ouverte et transparente. Elle a plusieurs avantages : D'abord, rendre les protocoles de recherches publics démontre un engagement envers des méthodes rigoureuses. Cela augmente la confiance envers les résultats obtenus et les méthodes employées. Une démarche détaillée permet aussi la réplicabilité du projet, en offrant aux autres chercheurs du domaine les étapes détaillées employées pour se rendre aux résultats.
+
+Un autre avantage est d'éviter qu'une étude soit réalisée par deux chercheurs au même moment. En enregistrant sa recherche, tous peuvent consulter les recherches en cours, et ainsi s'assurer que leurs projets sont uniques. De cette manière, les ressources académiques sont maximisées. L'enregistrement du protocole permet aussi d'évaluer la recherche par les pairs avant d'amorcer sa réalisation, ce qui peut augmenter la crédibilité de l'étude, faciliter la publication dans une revue scientifique, et gagner du temps dans la réalisation du projet.
+
+Enfin, au coeur du concept de l'enregistrement de protocole se trouve l'idée de l'intégrité de la recherche. La science, par définition, est transparente dans ses démarches. Rendre public ses intentions et devoir justifier chaque modification s'inscrit dans cette optique d'intégrité. Un tel processus rend difficile la chasse au résultats, un fléau en science où les chercheurs privilégient l'atteinte de résultats avant la démarche. Le système très compétitif et chronophage de la publication scientifique encourage ce genre de pratique. L'enregistrement de protocole tente d'encourager des pratiques transparentes, qui sont bien acceuillies par les revues scientifiques.
+
+Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes :
+
+1.  Préparer le protocole. Un document détaille les hypothèses, les méthodes et les analyses prévues. l'objectif est de rédiger un document suffisamment détaillé pour permettre à d'autres chercheurs de reproduire l'étude. La rédaction de ce document n'est pas une perte de temps, car une majorité devrait pouvoir être réutilisée dans l'étude finale.
+2.  Enregistrer le protocole. L'enregistrement se fait dans un registre public. Il existe différents registres, ouverts à tous les domaines (Open Science Framework, Research Registry) ou plus spécifiques aux sciences sociales (EGAP, AEA RCT).
+3.  Valider le protocole. Le protocole est évalué par les pairs, pour assurer sa complétude, puis il devient public. Ainsi, vous obtenez des commentaires avant même de soumettre à une revue, ce qui peut vous faire sauver du temps en apportant des modifications avant la réalisation, plutôt qu'après.
+4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
+
 ### Code en open access (Repository github)
 
-#### Gestion de versions (git)
+L'enregistrement de protocole est seulement un volet de la transparence en science. De même que pour les protocoles, la mise à disposition du code source employé pour les analyses permet non seulement de vérifier les résultats publiés mais aussi de renforcer la confiance dans les conclusions de la recherche. Le partage du code, structuré et commenté, via une plateforme comme GitHub, s'inscrit dans cette démarche de recherche ouverte.
+
+Les langages de programmation sont très fluides et décentralisés, et les codes employés pour arriver à un même résultat peuvent varier d'une personne à l'autre. Rendre son code public permet la reproductibilité et la transparence dans la manipulation et l'analyse de ses données. Plusieurs revues exigent de rendre le code en libre accès lors d'une soumission.
+
+1.  Préparation du code
+
+<!-- -->
+
+a.  ReadMe
+b.  Structuration du code + commentaires
+
+<!-- -->
+
+2.  Dépot du code sur github
+
+<!-- -->
+
+a.  Création du repo
+b.  Gestion des version (git)
 
 ### Stockage des données (Dropbox, autres clouds)
 
@@ -74,7 +135,7 @@ Pour les données sensibles, les services cloud tels que Dropbox et Google Drive
 
 ### Coordination d'équipe (Slack Mattermost)
 
- Logiciel de gestion de communication (Slack)<!--AFC: Je trouve ça étrange de mettre ça au singulier et d'inclure Slack dans le titre. Soit je mettrais au pluriel, soit je mettrais carrément comme titre "Slack et autres logiciels de gestion de la communication". Le même principe s'applique aux autres titres de sections.-->
+Logiciel de gestion de communication (Slack)<!--AFC: Je trouve ça étrange de mettre ça au singulier et d'inclure Slack dans le titre. Soit je mettrais au pluriel, soit je mettrais carrément comme titre "Slack et autres logiciels de gestion de la communication". Le même principe s'applique aux autres titres de sections.-->
 
 Dans tout bon projet de recherche, la communication est primordiale. Que ce soit pour décrire les avancements, discuter des étapes à venir, entretenir un partenariat avec des partenaires ou simplement structurer ses pensées, la plateforme par laquelle vous communiquez vous accompagne à chacune des étapes du travail. Il est donc important de choisir un outil qui convient bien à vos projets et de prendre le temps de l'apprivoiser et d'optimiser son utilisation.
 
@@ -341,8 +402,6 @@ Dropbox se concentre principalement sur l'entreposage et la collaboration de fic
 ### Conclusion
 
 L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.
-
-
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 

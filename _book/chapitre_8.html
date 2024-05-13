@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
+<<<<<<< HEAD
 <meta name="generator" content="quarto-1.4.551">
+=======
+<meta name="generator" content="quarto-1.3.450">
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
 <title>Outils de recherche en sciences sociales numériques - 8&nbsp; Outils d’intelligence artificielle</title>
@@ -20,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -56,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -100,13 +103,7 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -115,7 +112,6 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -126,23 +122,23 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d'intelligence artificielle</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -221,13 +217,25 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Installation de Biblatex et configuration de Zotero</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
 </div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
@@ -264,7 +272,7 @@ div.csl-indent {
 <li><a href="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt" id="toc-défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt" class="nav-link" data-scroll-target="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt"><span class="header-section-number">9.1</span> Défis et enjeux éthiques de l’IA, focus sur ChatGPT</a></li>
   </ul>
 </li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -282,7 +290,6 @@ div.csl-indent {
     
   </div>
   
-
 
 </header><p>Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.</p>
 <p>Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites. <!--
@@ -302,10 +309,7 @@ Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une 
 </section><section id="lévolution-constante-de-lia" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="lévolution-constante-de-lia">
 <span class="header-section-number">8.2</span> L’évolution constante de l’IA</h2>
 <p>Plusieurs chercheurs, dont le professeur Yoshua Bengio de l’Université de Montréal, ont lancé plusieurs avertissements sur le développement de l’IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans The Economist, M. Bengio <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">2023</a>)</span> nous dit qu’il prévoyait le développement d’une IA avec des capacités similaires à celles de l’humain d’ici quelques décennies, peut-être un siècle. Depuis l’arrivée de ChatGPT-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">Bengio, 2023</a>)</span>. Dans les dix dernières années seulement, les systèmes de reconnaissance d’images et de langages en sont venus à dépasser les capacités humaines <span class="citation" data-cites="roser22">(<a href="references.html#ref-roser22" role="doc-biblioref">Roser, 2022</a>)</span>. La figure 1 présente cette évolution.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="images/chapitre9_figure1.png" class="img-fluid figure-img"></p>
-<figcaption>Évolution de l’IA depuis 1998</figcaption></figure>
-</div>
+<p><img src="images/chapitre9_figure1.png" class="img-fluid" alt="Évolution de l’IA depuis 1998"></p>
 <div style="page-break-after: always;"></div>
 <p>Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi-exponentielle. Cette progression fulgurante nous permet de faire quelque constat pour appréhender l’évolution future. Ce qui est intéressant de la recherche dans ce domaine, c’est que le développement des capacités de l’IA permet, en retour, de la développer encore plus rapidement. L’IA peut rendre l’IA exponentiellement plus puissante <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">Harari, 2023</a>)</span>. Elle est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d’auto-améliorassions, que si elle était uniquement dépendante de l’humain.</p>
 <p>En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l’IA? Tout d’abord, il est intéressant de commencer à réfléchir ainsi qu’à analyser les différents impacts que l’IA a sur nos sociétés. Les avancés dans le domaine en plus de l’accessibilité à ces technologies, tel que Large Language Model (LLM), en font de nouveaux objets d’étude actuel, et surtout sans grandes réponses. Yuval Noah Harrari <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">2023</a>)</span>, historien et philosophe, explique dans un article que la capacité de l’IA à manipuler ainsi qu’à générer du langage en font des outils puissants qui ont le potentiel d’avoir de profond impact sur nos civilisations. Par conséquent, l’étude des effets de l’IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » [Traduction libre] <span class="citation" data-cites="bremmer_suleyman23">(<a href="references.html#ref-bremmer_suleyman23" role="doc-biblioref">Bremmer &amp; Suleyman, 2023</a>, pp.&nbsp;32)</span>. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l’interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu’une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.</p>
@@ -315,86 +319,157 @@ Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une 
 <p>Trois catégories d’outils seront présentées: les « <em>Large Language Models</em> » (LLM), les assistants de traduction ainsi que les assistants de revue de littérautre.</p>
 <section id="les-llms" class="level3" data-number="8.3.1"><h3 data-number="8.3.1" class="anchored" data-anchor-id="les-llms">
 <span class="header-section-number">8.3.1</span> 1. Les LLMs</h3>
+<p><span class="citation" data-cites="openai19">OpenAi (<a href="references.html#ref-openai19" role="doc-biblioref">2019</a>)</span> définissent les grands modèles linguistiques (Large language models ou LLMs en anglais) comme des modèles d’apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages web, des courriels, des messages de médias sociaux, etc. Cette méthode d’entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter que les GML ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.</p>
+<p>L’intégration des grands modèles de langage (LLMs) via l’API d’OpenAI dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l’analyse qualitative et quantitative des données textuelles. L’utilisation de ces modèles en R permet aux chercheurs d’exploiter des capacités avancées de traitement du langage naturel pour une variété d’applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l’analyse de biais algorithmiques en comparant l’information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l’analyse de sentiments, l’extraction d’entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d’outils personnalisés pour des besoins spécifiques de recherche.</p>
+<p>Voici quelques exmples d’utilisation des LLMs en sciences sociales:</p>
+<p>Premièrement, les LLMs peuvent être utilisés pour l’analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.</p>
+<p>Deuxièmement, les LLMs offrent des capacités d’extraction d’entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et socio-politiques, enrichissant ainsi les bases de données pour des études plus poussées.</p>
+<p>Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d’informations en résumés concis, facilitant l’analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.</p>
+<p>Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d’explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.</p>
+<p>Cinquièmement, l’intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.</p>
+<p>sixièmement, les modèles de “speech-to-text” peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l’analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.</p>
+<p>Septièmement, les modèles de vision algorithmiques permettent l’analyse de contenu visuel, en extrayant des informations à partir d’images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.</p>
+<p>Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s’adaptent à des besoins spécifiques de recherche, comme l’analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des insights précieux sur l’évolution des discours et pratiques culturelles.</p>
+<p>En somme, l’utilisation des LLMs via l’API d’OpenAI en R représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l’immense paysage des données textuelles avec une précision et une efficacité accrues.</p>
+<p>Bien qu’il soit possible de communiquer avec l’API d’OpenAI directement, le package <code>openai</code> en R offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et bien plus encore, facilitant l’intégration des LLMs dans les workflows de recherche existants.</p>
+<p>Voici un exemple simple d’utilisation de l’API d’OpenAI :</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/irudnyts/openai">openai</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">system</span> <span class="op">&lt;-</span> <span class="st">"You are a helpful assistant"</span> <span class="co"># Donne un role au modèle. Doit être clair et concis</span></span>
+<span></span>
+<span><span class="va">prompt</span> <span class="op">&lt;-</span> <span class="st">"Quelle est la capitale du Québec?"</span> <span class="co"># Le prompt</span></span>
+<span></span>
+<span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">openai</span><span class="fu">::</span><span class="fu">create_chat_completion</span><span class="op">(</span></span>
+<span>        model <span class="op">=</span> <span class="st">"gpt-3.5-turbo-0125"</span>,</span>
+<span>        messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="st">"role"</span> <span class="op">=</span> <span class="st">"system"</span>,</span>
+<span>                 <span class="st">"content"</span> <span class="op">=</span> <span class="va">system</span></span>
+<span>            <span class="op">)</span>,</span>
+<span>            <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>                <span class="st">"role"</span> <span class="op">=</span> <span class="st">"user"</span>,</span>
+<span>                <span class="st">"content"</span> <span class="op">=</span> <span class="va">prompt</span><span class="op">)</span></span>
+<span>            <span class="op">)</span></span>
+<span>    <span class="op">)</span></span>
+<span></span>
+<span><span class="va">output</span> <span class="op">&lt;-</span> <span class="va">chat_prompt</span><span class="op">$</span><span class="va">choices</span><span class="op">$</span><span class="va">message.content</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">output</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section><section id="les-assistants-de-traduction" class="level3" data-number="8.3.2"><h3 data-number="8.3.2" class="anchored" data-anchor-id="les-assistants-de-traduction">
 <span class="header-section-number">8.3.2</span> 2. Les Assistants de Traduction</h3>
-</section><section id="les-assistants-de-revue-de-littérature" class="level3" data-number="8.3.3"><h3 data-number="8.3.3" class="anchored" data-anchor-id="les-assistants-de-revue-de-littérature">
+<p>L’IA a aussi permis la création d’outils de nouveaux outils de traduction automatique (<em>machine translation</em>). Pris au sens large, le concept de traduction automatique englobe n’importe quelle tâche de traduction qui est réalisée par un algorithme, une machine, des ordinateurs, etc. sans aucune aide d’un humain <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>. Il existe différents types ou approches de traduction automatique:</p>
+<ol type="1">
+<li>Basée sur des règles (<em>rules-based</em>): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d’une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux mais efficace pour les langues à grammaire bien définie <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Statistique (<em>statistical</em>): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d’apprentissage. Fonctionne bien avec des données volumineuses mais peut parfois produire des traductions imprécises faute de contextualisation <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Basée sur des exemples (<em>example-based</em>) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Neuronale (<em>neural</em>) : utilise des modèles d’apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu’elle ne remplace pas entièrement les traducteurs humains <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Hybride : les quatres approches peuvent également être combinées <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+</ol>
+<p>C’est au sein de l’approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (<em>transformer neural networks</em>) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a> ; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>. En tant que forme d’IA générative, ces outils exploitent le traitement du langage naturel (<em>natural language processing</em>), l’apprentissage profond (<em>deep learning</em>) et l’auto-attention (<em>self-attention</em>) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites web, des documents, etc. en quelques secondes, sans avoir besoin de connaître la langue cible.</p>
+<p>Il est essentiel pour les chercheurs en sciences sociales numériques de connaître et d’utiliser les outils de traduction automatique car ils facilitent la recherche, la communication et la collaboration à l’échelle internationale, particulièrement dans le contexte d’un monde académique dominé par l’anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d’une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine <span class="citation" data-cites="glover24">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>)</span>:</p>
+<table class="table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead><tr class="header">
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Amélioration de la productivité : traductions rapides et de grande échelle</td>
+<td>Données biaisées : reproduction de stéréotypes et erreurs de genre</td>
+</tr>
+<tr class="even">
+<td>Apprentissage autonome : amélioration continue grâce à l’apprentissage non supervisé</td>
+<td>Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique</td>
+</tr>
+<tr class="odd">
+<td>Réduction des coûts : minimise le besoin d’intervention humaine</td>
+<td>Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle</td>
+</tr>
+<tr class="even">
+<td>Amélioration de l’accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Il existe des milliers d’outils de traduction automatique qui utilisent l’IA d’une façon ou d’une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Banques de données terminologiques
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bien que ces outils n’utilisent pas l’intelligence artificielle, il nous semble essentiel de mentionner des ressources telles que TERMIUM Plus et Interactive Terminology for Europe (IATE), qui sont des bases de données terminologiques de référence. Ces bases de données, gérées par des langagiers professionels, facilitent la compréhension des termes spécifiques à une discipline en fournissant des définitions claires et des équivalents dans plusieurs langues et assurent également une cohérence terminologique dans les traductions. D’ailleurs, TERMIUM Plus a été fréquemment sollicité pour la traduction de plusieurs termes présents dans ce chapitre.</p>
+</div>
+</div>
+<section id="google-traduction" class="level4" data-number="8.3.2.1"><h4 data-number="8.3.2.1" class="anchored" data-anchor-id="google-traduction">
+<span class="header-section-number">8.3.2.1</span> Google Traduction</h4>
+<p>Très connu, l’une des forces de Google Traduction est son support d’une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. Google Traduction est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d’une phrase en considération. De plus, il supporte aussi la traduction de documents complets.</p>
+</section><section id="deepl" class="level4" data-number="8.3.2.2"><h4 data-number="8.3.2.2" class="anchored" data-anchor-id="deepl">
+<span class="header-section-number">8.3.2.2</span> DeepL</h4>
+<p>DeepL se démarque par une qualité supérieure de traduction mais dans un nombre de langues plus restreint que d’autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d’une structure de phrase.</p>
+</section><section id="mate-translate" class="level4" data-number="8.3.2.3"><h4 data-number="8.3.2.3" class="anchored" data-anchor-id="mate-translate">
+<span class="header-section-number">8.3.2.3</span> Mate Translate</h4>
+<p>Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d’utilisation et sa rapidité.</p>
+</section><section id="chatgpt" class="level4" data-number="8.3.2.4"><h4 data-number="8.3.2.4" class="anchored" data-anchor-id="chatgpt">
+<span class="header-section-number">8.3.2.4</span> ChatGPT</h4>
+<p>Évidemment, CHatGPT est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.</p>
+</section><section id="autres-outils" class="level4" data-number="8.3.2.5"><h4 data-number="8.3.2.5" class="anchored" data-anchor-id="autres-outils">
+<span class="header-section-number">8.3.2.5</span> Autres outils</h4>
+<p>Comme mentionné plus haut, il existe une panoplie d’outils de traduction automatique qui utilisent l’IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l’objectif de ce livre n’est pas d’en faire une description exhaustive mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer Microsoft Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.</p>
+</section></section><section id="les-assistants-de-revue-de-littérature" class="level3" data-number="8.3.3"><h3 data-number="8.3.3" class="anchored" data-anchor-id="les-assistants-de-revue-de-littérature">
 <span class="header-section-number">8.3.3</span> 3. Les Assistants de Revue de littérature</h3>
 <p>Dans cette section, deux principaux outils seront présentés: <em>research rabbit</em> et <em>ellicit</em>. Il s’agit de deux ressources gratuites en ligne qui facilite le début d’une revue des écrits, notamment lorsque l’on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champs d’étude. Ces deux outils sont d’ailleurs compatibles aves <em>Zotero</em>, qui fut présenté au chapitre 4 de ce livre.</p>
 <p>Débutons avec <em>Ellicit</em>. Avec l’intelligence artificielle, cet outils suggère des articles et des livres scientifiques à partir d’une question de recherche préliminaire, ou à partir de concepts. L’application offre une version gratuite, mais qui est toutefois limité dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, il faut l’utiliser avec parcimonie. Afin de démontrer l’utilité de ce logiciel, utilision un exemple concret.</p>
-<div id="fig-ellicit" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_image2.png" class="img-fluid figure-img">
+<div id="fig-ellicit" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_image2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.1: Menu d’accueil d’Ellicit</figcaption></figure>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.1: Menu d’accueil d’Ellicit
-</figcaption></figure>
-</div>
-<p>Par exemple, disons que je m’intéresse à la question suivante: Qu’est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. <em>Ellicit</em> offre une solution à ce problème. La <a href="#fig-ellicit" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> correspond au menu d’accueil du site web. Une fois là, je n’aurais qu’à écrire ma question dans la case « <em>Ask a research question</em> ». Les résultats générés sont représentés dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> et <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>8.3</span></a></p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-results1" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_image3.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.2: Court résumé du sujet
-</figcaption></figure>
+<p>Par exemple, disons que je m’intéresse à la question suivante: Qu’est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. <em>Ellicit</em> offre une solution à ce problème. La <a href="#fig-ellicit">Figure&nbsp;<span>8.1</span></a> correspond au menu d’accueil du site web. Une fois là, je n’aurais qu’à écrire ma question dans la case « <em>Ask a research question</em> ». Les résultats générés sont représentés dans la <a href="#fig-results1">Figure&nbsp;<span>8.2</span></a> et <a href="#fig-results2">Figure&nbsp;<span>8.3</span></a></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-results1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_image3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.2: Court résumé du sujet</figcaption></figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-results2" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_image4.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.3: Suggestions de lectures
-</figcaption></figure>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-results2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_image4.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.3: Suggestions de lectures</figcaption></figure>
 </div>
 </div>
 </div>
 </div>
 <p>Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.</p>
-<p>Cependant, il est fortement recommandé d’utiliser le résumé produit par le logiciel, dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>, et ceux de chaque suggestion, dans la <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>, à titre indicatif et uniquement pour notre propre réflexion. En d’autres termes, <strong>ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche</strong>. Ce logiciel doit impérativement être accompagné d’une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.</p>
-<p>Un autre outils soffre à nous afin de trouver des références supplémentaires: <em>Research Rabbit</em>. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j’ai lu plusieurs articles et/ou chapitres de livre, et que j’ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans <em>Research Rabbit</em>. La <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>8.4</span></a> présente le menu principal du site web.</p>
-<div id="fig-rr1" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_RR1.png" class="img-fluid figure-img">
+<p>Cependant, il est fortement recommandé d’utiliser le résumé produit par le logiciel, dans la <a href="#fig-results1">Figure&nbsp;<span>8.2</span></a>, et ceux de chaque suggestion, dans la <a href="#fig-results2">Figure&nbsp;<span>8.3</span></a>, à titre indicatif et uniquement pour notre propre réflexion. En d’autres termes, <strong>ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche</strong>. Ce logiciel doit impérativement être accompagné d’une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.</p>
+<p>Un autre outils soffre à nous afin de trouver des références supplémentaires: <em>Research Rabbit</em>. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j’ai lu plusieurs articles et/ou chapitres de livre, et que j’ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans <em>Research Rabbit</em>. La <a href="#fig-rr1">Figure&nbsp;<span>8.4</span></a> présente le menu principal du site web.</p>
+<div id="fig-rr1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_RR1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.4: Menu principal</figcaption></figure>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.4: Menu principal
-</figcaption></figure>
+<div id="fig-rr2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_rr2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.5: Importation manuelle de documents</figcaption></figure>
 </div>
-<div id="fig-rr2" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_rr2.png" class="img-fluid figure-img">
+<div id="fig-rr3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_RR3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.6: Présentation de la littérature similaire</figcaption></figure>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.5: Importation manuelle de documents
-</figcaption></figure>
-</div>
-<div id="fig-rr3" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_RR3.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.6: Présentation de la littérature similaire
-</figcaption></figure>
-</div>
-<div id="fig-rr4" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/chapitre9_rr4.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.7: Vue « Timeline » des références
-</figcaption></figure>
+<div id="fig-rr4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/chapitre9_rr4.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.7: Vue « Timeline » des références</figcaption></figure>
 </div>
 <p>Avant toute chose, <em>Research Rabbit</em> doit être considéré comme un outils qui m’aidera à <em>complémenter</em> ma revue des écrits. En d’autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. <em>Ellicit</em> peut nous aider pour cette tâche, mais aussi il est pratique de consulter des <em>handbooks</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d’excellente ressource pour débuter une recherche.</p>
-<p>Utilisons un exemple concret afin d’illustrer l’utilisation de <em>Research Rabbit</em>. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chaucn éclairer un aspect particulier à propos de cette question. Une fois qu’ils ont été importé dans Zotero et qu’ils ont été lu, je peux importé ma collection Zotero dans <em>Research Rabbit</em> en cliquant sur le bouton <em>Import Zotero Collection</em>, situé dans le coin supérieur gauche de la <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>8.4</span></a>. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert <em>Add Paper</em> situé dans la colone de notre collection. La <a href="#fig-rr2" class="quarto-xref">Figure&nbsp;<span>8.5</span></a> montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouter les premiers articles que nous aurons lu, <em>Research Rabbit</em> pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec les articles que j’aurai lu. La <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> présente cette cartographie.</p>
-<p>Nous avons trois possibilités afin de trouver des articles supplémentaires. La première, est de consulter les « Similar Word ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font parties de ma collection. Cependant, ce n’est pas l’option la plus recommandées. Comme nous pouvons le voir dans la <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>8.6</span></a>, en fonction des cinq articles que j’ai importé dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d’utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la <a href="#fig-rr4" class="quarto-xref">Figure&nbsp;<span>8.7</span></a>.</p>
+<p>Utilisons un exemple concret afin d’illustrer l’utilisation de <em>Research Rabbit</em>. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chaucn éclairer un aspect particulier à propos de cette question. Une fois qu’ils ont été importé dans Zotero et qu’ils ont été lu, je peux importé ma collection Zotero dans <em>Research Rabbit</em> en cliquant sur le bouton <em>Import Zotero Collection</em>, situé dans le coin supérieur gauche de la <a href="#fig-rr1">Figure&nbsp;<span>8.4</span></a>. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert <em>Add Paper</em> situé dans la colone de notre collection. La <a href="#fig-rr2">Figure&nbsp;<span>8.5</span></a> montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouter les premiers articles que nous aurons lu, <em>Research Rabbit</em> pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec les articles que j’aurai lu. La <a href="#fig-rr3">Figure&nbsp;<span>8.6</span></a> présente cette cartographie.</p>
+<p>Nous avons trois possibilités afin de trouver des articles supplémentaires. La première, est de consulter les « Similar Word ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font parties de ma collection. Cependant, ce n’est pas l’option la plus recommandées. Comme nous pouvons le voir dans la <a href="#fig-rr3">Figure&nbsp;<span>8.6</span></a>, en fonction des cinq articles que j’ai importé dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d’utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la <a href="#fig-rr4">Figure&nbsp;<span>8.7</span></a>.</p>
 <p>Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes: « All References » et « All Citations ». Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l’article que nous avons lu, et de visualiser les articles qui ont cité celui que nous avons lu. Ces options sont donc très utiles pour passer au « peigne fin » chacun de nos articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans notre utilisation de cette méthode. Il y a un risque « d’effet tunnel », soit que notre revue des écrits manque de largeur et de représentativité des différentes recherche sur le sujet. C’est pourquoi il est important de diversifier ces sources et d’utiliser ces deux options d’une façon complémentaire avec plusieurs articles différents. Il est donc utile d’ajouter au fur et à mesure ses sources dans <em>Research Rabbit</em> afin de visualiser la couverture de notre revue des écrits.</p>
 </section></section><section id="quelle-est-la-place-du-chercheur-maintenant" class="level2" data-number="8.4"><h2 data-number="8.4" class="anchored" data-anchor-id="quelle-est-la-place-du-chercheur-maintenant">
 <span class="header-section-number">8.4</span> Quelle est la place du chercheur maintenant?</h2>
@@ -452,7 +527,7 @@ Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fa
 <section id="installation-et-chargement-du-package" class="level3" data-number="8.7.1"><h3 data-number="8.7.1" class="anchored" data-anchor-id="installation-et-chargement-du-package">
 <span class="header-section-number">8.7.1</span> Installation et chargement du package</h3>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"openai"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"openai"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/irudnyts/openai">openai</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section><section id="configuration-de-lapi" class="level2" data-number="8.8"><h2 data-number="8.8" class="anchored" data-anchor-id="configuration-de-lapi">
@@ -460,18 +535,22 @@ Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fa
 <p>Procurez vous une clé API sur le site d’OpenAI. Soyez conscient que vous aurez besoin d’une carte de crédit pour vous inscrire et que l’utilisation de l’API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d’utilisation. En date de la publication du livre, le modèle de tarification d’OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie.</p>
 <p>Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R.</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
 <span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/edit.html">edit_r_environ</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ajoutez la ligne suivante à votre fichier <code>.Renviron</code>.</p>
 <div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="va">inserez</span><span class="op">-</span><span class="va">votre</span><span class="op">-</span><span class="va">cle</span><span class="op">-</span><span class="va">api</span><span class="op">-</span><span class="va">ici</span><span class="op">-</span><span class="va">sans</span><span class="op">-</span><span class="va">guillemets</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="va">inserez</span><span class="op">-</span><span class="va">votre</span><span class="op">-</span><span class="va">cle</span><span class="op">-</span><span class="va">api</span><span class="op">-</span><span class="va">ici</span><span class="op">-</span><span class="va">sans</span><span class="op">-</span><span class="va">guillemets</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="utilisation-de-lapi" class="level2" data-number="8.9"><h2 data-number="8.9" class="anchored" data-anchor-id="utilisation-de-lapi">
 <span class="header-section-number">8.9</span> Utilisation de l’API</h2>
 <p>La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d’utilisation de la fonction:</p>
 <div class="cell">
+<<<<<<< HEAD
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">create_chat_completion</span><span class="op">(</span></span>
+=======
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">create_chat_completion</span><span class="op">(</span></span>
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
 <span>    model <span class="op">=</span> <span class="st">"gpt-3.5-turbo"</span>,</span>
 <span>    messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
@@ -559,7 +638,7 @@ https://chat.openai.com/auth/login (exemple tiré de McAdoo 2023)
 <p>Toutefois, à moins que la recherche porte directement sur ChatGPT, nous déconseillons fortement d’utiliser uniquement ce que le robot conversationnel fournit comme réponse. Reprenons l’exemple du totalitarisme. Dans ce cas, bien que la définition fournît soit relativement bonne, nous recommandons d’aller consulter des sources académiques afin de trianguler la définition qui a été générée, d’une part, et surtout de présenter une définition qui est reconnue par les pairs scientifiques. Toutefois, pour ce faire, il est possible d’utiliser ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui portent sur le sujet. À partir de ces recommandations, nous pouvons nous référer directement à ces ouvrages et débuter notre revue des écrits. Surtout, à moins que ce ne soit que pour vous faire une idée du contenue, n’utilisez pas ChatGPT pour résumer un livre et utiliser le résumé pour votre travail! Cette pratique constitue une forme de plagiat. Aller consulter les ouvrages directement plutôt que d’utiliser les définitions fournies par ChatGPT fait partie des bonnes pratiques. De plus, développer un esprit de synthèse est fondamental pour chaque étudiant universitaire, ainsi que pour les futurs chercheurs. Commencez dès maintenant à vous pratiquer pour développer ces capacités. Ne demandez pas à ChatGPT de le faire à votre place.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-alpaydin_bach14" class="csl-entry" role="listitem">
 Alpaydin, E., &amp; Bach, F. (2014). <em>Introduction to <span>Machine Learning</span></em> (3e éd.). MIT Press. <a href="https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851">https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851</a>
 </div>
@@ -587,6 +666,9 @@ Devedzic, V. (2022). Identity of <span>AI</span>. <em>Discover Artificial Intell
 <div id="ref-forestier_ansermet21" class="csl-entry" role="listitem">
 Forestier, F., &amp; Ansermet, F. (2021). Le Transhumanisme. Dans <em>La <span>Dévoration Numérique</span></em> (p. 19‑54). Odile Jacob. <a href="https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm">https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm</a>
 </div>
+<div id="ref-glover24" class="csl-entry" role="listitem">
+Glover, E. (2024, février 13). <em>Machine <span>Translation</span>: <span>How It Works</span> and <span>Tools</span> to <span>Choose From</span></em>. <a href="https://builtin.com/artificial-intelligence/machine-translation">https://builtin.com/artificial-intelligence/machine-translation</a>
+</div>
 <div id="ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" class="csl-entry" role="listitem">
 Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, Ziming Liu, Payal Chandak, Shengchao Liu, Peter Van Katwyk, Andreea Deac, Anima Anandkumar, Karianne Bergen, Carla P. Gomes, Shirley Ho, Pushmeet Kohli, Joan Lasenby, Jure Leskovec, Tie-Yan Liu, Arjun Manrai, Debora Marks, Bharath Ramsundar, Le Song, Jimeng Sun, Jian Tang, Petar Veličković, Max Welling, Linfeng Zhang, Connor W. Coley, &amp; Yoshua Bengio, &amp; Marinka Zitnik. (2023). Scientific Discovery in the Age of Artificial Intelligence. <em>Nature</em>, <em>620</em>, 47‑60. <a href="https://www.nature.com/articles/s41586-023-06221-2">https://www.nature.com/articles/s41586-023-06221-2</a>
 </div>
@@ -611,6 +693,9 @@ McAdoo, T. (2023, avril 7). <em>How to Cite <span>ChatGPT</span></em>. https://a
 <div id="ref-mccarthy07" class="csl-entry" role="listitem">
 McCarthy, J. (2007). <em><span>WHAT IS ARTIFICIAL INTELLIGENCE</span>?</em>
 </div>
+<div id="ref-openai19" class="csl-entry" role="listitem">
+OpenAi. (2019). <em>Better Language Models and Their Implications</em> [Research Publication]. OpenAi Research. <a href="https://openai.com/research/better-language-models">https://openai.com/research/better-language-models</a>
+</div>
 <div id="ref-park_etal23" class="csl-entry" role="listitem">
 Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., &amp; Bernstein, M. S. (2023). Generative <span>Agents</span>: <span>Interactive Simulacra</span> of <span>Human Behavior</span>. <em>arXiv</em>. <a href="https://doi.org/10.48550/arXiv.2304.03442">https://doi.org/10.48550/arXiv.2304.03442</a>
 </div>
@@ -622,6 +707,9 @@ Roser, M. (2022, décembre 6). <em>The <span>Brief History</span> of <span>Artif
 </div>
 <div id="ref-sartre96" class="csl-entry" role="listitem">
 Sartre, J.-P. (1996). <em>L’existentialisme Est Un Humanisme</em>. Gallimard.
+</div>
+<div id="ref-tabsharani23" class="csl-entry" role="listitem">
+Tabsharani, F. (2023, août). <em>What Is <span>Machine Translation</span>? <span>Definition</span> from <span>TechTarget</span></em>. Enterprise AI. <a href="https://www.techtarget.com/searchenterpriseai/definition/machine-translation">https://www.techtarget.com/searchenterpriseai/definition/machine-translation</a>
 </div>
 <div id="ref-wang19" class="csl-entry" role="listitem">
 Wang, P. (2019). On <span>Defining Artificial Intelligence</span>. <em>Journal of Artificial General Intelligence</em>, <em>10</em>(2), 1‑37. <a href="https://doi.org/10.2478/jagi-2019-0002">https://doi.org/10.2478/jagi-2019-0002</a>
@@ -679,33 +767,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -774,15 +835,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -861,6 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+<<<<<<< HEAD
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -880,8 +940,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+=======
+  function tippyHover(el, contentFn) {
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -891,17 +955,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -918,125 +973,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         return "";
       }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1080,7 +1016,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1106,32 +1041,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1191,27 +1100,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./chapitre_7.html" class="pagination-link" aria-label="Baliser les sciences sociales&amp;nbsp;: langages et pratiques">
+      <a href="./chapitre_7.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Baliser les sciences sociales&nbsp;: langages et pratiques</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./conclusion.html" class="pagination-link" aria-label="Kit de démarrage pour les sciences sociales numériques">
+      <a href="./conclusion.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
 

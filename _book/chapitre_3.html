@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 
 <meta charset="utf-8">
+<<<<<<< HEAD
 <meta name="generator" content="quarto-1.4.551">
+=======
+<meta name="generator" content="quarto-1.3.450">
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +27,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -85,13 +89,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -100,7 +98,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -116,12 +113,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">À la quête de l'optimisation</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -131,12 +128,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -215,6 +212,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Installation de Biblatex et configuration de Zotero</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -222,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -232,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#limportance-dune-méthode-de-travail-efficace" id="toc-limportance-dune-méthode-de-travail-efficace" class="nav-link active" data-scroll-target="#limportance-dune-méthode-de-travail-efficace"><span class="header-section-number">3.1</span> L’importance d’une méthode de travail efficace</a></li>
   <li><a href="#gestion-individuelle" id="toc-gestion-individuelle" class="nav-link" data-scroll-target="#gestion-individuelle"><span class="header-section-number">3.2</span> Gestion Individuelle</a>
   <ul class="collapse">
-  <li><a href="#gestion-de-tâches-notion-monday" id="toc-gestion-de-tâches-notion-monday" class="nav-link" data-scroll-target="#gestion-de-tâches-notion-monday"><span class="header-section-number">3.2.1</span> Gestion de tâches (Notion, Monday)</a></li>
+  <li><a href="#gestion-de-tâches" id="toc-gestion-de-tâches" class="nav-link" data-scroll-target="#gestion-de-tâches"><span class="header-section-number">3.2.1</span> Gestion de tâches</a></li>
   <li><a href="#enregistrement-de-protocole" id="toc-enregistrement-de-protocole" class="nav-link" data-scroll-target="#enregistrement-de-protocole"><span class="header-section-number">3.2.2</span> Enregistrement de protocole</a></li>
   <li><a href="#code-en-open-access-repository-github" id="toc-code-en-open-access-repository-github" class="nav-link" data-scroll-target="#code-en-open-access-repository-github"><span class="header-section-number">3.2.3</span> Code en open access (Repository github)</a></li>
   <li><a href="#stockage-des-données-dropbox-autres-clouds" id="toc-stockage-des-données-dropbox-autres-clouds" class="nav-link" data-scroll-target="#stockage-des-données-dropbox-autres-clouds"><span class="header-section-number">3.2.4</span> Stockage des données (Dropbox, autres clouds)</a></li>
@@ -246,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1"><span class="header-section-number">3.3.5</span> Conclusion</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_3.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -266,9 +275,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-
 </header>
-
 
 <!--AFC: Je changerais le titre, il ne m'évoque rien de bien clair. "Plateformes de travail collaboratif&nbsp;: comment travailler efficacement?"-->
 <p>Le monde de la recherche en sciences sociales numériques est en constante évolution, offrant de nouvelles opportunités mais aussi des défis uniques.<!--AFC: Peut-être trouver une phrase moins générique pour commencer?--> Dans cette quête incessante pour optimiser notre efficacité et notre collaboration, l’utilisation des bons outils devient la clé de la réussite. Que vous soyez un chercheur en herbe ou un professionnel chevronné, la manière dont vous organisez vos méthodes de travail et gérez vos ressources peut déterminer la qualité et l’impact de vos résultats.</p>
@@ -285,6 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="gestion-individuelle" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="gestion-individuelle"><span class="header-section-number">3.2</span> Gestion Individuelle</h2>
+<<<<<<< HEAD
 <section id="gestion-de-tâches-notion-monday" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="gestion-de-tâches-notion-monday"><span class="header-section-number">3.2.1</span> Gestion de tâches (Notion, Monday)</h3>
 <p>Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, les travaux s’échelonnent souvent sur plusieurs années, et il est facile de perdre ses objectifs de vue, ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches convenablement facilite la mesure des progrès, et permet de constamment vérifer si ceux-ci sont encore alignés avec les objectifs finaux.</p>
@@ -295,16 +303,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h5 data-number="3.2.1.1.1" class="anchored" data-anchor-id="quand"><span class="header-section-number">3.2.1.1.1</span> Quand</h5>
 <p>Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d’autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d’autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L’agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l’avancement et des blocants des objectifs.</p>
 </section>
+=======
+<section id="gestion-de-tâches" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="gestion-de-tâches"><span class="header-section-number">3.2.1</span> Gestion de tâches</h3>
+<p>Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, où les travaux s’échelonnent souvent sur plusieurs années, il est facile de perdre de vue ses objectifs ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches de manière efficace facilite la mesure des progrès et permet de constamment vérifier si ceux-ci sont encore alignés avec les objectifs finaux.</p>
+<section id="comment" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="comment"><span class="header-section-number">3.2.1.1</span> Comment</h4>
+<p>Gérer ses tâches de façon efficace passe par une structuration claire des objectifs du projet. Il est important de connaître la destination finale afin de choisir la meilleure direction pour y parvenir. Pour ce faire, il est utile de schématiser ou de lister la conception de la version finale du projet. Dans l’idéal, à quoi ressemble-t-il dans sa forme aboutie? Une fois cette vision clairement définie, il est possible de désagréger le projet en grandes étapes. Que faut-il accomplir, à l’échelle macro, pour atteindre les objectifs fixés?</p>
+<p>À cette étape, il est crucial de prendre en compte les ressources financières, temporelles et humaines disponibles. Cela permet de déterminer de manière réaliste ce qui est possible. Identifier ces grandes étapes contribue à la création d’un plan de projet structuré où chaque phase est clairement définie. Cela aide à anticiper les besoins en ressources et à ajuster les échéances en conséquence.</p>
+<p>La révision continue est également un élément clé du processus de gestion des tâches. En réévaluant régulièrement l’état d’avancement du projet par rapport au plan initial, il est possible d’apporter des ajustements nécessaires pour rester sur la bonne voie. Cet astuce permet de répondre aux changements inévitables qui surviennent au cours de la recherche, qu’ils soient dus à des découvertes inattendues, des changements dans les directives institutionnelles ou des feedbacks des pairs.</p>
+</section>
+<section id="quand" class="level4" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="quand"><span class="header-section-number">3.2.1.2</span> Quand</h4>
+<p>Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d’autres. En effet, un projet est vraissemblablement composé de tâches qui doivent être réalisées avant que d’autres soient amorcées. Le défi est de déterminer efficacement ce qui doit être priorisé. L’agilité est un processus de travail qui facilite cette priorisation. En agilité, des objectifs sont fixés dans le temps, et sont évalués de manière constante. Les tâches sont déterminées en fonction de l’avancement et des blocants des objectifs.</p>
+<p>Avec des objectifs bien définis et des étapes claires pour y parvenir, la structure du projet est complète. Il est donc temps de se lancer dans la gestion des tâches. En fonction des objectifs établis, certaines tâches sont plus importantes que d’autres. Un projet est généralement composé de tâches qui doivent être réalisées dans un ordre spécifique, où certaines doivent impérativement précéder d’autres. Le défi est de déterminer efficacement ce qui doit être priorisé pour maintenir une progression fluide et efficace.</p>
+<p>L’agilité est un processus de travail qui facilite cette priorisation. En adoptant une approche agile, les objectifs sont fixés dans le temps et sont constamment évalués. Cela permet une adaptation rapide et une réponse aux changements sans compromettre les résultats finaux. De cette façon, les tâches sont déterminées et ajustées en fonction de l’avancement du projet et des éventuels obstacles rencontrés. Le projet avance de façon incrémentale.</p>
+<p>Pour une mise en œuvre efficace de l’agilité, il est utile de planifier ses objectifs sur une période de quelques semaines, connues sous le nom de sprints en méthode Scrum, où on évalue le travail accompli et on redéfinit les priorités pour la prochaine période. Ces sprints permettent de s’assurer de rester concentré sur les tâches qui apportent le plus de valeur au projet et d’ajuster les plans en temps réel en fonction des résultats obtenus.</p>
+</section>
+<section id="où" class="level4" data-number="3.2.1.3">
+<h4 data-number="3.2.1.3" class="anchored" data-anchor-id="où"><span class="header-section-number">3.2.1.3</span> Où</h4>
+<p>Toutes ces pratiques deviennent rapidement complexes si elles ne sont pas encadrées dans un environnement qui permet d’en faire le suivi. Il peut être judicieux de faire appel à des outils de gestion de projet qui supportent l’agilité, tels que Notion ou Mondays. Ces outils permettent de visualiser les tâches à faire sous forment de tableaux de bords intéractifs, dans lesquels il est possible de les déplacer en fonction de leur statut d’avancement. Ces outils permettent de structurer les tâches d’un projet et d’en faire le suivi facilement du début à la fin.</p>
+<p>Il est également judicieux de faire appel à des outils de gestion de projet qui supportent l’agilité, tels q. Ces outils permettent de visualiser les tâches sous forme de tableaux de bord interactifs où les tâches peuvent être déplacées, modifiées ou mises à jour en temps réel. Ils favorisent la transparence et la communication entre les membres de l’équipe, essentielles pour une gestion agile des tâches.</p>
+<p>Enfin, il est crucial d’intégrer des pratiques de réflexion et d’amélioration continue. Après chaque sprint, l’équipe devrait se réunir pour une rétrospective afin de discuter de ce qui a bien fonctionné et de ce qui pourrait être amélioré. Cette culture de l’amélioration continue est au cœur de l’agilité et contribue à l’efficacité et à la réussite du projet à long terme.</p>
+<p>Pour déterminer quelles tâches accomplir et dans quel ordre, voici une court processus par étapes :</p>
+<ol type="1">
+<li>Éllaborer les tâches en fonction des objectifs de sprint.</li>
+<li>Déterminer la linéarité des tâches, c’est-à-dire, quelle tâche doit être accomplie afin d’en début une autre.</li>
+<li>Quantifier le poids de chaque tâche. Certaines tâches sont plus longues que d’autres. Adopter un système qui vous permet d’identifier quelles tâches prendront quelques minutes seulement (comme l’envoi du courriel), et quelles tâches prennent plusieurs jours. Si une tâche est trop longue, c’est un signe qu’elle pourrait être désagrégée en plusieurs tâches plus petites. Cela facilite également le suivi.</li>
+<li>Donner une échéance réaliste à chaque tâche, en fonction des étapes précédentes. Idéalement, toutes les tâches ne sont pas dues pour la même date, pour éviter un goulot d’étranglement. Les échéances aident à prioriser les tâches.</li>
+<li>Prioriser les tâches qui ont l’échéance le plus sérré. Si certaines tâches accumulent un retard, c’est peut-être parce que vous devez réévaluer les échéances, les objectifs, ou encore parce qu’il y a des blocants dans vos méthodes de travail. Faire un tel suivi permet d’évaluer sa propre efficacité dans ses méthodes de travail.</li>
+</ol>
+<p>L’utilisation d’outils numériques pour la gestion des tâches ne signifie pas qu’il faut abandonner l’agenda papier ou le cahier de notes. Plusieurs trouvent essentiels de prendre des notes et de se faire des listes de tâches à la main. Il est tout à fait possible de combiner les méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de tâches, puis faites votre liste de tâches à la main en conséquence, et planifiez votre semaine. De cette façon, vous savez chaque jour le travail à prioriser.</p>
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
 </section>
 </section>
 <section id="enregistrement-de-protocole" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="enregistrement-de-protocole"><span class="header-section-number">3.2.2</span> Enregistrement de protocole</h3>
+<p>Après avoir établi l’importance de la gestion des tâches et comment une approche agile peut optimiser ce processus, il est complémentaire de d’aborder l’enregistrement méthodique de ces tâches et des étapes du projet. Cette documentation assure la transparence, la réplicabilité et la rigueur scientifique de la recherche. L’enregistrement du protocole de recherche sert plusieurs objectifs clés qui se connectent directement à la gestion agile des tâches. Il agit comme une archive vivante des décisions prises, des méthodes utilisées et des modifications apportées tout au long du projet. Cela permet la vérification et la validation des résultats, et de maintenir une vision claire de l’évolution du projet.</p>
+<p>L’enregistrement de protocole en science est une pratique facultative, mais de plus en plus populaire, qui consiste à documenter et à déposer de manière détaillée le plan de recherche d’une étude avant que celle-ci ne soit menée. Cette démarche s’inscrit dans le cadre des pratiques de recherche ouverte et transparente. Elle a plusieurs avantages : D’abord, rendre les protocoles de recherches publics démontre un engagement envers des méthodes rigoureuses. Cela augmente la confiance envers les résultats obtenus et les méthodes employées. Une démarche détaillée permet aussi la réplicabilité du projet, en offrant aux autres chercheurs du domaine les étapes détaillées employées pour se rendre aux résultats.</p>
+<p>Un autre avantage est d’éviter qu’une étude soit réalisée par deux chercheurs au même moment. En enregistrant sa recherche, tous peuvent consulter les recherches en cours, et ainsi s’assurer que leurs projets sont uniques. De cette manière, les ressources académiques sont maximisées. L’enregistrement du protocole permet aussi d’évaluer la recherche par les pairs avant d’amorcer sa réalisation, ce qui peut augmenter la crédibilité de l’étude, faciliter la publication dans une revue scientifique, et gagner du temps dans la réalisation du projet.</p>
+<p>Enfin, au coeur du concept de l’enregistrement de protocole se trouve l’idée de l’intégrité de la recherche. La science, par définition, est transparente dans ses démarches. Rendre public ses intentions et devoir justifier chaque modification s’inscrit dans cette optique d’intégrité. Un tel processus rend difficile la chasse au résultats, un fléau en science où les chercheurs privilégient l’atteinte de résultats avant la démarche. Le système très compétitif et chronophage de la publication scientifique encourage ce genre de pratique. L’enregistrement de protocole tente d’encourager des pratiques transparentes, qui sont bien acceuillies par les revues scientifiques.</p>
+<p>Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes :</p>
+<ol type="1">
+<li>Préparer le protocole. Un document détaille les hypothèses, les méthodes et les analyses prévues. l’objectif est de rédiger un document suffisamment détaillé pour permettre à d’autres chercheurs de reproduire l’étude. La rédaction de ce document n’est pas une perte de temps, car une majorité devrait pouvoir être réutilisée dans l’étude finale.</li>
+<li>Enregistrer le protocole. L’enregistrement se fait dans un registre public. Il existe différents registres, ouverts à tous les domaines (Open Science Framework, Research Registry) ou plus spécifiques aux sciences sociales (EGAP, AEA RCT).</li>
+<li>Valider le protocole. Le protocole est évalué par les pairs, pour assurer sa complétude, puis il devient public. Ainsi, vous obtenez des commentaires avant même de soumettre à une revue, ce qui peut vous faire sauver du temps en apportant des modifications avant la réalisation, plutôt qu’après.</li>
+<li>Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu’ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.</li>
+</ol>
 </section>
 <section id="code-en-open-access-repository-github" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="code-en-open-access-repository-github"><span class="header-section-number">3.2.3</span> Code en open access (Repository github)</h3>
-<section id="gestion-de-versions-git" class="level4" data-number="3.2.3.1">
-<h4 data-number="3.2.3.1" class="anchored" data-anchor-id="gestion-de-versions-git"><span class="header-section-number">3.2.3.1</span> Gestion de versions (git)</h4>
-</section>
+<p>L’enregistrement de protocole est seulement un volet de la transparence en science. De même que pour les protocoles, la mise à disposition du code source employé pour les analyses permet non seulement de vérifier les résultats publiés mais aussi de renforcer la confiance dans les conclusions de la recherche. Le partage du code, structuré et commenté, via une plateforme comme GitHub, s’inscrit dans cette démarche de recherche ouverte.</p>
+<p>Les langages de programmation sont très fluides et décentralisés, et les codes employés pour arriver à un même résultat peuvent varier d’une personne à l’autre. Rendre son code public permet la reproductibilité et la transparence dans la manipulation et l’analyse de ses données. Plusieurs revues exigent de rendre le code en libre accès lors d’une soumission.</p>
+<ol type="1">
+<li>Préparation du code</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li>ReadMe</li>
+<li>Structuration du code + commentaires</li>
+</ol>
+<!-- -->
+<ol start="2" type="1">
+<li>Dépot du code sur github</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li>Création du repo</li>
+<li>Gestion des version (git)</li>
+</ol>
 </section>
 <section id="stockage-des-données-dropbox-autres-clouds" class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4" class="anchored" data-anchor-id="stockage-des-données-dropbox-autres-clouds"><span class="header-section-number">3.2.4</span> Stockage des données (Dropbox, autres clouds)</h3>
@@ -324,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre8_dropbox.png" class="img-fluid figure-img"></p>
-<figcaption>image1</figcaption>
+<figcaption class="figure-caption">image1</figcaption>
 </figure>
 </div>
 <!--AFC: Parler de l'image?-->
@@ -480,7 +547,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre8_gitdesktop.png" class="img-fluid figure-img"></p>
-<figcaption>image</figcaption>
+<figcaption class="figure-caption">image</figcaption>
 </figure>
 </div>
 <p>GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L’application simplifie également la résolution des conflits lors de la fusion des branches.</p>
@@ -595,33 +662,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -688,15 +728,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -775,6 +813,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+<<<<<<< HEAD
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -794,8 +833,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+=======
+  function tippyHover(el, contentFn) {
+>>>>>>> ba664ae417f1efea335d451bec778873023650a2
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -805,17 +848,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -832,125 +866,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         return "";
       }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -994,7 +909,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1020,32 +934,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1107,12 +995,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapitre_2.html" class="pagination-link" aria-label="R ou ne pas R?">
+      <a href="./chapitre_2.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R ou ne pas R?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_4.html" class="pagination-link" aria-label="Gestion de la littérature">
+      <a href="./chapitre_4.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1120,18 +1008,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 

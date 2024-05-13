@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.8">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
 
-<title>Outils de recherche en sciences sociales numériques – 5&nbsp; Les outils de collecte de données</title>
+<title>Outils de recherche en sciences sociales numériques - 5&nbsp; Les outils de collecte de données</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -51,13 +85,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -66,7 +94,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -82,12 +109,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -97,12 +124,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -181,6 +208,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Installation de Biblatex et configuration de Zotero</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -188,26 +227,24 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#le-big-data-et-les-différents-acteurs-de-la-société" id="toc-le-big-data-et-les-différents-acteurs-de-la-société" class="nav-link active" data-scroll-target="#le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">5.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></a></li>
+  <li><a href="#les-outils-traditionnels-de-collecte-de-données-numériques-en-sciences-sociales" id="toc-les-outils-traditionnels-de-collecte-de-données-numériques-en-sciences-sociales" class="nav-link active" data-scroll-target="#les-outils-traditionnels-de-collecte-de-données-numériques-en-sciences-sociales"><span class="header-section-number">5.1</span> <strong>Les outils traditionnels de collecte de données numériques en sciences sociales</strong></a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">5.2</span> </a></li>
-  <li><a href="#plateformes-de-sondages-et-collecte-de-données" id="toc-plateformes-de-sondages-et-collecte-de-données" class="nav-link" data-scroll-target="#plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">5.3</span> Plateformes de sondages et collecte de données</a>
+  <li><a href="#le-web-scraping---collecter-automatiquement-des-données-provenant-de-sites-web" id="toc-le-web-scraping---collecter-automatiquement-des-données-provenant-de-sites-web" class="nav-link" data-scroll-target="#le-web-scraping---collecter-automatiquement-des-données-provenant-de-sites-web"><span class="header-section-number">5.3</span> <strong>Le web scraping - collecter automatiquement des données provenant de sites web</strong></a></li>
+  <li><a href="#extraire-des-données-avec-r" id="toc-extraire-des-données-avec-r" class="nav-link" data-scroll-target="#extraire-des-données-avec-r"><span class="header-section-number">5.4</span> Extraire des données avec R</a>
   <ul class="collapse">
-  <li><a href="#les-principales-plateformes-web." id="toc-les-principales-plateformes-web." class="nav-link" data-scroll-target="#les-principales-plateformes-web."><span class="header-section-number">5.3.1</span> Les principales plateformes web.</a></li>
-  <li><a href="#les-limites-des-sondages-en-ligne" id="toc-les-limites-des-sondages-en-ligne" class="nav-link" data-scroll-target="#les-limites-des-sondages-en-ligne"><span class="header-section-number">5.3.2</span> Les limites des sondages en ligne</a></li>
+  <li><a href="#limportance-de-comprendre-la-structure-du-code-html" id="toc-limportance-de-comprendre-la-structure-du-code-html" class="nav-link" data-scroll-target="#limportance-de-comprendre-la-structure-du-code-html"><span class="header-section-number">5.4.1</span> L’importance de comprendre la structure du code HTML</a></li>
+  <li><a href="#le-package-rvest-son-fonctionnement-et-ses-possibilités" id="toc-le-package-rvest-son-fonctionnement-et-ses-possibilités" class="nav-link" data-scroll-target="#le-package-rvest-son-fonctionnement-et-ses-possibilités"><span class="header-section-number">5.4.2</span> <strong>Le package rvest: son fonctionnement et ses possibilités</strong></a></li>
   </ul></li>
-  <li><a href="#factiva-outils-de-récolte-de-données-médiatiques" id="toc-factiva-outils-de-récolte-de-données-médiatiques" class="nav-link" data-scroll-target="#factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">5.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></a></li>
-  <li><a href="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." id="toc-les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="nav-link" data-scroll-target="#les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">5.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></a></li>
-  <li><a href="#covidence-outil-de-récolte-darticles-scientifiques" id="toc-covidence-outil-de-récolte-darticles-scientifiques" class="nav-link" data-scroll-target="#covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">5.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></a></li>
-  <li><a href="#conclusion-et-discussion" id="toc-conclusion-et-discussion" class="nav-link" data-scroll-target="#conclusion-et-discussion"><span class="header-section-number">5.7</span> Conclusion et discussion:</a></li>
+  <li><a href="#conclusion-et-discussion" id="toc-conclusion-et-discussion" class="nav-link" data-scroll-target="#conclusion-et-discussion"><span class="header-section-number">5.5</span> Conclusion et discussion:</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -227,123 +264,87 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
 
-
-<p>La révolution numérique engendrée par l’émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l’accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l’accès à ces données représente un défi éthique et théorique, tel qu’explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014). Le chapitre qui suit vise à offrir un portrait de certains outils de collecte de données pouvant être exploités par les chercheurs.euses en sciences sociales visant à tirer profit de la révolution numérique. À travers ce chapitre, il sera question d’outils permettant de collecter des données de sondages, des données médiatiques, de même qu’une panoplie de données textuelles par le biais d’extracteurs. Ce chapitre offre donc un tour d’horizon de certains outils de collecte de données à la disposition de la communauté scientifique souhaitant entamer des recherches en sciences sociales numériques.</p>
-<section id="le-big-data-et-les-différents-acteurs-de-la-société" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="le-big-data-et-les-différents-acteurs-de-la-société"><span class="header-section-number">5.1</span> <strong>Le Big Data et les différents acteurs de la société&nbsp;:</strong></h2>
-<p>Le champ d’étude de la science politique repose sur l’étude de trois types d’acteurs distincts ayant un impact sur la condition socio-économique et politique d’une société&nbsp;: les décideurs, les médias et les citoyens. La recherche sur les décideurs comprend entre autres l’analyse des politiques publiques, des partis politiques, de stratégies électorales ou encore l’analyse de discours de politiciens ou d’organisations. L’étude des médias repose largement sur le rôle des médias dans la formation des priorités et des jugements des citoyens quant aux enjeux politiques, de même que sur leur capacité d’influencer l’agenda des politiciens. En ce qui concerne les citoyens, le champ d’étude de l’opinion publique se consacre à l’analyse des comportements et des attitudes politiques des individus. De plus, de nombreuses recherches visant à comprendre le rôle des citoyens dans une société démocratique portent sur l’influence de la société civile de même que sur l’effet des mouvements sociaux.</p>
-<p>Chacun de ces champs de recherches se voit confronté à une panoplie de défis théoriques et techniques en lien avec l’émergence des données massives. La révolution technologique permet une étude plus approfondie des phénomènes auxquels sont confrontés les différents acteurs de la société démocratique, en raison de l’importante quantité de données accessible aux chercheurs.euses. Toutefois, la collecte de données permettant de mener à terme de telles études peut s’avérer complexe. Pour chacun des trois acteurs démocratiques énumérés précédemment, les sections suivantes énumèrent et expliquent les capacités techniques d’outils permettant aux chercheurs.euses d’accéder à des données massives. Bien que d’autres outils existent et offrent des résultats satisfaisants, les méthodes suivantes sont particulièrement pertinentes dans une optique d’étude des sciences sociales numériques en raison de leur capacités techniques de même que par la relative simplicité de leur utilisation.</p>
+<p>La révolution numérique engendrée par l'émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l'accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l'accès à ces données représente un défi éthique et théorique, tel qu'explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014).&nbsp;</p>
+<p>Le chapitre qui suit vise à offrir un portrait des outils de collectes de données pouvant être exploitées par les scientifiques désirant entreprendre des recherches en sciences sociales numériques. Toutefois, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de collecte de données brutes pouvant être analysées par les chercheurs.ses. Les lignes suivantes mettront un accent particulier sur le web scraping et les opportunités de recherche qui en découlent. Ce chapitre offre donc un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter le web scraping et en offrant des exemples concrets de son utilisation.</p>
+<section id="les-outils-traditionnels-de-collecte-de-données-numériques-en-sciences-sociales" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="les-outils-traditionnels-de-collecte-de-données-numériques-en-sciences-sociales"><span class="header-section-number">5.1</span> <strong>Les outils traditionnels de collecte de données numériques en sciences sociales</strong></h2>
+<p>Le champ d'étude de la science politique repose sur l'étude de trois types d'acteurs distincts ayant un impact sur la condition socio-économique et politique d'une société : les décideurs, les médias et les citoyens. La recherche sur les décideurs comprend entre autres l'analyse des politiques publiques, des partis politiques, de stratégies électorales ou encore l'analyse de discours de politiciens ou d'organisations. L'étude des médias repose largement sur le rôle des médias dans la formation des priorités et des jugements des citoyens quant aux enjeux politiques, de même que sur leur capacité d'influencer l'agenda des politiciens. En ce qui concerne les citoyens, le champ d'étude de l'opinion publique se consacre à l'analyse des comportements et des attitudes politiques des individus. De plus, de nombreuses recherches visant à comprendre le rôle des citoyens dans une société démocratique portent sur l'influence de la société civile de même que sur l'effet des mouvements sociaux.&nbsp;</p>
+<p>L'opinion publique est traditionnellement étudiée par le biais de données de sondages. L'émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s'il avait été conduit manuellement (Nayak &amp; K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas. Parmi les plateformes web les plus reconnues de construction et d'Administration de sondage, Qualtrics figure en tête de liste. Cette plateforme est une des plus reconnues et utilisée à l'international, tant dans le milieu académique que dans le secteur privé. En plus d'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l'expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, Qualtrics s'adapte à différents formats en fonction de l'appareil du répondant (Evans &amp; Mathur, 2018). Son principal désavantage provient de son coût d'acquisition, qui est relativement dispendieux.&nbsp;</p>
+<p>Au niveau des médias, l'arrivée de données massives permet de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l'importante quantité de données accessibles aux chercheurs.euses, ce qui permet une compréhension accrue des réalités médiatiques modernes, marquées par la fragmentation. L'outil Factiva offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l'accès à des documents d'entreprises. En revanche, l'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l'accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons. Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour l’analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva.&nbsp;</p>
 </section>
 <section id="section" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="section"><span class="header-section-number">5.2</span> </h2>
-</section>
-<section id="plateformes-de-sondages-et-collecte-de-données" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="plateformes-de-sondages-et-collecte-de-données"><span class="header-section-number">5.3</span> Plateformes de sondages et collecte de données</h2>
-<p>Malgré certaines différences méthodologiques, toute recherche doit analyser et interpréter des données fiables et de qualité afin d’émettre des résultats (Nayak &amp; K. A., 2019). Notamment lorsqu’il est question d’étudier les citoyens et l’opinion publique, il est nécessaire d’accumuler suffisamment de données auprès d’un échantillon assez grand afin d’inférer des conclusions sur la population.</p>
-<p><br>
-Quelques méthodes sont couramment utilisées pour la collecte de données sont le sondage, le panel, l’enquête, ou le questionnaire. Cette section se concentre sur le sondage. Ils peuvent être manuels ou électroniques, et dans le second cas, peuvent être administrés par ordinateur, par courriel ou via le web (Nayak &amp; K. A., 2019). La différence majeure entre les méthodes manuelles et les méthodes numériques réside dans le fait que les premières impliquent un contact direct entre le chercheur et le répondant, tandis que dans le cas des secondes le contact est indirect (Evans &amp; Mathur, 2018). L’arrivée des données massives et des outils numériques offre une panoplie de nouvelles opportunités de collecte de données pour la communauté scientifique. Lorsqu’exécutée manuellement, la collecte de données et la réalisation de sondages peuvent devenir des tâches lourdement fastidieuses, et de facto, demander énormément de ressources pour mener une recherche à grande échelle. C’est pourquoi les technologies du numérique peuvent faciliter cet aspect de la recherche en fournissant des plateformes de sondages et de collecte de données. De plus, les sondages représentaient en 2016 environ 20% du chiffre d’affaires de l’industrie globale du marketing (Evans &amp; Mathur, 2018). Ces chiffres montrent la pertinence de l’acquisition de compétences nécessaires à la formation de sondages, tant dans le monde académique que professionnel. Le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d’entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s’il avait été conduit manuellement (Nayak &amp; K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d’utiliser des arbres de logique avancés que les sondages manuels ne permettent pas.</p>
-<section id="les-principales-plateformes-web." class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="les-principales-plateformes-web."><span class="header-section-number">5.3.1</span> Les principales plateformes web.</h3>
-<p><br>
-Il existe un large éventail de plateformes de sondages et de collecte de données qui peuvent être utiles dans un contexte académique. Cet ouvrage se limite à cinq d’entre elles: Qualtrics, REDCap, SurveyMonkey, Google Forms et Typeform. Cependant, il n’est pas déconseillé de se renseigner sur les autres plateformes disponibles en fonction de ses besoins et de ses ressources. Voici une liste non-exhaustive: LimeSurvey, Zoho Survey, Qualaroo, Formstack, Wufoo, Checkbox Survey, SmartSurvey, QuickTapSurvey, SoGoSurvey, Snap Surveys, AskNicely, Opinio, Alchemer, Cognito Forms, Feedbackify.</p>
-<section id="qualtrics-httpswww.qualtrics.com" class="level4" data-number="5.3.1.1">
-<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="qualtrics-httpswww.qualtrics.com"><span class="header-section-number">5.3.1.1</span> Qualtrics (https://www.qualtrics.com/)</h4>
-<p><br>
-Cette plateforme est une des plus reconnues et utilisées à l’international, tant dans le milieu académique que dans le secteur privé. En plus d’offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l’expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l’administration des sondages. Par exemple, Qualtrics s’adapte à différents formats en fonction de l’appareil du répondant (Evans &amp; Mathur, 2018).</p>
-</section>
-<section id="redcap-httpswww.project-redcap.org" class="level4" data-number="5.3.1.2">
-<h4 data-number="5.3.1.2" class="anchored" data-anchor-id="redcap-httpswww.project-redcap.org"><span class="header-section-number">5.3.1.2</span> REDCap (https://www.project-redcap.org/)</h4>
-<p><br>
-Research Electronic Data Capture (REDCap) permet de construire et de gérer des sondages ainsi que des bases de données. Pour accéder aux services de cette application, il est nécessaire d’être un partenaire du REDCap Consortium ou membre d’une organisation qui en fait partie. Seules les organisations à but non lucratif peuvent adhérer au Consortium. Les données et les sondages qui y sont produits peuvent être partagés et utilisés par différents chercheurs issus de diverses institutions. L’exportation vers différents types de fichiers (Excel, PDF, SPSS, SAS, Stata, R) est possible. Ce qui distingue REDCap des autres applications est sa compatibilité avec les dossiers médicaux, sa sécurité pour les données sensibles, ainsi que son approche académique à la collecte de données par sondage.</p>
-</section>
-<section id="surveymonkey-httpswww.surveymonkey.com" class="level4" data-number="5.3.1.3">
-<h4 data-number="5.3.1.3" class="anchored" data-anchor-id="surveymonkey-httpswww.surveymonkey.com"><span class="header-section-number">5.3.1.3</span> SurveyMonkey (https://www.surveymonkey.com/)</h4>
-<p><br>
-SurveyMonkey se distingue des autres applications en permettant de construire et gérer des sondages/formulaires à l’aide d’une interface conviviale sans toutefois perdre de ses fonctionnalités. En plus d’avoir recours aux nouvelles technologies de l’I.A. pour aider à construire des sondages adaptés à vos besoins, cette application propose plusieurs centaines de modèles personnalisables élaborés par des experts dans le domaine. SurveyMonkey permet également l’analyse des données et la création de rapports directement sur l’application, en plus de permettre l’exportation vers d’autres types de programmes. Les forfaits varient en gamme de tarifs, allant du gratuit avec des fonctionnalités restreintes, jusqu’aux options payantes destinées aux particuliers et aux entreprises.</p>
-</section>
-<section id="google-forms-httpsdocs.google.com" class="level4" data-number="5.3.1.4">
-<h4 data-number="5.3.1.4" class="anchored" data-anchor-id="google-forms-httpsdocs.google.com"><span class="header-section-number">5.3.1.4</span> Google Forms (https://docs.google.com/)</h4>
-<p><br>
-Cette application se distingue par sa simplicité et son accessibilité, en grande partie grâce à l’omniprésence de google tant dans le monde académique que dans la vie courante. Google Forms est inclus dans le forfait de base du Google Workspace, ce qui le rend largement compatible avec les autres applications de Google, en plus d’être disponible gratuitement. Bien que ses fonctionnalités soient moins avancées que celles de ses compétiteurs, Google Forms peut convenir pour des sondages plus simples et rapides grâce à son interface conviviale, à sa fonction d’analyse de données directement sur la plateforme, ainsi qu’à ses modèles préfabriqués.</p>
-</section>
-<section id="typeform-httpswww.typeform.com" class="level4" data-number="5.3.1.5">
-<h4 data-number="5.3.1.5" class="anchored" data-anchor-id="typeform-httpswww.typeform.com"><span class="header-section-number">5.3.1.5</span> TypeForm (https://www.typeform.com/)</h4>
-<p><br>
-Si votre objectif est de produire des formulaires avec une esthétique attrayante, moderne et interactive, TypeForm est la plateforme idéale. Elle permet de se concentrer sur l’expérience de l’utilisateur et de l’impliquer dans le sondage grâce à son aspect visuel. Cette plateforme dispose d’une option gratuite, ainsi que plusieurs forfaits payants. Typeform est également compatible avec plusieurs applications de gestion du flux de travail (Zapier, Google Sheets, Slack, etc).</p>
-</section>
-</section>
-<section id="les-limites-des-sondages-en-ligne" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="les-limites-des-sondages-en-ligne"><span class="header-section-number">5.3.2</span> Les limites des sondages en ligne</h3>
-<p><br>
-Néanmoins, les sondages en ligne comportent des défis, notamment en ce qui concerne l’échantillonnage, les taux de réponse et les caractéristiques des non-répondants. Il est également nécessaire de se méfier des enjeux éthiques et de confidentialité (Nayak &amp; K. A., 2019). Comme la généralisation est essentielle pour conférer une valeur scientifique à ses résultats de recherche, les sondages en ligne ont leurs limites. En effet, il est crucial de connaitre la population cible pour effectuer des inférences valides, et l’échantillonnage doit reposer sur des caractéristiques précises. Même si des informations démographiques peuvent être collectées et des quotas utilisés, il n’est toutefois pas réellement possible de confirmer les informations sur le répondant (Andrade, 2020). Les sondages traditionnels où l’on retrouve un contact direct sont plus susceptibles de permettre de brosser un portrait plus complet du répondant (Evans &amp; Mathur, 2018). Les répondants avec des biais peuvent également plus facilement répondre aux sondages en ligne et limiter la généralisation (Andrade, 2020). Les sondages en ligne sont également souvent perçus comme des pourriels, ont généralement de faibles taux de réponse, sont impersonnels et peuvent avoir des instructions peu claires. Ils ont également leurs lots d’enjeux de confidentialité (Evans &amp; Mathur, 2018).</p>
-<p><br>
-Conseils méthodologiques à la réalisation d’un sondage numérique<br>
-(Evans &amp; Mathur, 2018)<br>
-L’article de Evans et Mathur (2018) est une revue de littérature observant l’évolution des sondages numériques depuis la parution de leur dernier article sur le sujet en 2005. À travers cet article, les auteurs offrent des conseils méthodologiques en fonction de leur analyse de contenu de la littérature scientifique. Les conseils d’Evans et Mathur (2018) sont résumés ci-dessous. Afin d’obtenir plus de détails, n’hésitez pas à vous référer directement à cet article. De plus, bien qu’il s’agisse d’un article crédible et largement documenté, il est toujours pertinent de consulter des sources spécifiques à vos besoins.</p>
-<p><br>
-1.Définir le but du sondage avant la méthodologie. Lorsque possible, inclure des hypothèses testables et des méthodes basées sur des fondations théoriques.<br>
-2.Choisir le type de sondage.<br>
-3.Décider des méthodes d’échantillonnage, des quotas et des échéances.<br>
-4.Déterminer le responsable de la construction du sondage.<br>
-5.Soyez transparent en divulguant le but du sondage, la façon dont les données seront utilisées ainsi que l’auteur du sondage.<br>
-6.Les questions et les catégories de réponses doivent être élaborées de manière objective et dans une perspective de convivialité.<br>
-7.Les sondages doivent être assez légers pour favoriser un taux de réponse positif, mais assez complet pour avoir l’information nécessaire.<br>
-8.Ils doivent également être attrayant afin de favoriser leur complétion par le répondant.<br>
-9.S’assurer de l’anonymat du répondant.<br>
-10.Il faut régulièrement procéder à des tests afin de corriger les faiblesses du questionnaire.<br>
-11.Déterminer qui administre le sondage, qui collecte l’information, et qui analyse les données.<br>
-12.Établir un échéancier pour les différentes étapes de l’étude.<br>
-13.Suite à la collecte de données, entreposer les données brutes dans un fichier électronique.<br>
-14.Utiliser les méthodes appropriées (qualitatif ou quantitatif), et analyser les données selon les buts de l’étude.<br>
-15.Dans le cas d’une recherche académique, il est important d’avoir une section dédiée aux limites de l’étude.<br>
-16.Conserver l’anonymat des répondants lors de l’analyse et de la publication.<br>
-17.Agir sur les résultats. Rien ne sert de conduire un sondage qui ne contribue pas à la croissance du savoir ou n’apporte pas de changement stratégique ou organisationnel.<br>
-18.Toujours se plier à un code d’éthique rigide.</p>
-<p>Il s’agit donc ici d’un court résumé des plateformes de sondages et de la collecte de données en ligne, tentant de couvrir l’essentiel de cet outil afin de vous aider lors de votre parcours académique, ou simplement comme aide-mémoire pour la réalisation d’un sondage. Les outils énumérés précédemment permettent une étude approfondie de phénomènes concernant les citoyens. Bien sûr, il n’est pas possible de couvrir l’entièreté de cet outil très complexe et ayant évolué dans le temps. Cette section ne sert donc que de point de départ si vous vous intéressez à l’élaboration d’un sondage numérique. Il vous est donc recommandé de vous renseigner davantage avec d’autres ressources afin de compléter ce qui est indiqué dans cet ouvrage.</p>
-</section>
-</section>
-<section id="factiva-outils-de-récolte-de-données-médiatiques" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="factiva-outils-de-récolte-de-données-médiatiques"><span class="header-section-number">5.4</span> <strong>Factiva&nbsp;: outils de récolte de données médiatiques</strong></h2>
-<p>L’émergence de nouvelles technologies de même que la fragmentation médiatique, causée notamment par l’apparition de chaînes de nouvelles en continu, ébranlent considérablement les écosystèmes médiatiques occidentaux (Chadwick, 2017). Un récent courant de recherche se penche sur le rôle des médias relativement aux comportements des individus dans une perspective de fragmentation médiatique. Ces changements de dynamique médiatiques permettent aux individus de choisir leurs sources d’information. Cette fragmentation aurait conséquemment pour effet de contribuer à la formation de chambres d’écho. Ainsi, les études sur les effets des médias visent à comparer les agendas de différentes organisations médiatiques de même que de comprendre le cadrage de la nouvelle qu’ils offrent aux citoyens. Pour effectuer de telles études comparées, l’accès à des données médiatiques est essentiel. L’arrivée de données massives permet de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l’importante quantité de données accessibles aux chercheurs.euses, ce qui permet une compréhension accrue des réalités médiatiques modernes.</p>
-<p>L’outil Factiva offre un accès à l’ensemble des articles d’une panoplie de médias provenant d’une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l’accès à des documents d’entreprises. En revanche, l’accès qu’il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l’accès à plus de 15&nbsp;000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu’à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons.</p>
-<p>Additionnellement, cet outil permet également de lancer une requête de recherche par mots-clés et par date qui permet, par exemple, de récolter les articles médiatiques concernant un sujet précis dans une ligne de temps déterminée. De manière plus précise, Factiva permet de filtrer la recherche d’articles par source, par date, par auteur, par sociétés, par sujet, par secteur économique, par région et par langue. Disons qu’un.e chercheur.euse désire comparer la couverture médiatique d’une élection donnée. Il peut, par le biais de Factiva, sélectionner tous les articles contenant le mot «&nbsp;élection&nbsp;» dans une sélection de médias, et ce, durant la période de l’élection. Les mots clés sélectionnés peuvent être adaptés aux désirs de l’utilisateur.ice de manière à inclure des mots qui peuvent être mis ensemble ou à un maximum d’intervalle de mot. L’utilisation des signes «&nbsp;and&nbsp;» et «&nbsp;or&nbsp;», aussi connus sous le nom d’opérateurs booléens, permettent d’ajouter un mot dans la requête de recherche. En ajoutant near5, l’on peut spécifier qu’il doit y avoir un maximum de 5 mots entre les deux mots recherchés. L’on peut également mettre certains signes à la fin de mots, ce qui permet de préciser le champ de recherche. Par exemple, dans une étude récoltant des articles sur les immigrants, le mot immigrant pourrait être écrit de la manière suivante&nbsp;: immigra*. Ainsi, tous les mots débutant par ce suffixe seraient inclus de la recherche d’article, ce qui comprend donc&nbsp;: immigrant, immigration, immigrants, immigrante, etc. La Figure 1 est une capture d’écran de l’interface de recherche de Factiva. Ainsi, en ajoutant un opérateur booléen, l’on peut préciser un champ de recherche. L’utilisateur.rice pourrait, par exemple, rechercher des articles sur les immigrants syriens, et rajoutant les opérateurs “and” ou encore “or”, de même que le mot « syri* », l’étoile étant rajoutée pour inclure le plus de mots possible.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre3_factiva.png" class="img-fluid figure-img"></p>
-<figcaption>image3_1</figcaption>
+<figcaption class="figure-caption">image3_1</figcaption>
 </figure>
 </div>
-<p>Ainsi, Factiva permet d’avoir accès facilement à des données utiles pour de l’analyse textuelle d’articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l’analyse de contenu par thèmes ou par ton.</p>
-<p>Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l’optique ou un média recherché n’est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu’en Europe). La structure d’Eureka est similaire à celle de Factiva. En effet, Eureka permet de filtrer des articles médiatiques par requête de recherche adaptée à la source, la date ou encore l’auteur. Toutefois, les requêtes de recherche doivent être formulées d’une manière quelque peu différente. Elles doivent donc être adaptées au fonctionnement d’Eureka. Les articles doivent être sélectionnés à la main, et peuvent être téléchargés dans un document PDF pouvant contenir un maximum de 50 articles à la fois. La Figure 2 contient l’interface de recherche d’Eureka.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre3_eureka.png" class="img-fluid figure-img"></p>
-<figcaption>image3_2</figcaption>
+<figcaption class="figure-caption">image3_2</figcaption>
 </figure>
 </div>
-<p>Il existe aussi une panoplie d’outils permettant un accès à des données médiatiques. Quoique Factiva soit intuitive et que de nombreuses universités possèdent des licences permettant d’exploiter la plateforme, plusieurs alternatives s’offrent à la communauté scientifique. NexisUni, qui comprend entre autres l’outil LexisNexis Academic particulièrement prisé par le champ d’études de communication aux États-Unis, représente une excellente alternative. C’est également le cas de NewsBank qui permet lui aussi un accès à un vaste répertoire d’articles médiatiques. Les chercheurs.euses peuvent choisir la plateforme qui leur convient le mieux, en prenant en compte notamment l’accès qui peut leur être fourni par l’institution universitaire les employant.</p>
-<p>En somme, la révolution numérique permet un accès sans précédent aux données médiatiques, ce qui permet des analyses approfondies du rôle des médias traditionnels dans une société démocratique.</p>
+<p>PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE. Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques, les extracteurs webs.</p>
 </section>
-<section id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code." class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="les-extracteurs-avoir-accès-à-des-données-massives-via-du-code."><span class="header-section-number">5.5</span> <strong>Les extracteurs&nbsp;: avoir accès à des données massives via du code.</strong></h2>
-<p>Chacun des acteurs démocratiques énumérés précédemment peut également être étudié par le biais d’extracteurs qui offrent un accès à des données numériques massives. Les extracteurs de données numériques sont des infrastructures de code permettant d’extraire des données brutes d’une source définie. La section suivante explique comment les extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.</p>
-<p>Les données en lien avec les décideurs sont souvent accessibles sur des sites gouvernementaux. Toutefois, certaines identifications peuvent être nécessaires et l’accès peut être compliqué, particulièrement dans une perspective de données massives. C’est dans cette optique que les extracteurs de données numériques peuvent être utiles. Un code peut extraire de manière automatisée les débats des parlements, les communiqués de presse des gouvernants, les plateformes électorales des partis politiques, ce qui offre un accès inégalé aux chercheurs.euses aux données de décideurs. Dans une autre optique, des extracteurs peuvent également offrir l’accès aux données provenant de médias socionumériques comme Twitter (maintenant X) ou Facebook <!--Capel: Enlever la dernière section de cette phrase ?-->. Un extracteur peut, par exemple, être en mesure de répertorier l’ensemble des Tweets de journalistes, de politiciens ou encore de citoyens de manière automatisée, offrant un accès inégalé aux chercheurs.euses à des données massives exclusives. L’élaboration d’extracteurs est toutefois facilitée par l’existence d’API (Application programming interface) sur les plateformes exploitées. L’API d’un site ou d’une application permet à un tierce parti d’avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l’extraction de données. Par exemple, Twitter possédait avant les changements de directions récents un API qui facilitait l’élaboration d’un extracteur. En contrepartie, Facebook ne possède pas d’API, ce qui rend l’accès à ses données beaucoup plus complexe. Un extracteur peut également offrir l’accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits.</p>
-<p>L’élaboration d’un extracteur est toutefois une tâche complexe qui requiert un certain nombre de connaissances en lien avec les langages de programmation. Les chapitres 4 et 5 du présent ouvrage offrent justement un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l’écriture d’extracteurs. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre.</p>
+<section id="le-web-scraping---collecter-automatiquement-des-données-provenant-de-sites-web" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="le-web-scraping---collecter-automatiquement-des-données-provenant-de-sites-web"><span class="header-section-number">5.3</span> <strong>Le web scraping - collecter automatiquement des données provenant de sites web</strong></h2>
+<p>Chacun des acteurs démocratiques énumérés précédemment peut également être étudié par le biais d'extracteurs qui offrent un accès à des données numériques massives. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. La section suivante explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.</p>
+<p>L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent ainsi une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non-fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les dites données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal-structurées. Ainsi, l'accès à des données massives représente un défi considérable pour la communauté scientifique tentant d'entreprendre des recherches utilisant un volume important de données.</p>
+<p>C'est dans cette optique que les extracteurs de données numériques peuvent être utiles. Plus précisément, le web scraping permet l'extraction de données provenant de sites webs qui seront ensuite converties dans un format utile aux scientifiques de données. Dans un contexte de recherche en science politique, le développement de scrapers permet de récolter automatiquement les données de sites internets pertinents qui pourront ensuite être utilisées afin de mener à terme un projet de recherche. Les sites desquels les données seront extraites dépendent du sujet de recherche d'intérêt de la personne entreprenant la recherche. Par exemple, un code peut extraire de manière automatisée les débats des parlements, les communiqués de presse des gouvernants, les plateformes électorales des partis politiques, ce qui offre un accès inégalé aux chercheurs.euses aux données de décideurs. De telles données pourraient mener à des analyses poussées sur le contenu et le ton des débats parlementaires. Dans une autre optique, des extracteurs peuvent également offrir l'accès aux données provenant de médias socionumériques comme Twitter (maintenant X) ou Facebook . Un extracteur peut, par exemple, être en mesure de répertorier l'ensemble des Tweets de journalistes, de politiciens ou encore de citoyens de manière automatisée, offrant un accès inégalé aux chercheurs.euses à des données massives exclusives.</p>
+<p>PIÈGE: LA LÉGALITÉ DES EXTRACTEURS DE DONNÉES</p>
+<p>Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)&nbsp;</p>
+<p>RACCOURCI: LES API.</p>
+<p>L'élaboration d'extracteurs est toutefois facilitée par l'existence d'API (Application programming interface) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter possédait, avant les changements de directions récents, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus de scraping, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.</p>
+<p>Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, La Presse change ses Unes plusieurs fois dans une même journée. En extractant l'accès aux fils RSS, il est possible de recevoir lesdites mises à jour automatiquement. Ce processus accélère grandement la collecte de données. Bien que les API aient souvent une limite de taux, restreignant le nombre de requêtes possible, cela aide à éviter la surcharge sur les serveurs et garantit en même temps une utilisation équitable des ressources.<br>
+</p>
+<p>Finalement, les API simplifient le travail de chacun et chacune par les mises à jour et maintenances. Pour être plus précis, les API, étant maintenus par les fournisseurs de services, sont modifiés au fur et à mesure que le site évolue. Par exemple, si la structure de X est modifiée, son API sera également modifié. Cela évite à ceux demandant l'accès d'ajuster leurs scripts de scraping pour prendre en compte les changements sur le site.</p>
+<p>En somme, l'utilisation d'extracteurs webs facilite grandement l'acquisition de données massives. Plutôt que d'avoir à payer pour des données dont la qualité n'est pas assurée, l'utilisation d'extracteurs permet un accès plus facile et précis à des données provenant de sites web. L'élaboration d'un extracteur est toutefois une tâche complexe qui requiert un certain nombre de connaissances en lien avec les langages de programmation. Le chapitre 2 du présent ouvrage offre un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l'écriture d'extracteurs. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre. L'utilisation d'extracteurs webs permettent aux chercheurs.euses de faire plusieurs coups d'une seule pierre. Non seulement le développement d'extracteurs permet de se familiariser avec le langage R, qui est un atout essentiel dans la recherche en sciences sociales numériques, mais ce même développement permet un accès inégalé à des données massives qui pourront ensuite être analysées. Le développement d'extracteurs est donc relativement simple dépendamment du site que l'on vise à extraire. Ainsi, des connaissances en R sont essentielles au développement d'extracteurs, et la complexité du code évoluera dépendamment du site qui sera extrait. La section suivante présente les outils nécessaires à l'entreprise d'extraction de données web sur R.</p>
 </section>
-<section id="covidence-outil-de-récolte-darticles-scientifiques" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="covidence-outil-de-récolte-darticles-scientifiques"><span class="header-section-number">5.6</span> <strong>Covidence&nbsp;: outil de récolte d’articles scientifiques</strong></h2>
-<p>Comme mentionné précédemment, les outils numériques de données massives facilitent le travail des personnes chercheuses lors de la récolte de données dans le cadre d’analyses empiriques. Cependant, la révolution technologique offre également des outils pouvant être utiles lors d’autres étapes du cycle de la recherche. Il s’agit notamment du cas de la revue de littérature, alors que de nombreux outils offrent aux personnes chercheuses des ressources permettant d’élaborer un cadre théorique exhaustif par le biais de données massives sur la littérature scientifique. L’outil Covidence, géré par une compagnie sans but lucratif, en est un exemple particulièrement prisé du monde académique lors de l’entreprise de revues de littérature.</p>
-<p>La plateforme en ligne Covidence est utilisée pour faciliter les revues systématiques de littérature. Cette dernière permet de réduire drastiquement le temps d’accomplissement du travail en plus de le rendre plus simple et plus intuitif. L’outil a été développé pour mieux gérer et organiser l’évaluation de quantité importante d’études scientifiques. L’exécution d’une revue de littérature sur Covidence se fait par le biais d’un double codage. C’est-à-dire que l’évaluation des études se fait manuellement par deux codeurs travaillant de manière autonome et qui mettront en commun leurs résultats à la fin de l’exercice. L’outil est reconnu pour ses trois étapes précises : « Title and abstract screening », « Full text review » et « Extraction ». Covidence permet d’importer des données massives provenant de base de données bibliographiques. En effet, l’outil lance des requêtes auprès de multiples bibliothèques, ce qui offre l’accès à des milliers d’études sur le champ étudié par les personnes chercheuses. Ces requêtes sont adaptées aux besoins spécifiques de la personne chercheuse voulant explorer en profondeur un domaine de la littérature scientifique.</p>
-<p>La première étape, soit le «&nbsp;Title and abstract screening », consiste en la révision des titres et des résumés des articles récoltés. Pour rendre le travail davantage efficace, il est nécessaire d’inclure des critères précis pour analyser les titres et résumés d’articles. En se servant du jugement et des critères qui étaient recherchés, les individus doivent éliminer ou accepter selon la pertinence de l’article quant à la littérature étudiée. Cette partie est souvent longue, puisque la littérature existante est souvent massive. Il est donc important pour les personnes chercheuses de se rencontrer à maintes reprises pour discuter des conflits de jugement et pour trouver des compromis. En outre, cette étape, plutôt longue, s’avère très utile et motivante, puisqu’il est possible de développer un jugement critique davantage raffiné et de s’instruire dans une littérature continuellement plus précise.</p>
-<p>Une fois avoir complété la revue des titres et des résumés, il faut entamer le « Full text review » qui, comme l’indique le nom, consiste à la révision complète des textes sélectionnés. Cette étape demande d’analyser chaque texte, puis de voter « oui », « non » ou « peut-être » quant à la conservation du texte dans la revue de littérature. Le vote permet donc soit d’exclure l’article, de le retenir ou de l’envoyer à la prochaine étape. D’un autre côté, les conflits rendent le travail beaucoup plus long, puisque les codeurs.euses ont un texte entier à argumenter. Ainsi, cette partie du travail, bien qu’elle comporte beaucoup moins de documents, est assez longue et exigeante.</p>
-<p>La dernière étape, soit celle de l’extraction, consiste à recueillir toute donnée étant utile à l’étude de la littérature désignée. Cette étape est demandante, car les chercheur.euse.s doivent se conformer à une grille de codification prédéfinie. Le but est qu’un consensus entre les codeurs émerge de ce processus. L’extraction permet de faire ressortir les théories, les méthodologies et les conclusions présentent dans les études retenues.</p>
-<p>Une fois les étapes de la revue systématique terminées, Covidence facilite l’exportation des résultats de l’extraction sous forme de tableaux, de graphiques et de rapports pour la méta-analyse ou pour la rédaction d’articles scientifiques. De nombreuses universités offrent un accès à Covidence par le biais de licences, et l’outil est particulièrement utile et bien construit. Toutefois, il existe d’autres alternatives à Covidence. Le choix de l’outil dépend des coûts de même que des besoins spécifiques des personnes chercheuses. Les plateformes DistillerSR, Archie et Rayyan sont notamment largement utilisées par les personnes chercheuses.</p>
+<section id="extraire-des-données-avec-r" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="extraire-des-données-avec-r"><span class="header-section-number">5.4</span> Extraire des données avec R</h2>
+<section id="limportance-de-comprendre-la-structure-du-code-html" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="limportance-de-comprendre-la-structure-du-code-html"><span class="header-section-number">5.4.1</span> L’importance de comprendre la structure du code HTML</h3>
+<p>Afin d'être à l'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure [] représente un exemple de base de code HTML.&nbsp;</p>
+<p><img src="https://lh7-us.googleusercontent.com/TMnF8kaVcjGl_DZR9r_QxIcoYsDTKx0mebO4bX8i-VPd66lCIb3gihgq9SRs1IoBvUpQWzg5wW99DVU_wUSdZH4-BRg0cxY-TZcEhJzTj8q9Ao2Mp4Zjp-RpzUd4-BveQ3AzVLuJfbxBg3oJ-zMlAQ.png" class="img-fluid" width="283"></p>
+<p>Dans l'exemple ci-haut, le tag &lt;h1 représente le titre du HTML. Le signe &lt;p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p&gt;. Les sections &lt;p&gt; délimitent les paragraphes écrits dans chacunes des sections. Les sigles &lt;h2&gt; produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La Figure 2 démontre le texte produit par le code HTML.</p>
+<p><img src="https://lh7-us.googleusercontent.com/O12fug2rjXscgGO8Uk6aYzPBL4fnGisWIRL6oOv1QDhEFAVMGcP0XAbuzVTh99liGvkvSQXt5yJLxc_nNsdwEyOX3LDA_k7VJnwHRxwDvxlONumyjbhxruC7nimnrQgMucajJolevMZ4eUF3-exQLw.png" class="img-fluid" width="280"></p>
+<p>La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Nous vous encourageons donc fortement à explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites webs que vous allez extraire. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites webs sont plus que jamais accessible à la communauté scientifique.</p>
 </section>
-<section id="conclusion-et-discussion" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="conclusion-et-discussion"><span class="header-section-number">5.7</span> Conclusion et discussion:</h2>
+<section id="le-package-rvest-son-fonctionnement-et-ses-possibilités" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="le-package-rvest-son-fonctionnement-et-ses-possibilités"><span class="header-section-number">5.4.2</span> <strong>Le package rvest: son fonctionnement et ses possibilités</strong></h3>
+<p>Cet ouvrage recommande l'utilisation du paquetage "Rvest" afin de récolter des données sur des pages web, qu'elles aient ou non un API. Rvest est construit autour des paquetages "xml2" et "httr" afin de faciliter la manipulation du HTML et XML. Rvest est principalement conçu pour scraper une seule page web alors que pour scraper de multiples pages, d'autres paquetages sont recommandés, notamment "polite". Cet ouvrage ne rentre pas dans les détails et ne se concentrera que sur Rvest.</p>
+<section id="fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo" class="level4" data-number="5.4.2.1">
+<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo"><span class="header-section-number">5.4.2.1</span> <strong>Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo</strong></h4>
+<p>La première étape est l'installation et le chargement des paquetages "tidyverse" et "rvest" sur sa console Rstudio. Il est important de les charger séparément car RVEST ne fait pas partie des paquetages de base du TIDYVERSE. Nous installerons ce dernier car il amène des fonctions pratiques au scraping</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"rvest"</span><span class="kw">)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"tidyverse"</span><span class="kw">)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">rvest</span><span class="kw">)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">tidyverse</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Pour débuter l'extraction des données, il suffit de copier&nbsp; l’URL de la page web à scraper et la coller dans l'appel de la fonction read_html(). Il est important de stocker l'URL dans l'objet "html_LEGISinfo.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="op">&lt;</span>- read_html<span class="er">(</span><span class="st">"https://www.parl.ca/legisinfo/en/bills"</span><span class="kw">)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.</p>
+<p>D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments &lt;a&gt;. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.&nbsp;</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+</p>
+<p>{html_document}</p>
+<p>&lt;html lang=“en” xml:lang=“en” xmlns=“http://www.w3.org/1999/xhtml”&gt;</p>
+<p>[1] &lt;head&gt;\n&lt;meta http-equiv=“Content-Type” content=“text/html; &nbsp; &nbsp; &nbsp; &nbsp; charset=UTF-8”&gt;\n&lt;meta&nbsp; ...</p>
+<p>[2] &lt;body class=“body-wrapper ce-parl vh-100”&gt;\r\n&nbsp; &nbsp; &lt;header class=“d-print-none”&gt;&lt;!-- ...</p>
+</section>
+</section>
+</section>
+<section id="conclusion-et-discussion" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="conclusion-et-discussion"><span class="header-section-number">5.5</span> Conclusion et discussion:</h2>
 <p>Le précédent chapitre portait sur les différents outils de collecte de données massives mis à la disposition des chercheur.euse.s s’intéressant au champ des sciences sociales numériques. Les outils relevés se démarquent par leur capacité d’accorder l’accès à des données permettant d’étudier les trois principaux acteurs de la société démocratique, soit: les citoyens, les décideurs et les médias. Comme mentionné à plusieurs reprises lors du chapitre, le but de ce dernier n’est pas d’offrir une liste complète des outils disponibles. Toutefois, les outils énumérés ont été sélectionnés en raison de leur intuitivité, leur relative simplicité d’accès de même que leurs capacités techniques considérées par les auteurs comme étant particulièrement pertinentes dans une optique de recherche en sciences sociales numérique. Ainsi, ce chapitre démontre que la possibilité d’effectuer des recherches en sciences sociales numériques par le biais de données massives est plus que jamais accessible à la communauté scientifique, particulièrement en ce qui a trait à la collecte de données permettant de tels travaux. Une fois les données collectées, le travail d’analyse représente un défi technique supplémentaire se dressant devant les personnes chercheuses. Les chapitres suivants visent à familiariser les chercheurs.euses à des outils méthodologiques permettant l’analyse et la visualisation de données massives au sein des sciences sociales.</p>
 <p>Bibliographie:</p>
 <p>Schroeder, R. (2014). Big data and the brave new world of social media research.&nbsp;<em>Big Data &amp; Society</em>,&nbsp;<em>1</em>(2), 2053951714563194.</p>
@@ -403,33 +404,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -498,15 +472,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -585,9 +557,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -597,17 +570,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -620,125 +584,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -782,7 +627,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -808,32 +652,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -895,12 +713,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapitre_4.html" class="pagination-link" aria-label="Gestion de la littérature">
+      <a href="./chapitre_4.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_6.html" class="pagination-link" aria-label="Une image vaut mille mots">
+      <a href="./chapitre_6.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -908,18 +726,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 
