@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_CA" xml:lang="fr_CA"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -85,13 +85,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -100,7 +94,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -116,12 +109,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Les outils de collecte de données</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -131,12 +124,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -234,7 +227,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -251,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#conclusion-et-discussion" id="toc-conclusion-et-discussion" class="nav-link" data-scroll-target="#conclusion-et-discussion"><span class="header-section-number">5.5</span> Conclusion et discussion:</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -271,9 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-
 </header>
-
 
 <p>La révolution numérique engendrée par l'émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l'accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l'accès à ces données représente un défi éthique et théorique, tel qu'explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014).&nbsp;</p>
 <p>Le chapitre qui suit vise à offrir un portrait des outils de collectes de données pouvant être exploitées par les scientifiques désirant entreprendre des recherches en sciences sociales numériques. Toutefois, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de collecte de données brutes pouvant être analysées par les chercheurs.ses. Les lignes suivantes mettront un accent particulier sur le web scraping et les opportunités de recherche qui en découlent. Ce chapitre offre donc un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter le web scraping et en offrant des exemples concrets de son utilisation.</p>
@@ -288,13 +279,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre3_factiva.png" class="img-fluid figure-img"></p>
-<figcaption>image3_1</figcaption>
+<figcaption class="figure-caption">image3_1</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chapitre3_eureka.png" class="img-fluid figure-img"></p>
-<figcaption>image3_2</figcaption>
+<figcaption class="figure-caption">image3_2</figcaption>
 </figure>
 </div>
 <p>PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE. Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques, les extracteurs webs.</p>
@@ -318,9 +309,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="limportance-de-comprendre-la-structure-du-code-html" class="level3" data-number="5.4.1">
 <h3 data-number="5.4.1" class="anchored" data-anchor-id="limportance-de-comprendre-la-structure-du-code-html"><span class="header-section-number">5.4.1</span> L’importance de comprendre la structure du code HTML</h3>
 <p>Afin d'être à l'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure [] représente un exemple de base de code HTML.&nbsp;</p>
-<p><img src="https://lh7-us.googleusercontent.com/TMnF8kaVcjGl_DZR9r_QxIcoYsDTKx0mebO4bX8i-VPd66lCIb3gihgq9SRs1IoBvUpQWzg5wW99DVU_wUSdZH4-BRg0cxY-TZcEhJzTj8q9Ao2Mp4Zjp-RpzUd4-BveQ3AzVLuJfbxBg3oJ-zMlAQ.png" class="img-fluid" width="283"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre5_html_input.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">image3_3</figcaption>
+</figure>
+</div>
 <p>Dans l'exemple ci-haut, le tag &lt;h1 représente le titre du HTML. Le signe &lt;p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p&gt;. Les sections &lt;p&gt; délimitent les paragraphes écrits dans chacunes des sections. Les sigles &lt;h2&gt; produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La Figure 2 démontre le texte produit par le code HTML.</p>
-<p><img src="https://lh7-us.googleusercontent.com/O12fug2rjXscgGO8Uk6aYzPBL4fnGisWIRL6oOv1QDhEFAVMGcP0XAbuzVTh99liGvkvSQXt5yJLxc_nNsdwEyOX3LDA_k7VJnwHRxwDvxlONumyjbhxruC7nimnrQgMucajJolevMZ4eUF3-exQLw.png" class="img-fluid" width="280"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre5_html_output.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">image3_4</figcaption>
+</figure>
+</div>
 <p>La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Nous vous encourageons donc fortement à explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites webs que vous allez extraire. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites webs sont plus que jamais accessible à la communauté scientifique.</p>
 </section>
 <section id="le-package-rvest-son-fonctionnement-et-ses-possibilités" class="level3" data-number="5.4.2">
@@ -340,21 +341,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="op">&lt;</span>- read_html<span class="er">(</span><span class="st">"https://www.parl.ca/legisinfo/en/bills"</span><span class="kw">)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Lors de l’exécution des lignes de code ci-hautes, la console retournera les éléments suivants:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{html_document}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>html <span class="va">lang</span><span class="op">=</span><span class="st">"en"</span> <span class="ex">xml:lang=</span><span class="st">"en"</span> xmlns=<span class="st">"http://www.w3.org/1999/xhtml"</span><span class="op">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="op">&lt;</span>head<span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>meta http-equiv=<span class="st">"Content-Type"</span> content=<span class="st">"text/html;         charset=UTF-8"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>meta  ...</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[2]</span> <span class="op">&lt;</span>body class=<span class="st">"body-wrapper ce-parl vh-100"</span><span class="op">&gt;</span><span class="dt">\r\n</span>    <span class="op">&lt;</span>header class=<span class="st">"d-print-none"</span><span class="op">&gt;&lt;</span>!-- ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.</p>
 <p>D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments &lt;a&gt;. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.&nbsp;</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Qui retourne les éléments suivants:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">180</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>a href=<span class="st">"#StartOfContent"</span> class=<span class="st">"ce-parl-skipnav sr-only sr-only-focusable"</span><span class="op">&gt;</span>Skip to m ...</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>a href=<span class="st">"//www.parl.ca"</span> class=<span class="st">"ce-parl-btn float-left text-nowrap"</span><span class="op">&gt;</span>Parliament of Cana ...</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>a href=<span class="st">"https://visit.parl.ca/index-e.html"</span> rel=<span class="st">"external"</span><span class="op">&gt;</span><span class="dt">\n\t\t</span>                    ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"a"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{html_node}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>a <span class="va">href</span><span class="op">=</span><span class="st">"#StartOfContent"</span> <span class="va">class</span><span class="op">=</span><span class="st">"ce-parl-skipnav sr-only sr-only-focusable"</span><span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Suite à l’inspection des éléments <a>, ceux qui nous intéressent sont ceux de classe “bill-tile-container“. Il suffit d’ajouter un point “.” avant la classe souhaitée lors de l’appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l’exemple de LEGISinfo, nous obtenons une liste d’éléments de classe bill-tile-container que nous allons stocker dans l’objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.</a></p><a>
+</a><div class="sourceCode" id="cb8"><a></a><pre class="sourceCode bash code-with-copy"><a><code class="sourceCode bash"><span id="cb8-1"></span></code></a><code class="sourceCode bash"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".bill-tile-container"</span><span class="kw">)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>L’exécution du bloc de code ci-haut produit le résultat suivant dans la console</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">60</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-1"</span><span class="op">&gt;</span><span class="dt">\r\n\r\n</span>     ...</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-2"</span><span class="op">&gt;</span><span class="dt">\r\n\r\n</span>     ...</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-3"</span><span class="op">&gt;</span><span class="dt">\r\n\r\n</span>     ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>À partir de la liste d’éléments de classe bill-tile-container, nous appelons la fonction html_element, qui lorsque appliqué à une liste permet d’extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe parliament-session par le biais de la ligne de code suivante:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ce qui produit le résultat suivant dans la console:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">60</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span>44th<span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span>44th<span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span>44th<span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bien que moins utile pour la mise en situation actuelle, il est également possible d’extraire les éléments en fonction de leur “id attribute”. Pour ce faire, il faut mettre un hashtag (#) avant l’élément à extraire lors de l’appel de la fonction. Le id attribute retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"#StartOfContent"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">1</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="op">&lt;</span>a id=<span class="st">"StartOfContent"</span> tabindex=<span class="st">"-1"</span><span class="op">&gt;&lt;</span>/a<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nous avons créé précédemment l’objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l’imbrication des sélections. Lorsque la fonction html_element est appliquée à un vecteur de liste html_elements, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d’utiliser html_element à cette étape car il retourne un NA même lorsqu’il n’y a pas d’éléments correspondants, alors que html_elements ne retournera pas la valeur manquante. Dans l’exemple de LEGISinfo, c’est exactement ce que l’on a voulu faire pour obtenir les éléments de classe parliament-session. Nous sommes maintenant arrivés à l’étape d’extraire les données souhaitées. C’est assez simple, il ne suffit que d’appliquer la fonction html_text2 sur l’appel de html_element sur l’objet à moissonner, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction “inspect” de Google Chrome ainsi que les diverses fonctions du package rvest. Afin d’extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour moissonnés. Voici les différentes opérations et leurs résultats dans la console:</p>
+<p>Code</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h4"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Console</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"S-1"</span>   <span class="st">"S-2"</span>   <span class="st">"S-3"</span>   <span class="st">"S-4"</span>   <span class="st">"S-5"</span>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Code</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="bu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Console</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"44th Parliament, 1st session"</span> <span class="st">"44th Parliament, 1st session"</span>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Code</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h5"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Console</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"An Act relating to railways"</span>                                                                                                                                                                                                                                                                                  </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="st">"An Act to amend the Parliament of Canada Act and to make consequential and related amendments to other Acts"</span>                                                                                                                                                                                                  </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="st">"An Act to amend the Judges Act"</span>   </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Code</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillBS_LEGISinfo</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".bottom-section"</span><span class="kw">)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ex">BillBS_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Console</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"Introduced as pro forma bill"</span>                                              <span class="st">"Senate bill awaiting first reading in the House of Commons"</span>               </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="st">"Bill not proceeded with"</span>                                                   <span class="st">"Royal assent received"</span>                                                    </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[5]</span> <span class="st">"Royal assent received"</span>                                                     <span class="st">"At second reading in the House of Commons"</span>     </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Code</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Bill_stage</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".progress-bar-description"</span><span class="kw">)</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Bill_stage</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Console</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"First reading in the Senate"</span>            <span class="st">"Third reading in the Senate"</span>            <span class="st">"First reading in the Senate"</span>            <span class="st">"Royal assent"</span>                           <span class="st">"Royal assent"</span>                          </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[6]</span> <span class="st">"First reading in the House of Commons"</span>  <span class="st">"First reading in the House of Commons"</span>  <span class="st">"Royal assent"</span>                           <span class="st">"First reading in the House of Commons"</span>  <span class="st">"Royal assent"</span>        </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu’à utiliser la fonction tibble du tidyverse. Ce paquetage permet de facilement créer des dataframes sur R. Voici le script à produire dans l’exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation :</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Table_LEGISinfo</span> <span class="op">&lt;</span>- tibble<span class="er">(</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Bill</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h4"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Session</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Name</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h5"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Status</span> = BillBS_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Stage</span> = Bill_stage <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Il est important de noter que ce chapitre ne permet que de scraper des documents html uniques. Afin de scraper plusieurs page web simultanément, il faudra utiliser d’autres paquetages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d’introduction. Maintenant que vous savez extraire des informations d’un document html pour le mettre dans une base de données, voici d’autres applications pratiques de rvest à cet effet.</p>
+<p>Il est possible d’extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l’attribut href qui permet d’extraire l’URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin de moissonner divers niveaux d’une page HTML. Lorsque l’extraction se fait sur plusieurs niveaux, la pratique passe du moissonnage pour devenir de l’indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur le moissonnage.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_attr<span class="kw">(</span><span class="st">"href"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>La ligne de code ci-haut produit le résultat suivant dans la console</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1]</span> <span class="st">"/legisinfo/en/bill/44-1/s-1"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-2"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-3"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-4"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-5"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-6"</span>  </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[7]</span> <span class="st">"/legisinfo/en/bill/44-1/s-7"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-8"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-9"</span>   <span class="st">"/legisinfo/en/bill/44-1/s-10"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-11"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-12"</span> </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[13]</span> <span class="st">"/legisinfo/en/bill/44-1/s-13"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-14"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-15"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-16"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-17"</span>  <span class="st">"/legisinfo/en/bill/44-1/s-201"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Il est également possible d’extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n’est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">htmltest</span> <span class="op">&lt;</span>- minimal_html<span class="er">(</span><span class="st">"</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="st">  &lt;table class='mytable'&gt;</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;tr&gt;&lt;th&gt;x&lt;/th&gt;   &lt;th&gt;y&lt;/th&gt;&lt;/tr&gt;</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;tr&gt;&lt;td&gt;1.5&lt;/td&gt; &lt;td&gt;2.7&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;tr&gt;&lt;td&gt;4.9&lt;/td&gt; &lt;td&gt;1.3&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="st">    &lt;tr&gt;&lt;td&gt;7.2&lt;/td&gt; &lt;td&gt;8.1&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="st">  &lt;/table&gt;</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="st">  "</span><span class="kw">)</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">htmltest</span> <span class="kw">|</span><span class="op">&gt;</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">html_element</span><span class="er">(</span><span class="st">".mytable"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_table<span class="kw">()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>L’opération précédante produit le résultat suivant dans la console</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A tibble: 3 × 2</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>      <span class="ex">x</span>     y</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>dbl<span class="op">&gt;</span> <span class="op">&lt;</span>dbl<span class="op">&gt;</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span>   1.5   2.7</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="ex">2</span>   4.9   1.3</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="ex">3</span>   7.2   8.1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En conclusion de cette section, lorsque l’on moissonne un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s’y habitue rapidement. Ensuite, nous recommandons d’utiliser l’outil de développeur de votre navigateur web afin de pouvoir trouver les sélecteurs souhaités. L’interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur “inspect” suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant de scrapper le contenu d’un site web, il est important de vérifier s’il n’offre pas déjà une option pour télécharger les données ! C’est le cas de l’exemple utilisé ici (LEGISinfo), il est possible dans certains cas de télécharger les données directement sur le site web, ce qui rend parfois le besoin de moissonner désuet.</p>
 <p><br>
 </p>
-<p>{html_document}</p>
-<p>&lt;html lang=“en” xml:lang=“en” xmlns=“http://www.w3.org/1999/xhtml”&gt;</p>
-<p>[1] &lt;head&gt;\n&lt;meta http-equiv=“Content-Type” content=“text/html; &nbsp; &nbsp; &nbsp; &nbsp; charset=UTF-8”&gt;\n&lt;meta&nbsp; ...</p>
-<p>[2] &lt;body class=“body-wrapper ce-parl vh-100”&gt;\r\n&nbsp; &nbsp; &lt;header class=“d-print-none”&gt;&lt;!-- ...</p>
 </section>
 </section>
 </section>
 <section id="conclusion-et-discussion" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="conclusion-et-discussion"><span class="header-section-number">5.5</span> Conclusion et discussion:</h2>
-<p>Le précédent chapitre portait sur les différents outils de collecte de données massives mis à la disposition des chercheur.euse.s s’intéressant au champ des sciences sociales numériques. Les outils relevés se démarquent par leur capacité d’accorder l’accès à des données permettant d’étudier les trois principaux acteurs de la société démocratique, soit: les citoyens, les décideurs et les médias. Comme mentionné à plusieurs reprises lors du chapitre, le but de ce dernier n’est pas d’offrir une liste complète des outils disponibles. Toutefois, les outils énumérés ont été sélectionnés en raison de leur intuitivité, leur relative simplicité d’accès de même que leurs capacités techniques considérées par les auteurs comme étant particulièrement pertinentes dans une optique de recherche en sciences sociales numérique. Ainsi, ce chapitre démontre que la possibilité d’effectuer des recherches en sciences sociales numériques par le biais de données massives est plus que jamais accessible à la communauté scientifique, particulièrement en ce qui a trait à la collecte de données permettant de tels travaux. Une fois les données collectées, le travail d’analyse représente un défi technique supplémentaire se dressant devant les personnes chercheuses. Les chapitres suivants visent à familiariser les chercheurs.euses à des outils méthodologiques permettant l’analyse et la visualisation de données massives au sein des sciences sociales.</p>
+<p>Ce chapitre a comme objectif de dresser un portrait des différents outils de collecte de données mis à la disposition des scientifiques s’intéressant aux sciences sociales tout en voulant exploiter le potentiel de la révolution numérique. Bien que non exhaustif, ce chapitre fait un survol d’outils traditionnels de récolte de données numériques en sciences sociales. Par exemple, les outils de sondages ou de récolte de données médiatiques sont présentés dans les paragraphes ci-haut. En revanche, ce chapitre s’ancre autour du postulat qu’il ne faut pas se limiter aux outils de récolte de données traditionnels, et que la révolution numérique engendre d’importantes opportunités d’acquisition de données massives et exclusives par le biais des extracteurs de données. Ces extracteurs ont pour but de moissonner les données présentes sur un site web afin de les rendre disponibles pour l’analyse scientifique. Une section complète de ce chapitre vise à vulgariser le processus d’extraction de données provenant de site web en utilisant l’exemple du site LégisInfo, ce qui permet aux lecteurs.ices de se familiariser avec le processus de moissonnage de données.</p>
+<p>Toutefois, un seul chapitre ne permet pas de relever l’ensemble des outils de collecte de données disponibles pour la communauté scientifique. Néanmoins, les outils présentés permettent un aperçu à la fois d’outils plus conventionnels et répandus de collecte de données numériques, mais également de dresser un portrait du potentiel d’extraction permis par la maîtrise de R.</p>
 <p>Bibliographie:</p>
 <p>Schroeder, R. (2014). Big data and the brave new world of social media research.&nbsp;<em>Big Data &amp; Society</em>,&nbsp;<em>1</em>(2), 2053951714563194.</p>
 <p>Chadwick, A. (2017). The hybrid media system: Politics and power. Oxford University Press.</p>
@@ -413,33 +508,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -508,15 +576,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -595,27 +661,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -625,17 +674,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -647,130 +687,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -814,7 +731,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -840,32 +756,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -927,12 +817,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapitre_4.html" class="pagination-link" aria-label="Gestion de la littérature">
+      <a href="./chapitre_4.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gestion de la littérature</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_6.html" class="pagination-link" aria-label="Une image vaut mille mots">
+      <a href="./chapitre_6.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Une image vaut mille mots</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -940,18 +830,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 

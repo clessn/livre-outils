@@ -48,11 +48,13 @@ En somme, l\'utilisation d\'extracteurs webs facilite grandement l\'acquisition 
 
 Afin d\'être à l\'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l\'acronyme signifie \"Hypertext Markup Language\". Il s\'agit d\'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des \"tags\", qui définissent le début ou la fin d\'une section du site. Ce sont ces différentes sections qui seront accessibles pour l\'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure \[\] représente un exemple de base de code HTML. 
 
-![](https://lh7-us.googleusercontent.com/TMnF8kaVcjGl_DZR9r_QxIcoYsDTKx0mebO4bX8i-VPd66lCIb3gihgq9SRs1IoBvUpQWzg5wW99DVU_wUSdZH4-BRg0cxY-TZcEhJzTj8q9Ao2Mp4Zjp-RpzUd4-BveQ3AzVLuJfbxBg3oJ-zMlAQ){width="283"}
+![image3_3](images/chapitre5_html_input.png)
+
+
 
 Dans l\'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d\'un paragraphe écrit. La Figure 2 démontre le texte produit par le code HTML.
 
-![](https://lh7-us.googleusercontent.com/O12fug2rjXscgGO8Uk6aYzPBL4fnGisWIRL6oOv1QDhEFAVMGcP0XAbuzVTh99liGvkvSQXt5yJLxc_nNsdwEyOX3LDA_k7VJnwHRxwDvxlONumyjbhxruC7nimnrQgMucajJolevMZ4eUF3-exQLw){width="280"}
+![image3_4](images/chapitre5_html_output.png)
 
 La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N\'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l\'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d\'apprendre sur le fonctionnement du code HTML. Nous vous encourageons donc fortement à explorer plus en profondeur les structures du code HTML afin d\'obtenir une compréhension accrue du fonctionnement des sites webs que vous allez extraire. Comme le code HTML de chaque site est accessible grâce à l\'URL, les données présentes sur des sites webs sont plus que jamais accessible à la communauté scientifique.
 
@@ -82,6 +84,17 @@ html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
 html_LEGISinfo
 ```
 
+Lors de l'exécution des lignes de code ci-hautes, la console retournera les éléments suivants:
+
+``` bash
+{html_document}
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+[1] <head>\n<meta http-equiv="Content-Type" content="text/html;         charset=UTF-8">\n<meta  ...
+[2] <body class="body-wrapper ce-parl vh-100">\r\n    <header class="d-print-none"><!-- ...
+
+```
+
+
 Une fois que les éléments que l\'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d\'un document HTML. Les éléments HTML sont identifiés avec des \"sélecteurs CSS\", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n\'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d\'un document HTML est nécessaire afin d\'en faire l\'extraction d\'éléments. L\'important est d\'être en mesure d\'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
 
 D\'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l\'appel de fonction. Le nombre d\'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l\'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l\'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \<a\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction. 
@@ -90,19 +103,209 @@ D\'abord, html_elements doit être utilisé en premier pour trouver toutes les o
 html_LEGISinfo |> html_elements("a")
 ```
 
+Qui retourne les éléments suivants:
+
+``` bash
+{xml_nodeset (180)}
+ [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">Skip to m ...
+ [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">Parliament of Cana ...
+ [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
+
+```
+
+``` bash
+html_LEGISinfo |> html_elements("a")
+```
+
+``` bash
+{html_node}
+<a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">
+```
+
+Suite à l’inspection des éléments <a>, ceux qui nous intéressent sont ceux de classe “bill-tile-container“.  Il suffit d’ajouter un point “.” avant la classe souhaitée lors de l’appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l’exemple de LEGISinfo, nous obtenons une liste d’éléments de classe bill-tile-container que nous allons stocker dans l’objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
+
+``` bash
+BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
+```
+
+L'exécution du bloc de code ci-haut produit le résultat suivant dans la console
+
+``` bash
+{xml_nodeset (60)}
+ [1] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-1">\r\n\r\n     ...
+ [2] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-2">\r\n\r\n     ...
+ [3] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-3">\r\n\r\n     ...
+```
+
+À partir de la liste d’éléments de classe bill-tile-container, nous appelons la fonction html_element, qui lorsque appliqué à une liste permet d’extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe parliament-session par le biais de la ligne de code suivante:
+
+``` bash
+BillTile_LEGISinfo |> html_element(".parliament-session") 
+```
+
+Ce qui produit le résultat suivant dans la console:
+
+``` bash
+{xml_nodeset (60)}
+ [1] <div class="parliament-session">\n<span class="parl-session-number">44th</span> Parlia ...
+ [2] <div class="parliament-session">\n<span class="parl-session-number">44th</span> Parlia ...
+ [3] <div class="parliament-session">\n<span class="parl-session-number">44th</span> Parlia ...
+```
+
+Bien que moins utile pour la mise en situation actuelle, il est également possible d’extraire les éléments en fonction de leur “id attribute”. Pour ce faire, il faut mettre un hashtag (#) avant l’élément à extraire lors de l’appel de la fonction. Le id attribute retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
+
+``` bash
+html_LEGISinfo |> html_elements("#StartOfContent")
+```
+
+``` bash
+{xml_nodeset (1)}
+[1] <a id="StartOfContent" tabindex="-1"></a>
+```
+
+Nous avons créé précédemment l’objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l’imbrication des sélections. Lorsque la fonction html_element est appliquée à un vecteur de liste html_elements, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d'utiliser html_element à cette étape car il retourne un NA même lorsqu'il n'y a pas d'éléments correspondants, alors que html_elements ne retournera pas la valeur manquante. Dans l’exemple de LEGISinfo, c’est exactement ce que l’on a voulu faire pour obtenir les éléments de classe parliament-session. Nous sommes maintenant arrivés à l’étape d’extraire les données souhaitées. C’est assez simple, il ne suffit que d’appliquer la fonction html_text2 sur l’appel de html_element sur l’objet à moissonner, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction “inspect” de Google Chrome ainsi que les diverses fonctions du package rvest. Afin d’extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour moissonnés. Voici les différentes opérations et leurs résultats dans la console:
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element("h4") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "S-1"   "S-2"   "S-3"   "S-4"   "S-5"...
+```
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element(".parliament-session") |> html_text2().
+```
+
+Console
+``` bash
+[1] "44th Parliament, 1st session" "44th Parliament, 1st session"...
+```
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element("h5") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "An Act relating to railways"                                                                                                                                                                                                                                                                                  
+ [2] "An Act to amend the Parliament of Canada Act and to make consequential and related amendments to other Acts"                                                                                                                                                                                                  
+ [3] "An Act to amend the Judges Act"   
+...
+
+```
+
+Code
+
+``` bash
+BillBS_LEGISinfo <- html_LEGISinfo |> html_elements(".bottom-section")
+BillBS_LEGISinfo |> html_element("dd") |> html_text2()
+```
+
+Console
+``` bash
+[1] "Introduced as pro forma bill"                                              "Senate bill awaiting first reading in the House of Commons"               
+ [3] "Bill not proceeded with"                                                   "Royal assent received"                                                    
+ [5] "Royal assent received"                                                     "At second reading in the House of Commons"     
+...
+
+```
+Code
+
+``` bash
+Bill_stage <- html_LEGISinfo |> html_elements(".progress-bar-description")
+Bill_stage |> html_element("dd") |> html_text2()
+```
+
+Console
+``` bash
+[1] "First reading in the Senate"            "Third reading in the Senate"            "First reading in the Senate"            "Royal assent"                           "Royal assent"                          
+ [6] "First reading in the House of Commons"  "First reading in the House of Commons"  "Royal assent"                           "First reading in the House of Commons"  "Royal assent"        
+...
+ 
+```
+
+Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu’à utiliser la fonction tibble du tidyverse. Ce paquetage permet de facilement créer des dataframes sur R. Voici le script à produire dans l’exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation : 
+
+``` bash
+Table_LEGISinfo <- tibble(
+  Bill = Bill_LEGISinfo |> html_element("h4") |> html_text2(),
+  Session = Bill_LEGISinfo |> html_element(".parliament-session") |> html_text2(),
+  Name = Bill_LEGISinfo |> html_element("h5") |> html_text2(),
+  Status = BillBS_LEGISinfo |> html_element("dd") |> html_text2(),
+  Stage = Bill_stage |> html_element("dd") |> html_text2()
+)
+```
+
+Il est important de noter que ce chapitre ne permet que de scraper des documents html uniques. Afin de scraper plusieurs page web simultanément, il faudra utiliser d’autres paquetages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d’introduction. Maintenant que vous savez extraire des informations d’un document html pour le mettre dans une base de données, voici d’autres applications pratiques de rvest à cet effet. 
+ 
+Il est possible d’extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l’attribut href qui permet d’extraire l’URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin de moissonner divers niveaux d’une page HTML. Lorsque l’extraction se fait sur plusieurs niveaux, la pratique passe du moissonnage pour devenir de l’indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur le moissonnage.
+
+``` bash
+BillTile_LEGISinfo |> html_attr("href")
+```
+
+La ligne de code ci-haut produit le résultat suivant dans la console
+
+``` bash
+1] "/legisinfo/en/bill/44-1/s-1"   "/legisinfo/en/bill/44-1/s-2"   "/legisinfo/en/bill/44-1/s-3"   "/legisinfo/en/bill/44-1/s-4"   "/legisinfo/en/bill/44-1/s-5"   "/legisinfo/en/bill/44-1/s-6"  
+ [7] "/legisinfo/en/bill/44-1/s-7"   "/legisinfo/en/bill/44-1/s-8"   "/legisinfo/en/bill/44-1/s-9"   "/legisinfo/en/bill/44-1/s-10"  "/legisinfo/en/bill/44-1/s-11"  "/legisinfo/en/bill/44-1/s-12" 
+[13] "/legisinfo/en/bill/44-1/s-13"  "/legisinfo/en/bill/44-1/s-14"  "/legisinfo/en/bill/44-1/s-15"  "/legisinfo/en/bill/44-1/s-16"  "/legisinfo/en/bill/44-1/s-17"  "/legisinfo/en/bill/44-1/s-201"
+```
+
+Il est également possible d’extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n’est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
+
+``` bash
+htmltest <- minimal_html("
+  <table class='mytable'>
+    <tr><th>x</th>   <th>y</th></tr>
+    <tr><td>1.5</td> <td>2.7</td></tr>
+    <tr><td>4.9</td> <td>1.3</td></tr>
+    <tr><td>7.2</td> <td>8.1</td></tr>
+  </table>
+  ")
+  htmltest |>
+  html_element(".mytable") |> html_table()
+```
+
+L'opération précédante produit le résultat suivant dans la console
+
+``` bash
+# A tibble: 3 × 2
+      x     y
+  <dbl> <dbl>
+1   1.5   2.7
+2   4.9   1.3
+3   7.2   8.1
+```
+
+En conclusion de cette section, lorsque l’on moissonne un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s’y habitue rapidement. Ensuite, nous recommandons d’utiliser l’outil de développeur de votre navigateur web afin de pouvoir trouver les sélecteurs souhaités. L’interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant de scrapper le contenu d’un site web, il est important de vérifier s’il n’offre pas déjà une option pour télécharger les données ! C’est le cas de l’exemple utilisé ici (LEGISinfo), il est possible dans certains cas de télécharger les données directement sur le site web, ce qui rend parfois le besoin de moissonner désuet.
+
+
+
+
+
+
+
+
 \
 
-{html_document}
 
-\<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"\>
-
-\[1\] \<head\>\\n\<meta http-equiv="Content-Type" content="text/html;         charset=UTF-8"\>\\n\<meta  \...
-
-\[2\] \<body class="body-wrapper ce-parl vh-100"\>\\r\\n    \<header class="d-print-none"\>\<!\-- \...
 
 ## Conclusion et discussion:
 
-Le précédent chapitre portait sur les différents outils de collecte de données massives mis à la disposition des chercheur.euse.s s'intéressant au champ des sciences sociales numériques. Les outils relevés se démarquent par leur capacité d'accorder l'accès à des données permettant d'étudier les trois principaux acteurs de la société démocratique, soit: les citoyens, les décideurs et les médias. Comme mentionné à plusieurs reprises lors du chapitre, le but de ce dernier n'est pas d'offrir une liste complète des outils disponibles. Toutefois, les outils énumérés ont été sélectionnés en raison de leur intuitivité, leur relative simplicité d'accès de même que leurs capacités techniques considérées par les auteurs comme étant particulièrement pertinentes dans une optique de recherche en sciences sociales numérique. Ainsi, ce chapitre démontre que la possibilité d'effectuer des recherches en sciences sociales numériques par le biais de données massives est plus que jamais accessible à la communauté scientifique, particulièrement en ce qui a trait à la collecte de données permettant de tels travaux. Une fois les données collectées, le travail d'analyse représente un défi technique supplémentaire se dressant devant les personnes chercheuses. Les chapitres suivants visent à familiariser les chercheurs.euses à des outils méthodologiques permettant l'analyse et la visualisation de données massives au sein des sciences sociales.
+Ce chapitre a comme objectif de dresser un portrait des différents outils de collecte de données mis à la disposition des scientifiques s'intéressant aux sciences sociales tout en voulant exploiter le potentiel de la révolution numérique. Bien que non exhaustif, ce chapitre fait un survol d'outils traditionnels de récolte de données numériques en sciences sociales. Par exemple, les outils de sondages ou de récolte de données médiatiques sont présentés dans les paragraphes ci-haut. En revanche, ce chapitre s'ancre autour du postulat qu'il ne faut pas se limiter aux outils de récolte de données traditionnels, et que la révolution numérique engendre d'importantes opportunités d'acquisition de données massives et exclusives par le biais des extracteurs de données. Ces extracteurs ont pour but de moissonner les données présentes sur un site web afin de les rendre disponibles pour l'analyse scientifique. Une section complète de ce chapitre vise à vulgariser le processus d'extraction de données provenant de site web en utilisant l'exemple du site LégisInfo, ce qui permet aux lecteurs.ices de se familiariser avec le processus de moissonnage de données. 
+
+Toutefois, un seul chapitre ne permet pas de relever l'ensemble des outils de collecte de données disponibles pour la communauté scientifique. Néanmoins, les outils présentés permettent un aperçu à la fois d'outils plus conventionnels et répandus de collecte de données numériques, mais également de dresser un portrait du potentiel d'extraction permis par la maîtrise de R. 
 
 Bibliographie:
 
