@@ -36,7 +36,7 @@ csl: https://www.zotero.org/styles/apa
 citations-hover: true
 citeproc: true
 
-lang: fr_CA
+lang: fr_FR
 
 format:
   html:

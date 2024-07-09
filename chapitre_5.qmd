@@ -48,11 +48,13 @@ En somme, l\'utilisation d\'extracteurs webs facilite grandement l\'acquisition 
 
 Afin d\'être à l\'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l\'acronyme signifie \"Hypertext Markup Language\". Il s\'agit d\'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des \"tags\", qui définissent le début ou la fin d\'une section du site. Ce sont ces différentes sections qui seront accessibles pour l\'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure \[\] représente un exemple de base de code HTML. 
 
-![](https://lh7-us.googleusercontent.com/TMnF8kaVcjGl_DZR9r_QxIcoYsDTKx0mebO4bX8i-VPd66lCIb3gihgq9SRs1IoBvUpQWzg5wW99DVU_wUSdZH4-BRg0cxY-TZcEhJzTj8q9Ao2Mp4Zjp-RpzUd4-BveQ3AzVLuJfbxBg3oJ-zMlAQ){width="283"}
+<!--
+![](https://lh7-us.googleusercontent.com/TMnF8kaVcjGl_DZR9r_QxIcoYsDTKx0mebO4bX8i-VPd66lCIb3gihgq9SRs1IoBvUpQWzg5wW99DVU_wUSdZH4-BRg0cxY-TZcEhJzTj8q9Ao2Mp4Zjp-RpzUd4-BveQ3AzVLuJfbxBg3oJ-zMlAQ){width="283"} -->
 
 Dans l\'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d\'un paragraphe écrit. La Figure 2 démontre le texte produit par le code HTML.
 
-![](https://lh7-us.googleusercontent.com/O12fug2rjXscgGO8Uk6aYzPBL4fnGisWIRL6oOv1QDhEFAVMGcP0XAbuzVTh99liGvkvSQXt5yJLxc_nNsdwEyOX3LDA_k7VJnwHRxwDvxlONumyjbhxruC7nimnrQgMucajJolevMZ4eUF3-exQLw){width="280"}
+<!-- 
+![](https://lh7-us.googleusercontent.com/O12fug2rjXscgGO8Uk6aYzPBL4fnGisWIRL6oOv1QDhEFAVMGcP0XAbuzVTh99liGvkvSQXt5yJLxc_nNsdwEyOX3LDA_k7VJnwHRxwDvxlONumyjbhxruC7nimnrQgMucajJolevMZ4eUF3-exQLw){width="280"} -->
 
 La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N\'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l\'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d\'apprendre sur le fonctionnement du code HTML. Nous vous encourageons donc fortement à explorer plus en profondeur les structures du code HTML afin d\'obtenir une compréhension accrue du fonctionnement des sites webs que vous allez extraire. Comme le code HTML de chaque site est accessible grâce à l\'URL, les données présentes sur des sites webs sont plus que jamais accessible à la communauté scientifique.
 
@@ -64,7 +66,7 @@ Cet ouvrage recommande l\'utilisation du paquetage \"Rvest\" afin de récolter d
 
 La première étape est l\'installation et le chargement des paquetages \"tidyverse\" et \"rvest\" sur sa console Rstudio. Il est important de les charger séparément car RVEST ne fait pas partie des paquetages de base du TIDYVERSE. Nous installerons ce dernier car il amène des fonctions pratiques au scraping
 
-``` bash
+```bash
 install.packages("rvest")
 
 install.packages("tidyverse")
@@ -76,7 +78,7 @@ library(tidyverse)
 
 Pour débuter l\'extraction des données, il suffit de copier  l'URL de la page web à scraper et la coller dans l\'appel de la fonction read_html(). Il est important de stocker l\'URL dans l\'objet \"html_LEGISinfo.
 
-``` bash
+```bash
 html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
 
 html_LEGISinfo
@@ -86,7 +88,7 @@ Une fois que les éléments que l\'on souhaite extraire sont déterminés, il fa
 
 D\'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l\'appel de fonction. Le nombre d\'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l\'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l\'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \<a\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction. 
 
-``` bash
+```bash
 html_LEGISinfo |> html_elements("a")
 ```
 
