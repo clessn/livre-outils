@@ -1,4 +1,4 @@
-# Gestion de la littérature {#sec-chap4}
+# Outils de gestion de la littérature {#sec-chap4}
 
 ## Introduction
 

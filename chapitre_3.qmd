@@ -1,4 +1,6 @@
-# À la quête de l'optimisation {#sec-chap3}
+# Outils de gestion de projet
+
+## À la quête de l'optimisation {#sec-chap3}
 
 <!--AFC: Je changerais le titre, il ne m'évoque rien de bien clair. "Plateformes de travail collaboratif&nbsp;: comment travailler efficacement?"-->
 
