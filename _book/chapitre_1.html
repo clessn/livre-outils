@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
+<title>Outils de recherche en sciences sociales numériques - 1&nbsp; Vers une science numérique plus transparante: l’apport du logiciel libre et du code ouvert dans les sciences sociales</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_2.html" rel="next">
+<link href="./index.html" rel="prev">
+<link href="./images/logo_CLESSN_inverse.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vers une science numérique plus transparante: l’apport du logiciel libre et du code ouvert dans les sciences sociales</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avant-propos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vers une science numérique plus transparante: l’apport du logiciel libre et du code ouvert dans les sciences sociales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Langages de programmation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de la littérature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de collecte de données</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Langages de balisage</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Installation de Biblatex et configuration de Zotero</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li>
+<a href="#logiciels-libres" id="toc-logiciels-libres" class="nav-link active" data-scroll-target="#logiciels-libres"><span class="header-section-number">2</span> Logiciels Libres</a>
+  <ul class="collapse">
+<li><a href="#le-monde-du-libre" id="toc-le-monde-du-libre" class="nav-link" data-scroll-target="#le-monde-du-libre"><span class="header-section-number">2.1</span> Le monde du libre</a></li>
+  <li><a href="#%C3%A9mergence-et-s%C3%A9mantique-du-libre" id="toc-émergence-et-sémantique-du-libre" class="nav-link" data-scroll-target="#%C3%A9mergence-et-s%C3%A9mantique-du-libre"><span class="header-section-number">2.2</span> Émergence et sémantique du <em>libre</em></a></li>
+  <li><a href="#logiciel-libre-et-code-ouvert" id="toc-logiciel-libre-et-code-ouvert" class="nav-link" data-scroll-target="#logiciel-libre-et-code-ouvert"><span class="header-section-number">2.3</span> Logiciel libre et code ouvert</a></li>
+  <li><a href="#les-sciences-sociales-%C3%A0-l%C3%A8re-du-num%C3%A9rique-les-enseignements-de-la-philosophie-du-logiciel-libre" id="toc-les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre" class="nav-link" data-scroll-target="#les-sciences-sociales-%C3%A0-l%C3%A8re-du-num%C3%A9rique-les-enseignements-de-la-philosophie-du-logiciel-libre"><span class="header-section-number">2.4</span> Les sciences sociales à l’ère du numérique: les enseignements de la philosophie du logiciel libre</a></li>
+  <li>
+<a href="#inconv%C3%A9nients-et-d%C3%A9fis" id="toc-inconvénients-et-défis" class="nav-link" data-scroll-target="#inconv%C3%A9nients-et-d%C3%A9fis"><span class="header-section-number">2.5</span> Inconvénients et défis</a>
+  <ul class="collapse">
+<li><a href="#co%C3%BBteux-en-temps" id="toc-coûteux-en-temps" class="nav-link" data-scroll-target="#co%C3%BBteux-en-temps"><span class="header-section-number">2.5.1</span> 1. Coûteux en temps</a></li>
+  <li><a href="#probl%C3%A8me-de-transparence" id="toc-problème-de-transparence" class="nav-link" data-scroll-target="#probl%C3%A8me-de-transparence"><span class="header-section-number">2.5.2</span> 2. Problème de transparence</a></li>
+  <li><a href="#appropration-capitaliste" id="toc-appropration-capitaliste" class="nav-link" data-scroll-target="#appropration-capitaliste"><span class="header-section-number">2.5.3</span> 3. Appropration capitaliste</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#la-chronologie-de-la-recherche" id="toc-la-chronologie-de-la-recherche" class="nav-link" data-scroll-target="#la-chronologie-de-la-recherche"><span class="header-section-number">2.6</span> La chronologie de la recherche</a>
+  <ul class="collapse">
+<li><a href="#avant-la-recherche" id="toc-avant-la-recherche" class="nav-link" data-scroll-target="#avant-la-recherche"><span class="header-section-number">2.6.1</span> 1. Avant la recherche</a></li>
+  <li><a href="#pendant-la-recherche" id="toc-pendant-la-recherche" class="nav-link" data-scroll-target="#pendant-la-recherche"><span class="header-section-number">2.6.2</span> 2. Pendant la recherche</a></li>
+  <li><a href="#apr%C3%A8s-la-recherche" id="toc-après-la-recherche" class="nav-link" data-scroll-target="#apr%C3%A8s-la-recherche"><span class="header-section-number">2.6.3</span> 3. Après la recherche</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#crit%C3%A8res-de-s%C3%A9lection" id="toc-critères-de-sélection" class="nav-link" data-scroll-target="#crit%C3%A8res-de-s%C3%A9lection"><span class="header-section-number">2.7</span> Critères de sélection</a>
+  <ul class="collapse">
+<li><a href="#accessibilit%C3%A9-gratuit-ou-peu-dispendieux" id="toc-accessibilité-gratuit-ou-peu-dispendieux" class="nav-link" data-scroll-target="#accessibilit%C3%A9-gratuit-ou-peu-dispendieux"><span class="header-section-number">2.7.1</span> 1. Accessibilité (Gratuit ou peu dispendieux)</a></li>
+  <li><a href="#existence-dune-communaut%C3%A9-dutilisateurs" id="toc-existence-dune-communauté-dutilisateurs" class="nav-link" data-scroll-target="#existence-dune-communaut%C3%A9-dutilisateurs"><span class="header-section-number">2.7.2</span> 2. Existence d’une communauté d’utilisateurs</a></li>
+  <li><a href="#popularit%C3%A9-dans-le-champ" id="toc-popularité-dans-le-champ" class="nav-link" data-scroll-target="#popularit%C3%A9-dans-le-champ"><span class="header-section-number">2.7.3</span> 3. Popularité dans le champ</a></li>
+  <li><a href="#compatibilit%C3%A9-avec-dautres-outils" id="toc-compatibilité-avec-dautres-outils" class="nav-link" data-scroll-target="#compatibilit%C3%A9-avec-dautres-outils"><span class="header-section-number">2.7.4</span> 4. Compatibilité avec d’autres outils</a></li>
+  <li><a href="#transparence-et-r%C3%A9plicabilit%C3%A9" id="toc-transparence-et-réplicabilité" class="nav-link" data-scroll-target="#transparence-et-r%C3%A9plicabilit%C3%A9"><span class="header-section-number">2.7.5</span> 5. Transparence et réplicabilité</a></li>
+  <li><a href="#adaptabilit%C3%A9-et-flexibilit%C3%A9" id="toc-adaptabilité-et-flexibilité" class="nav-link" data-scroll-target="#adaptabilit%C3%A9-et-flexibilit%C3%A9"><span class="header-section-number">2.7.6</span> 6. Adaptabilité et flexibilité</a></li>
+  </ul>
+</li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.8</span> Conclusion</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="sec-chap1" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vers une science numérique plus transparante: l’apport du logiciel libre et du code ouvert dans les sciences sociales</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jozef Rivest et Catherine Ouellet </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header><p>Ce chapitre vise à initier les lecteurs et lectrices aux concepts fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans un premier temps, l’historique de ce mouvement afin de pouvoir le situer temporellement. De cette façon, nous pourrons mieux comprendre les motivations derrière ce mouvement, mais aussi ses influences actuelles. Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que les deux soient plutôt similaires, il est important de les distinguer puisqu’ils ne renvoient pas aux mêmes caractéristiques et aux mêmes fondements. Après coup, nous aborderons en quoi ces réflexions sont intéressantes et importantes pour les sciences sociales à l’ère du numérique, ainsi que les avantages et les inconvénients qui y sont liés. Ensuite, nous présenterons de quelle façon ces outils du numérique s’inscrivent dans les différentes étapes de la recherche. Finalement, avec ces quelques notions en poche, nous présenterons les différents critères sur lesquels nous nous sommes appuyés pour sélectionner les différents outils qui sont présentés dans ce livre. Ces critères visent à introduire la discussion et les débats en sciences sociales quant à la sélection de certains outils numériques parmi d’autres.</p>
+<section id="logiciels-libres" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Logiciels Libres</h1>
+<section id="le-monde-du-libre" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="le-monde-du-libre">
+<span class="header-section-number">2.1</span> Le monde du libre</h2>
+<p><em>« Vous n’avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel, car votre médecin vous le conseille — peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n’y perd que du temps et le coût du papier sur lequel il l’inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d’électricité. Dans tous les cas, la personne qui donne l’information y gagne deux choses : davantage d’amitié et la possibilité de récupérer en retour d’autres recettes intéressantes. »</em> - Richard Stallman <span class="citation" data-cites="williams_etal10">(<a href="references.html#ref-williams_etal10" role="doc-biblioref">Williams et al., 2010</a>)</span></p>
+<p>Cette analogie illustre bien trois concepts au cœur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s’encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d’une collaboration entre développeurs qui peut provenir des quatre coins du globe. Au centre de ce mouvement se trouve une réflexion éthique, dont les militants font compagne depuis le début des années 1980, à propos de la liberté des utilisateurs. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel «libre» [free] comme étant garant de quatre libertés fondamentales de l’utilisateur: la liberté d’utiliser le logiciel sans restrictions, la liberté de le copier, la liberté de l’étudier, puis la liberté de le modifier pour l’adapter à ses besoins puis le redistribuer<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Il s’agit ainsi d’un logiciel dont le code source<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> est disponible, afin de permettre aux internautes de l’utiliser tel quel ou de le modifier à leur guise. L’accès au code source devient essentiel afin de permettre à l’utilisateur de savoir ce que le programme fait réellement. Seulement de cette façon, l’utilisateur peut <em>contrôler</em> le logiciel, plutôt que de se faire contrôler par ce dernier <span class="citation" data-cites="stallman86">(<a href="references.html#ref-stallman86" role="doc-biblioref">Stallman, 1986</a>)</span>.</p>
+</section><section id="émergence-et-sémantique-du-libre" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="émergence-et-sémantique-du-libre">
+<span class="header-section-number">2.2</span> Émergence et sémantique du <em>libre</em>
+</h2>
+<p>Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU, en 1983, à partir de laquelle va se développer une multitude de programmes libres. Parmi les plus populaires, on retrouve notamment le navigateur Firefox, la suite bureautique OpenOffice et l’emblématique système d’exploitation Linux, qui se développe d’ailleurs à partir de la licence GNU<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Aujourd’hui, il s’agit d’un véritable phénomène sociétal: des milliers d’entreprises, d’organisations à but non lucratif, d’institutions ou encore de particuliers adoptent ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s’arriment avec le virage technologique de plusieurs entreprises. Les logiciels libres ont différents usages, en passant par la conception Web, la gestion de contenu, les systèmes d’exploitation, la bureautique, entre autres. Ils permettent donc de répondre à plusieurs types de besoins numériques et informatiques.</p>
+<p>Attention, le logiciel libre est avant tout une philosophie, voire un mouvement de société. C’est une façon de concevoir la communauté du logiciel, où le respect de la liberté de l’utilisateur est un impératif éthique <span class="citation" data-cites="williams_etal10">(<a href="references.html#ref-williams_etal10" role="doc-biblioref">Williams et al., 2010</a>)</span>. Par conséquent, le terme libre, <em>free</em> en anglais, porte à confusion. Celui-ci ne signifie pas qu’un logiciel libre est nécessairement gratuit. Certes, plusieurs sont effectivement téléchargeables gratuitement. Toutefois, il est aussi possible de (re)distribuer des logiciels libres payants. Par ailleurs, aucun logiciel libre n’est réellement « gratuit » dans la mesure où son déploiement et son utilisation nécessitent généralement différents coûts, dont les degrés sont variables en fonction des compétences et de l’infrastructure dont disposent les utilisateurs (coût d’apprentissage, coûts d’entretien, etc.). Enfin, il est important de garder en tête que les logiciels libres possèdent eux aussi une licence - cette dernière est d’ailleurs garante des libertés que confèrent les logiciels libres aux utilisateurs.</p>
+<p>La grande liberté que ce type de logiciel offre favorise notamment la collaboration entre les utilisateurs, et ce à une échelle pouvant être internationale. Les interactions entre les chercheurs créent une dynamique d’« innovation ascendante » et d’entraide <span class="citation" data-cites="couture14">(<a href="references.html#ref-couture14" role="doc-biblioref">Couture, 2014</a>)</span>. En d’autres termes, l’accessibilité et la collaboration favorisent le développement et l’amélioration de ces logiciels. Selon certains, et comparativement aux logiciels privés, les logiciels libres ont un niveau plus élevé d’innovation <span class="citation" data-cites="smith02">(<a href="references.html#ref-smith02" role="doc-biblioref">Smith, 2002</a>)</span>. Contrairement à ceux qui se développent de manière privée et fermée, les logiciels libres permettent à tous les utilisateurs de participer au développement. Ceux-ci partagent ensuite leurs améliorations, ce qui stimule à son tour de nouvelles initiatives. De plus, il est raisonnable de penser que l’utilité des améliorations, ainsi que l’utilisation qui en est faite par les utilisateurs, permet de générer un savoir collaboratif <span class="citation" data-cites="couture20">(<a href="references.html#ref-couture20" role="doc-biblioref"><strong>couture20?</strong></a>)</span>.</p>
+<p>Il y a aussi certains avantages économiques, dont son faible coût d’acquisition et de renouvellement pour les particuliers. Cet avantage individuel génère plusieurs externalités positives. Tout d’abord, certains logiciels statistiques ainsi que certains programmes informatiques coûtent plusieurs centaines, voir des milliers de dollars, et dans certains cas doit être renouvelé annuellement. Cela augmente les coûts associés à l’utilisation du logiciel et par conséquent limite son accessibilité. Comparativement, pour les logiciels libres, la licence d’acquisition coûte bien souvent moins cher, et aucun renouvellement de licence n’est demandé dans la plupart des cas. Étant donné que les chercheurs doivent souvent faire face à des contraintes budgétaires, les logiciels libres deviennent des outils intéressants afin de minimiser les coûts de la recherche <span class="citation" data-cites="yu_munoz-justicia22">(<a href="references.html#ref-yu_munoz-justicia22" role="doc-biblioref"><strong>yu_munoz-justicia22?</strong></a>)</span>. Il s’agit d’un avantage encore plus important et intéressant pour les chercheurs dans les pays du Sud global <span class="citation" data-cites="santillan-anguiano_gonzalez-machado23">(<a href="references.html#ref-santillan-anguiano_gonzalez-machado23" role="doc-biblioref">Santillán-Anguiano &amp; González-Machado, 2023</a>)</span>. L’accessibilité de ces ressources permet donc de réduire l’écart dans la production scientifique entre les pays du Sud et ceux du Nord. De plus, elle permet à tous de bénéficier d’outils pédagogiques accessibles, ce qui favorise l’acquisition ainsi que le développement de compétences méthodologiques.</p>
+<p>Dans le cadre d’une formation universitaire, il peut être pertinent d’enseigner aux étudiants à se servir de logiciel statistique ou d’analyse de texte. L’acquisition de ces compétences peut être précieux tant pour ceux et celles qui souhaitent se diriger vers le milieu académique, que pour ceux et celles qui visent le marché professionnel. D’ailleurs sur le site web de la banque d’emplois du gouvernement du Canada<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, les conditions d’emplois sont en ce moment<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> très bonnes, et une pénurie de main-d’œuvre est anticipée, entre 2022-2031, dans les emplois en analyse de données. Ces compétences sont d’autant plus précieuses aujourd’hui, dans le monde de données dans lequel nous vivons.</p>
+<p>Ensuite, le logiciel libre est adaptable et modifiable. Ces coûts techniques de développement restent néanmoins nettement inférieurs aux coûts de renouvellement et de mise à jour des logiciels propriétaires dans bien des cas. L’argent sauvé des licences peut alors être investi dans le développement du logiciel libre <span class="citation" data-cites="beraud07">(<a href="references.html#ref-beraud07" role="doc-biblioref">Béraud, 2007</a>)</span>. Cependant, une transition vers les logiciels libres ne doit pas se faire seulement sur des bases économiques, mais dans une perspective globale de changement de culture. Changer pour des raisons purement économiques viendrait à violer l’essence même de la philosophie du logiciel libre, qui se veut surtout être un esprit de collaboration et de transparence. Par conséquent, il est important d’incorporer aussi les valeurs et la philosophie dans notre utilisation. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs <span class="citation" data-cites="couture14">(<a href="references.html#ref-couture14" role="doc-biblioref">Couture, 2014</a>)</span>, ces éléments résument très bien la philosophie du logiciel libre.</p>
+</section><section id="logiciel-libre-et-code-ouvert" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="logiciel-libre-et-code-ouvert">
+<span class="header-section-number">2.3</span> Logiciel libre et code ouvert</h2>
+<p>Parallèlement au logiciel libre, il y a aussi le code ouvert, ou <em>open source</em>. A priori, la dénomination du logiciel libre et celle du <em>code ouvert</em> semblent suggérer qu’il s’agit de synonymes. Dans les deux cas, on dirait que l’on fait référence à des logiciels, par exemple, qui sont exempts de restrictions d’utilisations et auxquelles les utilisateurs peuvent participer au développement. Cependant, il y a une distinction importante entre les deux.</p>
+<p>Bien que les deux renvoient sensiblement aux mêmes types de logiciels, les tenants de ces approches ne partagent pas la même perspective. Comme <span class="citation" data-cites="stallman22">Stallman (<a href="references.html#ref-stallman22" role="doc-biblioref">2022</a>)</span> l’explique, le logiciel libre est d’abord et avant tout un mouvement qui fait « campagne pour la liberté des utilisateurs de l’informatique ». Le code ouvert, quant à lui, met l’accent sur les avantages pratiques, plutôt que de militer pour des principes.</p>
+<p>Le terme <em>code ouvert</em> sera introduit seulement en 1998 afin de clarifier l’ambiguïté dans la dénomination « logiciel libre » <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, <em>free software</em> en anglais, afin de spécifier que le code source était accessible, et non pas que le logiciel était « gratuit » <span class="citation" data-cites="ballhausen19">(<a href="references.html#ref-ballhausen19" role="doc-biblioref"><strong>ballhausen19?</strong></a>)</span>. De plus, les logiciels à code ouvert doivent respecter un certain nombre de critères quant à la distribution de leurs logiciels <span class="citation" data-cites="opensourceinitiative06">(<a href="references.html#ref-opensourceinitiative06" role="doc-biblioref">Open Source Initiative, 2006</a>)</span>. Nous aborderons ces critères dans le prochain paragraphe.</p>
+<p>Afin de mieux distinguer les deux, il est utile de faire référence aux critères qui composent ces deux éléments, et qui constituent la base de leur définition. Tout d’abord, le logiciel libre se définit sur la base de quatre libertés: 1) liberté d’utiliser le programme comme désiré; 2) liberté d’étudier le fonctionnement du programme et de le modifier pour ses propres besoins; 3) liberté de redistribuer des copies; 4) liberté de distribuer des copies de la version « améliorer » du programme pour ses pairs <span class="citation" data-cites="ballhausen19">(<a href="references.html#ref-ballhausen19" role="doc-biblioref"><strong>ballhausen19?</strong></a>)</span>. Concernant le <em>code ouvert</em>, tout logiciel qui souhaite être inclus sous cette appellation doit respecter dix critères: 1) Redistribution gratuite; 2) doit inclure le code source; 3) doit permettre les modifications et les travaux dérivés; 4) intégrité du code source; 5) ne doit pas discriminer des personnes et/ou groupes; 6) ne doit pas restreindre personne dans l’utilisation du logiciel pour un domaine d’activité; 7) distribution d’une licence pour l’utilisation; 8) la licence ne doit pas être spécifique pour un produit; 9) la licence ne doit pas placer de restriction sur d’autres programmes; 10) la licence doit être technologiquement neutre<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> <span class="citation" data-cites="opensourceinitiative06">(<a href="references.html#ref-opensourceinitiative06" role="doc-biblioref">Open Source Initiative, 2006</a>)</span>.</p>
+<p>Il est aussi utile de les distinguer des logiciels « non libres », soit les logiciels propriétaires: « Son utilisation, sa redistribution ou sa modification sont interdites, ou exigent une autorisation spécifique, ou sont tellement restreintes qu’en pratique vous ne pouvez pas le faire librement » <span class="citation" data-cites="systemedexploitationgnu23">(<a href="references.html#ref-systemedexploitationgnu23" role="doc-biblioref">Système d’exploitation GNU, 2023</a>)</span>. Par contraste, la licence libre confère des droits de propriétaire. L’utilisateur a le droit d’installer le logiciel sur autant d’ordinateurs que désiré, le modifier selon ses besoins et le distribuer avec ou sans ses modifications. Il peut même demander d’être payé pour distribuer des copies, avec ou sans ses modifications.</p>
+<p>Comme nous le constatons, le logiciel libre et le <em>code ouvert</em> ont certaines similitudes puisqu’ils adhèrent tous les deux à la même vision du logiciel, ainsi que de son accessibilité. Toutefois, il est important tout de même de les distinguer puisqu’ils ont des origines différentes, et qu’ils mènent à certaines pratiques qui sont différentes. La prochaine section utilise un cas concret afin d’expliquer l’effet du libre, et l’utilité que cela peut avoir.</p>
+</section><section id="les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="les-sciences-sociales-à-lère-du-numérique-les-enseignements-de-la-philosophie-du-logiciel-libre">
+<span class="header-section-number">2.4</span> Les sciences sociales à l’ère du numérique: les enseignements de la philosophie du logiciel libre</h2>
+<p>En quoi est-ce que ces deux concepts, issus du monde de l’informatique, sont-ils intéressants et/ou important pour les sciences sociales ? Pour répondre à cette question, il est important de retourner à la base, soit de se questionner sur ce que constitue la recherche scientifique dans les sciences sociales.</p>
+<p>Dans leur célèbre ouvrage <em>Designing Social Inquiry</em>, <span class="citation" data-cites="king_etal21">King et al. (<a href="references.html#ref-king_etal21" role="doc-biblioref">2021</a>)</span><a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> propose quatre critères qui définissent la recherche dite scientifique: 1) le but est l’inférence; 2) les procédures sont publiques; 3) les conclusions sont incertaines; 4) le contenu est la méthode. La philosophie du code ouvert et les avantages pratiques du logiciel libre s’arrimant parfaitement avec plusieurs de ces critères.</p>
+<p>Penchons-nous sur le critère de la transparence des procédures et celui de la méthode comme étant le contenu. Plusieurs outils numériques rendent possibles le partage et l’accès public des données et de la méthode utilisée. Certains de ces outils seront d’ailleurs abordés dans les chapitres suivants. L’accès aux données et aux procédures d’analyse est un impératif scientifique. Comme nous l’aborderons un peu plus bas, il y a toujours des concessions à faire lors des investigations scientifiques. Par conséquent, un meilleur accès aux procédures et aux données utilisées permet de cibler plus facilement les limites de certaines recherches et de les combler. De plus, comme ce fut mentionné dans la préface, l’arrivée des données massives ouvre de nouvelles portes, mais surtout de nouveaux défis relatifs à la validité interne et externe ainsi qu’au type de données récoltées et à la validité écologique. Le livre de <span class="citation" data-cites="marres17">Marres (<a href="references.html#ref-marres17" role="doc-biblioref">2017</a>)</span> est très intéressant à ce sujet. Face au constat que la vie sociale se trouve affecter par les changements numériques, il nous faut en tant que chercheur du monde social réfléchir à notre façon de comprendre les changements qui sont entrain de s’opérer. Ainsi, face à ces défis, une des solutions se trouve notamment dans un meilleur partage et dans une meilleure accessibilité aux données et aux procédures.</p>
+<p>Nous pouvons aussi faire certains liens avec les deux autres critères de <span class="citation" data-cites="king_etal21">King et al. (<a href="references.html#ref-king_etal21" role="doc-biblioref">2021</a>)</span>. Premièrement, comme le but de la science est l’inférence, soit tenter d’expliquer des phénomènes sociaux qui s’inscrivent dans des catégories plus larges que nos observations directes<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, il est important que nos conclusions soient soumises au plus grand nombre de gens possible et pas uniquement au comité éditorial d’une revue scientifique. D’une part, la validité de nos résultats a un potentiel politique important. Plusieurs décisions peuvent être prises sur la base de nos connaissances et de notre compréhension des dynamiques sociales. Il est donc important que les résultats de recherche qui informe ces décisions soient le plus rigoureux possible, et qu’ils aient été soumis à l’examen critique par le plus grand nombre d’individus. D’autre part, et comme <span class="citation" data-cites="king_etal21">King et al. (<a href="references.html#ref-king_etal21" role="doc-biblioref">2021</a>)</span> le font remarqués, les conclusions sont toujours incertaines. L’examen critique et la reproduction des protocoles sont donc une nécessité dans ce contexte d’incertitude constant. La science ne cherche pas à être dogmatique. Au contraire, l’incertitude caractérise bien la science. Les résultats sont toujours incertains, et ce que nous tentons de faire au travers de la recherche c’est de renforcer notre niveau de confiance envers certaines explications tout en écartant les explications alternatives. Et comme plusieurs de ces phénomènes ne sont pas homogènes et qu’ils ne sont pas immuables, nous devons constamment revoir les explications et notre compréhension de ces dynamiques.</p>
+<p>Dans la même lancée, l’ouvrage <em>Rethinking Social Inquiry</em> <span class="citation" data-cites="brady_collier10">(<a href="references.html#ref-brady_collier10" role="doc-biblioref">Brady &amp; Collier, 2010</a>)</span>, une réponse à <span class="citation" data-cites="king_etal21">King et al. (<a href="references.html#ref-king_etal21" role="doc-biblioref">2021</a>)</span>, partage, en partie, cette définition de la recherche scientifique. Pour <span class="citation" data-cites="brady_collier10">Brady &amp; Collier (<a href="references.html#ref-brady_collier10" role="doc-biblioref">2010</a>)</span>, les scientifiques du monde social possèdent plusieurs outils qui leur permettent de <em>designer</em>, <em>d’exécuter</em> et <em>d’évaluer</em> une recherche. Ces outils sont des procédures et des pratiques employées par les chercheurs des traditions quantitatives et qualitatives. Ils ont aussi des techniques analytiques qui leur permettent de <em>développer des preuves qui sont convaincantes</em><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.</p>
+<p>Chacun de ces outils a toutefois ses forces et ses faiblesses. Inspiré de <span class="citation" data-cites="przeworski_teune70">Przeworski &amp; Teune (<a href="references.html#ref-przeworski_teune70" role="doc-biblioref">1970</a>)</span>, <span class="citation" data-cites="brady_collier10">Brady &amp; Collier (<a href="references.html#ref-brady_collier10" role="doc-biblioref">2010</a>)</span> parlent ainsi de <em>compromis</em>. Selon eux, la pertinence d’un outil méthodologique dépend de la question de recherche, du but de la recherche et de son contexte. Le choix d’un outil, sur cette base, entraîne des compromis qui empêchent d’atteindre tous les buts analytiques simultanément. Même lorsqu’il y a adéquation entre la question et la méthode, plusieurs autres embuches peuvent entraîner ces compromis, comme la disponibilité des données par exemple, qui limitent par la suite la qualité et la précision des résultats, ce qui explique, en partie, l’incertitude envers les conclusions.</p>
+<p>Il est intéressant de concevoir la réalité sociale comme étant un prisme ayant un nombre infini de face. Chacune de ces faces correspond à une compréhension partielle de la réalité. Pour y avoir accès, nous devons utiliser une méthode de collecte et d’analyse de données, informées par une question de recherche et/ou par la théorie<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>. Étant donné que chaque outil méthodologique à ses limites et que nous devons constamment faire des compromis, notre compréhension de la réalité n’est que partielle une fois la recherche complétée. De plus, il ne faut pas oublier que la compréhension que nous avons de cette face reste incertaine.</p>
+<p>En sommes, les enseignements de la philosophie du code ouvert et les avantages pratiques du logiciel libre, et les outils qui en découlent ont le potentiel de permettre non seulement une plus grande transparence des protocoles scientifiques, mais aussi un plus grand partage du savoir; et ce du début de la recherche jusqu’à la publication des résultats.</p>
+<p>De plus, dans le cadre d’une formation universitaire, il peut être pertinent d’enseigner aux étudiants à se servir de logiciel statistique ou d’analyse de texte. L’acquisition de ces compétences peut être précieux tant pour ceux et celles qui souhaitent se diriger vers le milieu académique, que pour ceux et celles qui visent le marché professionnel. D’ailleurs sur le site web de la banque d’emplois du gouvernement du Canada<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>, les conditions d’emplois sont en ce moment<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> très bonnes, et une pénurie de main-d’œuvre est anticipée, entre 2022-2031, dans les emplois en analyse de données. Ces compétences sont d’autant plus précieuses aujourd’hui, dans le monde de données dans lequel nous vivons.</p>
+</section><section id="inconvénients-et-défis" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="inconvénients-et-défis">
+<span class="header-section-number">2.5</span> Inconvénients et défis</h2>
+<p>Jusqu’à présent, nous avons surtout présenté des avantages liés aux logiciels libres. Toutefois, il n’y a pas que des points positifs, et ne pas aborder certaines limites serait malhonnête.</p>
+<section id="coûteux-en-temps" class="level3" data-number="2.5.1"><h3 data-number="2.5.1" class="anchored" data-anchor-id="coûteux-en-temps">
+<span class="header-section-number">2.5.1</span> 1. Coûteux en temps</h3>
+<p>Dans leur texte, <span class="citation" data-cites="paura_arhipova12">Paura &amp; Arhipova (<a href="references.html#ref-paura_arhipova12" role="doc-biblioref">2012</a>)</span> soulèvent une critique faite envers certains logiciels libres, notamment envers <code>R</code>. Le problème principal d’enseigner les statistiques avec des logiciels libres est qu’ils sont compliqués à apprendre ainsi qu’à utiliser; par conséquent, les étudiants passeraient plus de temps à tenter de résoudre les erreurs de programmation plutôt que d’apprendre les statistiques<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>. Il est vrai que ces logiciels demandent un investissement en temps, afin d’être en mesure de mener ses propres analyses statistiques. Par exemple, <code>R</code> demande l’apprentissage d’un langage de programmation afin de pouvoir utiliser le logiciel à son plein potentiel. De plus, la syntaxe de certaines librairies demande aussi un certain temps d’adaptation.</p>
+<p>Toutefois, lorsque l’on compare le coût d’apprentissage avec les bénéfices tirés, il est plus difficile de soutenir qu’il s’agit uniquement d’un désavantage. L’habileté que nous développons devient très utile par la suite, puisqu’elle nous permet de manipuler ainsi que d’analyser des données. Surtout, ces compétences s’inscrivent dans la longue durée, alors que l’apprentissage est plutôt de courte à moyenne durée. Surtout, la logique derrière la syntaxe de base de <code>R</code> et celle d’une nouvelle librairie reste sensiblement inchangée. Par conséquent, lorsque nous avons une bonne compréhension du fonctionnement de base de <code>R</code>, l’apprentissage d’une nouvelle librairie se fait relativement rapidement. Certaine, comme <code>dplyr</code> du <code>tidyverse</code> facilite grandement la manipulation des données comparativement aux commandes de base. Pour résumer, bien que l’apprentissage d’un langage de programmation demande un investissement en temps, les bénéfices générés par ces nouvelles compétences dépassent le coût initial.</p>
+</section><section id="problème-de-transparence" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="problème-de-transparence">
+<span class="header-section-number">2.5.2</span> 2. Problème de transparence</h3>
+<p>L’arrivée des sciences informatiques a fait émerger des problèmes de reproductibilité des protocoles scientifiques <span class="citation" data-cites="janssen17">(<a href="references.html#ref-janssen17" role="doc-biblioref">Janssen, 2017</a>)</span>. Le problème principal est relatif à l’accès au code utilisé par les chercheurs. Par exemple, il est possible de réaliser des analyses statistiques avec <code>R</code> sans partager le code utilisé, ce qui limite la transparence du processus scientifique. Dans cette situation, il est difficile de savoir si des erreurs de codage ont été commises, volontairement ou involontairement, affectant ainsi les résultats partagés.</p>
+<p>Afin de remédier à ce problème, certains logiciels tel que GitHub<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> participent à la transparence des résultats scientifiques <span class="citation" data-cites="fortunato_galassi21">(<a href="references.html#ref-fortunato_galassi21" role="doc-biblioref"><strong>fortunato_galassi21?</strong></a>)</span>. Ce logiciel permet aux chercheurs de partager leur code afin qu’il puisse être accessible pour tous. Il est important de mentionner ici que l’installation et la configuration de GitHub peuvent s’avérer difficiles pour ceux et celles qui ne sont pas initiés à l’informatique. Cela constitue une certaine barrière dans l’utilisation de ce logiciel. Toutefois, nous souhaitons tout de même présenter l’utilité de ce logiciel puisqu’il permet de rendre les processus ainsi que les résultats de recherche plus transparents. Par exemple, si l’on réalise une analyse statistique de la relation entre l’économie et le vote, nous pourrions partager l’ensemble du code que nous avons utilisé sur GitHub. D’une part cela permettrait aux utilisateurs de vérifier si les résultats sont honnêtes, et d’autre part de réutiliser le code pour mener leurs propres analyses.</p>
+<p>Cependant, le partage du code utilisé reste encore majoritairement volontaire. <span class="citation" data-cites="janssen_etal20">Janssen et al. (<a href="references.html#ref-janssen_etal20" role="doc-biblioref">2020</a>)</span> soutiennent que plus d’effort et d’actions concertés doivent être mis en place afin d’améliorer l’accessibilité aux codes. Toujours selon ces auteurs, les journaux scientifiques pourraient exiger que les auteurs rendent leur code public lors du processus de publication. D’ailleurs, les résultats d’une expérience sur les facteurs qui influencent les chercheurs à partager leur code démontrent que les initiatives individuelles ne seront pas suffisantes pour une augmentation du partage du code <span class="citation" data-cites="krahmer_etal23">(<a href="references.html#ref-krahmer_etal23" role="doc-biblioref"><strong>krahmer_etal23?</strong></a>)</span>. Par conséquent, rendre le code accessible devrait devenir un standard institutionnalisé.</p>
+</section><section id="appropration-capitaliste" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="appropration-capitaliste">
+<span class="header-section-number">2.5.3</span> 3. Appropration capitaliste</h3>
+<p>Dans ce cas-ci, il s’agit plutôt d’un défi auquel le logiciel libre est confronté plutôt qu’une critique quant aux limites de son utilisation. En fait, l’accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constitue un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste <span class="citation" data-cites="broca13 bessen02">(<a href="references.html#ref-bessen02" role="doc-biblioref">Bessen, 2002</a>; <a href="references.html#ref-broca13" role="doc-biblioref">Broca, 2013</a>)</span>. Certaines d’entre elles utilisent les utilisateurs comme une main-d’œuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l’entreprise est la seule bénéficiaire <span class="citation" data-cites="couture20">(<a href="references.html#ref-couture20" role="doc-biblioref"><strong>couture20?</strong></a>)</span>. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales trouble l’essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu’un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui a donné lieu à ce mouvement.</p>
+</section></section><section id="la-chronologie-de-la-recherche" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="la-chronologie-de-la-recherche">
+<span class="header-section-number">2.6</span> La chronologie de la recherche</h2>
+<p>Malgré toutes ces limites et ces défis, nous pensons que les différents outils numériques ont leur place en sciences sociales, et qu’ils s’inscrivent très bien à chaque étape de la recherche. Bien que le partage soit encore majoritairement sur une base volontaire, adopter cette pratique dès maintenant est important pour s’engager vers une science plus ouverte et transparente. Quant à cette dernière caractéristique, il ne faut pas croire que le partage des résultats se limite à une conférence ou à une publication scientifique. Bien au contraire, tout chercheur qui souhaite être le plus transparent doit s’engager dans ce processus dès la conception de sa recherche.</p>
+<p>Avant de présenter différents outils qui existent pour cela, il faut préciser en quoi la transparence et l’accessibilité sont bénéfiques pour tous. D’une part, et comme nous l’avons présentée dans la section précédente, la transparence est une caractéristique fondamentale de toute recherche qui se veut scientifique. Elle est aussi liée à l’intégrité du chercheur. Il est impératif de faire état du processus qui nous a menés à notre conclusion, de la sélection de nos données jusqu’à l’analyse. C’est de cette façon que nous pouvons juger de la validité et de la fiabilité des inférences, et surtout de ses limites. D’autre part, la transparence favorise aussi l’apprentissage <!-- J’AI LU ÇA QUELQUE PART, J’AI LA RÉFÉRENCE DANS MES NOTES -->. De rendre publique et accessible les outils ainsi que leur utilisation permet de contribuer non seulement aux débats méthodologiques, mais aussi permet à d’autres chercheurs d’apprendre sur l’utilité et l’utilisation de ces méthodes.</p>
+<section id="avant-la-recherche" class="level3" data-number="2.6.1"><h3 data-number="2.6.1" class="anchored" data-anchor-id="avant-la-recherche">
+<span class="header-section-number">2.6.1</span> 1. Avant la recherche</h3>
+<p>Comme nous l’avons précisé plus tôt, la transparence exige du chercheur un engagement dès les premières étapes de sa recherche. Tout d’abord, il ou elle peut déjà établir son <em>workflow</em> en créant son dépôt GitHub dans lequel il rendra accessibles son code et ses données. Plus d’informations seront présentées dans le chapitre 3.</p>
+<p>De plus, une fois le <em>design</em> de recherche<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> fait, le ou la chercheur peut le préenregistrer sur le site web de <em>OSF</em>. L’objectif de ce site web est que les chercheurs puissent faire état de leurs hypothèses avant la collecte et l’analyse des données afin d’éviter toute manipulation malhonnête <em>post hoc</em>. Il s’agit d’un mécanisme qui se veut contraignant afin que les chercheurs s’en tiennent à ce qu’ils ou elles avaient prévu de mener comme recherche.</p>
+</section><section id="pendant-la-recherche" class="level3" data-number="2.6.2"><h3 data-number="2.6.2" class="anchored" data-anchor-id="pendant-la-recherche">
+<span class="header-section-number">2.6.2</span> 2. Pendant la recherche</h3>
+<p>Une fois la recherche débutée, plusieurs outils s’offrent à nous pour une gestion efficace de notre flux de travail. Plusieurs d’entre eux seront présentés dans les chapitres suivants. Ces outils permettent notamment de sauvegarder nos données et l’avancement de notre projet sur des serveurs externes (le <em>cloud</em>), comme Dropbox par exemple, afin d’éviter de tout perdre en cas de problème. D’autres permettent de produire le matériel nécessaire pour l’analyse de nos données, tel que R. Certains permet aussi de partager avec des collaborateurs l’avancement de notre projet et les scripts de nos analyses, comme Git et GitHub par exemple. D’autres permettent de structurer notre texte pour la production d’un article scientifique ou d’un chapitre de livre, comme Overleaf et Quarto. Ils permettent notamment d’ajouter des tableaux et des graphiques tirés directement de nos analyses, le tout dans un format respectant les exigences matérielles pour la publication.</p>
+<p>Nous ne voulons pas sous-entendre qu’il n’y a pas de limites à tous ces outils. Chaque chapitre de ce livre présentera les points positifs et négatifs des outils qui y seront abordés.</p>
+</section><section id="après-la-recherche" class="level3" data-number="2.6.3"><h3 data-number="2.6.3" class="anchored" data-anchor-id="après-la-recherche">
+<span class="header-section-number">2.6.3</span> 3. Après la recherche</h3>
+<p>Une fois l’article écrit et publié, les auteurs peuvent décider de rendre accessible le matériel produit et utilisé en version gratuite sur le web. Il s’agit du<em>open science</em>, ou de la <em>science ouverte</em> <span class="citation" data-cites="chakravorty2022">(<a href="references.html#ref-chakravorty2022" role="doc-biblioref"><strong>chakravorty2022?</strong></a>)</span>.</p>
+<p>Cela permet de rendre non seulement les publications accessibles à tous sur internet gratuitement, mais aussi les données utilisées, par exemple, pour la réalisation de l’étude. Ces données peuvent ensuite être réutilisées par d’autres chercheurs. Il s’agit d’avantages très important, et surtout très prometteur. D’une part, un plus grand accès au savoir scientifique aux décideurs publics permettra de prendre des décisions qui s’appuient sur la science, et idéalement, sur une pluralité de sources scientifiques afin de pouvoir évaluer adéquatement les effets positifs et négatifs. D’autre part, la société civile a tout à gagner d’avoir un meilleur accès aux publications scientifiques. Finalement, la réutilisation des données peut réduire considérablement les coûts de la recherche. Bien souvent, la production des données peut engendrer des coûts importants. Par exemple, la production d’un sondage peut coûter plusieurs milliers de dollars, et les données sont bien souvent utilisées qu’une seule fois <!-- Trouver des articles sur ça -->. Grâce au partage des données, et ce de manière gratuite, cela permet à des chercheurs qui n’ont pas toujours les moyens de financer un sondage d’avoir accès à des données. En somme, il s’agit de décloisonner le savoir des milieux académiques. Ce qui vaut non seulement pour les publications, mais aussi pour les données et les protocoles de recherche.</p>
+<p>Toutefois, le libre accès reste confronté à certains défis. D’une part, il y a un transfert de la charge financière qui se fait parfois vers les chercheurs et les universités. Afin que les publications soient accessibles en libre accès, les chercheurs et les universités doivent souvent payer des sommes importantes. Cela soulève plusieurs questions quant aux capacités des universités du Sud global et pour les chercheurs hors universités<!--À VOIR, PEUVENT-ILS PUBLIER DANS LES REVUES SCIENTIFIQUES ? -->, par exemple, de pouvoir assumer la charge financière qui est liée à la publication en accès libre <span class="citation" data-cites="greussing2020 powell">(<a href="references.html#ref-greussing2020" role="doc-biblioref"><strong>greussing2020?</strong></a>; <a href="references.html#ref-powell" role="doc-biblioref"><strong>powell?</strong></a>)</span>. D’autre part, bien que plusieurs pensent que les données ouvertes et la science ouverte puissent contribuer à réduire les inégalités dans la production du savoir entre le Nord et le Sud, certains restent sceptiques quant à ce scénario. En fait, les données ouvertes permettent de réduire les coûts d’accès aux données, mais ne réduisent pas les coûts de production pour autant. Par conséquent, un scénario évoqué par <span class="citation" data-cites="serwadda2018">(<a href="references.html#ref-serwadda2018" role="doc-biblioref"><strong>serwadda2018?</strong></a>)</span> est un retour à la recherche parachute<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>. En d’autres termes, les chercheurs du Sud resteraient des acteurs de second plan, et qui pour étudier leur propre société, devraient utiliser des données de chercheurs du Nord qui auraient été produits sans la participation des chercheurs locaux. Finalement, il y a aussi des enjeux quant à la confidentialité des répondants et des utilisateurs <span class="citation" data-cites="chiware2023">(<a href="references.html#ref-chiware2023" role="doc-biblioref"><strong>chiware2023?</strong></a>)</span>. Plusieurs individus, comme dans le cas d’entretiens ou d’un sondage, vont accepter de participer à l’enquête parce que leurs réponses seront anonymisées et qu’elles ne seront pas partagées publiquement. Tous ces éléments nous montrent qu’il y a d’importantes réflexions éthiques à avoir quant aux bonnes pratiques à développer dans le cadre de la science ouverte. Néanmoins, nous pensons que la science ouverte à un avenir très prometteur et peut générer beaucoup de retombées positives, à conditions quelle s’intéresse aux différents défis auxquels elle est confrontée.</p>
+</section></section><section id="critères-de-sélection" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="critères-de-sélection">
+<span class="header-section-number">2.7</span> Critères de sélection</h2>
+<p>Au cours des prochains chapitres, plusieurs outils seront présentés. Étant donné que le but de l’ouvrage n’est pas uniquement d’offrir une perspective sur le monde du numérique, mais surtout d’offrir des conseils pratiques aux lectrices et lecteurs, certains choix ont dû être faits afin dans la sélection des outils. Bien que ces choix soient arbitraires, ils sont tout de même informés par certains critères. Au moment d’écrire ces lignes, peu de littérature existe sur le sujet. Par conséquent, l’élaboration de ces critères s’est faite de manière inductive, soit à partir de l’expérience des auteurs. Ils sont aussi informés par des considérations pratiques, tels que la popularité de l’utilisation par une communauté et par un champ d’études. Pour être pleinement transparent, la grande majorité des autrices et auteurs de ce livre sont issues de la science politique.</p>
+<p>Malgré cela, nous pensons tout de même que ces critères sont pertinents et informatifs pour les autres disciplines des sciences sociales. Par le fait même, nous souhaitons introduire le débat avec les autres champs. Nous sommes convaincus que ce dialogue sera riche et fructueux. Pour l’instant, tenons-nous-en aux six critères ci-dessous. Tous les outils présentés dans ce livre ne respectent pas nécessairement parfaitement ces critères. Certaines considérations pratiques limitent le plein respect de ces critères.</p>
+<p>Les lectrices et lecteurs sont encouragés à réfléchir à propos de leur propre besoin afin de déterminer quel.s outil.s elles et ils devraient utiliser. Par exemple, si dans leur communauté, les gens utilisent Python plutôt que R, alors nous recommandons d’utiliser Python. En d’autres termes, les critères et les outils de ce livre ne visent pas un dogmatisme, et un rejet total de tous les autres outils qui ne sont pas couverts dans ce livre. Il est important d’évaluer ses besoins afin de choisir quels outils devraient être utilisés.</p>
+<section id="accessibilité-gratuit-ou-peu-dispendieux" class="level3" data-number="2.7.1"><h3 data-number="2.7.1" class="anchored" data-anchor-id="accessibilité-gratuit-ou-peu-dispendieux">
+<span class="header-section-number">2.7.1</span> 1. Accessibilité (Gratuit ou peu dispendieux)</h3>
+<p>Tout d’abord, nous avons sélectionné des outils qui sont gratuits ou peu dispendieux. L’accessibilité au plus grand nombre de ces outils est importante pour l’atteinte d’une science plus inclusive, et qui respecte les moyens de chacun. L’accès à des outils de qualité ne devrait pas être caché des verrous d’accès payants.</p>
+<p>Cette accessibilité est aussi importante pour deux autres raisons. La première, comme le livre vise à donner des connaissances pratiques dans l’utilisation de ces outils numériques, il est important que les lecteurs et lectrices aient facilement accès à ce qui sera présenté. Cela permettra de reproduire au fur et à mesure de la lecture les différentes étapes et pratiques qui sont présentées. La deuxième, est un corolaire du premier, une fois ces compétences acquises, les lecteurs et lectrices pourront facilement les réutiliser pour réaliser les diverses tâches qu’ils et elles ont besoin d’accomplir.</p>
+</section><section id="existence-dune-communauté-dutilisateurs" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="existence-dune-communauté-dutilisateurs">
+<span class="header-section-number">2.7.2</span> 2. Existence d’une communauté d’utilisateurs</h3>
+<p>Ensuite, nous avons considéré l’existence d’une communauté d’utilisateur pour les différents outils qui sont présentés dans ce livre. Ces communautés permettent une grande collaboration entre les différents utilisateurs, et servent souvent de forum d’aide lorsque des problèmes surviennent. Par conséquent, les lecteurs et lectrices auront accès à plusieurs forums d’aide sur internet, au besoin, pour la plupart des outils qui sont présentés dans ce livre. Ainsi, au besoin, ils et elles auront accès à des ressources supplémentaires en ligne lorsqu’une question ou un problème surviendra.</p>
+<p>Il se peut que certains logiciels libres n’aient pas un guide d’utilisateur qui soit fourni avec le téléchargement du logiciel. Parfois, cela peut être difficile pour ceux et celles qui souhaitent apprendre à utiliser certains de ces outils de se retrouver et de répondre aux questions qui surviennent. C’est pour ces raisons que nous avons considéré l’existence d’une communauté d’utilisateurs, et l’existence de forum d’aide sur le web. Par exemple, pour toutes les questions liées au code, nous pouvons aller sur le site web de <em>Stack Overflow</em>, qui est un important forum d’échange, et sur lequel nous pourrons trouver plusieurs informations et réponses à nos questions.</p>
+</section><section id="popularité-dans-le-champ" class="level3" data-number="2.7.3"><h3 data-number="2.7.3" class="anchored" data-anchor-id="popularité-dans-le-champ">
+<span class="header-section-number">2.7.3</span> 3. Popularité dans le champ</h3>
+<p>Nous avons choisi certains outils sur d’autres notamment à cause de leur popularité dans le champ et en sciences sociales. Par exemple, en sciences sociales, pour les analyses quantitatives, c’est le logiciel R qui est prédominant aujourd’hui. Non seulement dans son utilisation, mais aussi dans les formations offertes, comme dans le cadre de l’école d’été de ICPSR. Par conséquent, il s’agit d’une considération pratique. Dans le monde du numérique et de la programmation, certains de ces outils deviennent une forme de langage. Ainsi, la maîtrise de ce langage permet de dialoguer avec les autres chercheurs de notre champ, ce qui favorise les débats et la recherche collaborative, par exemple.</p>
+</section><section id="compatibilité-avec-dautres-outils" class="level3" data-number="2.7.4"><h3 data-number="2.7.4" class="anchored" data-anchor-id="compatibilité-avec-dautres-outils">
+<span class="header-section-number">2.7.4</span> 4. Compatibilité avec d’autres outils</h3>
+<p>Plusieurs des outils que nous présentons sont issus de notre expérience de recherche. Nous utilisons plusieurs d’entre eux notamment parce qu’ils permettent une certaine synergie dans le processus de la recherche. Ainsi, plusieurs d’entre eux peuvent s’intégrer et permettent une connectivité. Par exemple, Zotero, pour la gestion de sa bibliographie, et Quarto, pour l’écriture de sa recherche, se combine et permet ainsi de sauver beaucoup de temps dans l’écriture et la gestion des références. Cette intégration des différents outils est importante puisqu’elle favorise non seulement la productivité et une optimisation individuelle, mais aussi collaborative.</p>
+</section><section id="transparence-et-réplicabilité" class="level3" data-number="2.7.5"><h3 data-number="2.7.5" class="anchored" data-anchor-id="transparence-et-réplicabilité">
+<span class="header-section-number">2.7.5</span> 5. Transparence et réplicabilité</h3>
+<p>D’autres outils qui sont présentés visent à rendre accessibles les résultats de recherche au plus grand nombre. C’est notamment le cas de GitHub, qui sera présenté dans ce livre. Ces plateformes d’entreposage permettent d’héberger des données et des bribes de code, ce qui favorise la reproduction et la transparence des recherches. Ces éléments sont importants pour la science en général, tout en s’inscrivant dans cet objectif de science ouverte.</p>
+<p>Cela favorise aussi l’apprentissage des gens qui souhaitent apprendre à réaliser certaines analyses. Il est possible de trouver beaucoup d’extrait de code sur ces plateformes, que nous pouvons tout simplement copier-coller dans nos propres analyses. Ce faisant, nous pouvons apprendre comment réaliser certaines tâches et performer certaines analyses grâce à ces bribes. Il y a donc d’importantes externalités positives qui sont produites en rendant accessible une partie de nos efforts de recherche.</p>
+</section><section id="adaptabilité-et-flexibilité" class="level3" data-number="2.7.6"><h3 data-number="2.7.6" class="anchored" data-anchor-id="adaptabilité-et-flexibilité">
+<span class="header-section-number">2.7.6</span> 6. Adaptabilité et flexibilité</h3>
+<p>Nous avons voulu présenter des outils qui ont la plus grande flexibilité et adaptabilité possible. Nous souhaitons que tous et toutes puissent trouver des outils qui puissent être adaptés à leurs besoins, immédiats comme futurs. Cette adaptabilité est importante surtout lorsqu’on considère l’investissement en temps qui est nécessaire pour la maîtrise de ces outils. Il est donc important que cet apprentissage ne soit pas à recommencer au complet à chaque fois que nos besoins changent. Certes, il se peut que certains approfondissements soient à faire dans le temps. Cependant, ceux-ci devraient être minimes lorsque nous avons de bonnes bases. La logique de plusieurs de ces outils reste inchangée, il s’agit bien souvent d’apprendre une nouvelle commande, ce qui n’est pas très coûteux en temps lorsqu’on connaît le fonctionnement de l’outil. De plus, plusieurs de ces outils permettent d’avoir un plus grand contrôle sur la production et le formatage du texte et de graphiques, par exemple. Cette flexibilité est un grand avantage lors de la rédaction et de l’analyse des données.</p>
+</section></section><section id="conclusion" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="conclusion">
+<span class="header-section-number">2.8</span> Conclusion</h2>
+<p>En guise de conclusion nous souhaitons mettre l’accent sur un apprentissage important qui se fait de manière implicite dans l’acquisition de ces compétences pratiques: réfléchir de manière scientifique. À la lecture de ce livre, les lecteurs et lectrices auront fait des acquis très importants, et seront mieux outillés pour réfléchir, organiser et produire leurs recherches, peu importe qu’elle soit orientée vers le milieu académique ou professionnel. Nous pouvons décliner le tout en trois principaux arguments.</p>
+<p>Le premier concerne les gains à long terme. Nous avons déjà exposé, en partie, cet argument dans la section des critères. Les outils que nous présentons dans ce livre sont, pour la plupart, très versatiles. Nous pouvons réaliser beaucoup de tâches avec ceux-ci. Bien qu’ils soient, pour certains, coûteux en temps dans leur apprentissage, leurs bénéfices dépassent largement leur coût. Le chapitre 7, celui à propos des langages de balisage, approfondira ce point davantage, et expliquera pourquoi l’apprentissage d’un langage comme &nbsp;à ses bénéfices.</p>
+<p>Le deuxième concerne la synergie entre tous ces outils. Comme nous l’avons brièvement expliqué dans les critères de sélection, l’apprentissage de ces différents outils favorise le développement d’une synergie entre les différentes étapes et besoin d’une recherche; notamment dans le développement de sa capacité à récolter, à entreposer, à partager, à analyser et à publier ses données ainsi que ses résultats de recherche.</p>
+<p>Le troisième concerne le développement de sa « pensée de chercheur ». Comprendre et maîtriser certains de ces outils permet de se doter de capacités réflexives qui pourront être mobilisées dès les premiers moments de la recherche, soit ceux de la conceptualisation. Dès qu’un intérêt de recherche se développe nous pourrons déjà réfléchir à propos de sa faisabilité, et de quelle manière pourrais-je récolter et analyser des données qui me permettront de répondre à ma question. Cela permet aussi de découvrir de nouvelles méthodes d’analyses de données. Simplement par ces étapes préliminaires, nous gagnons beaucoup de temps et d’itérations simplement par la capacité que nous avons à pouvoir penser une recherche qui pourra être réalisée dans la mesure du possible. De plus, cela permet aussi de développer son jugement critique et d’analyse, fort utile lorsqu’on lit des articles et des ouvrages scientifiques. Cela permet de mieux comprendre, d’analyser et de critiquer ce que les autres chercheurs ont fait dans le cadre de leurs recherches.</p>
+<!-- 
+Ce chapitre à voulu mettre de l'avant le logiciel libre afin d'initier les lecteurs et lectrices à ce monde. Le but n'était pas de présenter de manière exhaustive tout ce champ. Plutôt, nous avons préféré nous limiter aux bases de compréhension, ainsi qu'à quelques exemples. Par conséquent, nous souhaitions qu'à la lecture du chapitre, les lecteurs et lectrices soient mieux outillés pour comprendre et réfléchir par rapport à ce monde, et ainsi insérer ces réflexions dans leurs démarches scientifiques. Générer des idées et des débats nous paraît bien plus promoteur pour l'avenir que d'apprendre par coeur.
+
+En guise de conclusion, nous souhaitons résumer ce chapitre tout en situant ces différents éléments dans les sciences sociales à l'ère du numérique. Le livre de @marres17 est très intéressant à ce sujet. Face au constat que la vie sociale se trouve affectée par les changements numériques, il nous faut en tant que chercheur du monde social réfléchir à notre façon de comprendre les changements qui sont entrain de s'opérer. Bien que ces réflexions ratissent large [^9], nous nous concentrons ici sur la dimension méthodologique.
+
+[^9]: Allant de nos postulats ontologiques, épistémologiques et méthodologiques.
+
+Comme nous l'avons présenté ci-haut, les bas coûts associés à l'utilisation ainsi que la facilité du partage avec la communauté nous semble être deux avantages importants pour l'avenir des sciences sociales numériques. Notamment parce qu'ils ont le potentiel d'améliorer la transparence des protocoles scientifiques. Dans *Designing Social Inquiery*, l'un des livres les plus influents en science politique depuis les trente dernières années, les auteurs définissent quatre caractéristiques que chaque recherche doit posséder afin d'être considérée comme scientifique. L'une d'elles, est que la *procédure doit être publique*: "La recherche scientifique utilise des méthodes explicites, codifiées et publiques afin de générer et analyser des données sur lesquelles la fiabilité peut ensuite être déterminer" [@king_etal21, 6]. Chaque individu qui souhaite contribuer à la connaissance et à la compréhension globale que nous avons de la réalité sociale doit garder en tête cette caractéristique fondamentale. Comme nous l'avons exposé, le partage du code devient un impératif pour assurer la transparence, la réplicabilité ainsi que la qualité des recherches.
+
+## À VOIR 
+
+Pour résumer, les logiciels libres permettent donc une plus grande égalité dans l'accès aux nouvelles technologies, puisqu'ils ont dans la majorité des cas, des coûts d'acquisition nettement moindre. (Oui et non, l'acquisition financière est une chose, mais il y a d'autres barrières à l'utilisation tel que l'apprentissage à faire pour apprendre un language de programmation, l'achat de matériel informatique, etc. ) Cependant, considérant cela, donner l'exemple de l'étude qui montre que c'est beaucoup plus économique, même si l'on doit compter les coûts de formation, le soutien technique, l'entretien et la maintenance. [@couture14; @karjalainen10].
+
+
+-->
+<!--
+
+## Cas d'étude: `R`
+
+Afin d'illustrer le tout plus concrètement, nous utiliserons ici le cas du logiciel `R`. Il s'agit d'un logiciel statistique que tous les utilisateurs peuvent télécharger gratuitement, et dans lequel aucun achat supplémentaire est nécessaire pour avoir accès à des fonctionnalités additionnels. Bien que ce logiciel soit déjà riche en fonctions et commandes, plusieurs utilisateurs ont développé des *packages*, des libraries externes, afin de bonifier les fonctions de base [@arel-bundock21]. Utilisons un cas d'étude afin de démontrer l'apport des librairies externes. Par exemple, je souhaite savoir la probabilité de survie à bord du Titanic en fonction du genre. Je pourrais résumer mon intérêt avec sous la notation suivante: $P(Y = Survie | X = Femme)$. En d'autres termes, la probabilité de survie étant donné que nous soyons une femme. Pour ce faire, je dois utiliser l'ensemble de données `Titanic`, disponible en format csv. Je dois donc installer et télécharger la librairie `readr` afin que `R` puisse importer et lire les données. Ensuite je vais utiliser la commande `table`, inclue dans les commandes de base de `R`, afin de produire un tableau croisé entre les variables femme et survie.
+
+``` r
+install.packages("readr")
+```
+
+::: {.cell}
+
+```{.r .cell-code}
+library(readr) 
+
+dat <- read_csv("data/titanic.csv")
+
+table(dat$survie, dat$femme) 
+```
+:::
+
+Comme nous le voyons ici, la librairie `readr`, développé par plusieurs individus[^5], nous a permis d'importer l'ensemble de données à propos des passagers du Titanic. Toutefois, le format du tableau n'est pas très esthétique. Pour remédier à ce problème, nous pouvons installer et utiliser la librarie `modelsummary` qui nous permettra de créer rapidement des tableaux croisés plus esthétique, et qui contiendrons davantage d'informations, facilitant la lecture et notre compréhension de la relation qui nous intéresse.
+
+[^5]: Pour avoir la liste complète des contributeurs, les lecteurs peuvent utiliser la commande `?readr` dans `R`, ou bien consulter le lien suivant https://readr.tidyverse.org
+
+``` r
+install.packages("modelsummary")
+```
+
+```r 
+library(modelsummary)
+
+Tableau_2.1 <- datasummary_crosstab(survie ~ femme, data = dat, title = ' ') 
+
+Tableau_2.1
+```
+
+Comme nous le voyons, la commande `datasummary_crosstab()` permet facilement de créer des tableaux non seulement plus esthétiques, mais aussi plus informatif. C'est très utile si l'on souhaite incorporer des tableaux dans notre rapport finale, surtout que cette commande nous permet d'exporter les tableaux sous diffèrents format (.docx, `LaTeX`, .qmd, etc.)
+
+Ces deux librairies que nous venons de présenter en exemple, ne sont que deux des 19 897 disponibles pour `R`. Elles illustrent très bien la contribution que les utilisateurs peuvent faire au logiciel. Surtout, ces *add on* ont été développés de manière bénévole. Les contributeurs le font par "passion", et pour en faire profiter la collectivité d'utilisateurs.
+
+Les logiciels libres permettent aux utilisateurs de jouir d'une plus grande liberté dans leur utilisation, ce qui génère des externalités positives puisque ces gens peuvent créer de nouvelles commandes ou fonction et en faire bénéficier toute la collectivité. L'exemple que nous avons utilisé avec `R` ici reflète très bien cet avantage. La prochaine section de ce chapitre se penche plus en profondeur sur les autres avantages ainsi que sur les inconvénients de ces logiciels.
+
+-->
+<div style="page-break-after: always;"></div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-beraud07" class="csl-entry" role="listitem">
+Béraud, C. (2007). <em>Le Logiciel Libre, Une Cause Nationale, Une Opportunité Pour Le <span>Québec</span></em> (p. 20). FACIL. <a href="https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf">https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf</a>
+</div>
+<div id="ref-bessen02" class="csl-entry" role="listitem">
+Bessen, J. (2002). What <span>Good Is Free Software</span>? In R. W. Hahn (Éd.), <em>Government <span>Policy</span> toward <span>Open Source Software</span></em> (p. 12‑33). Brookings Institution Press. <a href="https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.5">https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.5</a>
+</div>
+<div id="ref-brady_collier10" class="csl-entry" role="listitem">
+Brady, H. E., &amp; Collier, D. (Éds.). (2010). <em>Rethinking <span>Social Inquiry</span>. <span>Diverse Tools</span>, <span>Shared Standards</span></em> (2ᵉ éd.). Rowman &amp; Littlefield Publishers.
+</div>
+<div id="ref-broca13" class="csl-entry" role="listitem">
+Broca, S. (2013). <em>Utopie Du Lociel Libre. <span>Du</span> Bricolage Informatique à La Réinvention Sociale.</em> Le passage clandestin.
+</div>
+<div id="ref-couture14" class="csl-entry" role="listitem">
+Couture, S. (2014). <em>Les logiciels libres, un an plus tard</em>. Institut de recherche et d’informations socioéconomiques. <a href="https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/">https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/</a>
+</div>
+<div id="ref-janssen17" class="csl-entry" role="listitem">
+Janssen, M. A. (2017). The <span>Practice</span> of <span>Archiving Model Code</span> of <span>Agent-Based Models</span>. <em>Journal of Artificial Societies and Social Simulation</em>, <em>20</em>(1), 2.
+</div>
+<div id="ref-janssen_etal20" class="csl-entry" role="listitem">
+Janssen, M. A., Pritchard, C., &amp; Lee, A. (2020). On Code Sharing and Model Documentation of Published Individual and Agent-Based Models. <em>Environmental Modelling &amp; Software</em>, <em>134</em>, 104873. <a href="https://doi.org/10.1016/j.envsoft.2020.104873">https://doi.org/10.1016/j.envsoft.2020.104873</a>
+</div>
+<div id="ref-king_etal21" class="csl-entry" role="listitem">
+King, G., Keohane, R. O., &amp; Verba, S. (2021). <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> (Nouvelle édition). Princeton University Press.
+</div>
+<div id="ref-marres17" class="csl-entry" role="listitem">
+Marres, N. (2017). <em>Digital <span>Sociology</span>. <span>The Reinvention</span> of <span>Social Research</span>.</em> Polity.
+</div>
+<div id="ref-opensourceinitiative06" class="csl-entry" role="listitem">
+Open Source Initiative. (2006, juillet 7). <em>The <span>Open Source Definition</span></em>. Open Source Initiative. <a href="https://opensource.org/osd/">https://opensource.org/osd/</a>
+</div>
+<div id="ref-paura_arhipova12" class="csl-entry" role="listitem">
+Paura, L., &amp; Arhipova, I. (2012). Advantages and <span>Disadvantages</span> of <span>Professional</span> and <span>Free Software</span> for <span>Teaching Statistics</span>. <em>Information Technology and Management Science</em>, <em>15</em>(1). <a href="https://doi.org/10.2478/v10313-012-0001-z">https://doi.org/10.2478/v10313-012-0001-z</a>
+</div>
+<div id="ref-przeworski_teune70" class="csl-entry" role="listitem">
+Przeworski, A., &amp; Teune, H. (1970). <em>The Logic of Comparative Social Inquiry</em>. John Wiley &amp; Sons, Ltd.
+</div>
+<div id="ref-santillan-anguiano_gonzalez-machado23" class="csl-entry" role="listitem">
+Santillán-Anguiano, E. I., &amp; González-Machado, E. C. (2023). Advantages of a <span>Free Software Culture</span> for <span>Qualitative Researchers</span> in the <span>Social Sciences</span>. <em>International Journal of Qualitative Research</em>, <em>3</em>(1), 97‑103. <a href="https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841">https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841</a>
+</div>
+<div id="ref-smith02" class="csl-entry" role="listitem">
+Smith, B. L. (2002). The <span>Future</span> of <span>Software</span>: <span>Enabling</span> the <span>Marketplace</span> to <span>Decide</span>. In R. W. Hahn (Éd.), <em>Government <span>Policy</span> toward <span>Open Source Software</span></em> (p. 69‑86). Brookings Institution Press. <a href="https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8">https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8</a>
+</div>
+<div id="ref-stallman86" class="csl-entry" role="listitem">
+Stallman, R. (1986). <em><span>GNU</span>’s <span>Bulletin</span></em>. <a href="https://www.gnu.org/bulletins/bull1.txt">https://www.gnu.org/bulletins/bull1.txt</a>
+</div>
+<div id="ref-stallman22" class="csl-entry" role="listitem">
+Stallman, R. (2022). <em>En Quoi l’open Source Perd de Vue l’éthique Du Logiciel Libre - <span>Projet GNU</span> - <span>Free Software Foundation</span></em>. Système d’exploitation GNU. <a href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">https://www.gnu.org/philosophy/open-source-misses-the-point.html</a>
+</div>
+<div id="ref-systemedexploitationgnu23" class="csl-entry" role="listitem">
+Système d’exploitation GNU. (2023). <em>Catégories de Logiciels Libres et Non Libres - <span>Projet GNU</span> - <span>Free Software Foundation</span></em>. Système d’exploitation GNU. <a href="https://www.gnu.org/philosophy/categories.html#">https://www.gnu.org/philosophy/categories.html#</a>
+</div>
+<div id="ref-williams_etal10" class="csl-entry" role="listitem">
+Williams, S., Stallman, R. M., &amp; Masutti, C. (2010). <em>Richard Stallman et la révolution du logiciel libre - Une biographie autorisée</em>. Eyrolles. <a href="https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf">https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf</a>
+</div>
+</div>
+</section></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
+<ol>
+<li id="fn1"><p>La redistribution doit évidemment respecter certaines conditions précises, dont l’enfreint peut mener à des condamnations [http://www.softwarefreedom.org/resources/2008/shareware.html]<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Pour rester dans les analogies culinaires, le code source est au logiciel est-ce que la recette est à un plat: elle indique les actions à effectuer, une par une, pour arriver à un résultat précis. Encore une fois, ce dernier peut-être adapté, modifié, bonifié.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Pour une liste plus exhaustive, les lecteurs et lectrices peuvent aller consulter le répertoire du gouvernement du Canada: https://code.open.canada.ca/fr/logiciels-libres.html#<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Généralement, un design de recherche comprend les éléments suivants: Introduction, revue des écrits, problématiques, une question de recherche, un cadre théorique, des hypothèses ainsi qu’une section sur la méthode et les données utilisées.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>En date d’écrire ces lignes, avril 2024.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Soit ceux qui ont été conçus suivant les principes philosophiques et « moraux » qui sous-tendent ce mouvement.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Pour plus d’informations sur ces caractéristiques, nous encourageons les lecteurs à se référer au lien web de <span class="citation" data-cites="opensourceinitiative06">Open Source Initiative (<a href="references.html#ref-opensourceinitiative06" role="doc-biblioref">2006</a>)</span>. Ils y trouveront un contenu détaillé pour chacune des caractéristiques susmentionnées.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Ce livre est aussi connu sous l’acronyme <em>KKV</em>, en référence à la première lettre du nom de famille de chacun des auteurs.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Par exemple, les mouvements sociaux, le comportement électoral, les guerres et les révolutions, et bien plus.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>L’objectif des auteurs est de permettre le dialogue et la réconciliation entre les tenants des deux principales traditions méthodologiques: les quantitativistes et les quanlitativistes. D’où leur vision de la science comme se devant de développer des preuves qui seront considérées comme convaincantes par les chercheurs de ces deux traditions.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Nous préférons formuler la phrase ici en stipulant que le choix d’une méthode de recherche peut être informé par la théorie et notre question de recherche simultanément, mais peut aussi être fait seulement à partir d’une question de recherche. Cela fait référence à deux processus de recherche différents soit la méthode hypothético-inductive, et celle déductive.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Généralement, un design de recherche comprend les éléments suivants: Introduction, revue des écrits, problématiques, une question de recherche, un cadre théorique, des hypothèses ainsi qu’une section sur la méthode et les données utilisées.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>En date d’écrire ces lignes, septembre 2023.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Sur cet enjeu, nous conseillons les lecteurs et lectrices à aller lire le chapitre 2 sur les langages de programmation ainsi que le chapitre 8 sur l’intelligence artificielle. Plusieurs trucs et astuces seront présentés dans ces chapitres.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>une plateforme publique <em>code ouvert</em> sur laquelle nous pouvons héberger et partager notre code.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Généralement, un design de recherche comprend les éléments suivants: Introduction, revue des écrits, problématiques, une question de recherche, un cadre théorique, des hypothèses ainsi qu’une section sur la méthode et les données utilisées.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>La recherche parachute est « pratique extractive par laquelle des chercheurs - généralement issus de pays dotés de ressources élevées - effectuent des recherches et extraient des données et des échantillons de régions ou de populations non autochtones, généralement des contextes ou des pays à faibles ressources, sans reconnaître de manière appropriée l’importance de l’infrastructure et de l’expertise locales. Ce faisant, les chercheurs étrangers ne parviennent pas à établir des collaborations équitables et à long terme avec des partenaires locaux. » <span class="citation" data-cites="odeny2022">(<a href="references.html#ref-odeny2022" role="doc-biblioref"><strong>odeny2022?</strong></a>)</span><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Avant-propos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Avant-propos</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_2.html" class="pagination-link" aria-label="Langages de programmation">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Langages de programmation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Livre-outils</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+</body></html>
