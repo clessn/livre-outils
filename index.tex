@@ -143,6 +143,22 @@
 
 \KOMAoption{captions}{tableheading}
 \makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
 \makeatother
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
@@ -227,7 +243,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden, breakable, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, sharp corners, enhanced, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -861,8 +877,8 @@ développent de manière privée et fermée, les logiciels libres permettent
 partagent ensuite leurs améliorations, ce qui stimule à son tour de
 nouvelles initiatives. De plus, il est raisonnable de penser que
 l'utilité des améliorations, ainsi que l'utilisation qui en est faite
-par les utilisateurs, permet de générer un savoir collaboratif (Couture,
-2020).
+par les utilisateurs, permet de générer un savoir collaboratif
+(\textbf{couture20?}).
 
 Il y a aussi certains avantages économiques, dont son faible coût
 d'acquisition et de renouvellement pour les particuliers. Cet avantage
@@ -876,14 +892,14 @@ d'acquisition coûte bien souvent moins cher, et aucun renouvellement de
 licence n'est demandé dans la plupart des cas. Étant donné que les
 chercheurs doivent souvent faire face à des contraintes budgétaires, les
 logiciels libres deviennent des outils intéressants afin de minimiser
-les coûts de la recherche (Yu \& Muñoz-Justicia, 2022). Il s'agit d'un
-avantage encore plus important et intéressant pour les chercheurs dans
-les pays du Sud global (Santillán-Anguiano \& González-Machado, 2023).
-L'accessibilité de ces ressources permet donc de réduire l'écart dans la
-production scientifique entre les pays du Sud et ceux du Nord. De plus,
-elle permet à tous de bénéficier d'outils pédagogiques accessibles, ce
-qui favorise l'acquisition ainsi que le développement de compétences
-méthodologiques.
+les coûts de la recherche (\textbf{yu\_munoz-justicia22?}). Il s'agit
+d'un avantage encore plus important et intéressant pour les chercheurs
+dans les pays du Sud global (Santillán-Anguiano \& González-Machado,
+2023). L'accessibilité de ces ressources permet donc de réduire l'écart
+dans la production scientifique entre les pays du Sud et ceux du Nord.
+De plus, elle permet à tous de bénéficier d'outils pédagogiques
+accessibles, ce qui favorise l'acquisition ainsi que le développement de
+compétences méthodologiques.
 
 Dans le cadre d'une formation universitaire, il peut être pertinent
 d'enseigner aux étudiants à se servir de logiciel statistique ou
@@ -941,7 +957,7 @@ clarifier l'ambiguïté dans la dénomination « logiciel libre »
   philosophiques et « moraux » qui sous-tendent ce mouvement.},
 \emph{free software} en anglais, afin de spécifier que le code source
 était accessible, et non pas que le logiciel était « gratuit »
-(Ballhausen, 2019). De plus, les logiciels à code ouvert doivent
+(\textbf{ballhausen19?}). De plus, les logiciels à code ouvert doivent
 respecter un certain nombre de critères quant à la distribution de leurs
 logiciels (Open Source Initiative, 2006). Nous aborderons ces critères
 dans le prochain paragraphe.
@@ -953,12 +969,12 @@ de quatre libertés: 1) liberté d'utiliser le programme comme désiré; 2)
 liberté d'étudier le fonctionnement du programme et de le modifier pour
 ses propres besoins; 3) liberté de redistribuer des copies; 4) liberté
 de distribuer des copies de la version « améliorer » du programme pour
-ses pairs (Ballhausen, 2019). Concernant le \emph{code ouvert}, tout
-logiciel qui souhaite être inclus sous cette appellation doit respecter
-dix critères: 1) Redistribution gratuite; 2) doit inclure le code
-source; 3) doit permettre les modifications et les travaux dérivés; 4)
-intégrité du code source; 5) ne doit pas discriminer des personnes et/ou
-groupes; 6) ne doit pas restreindre personne dans l'utilisation du
+ses pairs (\textbf{ballhausen19?}). Concernant le \emph{code ouvert},
+tout logiciel qui souhaite être inclus sous cette appellation doit
+respecter dix critères: 1) Redistribution gratuite; 2) doit inclure le
+code source; 3) doit permettre les modifications et les travaux dérivés;
+4) intégrité du code source; 5) ne doit pas discriminer des personnes
+et/ou groupes; 6) ne doit pas restreindre personne dans l'utilisation du
 logiciel pour un domaine d'activité; 7) distribution d'une licence pour
 l'utilisation; 8) la licence ne doit pas être spécifique pour un
 produit; 9) la licence ne doit pas placer de restriction sur d'autres
@@ -1054,15 +1070,15 @@ plusieurs de ces phénomènes ne sont pas homogènes et qu'ils ne sont pas
 immuables, nous devons constamment revoir les explications et notre
 compréhension de ces dynamiques.
 
-Dans la même lancée, l'ouvrage \emph{Rethinking Social Inquiry} (Brady
-\& Collier, 2010), une réponse à King et al. (2021), partage, en partie,
-cette définition de la recherche scientifique. Pour Brady \& Collier
-(2010), les scientifiques du monde social possèdent plusieurs outils qui
-leur permettent de \emph{designer}, \emph{d'exécuter} et
-\emph{d'évaluer} une recherche. Ces outils sont des procédures et des
-pratiques employées par les chercheurs des traditions quantitatives et
-qualitatives. Ils ont aussi des techniques analytiques qui leur
-permettent de \emph{développer des preuves qui sont
+Dans la même lancée, l'ouvrage \emph{Rethinking Social Inquiry}
+(\textbf{brady\_collier10?}), une réponse à King et al. (2021), partage,
+en partie, cette définition de la recherche scientifique. Pour
+(\textbf{brady\_collier10?}), les scientifiques du monde social
+possèdent plusieurs outils qui leur permettent de \emph{designer},
+\emph{d'exécuter} et \emph{d'évaluer} une recherche. Ces outils sont des
+procédures et des pratiques employées par les chercheurs des traditions
+quantitatives et qualitatives. Ils ont aussi des techniques analytiques
+qui leur permettent de \emph{développer des preuves qui sont
 convaincantes}\footnote{L'objectif des auteurs est de permettre le
   dialogue et la réconciliation entre les tenants des deux principales
   traditions méthodologiques: les quantitativistes et les
@@ -1071,16 +1087,16 @@ convaincantes}\footnote{L'objectif des auteurs est de permettre le
   les chercheurs de ces deux traditions.}.
 
 Chacun de ces outils a toutefois ses forces et ses faiblesses. Inspiré
-de Przeworski \& Teune (1970), Brady \& Collier (2010) parlent ainsi de
-\emph{compromis}. Selon eux, la pertinence d'un outil méthodologique
-dépend de la question de recherche, du but de la recherche et de son
-contexte. Le choix d'un outil, sur cette base, entraîne des compromis
-qui empêchent d'atteindre tous les buts analytiques simultanément. Même
-lorsqu'il y a adéquation entre la question et la méthode, plusieurs
-autres embuches peuvent entraîner ces compromis, comme la disponibilité
-des données par exemple, qui limitent par la suite la qualité et la
-précision des résultats, ce qui explique, en partie, l'incertitude
-envers les conclusions.
+de (\textbf{przeworski\_teune70?}), (\textbf{brady\_collier10?}) parlent
+ainsi de \emph{compromis}. Selon eux, la pertinence d'un outil
+méthodologique dépend de la question de recherche, du but de la
+recherche et de son contexte. Le choix d'un outil, sur cette base,
+entraîne des compromis qui empêchent d'atteindre tous les buts
+analytiques simultanément. Même lorsqu'il y a adéquation entre la
+question et la méthode, plusieurs autres embuches peuvent entraîner ces
+compromis, comme la disponibilité des données par exemple, qui limitent
+par la suite la qualité et la précision des résultats, ce qui explique,
+en partie, l'incertitude envers les conclusions.
 
 Il est intéressant de concevoir la réalité sociale comme étant un prisme
 ayant un nombre infini de face. Chacune de ces faces correspond à une
@@ -1181,20 +1197,20 @@ partagés.
 Afin de remédier à ce problème, certains logiciels tel que
 GitHub\footnote{une plateforme publique \emph{code ouvert} sur laquelle
   nous pouvons héberger et partager notre code.} participent à la
-transparence des résultats scientifiques (Fortunato \& Galassi, 2021).
-Ce logiciel permet aux chercheurs de partager leur code afin qu'il
-puisse être accessible pour tous. Il est important de mentionner ici que
-l'installation et la configuration de GitHub peuvent s'avérer difficiles
-pour ceux et celles qui ne sont pas initiés à l'informatique. Cela
-constitue une certaine barrière dans l'utilisation de ce logiciel.
-Toutefois, nous souhaitons tout de même présenter l'utilité de ce
-logiciel puisqu'il permet de rendre les processus ainsi que les
-résultats de recherche plus transparents. Par exemple, si l'on réalise
-une analyse statistique de la relation entre l'économie et le vote, nous
-pourrions partager l'ensemble du code que nous avons utilisé sur GitHub.
-D'une part cela permettrait aux utilisateurs de vérifier si les
-résultats sont honnêtes, et d'autre part de réutiliser le code pour
-mener leurs propres analyses.
+transparence des résultats scientifiques
+(\textbf{fortunato\_galassi21?}). Ce logiciel permet aux chercheurs de
+partager leur code afin qu'il puisse être accessible pour tous. Il est
+important de mentionner ici que l'installation et la configuration de
+GitHub peuvent s'avérer difficiles pour ceux et celles qui ne sont pas
+initiés à l'informatique. Cela constitue une certaine barrière dans
+l'utilisation de ce logiciel. Toutefois, nous souhaitons tout de même
+présenter l'utilité de ce logiciel puisqu'il permet de rendre les
+processus ainsi que les résultats de recherche plus transparents. Par
+exemple, si l'on réalise une analyse statistique de la relation entre
+l'économie et le vote, nous pourrions partager l'ensemble du code que
+nous avons utilisé sur GitHub. D'une part cela permettrait aux
+utilisateurs de vérifier si les résultats sont honnêtes, et d'autre part
+de réutiliser le code pour mener leurs propres analyses.
 
 Cependant, le partage du code utilisé reste encore majoritairement
 volontaire. Janssen et al. (2020) soutiennent que plus d'effort et
@@ -1204,9 +1220,9 @@ scientifiques pourraient exiger que les auteurs rendent leur code public
 lors du processus de publication. D'ailleurs, les résultats d'une
 expérience sur les facteurs qui influencent les chercheurs à partager
 leur code démontrent que les initiatives individuelles ne seront pas
-suffisantes pour une augmentation du partage du code (Krähmer et al.,
-2023). Par conséquent, rendre le code accessible devrait devenir un
-standard institutionnalisé.
+suffisantes pour une augmentation du partage du code
+(\textbf{krahmer\_etal23?}). Par conséquent, rendre le code accessible
+devrait devenir un standard institutionnalisé.
 
 \hypertarget{appropration-capitaliste}{%
 \subsection{3. Appropration
@@ -1222,7 +1238,7 @@ capitaliste (Bessen, 2002; Broca, 2013). Certaines d'entre elles
 utilisent les utilisateurs comme une main-d'œuvre gratuite afin de
 bonifier leur logiciel, ce qui permet, dans certains cas, de générer des
 revenus commerciaux dont l'entreprise est la seule bénéficiaire
-(Couture, 2020). Attention, il ne faut pas penser que toutes les
+(\textbf{couture20?}). Attention, il ne faut pas penser que toutes les
 compagnies agissent de manière prédatrice. Le but ici est de souligner
 que certaines pratiques commerciales trouble l'essence du mouvement du
 logiciel libre, qui se veut davantage être un outil de collaboration
@@ -1601,14 +1617,14 @@ programmation. \textbf{R} a deux types de compétiteurs : les logiciels à
 licences comme SAS, STATA et SPSS, et les langages \emph{OpenSource}
 tels que Python et Julia. \textbf{R} est un langage de programmation
 \emph{OpenSource} développé par des statisticiens, pour des
-statisticiens, dans les années 1990 (Tippmann, 2015). \textbf{R} prend
-ses racines dans le langage de programmation S, créé notamment par Ross
-Ihaka et Robert Gentleman. Ces derniers ont fait des choix non
+statisticiens, dans les années 1990 (\textbf{tippmann15?}). \textbf{R}
+prend ses racines dans le langage de programmation S, créé notamment par
+Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non
 orthodoxes lors de l'élaboration du langage, qui font aujourd'hui la
 popularité de ce logiciel auprès d'un large pan de la communauté
-académique. En effet, Morandat et al. (2012) rapporte que le langage a
-été élaboré afin qu'il soit intuitif et qu'il permette aux nouveaux
-utilisateurs de rapidement réaliser des analyses.
+académique. En effet, (\textbf{morandat\_etal12?}) rapporte que le
+langage a été élaboré afin qu'il soit intuitif et qu'il permette aux
+nouveaux utilisateurs de rapidement réaliser des analyses.
 
 Le langage de programmation \textbf{R} a plusieurs avantages qui font de
 lui un outil puissant et utile pour tout chercheur. L'un de ses grands
@@ -1624,8 +1640,8 @@ rendent le processus plus lent et réduisent l'éventail des possibilités
 pour la personne chercheuse. Ceci étant dit, certains avanceront que
 c'est justement ce processus interne lent qui assure la validité et la
 fiabilité des analyses effectuées par SAS, STATA ou SPSS. Or, dans son
-livre dédié aux utilisateurs de SPSS et de SAS, Muenchen (2011) soulève
-le point que bien souvent, ce sont des individus atomisés qui
+livre dédié aux utilisateurs de SPSS et de SAS, (\textbf{muenchen11?})
+soulève le point que bien souvent, ce sont des individus atomisés qui
 développent les nouvelles fonctionnalités de ces langages et que le
 processus de révisions se fait ensuite par des comités internes de
 testeurs. Il en va de même pour le développement des \emph{packages} R
@@ -1636,7 +1652,7 @@ sont développées pour R par des chercheurs qui publient leur travail
 dans des journaux académiques revus par des pairs, assurant la qualité
 du procédé. Le fait que SAS et SPSS permettent à leur utilisateur
 d'intégrer des routines R à leur programme est un indicateur fort ne
-serait-ce que de l'utilité de R (Muenchen, 2011). Le langage de
+serait-ce que de l'utilité de R (\textbf{muenchen11?}). Le langage de
 programmation \textbf{R} permet également de réaliser une grande
 quantité de tâches de recherche. En effet, les personnes programmant en
 \textbf{R} peuvent notamment manipuler et visualiser des données, faire
@@ -1897,37 +1913,48 @@ notre travail.
 \hypertarget{gestion-individuelle}{%
 \section{Gestion Individuelle}\label{gestion-individuelle}}
 
-\hypertarget{gestion-de-tuxe2ches-notion-monday}{%
-\subsection{Gestion de tâches (Notion,
-Monday)}\label{gestion-de-tuxe2ches-notion-monday}}
+\hypertarget{gestion-de-tuxe2ches}{%
+\subsection{Gestion de tâches}\label{gestion-de-tuxe2ches}}
 
 Structurer ses tâches est un processus fondamental pour mener un projet
-à terme. Particulièrement dans le monde académique, les travaux
-s'échelonnent souvent sur plusieurs années, et il est facile de perdre
-ses objectifs de vue, ou de prendre des détours coûteux en temps si le
+à terme. Particulièrement dans le monde académique, où les travaux
+s'échelonnent souvent sur plusieurs années, il est facile de perdre de
+vue ses objectifs ou de prendre des détours coûteux en temps si le
 chemin vers le produit final est mal défini. Gérer et structurer ses
-tâches convenablement facilite la mesure des progrès, et permet de
-constamment vérifer si ceux-ci sont encore alignés avec les objectifs
+tâches de manière efficace facilite la mesure des progrès et permet de
+constamment vérifier si ceux-ci sont encore alignés avec les objectifs
 finaux.
 
 \hypertarget{comment}{%
 \subsubsection{Comment}\label{comment}}
 
-Gérer ses tâches de façon efficace passe par la structuration des
-objectifs du projet. Il faut connaître la destination afin de choisir la
-direction. Pour se faire, il est bien de dessiner, ou de faire une liste
-de la conception de la version finale du projet. Dans l'idéal, à quoi
-ressemble le projet dans sa dernière version. Une fois cette étape
-franchie, il est possible de désagréger le projet en grandes étapes. Que
-faut-il faire, à l'échelle macro, pour atteindre les objectifs du
-projet? À cette étape, il est important de prendre en compte les
-ressources financières, temporelles et humaines, afin de déterminer de
-façon réaliste ce qui est possible. En suivant ce processus dès le début
-de votre projet, vous évitez de faire des erreurs conceptuelles qui vous
-obligent à reculer et à retourner à la planche à dessin.
+Gérer ses tâches de façon efficace passe par une structuration claire
+des objectifs du projet. Il est important de connaître la destination
+finale afin de choisir la meilleure direction pour y parvenir. Pour ce
+faire, il est utile de schématiser ou de lister la conception de la
+version finale du projet. Dans l'idéal, à quoi ressemble-t-il dans sa
+forme aboutie? Une fois cette vision clairement définie, il est possible
+de désagréger le projet en grandes étapes. Que faut-il accomplir, à
+l'échelle macro, pour atteindre les objectifs fixés?
+
+À cette étape, il est crucial de prendre en compte les ressources
+financières, temporelles et humaines disponibles. Cela permet de
+déterminer de manière réaliste ce qui est possible. Identifier ces
+grandes étapes contribue à la création d'un plan de projet structuré où
+chaque phase est clairement définie. Cela aide à anticiper les besoins
+en ressources et à ajuster les échéances en conséquence.
+
+La révision continue est également un élément clé du processus de
+gestion des tâches. En réévaluant régulièrement l'état d'avancement du
+projet par rapport au plan initial, il est possible d'apporter des
+ajustements nécessaires pour rester sur la bonne voie. Cet astuce permet
+de répondre aux changements inévitables qui surviennent au cours de la
+recherche, qu'ils soient dus à des découvertes inattendues, des
+changements dans les directives institutionnelles ou des feedbacks des
+pairs.
 
 \hypertarget{quand}{%
-\paragraph{Quand}\label{quand}}
+\subsubsection{Quand}\label{quand}}
 
 Avec des objectifs bien définis et des étapes claires pour y parvenir,
 la structure du projet est complète. Il est donc temps de se lancer dans
@@ -1940,17 +1967,226 @@ facilite cette priorisation. En agilité, des objectifs sont fixés dans
 le temps, et sont évalués de manière constante. Les tâches sont
 déterminées en fonction de l'avancement et des blocants des objectifs.
 
+Avec des objectifs bien définis et des étapes claires pour y parvenir,
+la structure du projet est complète. Il est donc temps de se lancer dans
+la gestion des tâches. En fonction des objectifs établis, certaines
+tâches sont plus importantes que d'autres. Un projet est généralement
+composé de tâches qui doivent être réalisées dans un ordre spécifique,
+où certaines doivent impérativement précéder d'autres. Le défi est de
+déterminer efficacement ce qui doit être priorisé pour maintenir une
+progression fluide et efficace.
+
+L'agilité est un processus de travail qui facilite cette priorisation.
+En adoptant une approche agile, les objectifs sont fixés dans le temps
+et sont constamment évalués. Cela permet une adaptation rapide et une
+réponse aux changements sans compromettre les résultats finaux. De cette
+façon, les tâches sont déterminées et ajustées en fonction de
+l'avancement du projet et des éventuels obstacles rencontrés. Le projet
+avance de façon incrémentale.
+
+Pour une mise en œuvre efficace de l'agilité, il est utile de planifier
+ses objectifs sur une période de quelques semaines, connues sous le nom
+de sprints en méthode Scrum, où on évalue le travail accompli et on
+redéfinit les priorités pour la prochaine période. Ces sprints
+permettent de s'assurer de rester concentré sur les tâches qui apportent
+le plus de valeur au projet et d'ajuster les plans en temps réel en
+fonction des résultats obtenus.
+
+\hypertarget{ouxf9}{%
+\subsubsection{Où}\label{ouxf9}}
+
+Toutes ces pratiques deviennent rapidement complexes si elles ne sont
+pas encadrées dans un environnement qui permet d'en faire le suivi. Il
+peut être judicieux de faire appel à des outils de gestion de projet qui
+supportent l'agilité, tels que Notion ou Mondays. Ces outils permettent
+de visualiser les tâches à faire sous forment de tableaux de bords
+intéractifs, dans lesquels il est possible de les déplacer en fonction
+de leur statut d'avancement. Ces outils permettent de structurer les
+tâches d'un projet et d'en faire le suivi facilement du début à la fin.
+
+Il est également judicieux de faire appel à des outils de gestion de
+projet qui supportent l'agilité, tels q. Ces outils permettent de
+visualiser les tâches sous forme de tableaux de bord interactifs où les
+tâches peuvent être déplacées, modifiées ou mises à jour en temps réel.
+Ils favorisent la transparence et la communication entre les membres de
+l'équipe, essentielles pour une gestion agile des tâches.
+
+Enfin, il est crucial d'intégrer des pratiques de réflexion et
+d'amélioration continue. Après chaque sprint, l'équipe devrait se réunir
+pour une rétrospective afin de discuter de ce qui a bien fonctionné et
+de ce qui pourrait être amélioré. Cette culture de l'amélioration
+continue est au cœur de l'agilité et contribue à l'efficacité et à la
+réussite du projet à long terme.
+
+Pour déterminer quelles tâches accomplir et dans quel ordre, voici une
+court processus par étapes :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Éllaborer les tâches en fonction des objectifs de sprint.
+\item
+  Déterminer la linéarité des tâches, c'est-à-dire, quelle tâche doit
+  être accomplie afin d'en début une autre.
+\item
+  Quantifier le poids de chaque tâche. Certaines tâches sont plus
+  longues que d'autres. Adopter un système qui vous permet d'identifier
+  quelles tâches prendront quelques minutes seulement (comme l'envoi du
+  courriel), et quelles tâches prennent plusieurs jours. Si une tâche
+  est trop longue, c'est un signe qu'elle pourrait être désagrégée en
+  plusieurs tâches plus petites. Cela facilite également le suivi.
+\item
+  Donner une échéance réaliste à chaque tâche, en fonction des étapes
+  précédentes. Idéalement, toutes les tâches ne sont pas dues pour la
+  même date, pour éviter un goulot d'étranglement. Les échéances aident
+  à prioriser les tâches.
+\item
+  Prioriser les tâches qui ont l'échéance le plus sérré. Si certaines
+  tâches accumulent un retard, c'est peut-être parce que vous devez
+  réévaluer les échéances, les objectifs, ou encore parce qu'il y a des
+  blocants dans vos méthodes de travail. Faire un tel suivi permet
+  d'évaluer sa propre efficacité dans ses méthodes de travail.
+\end{enumerate}
+
+L'utilisation d'outils numériques pour la gestion des tâches ne signifie
+pas qu'il faut abandonner l'agenda papier ou le cahier de notes.
+Plusieurs trouvent essentiels de prendre des notes et de se faire des
+listes de tâches à la main. Il est tout à fait possible de combiner les
+méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de
+tâches, puis faites votre liste de tâches à la main en conséquence, et
+planifiez votre semaine. De cette façon, vous savez chaque jour le
+travail à prioriser.
+
 \hypertarget{enregistrement-de-protocole}{%
 \subsection{Enregistrement de
 protocole}\label{enregistrement-de-protocole}}
+
+Après avoir établi l'importance de la gestion des tâches et comment une
+approche agile peut optimiser ce processus, il est complémentaire de
+d'aborder l'enregistrement méthodique de ces tâches et des étapes du
+projet. Cette documentation assure la transparence, la réplicabilité et
+la rigueur scientifique de la recherche. L'enregistrement du protocole
+de recherche sert plusieurs objectifs clés qui se connectent directement
+à la gestion agile des tâches. Il agit comme une archive vivante des
+décisions prises, des méthodes utilisées et des modifications apportées
+tout au long du projet. Cela permet la vérification et la validation des
+résultats, et de maintenir une vision claire de l'évolution du projet.
+
+L'enregistrement de protocole en science est une pratique facultative,
+mais de plus en plus populaire, qui consiste à documenter et à déposer
+de manière détaillée le plan de recherche d'une étude avant que celle-ci
+ne soit menée. Cette démarche s'inscrit dans le cadre des pratiques de
+recherche ouverte et transparente. Elle a plusieurs avantages : D'abord,
+rendre les protocoles de recherches publics démontre un engagement
+envers des méthodes rigoureuses. Cela augmente la confiance envers les
+résultats obtenus et les méthodes employées. Une démarche détaillée
+permet aussi la réplicabilité du projet, en offrant aux autres
+chercheurs du domaine les étapes détaillées employées pour se rendre aux
+résultats.
+
+Un autre avantage est d'éviter qu'une étude soit réalisée par deux
+chercheurs au même moment. En enregistrant sa recherche, tous peuvent
+consulter les recherches en cours, et ainsi s'assurer que leurs projets
+sont uniques. De cette manière, les ressources académiques sont
+maximisées. L'enregistrement du protocole permet aussi d'évaluer la
+recherche par les pairs avant d'amorcer sa réalisation, ce qui peut
+augmenter la crédibilité de l'étude, faciliter la publication dans une
+revue scientifique, et gagner du temps dans la réalisation du projet.
+
+Enfin, au coeur du concept de l'enregistrement de protocole se trouve
+l'idée de l'intégrité de la recherche. La science, par définition, est
+transparente dans ses démarches. Rendre public ses intentions et devoir
+justifier chaque modification s'inscrit dans cette optique d'intégrité.
+Un tel processus rend difficile la chasse au résultats, un fléau en
+science où les chercheurs privilégient l'atteinte de résultats avant la
+démarche. Le système très compétitif et chronophage de la publication
+scientifique encourage ce genre de pratique. L'enregistrement de
+protocole tente d'encourager des pratiques transparentes, qui sont bien
+acceuillies par les revues scientifiques.
+
+Pour enregistrer votre protocole de recherche, il faut suivre ces quatre
+étapes :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Préparer le protocole. Un document détaille les hypothèses, les
+  méthodes et les analyses prévues. l'objectif est de rédiger un
+  document suffisamment détaillé pour permettre à d'autres chercheurs de
+  reproduire l'étude. La rédaction de ce document n'est pas une perte de
+  temps, car une majorité devrait pouvoir être réutilisée dans l'étude
+  finale.
+\item
+  Enregistrer le protocole. L'enregistrement se fait dans un registre
+  public. Il existe différents registres, ouverts à tous les domaines
+  (Open Science Framework, Research Registry) ou plus spécifiques aux
+  sciences sociales (EGAP, AEA RCT).
+\item
+  Valider le protocole. Le protocole est évalué par les pairs, pour
+  assurer sa complétude, puis il devient public. Ainsi, vous obtenez des
+  commentaires avant même de soumettre à une revue, ce qui peut vous
+  faire sauver du temps en apportant des modifications avant la
+  réalisation, plutôt qu'après.
+\item
+  Suivi du protocole. À chaque étape de la recherche, les chercheurs
+  confirment qu'ils suivent le processus annoncé, ou justifient les
+  changements apportés, ce qui assure la transparence dans leurs
+  démarchent scientifiques.
+\end{enumerate}
 
 \hypertarget{code-en-open-access-repository-github}{%
 \subsection{Code en open access (Repository
 github)}\label{code-en-open-access-repository-github}}
 
-\hypertarget{gestion-de-versions-git}{%
-\subsubsection{Gestion de versions
-(git)}\label{gestion-de-versions-git}}
+L'enregistrement de protocole est seulement un volet de la transparence
+en science. De même que pour les protocoles, la mise à disposition du
+code source employé pour les analyses permet non seulement de vérifier
+les résultats publiés mais aussi de renforcer la confiance dans les
+conclusions de la recherche. Le partage du code, structuré et commenté,
+via une plateforme comme GitHub, s'inscrit dans cette démarche de
+recherche ouverte.
+
+Les langages de programmation sont très fluides et décentralisés, et les
+codes employés pour arriver à un même résultat peuvent varier d'une
+personne à l'autre. Rendre son code public permet la reproductibilité et
+la transparence dans la manipulation et l'analyse de ses données.
+Plusieurs revues exigent de rendre le code en libre accès lors d'une
+soumission.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Préparation du code
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  ReadMe
+\item
+  Structuration du code + commentaires
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Dépot du code sur github
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Création du repo
+\item
+  Gestion des version (git)
+\end{enumerate}
 
 \hypertarget{stockage-des-donnuxe9es-dropbox-autres-clouds}{%
 \subsection{Stockage des données (Dropbox, autres
@@ -3338,31 +3574,31 @@ travaux au sein d'un cadre scientifique établi et reconnu. Ce processus
 de contextualisation facilite non seulement la compréhension de
 l'évolution des connaissances dans un domaine donné, mais contribue
 également à la création d'une base de connaissances solide et dynamique,
-sur laquelle d'autres travaux peuvent être bâtis (Zaid et al., 2017). La
-référenciation rigoureuse des travaux antérieurs garantit la
-reproductibilité des expériences et des analyses, un pilier central de
-la méthodologie scientifique. En fournissant des détails précis sur les
-méthodes et résultats, nous ouvrons la voie à la validation et à
-l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de
-la recherche (Hughes, 2013). De plus, la citation adéquate des sources
-est une marque de respect envers les contributions des autres
-chercheurs, assurant une juste attribution du mérite. Cela reconnaît
-l'importance de chaque découverte et idée dans l'avancement de la
-science, tout en prévenant le plagiat, une faute grave dans la recherche
-académique (Racz \& Marković, 2018).Enfin, une référenciation minutieuse
-aide à éviter les biais, en exposant clairement les fondements sur
-lesquels se base notre recherche. Cela permet une évaluation critique
-des sources et des perspectives, encourageant une approche plus
-équilibrée et nuancée dans l'analyse scientifique (Kostoff \& Cummings,
-2013).En résumé, la citation des sources est un acte fondamental qui
-englobe et adresse de multiples aspects cruciaux de la recherche
-académique : de la crédibilité et la contextualisation à la
-reproductibilité, de la création d'une base de connaissances solide à
-l'attribution correcte du mérite, tout en combattant le plagiat et en
-minimisant les biais. C'est dans ce contexte que des outils tels que
-Zotero prennent toute leur importance, en facilitant la gestion
-rigoureuse des références et en soutenant les chercheurs dans leur quête
-de rigueur et d'excellence académiques.
+sur laquelle d'autres travaux peuvent être bâtis
+(\textbf{zaid\_etal17?}). La référenciation rigoureuse des travaux
+antérieurs garantit la reproductibilité des expériences et des analyses,
+un pilier central de la méthodologie scientifique. En fournissant des
+détails précis sur les méthodes et résultats, nous ouvrons la voie à la
+validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi
+l'intégrité de la recherche (\textbf{hughes13?}). De plus, la citation
+adéquate des sources est une marque de respect envers les contributions
+des autres chercheurs, assurant une juste attribution du mérite. Cela
+reconnaît l'importance de chaque découverte et idée dans l'avancement de
+la science, tout en prévenant le plagiat, une faute grave dans la
+recherche académique (\textbf{racz\_markovic18?}).Enfin, une
+référenciation minutieuse aide à éviter les biais, en exposant
+clairement les fondements sur lesquels se base notre recherche. Cela
+permet une évaluation critique des sources et des perspectives,
+encourageant une approche plus équilibrée et nuancée dans l'analyse
+scientifique (\textbf{kostoff\_cummings13?}).En résumé, la citation des
+sources est un acte fondamental qui englobe et adresse de multiples
+aspects cruciaux de la recherche académique : de la crédibilité et la
+contextualisation à la reproductibilité, de la création d'une base de
+connaissances solide à l'attribution correcte du mérite, tout en
+combattant le plagiat et en minimisant les biais. C'est dans ce contexte
+que des outils tels que Zotero prennent toute leur importance, en
+facilitant la gestion rigoureuse des références et en soutenant les
+chercheurs dans leur quête de rigueur et d'excellence académiques.
 
 \hypertarget{uxe0-quoi-sert-un-logiciel-de-gestion-bibliographique}{%
 \section{À quoi sert un logiciel de gestion bibliographique
@@ -4158,14 +4394,9 @@ Nayak, M., \& K A, N. (2019). Strengths and Weakness of Online Surveys.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{une-image-vaut-mille-mots}{%
-\chapter{Une image vaut mille mots}\label{une-image-vaut-mille-mots}}
-
-Camille Tremblay-Antoine\footnote{Université Laval} Nadjim
-Fréchet\footnote{Université de Montréal}
-
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
+\hypertarget{les-outils-de-visualisation-de-donnuxe9es}{%
+\chapter{Les outils de visualisation de
+données}\label{les-outils-de-visualisation-de-donnuxe9es}}
 
 Une fois les données collectées, nettoyées, traitées et analysées, une
 partie centrale du travail d'un scientifique de données est de faire
@@ -4175,59 +4406,78 @@ initiés de votre discipline académique ou pour le grand public. La
 visualisation graphique des données est donc centrale afin de vulgariser
 les résultats d'une recherche empirique.
 
-L'objectif de ce chapitre est d'apprendre aux codeurs débutants les
-rudiments de la visualisation graphique en R. Ce chapitre présentera
-plus particulièrement les packages R \emph{ggplot2} et \emph{dplyr}
-eux-mêmes téléchargeable à partir du package \emph{tidyverse}. Si
-\emph{dplyr} permet de préparer les données avant leur visualisation,
-\emph{ggplot2} est un package dédié à la production de graphiques. Ce
-chapitre présente sa grammaire avec une série d'exemples (Wickham, 2009;
-Wickham et al., 2023).
+Mais qu'est-ce qu'une bonne visualisation de données? Quel type de
+graphique choisir? Quelles couleurs utiliser? Quelles informations
+mettre en évidence? Ce chapitre ne répond pas à ces questions, une
+myriade d'ouvrages les ont déjà traitées. Du classique \emph{The Visual
+Display of Quantitative Information} de Edward Tufte (1983) jusqu'aux
+plus récents ouvrages tels que \emph{Data Visualization: A Practical
+Introduction} de Kieran Healy (2018) ou \emph{Fundamentals of Data
+Visualization} de Claus O. Wilke (2019), les ressources sont nombreuses
+pour vous aider à améliorer vos compétences en visualisation de données.
 
-Ce chapitre est plus technique que théorique et permet aux codeurs
-débutants d'en apprendre davantage sur la manière de construire des
-graphiques en R avec des données concrètes. La question centrale qui
-devrait vous guider lorsque vous créez des visualisations est la
-suivante: \textbf{Comment opimiser l'intelligibilité des données?}
-L'objectif d'un graphique n'est pas seulement d'illustrer les données.
-Un bon graphique devrait permettre de vulgariser une information ou de
-mettre en saillance un aspect particulier des données. L'objectif
-communicationnel devrait toujours être gardé en tête. Les graphiques en
-exemple dans ce chapitre sont construits avec les données de l'Étude
-Électorale Canadienne de 2019 qui sont facilement téléchargeables sur
-leur site\footnote{http://www.ces-eec.ca/}.
+Ce chapitre se concentre plutôt à faire une sommaire recension des
+outils de visualisation nécessaires aux personnes s'intéressant à la
+recherche en sciences sociales. Nous nous concentrerons sur les outils
+respectant au mieux les critères de sélections établis au chapitre 1.
+Ils sont divisés en trois catégories: les outils pour les diagrammes,
+les outils pour les analyses descriptives et les outils pour visualiser
+les régressions. Une dernière section présente les visualisations
+réactives.
 
-La première section de ce chapitre expose les options et packages
-également disponibles pour la construction de graphiques en R. La
-deuxième section de ce chapitre compare les avantages et inconvénients
-de l'utilisation de \emph{ggplot2} par rapport aux autres packages de
-visualisation de données qui auront été présentés. La troisième section
-de ce chapitre montre des exemples de graphiques construits avec la
-grammaire de \emph{ggplot2} en utilisant les données de l'Étude
-électorale canadienne de 2019. Les codes employés pour produire les
-graphiques en exemple sont disponibles dans l'annexe de ce livre. Ces
-codes reproductibles permettront aux codeurs débutants d'adapter ces
-derniers pour leurs propres projets.
+\hypertarget{duxe9bat-r-et-python}{%
+\section{Débat R et Python}\label{duxe9bat-r-et-python}}
 
-\hypertarget{ruxe9flexion-thuxe9orique}{%
-\section{Réflexion théorique}\label{ruxe9flexion-thuxe9orique}}
+Bien que ce livre prend position en faveur de \emph{R} comme présenté au
+chapitre 2, il est important de mentionner que \emph{Python} est
+également un langage de programmation qui répond Python est souvent
+utilisé pour la visualisation de données en raison de sa grande
+bibliothèque de packages, qui comprend des packages tels que Matplotlib,
+Seaborn et Plotly.
 
-\hypertarget{les-options-disponibles}{%
-\subsection{Les options disponibles}\label{les-options-disponibles}}
+Ozgur et al.~(2017). MatLab vs.~Python vs.~R.
 
-De nombreux \emph{packages} ont été développés dans le langage R dans le
-but de visualiser des données graphiquement, il devient donc facile de
-s'y perdre. Heureusement, les options qui s'offrent à nous se précisent
-lorsque l'on s'intéresse à ce qui est le plus utilisé dans la communauté
-des codeurs de ce langage de programmation. Les \emph{packages} les plus
-utilisés représentent des outils qui ont été substantiellement validés
-et améliorés par leurs développeurs, mais aussi par une importante
-communauté de codeurs en ligne et de chercheurs universitaires. Trois de
-ces options sont présentées dans ce chapitre: les graphiques du
-\emph{Base R}, le \emph{package} \emph{Lattice} et le \emph{package}
-\emph{ggplot2}. Les avantages et inconvénients respectifs de ces trois
-approches pour la création de graphiques sont explicités dans les
-sections suivantes.
+https://www.r-project.org/about.html
+
+\hypertarget{outils-pour-les-schuxe9mas}{%
+\section{Outils pour les schémas}\label{outils-pour-les-schuxe9mas}}
+
+Il peut être nécessaire au cours d'un processus scientifique, une
+présentation, autre de faire des schémas.
+
+Toujours pertinent de faire un croquis à la main, mais lorsque vient le
+temps de le rendre propre, présentable quels outils s'offrent à nous?
+
+Moody, D. (2007). What Makes a Good Diagram? Improving the Cognitive
+Effectiveness of Diagrams in IS Development. In W. Wojtkowski, W. G.
+Wojtkowski, J. Zupancic, G. Magyar, \& G. Knapp (Eds.), Advances in
+Information Systems Development (pp.~481--492). Springer US.
+
+Larkin, J. H., \& Simon, H. A. (1987). Why a Diagram is (Sometimes)
+Worth Ten Thousand Words. Cognitive Science, 11(1), 65--100.
+
+Suttorp, M. M., Siegerink, B., Jager, K. J., Zoccali, C., \& Dekker, F.
+W. (2015). Graphical presentation of confounding in directed acyclic
+graphs. Nephrology Dialysis Transplantation, 30(9), 1418--1423.
+
+\hypertarget{diagrams.net-anciennement-draw.io}{%
+\subsection{Diagrams.net (anciennement
+Draw.io)}\label{diagrams.net-anciennement-draw.io}}
+
+\hypertarget{lucidchart}{%
+\subsection{Lucidchart}\label{lucidchart}}
+
+\hypertarget{outils-pour-les-analyses-descriptives}{%
+\section{Outils pour les analyses
+descriptives}\label{outils-pour-les-analyses-descriptives}}
+
+\hypertarget{outils-pour-visualiser-les-ruxe9gressions}{%
+\section{Outils pour visualiser les
+régressions}\label{outils-pour-visualiser-les-ruxe9gressions}}
+
+\hypertarget{aller-plus-loin-les-visualisations-ruxe9actives}{%
+\subsection{Aller plus loin: les visualisations
+réactives}\label{aller-plus-loin-les-visualisations-ruxe9actives}}
 
 \hypertarget{avantages-et-inconvuxe9nients-de-base-r}{%
 \subsubsection{Avantages et inconvénients de Base
@@ -4248,18 +4498,7 @@ des \emph{x} et des \emph{y} du graphique. Les fonctions
 \emph{barplot(), hist()} ou \emph{boxplot()} disponibles dans le
 \emph{Base R} permettent de spécifier le style de graphique souhaité,
 qu'on veuille représenter nos données sous forme de diagramme à barre,
-d'histogramme ou de diagramme en boîtes (Kabacoff, 2022, p. 119‑132).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Exemple de graphique avec la fonction barplot() du BaseR}
-
-\FunctionTok{barplot}\NormalTok{(y,}\AttributeTok{names.arg=}\NormalTok{x,}
- \AttributeTok{main=}\StringTok{"Figure 1 {-} Proportion (\%) de répondants par province}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{,}
- \AttributeTok{col =} \StringTok{"blue"}\NormalTok{,}
- \AttributeTok{sub=}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Source: Étude Électorale Canadienne de 2019                                                "}\NormalTok{) }
-\end{Highlighting}
-\end{Shaded}
+d'histogramme ou de diagramme en boîtes (\textbf{kabacoff22?}).
 
 Alors qu'un peu tout peut être fait avec le \emph{Base R}, ce langage
 demeure élémentaire; il est difficile d'innover dans la visualisation ou
@@ -4268,63 +4507,8 @@ sembler plus simple pour l'exploration de données ou pour produire des
 graphiques de base rapidement, mais ce langage devient rapidement
 complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou
 à visualiser des relations entre plusieurs variables, ce que
-\emph{lattice} et \emph{ggplot2} permettent plus facilement(Wickham,
-2009, p. 3‑4).
-
-\hypertarget{avantages-et-inconvuxe9nients-de-lattice}{%
-\subsubsection{\texorpdfstring{Avantages et inconvénients de
-\emph{lattice}}{Avantages et inconvénients de lattice}}\label{avantages-et-inconvuxe9nients-de-lattice}}
-
-Développé par Deepayan Sarkar, \emph{lattice} cherche à faciliter la
-visualisation de graphique en facettes. Plus précisément, ce
-\emph{package} vise à améliorer les graphiques du \emph{Base R} en
-fournissant de meilleures options de graphisme par défaut pour
-visualiser des relations multivariées. Ce \emph{package} est donc
-intéressant pour les chercheurs et les codeurs voulant présenter
-graphiquement la relation entre plus de deux variables (Kabacoff, 2022,
-p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec
-\emph{Lattice}, le \emph{package lattice} doit préalablement être
-installé dans la bibliothèque de \emph{packages} du codeur et chargé
-dans sa session au début de son code (voir annexe). Par la suite, le
-codeur doit spécifier le type de graphique souhaité avec la fonction
-appropriée\footnote{Plusieurs options disponibles comme des histogrammes
-  avec la fonction \emph{histogram()} ou des graphiques de densité avec
-  la fonction \emph{densityplot()}.}. Une fois la fonction choisie, il
-doit spécifier par une formule les variables x et y ainsi que la
-troisième variable à contrôler et à visualiser en facettes
-(\emph{graph\_type(formula \textbar{} variable en facettes, data=)}).
-
-Si la Figure 1 produite à partir du \emph{Base R} nous permet de
-visualiser le pourcentage de répondants par province dans l'Étude
-Électorale Canadienne de 2019, le \emph{package lattice} nous permet de
-visualiser facilement ce même pourcentage de répondants en tenant compte
-du positionnement idéologique des Canadiens par province sur l'échelle
-gauche-droite, comme l'illustre la Figure 2 (0 étant la gauche et 10 la
-droite).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Exemple de graphique avec la fonction histogram() du package lattice}
-
-\FunctionTok{histogram}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{gaucheDroite }\SpecialCharTok{|}\NormalTok{ province, }\AttributeTok{data =}\NormalTok{ GraphiqueLattice, }\AttributeTok{breaks =} \FunctionTok{seq}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{10}\NormalTok{, }
-  \AttributeTok{by =} \DecValTok{1}\NormalTok{), }
-  \AttributeTok{main =} \StringTok{"Figure 2 {-} Distribution des Canadiens}\SpecialCharTok{\textbackslash{}n}\StringTok{ par province sur l\textquotesingle{}échelle gauche{-}droite}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{,}
-  \AttributeTok{xlab =} \StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Idéologie gauche{-}droite"}\NormalTok{,}
-  \AttributeTok{ylab =} \StringTok{"Pourcentage (\%)}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{,}
-  \AttributeTok{col  =} \StringTok{"blue"}\NormalTok{,}
-  \AttributeTok{sub=}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Source: Étude Électorale Canadienne de 2019                                                "}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-Cependant, le \emph{package lattice} a pour désavantage d'avoir un
-modèle formel (une grammaire de graphique) moins compréhensible et
-intuitif que celui de \emph{ggplot2} lorsque vient le temps d'améliorer
-l'esthétisme des graphiques. De plus, sa plus faible popularité fait en
-sorte que ce \emph{package} demeure moins développé par la communauté de
-codeurs de R que ne l'est \emph{ggplot2}. Nous examinons plus en détail
-la grammaire de graphique de ce dernier \emph{package} ainsi que ses
-avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p.
-373‑377 et 390; Wickham, 2009, p. 6).
+\emph{lattice} et \emph{ggplot2} permettent plus
+facilement(\textbf{wickham09?}).
 
 \hypertarget{avantages-et-inconvuxe9nients-de-ggplot2}{%
 \subsubsection{Avantages et inconvénients de
@@ -4337,8 +4521,8 @@ autres \emph{packages} centraux de \emph{tidyverse} ce qui limite de
 potentiels conflits entre les fonctions de \emph{packages} qui puissent
 être incompatibles avec \emph{ggplot2}. Par exemple, le \emph{package
 dplyr} de \emph{tidyverse} est très utile pour analyser, organiser et
-préparer vos données à visualiser avec \emph{ggplot2} (Wickham et al.,
-2019; Wickham et al., 2023, p. 30).
+préparer vos données à visualiser avec \emph{ggplot2}
+(\textbf{wickham\_etal19?}; \textbf{wickham\_etal23?}).
 
 Le principal avantage de \emph{ggplot2} reste sa grammaire qui permet à
 l'utilisateur de rendre ses graphiques beaucoup plus visuellement
@@ -4373,7 +4557,7 @@ Les autres couches des graphiques \emph{ggplot2} dépendent souvent du
 codeur et des étapes de construction de son graphique\footnote{Les
   étapes (couches) d'un graphique \emph{ggplot2} ne sont pas
   nécessairement dans le même ordre d'un graphique à un autre.}
-(Wickham, 2009, p. 77 et 89-93). Le reste de ce chapitre présente la
+(\textbf{wickham09?} et 89-93). Le reste de ce chapitre présente la
 grammaire de \emph{ggplot2} avec un exemple de construction de graphique
 à bande présenté couche par couche.
 
@@ -4511,13 +4695,12 @@ d'interagir, ces langages demeuraient différents et avaient chacun leur
 propre fonctionnement. Le développement de GML a permis de résoudre ce
 problème en standardisant et en structurant le langage~: les mêmes
 commandes étaient utilisées pour accomplir les mêmes tâches dans chaque
-programme (The {Roots} of {SGML} -- {A Personal Recollection}, 1996).
-GML a été amélioré durant les décennies suivantes et a été suivi par
-d'autres langages de balisage, dont \LaTeX~(1985),
-\textsc{Bib}\TeX~(1988), HTML (1993), XML (1998), Markdown (2004) et
-\texttt{R} Markdown (2012) (Extensible {Markup Language} ({XML}) 1.0,
-1998, Getting {Started}, 2023, {HTML History} \textbar{} {Explained},
-2023, {LaTeX}, 2023, Markdown, 2023).
+programme (\textbf{goldfarb96?}). GML a été amélioré durant les
+décennies suivantes et a été suivi par d'autres langages de balisage,
+dont \LaTeX~(1985), \textsc{Bib}\TeX~(1988), HTML (1993), XML (1998),
+Markdown (2004) et \texttt{R} Markdown (2012) ({LaTeX}, 2023;
+\textbf{hameed23?}; \textbf{markdownguide23?};
+\textbf{worldwidewebconsortiumw3c98?}; \textbf{xie23?}).
 
 Les langages de balisage permettent d'effectuer différentes tâches.
 HTML, qui est sans doute le plus connu des langages de balisage, permet
@@ -4531,14 +4714,14 @@ un fichier en langage Markdown. Enfin, depuis 2022, le système de
 publication scientifique et technique multilingue Quarto permet de créer
 des documents qui intègrent des extraits de code \texttt{R}, \LaTeX,
 Python, Julia ou JavaScript, créés dans différents types
-d'environnements, à un fichier en langage Markdown (Announcing {Quarto},
-a New Scientific and Technical Publishing System, 2022). \LaTeX,
-Markdown, \texttt{R} Markdown et Quarto permettent aussi d'intégrer les
-références bibliographiques du système de traitement de références
-\textsc{Bib}\TeX. Les langages de balisage communiquent ainsi souvent
-les uns avec les autres au sein d'un même fichier. Le chapitre 6
-explique la manière de citer les références en langage
-\textsc{Bib}\TeX~par le biais de Zotero et de Better \textsc{Bib}\TeX.
+d'environnements, à un fichier en langage Markdown
+(\textbf{allaire22?}). \LaTeX, Markdown, \texttt{R} Markdown et Quarto
+permettent aussi d'intégrer les références bibliographiques du système
+de traitement de références \textsc{Bib}\TeX. Les langages de balisage
+communiquent ainsi souvent les uns avec les autres au sein d'un même
+fichier. Le chapitre 6 explique la manière de citer les références en
+langage \textsc{Bib}\TeX~par le biais de Zotero et de Better
+\textsc{Bib}\TeX.
 
 Les balises constituent une manière de donner manuellement des commandes
 au logiciel que vous utilisez. Si vous utilisez Microsoft Word, vous
@@ -4746,11 +4929,11 @@ non publié et \emph{online} pour un site Web sont parmi les plus connus
 première information entre accolades est le code de la référence, par
 exemple \texttt{goldfarb96}. Dans le fichier \LaTeX, l'auteur doit
 écrire \texttt{\textbackslash{}cite\{goldfarb96\}} pour voir dans le
-document PDF compilé (The {Roots} of {SGML} -- {A Personal
-Recollection}, 1996); le lien est automatiquement cliquable et renvoie à
-la notice bibliographique correspondante. L'ordre des publications dans
-le document \textsc{Bib}\TeX~a peu d'importance, puisque
-\LaTeX~réordonne par défaut la bibliographie en ordre alphabétique.
+document PDF compilé (\textbf{goldfarb96?}); le lien est automatiquement
+cliquable et renvoie à la notice bibliographique correspondante. L'ordre
+des publications dans le document \textsc{Bib}\TeX~a peu d'importance,
+puisque \LaTeX~réordonne par défaut la bibliographie en ordre
+alphabétique.
 
 \hypertarget{environnements-duxe9dition-et-de-compilation}{%
 \subsection{Environnements d'édition et de
@@ -4788,8 +4971,8 @@ balisage. Par exemple, il est possible de produire des documents en
 principe, il est possible de produire des documents en \texttt{R}
 Markdown sur RStudio en installant le \emph{package} suivant~:
 \texttt{install.packages("rmarkdown")}. Pour Quarto, le téléchargement
-se fait en ligne, directement à partir du site Web de (Get {Started},
-2023).
+se fait en ligne, directement à partir du site Web de
+(\textbf{quarto23?}).
 
 Pour l'écriture en \LaTeX, il est également nécessaire d'installer l'une
 des nombreuses distributions en ligne afin de pouvoir compiler ces
@@ -5055,11 +5238,11 @@ temps \newline \textit{@roux13}~: .}
 Les Figure~\ref{fig-cv} et Figure~\ref{fig-invoice} ne sont que quelques
 exemples des milliers de gabarits de documents \LaTeX~disponible en
 ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site
-Web d'(Modèles, 2023). Vous pouvez y naviguer et voir quel gabarit
-convient le mieux à vos besoins. Certaines manières plutôt spécifiques
-de formater le texte sont présentement disponibles avec \LaTeX~ou
-Markdown bien que non disponibles en Word, ce qui constitue une autre
-preuve de leur grande \emph{flexibilité} et capacité de
+Web d'(\textbf{overleaf23?}). Vous pouvez y naviguer et voir quel
+gabarit convient le mieux à vos besoins. Certaines manières plutôt
+spécifiques de formater le texte sont présentement disponibles avec
+\LaTeX~ou Markdown bien que non disponibles en Word, ce qui constitue
+une autre preuve de leur grande \emph{flexibilité} et capacité de
 \emph{personnalisation}. Bien qu'il soit rare que nous ayons absolument
 besoin de personnaliser le texte ainsi, ces possibilités peuvent
 s'avérer utiles lorsque vous rédigez un texte qui doit se conformer en
@@ -5101,16 +5284,15 @@ les utiliser. La maîtrise de ces langages offre aux chercheurs et
 chercheuses une polyvalence lorsqu'ils doivent collaborer avec diverses
 équipes de recherche utilisant différentes méthodes de travail. Par
 exemple, depuis sa création \LaTeX~a été adopté largement par le milieu
-de la publication de travaux scientifiques (Gaudeul, 2007). À titre
-indicatif, le logiciel Overleaf était utilisé en 2022 par 11 millions
-d'utilisateurs et utilisatrices dans 189 pays autour du globe. Plus de
-2000 compagnies et 6800 universtiés utilisent Overleaf pour écrire en
-\LaTeX~(\emph{Wow! {Ten} Million Users!}, s.~d.). La popularité des
-langages de balisages en fait donc un outil difficile à contourner pour
-une personne qui voudrait poursuivre une carrière en recherche
-académique. L'avantage ci-bas sur la gestion des embûches illustre
-également comment la popularité permet une meilleure gestion de
-celles-ci.
+de la publication de travaux scientifiques (\textbf{gaudeul07?}). À
+titre indicatif, le logiciel Overleaf était utilisé en 2022 par 11
+millions d'utilisateurs et utilisatrices dans 189 pays autour du globe.
+Plus de 2000 compagnies et 6800 universtiés utilisent Overleaf pour
+écrire en \LaTeX~(\textbf{Wow?}). La popularité des langages de
+balisages en fait donc un outil difficile à contourner pour une personne
+qui voudrait poursuivre une carrière en recherche académique. L'avantage
+ci-bas sur la gestion des embûches illustre également comment la
+popularité permet une meilleure gestion de celles-ci.
 
 \hypertarget{gestion-des-embuches}{%
 \subsubsection{Gestion des embuches}\label{gestion-des-embuches}}
@@ -5123,7 +5305,7 @@ particulièrement les plus expérimentés --- sont nombreux à partager leur
 expérience à leurs collègues rencontrant des problèmes afin de
 contribuer à régler ceux-ci. Cette communauté est présente sur une
 multitude de sites Web, bien que le point de rencontre principal soit le
-forum (Stack {Overflow}, 2023), qui est également utilisé pour régler
+forum (\textbf{stackoverflow23?}), qui est également utilisé pour régler
 des problèmes de programmation et est abordé plus en détail dans le
 chapitre 4. Une simple recherche sur Google d'un problème rencontré avec
 \LaTeX~ou Markdown vous offrira des liens vers des échanges pertinents
@@ -5247,7 +5429,7 @@ académiques\footnote{Pour les utilisateurs de RStudio, il est souvent
   en rendent présentement l'utilisation difficile.}, d'autant plus que
 les utilisateurs de \LaTeX~ont tendance à faire davantage de fautes
 d'ortographe et de grammaire lors de la rédaction que les utilisateurs
-de Word (Knauff \& Nejasmic, 2014). Nous décourageons ainsi
+de Word (\textbf{knauff\_nejasmic14?}). Nous décourageons ainsi
 l'utilisation de RStudio pour l'édition de fichiers \LaTeX~et Quarto, et
 nous encourageons fortement les utilisateurs d'Overleaf et de VS Code
 d'utiliser des extensions permettant la correction grammaticale telles
@@ -5628,10 +5810,174 @@ de revue de littérautre.
 \subsection{2. Les Assistants de
 Traduction}\label{les-assistants-de-traduction}}
 
-L'intelligence artificielle a aussi permis le développement de plusieurs
-outils de traduction par sa capacité plus accrue à (Glover, 2024).
+L'IA a aussi permis la création d'outils de nouveaux outils de
+traduction automatique (\emph{machine translation}). Pris au sens large,
+le concept de traduction automatique englobe n'importe quelle tâche de
+traduction qui est réalisée par un algorithme, une machine, des
+ordinateurs, etc. sans aucune aide d'un humain (\textbf{glover24?} ;
+\textbf{tabsharani23?}). Il existe différents types ou approches de
+traduction automatique:
 
-Google translate, deepl, chatgpt
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Basée sur des règles (\emph{rules-based}): utilise des règles
+  linguistiques et des dictionnaires pour transformer les mots et
+  phrases d'une langue source en langue cible. Nécessite des experts
+  pour créer et maintenir ces règles, ce qui rend le processus laborieux
+  mais efficace pour les langues à grammaire bien définie
+  (\textbf{glover24?} ; \textbf{tabsharani23?}).
+\item
+  Statistique (\emph{statistical}): analyse de grands volumes de textes
+  bilingues pour identifier des motifs et probabilités. Utilise des
+  modèles statistiques plutôt que des règles linguistiques pour
+  déterminer les traductions les plus probables à partir des données
+  d'apprentissage. Fonctionne bien avec des données volumineuses mais
+  peut parfois produire des traductions imprécises faute de
+  contextualisation (\textbf{glover24?} ; \textbf{tabsharani23?}).
+\item
+  Basée sur des exemples (\emph{example-based}) : repose sur une base de
+  données de phrases ou de segments précédemment traduits pour générer
+  des traductions, en recherchant des exemples similaires dans la base
+  de données et en récupérant les traductions les plus pertinentes, ce
+  qui est utile pour des domaines spécifiques ou des textes très
+  répétitifs, mais peut être limité face à des usages linguistiques
+  nouveaux ou créatifs (\textbf{glover24?} ; \textbf{tabsharani23?}).
+\item
+  Neuronale (\emph{neural}) : utilise des modèles d'apprentissage
+  profond pour apprendre les schémas de traduction, traitant des phrases
+  entières et leur contexte, ce qui améliore la qualité et la fluidité
+  des traductions, bien qu'elle ne remplace pas entièrement les
+  traducteurs humains (\textbf{glover24?} ; \textbf{tabsharani23?}).
+\item
+  Hybride : les quatres approches peuvent également être combinées
+  (\textbf{glover24?} ; \textbf{tabsharani23?}).
+\end{enumerate}
+
+C'est au sein de l'approche neuronale que les avancées en intelligence
+artificielle ont permis de développer de nouveaux outils de traduction
+automatique. En effet, les réseaux neuronaux transformeurs
+(\emph{transformer neural networks}) ont révolutionné le domaine de la
+traduction automatique en traitant des phrases entières dans leur
+contexte global plutôt que des mots isolés, ce qui a considérablement
+amélioré la qualité et la fluidité des traductions (\textbf{glover24?} ;
+\textbf{tabsharani23?}). En tant que forme d'IA générative, ces outils
+exploitent le traitement du langage naturel (\emph{natural language
+processing}), l'apprentissage profond (\emph{deep learning}) et
+l'auto-attention (\emph{self-attention}) pour réaliser ces avancées. Ces
+outils de traduction automatique sont devenus de plus en plus populaires
+et accessibles, permettant à des personnes de traduire des textes
+entiers, des sites web, des documents, etc. en quelques secondes, sans
+avoir besoin de connaître la langue cible.
+
+Il est essentiel pour les chercheurs en sciences sociales numériques de
+connaître et d'utiliser les outils de traduction automatique car ils
+facilitent la recherche, la communication et la collaboration à
+l'échelle internationale, particulièrement dans le contexte d'un monde
+académique dominé par l'anglais. Toutefois, il est crucial de comprendre
+que ces outils ne remplacent pas complètement les traducteurs humains.
+Voici, d'une perspective générique, les avantages et inconvénients de
+ces outils par rapport à la traduction humaine (\textbf{glover24?}):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4306}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5694}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Avantages
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Inconvénients
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Amélioration de la productivité : traductions rapides et de grande
+échelle & Données biaisées : reproduction de stéréotypes et erreurs de
+genre \\
+Apprentissage autonome : amélioration continue grâce à l'apprentissage
+non supervisé & Manque de subtilité : difficultés avec les expressions
+idiomatiques et le jargon spécifique \\
+Réduction des coûts : minimise le besoin d'intervention humaine &
+Difficultés avec le contexte : erreurs de cohérence et de pertinence
+contextuelle \\
+Amélioration de l'accessibilité : accessible en plusieurs langues et
+adapté aux besoins spéciaux & \\
+\end{longtable}
+
+Il existe des milliers d'outils de traduction automatique qui utilisent
+l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous
+présenterons rapidement quelques-uns de ces outils gratuits parmi les
+plus populaires actuellement en mettant en lumière leurs forces et leurs
+faiblesses. Il est important de noter que ces outils sont en constante
+évolution et que leur qualité peut varier en fonction de la langue, du
+contexte et du type de texte à traduire.
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm, coltitle=black, bottomtitle=1mm, opacityback=0, arc=.35mm, colframe=quarto-callout-tip-color-frame, colback=white, toptitle=1mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Banques de données terminologiques}, titlerule=0mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
+Bien que ces outils n'utilisent pas l'intelligence artificielle, il nous
+semble essentiel de mentionner des ressources telles que TERMIUM Plus et
+Interactive Terminology for Europe (IATE), qui sont des bases de données
+terminologiques de référence. Ces bases de données, gérées par des
+langagiers professionels, facilitent la compréhension des termes
+spécifiques à une discipline en fournissant des définitions claires et
+des équivalents dans plusieurs langues et assurent également une
+cohérence terminologique dans les traductions. D'ailleurs, TERMIUM Plus
+a été fréquemment sollicité pour la traduction de plusieurs termes
+présents dans ce chapitre.
+
+\end{tcolorbox}
+
+\hypertarget{google-traduction}{%
+\subsubsection{Google Traduction}\label{google-traduction}}
+
+Très connu, l'une des forces de Google Traduction est son support d'une
+large variété de langues, tant des langues globalement utilisées et des
+langues plus régionales et moins utilisées. Google Traduction est basé
+sur de la traduction automatique neuronale, prenant donc le sens et le
+contexte d'une phrase en considération. De plus, il supporte aussi la
+traduction de documents complets.
+
+\hypertarget{deepl}{%
+\subsubsection{DeepL}\label{deepl}}
+
+DeepL se démarque par une qualité supérieure de traduction mais dans un
+nombre de langues plus restreint que d'autres outils. Il est aussi basé
+sur de la traduction automatique neuronale, ce qui lui permet de prendre
+en compte le contexte et la complexité d'une structure de phrase.
+
+\hypertarget{mate-translate}{%
+\subsubsection{Mate Translate}\label{mate-translate}}
+
+Mate Translate est une extension de navigateur qui permet de traduire
+des pages web entières, des phrases ou des mots en un seul clic. Il
+supporte un grand nombre de langues et offre des fonctionnalités
+supplémentaires telles que la prononciation des mots et des phrases
+traduits. Son avantage réside vraiment dans sa facilité d'utilisation et
+sa rapidité.
+
+\hypertarget{chatgpt}{%
+\subsubsection{ChatGPT}\label{chatgpt}}
+
+Évidemment, CHatGPT est un outil de traduction automatique basé sur des
+modèles de langage génératif. Il est très populaire pour sa capacité à
+générer du texte de manière fluide et naturelle, ce qui en fait un outil
+de traduction très efficace pour les textes longs et complexes. De plus,
+il est possible de raffiner la traduction en quelques itérations en
+suggérant des modifications au texte traduit.
+
+\hypertarget{autres-outils}{%
+\subsubsection{Autres outils}\label{autres-outils}}
+
+Comme mentionné plus haut, il existe une panoplie d'outils de traduction
+automatique qui utilisent l'IA et qui sont accessibles gratuitement.
+Cependant, considérant que ces outils sont en constante évolution,
+l'objectif de ce livre n'est pas d'en faire une description exhaustive
+mais plutôt de donner un aperçu des possibilités offertes par ces
+outils. Parmi les autres outils populaires, on peut citer Microsoft
+Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee,
+Yandex.Translate, HIX Translate, etc.
 
 \hypertarget{les-assistants-de-revue-de-littuxe9rature}{%
 \subsection{3. Les Assistants de Revue de
@@ -6368,8 +6714,8 @@ Marc-Antoine Rancourt, Flavie Lachance, Justine Béchard, William Poirier
 
 \end{center}
 
-\hypertarget{introduction-2}{%
-\section{Introduction}\label{introduction-2}}
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
 
 Alors que les chapitres précédents se sont consacrés à la présentation
 théorique et pratique des sciences sociales numériques, le présent
@@ -7014,21 +7360,11 @@ Alpaydin, E., \& Bach, F. (2014). \emph{Introduction to {Machine
 Learning}} (3e éd.). MIT Press.
 \url{https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851}
 
-\leavevmode\vadjust pre{\hypertarget{ref-allaire22}{}}%
-Announcing {Quarto}, a New Scientific and Technical Publishing System
-(2022).
-\url{https://posit.co/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/}
-
 \leavevmode\vadjust pre{\hypertarget{ref-argyle_etal23}{}}%
 Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., \&
 Wingate, D. (2023). Out of {One}, {Many}: {Using Language Models} Ot
 {Simulate Human Samples}. \emph{Political Analysis}, \emph{31}(3),
 337‑351. \url{https://doi.org/10.1017/pan.2023.2}
-
-\leavevmode\vadjust pre{\hypertarget{ref-ballhausen19}{}}%
-Ballhausen, M. (2019). Free and {Open Source Software Licenses
-Explained}. \emph{Computer}, \emph{52}(6), 82‑86.
-\url{https://doi.org/10.1109/MC.2019.2907766}
 
 \leavevmode\vadjust pre{\hypertarget{ref-bengio23}{}}%
 Bengio, Y. (2023, juillet 21). One of the "Godfathers of {AI}" Airs His
@@ -7057,11 +7393,6 @@ Bourgeois, I. (2021). Qu'est-Ce Que La Recherche Sociale? Dans
 \emph{Recherche Sociale. {De} La Problématique à La Collecte Des
 Données} (7e éd., p. 1‑14). Presses de l'Université du Québec.
 
-\leavevmode\vadjust pre{\hypertarget{ref-brady_collier10}{}}%
-Brady, H. E., \& Collier, D. (Éds.). (2010). \emph{Rethinking {Social
-Inquiry}. {Diverse Tools}, {Shared Standards}} (2ᵉ éd.). Rowman \&
-Littlefield Publishers.
-
 \leavevmode\vadjust pre{\hypertarget{ref-bremmer_suleyman23}{}}%
 Bremmer, I., \& Suleyman, M. (2023). The {AI Power Paradox}.
 \emph{Foreign Affairs}, \emph{102}(5), 26‑43.
@@ -7075,11 +7406,6 @@ Couture, S. (2014). \emph{Les logiciels libres, un an plus tard}.
 Institut de recherche et d'informations socioéconomiques.
 \url{https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/}
 
-\leavevmode\vadjust pre{\hypertarget{ref-couture20}{}}%
-Couture, S. (2020). Free and {Open Source Software}. Dans \emph{The
-{Handbook} of {Peer Production}} (p. 153‑168). John Wiley \& Sons, Ltd.
-\url{https://doi.org/10.1002/9781119537151.ch12}
-
 \leavevmode\vadjust pre{\hypertarget{ref-devedec21}{}}%
 Dévédec, N. L. (2021). "{Sans} Limites": Une Critique Politique et
 Écologique Du Transhumanisme et de Son Monde. \emph{Cahiers Société},
@@ -7090,38 +7416,10 @@ Devedzic, V. (2022). Identity of {AI}. \emph{Discover Artificial
 Intelligence}, \emph{2}(23).
 \url{https://doi.org/10.1007/s44163-022-00038-0}
 
-\leavevmode\vadjust pre{\hypertarget{ref-worldwidewebconsortiumw3c98}{}}%
-Extensible {Markup Language} ({XML}) 1.0 (1998).
-\url{https://www.w3.org/TR/1998/REC-xml-19980210.html}
-
 \leavevmode\vadjust pre{\hypertarget{ref-forestier_ansermet21}{}}%
 Forestier, F., \& Ansermet, F. (2021). Le Transhumanisme. Dans \emph{La
 {Dévoration Numérique}} (p. 19‑54). Odile Jacob.
 \url{https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm}
-
-\leavevmode\vadjust pre{\hypertarget{ref-fortunato_galassi21}{}}%
-Fortunato, L., \& Galassi, M. (2021). The Case for Free and Open Source
-Software in Research and Scholarship. \emph{Philosophical Transactions
-of the Royal Society A: Mathematical, Physical and Engineering
-Sciences}, \emph{379}(2197), 20200079.
-\url{https://doi.org/10.1098/rsta.2020.0079}
-
-\leavevmode\vadjust pre{\hypertarget{ref-gaudeul07}{}}%
-Gaudeul, A. (2007). Do {Open Source Developers Respond} to
-{Competition}? {The LATEX Case Study}. \emph{Review of Network
-Economics}, \emph{6}(2). \url{https://doi.org/10.2202/1446-9022.1119}
-
-\leavevmode\vadjust pre{\hypertarget{ref-quarto23}{}}%
-Get {Started} (2023). \url{https://quarto.org/docs/get-started/}
-
-\leavevmode\vadjust pre{\hypertarget{ref-markdownguide23}{}}%
-Getting {Started} (2023).
-\url{https://www.markdownguide.org/getting-started/}
-
-\leavevmode\vadjust pre{\hypertarget{ref-glover24}{}}%
-Glover, E. (2024, février 13). \emph{Machine {Translation}: {How It
-Works} and {Tools} to {Choose From}}.
-\url{https://builtin.com/artificial-intelligence/machine-translation}
 
 \leavevmode\vadjust pre{\hypertarget{ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23}{}}%
 Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, Ziming
@@ -7138,16 +7436,6 @@ Intelligence. \emph{Nature}, \emph{620}, 47‑60.
 Harari, Y. N. (2023, avril 28). Yuval {Noah Harari} Argues That {AI} Has
 Hacked the Operating System of Human Civilisation. \emph{The Economist}.
 \url{https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation}
-
-\leavevmode\vadjust pre{\hypertarget{ref-hameed23}{}}%
-{HTML History} \textbar{} {Explained} (2023).
-\url{https://linuxhint.com/html-history/}
-
-\leavevmode\vadjust pre{\hypertarget{ref-hughes13}{}}%
-Hughes, J. (2013). Cameos, Supporting Roles and Stars: Citation and
-Reflection in the Context of Initial Teacher Education.
-\emph{Educational Research}, \emph{55}(1), 16‑30.
-\url{https://doi.org/10.1080/00131881.2013.767023}
 
 \leavevmode\vadjust pre{\hypertarget{ref-ibm23}{}}%
 IBM. (2023a). \emph{What Are {Neural Networks}? \textbar{} {IBM}}.
@@ -7174,20 +7462,10 @@ Just, J. (2013, mars 25). \emph{Les Distributions - {Groupe} Francophone
 Des {Utilisateurs} de {TeX}, {LaTeX} et Logiciels Compagnons}.
 \url{https://www.gutenberg-asso.fr/Les-distributions}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kabacoff22}{}}%
-Kabacoff, R. (2022). \emph{R in Action: Data Analysis and Graphics with
-{R} and {Tidyverse}} (Third edition). Manning Publications.
-
 \leavevmode\vadjust pre{\hypertarget{ref-king_etal21}{}}%
 King, G., Keohane, R. O., \& Verba, S. (2021). \emph{Designing {Social
 Inquiry}. {Scientific Inference} in {Qualitative Research}.} (Nouvelle
 édition). Princeton University Press.
-
-\leavevmode\vadjust pre{\hypertarget{ref-knauff_nejasmic14}{}}%
-Knauff, M., \& Nejasmic, J. (2014). An {Efficiency Comparison} of
-{Document Preparation Systems Used} in {Academic Research} and
-{Development}. \emph{PLoS ONE}, \emph{9}(12), e115069.
-\url{https://doi.org/10.1371/journal.pone.0115069}
 
 \leavevmode\vadjust pre{\hypertarget{ref-konig_etal22}{}}%
 König, P. D., Krafft, T. D., Schulz, W., \& Zweig, K. A. (2022). Essence
@@ -7196,24 +7474,9 @@ of {AI}. {What Is AI}? Dans and M. Cannarsa Cristina Poncibò (Éd.),
 Cambridge University Press.
 \url{https://doi.org/10.1017/9781009072168.005}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kostoff_cummings13}{}}%
-Kostoff, R. N., \& Cummings, R. M. (2013). Highly Cited Literature of
-High-Speed Compressible Flow Research. \emph{Aerospace Science and
-Technology}, \emph{26}(1), 216‑234.
-\url{https://doi.org/10.1016/j.ast.2012.04.006}
-
-\leavevmode\vadjust pre{\hypertarget{ref-krahmer_etal23}{}}%
-Krähmer, D., Schächtele, L., \& Schneck, A. (2023). Care to Share?
-{Experimental} Evidence on Code Sharing Behavior in the Social Sciences.
-\emph{PLOS ONE}, \emph{18}(8), e0289380.
-\url{https://doi.org/10.1371/journal.pone.0289380}
-
 \leavevmode\vadjust pre{\hypertarget{ref-encyclopaediabritannica23}{}}%
 {LaTeX} (2023).
 \url{https://www.britannica.com/technology/LaTeX-computer-programming-language}
-
-\leavevmode\vadjust pre{\hypertarget{ref-xie23}{}}%
-Markdown (2023). \url{https://github.com/rstudio/markdown}
 
 \leavevmode\vadjust pre{\hypertarget{ref-marres17}{}}%
 Marres, N. (2017). \emph{Digital {Sociology}. {The Reinvention} of
@@ -7226,21 +7489,6 @@ https://apastyle.apa.org.
 
 \leavevmode\vadjust pre{\hypertarget{ref-mccarthy07}{}}%
 McCarthy, J. (2007). \emph{{WHAT IS ARTIFICIAL INTELLIGENCE}?}
-
-\leavevmode\vadjust pre{\hypertarget{ref-overleaf23}{}}%
-Modèles (2023). \url{https://fr.overleaf.com/latex/templates}
-
-\leavevmode\vadjust pre{\hypertarget{ref-morandat_etal12}{}}%
-Morandat, F., Hill, B., Osvald, L., \& Vitek, J. (2012). Evaluating the
-{Design} of the {R Language}. Dans J. Noble (Éd.), \emph{{ECOOP} 2012 --
-{Object-Oriented Programming}: 26th {European Conference}, {Beijing},
-{China}, {June} 11-16, 2012. {Proceedings}} (Vol. 7313, p. 104‑131).
-Springer Berlin Heidelberg.
-\url{https://doi.org/10.1007/978-3-642-31057-7}
-
-\leavevmode\vadjust pre{\hypertarget{ref-muenchen11}{}}%
-Muenchen, R. A. (2011). \emph{R for {SAS} and {SPSS} Users} (2nd ed).
-Springer.
 
 \leavevmode\vadjust pre{\hypertarget{ref-opensourceinitiative06}{}}%
 Open Source Initiative. (2006, juillet 7). \emph{The {Open Source
@@ -7265,16 +7513,6 @@ Learning} to {Discover Theories} of {Human Decision-Making}.
 \emph{Science}, \emph{372}(6547), 1209‑1214.
 \url{https://doi.org/10.1126/science.abe2629}
 
-\leavevmode\vadjust pre{\hypertarget{ref-przeworski_teune70}{}}%
-Przeworski, A., \& Teune, H. (1970). \emph{The Logic of Comparative
-Social Inquiry}. John Wiley \& Sons, Ltd.
-
-\leavevmode\vadjust pre{\hypertarget{ref-racz_markovic18}{}}%
-Racz, A., \& Marković, S. (2018). {«~{Worth}(Less) Papers~»} -- Are
-Journal Impact Factor and Number of Citations Suitable Indicators to
-Evaluate Quality of Scientists? \emph{Nova Prisutnost}, \emph{XVI}(2),
-369‑388. \url{https://doi.org/10.31192/np.16.2.10}
-
 \leavevmode\vadjust pre{\hypertarget{ref-roser22}{}}%
 Roser, M. (2022, décembre 6). \emph{The {Brief History} of {Artificial
 Intelligence}: {The World Has Changed Fast} -- {What Might Be Next}?}
@@ -7287,15 +7525,6 @@ of a {Free Software Culture} for {Qualitative Researchers} in the
 \emph{3}(1), 97‑103.
 \url{https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841}
 
-\leavevmode\vadjust pre{\hypertarget{ref-sarkar08}{}}%
-Sarkar, D. (2008). \emph{Lattice: {Multivariate Data Visualization} with
-{R}}. Springer New York. \url{https://doi.org/10.1007/978-0-387-75969-2}
-
-\leavevmode\vadjust pre{\hypertarget{ref-sarkar23}{}}%
-Sarkar, D. (2023). \emph{Trellis {Graphics} for {R}} (Version 0.21-8)
-{[}Software{]}.
-\url{https://cran.r-project.org/web/packages/lattice/lattice.pdf}
-
 \leavevmode\vadjust pre{\hypertarget{ref-sartre96}{}}%
 Sartre, J.-P. (1996). \emph{L'existentialisme Est Un Humanisme}.
 Gallimard.
@@ -7306,9 +7535,6 @@ Smith, B. L. (2002). The {Future} of {Software}: {Enabling} the
 {Policy} toward {Open Source Software}} (p. 69‑86). Brookings
 Institution Press.
 \url{https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8}
-
-\leavevmode\vadjust pre{\hypertarget{ref-stackoverflow23}{}}%
-Stack {Overflow} (2023). \url{https://stackoverflow.com/}
 
 \leavevmode\vadjust pre{\hypertarget{ref-stallman86}{}}%
 Stallman, R. (1986). \emph{{GNU}'s {Bulletin}}.
@@ -7326,15 +7552,6 @@ et Non Libres - {Projet GNU} - {Free Software Foundation}}. Système
 d'exploitation GNU.
 \url{https://www.gnu.org/philosophy/categories.html\#}
 
-\leavevmode\vadjust pre{\hypertarget{ref-goldfarb96}{}}%
-The {Roots} of {SGML} -- {A Personal Recollection} (1996).
-\url{http://www.sgmlsource.com/history/roots.htm}
-
-\leavevmode\vadjust pre{\hypertarget{ref-tippmann15}{}}%
-Tippmann, S. (2015). Programming Tools: {Adventures} with {R}.
-\emph{Nature}, \emph{517}(7532), 109‑110.
-\url{https://doi.org/10.1038/517109a}
-
 \leavevmode\vadjust pre{\hypertarget{ref-wang19}{}}%
 Wang, P. (2019). On {Defining Artificial Intelligence}. \emph{Journal of
 Artificial General Intelligence}, \emph{10}(2), 1‑37.
@@ -7345,45 +7562,11 @@ Weise, K., \& Metz, C. (2023, mai 9). When {A}.{I}. {Chatbots
 Hallucinate}. \emph{The New York Times}.
 \url{https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html}
 
-\leavevmode\vadjust pre{\hypertarget{ref-wickham09}{}}%
-Wickham, H. (2009). \emph{Ggplot2: {Elegant Graphics} for {Data
-Analysis}}. Springer New York.
-\url{https://doi.org/10.1007/978-0-387-98141-3}
-
-\leavevmode\vadjust pre{\hypertarget{ref-wickham_etal19}{}}%
-Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François,
-R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen,
-T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel,
-D., Spinu, V., \ldots{} Yutani, H. (2019). Welcome to the {Tidyverse}.
-\emph{Journal of Open Source Software}, \emph{4}(43), 1686.
-\url{https://doi.org/10.21105/joss.01686}
-
-\leavevmode\vadjust pre{\hypertarget{ref-wickham_etal23}{}}%
-Wickham, H., Çetinkaya-Rundel, M., \& Grolemund, G. (2023). \emph{R for
-Data Science: Import, Tidy, Transform, Visualize, and Model Data}
-(Second edition). O'Reilly.
-
 \leavevmode\vadjust pre{\hypertarget{ref-williams_etal10}{}}%
 Williams, S., Stallman, R. M., \& Masutti, C. (2010). \emph{Richard
 Stallman et la révolution du logiciel libre - Une biographie autorisée}.
 Eyrolles.
 \url{https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf}
-
-\leavevmode\vadjust pre{\hypertarget{ref-Wow}{}}%
-\emph{Wow! {Ten} Million Users!} (s.~d.). Consulté 9 mars 2024, à
-l\textquotesingle adresse
-\url{https://www.overleaf.com/blog/wow-ten-million-users}
-
-\leavevmode\vadjust pre{\hypertarget{ref-yu_munoz-justicia22}{}}%
-Yu, J., \& Muñoz-Justicia, J. (2022). Free and {Low-Cost Twitter
-Research Software Tools} for {Social Science}. \emph{Social Science
-Computer Review}, \emph{40}(1), 124‑149.
-\url{https://doi.org/10.1177/0894439320904318}
-
-\leavevmode\vadjust pre{\hypertarget{ref-zaid_etal17}{}}%
-Zaid, Y. H., Shamsudin, S., \& Habil, H. (2017). Exploring {Citations}
-in {Chemical Engineering Literature Review}. \emph{LSP International
-Journal}, \emph{4}(1, 1). \url{https://doi.org/10.11113/lspi.v4n1.46}
 
 \end{CSLReferences}
 
