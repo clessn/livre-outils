@@ -1,4 +1,94 @@
+<<<<<<< HEAD
 # Les outils de visualisation de données
+=======
+# Outils de visualisation graphique
+## Une image vaut mille mots
+
+Camille Tremblay-Antoine[^chapitre_7-1] Nadjim Fréchet[^chapitre_7-2]
+
+[^chapitre_7-1]: Université Laval
+
+[^chapitre_7-2]: Université de Montréal
+
+```{r, echo=T, include=F, eval = F}
+
+#*****************************************#
+#### 0 - Téléchargement des packages ######
+#*****************************************#
+
+library(tidyverse)   # Pour utiliser les packages dplyr et ggplot2
+library(lattice)     # Pour utiliser le package lattice
+library(readstata13) # Pour télécharger des bases de données de format dta
+library(grid)        # Pour des grids de graphique
+library(gridExtra)   # Pour des grids de graphique
+
+
+#********************************************************************************************************************************#
+#### 0.1 - Téléchargement de la base de données de l'Étude Électorale Canadienne de 2019 disponible sur http://www.ces-eec.ca/  ######
+#********************************************************************************************************************************#
+
+Data <- read.dta13("/Users/nadjimfrechet/Dropbox/projet-global_esclean/Canada/Data/RawData/CES19.dta")
+
+
+#### 1 - Nettoyage de base de la variable d'intérêt ####
+
+## Province
+
+Data$province <- NA
+Data$province[as.numeric(Data$pes19_province) == 5              ] <- "T-N-L"
+Data$province[as.numeric(Data$pes19_province) %in% c(4,7,10)    ] <- "Maritimes"
+Data$province[as.numeric(Data$pes19_province) %in% c(1:3,12)    ] <- "Ouest"
+Data$province[as.numeric(Data$pes19_province) == 11             ] <- "Québec"
+Data$province[as.numeric(Data$pes19_province) == 9              ] <- "Ontario"
+Data$province[as.numeric(Data$pes19_province) %in% c(4,6,8,13)  ] <- NA
+table(Data$province)
+
+## Idéologie gauche-droite
+
+Data$gaucheDroite <- NA
+Data$gaucheDroite <- Data$cps19_lr_scale_bef
+table(Data$gaucheDroite)
+
+#### 1.1 - Nettoyage de la base de données du Graphique BaseR ####
+
+GraphiqueExemple <- Data %>%
+  # Sélection de la variable d'intérêt
+  select(province) %>%
+  # Retrait des valeurs manquantes
+  na.omit() %>%
+  # Sélection de la variable de regroupement
+  group_by(province) %>%
+  # Nombre d'observations par valeur de la variable d'intérêt
+  summarise(n = n()) %>%
+  # Proportion par valeur de la variable d'intérêt
+  mutate(prop = round(n/sum(n)*100,2)) %>%
+  # Sélection des variables pertinentes pour le graphique
+  ungroup() %>%
+  select(province, prop) 
+
+## Extraction des valeurs intéressantes
+
+x <- GraphiqueExemple$province
+
+y <- GraphiqueExemple$prop
+
+#### 1.2 - Nettoyage de la base de données du Graphique lattice ####
+
+GraphiqueLattice <- Data %>%
+  # Sélection des variables d'intérêt
+  select(province, gaucheDroite) %>%
+  # Retrait des valeurs manquantes
+  na.omit() %>%
+  # Sélection de la variable de regroupement
+  group_by(province, gaucheDroite) %>%
+  # Enlever les valeurs manquantes
+  na.omit()  
+
+
+```
+
+## Introduction
+>>>>>>> b73114c85b36177c55d2250d64cde898bac1be10
 
 Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
 

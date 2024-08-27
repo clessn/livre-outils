@@ -55,6 +55,58 @@ Trois catégories d'outils seront présentées: les « *Large Language Models* �
 
 ### 1. Les LLMs
 
+@openai19 définissent les grands modèles linguistiques (Large language models ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages web, des courriels, des messages de médias sociaux, etc. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter que les GML ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
+
+L'intégration des grands modèles de langage (LLMs) via l'API d'OpenAI dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l'analyse qualitative et quantitative des données textuelles. L'utilisation de ces modèles en R permet aux chercheurs d'exploiter des capacités avancées de traitement du langage naturel pour une variété d'applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l'analyse de biais algorithmiques en comparant l'information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l'analyse de sentiments, l'extraction d'entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d'outils personnalisés pour des besoins spécifiques de recherche.
+
+Voici quelques exmples d'utilisation des LLMs en sciences sociales:
+
+Premièrement, les LLMs peuvent être utilisés pour l'analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.
+
+Deuxièmement, les LLMs offrent des capacités d'extraction d'entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et socio-politiques, enrichissant ainsi les bases de données pour des études plus poussées.
+
+Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d'informations en résumés concis, facilitant l'analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.
+
+Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d'explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.
+
+Cinquièmement, l'intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.
+
+sixièmement, les modèles de "speech-to-text" peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l'analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.
+
+Septièmement, les modèles de vision algorithmiques permettent l'analyse de contenu visuel, en extrayant des informations à partir d'images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.
+
+Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s'adaptent à des besoins spécifiques de recherche, comme l'analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des insights précieux sur l'évolution des discours et pratiques culturelles.
+
+En somme, l'utilisation des LLMs via l'API d'OpenAI en R représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l'immense paysage des données textuelles avec une précision et une efficacité accrues.
+
+Bien qu'il soit possible de communiquer avec l'API d'OpenAI directement, le package `openai` en R offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et bien plus encore, facilitant l'intégration des LLMs dans les workflows de recherche existants. 
+
+Voici un exemple simple d'utilisation de l'API d'OpenAI :
+
+```R
+library(openai)
+
+system <- "You are a helpful assistant" # Donne un role au modèle. Doit être clair et concis
+
+prompt <- "Quelle est la capitale du Québec?" # Le prompt
+
+chat_prompt <- openai::create_chat_completion(
+        model = "gpt-3.5-turbo-0125",
+        messages = list(
+            list("role" = "system",
+                 "content" = system
+            ),
+            list(
+                "role" = "user",
+                "content" = prompt)
+            )
+    )
+
+output <- chat_prompt$choices$message.content
+
+print(output)
+```
+
 ### 2. Les Assistants de Traduction
 
 L'IA a aussi permis la création d'outils de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine, des ordinateurs, etc. sans aucune aide d'un humain [@glover24 ; @tabsharani23]. Il existe différents types ou approches de traduction automatique:

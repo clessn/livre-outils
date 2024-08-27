@@ -27,6 +27,8 @@ book:
     - chapitre_7.qmd
     - chapitre_8.qmd
     - conclusion.qmd
+    - annexe_1.qmd
+    - annexe_2.qmd    
     - references.qmd
 
 bibliography: livre-outils.bib
@@ -34,7 +36,7 @@ csl: https://www.zotero.org/styles/apa
 citations-hover: true
 citeproc: true
 
-lang: fr_CA
+lang: fr_FR
 
 format:
   html:

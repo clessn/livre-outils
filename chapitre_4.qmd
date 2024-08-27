@@ -1,4 +1,4 @@
-# Gestion de la littérature {#sec-chap4}
+# Outils de gestion de la littérature {#sec-chap4}
 
 ## Introduction
 
@@ -60,15 +60,15 @@ La réalisation d'un scoping review présente également divers défis méthodol
 
 ### Revue Systématique
 
-Dans le domaine des sciences politiques, les revues systématiques et les méta-analyses offrent des outils précieux pour synthétiser et évaluer de manière rigoureuse les preuves issues de multiples études. Ces approches permettent de dégager des tendances, d'identifier des consensus ou des divergences dans la littérature et d'éclairer les débats politiques et sociaux grâce à une base de données empirique solide.
+Dans le domaine des sciences sociales, les revues systématiques et les méta-analyses offrent des outils précieux pour synthétiser et évaluer de manière rigoureuse les preuves issues de multiples études. Ces approches permettent de dégager des tendances, d'identifier des consensus ou des divergences dans la littérature et d'éclairer les débats politiques et sociaux grâce à une base de données empirique solide.
 
-#### Importance des Revues Systématiques en Sciences Politiques
+#### Importance des Revues Systématiques en sciences sociales
 
-Les revues systématiques en sciences politiques permettent d'aborder des questions complexes et multidimensionnelles telles que les facteurs influençant la réussite des démocraties, l'efficacité des politiques publiques, ou encore l'impact des mouvements sociaux. En recensant de manière exhaustive et méthodique la littérature existante sur un sujet donné, les chercheurs peuvent offrir une synthèse objective qui reflète l'état actuel des connaissances. Cela est particulièrement utile dans un domaine où les études peuvent être influencées par des biais idéologiques, permettant ainsi de distinguer les preuves empiriques solides des opinions ou des théories moins étayées.
+Les revues systématiques en sciences sociales permettent d'aborder des questions complexes et multidimensionnelles telles que les facteurs influençant la réussite des démocraties, l'efficacité des politiques publiques, ou encore l'impact des mouvements sociaux. En recensant de manière exhaustive et méthodique la littérature existante sur un sujet donné, les chercheurs peuvent offrir une synthèse objective qui reflète l'état actuel des connaissances. Cela est particulièrement utile dans un domaine où les études peuvent être influencées par des biais idéologiques, permettant ainsi de distinguer les preuves empiriques solides des opinions ou des théories moins étayées.
 
-#### Méta-Analyse 
+#### Méta-Analyse
 
-La méta-analyse, souvent intégrée dans le cadre d'une revue systématique, va plus loin en combinant quantitativement les résultats de différentes études pour produire une estimation globale de l'effet étudié. Dans le contexte des sciences politiques, cela peut signifier, par exemple, quantifier l'effet des campagnes d'information sur la participation électorale ou mesurer l'impact des politiques économiques sur la réduction de la pauvreté. La méta-analyse offre ainsi une puissance statistique accrue et une meilleure généralisabilité des conclusions, transcendant les limites des études individuelles.
+La méta-analyse, souvent intégrée dans le cadre d'une revue systématique, va plus loin en combinant quantitativement les résultats de différentes études pour produire une estimation globale de l'effet étudié. Dans le contexte des sciences sociales, cela peut signifier, par exemple, quantifier l'effet des campagnes d'information sur la participation électorale ou mesurer l'impact des politiques économiques sur la réduction de la pauvreté. La méta-analyse offre ainsi une puissance statistique accrue et une meilleure généralisabilité des conclusions, transcendant les limites des études individuelles.
 
 Bien que complémentaires, les revues systématiques et les méta-analyses diffèrent dans leur approche et leur finalité :
 
@@ -76,9 +76,9 @@ Bien que complémentaires, les revues systématiques et les méta-analyses diff�
 
 -   Méta-Analyse : Elle se concentre sur la synthèse quantitative des données issues de multiples études. En appliquant des méthodes statistiques pour intégrer les résultats, elle cherche à estimer l'effet global d'un phénomène, offrant une réponse numérique précise à une question de recherche.
 
-#### Valeur Ajoutée dans les Sciences Politiques
+#### Valeur Ajoutée dans les sciences sociales
 
-L'adoption de ces méthodologies en sciences politiques enrichit le débat académique et informe la pratique politique en fournissant des preuves empiriques consolidées. Elles aident à surmonter le problème de la surabondance d'informations et de la variabilité des résultats d'études individuelles, offrant ainsi une base plus solide pour la prise de décision politique et l'élaboration de théories. De plus, en identifiant les lacunes dans la recherche existante, elles orientent les futures enquêtes vers les zones moins explorées ou controversées, contribuant à l'avancement de la discipline.
+L'adoption de ces méthodologies en sciences sociales enrichit le débat académique et informe la pratique politique en fournissant des preuves empiriques consolidées. Elles aident à surmonter le problème de la surabondance d'informations et de la variabilité des résultats d'études individuelles, offrant ainsi une base plus solide pour la prise de décision politique et l'élaboration de théories. De plus, en identifiant les lacunes dans la recherche existante, elles orientent les futures enquêtes vers les zones moins explorées ou controversées, contribuant à l'avancement de la discipline.
 
 La revue systématique peut être menée en suivant les 24 étapes décrites par (Citer muka_etal20).
 
@@ -124,6 +124,10 @@ Une fois les étapes de la revue systématique complétées, Covidence simplifie
 ### Avantages de Covidence
 
 L'outil Covidence représente une avancée significative dans la pratique des revues systématiques, offrant une série d'avantages qui facilitent le processus de recherche. Sa capacité à importer et gérer efficacement les références de multiples bases de données bibliographiques permet une organisation optimale des articles potentiels à inclure dans une revue. De plus, Covidence soutient la collaboration entre chercheurs, autorisant plusieurs utilisateurs à travailler simultanément sur le même projet, ce qui favorise une approche plus inclusive et diversifiée de l'analyse. La plateforme automatise également les premières étapes de sélection des articles, réduisant ainsi la charge de travail manuel et le potentiel de biais de sélection. Les fonctionnalités pour l'extraction de données et l'évaluation de la qualité sont également des points forts, garantissant une analyse systématique et cohérente des informations recueillies. En outre, l'intégration de Covidence avec d'autres outils de recherche élargit sa compatibilité et son utilité dans le flux de travail académique.
+
+### Critères de sélection de l'outil Covidence
+
+Bien que Covidence soit un outil développé par une organisation à but non lucratif, il ne répond pas entièrement aux critères du logiciel libre car son code source n'est pas ouvert pour modification et redistribution libre par la communauté. Cela pourrait limiter les utilisateurs qui souhaitent personnaliser l'outil pour des besoins spécifiques. Toutefois, son modèle de licence permet une large utilisation académique et non commerciale, ce qui le rend accessible à de nombreux chercheurs. Covidence se distingue par sa capacité à intégrer des données provenant de diverses bases de données bibliographiques, ce qui simplifie considérablement le processus de revue systématique de la littérature. L'outil est également compatible avec des référentiels de données comme EndNote et Zotero, facilitant ainsi l'importation et la gestion des références. Covidence jouit d'une large adoption dans la communauté des chercheurs en sciences de la santé, ce qui témoigne de sa fiabilité et de son efficacité. La plateforme bénéficie également d'un solide support des universités et d'institutions de recherche, qui offrent souvent des licences institutionnelles, rendant l'outil encore plus accessible. L'interface de Covidence est conçue pour être intuitive, ce qui réduit la courbe d'apprentissage pour les nouveaux utilisateurs. Elle guide les chercheurs à travers les différentes phases de la revue systématique de manière structurée, rendant le processus moins ardu comparé aux méthodes traditionnelles. Les fonctionnalités de double codage, de filtrage et d'extraction de données offrent une méthodologie rigoureuse et standardisée, essentielle pour maintenir la qualité des revues systématiques. Covidence excelle dans la facilitation de la collaboration entre chercheurs. La plateforme permet à plusieurs utilisateurs de travailler simultanément sur le même projet, de discuter des inclusions ou exclusions d'études, et de résoudre les désaccords efficacement. Cet aspect est particulièrement précieux dans des projets de grande envergure impliquant des équipes dispersées géographiquement. Coût et accessibilité
 
 ### Inconvénients de Covidence
 

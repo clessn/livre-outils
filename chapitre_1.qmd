@@ -1,15 +1,15 @@
-```{=tex}
-\begin{center}
+---
+author: "Jozef Rivest et Catherine Ouellet"
+---
 
-"Vers une science numérique plus transparante: l'apport du logiciel libre et du code ouvert dans les sciences sociales"
+# Vers une science numérique plus transparante: l'apport du logiciel libre et du code ouvert dans les sciences sociales {#sec-chap1}
 
-Jozef Rivest et Catherine Ouellet 
-
-\end{center}
-```
 Ce chapitre vise à initier les lecteurs et lectrices aux concepts fondamentaux du logiciel libre. Pour ce faire, nous présenterons, dans un premier temps, l'historique de ce mouvement afin de pouvoir le situer temporellement. De cette façon, nous pourrons mieux comprendre les motivations derrière ce mouvement, mais aussi ses influences actuelles. Ensuite, nous distinguerons le logiciel libre du code ouvert. Bien que les deux soient plutôt similaires, il est important de les distinguer puisqu'ils ne renvoient pas aux mêmes caractéristiques et aux mêmes fondements. Après coup, nous aborderons en quoi ces réflexions sont intéressantes et importantes pour les sciences sociales à l'ère du numérique, ainsi que les avantages et les inconvénients qui y sont liés. Ensuite, nous présenterons de quelle façon ces outils du numérique s'inscrivent dans les différentes étapes de la recherche. Finalement, avec ces quelques notions en poche, nous présenterons les différents critères sur lesquels nous nous sommes appuyés pour sélectionner les différents outils qui sont présentés dans ce livre. Ces critères visent à introduire la discussion et les débats en sciences sociales quant à la sélection de certains outils numériques parmi d'autres.
 
-# Le monde du libre
+
+# Logiciels Libres
+
+## Le monde du libre
 
 *« Vous n'avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel, car votre médecin vous le conseille --- peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n'y perd que du temps et le coût du papier sur lequel il l'inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d'électricité. Dans tous les cas, la personne qui donne l'information y gagne deux choses : davantage d'amitié et la possibilité de récupérer en retour d'autres recettes intéressantes. »* - Richard Stallman [@williams_etal10]
 
