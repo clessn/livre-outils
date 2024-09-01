@@ -175,7 +175,7 @@ Bien que l'apprentissage de \LaTeX\ et de Markdown puisse être parsemé de nomb
 
 Également, avec l'émergence de l'intelligence artificielle (IA), de nombreux modèles d'IA génératifs commencent à émerger comme des ressources d'aides utiles pour les chercheuses et les chercheurs. Au moment de la rédaction du présent chapitre, le *chatbot* ChatGPT, développé par OpenAI et basé sur le grand modèle de langage (*large language model*, LLM) GPT-3.5, est une ressource d'aide en émergence en ce qui a trait aux langages de balisage. Le corpus de données sur lequel il a été formé inclut une grande variété de langages et de styles d'écriture, incluant \LaTeX\ et Markdown. Ainsi, il est possible de poser des questions en langage courant à ce *chatbot* lorsque des problèmes de balisage sont rencontrés. Celui-ci fournira en réponse le texte avec les balises adéquates pour régler le problème. Cela s'applique même pour des problèmes pour lesquels la réponse n'est pas directement indiquée sur Stack Overflow, lorsque la logique des langages est comprise par ces modèles basés sur l'IA. ChatGPT est toutefois plus outillé en \LaTeX\ qu'en Markdown ou en Quarto en raison de la plus grande abondance de ressources en \LaTeX\ disponibles en ligne, bien que ses capacités soient en constante amélioration. Il arrive cependant régulièrement que les réponses des modèles de langage comme ChatGPT soit erronées --- tout comme certaines réponses sur Stack Overflow peuvent ne pas être adaptées à régler un problème similaire vécu sur un autre ordinateur, avec des paramètres différents. Il demeure donc important de vérifier les réponses des modèles basés sur l'IA afin de ne pas avoir de mauvaises surprises lors de la compilation du code. Ainsi, il est utile de s'appuyer autant sur la communauté d'utilisatrices et d'utilisateurs de langages de balisage qui échange des ressources en ligne que sur les modèles de langage basés sur l'IA.
 
-### Philosophie du code source ouvert et du logiciel libre
+#### Philosophie du code source ouvert et du logiciel libre
 
 L'utilisation des langages de balisage s'inscrit bien dans la philosophie du logiciel libre. Le langage \LaTeX\ est distribué sous la license *\LaTeX\ project public license* (LPPL), alors que Quarto 1.4 est distribué sous la license du Massachusetts Institute of Technology (MIT). Moyennant le respect de leurs licenses respectives, ces licenses permettent ainsi aux utilisateurs de \LaTeX\ et de Quarto d'utiliser ces langages comme ils le souhaitent, de redistribuer des copies, de modifier le fonctionnement de ces langages et d'en redistribuer des versions améliorées. Bien que \LaTeX\ et Quarto ne soient pas des logiciels, leur license utilisation est cohérente avec la philosophie du logiciel libre et permet à ces langages d'être utilisés dans de nombreux logiciels.
 
@@ -215,5 +215,40 @@ Enfin, évitez les conflits Git lors de la collaboration sur GitHub en coordonna
 
 Pour conclure, la dernière étape pour devenir expert en langages de balisage est d'être créatif. Explorez les différentes balises et utilisez-les de manière inventive. Les langages de balisage vous permetteront d'effectuer des tâches que vous n'auriez pas pu réaliser facilement en utilisant un logiciel de traitement de texte classique. Ils vous permetteront de produire des documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique.
 
+```{r}
+library(tidyverse)
+library(tinytable)
+
+tbl_langages_balisage <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'LaTeX' = c('Oui', 
+                'Très grande', 
+                'Oui', 
+                'Moyenne', 
+                'Oui', 
+                'Très forte'),
+    'R Markdown' = c('Oui', 
+                    'Grande', 
+                    'Oui', 
+                    'Forte', 
+                    'Oui',
+                    'Forte'),
+    'Quarto' = c('Oui', 
+                    'Moyenne', 
+                    'Oui', 
+                    'Forte', 
+                    'Oui',
+                    'Forte')
+)
+
+tt(tbl_langages_balisage, width = 0.75, caption = 'Résumé des critères de sélection - Langages de balisage', notes = list(a = list(i = 5:5, j = 2, text = "\n\nNote: Bien que LaTeX offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code.")))
+
+
+```
 
 ## Références
