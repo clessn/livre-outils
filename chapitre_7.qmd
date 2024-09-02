@@ -1,3 +1,10 @@
+---
+author:
+- Alexandre Fortier-Chouinard^[University of Toronto]
+- Étienne Proulx^[Université Laval]
+- Maxime Blanchard^[McGill University]
+---
+
 # Langages de balisage
 ## Baliser les sciences sociales&nbsp;: langages et pratiques {#sec-chap7}
 
@@ -12,11 +19,11 @@ Un langage de balisage constitue un ensemble de commandes qui peuvent être entr
 ```{r}
 #| label: fig-vscode
 #| echo: false
-#| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code $\\newline$ *Source*&nbsp;: Auteurs du présent chapitre."
 knitr::include_graphics("images/chapitre5_vscode.png", dpi = 600)
 ```
 
-Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb96]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont $\LaTeX$ (1985), [Bib]{.smallcaps}$\TeX$ (1988), HTML (1993), XML (1998), Markdown (2004) et `R` Markdown (2012) [@encyclopaediabritannica23; @hameed23; @markdownguide23; @worldwidewebconsortiumw3c98; @xie23].
+Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarbRootsSGMLPersonal1996]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont $\LaTeX$ (1985), [Bib]{.smallcaps}$\TeX$ (1988), HTML (1993), XML (1998), Markdown (2004) et `R` Markdown (2012) [@encyclopaediabritannica23; @hameed23; @markdownguide23; @worldwidewebconsortiumw3c98; @xie23].
 
 Les langages de balisage permettent d'effectuer différentes tâches. HTML, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. XML, quant à lui, permet de structurer de larges volumes de données. $\LaTeX$ permet pour sa part de formater du texte et de créer des documents en format PDF. Markdown permet également de créer des documents en format PDF, mais aussi en format HTML ou DOCX --- format utilisé pour les documents Word ---, contrairement à $\LaTeX$. `R` Markdown permet d'ajouter des extraits de code `R` à un fichier en langage Markdown. Enfin, depuis 2022, le système de publication scientifique et technique multilingue Quarto permet de créer des documents qui intègrent des extraits de code `R`, $\LaTeX$, Python, Julia ou JavaScript, créés dans différents types d'environnements, à un fichier en langage Markdown [@allaire22]. $\LaTeX$, Markdown, `R` Markdown et Quarto permettent aussi d'intégrer les références bibliographiques du système de traitement de références [Bib]{.smallcaps}$\TeX$. Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d'un même fichier. Le chapitre 6<!--@sec-chap6--> explique la manière de citer les références en langage [Bib]{.smallcaps}$\TeX$ par le biais de Zotero et de Better [Bib]{.smallcaps}$\TeX$.
 
@@ -86,7 +93,7 @@ or the Preservation of Favoured Races in the Struggle for Life}},
 }
 ```
 
-Un fichier [Bib]{.smallcaps}$\TeX$ ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier $\LaTeX$, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document [Bib]{.smallcaps}$\TeX$ a peu d'importance, puisque $\LaTeX$ réordonne par défaut la bibliographie en ordre alphabétique.
+Un fichier [Bib]{.smallcaps}$\TeX$ ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier $\LaTeX$, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarbRootsSGMLPersonal1996; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document [Bib]{.smallcaps}$\TeX$ a peu d'importance, puisque $\LaTeX$ réordonne par défaut la bibliographie en ordre alphabétique.
 
 ### Environnements d'édition et de compilation
 
@@ -115,7 +122,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 ```{r}
 #| label: fig-latex-vs-word
 #| echo: false
-#| fig-cap: "Utilité relative de Word et de $\LaTeX$ selon la complexité et la taille du document \\newline \\textit{Source}&nbsp;: Yannick Dufresne (2015)."
+#| fig-cap: "Utilité relative de Word et de $\\LaTeX$ selon la complexité et la taille du document $\\newline$ *Source*&nbsp;: Yannick Dufresne (2015)."
 knitr::include_graphics("images/chapitre5_word-vs-latex.png")
 ```
 
@@ -148,14 +155,14 @@ Bien que la mise en page de documents produits via Markdown et $\LaTeX$ puisse �
 ```{r}
 #| label: fig-cv
 #| echo: false
-#| fig-cap: "Exemple de gabarit $\\LaTeX$ de curriculum vitae \\newline \\textit{@liantze23}&nbsp;: ."
+#| fig-cap: "Exemple de gabarit $\\LaTeX$ de curriculum vitae $\\newline$ *Source*&nbsp;: @liantze23."
 knitr::include_graphics("images/chapitre5_CVtemp.png")
 ```
 
 ```{r}
 #| label: fig-invoice
 #| echo: false
-#| fig-cap: "Exemple de gabarit $\\LaTeX$ de feuille de temps \\newline \\textit{@roux13}&nbsp;: ."
+#| fig-cap: "Exemple de gabarit $\\LaTeX$ de feuille de temps $\\newline$ *Source*&nbsp;: @roux13."
 knitr::include_graphics("images/chapitre5_TStemp.png")
 ```
 
@@ -171,7 +178,7 @@ La popularité de certains langages de balisage dans le monde de la recherche co
 
 #### Gestion des embuches
 
-Bien que l'apprentissage de $\LaTeX$ et de Markdown puisse être parsemé de nombreuses embuches, ces deux langages bénéficient d'une communauté d'utilisateurs et d'utilisatrices en ligne sur laquelle il est possible de s'appuyer afin de résoudre tout problème rencontré. Ces individus --- particulièrement les plus expérimentés --- sont nombreux à partager leur expérience à leurs collègues rencontrant des problèmes afin de contribuer à régler ceux-ci. Cette communauté est présente sur une multitude de sites Web, bien que le point de rencontre principal soit le forum @stackoverflow23, qui est également utilisé pour régler des problèmes de programmation et est abordé plus en détail dans le chapitre 4<!--@sec-chap4-->. Une simple recherche sur Google d'un problème rencontré avec $\LaTeX$ ou Markdown vous offrira des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow ou encore vers de la documentation technique. Vous pourrez donc filtrer les résultats et observer les nombreuses solutions envisageables à votre problème afin de définir laquelle est la plus appropriée dans votre situation. Il est important de noter, toutefois, que cette communauté est nettement plus développée pour les utilisateurs de $\LaTeX$ que de Markdown, puisque ce dernier langage est moins répandu que le premier.
+Bien que l'apprentissage de $\LaTeX$ et de Markdown puisse être parsemé de nombreuses embuches, ces deux langages bénéficient d'une communauté d'utilisateurs et d'utilisatrices en ligne sur laquelle il est possible de s'appuyer afin de résoudre tout problème rencontré. Ces individus --- particulièrement les plus expérimentés --- sont nombreux à partager leur expérience à leurs collègues rencontrant des problèmes afin de contribuer à régler ceux-ci. Cette communauté est présente sur une multitude de sites Web, bien que le point de rencontre principal soit le forum @stackoverflowStackOverflow2023, qui est également utilisé pour régler des problèmes de programmation et est abordé plus en détail dans le chapitre 4<!--@sec-chap4-->. Une simple recherche sur Google d'un problème rencontré avec $\LaTeX$ ou Markdown vous offrira des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow ou encore vers de la documentation technique. Vous pourrez donc filtrer les résultats et observer les nombreuses solutions envisageables à votre problème afin de définir laquelle est la plus appropriée dans votre situation. Il est important de noter, toutefois, que cette communauté est nettement plus développée pour les utilisateurs de $\LaTeX$ que de Markdown, puisque ce dernier langage est moins répandu que le premier.
 
 Également, avec l'émergence de l'intelligence artificielle (IA), de nombreux modèles d'IA génératifs commencent à émerger comme des ressources d'aides utiles pour les chercheuses et les chercheurs. Au moment de la rédaction du présent chapitre, le *chatbot* ChatGPT, développé par OpenAI et basé sur le grand modèle de langage (*large language model*, LLM) GPT-3.5, est une ressource d'aide en émergence en ce qui a trait aux langages de balisage. Le corpus de données sur lequel il a été formé inclut une grande variété de langages et de styles d'écriture, incluant $\LaTeX$ et Markdown. Ainsi, il est possible de poser des questions en langage courant à ce *chatbot* lorsque des problèmes de balisage sont rencontrés. Celui-ci fournira en réponse le texte avec les balises adéquates pour régler le problème. Cela s'applique même pour des problèmes pour lesquels la réponse n'est pas directement indiquée sur Stack Overflow, lorsque la logique des langages est comprise par ces modèles basés sur l'IA. ChatGPT est toutefois plus outillé en $\LaTeX$ qu'en Markdown ou en Quarto en raison de la plus grande abondance de ressources en $\LaTeX$ disponibles en ligne, bien que ses capacités soient en constante amélioration. Il arrive cependant régulièrement que les réponses des modèles de langage comme ChatGPT soit erronées --- tout comme certaines réponses sur Stack Overflow peuvent ne pas être adaptées à régler un problème similaire vécu sur un autre ordinateur, avec des paramètres différents. Il demeure donc important de vérifier les réponses des modèles basés sur l'IA afin de ne pas avoir de mauvaises surprises lors de la compilation du code. Ainsi, il est utile de s'appuyer autant sur la communauté d'utilisatrices et d'utilisateurs de langages de balisage qui échange des ressources en ligne que sur les modèles de langage basés sur l'IA.
 
@@ -217,6 +224,7 @@ Pour conclure, la dernière étape pour devenir expert en langages de balisage e
 
 ```{r}
 #| echo: false
+#| warning: false
 library(tidyverse)
 library(tinytable)
 
