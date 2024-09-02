@@ -216,6 +216,7 @@ Enfin, évitez les conflits Git lors de la collaboration sur GitHub en coordonna
 Pour conclure, la dernière étape pour devenir expert en langages de balisage est d'être créatif. Explorez les différentes balises et utilisez-les de manière inventive. Les langages de balisage vous permetteront d'effectuer des tâches que vous n'auriez pas pu réaliser facilement en utilisant un logiciel de traitement de texte classique. Ils vous permetteront de produire des documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique.
 
 ```{r}
+#| echo: false
 library(tidyverse)
 library(tinytable)
 
@@ -246,7 +247,10 @@ tbl_langages_balisage <- tibble(
                     'Forte')
 )
 
-tt(tbl_langages_balisage, width = 0.75, caption = 'Résumé des critères de sélection - Langages de balisage', notes = list(a = list(i = 5:5, j = 2, text = "\n\nNote: Bien que LaTeX offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code.")))
+tt(tbl_langages_balisage, width = 0.75, caption = 'Résumé des critères de sélection - Langages de balisage', notes = list(
+  a = list(i = 5:5, j = 2, text = "Bien que LaTeX offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code."), 
+   b = list(i = 2:2, j = 4, text = "Quarto est relativement récent et semble prendre de plus en plus la place de R Markdown parmis la communauté d'utilisateurs de R. Le nombre d'utilisateurs de Quarto est donc appelé à croitre dans les prochaines années."))
+)
 
 
 ```
