@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Les outils de visualisation de données
-=======
+
 # Outils de visualisation graphique
 ## Une image vaut mille mots
 
@@ -255,3 +254,4 @@ Avantages: tidyverse, beauté et possibilités infinies (on peut les animer!!!),
       
       -->
 ```
+
