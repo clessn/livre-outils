@@ -28,7 +28,6 @@ book:
     - chapitre_8.qmd
     - conclusion.qmd
     - annexe_1.qmd
-    - annexe_2.qmd    
     - references.qmd
 
 bibliography: livre-outils.bib
@@ -49,3 +48,4 @@ format:
     author-meta: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
     callout-appearance: simple
 editor: visual
+
