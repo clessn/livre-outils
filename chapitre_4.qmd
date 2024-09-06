@@ -182,3 +182,67 @@ Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better 
 ### Conclusion
 
 Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
+<<<<<<< HEAD
+
+## Installation de Biblatex et configuration de Zotero
+
+### BibLaTeX
+
+BibLaTeX est une extension destinée au traitement des bibliographies dans LaTeX et Quarto, généralement associée à Biber, un programme conçu pour le traitement des données bibliographiques spécifiquement pour BibLaTeX. Biber propose des fonctionnalités avancées comme le tri poussé, la gestion de multiples bibliographies et la capacité de traiter des sources bibliographiques dans divers formats. Grâce à sa prise en charge étendue des langues, BibLaTeX est particulièrement adapté à la rédaction d'articles ou de livres pour un public international. Bien que BibLaTeX soit avant tout un package pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils tels que Zotero sous forme de fichiers .bib, qui peuvent ensuite être exploités avec BibLaTeX. L'extension Better BibTeX permet de maintenir automatiquement à jour vos fichiers .bib à partir de Zotero. Il est recommandé de conserver uniquement les références utilisées dans votre fichier et de les organiser par ordre alphabétique, facilitant ainsi la coopération et le partage des sources.
+
+Les inconvénients potentiels de BibLaTeX comprennent une courbe d'apprentissage plus accentuée pour ceux habitués à BibTeX, ainsi que le besoin de mises à jour régulières pour assurer la compatibilité avec les versions les plus récentes de LaTeX. En outre, certains éditeurs académiques ou revues possèdent leurs propres styles de citation et peuvent ne pas accepter les soumissions réalisées avec BibLaTeX, même si cette réticence tend à diminuer.
+
+En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
+
+## Installation et configuration de Zotero
+
+Dans cette section, vous serez amené notamment à installer Zotero ainsi que Better BibTeX. Better BibTeX est une extension de Zotero servant à générer et à maintenir à jour des fichiers .bib compatibles avec BibLaTeX, à partir de Zotero.
+
+### Zotero
+
+-   Installer [Zotero](https://www.zotero.org/download/)
+
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
+
+-   Une fois Zotero installé, vous avez l'option de créer un [compte Zotero](https://www.zotero.org/user/register/). L'identifiant que vous utiliserez sera celui que vous partagerez à vos collaborateurs pour créer et joindre des groupes.
+
+#### Better Bibtex
+
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+-   Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
+
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+
+-   Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+-   Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
+
+![](images/chapitre6_zotero.png){width="170"}
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+![](images/chapitre6_biblatex.png){width="300"}
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façons d'ajouter des références à Zotero :
+
+-   Glisser-déposer à partir de votre bibliothèque personnelle.
+-   Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
+=======
+>>>>>>> 091d1975fd7bd0b76b020ed764a52e4120eeb8a9
