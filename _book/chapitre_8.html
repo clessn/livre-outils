@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.551">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
 <title>Outils de recherche en sciences sociales numériques - 8&nbsp; Outils d’intelligence artificielle</title>
@@ -198,7 +198,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Les outils de visualisation de données</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -344,7 +344,7 @@ Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une 
 <span></span>
 <span><span class="va">prompt</span> <span class="op">&lt;-</span> <span class="st">"Quelle est la capitale du Québec?"</span> <span class="co"># Le prompt</span></span>
 <span></span>
-<span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">openai</span><span class="fu">::</span><span class="fu"><a href="https://irudnyts.github.io/openai/reference/create_chat_completion.html">create_chat_completion</a></span><span class="op">(</span></span>
+<span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">openai</span><span class="fu">::</span><span class="fu">create_chat_completion</span><span class="op">(</span></span>
 <span>        model <span class="op">=</span> <span class="st">"gpt-3.5-turbo-0125"</span>,</span>
 <span>        messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>            <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="st">"role"</span> <span class="op">=</span> <span class="st">"system"</span>,</span>
@@ -582,7 +582,7 @@ Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fa
 <span class="header-section-number">8.9</span> Utilisation de l’API</h2>
 <p>La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d’utilisation de la fonction:</p>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://irudnyts.github.io/openai/reference/create_chat_completion.html">create_chat_completion</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">create_chat_completion</span><span class="op">(</span></span>
 <span>    model <span class="op">=</span> <span class="st">"gpt-3.5-turbo"</span>,</span>
 <span>    messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
