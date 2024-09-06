@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
 
 <meta charset="utf-8">
+<<<<<<< HEAD
 <meta name="generator" content="quarto-1.4.551">
+=======
+<meta name="generator" content="quarto-1.3.450">
+>>>>>>> 091d1975fd7bd0b76b020ed764a52e4120eeb8a9
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,13 +74,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -66,7 +83,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -82,12 +98,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Langages de programmation</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Langages de programmation</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -97,12 +113,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -182,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’informatique</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -200,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -214,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#comment-utiliser-rstudio" id="toc-comment-utiliser-rstudio" class="nav-link" data-scroll-target="#comment-utiliser-rstudio"><span class="header-section-number">2.5</span> Comment utiliser RStudio ?</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.6</span> Conclusion</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -234,9 +250,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
-
 
 <!-- 
 
@@ -301,8 +315,8 @@ En science sociale pour tes besoins R fait la job. R fonctionne avec d'autres ou
 Comprendre du code, répliquer du code, partager du code, en science politique ça se fait en R -
 
 Quand tu utilise R tu fais partie de la communauté de science politique. Utiliiser R c'est participer à la communauté -->
-<p>Comme mentionné précédemment, il existe plusieurs langages de programmation. <strong>R</strong> a deux types de compétiteurs : les logiciels à licences comme SAS, STATA et SPSS, et les langages <em>OpenSource</em> tels que Python et Julia. <strong>R</strong> est un langage de programmation <em>OpenSource</em> développé par des statisticiens, pour des statisticiens, dans les années 1990 <span class="citation" data-cites="tippmann15">(<a href="references.html#ref-tippmann15" role="doc-biblioref"><strong>tippmann15?</strong></a>)</span>. <strong>R</strong> prend ses racines dans le langage de programmation S, créé notamment par Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non orthodoxes lors de l’élaboration du langage, qui font aujourd’hui la popularité de ce logiciel auprès d’un large pan de la communauté académique. En effet, <span class="citation" data-cites="morandat_etal12">(<a href="references.html#ref-morandat_etal12" role="doc-biblioref"><strong>morandat_etal12?</strong></a>)</span> rapporte que le langage a été élaboré afin qu’il soit intuitif et qu’il permette aux nouveaux utilisateurs de rapidement réaliser des analyses.</p>
-<p>Le langage de programmation <strong>R</strong> a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. L’un de ses grands avantages est qu’il est <em>OpenSource</em>. Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l’argument, à savoir que : 1) l’<em>OpenSource</em> est gratuit d’utilisation; 2) l’<em>OpenSource</em> est développé de façon bottom-up, ce qui lui procure une grande flexibilité; et 3) il permet aux utilisateurs de créer leurs propres fonctions. À l’inverse, les logiciels à licences sont coûteux, rigides et l’ajout de fonctionnalités se fait par les développeurs internes à la compagnie. Ces formalités rendent le processus plus lent et réduisent l’éventail des possibilités pour la personne chercheuse. Ceci étant dit, certains avanceront que c’est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, <span class="citation" data-cites="muenchen11">(<a href="references.html#ref-muenchen11" role="doc-biblioref"><strong>muenchen11?</strong></a>)</span> soulève le point que bien souvent, ce sont des individus atomisés qui développent les nouvelles fonctionnalités de ces langages et que le processus de révisions se fait ensuite par des comités internes de testeurs. Il en va de même pour le développement des <em>packages</em> R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. Le fait que SAS et SPSS permettent à leur utilisateur d’intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l’utilité de R <span class="citation" data-cites="muenchen11">(<a href="references.html#ref-muenchen11" role="doc-biblioref"><strong>muenchen11?</strong></a>)</span>. Le langage de programmation <strong>R</strong> permet également de réaliser une grande quantité de tâches de recherche. En effet, les personnes programmant en <strong>R</strong> peuvent notamment manipuler et visualiser des données, faire différents types d’analyses, créer des fonctions et faire des boucles en plus de pouvoir combiner <strong>R</strong> avec certains langages de balisages.</p>
+<p>Comme mentionné précédemment, il existe plusieurs langages de programmation. <strong>R</strong> a deux types de compétiteurs : les logiciels à licences comme SAS, STATA et SPSS, et les langages <em>OpenSource</em> tels que Python et Julia. <strong>R</strong> est un langage de programmation <em>OpenSource</em> développé par des statisticiens, pour des statisticiens, dans les années 1990 <span class="citation" data-cites="tippmann15">(<a href="#ref-tippmann15" role="doc-biblioref">Tippmann, 2015</a>)</span>. <strong>R</strong> prend ses racines dans le langage de programmation S, créé notamment par Ross Ihaka et Robert Gentleman. Ces derniers ont fait des choix non orthodoxes lors de l’élaboration du langage, qui font aujourd’hui la popularité de ce logiciel auprès d’un large pan de la communauté académique. En effet, <span class="citation" data-cites="morandat_etal12">Morandat et al. (<a href="#ref-morandat_etal12" role="doc-biblioref">2012</a>)</span> rapporte que le langage a été élaboré afin qu’il soit intuitif et qu’il permette aux nouveaux utilisateurs de rapidement réaliser des analyses.</p>
+<p>Le langage de programmation <strong>R</strong> a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. L’un de ses grands avantages est qu’il est <em>OpenSource</em>. Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l’argument, à savoir que : 1) l’<em>OpenSource</em> est gratuit d’utilisation; 2) l’<em>OpenSource</em> est développé de façon bottom-up, ce qui lui procure une grande flexibilité; et 3) il permet aux utilisateurs de créer leurs propres fonctions. À l’inverse, les logiciels à licences sont coûteux, rigides et l’ajout de fonctionnalités se fait par les développeurs internes à la compagnie. Ces formalités rendent le processus plus lent et réduisent l’éventail des possibilités pour la personne chercheuse. Ceci étant dit, certains avanceront que c’est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, <span class="citation" data-cites="muenchen11">Muenchen (<a href="#ref-muenchen11" role="doc-biblioref">2011</a>)</span> soulève le point que bien souvent, ce sont des individus atomisés qui développent les nouvelles fonctionnalités de ces langages et que le processus de révisions se fait ensuite par des comités internes de testeurs. Il en va de même pour le développement des <em>packages</em> R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. Le fait que SAS et SPSS permettent à leur utilisateur d’intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l’utilité de R <span class="citation" data-cites="muenchen11">(<a href="#ref-muenchen11" role="doc-biblioref">Muenchen, 2011</a>)</span>. Le langage de programmation <strong>R</strong> permet également de réaliser une grande quantité de tâches de recherche. En effet, les personnes programmant en <strong>R</strong> peuvent notamment manipuler et visualiser des données, faire différents types d’analyses, créer des fonctions et faire des boucles en plus de pouvoir combiner <strong>R</strong> avec certains langages de balisages.</p>
 <p>D’un autre côté, l’utilisation du langage de programmation <strong>R</strong> peut être perçue comme ayant certains inconvénients. Plusieurs disent que la courbe d’apprentissage peut être plus grande que celle de programmes à licences. La véridicité de cet argument est discutable. Les programmes demandant des licences ont également un coût d’entrée. De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d’adaptation pour la personne chercheuse. D’autres disent que le développement <em>OpenSource</em>, spécifiquement celui du langage de programmation <strong>R</strong>, se fait de façon anarchique. Cela est davantage une question d’opinion et de conception du monde qu’une vérité. Le développement de <em>package</em> se fait effectivement de manière décentralisée et toute personne sachant programmer en <strong>R</strong> peut collaborer à cette communauté. Bien qu’il n’y ait pas d’autorité centrale, les <em>packages</em> sont regroupés sur le <em>Comprehensive R Archive Network</em> (CRAN) (voir le https://cran.r-project.org/ pour plus d’information). Le site a une politique de dépôt stricte, ainsi les <em>packages</em> doivent être suffisamment documentés. Il est également possible d’y télécharger le langage de programmation <strong>R</strong>. Ce langage, ainsi que ces différents <em>packages</em>, sont disponible sur Windows, macOS et Linux.</p>
 </section>
 <section id="où-coder-en-r" class="level2" data-number="2.3">
@@ -350,6 +364,17 @@ Faire des Rproj
 <p>Le langage de programmation R est un outil très utile pour toutes sortes de tâches notamment reliées aux statistiques et à la visualisation graphiques. Sa maîtrise est requise pour accéder à plusieurs emplois, autant dans le monde académique que dans les secteurs publics et privés. Avec un peu de chance, le présent chapitre vous a éclairé sur son utilité et sa pertinence dans le monde du travail contemporain. Bien que le langage de programmation R ne doivent pas obligatoirement être utilisé avec RStudio, nous pensons que pour la plupart des usagers, leur utilisation conjointe est bénéfique et souhaitée. RStudio permet également d’utiliser différents langages de balisage compatibles avec R, facilitant l’utilisation de plusieurs outils complémentaires. L’apprentissage du langage de programmation R apparaît également être une valeur sure. Sa longitivité dans plusieurs sphères ainsi que la forte croissance de sa base d’usagers laisse présager que d’en connaître au moins les bases est un énorme avantage pour tout le monde. Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui désirent s’impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R – notamment <em>RConference</em> and <em>useR!</em> – et un journal académique, <em>The R Journal</em>. On retrouve également différentes communautés telle que <em>R-Ladies</em> qui met de l’avant la diversité des genres dans la communauté du langage de programmation R. Le langage de programmation R est plus qu’un simple outil statistique, il est le centre d’une grande communauté de gens qui ont à coeur des principes liés à l’inclusion et à l’avancement humain.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-morandat_etal12" class="csl-entry" role="listitem">
+Morandat, F., Hill, B., Osvald, L., &amp; Vitek, J. (2012). Evaluating the <span>Design</span> of the <span>R Language</span>. In J. Noble (Éd.), <em><span>ECOOP</span> 2012 – <span>Object-Oriented Programming</span>: 26th <span>European Conference</span>, <span>Beijing</span>, <span>China</span>, <span>June</span> 11-16, 2012. <span>Proceedings</span></em> (Vol. 7313, p. 104‑131). Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/978-3-642-31057-7">https://doi.org/10.1007/978-3-642-31057-7</a>
+</div>
+<div id="ref-muenchen11" class="csl-entry" role="listitem">
+Muenchen, R. A. (2011). <em>R for <span>SAS</span> and <span>SPSS</span> Users</em> (2nd ed). Springer.
+</div>
+<div id="ref-tippmann15" class="csl-entry" role="listitem">
+Tippmann, S. (2015). Programming Tools: <span>Adventures</span> with <span>R</span>. <em>Nature</em>, <em>517</em>(7532), 109‑110. <a href="https://doi.org/10.1038/517109a">https://doi.org/10.1038/517109a</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -394,33 +419,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -489,15 +487,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -576,27 +572,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -606,17 +585,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -628,130 +598,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -795,7 +642,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -821,32 +667,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -908,12 +728,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapitre_1.html" class="pagination-link" aria-label="Le logiciel libre et le code source ouvert">
+      <a href="./chapitre_1.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Le logiciel libre et le code source ouvert</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_3.html" class="pagination-link" aria-label="Outils de gestion de projet">
+      <a href="./chapitre_3.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -921,18 +741,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 

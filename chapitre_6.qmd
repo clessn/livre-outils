@@ -149,8 +149,6 @@ Développé principalement par Hadley Wickham, *ggplot2* est un *package R* fais
 Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques *ggplot2* se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.
 
 
-
-
 ## Outils pour visualiser les régressions
 
 
@@ -189,7 +187,6 @@ Base R est le logiciel de base qui contient le langage de programmation R. Lorsq
 
 
 Pour produire un graphique avec ce langage de base, il suffit de faire appel à la fonction *plot()* dans laquelle il est spécifié un x et y à partir d'une base de données et un graphiques est déjà créé. Les fonctions *barplot(), hist()* ou *boxplot()* ajoutés au graphiques permettent de spécifier le style de visualisation souhaitée.
-
 
 ## Réflexion théorique
 
