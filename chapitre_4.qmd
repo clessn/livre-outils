@@ -169,9 +169,45 @@ Chaque logiciel offre des caractéristiques uniques tout en partageant des objec
 
 Zotero, EndNote et Mendeley, bien qu'ils partagent des principes de base similaires, se distinguent par des fonctionnalités spécifiques qui peuvent mieux s'aligner sur les préférences et exigences individuelles. La sélection d'un logiciel doit donc être guidée par une évaluation attentive de ses capacités à répondre aux besoins de l'utilisateur, tout en considérant des aspects cruciaux, tels que : le partage, la collaboration et la facilité d'utilisation. Il est essentiel de souligner l'importance de la préférence personnelle dans ce choix. L'interface utilisateur, la facilité d'intégration dans les flux de travail existants et la compatibilité avec d'autres outils numériques sont des critères qui influent grandement sur l'expérience utilisateur et, par conséquent, sur la productivité. En fin de compte, l'outil idéal est celui qui non seulement facilite la gestion des références mais s'intègre de manière efficace dans le quotidien académique de l'utilisateur, lui permettant ainsi de se concentrer pleinement sur la substance de ses recherches.
 
+Zotero : Gratuit / Opensource, Abonnement possible pour plus d'espace de stockage (à mettre en note).
+
+Communauté: Large communauté académique, surtout en sciences humaines et sociales
+
+Popularité: Très populaire en sciences sociales
+
+Compatibilité: Très compatible (LibreOffice, Word, Google Docs, extensions, fonctionne bien avec BibTex, Microsoft/Mac/Linux)
+
+Transparence et réplicabilité: Transparence élevée, open source, favorise la réplicabilité
+
+Adaptabilité et flexibilité: Très adaptable avec des plugins et des fonctionnalités personnalisables. Permet une excellente collaboration et partage des références.
+
+Endnote: Payant.
+
+Communauté: Communauté solide dans les institutions académiques et scientifiques
+
+Popularité: Moins populaire en sciences sociales, plus utilisé en sciences dures
+
+Compatibilité: Compatibilité avec Word, Google Docs, Pages mais plus limité que Zotero, pas avec Linux, pas avec BibTex
+
+Transparence et réplicabilité: Moins transparent, logiciel propriétaire, réplicabilité limitée
+
+Adaptabilité: Moins flexible, mais solide pour des workflows établis. Partage et collaboration très limitées.
+
+Mendeley: Gratuit, Abonnement possible pour plus d'espace de stockage (à mettre en note), ou des collaborations plus grandes.
+
+Communauté: Communauté très large, surtout dans les sciences et la médecine
+
+Popularité: Modérément populaire en sciences sociales, très populaire en STM
+
+Compatibilité: Bonne compatibilité (Word, LibreOffice, BibTeX, etc.)
+
+Transparence et réplicabilité: Logiciel propriétaire, certaines préoccupations quant à la réplicabilité
+
+Adaptabilité: Moins flexible, mais solide pour des workflows établis.
+
 ### Pourquoi Zotero?
 
-Zotero se distingue par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Cette plateforme propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs.
+Zotero se distingue par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Cette plateforme propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
 
 Zotero offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. Avec Zotero, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
 
