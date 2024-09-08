@@ -1,5 +1,3 @@
-# Les outils de visualisation de données
-
 # Outils de visualisation graphique
 ## Une image vaut mille mots
 
@@ -173,6 +171,7 @@ Si jusqu'à présent la visualisation des données a été présentée comme une
 
 
 <!--
+```{=html}
 
 ## Réflexion théorique
 
