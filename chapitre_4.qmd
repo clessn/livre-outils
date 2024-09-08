@@ -38,15 +38,15 @@ Contrairement au snowballing, qui démarre avec un ensemble restreint de documen
 
 La mise en œuvre d'un scoping review partage de nombreux points communs avec une revue systématique, mais se distingue par ses objectifs exploratoires et sa portée étendue. Selon Levac et al. (2010), cette démarche devrait être réalisée par une équipe multidisciplinaire, tout en restant transparente et réplicable par une autre équipe. Arksey and O'Malley ont défini un cadre méthodologique en cinq étapes afin d'orienter efficacement la réalisation d'une revue de portée :
 
--   Identification de la question de recherche : Cela implique de définir clairement et assez précisément le champ d'étude afin de guider la revue.
+- Identification de la question de recherche : Cela implique de définir clairement et assez précisément le champ d'étude afin de guider la revue.
 
--   Identification des études pertinentes : Cela nécessite le développement d'une stratégie de recherche exhaustive pour rassembler une bassin de documents potentiels.
+- Identification des études pertinentes : Cela nécessite le développement d'une stratégie de recherche exhaustive pour rassembler une bassin de documents potentiels.
 
--   Sélection des études : À cette étape, les études sont évaluées et sélectionnées en fonction de critères préalablement définis afin de s'assurer qu'elles répondent aux objectifs de la revue.
+- Sélection des études : À cette étape, les études sont évaluées et sélectionnées en fonction de critères préalablement définis afin de s'assurer qu'elles répondent aux objectifs de la revue.
 
--   Extraction et organisation des données : Les informations clés de chaque étude sélectionnée sont extraites et systématiquement organisées pour faciliter l'analyse et la synthèse.
+- Extraction et organisation des données : Les informations clés de chaque étude sélectionnée sont extraites et systématiquement organisées pour faciliter l'analyse et la synthèse.
 
--   Synthèse, résumé et communication des résultats : Les données sont ensuite regroupées et analysées pour identifier les tendances, les thèmes, les lacunes dans la recherche existante et les domaines nécessitant des recherches futures, avec un rapport final qui résume et présente les résultats de manière cohérente.
+- Synthèse, résumé et communication des résultats : Les données sont ensuite regroupées et analysées pour identifier les tendances, les thèmes, les lacunes dans la recherche existante et les domaines nécessitant des recherches futures, avec un rapport final qui résume et présente les résultats de manière cohérente.
 
 En suivant ces étapes, les chercheurs et chercheuses peuvent mener une revue de portée de manière systématique et rigoureuse, permettant une exploration complète du sujet tout en fournissant des orientations précieuses pour les recherches futures.
 
@@ -82,15 +82,15 @@ L'adoption de ces méthodologies en sciences sociales enrichit le débat académ
 
 La revue systématique peut être menée en suivant les 24 étapes décrites par (Citer muka_etal20).
 
-1.  Définir la question de recherche.
-2.  Établir l'équipe.
-3.  Définir la stratégie pour l'obtention des références.
-4.  Définir les critères d'inclusion et d'exclusion.
-5.  Définir le formulaire d'extraction des données.
-6.  Écrire le protocole de recherche servant à guider le processus.
-7.  Appliquer la stratégie de recherche à diverses bases de données.
-8.  Rassembler les références et les résumés.
-9.  Éliminer les doublons.
+1. Définir la question de recherche.
+2. Établir l'équipe.
+3. Définir la stratégie pour l'obtention des références.
+4. Définir les critères d'inclusion et d'exclusion.
+5. Définir le formulaire d'extraction des données.
+6. Écrire le protocole de recherche servant à guider le processus.
+7. Appliquer la stratégie de recherche à diverses bases de données.
+8. Rassembler les références et les résumés.
+9. Éliminer les doublons.
 10. Filtrer les résultats à partir des titres et résumés.
 11. Comparer les résultats des codeurs.
 12. Télécharger les textes entiers et appliquer les critères d'inclusion et d'exclusion
@@ -147,21 +147,21 @@ La citation des sources est une pratique incontournable dans le monde académiqu
 
 Un outil de référence bibliographique est un logiciel conçu pour aider les scientifiques à gérer et à organiser leurs références bibliographiques de manière efficace. Ces outils s'avèrent particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres documents académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
-1.  Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites Web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
+1. Collecte de références : Les outils de référence bibliographique permettent aux personnes utilisatrices de collecter et d'importer des références bibliographiques à partir de bases de données, de catalogues de bibliothèques, de sites Web ou d'autres sources. Certains outils offrent même la possibilité d'extraire automatiquement les métadonnées à partir de documents PDF.
 
-2.  Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
+2. Organisation et classement : Les références collectées peuvent être organisées en différentes catégories et dossiers. Cela facilite la recherche ultérieure et permet de garder une vue d'ensemble claire de la bibliographie.
 
-3.  Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Ce processus permet de gagner énormément de temps en formatage. Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
+3. Citation et génération de bibliographies : L'un des avantages majeurs des outils de référence est leur capacité à générer automatiquement des citations et des bibliographies conformes à différents styles de citation (APA, MLA, Chicago, etc.). Ce processus permet de gagner énormément de temps en formatage. Les personnes utilisatrices peuvent insérer des références directement dans leurs documents sans avoir à se soucier des détails de formatage.
 
-4.  Collaboration : Certains outils offrent la possibilité de collaborer en ligne, ce qui donne l'occasion à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement contribue à économiser du temps par la centralisation des données sur un même interface.
+4. Collaboration : Certains outils offrent la possibilité de collaborer en ligne, ce qui donne l'occasion à plusieurs personnes de travailler sur une bibliographie commune. Cela peut être utile pour les projets de groupe ou de recherche partagée comme c'est le cas dans une chaire de recherche. En plus d'utiliser un même logiciel, l'utilisation d'un outil de référencement contribue à économiser du temps par la centralisation des données sur un même interface.
 
-5.  Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
+5. Recherche et exploration : De nombreux outils de référence bibliographique offrent des fonctionnalités de recherche avancée qui facilitent la découverte de nouvelles références liées à un sujet spécifique.
 
-6.  Synchronisation et sauvegarde : Les références et les bibliographies peuvent être synchronisées sur plusieurs appareils, ce offre la possibilité aux personnes utilisatrices d'accéder à leurs références où qu'elles soient. Les sauvegardes régulières assurent que les données ne soient pas perdues en cas de problème technique.
+6. Synchronisation et sauvegarde : Les références et les bibliographies peuvent être synchronisées sur plusieurs appareils, ce offre la possibilité aux personnes utilisatrices d'accéder à leurs références où qu'elles soient. Les sauvegardes régulières assurent que les données ne soient pas perdues en cas de problème technique.
 
-7.  Suivi de lecture : Certains outils permettent aux personnes utilisatrices de suivre les articles et les documents qu'elles ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
+7. Suivi de lecture : Certains outils permettent aux personnes utilisatrices de suivre les articles et les documents qu'elles ont lus, ce qui est particulièrement utile pour garder une trace de la littérature pertinente.
 
-8.  Importation et exportation : Les outils de référence bibliographique autorisent généralement l'importation et l'exportation des références dans différents formats, ce qui facilite le transfert de données.
+8. Importation et exportation : Les outils de référence bibliographique autorisent généralement l'importation et l'exportation des références dans différents formats, ce qui facilite le transfert de données.
 
 En résumé, un outil de référence bibliographique simplifie grandement le processus de gestion des références bibliographiques, de formatage ainsi que de création de bibliographies. De plus, ces outils offrent la flexibilité de changer de style de citation instantanément, facilitant l'adaptation aux exigences variées des revues scientifiques et permettant aux chercheurs de se consacrer à l'essence de leurs recherches sans se préoccuper des contraintes formelles et des détails de formatage. D'ailleurs, il existe divers outils de référence bibliographique, tels que : Zotero, EndNote et Mendeley.
 
@@ -183,3 +183,82 @@ Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better 
 
 Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
 
+## Tableaux des critères
+
+### Outils de gestion de la littérature
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+tbl_resume_chap_X <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'Covidence' = c('Oui', 
+                'Oui', 
+                'Oui', 
+                'Oui', 
+                'Oui', 
+                'Oui'),
+    'Autre cochonnerie 1' = c('Non', 
+                'Oui', 
+                'Oui', 
+                'Oui', 
+                'Non',
+                'Oui'),
+    'Autre cochonnerie 2' = c('Mon outil est meilleur que le tien', 
+                'Regarde les faits!', 
+                'KKV', 
+                'Oui', 
+                'Non',
+                'Oui')
+ 
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils') 
+```
+
+### Outils de gestion des références
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+tbl_resume_chap_X <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'Zotero' = c('Oui (Gratuit)', 
+                'Oui', 
+                'Très populaire', 
+                'Oui (Intégration facile avec Word, Google Docs, etc.)', 
+                'Oui (Open-source)', 
+                'Oui (personnalisable avec plugins)'),
+    'Mendeley' = c('Partiellement (Freemium)', 
+                'Oui', 
+                'Très populaire', 
+                'Oui (Microsoft Word, LibreOffice)', 
+                'Partiellement (propriétaire)', 
+                'Oui (moins flexible que Zotero)'),
+    'Endnote' = c('Non (Payant)', 
+                'Oui', 
+                'Populaire', 
+                'Oui (Intégration avec Word)', 
+                'Non (propriétaire)', 
+                'Partiellement (moins flexible)')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
+
+```
