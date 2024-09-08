@@ -10,7 +10,7 @@ La réalisation d'une revue de littérature représente la première marche à f
 
 Dans le cadre de l'élaboration d'une recherche scientifique, la phase de revue de la littérature constitue une étape fondamentale permettant de circonscrire le champ d'étude, d'identifier les travaux antérieurs pertinents et de déceler les lacunes dans les connaissances existantes. Parmi les différentes approches méthodologiques adoptées pour mener à bien cette revue, la méthode du snowballing se distingue par son adaptabilité et sa capacité à englober un large spectre de travaux pertinents, en particulier dans les phases préliminaires de la recherche où la question d'étude peut ne pas être entièrement définie.
 
-Le snowballing est une technique de recherche bibliographique qui se fonde sur la sélection initiale de quelques publications clés dans le champ d'intérêt. Par la suite, à partir de ces références clées, le chercheur identifie de manière itérative d'autres travaux pertinents en examinant les références citées (backward snowballing) ou les articles citant ces travaux (forward snowballing) (Nightingale, 2009). La méthode du forward snowballing est particulièrement utile lorsque les chercheurs cherchent à comprendre l'impact de certains articles fondamentaux et la manière dont ils ont influencé les recherches ultérieures. Il permet aux chercheurs de suivre l'évolution des idées et des méthodologies au fil du temps, en voyant comment les concepts initiaux ont été élargis, remis en question ou appliqués dans différents contextes. D'un autre côté, la méthode de backward snowballing est pertinente lorsque l'objectif est d'identifier la littérature fondamentale sur un sujet. En fouillant dans les références des articles clés, les chercheurs peuvent découvrir les travaux fondateurs qui ont jeté les bases des tendances actuelles de la recherche. Bref, de manière général, le snowballing est une méthode particulièrement pertinente lorsque la question de recherche est encore à un stade général ou ouvert, permettant ainsi une exploration exhaustive du domaine sans la contrainte d'une hypothèse de recherche spécifique préalablement établie.
+Le snowballing est une technique de recherche bibliographique qui se fonde sur la sélection initiale de quelques publications clés dans le champ d'intérêt. Par la suite, à partir de ces références clés, le chercheur identifie de manière itérative d'autres travaux pertinents en examinant les références citées (backward snowballing) ou les articles citant ces travaux (forward snowballing) (Nightingale, 2009). La méthode du forward snowballing est particulièrement utile lorsque les chercheurs cherchent à comprendre l'impact de certains articles fondamentaux et la manière dont ils ont influencé les recherches ultérieures. Il permet aux chercheurs de suivre l'évolution des idées et des méthodologies au fil du temps, en voyant comment les concepts initiaux ont été élargis, remis en question ou appliqués dans différents contextes. D'un autre côté, la méthode de backward snowballing est pertinente lorsque l'objectif est d'identifier la littérature fondamentale sur un sujet. En fouillant dans les références des articles clés, les chercheurs peuvent découvrir les travaux fondateurs qui ont jeté les bases des tendances actuelles de la recherche. Bref, de manière général, le snowballing est une méthode particulièrement pertinente lorsque la question de recherche est encore à un stade général ou ouvert, permettant ainsi une exploration exhaustive du domaine sans la contrainte d'une hypothèse de recherche spécifique préalablement établie.
 
 ### Mise en œuvre pratique
 
@@ -24,7 +24,7 @@ L'un des principaux avantages du snowballing réside dans sa simplicité et sa r
 
 ### Défis
 
-Malgré ses avantages, le snowballing n'est pas exempt de défis. La méthode peut conduire à une surreprésentation de certaines perspectives, auteurs ou écoles de pensée, introduisant un biais dans la revue de littérature. De plus, la sélection des articles clés et la détermination de leur pertinence initial reposent fortement sur le jugement du chercheur, ce qui peut occasionner des erreurs de sélection. Enfin, en raison de son caractère moins formalisé par rapport à d'autres méthodes de revue systématique, le snowballing peut être perçu comme moins rigoureux dans certains milieux académiques, ce qui peut impacter la reconnaissance des travaux de recherche qui l'utilisent. En revanche, le snowballing offre une méthode flexible et efficace pour la revue de la littérature, particulièrement adaptée aux phases exploratoires d'une recherche. Malgré certains défis inhérents à son utilisation, cette approche permet d'embrasser une grande diversité de travaux et de perspectives, contribuant ainsi à une compréhension approfondie et nuancée du sujet à l'étude.
+Malgré ses avantages, le snowballing n'est pas exempt de défis. La méthode peut conduire à une surreprésentation de certaines perspectives, auteurs ou écoles de pensée, introduisant un biais dans la revue de littérature. De plus, la sélection des articles clés et la détermination de leur pertinence initiale reposent fortement sur le jugement du chercheur, ce qui peut occasionner des erreurs de sélection. Enfin, en raison de son caractère moins formalisé par rapport à d'autres méthodes de revue systématique, le snowballing peut être perçu comme moins rigoureux dans certains milieux académiques, ce qui peut impacter la reconnaissance des travaux de recherche qui l'utilisent. En revanche, le snowballing offre une méthode flexible et efficace pour la revue de la littérature, particulièrement adaptée aux phases exploratoires d'une recherche. Malgré certains défis inhérents à son utilisation, cette approche permet d'embrasser une grande diversité de travaux et de perspectives, contribuant ainsi à une compréhension approfondie et nuancée du sujet à l'étude.
 
 ## Scoping review
 
@@ -137,13 +137,13 @@ Cependant, l'utilisation de Covidence n'est pas exempte de contraintes. Le coût
 
 Comme nous l'avons souligné précédemment, la revue de littérature constitue la première étape d'un processus de recherche. Il s'agit d'une tâche qui peut s'avérer fastidieuse, mais l'adoption des méthodologies et des outils décrits dans la section précédente la rend nettement plus facile et structurée. Ayant désormais en main la littérature nécessaire pour faire avancer sa recherche, il est primordial de disposer d'une méthode de gestion des références rigoureuse. Dans la section suivante, nous dévoilerons les fondements de la gestion des références et introduirons un outil utile qui facilite ainsi la structuration et l'accès à des sources d'information.
 
-# La gestion des références {#sec-chap6}
+## La gestion des références
 
-## Pourquoi citer ?
+### Pourquoi citer ?
 
 La citation des sources est une pratique incontournable dans le monde académique, essentielle à la préservation de la crédibilité académique et au maintien des normes éthiques. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide et dynamique, sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation rigoureuse des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation adéquate des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat, une faute grave dans la recherche académique [@racz_markovic18].Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13].En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : de la crédibilité et la contextualisation à la reproductibilité, de la création d'une base de connaissances solide à l'attribution correcte du mérite, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils tels que Zotero prennent toute leur importance, en facilitant la gestion rigoureuse des références et en soutenant les chercheurs dans leur quête de rigueur et d'excellence académiques.
 
-## À quoi sert un logiciel de gestion bibliographique ?
+### À quoi sert un logiciel de gestion bibliographique ?
 
 Un outil de référence bibliographique est un logiciel conçu pour aider les scientifiques à gérer et à organiser leurs références bibliographiques de manière efficace. Ces outils s'avèrent particulièrement utiles lors de la rédaction d'articles de recherche, de thèses, de mémoires ou d'autres documents académiques. Voici quelques-unes des fonctions principales d'un tel outil :
 
@@ -169,9 +169,45 @@ Chaque logiciel offre des caractéristiques uniques tout en partageant des objec
 
 Zotero, EndNote et Mendeley, bien qu'ils partagent des principes de base similaires, se distinguent par des fonctionnalités spécifiques qui peuvent mieux s'aligner sur les préférences et exigences individuelles. La sélection d'un logiciel doit donc être guidée par une évaluation attentive de ses capacités à répondre aux besoins de l'utilisateur, tout en considérant des aspects cruciaux, tels que : le partage, la collaboration et la facilité d'utilisation. Il est essentiel de souligner l'importance de la préférence personnelle dans ce choix. L'interface utilisateur, la facilité d'intégration dans les flux de travail existants et la compatibilité avec d'autres outils numériques sont des critères qui influent grandement sur l'expérience utilisateur et, par conséquent, sur la productivité. En fin de compte, l'outil idéal est celui qui non seulement facilite la gestion des références mais s'intègre de manière efficace dans le quotidien académique de l'utilisateur, lui permettant ainsi de se concentrer pleinement sur la substance de ses recherches.
 
-## Pourquoi Zotero?
+Zotero : Gratuit / Opensource, Abonnement possible pour plus d'espace de stockage (à mettre en note).
 
-Zotero se distingue par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Cette plateforme propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs.
+Communauté: Large communauté académique, surtout en sciences humaines et sociales
+
+Popularité: Très populaire en sciences sociales
+
+Compatibilité: Très compatible (LibreOffice, Word, Google Docs, extensions, fonctionne bien avec BibTex, Microsoft/Mac/Linux)
+
+Transparence et réplicabilité: Transparence élevée, open source, favorise la réplicabilité
+
+Adaptabilité et flexibilité: Très adaptable avec des plugins et des fonctionnalités personnalisables. Permet une excellente collaboration et partage des références.
+
+Endnote: Payant.
+
+Communauté: Communauté solide dans les institutions académiques et scientifiques
+
+Popularité: Moins populaire en sciences sociales, plus utilisé en sciences dures
+
+Compatibilité: Compatibilité avec Word, Google Docs, Pages mais plus limité que Zotero, pas avec Linux, pas avec BibTex
+
+Transparence et réplicabilité: Moins transparent, logiciel propriétaire, réplicabilité limitée
+
+Adaptabilité: Moins flexible, mais solide pour des workflows établis. Partage et collaboration très limitées.
+
+Mendeley: Gratuit, Abonnement possible pour plus d'espace de stockage (à mettre en note), ou des collaborations plus grandes.
+
+Communauté: Communauté très large, surtout dans les sciences et la médecine
+
+Popularité: Modérément populaire en sciences sociales, très populaire en STM
+
+Compatibilité: Bonne compatibilité (Word, LibreOffice, BibTeX, etc.)
+
+Transparence et réplicabilité: Logiciel propriétaire, certaines préoccupations quant à la réplicabilité
+
+Adaptabilité: Moins flexible, mais solide pour des workflows établis.
+
+### Pourquoi Zotero?
+
+Zotero se distingue par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Cette plateforme propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
 
 Zotero offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. Avec Zotero, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
 
@@ -179,6 +215,67 @@ Cependant, Zotero présente quelques inconvénients, notamment sa gestion parfoi
 
 Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
 
-## Conclusion
+### Conclusion
 
 Pour conclure, l'adoption de Zotero comme outil de gestion bibliographique se révèle être un choix judicieux pour tout chercheur soucieux de l'efficacité et de la rigueur dans le processus de documentation scientifique. Au-delà de la simple facilitation du travail de recherche en équipe, Zotero se distingue par sa capacité à optimiser la gestion des citations et des bibliographies, permettant ainsi une économie de temps considérable et une réduction des risques d'erreurs. Sa fonctionnalité de centralisation des sources et de leurs fichiers associés offre un avantage notable en termes d'organisation et d'accès rapide à l'information, cruciale dans le cadre de recherches approfondies ou pluridisciplinaires. L'intégration de Zotero dans les environnements académiques, même en dehors des contextes de recherche, comme l'enregistrement des lectures pour des cours ou des séminaires, prépare efficacement les utilisateurs à des pratiques de recherche plus poussées et renforce la culture de la gestion rigoureuse des références. Cette initiation précoce est d'autant plus pertinente que Zotero se prête à une variété de styles de citation, répondant ainsi aux exigences diverses des publications académiques. Il est important de souligner que la maîtrise de Zotero, bien que facilitée par de nombreux tutoriels et ressources en ligne, représente un investissement en temps qui se trouve largement compensé par les bénéfices en termes d'efficacité et de qualité du travail de recherche. En outre, l'accès gratuit et le caractère open-source de Zotero témoignent de son engagement en faveur d'une diffusion élargie du savoir et d'une collaboration scientifique ouverte.
+
+## Installation de Biblatex et configuration de Zotero
+
+### BibLaTeX
+
+BibLaTeX est une extension destinée au traitement des bibliographies dans LaTeX et Quarto, généralement associée à Biber, un programme conçu pour le traitement des données bibliographiques spécifiquement pour BibLaTeX. Biber propose des fonctionnalités avancées comme le tri poussé, la gestion de multiples bibliographies et la capacité de traiter des sources bibliographiques dans divers formats. Grâce à sa prise en charge étendue des langues, BibLaTeX est particulièrement adapté à la rédaction d'articles ou de livres pour un public international. Bien que BibLaTeX soit avant tout un package pour LaTeX, il est possible d'exporter des bibliothèques depuis des outils tels que Zotero sous forme de fichiers .bib, qui peuvent ensuite être exploités avec BibLaTeX. L'extension Better BibTeX permet de maintenir automatiquement à jour vos fichiers .bib à partir de Zotero. Il est recommandé de conserver uniquement les références utilisées dans votre fichier et de les organiser par ordre alphabétique, facilitant ainsi la coopération et le partage des sources.
+
+Les inconvénients potentiels de BibLaTeX comprennent une courbe d'apprentissage plus accentuée pour ceux habitués à BibTeX, ainsi que le besoin de mises à jour régulières pour assurer la compatibilité avec les versions les plus récentes de LaTeX. En outre, certains éditeurs académiques ou revues possèdent leurs propres styles de citation et peuvent ne pas accepter les soumissions réalisées avec BibLaTeX, même si cette réticence tend à diminuer.
+
+En conclusion, pour ceux qui cherchent à maximiser la flexibilité et la puissance de leurs outils de gestion de bibliographie dans LaTeX, BibLaTeX, en tandem avec Biber, offre une solution moderne et robuste.
+
+## Installation et configuration de Zotero
+
+Dans cette section, vous serez amené notamment à installer Zotero ainsi que Better BibTeX. Better BibTeX est une extension de Zotero servant à générer et à maintenir à jour des fichiers .bib compatibles avec BibLaTeX, à partir de Zotero.
+
+### Zotero
+
+-   Installer [Zotero](https://www.zotero.org/download/)
+
+-   Installer [Zotero Connector](https://www.zotero.org/download/)
+
+-   Une fois Zotero installé, vous avez l'option de créer un [compte Zotero](https://www.zotero.org/user/register/). L'identifiant que vous utiliserez sera celui que vous partagerez à vos collaborateurs pour créer et joindre des groupes.
+
+#### Better Bibtex
+
+-   La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+-   Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
+
+-   Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+
+-   Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+-   Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
+
+![](images/chapitre6_zotero.png){width="170"}
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+![](images/chapitre6_biblatex.png){width="300"}
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façons d'ajouter des références à Zotero :
+
+-   Glisser-déposer à partir de votre bibliothèque personnelle.
+-   Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
+-   Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
+-   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.

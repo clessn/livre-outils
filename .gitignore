@@ -192,3 +192,4 @@ _privatefolder*
 # Trucs qui créaient des conflits
 .json
 .pdf
+.vdoc.r
