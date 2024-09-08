@@ -19,7 +19,7 @@ Un langage de balisage constitue un ensemble de commandes qui peuvent être entr
 ```{r}
 #| label: fig-vscode
 #| echo: false
-#| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code $\\newline$ *Source*&nbsp;: Auteurs du présent chapitre."
+#| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code newline *Source*&nbsp;: Auteurs du présent chapitre."
 knitr::include_graphics("images/chapitre5_vscode.png", dpi = 600)
 ```
 
@@ -122,7 +122,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 ```{r}
 #| label: fig-latex-vs-word
 #| echo: false
-#| fig-cap: "Utilité relative de Word et de $\\LaTeX$ selon la complexité et la taille du document $\\newline$ *Source*&nbsp;: Yannick Dufresne (2015)."
+#| fig-cap: "Utilité relative de Word et de LaTeX selon la complexité et la taille du document  *Source*&nbsp;: Yannick Dufresne (2015)."
 knitr::include_graphics("images/chapitre5_word-vs-latex.png")
 ```
 
@@ -155,14 +155,14 @@ Bien que la mise en page de documents produits via Markdown et LaTeX puisse êtr
 ```{r}
 #| label: fig-cv
 #| echo: false
-#| fig-cap: "Exemple de gabarit $\\LaTeX$ de curriculum vitae $\\newline$ *Source*&nbsp;: @liantze23."
+#| fig-cap: "Exemple de gabarit LaTeX de curriculum vitae newline *Source*&nbsp;: @liantze23."
 knitr::include_graphics("images/chapitre5_CVtemp.png")
 ```
 
 ```{r}
 #| label: fig-invoice
 #| echo: false
-#| fig-cap: "Exemple de gabarit $\\LaTeX$ de feuille de temps $\\newline$ *Source*&nbsp;: @roux13."
+#| fig-cap: "Exemple de gabarit LaTeX de feuille de temps newline *Source*&nbsp;: @roux13."
 knitr::include_graphics("images/chapitre5_TStemp.png")
 ```
 
