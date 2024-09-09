@@ -107,39 +107,50 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
 
 #### Covidence
 
-Les outils numériques de données massives, comme Covidence, jouent un rôle crucial en facilitant le travail des chercheurs lors de la récolte de données pour des analyses empiriques, et en offrant des ressources essentielles durant d'autres étapes du cycle de recherche. Covidence, géré par une compagnie sans but lucratif, est spécifiquement conçu pour aider dans la réalisation de revues systématiques de littérature. Cette plateforme en ligne simplifie l'évaluation d'une quantité importante d'études scientifiques, en réduisant le temps nécessaire et en rendant le processus plus simple et intuitif. Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. La revue de littérature sur Covidence implique un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée des informations recueillies.
+Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. Comme mentionné dans la section précédente, l'utilisation de Covidence implique un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
 
-La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis pour évaluer la pertinence des articles par rapport au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
+La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
 
-Après la révision des titres et résumés, vient le « Full text review », qui implique l'examen complet des textes pré-sélectionnés. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » pour décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage à cause des discussions nécessaires pour résoudre les désaccords.
+Suite à la révision des titres et des résumés, vient le « Full text review ». Cette étape implique l'examen complet des textes sélectionnés lors de l'étape précédente. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
 
-La dernière étape, celle de l'extraction, consiste à collecter les données pertinentes des études retenues en se basant sur une grille de codification prédéfinie, visant à obtenir un consensus entre les codeurs. L'extraction révèle les théories, les méthodologies et les conclusions des études sélectionnées.
+La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. L'objectif est de parvenir à un consensus parmi les codeurs. L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
 
-Une fois les étapes de la revue systématique complétées, Covidence simplifie l'exportation des données extraites sous formes de tableaux, graphiques et rapports pour la méta-analyse ou la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme DistillerSR, Archie, et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
+Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des méta-analyses ou la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme DistillerSR, Archie, et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
 
 #### Zotero
+
+Comme mentionné précédemment, l'introduction de Zotero dans les processus de recherche académique permet une gestion systématique et efficace des références bibliographiques. Afin d'exploiter pleinement les capacités de cet outil, la configuration initiale comprend plusieurs étapes essentielles :
 
 - Installer [Zotero](https://www.zotero.org/download/)
 
 - Installer [Zotero Connector](https://www.zotero.org/download/)
 
-- Une fois Zotero installé, vous avez l'option de créer un [compte Zotero](https://www.zotero.org/user/register/). L'identifiant que vous utiliserez sera celui que vous partagerez à vos collaborateurs pour créer et joindre des groupes.
+L'installation de l'application Zotero, associée au Zotero Connector pour navigateurs, facilite la capture instantanée de références à partir de diverses sources en ligne. Ces outils sont fondamentaux pour intégrer et synchroniser les données collectées au sein de l'environnement de travail personnel. Une fois Zotero installé, l'option de créer un [compte Zotero](https://www.zotero.org/user/register/) sera proposé. L'identifiant utilisé à cette étape sera celui partagé aux collaborateurs afin de créer et de joindre des groupes. Le processus d'enregistrement et de configuration d'un compte Zotero est une étape préliminaire pour la collaboration. Les identifiants obtenus permettent aux chercheurs de partager des bibliothèques avec des collaborateurs, favorisant ainsi un travail d'équipe efficace et organisé.
 
-#### Better Bibtex
+Il existe différentes méthode afin d'ajouter des références à Zotero :
 
-- La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+- Glisser-déposer depuis une bibliothèque personnelle.
+- Glisser-déposer les PDF dans la collection désirée de Zotero. Cette méthode déclenche une tentative automatique de récupération des métadonnées associées. En cas d'échec, l'utilisateur peut recourir à l'outil de la baguette magique, accessible via l'icône du "+" vert, pour saisir manuellement les informations de la référence.
+- Utilisation de l'outil de la baguette magique. Lorsque les identifiants tels que le DOI ou l'ISBN sont disponibles, cet outil permet d'ajouter efficacement les références en extrayant les métadonnées nécessaires. Si Zotero ne parvient pas à localiser les informations requises, il est alors possible de remplir les champs de métadonnées manuellement.
+- Utiliser le connecteur Zotero depuis le navigateur. Cette fonctionnalité facilite la capture des références directement à partir des ressources en ligne. Le connecteur détecte et télécharge les articles, tout en les classant dans les collections appropriées au sein de Zotero.
+
+##### Better Bibtex
+
+Cette prochaine étape, qui consiste à installer l'extension Better BibTeX, permet d'optimiser l'interopérabilité de Zotero avec des systèmes de gestion de documents tels que LaTeX. Cette fonctionnalité améliore considérablement la gestion des citations et des bibliographies, essentielle pour la rédaction de documents académiques structurés et conformes aux normes de publication.
+
+Ainsi, la prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
 
 *IMPORTANT*
 
 - Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
 
-- Il est important, lors de la collaboration, de s'assurer d'avoir les mêmes clés de citation que vos collègues. Better BibTeX peut s'assurer que vos clés respectent un format standard.
+Dans le contexte de collaborations académiques, il est important de maintenir une uniformité dans les clés de citation utilisées par tous les participants. Better BibTeX joue un rôle essentiel à cet égard, en garantissant que les clés de citation adhèrent à un format standardisé. Cette uniformisation facilite la cohérence des références à travers divers documents et publications, évitant ainsi les incohérences et les erreurs potentielles dans le traitement des citations bibliographiques.
 
 - Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
 
-- Afin de vous assurer d'avoir les mêmes clés de citation, vous pouvez faire un clic droit sur vos références, aller dans les options de Better BibTeX et cliquer sur "Actualiser les clés de citation"
+Afin de garantir l'uniformité des clés de citation au sein d'une collaboration académique, il est recommandé d'effectuer une mise à jour régulière des clés à travers l'interface de Better BibTeX. Cette opération peut être réalisée en effectuant un clic droit sur les références concernées, en naviguant vers les options de Better BibTeX, et en sélectionnant l'option "Actualiser les clés de citation". Cette procédure assure que toutes les références partagées respectent un format cohérent.
 
-#### Génération du fichier .bib
+##### Génération du fichier .bib
 
 Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
 
@@ -155,14 +166,6 @@ Clic-droit sur la collection livre-outils \> Export Collection choisissez le for
 
 Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
 
-#### Ajouter des références à Zotero
-
-Il y a différentes façons d'ajouter des références à Zotero :
-
-- Glisser-déposer à partir de votre bibliothèque personnelle.
-- Glisser-déposer les PDF que vous avez sur votre ordinateur dans la collection Livres-Outils. Zotero va essayer de trouver les métadonnées automatiquement.
-- Si cela ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole "+" vert. L'outil de la baguette magique est utile si vous possédez le DOI ou l'ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien concernant votre référence, vous pourrez remplir les différents champs manuellement.
-- Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
 
 
 <!-- 
