@@ -21,6 +21,40 @@ Bien que Covidence soit développé par une organisation à but non lucratif, il
 
 Cependant, l'utilisation de Covidence présente certaines contraintes. Le coût de l'abonnement peut constituer un frein pour certains chercheurs, limitant ainsi l'accès à cet outil pourtant utile en recherche. De plus, la plateforme requiert une période d'apprentissage, ce qui peut retarder son adoption efficace, notamment pour les utilisateurs sans expérience préalable avec des outils similaires. Bien que Covidence propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. Malgré ces défis, Covidence demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
 
+```{r}
+#| echo: false
+#| warning: false
+tbl_resume_chap_X <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'Covidence' = c('Non (Abonnement requis)', 
+                    'Oui', 
+                    'Très populaire dans la revue systématique', 
+                    'Oui (Importation facile de citations)', 
+                    'Non (propriétaire)', 
+                    'Oui (mais limité)'),
+    'Colandr' = c('Oui (Gratuit)', 
+                  'Modérée', 
+                  'Moins connu mais en croissance', 
+                  'Oui (supports RIS, BibTeX, etc.)', 
+                  'Oui (Open-source)', 
+                  'Oui (beaucoup de flexibilité)'),
+    'Rayyan' = c('Oui (Freemium)', 
+                 'Oui', 
+                 'Populaire pour la revue systématique', 
+                 'Oui (Intégration facile avec citation managers)', 
+                 'Partiellement (propriétaire)', 
+                 'Oui (partiellement flexible)')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de la littérature')
+
+```
+
 #### Pourquoi Zotero ?
 
 Zotero se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
@@ -30,6 +64,43 @@ Zotero offre l'avantage significatif de centraliser les sources bibliographiques
 Cependant, Zotero présente quelques inconvénients, notamment sa gestion parfois difficile de très grandes bibliothèques contenant des milliers de fichiers, ce qui peut nécessiter l'achat d'espace de stockage supplémentaire. Bien que performant, le logiciel requiert parfois la saisie manuelle d'informations que le connecteur intégré ne détecte pas automatiquement, représentant un potentiel défis pour les utilisateurs. Ces quelques défis soulignent l'importance d'évaluer les besoins spécifiques en matière de gestion bibliographique avant de choisir Zotero comme solution.
 
 Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+tbl_resume_chap_X <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'Zotero' = c('Oui (Gratuit)', 
+                'Oui', 
+                'Très populaire', 
+                'Oui (Intégration facile avec Word, Google Docs, etc.)', 
+                'Oui (Open-source)', 
+                'Oui (personnalisable avec plugins)'),
+    'Mendeley' = c('Partiellement (Freemium)', 
+                'Oui', 
+                'Très populaire', 
+                'Oui (Microsoft Word, LibreOffice)', 
+                'Partiellement (propriétaire)', 
+                'Oui (moins flexible que Zotero)'),
+    'Endnote' = c('Non (Payant)', 
+                'Oui', 
+                'Populaire', 
+                'Oui (Intégration avec Word)', 
+                'Non (propriétaire)', 
+                'Partiellement (moins flexible)')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
+
+```
 
 
 ### Manuel d'instructions: Apprendre Covidence et Zotero

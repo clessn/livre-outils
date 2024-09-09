@@ -11,7 +11,46 @@ L’émergence de l’open source dans les années 1990, avec des projets tels q
 R a répondu à un besoin pressant de la communauté scientifique : celui de pouvoir accéder à des outils puissants sans avoir à payer des licences onéreuses, tout en bénéficiant d’une liberté totale dans le développement de nouvelles méthodes d’analyse. Grâce à sa structure ouverte, R a rapidement évolué grâce aux contributions de statisticiens et de programmeurs du monde entier, devenant l’un des langages de programmation les plus populaires pour l’analyse de données. Aujourd’hui, il est largement utilisé non seulement en sciences sociales, mais aussi en biostatistique, en économie et en science des données.
 
 L’évolution des langages de programmation pour l’analyse de données illustre comment les besoins des chercheurs en termes de flexibilité, d’accessibilité et de partage ont façonné les outils que nous utilisons aujourd’hui. Au fil des décennies, les langages se sont adaptés aux nouvelles méthodes et à l’augmentation des capacités de calcul, offrant des possibilités toujours plus larges pour l’exploration et l’analyse de données.
+```{r}
 
+library(tidyverse)
+library(tinytable)
+
+tbl_resume_chap_prog <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'Logiciels sous licence (SAS, SPSS, STATA)' = c('Non', 
+                                                    'Modérée', 
+                                                    'Élevée dans certains secteurs', 
+                                                    'Bonne', 
+                                                    'Faible', 
+                                                    'Limitée'),
+    'Python' = c('Oui', 
+                 'Très élevée', 
+                 'Très populaire', 
+                 'Excellente', 
+                 'Bonne', 
+                 'Très flexible'),
+    'Julia' = c('Oui', 
+                'En croissance', 
+                'Modérée', 
+                'Bonne', 
+                'Bonne', 
+                'Très flexible'),
+    'R' = c('Oui', 
+            'Très élevée', 
+            'Très populaire en sciences sociales et statistiques', 
+            'Excellente', 
+            'Très élevée', 
+            'Très flexible')
+)
+
+tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
+```
 ## R ou ne pas R? {#sec-chap4}
 
 Plusieurs notions liées à l'ère numérique, notamment à ce qui a trait aux opportunités et difficultés que cette dernière peut amener, ont été présentées par l'entremise du chapitre précédent. 
@@ -56,6 +95,7 @@ Cela est davantage une question d'opinion et de conception du monde qu'une véri
 Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en **R** peut collaborer à cette communauté. 
 Bien qu'il n'y ait pas d'autorité centrale, les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Le site a une politique de dépôt stricte, ainsi les *packages* doivent être suffisamment documentés. 
 Il est également possible d'y télécharger le langage de programmation **R**. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
+
 
 ## Où coder en R ?
 
