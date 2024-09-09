@@ -55,7 +55,8 @@ Il est également possible d'y télécharger le langage de programmation **R**. 
 ### Tableau des critères
 
 ```{r}
-
+#| echo: false
+#| warning: false
 library(tidyverse)
 library(tinytable)
 
