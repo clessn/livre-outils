@@ -99,94 +99,93 @@ tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils
 
 ### Où coder en R ?
 
-Un environnement de développement intégré (IDE) permet aux programmeurs de consolider les différents aspects de l'écriture d'un programme informatique. 
-Ils permettent de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit. 
-Les environnements de développement intégrés sont conçus pour maximiser la productivité du programmeur. 
-Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique ainsi que le contrôle de version -- pour créer, modifier et compiler du code. 
-Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique. 
-Par conséquent, ils contiennent des fonctionnalités qui sont plus compatibles avec les paradigmes de programmation du langage auquel ils sont associés. 
+Un environnement de développement intégré (IDE) permet aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique.
+Il permet de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit.
+Les environnements de développement intégrés sont conçus pour maximiser la productivité des programmeurs.
+Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique et le contrôle de version -- pour créer, modifier et compiler du code.
+Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique.
+Par conséquent, ils contiennent des fonctionnalités qui sont plus adaptées aux paradigmes de programmation du langage auquel ils sont associés.
 Enfin, il existe de nombreux environnements de développement intégré multilingues.
 
-Comme mentionné précédemment, R est un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales. 
-R est pris en charge par de nombreux environnements de programmation. 
-Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- et prennent en charge R via des plugins. 
-Il est également possible de coder en R à partir d'une interface en ligne de commande. 
-Une telle méthode permet la communication entre l'utilisateur et son ordinateur. 
-Cette communication s'effectue en mode texte : l'utilisateur tape une « ligne de commande » -- c'est-à-dire du texte dans le *terminal* -- pour demander à son ordinateur d'effectuer une opération précise, telle que rouler un fichier de code R.
+Comme mentionné précédemment, R est l'un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales.
+R est pris en charge par de nombreux environnements de programmation.
+Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- qui prennent en charge R via des plugins.
+Il est également possible de coder en R à partir d'une interface en ligne de commande.
+Une telle méthode permet la communication entre l'utilisateur et son ordinateur.
+Cette communication s'effectue en mode texte : l'utilisateur tape une « ligne de commande » -- c'est-à-dire du texte dans le terminal -- pour demander à son ordinateur d'effectuer une opération précise, telle que l'exécution d'un fichier de code R.
 
-La suite du chapitre présente RStudio, notamment à travers ses avantages et inconvénients, mais également des exemples de ses fonctionnalités.
+La suite du chapitre présente RStudio, notamment à travers ses avantages et inconvénients, ainsi que des exemples de ses fonctionnalités.
 
 ### Qu'est-ce que RStudio ?
 
-RStudio est un projet open source destiné à combiner les différentes composantes du langage de programmation R en un seul outil (Allaire, 2011). 
-RStudio fonctionne sur tous les systèmes d'exploitation, y compris Windows, Mac OS et Linux. 
-En plus de l'application de bureau, RStudio peut être déployé en tant que serveur pour permettre l'accès Web aux sessions R s'exécutant sur des systèmes distants (Allaire, 2011). 
-RStudio facilite l'utilisation du langage de programmation R en offrant de nombreux outils permettant à son utilisateur d'aisément réaliser ses tâches. 
-Parmi les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur d'espace de travail, une visionneuse de données et une prise en charge de la coloration syntaxique (Horton, Kleinman, 2015). 
-De plus, RStudio permet de coder dans plusieurs langages et de supporter une grande quantité de formats. 
-Il fournit également un support pour plusieurs projets ainsi qu'une interface pour utiliser des systèmes de contrôle, tels que GitHub (Horton, Kleinman, 2015).
+RStudio est un projet open source destiné à regrouper les différentes composantes du langage de programmation R en un seul outil (Allaire, 2011).
+RStudio fonctionne sur tous les systèmes d'exploitation, y compris Windows, Mac OS et Linux.
+En plus de l'application de bureau, RStudio peut être déployé en tant que serveur pour permettre l'accès Web aux sessions R s'exécutant sur des systèmes distants (Allaire, 2011).
+RStudio facilite l'utilisation du langage de programmation R en offrant de nombreux outils permettant à l'utilisateur de réaliser aisément ses tâches.
+Parmi les outils les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur de l'environnement de travail, une visionneuse de données, ainsi que la prise en charge de la coloration syntaxique (Horton, Kleinman, 2015).
+De plus, RStudio permet de coder dans plusieurs langages et de gérer une grande variété de formats.
+Il offre également un support pour plusieurs projets ainsi qu'une interface permettant l'utilisation de systèmes de contrôle de version, tels que GitHub (Horton, Kleinman, 2015).
 
-RStudio a plusieurs avantages. Son utilisation est facile à apprendre pour les débutants. 
-Les principaux éléments d'un IDE sont intégrés dans une disposition à quatre volets (Verzani, 2011). 
-Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace pour l'environnement de travail et un quatrième volet où il est notamment possible d'afficher des graphiques ou de la documentation sur différents packages. 
-Ce volet permet d'ailleurs d'accéder au répertoire des *packages* disponibles pour *R* en plus de permettre à l'utilisateur de consulter l'arborescence de ses fichiers. 
-De plus, on y retrouve la possibilité de créer plusieurs espaces de travail -- appelés projets -- qui facilitent l'organisation de différents *workflows*.
+RStudio présente plusieurs avantages. Son utilisation est facile à apprendre pour les débutants.
+Les principaux éléments d'un IDE sont intégrés dans une interface à quatre volets (Verzani, 2011).
+Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace dédié à l'environnement de travail, et un quatrième volet permettant d'afficher des graphiques ou de consulter la documentation sur les différents packages.
+Ce volet permet également d'accéder au répertoire des packages disponibles pour R et à l'arborescence des fichiers de l'utilisateur.
+De plus, il est possible de créer plusieurs espaces de travail -- appelés projets -- facilitant l'organisation des différents workflows.
 
-Il y a plusieurs autres aspects de RStudio que les programmeurs apprécient. 
-Parmi ceux-ci se trouve le fait qu'il peut être utilisé via un navigateur Web pour un accès à distance (Verzani, 2011). 
-De plus, RStudio supporte plusieurs langages de programmation ainsi que différents langages de balisage. 
-Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour satisfaire les besoins de la communauté scientifique. 
-Enfin, R logiciel est également souvent mis à jour.
+Il existe plusieurs autres aspects de RStudio que les programmeurs apprécient.
+Parmi eux, le fait que l'application peut être utilisée via un navigateur Web pour un accès à distance (Verzani, 2011).
+De plus, RStudio prend en charge plusieurs langages de programmation ainsi que différents langages de balisage.
+Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour répondre aux besoins de la communauté scientifique.
+Enfin, le logiciel R lui-même est souvent mis à jour.
 
-Parmi ce que certains considèrent comme étant les points faibles de RStudio, on retrouve des éléments liés à la configuration. 
-Certains utilisateurs trouvent que le nombre de raccourcis est limité. 
-D'autres trouvent que le *set up* des différents panneaux n'est pas ergonomique, ou même qu'il n'est pas possible de pouvoir suffisamment personnaliser l'environnement de programmation. 
-De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour quelques opérations, surtout celles comprenant de longs codes.
+Parmi ce que certains considèrent comme les points faibles de RStudio, on retrouve des éléments liés à la configuration.
+Certains utilisateurs trouvent que le nombre de raccourcis est limité.
+D'autres jugent que l'organisation des différents panneaux n'est pas ergonomique, ou que la personnalisation de l'environnement de programmation est insuffisante.
+De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour certaines opérations, notamment celles impliquant de longs scripts.
 
 ### Comment utiliser RStudio ?
 
 Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011).
-Dans le coin supérieur gauche se trouve le cadran principal.
-C'est dans celui-ci que l'utilisateur passera la plus grande partie de son temps. 
-On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données. 
-Dans le coin inférieur gauche se trouve la console ainsi que le terminal. Dans cette première, on peut interagir avec R de la même manière que dans le cadran principal, mais le code ne sera pas enregistré. 
-Le terminal, pour sa part, est le point d'accès de communication entre un usager et son ordinateur. 
-Bien que les différents systèmes d'exploitation viennent avec un terminal déjà intégré, il est aussi possible d'y accéder à partir de RStudio.
+Dans le coin supérieur gauche se trouve le volet principal.
+C'est dans celui-ci que l'utilisateur passera la majeure partie de son temps.
+On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données.
+Dans le coin inférieur gauche se trouvent la console et le terminal. Dans la console, on peut interagir avec R de la même manière que dans le volet principal, mais le code ne sera pas enregistré.
+Le terminal, quant à lui, est le point d'accès pour la communication entre l'utilisateur et son ordinateur.
+Bien que les différents systèmes d'exploitation soient livrés avec un terminal intégré, il est également possible d'y accéder à partir de RStudio.
 
-On retrouve, dans le coin supérieur droit, l'espace de travail. 
-Ce cadran contient trois éléments : 
-l'*environnement global, l'historique et les connections*. 
-L'*environnement global* est l'endroit où l'utilisateur peut voir les bases de données, les fonctions et les différents autres objets R qui sont actifs. 
-Il peut cliquer sur les divers éléments actifs pour les consulter. 
-L'onglet *historique* permet à l'utilisateur de consulter les derniers morceaux de code R qu'il a roulé ainsi que les dernières commandes écrites dans la console. 
-L'onglet *connections*, pour sa part, permet de connecter son IDE à une variété de sources de données et d'explorer les objets et les données qui la composent. 
-Il est conçu pour fonctionner avec une variété d'autres outils pour travailler avec des bases de données en R dans RStudio.
+Dans le coin supérieur droit, on retrouve l'espace de travail.
+Ce volet contient trois éléments : l'environnement global, l'historique et les connexions.
+L'environnement global est l'endroit où l'utilisateur peut voir les bases de données, les fonctions et les différents autres objets R actifs.
+Il peut cliquer sur les divers éléments actifs pour les consulter.
+L'onglet historique permet à l'utilisateur de consulter les derniers morceaux de code R qu'il a exécutés ainsi que les dernières commandes saisies dans la console.
+L'onglet connexions, quant à lui, permet de connecter l'IDE à une variété de sources de données et d'explorer les objets et données qu'elles contiennent.
+Il est conçu pour fonctionner avec divers outils permettant de travailler avec des bases de données en R dans RStudio.
 
-Le cadran dans le coin inférieur droit, pour sa part, contient plusieurs outils très utiles pour les usagers de RStudio.
-L'onglet *Files* permet à l'utilisateur de naviguer dans les fichiers que contient son ordinateur sans avoir à sortir de RStudio. 
-L'onglet *Plots* permet de visualiser les graphiques générer à partir de R, que ce soit en utilisant *ggplot2, lattice ou base R*. 
-L'onglet *Packages* permet de consulter les packages installés précédemment par l'utilisateur en plus de pouvoir en consulter la documentation. 
-C'est aussi un des différents endroits à partir d'où il est possible d'installer des packages avec RStudio. 
-L'onglet *Help* permet à l'utilisateur de chercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages. 
-Pour sa part, l'onglet *Viewer* permet la visualisation de contenu web local.
+Le volet dans le coin inférieur droit, quant à lui, contient plusieurs outils très utiles pour les utilisateurs de RStudio.
+L'onglet Files permet de naviguer dans les fichiers présents sur l'ordinateur sans avoir à quitter RStudio.
+L'onglet Plots permet de visualiser les graphiques générés à partir de R, que ce soit en utilisant ggplot2, lattice ou base R.
+L'onglet Packages permet de consulter les packages installés précédemment par l'utilisateur et d'en consulter la documentation.
+C'est aussi un des endroits où il est possible d'installer des packages avec RStudio.
+L'onglet Help permet à l'utilisateur de rechercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages.
+L'onglet Viewer, quant à lui, permet de visualiser du contenu web local.
 
-Enfin, l'utilisateur peut modifier les dimensions par défaut pour chacun des quatre cadrans principaux. 
-En cliquant sur la division des sections, il est possible d'ajuster l'allocation horizontale de l'espace. 
-De plus, chaque côté dispose d'un autre séparateur pour ajuster l'espace vertical. 
-Qui plus est, la barre de titre de chaque cadran comporte des icônes pour ombrer un composant, maximiser un cadran verticalement ou modifier la taille des l'espace de travail (Verzani, 2011; Nierhoff et Hillebrand, 2015).
+Enfin, l'utilisateur peut modifier les dimensions par défaut de chacun des quatre volets principaux.
+En cliquant sur la séparation entre les sections, il est possible d'ajuster la répartition horizontale de l'espace.
+De plus, chaque côté dispose d'une autre séparation permettant d'ajuster l'espace vertical.
+Qui plus est, la barre de titre de chaque volet comporte des icônes pour réduire un composant, maximiser un volet verticalement ou modifier la taille de l'espace de travail (Verzani, 2011 ; Nierhoff et Hillebrand, 2015).
 
 ## Conclusion
 
-Le langage de programmation R est un outil très utile pour toutes sortes de tâches notamment reliées aux statistiques et à la visualisation graphiques. 
-Sa maîtrise est requise pour accéder à plusieurs emplois, autant dans le monde académique que dans les secteurs publics et privés. 
-Avec un peu de chance, le présent chapitre vous a éclairé sur son utilité et sa pertinence dans le monde du travail contemporain. 
-Bien que le langage de programmation R ne doivent pas obligatoirement être utilisé avec RStudio, nous pensons que pour la plupart des usagers, leur utilisation conjointe est bénéfique et souhaitée. 
-RStudio permet également d'utiliser différents langages de balisage compatibles avec R, facilitant l'utilisation de plusieurs outils complémentaires. 
-L'apprentissage du langage de programmation R apparaît également être une valeur sure. 
-Sa longitivité dans plusieurs sphères ainsi que la forte croissance de sa base d'usagers laisse présager que d'en connaître au moins les bases est un énorme avantage pour tout le monde.
-Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui désirent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R -- notamment *RConference* and *useR!* -- et un journal académique, *The R Journal*. 
-On retrouve également différentes communautés telle que *R-Ladies* qui met de l'avant la diversité des genres dans la communauté du langage de programmation R. 
-Le langage de programmation R est plus qu'un simple outil statistique, il est le centre d'une grande communauté de gens qui ont à coeur des principes liés à l'inclusion et à l'avancement humain.
+Le langage de programmation R est un outil très utile pour toutes sortes de tâches, notamment liées aux statistiques et à la visualisation graphique.
+Sa maîtrise est requise pour accéder à plusieurs emplois, tant dans le monde académique que dans les secteurs public et privé.
+Nous espérons que le présent chapitre vous a éclairé sur son utilité et sa pertinence dans le monde du travail contemporain.
+Bien que le langage de programmation R ne doive pas obligatoirement être utilisé avec RStudio, nous pensons que, pour la plupart des utilisateurs, leur utilisation conjointe est bénéfique et recommandée.
+RStudio permet également d'utiliser différents langages de balisage compatibles avec R, facilitant ainsi l'utilisation de plusieurs outils complémentaires.
+L'apprentissage du langage de programmation R apparaît également comme une valeur sûre.
+Sa longévité dans plusieurs domaines ainsi que la forte croissance de sa base d'utilisateurs laissent présager que connaître au moins les bases de R constitue un énorme avantage pour tout le monde.
+Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui souhaitent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R -- notamment RConference et useR! -- ainsi qu'un journal académique, The R Journal.
+On retrouve également différentes communautés, telles que R-Ladies, qui mettent de l'avant la diversité des genres dans la communauté du langage de programmation R.
+Le langage de programmation R est plus qu'un simple outil statistique, il est au centre d'une grande communauté de personnes qui ont à cœur des principes liés à l'inclusion et à l'avancement humain.
 
 <!-- Ancien texte 
 
