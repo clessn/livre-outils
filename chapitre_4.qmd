@@ -24,6 +24,9 @@ Cependant, l'utilisation de Covidence présente certaines contraintes. Le coût 
 ```{r}
 #| echo: false
 #| warning: false
+library(tidyverse)
+library(tinytable)
+
 tbl_resume_chap_X <- tibble(
     Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
                  'Existence d\'une communauté d\'utilisateurs', 
