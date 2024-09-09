@@ -122,54 +122,41 @@ Une fois les étapes de la revue systématique achevées, la plateforme Covidenc
 
 #### Zotero
 
-Comme mentionné précédemment, l'introduction de Zotero dans les processus de recherche académique permet une gestion systématique et efficace des références bibliographiques. Afin d'exploiter pleinement les capacités de cet outil, la configuration initiale comprend plusieurs étapes essentielles :
+L'intégration de Zotero dans le processus de recherche académique permet une gestion structurée et efficace des références bibliographiques. Pour tirer pleinement parti des fonctionnalités de cet outil, il est essentiel de suivre les étapes suivantes pour l'installation, la configuration, et l'utilisation des principales fonctionnalités de Zotero.
 
-- Installer [Zotero](https://www.zotero.org/download/)
+##### Installation et Configuration
 
-- Installer [Zotero Connector](https://www.zotero.org/download/)
+L'installation de Zotero commence par le téléchargement de l'application Zotero ainsi que de son extension pour navigateur, Zotero Connector. Cette extension permet de capturer facilement des références à partir de sources en ligne. Une fois l'installation terminée, il est recommandé de créer un compte Zotero via le lien d'inscription. Ce compte facilitera la synchronisation des données entre différents appareils et permettra le partage de bibliothèques de références avec des collaborateurs.
 
-L'installation de l'application Zotero, associée au Zotero Connector pour navigateurs, facilite la capture instantanée de références à partir de diverses sources en ligne. Ces outils sont fondamentaux pour intégrer et synchroniser les données collectées au sein de l'environnement de travail personnel. Une fois Zotero installé, l'option de créer un [compte Zotero](https://www.zotero.org/user/register/) sera proposé. L'identifiant utilisé à cette étape sera celui partagé aux collaborateurs afin de créer et de joindre des groupes. Le processus d'enregistrement et de configuration d'un compte Zotero est une étape préliminaire pour la collaboration. Les identifiants obtenus permettent aux chercheurs de partager des bibliothèques avec des collaborateurs, favorisant ainsi un travail d'équipe efficace et organisé.
+La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
 
-Il existe différentes méthode afin d'ajouter des références à Zotero :
+##### Ajouter des références à Zotero
 
-- Glisser-déposer depuis une bibliothèque personnelle.
-- Glisser-déposer les PDF dans la collection désirée de Zotero. Cette méthode déclenche une tentative automatique de récupération des métadonnées associées. En cas d'échec, l'utilisateur peut recourir à l'outil de la baguette magique, accessible via l'icône du "+" vert, pour saisir manuellement les informations de la référence.
-- Utilisation de l'outil de la baguette magique. Lorsque les identifiants tels que le DOI ou l'ISBN sont disponibles, cet outil permet d'ajouter efficacement les références en extrayant les métadonnées nécessaires. Si Zotero ne parvient pas à localiser les informations requises, il est alors possible de remplir les champs de métadonnées manuellement.
-- Utiliser le connecteur Zotero depuis le navigateur. Cette fonctionnalité facilite la capture des références directement à partir des ressources en ligne. Le connecteur détecte et télécharge les articles, tout en les classant dans les collections appropriées au sein de Zotero.
+Zotero offre plusieurs méthodes pour ajouter des références à une bibliothèque :
 
-##### Better Bibtex
+- Glisser-déposer : L'utilisateur peut importer des documents, tels que des PDF, directement dans la bibliothèque Zotero. Zotero tentera automatiquement de récupérer les métadonnées associées. En cas d'échec, l'outil « Baguette magique » permet de saisir manuellement les informations requises.
 
-Cette prochaine étape, qui consiste à installer l'extension Better BibTeX, permet d'optimiser l'interopérabilité de Zotero avec des systèmes de gestion de documents tels que LaTeX. Cette fonctionnalité améliore considérablement la gestion des citations et des bibliographies, essentielle pour la rédaction de documents académiques structurés et conformes aux normes de publication.
+- Utilisation de l'outil Baguette magique : Lorsque des identifiants uniques tels que DOI ou ISBN sont disponibles, Zotero extrait automatiquement les métadonnées complètes de la référence. Si les informations ne sont pas trouvées, l'utilisateur a la possibilité de compléter manuellement les champs nécessaires.
 
-Ainsi, la prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools \> Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+- Zotero Connector : Cet outil capture les références directement depuis le navigateur, en les classant automatiquement dans les collections de la bibliothèque Zotero. Cela permet une gestion instantanée des articles scientifiques et autres ressources en ligne.
 
-*IMPORTANT*
+##### Optimisation des citations avec Better BibTeX
 
-- Une fois le module complémentaire installé, accédez aux paramètres de Better BibTeX en allant dans l'onglet Zotero \> Préférences \> Onglet Better BibTeX \> Ouvrir les préférences de Better BibTeX.
+L'installation de l'extension Better BibTeX est cruciale pour les chercheurs qui utilisent des systèmes de gestion documentaire comme LaTeX. Cette extension facilite la gestion des citations en générant des fichiers .bib mis à jour automatiquement.
 
-Dans le contexte de collaborations académiques, il est important de maintenir une uniformité dans les clés de citation utilisées par tous les participants. Better BibTeX joue un rôle essentiel à cet égard, en garantissant que les clés de citation adhèrent à un format standardisé. Cette uniformisation facilite la cohérence des références à travers divers documents et publications, évitant ainsi les incohérences et les erreurs potentielles dans le traitement des citations bibliographiques.
+Pour installer Better BibTeX, accédez à Zotero : `Outils > Modules complémentaires`, puis sélectionnez l'option Installer un module à partir d'un fichier et choisissez le fichier `.xpi` préalablement téléchargé. Une fois l'installation terminée, configurez le module via `Zotero > Préférences > Onglet Better BibTeX`.
 
-- Voici une suggestion de format de clé de citation : il s'agit simplement du nom de l'auteur et de l'année de publication à deux chiffres. Pour l'utiliser, collez ceci dans la section Format de clé de citation : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
-
-Afin de garantir l'uniformité des clés de citation au sein d'une collaboration académique, il est recommandé d'effectuer une mise à jour régulière des clés à travers l'interface de Better BibTeX. Cette opération peut être réalisée en effectuant un clic droit sur les références concernées, en naviguant vers les options de Better BibTeX, et en sélectionnant l'option "Actualiser les clés de citation". Cette procédure assure que toutes les références partagées respectent un format cohérent.
+Afin d'assurer une cohérence dans les clés de citation utilisées au sein d'un groupe de travail, Better BibTeX permet de définir un format de clé de citation uniforme. Le format recommandé est basé sur le nom de l'auteur et l'année de publication, par exemple : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`. Cette uniformisation garantit une gestion efficace des citations dans les documents collaboratifs.
 
 ##### Génération du fichier .bib
 
-Dans Zotero, vous devriez maintenant voir le groupe Zotero de votre équipe dans les Group Libraries.
+Une fois Better BibTeX configuré, il est possible d'exporter une collection Zotero au format BibLaTeX. Pour cela, faites un clic droit sur la collection souhaitée et sélectionnez Exporter la collection. Choisissez le format `Better BibLaTeX` et cochez l'option `[x] Keep updated`. Ce fichier `.bib` sera mis à jour automatiquement chaque fois que de nouvelles références seront ajoutées à Zotero. Cette méthode est particulièrement utile pour synchroniser les références dans des projets partagés via des systèmes de versionnement comme GitHub.
 
-![](images/chapitre6_zotero.png){width="170"}
+Il est important de noter que toute modification effectuée dans Zotero (ajout, suppression de références) sera automatiquement synchronisée avec les autres membres du groupe. Cela implique qu'une gestion prudente des références est nécessaire pour éviter toute suppression accidentelle.
 
-*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe de votre équipe de travail. Ainsi, si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+###### Utilisation de Zotero lors de la rédaction
 
-Clic-droit sur la collection livre-outils \> Export Collection choisissez le format Better BibLaTex et cochez la case \[x\] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
-
-![](images/chapitre6_biblatex.png){width="300"}
-
-#### Utilisation de Zotero lors de l'écriture
-
-Lors de l'écriture, vous n'avez qu'a écrire \@ dans votre éditeur pour faire sortir la palette de référencement.
-
-
+Lors de la rédaction d'articles scientifiques, Zotero peut être intégré directement dans des éditeurs de texte compatibles avec LaTeX ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque Zotero.
 
 <!-- 
 
