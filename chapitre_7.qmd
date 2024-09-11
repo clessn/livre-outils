@@ -252,6 +252,12 @@ tbl_langages_balisage <- tibble(
                     'Oui', 
                     'Forte', 
                     'Oui',
+                    'Forte'),
+    'Word' = c('Non', 
+                    'Très Grande', 
+                    'Oui', 
+                    'Faible', 
+                    'Non',
                     'Forte')
 )
 
