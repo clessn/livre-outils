@@ -1,26 +1,13 @@
-# Outils de gestion de projet
-
-## À la quête de l'optimisation {#sec-chap3}
-
+# À la quête de l'optimisation {#sec-chap3}
 <!--AFC: Je changerais le titre, il ne m'évoque rien de bien clair. "Plateformes de travail collaboratif&nbsp;: comment travailler efficacement?"-->
 
 Le monde de la recherche en sciences sociales numériques est en constante évolution, offrant de nouvelles opportunités mais aussi des défis uniques.<!--AFC: Peut-être trouver une phrase moins générique pour commencer?--> Dans cette quête incessante pour optimiser notre efficacité et notre collaboration, l'utilisation des bons outils devient la clé de la réussite. Que vous soyez un chercheur en herbe ou un professionnel chevronné, la manière dont vous organisez vos méthodes de travail et gérez vos ressources peut déterminer la qualité et l'impact de vos résultats.
 
-## L'importance d'une méthode de travail efficace
+Le monde de la recherche en sciences sociales numériques est en constante évolution, offrant de nouvelles opportunités mais aussi des défis uniques.<!--AFC: Peut-être trouver une phrase moins générique pour commencer?--> Dans cette quête incessante pour optimiser notre efficacité et notre collaboration, l'utilisation des bons outils devient la clé de la réussite. Que vous soyez un chercheur en herbe ou un professionnel chevronné, la manière dont vous organisez vos méthodes de travail et gérez vos ressources peut déterminer la qualité et l'impact de vos résultats.
 
-Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
+## Point d'observation :
 
-Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation :
-
-1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
-
-2.  **Logiciels de gestion de versions décentralisé** : Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
-
-3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.
-
-Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
-
-## Gestion Individuelle
+## Arpentage et choix éditorial :
 
 ### Gestion de tâches
 
@@ -45,7 +32,7 @@ L'agilité est un processus de travail qui facilite cette priorisation. En adopt
 Pour une mise en œuvre efficace de l'agilité, il est utile de planifier ses objectifs sur une période de quelques semaines, connues sous le nom de sprints en méthode Scrum, où on évalue le travail accompli et on redéfinit les priorités pour la prochaine période. Ces sprints permettent de s'assurer de rester concentré sur les tâches qui apportent le plus de valeur au projet et d'ajuster les plans en temps réel en fonction des résultats obtenus.
 
 #### Où
-
+<!-- Gilbert : À mettre dans la section 3? -->
 Toutes ces pratiques deviennent rapidement complexes si elles ne sont pas encadrées dans un environnement qui permet d'en faire le suivi. Il peut être judicieux de faire appel à des outils de gestion de projet qui supportent l'agilité, tels que Notion ou Mondays. Ces outils permettent de visualiser les tâches à faire sous forment de tableaux de bords intéractifs, dans lesquels il est possible de les déplacer en fonction de leur statut d'avancement. Ces outils permettent de structurer les tâches d'un projet et d'en faire le suivi facilement du début à la fin.
 
 Il est également judicieux de faire appel à des outils de gestion de projet qui supportent l'agilité, tels q. Ces outils permettent de visualiser les tâches sous forme de tableaux de bord interactifs où les tâches peuvent être déplacées, modifiées ou mises à jour en temps réel. Ils favorisent la transparence et la communication entre les membres de l'équipe, essentielles pour une gestion agile des tâches.
@@ -54,7 +41,7 @@ Enfin, il est crucial d'intégrer des pratiques de réflexion et d'amélioration
 
 Pour déterminer quelles tâches accomplir et dans quel ordre, voici une court processus par étapes :
 
-1.  Éllaborer les tâches en fonction des objectifs de sprint.
+1.  Élaborer les tâches en fonction des objectifs de sprint.
 2.  Déterminer la linéarité des tâches, c'est-à-dire, quelle tâche doit être accomplie afin d'en début une autre.
 3.  Quantifier le poids de chaque tâche. Certaines tâches sont plus longues que d'autres. Adopter un système qui vous permet d'identifier quelles tâches prendront quelques minutes seulement (comme l'envoi du courriel), et quelles tâches prennent plusieurs jours. Si une tâche est trop longue, c'est un signe qu'elle pourrait être désagrégée en plusieurs tâches plus petites. Cela facilite également le suivi.
 4.  Donner une échéance réaliste à chaque tâche, en fonction des étapes précédentes. Idéalement, toutes les tâches ne sont pas dues pour la même date, pour éviter un goulot d'étranglement. Les échéances aident à prioriser les tâches.
@@ -62,7 +49,7 @@ Pour déterminer quelles tâches accomplir et dans quel ordre, voici une court p
 
 L'utilisation d'outils numériques pour la gestion des tâches ne signifie pas qu'il faut abandonner l'agenda papier ou le cahier de notes. Plusieurs trouvent essentiels de prendre des notes et de se faire des listes de tâches à la main. Il est tout à fait possible de combiner les méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de tâches, puis faites votre liste de tâches à la main en conséquence, et planifiez votre semaine. De cette façon, vous savez chaque jour le travail à prioriser.
 
-### Enregistrement de protocole
+<!-- Gilbert : Je crois que cette section n'est plus pertinente ### Enregistrement de protocole
 
 Après avoir établi l'importance de la gestion des tâches et comment une approche agile peut optimiser ce processus, il est complémentaire de d'aborder l'enregistrement méthodique de ces tâches et des étapes du projet. Cette documentation assure la transparence, la réplicabilité et la rigueur scientifique de la recherche. L'enregistrement du protocole de recherche sert plusieurs objectifs clés qui se connectent directement à la gestion agile des tâches. Il agit comme une archive vivante des décisions prises, des méthodes utilisées et des modifications apportées tout au long du projet. Cela permet la vérification et la validation des résultats, et de maintenir une vision claire de l'évolution du projet.
 
@@ -78,114 +65,12 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 2.  Enregistrer le protocole. L'enregistrement se fait dans un registre public. Il existe différents registres, ouverts à tous les domaines (Open Science Framework, Research Registry) ou plus spécifiques aux sciences sociales (EGAP, AEA RCT).
 3.  Valider le protocole. Le protocole est évalué par les pairs, pour assurer sa complétude, puis il devient public. Ainsi, vous obtenez des commentaires avant même de soumettre à une revue, ce qui peut vous faire sauver du temps en apportant des modifications avant la réalisation, plutôt qu'après.
 4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
-
-### Code en open access (Repository github)
-
-L'enregistrement de protocole est seulement un volet de la transparence en science. De même que pour les protocoles, la mise à disposition du code source employé pour les analyses permet non seulement de vérifier les résultats publiés mais aussi de renforcer la confiance dans les conclusions de la recherche. Le partage du code, structuré et commenté, via une plateforme comme GitHub, s'inscrit dans cette démarche de recherche ouverte.
-
-Les langages de programmation sont très fluides et décentralisés, et les codes employés pour arriver à un même résultat peuvent varier d'une personne à l'autre. Rendre son code public permet la reproductibilité et la transparence dans la manipulation et l'analyse de ses données. Plusieurs revues exigent de rendre le code en libre accès lors d'une soumission.
-
-1.  Préparation du code
-
-<!-- -->
-
-a.  ReadMe
-b.  Structuration du code + commentaires
-
-<!-- -->
-
-2.  Dépot du code sur github
-
-<!-- -->
-
-a.  Création du repo
-b.  Gestion des version (git)
-
-### Stockage des données (Dropbox, autres clouds)
-
-L'entreposage des données occupe une place cruciale dans la recherche en sciences sociales numériques. La manière dont vous entreposez et gérez vos données peut avoir un impact significatif sur la sécurité, la confidentialité et la reproductibilité de votre travail. Dans cette section, nous allons aborder différents aspects de l'entreposage de données, des outils disponibles et de l'importance d'une gestion efficace de vos fichiers.
-
-#### Entreposage de données non sensibles
-
-Au fil du temps, de nombreux outils d'entreposage ont émergé pour répondre aux besoins variés des chercheurs en sciences sociales. Des solutions populaires incluent Dropbox, Google Drive, OneDrive et Amazon S3 d'AWS. L'histoire de ces outils témoigne de l'évolution des besoins d'entreposage et de collaboration.
-
-Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage cloud tels que Dropbox, Google Drive et OneDrive se révèlent indispensables. Voici quelques avantages d'un entreposage sur le cloud pour la recherche :
-
-1.  *Sauvegarde automatique* : Les solutions cloud sauvegardent automatiquement vos fichiers, garantissant que vous ne perdrez jamais vos données en cas de panne d'ordinateur ou d'accident.
-
-2.  *Accessibilité universelle* : Vous pouvez accéder à vos fichiers à partir de n'importe quel appareil avec une connexion Internet, ce qui favorise la flexibilité dans la gestion de vos projets.<!--AFC: J'ajouterais "Vous n'avez pas besoin d'utiliser un disque dur externe, une clé USB ou encore de vous envoyer vos fichiers par courriel."-->
-
-3.  *Partage facilité* : Les services cloud permettent de partager facilement des fichiers et des dossiers avec des collègues, même en dehors de votre équipe de recherche. Cela favorise la collaboration et la communication.
-
-Il est important de noter que le choix d'un service cloud dépend de vos besoins et de vos préférences. Considérez des facteurs tels que la capacité d'entreposage, les fonctionnalités de partage, la convivialité et la compatibilité avec vos outils de recherche existants.
-
-Dropbox est connu pour sa simplicité d'utilisation et sa convivialité. Il peut être un choix approprié pour entreposer des fichiers non sensibles, partager des documents avec des collègues et faciliter la collaboration.<!--AFC: ... Donc? On va mettre l'accent sur Dropbox dans cette section ou pas?-->
-
-Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier *.gitignore*<!--AFC: Ajouter "&nbsp;: cela évitera qu'il soit partagé à d'autres personnes ayant accès au [repository à traduire]." Important de préciser aussi que le .gitignore est partagé, donc une personne mal intentionnée pourrait modifier le contenu du .gitignore "par accident" pour avoir accès à un fichier sensible. Il faut rester vigilant avec les commits.-->.
-
-![image1](images/chapitre8_dropbox.png)
-
-<!--AFC: Parler de l'image?-->
-
-Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
-
-Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub.
-
-Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.--> C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe.
-
-## Gestion en équipe
-
-### Coordination d'équipe (Slack Mattermost)
-
-Logiciel de gestion de communication (Slack)<!--AFC: Je trouve ça étrange de mettre ça au singulier et d'inclure Slack dans le titre. Soit je mettrais au pluriel, soit je mettrais carrément comme titre "Slack et autres logiciels de gestion de la communication". Le même principe s'applique aux autres titres de sections.-->
-
-Dans tout bon projet de recherche, la communication est primordiale. Que ce soit pour décrire les avancements, discuter des étapes à venir, entretenir un partenariat avec des partenaires ou simplement structurer ses pensées, la plateforme par laquelle vous communiquez vous accompagne à chacune des étapes du travail. Il est donc important de choisir un outil qui convient bien à vos projets et de prendre le temps de l'apprivoiser et d'optimiser son utilisation.
-
-Il y a tellement de plateformes différentes pour communiquer qu'il faut être prudent par rapport au nombre utilisé. Si vous ne faites pas un choix, vous pouvez, sans vous en rendre compte, mêler Teams, courriels, Zoom et autres<!--AFC: Mêler les courriels et Zoom... Pas convaincu. Soit nommer des logiciels qui ont la même fonction, soit enlever l'énumération ici.-->. Rapidement, vous perdez le contrôle de ce qui est dit. Nous vous proposons d'opter pour un logiciel de gestion de communication. Il existe plusieurs logiciels du genre, tels que Microsoft Teams, Slack, Google Workspace et Workplace. Toutes ces options peuvent vous permettre de collaborer efficacement en équipe. Dans le cadre de nos travaux, nous utilisons Slack. C'est donc principalement de cet outil que nous parlerons dans cette section, mais n'hésitez pas à vérifier quelle plateforme correspond le mieux à vos besoins.<!--AFC: Je ferais un meilleur plaidoyer pour Slack. C'est l'un des logiciels les plus utilisés et adaptés pour cette tâche. Je me demande si c'est nécessaire de dire qu'on l'utilise "pour nos travaux".-->
-
-Peu importe votre niveau d'implication, la collaboration et la communication sont inévitables en recherche. La science n'est pas une discipline qui se développe en solitaire, elle nécessite des échanges et des débats. Les équipes de recherche sont souvent dispersées géographiquement. Même si vous travaillez actuellement seulement avec votre directeur, il est certain que plusieurs équipes de recherche dans votre département<!--AFC: Peut-être un peu poussé. Faculté, école, université? Je suis sûr qu'il y a des petits départements où personne n'utilise ça.--> utilisent un tel logiciel. Un courriel peut faire l'affaire pour une discussion ponctuelle qui se règle rapidement. Cependant, dans une équipe de travail dynamique, où plusieurs membres participent à divers projets, les courriels deviennent rapidement chaotiques, il est difficile de retracer ce qui a été dit<!--AFC: J'ajouterais "dans les nombreuses chaînes de courriels."--> et de conserver les pièces jointes. Les discussions deviennent rapidement trop complexes pour le médium utilisé.
-
-Les logiciels de gestion de communication ont été conçus spécifiquement pour répondre aux besoins des équipes collaboratives. Vous y trouverez leur facette la plus attrayante : une structure simple et adaptée. <!-- Drole de structure de phrase ? --> Les chaînes et fils de discussions permettent de garder des traces et de se retrouver facilement dans ce qui a été dit. Une autre force de ces logiciels est la centralisation des outils de travail. Sur Slack, comme sur Teams, vous pouvez faire des appels en visioconférence à l'endroit où vos conversations écrites se trouvent. Il est aussi possible d'y télécharger l'application mobile, ce qui facilite l'accessibilité et la connexion des membres de l'équipe. Tout avoir structuré à son goût au même endroit et à portée de main, cela permet de structurer sa pensée plus efficacement, d'éviter les oublis et de réduire le stress.
-
-#### Comment utiliser votre logiciel efficacement
-
-Une fois que vous êtes convaincu d'aller de l'avant avec un de ces outils, vous devrez apprendre à bien vous en servir. Voici quelques trucs qui pourront vous aider à optimiser son utilisation. Les points ci-dessous font référence à Slack, mais peuvent très bien être adaptés à d'autres plateformes.<!--AFC: Mini-reformulation ici pour une meilleure structure. Ils s'appliquent également à d'autres plateformes? Où ils s'appliquent, moyennant certaines adaptations?-->
-
-#### Structuration
-
-Il est important de bien réfléchir à la structuration de vos chaînes. Si vous ne faites pas ce travail, les chaînes peuvent se multiplier rapidement et les conversations se mettent alors à s'entrecroiser, vous faisant ainsi perdre le fil. L'objectif de ces outils étant d'évitez ces problèmes, vous ne voulez pas perdre l'avantage comparatif que vous venez tout juste de gagner face aux courriels! La structuration des chaînes devrait être similaire à celle de votre équipe de recherche. Si vous utilisez Notion ou un autre logiciel du genre<!--AFC: Ajouter la référence au chapitre sur Notion, et préciser que c'est un outil de gestion des tâches plutôt qu'un outil "du genre".-->, la structure des deux outils devrait être la même<!--AFC: J'ai l'impression que ce conseil, tel que formulé, est plus utile pour les départements que pour les étudiants qui commencent. C'est OK de mentionner l'importance de se structurer, mais il ne faut pas assumer que la structure de la CLESSN, avec autant de projets et de chaînes, est si commune. Je n'enlèverais rien ici, mais je nuancerais peut-être certaines tournures de phrase.-->. Nous vous proposons d'avoir une chaîne pour chacun des projets. Si le projet est trop gros et que la conversation devient chaotique, pensez à créer une sous-chaîne (un sous-projet)<!--AFC: Ou une nouvelle chaîne--> qui vous permettra d'aborder un sujet précis, sans mêler les discussions. Pour faciliter la structuration des chaînes, vous pouvez utiliser des préfixes, pour classer les chaînes par thème, ou autre typologie qui vous convient.<!--AFC: J'enlèverais cette phrase, à part si on donne des exemples concrets. Le regroupement des chaînes par projet (en créant quelques sections) est très faisable dans la plupart des équipes de recherche, qui travaillent sur peu de projets à la fois. Ce serait le conseil que je donnerais à la place... Mais seulement dans les cas où les équipes travaillent sur beaucoup de projets à la fois. Le reste du temps, honnêtement, un étudiant peut très bien se débrouiller en ayant une structuration de base, ce n'est vraiment pas un gros défi quand il y a 5-6 chaînes à suivre.--> Également, utilisez les Espaces d'équipe<!--AFC: C'est quoi un Espace d'équipe? Je ne connais pas ça. Et plus loin, on parle d'espaces de travail... Il faudrait démêler à travers le chapitre ce qu'est un espace d'équipe ou un espace de travail.-->. Chaque équipe devrait avoir son propre espace, avec ses propres chaînes. Vous pouvez faire partie de plusieurs équipes et naviguer à travers les espaces. Si plusieurs équipes partagent un même espace de travail, vous pourriez perdre le contrôle de sa structure.<!--AFC: Ça c'est une notion importante je trouve, car plusieurs projets peut être synonyme de plusieurs espaces de travail Slack. Les étudiants qui travaillent sur plusieurs contrats de recherche risquent d'avoir plusieurs espaces de travail Slack. Il faudrait peut-être expliquer ce qui distingue une chaîne, un regroupement de chaînes par projet (juste de la structuration interne pertinente quand l'espace de travail devient trop gros) et un espace de travail.-->
-
-#### Maintenance
-
-Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n'est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d'équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, puisque vous pourrez toujours les désarchiver quand cela sera nécessaire<!--AFC: "Si cela est nécessaire." ... En fait, archiver et désarchiver est inutile pour ceux qui n'ont pas la version payante de Slack. Je me demande si ce conseil est utile dans ce cas-là.-->. Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Faites le tour de ce qui est épinglé à l'occasion pour vérifier si c'est encore pertinent. Cela peut paraître énergivore, mais l'efficacité de votre travail d'équipe va en bénéficier. Également, rappelez aux membres de votre équipe d'utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes.<!--AFC: Donner un exemple concret. Par exemple, si on alterne entre une discussion de groupe et une chaîne, les deux incluant les mêmes personnes, on risque rapidement d'être aussi mêlé que si on utilisait une chaîne de courriels! Ce conseil-là me semble beaucoup plus important que le reste.--> Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d'équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l'usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux. Vous pouvez alors retourner à la planche à dessin<!--AFC: Et changer l'organisation des chaînes-->. Assurez-vous que toute l'équipe comprenne bien comment utiliser Slack. Si ce n'est pas le cas, formez-les.<!--AFC: À qui s'adresse ce chapitre? À des profs ou à des élèves?--> Une structure adaptée et une équipe bien formée peuvent faire des miracles.
-
-#### Collaboration
-
-La grande majorité des conversations devraient se faire dans les chaînes. Les conversations privées ont leur utilité, vous vous en servirez. Il est parfois nécessaire d'avoir des discussions plus confidentielles et de parler rapidement à quelqu'un sur un sujet éphémère. Toutefois, par soucis de transparence et d'inclusion, toute discussion à propos d'un projet devrait se faire dans sa chaîne. Si vous jugez qu'un membre d'une chaîne ne devrait pas lire ce que vous avez à dire sur le projet, c'est qu'il ne devrait pas faire partie de la chaîne. Par rapport aux membres, trouvez le bon équilibre par rapport à qui devrait être dans quelle chaîne. L'objectif n'est pas d'exclure et de cacher du contenu, vous voulez une équipe transparente. Vous voulez que vos membres restent bien informés de l'avancement des projets sans les submerger d'information qui ne leur est pas utile. C'est à vous de trouver la formule gagnante. Invitez vos partenaires externes dans votre espace d'équipe. Créez des chaînes spécifiques aux partenaires pour que les conversations externes soient tout aussi organisées. N'invitez pas vos partenaires dans vos chaînes privées, question de confidentialité. Si un partenaire n'a pas l'habitude d'utiliser Slack ou l'outil que vous utilisez, proposez-lui de vous y joindre quand même. Moins vous utilisez les outils des autres, plus vous gardez centralisées vos communications et évitez de jongler avec plusieurs plateformes.
-
-#### Optimisation personnelle
-
-Une fois que la structure d'équipe est définie et que vos membres et vos partenaires sont à l'aise avec l'utilisation de la plateforme, il est temps d'organiser la structure de votre Slack personnel. Créez des sections pour trier les chaînes. La structure d'équipe est essentielle, mais une fois qu'elle est déterminée, chaque membre n'utilise pas forcément les chaînes de la même façon. Vous pouvez vous créer une section de favoris, ou encore différentes sections par rapport aux différents thèmes pour y faciliter la navigation. Également, ajustez vos paramètres de notifications. C'est à vous de déterminer quelle chaînes méritent de produire des alertes, et à quels moments vous souhaitez les recevoir. Slack a plusieurs applications intégrées qui facilitent la compatibilité avec vos autres outils. Vous pouvez connecter votre calendrier, votre Notion<!--AFC: Remplacer par "outil de gestion de tâches"--> et votre GitHub pour recevoir des alertes pertinentes. Allez explorer ces applications pour déterminer lesquelles vous conviennent.<!--AFC: Teams offre quant à lui une intégration avec les autres outils et logiciels Microsoft. Peut-être intéressant à mentionner.-->
-
-<!--AFC: Pour cette première section jusqu’ici, je pense que beaucoup de profs auraient avantage à lire ça tel quel, et je pense qu’il faudrait penser à des avenues de publication séparées pour s’adresser aux profs spécifiquement. Travailler avec des profs organisés, c’est motivant. Mais c’est aussi le gros problème du chapitre jusqu'ici: il faut changer le ton si on veut s’adresser à des étudiants débutants qui font des serpents et échelles, être moins impératif dans la formulation des recommandations et vanter les mérites des outils plutôt que forcer certaines manières de faire (éviter de mêler les chaînes est vraiment important, ça oui, mais faire le ménage régulièrement des messages épinglés, ça sonne un peu dull pour un étudiant au bac). Au-delà des recommandations que j’ai faites, je relirais le texte avec cette idée en tête.-->
-
-Tel que mentionné précédemment, plusieurs logiciels peuvent convenir à vos besoins. Puisque nous utilisons Slack, voici quelques raisons qui pourraient vous convaincre d'opter pour cette option ou de vous en éloigner. Sachez que cette liste n'est pas du tout exhaustive, mais reflète simplement quelques-unes de nos observations par rapport à notre outil de travail.
-
--   Avantages<!--Est-ce nécessaire de mettre en relief les sections avantages et inconvénients? Juste des paragraphes formatés normalement suffiraient, je crois.-->
-
-    L'utilisation de Slack est très intuitive. Nous l'utilisons régulièrement dans des cours, et les étudiants apprennent rapidement à l'utiliser. La distinction entre les chaînes publiques accessibles à tous les membres d'un espace d'équipe et les chaînes privées est claire et simple d'utilisation. Slack offre aussi une fonction de recherche, qui vous permet de retrouver des messages à travers les chaînes.<!--AFC: La dernière phrase n'est pas très surprenante. Si on veut parler des fonctions de recherche, il faudrait mentionner des aspects particulièrement positifs.--> L'intégration de<!--AFC: Ajouter "nombreuses", surtout! Il y en a beaucoup--> applications qui font le pont avec d'autres outils est fort appréciée. Enfin, Slack est utilisé partout dans le monde par des équipes de toutes les tailles et dans tous les domaines. C'est un outil très présent en recherche académique qui facilite la collaboration et la multidisciplinarité. Les chances sont élevées que vos partenaires utilisent déjà l'outil, ou au minimum en aient déjà entendu parlé.
-
--   Inconvénients
-
-    Si vous avez l'habitude d'utiliser les outils d'une suite, comme celles de Microsoft ou de Google, <!-- On parle ici de genre office ou google doc? -L-O -->il est possible que vous trouviez l'intégration de ces outils à Slack moins pratique que si vous utilisiez les plateformes proposées par ces compagnies. Également, gardez en tête que la version gratuite de Slack a plusieurs limitations. <!-- Je le garderai en tête c'est promis. --> Elle implique notamment un limite de temps par rapport à l'archivage des messages, que vous ne pourrez pas retracer après 90 jours. Les coûts pour utiliser Slack à son plein potentiel peuvent être élevés, mais puisque ce genre d'outils est de plus en plus répandu, il est fort possible que son utilisation soit financée par votre département.<!--AFC: Est-ce que c'est commun? Si c'est juste l'ULaval qui fait ça, je ne parlerais pas de financement par le département.--><!--AFC: Autre désavantage: on dit souvent que les fils de discussion dans Slack ne sont pas très intuitifs par rapport à d'autres plateformes. Je n'ai pas testé en Teams et personnellement j'aime bien les fils en Slack, mais peut-être investiguer et demander à Yannick et Cath Ouellet, qui semblent être de cet avis.-->
-
-### Gestion de tâches en équipe (Notion, Monday)
-
-### Gestion de versions en équipe (Pull-push, pull-requests)
+-->
+#### Gestion de versions en équipe (Pull-push, pull-requests)
 
 Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.
 
-#### Avantages
+##### Avantages
 
 Git, développé par Linus Torvalds en 2005<!--AFC: Ajouter référence ici-->, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (*commits*), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet. <!-- Ça pourrait être bien de dire que le bon Linus a aussi développé Linux. Quand même pas pire. -->
 
@@ -197,11 +82,11 @@ De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs 
 
 Enfin, l'aspect de code source ouvert de GitHub<!--AFC: Attention! GitHub en soi n'est PAS open source, seuls les projets partagés sur cette plateforme le sont.--> permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
 
-#### Inconvénients
+##### Inconvénients
 
 Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. De plus, bien que GitHub offre un niveau de gratuité pour les projets en code source ouvert, des frais peuvent être appliqués pour des fonctionnalités avancées ou pour des projets privés.<!--Cette section est trop courte. Il faut mentionner le fait que GitHub n'est pas open source (Git peut être utilisé solo en mode open source je crois mais je ne m'avancerais pas là-dessus).--><!--AFC: Je connais peu de gens qui paient pour GitHub. Sa gratuité rentre selon moi un peu plus dans la section des avantages, contrairement à Slack et sa limite de 90 jours...-->
 
-#### Comment les utiliser efficacement (en parallèle à Dropbox, etc.)<!--AFC: Ne jamais mettre de etc. dans un titre. Reformuler pour "Comment utiliser Git et GitHub efficacement"-->
+##### Comment les utiliser efficacement (en parallèle à Dropbox, etc.)<!--AFC: Ne jamais mettre de etc. dans un titre. Reformuler pour "Comment utiliser Git et GitHub efficacement"-->
 
 Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son dépôt Git<!--AFC: "entrepôt (*repository*)". Important de mentionner le terme en français suivi par le terme en anglais en italique entre parenthèses lors de la première mention, sinon c'est mêlant. Ensuite, on peut utiliser seulement le terme en français. D'ailleurs, un peu plus haut, j'ai traduit commit par dépôt, puis on parle de dépôt à un autre endroit mais je pensais que ça faisait référence aux commits et non aux repos. À vérifier.--> de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de commit<!--AFC: Dépôt?--> doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
 
@@ -211,7 +96,7 @@ L'utilisation de Git et de GitHub peut être complémentaire à d'autres outils 
 
 Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge<!--AFC: Les trois derniers sont open source, Mercurial je sais pas.-->. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub, mais il est important de comprendre pourquoi Git et GitHub restent les choix privilégiés pour les chercheurs en sciences sociales numériques.
 
-#### Pourquoi prioriser Git et GitHub pour les chercheurs en sciences sociales<!--AFC: Titre plus court--><!--AFC: Important! Section à regrouper avec la section "Avantages". C'est mêlant, ça semble se répéter. Il faut réorganiser ça.-->
+##### Pourquoi prioriser Git et GitHub pour les chercheurs en sciences sociales<!--AFC: Titre plus court--><!--AFC: Important! Section à regrouper avec la section "Avantages". C'est mêlant, ça semble se répéter. Il faut réorganiser ça.-->
 
 1.  *Intégration et adoption répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage<!--AFC: Ajouter "comme @stackoverflow23" puis référer au chapitre sur Stack Overflow-->, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
 
@@ -225,7 +110,7 @@ Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de
 
 En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce à l'open source. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
 
-#### Pratiques à éviter sur GitHub pour les chercheurs en sciences sociales<!--AFC: Même commentaire que pour la section précédente... Titre à revoir. Pourquoi parle-t-on juste de GitHub dans le titre ici mais pas le précédent?-->
+##### Pratiques à éviter sur GitHub pour les chercheurs en sciences sociales<!--AFC: Même commentaire que pour la section précédente... Titre à revoir. Pourquoi parle-t-on juste de GitHub dans le titre ici mais pas le précédent?-->
 
 Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l'efficacité de la recherche. Voici quelques éléments à éviter :
 
@@ -245,11 +130,11 @@ Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur 
 
 En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l'efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur.
 
-#### Exemple d'utilisation de Git et de GitHub pour un chercheur en sciences sociales
+##### Exemple d'utilisation de Git et de GitHub pour un chercheur en sciences sociales
 
 Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l'impact des médias sur l'opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.
 
-##### Étape 1 : Création d'un répertoire<!--définir répertoire. C'était pas dépôt ou entrepôt?--> local et initialisation de Git
+###### Étape 1 : Création d'un répertoire<!--définir répertoire. C'était pas dépôt ou entrepôt?--> local et initialisation de Git
 
 Ouvrez votre terminal<!--AFC: Ajouter "(MacOS, Linux) ou l'application Git Bash (Windows)"--> et naviguez vers le dossier où vous souhaitez enregistrer votre projet.
 
@@ -273,7 +158,7 @@ Initialisez Git dans ce répertoire.
 git init
 ```
 
-##### Étape 2 : Ajout de votre code et de vos fichiers
+###### Étape 2 : Ajout de votre code et de vos fichiers
 
 Ajoutez vos fichiers R contenant le code pour l'analyse des médias et des sondages dans le répertoire. Par exemple, vous pouvez avoir des fichiers *analyse_medias.R* et *analyse_sondages.R*.
 
@@ -283,7 +168,7 @@ Utilisez la commande `git status` pour vérifier l'état de vos fichiers.
 git status
 ```
 
-##### Étape 3 : Ajout, validation et commit<!--AFC: À traduire!--> de vos modifications
+###### Étape 3 : Ajout, validation et commit<!--AFC: À traduire!--> de vos modifications
 
 Ajoutez vos fichiers pour qu'ils soient prêts à être validés.
 
@@ -297,7 +182,7 @@ Validez vos modifications avec un message descriptif.
 git commit -m "Ajout du code d'analyse des médias et des sondages"
 ```
 
-##### Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
+###### Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
 
 Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom <!--AFC: Ajouter "sous la forme"-->*mon_projet*.
 
@@ -307,7 +192,7 @@ De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local
 git remote add origin https://github.com/votre-utilisateur/mon_projet.git
 ```
 
-##### Étape 5 : Push<!--AFC: Pousser (*push*)?--> de votre travail sur GitHub
+###### Étape 5 : Push<!--AFC: Pousser (*push*)?--> de votre travail sur GitHub
 
 Envoyez vos commits<!--AFC: --> locaux vers GitHub.
 
@@ -315,13 +200,13 @@ Envoyez vos commits<!--AFC: --> locaux vers GitHub.
 git push -u origin master
 ```
 
-##### Étape 6 : Collaboration avec vos collègues
+###### Étape 6 : Collaboration avec vos collègues
 
 Si vos collègues souhaitent contribuer à votre projet, ils peuvent *forker*<!--AFC: Trouver une traduction et mettre la version en anglais entre parenthèses en italique | Fourcher ? -LO --> votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
 
 Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *pull request*<!--AFC: Retourner plus haut et utiliser l'expression en français définie à ce moment-là, en mettant pull request entre parenthèses à ce moment-là. Ici, juste utiliser la traduction en français.--> pour vous demander de fusionner leurs modifications dans votre répertoire principal.
 
-##### Étape 7 : Pull<!--AFC: À traduire--> des modifications de vos collègues
+###### Étape 7 : Pull<!--AFC: À traduire--> des modifications de vos collègues
 
 Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
 
@@ -329,11 +214,11 @@ Lorsque vos collègues ont soumis des modifications et vous ont demandé de les 
 git pull origin master
 ```
 
-##### Étape 8 : Répéter le processus
+###### Étape 8 : Répéter le processus
 
 Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
 
-#### GitHub Desktop
+##### GitHub Desktop
 
 Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive.<!-- AFC: Mentionner que RStudio et VS Code intègrent aussi des éditeurs Git avec boutons plus conviviaux. En fait, je me demande si ces outils ne sont pas meilleurs que GitHub Desktop? --> Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel.<!--AFC: Ajoute référence à la figure juste après, et donner un titre à cette figure.-->
 
@@ -345,27 +230,226 @@ Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhens
 
 La décision entre l'utilisation du terminal et de GitHub Desktop dépend de vos préférences et de vos besoins. Pour les chercheurs qui débutent, GitHub Desktop offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes Git en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
 
-#### Conclusion<!--AFC: Renommer cette section, ce n'est pas la conclusion du livre. Aussi, je ne sais pas à quel niveau hiérarchique la placer.-->
+##### Conclusion<!--AFC: Renommer cette section, ce n'est pas la conclusion du livre. Aussi, je ne sais pas à quel niveau hiérarchique la placer.-->
 
 En utilisant Git et GitHub de manière stratégique, vous pouvez gérer efficacement votre projet de recherche en sciences sociales, collaborer avec vos collègues et rendre votre travail accessible tout en préservant la confidentialité des données sensibles. Ce processus contribue à un environnement de recherche collaboratif et structuré, essentiel pour mener à bien vos analyses sur l'impact des médias sur l'opinion publique.<!--AFC: Enlever la référence à cette recherche en particulier, nous ne sommes plus dans cette sous-section du chapitre.-->
 
-##Stockage de données (AWS, Valeria)
+### Gestion de communication
 
-### Entreposage de données sensibles
+La communication et la collaboration sont au cœur de la recherche académique. Sur tout projet collaboratif, la communication joue un rôle essentiel, et il est crucial de la gérer efficacement pour garantir le succès d’un projet. Avec la multiplication des lieux de travail et l’essor généralisé du travail à distance, les outils de gestion de communication sont désormais incontournables. Dans le monde académique, les projets impliquent souvent des chercheurs répartis dans plusieurs universités, voire plusieurs pays. Dans ces contextes, les échanges par courriel atteignent rapidement leurs limites.
+
+Ainsi, de nombreux milieux professionnels, y compris dans la recherche, ont adopté des outils tels que Microsoft Teams, Slack, et Mattermost pour organiser et structurer la collaboration. Ces plateformes permettent de centraliser les échanges, suivre l’évolution des tâches, et faciliter la coordination en temps réel ou de manière asynchrone.
+
+En tant qu’étudiants en sciences sociales, vous serez probablement amenés à utiliser un ou plusieurs de ces outils au cours de votre parcours académique. Au-delà de simplement savoir les utiliser comme membre d’une équipe, savoir les optimiser est une compétence de plus en plus valorisée dans les milieux académiques et professionnels. Ces outils ne sont pas uniquement des espaces de discussion : ils facilitent l’organisation du travail collaboratif et d'équipes de travail, ce qui permet de mieux répondre aux défis du travail à distance et à la coordination de projets complexes.
+
+Il existe plusieurs outils permettant un telle coordination. Nous comparons trois de ces outils, afin d'évaluer leurs forces et leurs différences, et comment est-ce qu'ils sont utilisés dans le domaine. Teams est issue de la suite Microsoft. Il est souvent inclu dans un abonnement Microsoft 365, qui est lui même fourni par certaines institutions. Si tel est le cas, cela rend cet outil très accessible. C'est d'ailleurs une des forces de Teams : Les utilisateurs habitués aux autres outils de la suite Microsoft trouvent la compatibilité pratique. L'utilisation de Teams en parallèle avec Microsoft Word, Excel OneDrive et autres centralise tous les outils nécessaires au même endroit. Cette intégration dans la suite Microsoft peut être perçue comme un désavantage. Ceux qui n'utilisent pas les fonctionnalités Microsoft peuvent trouver Teams peu flexible et contraignant, et sa compatibilité avec d'autres outils difficile. Teams est populaire dans tous les milieus, que ce soit académique, dans le privé ou dans le public. Microsoft offre de la documentation abondante, ce qui permet d'apprendre facilement son utilisation. 
+
+Teams est entré sur le marché afin d'entrer en compétition avec le deuxième outil présenté : Slack. Slack a été l’un des premiers outils à offrir une solution de messagerie instantanée dédiée aux équipes de travail, intégrant des fonctionnalités collaboratives avancées comme les canaux de discussion et une interface simple d’utilisation. Slack offre une version gratuite limitée dans ses fonctionnalités, ce qui joue sur son accessibilité. Sa version payante, avec un prix à l'utilisateur, est toutefois très compatible et efficace. Ses applications permettent d'intégrer d'autres outils comme Google Drive, Dropbox, Github et Notion. C'est une des plus grande force de Slack : sa compatibilité avec d'autres outils très populaire qui ne font pas partie de sa propriété, comme c'est le cas avec Microsoft Teams. Étant donné sa percée dans le monde professionnel, Slack compte une large communauté d'utilisateurs, et demeure très populaire dans le monde académique. 
+
+Moins populaire que les deux premiers outils proposés, Mattermost, cependant, est libre d'accès. C'est donc l'option la plus accessible, et elle permet le plus grand contrôle, le plus de transparence, et la plus grande flexibilité. Cette flexibilité peut nécessité une courbe d'apprentissage plus importante, mais étant libre d'accès, toute ressource par rapport à sa conception ou à son utilisation est disponible en ligne. Mattermost est donc très compatible à d'autres outils, mais peut nécessité des compétences un peu plus pointues pour permettre ces compatibilités. Autrement dit, les utilisateurs de Mattermost se font moins prendre par la main, mais les possibilité qu'offre sa plateforme flexible sont plus grandes. La popularité de l'outil repose donc davantage parmis des groupes de développeurs, et moins dans des entreprises ou dans des groupes de recherche académiques. 
+
+library(tinytable)
+library(tidyverse)
+
+# First table
+tbl_resume_chap_X <- tibble(
+    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    "Teams" = c('Limitée', 
+              'Oui', 
+              'Non', 
+              'Avec les outils Microsoft', 
+              'Non',
+              'Oui'),
+    "Slack" = c('Limitée', 
+              'Oui', 
+              'Oui', 
+              'Oui', 
+              'Non', 
+              'Oui'),          
+    "Mattermost" = c('Oui', 
+                   'Non', 
+                   'Non', 
+                   'Limitée', 
+                   'Oui',
+                   'Le plus adaptable')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
+
+Nous apprécions particulièrement son interface intuitive, ses canaux de discussion, et son intégration avec d'autres outils populaires que nous utilisons régulièrement. Slack s'est avéré être une solution flexible et accessible, capable de répondre aux besoins variés de nos équipes académiques.
+
+### Gestion de données
+
+Dans le cadre de la recherche académique en sciences sociales, la gestion des données occupe une place cruciale. La manière dont vous entreposez, gérez, et partagez vos données peut avoir un impact direct sur la sécurité, la confidentialité, et la reproductibilité de vos recherches. Que ce soit pour des données quantitatives, des résultats d'enquêtes ou des transcriptions d'entretiens, les outils de gestion de données permettent de centraliser, sécuriser et organiser les fichiers tout en facilitant la collaboration avec d’autres chercheurs.
+
+Aujourd’hui, les chercheurs manipulent une quantité croissante de données. L'accès facile aux fichiers, la possibilité de les partager rapidement avec des collègues et la sauvegarde automatique sont devenus des impératifs dans la gestion de projet. De plus, dans un environnement où la collaboration à distance est omniprésente, la gestion efficace des données permet de maintenir un haut niveau de productivité et de transparence dans les travaux de recherche.
+
+<!-- #### Code en open access (Repository github)
+ (À valider si on parle de github. Je ne pense pas que c'est de la gestion de données. Et puisqu'on ne parle plus d'enregistrement de protocole... )
+L'enregistrement de protocole est seulement un volet de la transparence en science. De même que pour les protocoles, la mise à disposition du code source employé pour les analyses permet non seulement de vérifier les résultats publiés mais aussi de renforcer la confiance dans les conclusions de la recherche. Le partage du code, structuré et commenté, via une plateforme comme GitHub, s'inscrit dans cette démarche de recherche ouverte.
+
+Les langages de programmation sont très fluides et décentralisés, et les codes employés pour arriver à un même résultat peuvent varier d'une personne à l'autre. Rendre son code public permet la reproductibilité et la transparence dans la manipulation et l'analyse de ses données. Plusieurs revues exigent de rendre le code en libre accès lors d'une soumission.
+
+1.  Préparation du code
+
+
+
+a.  ReadMe
+b.  Structuration du code + commentaires
+
+
+
+2.  Dépot du code sur github
+
+
+
+a.  Création du repo
+b.  Gestion des version (git) -->
+
+Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage cloud se révèlent indispensables. Voici quelques avantages d'un entreposage sur le cloud pour la recherche :
+
+1. *Sécurité des données* : Que vous travailliez avec des données sensibles ou non, la sécurité est essentielle pour protéger l’intégrité de vos fichiers. De bons outils garantissent que vos données ne sont pas exposées à des risques tels que des piratages ou des pertes accidentelles.
+
+2. *Collaboration et partage* : En particulier dans le cadre de collaborations interinstitutionnelles, il est indispensable d’avoir des outils qui permettent de partager facilement des fichiers avec vos collègues, où qu’ils se trouvent.
+
+3. *Sauvegarde et versionnage* : Une bonne gestion des données permet de garder des copies de sauvegarde de vos fichiers et de suivre l’historique des versions, vous offrant la possibilité de revenir à une version antérieure si nécessaire.
+
+Pour répondre aux besoins variés des chercheurs, des dizaines d'outils de gestion de données ont émergé. Nous allons ici comparer quatre d'entre eux : Dropbox, Google Drive, Amazon Web Services, et Microsoft OneDrive.
+
+Dropbox est très utilisé dans plusieurs milieux, même à titre d'utilisation personnelle. Dans le milieu académique, le partage de fichiers peu volumineux par Dropbox est très fréquent. Son utilisation est relativement accessible : 2 Go sont offerts gratuitement, puis un abonnement est nécessaire pour entreposer d'avantage. Dropbox se démarque par sa popularité et par son interface intuitive, s'intégrant facilement dans le gestionnaire de fichiers. Bien que ce soit simple d'utilisation, Dropbox ne permet pas une grande flexibilité et réplicabilité dès qu'il y a un besoin plus important pour des données à gros volume ou plus sensible. Dropbox est ainsi très utile dans le cadre de gestion de données collaborative relativement simple.
+
+Google Drive est très facile d'utilisation par son intégration au sein des outils Google. La plateforme, en générale, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. Google Drive offre 15 Go gratuits, et son utilisation est simple et intuitive. Cependant, son utilisation en local n'est pas très adaptée. Il nécessite souvent une interaction via son interface web pour le téléchargement ou le partage de fichiers. Si vous codez des analyses statistiques et manipulez des jeux de données en R, par exemple, Google Drive est peu adapté pour la sauvegarde de jeux de données directement dans votre arborescence. 
+
+Microsoft OneDrive Fait partie de la suite Microsoft 365. C'est donc un choix judicieux pour les utilisateurs des outils Microsoft, pour leur compatibilité. Comme Dropbox, OneDrive permet la sauvegarde de fichiers en local, ce qui facilité son utilisation pour l'entreposage de fichiers manipulés avec un language de programmation. OneDrive est généralement perçu comme étant moins simple et rapide pour sa synchronisation que Dropbox, mais sa valeur de centralisation est indégnable si la suite Microsoft est employée. 
+
+Amazon Web Services (AWS) répond à un autre type de demandes. Sa capacité de stockage gratuite est limitée, puis son coût est déterminé en fonction de la capacité d'entreposage et de calcul utilisé. AWS est l'option la plus sécuritaire pour les données sensibles, et de loin la plus puissante. C'est donc une option intéressante pour un projet qui contient un grand volume de données. AWS est très utilisé dans le monde du développement, et fourni des tones de ressources, que ce soit en ligne ou par ses représentants. L'outil permet la construction d'une infrastructure de données sur mesure, ce qui permet une flexibilité et une adaptabilité inconparable, mais des ressources et des compétences équivalentes. Si vous entreposez quelques jeux de données, AWS ne vaut pas l'investissement en argent et en temps. Mais si vos activités nécessite l'entreposage, la manipulation et l'extraction de données en continu, par exemple, alors les autres options mentionnées dans ce chapitre vont rapidement vous limiter. AWS est la solution d'envergure à des projets d'envergure.
+
+# Second table
+tbl_resume_chap_Y <- tibble(
+    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    "Dropbox" = c('Limitée - Abonnement mensuel', 
+                'Oui', 
+                'Oui', 
+                'Oui', 
+                'Limitée', 
+                'Limitée'),
+    "Google Drive" = c('Oui', 
+                     'Oui', 
+                     'Oui', 
+                     'Avec les outils Google', 
+                     'Moyenne',
+                     'Oui'),
+    "OneDrive" = c('Limitée', 
+                 'Oui', 
+                 'Limitée', 
+                 'Avec les outils Microsoft', 
+                 'Moyenne',
+                 'Moyenne'),
+    "AWS" = c('Non', 
+            'Oui', 
+            'Limitée', 
+            'Oui', 
+            'Oui',
+            'Oui')
+)
+
+tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils')
+
+
+
+<!-- ### Entreposage de données sensibles
 
 Lorsqu'il s'agit d'entreposer des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n'est pas adapté à l'entreposage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source ouvert. Une solution courante est d'utiliser des services de cloud sécurisés, tels qu'AWS, qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.
 
-AWS regroupe un ensemble de services *cloud* <!-- Infonuagiques --> proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
+AWS regroupe un ensemble de services *cloud*  proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
 
 1.  *Sécurité robuste* : AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
 
-2.  *Scalabilité* :<!--AFC: Trouver une traduction.--> AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
+2.  *Scalabilité* : AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
 
 3.  *Flexibilité* : AWS propose une variété de services adaptés à différentes utilisations, allant de l'entreposage de données au calcul intensif pour l'analyse avancée.
 
 4.  *Collaboration simplifiée* : Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
 
-AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur<!--AFC: Ça s'adresse toujours à des étudiants qui vont faire des serpents et échelles?-->, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable.
+AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable. -->
+
+
+#### Conclusion
+
+L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.
+
+## Manuel d'instruction :
+
+### Gestion de tâches
+
+### Gestion de communication
+
+Notre outil de communication sélectionné est Slack. Nous vous proposons quelques conseils pratiques pour bien l'utiliser en équipe, mais aussi de façon plus personnalisée. Bien structurer votre utilisation de Slack vous aidera à mieux collaborer avec vos collègues, à suivre les conversations importantes, et à éviter la confusion entre les différentes chaînes de discussion. 
+
+##### Structuration
+
+La structure des chaînes de discussion est cruciale pour éviter le chaos et la perte d’informations. En début de projet, réfléchissez à la manière dont vous allez organiser les discussions dans Slack. Voici quelques principes de base :
+
+- *Chaînes par projet* : Créez une chaîne pour chaque projet ou thème de recherche. Par exemple, si vous travaillez sur un projet de sondage, créez une chaîne dédiée avec un nom suffisamment précis, comme #sondage_religiosité.
+
+- *Sous-chaînes pour les sujets complexes* : Si une chaîne devient trop active et que les sujets abordés sont variés, envisagez de créer des sous-chaînes pour désagrégés les discussions. Cela évite de perdre le fil et de l'information importante. Une sous-chaîne pourrait porter le nom #sondage_religiosité_analyse, par exemple.
+
+- *Fils de discussion* : Répondez à des messages dans les fils de discussion pour permettre le roulement d'autres sujets dans la chaîne. Cela évite que les discussions s'entremêlent.
+
+- *Marques-pages et messages épinglés* : Quand un message est particulièrement important, épinglez le à la chaîne. Vous pouvez également placer en marque-page des documents qui réfèrent à la chaîne. Par exemple, si une chaîne porte sur une demande de financement en rédaction, vous pourriez mettre en marque-page le document dans lequel vous rédigez, où les consignes de la demande, pour y avoir accès rapidement.
+
+- *Préfixes pour l’organisation* : Utilisez des préfixes pour classer les chaînes selon des thèmes ou des projets. Cela permet de mieux s’y retrouver quand le nombre de chaînes augmente (#sondage_, #finacement_). Si vous utiliser un logiciel de gestion de tâches, alors vos noms de chaînes devraient calquer la typologie que vous utilisez avec vos autres outils. C'est un élément important pour éviter la confusion.
+
+
+ <!-- ##### Maintenance
+(Je crois que cette section n'est pas nécessaire. Ça s'adresse pas vraiment à des étudiants en général. Qui a vraiment accès à l'archivage des canaux?)
+Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n'est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d'équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, puisque vous pourrez toujours les désarchiver quand cela sera nécessaire.  Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Faites le tour de ce qui est épinglé à l'occasion pour vérifier si c'est encore pertinent. Cela peut paraître énergivore, mais l'efficacité de votre travail d'équipe va en bénéficier. Également, rappelez aux membres de votre équipe d'utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes. Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d'équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l'usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux. Vous pouvez alors retourner à la planche à dessin. Assurez-vous que toute l'équipe comprenne bien comment utiliser Slack. Si ce n'est pas le cas, formez-les. Une structure adaptée et une équipe bien formée peuvent faire des miracles. -->
+
+##### Collaboration
+
+La transparence est un des principes clés de Slack, et il est important que la majorité des discussions liées aux projets se déroulent dans les chaînes publiques et non dans des messages privés. Tentez de suivre ces lignes directrices :
+
+- *Favoriser les conversations dans les chaînes* : Si une discussion concerne tout le monde sur un projet, évitez d’utiliser des messages privés. Cela permet à tous les membres de rester informés et de participer aux discussions importantes.
+
+- *Gestion des membres* : Veillez, comme équipe, à ce que les bonnes personnes soient dans les bonnes chaînes. Chaque membre d’une chaîne doit pouvoir contribuer à la conversation sans être submergé par des informations inutiles.
+
+- *Chaînes dédiées aux partenaires externes* : Si vous travaillez avec des partenaires externes à votre équipe de travail, créez des chaînes spécifiques pour eux. Cela vous permet de garder vos conversations internes séparées des discussions externes, tout en facilitant la collaboration avec vos partenaires.
+
+##### Optimisation personnelle
+
+Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter l'utilisation, L'organisation personnelle de votre Slack est également importante. Elle permet de vous retrouver et d'apprivoiser votre outil. Voici quelques conseils à ce propos :
+
+- *Sections et favoris* : Organisez vos chaînes en créant des sections thématiques et des favoris. Par exemple, regroupez les chaînes de projet dans une section et les chaînes de financement dans une autre. Vous pouvez aussi sélectionner les chaines que vous utilisez davantage dans une section de favoris pour y accéder plus rapidement.
+
+- *Paramètres de notification* : Ajustez vos notifications pour ne pas être submergé. Vous pouvez choisir d’être alerté seulement pour les chaînes prioritaires et désactiver les notifications pour les discussions moins urgentes.
+
+- *Intégrations avec d’autres outils* : Slack offre des intégrations avec des outils que vous utilisez peut-être déjà, comme Google Calendar, GitHub ou Notion. Explorez ces intégrations pour recevoir des notifications directement dans Slack et automatiser certains processus.
+
+- *Fonctionnalités Slack* : Slack offre plusieurs fonctionnalités pour vous aider dans la gestion de vos messages. Explorez ces fonctionnalités, telles que *Activité*, *Plus tard* et *À voir*. Chaque personne fonctionne différemment, et ces fonctionnalités vous permettent de trouver ce qui vous convient le mieux.
+
+### Gesstion de données
+
+Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logique. Créez des dossiers spécifiques pour chaque projet et partagez-les avec les membres de votre équipe. Pour éviter de pousser des fichiers sensibles sur GitHub, ajoutez le nom de dossier à exclure dans un fichier *.gitignore*<!--AFC: Ajouter "&nbsp;: cela évitera qu'il soit partagé à d'autres personnes ayant accès au [repository à traduire]." Important de préciser aussi que le .gitignore est partagé, donc une personne mal intentionnée pourrait modifier le contenu du .gitignore "par accident" pour avoir accès à un fichier sensible. Il faut rester vigilant avec les commits.-->.
+
+![image1](images/chapitre8_dropbox.png)
+
+<!--AFC: Parler de l'image?-->
+
+Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
+
+Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub.
+
+Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.--> C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe.
 
 #### Exemple d'utilisation d'AWS pour entreposer et accéder à des données de sondages dans RStudio
 
@@ -401,9 +485,23 @@ Après avoir effectué ses analyses, le chercheur peut choisir de conserver les 
 
 Dropbox se concentre principalement sur l'entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services *cloud*, y compris l'entreposage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?-->
 
-### Conclusion
+## L'importance d'une méthode de travail efficace
+<!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente -->
+Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
 
-L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche.
+Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation :
+
+1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
+
+2.  **Logiciels de gestion de versions décentralisé** : Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
+
+3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.
+
+Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
+
+
+
+
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 
@@ -414,3 +512,5 @@ L'entreposage des données est une étape cruciale dans la recherche en sciences
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
 ```
+
+
