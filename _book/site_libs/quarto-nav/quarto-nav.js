@@ -5,9 +5,51 @@ const headroomChanged = new CustomEvent("quarto-hrChanged", {
   composed: false,
 });
 
+<<<<<<< HEAD
+const announceDismiss = () => {
+  const annEl = window.document.getElementById("quarto-announcement");
+  if (annEl) {
+    annEl.remove();
+
+    const annId = annEl.getAttribute("data-announcement-id");
+    window.localStorage.setItem(`quarto-announce-${annId}`, "true");
+  }
+};
+
+const announceRegister = () => {
+  const annEl = window.document.getElementById("quarto-announcement");
+  if (annEl) {
+    const annId = annEl.getAttribute("data-announcement-id");
+    const isDismissed =
+      window.localStorage.getItem(`quarto-announce-${annId}`) || false;
+    if (isDismissed) {
+      announceDismiss();
+      return;
+    } else {
+      annEl.classList.remove("hidden");
+    }
+
+    const actionEl = annEl.querySelector(".quarto-announcement-action");
+    if (actionEl) {
+      actionEl.addEventListener("click", function (e) {
+        e.preventDefault();
+        // Hide the bar immediately
+        announceDismiss();
+      });
+    }
+  }
+};
+
 window.document.addEventListener("DOMContentLoaded", function () {
   let init = false;
 
+  announceRegister();
+
+=======
+window.document.addEventListener("DOMContentLoaded", function () {
+  let init = false;
+
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
   // Manage the back to top button, if one is present.
   let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollDownBuffer = 5;
@@ -85,6 +127,20 @@ window.document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+<<<<<<< HEAD
+  function dashboardOffset() {
+    const dashboardNavEl = window.document.getElementById(
+      "quarto-dashboard-header"
+    );
+    if (dashboardNavEl !== null) {
+      return dashboardNavEl.clientHeight;
+    } else {
+      return 0;
+    }
+  }
+
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
   function updateDocumentOffsetWithoutAnimation() {
     updateDocumentOffset(false);
   }
@@ -92,7 +148,11 @@ window.document.addEventListener("DOMContentLoaded", function () {
   function updateDocumentOffset(animated) {
     // set body offset
     const topOffset = headerOffset();
+<<<<<<< HEAD
+    const bodyOffset = topOffset + footerOffset() + dashboardOffset();
+=======
     const bodyOffset = topOffset + footerOffset();
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
     const bodyEl = window.document.body;
     bodyEl.setAttribute("data-bs-offset", topOffset);
     bodyEl.style.paddingTop = topOffset + "px";
@@ -205,9 +265,15 @@ window.document.addEventListener("DOMContentLoaded", function () {
   // Observe size changed for the header
   const headerEl = window.document.querySelector("header.fixed-top");
   if (headerEl && window.ResizeObserver) {
+<<<<<<< HEAD
+    const observer = new window.ResizeObserver(() => {
+      setTimeout(updateDocumentOffsetWithoutAnimation, 0);
+    });
+=======
     const observer = new window.ResizeObserver(
       updateDocumentOffsetWithoutAnimation
     );
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
     observer.observe(headerEl, {
       attributes: true,
       childList: true,
@@ -226,6 +292,10 @@ window.document.addEventListener("DOMContentLoaded", function () {
     const links = window.document.querySelectorAll("a");
     for (let i = 0; i < links.length; i++) {
       if (links[i].href) {
+<<<<<<< HEAD
+        links[i].dataset.originalHref = links[i].href;
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
         links[i].href = links[i].href.replace(/\/index\.html/, "/");
       }
     }
@@ -233,7 +303,11 @@ window.document.addEventListener("DOMContentLoaded", function () {
     // Fixup any sharing links that require urls
     // Append url to any sharing urls
     const sharingLinks = window.document.querySelectorAll(
+<<<<<<< HEAD
+      "a.sidebar-tools-main-item, a.quarto-navigation-tool, a.quarto-navbar-tools, a.quarto-navbar-tools-item"
+=======
       "a.sidebar-tools-main-item"
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
     );
     for (let i = 0; i < sharingLinks.length; i++) {
       const sharingLink = sharingLinks[i];

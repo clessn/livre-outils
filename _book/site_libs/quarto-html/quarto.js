@@ -9,7 +9,11 @@ const layoutMarginEls = () => {
   // Find any conflicting margin elements and add margins to the
   // top to prevent overlap
   const marginChildren = window.document.querySelectorAll(
+<<<<<<< HEAD
+    ".column-margin.column-container > *, .margin-caption, .aside"
+=======
     ".column-margin.column-container > * "
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
   );
 
   let lastBottom = 0;
@@ -18,6 +22,12 @@ const layoutMarginEls = () => {
       // clear the top margin so we recompute it
       marginChild.style.marginTop = null;
       const top = marginChild.getBoundingClientRect().top + window.scrollY;
+<<<<<<< HEAD
+      if (top < lastBottom) {
+        const marginChildStyle = window.getComputedStyle(marginChild);
+        const marginBottom = parseFloat(marginChildStyle["marginBottom"]);
+        const margin = lastBottom - top + marginBottom;
+=======
       console.log({
         childtop: marginChild.getBoundingClientRect().top,
         scroll: window.scrollY,
@@ -26,10 +36,13 @@ const layoutMarginEls = () => {
       });
       if (top < lastBottom) {
         const margin = lastBottom - top;
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
         marginChild.style.marginTop = `${margin}px`;
       }
       const styles = window.getComputedStyle(marginChild);
       const marginTop = parseFloat(styles["marginTop"]);
+<<<<<<< HEAD
+=======
 
       console.log({
         top,
@@ -37,6 +50,7 @@ const layoutMarginEls = () => {
         marginTop,
         total: top + marginChild.getBoundingClientRect().height + marginTop,
       });
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
       lastBottom = top + marginChild.getBoundingClientRect().height + marginTop;
     }
   }
@@ -46,7 +60,19 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // Recompute the position of margin elements anytime the body size changes
   if (window.ResizeObserver) {
     const resizeObserver = new window.ResizeObserver(
+<<<<<<< HEAD
+      throttle(() => {
+        layoutMarginEls();
+        if (
+          window.document.body.getBoundingClientRect().width < 990 &&
+          isReaderMode()
+        ) {
+          quartoToggleReader();
+        }
+      }, 50)
+=======
       throttle(layoutMarginEls, 50)
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
     );
     resizeObserver.observe(window.document.body);
   }
@@ -97,7 +123,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       if (link.href.indexOf("#") !== -1) {
         const anchor = link.href.split("#")[1];
         const heading = window.document.querySelector(
+<<<<<<< HEAD
+          `[data-anchor-id="${anchor}"]`
+=======
           `[data-anchor-id=${anchor}]`
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
         );
         if (heading) {
           // Add the class
@@ -137,8 +167,15 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       window.innerHeight + window.pageYOffset >=
       window.document.body.offsetHeight
     ) {
+<<<<<<< HEAD
+      // This is the no-scroll case where last section should be the active one
       sectionIndex = 0;
     } else {
+      // This finds the last section visible on screen that should be made active
+=======
+      sectionIndex = 0;
+    } else {
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
       sectionIndex = [...sections].reverse().findIndex((section) => {
         if (section) {
           return window.pageYOffset >= section.offsetTop - sectionMargin;
@@ -320,6 +357,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           for (const child of el.children) {
             child.style.opacity = 0;
             child.style.overflow = "hidden";
+<<<<<<< HEAD
+            child.style.pointerEvents = "none";
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
           }
 
           nexttick(() => {
@@ -361,6 +402,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
               const clone = child.cloneNode(true);
               clone.style.opacity = 1;
+<<<<<<< HEAD
+              clone.style.pointerEvents = null;
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
               clone.style.display = null;
               toggleContents.append(clone);
             }
@@ -435,6 +480,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           for (const child of el.children) {
             child.style.opacity = 1;
             child.style.overflow = null;
+<<<<<<< HEAD
+            child.style.pointerEvents = null;
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
           }
 
           const placeholderEl = window.document.getElementById(
@@ -742,6 +791,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     // Process the collapse state if this is an UL
     if (el.tagName === "UL") {
       if (tocOpenDepth === -1 && depth > 1) {
+<<<<<<< HEAD
+        // toc-expand: false
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
         el.classList.add("collapse");
       } else if (
         depth <= tocOpenDepth ||
@@ -760,10 +813,16 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   };
 
   // walk the TOC and expand / collapse any items that should be shown
+<<<<<<< HEAD
+  if (tocEl) {
+    updateActiveLink();
+    walk(tocEl, 0);
+=======
 
   if (tocEl) {
     walk(tocEl, 0);
     updateActiveLink();
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
   }
 
   // Throttle the scroll event and walk peridiocally
@@ -782,6 +841,13 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   window.addEventListener(
     "resize",
     throttle(() => {
+<<<<<<< HEAD
+      if (tocEl) {
+        updateActiveLink();
+        walk(tocEl, 0);
+      }
+=======
+>>>>>>> d457b63a753613e5b19b2345f1fd26785d08c47a
       if (!isReaderMode()) {
         hideOverlappedSidebars();
       }
