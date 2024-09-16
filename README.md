@@ -48,7 +48,9 @@ Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group
 
 *Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
 
-Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le dossier .git du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le repo du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
+
+Vous remarquerez qu'il y a déjà un fichier .bib dans le dossier. Vous pouvez le supprimer et le remplacer par le fichier que vous venez de générer.
 
 #### Utilisation de Zotero lors de l'écriture
 
