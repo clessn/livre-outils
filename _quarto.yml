@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: book
+  output-dir: _book
 
 book:
   title: "Outils de recherche en sciences sociales numériques"
