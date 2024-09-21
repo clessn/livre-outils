@@ -320,41 +320,41 @@ Dropbox offre un suivi automatique des modifications, ce qui vous permet de remo
 
 Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub.
 
-Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.--> C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe.
+<!-- Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.--> <!--C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe. -->
 
-#### Exemple d'utilisation d'AWS pour entreposer et accéder à des données de sondages dans RStudio
+<!-- #### Exemple d'utilisation d'AWS pour entreposer et accéder à des données de sondages dans RStudio -->
 
-Imaginez un jeune chercheur en sciences sociales qui travaille sur une analyse comparative de données de sondages recueillies sur plusieurs décennies. Pour maintenir la sécurité des données sensibles et faciliter l'accès pour les analyses dans RStudio, il décide d'utiliser AWS pour l'entreposage et la gestion de ses données.<!--AFC: Est-ce vraiment un scénario réaliste? Je suis ouvert à être convaincu, mais il les avantages mentionnés dans la section précédente me semblent insuffisants pour justifier qu'un jeune étudiant décide d'y investir du temps. C'est vraiment pas quelque chose que je recommanderais à n'importe qui. La section actuelle serait peut-être pertinente, encore une fois, à publier séparément... C'est super bon pour les profs honnêtement, faut pas perdre ça. Mais je pense pas que c'est adapté au public visé. Un étudiant peut se créer son propre Notion, son propre compte GitHub, des repos Git partagés, un site Web avec WordPress, etc. mais il faut vraiment être crinqué pour y aller avec AWS ou pour créer un espace de travail Slack à utiliser par une équipe de travail, non?-->
+<!-- Imaginez un jeune chercheur en sciences sociales qui travaille sur une analyse comparative de données de sondages recueillies sur plusieurs décennies. Pour maintenir la sécurité des données sensibles et faciliter l'accès pour les analyses dans RStudio, il décide d'utiliser AWS pour l'entreposage et la gestion de ses données.<!--AFC: Est-ce vraiment un scénario réaliste? Je suis ouvert à être convaincu, mais il les avantages mentionnés dans la section précédente me semblent insuffisants pour justifier qu'un jeune étudiant décide d'y investir du temps. C'est vraiment pas quelque chose que je recommanderais à n'importe qui. La section actuelle serait peut-être pertinente, encore une fois, à publier séparément... C'est super bon pour les profs honnêtement, faut pas perdre ça. Mais je pense pas que c'est adapté au public visé. Un étudiant peut se créer son propre Notion, son propre compte GitHub, des repos Git partagés, un site Web avec WordPress, etc. mais il faut vraiment être crinqué pour y aller avec AWS ou pour créer un espace de travail Slack à utiliser par une équipe de travail, non?--> -->
 
-##### Étape 1 : Création d'un compte AWS et configuration
+<!-- ##### Étape 1 : Création d'un compte AWS et configuration -->
 
-Le chercheur crée un compte AWS et configure ses paramètres de sécurité, y compris la configuration de l'authentification à deux facteurs pour renforcer la sécurité de son compte.
+<!-- Le chercheur crée un compte AWS et configure ses paramètres de sécurité, y compris la configuration de l'authentification à deux facteurs pour renforcer la sécurité de son compte. -->
 
-##### Étape 2 : Création d'un espace d'entreposage S3
+<!-- ##### Étape 2 : Création d'un espace d'entreposage S3 -->
 
-Le chercheur crée un compartiment Amazon S3 (Simple Storage Service) pour entreposer ses données de sondage. Il choisit une région AWS et définit les paramètres de sécurité appropriés, tels que le chiffrement des données.
+<!-- Le chercheur crée un compartiment Amazon S3 (Simple Storage Service) pour entreposer ses données de sondage. Il choisit une région AWS et définit les paramètres de sécurité appropriés, tels que le chiffrement des données. -->
 
-##### Étape 3 : Transfert des données vers Amazon S3
+<!-- ##### Étape 3 : Transfert des données vers Amazon S3 -->
 
-Le chercheur transfère les données de sondage dans son compartiment Amazon S3 à l'aide de l'interface en ligne AWS ou d'outils d'importation.
+<!-- Le chercheur transfère les données de sondage dans son compartiment Amazon S3 à l'aide de l'interface en ligne AWS ou d'outils d'importation. -->
 
-##### Étape 4 : Configuration des autorisations
+<!-- ##### Étape 4 : Configuration des autorisations -->
 
-Pour sécuriser davantage les données, le chercheur configure les autorisations d'accès aux données dans Amazon S3. Il attribue des rôles et des politiques d'accès spécifiques aux utilisateurs, garantissant que seules les personnes autorisées peuvent accéder aux données.
+<!-- Pour sécuriser davantage les données, le chercheur configure les autorisations d'accès aux données dans Amazon S3. Il attribue des rôles et des politiques d'accès spécifiques aux utilisateurs, garantissant que seules les personnes autorisées peuvent accéder aux données. -->
 
-##### Étape 5 : Configuration d'accès dans RStudio
+<!-- ##### Étape 5 : Configuration d'accès dans RStudio -->
 
-Le chercheur installe le package *aws.s3* dans RStudio pour accéder à ses données entreposées dans Amazon S3. Il configure également les informations d'identification AWS dans son environnement RStudio.
+<!-- Le chercheur installe le package *aws.s3* dans RStudio pour accéder à ses données entreposées dans Amazon S3. Il configure également les informations d'identification AWS dans son environnement RStudio. -->
 
-##### Étape 6 : Accès et analyse des données dans RStudio
+<!-- ##### Étape 6 : Accès et analyse des données dans RStudio -->
 
-À l'aide du package *aws.s3*, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements. <!-- C'est quand même plus compliqué que ça. Voir commentaires à la fin.-->
+<!-- À l'aide du package *aws.s3*, le chercheur peut maintenant accéder à ses données directement dans RStudio par quelques lignes de code. Il peut charger les données dans des structures de données R et effectuer des analyses statistiques, des visualisations et des croisements. <!-- C'est quand même plus compliqué que ça. Voir commentaires à la fin.--> -->
 
-##### Étape 7 : Sécurité et conservation des données
+<!-- ##### Étape 7 : Sécurité et conservation des données -->
 
-Après avoir effectué ses analyses, le chercheur peut choisir de conserver les données de sondage dans Amazon S3 en utilisant les politiques de conservation appropriées. Il peut également archiver des copies de sauvegarde pour garantir l'intégrité des données à long terme.
+<!-- Après avoir effectué ses analyses, le chercheur peut choisir de conserver les données de sondage dans Amazon S3 en utilisant les politiques de conservation appropriées. Il peut également archiver des copies de sauvegarde pour garantir l'intégrité des données à long terme. -->
 
-Dropbox se concentre principalement sur l'entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services *cloud*, y compris l'entreposage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?-->
+<!-- Dropbox se concentre principalement sur l'entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services *cloud*, y compris l'entreposage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?--> 
 
 
 ## Les outils de gestion de la communication
@@ -430,9 +430,11 @@ Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répond
 
 Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
 
-
-library(tinytable)
+```{r}
+#| echo: false
+#| warning: false
 library(tidyverse)
+library(tinytable)
 
 # First table
 tbl_resume_chap_X <- tibble(
@@ -463,7 +465,13 @@ tbl_resume_chap_X <- tibble(
 )
 
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
+```
 
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
 
 # Second table
 tbl_resume_chap_Y <- tibble(
@@ -500,16 +508,16 @@ tbl_resume_chap_Y <- tibble(
 )
 
 tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils')
-
+```
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 
 <!-- Les auteurs devraient aborder d'autres logiciels que Slack, tel que d'autres. -->
 
-```{=html}
+
 <!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
-```
+
 
 
