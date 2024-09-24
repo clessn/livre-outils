@@ -80,7 +80,7 @@ Loin de dire que l'utilisation d'outils n'est pas valorisée en Agilité, la pre
 
 La deuxième valeur répond à un impératif de la science: offrir des contributions originales répondant à des lacunes de la littérature. Le chapitre 4 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'étude et à repérer les failles et apports potentiels. La troisième valeur a été traitée dans le précédent chapitre: la science postule que ses résultats sont toujours incertains (KKV). En recherche, il est essentiel d'accepter que les résultats peuvent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
 
-Le monde académique offre ainsi un terrain fertile à l'application de la philosophie Agile. La dernière valeur, quant à elle, ouvre la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur d'un groupe, d'un centre et d'un réseau de recherche au département de science politique de l'Université Laval. Les approches Agile (il est à noter ici que l'Agilité se divisent en de multiples approches, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application particulière des approches Scrum et Kanban) reposent sur les caractéristiques suivantes:
+Le monde académique offre ainsi un terrain fertile à l'application de la philosophie Agile. La dernière valeur, quant à elle, ouvre la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur d'un groupe, d'un centre et d'un réseau de recherche au département de science politique de l'Université Laval. Les approches Agile (il est à noter ici que l'Agilité se divisent en de multiples approches, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointes des approches Scrum et Kanban) reposent sur les caractéristiques suivantes:
 
 1.  Cadence soutenue grâce à un cycle de **Sprints**;
 2.  Suivi régulier des objectifs grâce à de courts **Scrums**;
@@ -120,6 +120,8 @@ L'efficacité et les nombreuses possibilités qu'offre cette méthode ont géné
 
  
 ### Arpentage et choix éditorial: pourquoi utiliser Notion
+
+Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose l'application de l'approche Scrum, comme détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaire les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même *Slack*, qui propose depuis 2024 sa solution de gestion de projet).
 
 En rédaction par Adrien.
 
