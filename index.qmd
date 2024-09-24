@@ -10,20 +10,17 @@ Dans le domaine des sciences sociales, les avancées dues à l'utilisation des d
 
 Comment l'utilisation des données massives change-t-elle la pratique des sciences sociales? Les données massives causeront-elles un changement de paradigme scientifique?
 
-Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d'une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles
-￼
- affectent les enjeux de la *validité* interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l'avenir des données massives en sciences sociales en identifiant certains changements *épistémologiques* que ces données pourraient potentiellement entraîner.
+Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, mais plutôt des pistes de réflexion par le biais d'une introduction critique de certains points relatifs aux impacts des données massives sur la recherche en sciences sociales. Premièrement, nous présentons une conceptualisation des données massives. Deuxièmement, nous nous penchons sur les impacts des données massives en sciences sociales et soulignons tout particulièrement comment elles ￼ affectent les enjeux de la *validité* interne et externe dans le domaine des sciences sociales. Cela nous offre aussi l’opportunité d’aborder le sujet important de la différence entre les données expérimentales et observationnelles. Finalement, nous proposons quelques pistes de réflexion sur l'avenir des données massives en sciences sociales en identifiant certains changements *épistémologiques* que ces données pourraient potentiellement entraîner.
 
 ## Définition des données massives
 
 Il existe au moins trois approches conceptuelles permettant de définir les « données massives » (voir Figure 1.1.).
 
-![image1_1](images/chapitre1_definitions.png) 
-1.  Premièrement, les données massives représentent une ***quantité importante de points d'information*** qui varient selon la nature, le type, la source, etc. Ici, la distinction entre données massives et données plus traditionnelles (ou « non-massives ») est simplement quantitative. 
+![image1_1](images/chapitre1_definitions.png) 1. Premièrement, les données massives représentent une ***quantité importante de points d'information*** qui varient selon la nature, le type, la source, etc. Ici, la distinction entre données massives et données plus traditionnelles (ou « non-massives ») est simplement quantitative.
 
 2.  Deuxièmement, les données massives constituent un ***ensemble de pratiques*** de collecte, de traitement et d'analyse de ces points d'information. Les données massives représentent une technique, c’est-à-dire une manière ou une méthode nouvelle de faire de la recherche.
 
-3.  Finalement, d'une perspective sociologique, les données massives représentent les impacts sociaux de ces importants développements technologiques. Cette perspective souligne le caractère essentiellement social des données massives, en portant notamment attention aux risques liés à la confidentialité des données, aux enjeux relatifs au consentement et à l'autorisation de collecte des informations, aux innovations en intelligence artificielle, etc.  
+3.  Finalement, d'une perspective sociologique, les données massives représentent les impacts sociaux de ces importants développements technologiques. Cette perspective souligne le caractère essentiellement social des données massives, en portant notamment attention aux risques liés à la confidentialité des données, aux enjeux relatifs au consentement et à l'autorisation de collecte des informations, aux innovations en intelligence artificielle, etc.
 
 Dans les domaines scientifiques et technologiques, la définition courante attribuée aux données massives intègre des éléments de ces trois niveaux d'analyse en se référant à la composition et à la fonction des données. Premièrement, la *composition* des données massives est généralement conceptualisée comme comprenant « 4V » : le volume, la variété, la vélocité et la véracité. Cette conceptualisation jouit d'un large consensus scientifique (Chen, Mao et Liu, 2014; Gandomi et Haider, 2015; Kitchin et McArdle 2016). Par ailleurs, plusieurs chercheurs ont élargi cette définition de la composition des données massives en y incluant, par exemple, la variabilité et la valeur des points de données (Kitchen et McArdle 2016). Deuxièmement, la *fonction* des données massives comprend les innovations relatives à l'optimisation, à la prise de décision et à l'approfondissement des connaissances qui résultent de leur utilisation. Ces fonctions touchent des domaines sociaux disparates, incluant le souci d'efficacité et de rendement des secteurs privé et public ainsi que la recherche scientifique pure (Gartner 2012).
 
@@ -57,7 +54,7 @@ Pour le dire autrement, le défi de validité interne avec les données massives
 
 #### Validité externe des données massives
 
-Deuxièmement, les données massives représentent aussi un défi important pour la validité externe des recherches en sciences sociales (Tufekci 2014; Lazer et Radford 2017; Nagler et Tucker 2015). Un des problèmes les plus évidents concerne la ***représentativité*** des données massives collectées. 
+Deuxièmement, les données massives représentent aussi un défi important pour la validité externe des recherches en sciences sociales (Tufekci 2014; Lazer et Radford 2017; Nagler et Tucker 2015). Un des problèmes les plus évidents concerne la ***représentativité*** des données massives collectées.
 
 Comme le soulignent Lazer et Radford (2017), la quantité de données, en soi, ne permet pas de corriger pour la non-représentativité des données. Les données massives sont ainsi soumises au même problème de biais de sélection que les autres types de données observationnelles, tels un sondage ou une série d'entrevues, traditionnellement utilisés en sciences sociales.
 
@@ -65,25 +62,25 @@ Le cas célèbre de l'erreur de prédiction du *Literary Digest* lors de la camp
 
 Aujourd'hui, l'utilisation des données massives est soumise aux mêmes enjeux méthodologiques. L'accumulation massive de données ne permet pas de compenser pour la qualité des données. Les données massives, comme les données plus traditionnelles, sont soumises aux conséquences induites par le processus de génération des données (*data generating process*) comme un échantillonnage.
 
-Toutefois, depuis quelques années, le développement de nouvelles méthodes de pondération des données offre des pistes de solutions. La grande quantité de données massives permet notamment d'appliquer des méthodes de pondération bien plus efficaces pour corriger les échantillons non-représentatifs (Wang et al. 2015). 
+Toutefois, depuis quelques années, le développement de nouvelles méthodes de pondération des données offre des pistes de solutions. La grande quantité de données massives permet notamment d'appliquer des méthodes de pondération bien plus efficaces pour corriger les échantillons non-représentatifs (Wang et al. 2015).
 
 ### Données expérimentales
 
-La question du processus de génération des données devient plus claire quand on considère comment les *données observationnelles* et les *données expérimentales* permettent d'effectuer des inférences de manière distincte (voir Figure 2). Toutefois, pour bien comprendre ce point, il faut comprendre les notions de données expérimentales et d’inférence causale, qui sont centrales au domaine de la causalité en recherche. 
+La question du processus de génération des données devient plus claire quand on considère comment les *données observationnelles* et les *données expérimentales* permettent d'effectuer des inférences de manière distincte (voir Figure 2). Toutefois, pour bien comprendre ce point, il faut comprendre les notions de données expérimentales et d’inférence causale, qui sont centrales au domaine de la causalité en recherche.
 
-En quelques mots, l’essence de la démarche causale se résume comme suit : le processus de génération de données expérimentales a pour objectif d’assurer la validité d’une inférence causale estimée sur un échantillon sur l'ensemble de la population visée. 
+En quelques mots, l’essence de la démarche causale se résume comme suit : le processus de génération de données expérimentales a pour objectif d’assurer la validité d’une inférence causale estimée sur un échantillon sur l'ensemble de la population visée.
 
-Plus spécifiquement, le processus de génération des données permet aux chercheur.e.s de s’assurer que la distribution du traitement entre les deux groupes, traitement et contrôle, est entièrement aléatoire. De manière technique, cette distribution aléatoire du traitement entre les deux groupes permet de garantir une source exogène (à l’opposé de endogène) de variation sur la variable indépendant (*x). Cette source exogène de variation permet, quant à elle, d'éliminer l'endogénéité entre la variable indépendante (*x*) et le résidu (*e*). 
+Plus spécifiquement, le processus de génération des données permet aux chercheur.e.s de s’assurer que la distribution du traitement entre les deux groupes, traitement et contrôle, est entièrement aléatoire. De manière technique, cette distribution aléatoire du traitement entre les deux groupes permet de garantir une source exogène (à l’opposé de endogène) de variation sur la variable indépendant (*x). Cette source exogène de variation permet, quant à elle, d'éliminer l'endogénéité entre la variable indépendante (*x*) et le résidu (*e\*).
 
-Autrement dit, le fait de distribuer au hasard le traitement entre les membres du groupe traitement et ceux du groupe contrôle assure que la variation dans les résultats ne vient pas d'autres facteurs non-contrôlés (le résidu, *e*), mais plutôt du traitement lui-même (la variable indépendante, *x*). En distribuant le traitement de manière aléatoire, on s'assure que les différences dans les résultats sont vraiment dues au traitement et non à d'autres facteurs. 
+Autrement dit, le fait de distribuer au hasard le traitement entre les membres du groupe traitement et ceux du groupe contrôle assure que la variation dans les résultats ne vient pas d'autres facteurs non-contrôlés (le résidu, *e*), mais plutôt du traitement lui-même (la variable indépendante, *x*). En distribuant le traitement de manière aléatoire, on s'assure que les différences dans les résultats sont vraiment dues au traitement et non à d'autres facteurs.
 
-Il s’agit là d’assurer le respect de la condition d’indépendance, essentielle à la validité de l’identification de l’effet causal étudié. Autrement dit, en éliminant l’endogénéité entre la *x* et *e*, on s’assure que l'effet observé n'est pas dû à une variable confondante. 
+Il s’agit là d’assurer le respect de la condition d’indépendance, essentielle à la validité de l’identification de l’effet causal étudié. Autrement dit, en éliminant l’endogénéité entre la *x* et *e*, on s’assure que l'effet observé n'est pas dû à une variable confondante.
 
 Pour revenir aux données massives, celles-ci ne peuvent pas résoudre les enjeux liés aux inférences causales ou explicatives (Grimmer, 2015). Elles sont en effet également soumises aux mêmes impératifs issus du processus de génération des données.
 
 ### Données observationnelles
 
-En ce qui a trait aux données observationnelles, il y a deux points importants. Premièrement, des méthodes d'inférence basées sur des approches par design (*design-based methods*) comme une méthode de régression sur discontinuité ou de variable instrumentale peuvent également garantir des inférences explicatives et causales valides. Elles nécessitent toutefois plusieurs postulats plus restrictifs dont l'objectif est d'imiter ou de récréer, de la manière la plus fidèle possible, une distribution aléatoire du traitement -- ce que la littérature appelle un *as-if random assignment* (comme si l’attribution était aléatoire)  (Dunning, 2008).
+En ce qui a trait aux données observationnelles, il y a deux points importants. Premièrement, des méthodes d'inférence basées sur des approches par design (*design-based methods*) comme une méthode de régression sur discontinuité ou de variable instrumentale peuvent également garantir des inférences explicatives et causales valides. Elles nécessitent toutefois plusieurs postulats plus restrictifs dont l'objectif est d'imiter ou de récréer, de la manière la plus fidèle possible, une distribution aléatoire du traitement -- ce que la littérature appelle un *as-if random assignment* (comme si l’attribution était aléatoire) (Dunning, 2008).
 
 Dans un contexte observationnel, les données massives peuvent donc permettre d'augmenter la précision des estimations causales. Effectivement, comme dans un modèle de régression linéaire, plus l'échantillon est grand, plus l'estimation du coefficient causal ou probabiliste est précise. Par exemple, un échantillon large dans un modèle de régression sur discontinuité permet de restreindre la largeur de bande autour du seuil, garantissant ainsi une distribution presque parfaitement aléatoire des données et une validité plus élevée à l'estimation de l'effet causal.
 
@@ -101,12 +98,12 @@ Les données massives peuvent aussi jouer d'autres rôles importants relatifs à
 
 Deuxièmement, la quantité importante de données rend possible l'observation d'effets précis, spécifiques et inédits par sous-groupes (Grimmer 2015: 81). Alors qu'auparavant, la taille réduite des échantillons ne permettait pas d'effectuer des inférences valides pour des sous-groupes de la population --- les écarts-types par sous-groupes étaient trop grands, rendant difficile l'estimation précise d'un paramètre comme la moyenne et impossible celle d'un coefficient ---, la taille énorme des échantillons de données massives permet aux chercheurs d'estimer des paramètres qui étaient demeurés extrêmement imprécis jusqu'à aujourd'hui. Notre compréhension des phénomènes sociaux s'en trouve par le fait même approfondie de façon considérable.
 
-![image2_2](images/chapitre1_tableau.png) 
+![image2_2](images/chapitre1_tableau.png)
 
 ## Conclusion : trois questions ouvertes pour le futur
 
 Comme nous venons de le voir, la quantité et la variété nouvelle des données massives permettent à la fois un approfondissement de l'analyse de certains phénomènes et l'ouverture de nouvelles avenues de recherche. L'analyse des données massives peut permettre de mettre en lumière des tendances subtiles échappant aux ensembles d'informations plus restreints.
 
-Il faut toutefois souligner que les données massives représentent une complexification de l'analyse des phénomènes en sciences sociales d'une perspective non pas seulement méthodologique/technique mais également épistémologique. 
+Il faut toutefois souligner que les données massives représentent une complexification de l'analyse des phénomènes en sciences sociales d'une perspective non pas seulement méthodologique/technique mais également épistémologique.
 
 Cela soulève au moins trois questions d'importance, dont les réponses ne nous sont pas encore accessibles, pour l'avenir de la recherche en sciences sociales : (1) les données massives entrent-elles (partiellement du moins) en conflit avec l'impératif de parcimonie qui caractérise la science moderne?; (2) ces données sont-elles dans la continuité ou représentent-elles une coupure dans la tradition béhavioraliste en sciences sociales (et en science politique tout particulièrement)?; (3) et finalement, de manière reliée, les données massives proposent-elles ou non une manière de dépasser l'individualisme méthodologique qui caractérise les sciences sociales contemporaines?

@@ -121,9 +121,43 @@ L'efficacité et les nombreuses possibilités qu'offre cette méthode ont géné
  
 ### Arpentage et choix éditorial: pourquoi utiliser Notion
 
-Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose l'application de l'approche Scrum, comme détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaire les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même *Slack*, qui propose depuis 2024 sa solution de gestion de projet).
+Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose principalement l'application de l'approche Scrum, détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaire les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même la plaforme de communication *Slack*, qui propose depuis 2024 sa solution de gestion de projet pour répondre aux attentes en gestion de projet de ses clients).
 
-En rédaction par Adrien.
+Offert de base dans tous les outils numérique nommés ci-dessus, le Kanban permet d'intégrer et de visualiser, dans un tableau comptant au minimum 3 colonnes (« À faire », « En cours », « Terminé »), les « tâches » à réaliser dans une échéance pour avancer la réalisation des objectifs de sprint. En Agilité, une tâches est nommée *Story*. Une story est un livrable, un morceau du projet (le « quoi »), pris en charge volontairement ou délégué à un membre de l'équipe par le.la chargé.e de projet. On utilise le terme story pour distinguer de la rapide tâche; une story peut quelques fois comporter plusieurs tâches (le « comment »).
+
+Voici un exemple d'application de tous les concepts Agile vu jusqu'à présent. Dans le milieu académique, un *projet* pourrait être la création d'une étude scientifique. La création de cette étude pourrait être divisée en dix *sprints* de quatre semaines, présentant ainsi dix *livrables* clairs qui permettent un suivi en planification de sprint (bien sûr, certaines études peuvent prendre des années à aboutir. Certaines collectes de données sont plus longues, mais là n'est pas le point: toute étude menée en gestion de projet Agile peut être réfléchie d'emblée en fonction de son contexte et de ses objectifs, et être divisée en un nombre logique et réaliste de sprints, que ce soit 5 ou 15):
+
+- 1er sprint: Idéation et structuration d'une question de recherche;
+- 2e sprint: Première version d'une revue de littérature;
+- 3e sprint: Rédaction du devis, choix théoriques, enregistrement des hypothèses, demande éthique;
+- 4e sprint: Préparation méthodologique, raffinement de la revue de littérature;
+- 5e sprint: Collecte des données;
+- 6e sprint: Analyse des données;
+- 7e sprint: Rédaction des résultats;
+- 8e sprint: Rédaction de l'étude complète (introduction, discussion)
+- 9e sprint: Révision du texte
+- 10e sprint: Soumission
+
+En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchis et réparties à l'avance (par exemple: il faudra engager 2 auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les *objectifs de sprint* deviennent évident et prévisible, et chaque *stories* pour accomplir ces objectifs peuvent être rédigées.
+
+L'image _____ présente un tableau *Kanban* bien garni des stories nécessaires à la réalisation des objectifs du premier sprint de travail d'une étude scientifique. L'outil *Notion* est utilisé pour créer et remplir ce Kanban, qui se compose de quatre colonnes:
+
+1. **À venir**: c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser lors de sprint futurs s'y trouve déjà, en ordre, de sorte à visualiser le travail « à venir »;
+2. **À faire**: c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation;
+3. **En cours**: Quand une stories du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement;
+4. **Terminé**: Toutes les stories du sprint en cours accomplies y apparaissent.
+
+En sortant de la première planification de sprint, l'équipe de recherche se retrouvent face à des objectifs clairs, réalistes, divisées en stories rédigées dans un kanban bien rempli. Ne reste plus qu'à se mettre à la tâche, et à se retrouver lors des scrums hebdomadaires pour assuré le suivi. Dans le Kanban de l'image ______, Nicolas doit ainsi ________ pour le ______, puis Nicole de son côté doit ______ pour le ________.
+
+À la fin du sprint, lors de la rencontre de planification du sprint suivant, une équipe Agile débute toujours par la *revue de sprint*, qui permet de s'assurer que toutes les stories qui avaient été déplacées, il y a quatre semaines, de la colonne « À venir » à « À faire », se trouvent désormais dans « Terminées ». Grâce à la réalisation de toutes les stories, les objectifs de sprint devraient être considérés comme accomplis. Il est maintenant temps de se préparer à l'atteinte des objectifs du sprint suivant, en vidant la colonne « Terminé », puis en déplaçant les stories du sprint suivant, qui étaient dans « À venir », dans « À faire » en leur ajoutant une échéance et une assignation. Le cycle peut alors recommencer. Une itération est terminée, un incrément du projet a été livré, et une nouvelle phase de développement est prête à être lancée.
+
+En mélangeant de cette manière les approches Agile *Scrum* et *Kanban*, on obtient tout simplement l'approche... *Scrumban*!
+
+Comme mentionné, tous les outils numériques sur le marché (ou presque) propose actuellement les éléments nécessaires à la mise en place d'une gestion de projet scrumban. 
+
+
+
+
 
 <!-- Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, où les travaux s'échelonnent souvent sur plusieurs années, il est facile de perdre de vue ses objectifs ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches de manière efficace facilite la mesure des progrès et permet de constamment vérifier si ceux-ci sont encore alignés avec les objectifs finaux. -->
 
