@@ -98,29 +98,28 @@ La @fig-scrum présente le cycle traditionnel d'application de l'approche Scrum 
 
 Le processus commence par l'organisation d'une « planification de sprint ». Un sprint dure généralement entre une et quatre semaines (dans le contexte du développement logiciel, une semaine peut être parfois très utile lorsque les délais sont serrés. Dans le contexte académique, un sprint de trois ou quatre semaines s'avèrent plus adaptés). Lors de la planification, toute l'équipe se rencontre quelques heures (généralement 2h ou 3h, en fonction du nombre de projet en cours et/ou des publications en rédaction) pour déterminer les grands objectifs qui devront être réalisés, projet par projet, publication par publication, d'ici la fin du sprint. Un sprint se conclut toujours par le retour en plénière pour la planification du sprint suivant. Cette nouvelle planification de sprint doit désormais, et dorénavant, débuter par une *revue de sprint*, où les objectifs du sprint terminé sont évalués, projet par projet, publication par publication, puis par une *rétrospective*, où les processus sont évalués (l'équipe est alors invitée à partager son avis sur la méthode de gestion de projet, afin d'adapter le processus au contexte particulier et renforcer son utilité).
 
-La planification de sprint est menée par le *Scrum Master*, un membre désigné par l'équipe pour faire le lien entre le *Product Owner* (dans notre contexte, le.la directeur.trice de l'équipe de recherche, que nous pourrions plutôt nommer *Projet Owner*) et tous les membres de l'équipe qui travaillent concrètement sur les projets et publications (les étudiant.e.s, par exemple). Dans le langage populaire, le Scrum Master pourrait représenter le rôle de *coordonnateur*. Il est toutefois recommandé que le Scrum Master détienne sa certification de Scrum Master, ou ait du moins suivi sa formation. De nombreuses entreprises offrent des formations au Québec pour des prix variant entre 1000\$ et 3000\$, pour 2 à 3 jours de formations. La certification, quant à elle, coûte 100\$, et peut être réalisée via le site Web officiel [scrum.org](https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments). Une formation Agile comme Scrum Master a une énorme valeur sur le marché de l'emploi. De plus en plus d'entreprises au Québec sont à la recherche de Scrum Master certifiés, offrant des salaires dépassant les 100 000$ par année. Comme mentionné en introduction, des compétences en gestion de projet, mais particulièrement en Agilité, constituent un excellent moyen d'augmenter rapidement votre valeur dans le milieu universitaire et sur le marché de l'emploi.
+La planification de sprint est menée par le *Scrum Master*, un membre désigné par l'équipe pour faire le lien entre le *Product Owner* (dans notre contexte, le.la directeur.trice de l'équipe de recherche, que nous pourrions plutôt nommer *Projet Owner*) et tous les membres de l'équipe qui travaillent concrètement sur les projets et publications (les étudiant.e.s, par exemple). Dans le langage populaire, le Scrum Master pourrait représenter le rôle de *coordonnateur*. Il est toutefois recommandé que le Scrum Master détienne sa certification de Scrum Master, ou ait du moins suivi sa formation. De nombreuses entreprises offrent des formations au Québec pour des prix variant entre 1000\$ et 3000\$, pour 2 à 3 jours de formations. La certification, quant à elle, coûte 100\$, et peut être réalisée via le site Web officiel [scrum.org](https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments). Une formation Agile comme Scrum Master a une énorme valeur sur le marché de l'emploi. De plus en plus d'entreprises au Québec sont à la recherche de Scrum Master certifiés, offrant des salaires dépassant les 100 000\$ par année. Comme mentionné en introduction, des compétences en gestion de projet, mais particulièrement en Agilité, constituent un excellent moyen d'augmenter rapidement votre valeur dans le milieu universitaire et sur le marché de l'emploi.
 
 Chaque équipe de projet (il serait normal de compter plusieurs équipes de projet représentées lors d'un sprint. En fait, il devrait y avoir autant d'équipe de projet qu'il y a de projet) est dirigée par un.e *chargé.e de projet*, dont le rôle est de veiller à la coordination de son équipe. Le.la chargé.e de projet organise les rencontres d'équipe au besoin, divise les tâches entre les membres, prend la parole lors de la planification de sprint pour présenter la revue du sprint, et annoncer les prochains objectifs prévues, qui seront ensuite discuter en groupe. Quand tous les objectifs pour tous les projets et pour toutes les publications ont été clairement établis, approuvés par l'ensemble les membres, en considération du temps que tous sont réalistement en mesure d'accorder, puis après avoir déterminé la date de la prochaine planification de sprint, la séance est levée. Une activité sociale d'équipe est à ce moment fortement encouragée!
 
 Pour assurer un suivi régulier de l'avancement des objectifs, le Scrum Master met à l'agenda un ou deux *Scrum* par semaine. Il s'agit de très courtes rencontre où l'ensemble de l'équipe se retrouvent, idéalement entre 15 et 30 minutes maximum, selon le nombre de projets, pour répondre à trois questions:
 
-1. Qu'est-ce qui a été fait depuis le dernier scrum?
-2. Qu'est-ce qui sera fait d'ici le prochain scrum? 
-3. Y a t-il des blocages? 
+1.  Qu'est-ce qui a été fait depuis le dernier scrum?
+2.  Qu'est-ce qui sera fait d'ici le prochain scrum?
+3.  Y a t-il des blocages?
 
-Tour à tour, le Scrum Master nomme les projets et les publications, dans leur ordre de priorité, et offre la parole aux chargé.e.s de projet pour résumer les avancées de leur équipe. Contrairement à la planification de sprint, le *Project Owner* n'a pas besoin d'assister à ces scrums. Le *Scrum Master* s'assure, si nécessaire, de le tenir informer des bloquants ou des ajustements à mener Les scrums sont l'occasion pour l'équipe d'assurer un suivi régulier des *livraisons* attendues d'ici la fin du sprint. 
+Tour à tour, le Scrum Master nomme les projets et les publications, dans leur ordre de priorité, et offre la parole aux chargé.e.s de projet pour résumer les avancées de leur équipe. Contrairement à la planification de sprint, le *Project Owner* n'a pas besoin d'assister à ces scrums. Le *Scrum Master* s'assure, si nécessaire, de le tenir informer des bloquants ou des ajustements à mener Les scrums sont l'occasion pour l'équipe d'assurer un suivi régulier des *livraisons* attendues d'ici la fin du sprint.
 
 L'une des caractéristiques fondamentales des méthodes Agiles est le développement des projets de manière *itérative* et *incrémentale*. L'itération est le processus répété et cyclique mené grâce aux sprints. Une équipe Agile est en tout temps en sprint, jusqu'à la livraison final du projet ou de la publication. Un incrément est la réalisation d'une petite partie dites « fonctionnelle » du projet, qui peut être soumise à évaluation. Dans le cadre académique, un incrément peut-être la remise d'une première version d'une revue de littérature, la réalisation d'une première étape d'un code R pour l'analyse de données de thèse, une le premier jet d'un devis. Plutôt que d'attendre à la toute fin du processus pour le dépôt complet d'un projet, une équipe Agile divise son projet en de multiples itérations, qu'elle soumet pour évaluation à chaque planification de sprint lors de la phase de la « revue de sprint ». Par une démonstration, toute l'équipe peut constater et discuter du nouvel incrément proposé, par exemple la présentation de la section méthodologie d'un article scientifique, et déterminer ensuite les objectifs du prochain sprint pour la livraison de l'incrément suivant, disons la collecte de données. Tout projet est ainsi divisé en phase, en « séquence de développement », d'un sprint à l'autre, de manière itérative, de sorte à livrer des incréments fonctionnels du projet qui peuvent être discutés et révisés.
 
 Contrairement aux méthodes traditionnelles, il est essentiel de comprendre que les méthodes Agiles se nomment « Agile » pour une raison: elles encouragent la flexibilité. Plutôt que de passer d'un sprint à l'autre en suivant un plan rigide déterminé des mois, voire des années auparavant en fonction d'un budget et d'un calendrier coulés dans le béton, les méthodes Agiles mettent de l'avant le « cycle » de travail, les *itérations*, qui permettent de revoir le plan, de l'adapter en cours de route, particulièrement lors de la planification de sprint. Normalement, lorsque les objectifs de sprint ont été validés par l'équipe, il n'est pas recommandé de les changé en cours de sprint. Par contre, de retour en planif, chaque membre de l'équipe a son mot à dire sur la suite, sur ce qui fonctionne bien, sur ce qui devrait être adapté, toujours avec le projet final en tête.
 
-Pour tout projet ou publication menée seul.e, comme la rédaction d'un mémoire, d'une thèse, ou la création d'un grand scrapbook de photos familiales, ou pour tout besoin de gestion de vie personnelle et d' objectifs d'avenir, ce processus n'est pas bien différent. Une personne Agile pourrait, le soir du jour de l'an, mettre sur papier un certain nombre de résolutions. Elle peut ensuite découper son année en 12 sprint de 4 semaines, et répartir l'accomplissement de ses résolutions en 12 incréments. Chaque incrément planifié doit être réaliste et faire avancer, petit à petit, les objectifs vers la livraison finale, à la fin de l'année. Une fois aux quatre semaines, cette personne peut prendre un moment seul de « planification de sprint » pour faire la « revue » des quatre dernières semaines et réviser les objectifs à atteindre pour les quatre semaines suivantes. 
+Pour tout projet ou publication menée seul.e, comme la rédaction d'un mémoire, d'une thèse, ou la création d'un grand scrapbook de photos familiales, ou pour tout besoin de gestion de vie personnelle et d' objectifs d'avenir, ce processus n'est pas bien différent. Une personne Agile pourrait, le soir du jour de l'an, mettre sur papier un certain nombre de résolutions. Elle peut ensuite découper son année en 12 sprint de 4 semaines, et répartir l'accomplissement de ses résolutions en 12 incréments. Chaque incrément planifié doit être réaliste et faire avancer, petit à petit, les objectifs vers la livraison finale, à la fin de l'année. Une fois aux quatre semaines, cette personne peut prendre un moment seul de « planification de sprint » pour faire la « revue » des quatre dernières semaines et réviser les objectifs à atteindre pour les quatre semaines suivantes.
 
 Comme on l'a vu, l'Agile ne s'applique pas uniquement au monde du développement logiciel, voire à une grande équipe académique. Elle est d'abord et avant tout une philosophie, possible d'être menée, réfléchie et appliquée à son quotidien.
 
 L'efficacité et les nombreuses possibilités qu'offre cette méthode ont généré, bien entendu, un marché très lucratif d'outils numériques. La section suivante présentera les leaders du marché, et offrira des instructions sous forme de conseils pour l'utilisation adaptée de ces outils, notamment par la création de *stories* à l'intérieur d'un tableau *kanban*.
 
- 
 ### Arpentage et choix éditorial: pourquoi utiliser un outil de gestion de projet
 
 Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose en premier lieu l'application de l'approche Scrum, détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement à l'approche scrum et au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaire les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même la plaforme de communication *Slack*, qui propose depuis 2024 sa solution de gestion de projet pour répondre aux attentes en gestion de projet de ses clients).
@@ -129,41 +128,45 @@ Offert de base dans tous les outils numérique nommés ci-dessus, le Kanban perm
 
 Voici un exemple d'application de tous les concepts Agile vu jusqu'à présent. Dans le milieu académique, un *projet* pourrait être la création d'une étude scientifique. La création de cette étude pourrait être divisée en dix *sprints* de quatre semaines, présentant ainsi dix *livrables* clairs qui permettent un suivi en planification de sprint (bien sûr, certaines études peuvent prendre des années à aboutir. Certaines collectes de données sont plus longues, mais là n'est pas le point: toute étude menée en gestion de projet Agile peut être réfléchie d'emblée en fonction de son contexte et de ses objectifs, et être divisée en un nombre logique et réaliste de sprints, que ce soit 5 ou 15):
 
-- 1er sprint: Idéation et structuration d'une question de recherche;
-- 2e sprint: Première version d'une revue de littérature;
-- 3e sprint: Rédaction du devis, choix théoriques, enregistrement des hypothèses, demande éthique;
-- 4e sprint: Préparation méthodologique, raffinement de la revue de littérature;
-- 5e sprint: Collecte des données;
-- 6e sprint: Analyse des données;
-- 7e sprint: Rédaction des résultats;
-- 8e sprint: Rédaction de l'étude complète (introduction, discussion)
-- 9e sprint: Révision du texte
-- 10e sprint: Soumission
+-   1er sprint: Idéation et structuration d'une question de recherche;
+-   2e sprint: Première version d'une revue de littérature;
+-   3e sprint: Rédaction du devis, choix théoriques, enregistrement des hypothèses, demande éthique;
+-   4e sprint: Préparation méthodologique, raffinement de la revue de littérature;
+-   5e sprint: Collecte des données;
+-   6e sprint: Analyse des données;
+-   7e sprint: Rédaction des résultats;
+-   8e sprint: Rédaction de l'étude complète (introduction, discussion)
+-   9e sprint: Révision du texte
+-   10e sprint: Soumission
 
-En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchis et réparties à l'avance (par exemple: il faudra engager 2 auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les *objectifs de sprint* deviennent évident et prévisible, et chaque *stories* pour accomplir ces objectifs peuvent être rédigées.
+En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchis et réparties à l'avance (par exemple: il faudra engager 2 auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les *objectifs de sprint* deviennent évidents et prévisibles, et chaque *story* peut être rédigée pour accomplir ces objectifs.
 
-L'image _____ présente un tableau *Kanban* bien garni des stories nécessaires à la réalisation des objectifs du premier sprint de travail d'une étude scientifique. L'outil *Notion* est utilisé pour créer et remplir ce Kanban, qui se compose de quatre colonnes:
+Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et remplir un Kanban, qui se compose de quatre colonnes:
 
-1. **À venir**: c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser lors de sprint futurs s'y trouve déjà, en ordre, de sorte à visualiser le travail « à venir »;
-2. **À faire**: c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation;
-3. **En cours**: Quand une stories du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement;
-4. **Terminé**: Toutes les stories du sprint en cours accomplies y apparaissent.
+1.  **À venir**: c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser lors de sprint futurs s'y trouvent déjà, en ordre, de sorte à visualiser le travail « à venir »;
+2.  **À faire**: c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation;
+3.  **En cours**: Quand une stories du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement;
+4.  **Terminé**: Toutes les stories du sprint en cours accomplies y apparaissent.
 
-En sortant de la première planification de sprint, l'équipe de recherche se retrouvent face à des objectifs clairs, réalistes, divisées en stories rédigées dans un kanban bien rempli. Ne reste plus qu'à se mettre à la tâche, et à se retrouver lors des scrums hebdomadaires pour assuré le suivi. Dans le Kanban de l'image ______, Nicolas doit ainsi ________ pour le ______, puis Nicole de son côté doit ______ pour le ________.
+```{r}
+#| label: fig-kanban
+#| echo: false
+#| fig-cap: "L'outil de gestion de projet Notion propose d'emblée des modèles de Kanban pour la création et le suivi des stories \\newline *Source*&nbsp;: Notion."
+knitr::include_graphics("images/chapitre8_kanban_notion.png", dpi = 600)
+```
+
+En sortant de la première planification de sprint, l'équipe de recherche se retrouvent face à des objectifs clairs, réalistes, divisées en stories rédigées dans un kanban bien rempli. Ne reste plus qu'à se mettre à la tâche, et à se retrouver lors des scrums hebdomadaires pour assuré le suivi.
 
 À la fin du sprint, lors de la rencontre de planification du sprint suivant, une équipe Agile débute toujours par la *revue de sprint*, qui permet de s'assurer que toutes les stories qui avaient été déplacées, il y a quatre semaines, de la colonne « À venir » à « À faire », se trouvent désormais dans « Terminées ». Grâce à la réalisation de toutes les stories, les objectifs de sprint devraient être considérés comme accomplis. Il est maintenant temps de se préparer à l'atteinte des objectifs du sprint suivant, en vidant la colonne « Terminé », puis en déplaçant les stories du sprint suivant, qui étaient dans « À venir », dans « À faire » en leur ajoutant une échéance et une assignation. Le cycle peut alors recommencer. Une itération est terminée, un incrément du projet a été livré, et une nouvelle phase de développement est prête à être lancée.
 
 En mélangeant de cette manière les approches Agile *Scrum* et *Kanban*, on obtient tout simplement l'approche *Scrumban*!
 
-Comme mentionné, tous les outils numériques sur le marché (ou presque) proposent actuellement les éléments nécessaires à la mise en place d'une gestion de projet Scrumban.  
+Comme mentionné, tous les outils numériques sur le marché (ou presque) proposent actuellement les éléments nécessaires à la mise en place d'une gestion de projet Scrumban.\
 En 1984, la sortie de Microsoft Project est une révolution en gestion de projet. La première version disponible sur Windows en 1990 permet enfin aux chefs de projets d'utiliser un outil numérique de planification pour gérer des tâches, visualiser les étapes de développement dans des diagrammes de Gantt, suivre la gestion des coûts et des ressources, et extraire l'ensemble des données pour produire des analyses et des rapports d'avancement de projet. À l'ère des méthodes traditionnelles, Microsoft Project domine le marché, et poursuit sa domination bien au-delà, étant toujours le #1 mondial en 2011, utilisé par plus de 20 millions d'utilisateur. À l'ère de l'Agilité, les solutions de Microsoft pour la gestion de projet existent toujours, mais ne s'adresse plus uniquement aux chefs d'équipe. [*Microsoft Planner*](https://tasks.office.com/), sorti en 2015, est la proposition plus simple de Microsoft pour le travail d'équipe qui se compare davantage aux applications numériques visuels, flexibles et extrêmement populaires ayant fait éruption sur le marché depuis 2010. En croisant [ses outils de gestion de projet et l'outil de communication *Teams*](https://www.microsoft.com/fr-ca/microsoft-365/project/agile-methodology), Microsoft permet à tous les membres d'une équipe de gérer et suivre l'évolution de leur travail de manière Agile. Pour les utilisateurs des services Microsoft, cette solution intégrée peut être très avantageuse, avec un faible coût d'apprentissage.
 
 Longtemps seul et dominant dans le marché, Microsoft compétitionne aujourd'hui avec une multitude d'acteurs. Les premières plateformes collaborative comme *Basecamp* (1999) et *Jira* (2002) marquent le début du suivi en ligne, permettant aux équipe de travailler à distance, en temps réel, et de suivre leur progression de manière Agile. Développé par la compagnie *Atlassian*, Jira se concentre particulièrement sur la gestion des suivis de bugs, d'incidents et de projets au niveau « macro », par le suivi des *sprints*, des *objectifs de sprint* et des *backlog*. L'application est intégré à *Google Workspace* en 2021, et évolue en parallèle à *Trello*, un autre outil de gestion de projet en ligne lancé par *Atlassian* en 2011 et concentré sur le *Kanban* utilisateur, puis le suivi « micro » des tâches. Les différences sont légères entre avec les applications [asana](https://asana.com/) (2008) et [monday.com](monday.com) (2012), toutes basées principalement sur le développement et le suivi de projet Agile via des vues de tâches en tableau kanbans, en calendrier, voire en Gantt (le diagramme de Gantt, même à l'ère de Agilité, demeure toujours très populaire).
 
-Des propositions de logiciels libres *open source* sont bien sûr présentes en ligne. [OpenProject](https://www.openproject.org/) (2012) et [Taiga](https://taiga.io/) (2014) sont des outils Agile présentant tous les avantages liés aux logiciels libre tels que la gratuité du service et la possibilité de modification et de redistribution. 
-
-La suite de ce chapitre se concentrera à la présentation détaillée de [Notion](https://www.notion.so/fr), un outil de gestion de projet « tout-en-un », créé en 2016 par Ivan Zhao et Simon Last, et ayant atteint à l'automne 2024 le 100 millions d'utilisateurs. 
-
+Des propositions de logiciels libres *open source* sont bien sûr présentes en ligne. [OpenProject](https://www.openproject.org/) (2012) et [Taiga](https://taiga.io/) (2014) sont des outils Agile présentant tous les avantages liés aux logiciels libre tels que la gratuité du service et la possibilité de modification et de redistribution.
 
 <!-- Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, où les travaux s'échelonnent souvent sur plusieurs années, il est facile de perdre de vue ses objectifs ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches de manière efficace facilite la mesure des progrès et permet de constamment vérifier si ceux-ci sont encore alignés avec les objectifs finaux. -->
 
@@ -188,9 +191,13 @@ La suite de ce chapitre se concentrera à la présentation détaillée de [Notio
 <!-- Pour déterminer quelles tâches accomplir et dans quel ordre, voici une court processus par étapes : -->
 
 <!-- 1.  Élaborer les tâches en fonction des objectifs de sprint. -->
+
 <!-- 2.  Déterminer la linéarité des tâches, c'est-à-dire, quelle tâche doit être accomplie afin d'en début une autre. -->
+
 <!-- 3.  Quantifier le poids de chaque tâche. Certaines tâches sont plus longues que d'autres. Adopter un système qui vous permet d'identifier quelles tâches prendront quelques minutes seulement (comme l'envoi du courriel), et quelles tâches prennent plusieurs jours. Si une tâche est trop longue, c'est un signe qu'elle pourrait être désagrégée en plusieurs tâches plus petites. Cela facilite également le suivi. -->
+
 <!-- 4.  Donner une échéance réaliste à chaque tâche, en fonction des étapes précédentes. Idéalement, toutes les tâches ne sont pas dues pour la même date, pour éviter un goulot d'étranglement. Les échéances aident à prioriser les tâches. -->
+
 <!-- 5.  Prioriser les tâches qui ont l'échéance le plus sérré. Si certaines tâches accumulent un retard, c'est peut-être parce que vous devez réévaluer les échéances, les objectifs, ou encore parce qu'il y a des blocants dans vos méthodes de travail. Faire un tel suivi permet d'évaluer sa propre efficacité dans ses méthodes de travail. -->
 
 <!-- L'utilisation d'outils numériques pour la gestion des tâches ne signifie pas qu'il faut abandonner l'agenda papier ou le cahier de notes. Plusieurs trouvent essentiels de prendre des notes et de se faire des listes de tâches à la main. Il est tout à fait possible de combiner les méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de tâches, puis faites votre liste de tâches à la main en conséquence, et planifiez votre semaine. De cette façon, vous savez chaque jour le travail à prioriser. -->
@@ -214,9 +221,73 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
 -->
 ```
-### Manuel d'instruction: comment utiliser Notion
 
-En rédaction par Adrien.
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+# First table
+tbl_resume_chap_X <- tibble(
+    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    "Microsoft" = c('Payant', 
+              'Oui', 
+              'Oui', 
+              'Avec les outils Microsoft', 
+              'Non',
+              'Non'),
+    "monday.com" = c('Payant', 
+              'Limitée', 
+              'Non', 
+              'Oui', 
+              'Non', 
+              'Non'),       
+    "OpenProject" = c('Gratuit (logiciel libre)', 
+              'Limitée', 
+              'Non', 
+              'Oui', 
+              'Oui', 
+              'Oui'),    
+    "Notion" = c('Utilisation de base gratuite', 
+              'Oui', 
+              'Oui', 
+              'Oui', 
+              'Non',
+              'Oui')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de projet')
+```
+
+
+### Manuel d'instruction: Notion pour la vie professionnelle et personnelle
+
+En août 2024, [Notion](https://www.notion.so/fr) dépasse la barre du 100 millions d'utilisateurs. Juste avant la pandémie de COVID-19, Notion atteignait son premier million. En l'espace de quelques années, l'outil a rejoint, voire dépassé ses concurrents. Une popularité incontestable, notamment dû à sa grande flexibilité. 
+
+Créé en 2013 par Ivan Zhao et Simon Last, Notion se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des pdf, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif. 
+
+Pour certain, cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier Notion. En comparaison, monday.com ou trello offre un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches. 
+
+Sur Notion, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas), pour coder des fonctions dans des bases de données. 
+
+Il n'est toutefois pas nécessaire d'aller dans la complexité: sans être un logiciel libre, Notion offre la possibilité à ses utilisateurs de créer leur propre « modèle », et de les offrir (voire de les vendre, si désiré!) à la communauté Web. Ainsi, [plus de 20 000 modèles Notion sont disponibles en ligne](https://www.notion.so/fr/templates)! Vous trouverez de multiples modèles pour répondre à tous vos besoins: que ce soit pour la gestion de vos finances ou pour gérer votre vie étudiante, la communauté Notion est large et structurée. Tous les modèles disponibles s'importe en deux clics, et vous permettent de les modifier complètement au besoin. Avec le temps et l'expérience, vous pourrez vous-même créer vos propres modèles et les offrir gratuitement (ou à votre prix!) à la communauté.
+
+Notez également que l'utilisation individuelle de Notion est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de Notion), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins. 
+
+Avec un seul outil, Notion peut vous permettre de gérer à la fois votre vie personnelle et votre vie professionnelle. Pour se lancer, [des guides simples sont disponibles (en français!) sur le site Web](https://www.notion.so/fr/help/category/new-to-notion).
+
+Notez également que Notion possède sa propre application de calendrier! *Notion Calendar* permet d'importer vos calendriers Google, en plus d'afficher tous les jours vos échéances de stories. 
+
+Vous souhaitez créer une page Notion pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web!  En deux clics, toutes les pages Notion peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
+
+Depuis son lancement, Notion est en constante évolution. Impossible de savoir à quoi ressemblera l'application dans 10 ans. Victime de son succès, l'entreprise s'est plusieurs fois réinventée, misant sur une gestion de projet Agile, en communication avec sa clientèle, pour développer un outil à l'image des besoins et des intérêts de ses utilisateurs.
 
 ## Les outils de gestion de données
 
@@ -232,7 +303,7 @@ En sciences sociales numériques, où le partage et la collaboration sont essent
 
 De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient le même fichier ou la même partie de texte de manière indépendante, et que Git ne sait pas quelle version garder. Dans ces cas-là, il est nécessaire de comparer les deux versions, paragraphe par paragraphe, pour décider de la meilleure solution. Contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique. Cette gestion des conflits simplifie la collaboration et évite bien des frustrations, tout en facilitant la répartition des tâches au sein de l'équipe.
 
-Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub. 
+Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub.
 
 Alors que Github n'est pas un logiciel libre, il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse. Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. Voici un résumé des avantages de git et Github :
 
@@ -247,6 +318,7 @@ Alors que Github n'est pas un logiciel libre, il est gratuit pour ses fonctionna
 En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce à l'open source. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
 
 <!-- Ici sur Dropbox -->
+
 Bien que Git et GitHub soient des outils puissants pour la gestion de versions et l'entreposage de code, ils ne sont pas conçus pour stocker et partager de larges volumes de données brutes. En effet, la gestion des fichiers volumineux ou des bases de données complexes peut rapidement devenir problématique dans ces environnements. C’est là que les services infonuagiques entrent en jeu.
 
 Dans le cadre de la recherche académique en sciences sociales, la gestion des données occupe une place cruciale. La manière dont vous entreposez, gérez, et partagez vos données peut avoir un impact direct sur la sécurité, la confidentialité, et la reproductibilité de vos recherches. Que ce soit pour des données quantitatives, des résultats d'enquêtes ou des transcriptions d'entretiens, les outils de gestion de données permettent de centraliser, sécuriser et organiser les fichiers tout en facilitant la collaboration avec d’autres chercheurs.
@@ -313,31 +385,78 @@ AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud 
 ```
 <!--L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche. -->
 
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+# Second table
+tbl_resume_chap_Y <- tibble(
+    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    "Dropbox" = c('Limitée - Abonnement mensuel', 
+                'Oui', 
+                'Oui', 
+                'Oui', 
+                'Limitée', 
+                'Limitée'),
+    "Google Drive" = c('Oui', 
+                     'Oui', 
+                     'Oui', 
+                     'Avec les outils Google', 
+                     'Moyenne',
+                     'Oui'),
+    "OneDrive" = c('Limitée', 
+                 'Oui', 
+                 'Limitée', 
+                 'Avec les outils Microsoft', 
+                 'Moyenne',
+                 'Moyenne'),
+    "Nextcloud" = c('Oui - Si auto-hébergé', 
+                    'Oui', 
+                    'Limitée', 
+                    'Oui, avec configuration', 
+                    'Oui', 
+                    'Très flexible')
+)
+
+tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils de gestion de données')
+```
+
 ### Manuel d'instructions: comment utiliser Git, Github et Dropbox
 
 Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son répertoire Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de dépôt doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
 
 Il est également conseillé de travailler sur des branches distinctes pour chaque fonctionnalité majeure. Cela facilite la gestion des changements et minimise les conflits lors de la fusion. Les chercheurs devraient également consulter régulièrement les projets et les problèmes sur GitHub pour encourager une communication ouverte et résoudre rapidement les problèmes.
 
-<!-- Je pense que toute cette section ne devrait plus être dans le chapitre --> 
+<!-- Je pense que toute cette section ne devrait plus être dans le chapitre -->
+
 <!--  Lorsque les chercheurs en sciences sociales utilisent GitHub pour partager leur code, collaborer sur des projets et contribuer à la communauté académique, il est essentiel de connaître les pratiques à éviter. En effet, certaines erreurs peuvent compromettre la sécurité, la confidentialité et l'efficacité de la recherche. Voici quelques éléments à éviter : -->
 
 <!-- 1.  *Entreposer des informations sensibles* : Évitez d'entreposer des données sensibles ou confidentielles sur GitHub. Cela inclut les données de sondages, les informations personnelles identifiables et tout autre contenu pouvant porter atteinte à la vie privée des individus. Assurez-vous de supprimer ou de masquer soigneusement ces informations avant de les télécharger sur la plateforme. -->
 
 <!-- 2.  *Inclure des mots de passe et clés d'accès* : Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication -->
 
+```{=html}
 <!-- 3.  *Entreposer des fichiers lourds* : Évitez d'entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt. Utilisez plutôt des services d'entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt. 
 
 4.  *Inclure des identifiants personnels* : Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.-->
-
+```
 <!-- 5.  *Ignorer les pratiques de branches et de fusion* : Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO -->
 
+```{=html}
 <!-- 6.  *Ignorer les commentaires des collaborateurs* : Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
 
 7.  *Ne pas documenter* : Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d'autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d'exécuter votre code.
 
 En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l'efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur. -->
-
+```
 Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l'impact des médias sur l'opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.
 
 Étape 1 : Création d'un répertoire local et initialisation de Git
@@ -390,7 +509,7 @@ git commit -m "Ajout du code d'analyse des médias et des sondages"
 
 Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
 
-Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom  "sous la forme" *mon_projet*.
+Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom "sous la forme" *mon_projet*.
 
 De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.
 
@@ -442,10 +561,11 @@ Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logiq
 
 <!--AFC: Parler de l'image?-->
 
+```{=html}
 <!-- Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
 
 Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub. -->
-
+```
 <!-- Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.-->
 
 <!--C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe. -->
@@ -502,6 +622,45 @@ Moins populaire que les deux premiers outils proposés, Mattermost, cependant, e
 
 Nous apprécions particulièrement son interface intuitive, ses canaux de discussion, et son intégration avec d'autres outils populaires que nous utilisons régulièrement. Slack s'est avéré être une solution flexible et accessible, capable de répondre aux besoins variés de nos équipes académiques.
 
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+# Third table
+tbl_resume_chap_X <- tibble(
+    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    "Teams" = c('Limitée', 
+              'Oui', 
+              'Non', 
+              'Avec les outils Microsoft', 
+              'Non',
+              'Oui'),
+    "Slack" = c('Limitée', 
+              'Oui', 
+              'Oui', 
+              'Oui', 
+              'Non', 
+              'Oui'),          
+    "Mattermost" = c('Oui', 
+                   'Non', 
+                   'Non', 
+                   'Limitée', 
+                   'Oui',
+                   'Le plus adaptable')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de communication')
+```
+
+
 ### Manuel d'instruction : comment utiliser Slack
 
 Notre outil de communication sélectionné est Slack. Nous vous proposons quelques conseils pratiques pour bien l'utiliser en équipe, mais aussi de façon plus personnalisée. Bien structurer votre utilisation de Slack vous aidera à mieux collaborer avec vos collègues, à suivre les conversations importantes, et à éviter la confusion entre les différentes chaînes de discussion.
@@ -541,101 +700,22 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 -   *Fonctionnalités Slack* : Slack offre plusieurs fonctionnalités pour vous aider dans la gestion de vos messages. Explorez ces fonctionnalités, telles que *Activité*, *Plus tard* et *À voir*. Chaque personne fonctionne différemment, et ces fonctionnalités vous permettent de trouver ce qui vous convient le mieux.
 
-## L'importance d'une méthode de travail efficace
+<!-- ## L'importance d'une méthode de travail efficace -->
 
-<!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente -->
+<!-- <!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente --> -->
 
-Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés.
+<!-- Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. <!-- formulation étrange -LO --> Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire <!-- expliquer arborescence? --> et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés. -->
 
-Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation :
+<!-- Ce chapitre vous emmènera à découvrir une gamme d'outils conçus pour répondre aux besoins spécifiques des chercheurs en sciences sociales numériques. Dans une quête pour maximiser votre temps, améliorer vos flux de travail et renforcer vos collaborations, nous explorerons trois types d'outils qui vous guideront dans cette quête d'optimisation : -->
 
-1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations.
+<!-- 1.  **Logiciels de communication** : La communication transparente est le cœur d'une collaboration réussie. Nous explorerons des outils tels que Slack qui facilitent les échanges en temps réel, connectant les chercheurs, même à distance, pour un partage rapide d'idées et d'informations. -->
 
-2.  **Logiciels de gestion de versions décentralisé** : Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source.
+<!-- 2.  **Logiciels de gestion de versions décentralisé** : Nous plongerons dans le monde de Git et GitHub, des outils indispensables pour le suivi des versions et la collaboration efficace sur le code source. -->
 
-3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe.
+<!-- 3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe. -->
 
-Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail.
+<!-- Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail. -->
 
-```{r}
-#| echo: false
-#| warning: false
-library(tidyverse)
-library(tinytable)
-
-# First table
-tbl_resume_chap_X <- tibble(
-    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    "Teams" = c('Limitée', 
-              'Oui', 
-              'Non', 
-              'Avec les outils Microsoft', 
-              'Non',
-              'Oui'),
-    "Slack" = c('Limitée', 
-              'Oui', 
-              'Oui', 
-              'Oui', 
-              'Non', 
-              'Oui'),          
-    "Mattermost" = c('Oui', 
-                   'Non', 
-                   'Non', 
-                   'Limitée', 
-                   'Oui',
-                   'Le plus adaptable')
-)
-
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
-```
-
-```{r}
-#| echo: false
-#| warning: false
-library(tidyverse)
-library(tinytable)
-
-# Second table
-tbl_resume_chap_Y <- tibble(
-    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    "Dropbox" = c('Limitée - Abonnement mensuel', 
-                'Oui', 
-                'Oui', 
-                'Oui', 
-                'Limitée', 
-                'Limitée'),
-    "Google Drive" = c('Oui', 
-                     'Oui', 
-                     'Oui', 
-                     'Avec les outils Google', 
-                     'Moyenne',
-                     'Oui'),
-    "OneDrive" = c('Limitée', 
-                 'Oui', 
-                 'Limitée', 
-                 'Avec les outils Microsoft', 
-                 'Moyenne',
-                 'Moyenne'),
-    "Nextcloud" = c('Oui - Si auto-hébergé', 
-                    'Oui', 
-                    'Limitée', 
-                    'Oui, avec configuration', 
-                    'Oui', 
-                    'Très flexible')
-)
-
-tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils')
-```
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 
