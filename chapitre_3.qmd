@@ -626,12 +626,12 @@ tbl_resume_chap_Y <- tibble(
                  'Avec les outils Microsoft', 
                  'Moyenne',
                  'Moyenne'),
-    "AWS" = c('Non', 
-            'Oui', 
-            'Limitée', 
-            'Oui', 
-            'Oui',
-            'Oui')
+    "Nextcloud" = c('Oui - Si auto-hébergé', 
+                    'Oui', 
+                    'Limitée', 
+                    'Oui, avec configuration', 
+                    'Oui', 
+                    'Très flexible')
 )
 
 tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils')
