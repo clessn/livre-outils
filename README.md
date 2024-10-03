@@ -105,16 +105,10 @@ Vous devriez voir la version de Git installée.
 3. Ajoutez vos modifications pour les valider :
 
    ```bash
-   git add .
+   git add chapitre_1.qmd
    ```
 
 4. Validez vos modifications avec un message :
-
-   ```bash
-   git commit -m "Brève description de vos modifications"
-   ```
-
-   Exemple :
 
    ```bash
    git commit -m "Correction des fautes de frappe dans le chapitre 1"
@@ -174,7 +168,6 @@ Si vous rencontrez des problèmes ou avez des questions, veuillez contacter les 
 
 Merci pour votre contribution !
 
-## Getting started
 
 ## À propos de Zotero
 
