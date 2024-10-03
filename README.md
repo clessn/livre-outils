@@ -60,9 +60,6 @@ Vous devriez voir la version de Git installée.
 
 1. Naviguez vers votre dépôt forké sur GitHub (il devrait être `github.com/VOTRE-NOM-D'UTILISATEUR/livre-outils`).
 2. Cliquez sur le bouton **Code** et copiez l'URL.
-
-   ![Bouton Clone](https://docs.github.com/assets/images/help/repository/clone-repo-clone-url-button.png)
-
 3. Ouvrez votre invite de commande ou terminal.
 4. Naviguez vers le répertoire où vous souhaitez stocker le projet, par exemple :
 
