@@ -85,7 +85,7 @@ Vous devriez voir la version de Git installée.
 
 2. Ouvrez le fichier que vous souhaitez modifier à l'aide de votre éditeur de texte. Par exemple :
 
-   - **Utiliser Notepad (Windows)** :
+   - **Utiliser RStudio** :
 
      ```bash
      rstudio chapitre_1.qmd
