@@ -88,21 +88,9 @@ Vous devriez voir la version de Git installée.
    - **Utiliser Notepad (Windows)** :
 
      ```bash
-     notepad chapter1.md
+     rstudio chapitre_1.qmd
      ```
-
-   - **Utiliser TextEdit (macOS)** :
-
-     ```bash
-     open -e chapter1.md
-     ```
-
-   - **Utiliser Visual Studio Code** :
-
-     ```bash
-     code chapter1.md
-     ```
-
+     
 3. Apportez vos modifications et enregistrez le fichier.
 
 ## Valider vos modifications
