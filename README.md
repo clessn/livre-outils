@@ -51,9 +51,6 @@ Vous devriez voir la version de Git installée.
 
 1. Accédez au [dépôt du livre](https://github.com/clessn/livre-outils).
 2. Cliquez sur le bouton **Fork** dans le coin supérieur droit de la page.
-
-   ![Bouton Fork](https://docs.github.com/assets/images/help/repository/fork_button.jpg)
-
 3. Cela crée une copie du dépôt sous votre compte GitHub.
 
 ## Cloner votre fork
@@ -131,13 +128,10 @@ git push --set-upstream origin main
 ## Créer une Pull Request
 
 1. Allez sur votre dépôt forké sur GitHub.
+
 2. Cliquez sur l'onglet **Pull Requests**.
 
-   ![Onglet Pull Requests](https://docs.github.com/assets/images/help/pull_requests/pull-requests-tab.png)
-
 3. Cliquez sur **New Pull Request**.
-
-   ![Bouton New Pull Request](https://docs.github.com/assets/images/help/pull_requests/pull-request-start-review-button.png)
 
 4. Assurez-vous que vous comparez votre branche `main` à la branche `main` du dépôt original.
 
@@ -221,16 +215,4 @@ Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
 - Centralisation des pdf
 - Autre
 
-## How to contribute
 
-1.  Create a branch
-2.  Switch to the branch on your terminal
-3.  Commit your changes
-4.  Create a pull request
-5.  Follow the instructions in the pull request
-6.  Merge your pull request
-
-## Render book
-
-To render the book to pdf, in your terminal, run `quarto render` from
-the project directory.
