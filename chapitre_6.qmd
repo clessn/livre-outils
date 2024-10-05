@@ -1,100 +1,21 @@
 # Outils de visualisation graphique
-## Une image vaut mille mots
 
-Camille Tremblay-Antoine[^chapitre_7-1] Nadjim Fréchet[^chapitre_7-2]
-
-[^chapitre_7-1]: Université Laval
-
-[^chapitre_7-2]: Université de Montréal
-
-```{r, echo=T, include=F, eval = F}
-
-#*****************************************#
-#### 0 - Téléchargement des packages ######
-#*****************************************#
-
-library(tidyverse)   # Pour utiliser les packages dplyr et ggplot2
-library(lattice)     # Pour utiliser le package lattice
-library(readstata13) # Pour télécharger des bases de données de format dta
-library(grid)        # Pour des grids de graphique
-library(gridExtra)   # Pour des grids de graphique
-
-
-#********************************************************************************************************************************#
-#### 0.1 - Téléchargement de la base de données de l'Étude Électorale Canadienne de 2019 disponible sur http://www.ces-eec.ca/  ######
-#********************************************************************************************************************************#
-
-Data <- read.dta13("/Users/nadjimfrechet/Dropbox/projet-global_esclean/Canada/Data/RawData/CES19.dta")
-
-
-#### 1 - Nettoyage de base de la variable d'intérêt ####
-
-## Province
-
-Data$province <- NA
-Data$province[as.numeric(Data$pes19_province) == 5              ] <- "T-N-L"
-Data$province[as.numeric(Data$pes19_province) %in% c(4,7,10)    ] <- "Maritimes"
-Data$province[as.numeric(Data$pes19_province) %in% c(1:3,12)    ] <- "Ouest"
-Data$province[as.numeric(Data$pes19_province) == 11             ] <- "Québec"
-Data$province[as.numeric(Data$pes19_province) == 9              ] <- "Ontario"
-Data$province[as.numeric(Data$pes19_province) %in% c(4,6,8,13)  ] <- NA
-table(Data$province)
-
-## Idéologie gauche-droite
-
-Data$gaucheDroite <- NA
-Data$gaucheDroite <- Data$cps19_lr_scale_bef
-table(Data$gaucheDroite)
-
-#### 1.1 - Nettoyage de la base de données du Graphique BaseR ####
-
-GraphiqueExemple <- Data %>%
-  # Sélection de la variable d'intérêt
-  select(province) %>%
-  # Retrait des valeurs manquantes
-  na.omit() %>%
-  # Sélection de la variable de regroupement
-  group_by(province) %>%
-  # Nombre d'observations par valeur de la variable d'intérêt
-  summarise(n = n()) %>%
-  # Proportion par valeur de la variable d'intérêt
-  mutate(prop = round(n/sum(n)*100,2)) %>%
-  # Sélection des variables pertinentes pour le graphique
-  ungroup() %>%
-  select(province, prop) 
-
-## Extraction des valeurs intéressantes
-
-x <- GraphiqueExemple$province
-
-y <- GraphiqueExemple$prop
-
-#### 1.2 - Nettoyage de la base de données du Graphique lattice ####
-
-GraphiqueLattice <- Data %>%
-  # Sélection des variables d'intérêt
-  select(province, gaucheDroite) %>%
-  # Retrait des valeurs manquantes
-  na.omit() %>%
-  # Sélection de la variable de regroupement
-  group_by(province, gaucheDroite) %>%
-  # Enlever les valeurs manquantes
-  na.omit()  
-
-
-```
-
-## Introduction
-
+## Point d'observation: historique de la visualisation graphique
 Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
 
-Mais qu'est-ce qu'une bonne visualisation de données? Quel type de graphique choisir? Quelles couleurs utiliser? Quelles informations mettre en évidence? Ce chapitre ne répond pas à ces questions, une myriade d'ouvrages les ont déjà traitées. Du classique *The Visual Display of Quantitative Information* de Edward Tufte (1983) jusqu'aux plus récents ouvrages tels que *Data Visualization: A Practical Introduction* de Kieran Healy (2018) ou *Fundamentals of Data Visualization* de Claus O. Wilke (2019), les ressources sont nombreuses pour vous aider à améliorer vos compétences en visualisation de données. Il en ressort souvent un adage qui revient sous différentes versions: excellence et intégrité [@tufte83]; "Be Brief, Clear, Picturesque, and Accurate" pour Bessler (2023); "accuracy, utility, and efficiency" pour [@zhuMeasuringEffectiveData2007] , "Intégrité, Simplicité, Contexte, Esthétique" pour Arel-Bundock (2021). En somme, bien qu'il n'existe pas de solution toute faite, il est largement reconnu que l'adaptation de la visualisation selon l'objectif et les données à communiquer est cruciale. Il faut équilibrer soigneusement ces éléments.
+Cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. 
 
-Ce chapitre se concentre plutôt à faire une sommaire recension des outils de visualisation nécessaires aux personnes s'intéressant à la recherche en sciences sociales. Une première section discute de la sélection des outils. Ensuite, ceux-ci sont présentés selon trois catégories: les outils pour les diagrammes, les outils pour les analyses descriptives et les outils pour visualiser les régressions. Une dernière section ouvre une réflexion sur les visualisations réactives.
 
-## Sélection des outils: débat R et Python
+Le *Milestones Project*. 
 
-Il existe plusieurs outils de visualisation qui répondent à des besoins différents. Nous nous concentrerons sur les outils respectant au mieux les critères de sélections établis au chapitre 1.
+## Arpentage et choix éditorial:
+
+Il existe plusieurs outils de visualisation qui répondent à des besoins différents.
+
+
+
+Nous nous concentrerons sur les outils respectant au mieux les critères de sélections établis au chapitre 1.
+
 
 Bien entendu, les logiciels tels que *Tableau*, *Stata*, *SPSS*, *SAS* ou encore *Excel* peuvent s'avérer très pertinents selon vos exigences spécifiques. Ils sont souvent dotés d'une interface utilisateur intuitive, facilitant ainsi leur utilisation pour une variété de tâches. Toutefois, ils pourraient présenter certaines limites en matière de personnalisation des analyses et des visualisations. Par ailleurs, bien que certains de ces outils offrent une grande flexibilité, leur coût peut être considérable. Si votre institution possède une licence pour ces logiciels, il demeure judicieux de les utiliser. 
 
@@ -108,30 +29,11 @@ Bien que ce livre prend position en faveur de *R* comme présenté au chapitre 2
 
 https://www.r-project.org/about.html
 
-## Outils pour les schémas
 
-Il peut être nécessaire au cours d’un processus scientifique, une présentation, autre de faire des schémas.
-
-Toujours pertinent de faire un croquis à la main, mais lorsque vient le temps de le rendre propre, présentable quels outils s’offrent à nous?
-
-Moody, D. (2007). What Makes a Good Diagram? Improving the Cognitive Effectiveness of Diagrams in IS Development. In W. Wojtkowski, W. G. Wojtkowski, J. Zupancic, G. Magyar, & G. Knapp (Eds.), Advances in Information Systems Development (pp. 481–492). Springer US.
-
-Larkin, J. H., & Simon, H. A. (1987). Why a Diagram is (Sometimes) Worth Ten Thousand Words. Cognitive Science, 11(1), 65–100.
-
-Suttorp, M. M., Siegerink, B., Jager, K. J., Zoccali, C., & Dekker, F. W. (2015). Graphical presentation of confounding in directed acyclic graphs. Nephrology Dialysis Transplantation, 30(9), 1418–1423.
-
-### Diagrams.net (anciennement Draw.io)
-the best free diagram and flowchart app
-### Lucidchart
-
-### Miro
-
-## Outils pour les analyses descriptives
-
-### R
+## Manuel d'instruction: La visualisation graphique avec R
 Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
 
-Trois options vous sont présentées: Base R, Lattice et ggplot2. Les avantages et inconvénients respectifs de ces trois approches pour la création de graphiques sont explicités dans les sections suivantes.
+### Pour les analyses descriptives
 
 #### Base R
 Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
@@ -149,15 +51,15 @@ Développé principalement par Hadley Wickham, *ggplot2* est un *package R* fais
 Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques *ggplot2* se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.
 
 
-## Outils pour visualiser les régressions
+### Pour visualiser les régressions
 
 
-### modelsummary 
+#### modelsummary 
 [@arel-bundock22a]
 
-### Stargazer
+#### Stargazer
 
-### Ggplot2 et marginal effect
+#### Ggplot2 et marginal effect
 
 ### Aller plus loin: La visualisation interactive des données
 
@@ -240,7 +142,24 @@ Avantages: tidyverse, beauté et possibilités infinies (on peut les animer!!!),
       - ggplot2 cheat sheet
       - Pleins d'idées de visualisation en ligne et de codes adaptables disponibles
       - Retour sur la communication des données: choix du graphique en fonction des données et de l'objectif de communication
-      
+    
+    
+Outils pour les schémas
+
+Il peut être nécessaire au cours d’un processus scientifique, une présentation, autre de faire des schémas.
+
+Toujours pertinent de faire un croquis à la main, mais lorsque vient le temps de le rendre propre, présentable quels outils s’offrent à nous?
+
+Moody, D. (2007). What Makes a Good Diagram? Improving the Cognitive Effectiveness of Diagrams in IS Development. In W. Wojtkowski, W. G. Wojtkowski, J. Zupancic, G. Magyar, & G. Knapp (Eds.), Advances in Information Systems Development (pp. 481–492). Springer US.
+
+Larkin, J. H., & Simon, H. A. (1987). Why a Diagram is (Sometimes) Worth Ten Thousand Words. Cognitive Science, 11(1), 65–100.
+
+Suttorp, M. M., Siegerink, B., Jager, K. J., Zoccali, C., & Dekker, F. W. (2015). Graphical presentation of confounding in directed acyclic graphs. Nephrology Dialysis Transplantation, 30(9), 1418–1423.
+
+Diagrams.net (anciennement Draw.io)
+the best free diagram and flowchart app
+Lucidchart
+
+Miro   
       
       -->
-
