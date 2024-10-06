@@ -294,17 +294,17 @@ Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir
 
 Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.
 
-Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (*commits*), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet.
+Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de *commits*, qui inclue un message explicatif de la modification, permettant aux collaborateurs de comprendre facilement les évolutions du projet.
 
-GitHub, lancé en 2008, est une plateforme qui utilise Git comme base pour l'entreposage et la gestion de projets. C'est une vitrine virtuelle où les développeurs peuvent héberger leurs dépôts Git et collaborer de manière transparente. L'aspect social de GitHub, avec ses fonctionnalités de suivi des projets, de gestion des problèmes et de requêtes de tirage, en fait un lieu de choix pour les projets en code source ouvert et collaboratifs.
+GitHub, lancé en 2008, est une plateforme qui utilise Git comme base pour l'entreposage et la gestion de projets. C'est une vitrine virtuelle où les développeurs peuvent héberger leurs répertoires Git et collaborer de manière transparente. L'aspect social de GitHub, avec ses fonctionnalités de suivi des projets, de gestion des problèmes et de requêtes de tirage, en fait un lieu de choix pour les projets en code source ouvert et collaboratifs.
 
-En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. Lorsqu'un projet est initialisé avec Git, un dossier caché appelé .git est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque dépot, les branches, et les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail n'est perdue.
+En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au texte ou au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente de leur projet, une fonctionnalité particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. Lorsqu'un projet est initialisé avec Git, un dossier caché appelé .git est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque *commit*, sur les différentes « branches » créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail ne soit perdue.
 
-De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient le même fichier ou la même partie de texte de manière indépendante, et que Git ne sait pas quelle version garder. Dans ces cas-là, il est nécessaire de comparer les deux versions, paragraphe par paragraphe, pour décider de la meilleure solution. Contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique. Cette gestion des conflits simplifie la collaboration et évite bien des frustrations, tout en facilitant la répartition des tâches au sein de l'équipe.
+Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches (encore une fois, comprendre ici les différentes « versions ») pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier Dropbox partagé. Ainsi, contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique.
 
 Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub.
 
-Alors que Github n'est pas un logiciel libre, il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse. Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. Voici un résumé des avantages de git et Github :
+Github n'est pas un logiciel libre, mais il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs textes et leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse. Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les *pull requests*. Voici un résumé des avantages de Git et Github :
 
 1.  *Intégration et adoption répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
 
@@ -347,6 +347,7 @@ b.  Structuration du code + commentaires
 a.  Création du repo
 b.  Gestion des version (git) -->
 ```
+
 Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage infonuagiques se révèlent indispensables. Voici quelques avantages d'un entreposage sur le nuage pour la recherche :
 
 1.  *Sécurité des données* : Que vous travailliez avec des données sensibles ou non, la sécurité est essentielle pour protéger l’intégrité de vos fichiers. De bons outils garantissent que vos données ne sont pas exposées à des risques tels que des piratages ou des pertes accidentelles.
@@ -363,7 +364,7 @@ Google Drive est très facile d'utilisation par son intégration au sein des out
 
 Microsoft OneDrive Fait partie de la suite Microsoft 365. C'est donc un choix judicieux pour les utilisateurs des outils Microsoft, pour leur compatibilité. Comme Dropbox, OneDrive permet la sauvegarde de fichiers en local, ce qui facilité son utilisation pour l'entreposage de fichiers manipulés avec un language de programmation. OneDrive est généralement perçu comme étant moins simple et rapide pour sa synchronisation que Dropbox, mais sa valeur de centralisation est indégnable si la suite Microsoft est employée.
 
-Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l’installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main".
+Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l'installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main".
 
 ```{=html}
 <!-- ### Entreposage de données sensibles
@@ -430,7 +431,7 @@ tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils de
 
 ### Manuel d'instructions: comment utiliser Git, Github et Dropbox
 
-Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son répertoire Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de dépôt doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
+Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son répertoire Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de *commit* doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
 
 Il est également conseillé de travailler sur des branches distinctes pour chaque fonctionnalité majeure. Cela facilite la gestion des changements et minimise les conflits lors de la fusion. Les chercheurs devraient également consulter régulièrement les projets et les problèmes sur GitHub pour encourager une communication ouverte et résoudre rapidement les problèmes.
 
@@ -508,7 +509,7 @@ git commit -m "Ajout du code d'analyse des médias et des sondages"
 
 Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
 
-Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom "sous la forme" *mon_projet*.
+Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom sous la forme *mon_projet*.
 
 De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.
 
@@ -526,11 +527,11 @@ git push -u origin master
 
 Étape 6 : Collaboration avec vos collègues
 
-Si vos collègues souhaitent contribuer à votre projet, ils peuvent *fourcher* (Fork)votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
+Si vos collègues souhaitent contribuer à votre projet, ils peuvent dupliquer (en langage Git, on utilise le terme *Fork*) votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
 
-Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *demande de tirage* pour vous demander de fusionner leurs modifications dans votre répertoire principal.
+Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *demande de pull request* pour vous demander la permission de fusionner leurs modifications dans votre répertoire principal.
 
-Étape 7 : Tirage des modifications de vos collègues
+Étape 7 : Acceptation des modifications de vos collègues
 
 Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
 
@@ -540,18 +541,18 @@ git pull origin master
 
 Étape 8 : Répéter le processus
 
-Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
+Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le répartoire à jour.
 
-Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel. La plupart des environnements de code comme RStudios et VSCode ont également des interfaces pour faciliter ces opérations.
+Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que *GitHub Desktop* qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel. La plupart des environnements de code comme RStudio et VSCode ont également des interfaces pour faciliter ces opérations.
 
 ```{r, out.width="80%"}
 #| label: fig-github
 #| echo: false
-#| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de git et de GitHub."
+#| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de Git et de GitHub."
 knitr::include_graphics("images/chapitre8_gitdesktop.png", dpi = 600)
 ```
 
-GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
+GitHub Desktop fournit une vue claire de vos répertoires, de vos modifications, de vos branches et de vos demandes de fusion (*pull requests*. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
 
 Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhension des commandes Git en ligne de commande, ce qui pourrait devenir un inconvénient si vous devez travailler dans un environnement sans interface visuelle. De plus, GitHub Desktop est spécifiquement conçu pour interagir avec GitHub. Si vous devez travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
 
