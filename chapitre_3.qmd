@@ -713,7 +713,7 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 <!-- ## L'importance d'une méthode de travail efficace -->
 
-<!-- <!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente --> -->
+<!-- <!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente -->
 
 <!-- Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés. -->
 
