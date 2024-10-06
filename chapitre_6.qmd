@@ -3,10 +3,19 @@
 ## Point d'observation: historique de la visualisation graphique
 Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
 
-Cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. 
+Cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, le 
+
+*Milestones Project*.  
+
+*A History of Data Visualization and Graphic Communication*
+
+Léger retour en arrière pour comprendre l'évolution de la visualisation graphique.
+
+Premier âge d'or de la visualisation graphique: 18e siècle
 
 
-Le *Milestones Project*. 
+
+
 
 ## Arpentage et choix éditorial:
 
