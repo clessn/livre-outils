@@ -170,11 +170,16 @@ Tout comme `stargazer`, il faut commencer en créant un modèle de régression. 
 
 ```{r}
 #| code-overflow: wrap
+#| message: false
 # Il faut premièrement installer et importer le package modelsummary si ce n'est pas déjà fait.
 # install.packages("modelsummary") # installer
 
 library(modelsummary) # importer le package
+```
 
+
+```{r}
+#| code-overflow: wrap
 ## Créer deux modèles de régression
 mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
 mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
@@ -183,18 +188,80 @@ mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
 modelsummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "markdown")
 ```
 
-Tout comme `stargazer`, `modelsummary` offre également l'option de transformer ces modèles en `latex` ou `html` avec l'argument `output`:
-
-```{r}
-msummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "latex")
-msummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "html")
-```
+Tout comme `stargazer`, `modelsummary` offre également plusieurs options de sortie avec l'argument `output`. Cependant, `modelsummary` en supporte plus, comme `kableExtra`, `html`, `latex` et bien d'autres formats.
 
 Nous vous invitons à consulter la documentation du package `modelsummary` [@arel-bundock22a] pour plus d'informations sur la personnalisation de vos tableaux de régression.
 
 #### `marginaleffects`
 
-[@arel-bundock]
+Les tableaux de régression présentent souvent les résultats des modèles de manière brute et difficile à interpréter. Une approche plus intuitive pour visualiser et comprendre ces modèles consiste à utiliser les prédictions qu'ils génèrent, puis à interpréter l'impact des variables indépendantes sur la variable dépendante. Bien que cette démarche puisse être complexe et fastidieuse à réaliser avec les fonctions de base de R ou Python, le package R `marginaleffects` a été spécifiquement conçu pour simplifier cette tâche et rendre ces analyses plus accessibles [@arel-bundock].
+
+La première étape est de faire son modèle comme on le fait habituellement:
+
+```{r}
+#| code-overflow: wrap
+# Il faut premièrement installer et importer le package marginaleffects si ce n'est pas déjà fait.
+# install.packages("marginaleffects") # installer
+
+library(marginaleffects) # importer le package
+
+## Créer deux modèles de régression
+mod_lm <- lm(mpg ~ hp + wt + drat, data = mtcars)
+```
+
+Ensuite, il est nécessaire de créer une grille où notre variable indépendante d'intérêt varie tandis que les autres variables restent constantes. Prenons, par exemple, le cas où nous souhaitons estimer et interpréter l'effet de `hp` sur `mpg`. Pour ce faire, nous construisons une `dataframe` représentant une grille de différents niveaux de `hp`, tout en maintenant les variables `wt` et `drat` constantes. Cela nous permet d'isoler l'effet spécifique de `hp` et d'explorer son impact sur la variable dépendante `mpg`. La première sous-étape ici est de comprendre les différentes valeurs que peut prendre notre variable d'intérêt, `hp`:
+```{r}
+#| code-overflow: wrap
+table(mtcars$hp)
+hist(mtcars$hp)
+```
+
+Comme on peut voir, la variable `hp` peut prendre n'importe quelle valeur numérique entre 52 et 335. La prochaine étape est de construire notre grille en utilisant la fonction `datagrid` du package:
+
+```{r}
+#| code-overflow: wrap
+
+grille <- marginaleffects::datagrid(
+      model = mod_lm,
+      hp = c(50, 100, 150, 200, 250, 300, 350)
+)
+
+print(grille)
+```
+
+Comme on peut le voir, la variable `grille` est maintenant une `dataframe` qui contient 7 rangées. Les variables `wt` et `drat` conservent la même valeur dans chaque rangée ; la variable `hp` prend cependant les 7 valeurs que nous avons définies.
+
+La prochaine étape est celle de prédire notre modèle sur ces données en utilisant la fonction `predictions` du package:
+
+```{r}
+#| code-overflow: wrap
+
+predictions <- marginaleffects::predictions(
+      model = mod_lm,
+      newdata = grille ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données, ie: grille
+)
+
+print(as.data.frame(predictions))
+```
+
+La `dataframe` predictions contient maintenant des informations très intéressantes:
+
+- `estimate`: la valeur prédite de `mpg` pour cette observation.
+- `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
+- `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
+- `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
+
+Nous pouvons maintenant utiliser `predictions` pour construire un graphique qui nous permet d'interpréter l'effet de `hp` sur `mpg` à l'intérieur de notre modèle en contrôlant pour `wt` et `drat` en utilisant le package `ggplot2`:
+
+```{r}
+#| code-overflow: wrap
+
+ggplot(predictions, aes(x = hp, y = estimate)) +
+      geom_point() +
+      geom_linerange(aes(ymin = conf.low, ymax = conf.high))
+```
+
+Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter et d'adapter ce graphique selon vos besoins. Il est également important de souligner que le package `marginaleffects` est extrêmement polyvalent, prenant en charge des centaines de types de modèles et offrant une large gamme de fonctionnalités. Pour découvrir toutes ses possibilités, nous vous invitons à consulter la documentation officielle du package [@arel-bundock].
 
 ### Aller plus loin: La visualisation interactive des données
 
