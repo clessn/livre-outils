@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
-
 <title>6&nbsp; Outils de visualisation graphique – Outils de recherche en sciences sociales numériques</title>
 <style>
 code{white-space: pre-wrap;}
@@ -20,6 +17,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -43,7 +74,6 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -64,8 +94,7 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -92,16 +121,11 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-
-
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -112,13 +136,9 @@ div.csl-indent {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
@@ -139,7 +159,7 @@ div.csl-indent {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Avant-propos</span></a>
@@ -212,32 +232,30 @@ div.csl-indent {
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#point-dobservation-historique-de-la-visualisation-graphique" id="toc-point-dobservation-historique-de-la-visualisation-graphique" class="nav-link active" data-scroll-target="#point-dobservation-historique-de-la-visualisation-graphique"><span class="header-section-number">6.1</span> Point d’observation: historique de la visualisation graphique</a></li>
-  <li><a href="#arpentage-et-choix-éditorial" id="toc-arpentage-et-choix-éditorial" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial"><span class="header-section-number">6.2</span> Arpentage et choix éditorial:</a></li>
-  <li><a href="#manuel-dinstruction-la-visualisation-graphique-avec-r" id="toc-manuel-dinstruction-la-visualisation-graphique-avec-r" class="nav-link" data-scroll-target="#manuel-dinstruction-la-visualisation-graphique-avec-r"><span class="header-section-number">6.3</span> Manuel d’instruction: La visualisation graphique avec R</a>
+<li><a href="#point-dobservation-historique-de-la-visualisation-graphique" id="toc-point-dobservation-historique-de-la-visualisation-graphique" class="nav-link active" data-scroll-target="#point-dobservation-historique-de-la-visualisation-graphique"><span class="header-section-number">6.1</span> Point d’observation: historique de la visualisation graphique</a></li>
+  <li><a href="#arpentage-et-choix-%C3%A9ditorial" id="toc-arpentage-et-choix-éditorial" class="nav-link" data-scroll-target="#arpentage-et-choix-%C3%A9ditorial"><span class="header-section-number">6.2</span> Arpentage et choix éditorial:</a></li>
+  <li>
+<a href="#manuel-dinstruction-la-visualisation-graphique-avec-r" id="toc-manuel-dinstruction-la-visualisation-graphique-avec-r" class="nav-link" data-scroll-target="#manuel-dinstruction-la-visualisation-graphique-avec-r"><span class="header-section-number">6.3</span> Manuel d’instruction: La visualisation graphique avec R</a>
   <ul class="collapse">
-  <li><a href="#pour-les-analyses-descriptives" id="toc-pour-les-analyses-descriptives" class="nav-link" data-scroll-target="#pour-les-analyses-descriptives"><span class="header-section-number">6.3.1</span> Pour les analyses descriptives</a></li>
-  <li><a href="#pour-visualiser-les-régressions" id="toc-pour-visualiser-les-régressions" class="nav-link" data-scroll-target="#pour-visualiser-les-régressions"><span class="header-section-number">6.3.2</span> Pour visualiser les régressions</a></li>
-  <li><a href="#aller-plus-loin-la-visualisation-interactive-des-données" id="toc-aller-plus-loin-la-visualisation-interactive-des-données" class="nav-link" data-scroll-target="#aller-plus-loin-la-visualisation-interactive-des-données"><span class="header-section-number">6.3.3</span> Aller plus loin: La visualisation interactive des données</a></li>
-  </ul></li>
+<li><a href="#pour-les-analyses-descriptives" id="toc-pour-les-analyses-descriptives" class="nav-link" data-scroll-target="#pour-les-analyses-descriptives"><span class="header-section-number">6.3.1</span> Pour les analyses descriptives</a></li>
+  <li><a href="#pour-visualiser-les-r%C3%A9gressions" id="toc-pour-visualiser-les-régressions" class="nav-link" data-scroll-target="#pour-visualiser-les-r%C3%A9gressions"><span class="header-section-number">6.3.2</span> Pour visualiser les régressions</a></li>
+  <li><a href="#aller-plus-loin-la-visualisation-interactive-des-donn%C3%A9es" id="toc-aller-plus-loin-la-visualisation-interactive-des-données" class="nav-link" data-scroll-target="#aller-plus-loin-la-visualisation-interactive-des-donn%C3%A9es"><span class="header-section-number">6.3.3</span> Aller plus loin: La visualisation interactive des données</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span>
+</h1>
 </div>
 
 
@@ -251,20 +269,16 @@ div.csl-indent {
   
 
 
-</header>
-
-
-<section id="point-dobservation-historique-de-la-visualisation-graphique" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="point-dobservation-historique-de-la-visualisation-graphique"><span class="header-section-number">6.1</span> Point d’observation: historique de la visualisation graphique</h2>
+</header><section id="point-dobservation-historique-de-la-visualisation-graphique" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="point-dobservation-historique-de-la-visualisation-graphique">
+<span class="header-section-number">6.1</span> Point d’observation: historique de la visualisation graphique</h2>
 <p>Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d’un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s’agit alors de trouver la meilleure manière de rendre l’information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d’une recherche empirique.</p>
 <p>Cette volonté de vulgariser des données à l’aide d’image ne date pas d’hier. En effet, le</p>
 <p><em>Milestones Project</em>.</p>
 <p><em>A History of Data Visualization and Graphic Communication</em></p>
 <p>Léger retour en arrière pour comprendre l’évolution de la visualisation graphique.</p>
 <p>Premier âge d’or de la visualisation graphique: 18e siècle</p>
-</section>
-<section id="arpentage-et-choix-éditorial" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial"><span class="header-section-number">6.2</span> Arpentage et choix éditorial:</h2>
+</section><section id="arpentage-et-choix-éditorial" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial">
+<span class="header-section-number">6.2</span> Arpentage et choix éditorial:</h2>
 <p>Il existe plusieurs outils de visualisation qui répondent à des besoins différents.</p>
 <p>Nous nous concentrerons sur les outils respectant au mieux les critères de sélections établis au chapitre 1.</p>
 <p>Bien entendu, les logiciels tels que <em>Tableau</em>, <em>Stata</em>, <em>SPSS</em>, <em>SAS</em> ou encore <em>Excel</em> peuvent s’avérer très pertinents selon vos exigences spécifiques. Ils sont souvent dotés d’une interface utilisateur intuitive, facilitant ainsi leur utilisation pour une variété de tâches. Toutefois, ils pourraient présenter certaines limites en matière de personnalisation des analyses et des visualisations. Par ailleurs, bien que certains de ces outils offrent une grande flexibilité, leur coût peut être considérable. Si votre institution possède une licence pour ces logiciels, il demeure judicieux de les utiliser.</p>
@@ -272,44 +286,184 @@ div.csl-indent {
 <p>Bien que ce livre prend position en faveur de <em>R</em> comme présenté au chapitre 2, il est important de reconnaître les capacités de <em>Python</em> dans le domaine de la visualisation graphique. <em>Python</em> est un langage de programmation généraliste et est répandu dans la majorité des universités et sur le marché du travail <span class="citation" data-cites="ozgurMatLabVsPython2017">(<a href="references.html#ref-ozgurMatLabVsPython2017" role="doc-biblioref"><strong>ozgurMatLabVsPython2017?</strong></a>)</span>. Matplotlib, Seaborn et Plotly sont des <em>packages</em> de</p>
 <p><em>R</em> est spécialisé en statistiques et scientific research and academia, analytical power of R is virtually unmatched.<span class="citation" data-cites="ozgurMatLabVsPython2017">(<a href="references.html#ref-ozgurMatLabVsPython2017" role="doc-biblioref"><strong>ozgurMatLabVsPython2017?</strong></a>)</span>.</p>
 <p>https://www.r-project.org/about.html</p>
-</section>
-<section id="manuel-dinstruction-la-visualisation-graphique-avec-r" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="manuel-dinstruction-la-visualisation-graphique-avec-r"><span class="header-section-number">6.3</span> Manuel d’instruction: La visualisation graphique avec R</h2>
+</section><section id="manuel-dinstruction-la-visualisation-graphique-avec-r" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="manuel-dinstruction-la-visualisation-graphique-avec-r">
+<span class="header-section-number">6.3</span> Manuel d’instruction: La visualisation graphique avec R</h2>
 <p>Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples <em>packages</em> ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l’on regarde ce qui est le plus utilisé dans la communauté. L’objectif n’est pas simplement de présenter les <em>packages</em> les plus courrants parce qu’ils sont les plus communs. Les <em>packages</em> les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d’aide en ligne sont innombrables.</p>
-<section id="pour-les-analyses-descriptives" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="pour-les-analyses-descriptives"><span class="header-section-number">6.3.1</span> Pour les analyses descriptives</h3>
-<section id="base-r" class="level4" data-number="6.3.1.1">
-<h4 data-number="6.3.1.1" class="anchored" data-anchor-id="base-r"><span class="header-section-number">6.3.1.1</span> Base R</h4>
+<section id="pour-les-analyses-descriptives" class="level3" data-number="6.3.1"><h3 data-number="6.3.1" class="anchored" data-anchor-id="pour-les-analyses-descriptives">
+<span class="header-section-number">6.3.1</span> Pour les analyses descriptives</h3>
+<section id="base-r" class="level4" data-number="6.3.1.1"><h4 data-number="6.3.1.1" class="anchored" data-anchor-id="base-r">
+<span class="header-section-number">6.3.1.1</span> Base R</h4>
 <p>Le <em>Base R</em> est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de <em>packages</em> au préalable. Le <em>Base R</em> permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d’une variable ou pour regarder la relation entre deux d’entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction <em>plot()</em>. Avec la fonction <em>plot()</em>, le codeur peut visualiser la distribution d’une variable seule en spécifiant l’axe des <em>x</em> dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l’intérieur de la fonction celles qui composeront les axes des <em>x</em> et des <em>y</em> du graphique. Les fonctions <em>barplot(), hist()</em> ou <em>boxplot()</em> disponibles dans le <em>Base R</em> permettent de spécifier le style de graphique souhaité, qu’on veuille représenter nos données sous forme de diagramme à barre, d’histogramme ou de diagramme en boîtes <span class="citation" data-cites="kabacoff22">(<a href="references.html#ref-kabacoff22" role="doc-biblioref">Kabacoff, 2022, p. 119‑132</a>)</span>.</p>
 <p>Alors qu’un peu tout peut être fait avec le <em>Base R</em>, ce langage demeure élémentaire; il est difficile d’innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le <em>Base R</em> peut sembler plus simple pour l’exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu’on cherche à améliorer l’esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que <em>lattice</em> et <em>ggplot2</em> permettent plus facilement<span class="citation" data-cites="wickham09">(<a href="references.html#ref-wickham09" role="doc-biblioref">Wickham, 2009, p. 3‑4</a>)</span>.</p>
-</section>
-<section id="lattice" class="level4" data-number="6.3.1.2">
-<h4 data-number="6.3.1.2" class="anchored" data-anchor-id="lattice"><span class="header-section-number">6.3.1.2</span> Lattice</h4>
+</section><section id="lattice" class="level4" data-number="6.3.1.2"><h4 data-number="6.3.1.2" class="anchored" data-anchor-id="lattice">
+<span class="header-section-number">6.3.1.2</span> Lattice</h4>
 <p>Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p.&nbsp;373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).</p>
 <p>Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de ggplot2 lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p.&nbsp;373‑377 et 390; Wickham, 2009, p.&nbsp;6).</p>
-</section>
-<section id="ggplot-2" class="level4" data-number="6.3.1.3">
-<h4 data-number="6.3.1.3" class="anchored" data-anchor-id="ggplot-2"><span class="header-section-number">6.3.1.3</span> Ggplot 2</h4>
+</section><section id="ggplot-2" class="level4" data-number="6.3.1.3"><h4 data-number="6.3.1.3" class="anchored" data-anchor-id="ggplot-2">
+<span class="header-section-number">6.3.1.3</span> Ggplot 2</h4>
 <p>Développé principalement par Hadley Wickham, <em>ggplot2</em> est un <em>package R</em> faisant partie de la collection de <em>packages</em> de <em>tidyverse</em>. Ainsi, <em>Ggplot2</em> peut être utilisé avec les autres <em>packages</em> centraux de <em>tidyverse</em> ce qui limite de potentiels conflits entre les fonctions de <em>packages</em> qui puissent être incompatibles avec <em>ggplot2</em>. Par exemple, le <em>package dplyr</em> de <em>tidyverse</em> est très utile pour analyser, organiser et préparer vos données à visualiser avec <em>ggplot2</em> <span class="citation" data-cites="wickham_etal19 wickham_etal23">(<a href="references.html#ref-wickham_etal19" role="doc-biblioref">Wickham et al., 2019</a>; <a href="references.html#ref-wickham_etal23" role="doc-biblioref">Wickham et al., 2023, p. 30</a>)</span>.</p>
 <p>Le principal avantage de <em>ggplot2</em> reste sa grammaire qui permet à l’utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l’esthétisme de vos graphiques à un très haut niveau par rapport aux autres <em>packages</em> de visualisation graphique disponibles en R. Les graphiques <em>ggplot2</em> se construisent couche par couche, soit par l’ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.</p>
-</section>
-</section>
-<section id="pour-visualiser-les-régressions" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="pour-visualiser-les-régressions"><span class="header-section-number">6.3.2</span> Pour visualiser les régressions</h3>
-<p>Lorsque l’on veut aller plus loin que les analyses descriptives on peut faire des modèles de régression. Alors qu’il est très simple de visualiser un résumé d’un modèle avec la fonction <code>summary(model)</code>, on peut rapidement arriver à bout de ces fonctionnalités lorsqu’on veut visualiser et comparer plusieurs modèles, présenter les modèles à son équipe, inclure les modèles dans une publication, etc. La prochaine section du chapitre présente les différents outils qui nous permettent de rapidement visualiser et présenter nos modèles de régression.</p>
-<section id="stargazer-hlavac22" class="level4" data-number="6.3.2.1">
-<h4 data-number="6.3.2.1" class="anchored" data-anchor-id="stargazer-hlavac22"><span class="header-section-number">6.3.2.1</span> <code>stargazer</code> <span class="citation" data-cites="hlavac22">(<a href="references.html#ref-hlavac22" role="doc-biblioref">Hlavac, 2022</a>)</span></h4>
-</section>
-<section id="modelsummary" class="level4" data-number="6.3.2.2">
-<h4 data-number="6.3.2.2" class="anchored" data-anchor-id="modelsummary"><span class="header-section-number">6.3.2.2</span> <code>modelsummary</code></h4>
+</section></section><section id="pour-visualiser-les-régressions" class="level3" data-number="6.3.2"><h3 data-number="6.3.2" class="anchored" data-anchor-id="pour-visualiser-les-régressions">
+<span class="header-section-number">6.3.2</span> Pour visualiser les régressions</h3>
+<p>Lorsque l’on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction <code>summary(model)</code> offre une manière simple et rapide d’obtenir un aperçu d’un modèle, ses limites se manifestent lorsqu’il s’agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d’une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Le manuel d’instructions de cette section restera volontairement bref et concis en raison de l’abondante documentation déjà existante sur ces outils. L’objectif ici est de les centraliser en un seul endroit.</p>
+</div>
+</div>
+</div>
+<section id="le-package-stargazer" class="level4" data-number="6.3.2.1"><h4 data-number="6.3.2.1" class="anchored" data-anchor-id="le-package-stargazer">
+<span class="header-section-number">6.3.2.1</span> Le package <code>stargazer</code>
+</h4>
+<p>Le package <code>stargazer</code> est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d’utilisation, la diversité des modèles supportés et son esthétisme <span class="citation" data-cites="hlavac22">(<a href="references.html#ref-hlavac22" role="doc-biblioref">Hlavac, 2022</a>)</span>. Bien que nous soyons partiellement d’accord avec ces propos et que <code>stargazer</code> réponde effectivement à ces trois aspects, nous estimons que le package <code>modelsummary</code> (<a href="#sec-model-summary" class="quarto-xref"><span>Section 6.3.2.2</span></a>) surpasse <code>stargazer</code> dans chacun de ces domaines.</p>
+<p>Voici une façon standard d’utiliser <code>stargazer</code> pour créer un tableau de deux modèles de régression:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Il faut premièrement installer et importer le package stargazer si ce n'est pas déjà fait.</span></span>
+<span><span class="co"># install.packages("stargazer") # installer</span></span>
+<span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">stargazer</span><span class="op">)</span> <span class="co"># importer le package</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Please cite as: </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> R package version 5.2.3. https://CRAN.R-project.org/package=stargazer </code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## Créer deux modèles de régression</span></span>
+<span><span class="va">mod_lm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">mpg</span> <span class="op">~</span> <span class="va">hp</span> <span class="op">+</span> <span class="va">wt</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span></span>
+<span><span class="va">mod_glm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/glm.html">glm</a></span><span class="op">(</span><span class="va">vs</span> <span class="op">~</span> <span class="va">hp</span> <span class="op">+</span> <span class="va">wt</span> <span class="op">+</span> <span class="va">drat</span>, data <span class="op">=</span> <span class="va">mtcars</span>, family <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/family.html">binomial</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/stargazer/man/stargazer.html">stargazer</a></span><span class="op">(</span><span class="va">mod_lm</span>, <span class="va">mod_glm</span>, type <span class="op">=</span> <span class="st">"text"</span>, title <span class="op">=</span> <span class="st">"Tableau de régression des modèles"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Tableau de régression des modèles
+===================================================
+                          Dependent variable:      
+                    -------------------------------
+                             mpg              vs   
+                             OLS           logistic
+                             (1)             (2)   
+---------------------------------------------------
+hp                        -0.032***        -0.104**
+                           (0.009)         (0.050) 
+                                                   
+wt                        -3.878***         0.860  
+                           (0.633)         (1.299) 
+                                                   
+drat                                        -1.625 
+                                           (2.073) 
+                                                   
+Constant                  37.227***         16.030 
+                           (1.599)         (11.974)
+                                                   
+---------------------------------------------------
+Observations                  32              32   
+R2                          0.827                  
+Adjusted R2                 0.815                  
+Log Likelihood                              -7.698 
+Akaike Inf. Crit.                           23.395 
+Residual Std. Error    2.593 (df = 29)             
+F Statistic         69.211*** (df = 2; 29)         
+===================================================
+Note:                   *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+</div>
+</div>
+<p>Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, <code>stargazer</code> offre également l’option de transformer ces modèles en <code>latex</code> avec l’argument <code>type</code>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/stargazer/man/stargazer.html">stargazer</a></span><span class="op">(</span><span class="va">mod_lm</span>, <span class="va">mod_glm</span>, type <span class="op">=</span> <span class="st">"latex"</span>, title <span class="op">=</span> <span class="st">"Tableau de régression des modèles"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Sun, Oct 06, 2024 - 09:11:40 PM
+\begin{table}[!htbp] \centering 
+  \caption{Tableau de régression des modèles} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ &amp; \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] &amp; mpg &amp; vs \\ 
+\\[-1.8ex] &amp; \textit{OLS} &amp; \textit{logistic} \\ 
+\\[-1.8ex] &amp; (1) &amp; (2)\\ 
+\hline \\[-1.8ex] 
+ hp &amp; $-$0.032$^{***}$ &amp; $-$0.104$^{**}$ \\ 
+  &amp; (0.009) &amp; (0.050) \\ 
+  &amp; &amp; \\ 
+ wt &amp; $-$3.878$^{***}$ &amp; 0.860 \\ 
+  &amp; (0.633) &amp; (1.299) \\ 
+  &amp; &amp; \\ 
+ drat &amp;  &amp; $-$1.625 \\ 
+  &amp;  &amp; (2.073) \\ 
+  &amp; &amp; \\ 
+ Constant &amp; 37.227$^{***}$ &amp; 16.030 \\ 
+  &amp; (1.599) &amp; (11.974) \\ 
+  &amp; &amp; \\ 
+\hline \\[-1.8ex] 
+Observations &amp; 32 &amp; 32 \\ 
+R$^{2}$ &amp; 0.827 &amp;  \\ 
+Adjusted R$^{2}$ &amp; 0.815 &amp;  \\ 
+Log Likelihood &amp;  &amp; $-$7.698 \\ 
+Akaike Inf. Crit. &amp;  &amp; 23.395 \\ 
+Residual Std. Error &amp; 2.593 (df = 29) &amp;  \\ 
+F Statistic &amp; 69.211$^{***}$ (df = 2; 29) &amp;  \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  &amp; \multicolumn{2}{r}{$^{*}$p$&lt;$0.1; $^{**}$p$&lt;$0.05; $^{***}$p$&lt;$0.01} \\ 
+\end{tabular} 
+\end{table} </code></pre>
+</div>
+</div>
+<p>Alors que cette sortie est moins compréhensible qu’avec <code>type = text</code>, cette sortie a l’avantage de pouvoir être copiée et collée dans un code latex</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/stargazer/man/stargazer.html">stargazer</a></span><span class="op">(</span><span class="va">mod_lm</span>, <span class="va">mod_glm</span>, type <span class="op">=</span> <span class="st">"html"</span>, title <span class="op">=</span> <span class="st">"Tableau de régression des modèles"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+&lt;table style="text-align:center"&gt;&lt;caption&gt;&lt;strong&gt;Tableau de régression des modèles&lt;/strong&gt;&lt;/caption&gt;
+&lt;tr&gt;&lt;td colspan="3" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td colspan="2"&gt;&lt;em&gt;Dependent variable:&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan="2" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;mpg&lt;/td&gt;&lt;td&gt;vs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;OLS&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;logistic&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(1)&lt;/td&gt;&lt;td&gt;(2)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="3" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;hp&lt;/td&gt;&lt;td&gt;-0.032&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;-0.104&lt;sup&gt;**&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(0.009)&lt;/td&gt;&lt;td&gt;(0.050)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;wt&lt;/td&gt;&lt;td&gt;-3.878&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.860&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(0.633)&lt;/td&gt;&lt;td&gt;(1.299)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;drat&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;-1.625&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;(2.073)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Constant&lt;/td&gt;&lt;td&gt;37.227&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;16.030&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;(1.599)&lt;/td&gt;&lt;td&gt;(11.974)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="3" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;Observations&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.827&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Adjusted R&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;0.815&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Log Likelihood&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;-7.698&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Akaike Inf. Crit.&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;23.395&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;Residual Std. Error&lt;/td&gt;&lt;td&gt;2.593 (df = 29)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="text-align:left"&gt;F Statistic&lt;/td&gt;&lt;td&gt;69.211&lt;sup&gt;***&lt;/sup&gt; (df = 2; 29)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="3" style="border-bottom: 1px solid black"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align:left"&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/td&gt;&lt;td colspan="2" style="text-align:right"&gt;&lt;sup&gt;*&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;**&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;***&lt;/sup&gt;p&lt;0.01&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</div>
+</div>
+</section><section id="sec-model-summary" class="level4" data-number="6.3.2.2"><h4 data-number="6.3.2.2" class="anchored" data-anchor-id="sec-model-summary">
+<span class="header-section-number">6.3.2.2</span> <code>modelsummary</code>
+</h4>
 <p><span class="citation" data-cites="arel-bundock22a">(<a href="references.html#ref-arel-bundock22a" role="doc-biblioref">Arel-Bundock, 2022</a>)</span></p>
-</section>
-<section id="ggplot2-et-marginaleffects" class="level4" data-number="6.3.2.3">
-<h4 data-number="6.3.2.3" class="anchored" data-anchor-id="ggplot2-et-marginaleffects"><span class="header-section-number">6.3.2.3</span> <code>ggplot2</code> et <code>marginaleffects</code></h4>
-</section>
-</section>
-<section id="aller-plus-loin-la-visualisation-interactive-des-données" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="aller-plus-loin-la-visualisation-interactive-des-données"><span class="header-section-number">6.3.3</span> Aller plus loin: La visualisation interactive des données</h3>
+</section><section id="marginaleffects" class="level4" data-number="6.3.2.3"><h4 data-number="6.3.2.3" class="anchored" data-anchor-id="marginaleffects">
+<span class="header-section-number">6.3.2.3</span> <code>marginaleffects</code>
+</h4>
+</section></section><section id="aller-plus-loin-la-visualisation-interactive-des-données" class="level3" data-number="6.3.3"><h3 data-number="6.3.3" class="anchored" data-anchor-id="aller-plus-loin-la-visualisation-interactive-des-données">
+<span class="header-section-number">6.3.3</span> Aller plus loin: La visualisation interactive des données</h3>
 <p>Si jusqu’à présent la visualisation des données a été présentée comme une étape permettant de présenter les résultats de recherches, il est également possible de considérer la visualisation comme une utile au processus d’exploration des données comportants de nombreuses dimensions (autres façons de le dire peut-être?). En effet, les formes de visualisations dites interactives permettant d’explorer et même d’analyser les données à même notre graphique ou notre tableau. Cela contribue à mieux comprendre la structures des données, à inspecter plus rapidement ces dernières et même susciter des questions de recherches peut-être omises autrement (citer Sievert, 2020).</p>
 <ul>
 <li>ggplotly et plotly</li>
@@ -408,10 +562,9 @@ Miro
       
       -->
 
-
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-arel-bundock22a" class="csl-entry" role="listitem">
-Arel-Bundock, V. (2022). <em>Modelsummary: <span>Data</span> and <span>Model Summaries</span> in <span>R</span></em>. <a href="https://www.jstatsoft.org/article/view/v103i01">https://www.jstatsoft.org/article/view/v103i01</a>
+Arel-Bundock, V. (2022). <em>Modelsummary: <span>Data</span> and <span>Model Summaries</span> in <span>R</span></em>. <a href="https://modelsummary.com/">https://modelsummary.com/</a>
 </div>
 <div id="ref-hlavac22" class="csl-entry" role="listitem">
 Hlavac, M. (2022). <em>Stargazer: Beautiful <span>LATEX</span>, <span>HTML</span> and <span>ASCII</span> Tables from <span>R</span> Statistical Output</em>.
@@ -429,11 +582,7 @@ Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François, R., Grol
 Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em> (Second edition). O’Reilly.
 </div>
 </div>
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -996,9 +1145,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./chapitre_5.html" class="pagination-link" aria-label="Outils de collecte de données">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de collecte de données</span></span>
       </a>          
@@ -1010,8 +1157,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>Livre-outils</p>
 </div>   
@@ -1023,8 +1169,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

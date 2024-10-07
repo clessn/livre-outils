@@ -64,16 +64,77 @@ Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateu
 
 Lorsque l'on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction `summary(model)` offre une manière simple et rapide d'obtenir un aperçu d'un modèle, ses limites se manifestent lorsqu'il s'agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d'une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.
 
-#### La fonction `stargazer`
+:::::: {.callout-note}
+Le manuel d'instructions de cette section restera volontairement bref et concis en raison de l'abondante documentation déjà existante sur ces outils. L'objectif ici est de les centraliser en un seul endroit.
+:::
 
-La fonction 
+#### Le package `stargazer`
 
-[@hlavac22]
+Le package `stargazer` est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d'utilisation, la diversité des modèles supportés et son esthétisme [@hlavac22]. Bien que nous soyons partiellement d'accord avec ces propos et que `stargazer` réponde effectivement à ces trois aspects, nous estimons que le package `modelsummary` (@sec-model-summary) surpasse `stargazer` dans chacun de ces domaines.
 
-#### `modelsummary`
-[@arel-bundock22a]
+Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
 
-#### `ggplot2` et `marginaleffects`
+```{r}
+#| code-overflow: wrap
+# Il faut premièrement installer et importer le package stargazer si ce n'est pas déjà fait.
+# install.packages("stargazer") # installer
+
+library(stargazer) # importer le package
+
+## Créer deux modèles de régression
+mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
+mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
+
+stargazer(mod_lm, mod_glm, type = "text", title = "Tableau de régression des modèles")
+```
+
+Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
+
+```{r}
+stargazer(mod_lm, mod_glm, type = "latex", title = "Tableau de régression des modèles")
+```
+
+Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, cette sortie a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html:
+
+```{r}
+stargazer(mod_lm, mod_glm, type = "html", title = "Tableau de régression des modèles")
+```
+
+Bien qu'il existe des milliers de façons de personnaliser son tableau de régression avec `stargazer`, nous vous invitons à consulter la documentation du package [@hlavac22] ainsi que différents blogs en ligne afin de personnaliser votre tableau comme vous le voulez.
+
+#### `modelsummary` {#sec-model-summary}
+
+Le package `modelsummary` [@arel-bundock22a], développé dans le même but que `stargazer`, est une nette amélioration au package `stargazer` selon l'avis des auteurs du chapitre: il est encore plus facile d'utilisation, supporte une grande variété de modèles et se connecte à divers autres outils afin de contrôler l'esthétisme de son résultat. De plus, la documentation officielle du package est beaucoup plus abondante et claire. Finalement, le package est plus intuitif à utiliser.
+
+Tout comme `stargazer`, il faut commencer en créant un modèle de régression. Puis, il suffit d'inclure les modèles dans la fonction `modelsummary`:
+
+```{r}
+#| code-overflow: wrap
+# Il faut premièrement installer et importer le package modelsummary si ce n'est pas déjà fait.
+# install.packages("modelsummary") # installer
+
+library(modelsummary) # importer le package
+
+## Créer deux modèles de régression
+mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
+mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
+
+## Utiliser modelsummary pour créer un tableau de deux modèles de régression
+modelsummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "markdown")
+```
+
+Tout comme `stargazer`, `modelsummary` offre également l'option de transformer ces modèles en `latex` ou `html` avec l'argument `output`:
+
+```{r}
+msummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "latex")
+msummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "html")
+```
+
+Nous vous invitons à consulter la documentation du package `modelsummary` [@arel-bundock22a] pour plus d'informations sur la personnalisation de vos tableaux de régression.
+
+#### `marginaleffects`
+
+[@arel-bundock]
 
 ### Aller plus loin: La visualisation interactive des données
 
