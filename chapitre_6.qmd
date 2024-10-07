@@ -32,7 +32,7 @@ Tout d’abord, il est important de comprendre que l'accessibilité financière 
 
 L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. *Python*, lui aussi, bénéficie d'une communauté active, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données, tandis que les communautés autour de logiciels comme *Tableau* ou *Excel* sont davantage orientées vers des usages plus standardisés.
 
-La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme matplotlib et seaborn [@ozgur_etal17]. *Tableau* et *Excel*, quant à eux, sont plus fréquemment utilisés dans le secteur commercial pour des visualisations rapides et des analyses exploratoires, mais ils peuvent être limités en termes de complexité graphique et de personnalisation.
+La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme matplotlib et seaborn. *Tableau* et *Excel*, quant à eux, sont plus fréquemment utilisés dans le secteur commercial pour des visualisations rapides et des analyses exploratoires, mais ils peuvent être limités en termes de complexité graphique et de personnalisation.
 
 L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers *CSV*, *Excel*, ou accéder à des bases de données *SQL*, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que pandas pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
 
@@ -270,14 +270,119 @@ Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter e
 
 ### Aller plus loin: La visualisation interactive des données
 
-Si jusqu'à présent la visualisation des données a été présentée comme une étape permettant de présenter les résultats de recherches, il est également possible de considérer la visualisation comme une utile au processus d'exploration des données comportants de nombreuses dimensions (autres façons de le dire peut-être?). En effet, les formes de visualisations dites interactives permettant d'explorer et même d'analyser les données à même notre graphique ou notre tableau. Cela contribue à mieux comprendre la structures des données, à inspecter plus rapidement ces dernières et même susciter des questions de recherches peut-être omises autrement (citer Sievert, 2020). 
+Si jusqu'à présent la visualisation des données a été présentée comme une étape servant à exposer les résultats de recherches, elle peut également être perçue comme un outil précieux pour l'exploration de données multidimensionnelles. En effet, les visualisations interactives offrent la possibilité d'explorer et même d'analyser les données directement à partir des graphiques ou tableaux. Cela permet non seulement de mieux appréhender la structure des données, mais aussi de les inspecter plus efficacement, tout en suscitant des questions de recherche qui auraient pu être négligées autrement [@sievert20].
 
-- ggplotly et plotly
-- Tableaux interactifs? fonctions kable() et kableExtra du package knitr
-- Shiny Apps
+#### Graphiques interactifs
+
+Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En R, les packages `ggplotly` et `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
+
+##### Exemple avec `ggplotly`
+
+`ggplotly` permet de transformer un graphique `ggplot2` en une visualisation interactive.
+
+```{r}
+#| message: false
+library(ggplot2)
+library(plotly)
+```
+```{r}
+# Création d'un graphique ggplot
+p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point() +
+  labs(title = "Effet de hp sur mpg")
+
+# Transformation en graphique interactif
+ggplotly(p)
+```
+
+Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`:
+
+```{r}
+# Création d'un graphique interactif avec plotly
+fig <- plot_ly(data = mtcars, x = ~hp, y = ~mpg, type = 'scatter', mode = 'markers') %>%
+  layout(title = "Effet de hp sur mpg")
+
+fig
+```
+
+Nous vous recommandons vivement de consulter la documentation officielle des packages `plotly` et `ggplotly` pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir vos graphiques interactifs.
 
 
+#### Tableaux interactifs
 
+Les tableaux interactifs sont très utiles pour rendre la présentation des données plus engageante et informative. Les fonctions `kable()` et `kableExtra` permettent de créer des tableaux élégants et interactifs directement dans R.
+
+##### Exemple avec `kable()`
+
+La fonction `kable()` de `knitr` permet de transformer un dataframe en un tableau bien formaté.
+
+```{r}
+library(knitr)
+
+# Création d'un tableau avec kable
+kable(head(mtcars), caption = "Exemple de tableau avec kable")
+```
+
+#### Exemple avec `kableExtra`
+
+Le package kableExtra permet de personnaliser et d'enrichir les tableaux créés avec kable(), notamment en ajoutant des options interactives comme des couleurs ou des styles.
+
+```{r}
+#| message: false
+library(kableExtra)
+```
+```{r}
+# Création d'un tableau interactif avec kableExtra
+kable(head(mtcars), caption = "Exemple de tableau avec la colonne hp colorée en bleu") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(5, background = "lightblue")
+```
+
+
+#### Applications interactives avec Shiny
+
+`shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
+
+
+##### Exemple de base avec `shiny`
+
+Voici un exemple simple d'application `shiny` où l'utilisateur peut sélectionner une variable pour tracer un graphique interactif. Si le package `shiny` est installé sur votre poste, vous pouvez simplement copier ce code dans un script R sous RStudio, puis lancer l'application web directement.
+
+```{r}
+#| eval: false
+library(shiny)
+library(ggplot2)
+
+# Interface utilisateur
+ui <- fluidPage(
+  titlePanel("Exemple d'application Shiny"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("var", "Choisir une variable:",
+                  choices = names(mtcars))
+    ),
+    mainPanel(
+      plotOutput("plot")
+    )
+  )
+)
+
+# Serveur
+server <- function(input, output) {
+  output$plot <- renderPlot({
+    ggplot(mtcars, aes_string(x = input$var, y = "mpg")) +
+      geom_point() +
+      labs(title = paste("Effet de", input$var, "sur mpg"))
+  })
+}
+
+# Lancement de l'application
+shinyApp(ui = ui, server = server)
+```
+
+Cette application simple permet à l'utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (`mpg`), visualisée à travers un graphique interactif.
+
+Pour explorer davantage les possibilités de `shiny`, nous vous recommandons de consulter la documentation officielle du package `shiny` ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications.
 
 <!--
 ```{=html}
