@@ -3,19 +3,25 @@
 ## Point d'observation: historique de la visualisation graphique
 Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
 
-Cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, le 
+Pour comprendre l'évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le *Milestones Project* de Michael Friendly et Daniel J. Denis[^1]. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique [@friendly_etal16].
 
-*Milestones Project*.  
+[^1]: Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
 
-*A History of Data Visualization and Graphic Communication*
+### Les origines de la visualisation graphique
+On comprend rapidement que cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, les origines de la visualisation graphique remontent à des efforts rudimentaires pour représenter visuellement des données et des relations. Dès le 17e siècle, les cartes thématiques font leur apparition, notamment avec des représentations géographiques de phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
 
-Léger retour en arrière pour comprendre l'évolution de la visualisation graphique.
+### La période moderne : Un premier âge d’or
+L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée par Friendly (2008) de premier âge d’or de la visualisation graphique. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
 
-Premier âge d'or de la visualisation graphique: 18e siècle
+L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
 
+### L’ère informatique : de nouvelles possibilités
 
+Avec l’avènement de l’ère informatique au 20e siècle, la visualisation graphique entre dans une nouvelle phase de développement. La capacité des ordinateurs à traiter de grandes quantités de données rapidement et efficacement transforme la manière dont les graphiques sont créés et utilisés. Les années 1960 voient l’émergence des premières visualisations générées par ordinateur, ouvrant la voie à des représentations plus complexes et dynamiques.
 
+Dans les années 1980 et 1990, l’émergence de logiciels spécialisés pour la visualisation (tels que SAS, SPSS et plus tard R) facilite la création de graphiques complexes, élargissant l'accès à ces outils au-delà des spécialistes des statistiques ou de la cartographie. Cette période voit également un intérêt accru pour l’esthétique et l’interactivité des graphiques, grâce à des travaux de vulgarisation et de réflexion sur la communication visuelle des données, comme ceux d’Edward Tufte [@friendly_wainer21].
 
+Élaborer sur la visualisation graphique avec R. 
 
 ## Arpentage et choix éditorial:
 
@@ -30,13 +36,52 @@ Bien entendu, les logiciels tels que *Tableau*, *Stata*, *SPSS*, *SAS* ou encore
 
 Il existe des outils gratuits et offrant un plus grand contrôle et offre plus de flexibilité que les logiciels de visualisation de données. Les logiciels. Programmation possible de personnaliser les graphiques à l'infini. 
 
-Bien que ce livre prend position en faveur de *R* comme présenté au chapitre 2, il est important de reconnaître les capacités de *Python* dans le domaine de la visualisation graphique. *Python* est un langage de programmation généraliste et est répandu dans la majorité des universités et sur le marché du travail [@ozgurMatLabVsPython2017]. Matplotlib, Seaborn et Plotly sont des *packages* de  
+Bien que ce livre prend position en faveur de *R* comme présenté au chapitre 2, il est important de reconnaître les capacités de *Python* dans le domaine de la visualisation graphique. *Python* est un langage de programmation généraliste et est répandu dans la majorité des universités et sur le marché du travail [@ozgur_etal17]. Matplotlib, Seaborn et Plotly sont des *packages* de  
 
-*R* est spécialisé en statistiques et scientific research and academia, analytical power of R is virtually unmatched.[@ozgurMatLabVsPython2017].  
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+tbl_resume_chap_X <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'R' = c('Oui (Gratuit)', 
+            'Oui (Forte communauté active)', 
+            'Populaire dans l\'analyse de données', 
+            'Bonne compatibilité (nombreux packages pour intégration)', 
+            'Oui (Open-source, réplicable)', 
+            'Flexible (hautement personnalisable avec divers packages)'),
+    'Python' = c('Oui (Gratuit)', 
+                 'Oui (Grande communauté active)', 
+                 'Populaire dans l\'analyse de données et la science des données', 
+                 'Très compatible (bibliothèques telles que pandas, matplotlib, etc.)', 
+                 'Oui (Open-source et réplicable)', 
+                 'Flexible (nombreuses bibliothèques disponibles)'),
+    'Tableau' = c('Non (Payant)', 
+                  'Oui (Communauté grandissante)', 
+                  'Populaire dans la visualisation des données', 
+                  'Bonne compatibilité (intégration avec diverses bases de données et fichiers)', 
+                  'Partiellement (Propriétaire, mais partage possible)', 
+                  'Flexible (fonctionnalités avancées mais moins personnalisable que R/Python)'),
+    'Excel' = c('Non (Payant)', 
+                'Oui (Large communauté d\'utilisateurs)', 
+                'Très populaire pour des analyses de données simples', 
+                'Bonne compatibilité (partage facile avec d\'autres logiciels Microsoft)', 
+                'Non (Propriétaire, moins réplicable)', 
+                'Peu flexible (principalement pour des visualisations simples)')
+)
+
+tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
 
 
 
-https://www.r-project.org/about.html
+```
 
 
 ## Manuel d'instruction: La visualisation graphique avec R
@@ -47,18 +92,33 @@ Lorsque vous souhaitez créer des graphiques en R, les options abondent. De mult
 #### Base R
 Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
 
-Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que *lattice* et *ggplot2* permettent plus facilement[@wickham09, p. 3-4].
+Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que `lattice` et `ggplot2` permettent plus facilement[@wickham09, p. 3-4].
 
-#### Lattice
+#### `lattice`
 Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
 
 Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de ggplot2 lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
 
-#### Ggplot 2
-Développé principalement par Hadley Wickham, *ggplot2* est un *package R* faisant partie de la collection de *packages* de *tidyverse*. Ainsi, *Ggplot2* peut être utilisé avec les autres *packages* centraux de *tidyverse* ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec *ggplot2*. Par exemple, le *package dplyr* de *tidyverse* est très utile pour analyser, organiser et préparer vos données à visualiser avec *ggplot2* [@wickham_etal19; @wickham_etal23, p. 30].
+#### Le package `ggplot2`
+Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
 
-Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques *ggplot2* se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire.
+Le principal avantage de `ggplot2` reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques `ggplot2` se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire. Dans `ggplot2`, la fonction *aes()* définit les mappings esthétiques, liant les variables des données aux éléments visuels du graphique (comme les axes ou la couleur). Les "geoms", tels que *geom_point()*, déterminent le type de graphique (points, lignes, barres). La fonction *labs()* sert à ajouter des étiquettes et des titres aux axes ou au graphique. Enfin, *theme()* ajuste l'apparence globale du graphique, en modifiant des éléments comme le fond, les grilles, ou le style de texte. Ces composants travaillent ensemble pour construire un graphique clair et personnalisable.
 
+```{r}
+library(ggplot2) # importer le package
+
+# Nous utilisons dans cet exemple le jeu de données intégré mtcars
+# Créer un graphique de dispersion (scatter plot) avec ggplot2
+ggplot(mtcars, aes(x = wt, y = mpg)) +  # Définir les mappings esthétiques: poids (wt) sur l'axe x, consommation (mpg) sur l'axe y
+  geom_point(color = "red", size = 3) +  # Ajouter des points rouges de taille 3
+  labs(
+    title = "Relation entre le poids de la voiture et la consommation",  # Titre du graphique
+    x = "Poids (1000 lbs)",  # Étiquette de l'axe x
+    y = "Miles par gallon (MPG)"  # Étiquette de l'axe y
+  ) +
+  theme_minimal()  # Appliquer un thème minimaliste pour un aspect propre et simple
+
+```
 
 ### Pour visualiser les régressions
 
