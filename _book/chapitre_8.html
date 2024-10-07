@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
+<title>8&nbsp; Outils d’intelligence artificielle – Outils de recherche en sciences sociales numériques</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./conclusion.html" rel="next">
+<link href="./chapitre_7.html" rel="prev">
+<link href="./images/logo_CLESSN_inverse.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avant-propos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Le logiciel libre et le code source ouvert</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Langages de programmation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">À la quête de l’optimisation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de la littérature et des références</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de collecte de données</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Langages de balisage</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li><a href="#d%C3%A9finition-et-diff%C3%A9rents-type-dia" id="toc-définition-et-différents-type-dia" class="nav-link active" data-scroll-target="#d%C3%A9finition-et-diff%C3%A9rents-type-dia"><span class="header-section-number">8.1</span> Définition et différents type d’IA</a></li>
+  <li><a href="#l%C3%A9volution-constante-de-lia" id="toc-lévolution-constante-de-lia" class="nav-link" data-scroll-target="#l%C3%A9volution-constante-de-lia"><span class="header-section-number">8.2</span> L’évolution constante de l’IA</a></li>
+  <li>
+<a href="#les-diff%C3%A9rents-outils-de-lia" id="toc-les-différents-outils-de-lia" class="nav-link" data-scroll-target="#les-diff%C3%A9rents-outils-de-lia"><span class="header-section-number">8.3</span> Les différents outils de l’IA</a>
+  <ul class="collapse">
+<li><a href="#les-llms" id="toc-les-llms" class="nav-link" data-scroll-target="#les-llms"><span class="header-section-number">8.3.1</span> 1. Les LLMs</a></li>
+  <li><a href="#les-assistants-de-traduction" id="toc-les-assistants-de-traduction" class="nav-link" data-scroll-target="#les-assistants-de-traduction"><span class="header-section-number">8.3.2</span> 2. Les Assistants de Traduction</a></li>
+  <li><a href="#les-assistants-de-revue-de-litt%C3%A9rature" id="toc-les-assistants-de-revue-de-littérature" class="nav-link" data-scroll-target="#les-assistants-de-revue-de-litt%C3%A9rature"><span class="header-section-number">8.3.3</span> 3. Les Assistants de Revue de littérature</a></li>
+  </ul>
+</li>
+  <li><a href="#quelle-est-la-place-du-chercheur-maintenant" id="toc-quelle-est-la-place-du-chercheur-maintenant" class="nav-link" data-scroll-target="#quelle-est-la-place-du-chercheur-maintenant"><span class="header-section-number">8.4</span> Quelle est la place du chercheur maintenant?</a></li>
+  <li><a href="#lia-en-sciences-sociales" id="toc-lia-en-sciences-sociales" class="nav-link" data-scroll-target="#lia-en-sciences-sociales"><span class="header-section-number">8.5</span> L’IA en sciences sociales</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.6</span> Conclusion</a></li>
+  <li>
+<a href="#utilisation-du-package-openai" id="toc-utilisation-du-package-openai" class="nav-link" data-scroll-target="#utilisation-du-package-openai"><span class="header-section-number">8.7</span> Utilisation du package OpenAI</a>
+  <ul class="collapse">
+<li><a href="#installation-et-chargement-du-package" id="toc-installation-et-chargement-du-package" class="nav-link" data-scroll-target="#installation-et-chargement-du-package"><span class="header-section-number">8.7.1</span> Installation et chargement du package</a></li>
+  </ul>
+</li>
+  <li><a href="#configuration-de-lapi" id="toc-configuration-de-lapi" class="nav-link" data-scroll-target="#configuration-de-lapi"><span class="header-section-number">8.8</span> Configuration de l’API</a></li>
+  <li><a href="#utilisation-de-lapi" id="toc-utilisation-de-lapi" class="nav-link" data-scroll-target="#utilisation-de-lapi"><span class="header-section-number">8.9</span> Utilisation de l’API</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes"><span class="header-section-number">8.10</span> Notes</a></li>
+  <li><a href="#annexe-1" id="toc-annexe-1" class="nav-link" data-scroll-target="#annexe-1"><span class="header-section-number">8.11</span> Annexe 1</a></li>
+  <li><a href="#annexe-2" id="toc-annexe-2" class="nav-link" data-scroll-target="#annexe-2"><span class="header-section-number">8.12</span> Annexe 2</a></li>
+  <li><a href="#annexe-2-1" id="toc-annexe-2-1" class="nav-link" data-scroll-target="#annexe-2-1"><span class="header-section-number">8.13</span> Annexe 2</a></li>
+  <li>
+<a href="#%C3%A0-voir" id="toc-à-voir" class="nav-link" data-scroll-target="#%C3%A0-voir"><span class="header-section-number">9</span> À voir</a>
+  <ul class="collapse">
+<li><a href="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt" id="toc-défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt" class="nav-link" data-scroll-target="#d%C3%A9fis-et-enjeux-%C3%A9thiques-de-lia-focus-sur-chatgpt"><span class="header-section-number">9.1</span> Défis et enjeux éthiques de l’IA, focus sur ChatGPT</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><p>Ce chapitre vise à initier les lecteurs à ce qu’est l’intelligence artificielle (IA), aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Nous souhaitons d’abord et avant tout mener les lecteurs vers la réflexion. Dans ces pages, il y a beaucoup plus de questions que de réponses. Cet état de fait reflète bien l’état de la connaissance que nous avons sur l’IA. Nous sommes aussi bien loin d’être des spécialistes en la matière. Malgré cela, nous pensons qu’initier la réflexion et la discussion s’impose. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Par conséquent, si ce chapitre aura permis d’éclairer certains enjeux, ou s’il stimulera davantage de questionnement, alors nous aurons réussi notre objectif.</p>
+<p>Nous débutons par définir et expliquer ce qu’est l’intelligence artificielle. Bien que ça ne soit pas une tâche facile, nous souhaitons simplement donner une idée générale de ce qu’il s’agit. Ensuite, nous souhaitons mettre l’accent sur l’évolution constante de ce champ de recherche, ainsi que les défis que ça pose. La section suivante se penche sur certains enjeux éthiques lié à l’utilisation de l’IA, notamment en ce qui concerne le plagiat. Cela nous mène à se questionner sur la place du chercheur, aujourd’hui et dans le futur, avec l’arrivé de ces nouvelles technologies. La dernière section se penchera sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quels en sont les limites. <!--
+Ce chapitre vise à initier les lecteurs et lectrices à l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Nous souhaitons d'abord et avant tout mener les lecteurs vers la réflexion. S’intéresser à l’IA, un domaine complexe et en constante évolution, représente un défi. C’est pourquoi les pages suivantes cherchent avant tout à encourager la réflexion, plutôt qu’à offrir des réponses définitives. Par conséquent, si ce chapitre parvient à éclairer certains enjeux ou simule davantage de questionnements, alors objectif sera atteint.
+
+Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une tâche simple, mais il s’agit d’une étape essentielle pour ensuite aborder les enjeux qui y sont reliés, notamment en raison de son évolution constante. Du point de vue éthique, différentes préoccupations telles que le plagiat à l’aide de l’IA peuvent être abordés. Cela mène à se questionner sur la place du chercheur.euse, aujourd'hui et dans le futur, avec l'arrivée de ces nouvelles technologies. Enfin, la dernière section se penche sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quelles en sont les limites?
+--></p>
+<section id="définition-et-différents-type-dia" class="level2" data-number="8.1"><h2 data-number="8.1" class="anchored" data-anchor-id="définition-et-différents-type-dia">
+<span class="header-section-number">8.1</span> Définition et différents type d’IA</h2>
+<p>Qu’est-ce que l’intelligence artificielle (IA)? Est-ce quelque chose d’homogène, ou s’agit-il plutôt « des intelligences artificielles »? Dans un premier temps, il est important de préciser que l’intelligence artificielle est un champ d’études <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span>. Par conséquent, il s’agit d’un ensemble d’objets, relativement vaste et en constante expansion, qui s’intéressent, à sa façon, à l’intelligence artificielle. Pour préciser ce propos, prenons l’exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d’études, qui ont chacun leur propre objet d’intérêt. La philosophie politique, les relations internationales, la politique comparée et l’étude de l’opinion publique, par exemple, sont tous des sous-champs qui s’intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu’il n’y a pas de consensus dans la définition de l’IA <span class="citation" data-cites="wang19 konig_etal22">(<a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>; <a href="references.html#ref-wang19" role="doc-biblioref">Wang, 2019</a>)</span>. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d’une manière précise et consensuelle, quelque chose qui évolue constamment <span class="citation" data-cites="devedzic22 bertolini20">(<a href="references.html#ref-bertolini20" role="doc-biblioref">Bertolini, 2020</a>, pp.&nbsp;15; <a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span>?</p>
+<p>Deux définitions de l’IA peuvent tout de même être retenues. La première vient de John McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007</a>, pp.&nbsp;2)</span> : « Il s’agit de la science et de l’ingénierie qui consistent à créer des machines intelligentes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l’intelligence humaine, mais l’IA ne doit pas se limiter aux méthodes qui sont biologiquement observables. » [Traduction DeepL] La seconde définition provient de la compagnie IBM <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">2023a</a>)</span> : « Dans sa forme la plus simple, l’intelligence artificielle est un domaine qui combine l’informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l’apprentissage automatique et de l’apprentissage profond, qui sont souvent mentionnés en conjonction avec l’intelligence artificielle. Ces disciplines sont composées d’algorithmes d’IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d’entrée. » [Traduction DeepL] Ces extraits permettent de comprendre que l’IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines « intelligentes » en leur donnant la capacité de résoudre des problèmes par elles-mêmes.</p>
+<p>Ces définitions restent toutefois à préciser, notamment dans le champ d’application de l’IA : qu’en est-il concrètement ? Comment est-ce utilisé ? Comment ça fonctionne ? Si l’IA se distingue enn plusieurs types, en faire la liste et identifier leurs différentes branches et applications possibles serait fastidieux et s’écarterait de l’objectif de ce chapitre introductif. Cependant, pour ceux désirant en savoir plus sur le sujet, les articles de McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007</a>)</span> et de Hanchen et al. <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">2023</a>)</span>, ainsi que le Cambridge Handbook of Artificial Intelligence <span class="citation" data-cites="konig_etal22">(<a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>)</span> sont très riches et illustratifs sur ce qu’est l’IA ainsi que sur ses champs d’applications.</p>
+<p>Avant toute chose, il est important de distinguer l’IA général (strong) du précis (narrow). Le premier, et le moins populaire en nombre de recherches et d’applications, cherche à développer une machine qui aurait les mêmes capacités cognitives que l’humain, non seulement en termes de résolution de problème, d’apprentissage et de planification, mais aussi qui serait dotée d’une conscience de soi <span class="citation" data-cites="ibm23 konig_etal22">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM, 2023a</a>; <a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>)</span>. Le deuxième est plus restrictif, se limitant à la réalisation d’un ou de plusieurs objectifs spécifiques. De ces deux visées, il y a trois principaux champs de recherche qui se penchent sur les méthodes de fonctionnement de l’IA : l’apprentissage machine (machine learning), les réseaux neuronaux artificiel (artificial neural networks) ainsi que l’apprentissage profond (deep learning).</p>
+<p>L’apprentissage machine : « […] consiste à programmer des ordinateurs pour optimiser un critère de performance à l’aide de données d’exemple ou d’expériences passées. Nous avons un modèle défini jusqu’à certains paramètres, et l’apprentissage est l’exécution d’un programme informatique pour optimiser les paramètres du modèle à l’aide des données d’entraînement ou de l’expérience passée. » [Traduction DeepL] (Alpaydin et Bach 2014, 3). Le but est d’entraîner le modèle afin qu’il puisse reconnaître des tendances, et qu’il puisse décrire et/ou faire des prédictions à partir de ces tendances <span class="citation" data-cites="alpaydin_bach14">(<a href="references.html#ref-alpaydin_bach14" role="doc-biblioref">Alpaydin &amp; Bach, 2014</a>, pp.&nbsp;3)</span>. Il est le champ le plus populaire dans la recherche faite sur l’IA, notamment parce qu’il constitue une base importante pour les autres recherches dans le domaine <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span>.</p>
+<p>Ensuite, un sous-champ de l’apprentissage machine, l’apprentissage profond : « […] fait référence à un réseau neuronal composé de plus de trois couches […]. L’apprentissage en profondeur automatise une grande partie de l’extraction des caractéristiques, éliminant ainsi une partie de l’intervention humaine manuelle nécessaire et permettant l’utilisation d’ensembles de données plus importants. Il peut ingérer des données non structurées dans leur forme brute et déterminer automatiquement la hiérarchie des caractéristiques qui distinguent les différentes catégories de données les unes des autres, ne nécessitant pas d’intervention humaine. » [Traduction DeepL] <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM, 2023a</a>)</span>. Ainsi, l’apprentissage profond permet une certaine forme d’automatisation des tâches demandées à l’IA, en lui fournissant les capacités nécessaires d’apprendre par lui-même pour corriger et améliorer son fonctionnement. Pour ce faire, on doit développer des structures neuronales artificielles, qui s’inspirent des neurones du cerveau humain.</p>
+<p>C’est d’ailleurs la tâche de ceux qui s’intéressent aux réseaux neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA) sont constitués d’une couche de nœuds, contenant une couche d’entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque nœud, ou neurone artificiel, se connecte à un autre et possède un poids et un seuil associés. Si la sortie d’un nœud individuel est supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie des données à la couche suivante du réseau. Dans le cas contraire, aucune donnée n’est transmise à la couche suivante du réseau. » [Traduction DeepL] (IBM 2023b). Ainsi, le but est de reproduire les structures cognitives humaines, afin de permettre à l’IA d’accomplir des tâches plus complexes. L’une des principales utilités de ce sous-champ est qu’il permet d’augmenter la rapidité du classement de données ; la reconnaissance vocale ou d’image, par exemple, ne prend que quelques minutes grâce à cela, contrairement à plusieurs heures lorsque fait par des humains <span class="citation" data-cites="ibm23a">(<a href="references.html#ref-ibm23a" role="doc-biblioref">IBM, 2023b</a>)</span>.</p>
+</section><section id="lévolution-constante-de-lia" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="lévolution-constante-de-lia">
+<span class="header-section-number">8.2</span> L’évolution constante de l’IA</h2>
+<p>Plusieurs chercheurs, dont le professeur Yoshua Bengio de l’Université de Montréal, ont lancé plusieurs avertissements sur le développement de l’IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans The Economist, M. Bengio <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">2023</a>)</span> nous dit qu’il prévoyait le développement d’une IA avec des capacités similaires à celles de l’humain d’ici quelques décennies, peut-être un siècle. Depuis l’arrivée de ChatGPT-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">Bengio, 2023</a>)</span>. Dans les dix dernières années seulement, les systèmes de reconnaissance d’images et de langages en sont venus à dépasser les capacités humaines <span class="citation" data-cites="roser22">(<a href="references.html#ref-roser22" role="doc-biblioref">Roser, 2022</a>)</span>. La figure 1 présente cette évolution.</p>
+<p><img src="images/chapitre9_figure1.png" class="img-fluid" alt="Évolution de l’IA depuis 1998"></p>
+<div style="page-break-after: always;"></div>
+<p>Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi-exponentielle. Cette progression fulgurante nous permet de faire quelque constat pour appréhender l’évolution future. Ce qui est intéressant de la recherche dans ce domaine, c’est que le développement des capacités de l’IA permet, en retour, de la développer encore plus rapidement. L’IA peut rendre l’IA exponentiellement plus puissante <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">Harari, 2023</a>)</span>. Elle est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d’auto-améliorassions, que si elle était uniquement dépendante de l’humain.</p>
+<p>En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l’IA? Tout d’abord, il est intéressant de commencer à réfléchir ainsi qu’à analyser les différents impacts que l’IA a sur nos sociétés. Les avancés dans le domaine en plus de l’accessibilité à ces technologies, tel que Large Language Model (LLM), en font de nouveaux objets d’étude actuel, et surtout sans grandes réponses. Yuval Noah Harrari <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">2023</a>)</span>, historien et philosophe, explique dans un article que la capacité de l’IA à manipuler ainsi qu’à générer du langage en font des outils puissants qui ont le potentiel d’avoir de profond impact sur nos civilisations. Par conséquent, l’étude des effets de l’IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » [Traduction libre] <span class="citation" data-cites="bremmer_suleyman23">(<a href="references.html#ref-bremmer_suleyman23" role="doc-biblioref">Bremmer &amp; Suleyman, 2023</a>, pp.&nbsp;32)</span>. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l’interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu’une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.</p>
+</section><section id="les-différents-outils-de-lia" class="level2" data-number="8.3"><h2 data-number="8.3" class="anchored" data-anchor-id="les-différents-outils-de-lia">
+<span class="header-section-number">8.3</span> Les différents outils de l’IA</h2>
+<p>Cette section vise à présenter différents outils de l’intelligence artificielle aux lecteurs. Ce qui est important de comprendre ici, et pour faire suite à la section précédente, c’est que les outils présenté ici risque d’avoir changé entre le moment d’écrire ce chapitre et le moment où les lecteurs liront le chapitre. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d’autres pourraient être complètement nouvelles. Par conséquent, l’objectif ici est de présenter certaines utilités et fonctionnalités de l’IA, et surtout d’inciter les lectuers à développer leurs propres capacités réflexives quant à leur utilisation de l’IA. Cette technologie offre de nouvelles opportunités, mais elle apportea aussi son lot d’enjeux et de questions dont il vaut mieux s’y intéresser afin de développer une utilisation saine et intégre de ces outils.</p>
+<p>Trois catégories d’outils seront présentées: les « <em>Large Language Models</em> » (LLM), les assistants de traduction ainsi que les assistants de revue de littérautre.</p>
+<section id="les-llms" class="level3" data-number="8.3.1"><h3 data-number="8.3.1" class="anchored" data-anchor-id="les-llms">
+<span class="header-section-number">8.3.1</span> 1. Les LLMs</h3>
+<p><span class="citation" data-cites="openai19">(<a href="references.html#ref-openai19" role="doc-biblioref"><strong>openai19?</strong></a>)</span> définissent les grands modèles linguistiques (Large language models ou LLMs en anglais) comme des modèles d’apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages web, des courriels, des messages de médias sociaux, etc. Cette méthode d’entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter que les GML ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.</p>
+<p>L’intégration des grands modèles de langage (LLMs) via l’API d’OpenAI dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l’analyse qualitative et quantitative des données textuelles. L’utilisation de ces modèles en R permet aux chercheurs d’exploiter des capacités avancées de traitement du langage naturel pour une variété d’applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l’analyse de biais algorithmiques en comparant l’information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l’analyse de sentiments, l’extraction d’entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d’outils personnalisés pour des besoins spécifiques de recherche.</p>
+<p>Voici quelques exmples d’utilisation des LLMs en sciences sociales:</p>
+<p>Premièrement, les LLMs peuvent être utilisés pour l’analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.</p>
+<p>Deuxièmement, les LLMs offrent des capacités d’extraction d’entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et socio-politiques, enrichissant ainsi les bases de données pour des études plus poussées.</p>
+<p>Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d’informations en résumés concis, facilitant l’analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.</p>
+<p>Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d’explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.</p>
+<p>Cinquièmement, l’intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.</p>
+<p>sixièmement, les modèles de “speech-to-text” peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l’analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.</p>
+<p>Septièmement, les modèles de vision algorithmiques permettent l’analyse de contenu visuel, en extrayant des informations à partir d’images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.</p>
+<p>Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s’adaptent à des besoins spécifiques de recherche, comme l’analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des insights précieux sur l’évolution des discours et pratiques culturelles.</p>
+<p>En somme, l’utilisation des LLMs via l’API d’OpenAI en R représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l’immense paysage des données textuelles avec une précision et une efficacité accrues.</p>
+<p>Bien qu’il soit possible de communiquer avec l’API d’OpenAI directement, le package <code>openai</code> en R offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et bien plus encore, facilitant l’intégration des LLMs dans les workflows de recherche existants.</p>
+<p>Voici un exemple simple d’utilisation de l’API d’OpenAI :</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/irudnyts/openai">openai</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">system</span> <span class="op">&lt;-</span> <span class="st">"You are a helpful assistant"</span> <span class="co"># Donne un role au modèle. Doit être clair et concis</span></span>
+<span></span>
+<span><span class="va">prompt</span> <span class="op">&lt;-</span> <span class="st">"Quelle est la capitale du Québec?"</span> <span class="co"># Le prompt</span></span>
+<span></span>
+<span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">openai</span><span class="fu">::</span><span class="fu">create_chat_completion</span><span class="op">(</span></span>
+<span>        model <span class="op">=</span> <span class="st">"gpt-3.5-turbo-0125"</span>,</span>
+<span>        messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="st">"role"</span> <span class="op">=</span> <span class="st">"system"</span>,</span>
+<span>                 <span class="st">"content"</span> <span class="op">=</span> <span class="va">system</span></span>
+<span>            <span class="op">)</span>,</span>
+<span>            <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>                <span class="st">"role"</span> <span class="op">=</span> <span class="st">"user"</span>,</span>
+<span>                <span class="st">"content"</span> <span class="op">=</span> <span class="va">prompt</span><span class="op">)</span></span>
+<span>            <span class="op">)</span></span>
+<span>    <span class="op">)</span></span>
+<span></span>
+<span><span class="va">output</span> <span class="op">&lt;-</span> <span class="va">chat_prompt</span><span class="op">$</span><span class="va">choices</span><span class="op">$</span><span class="va">message.content</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">output</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="les-assistants-de-traduction" class="level3" data-number="8.3.2"><h3 data-number="8.3.2" class="anchored" data-anchor-id="les-assistants-de-traduction">
+<span class="header-section-number">8.3.2</span> 2. Les Assistants de Traduction</h3>
+<p>L’IA a aussi permis la création d’outils de nouveaux outils de traduction automatique (<em>machine translation</em>). Pris au sens large, le concept de traduction automatique englobe n’importe quelle tâche de traduction qui est réalisée par un algorithme, une machine, des ordinateurs, etc. sans aucune aide d’un humain <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>. Il existe différents types ou approches de traduction automatique:</p>
+<ol type="1">
+<li>Basée sur des règles (<em>rules-based</em>): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d’une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux mais efficace pour les langues à grammaire bien définie <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Statistique (<em>statistical</em>): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d’apprentissage. Fonctionne bien avec des données volumineuses mais peut parfois produire des traductions imprécises faute de contextualisation <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Basée sur des exemples (<em>example-based</em>) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Neuronale (<em>neural</em>) : utilise des modèles d’apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu’elle ne remplace pas entièrement les traducteurs humains <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+<li>Hybride : les quatres approches peuvent également être combinées <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>.</li>
+</ol>
+<p>C’est au sein de l’approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (<em>transformer neural networks</em>) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions <span class="citation" data-cites="glover24 tabsharani23">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>; <a href="references.html#ref-tabsharani23" role="doc-biblioref">Tabsharani, 2023</a>)</span>. En tant que forme d’IA générative, ces outils exploitent le traitement du langage naturel (<em>natural language processing</em>), l’apprentissage profond (<em>deep learning</em>) et l’auto-attention (<em>self-attention</em>) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites web, des documents, etc. en quelques secondes, sans avoir besoin de connaître la langue cible.</p>
+<p>Il est essentiel pour les chercheurs en sciences sociales numériques de connaître et d’utiliser les outils de traduction automatique car ils facilitent la recherche, la communication et la collaboration à l’échelle internationale, particulièrement dans le contexte d’un monde académique dominé par l’anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d’une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine <span class="citation" data-cites="glover24">(<a href="references.html#ref-glover24" role="doc-biblioref">Glover, 2024</a>)</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead><tr class="header">
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Amélioration de la productivité : traductions rapides et de grande échelle</td>
+<td>Données biaisées : reproduction de stéréotypes et erreurs de genre</td>
+</tr>
+<tr class="even">
+<td>Apprentissage autonome : amélioration continue grâce à l’apprentissage non supervisé</td>
+<td>Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique</td>
+</tr>
+<tr class="odd">
+<td>Réduction des coûts : minimise le besoin d’intervention humaine</td>
+<td>Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle</td>
+</tr>
+<tr class="even">
+<td>Amélioration de l’accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Il existe des milliers d’outils de traduction automatique qui utilisent l’IA d’une façon ou d’une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Banques de données terminologiques
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bien que ces outils n’utilisent pas l’intelligence artificielle, il nous semble essentiel de mentionner des ressources telles que TERMIUM Plus et Interactive Terminology for Europe (IATE), qui sont des bases de données terminologiques de référence. Ces bases de données, gérées par des langagiers professionels, facilitent la compréhension des termes spécifiques à une discipline en fournissant des définitions claires et des équivalents dans plusieurs langues et assurent également une cohérence terminologique dans les traductions. D’ailleurs, TERMIUM Plus a été fréquemment sollicité pour la traduction de plusieurs termes présents dans ce chapitre.</p>
+</div>
+</div>
+<section id="google-traduction" class="level4" data-number="8.3.2.1"><h4 data-number="8.3.2.1" class="anchored" data-anchor-id="google-traduction">
+<span class="header-section-number">8.3.2.1</span> Google Traduction</h4>
+<p>Très connu, l’une des forces de Google Traduction est son support d’une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. Google Traduction est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d’une phrase en considération. De plus, il supporte aussi la traduction de documents complets.</p>
+</section><section id="deepl" class="level4" data-number="8.3.2.2"><h4 data-number="8.3.2.2" class="anchored" data-anchor-id="deepl">
+<span class="header-section-number">8.3.2.2</span> DeepL</h4>
+<p>DeepL se démarque par une qualité supérieure de traduction mais dans un nombre de langues plus restreint que d’autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d’une structure de phrase.</p>
+</section><section id="mate-translate" class="level4" data-number="8.3.2.3"><h4 data-number="8.3.2.3" class="anchored" data-anchor-id="mate-translate">
+<span class="header-section-number">8.3.2.3</span> Mate Translate</h4>
+<p>Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d’utilisation et sa rapidité.</p>
+</section><section id="chatgpt" class="level4" data-number="8.3.2.4"><h4 data-number="8.3.2.4" class="anchored" data-anchor-id="chatgpt">
+<span class="header-section-number">8.3.2.4</span> ChatGPT</h4>
+<p>Évidemment, CHatGPT est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.</p>
+</section><section id="autres-outils" class="level4" data-number="8.3.2.5"><h4 data-number="8.3.2.5" class="anchored" data-anchor-id="autres-outils">
+<span class="header-section-number">8.3.2.5</span> Autres outils</h4>
+<p>Comme mentionné plus haut, il existe une panoplie d’outils de traduction automatique qui utilisent l’IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l’objectif de ce livre n’est pas d’en faire une description exhaustive mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer Microsoft Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.</p>
+</section></section><section id="les-assistants-de-revue-de-littérature" class="level3" data-number="8.3.3"><h3 data-number="8.3.3" class="anchored" data-anchor-id="les-assistants-de-revue-de-littérature">
+<span class="header-section-number">8.3.3</span> 3. Les Assistants de Revue de littérature</h3>
+<p>Dans cette section, deux principaux outils seront présentés: <em>research rabbit</em> et <em>ellicit</em>. Il s’agit de deux ressources gratuites en ligne qui facilite le début d’une revue des écrits, notamment lorsque l’on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champs d’étude. Ces deux outils sont d’ailleurs compatibles aves <em>Zotero</em>, qui fut présenté au chapitre 4 de ce livre.</p>
+<p>Débutons avec <em>Ellicit</em>. Avec l’intelligence artificielle, cet outils suggère des articles et des livres scientifiques à partir d’une question de recherche préliminaire, ou à partir de concepts. L’application offre une version gratuite, mais qui est toutefois limité dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, il faut l’utiliser avec parcimonie. Afin de démontrer l’utilité de ce logiciel, utilision un exemple concret.</p>
+<div id="fig-ellicit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ellicit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Menu d’accueil d’Ellicit
+</figcaption></figure>
+</div>
+<p>Par exemple, disons que je m’intéresse à la question suivante: Qu’est-ce que la démocratie? Cependant, je ne sais par où commencé pour me faire une tête sur le sujet. <em>Ellicit</em> offre une solution à ce problème. La <a href="#fig-ellicit" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> correspond au menu d’accueil du site web. Une fois là, je n’aurais qu’à écrire ma question dans la case « <em>Ask a research question</em> ». Les résultats générés sont représentés dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> et <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>8.3</span></a></p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-results1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Court résumé du sujet
+</figcaption></figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-results2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_image4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Suggestions de lectures
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+<p>Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.</p>
+<p>Cependant, il est fortement recommandé d’utiliser le résumé produit par le logiciel, dans la <a href="#fig-results1" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>, et ceux de chaque suggestion, dans la <a href="#fig-results2" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>, à titre indicatif et uniquement pour notre propre réflexion. En d’autres termes, <strong>ne jamais faire un copier-coller de ces résumés afin de les inclures dans notre travail de recherche</strong>. Ce logiciel doit impérativement être accompagné d’une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins, que nous consulterons par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.</p>
+<p>Un autre outils soffre à nous afin de trouver des références supplémentaires: <em>Research Rabbit</em>. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j’ai lu plusieurs articles et/ou chapitres de livre, et que j’ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans <em>Research Rabbit</em>. La <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>8.4</span></a> présente le menu principal du site web.</p>
+<div id="fig-rr1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_RR1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Menu principal
+</figcaption></figure>
+</div>
+<div id="fig-rr2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_rr2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: Importation manuelle de documents
+</figcaption></figure>
+</div>
+<div id="fig-rr3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_RR3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: Présentation de la littérature similaire
+</figcaption></figure>
+</div>
+<div id="fig-rr4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/chapitre9_rr4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rr4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: Vue « Timeline » des références
+</figcaption></figure>
+</div>
+<p>Avant toute chose, <em>Research Rabbit</em> doit être considéré comme un outils qui m’aidera à <em>complémenter</em> ma revue des écrits. En d’autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. <em>Ellicit</em> peut nous aider pour cette tâche, mais aussi il est pratique de consulter des <em>handbooks</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d’excellente ressource pour débuter une recherche.</p>
+<p>Utilisons un exemple concret afin d’illustrer l’utilisation de <em>Research Rabbit</em>. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chaucn éclairer un aspect particulier à propos de cette question. Une fois qu’ils ont été importé dans Zotero et qu’ils ont été lu, je peux importé ma collection Zotero dans <em>Research Rabbit</em> en cliquant sur le bouton <em>Import Zotero Collection</em>, situé dans le coin supérieur gauche de la <a href="#fig-rr1" class="quarto-xref">Figure&nbsp;<span>8.4</span></a>. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert <em>Add Paper</em> situé dans la colone de notre collection. La <a href="#fig-rr2" class="quarto-xref">Figure&nbsp;<span>8.5</span></a> montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouter les premiers articles que nous aurons lu, <em>Research Rabbit</em> pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec les articles que j’aurai lu. La <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> présente cette cartographie.</p>
+<p>Nous avons trois possibilités afin de trouver des articles supplémentaires. La première, est de consulter les « Similar Word ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font parties de ma collection. Cependant, ce n’est pas l’option la plus recommandées. Comme nous pouvons le voir dans la <a href="#fig-rr3" class="quarto-xref">Figure&nbsp;<span>8.6</span></a>, en fonction des cinq articles que j’ai importé dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d’utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la <a href="#fig-rr4" class="quarto-xref">Figure&nbsp;<span>8.7</span></a>.</p>
+<p>Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes: « All References » et « All Citations ». Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l’article que nous avons lu, et de visualiser les articles qui ont cité celui que nous avons lu. Ces options sont donc très utiles pour passer au « peigne fin » chacun de nos articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans notre utilisation de cette méthode. Il y a un risque « d’effet tunnel », soit que notre revue des écrits manque de largeur et de représentativité des différentes recherche sur le sujet. C’est pourquoi il est important de diversifier ces sources et d’utiliser ces deux options d’une façon complémentaire avec plusieurs articles différents. Il est donc utile d’ajouter au fur et à mesure ses sources dans <em>Research Rabbit</em> afin de visualiser la couverture de notre revue des écrits.</p>
+</section></section><section id="quelle-est-la-place-du-chercheur-maintenant" class="level2" data-number="8.4"><h2 data-number="8.4" class="anchored" data-anchor-id="quelle-est-la-place-du-chercheur-maintenant">
+<span class="header-section-number">8.4</span> Quelle est la place du chercheur maintenant?</h2>
+<p>Avec l’avènement de l’IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd’hui. L’avenir du chercheur est-il en danger? Pourrait-on assister au développement des sciences sociales sans chercheur humain derrière? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l’humain? D’une part, certains pensent que l’IA risque de générer des « laboratoires autonomes » <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, et al., 2023</a>, pp.&nbsp;55)</span>. Il n’est pas difficile d’imaginer un monde où tout le processus scientifique, de la conception jusqu’à la communication, serait fait par l’IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n’être qu’une partie de l’auditoire vers qui les résultats sont présentés.</p>
+<p>Bien que nous n’en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se poseraient dans une telle situation. Par exemple, étant donné que l’IA est, pour l’instant, très opaque dans tout le processus qui le mène de l’intrant vers le résultat, comment pourrait-on s’assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques? A-t-elle eu le consentement libre et éclairé de tous les participants? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené? Sur cette dernière question, l’une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques <span class="citation" data-cites="king_etal21 bourgeois21">(<a href="references.html#ref-bourgeois21" role="doc-biblioref">Bourgeois, 2021</a>; <a href="references.html#ref-king_etal21" role="doc-biblioref">King et al., 2021</a>)</span>. Toutes les recherches doivent présenter, d’une manière très précise, comment les données ont choisi, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l’esprit de toute communication scientifique. Or, c’est une limite importante de l’IA en ce moment: nous n’avons pas accès aux processus qui mènent de l’intrant à l’extrant <span class="citation" data-cites="hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23">(<a href="references.html#ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" role="doc-biblioref">Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, et al., 2023</a>, pp.&nbsp;56)</span>. Cette opacité nous empêche d’évaluer correctement la validité d’un protocole scientifique qui serait réalisée par l’IA. La conséquence logique de cette situation est de toujours rester vigilant et de questionner constamment les informations fournies par le robot conversationnel. L’utilisation exclusive de tel logiciel, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n’est pas seulement question d’intégrité et d’éthique, mais de toute la conception de ce que constitue un savoir scientifique. L’utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques. Générer des textes entiers avec l’aide de l’IA ne devrait donc pas être considéré.</p>
+<p>Comme nous le voyons, l’avènement de l’IA en recherche amène des questions et des réflexions épistémologiques<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> et méthodologiques<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheur, nous devons nous questionner par rapport à l’utilisation de ces nouvelles technologies. Il faut être proactif et initier les réflexions sur la place du chercheur maintenant.</p>
+<p>En ce sens, il faut élargir notre perspective et dépasser la question quant à savoir si la profession de chercheur va disparaître ou non. En fait, il faut se questionner par rapport au rôle du chercheur. Qu’est-ce qu’il devient à l’ère de l’intelligence artificielle? Comment se transforme-t-il? Pour l’instant, il est encore difficile de répondre et d’anticiper efficacement ce qui arrivera. Il n’en reste pas moins pour autant qu’initier la réflexion est nécessaire. Encore une fois, les universités sont des lieux privilégiés pour avoir ce genre de réflexion, tant venant des étudiants que des enseignants.</p>
+</section><section id="lia-en-sciences-sociales" class="level2" data-number="8.5"><h2 data-number="8.5" class="anchored" data-anchor-id="lia-en-sciences-sociales">
+<span class="header-section-number">8.5</span> L’IA en sciences sociales</h2>
+<p>Malgré que l’utilisation de l’IA en sciences sociales soit relativement récente, il y a déjà quelques recherches qui se sont penchées sur son utilisation dans un contexte scientifique. Tout d’abord, la recherche de Peterson et al. <span class="citation" data-cites="peterson_etal21">(<a href="references.html#ref-peterson_etal21" role="doc-biblioref">2021</a>)</span>, qui s’intéresse à comprendre comment les individus prennent des décisions, utilise l’IA afin de traiter une importante quantité de donnée rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux patterns présents dans les données. L’utilisation de l’IA dans cette recherche est très intéressante puisqu’elle permet de tester des théories existantes sur un vaste ensemble de données, qui auraient pris beaucoup plus de temps si cela avait été réalisé « manuellement ».</p>
+<p>Ensuite, la recherche de Park et al. <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">2023</a>)</span> utilise l’IA pour créer des “generative agents” qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif et d’en faire des proxys1 pour étudier le comportement humain. Leur modèle prend la forme d’une simulation interactive, similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au point, cette application de l’IA permettrait de tester des prototypes de systèmes sociaux ainsi que des théories <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al., 2023</a>)</span>.</p>
+<p>Similairement, la recherche de Argyle et al. <span class="citation" data-cites="argyle_etal23">(<a href="references.html#ref-argyle_etal23" role="doc-biblioref">2023</a>)</span> utilise ChatGPT comme proxy pour étudier l’opinion publique certains sous-groupes sociaux. Leur objectif est de démontrer que ChatGPT peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses si c’était fait avec des sujets humains. En effet, le déploiement d’un sondage est toujours une sorte pari; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront significatifs. ChatGPT permettrait donc de faire un prétest afin d’améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.</p>
+<p>Malgré ces avantages, il est important de souligner quelques limites quant à l’utilisation de l’IA en sciences sociales. La limite la plus importante est que l’IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l’on se limitait à l’IA pour répondre à nos questions. Par conséquent, un test réalisé avec l’IA ne pourra jamais avoir le même niveau de confiance qu’une recherche réalisée avec des humains. Il est donc important de limiter l’utilisation de l’IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">2023</a>)</span> dans leur recherche, est que l’IA peut être sujette à des hallucinations. En d’autres termes, l’IA peut fabriquer des informations de toute pièce <span class="citation" data-cites="weise_metz23">(<a href="references.html#ref-weise_metz23" role="doc-biblioref">Weise &amp; Metz, 2023</a>)</span>. Cela pose un sérieux problème quant à la fiabilité des informations générées par l’IA. C’est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d’attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences vraiment importantes sur le bien-être de nos sociétés. Restons vigilants.</p>
+</section><section id="conclusion" class="level2" data-number="8.6"><h2 data-number="8.6" class="anchored" data-anchor-id="conclusion">
+<span class="header-section-number">8.6</span> Conclusion</h2>
+<p>En guise de conclusion, nous souhaitons lancer une dernière réflexion un peu plus philosophique, mais tout aussi importante: le transhumanisme, «[…] un mouvement international, culturel et intellectuel, prônant l’usage des sciences et des techniques dans le but d’améliorer la condition humaine, notamment par l’augmentation des capacités physiques et mentales des êtres humains » <span class="citation" data-cites="forestier_ansermet21">(<a href="references.html#ref-forestier_ansermet21" role="doc-biblioref">Forestier &amp; Ansermet, 2021</a>)</span>. La question principale qui se pose est: est-ce vraiment raisonnable d’augmenter les capacités humaines au-delà de leur limite biologique? Surtout, que deviendront les sciences sociales et humaines si le principal sujet d’étude, soit l’humain, n’est plus tout à fait lui-même? Peut-on faire des sciences sociales sur des sujets qui sont que partiellement humain? Ce qui rend les sciences sociales aussi intéressantes et pertinentes c’est peut-être, justement, parce que l’humain n’a pas d’essence. Pour reprendre les mots de Sartre <span class="citation" data-cites="sartre96">(<a href="references.html#ref-sartre96" role="doc-biblioref">1996</a>, pp.&nbsp;26)</span>, « l’existence précède l’essence ». En d’autres termes, et comme Sartre l’explique, l’humain n’existe pas pour remplir une fonction prédéterminée, contrairement à un crayon qui a été conçu pour remplir la tâche spécifique d’écrire. C’est dans cette liberté, et c’est par l’expérience, que l’humain se construit et se définit. Notre existence en tant que scientifique du monde social et humain est possible que grâce à cette condition fondamentale : l’absence d’une essence qui précède l’existence. Sinon, à quoi bon étudier le monde social s’il a une fonction prédéterminée et fixe, dans lequel les humains n’auraient aucune agentivité?</p>
+<p>Cependant, avec l’arrivée de l’IA et ce désir de constamment repousser les limites humaines, ne sommes-nous pas en train de prouver à Sartre qu’il a tort? En fait, l’humain se serait imposé une essence, soit celle d’être une pièce indispensable pour faire fonctionner les rouages du système capitaliste. Face à la conception de la « croissance infinie » qui est entretenue par ce système, l’être humain a besoin de quelque chose pour « briser » ses capacités qui elles sont limitées : « […] un remodelage technoscientifique et biomédical des corps et des vies, dans leur matérialité biologique même, afin d’adapter les individus au régime capitaliste globalisé de l’accélération. » <span class="citation" data-cites="devedec21">(<a href="references.html#ref-devedec21" role="doc-biblioref">Dévédec, 2021</a>, pp.&nbsp;100)</span>. L’IA sera-t-elle une pièce de plus vers la réalisation de cet idéal transhumaniste?</p>
+<p>Le propos ici n’est pas d’encourager les lecteurs à ne pas utiliser l’IA. En fait, nous souhaitons tout simplement appeler à une certaine prudence. Le risque que cette technologie nous pose est d’en devenir dépendant, voir trop <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al., 2023</a>)</span>. Bien qu’elle offre de nombreux avantages, elle a aussi le piège d’offrir beaucoup de raccourcis et de nuire à plusieurs de nos capacités intellectuelles et physiques. Il faut donc développer un jugement critique dans notre utilisation de l’IA. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd’hui, le fondement des chercheurs en sciences sociales numériques.</p>
+<p>Toutefois, à moins que la recherche porte directement sur ChatGPT, nous déconseillons fortement d’utiliser uniquement ce que le robot conversationnel fournit comme réponse. Reprenons l’exemple du totalitarisme. Dans ce cas, bien que la définition fournie soit relativement adéquate, nous recommandons d’aller consulter des sources académiques afin de trianguler la définition générée, d’une part, et surtout de présenter une définition qui est reconnue par les pairs scientifiques. Pour ce faire, il est possible d’utiliser ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui portent sur le sujet. À partir de ces recommandations, nous pouvons nous référer directement à ces ouvrages et débuter notre revue des écrits. Surtout, à moins que ce ne soit que pour vous faire une idée du contenu, n’utilisez pas ChatGPT pour résumer un livre et utiliser le résumé pour votre travail ! Cette pratique constitue une forme de plagiat. Aller consulter les ouvrages directement plutôt que d’utiliser les définitions fournies par ChatGPT fait partie des bonnes pratiques. Développer un esprit de synthèse est fondamental pour chaque étudiant.e universitaire, ainsi que pour les futurs chercheur.euse.s. Commencez dès maintenant à développer ces capacités plutôt que de demander à ChatGPT de le faire à votre place.</p>
+<!--
+## Quelle est la place du chercheur maintenant?
+
+Avec l'avènement de l'IA, il est légitime de se demander quel est le rôle du chercheur.euse aujourd'hui. L'avenir du chercheur est-il en danger ? Pourrait-on assister au développement des sciences sociales sans chercheur.euse humain derrière ? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important ? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l'humain ? D'une part, certains pensent que l'IA risque de générer des « laboratoires autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le processus scientifique, de la conception jusqu'à la communication, serait fait par l'IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n'être qu'une partie de l'auditoire vers qui les résultats sont présentés.
+
+Bien que nous n'en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se poseraient dans une telle situation. Par exemple, étant donné que l'IA est, pour l'instant, très opaque dans tout le processus qui le mène de l'intrant vers le résultat, comment pourrait-on s'assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques ? A-t-elle eu le consentement libre et éclairé de tous les participants ? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené ? Sur cette dernière question, l'une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques [@king2021 ; @bourgeois21]. Toutes les recherches doivent présenter, d'une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l'esprit de toute communication scientifique. Or, c'est une limite importante de l'IA en ce moment : nous n'avons pas accès aux processus qui mènent de l'intrant à l'extrant [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56]. Cette opacité nous empêche d'évaluer correctement la validité d'un protocole scientifique qui serait réalisée par l'IA. La conséquence logique de cette situation est de toujours rester vigilant quant aux informations fournies par le robot conversationnel. L'utilisation exclusive de tel logiciel, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n'est pas seulement question d'intégrité et d'éthique, mais de toute la conception de ce que constitue un savoir scientifique. L'utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques[^chapitre_9-4]. L'avènement de l'IA en recherche amène des questions et des réflexions épistémologiques et méthodologiques[^chapitre_9-5] importantes.
+
+[^chapitre_9-4]: L'épistémologie est l'une des branches de la philosophie des sciences qui s'intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l'une des questions fondamentales de l'épistémologie et de se questionner quant à savoir ce qu'est un savoir qui serait scientifique.
+
+[^chapitre_9-5]: La méthodologie fait référence à la branche de la philosophie des sciences qui s'intéresse aux outils de collecte et d'analyse de données.
+
+En ce sens, il faut élargir notre perspective et dépasser la question quant à savoir si la profession de chercheur.euse va disparaître ou non. Qu'est-ce qu'elle devient à l'ère de l'intelligence artificielle ? Comment se transforme-t-elle ? Pour l'instant, il est encore difficile de répondre et d'anticiper efficacement ce qui arrivera. Il n'en reste pas moins pour autant qu'initier la réflexion est nécessaire. Encore une fois, les universités sont des lieux privilégiés pour avoir ce genre de réflexion, tant venant des étudiant.e.s que des professeur.e.s.
+
+## L'IA en sciences sociales
+
+Bien que l'utilisation de l'IA en sciences sociales soit relativement récente, déjà quelques recherches se sont penchées sur son utilisation dans un contexte scientifique. La recherche de Peterson et al. [-@peterson_etal21] s'intéresse à comprendre comment les individus prennent des décisions et utilise l'IA afin de traiter une importante quantité de données rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux patterns présents dans les données. L'utilisation de l'IA dans cette recherche permet de tester des théories existantes sur un vaste ensemble de données, ce qui aurait pris beaucoup plus de temps si cela avait été réalisé « manuellement ».
+
+Ensuite, la recherche de Park et al. [-@park_etal23] utilise l'IA pour créer des "generative agents" qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif est d'en faire des proxys[^7] pour étudier le comportement humain. Leur modèle prend la forme d'une simulation interactive, similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au point, cette application de l'IA permettrait de tester différents prototypes de systèmes sociaux ainsi que des théories [@park_etal23].
+
+[^7]: Selon le Oxford Reference, un proxy est une variable qui est utilisée lorsque la variable d’intérêt ne peut pas être directement observée. Par exemple, le PIB par habitant peut être utilisé comme variable proxy pour la qualité de vie.
+
+Similairement, la recherche de Argyle et al. [-@argyle_etal23] utilise ChatGPT comme proxy pour étudier l'opinion publique chez certains sous-groupes sociaux. Leur objectif est de démontrer que ChatGPT peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses si c'était fait avec des sujets humains. En effet, le déploiement d'un sondage est toujours une sorte de pari ; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront significatifs. ChatGPT permettrait donc de faire un prétest afin d'améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.
+
+Malgré ces avantages, il est important de souligner quelques limites quant à l'utilisation de l'IA en sciences sociales. La limite la plus importante est que l'IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l'on se limitait à l'IA pour répondre à nos questions. Par conséquent, un test réalisé avec l'IA ne pourra jamais avoir le même niveau de confiance qu'une recherche réalisée avec des humains. Il est donc important de limiter l'utilisation de l'IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. [-@park_etal23] dans leur recherche, est que l'IA peut être sujette à des hallucinations. En d'autres termes, l'IA peut fabriquer des informations de toute pièce [@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité des informations générées. Les conséquences d'attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences vraiment importantes sur le bien-être de nos sociétés. Restons vigilants.
+
+## Conclusion
+
+En guise de conclusion, nous souhaitons lancer une dernière réflexion un peu plus philosophique, mais tout aussi importante portant sur le transhumanisme, soit « [...] un mouvement international, culturel et intellectuel, prônant l'usage des sciences et des techniques dans le but d'améliorer la condition humaine, notamment par l'augmentation des capacités physiques et mentales des êtres humains » [@forestier_ansermet21]. La question principale qui se pose est : est-ce vraiment raisonnable d'augmenter les capacités humaines au-delà de leur limite biologique ? Surtout, que deviendront les sciences sociales et humaines si le principal sujet d'étude, soit l'humain, n'est plus tout à fait lui-même ? Peut-on faire des sciences sociales sur des sujets qui sont que partiellement humain ? Ce qui rend les sciences sociales aussi singulières est peut-être, justement, parce que « l'existence précède l'essence » [@sartre96, pp. 26]. Comme Sartre l'explique, l'humain n'existe pas pour remplir une fonction prédéterminée, contrairement à un crayon qui a été conçu pour remplir la tâche spécifique d'écrire. C'est dans cette liberté, et c'est par l'expérience, que l'humain se construit et se définit. Notre existence en tant que scientifique du monde social et humain est possible que grâce à cette condition fondamentale : l'absence d'une essence qui précède l'existence. Sinon, à quoi bon étudier le monde social s'il a une fonction prédéterminée et fixe, dans lequel les humains n'auraient aucune agentivité ?
+
+Cependant, avec l'arrivée de l'IA et ce désir de constamment repousser les limites humaines, ne sommes-nous pas en train de prouver à Sartre qu'il a tort ? En fait, l'humain se serait imposé une essence, soit celle d'être une pièce indispensable pour faire fonctionner les rouages du système capitaliste. Face à la conception de la « croissance infinie » qui est entretenue par ce système, l'être humain a besoin de quelque chose pour « briser » ses capacités qui elles sont limitées : « \[...\] un remodelage technoscientifique et biomédical des corps et des vies, dans leur matérialité biologique même, afin d'adapter les individus au régime capitaliste globalisé de l'accélération. » [@devedec21, pp. 100]. L'IA sera-t-elle une pièce de plus vers la réalisation de cet idéal transhumaniste ?
+
+Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fait, nous souhaitons tout simplement appeler à une certaine prudence. Le risque que cette technologie nous pose est d'en devenir dépendant [@park_etal23] et d'ainsi se dénaturer. Bien qu'elle offre de nombreux avantages, elle a aussi le piège d'offrir beaucoup de raccourcis et de nuire à plusieurs de nos capacités intellectuelles et physiques. Il faut donc développer un jugement critique dans notre utilisation de l'IA. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
+-->
+</section><section id="utilisation-du-package-openai" class="level2" data-number="8.7"><h2 data-number="8.7" class="anchored" data-anchor-id="utilisation-du-package-openai">
+<span class="header-section-number">8.7</span> Utilisation du package OpenAI</h2>
+<section id="installation-et-chargement-du-package" class="level3" data-number="8.7.1"><h3 data-number="8.7.1" class="anchored" data-anchor-id="installation-et-chargement-du-package">
+<span class="header-section-number">8.7.1</span> Installation et chargement du package</h3>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"openai"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/irudnyts/openai">openai</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section><section id="configuration-de-lapi" class="level2" data-number="8.8"><h2 data-number="8.8" class="anchored" data-anchor-id="configuration-de-lapi">
+<span class="header-section-number">8.8</span> Configuration de l’API</h2>
+<p>Procurez vous une clé API sur le site d’OpenAI. Soyez conscient que vous aurez besoin d’une carte de crédit pour vous inscrire et que l’utilisation de l’API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d’utilisation. En date de la publication du livre, le modèle de tarification d’OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des Tokens en entrée est moins élevé que celui des tokens en sortie.</p>
+<p>Lorsque vous aurez votre clé API, utilisez le package usethis pour la configurer dans votre environnement R.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span> <span class="co">## au besoin</span></span>
+<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/edit.html">edit_r_environ</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ajoutez la ligne suivante à votre fichier <code>.Renviron</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">OPENAI_API_KEY</span><span class="op">=</span><span class="va">inserez</span><span class="op">-</span><span class="va">votre</span><span class="op">-</span><span class="va">cle</span><span class="op">-</span><span class="va">api</span><span class="op">-</span><span class="va">ici</span><span class="op">-</span><span class="va">sans</span><span class="op">-</span><span class="va">guillemets</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="utilisation-de-lapi" class="level2" data-number="8.9"><h2 data-number="8.9" class="anchored" data-anchor-id="utilisation-de-lapi">
+<span class="header-section-number">8.9</span> Utilisation de l’API</h2>
+<p>La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d’utilisation de la fonction:</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">chat_prompt</span> <span class="op">&lt;-</span> <span class="fu">create_chat_completion</span><span class="op">(</span></span>
+<span>    model <span class="op">=</span> <span class="st">"gpt-3.5-turbo"</span>,</span>
+<span>    messages <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="st">"role"</span> <span class="op">=</span> <span class="st">"system"</span>,</span>
+<span>            <span class="st">"content"</span> <span class="op">=</span> <span class="st">"You are a helpful assistant."</span></span>
+<span>        <span class="op">)</span>,</span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            <span class="st">"role"</span> <span class="op">=</span> <span class="st">"user"</span>,</span>
+<span>            <span class="st">"content"</span> <span class="op">=</span> <span class="st">"Please do the following:"</span><span class="op">)</span></span>
+<span>        <span class="op">)</span></span>
+<span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Le résultat de votre requête sera contenu dans l’objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu’un dataframe normal. Le contenu de la réponse sera dans <code>chat_prompt$choices$content</code>.</p>
+<p>Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer des instructions sur un ensemble d’observations à l’aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d’autres API, analyser des sites webs en temps réel en scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux possibilités que vous souhaitez explorer.</p>
+</section><section id="notes" class="level2" data-number="8.10"><h2 data-number="8.10" class="anchored" data-anchor-id="notes">
+<span class="header-section-number">8.10</span> Notes</h2>
+<ul>
+<li><p>Il est possible d’accéder aux statistiques d’utilisation de token dans <code>chat_prompt$usage$prompt_tokens</code> et <code>chat_prompt$usage$completion_tokens</code>. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.</p></li>
+<li><p>Ne pas oublier d’inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.</p></li>
+<li><p>Il est possible de créer des images avec la fonction create_image(“Inserez votre texte ici”)</p></li>
+<li><p>Il est possible d’effectuer du speech-to-text avec la fonction create_transcription() et create_translation()</p></li>
+<li><p>Plus de documentation est disponible au https://irudnyts.github.io/openai/</p></li>
+<li><p>Plus de fonctionalités sont disponibles en python mais le package R est suffisant pour la plupart des utilisations.</p></li>
+</ul></section><section id="annexe-1" class="level2" data-number="8.11"><h2 data-number="8.11" class="anchored" data-anchor-id="annexe-1">
+<span class="header-section-number">8.11</span> Annexe 1</h2>
+<p>Bonnes pratiques d’utilisation Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard</p>
+<p>MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/</p>
+</section><section id="annexe-2" class="level2" data-number="8.12"><h2 data-number="8.12" class="anchored" data-anchor-id="annexe-2">
+<span class="header-section-number">8.12</span> Annexe 2</h2>
+<p>Q : Qu’est-ce que le totalitarisme? R : Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique.</p>
+<p>Bonnes pratiques d’utilisation Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard</p>
+<p>MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/</p>
+</section><section id="annexe-2-1" class="level2" data-number="8.13"><h2 data-number="8.13" class="anchored" data-anchor-id="annexe-2-1">
+<span class="header-section-number">8.13</span> Annexe 2</h2>
+<p>Q : Qu’est-ce que le totalitarisme? R : Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique.</p>
+<p>Les caractéristiques clés du totalitarisme comprennent :</p>
+<ol type="1">
+<li><p><strong>Contrôle gouvernemental absolu :</strong> Le gouvernement exerce un contrôle total sur tous les aspects de la vie, y compris l’économie, la culture, l’éducation, les médias, la religion et les activités sociales.</p></li>
+<li><p><strong>Idéologie dominante :</strong> Le régime totalitaire est basé sur une idéologie spécifique qui est imposée à la population. Cette idéologie est souvent promue comme la seule vérité et toute forme de pensée dissidente est sévèrement réprimée.</p></li>
+<li><p><strong>Culte de la personnalité :</strong> Les dirigeants du régime totalitaire sont souvent présentés comme des figures quasi-divines ou héroïques, et un culte de la personnalité est créé autour d’eux pour renforcer leur autorité.</p></li>
+<li><p><strong>Répression politique :</strong> Toute forme d’opposition politique est réprimée de manière brutale. Les opposants sont souvent emprisonnés, torturés, voire exécutés. La surveillance et la dénonciation sont courantes pour empêcher toute critique du régime.</p></li>
+<li><p><strong>Propagande intensive :</strong> Le gouvernement contrôle les médias et utilise la propagande pour manipuler l’opinion publique, répandre sa vision du monde et justifier ses actions.</p></li>
+<li><p><strong>Absence de droits individuels :</strong> Les droits individuels tels que la liberté d’expression, la liberté de la presse, le droit de réunion et d’association sont souvent supprimés au profit de la suprématie de l’État.</p></li>
+<li><p><strong>Contrôle de l’éducation :</strong> L’éducation est utilisée pour propager l’idéologie du régime et façonner la mentalité des citoyens conformément à ses objectifs.</p></li>
+<li><p><strong>Utilisation de la terreur :</strong> La terreur et l’intimidation sont utilisées pour maintenir le contrôle sur la population. Les purges et les arrestations arbitraires sont fréquentes pour maintenir un climat de peur.</p></li>
+</ol>
+<p>Des exemples historiques de régimes totalitaires incluent l’Allemagne nazie sous Adolf Hitler, l’Union soviétique sous Joseph Staline, et la Chine sous Mao Zedong. Le totalitarisme est généralement considéré comme une forme extrême et oppressive de gouvernement, en contraste avec les systèmes démocratiques qui mettent l’accent sur les libertés individuelles, la séparation des pouvoirs et la participation citoyenne.</p>
+<p>{&lt;&lt; pagebreak &gt;&gt;}</p>
+</section><section id="à-voir" class="level1" data-number="9"><h1 data-number="9">
+<span class="header-section-number">9</span> À voir</h1>
+<section id="défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt" class="level2" data-number="9.1"><h2 data-number="9.1" class="anchored" data-anchor-id="défis-et-enjeux-éthiques-de-lia-focus-sur-chatgpt">
+<span class="header-section-number">9.1</span> Défis et enjeux éthiques de l’IA, focus sur ChatGPT</h2>
+<p>En tant qu’étudiant, professeur, professionnel ou chercheur, il faut se questionner par rapport à notre propre utilisation des différents outils de l’IA. Tout d’abord, il est important de comprendre qu’il y a plus de questions que de réponses pour l’instant. Face à ce constat, nous n’avons pas la prétention d’être en mesure de cibler toutes les questions qui émergent actuellement, et encore moins d’avoir les réponses. Cependant, cela ne justifie pas pour autant d’être passif. Nous devons essayer d’être réflexifs et critiques dans la limite de nos capacités et de nos connaissances. En ce sens, les étudiants et les enseignants doivent aussi être proactifs en entreprenant les démarches nécessaires ainsi qu’en s’engageant dans la réflexion.</p>
+<p>Dans un premier temps, un bon usage de ces outils débute avec une bonne réflexion quant à leur utilisation. Par conséquent, les universités constituent des endroits privilégiés pour favoriser les discussions et les réflexions quant à l’utilisation de ces technologies. D’ailleurs, certaines universités se sont déjà dotées de lignes directrices quant à l’utilisation de robots conversationnels et de l’IA générative<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Nous sommes d’avis que chaque université aurait intérêt à se doter de tel document, afin de fournir les ressources nécessaires aux étudiants ainsi qu’aux membres du corps professoral dans leur utilisation de ces outils. L’accompagnement et l’encadrement dans l’exploration et l’utilisation de l’IA nous paraissent être une bonne stratégie à adopter afin de permettre le développement de bonnes pratiques.</p>
+<p>Actuellement, un enjeu majeur, surtout avec les robots conversationnels, est le plagiat. Notre but ici est de présenter les différentes ressources qui s’offrent aux lecteurs pour qu’ils puissent développer les bonnes pratiques d’utilisation de ces outils tout en restant intègres. Pour ce faire, nous présenterons dans les paragraphes suivants les bonnes pratiques de citation selon l’American Psychological Association et The Chicago Manual of Style. Avant cela, il est important de spécifier que notre point de vue, et les propos tenus dans ce livre, ne remplace en aucun cas les règlements disciplinaires et/ou codes de conduite établis par une institution académique quelconque. Par conséquent, nous invitons fortement les lecteurs à consulter les sites web de ces associations, à se référer aux personnels appropriés pour toutes questions relatives à l’utilisation de texte généré par l’IA ainsi qu’à tout document relatif au plagiat produit par l’institution académique fréquentée. Passons maintenant à la présentation de ces manuels de style.</p>
+<p>L’American Psychological Association (APA) encourage les utilisateurs à être transparents quant à leur utilisation de logiciels tel que ChatGPT. Lorsqu’utilisés, les chercheurs devraient spécifier clairement qu’ils ont utilisé le logiciel, en plus de décrire comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé et quel a été le résultat en plus de fournir des extraits textuels <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo, 2023</a>)</span>. Il est recommandé de documenter chaque utilisation. Se créer un document qui inclue la date d’utilisation, la question demandée ainsi que la réponse obtenue doit faire partie des bonnes pratiques de chacun. Ces éléments peuvent être ajoutés en annexe au besoin <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo, 2023</a>)</span>. Sans grande surprise, il est impératif de citer l’auteur lorsqu’on utilise des idées qui ne sont pas les nôtres. Dans le cas de robots conversationnels, nous devons citer le développeur <span class="citation" data-cites="mcadoo23">(<a href="references.html#ref-mcadoo23" role="doc-biblioref">McAdoo, 2023</a>)</span>. Par exemple, pour une citation de ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.</p>
+<p>Utilisons un exemple concret afin d’illustrer le tout. Supposons que je m’intéresse au concept du totalitarisme, mais que je n’ai pas une compréhension claire de ce que ça signifie. Je pourrais utiliser ChatGPT pour me fournir une définition du concept. Si je souhaite l’inclure dans mon travail, je procèderais de la façon suivante : nous avons utilisé ChatGPT afin de nous donner une définition du totalitarisme. Pour ce faire, nous lui avons posé la question suivante : « Qu’est-ce que le totalitarisme? ». Le logiciel nous a fourni la définition suivante : « Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d’une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l’homme, et éliminant ou réprimant toute opposition ou critique. » (OpenAI 2023)</p>
+<p>En bibliographie, la référence serait insérée comme suit, et ensuite j’irai insérer la question et la réponse complète en annexe<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<p>OpenAI. (2023). ChatGPT (Version du 3 août 2023) [Large Language Model]. https://chat.openai.com/auth/login (exemple tiré de McAdoo 2023)</p>
+<!-- 
+Cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi-exponentielle. Cette progression fulgurante nous permet de faire quelque constat pour appréhender l'évolution future. Ce qui est intéressant de la recherche dans ce domaine, c'est que le développement des capacités de l'IA permet, en retour, de la développer encore plus rapidement. L'IA peut rendre l'IA exponentiellement plus puissante [@harari23]. Elle est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d'auto-améliorations, que si elle était uniquement dépendante de l'humain.
+
+En tant que chercheur.euse.s en sciences sociales, pourquoi devrait-on être préoccupés par le développement de l'IA? Considérons d'abord les différents impacts que l'IA a sur nos sociétés. Les avancées dans le domaine en plus de l'accessibilité à ces technologies, tels que les Large Language Model (LLM), en font de nouveaux objets d'étude actuels, et surtout sans grandes réponses. Yuval Noah Harrari [-@harari23], historien et philosophe, explique dans un article que la capacité de l'IA à manipuler ainsi qu'à générer du langage en font des outils puissants qui ont le potentiel d'avoir de profond impact sur nos civilisations. Par conséquent, l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » \[Traduction libre\] [@bremmer_suleyman23, pp. 32]. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l'interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu'une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.
+
+## Défis et enjeux éthiques de l'IA, accent sur ChatGPT
+
+Étudiant.e.s, professeur.e.s, professionnel.le.s et chercheur.euse.s se doivent d’être proactifs et entreprendre les démarches nécessaires pour questionner leur utilisation des différents outils de l’IA. Les universités constituent des endroits privilégiés pour favoriser les discussions et les réflexions quant à l'utilisation de ces technologies. D'ailleurs, certaines universités se sont déjà dotées de lignes directrices quant à l'utilisation de robots conversationnels et de l'IA générative[^chapitre_9-2]. Nous sommes d'avis que chaque université aurait intérêt à se doter de tel document, afin de fournir les ressources nécessaires aux étudiants ainsi qu'aux membres du corps professoral dans leur utilisation de ces outils. L'accompagnement et l'encadrement dans l'exploration et l'utilisation de l'IA sont des stratégies à adopter afin de permettre le développement de bonnes pratiques.
+
+[^chapitre_9-2]: Sur ce sujet, nous recommandons de consulter les ressources dans la section Bonnes pratiques d'utilisation de l'IA dans l'Annexe 1 du chapitre.
+
+Actuellement, un enjeu majeur, surtout avec les robots conversationnels, est le plagiat. Différentes ressources s'offrent aux lecteurs pour qu'ils puissent développer les bonnes pratiques d'utilisation de ces outils tout en restant intègres. Les paragraphes suivants présentent les bonnes pratiques de citation selon l'American Psychological Association et The Chicago Manual of Style. Or, les propos tenus dans ce livre ne remplacent en aucun cas les règlements disciplinaires et/ou codes de conduite établis par une institution académique quelconque ni aux politiques mises en place dans le cadre des cours. Par conséquent, nous invitons fortement les lecteurs à consulter les sites web de ces associations, à se référer aux personnels appropriés pour toutes questions relatives à l'utilisation de texte généré par l'IA ainsi qu'à tout document relatif au plagiat produit par l'institution académique fréquentée.
+
+L'American Psychological Association (APA) encourage les utilisateurs à être transparents quant à leur utilisation de logiciels tel que ChatGPT. Lorsqu'utilisés, les chercheurs devraient spécifier clairement qu'ils ont utilisé le logiciel, en plus de décrire comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé et quel a été le résultat en plus de fournir des extraits textuels [@mcadoo23]. Il est recommandé de documenter chaque utilisation. Se créer un document qui inclue la date d'utilisation, la question demandée ainsi que la réponse obtenue doit faire partie des bonnes pratiques de chacun. Ces éléments peuvent être ajoutés en annexe au besoin [@mcadoo23]. Sans grande surprise, il est impératif de citer l'auteur lorsqu'on utilise des idées qui ne sont pas les nôtres. Dans le cas de robots conversationnels, nous devons citer le développeur [@mcadoo23]. Par exemple, pour une citation de ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.
+
+Utilisons un exemple concret afin d'illustrer le tout. Supposons que je m'intéresse au concept du totalitarisme, mais que je n'ai pas une compréhension claire de ce que ça signifie. Je pourrais utiliser ChatGPT pour me fournir une définition du concept. Si je souhaite l'inclure dans mon travail, je procèderais de la façon suivante : nous avons utilisé ChatGPT afin de nous donner une définition du totalitarisme. Pour ce faire, nous lui avons posé la question suivante : « Qu'est-ce que le totalitarisme ? ». Le logiciel nous a fourni la définition suivante : « Le totalitarisme est un système politique et idéologique caractérisé par un contrôle absolu et centralisé du gouvernement sur tous les aspects de la vie publique et privée d'une société. Dans un régime totalitaire, le gouvernement exerce un pouvoir autoritaire et oppressif, limitant sévèrement les libertés individuelles, supprimant les droits de l'homme, et éliminant ou réprimant toute opposition ou critique. » (OpenAI 2023)
+
+En bibliographie, la référence serait insérée comme suit, et ensuite j'irai insérer la question et la réponse complète en annexe[^chapitre_9-3].
+
+[^chapitre_9-3]: Référez-vous à l'Annexe 2 pour un exemple.
+
+OpenAI. (2023). ChatGPT (Version du 3 août 2023) [Large Language Model].
+https://chat.openai.com/auth/login (exemple tiré de McAdoo 2023)
+-->
+<p>Quant au manuel de style Chicago, il est recommandé de mentionner et d’expliquer que nous avons utilisé ChatGPT pour accomplir une certaine tâche dans notre texte. Toutefois, comme le lien généré lors de l’utilisation individuelle de ChatGPT n’est pas public et ne peut pas être consulté par les autres, il n’est pas recommandé d’insérer la référence en bibliographie.</p>
+<p>Toutefois, à moins que la recherche porte directement sur ChatGPT, nous déconseillons fortement d’utiliser uniquement ce que le robot conversationnel fournit comme réponse. Reprenons l’exemple du totalitarisme. Dans ce cas, bien que la définition fournît soit relativement bonne, nous recommandons d’aller consulter des sources académiques afin de trianguler la définition qui a été générée, d’une part, et surtout de présenter une définition qui est reconnue par les pairs scientifiques. Toutefois, pour ce faire, il est possible d’utiliser ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui portent sur le sujet. À partir de ces recommandations, nous pouvons nous référer directement à ces ouvrages et débuter notre revue des écrits. Surtout, à moins que ce ne soit que pour vous faire une idée du contenue, n’utilisez pas ChatGPT pour résumer un livre et utiliser le résumé pour votre travail! Cette pratique constitue une forme de plagiat. Aller consulter les ouvrages directement plutôt que d’utiliser les définitions fournies par ChatGPT fait partie des bonnes pratiques. De plus, développer un esprit de synthèse est fondamental pour chaque étudiant universitaire, ainsi que pour les futurs chercheurs. Commencez dès maintenant à vous pratiquer pour développer ces capacités. Ne demandez pas à ChatGPT de le faire à votre place.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-alpaydin_bach14" class="csl-entry" role="listitem">
+Alpaydin, E., &amp; Bach, F. (2014). <em>Introduction to <span>Machine Learning</span></em> (3e éd.). MIT Press. <a href="https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851">https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851</a>
+</div>
+<div id="ref-argyle_etal23" class="csl-entry" role="listitem">
+Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., &amp; Wingate, D. (2023). Out of <span>One</span>, <span>Many</span>: <span>Using Language Models</span> Ot <span>Simulate Human Samples</span>. <em>Political Analysis</em>, <em>31</em>(3), 337‑351. <a href="https://doi.org/10.1017/pan.2023.2">https://doi.org/10.1017/pan.2023.2</a>
+</div>
+<div id="ref-bengio23" class="csl-entry" role="listitem">
+Bengio, Y. (2023, juillet 21). One of the "Godfathers of <span>AI</span>" Airs His Concerns. <em>The Economist</em>. <a href="https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns">https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns</a>
+</div>
+<div id="ref-bertolini20" class="csl-entry" role="listitem">
+Bertolini, A. (2020). <em>Artificial <span>Intelligence</span> and <span>Civil Liability</span></em> [Policy Department for Citizen's Rights and Constitutional Affairs]. European Union. <a href="https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf">https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf</a>
+</div>
+<div id="ref-bourgeois21" class="csl-entry" role="listitem">
+Bourgeois, I. (2021). Qu’est-Ce Que La Recherche Sociale? In <em>Recherche Sociale. <span>De</span> La Problématique à La Collecte Des Données</em> (7e éd., p. 1‑14). Presses de l’Université du Québec.
+</div>
+<div id="ref-bremmer_suleyman23" class="csl-entry" role="listitem">
+Bremmer, I., &amp; Suleyman, M. (2023). The <span>AI Power Paradox</span>. <em>Foreign Affairs</em>, <em>102</em>(5), 26‑43.
+</div>
+<div id="ref-devedec21" class="csl-entry" role="listitem">
+Dévédec, N. L. (2021). "<span>Sans</span> Limites": Une Critique Politique et Écologique Du Transhumanisme et de Son Monde. <em>Cahiers Société</em>, <em>3</em>, 99‑122. <a href="https://doi.org/10.7202/1090180ar">https://doi.org/10.7202/1090180ar</a>
+</div>
+<div id="ref-devedzic22" class="csl-entry" role="listitem">
+Devedzic, V. (2022). Identity of <span>AI</span>. <em>Discover Artificial Intelligence</em>, <em>2</em>(23). <a href="https://doi.org/10.1007/s44163-022-00038-0">https://doi.org/10.1007/s44163-022-00038-0</a>
+</div>
+<div id="ref-forestier_ansermet21" class="csl-entry" role="listitem">
+Forestier, F., &amp; Ansermet, F. (2021). Le Transhumanisme. In <em>La <span>Dévoration Numérique</span></em> (p. 19‑54). Odile Jacob. <a href="https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm">https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm</a>
+</div>
+<div id="ref-glover24" class="csl-entry" role="listitem">
+Glover, E. (2024, février 13). <em>Machine <span>Translation</span>: <span>How It Works</span> and <span>Tools</span> to <span>Choose From</span></em>. <a href="https://builtin.com/artificial-intelligence/machine-translation">https://builtin.com/artificial-intelligence/machine-translation</a>
+</div>
+<div id="ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23" class="csl-entry" role="listitem">
+Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, Ziming Liu, Payal Chandak, Shengchao Liu, Peter Van Katwyk, Andreea Deac, Anima Anandkumar, Karianne Bergen, Carla P. Gomes, Shirley Ho, Pushmeet Kohli, Joan Lasenby, Jure Leskovec, Tie-Yan Liu, Arjun Manrai, Debora Marks, Bharath Ramsundar, Le Song, Jimeng Sun, Jian Tang, Petar Veličković, Max Welling, Linfeng Zhang, Connor W. Coley, &amp; Yoshua Bengio, &amp; Marinka Zitnik. (2023). Scientific Discovery in the Age of Artificial Intelligence. <em>Nature</em>, <em>620</em>, 47‑60. <a href="https://www.nature.com/articles/s41586-023-06221-2">https://www.nature.com/articles/s41586-023-06221-2</a>
+</div>
+<div id="ref-harari23" class="csl-entry" role="listitem">
+Harari, Y. N. (2023, avril 28). Yuval <span>Noah Harari</span> Argues That <span>AI</span> Has Hacked the Operating System of Human Civilisation. <em>The Economist</em>. <a href="https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation">https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation</a>
+</div>
+<div id="ref-ibm23" class="csl-entry" role="listitem">
+IBM. (2023a). <em>What Are <span>Neural Networks</span>? | <span>IBM</span></em>. <a href="https://www.ibm.com/topics/neural-networks">https://www.ibm.com/topics/neural-networks</a>
+</div>
+<div id="ref-ibm23a" class="csl-entry" role="listitem">
+IBM. (2023b). <em>What Is <span>Artificial Intelligence</span> (<span>AI</span>) ? | <span>IBM</span></em>. IBM. <a href="https://www.ibm.com/topics/artificial-intelligence">https://www.ibm.com/topics/artificial-intelligence</a>
+</div>
+<div id="ref-king_etal21" class="csl-entry" role="listitem">
+King, G., Keohane, R. O., &amp; Verba, S. (2021). <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> (Nouvelle édition). Princeton University Press.
+</div>
+<div id="ref-konig_etal22" class="csl-entry" role="listitem">
+König, P. D., Krafft, T. D., Schulz, W., &amp; Zweig, K. A. (2022). Essence of <span>AI</span>. <span>What Is AI</span>? In and M. Cannarsa Cristina Poncibò (Éd.), <em>The <span>Cambridge Handbook</span> of <span>Artificial Intelligence</span></em> (p. 18‑34). Cambridge University Press. <a href="https://doi.org/10.1017/9781009072168.005">https://doi.org/10.1017/9781009072168.005</a>
+</div>
+<div id="ref-mcadoo23" class="csl-entry" role="listitem">
+McAdoo, T. (2023, avril 7). <em>How to Cite <span>ChatGPT</span></em>. https://apastyle.apa.org. <a href="https://apastyle.apa.org/blog/how-to-cite-chatgpt">https://apastyle.apa.org/blog/how-to-cite-chatgpt</a>
+</div>
+<div id="ref-mccarthy07" class="csl-entry" role="listitem">
+McCarthy, J. (2007). <em><span>WHAT IS ARTIFICIAL INTELLIGENCE</span>?</em>
+</div>
+<div id="ref-park_etal23" class="csl-entry" role="listitem">
+Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., &amp; Bernstein, M. S. (2023). Generative <span>Agents</span>: <span>Interactive Simulacra</span> of <span>Human Behavior</span>. <em>arXiv</em>. <a href="https://doi.org/10.48550/arXiv.2304.03442">https://doi.org/10.48550/arXiv.2304.03442</a>
+</div>
+<div id="ref-peterson_etal21" class="csl-entry" role="listitem">
+Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., &amp; Griffiths, T. L. (2021). Using <span>Large-Scale Experiments</span> and <span>Machine Learning</span> to <span>Discover Theories</span> of <span>Human Decision-Making</span>. <em>Science</em>, <em>372</em>(6547), 1209‑1214. <a href="https://doi.org/10.1126/science.abe2629">https://doi.org/10.1126/science.abe2629</a>
+</div>
+<div id="ref-roser22" class="csl-entry" role="listitem">
+Roser, M. (2022, décembre 6). <em>The <span>Brief History</span> of <span>Artificial Intelligence</span>: <span>The World Has Changed Fast</span> – <span>What Might Be Next</span>?</em> Our World in Data. <a href="https://ourworldindata.org/brief-history-of-ai">https://ourworldindata.org/brief-history-of-ai</a>
+</div>
+<div id="ref-sartre96" class="csl-entry" role="listitem">
+Sartre, J.-P. (1996). <em>L’existentialisme Est Un Humanisme</em>. Gallimard.
+</div>
+<div id="ref-tabsharani23" class="csl-entry" role="listitem">
+Tabsharani, F. (2023, août). <em>What Is <span>Machine Translation</span>? <span>Definition</span> from <span>TechTarget</span></em>. Enterprise AI. <a href="https://www.techtarget.com/searchenterpriseai/definition/machine-translation">https://www.techtarget.com/searchenterpriseai/definition/machine-translation</a>
+</div>
+<div id="ref-wang19" class="csl-entry" role="listitem">
+Wang, P. (2019). On <span>Defining Artificial Intelligence</span>. <em>Journal of Artificial General Intelligence</em>, <em>10</em>(2), 1‑37. <a href="https://doi.org/10.2478/jagi-2019-0002">https://doi.org/10.2478/jagi-2019-0002</a>
+</div>
+<div id="ref-weise_metz23" class="csl-entry" role="listitem">
+Weise, K., &amp; Metz, C. (2023, mai 9). When <span>A</span>.<span>I</span>. <span>Chatbots Hallucinate</span>. <em>The New York Times</em>. <a href="https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html">https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html</a>
+</div>
+</div>
+</section></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr>
+<ol>
+<li id="fn1"><p>Intelligence étant définit de la façon suivante : « L’intelligence est la partie informatique de la capacité à atteindre des objectifs dans le monde. On trouve différents types et degrés d’intelligence chez l’homme, chez de nombreux animaux et chez certaines machines. » <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">McCarthy, 2007</a>, pp.&nbsp;2)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Il s’agit d’ouvrages généraux qui porte sur un sujet quelconque. Les éditeurs les plus connus sont notamment <em>Oxford</em>, <em>SAGE</em> et <em>Routledge</em>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>L’épistémologie est l’une des branches de la philosophie des sciences qui s’intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l’une des questions fondamentales de l’épistémologie et de se questionner quant à savoir ce qu’est un savoir qui serait scientifique.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>La méthodologie fait référence à la branche de la philosophie des sciences qui s’intéresse aux outils de collecte et d’analyse de données.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Sur ce sujet, nous recommandons de consulter les ressources dans la section Bonnes pratiques d’utilisation de l’IA dans l’Annexe 1 du chapitre.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Référez-vous à l’Annexe 2 pour un exemple.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./chapitre_7.html" class="pagination-link" aria-label="Langages de balisage">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Langages de balisage</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./conclusion.html" class="pagination-link" aria-label="Kit de démarrage pour les sciences sociales numériques">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kit de démarrage pour les sciences sociales numériques</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Livre-outils</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+</body></html>
