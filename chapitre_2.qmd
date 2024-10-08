@@ -1,4 +1,4 @@
-# Langages de programmation
+# Langages de programmation {#sec-chap2}
 
 ## Point d'observation: Histoire des langages de programmation pour l'analyse de données
 

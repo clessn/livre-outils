@@ -1,4 +1,4 @@
-# Outils de visualisation graphique
+# Outils de visualisation graphique {#sec-chap6}
 ## Une image vaut mille mots
 
 Camille Tremblay-Antoine[^chapitre_7-1] Nadjim Fréchet[^chapitre_7-2]
