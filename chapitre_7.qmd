@@ -48,7 +48,6 @@ knitr::include_graphics("images/chapitre5_word-vs-latex.png")
 ```
 
 ```{r tab_avantages}
-#| label: tab_avantages
 #| echo: false
 #| warning: false
 library(tidyverse)
@@ -66,7 +65,7 @@ tbl_langages_balisage <- tibble(
     'Quarto' = c('Oui', 'Moyenne', 'Oui', 'Forte', 'Oui', 'Forte'),
     'Word' = c('Non', 'Très grande', 'Oui', 'Faible', 'Non', 'Forte'))
 
-tt(tbl_langages_balisage, width =  c(.4, .2, .2, .2, .2), caption = 'Tableau 7.1: Comparaison des outils de rédaction', notes = list(
+tt(tbl_langages_balisage, width =  c(.35, .15, .15, .15, .15), caption = 'Tableau 7.1: Comparaison des outils de rédaction', notes = list(
   a = list(i = 5:5, j = 2, text = "Bien que \\LaTeX\\ offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code."), 
   b = list(i = 2:2, j = 4, text = "Quarto est relativement récent et semble prendre de plus en plus la place de R Markdown parmi la communauté d'utilisateurs de R. Le nombre d'utilisateurs de Quarto est donc appelé à croître dans les prochaines années."))
 )
