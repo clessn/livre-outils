@@ -2,7 +2,7 @@
 
 Avant propos de Yannick Dufresne.
 
-# Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir
+# Données massives, causalité et sciences sociales : Changements et réflexions sur l’avenir.
 
 L'apparition des données massives (*big data*) dans le paysage technologique représente un cas de phénomène hautement technique dont les effets politiques et sociaux sont remarquables. Depuis quelques années, la discussion publique s'est en effet rapidement emparée du sujet, au point de transformer un développement technologique en phénomène social. Les données massives se trouvent ainsi régulièrement présentées dans l'espace public à la fois comme un moyen puissant de développement et d'innovation technoscientifique, de même que comme une menace à la stabilité de certaines normes sociales telles que la confidentialité des informations privées. Il n'est d'ailleurs pas rare que le discours public s'inquiète du danger que poseraient les données massives à la séparation des sphères publique et privée, pourtant centrale à la conception libérale du rôle de la politique qui structure la majorité des débats sociaux, en amalgamant parfois de manière trop rapide l'objet et l'utilisation qui en est faite. Toutefois, ce même discours public s'emporte aussi rapidement à propos des gains technologiques monumentaux réalisés par l'utilisation des données massives.
 
