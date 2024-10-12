@@ -158,7 +158,9 @@ stargazer(mod_lm, mod_glm, type = "text", title = "Tableau de régression des mo
 <!-- Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`: -->
 
 <!-- ```{r} -->
+
 <!-- stargazer(mod_lm, mod_glm, type = "latex", title = "Tableau de régression des modèles") -->
+
 <!-- ``` -->
 
 Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, cette sortie a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html:
