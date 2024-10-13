@@ -1,4 +1,4 @@
-# Outils d'intelligence artificielle
+# Outils d'intelligence artificielle {#sec-chap8}
 
 ```{=tex}
 \begin{center}
