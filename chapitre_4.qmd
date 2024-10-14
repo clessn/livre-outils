@@ -2,23 +2,53 @@
 
 ## Point d'observation: La littérature et les références
 
-La gestion de la connaissance ainsi que la gestion des références ont longtemps été des processus fastidieux, nécessitant une organisation rigoureuse des références, des notes de lecture et des articles accumulés au fil du temps. Avant l’avènement des outils numériques, les chercheurs dépendaient de méthodes manuelles pour organiser leur documentation. Les bibliographies étaient construites à la main ou à l'aide de logiciels de traitement de texte et les articles scientifiques étaient souvent archivés en version papier dans des classeurs ou des boîtes de rangement. Cette gestion physique de la littérature et des références était laborieuse, sujette aux erreurs et difficile à partager avec d'autres chercheurs ou collaborateurs.
+La gestion de la connaissance ainsi que la gestion des références ont longtemps été des processus fastidieux, nécessitant une organisation rigoureuse des références, des notes de lecture et des articles accumulés au fil du temps. 
+Avant l’avènement des outils numériques, les chercheurs dépendaient de méthodes manuelles pour organiser leur documentation. 
+Les bibliographies étaient construites à la main ou à l'aide de logiciels de traitement de texte et les articles scientifiques étaient souvent archivés en version papier dans des classeurs ou des boîtes de rangement. 
+Cette gestion physique de la littérature et des références était laborieuse, sujette aux erreurs et difficile à partager avec d'autres chercheurs ou collaborateurs.
 
-Le développement des technologies de l'information et la montée en puissance des bases de données en ligne ont ouvert la voie à l'émergence d'outils numériques de gestion de la connaissance et de références. À mesure que les ordinateurs devenaient plus accessibles et que l'informatique évoluait, de nouvelles possibilités se sont offertes pour organiser et gérer de manière plus efficace et moins chronophage. C’est dans ce contexte que les premiers outils numériques de gestion de la connaissance et des références ont vu le jour.
+Le développement des technologies de l'information et la montée en puissance des bases de données en ligne ont ouvert la voie à l'émergence d'outils numériques de gestion de la connaissance et de références. 
+À mesure que les ordinateurs devenaient plus accessibles et que l'informatique évoluait, de nouvelles possibilités se sont offertes pour organiser et gérer de manière plus efficace et moins chronophage. 
+C’est dans ce contexte que les premiers outils numériques de gestion de la connaissance et des références ont vu le jour.
 
-Ces logiciels de première génération, tels que EndNote (1988) et Bookends (1988), répondaient à un besoin pressant : faciliter l’organisation des références ainsi que leur insertion automatique dans des documents, tout en générant des bibliographies conformes à différents standards éditoriaux. Cependant, ces outils se sont rapidement sophistiqués à travers les années. Les logiciels de gestion de références sont devenus des plateformes centralisées permettant aux chercheurs de stocker des milliers de citations, de les classer par mots-clés ou thématiques et de les retrouver facilement. Les utilisateurs pouvaient aussi importer des références directement depuis des bases de données en ligne comme PubMed ou JSTOR, automatisant encore davantage le processus. Aujourd’hui, les outils de gestion de la connaissance et des références, tels que Zotero (2006), Mendeley (2008) ou Covidence (2014), permettent non seulement de gérer des bibliographies, mais également de collaborer à plusieurs sur des revues systématiques, d’annoter des articles, d’organiser des données et de générer des rapports structurés. Leurs fonctionnalités cloud facilitent également la synchronisation entre différents appareils et assurent un accès en tout lieu.
+Ces logiciels de première génération, tels que EndNote (1988) et Bookends (1988), répondaient à un besoin pressant : faciliter l’organisation des références ainsi que leur insertion automatique dans des documents, tout en générant des bibliographies conformes à différents standards éditoriaux. 
+Cependant, ces outils se sont rapidement sophistiqués à travers les années. 
+Les logiciels de gestion de références sont devenus des plateformes centralisées permettant aux chercheurs de stocker des milliers de citations, de les classer par mots-clés ou thématiques et de les retrouver facilement. 
+Les utilisateurs pouvaient aussi importer des références directement depuis des bases de données en ligne comme PubMed ou JSTOR, automatisant encore davantage le processus. 
+Aujourd’hui, les outils de gestion de la connaissance et des références, tels que Zotero (2006), Mendeley (2008) ou Covidence (2014), permettent non seulement de gérer des bibliographies, mais également de collaborer à plusieurs sur des revues systématiques, d’annoter des articles, d’organiser des données et de générer des rapports structurés. 
+Leurs fonctionnalités cloud facilitent également la synchronisation entre différents appareils et assurent un accès en tout lieu.
 
-Bien que ce chapitre aborde à la fois les outils de gestion de la bibliographie et des références, il est essentiel de préciser que ces deux types d'outils ont des utilités et fonctionnalités distinctes. Les outils de gestion des références, tels que EndNote et Zotero, se concentrent sur l'organisation, l'annotation et la création de bibliographies à partir de références. En revanche, les outils de gestion de la connaissance, comme Covidence, Colandr et Rayyan, sont conçus pour gérer des processus de recherche plus complexes, tels que les revues systématiques, en facilitant la sélection, l'évaluation critique et la synthèse des études.
+Bien que ce chapitre aborde à la fois les outils de gestion de la bibliographie et des références, il est essentiel de préciser que ces deux types d'outils ont des utilités et fonctionnalités distinctes. 
+Les outils de gestion des références, tels que EndNote et Zotero, se concentrent sur l'organisation, l'annotation et la création de bibliographies à partir de références. 
+En revanche, les outils de gestion de la connaissance, comme Covidence, Colandr et Rayyan, sont conçus pour gérer des processus de recherche plus complexes, tels que les revues systématiques, en facilitant la sélection, l'évaluation critique et la synthèse des études.
 
 ## Arpentage et choix éditorial: Covidence et Zotero
 
 ### Pourquoi Covidence ?
 
-L'outil de gestion de la connaissance Covidence permet une avancée majeure dans la pratique des revues systématiques, en offrant des fonctionnalités qui optimisent chaque étape du processus de recherche. Sa capacité à importer et organiser efficacement les références provenant de diverses bases de données bibliographiques permet une gestion structurée des articles à inclure dans une revue. Cet outil facilite également la collaboration, en permettant à plusieurs chercheurs de travailler simultanément sur un même projet, ce qui encourage une analyse plus inclusive et diversifiée. En automatisant les premières phases de sélection des articles, il réduit la charge de travail manuel et limite les biais potentiels. De plus, ses moyens d'extraction de données et d'évaluation de la qualité assurent une analyse rigoureuse et cohérente des résultats. Enfin, son intégration avec d'autres plateformes de recherche en renforce la compatibilité et l'efficacité dans le flux de travail académique.
+L'outil de gestion de la connaissance Covidence permet une avancée majeure dans la pratique des revues systématiques, en offrant des fonctionnalités qui optimisent chaque étape du processus de recherche. 
+Sa capacité à importer et organiser efficacement les références provenant de diverses bases de données bibliographiques permet une gestion structurée des articles à inclure dans une revue. 
+Cet outil facilite également la collaboration, en permettant à plusieurs chercheurs de travailler simultanément sur un même projet, ce qui encourage une analyse plus inclusive et diversifiée. 
+En automatisant les premières phases de sélection des articles, il réduit la charge de travail manuel et limite les biais potentiels. 
+De plus, ses moyens d'extraction de données et d'évaluation de la qualité assurent une analyse rigoureuse et cohérente des résultats. 
+Enfin, son intégration avec d'autres plateformes de recherche en renforce la compatibilité et l'efficacité dans le flux de travail académique.
 
-Bien que Covidence soit développé par une organisation à but non lucratif, il ne répond pas pleinement aux critères du logiciel libre, car son code source n'est pas accessible pour modification ou redistribution par la communauté. Cette limitation peut freiner les utilisateurs souhaitant personnaliser l'outil en fonction de besoins spécifiques. Néanmoins, Covidence propose un modèle de licence adapté à un usage académique et non commercial, rendant l'outil accessible à une large communauté de chercheurs. L'une de ses principales forces réside dans son intégration des données issues de multiples bases bibliographiques, ce qui simplifie considérablement le processus de revue systématique. Covidence est également compatible avec des outils de gestion des références comme EndNote et Zotero, facilitant l'importation et l'organisation des références. De nombreuses institutions universitaires soutiennent l'outil, offrant des licences institutionnelles pour en élargir l'accès. En outre, l'interface intuitive de Covidence réduit la courbe d'apprentissage, guidant les utilisateurs à travers les différentes phases de la revue systématique de manière structurée et simplifiée par rapport aux méthodes traditionnelles. Ses fonctionnalités de double codage, de filtrage et d'extraction de données garantissent une méthodologie rigoureuse et standardisée, indispensable pour assurer la qualité des revues systématiques. De plus, Covidence excelle dans la facilitation de la collaboration entre chercheurs. La plateforme permet à plusieurs utilisateurs de travailler simultanément sur un même projet, d'échanger sur l'inclusion ou l'exclusion d'études, et de résoudre efficacement les divergences, ce qui s'avère particulièrement précieux pour les projets de grande envergure impliquant des équipes dispersées géographiquement.
+Bien que Covidence soit développé par une organisation à but non lucratif, il ne répond pas pleinement aux critères du logiciel libre, car son code source n'est pas accessible pour modification ou redistribution par la communauté. 
+Cette limitation peut freiner les utilisateurs souhaitant personnaliser l'outil en fonction de besoins spécifiques. 
+Néanmoins, Covidence propose un modèle de licence adapté à un usage académique et non commercial, rendant l'outil accessible à une large communauté de chercheurs. 
+L'une de ses principales forces réside dans son intégration des données issues de multiples bases bibliographiques, ce qui simplifie considérablement le processus de revue systématique. 
+Covidence est également compatible avec des outils de gestion des références comme EndNote et Zotero, facilitant l'importation et l'organisation des références. 
+De nombreuses institutions universitaires soutiennent l'outil, offrant des licences institutionnelles pour en élargir l'accès. 
+En outre, l'interface intuitive de Covidence réduit la courbe d'apprentissage, guidant les utilisateurs à travers les différentes phases de la revue systématique de manière structurée et simplifiée par rapport aux méthodes traditionnelles. 
+Ses fonctionnalités de double codage, de filtrage et d'extraction de données garantissent une méthodologie rigoureuse et standardisée, indispensable pour assurer la qualité des revues systématiques. 
+De plus, Covidence excelle dans la facilitation de la collaboration entre chercheurs. 
+La plateforme permet à plusieurs utilisateurs de travailler simultanément sur un même projet, d'échanger sur l'inclusion ou l'exclusion d'études, et de résoudre efficacement les divergences, ce qui s'avère particulièrement précieux pour les projets de grande envergure impliquant des équipes dispersées géographiquement.
 
-Cependant, l'utilisation de Covidence présente certaines contraintes. Le coût de l'abonnement peut constituer un frein pour certains chercheurs, limitant ainsi l'accès à cet outil pourtant utile en recherche. De plus, la plateforme requiert une période d'apprentissage, ce qui peut retarder son adoption efficace, notamment pour les utilisateurs sans expérience préalable avec des outils similaires. Bien que Covidence propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. Malgré ces défis, Covidence demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
+Cependant, l'utilisation de Covidence présente certaines contraintes. 
+Le coût de l'abonnement peut constituer un frein pour certains chercheurs, limitant ainsi l'accès à cet outil pourtant utile en recherche. 
+De plus, la plateforme requiert une période d'apprentissage, ce qui peut retarder son adoption efficace, notamment pour les utilisateurs sans expérience préalable avec des outils similaires. 
+Bien que Covidence propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. 
+Malgré ces défis, Covidence demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
 
 ```{r}
 #| echo: false
@@ -59,13 +89,32 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de
 
 ### Pourquoi Zotero ?
 
-Zotero se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
+Zotero se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. 
+Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. 
+Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. 
+La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. 
+Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .b
+ib. 
+De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. 
+En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
 
-Zotero offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. Avec Zotero, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
+Zotero offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. 
+Avec Zotero, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. 
+Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
 
-Cependant, Zotero présente quelques inconvénients, notamment sa gestion parfois difficile de très grandes bibliothèques contenant des milliers de fichiers, ce qui peut nécessiter l'achat d'espace de stockage supplémentaire. Bien que performant, le logiciel requiert parfois la saisie manuelle d'informations que le connecteur intégré ne détecte pas automatiquement, représentant un potentiel défis pour les utilisateurs. Ces quelques défis soulignent l'importance d'évaluer les besoins spécifiques en matière de gestion bibliographique avant de choisir Zotero comme solution.
+Cependant, Zotero présente quelques inconvénients, notamment sa gestion parfois difficile de très grandes bibliothèques contenant des milliers de fichiers, ce qui peut nécessiter l'achat d'espace de stockage supplémentaire. 
+Bien que performant, le logiciel requiert parfois la saisie manuelle d'informations que le connecteur intégré ne détecte pas automatiquement, représentant un potentiel défis pour les utilisateurs. 
+Ces quelques défis soulignent l'importance d'évaluer les besoins spécifiques en matière de gestion bibliographique avant de choisir Zotero comme solution.
 
-Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+Zotero est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .b
+ib. 
+BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. 
+Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. 
+BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. 
+L'exportation de bibliothèques Zotero sous forme de fichiers .b
+ib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. 
+Il est recommandé de maintenir dans votre fichier .b
+ib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
 
 ```{r}
 #| echo: false
@@ -108,25 +157,40 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
 
 ### Covidence
 
-Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. Comme mentionné dans la section précédente, l'utilisation de Covidence implique un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
+Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. 
+Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. 
+Comme mentionné dans la section précédente, l'utilisation de Covidence implique un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
 
-La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
+La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. 
+Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. 
+Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
 
-Suite à la révision des titres et des résumés, vient le « Full text review ». Cette étape implique l'examen complet des textes sélectionnés lors de l'étape précédente. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
+Suite à la révision des titres et des résumés, vient le « Full text review ». 
+Cette étape implique l'examen complet des textes sélectionnés lors de l'étape précédente. 
+Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. 
+Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
 
-La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. L'objectif est de parvenir à un consensus parmi les codeurs. L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
+La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. 
+L'objectif est de parvenir à un consensus parmi les codeurs. 
+L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
 
-Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des méta-analyses ou la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme DistillerSR, Archie, et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
+Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des méta-analyses ou la rédaction d'articles scientifiques. 
+Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme DistillerSR, Archie, et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
 
 ### Zotero
 
-L'intégration de Zotero dans le processus de recherche académique permet une gestion structurée et efficace des références bibliographiques. Pour tirer pleinement parti des fonctionnalités de cet outil, il est essentiel de suivre les étapes suivantes pour l'installation, la configuration, et l'utilisation des principales fonctionnalités de Zotero.
+L'intégration de Zotero dans le processus de recherche académique permet une gestion structurée et efficace des références bibliographiques. 
+Pour tirer pleinement parti des fonctionnalités de cet outil, il est essentiel de suivre les étapes suivantes pour l'installation, la configuration, et l'utilisation des principales fonctionnalités de Zotero.
 
 #### Installation et Configuration
 
-L'installation de Zotero commence par le téléchargement de l'application Zotero ainsi que de son extension pour navigateur, Zotero Connector. Cette extension permet de capturer facilement des références à partir de sources en ligne. Une fois l'installation terminée, il est recommandé de créer un compte Zotero via le lien d'inscription. Ce compte facilitera la synchronisation des données entre différents appareils et permettra le partage de bibliothèques de références avec des collaborateurs.
+L'installation de Zotero commence par le téléchargement de l'application Zotero ainsi que de son extension pour navigateur, Zotero Connector. 
+Cette extension permet de capturer facilement des références à partir de sources en ligne. 
+Une fois l'installation terminée, il est recommandé de créer un compte Zotero via le lien d'inscription. 
+Ce compte facilitera la synchronisation des données entre différents appareils et permettra le partage de bibliothèques de références avec des collaborateurs.
 
-La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
+La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. 
+Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
 
 #### Ajouter des références à Zotero
 
@@ -140,21 +204,31 @@ Zotero offre plusieurs méthodes pour ajouter des références à une bibliothè
 
 #### Optimisation des citations avec Better BibTeX
 
-L'installation de l'extension Better BibTeX est cruciale pour les chercheurs qui utilisent des systèmes de gestion documentaire comme LaTeX. Cette extension facilite la gestion des citations en générant des fichiers .bib mis à jour automatiquement.
+L'installation de l'extension Better BibTeX est cruciale pour les chercheurs qui utilisent des systèmes de gestion documentaire comme LaTeX. 
+Cette extension facilite la gestion des citations en générant des fichiers .bib mis à jour automatiquement.
 
-Pour installer Better BibTeX, accédez à Zotero : `Outils > Modules complémentaires`, puis sélectionnez l'option Installer un module à partir d'un fichier et choisissez le fichier `.xpi` préalablement téléchargé. Une fois l'installation terminée, configurez le module via `Zotero > Préférences > Onglet Better BibTeX`.
+Pour installer Better BibTeX, accédez à Zotero : `Outils > Modules complémentaires`, puis sélectionnez l'option Installer un module à partir d'un fichier et choisissez le fichier `.xpi` préalablement téléchargé. 
+Une fois l'installation terminée, configurez le module via `Zotero > Préférences > Onglet Better BibTeX`.
 
-Afin d'assurer une cohérence dans les clés de citation utilisées au sein d'un groupe de travail, Better BibTeX permet de définir un format de clé de citation uniforme. Le format recommandé est basé sur le nom de l'auteur et l'année de publication, par exemple : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`. Cette uniformisation garantit une gestion efficace des citations dans les documents collaboratifs.
+Afin d'assurer une cohérence dans les clés de citation utilisées au sein d'un groupe de travail, Better BibTeX permet de définir un format de clé de citation uniforme. 
+Le format recommandé est basé sur le nom de l'auteur et l'année de publication, par exemple : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`. 
+Cette uniformisation garantit une gestion efficace des citations dans les documents collaboratifs.
 
 #### Génération du fichier .bib
 
-Une fois Better BibTeX configuré, il est possible d'exporter une collection Zotero au format BibLaTeX. Pour cela, faites un clic droit sur la collection souhaitée et sélectionnez Exporter la collection. Choisissez le format `Better BibLaTeX` et cochez l'option `[x] Keep updated`. Ce fichier `.bib` sera mis à jour automatiquement chaque fois que de nouvelles références seront ajoutées à Zotero. Cette méthode est particulièrement utile pour synchroniser les références dans des projets partagés via des systèmes de versionnement comme GitHub.
+Une fois Better BibTeX configuré, il est possible d'exporter une collection Zotero au format BibLaTeX. 
+Pour cela, faites un clic droit sur la collection souhaitée et sélectionnez Exporter la collection. 
+Choisissez le format `Better BibLaTeX` et cochez l'option `[x] Keep updated`. 
+Ce fichier `.bib` sera mis à jour automatiquement chaque fois que de nouvelles références seront ajoutées à Zotero. 
+Cette méthode est particulièrement utile pour synchroniser les références dans des projets partagés via des systèmes de versionnement comme GitHub.
 
-Il est important de noter que toute modification effectuée dans Zotero (ajout, suppression de références) sera automatiquement synchronisée avec les autres membres du groupe. Cela implique qu'une gestion prudente des références est nécessaire pour éviter toute suppression accidentelle.
+Il est important de noter que toute modification effectuée dans Zotero (ajout, suppression de références) sera automatiquement synchronisée avec les autres membres du groupe. 
+Cela implique qu'une gestion prudente des références est nécessaire pour éviter toute suppression accidentelle.
 
 ##### Utilisation de Zotero lors de la rédaction
 
-Lors de la rédaction d'articles scientifiques, Zotero peut être intégré directement dans des éditeurs de texte compatibles avec LaTeX ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque Zotero.
+Lors de la rédaction d'articles scientifiques, Zotero peut être intégré directement dans des éditeurs de texte compatibles avec LaTeX ou Markdown. 
+L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque Zotero.
 
 ````{=html}
 <!-- 
