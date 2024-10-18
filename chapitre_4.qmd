@@ -170,7 +170,6 @@ Il est important de noter que toute modification effectuée dans Zotero (ajout, 
 
 Lors de la rédaction d'articles scientifiques, Zotero peut être intégré directement dans des éditeurs de texte compatibles avec LaTeX ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque Zotero.
 
-Previous --
 
 ```{=html}
 <!-- 
