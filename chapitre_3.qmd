@@ -220,8 +220,6 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
 -->
 ```
-
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -265,26 +263,25 @@ tbl_resume_chap_X <- tibble(
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de projet')
 ```
 
-
 ### Manuel d'instruction: Notion pour la vie professionnelle et personnelle
 
-En août 2024, [*Notion*](https://www.notion.so/fr) dépasse la barre du 100 millions d'utilisateurs. Juste avant la pandémie de COVID-19, *Notion* atteignait son premier million. En l'espace de quelques années, l'outil a rejoint, voire dépassé ses concurrents. Une popularité incontestable, notamment due à sa grande flexibilité. 
+En août 2024, [*Notion*](https://www.notion.so/fr) dépasse la barre du 100 millions d'utilisateurs. Juste avant la pandémie de COVID-19, *Notion* atteignait son premier million. En l'espace de quelques années, l'outil a rejoint, voire dépassé ses concurrents. Une popularité incontestable, notamment due à sa grande flexibilité.
 
-Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif. 
+Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif.
 
-Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches. 
+Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches.
 
-Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données. 
+Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données.
 
 Il n'est toutefois pas nécessaire d'aller dans la complexité: sans être un logiciel libre, *Notion* offre la possibilité à ses utilisateurs de créer leur propre « modèle », et de les offrir (voire de les vendre, si désiré!) à la communauté Web. Ainsi, [plus de 20 000 modèles *Notion* sont disponibles en ligne](https://www.notion.so/fr/templates)! Vous trouverez de multiples modèles pour répondre à tous vos besoins: que ce soit pour la gestion de vos finances ou pour gérer votre vie étudiante, la communauté *Notion* est large et structurée. Tous les modèles disponibles s'importent en deux clics, et vous permettent de les modifier complètement au besoin. Avec le temps et l'expérience, vous pourrez vous-même créer vos propres modèles et les offrir gratuitement (ou à votre prix!) à la communauté.
 
-Notez également que l'utilisation individuelle de *Notion* est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de *Notion*), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins. 
+Notez également que l'utilisation individuelle de *Notion* est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de *Notion*), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins.
 
 Avec un seul outil, *Notion* peut vous permettre de gérer à la fois votre vie personnelle et votre vie professionnelle. Pour se lancer, [des guides simples sont disponibles (en français!) sur le site Web](https://www.notion.so/fr/help/category/new-to-notion).
 
-Notez également que *Notion* possède sa propre application de calendrier. *Notion Calendar* permet d'importer vos calendriers *Google*, en plus d'afficher tous les jours vos échéances de stories. 
+Notez également que *Notion* possède sa propre application de calendrier. *Notion Calendar* permet d'importer vos calendriers *Google*, en plus d'afficher tous les jours vos échéances de stories.
 
-Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web.  En deux clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
+Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web. En deux clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
 
 Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir à quoi ressemblera l'application dans 10 ans. Victime de son succès, l'entreprise s'est plusieurs fois réinventée, misant sur une gestion de projet Agile, en communication avec sa clientèle, pour développer un outil à l'image des besoins et des intérêts de ses utilisateurs.
 
@@ -347,7 +344,6 @@ b.  Structuration du code + commentaires
 a.  Création du repo
 b.  Gestion des version (git) -->
 ```
-
 Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage infonuagiques se révèlent indispensables. Voici quelques avantages d'un entreposage sur le nuage pour la recherche :
 
 1.  *Sécurité des données* : Que vous travailliez avec des données sensibles ou non, la sécurité est essentielle pour protéger l’intégrité de vos fichiers. De bons outils garantissent que vos données ne sont pas exposées à des risques tels que des piratages ou des pertes accidentelles.
@@ -384,7 +380,6 @@ AWS regroupe un ensemble de services *cloud*  proposés par Amazon. Il offre une
 AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable. -->
 ```
 <!--L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche. -->
-
 
 ```{r}
 #| echo: false
@@ -569,7 +564,6 @@ Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logiq
 knitr::include_graphics("images/chapitre8_dropbox.png", dpi = 600)
 ```
 
-
 <!--AFC: Parler de l'image?-->
 
 ```{=html}
@@ -633,7 +627,6 @@ Moins populaire que les deux premiers outils proposés, Mattermost, cependant, e
 
 Nous apprécions particulièrement son interface intuitive, ses canaux de discussion, et son intégration avec d'autres outils populaires que nous utilisons régulièrement. Slack s'est avéré être une solution flexible et accessible, capable de répondre aux besoins variés de nos équipes académiques.
 
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -670,7 +663,6 @@ tbl_resume_chap_X <- tibble(
 
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de communication')
 ```
-
 
 ### Manuel d'instruction : comment utiliser Slack
 
@@ -726,7 +718,6 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 <!-- 3.  **Outils d'entreposage de données** : Que vous traitiez des données sensibles ou non, la conservation sécurisée de vos informations est primordiale. Des plateformes telles que Dropbox et Amazon Web Services (AWS) offrent des espaces sécurisés pour entreposer et partager vos données avec votre équipe. -->
 
 <!-- Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail. -->
-
 
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 
