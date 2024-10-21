@@ -1,16 +1,18 @@
 # Outils de collecte de données {#sec-chap5}
 
-La révolution numérique engendrée par l'émergence du Big Data représente un important défi pour le monde des sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension plus accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l'accès à des données massives concernant les trois acteurs clés de la société démocratique: les citoyens, les médias et les décideurs (Schroeder, 2014; Kramer, 2014). Si l'accès à ces données représente un défi éthique et théorique, tel qu'explicité lors des chapitres précédents, elle représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives (Burrows et Savage, 2014). 
+La révolution numérique engendrée par l'émergence du Big Data représente un important défi pour la communauté académique en sciences sociales (Manovich, 2011; Burrows et Savage, 2014). Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension accrue des phénomènes sociaux étudiés par la communauté scientifique (Connelly et al., 2016). Cette meilleure compréhension est permise, entre autres, par l'accès à une variété inégalée et une quantité massive de données permettant l'étude des différents objets de recherche (Schroeder, 2014; Kramer, 2014). Si l'accès à ces données numériques représente un défi éthique et théorique, tel qu'explicité lors des chapitres précédents, il représente également un défi technique pour les chercheurs.euses voulant exploiter le potentiel et les opportunités offertes par les données massives numériques (Burrows et Savage, 2014).
 
-Le chapitre qui suit vise à offrir un portrait des outils de collectes de données pouvant être exploitées par les scientifiques désirant entreprendre des recherches en sciences sociales numériques. Toutefois, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de collecte de données brutes pouvant être analysées par les chercheurs.ses. Les lignes suivantes mettront un accent particulier sur le web scraping et les opportunités de recherche qui en découlent. Ce chapitre offre donc un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter le web scraping et en offrant des exemples concrets de son utilisation.
+Le chapitre qui suit vise à offrir un portrait de différents outils de collectes de données pouvant être exploités par les scientifiques désirant entreprendre des recherches en sciences sociales, tout en mettant l'accent sur les opportunités offertes par le numérique. En effet, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de collecte de données brutes pouvant être analysées par les chercheurs.ses. Le chapitre débute par une description non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leur capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. Les sections suivantes mettront un accent particulier sur la méthode du web scraping par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Ce chapitre offre donc un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter le web scraping et le package *rvest* et en offrant des exemples concrets de son utilisation.
 
 ## **Point d'observation: les outils traditionnels de collecte de données numériques en sciences sociales**
 
-Le champ d'étude de la science politique repose sur l'étude de trois types d'acteurs distincts ayant un impact sur la condition socio-économique et politique d'une société : les décideurs, les médias et les citoyens. La recherche sur les décideurs comprend entre autres l'analyse des politiques publiques, des partis politiques, de stratégies électorales ou encore l'analyse de discours de politiciens ou d'organisations. L'étude des médias repose largement sur le rôle des médias dans la formation des priorités et des jugements des citoyens quant aux enjeux politiques, de même que sur leur capacité d'influencer l'agenda des politiciens. En ce qui concerne les citoyens, le champ d'étude de l'opinion publique se consacre à l'analyse des comportements et des attitudes politiques des individus. De plus, de nombreuses recherches visant à comprendre le rôle des citoyens dans une société démocratique portent sur l'influence de la société civile de même que sur l'effet des mouvements sociaux. 
+Toute recherche empirique repose sur l'analyse d'un objet de recherche, et doit donc comprendre une réflexion sur les manières d'observer l'objet d'étude. Avant l'utilisation de quelconque méthode, il faut un ensemble de données à analyser sur lesquelles les différentes méthodes seront appliquées. Le type de données à analyser dépend de l'objectif analytique de la recherche entreprise, mais surtout, de l'objet de recherche. Une fois que l'on sait *qu'est* ce qu'on veut étudier, il faut déterminer *comment* l'étudier, et ultimement, acquérir les données nécessaires à l'analyse. Il existe donc un immense éventail d'outils permettant la collecte de données nécessaires à la tenue de recherche en sciences sociales. Les sciences sociales reposent sur l'analyse des sociétés et des pénomènes qui les caractérisent. Les communautés scientifiques autant qualitatives que quantitatives ont donc besoin de données qui permettent de tels types d'analyses. À cet effet, les entrevues, une méthode de recherche largement employée en sciences sociales, peut constituer un outil de collecte de données qui permet d'aller récolter un savoir pouvant par la suite être analyser sous forme de texte retranscrit. Bien que l'objectif de ce chapitre ne soit pas de présenter les manières de conduire une entrevue en science sociale, il demeure pertinent de le mentionner afin d'exposer l'immensité du champ de la collecte de données en sciences sociales. Les prochaines lignes présenteront quelques outils de collecte de données particulièrement prisés en sciences sociales, soit les données de sondages et les données de médias, et comment l'émergence du numérique a radicalement transformé le processus d'acquisition de telles données.
 
-L'opinion publique est traditionnellement étudiée par le biais de données de sondages. L'émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s'il avait été conduit manuellement (Nayak & K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas. Parmi les plateformes web les plus reconnues de construction et d'Administration de sondage, Qualtrics figure en tête de liste. Cette plateforme est une des plus reconnues et utilisée à l'international, tant dans le milieu académique que dans le secteur privé. En plus d'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l'expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, Qualtrics s'adapte à différents formats en fonction de l'appareil du répondant (Evans & Mathur, 2018). Son principal désavantage provient de son coût d'acquisition, qui est relativement dispendieux. 
+L'opinion publique, une composante fondamentale des sciences sociales, est traditionnellement étudiée par le biais de données de sondages. L'émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s'il avait été conduit manuellement (Nayak & K. A., 2019). Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas. Parmi les plateformes web les plus reconnues de construction et d'administration de sondage, Qualtrics figure en tête de liste. Cette plateforme est une des plus reconnues et utilisée à l'international, tant dans le milieu académique que dans le secteur privé. En plus d'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l'expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, Qualtrics s'adapte à différents formats en fonction de l'appareil du répondant (Evans & Mathur, 2018). Son principal désavantage provient de son coût d'acquisition, qui est extrêmement dispendieux. La présentation de cet outil dans le cadre de ce chapitre provient du fait qu'il s'agit de la principale plateforme de construction de sondage, autant dans le monde commercial qu'académique. Il devient d'autant plus important de présenter cet outil en raison du fait que, malgré l'obstacle monétaire, certaines universités possèdent des licenses permettant l'utilisation de l'outil par la communauté étudiante. De plus, de nombreus.e.s professeur.e.s possèdent également des comptes Qualtrics qui permettent la construction de sondage.
 
-Au niveau des médias, l'arrivée de données massives permet de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l'importante quantité de données accessibles aux chercheurs.euses, ce qui permet une compréhension accrue des réalités médiatiques modernes, marquées par la fragmentation. L'outil Factiva offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l'accès à des documents d'entreprises. En revanche, l'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l'accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons. Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva. 
+Il convient toutefois de présenter certaines alternatives à Qualtrics en raison des obstacles monétaires à son utilisation. La plateforme de construction de sondage RedCap, particulièrement prisée dans le milieu de la santé, représente une alternative très efficace à Qualtrics. En plus d'être bien moins dispendieux que Qualtrics, l'immense majorité des institutions universitaires occidentales possèdent des licenses d'utilisation de RedCap, ce qui renforce son accessibilité.
+
+La recherche en sciences sociales se penche également sur l'analyse de contenu médiatique, qui permet une mutltitude de devis de recherche dans un grand nombre de sous-discipline des sciences sociales. L'émergence du numérique facilite largement la récolte de données médiatiques tout en favorisant de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l'importante quantité de données accessibles aux chercheurs.euses. À cet effet, l'outil Factiva offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l'accès à des documents d'entreprises. En revanche, l'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l'accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons. Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur Factiva, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva.
 
 ## 
 
@@ -18,13 +20,13 @@ Au niveau des médias, l'arrivée de données massives permet de nouvelles ave
 
 ![image3_2](images/chapitre3_eureka.png)
 
-### PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE.
+PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE.
 
 Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques, les extracteurs webs.
 
-## **Arpentage et choix éditorial: le web scraping - collecter automatiquement des données provenant de sites web**
+## **Arpentage et choix éditorial: le web scraping grâce à l'outil *rvest*- collecter automatiquement des données provenant de sites web**
 
-Chacun des acteurs démocratiques énumérés précédemment peut également être étudié par le biais d'extracteurs qui offrent un accès à des données numériques massives. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. La section suivante explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
+Les extracteurs de données sont des outils qui transforment la récolte de données en sciences sociales. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. La section suivante explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
 
 L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent ainsi une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non-fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les dites données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal-structurées. Ainsi, l'accès à des données massives représente un défi considérable pour la communauté scientifique tentant d'entreprendre des recherches utilisant un volume important de données.
 
@@ -32,7 +34,7 @@ C'est dans cette optique que les extracteurs de données numériques peuvent êt
 
 ### PIÈGE: LA LÉGALITÉ DES EXTRACTEURS DE DONNÉES
 
-Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.) 
+Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
 
 ### RACCOURCI: LES API.
 
@@ -60,7 +62,7 @@ Tel q'explicité précédemment, la présence d'une grande communauté d'utilisa
 
 ### L'importance de comprendre la structure du code HTML
 
-Afin d'être à l'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure \[\] représente un exemple de base de code HTML. 
+Afin d'être à l'aise avec les extracteurs web, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure \[\] représente un exemple de base de code HTML.
 
 ![image3_3](images/chapitre5_html_input.png)
 
@@ -78,7 +80,7 @@ Cet ouvrage recommande l'utilisation du paquetage "Rvest" afin de récolter des 
 
 La première étape est l'installation et le chargement des paquetages "tidyverse" et "rvest" sur sa console Rstudio. Il est important de les charger séparément car RVEST ne fait pas partie des paquetages de base du TIDYVERSE. Nous installerons ce dernier car il amène des fonctions pratiques au scraping
 
-```bash
+``` bash
 install.packages("rvest")
 
 install.packages("tidyverse")
@@ -88,9 +90,9 @@ library(rvest)
 library(tidyverse)
 ```
 
-Pour débuter l'extraction des données, il suffit de copier  l'URL de la page web à scraper et la coller dans l'appel de la fonction read_html(). Il est important de stocker l'URL dans l'objet "html_LEGISinfo.
+Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à scraper et la coller dans l'appel de la fonction read_html(). Il est important de stocker l'URL dans l'objet "html_LEGISinfo.
 
-```bash
+``` bash
 html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
 
 html_LEGISinfo
@@ -98,7 +100,7 @@ html_LEGISinfo
 
 Lors de l'exécution des lignes de code ci-hautes, la console retournera les éléments suivants:
 
-```bash
+``` bash
 {html_document}
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 [1] <head>\n<meta http-equiv="Content-Type" content="text/html;         charset=UTF-8">\n<meta  ...
@@ -107,52 +109,52 @@ Lors de l'exécution des lignes de code ci-hautes, la console retournera les él
 
 Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
 
-D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \<a\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction. 
+D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \<a\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.
 
-```bash
+``` bash
 html_LEGISinfo |> html_elements("a")
 ```
 
 Qui retourne les éléments suivants:
 
-```bash
+``` bash
 {xml_nodeset (180)}
  [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">Skip to m ...
  [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">Parliament of Cana ...
  [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
 ```
 
-```bash
+``` bash
 html_LEGISinfo |> html_elements("a")
 ```
 
 Qui retourne les éléments suivants:
 
-```bash
+``` bash
 {xml_nodeset (180)}
  [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">Skip to m ...
  [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">Parliament of Cana ...
  [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
 ```
 
-```bash
+``` bash
 html_LEGISinfo |> html_elements("a")
 ```
 
-```bash
+``` bash
 {html_node}
 <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">
 ```
 
 Suite à l'inspection des éléments <a>, ceux qui nous intéressent sont ceux de classe "bill-tile-container". Il suffit d'ajouter un point "." avant la classe souhaitée lors de l'appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l'exemple de LEGISinfo, nous obtenons une liste d'éléments de classe bill-tile-container que nous allons stocker dans l'objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
 
-```bash
+``` bash
 BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
 ```
 
 L'exécution du bloc de code ci-haut produit le résultat suivant dans la console
 
-```bash
+``` bash
 {xml_nodeset (60)}
  [1] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-1">\r\n\r\n     ...
  [2] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-2">\r\n\r\n     ...
@@ -161,13 +163,13 @@ L'exécution du bloc de code ci-haut produit le résultat suivant dans la consol
 
 À partir de la liste d'éléments de classe bill-tile-container, nous appelons la fonction html_element, qui lorsque appliqué à une liste permet d'extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe parliament-session par le biais de la ligne de code suivante:
 
-```bash
+``` bash
 BillTile_LEGISinfo |> html_element(".parliament-session") 
 ```
 
 Ce qui produit le résultat suivant dans la console:
 
-```bash
+``` bash
 {xml_nodeset (60)}
  [1] <div class="parliament-session">\n<span class="parl-session-number">44th</span> Parlia ...
  [2] <div class="parliament-session">\n<span class="parl-session-number">44th</span> Parlia ...
@@ -176,11 +178,11 @@ Ce qui produit le résultat suivant dans la console:
 
 Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur "id attribute". Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le id attribute retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
 
-```bash
+``` bash
 html_LEGISinfo |> html_elements("#StartOfContent")
 ```
 
-```bash
+``` bash
 {xml_nodeset (1)}
 [1] <a id="StartOfContent" tabindex="-1"></a>
 ```
@@ -189,37 +191,37 @@ Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extra
 
 Code
 
-```bash
+``` bash
 BillTile_LEGISinfo |> html_element("h4") |> html_text2()
 ```
 
 Console
 
-```bash
+``` bash
 [1] "S-1"   "S-2"   "S-3"   "S-4"   "S-5"...
 ```
 
 Code
 
-```bash
+``` bash
 BillTile_LEGISinfo |> html_element(".parliament-session") |> html_text2().
 ```
 
 Console
 
-```bash
+``` bash
 [1] "44th Parliament, 1st session" "44th Parliament, 1st session"...
 ```
 
 Code
 
-```bash
+``` bash
 BillTile_LEGISinfo |> html_element("h5") |> html_text2()
 ```
 
 Console
 
-```bash
+``` bash
 [1] "An Act relating to railways"                                                                                                                                                                                                                                                                                  
  [2] "An Act to amend the Parliament of Canada Act and to make consequential and related amendments to other Acts"                                                                                                                                                                                                  
  [3] "An Act to amend the Judges Act"   
@@ -228,14 +230,14 @@ Console
 
 Code
 
-```bash
+``` bash
 BillBS_LEGISinfo <- html_LEGISinfo |> html_elements(".bottom-section")
 BillBS_LEGISinfo |> html_element("dd") |> html_text2()
 ```
 
 Console
 
-```bash
+``` bash
 [1] "Introduced as pro forma bill"                                              "Senate bill awaiting first reading in the House of Commons"               
  [3] "Bill not proceeded with"                                                   "Royal assent received"                                                    
  [5] "Royal assent received"                                                     "At second reading in the House of Commons"     
@@ -244,14 +246,14 @@ Console
 
 Code
 
-```bash
+``` bash
 Bill_stage <- html_LEGISinfo |> html_elements(".progress-bar-description")
 Bill_stage |> html_element("dd") |> html_text2()
 ```
 
 Console
 
-```bash
+``` bash
 [1] "First reading in the Senate"            "Third reading in the Senate"            "First reading in the Senate"            "Royal assent"                           "Royal assent"                          
  [6] "First reading in the House of Commons"  "First reading in the House of Commons"  "Royal assent"                           "First reading in the House of Commons"  "Royal assent"        
 ...
@@ -260,7 +262,7 @@ Console
 
 Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu'à utiliser la fonction tibble du tidyverse. Ce paquetage permet de facilement créer des dataframes sur R. Voici le script à produire dans l'exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation :
 
-```bash
+``` bash
 Table_LEGISinfo <- tibble(
   Bill = Bill_LEGISinfo |> html_element("h4") |> html_text2(),
   Session = Bill_LEGISinfo |> html_element(".parliament-session") |> html_text2(),
@@ -274,13 +276,13 @@ Il est important de noter que ce chapitre ne permet que de scraper des documents
 
 Il est possible d'extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin de moissonner divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique passe du moissonnage pour devenir de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur le moissonnage.
 
-```bash
+``` bash
 BillTile_LEGISinfo |> html_attr("href")
 ```
 
 La ligne de code ci-haut produit le résultat suivant dans la console
 
-```bash
+``` bash
 1] "/legisinfo/en/bill/44-1/s-1"   "/legisinfo/en/bill/44-1/s-2"   "/legisinfo/en/bill/44-1/s-3"   "/legisinfo/en/bill/44-1/s-4"   "/legisinfo/en/bill/44-1/s-5"   "/legisinfo/en/bill/44-1/s-6"  
  [7] "/legisinfo/en/bill/44-1/s-7"   "/legisinfo/en/bill/44-1/s-8"   "/legisinfo/en/bill/44-1/s-9"   "/legisinfo/en/bill/44-1/s-10"  "/legisinfo/en/bill/44-1/s-11"  "/legisinfo/en/bill/44-1/s-12" 
 [13] "/legisinfo/en/bill/44-1/s-13"  "/legisinfo/en/bill/44-1/s-14"  "/legisinfo/en/bill/44-1/s-15"  "/legisinfo/en/bill/44-1/s-16"  "/legisinfo/en/bill/44-1/s-17"  "/legisinfo/en/bill/44-1/s-201"
@@ -288,7 +290,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 
 Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
 
-```bash
+``` bash
 htmltest <- minimal_html("
   <table class='mytable'>
 <tr><th>x</th>   <th>y</th></tr>
@@ -303,7 +305,7 @@ htmltest <- minimal_html("
 
 L'opération précédante produit le résultat suivant dans la console
 
-```bash
+``` bash
 # A tibble: 3 × 2
       x     y
   <dbl> <dbl>
