@@ -450,4 +450,6 @@ Il y a différentes façons d'ajouter des références à Zotero :
 -   Utiliser le connecteur dans votre navigateur. Zotero tentera également de télécharger l'article directement et de l'inclure dans la collection appropriée.
 
 -->
+
+ <!--# Ajout d'une conclusion. Proposition: retour sur les avantages d'intégrer ces outils dès le début des études pour bien s'approprier ceux-ci et apprivoiser plus facilement les exigences des travaux de recherche et de revues de la littérature. Compétences à la fois utiles du point de vue académique, mais également essentielles pour aspirer faire du travail en recherche durant ses études. -->.
 ````
