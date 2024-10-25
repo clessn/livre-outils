@@ -331,11 +331,23 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 
 ``` bash
 1] "/legisinfo/en/bill/44-1/s-1"  
-"/legisinfo/en/bill/44-1/s-2"   "/legisinfo/en/bill/44-1/s-3"   "/legisinfo/en/bill/44-1/s-4"   "/legisinfo/en/bill/44-1/s-5"   "/legisinfo/en/bill/44-1/s-6"  
+"/legisinfo/en/bill/44-1/s-2" 
+"/legisinfo/en/bill/44-1/s-3"  
+"/legisinfo/en/bill/44-1/s-4"  
+"/legisinfo/en/bill/44-1/s-5"  
+"/legisinfo/en/bill/44-1/s-6"  
  [7] "/legisinfo/en/bill/44-1/s-7" 
- "/legisinfo/en/bill/44-1/s-8"   "/legisinfo/en/bill/44-1/s-9"   "/legisinfo/en/bill/44-1/s-10"  "/legisinfo/en/bill/44-1/s-11"  "/legisinfo/en/bill/44-1/s-12" 
+ "/legisinfo/en/bill/44-1/s-8"  
+ "/legisinfo/en/bill/44-1/s-9"  
+ "/legisinfo/en/bill/44-1/s-10"  
+ "/legisinfo/en/bill/44-1/s-11" 
+ "/legisinfo/en/bill/44-1/s-12" 
 [13] "/legisinfo/en/bill/44-1/s-13" 
-"/legisinfo/en/bill/44-1/s-14"  "/legisinfo/en/bill/44-1/s-15"  "/legisinfo/en/bill/44-1/s-16"  "/legisinfo/en/bill/44-1/s-17"  "/legisinfo/en/bill/44-1/s-201"
+"/legisinfo/en/bill/44-1/s-14" 
+"/legisinfo/en/bill/44-1/s-15"  
+"/legisinfo/en/bill/44-1/s-16" 
+"/legisinfo/en/bill/44-1/s-17" 
+"/legisinfo/en/bill/44-1/s-201"
 ```
 
 Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
