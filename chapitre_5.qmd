@@ -31,7 +31,7 @@ knitr::include_graphics("images/chapitre3_factiva.png", dpi = 600)
 #| label: interface-eureka
 #| echo: false
 #| fig-cap: "Interface de la plateforme Eureka"
-knitr::include_graphics("images/chapitre3_eurek.png", dpi = 600)
+knitr::include_graphics("images/chapitre3_eureka.png", dpi = 600)
 ```
 
 ## 
