@@ -46,8 +46,6 @@ C'est dans cette optique que les extracteurs de données numériques peuvent êt
 
 Dans un contexte de recherche en sciences sociales, *rvest* permet de récolter automatiquement les données de sites internets pertinents qui pourront ensuite être utilisées afin de mener à terme un projet de recherche. Les sites desquels les données seront extraites dépendent du sujet de recherche d'intérêt de la personne entreprenant la recherche. Par exemple, un code peut extraire de manière automatisée les débats des parlements, les communiqués de presse des gouvernants, les plateformes électorales des partis politiques, ce qui offre un accès inégalé aux chercheurs.euses aux données de décideurs. De telles données pourraient mener à des analyses poussées sur le contenu et le ton des débats parlementaires. Dans une autre optique, des extracteurs peuvent également offrir l'accès aux données provenant de médias socionumériques comme Twitter (maintenant X) ou Facebook . Un extracteur peut, par exemple, être en mesure de répertorier l'ensemble des Tweets de journalistes, de politiciens ou encore de citoyens de manière automatisée, offrant un accès inégalé aux chercheurs.euses à des données massives exclusives. Ainsi, les extracteurs sont des outils qui changent drastiquement l'accès aux données massives en sciences sociales numériques.
 
-PIÈGE: LA LÉGALITÉ DES EXTRACTEURS DE DONNÉES
-
 Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
 
 L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter possédait, avant les changements de directions récents, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus de scraping, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
@@ -129,7 +127,8 @@ Lors de l'exécution des lignes de code ci-hautes, la console retournera les él
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 [1] <head>\n<meta http-equiv="Content-Type" content="text/html;         charset=UTF-8">\n<meta 
 ...
-[2] <body class="body-wrapper ce-parl vh-100">\r\n    <header class="d-print-none"><!-- ...
+[2] <body class="body-wrapper ce-parl vh-100">\r\n    
+<header class="d-print-none"><!-- ...
 ```
 
 Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
@@ -293,9 +292,13 @@ Bill_stage |> html_element("dd") |> html_text2()
 Console
 
 ``` bash
-[1] "First reading in the Senate"            "Third reading in the Senate"            "First reading in the Senate"            "Royal assent"                        
+[1] "First reading in the Senate"            
+"Third reading in the Senate"            
+"First reading in the Senate"           
+"Royal assent"                        
 "Royal assent"                          
- [6] "First reading in the House of Commons"  "First reading in the House of 
+ [6] "First reading in the House of Commons" 
+ "First reading in the House of 
  Commons"  "Royal assent"                          
  "First reading in the House of Commons"  "Royal assent"        
 ...
