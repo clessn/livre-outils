@@ -262,11 +262,11 @@
 \title{Outils de recherche en sciences sociales numériques}
 \author{Chaire de leadership en enseignement des sciences sociales
 numériques (CLESSN)}
-\date{2024-10-21}
+\date{2024-10-25}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, sharp corners, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -4368,28 +4368,18 @@ se concentre principalement sur les médias francophones (autant au
 Québec qu'en Europe). La structure d'Eureka est similaire à celle de
 Factiva.
 
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre3_factiva.png}
+
+}
+
+\caption{Interface de la plateforme Factiva}
+
+\end{figure}
+
 \hypertarget{section}{%
 \section{}\label{section}}
-
-\begin{figure}
-
-{\centering \includegraphics{images/chapitre3_factiva.png}
-
-}
-
-\caption{image3\_1}
-
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics{images/chapitre3_eureka.png}
-
-}
-
-\caption{image3\_2}
-
-\end{figure}
 
 PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE.
 
@@ -4433,13 +4423,13 @@ important de données.
 
 C'est dans cette optique que les extracteurs de données numériques
 peuvent être utiles. Il faut faire ici la distinction entre l'outil,
-soit l'extracteur, de données, et la méthode, le web scraping. Plus
-précisément, le web scraping est la méthode permet l'extraction de
+soit l'extracteur de données, et la méthode, le web scraping. Plus
+précisément, le web scraping est la méthode qui permet l'extraction de
 données provenant de sites webs qui seront ensuite converties dans un
 format utile aux scientifiques de données. L'extracteur est l'outil qui
 permet cette méthode. Il sera question dans les lignes qui suivent de
-l'outil rvest, un package sur R, qui permet de récolter des données de
-site web gratuitement et efficacement.
+l'outil \emph{rvest}, un package sur R, qui permet de récolter des
+données de site web gratuitement et efficacement.
 
 Dans un contexte de recherche en sciences sociales, \emph{rvest} permet
 de récolter automatiquement les données de sites internets pertinents
@@ -4480,9 +4470,9 @@ courriels, des codes postaux, etc.)
 RACCOURCI: LES API.
 
 L'utilisation de cet outil est toutefois facilitée par l'existence d'API
-(Application programming interface) sur les plateformes exploitées.
-L'API d'un site ou d'une application, souvent fournie par le site,
-permet à un tierce partie d'avoir accès à du code expliquant le
+(\emph{Application Programming Interface}) sur les plateformes
+exploitées. L'API d'un site ou d'une application, souvent fournie par le
+site, permet à un tierce partie d'avoir accès à du code expliquant le
 fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction
 de données. Par exemple, Twitter possédait, avant les changements de
 directions récents, un API qui facilitait l'élaboration d'un extracteur.
@@ -4526,80 +4516,89 @@ chapitre 2 du présent ouvrage offre un survol du langage fonctionnel R,
 qui est utilisé par de nombreux développeurs lors de l'écriture
 d'extracteurs et qui permet d'utiliser le package \emph{rves}t. R est
 également reconnu pour ces fonctionnalités statistiques qui sont, elles
-aussi, abordées ultérieurement dans ce livre. L'utilisation
-d'extracteurs webs permettent aux chercheurs.euses de faire plusieurs
-coups d'une seule pierre. Non seulement \emph{rvest} permet de se
-familiariser avec le langage R, qui est un atout essentiel dans la
-recherche en sciences sociales numériques, mais ce même développement
-permet un accès inégalé à des données massives qui pourront ensuite être
-analysées. Le développement d'extracteurs est donc relativement simple
-dépendamment du site que l'on vise à extraire. Ainsi, des connaissances
-en R sont essentielles au développement d'extracteurs, et la complexité
-du code évoluera dépendamment du site qui sera extrait. La section
-suivante présente les outils nécessaires à l'entreprise d'extraction de
-données web sur R.
+aussi, abordées ultérieurement dans ce livre. L'utilisation de cet outil
+permet aux chercheurs.euses de faire plusieurs coups d'une seule pierre.
+Non seulement \emph{rvest} permet de se familiariser avec le langage R,
+ce qui est un atout essentiel dans la recherche en sciences sociales
+numériques, mais ce même développement permet un accès inégalé à des
+données massives qui pourront ensuite être analysées. Ainsi, des
+connaissances en R sont essentielles au développement d'extracteurs, et
+la complexité du code évoluera dépendamment du site qui sera extrait.
 
 \hypertarget{crituxe8res-de-suxe9lection-1}{%
 \subsection{Critères de sélection}\label{crituxe8res-de-suxe9lection-1}}
 
 L'extracteur \emph{rvest} est un outil accessible, particulièrement
-comme il s'agit d'une méthode libre de coûts monétaires. En effet, à
-moins de circonstances exceptionnelles, le web scraping est gratuit. Le
-coût serait plutôt dans l'acquisition de connaissances préalables en
-code puis dans l'apprentissage de la méthode. Malgré cette nuance,
-l'absence de coûts monétaires liés à cet outil favorise son
-accessibilité à l'ensemble de la communauté scientifique.as
+comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins
+de circonstances exceptionnelles, le web scraping avec rvest est
+gratuit. Le coût serait plutôt dans l'acquisition de connaissances
+préalables en code puis dans l'apprentissage de la méthode
+d'utilisation. Malgré cette nuance, l'absence de coûts monétaires liés à
+cet outil favorise son accessibilité à l'ensemble de la communauté
+scientifique. Il est par exemple possible d'étudier l'opinion publique
+grâce à l'extraction de publications sur des médias socionumériques,
+plutôt que de construire et administrer des sondages coûteux (voir par
+exemple l'article de Barbera et al., 2015).
 
-Additionnellement, le web scraping jouit d'une grande communauté
+Additionnellement, l'outil jouit d'une grande communauté
 d'utilisateurs.ices rendant accessible leurs connaissances, ce qui
 favorise la diffusion des savoirs liés à l'utilisation de cet outil. De
 nombreux forums d'aide peuvent alors être consultés gratuitement par les
-chercheurs.euses voulant se familiariser avec le web scraping. De
-nombreux forums sont présents sur le site Stack Overflow, et certains
-chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil
-sont également dispinible gratuitement en ligne (voir par exemple le
-chapitre \emph{Web scraping} du livre \emph{R for Data Science} d'Hadley
-Wickham, 2022).
+chercheurs.euses voulant se familiariser avec le package, et plus
+largement, la méthode du web scraping. De nombreux forums sont présents
+sur le site Stack Overflow, et certains chapitres d'ouvrages collectifs
+vulgarisant l'utilisation de l'outil sont également dispinible
+gratuitement en ligne (voir par exemple le chapitre \emph{Web scraping}
+du livre \emph{R for Data Science} d'Hadley Wickham, 2022, qui présente
+comment utiliser l'outil \emph{rvest}). Bien que des outils comme
+Qualtrics et Factiva aient également un grand nombre d'utilsateurs.ices,
+ces outils ne se démarquent pas par la transparence et le partage de
+leur communauté utilisatrice.
 
-Le web scraping est un outil de recherche très en vogue dans la
+Les extracteurs sont des outils de recherche très en vogue dans la
 communauté des sciences sociales. La possibilité d'obtenir une quantité
 importante de données de manière efficace et gratuite représente une
 opportunité depuis largement exploitée par les chercheurs.euses en
-sciences sociales, en témoigne l'émergence de cours dédiés au web
-scraping dans de nombreuses écoles méthodologiques de renom (telles
-qu'ICPSR ou l'école d'été méthodologique du European Consortium for
-Political Research).
+sciences sociales, en témoigne l'émergence de cours dédiés à
+l'utilisation d'outils permettant le web scraping dans de nombreuses
+écoles méthodologiques de renom (telles qu'ICPSR ou l'école d'été
+méthodologique du European Consortium for Political Research).
 
-Le web scraping avec le logiciel R permet de récolter des données qui
-pourront ensuite être traitées et exploiter avec R, ce qui favorise donc
-la compatibilité de l'outil. De plus, les données extraites peuvent être
-exportées dans de nombreux formats tels que des fichiers .csv, .RDS,
-.xlsx, et plus encore.
+Le web scraping avec le logiciel R via l'outil \emph{rvest} permet de
+récolter des données qui pourront ensuite être traitées et exploiter
+avec R, ce qui favorise donc la compatibilité de l'outil. De plus, les
+données extraites peuvent être exportées dans de nombreux formats tels
+que des fichiers .csv, .RDS, .xlsx, et plus encore.
 
 Tel q'explicité précédemment, la présence d'une grande communauté
 d'utilisateurs.ices de l'outil favorise la transparence et la
-réplicabilité des différents résultats produits lors de l'utilisation du
-web scraping.
+réplicabilité des différents résultats produits lors de l'utilisation
+d'extracteurs.
 
 \hypertarget{manuel-dinstruction-extraire-des-donnuxe9es-avec-r}{%
 \section{Manuel d'instruction: extraire des données avec
 R}\label{manuel-dinstruction-extraire-des-donnuxe9es-avec-r}}
 
+La section suivante présente la méthode d'utilisation de l'outil
+\emph{rvest}. Elle démontre comment l'outil permet d'accomplir du web
+scraping, une méthode très en vogue en science sociales.
+
 \hypertarget{limportance-de-comprendre-la-structure-du-code-html}{%
 \subsection{L'importance de comprendre la structure du code
 HTML}\label{limportance-de-comprendre-la-structure-du-code-html}}
 
-Afin d'être à l'aise avec les extracteurs web, il peut être un atout de
-se familiariser avec la structure de base du langage HTML, dont
-l'acronyme signifie ``Hypertext Markup Language''. Il s'agit d'un
-langage de code qui permet la description du contenu de la page web. La
-structure du code HTML est hiérarchique, ce qui signifie que le code est
-divisé en différentes sections qui occupent différents rôles. Ces
-sections sont délimitées par des ``tags'', qui définissent le début ou
-la fin d'une section du site. Ce sont ces différentes sections qui
-seront accessibles pour l'extraction, et le code HTML permet de
-comprendre ce qui se situe dans ces sections. La Figure {[}{]}
-représente un exemple de base de code HTML.
+Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis
+le package \emph{rvest}, il peut être un atout de se familiariser avec
+la structure de base du langage HTML, dont l'acronyme signifie
+``Hypertext Markup Language''. Il s'agit d'un langage de code qui permet
+la description du contenu de la page web. La structure du code HTML est
+hiérarchique, ce qui signifie que le code est divisé en différentes
+sections qui occupent différents rôles. Ces sections sont délimitées par
+des ``tags'', qui définissent le début ou la fin d'une section du site.
+Ce sont ces différentes sections qui seront accessibles pour
+l'extraction, et le code HTML permet de comprendre ce qui se situe dans
+ces sections. La Figure {[}{]} représente un exemple de base de code
+HTML.
 
 \begin{figure}
 
@@ -4648,13 +4647,13 @@ communauté scientifique.
 et ses
 possibilités}}{Le package rvest: son fonctionnement et ses possibilités}}\label{le-package-rvest-son-fonctionnement-et-ses-possibilituxe9s}}
 
-Cet ouvrage recommande l'utilisation du paquetage ``Rvest'' afin de
+Cet ouvrage recommande l'utilisation du paquetage \emph{rvest} afin de
 récolter des données sur des pages web, qu'elles aient ou non un API.
 Rvest est construit autour des paquetages ``xml2'' et ``httr'' afin de
 faciliter la manipulation du HTML et XML. Rvest est principalement conçu
 pour scraper une seule page web alors que pour scraper de multiples
-pages, d'autres paquetages sont recommandés, notamment ``polite''. Cet
-ouvrage ne rentre pas dans les détails et ne se concentrera que sur
+pages, d'autres paquetages sont recommandés, notamment ``polite''. Ce
+chapitre ne rentre pas dans les détails et ne se concentrera que sur
 Rvest.
 
 \hypertarget{fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo}{%
@@ -5064,8 +5063,6 @@ pour télécharger les données ! C'est le cas de l'exemple utilisé ici
 données directement sur le site web, ce qui rend parfois le besoin de
 moissonner désuet.
 
-\hfill\break
-
 \hypertarget{conclusion-et-discussion}{%
 \section{Conclusion et discussion:}\label{conclusion-et-discussion}}
 
@@ -5080,12 +5077,13 @@ ci-haut. En revanche, ce chapitre s'ancre autour du postulat qu'il ne
 faut pas se limiter aux outils de récolte de données traditionnels, et
 que la révolution numérique engendre d'importantes opportunités
 d'acquisition de données massives et exclusives par le biais des
-extracteurs de données. Ces extracteurs ont pour but de moissonner les
-données présentes sur un site web afin de les rendre disponibles pour
-l'analyse scientifique. Une section complète de ce chapitre vise à
-vulgariser le processus d'extraction de données provenant de site web en
-utilisant l'exemple du site LégisInfo, ce qui permet aux lecteurs.ices
-de se familiariser avec le processus de moissonnage de données.
+extracteurs de données, plus précisemment l'outil d'extraction
+\emph{rvest}. Ces extracteurs ont pour but de moissonner les données
+présentes sur un site web afin de les rendre disponibles pour l'analyse
+scientifique. Une section complète de ce chapitre vise à vulgariser le
+processus d'extraction de données provenant de site web en utilisant
+l'exemple du site LégisInfo, ce qui permet aux lecteurs.ices de se
+familiariser avec le processus de moissonnage de données.
 
 Toutefois, un seul chapitre ne permet pas de relever l'ensemble des
 outils de collecte de données disponibles pour la communauté
@@ -5162,7 +5160,7 @@ une base de données dynamique qui recense les grands événements, les
 outils, les auteurs, et les approches ayant façonné le champ de la
 visualisation graphique (Friendly et al., 2016).
 
-\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, breakable, colback=white, toprule=.15mm, rightrule=.15mm, coltitle=black, bottomrule=.15mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, coltitle=black, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, toptitle=1mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, colframe=quarto-callout-note-color-frame, colback=white, arc=.35mm, opacityback=0, rightrule=.15mm, leftrule=.75mm, opacitybacktitle=0.6]
 
 Pour plus d'informations sur le Milestones Project, consultez le site
 web du projet:
@@ -5500,7 +5498,7 @@ scientifique. La section suivante du chapitre introduira divers outils
 qui facilitent la visualisation, la comparaison et la présentation
 efficace de nos modèles de régression.
 
-\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, breakable, colback=white, toprule=.15mm, rightrule=.15mm, coltitle=black, bottomrule=.15mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, coltitle=black, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, toptitle=1mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, colframe=quarto-callout-note-color-frame, colback=white, arc=.35mm, opacityback=0, rightrule=.15mm, leftrule=.75mm, opacitybacktitle=0.6]
 
 Le manuel d'instructions de cette section restera volontairement bref et
 concis en raison de l'abondante documentation déjà existante sur ces
@@ -7650,7 +7648,7 @@ faiblesses. Il est important de noter que ces outils sont en constante
 évolution et que leur qualité peut varier en fonction de la langue, du
 contexte et du type de texte à traduire.
 
-\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, colbacktitle=quarto-callout-tip-color!10!white, arc=.35mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, breakable, colback=white, toprule=.15mm, rightrule=.15mm, coltitle=black, bottomrule=.15mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Banques de données terminologiques}, leftrule=.75mm, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, coltitle=black, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Banques de données terminologiques}, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, titlerule=0mm, toptitle=1mm, breakable, toprule=.15mm, bottomtitle=1mm, left=2mm, colframe=quarto-callout-tip-color-frame, colback=white, arc=.35mm, opacityback=0, rightrule=.15mm, leftrule=.75mm, opacitybacktitle=0.6]
 
 Bien que ces outils n'utilisent pas l'intelligence artificielle, il nous
 semble essentiel de mentionner des ressources telles que TERMIUM Plus et
