@@ -125,7 +125,8 @@ Lors de l'exécution des lignes de code ci-hautes, la console retournera les él
 ``` bash
 {html_document}
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-[1] <head>\n<meta http-equiv="Content-Type" content="text/html;         charset=UTF-8">\n<meta 
+[1] <head>\n<meta http-equiv="Content-Type" 
+content="text/html; charset=UTF-8">\n<meta 
 ...
 [2] <body class="body-wrapper ce-parl vh-100">\r\n    
 <header class="d-print-none"><!-- ...
@@ -329,9 +330,12 @@ BillTile_LEGISinfo |> html_attr("href")
 La ligne de code ci-haut produit le résultat suivant dans la console
 
 ``` bash
-1] "/legisinfo/en/bill/44-1/s-1"   "/legisinfo/en/bill/44-1/s-2"   "/legisinfo/en/bill/44-1/s-3"   "/legisinfo/en/bill/44-1/s-4"   "/legisinfo/en/bill/44-1/s-5"   "/legisinfo/en/bill/44-1/s-6"  
- [7] "/legisinfo/en/bill/44-1/s-7"   "/legisinfo/en/bill/44-1/s-8"   "/legisinfo/en/bill/44-1/s-9"   "/legisinfo/en/bill/44-1/s-10"  "/legisinfo/en/bill/44-1/s-11"  "/legisinfo/en/bill/44-1/s-12" 
-[13] "/legisinfo/en/bill/44-1/s-13"  "/legisinfo/en/bill/44-1/s-14"  "/legisinfo/en/bill/44-1/s-15"  "/legisinfo/en/bill/44-1/s-16"  "/legisinfo/en/bill/44-1/s-17"  "/legisinfo/en/bill/44-1/s-201"
+1] "/legisinfo/en/bill/44-1/s-1"  
+"/legisinfo/en/bill/44-1/s-2"   "/legisinfo/en/bill/44-1/s-3"   "/legisinfo/en/bill/44-1/s-4"   "/legisinfo/en/bill/44-1/s-5"   "/legisinfo/en/bill/44-1/s-6"  
+ [7] "/legisinfo/en/bill/44-1/s-7" 
+ "/legisinfo/en/bill/44-1/s-8"   "/legisinfo/en/bill/44-1/s-9"   "/legisinfo/en/bill/44-1/s-10"  "/legisinfo/en/bill/44-1/s-11"  "/legisinfo/en/bill/44-1/s-12" 
+[13] "/legisinfo/en/bill/44-1/s-13" 
+"/legisinfo/en/bill/44-1/s-14"  "/legisinfo/en/bill/44-1/s-15"  "/legisinfo/en/bill/44-1/s-16"  "/legisinfo/en/bill/44-1/s-17"  "/legisinfo/en/bill/44-1/s-201"
 ```
 
 Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
