@@ -728,3 +728,5 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
 ```
+<!-- Une section supplémentaire à l’onglet Fonctionnalités de Slack pourrait aborder son utilisation comme outil de formation et de développement professionnel au sein des équipes. En effet, Slack permet de créer des chaînes dédiées à la formation, où l'on peut rassembler des fichiers, documents, vidéos et tutoriels. De plus, il est idéal pour partager des liens vers des cours en ligne pertinents, offrant ainsi aux membres la possibilité de s’inscrire et de suivre des formations à leur propre rythme. En centralisant ces ressources, les équipes favorisent un développement professionnel continu.
+Personnellement, j'utilise Slack pour le volet formatif dans mon emploi, et c'est extrêmement pratique !-->
