@@ -117,36 +117,46 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
   \fi
   % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
 \usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{codehigh}
 \usepackage{float}
 \usepackage{tabularray}
 \usepackage[normalem]{ulem}
 \usepackage{graphicx}
 \UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
 \NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
 \newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
 \newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
@@ -190,8 +200,6 @@
 \definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
 \makeatother
 \makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
 \makeatletter
@@ -230,23 +238,16 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
-\makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -262,11 +263,10 @@
 \title{Outils de recherche en sciences sociales numériques}
 \author{Chaire de leadership en enseignement des sciences sociales
 numériques (CLESSN)}
-\date{2024-10-25}
+\date{2024-11-05}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, enhanced, sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -276,8 +276,7 @@ numériques (CLESSN)}
 }
 \bookmarksetup{startatroot}
 
-\hypertarget{avant-propos}{%
-\chapter*{Avant-propos}\label{avant-propos}}
+\chapter*{Avant-propos}\label{avant-propos}
 \addcontentsline{toc}{chapter}{Avant-propos}
 
 \markboth{Avant-propos}{Avant-propos}
@@ -286,10 +285,9 @@ Avant propos de Yannick Dufresne.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{donnuxe9es-massives-causalituxe9-et-sciences-sociales-changements-et-ruxe9flexions-sur-lavenir.}{%
 \chapter*{Données massives, causalité et sciences sociales : Changements
 et réflexions sur
-l'avenir.}\label{donnuxe9es-massives-causalituxe9-et-sciences-sociales-changements-et-ruxe9flexions-sur-lavenir.}}
+l'avenir.}\label{donnuxe9es-massives-causalituxe9-et-sciences-sociales-changements-et-ruxe9flexions-sur-lavenir.}
 \addcontentsline{toc}{chapter}{Données massives, causalité et sciences
 sociales : Changements et réflexions sur l'avenir.}
 
@@ -333,7 +331,7 @@ introduction critique de certains points relatifs aux impacts des
 données massives sur la recherche en sciences sociales. Premièrement,
 nous présentons une conceptualisation des données massives.
 Deuxièmement, nous nous penchons sur les impacts des données massives en
-sciences sociales et soulignons tout particulièrement comment elles ￼
+sciences sociales et soulignons tout particulièrement comment elles
 affectent les enjeux de la \emph{validité} interne et externe dans le
 domaine des sciences sociales. Cela nous offre aussi l'opportunité
 d'aborder le sujet important de la différence entre les données
@@ -342,9 +340,8 @@ pistes de réflexion sur l'avenir des données massives en sciences
 sociales en identifiant certains changements \emph{épistémologiques} que
 ces données pourraient potentiellement entraîner.
 
-\hypertarget{duxe9finition-des-donnuxe9es-massives}{%
 \section*{Définition des données
-massives}\label{duxe9finition-des-donnuxe9es-massives}}
+massives}\label{duxe9finition-des-donnuxe9es-massives}
 \addcontentsline{toc}{section}{Définition des données massives}
 
 \markright{Définition des données massives}
@@ -394,9 +391,8 @@ leur utilisation. Ces fonctions touchent des domaines sociaux
 disparates, incluant le souci d'efficacité et de rendement des secteurs
 privé et public ainsi que la recherche scientifique pure (Gartner 2012).
 
-\hypertarget{les-donnuxe9es-massives-et-les-sciences-sociales}{%
 \section*{Les données massives et les sciences
-sociales}\label{les-donnuxe9es-massives-et-les-sciences-sociales}}
+sociales}\label{les-donnuxe9es-massives-et-les-sciences-sociales}
 \addcontentsline{toc}{section}{Les données massives et les sciences
 sociales}
 
@@ -413,9 +409,8 @@ massives et (2) une seconde relative à la différence entre les données
 expérimentales et les données observationnelles. Ces deux dimensions
 sont présentées de manière simultanées dans les prochaines sections.
 
-\hypertarget{la-validituxe9-de-la-mesure-en-sciences-sociales}{%
 \subsection*{La validité de la mesure en sciences
-sociales}\label{la-validituxe9-de-la-mesure-en-sciences-sociales}}
+sociales}\label{la-validituxe9-de-la-mesure-en-sciences-sociales}
 \addcontentsline{toc}{subsection}{La validité de la mesure en sciences
 sociales}
 
@@ -468,9 +463,8 @@ observer et classifier d'une certaine façon le phénomène et les données
 qui en découlent (dans le cas de \emph{Freedom House}, des codeurs
 travaillant de manière indépendante les uns des autres).
 
-\hypertarget{la-validituxe9-des-donnuxe9es-massives}{%
 \subsection*{La validité des données
-massives}\label{la-validituxe9-des-donnuxe9es-massives}}
+massives}\label{la-validituxe9-des-donnuxe9es-massives}
 \addcontentsline{toc}{subsection}{La validité des données massives}
 
 En ce qui a trait aux données massives, la question de la validité de la
@@ -502,9 +496,8 @@ particulièrement cruciaux : (1) la validité interne, (2) la validité
 externe et (3) la question d'un changement de posture ou d'orientation
 épistémologique en sciences sociales causé par les données massives.
 
-\hypertarget{validituxe9-interne-des-donnuxe9es-massives}{%
 \subsubsection*{Validité interne des données
-massives}\label{validituxe9-interne-des-donnuxe9es-massives}}
+massives}\label{validituxe9-interne-des-donnuxe9es-massives}
 \addcontentsline{toc}{subsubsection}{Validité interne des données
 massives}
 
@@ -544,9 +537,8 @@ conséquence que permet habituellement un processus contrôlé de
 génération des données. En somme, la validité interne des données
 massives est une fonction de la qualité de ces mêmes données.
 
-\hypertarget{validituxe9-externe-des-donnuxe9es-massives}{%
 \subsubsection*{Validité externe des données
-massives}\label{validituxe9-externe-des-donnuxe9es-massives}}
+massives}\label{validituxe9-externe-des-donnuxe9es-massives}
 \addcontentsline{toc}{subsubsection}{Validité externe des données
 massives}
 
@@ -593,9 +585,7 @@ grande quantité de données massives permet notamment d'appliquer des
 méthodes de pondération bien plus efficaces pour corriger les
 échantillons non-représentatifs (Wang et al.~2015).
 
-\hypertarget{donnuxe9es-expuxe9rimentales}{%
-\subsection*{Données
-expérimentales}\label{donnuxe9es-expuxe9rimentales}}
+\subsection*{Données expérimentales}\label{donnuxe9es-expuxe9rimentales}
 \addcontentsline{toc}{subsection}{Données expérimentales}
 
 La question du processus de génération des données devient plus claire
@@ -639,9 +629,8 @@ enjeux liés aux inférences causales ou explicatives (Grimmer, 2015).
 Elles sont en effet également soumises aux mêmes impératifs issus du
 processus de génération des données.
 
-\hypertarget{donnuxe9es-observationnelles}{%
 \subsection*{Données
-observationnelles}\label{donnuxe9es-observationnelles}}
+observationnelles}\label{donnuxe9es-observationnelles}
 \addcontentsline{toc}{subsection}{Données observationnelles}
 
 En ce qui a trait aux données observationnelles, il y a deux points
@@ -707,9 +696,8 @@ posteriori} sera donc plus fiable plus l'échantillon est grand. Les
 données massives ont ainsi une valeur ajoutée afin d'établir des
 inférences descriptives plus précises et sophistiquées.
 
-\hypertarget{validituxe9-uxe9cologique-et-observation-par-sous-groupes}{%
 \subsection*{Validité écologique et observation par
-sous-groupes}\label{validituxe9-uxe9cologique-et-observation-par-sous-groupes}}
+sous-groupes}\label{validituxe9-uxe9cologique-et-observation-par-sous-groupes}
 \addcontentsline{toc}{subsection}{Validité écologique et observation par
 sous-groupes}
 
@@ -734,7 +722,7 @@ d'estimer des paramètres qui étaient demeurés extrêmement imprécis
 jusqu'à aujourd'hui. Notre compréhension des phénomènes sociaux s'en
 trouve par le fait même approfondie de façon considérable.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics{images/chapitre1_tableau.png}
 
@@ -742,11 +730,10 @@ trouve par le fait même approfondie de façon considérable.
 
 \caption{image2\_2}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{conclusion-trois-questions-ouvertes-pour-le-futur}{%
 \section*{Conclusion : trois questions ouvertes pour le
-futur}\label{conclusion-trois-questions-ouvertes-pour-le-futur}}
+futur}\label{conclusion-trois-questions-ouvertes-pour-le-futur}
 \addcontentsline{toc}{section}{Conclusion : trois questions ouvertes
 pour le futur}
 
@@ -777,8 +764,7 @@ méthodologique qui caractérise les sciences sociales contemporaines?
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap1}{%
-\chapter{Le logiciel libre et le code source ouvert}\label{sec-chap1}}
+\chapter{Le logiciel libre et le code source ouvert}\label{sec-chap1}
 
 Ce chapitre ne présentera pas un outil en soi. Il vise à initier les
 lecteurs et les lectrices à la philosophie du logiciel libre et surtout
@@ -865,11 +851,9 @@ sont présentés dans ce livre. Ces critères sont nés de la jonction entre
 la philosophie du logiciel libre et l'expérience de recherche en tant
 que chaire, dont avec la participation de collaborateurs externes.
 
-\hypertarget{logiciels-libres}{%
-\section{Logiciels Libres}\label{logiciels-libres}}
+\section{Logiciels Libres}\label{logiciels-libres}
 
-\hypertarget{le-monde-du-libre}{%
-\subsection{Le monde du libre}\label{le-monde-du-libre}}
+\subsection{Le monde du libre}\label{le-monde-du-libre}
 
 \emph{« Vous n'avez pas à suivre une recette avec précision. Vous pouvez
 laisser de côté certains ingrédients. Ajouter quelques champignons parce
@@ -912,9 +896,8 @@ l'utilisateur de savoir ce que le programme fait réellement. Seulement
 de cette façon, l'utilisateur peut \emph{contrôler} le logiciel, plutôt
 que de se faire contrôler par ce dernier (Stallman, 1986).
 
-\hypertarget{uxe9mergence-et-suxe9mantique-du-libre}{%
 \subsection{\texorpdfstring{Émergence et sémantique du
-\emph{libre}}{Émergence et sémantique du libre}}\label{uxe9mergence-et-suxe9mantique-du-libre}}
+\emph{libre}}{Émergence et sémantique du libre}}\label{uxe9mergence-et-suxe9mantique-du-libre}
 
 Plusieurs situent les débuts du mouvement du logiciel libre avec la
 création de la licence publique générale GNU, en 1983, à partir de
@@ -1014,8 +997,7 @@ Amélioration constante, entraide, savoir partagé et plusieurs milliers
 de contributeurs (Couture, 2014), ces éléments résument très bien la
 philosophie du logiciel libre.
 
-\hypertarget{illustrations}{%
-\subsection{Illustrations}\label{illustrations}}
+\subsection{Illustrations}\label{illustrations}
 
 Considérons quelques exemples de logiciels libres et de logiciels
 payants afin de mettre en relief les trois éléments présentés ci-haut:
@@ -1090,9 +1072,8 @@ Office ou SPSS, aux étudiants et aux étudiantes pour éviter que ceux-ci
 aient à débourser d'importantes sommes supplémentaires afin d'acquérir
 ces logiciels.
 
-\hypertarget{logiciel-libre-et-code-ouvert}{%
 \subsection{Logiciel libre et code
-ouvert}\label{logiciel-libre-et-code-ouvert}}
+ouvert}\label{logiciel-libre-et-code-ouvert}
 
 Parallèlement au logiciel libre, il y a aussi le code ouvert, ou
 \emph{open source}. A priori, la dénomination du logiciel libre et celle
@@ -1158,10 +1139,9 @@ les distinguer puisqu'ils ont des origines différentes, et qu'ils mènent
 un cas concret afin d'expliquer l'effet du libre, et l'utilité que cela
 peut avoir.
 
-\hypertarget{les-sciences-sociales-uxe0-luxe8re-du-numuxe9rique-les-enseignements-de-la-philosophie-du-logiciel-libre}{%
 \section{Les sciences sociales à l'ère du numérique: les enseignements
 de la philosophie du logiciel
-libre}\label{les-sciences-sociales-uxe0-luxe8re-du-numuxe9rique-les-enseignements-de-la-philosophie-du-logiciel-libre}}
+libre}\label{les-sciences-sociales-uxe0-luxe8re-du-numuxe9rique-les-enseignements-de-la-philosophie-du-logiciel-libre}
 
 En quoi est-ce que ces deux concepts, issus du monde de l'informatique,
 sont-ils intéressants et/ou important pour les sciences sociales ? Pour
@@ -1272,15 +1252,13 @@ le potentiel de permettre non seulement une plus grande transparence des
 protocoles scientifiques, mais aussi un plus grand partage du savoir, et
 ce, du début de la recherche jusqu'à la publication des résultats.
 
-\hypertarget{inconvuxe9nients-et-duxe9fis}{%
-\section{Inconvénients et défis}\label{inconvuxe9nients-et-duxe9fis}}
+\section{Inconvénients et défis}\label{inconvuxe9nients-et-duxe9fis}
 
 Jusqu'à présent, nous avons surtout présenté des avantages liés aux
 logiciels libres. Toutefois, il n'y a pas que des points positifs, et ne
 pas aborder certaines limites serait malhonnête.
 
-\hypertarget{la-courbe-dapprentissage}{%
-\subsection{La courbe d'apprentissage}\label{la-courbe-dapprentissage}}
+\subsection{La courbe d'apprentissage}\label{la-courbe-dapprentissage}
 
 Dans leur texte, Paura \& Arhipova (2012) soulèvent une critique faite
 envers certains logiciels libres, notamment envers \texttt{R}. Le
@@ -1348,9 +1326,7 @@ d'un service directement offert par l'outil numérique en question, il
 est toujours possible de trouver du support et de l'aide par l'entremise
 de la communauté d'utilisateur.
 
-\hypertarget{probluxe8me-de-transparence}{%
-\subsection{Problème de
-transparence}\label{probluxe8me-de-transparence}}
+\subsection{Problème de transparence}\label{probluxe8me-de-transparence}
 
 L'arrivée des sciences informatiques a fait émerger des problèmes de
 reproductibilité des protocoles scientifiques (Janssen, 2017). Le
@@ -1390,8 +1366,7 @@ initiatives individuelles ne seront pas suffisantes pour une
 augmentation du partage du code (Krähmer et al., 2023). Par conséquent,
 rendre le code accessible devrait devenir un standard institutionnalisé.
 
-\hypertarget{appropration-capitaliste}{%
-\subsection{Appropration capitaliste}\label{appropration-capitaliste}}
+\subsection{Appropration capitaliste}\label{appropration-capitaliste}
 
 Dans ce cas-ci, il s'agit plutôt d'un défi auquel le logiciel libre est
 confronté plutôt qu'une critique quant aux limites de son utilisation.
@@ -1411,9 +1386,8 @@ accessible, plutôt qu'un moyen pour générer des profits. Il est
 important de garder en tête les valeurs et la philosophie qui a donné
 lieu à ce mouvement.
 
-\hypertarget{la-chronologie-de-la-recherche}{%
 \section{La chronologie de la
-recherche}\label{la-chronologie-de-la-recherche}}
+recherche}\label{la-chronologie-de-la-recherche}
 
 Malgré ces limites et ces défis, nous pensons que les différents outils
 numériques ont leur place en sciences sociales, et qu'ils s'inscrivent
@@ -1441,8 +1415,7 @@ données, le code et la ou les méthodes utilisées permet de contribuer
 non seulement aux débats méthodologiques, mais aussi permet à d'autres
 chercheurs d'apprendre sur l'utilité et l'utilisation de ces méthodes.
 
-\hypertarget{avant-la-recherche}{%
-\subsection{Avant la recherche}\label{avant-la-recherche}}
+\subsection{Avant la recherche}\label{avant-la-recherche}
 
 Au fil des prochains chapitres, les lecteurs et lectrices apprendront
 une nouvelle langue. Au même titre qu'une langue comme le français,
@@ -1474,8 +1447,7 @@ toute manipulation malhonnête \emph{post hoc}. Il s'agit d'un mécanisme
 qui se veut contraignant afin que les chercheurs s'en tiennent à ce
 qu'ils ou elles avaient prévu de mener comme recherche.
 
-\hypertarget{pendant-la-recherche}{%
-\subsection{Pendant la recherche}\label{pendant-la-recherche}}
+\subsection{Pendant la recherche}\label{pendant-la-recherche}
 
 Une fois la recherche débutée, plusieurs outils s'offrent pour une
 gestion efficace du flux de travail. Plusieurs d'entre eux seront
@@ -1496,8 +1468,7 @@ Nous ne voulons pas sous-entendre qu'il n'y a pas de limites à tous ces
 outils. Chaque chapitre de ce livre présentera les points positifs et
 négatifs des outils qui y seront abordés.
 
-\hypertarget{apruxe8s-la-recherche}{%
-\subsection{Après la recherche}\label{apruxe8s-la-recherche}}
+\subsection{Après la recherche}\label{apruxe8s-la-recherche}
 
 Une fois l'article écrit et publié, les auteurs peuvent décider de
 rendre accessible le matériel produit et utilisé en version gratuite sur
@@ -1562,8 +1533,7 @@ avenir très prometteur et peut générer des retombées positives, à
 conditions quelle s'intéresse aux différents défis auxquels elle est
 confrontée.
 
-\hypertarget{crituxe8res-de-suxe9lection}{%
-\section{Critères de sélection}\label{crituxe8res-de-suxe9lection}}
+\section{Critères de sélection}\label{crituxe8res-de-suxe9lection}
 
 Au cours des prochains chapitres, plusieurs outils seront présentés.
 Étant donné que le but de l'ouvrage n'est pas uniquement d'offrir une
@@ -1607,9 +1577,8 @@ dogmatisme, et un rejet total de tous les autres outils qui ne sont pas
 couverts dans ce livre. Il est important d'évaluer ses besoins afin de
 choisir quels outils devraient être utilisés.
 
-\hypertarget{accessibilituxe9-gratuit-ou-peu-dispendieux}{%
 \subsection{Accessibilité (Gratuit ou peu
-dispendieux)}\label{accessibilituxe9-gratuit-ou-peu-dispendieux}}
+dispendieux)}\label{accessibilituxe9-gratuit-ou-peu-dispendieux}
 
 L'accessibilité au plus grand nombre de ces outils est importante pour
 l'atteinte d'une science plus inclusive, et qui respecte les moyens de
@@ -1626,9 +1595,8 @@ corolaire du premier, une fois ces compétences acquises, les lecteurs et
 lectrices pourront facilement les réutiliser pour réaliser les diverses
 tâches qu'ils et elles ont besoin d'accomplir.
 
-\hypertarget{existence-dune-communautuxe9-dutilisateurs}{%
 \subsection{Existence d'une communauté
-d'utilisateurs}\label{existence-dune-communautuxe9-dutilisateurs}}
+d'utilisateurs}\label{existence-dune-communautuxe9-dutilisateurs}
 
 Ensuite, nous avons considéré l'existence d'une communauté d'utilisateur
 pour les différents outils qui sont présentés dans ce livre. Ces
@@ -1652,9 +1620,7 @@ questions liées au code, nous pouvons aller sur le site web de
 lequel nous pourrons trouver plusieurs informations et réponses à nos
 questions.
 
-\hypertarget{popularituxe9-dans-le-champ}{%
-\subsection{Popularité dans le
-champ}\label{popularituxe9-dans-le-champ}}
+\subsection{Popularité dans le champ}\label{popularituxe9-dans-le-champ}
 
 Nous avons choisi certains outils sur d'autres notamment à cause de leur
 popularité dans le champ et en sciences sociales. Par exemple, en
@@ -1668,9 +1634,8 @@ ces outils deviennent une forme de langage. Ainsi, la maîtrise de ce
 langage permet de dialoguer avec les autres chercheurs de notre champ,
 ce qui favorise les débats et la recherche collaborative, par exemple.
 
-\hypertarget{compatibilituxe9-avec-dautres-outils}{%
 \subsection{Compatibilité avec d'autres
-outils}\label{compatibilituxe9-avec-dautres-outils}}
+outils}\label{compatibilituxe9-avec-dautres-outils}
 
 Plusieurs des outils que nous présentons sont issus de notre expérience
 de recherche. Nous utilisons plusieurs d'entre eux notamment parce
@@ -1683,9 +1648,8 @@ gestion des références. Cette intégration des différents outils est
 importante puisqu'elle favorise non seulement la productivité et une
 optimisation individuelle, mais aussi collaborative.
 
-\hypertarget{transparence-et-ruxe9plicabilituxe9}{%
 \subsection{Transparence et
-réplicabilité}\label{transparence-et-ruxe9plicabilituxe9}}
+réplicabilité}\label{transparence-et-ruxe9plicabilituxe9}
 
 D'autres outils qui sont présentés visent à rendre accessibles les
 résultats de recherche au plus grand nombre. C'est notamment le cas de
@@ -1704,9 +1668,8 @@ analyses grâce à ces bribes. Il y a donc d'importantes externalités
 positives qui sont produites en rendant accessible une partie de nos
 efforts de recherche.
 
-\hypertarget{adaptabilituxe9-et-flexibilituxe9}{%
 \subsection{Adaptabilité et
-flexibilité}\label{adaptabilituxe9-et-flexibilituxe9}}
+flexibilité}\label{adaptabilituxe9-et-flexibilituxe9}
 
 Nous avons voulu présenter des outils qui ont la plus grande flexibilité
 et adaptabilité possible. Nous souhaitons que tous et toutes puissent
@@ -1725,8 +1688,7 @@ sur la production et le formatage du texte et de graphiques, par
 exemple. Cette flexibilité est un grand avantage lors de la rédaction et
 de l'analyse des données.
 
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\section{Conclusion}\label{conclusion}
 
 En guise de conclusion nous souhaitons mettre l'accent sur un
 apprentissage important qui se fait de manière implicite dans
@@ -1776,13 +1738,11 @@ autres chercheurs ont fait dans le cadre de leurs recherches.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap2}{%
-\chapter{Langages de programmation}\label{sec-chap2}}
+\chapter{Langages de programmation}\label{sec-chap2}
 
-\hypertarget{point-dobservation-histoire-des-langages-de-programmation-pour-lanalyse-de-donnuxe9es}{%
 \section{Point d'observation: Histoire des langages de programmation
 pour l'analyse de
-données}\label{point-dobservation-histoire-des-langages-de-programmation-pour-lanalyse-de-donnuxe9es}}
+données}\label{point-dobservation-histoire-des-langages-de-programmation-pour-lanalyse-de-donnuxe9es}
 
 L'histoire des langages de programmation dédiés à l'analyse de données
 s'inscrit dans une évolution constante des besoins et des méthodes en
@@ -1795,7 +1755,7 @@ efficaces de manipuler les données, ce qui a ouvert la voie à l'ère
 informatique et aux premiers logiciels dédiés à la statistique.
 
 Dans les années 1960 et 1970, les premiers langages et logiciels
-statistiques, tels que kSPSS (1968), SAS (1976), et STATA (1985), ont vu
+statistiques, tels que SPSS (1968), SAS (1976), et STATA (1985), ont vu
 le jour. Ces outils permettaient aux chercheurs d'automatiser les
 calculs statistiques complexes sur des ordinateurs de grande taille, en
 accélérant considérablement les analyses. Ces logiciels propriétaires
@@ -1833,9 +1793,8 @@ nouvelles méthodes et à l'augmentation des capacités de calcul, offrant
 des possibilités toujours plus larges pour l'exploration et l'analyse de
 données.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-pourquoi-r}{%
 \section{Arpentage et choix éditorial: Pourquoi
-R?}\label{arpentage-et-choix-uxe9ditorial-pourquoi-r}}
+R?}\label{arpentage-et-choix-uxe9ditorial-pourquoi-r}
 
 Il existe deux types de langages de programmation pour analyse de
 données. Les logiciels à licences comme SAS, STATA et SPSS, et les
@@ -1899,9 +1858,9 @@ langage, ainsi que ces différents \emph{packages}, sont disponible sur
 Windows, macOS et Linux.
 
 \begin{table}
-\caption{Résumé des principaux outils de programmation pour l'analyse de données}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de programmation pour l'analyse de données},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -1909,22 +1868,20 @@ colspec={X[]X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Logiciels sous licence (SAS, SPSS, STATA) & Python & Julia & R \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Non & Oui & Oui & Oui \\
-Existence d'une communauté d'utilisateurs & Modérée & Très élevée & En croissance & Très élevée \\
-Popularité dans le champ & Élevée dans certains secteurs & Très populaire & Modérée & Très populaire en sciences sociales et statistiques \\
-Compatibilité avec d'autres outils & Bonne & Excellente & Bonne & très bonne \\
-Transparence et réplicabilité & Faible & Bonne & Bonne & Très élevée \\
-Adaptabilité et flexibilité & Limitée & Très flexible & Très flexible & Très flexible \\
+Accessibilité (Gratuit ou peu dispendieux) & Non                           & Oui            & Oui           & Oui                                                 \\
+Existence d'une communauté d'utilisateurs  & Modérée                       & Très élevée    & En croissance & Très élevée                                         \\
+Popularité dans le champ                   & Élevée dans certains secteurs & Très populaire & Modérée       & Très populaire en sciences sociales et statistiques \\
+Compatibilité avec d'autres outils         & Bonne                         & Excellente     & Bonne         & très bonne                                          \\
+Transparence et réplicabilité              & Faible                        & Bonne          & Bonne         & Très élevée                                         \\
+Adaptabilité et flexibilité                & Limitée                       & Très flexible  & Très flexible & Très flexible                                       \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-apprendre-uxe0-programmer-en-r}{%
 \section{Manuel d'instruction: Apprendre à programmer en
-R}\label{manuel-dinstruction-apprendre-uxe0-programmer-en-r}}
+R}\label{manuel-dinstruction-apprendre-uxe0-programmer-en-r}
 
-\hypertarget{ouxf9-coder-en-r}{%
-\subsection{Où coder en R ?}\label{ouxf9-coder-en-r}}
+\subsection{Où coder en R ?}\label{ouxf9-coder-en-r}
 
 Un environnement de développement intégré (IDE) permet aux programmeurs
 de centraliser les différents aspects de l'écriture d'un programme
@@ -1958,8 +1915,7 @@ telle que l'exécution d'un fichier de code R.
 La suite du chapitre présente RStudio, l'interface de développement le
 plus populaire pour l'utilisation de R.
 
-\hypertarget{quest-ce-que-rstudio}{%
-\subsection{Qu'est-ce que RStudio ?}\label{quest-ce-que-rstudio}}
+\subsection{Qu'est-ce que RStudio ?}\label{quest-ce-que-rstudio}
 
 RStudio est un projet open source destiné à regrouper les différentes
 composantes du langage de programmation R en un seul outil (Allaire,
@@ -2009,8 +1965,7 @@ De plus, certains utilisateurs ont rapporté que RStudio était plus lent
 que d'autres alternatives pour certaines opérations, notamment celles
 impliquant de longs scripts.
 
-\hypertarget{comment-utiliser-rstudio}{%
-\subsection{Comment utiliser RStudio ?}\label{comment-utiliser-rstudio}}
+\subsection{Comment utiliser RStudio ?}\label{comment-utiliser-rstudio}
 
 Bien que de nombreux éléments puissent être personnalisés, la
 disposition par défaut de RStudio est composée de quatre volets
@@ -2062,8 +2017,7 @@ volet comporte des icônes pour réduire un composant, maximiser un volet
 verticalement ou modifier la taille de l'espace de travail (Verzani,
 2011 ; Nierhoff et Hillebrand, 2015).
 
-\hypertarget{conclusion-1}{%
-\section{Conclusion}\label{conclusion-1}}
+\section{Conclusion}\label{conclusion-1}
 
 Le langage de programmation R est un outil très utile pour toutes sortes
 de tâches, notamment liées aux statistiques et à la visualisation
@@ -2093,9 +2047,8 @@ et à l'avancement humain.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap3}{%
 \chapter{Outils de gestion de flux de travaux: la méthode Agile pour le
-monde académique}\label{sec-chap3}}
+monde académique}\label{sec-chap3}
 
 À l'ère du numérique, le monde de la recherche est en fulgurante
 transformation. Les outils de recherche sont plus nombreux que jamais et
@@ -2275,9 +2228,8 @@ fins d'inspiration. Au bout du compte, la réflexion sur votre flux de
 travaux vous reviendra. L'important est que vous preniez le temps
 nécessaire pour mener cette réflexion.
 
-\hypertarget{point-dobservation-retour-sur-lorigine-de-la-recherche-de-productivituxe9}{%
 \section{Point d'observation : retour sur l'origine de la recherche de
-productivité}\label{point-dobservation-retour-sur-lorigine-de-la-recherche-de-productivituxe9}}
+productivité}\label{point-dobservation-retour-sur-lorigine-de-la-recherche-de-productivituxe9}
 
 Avant le début du XXe siècle, « la seule façon d'améliorer la
 productivité était d'exiger du travail plus dur et des heures plus
@@ -2388,9 +2340,8 @@ gestion du flux de travaux efficace, utile à la fois pour les individus
 travaillant seuls, mais particulièrement adaptée pour les équipes de
 recherche.
 
-\hypertarget{les-outils-de-gestion-de-projet}{%
 \section{Les outils de gestion de
-projet}\label{les-outils-de-gestion-de-projet}}
+projet}\label{les-outils-de-gestion-de-projet}
 
 Comme le logiciel libre, l'Agilité est avant tout une philosophie. Une
 façon de percevoir son travail, son temps, la division de son travail et
@@ -2485,14 +2436,16 @@ Kanban) reposent sur les caractéristiques suivantes:
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_agilite.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_agilite.png}
 
 }
 
 \caption{\label{fig-scrum}Cycle d'application du processus Scrum, une
 approche Agile.}
 
-\end{figure}
+\end{figure}%
 
 La Figure~\ref{fig-scrum} présente le cycle traditionnel d'application
 de l'approche Scrum dans un contexte de travail collaboratif. Dans le
@@ -2644,10 +2597,9 @@ instructions sous forme de conseils pour l'utilisation adaptée de ces
 outils, notamment par la création de \emph{stories} à l'intérieur d'un
 tableau \emph{Kanban}.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-un-outil-de-gestion-de-projet}{%
 \subsection{Arpentage et choix éditorial: pourquoi utiliser un outil de
 gestion de
-projet}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-un-outil-de-gestion-de-projet}}
+projet}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-un-outil-de-gestion-de-projet}
 
 Tous les outils numériques de gestion de projets actuels (ou presque)
 sont conçus sur les enseignements des méthodes Agiles. Pour le contexte
@@ -2746,7 +2698,9 @@ créer et remplir un Kanban, qui se compose de quatre colonnes:
 
 \begin{figure}
 
-{\centering \includegraphics[width=5.01in,height=\textheight]{images/chapitre8_kanban_notion.png}
+\centering{
+
+\includegraphics[width=5.01in,height=\textheight]{images/chapitre8_kanban_notion.png}
 
 }
 
@@ -2754,7 +2708,7 @@ créer et remplir un Kanban, qui se compose de quatre colonnes:
 d'emblée des modèles de Kanban pour la création et le suivi des
 stories.}
 
-\end{figure}
+\end{figure}%
 
 En sortant de la première planification de sprint, l'équipe de recherche
 se retrouve face à des objectifs clairs, réalistes, divisés en stories
@@ -2834,9 +2788,9 @@ gratuité du service et la possibilité de modification et de
 redistribution.
 
 \begin{table}
-\caption{Résumé des principaux outils de gestion de projet}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de gestion de projet},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -2844,19 +2798,18 @@ colspec={X[]X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Microsoft & monday.com & OpenProject & Notion \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Payant & Payant & Gratuit (logiciel libre) & Utilisation de base gratuite \\
-Existence d'une communauté d'utilisateurs & Oui & Limitée & Limitée & Oui \\
-Popularité dans le champ & Oui & Non & Non & Oui \\
-Compatibilité avec d'autres outils & Avec les outils Microsoft & Oui & Oui & Oui \\
-Transparence et réplicabilité & Non & Non & Oui & Non \\
-Adaptabilité et flexibilité & Non & Non & Oui & Oui \\
+Accessibilité (Gratuit ou peu dispendieux) & Payant                    & Payant  & Gratuit (logiciel libre) & Utilisation de base gratuite \\
+Existence d'une communauté d'utilisateurs  & Oui                       & Limitée & Limitée                  & Oui                          \\
+Popularité dans le champ                   & Oui                       & Non     & Non                      & Oui                          \\
+Compatibilité avec d'autres outils         & Avec les outils Microsoft & Oui     & Oui                      & Oui                          \\
+Transparence et réplicabilité              & Non                       & Non     & Oui                      & Non                          \\
+Adaptabilité et flexibilité                & Non                       & Non     & Oui                      & Oui                          \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-notion-pour-la-vie-professionnelle-et-personnelle}{%
 \subsection{Manuel d'instruction: Notion pour la vie professionnelle et
-personnelle}\label{manuel-dinstruction-notion-pour-la-vie-professionnelle-et-personnelle}}
+personnelle}\label{manuel-dinstruction-notion-pour-la-vie-professionnelle-et-personnelle}
 
 En août 2024, \href{https://www.notion.so/fr}{\emph{Notion}} dépasse la
 barre du 100 millions d'utilisateurs. Juste avant la pandémie de
@@ -2931,14 +2884,12 @@ misant sur une gestion de projet Agile, en communication avec sa
 clientèle, pour développer un outil à l'image des besoins et des
 intérêts de ses utilisateurs.
 
-\hypertarget{les-outils-de-gestion-de-donnuxe9es}{%
 \section{Les outils de gestion de
-données}\label{les-outils-de-gestion-de-donnuxe9es}}
+données}\label{les-outils-de-gestion-de-donnuxe9es}
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-git-github-et-dropbox}{%
 \subsection{Arpentage et choix éditorial: pourquoi utiliser Git, GitHub
 et
-Dropbox}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-git-github-et-dropbox}}
+Dropbox}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-git-github-et-dropbox}
 
 Lorsque l'on aborde le domaine de la recherche scientifique en sciences
 sociales numériques, la collaboration et la gestion efficace du code
@@ -3160,9 +3111,9 @@ et la gestion, ce qui peut être un obstacle pour ceux qui recherchent
 une solution ``clé en main''.
 
 \begin{table}
-\caption{Résumé des principaux outils de gestion de données}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de gestion de données},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -3170,19 +3121,18 @@ colspec={X[]X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Dropbox & Google Drive & OneDrive & Nextcloud \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Limitée - Abonnement mensuel & Oui & Limitée & Oui - Si auto-hébergé \\
-Existence d'une communauté d'utilisateurs & Oui & Oui & Oui & Oui \\
-Popularité dans le champ & Oui & Oui & Limitée & Limitée \\
-Compatibilité avec d'autres outils & Oui & Avec les outils Google & Avec les outils Microsoft & Oui, avec configuration \\
-Transparence et réplicabilité & Limitée & Moyenne & Moyenne & Oui \\
-Adaptabilité et flexibilité & Limitée & Oui & Moyenne & Très flexible \\
+Accessibilité (Gratuit ou peu dispendieux) & Limitée - Abonnement mensuel & Oui                    & Limitée                   & Oui - Si auto-hébergé   \\
+Existence d'une communauté d'utilisateurs  & Oui                          & Oui                    & Oui                       & Oui                     \\
+Popularité dans le champ                   & Oui                          & Oui                    & Limitée                   & Limitée                 \\
+Compatibilité avec d'autres outils         & Oui                          & Avec les outils Google & Avec les outils Microsoft & Oui, avec configuration \\
+Transparence et réplicabilité              & Limitée                      & Moyenne                & Moyenne                   & Oui                     \\
+Adaptabilité et flexibilité                & Limitée                      & Oui                    & Moyenne                   & Très flexible           \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstructions-comment-utiliser-git-github-et-dropbox}{%
 \subsection{Manuel d'instructions: comment utiliser Git, Github et
-Dropbox}\label{manuel-dinstructions-comment-utiliser-git-github-et-dropbox}}
+Dropbox}\label{manuel-dinstructions-comment-utiliser-git-github-et-dropbox}
 
 Pour utiliser Git et GitHub efficacement dans un contexte de recherche
 en sciences sociales numériques, il est recommandé de suivre quelques
@@ -3345,14 +3295,16 @@ opérations.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_gitdesktop.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_gitdesktop.png}
 
 }
 
 \caption{\label{fig-github}GitHub Desktop facilite l'utilisation
 conjointe de Git et de GitHub.}
 
-\end{figure}
+\end{figure}%
 
 GitHub Desktop fournit une vue claire de vos répertoires, de vos
 modifications, de vos branches et de vos demandes de fusion (\emph{pull
@@ -3392,22 +3344,22 @@ dans un fichier \emph{.gitignore}.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_dropbox.png}
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre8_dropbox.png}
 
 }
 
 \caption{\label{fig-dropbox}Une arborescence claire vers le repository
 du livre d'outils en local.}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{les-outils-de-gestion-de-la-communication}{%
 \section{Les outils de gestion de la
-communication}\label{les-outils-de-gestion-de-la-communication}}
+communication}\label{les-outils-de-gestion-de-la-communication}
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-slack}{%
 \subsection{Arpentage et choix éditorial: pourquoi utiliser
-Slack}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-slack}}
+Slack}\label{arpentage-et-choix-uxe9ditorial-pourquoi-utiliser-slack}
 
 La communication et la collaboration sont au cœur de la recherche
 académique. Sur tout projet collaboratif, la communication joue un rôle
@@ -3489,9 +3441,9 @@ accessible, capable de répondre aux besoins variés de nos équipes
 académiques.
 
 \begin{table}
-\caption{Résumé des principaux outils de communication}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de communication},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -3499,19 +3451,18 @@ colspec={X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Teams & Slack & Mattermost \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Limitée & Limitée & Oui \\
-Existence d'une communauté d'utilisateurs & Oui & Oui & Non \\
-Popularité dans le champ & Non & Oui & Non \\
-Compatibilité avec d'autres outils & Avec les outils Microsoft & Oui & Limitée \\
-Transparence et réplicabilité & Non & Non & Oui \\
-Adaptabilité et flexibilité & Oui & Oui & Le plus adaptable \\
+Accessibilité (Gratuit ou peu dispendieux) & Limitée                   & Limitée & Oui               \\
+Existence d'une communauté d'utilisateurs  & Oui                       & Oui     & Non               \\
+Popularité dans le champ                   & Non                       & Oui     & Non               \\
+Compatibilité avec d'autres outils         & Avec les outils Microsoft & Oui     & Limitée           \\
+Transparence et réplicabilité              & Non                       & Non     & Oui               \\
+Adaptabilité et flexibilité                & Oui                       & Oui     & Le plus adaptable \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-comment-utiliser-slack}{%
 \subsection{Manuel d'instruction : comment utiliser
-Slack}\label{manuel-dinstruction-comment-utiliser-slack}}
+Slack}\label{manuel-dinstruction-comment-utiliser-slack}
 
 Notre outil de communication sélectionné est Slack. Nous vous proposons
 quelques conseils pratiques pour bien l'utiliser en équipe, mais aussi
@@ -3618,9 +3569,8 @@ votre outil. Voici quelques conseils à ce propos :
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap4}{%
 \chapter{Outils de synthèses de la connaissance et de gestion des
-références}\label{sec-chap4}}
+références}\label{sec-chap4}
 
 La réalisation d'une synthèse de la connaissance représente la première
 marche à franchir avant d'initier tout projet de recherche. C'est en
@@ -3685,9 +3635,8 @@ l'attribution du mérite et ce, tout en combattant le plagiat et en
 minimisant les biais. C'est dans ce contexte que des outils de gestion
 des références prennent toute leur importance.
 
-\hypertarget{point-dobservation-la-connaissance-et-les-ruxe9fuxe9rences}{%
 \section{Point d'observation: La connaissance et les
-références}\label{point-dobservation-la-connaissance-et-les-ruxe9fuxe9rences}}
+références}\label{point-dobservation-la-connaissance-et-les-ruxe9fuxe9rences}
 
 Les synthèses de la connaissance ainsi que la gestion des références ont
 longtemps été des processus fastidieux, nécessitant une organisation
@@ -3794,9 +3743,8 @@ l'effet étudié. Elle offre ainsi une puissance statistique accrue et une
 meilleure généralisation des conclusions, transcendant les limites des
 études individuelles.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-les-outils-de-synthuxe8se-de-la-connaissance}{%
 \section{Arpentage et choix éditorial: Les outils de synthèse de la
-connaissance}\label{arpentage-et-choix-uxe9ditorial-les-outils-de-synthuxe8se-de-la-connaissance}}
+connaissance}\label{arpentage-et-choix-uxe9ditorial-les-outils-de-synthuxe8se-de-la-connaissance}
 
 Plusieurs outils existent afin de faciliter la vie des chercheurs et
 chercheuses qui souhaitent effectuer des synthèses de la connaissance,
@@ -3824,9 +3772,8 @@ offre une interface intuitive et utilise des algorithmes pour faciliter
 le tri des articles. Toutefois, il propose moins d'options pour
 l'extraction des données en comparaison à Covidence.
 
-\hypertarget{choix-uxe9ditorial-pourquoi-covidence}{%
 \subsection{Choix éditorial : Pourquoi Covidence
-?}\label{choix-uxe9ditorial-pourquoi-covidence}}
+?}\label{choix-uxe9ditorial-pourquoi-covidence}
 
 L'outil de synthèse de la connaissance Covidence permet une avancée
 majeure dans la pratique des revues systématiques, en offrant des
@@ -3884,9 +3831,9 @@ inconvénients en fonction des besoins spécifiques de chaque projet de
 recherche.
 
 \begin{table}
-\caption{Résumé des principaux outils de gestion de la connaissance}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de gestion de la connaissance},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -3894,19 +3841,18 @@ colspec={X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Covidence & Colandr & Rayyan \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Non (Abonnement requis) & Oui (Gratuit) & Oui (Freemium) \\
-Existence d'une communauté d'utilisateurs & Oui & Modérée & Oui \\
-Popularité dans le champ & Très populaire dans la revue systématique & Moins connu mais en croissance & Populaire pour la revue systématique \\
-Compatibilité avec d'autres outils & Oui (Importation facile de citations) & Oui (supports RIS, BibTeX, etc.) & Oui (Intégration facile avec citation managers) \\
-Transparence et réplicabilité & Non (propriétaire) & Oui (Open-source) & Partiellement (propriétaire) \\
-Adaptabilité et flexibilité & Oui (mais limité) & Oui (beaucoup de flexibilité) & Oui (partiellement flexible) \\
+Accessibilité (Gratuit ou peu dispendieux) & Non (Abonnement requis)                   & Oui (Gratuit)                    & Oui (Freemium)                                  \\
+Existence d'une communauté d'utilisateurs  & Oui                                       & Modérée                          & Oui                                             \\
+Popularité dans le champ                   & Très populaire dans la revue systématique & Moins connu mais en croissance   & Populaire pour la revue systématique            \\
+Compatibilité avec d'autres outils         & Oui (Importation facile de citations)     & Oui (supports RIS, BibTeX, etc.) & Oui (Intégration facile avec citation managers) \\
+Transparence et réplicabilité              & Non (propriétaire)                        & Oui (Open-source)                & Partiellement (propriétaire)                    \\
+Adaptabilité et flexibilité                & Oui (mais limité)                         & Oui (beaucoup de flexibilité)    & Oui (partiellement flexible)                    \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-comment-utiliser-covidence}{%
 \section{Manuel d'instruction: Comment utiliser
-Covidence}\label{manuel-dinstruction-comment-utiliser-covidence}}
+Covidence}\label{manuel-dinstruction-comment-utiliser-covidence}
 
 Reconnu pour ses trois phases méthodiques --- « Title and abstract
 screening », « Full text review » et « Extraction » --- Covidence
@@ -3954,9 +3900,8 @@ universités via des licences, d'autres plateformes comme Colandr et
 Rayyan sont également populaires parmi les chercheurs, chacune répondant
 à des besoins et des budgets variés.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-les-outils-de-gestion-des-ruxe9fuxe9rences}{%
 \section{Arpentage et choix éditorial: Les outils de gestion des
-références}\label{arpentage-et-choix-uxe9ditorial-les-outils-de-gestion-des-ruxe9fuxe9rences}}
+références}\label{arpentage-et-choix-uxe9ditorial-les-outils-de-gestion-des-ruxe9fuxe9rences}
 
 Dans le domaine des outils de gestion des références, Mendeley et
 EndNote sont deux solutions populaires utilisées par les étudiants et
@@ -3986,9 +3931,8 @@ communauté open source active peuvent être des freins pour certains
 utilisateurs, notamment ceux qui privilégient l'accès à des outils
 gratuits ou collaboratifs.
 
-\hypertarget{choix-uxe9ditorial-pourquoi-zotero}{%
 \subsection{Choix éditorial : Pourquoi Zotero
-?}\label{choix-uxe9ditorial-pourquoi-zotero}}
+?}\label{choix-uxe9ditorial-pourquoi-zotero}
 
 Zotero se distingue des autres outils de gestion des références par sa
 gratuité et son accessibilité en tant que logiciel libre, avec un code
@@ -4050,9 +3994,9 @@ références utilisées, organisées par ordre alphabétique, afin de
 faciliter la collaboration et le partage des ressources.
 
 \begin{table}
-\caption{Résumé des principaux outils}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -4060,23 +4004,21 @@ colspec={X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & Zotero & Mendeley & Endnote \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Gratuit & Partiellement payant & Payant \\
-Existence d'une communauté d'utilisateurs & Environ 7.5m d'utilisateurs & Oui & Oui \\
-Popularité dans le champ & Très populaire & Très populaire & Populaire \\
-Compatibilité avec d'autres outils & Oui (Intégration facile avec Word, Google Docs, etc.) & Oui (Microsoft Word, LibreOffice) & Oui (Intégration avec Word) \\
-Transparence et réplicabilité & Oui (Open-source) & Partiellement (propriétaire) & Non (propriétaire) \\
-Adaptabilité et flexibilité & Oui (personnalisable avec plugins) & Oui (moins flexible que Zotero) & Partiellement (moins flexible) \\
+Accessibilité (Gratuit ou peu dispendieux) & Gratuit                                               & Partiellement payant              & Payant                         \\
+Existence d'une communauté d'utilisateurs  & Environ 7.5m d'utilisateurs                           & Oui                               & Oui                            \\
+Popularité dans le champ                   & Très populaire                                        & Très populaire                    & Populaire                      \\
+Compatibilité avec d'autres outils         & Oui (Intégration facile avec Word, Google Docs, etc.) & Oui (Microsoft Word, LibreOffice) & Oui (Intégration avec Word)    \\
+Transparence et réplicabilité              & Oui (Open-source)                                     & Partiellement (propriétaire)      & Non (propriétaire)             \\
+Adaptabilité et flexibilité                & Oui (personnalisable avec plugins)                    & Oui (moins flexible que Zotero)   & Partiellement (moins flexible) \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-comment-utiliser-zotero}{%
 \section{Manuel d'instruction: Comment utiliser
-Zotero}\label{manuel-dinstruction-comment-utiliser-zotero}}
+Zotero}\label{manuel-dinstruction-comment-utiliser-zotero}
 
-\hypertarget{installation-et-configuration}{%
 \subsection{Installation et
-Configuration}\label{installation-et-configuration}}
+Configuration}\label{installation-et-configuration}
 
 L'intégration de Zotero dans le processus de recherche académique permet
 une gestion structurée et efficace des références bibliographiques. Pour
@@ -4097,9 +4039,8 @@ Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et
 rejoindre des bibliothèques partagées, ce qui permet une gestion
 collective des références dans des projets communs.
 
-\hypertarget{ajouter-des-ruxe9fuxe9rences-uxe0-zotero}{%
 \subsection{Ajouter des références à
-Zotero}\label{ajouter-des-ruxe9fuxe9rences-uxe0-zotero}}
+Zotero}\label{ajouter-des-ruxe9fuxe9rences-uxe0-zotero}
 
 Zotero offre plusieurs méthodes pour ajouter des références à une
 bibliothèque :
@@ -4124,9 +4065,8 @@ bibliothèque :
   articles scientifiques et autres ressources en ligne.
 \end{itemize}
 
-\hypertarget{optimisation-des-citations-avec-better-bibtex}{%
 \subsection{Optimisation des citations avec Better
-BibTeX}\label{optimisation-des-citations-avec-better-bibtex}}
+BibTeX}\label{optimisation-des-citations-avec-better-bibtex}
 
 L'installation de l'extension Better BibTeX est cruciale pour les
 chercheurs qui utilisent des systèmes de gestion documentaire comme
@@ -4148,9 +4088,8 @@ l'auteur et l'année de publication, par exemple :
 Cette uniformisation garantit une gestion efficace des citations dans
 les documents collaboratifs.
 
-\hypertarget{guxe9nuxe9ration-du-fichier-.bib}{%
 \subsection{Génération du fichier
-.bib}\label{guxe9nuxe9ration-du-fichier-.bib}}
+.bib}\label{guxe9nuxe9ration-du-fichier-.bib}
 
 Une fois Better BibTeX configuré, il est possible d'exporter une
 collection Zotero au format BibLaTeX. Pour cela, faites un clic droit
@@ -4168,9 +4107,8 @@ avec les autres membres du groupe. Cela implique qu'une gestion prudente
 des références est nécessaire pour éviter toute suppression
 accidentelle.
 
-\hypertarget{utilisation-de-zotero-lors-de-la-ruxe9daction}{%
 \subsubsection{Utilisation de Zotero lors de la
-rédaction}\label{utilisation-de-zotero-lors-de-la-ruxe9daction}}
+rédaction}\label{utilisation-de-zotero-lors-de-la-ruxe9daction}
 
 Lors de la rédaction d'articles scientifiques, Zotero peut être intégré
 directement dans des éditeurs de texte compatibles avec LaTeX ou
@@ -4180,22 +4118,22 @@ rapidement la référence souhaitée à partir de la bibliothèque Zotero.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap5}{%
-\chapter{Outils de collecte de données}\label{sec-chap5}}
+\chapter{Outils de collecte de données}\label{sec-chap5}
 
 La révolution numérique engendrée par l'émergence du Big Data représente
 un important défi pour la communauté académique en sciences sociales
-Burrows \& Savage (2014). Elle constitue également une opportunité de
-recherche enrichissante et innovante permettant une compréhension accrue
-des phénomènes sociaux étudiés par la communauté scientifique (Connelly
-et al., 2016). Cette meilleure compréhension est permise, entre autres,
-par l'accès à une variété inégalée et une quantité massive de données
-permettant l'étude des différents objets de recherche
-(\textbf{schroader14?}). Si l'accès à ces données numériques représente
-un défi éthique et théorique, tel qu'explicité lors des chapitres
-précédents, il représente également un défi technique pour les
-chercheurs.euses voulant exploiter le potentiel et les opportunités
-offertes par les données massives numériques (Burrows \& Savage, 2014).
+(Burrows \& Savage, 2014; Manovich, 2011). Elle constitue également une
+opportunité de recherche enrichissante et innovante permettant une
+compréhension accrue des phénomènes sociaux étudiés par la communauté
+scientifique (Connelly et al., 2016). Cette meilleure compréhension est
+permise, entre autres, par l'accès à une variété inégalée et une
+quantité massive de données permettant l'étude des différents objets de
+recherche (Kramer et al., 2014; Schroeder, 2014). Si l'accès à ces
+données numériques représente un défi éthique et théorique, tel
+qu'explicité lors des chapitres précédents, il représente également un
+défi technique pour les chercheurs.euses voulant exploiter le potentiel
+et les opportunités offertes par les données massives numériques
+(Burrows \& Savage, 2014).
 
 Le chapitre qui suit vise à offrir un portrait de différents outils de
 collectes de données pouvant être exploités par les scientifiques
@@ -4217,10 +4155,9 @@ communauté scientifique tout en présentant les manières d'exploiter le
 web scraping et le package \emph{rvest} et en offrant des exemples
 concrets de son utilisation.
 
-\hypertarget{point-dobservation-les-outils-traditionnels-de-collecte-de-donnuxe9es-numuxe9riques-en-sciences-sociales}{%
 \section{\texorpdfstring{\textbf{Point d'observation: les outils
 traditionnels de collecte de données numériques en sciences
-sociales}}{Point d'observation: les outils traditionnels de collecte de données numériques en sciences sociales}}\label{point-dobservation-les-outils-traditionnels-de-collecte-de-donnuxe9es-numuxe9riques-en-sciences-sociales}}
+sociales}}{Point d'observation: les outils traditionnels de collecte de données numériques en sciences sociales}}\label{point-dobservation-les-outils-traditionnels-de-collecte-de-donnuxe9es-numuxe9riques-en-sciences-sociales}
 
 Toute recherche empirique repose sur l'analyse d'un objet de recherche,
 et doit donc comprendre une réflexion sur les manières d'observer
@@ -4367,7 +4304,7 @@ se concentre principalement sur les médias francophones (autant au
 Québec qu'en Europe). La structure d'Eureka est similaire à celle de
 Factiva.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre3_factiva.png}
 
@@ -4375,9 +4312,9 @@ Factiva.
 
 \caption{Interface de la plateforme Factiva}
 
-\end{figure}
+\end{figure}%
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre3_eureka.png}
 
@@ -4385,12 +4322,7 @@ Factiva.
 
 \caption{Interface de la plateforme Eureka}
 
-\end{figure}
-
-\hypertarget{section}{%
-\section{}\label{section}}
-
-PIÈGE: NE PAS SE RESTREINDRE AUX OUTILS TRADITIONNELS DE RECHERCHE.
+\end{figure}%
 
 Ces outils sont très utiles et relativement faciles à utiliser. Il ne
 faut toutefois pas tomber dans le piège de se limiter aux outils
@@ -4403,11 +4335,10 @@ connaissances de base en programmation. La section suivante aborde un
 outil fondamental de la collecte de données en sciences sociales
 numériques, les extracteurs webs.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-le-web-scraping-gruxe2ce-uxe0-loutil-rvest--collecter-automatiquement-des-donnuxe9es-provenant-de-sites-web}{%
 \section{\texorpdfstring{\textbf{Arpentage et choix éditorial: le web
 scraping grâce à l'outil \emph{rvest}- collecter automatiquement des
 données provenant de sites
-web}}{Arpentage et choix éditorial: le web scraping grâce à l'outil rvest- collecter automatiquement des données provenant de sites web}}\label{arpentage-et-choix-uxe9ditorial-le-web-scraping-gruxe2ce-uxe0-loutil-rvest--collecter-automatiquement-des-donnuxe9es-provenant-de-sites-web}}
+web}}{Arpentage et choix éditorial: le web scraping grâce à l'outil rvest- collecter automatiquement des données provenant de sites web}}\label{arpentage-et-choix-uxe9ditorial-le-web-scraping-gruxe2ce-uxe0-loutil-rvest--collecter-automatiquement-des-donnuxe9es-provenant-de-sites-web}
 
 Les extracteurs de données sont des outils qui ont transformé la récolte
 de données en sciences sociales. Les extracteurs de données numériques
@@ -4460,8 +4391,6 @@ massives exclusives. Ainsi, les extracteurs sont des outils qui changent
 drastiquement l'accès aux données massives en sciences sociales
 numériques.
 
-PIÈGE: LA LÉGALITÉ DES EXTRACTEURS DE DONNÉES
-
 Il faut toutefois être vigilant quant à la nature des données extraites.
 Avant d'extraire quelconque information, il est absolument primordial de
 s'assurer que les données soient publiques, faute de quoi l'extraction
@@ -4475,8 +4404,6 @@ utiliser en recherche. En effet, il ne faut pas faire ressortir dans les
 données extraites quelconque information privée qui pourrait permettre
 d'identifier des individus (comme des numéros de téléphone, des adresses
 courriels, des codes postaux, etc.)
-
-RACCOURCI: LES API.
 
 L'utilisation de cet outil est toutefois facilitée par l'existence d'API
 (\emph{Application Programming Interface}) sur les plateformes
@@ -4501,10 +4428,7 @@ recevoir automatiquement lors de mise à jour sur un site particulier.
 Par exemple, La Presse change ses Unes plusieurs fois dans une même
 journée. En extractant l'accès aux fils RSS, il est possible de recevoir
 lesdites mises à jour automatiquement. Ce processus accélère grandement
-la collecte de données. Bien que les API aient souvent une limite de
-taux, restreignant le nombre de requêtes possible, cela aide à éviter la
-surcharge sur les serveurs et garantit en même temps une utilisation
-équitable des ressources.
+la collecte de données.
 
 Finalement, les API simplifient le travail de chacun et chacune par les
 mises à jour et maintenances. Pour être plus précis, les API, étant
@@ -4534,8 +4458,7 @@ données massives qui pourront ensuite être analysées. Ainsi, des
 connaissances en R sont essentielles au développement d'extracteurs, et
 la complexité du code évoluera dépendamment du site qui sera extrait.
 
-\hypertarget{crituxe8res-de-suxe9lection-1}{%
-\subsection{Critères de sélection}\label{crituxe8res-de-suxe9lection-1}}
+\subsection{Critères de sélection}\label{crituxe8res-de-suxe9lection-1}
 
 L'extracteur \emph{rvest} est un outil accessible, particulièrement
 comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins
@@ -4584,17 +4507,15 @@ d'utilisateurs.ices de l'outil favorise la transparence et la
 réplicabilité des différents résultats produits lors de l'utilisation
 d'extracteurs.
 
-\hypertarget{manuel-dinstruction-extraire-des-donnuxe9es-avec-r}{%
 \section{Manuel d'instruction: extraire des données avec
-R}\label{manuel-dinstruction-extraire-des-donnuxe9es-avec-r}}
+R}\label{manuel-dinstruction-extraire-des-donnuxe9es-avec-r}
 
 La section suivante présente la méthode d'utilisation de l'outil
 \emph{rvest}. Elle démontre comment l'outil permet d'accomplir du web
 scraping, une méthode très en vogue en science sociales.
 
-\hypertarget{limportance-de-comprendre-la-structure-du-code-html}{%
 \subsection{L'importance de comprendre la structure du code
-HTML}\label{limportance-de-comprendre-la-structure-du-code-html}}
+HTML}\label{limportance-de-comprendre-la-structure-du-code-html}
 
 Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis
 le package \emph{rvest}, il peut être un atout de se familiariser avec
@@ -4609,7 +4530,7 @@ l'extraction, et le code HTML permet de comprendre ce qui se situe dans
 ces sections. La Figure {[}{]} représente un exemple de base de code
 HTML.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre5_html_input.png}
 
@@ -4617,7 +4538,7 @@ HTML.
 
 \caption{Exemple de code HTML}
 
-\end{figure}
+\end{figure}%
 
 Dans l'exemple ci-haut, le tag \textless h1 représente le titre du HTML.
 Le signe \textless p permet de débuter le paragraphe de texte suivant le
@@ -4628,7 +4549,7 @@ produisent une sous-section et un sous titre, qui pourra être
 complémenté d'un paragraphe écrit. La Figure 2 démontre le texte produit
 par le code HTML.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre5_html_output.png}
 
@@ -4636,7 +4557,7 @@ par le code HTML.
 
 \caption{Exemple du résultat de code HTML}
 
-\end{figure}
+\end{figure}%
 
 La structure de base du langage HTML est somme toute simple et intuitive
 et tous les sites web sur internet sont fondés sur du code HTML.
@@ -4651,10 +4572,9 @@ le code HTML de chaque site est accessible grâce à l'URL, les données
 présentes sur des sites webs sont plus que jamais accessible à la
 communauté scientifique.
 
-\hypertarget{le-package-rvest-son-fonctionnement-et-ses-possibilituxe9s}{%
 \subsection{\texorpdfstring{\textbf{Le package rvest: son fonctionnement
 et ses
-possibilités}}{Le package rvest: son fonctionnement et ses possibilités}}\label{le-package-rvest-son-fonctionnement-et-ses-possibilituxe9s}}
+possibilités}}{Le package rvest: son fonctionnement et ses possibilités}}\label{le-package-rvest-son-fonctionnement-et-ses-possibilituxe9s}
 
 Cet ouvrage recommande l'utilisation du paquetage \emph{rvest} afin de
 récolter des données sur des pages web, qu'elles aient ou non un API.
@@ -4665,10 +4585,9 @@ pages, d'autres paquetages sont recommandés, notamment ``polite''. Ce
 chapitre ne rentre pas dans les détails et ne se concentrera que sur
 Rvest.
 
-\hypertarget{fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo}{%
 \subsubsection{\texorpdfstring{\textbf{Fonctions de base du paquetage
 rvest utilisant pour exemple le site de
-LEGISinfo}}{Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo}}\label{fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo}}
+LEGISinfo}}{Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo}}\label{fonctions-de-base-du-paquetage-rvest-utilisant-pour-exemple-le-site-de-legisinfo}
 
 La première étape est l'installation et le chargement des paquetages
 ``tidyverse'' et ``rvest'' sur sa console Rstudio. Il est important de
@@ -4708,8 +4627,11 @@ les éléments suivants:
 \begin{Highlighting}[]
 \ExtensionTok{\{html\_document\}}
 \OperatorTok{\textless{}}\NormalTok{html }\VariableTok{lang}\OperatorTok{=}\StringTok{"en"} \ExtensionTok{xml:lang=}\StringTok{"en"}\NormalTok{ xmlns=}\StringTok{"http://www.w3.org/1999/xhtml"}\OperatorTok{\textgreater{}}
-\ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{head}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{meta http{-}equiv=}\StringTok{"Content{-}Type"}\NormalTok{ content=}\StringTok{"text/html;         charset=UTF{-}8"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{meta  ...}
-\ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{body class=}\StringTok{"body{-}wrapper ce{-}parl vh{-}100"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}r\textbackslash{}n}    \OperatorTok{\textless{}}\NormalTok{header class=}\StringTok{"d{-}print{-}none"}\OperatorTok{\textgreater{}\textless{}}\NormalTok{!{-}{-} ...}
+\ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{head}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{meta http{-}equiv=}\StringTok{"Content{-}Type"} 
+\VariableTok{content}\OperatorTok{=}\StringTok{"text/html; charset=UTF{-}8"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{meta }
+\ExtensionTok{...}
+\ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{body class=}\StringTok{"body{-}wrapper ce{-}parl vh{-}100"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}r\textbackslash{}n}    
+\OperatorTok{\textless{}}\NormalTok{header }\VariableTok{class}\OperatorTok{=}\StringTok{"d{-}print{-}none"}\OperatorTok{\textgreater{}\textless{}}\NormalTok{!{-}{-} }\ExtensionTok{...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4747,8 +4669,10 @@ Qui retourne les éléments suivants:
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{\{xml\_nodeset} \ErrorTok{(}\ExtensionTok{180}\KeywordTok{)}\ErrorTok{\}}
- \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"\#StartOfContent"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}skipnav sr{-}only sr{-}only{-}focusable"}\OperatorTok{\textgreater{}}\NormalTok{Skip to m ...}
- \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"//www.parl.ca"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}btn float{-}left text{-}nowrap"}\OperatorTok{\textgreater{}}\NormalTok{Parliament of Cana ...}
+ \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"\#StartOfContent"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}skipnav sr{-}only }
+\StringTok{ sr{-}only{-}focusable"}\OperatorTok{\textgreater{}}\NormalTok{Skip to m ...}
+ \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"//www.parl.ca"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}btn float{-}left text{-}nowrap"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{Parliament}\NormalTok{ of Cana ...}
  \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"https://visit.parl.ca/index{-}e.html"}\NormalTok{ rel=}\StringTok{"external"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n\textbackslash{}t\textbackslash{}t}\NormalTok{                    ...}
 \end{Highlighting}
 \end{Shaded}
@@ -4764,8 +4688,10 @@ Qui retourne les éléments suivants:
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{\{xml\_nodeset} \ErrorTok{(}\ExtensionTok{180}\KeywordTok{)}\ErrorTok{\}}
- \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"\#StartOfContent"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}skipnav sr{-}only sr{-}only{-}focusable"}\OperatorTok{\textgreater{}}\NormalTok{Skip to m ...}
- \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"//www.parl.ca"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}btn float{-}left text{-}nowrap"}\OperatorTok{\textgreater{}}\NormalTok{Parliament of Cana ...}
+ \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"\#StartOfContent"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}skipnav sr{-}only sr{-}only{-}}
+\StringTok{ focusable"}\OperatorTok{\textgreater{}}\NormalTok{Skip to m ...}
+ \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"//www.parl.ca"}\NormalTok{ class=}\StringTok{"ce{-}parl{-}btn float{-}left text{-}nowrap"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{Parliament}\NormalTok{ of Cana ...}
  \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{a href=}\StringTok{"https://visit.parl.ca/index{-}e.html"}\NormalTok{ rel=}\StringTok{"external"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n\textbackslash{}t\textbackslash{}t}\NormalTok{                    ...}
 \end{Highlighting}
 \end{Shaded}
@@ -4805,9 +4731,12 @@ console
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{\{xml\_nodeset} \ErrorTok{(}\ExtensionTok{60}\KeywordTok{)}\ErrorTok{\}}
- \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}1"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
- \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}2"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
- \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}3"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
+ \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}1"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
+ \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}2"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
+ \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{a class=}\StringTok{"bill{-}tile{-}container senate"}\NormalTok{ href=}\StringTok{"/legisinfo/en/bill/44{-}1/s{-}3"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n}\NormalTok{     ...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4829,9 +4758,12 @@ Ce qui produit le résultat suivant dans la console:
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{\{xml\_nodeset} \ErrorTok{(}\ExtensionTok{60}\KeywordTok{)}\ErrorTok{\}}
- \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}\NormalTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
- \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}\NormalTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
- \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}\NormalTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
+ \ExtensionTok{[1]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
+ \ExtensionTok{[2]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
+ \ExtensionTok{[3]} \OperatorTok{\textless{}}\NormalTok{div class=}\StringTok{"parliament{-}session"}\OperatorTok{\textgreater{}}\DataTypeTok{\textbackslash{}n}\OperatorTok{\textless{}}\NormalTok{span class=}\StringTok{"parl{-}session{-}number"}\OperatorTok{\textgreater{}}
+ \ExtensionTok{44th}\OperatorTok{\textless{}}\NormalTok{/span}\OperatorTok{\textgreater{}}\NormalTok{ Parlia ...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4922,7 +4854,8 @@ Console
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{[1]} \StringTok{"An Act relating to railways"}                                                                                                                                                                                                                                                                                  
- \ExtensionTok{[2]} \StringTok{"An Act to amend the Parliament of Canada Act and to make consequential and related amendments to other Acts"}                                                                                                                                                                                                  
+ \ExtensionTok{[2]} \StringTok{"An Act to amend the Parliament of Canada Act and to make }
+\StringTok{ consequential and related amendments to other Acts"}                                                                                                                                                                                                  
  \ExtensionTok{[3]} \StringTok{"An Act to amend the Judges Act"}   
 \ExtensionTok{...}
 \end{Highlighting}
@@ -4941,9 +4874,12 @@ Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ExtensionTok{[1]} \StringTok{"Introduced as pro forma bill"}                                              \StringTok{"Senate bill awaiting first reading in the House of Commons"}               
- \ExtensionTok{[3]} \StringTok{"Bill not proceeded with"}                                                   \StringTok{"Royal assent received"}                                                    
- \ExtensionTok{[5]} \StringTok{"Royal assent received"}                                                     \StringTok{"At second reading in the House of Commons"}     
+\ExtensionTok{[1]} \StringTok{"Introduced as pro forma bill"}                                 
+\StringTok{"Senate bill awaiting first reading in the House of Commons"}               
+ \ExtensionTok{[3]} \StringTok{"Bill not proceeded with"}                                              
+ \StringTok{"Royal assent received"}                                                    
+ \ExtensionTok{[5]} \StringTok{"Royal assent received"}                                                 
+ \StringTok{"At second reading in the House of Commons"}     
 \ExtensionTok{...}
 \end{Highlighting}
 \end{Shaded}
@@ -4961,8 +4897,15 @@ Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ExtensionTok{[1]} \StringTok{"First reading in the Senate"}            \StringTok{"Third reading in the Senate"}            \StringTok{"First reading in the Senate"}            \StringTok{"Royal assent"}                           \StringTok{"Royal assent"}                          
- \ExtensionTok{[6]} \StringTok{"First reading in the House of Commons"}  \StringTok{"First reading in the House of Commons"}  \StringTok{"Royal assent"}                           \StringTok{"First reading in the House of Commons"}  \StringTok{"Royal assent"}        
+\ExtensionTok{[1]} \StringTok{"First reading in the Senate"}            
+\StringTok{"Third reading in the Senate"}            
+\StringTok{"First reading in the Senate"}           
+\StringTok{"Royal assent"}                        
+\StringTok{"Royal assent"}                          
+ \ExtensionTok{[6]} \StringTok{"First reading in the House of Commons"} 
+ \StringTok{"First reading in the House of }
+\StringTok{ Commons"}  \StringTok{"Royal assent"}                          
+ \StringTok{"First reading in the House of Commons"}  \StringTok{"Royal assent"}        
 \ExtensionTok{...}
  
 \end{Highlighting}
@@ -4979,7 +4922,8 @@ statut et son dernier stage de réalisation :
 \begin{Highlighting}[]
 \ExtensionTok{Table\_LEGISinfo} \OperatorTok{\textless{}}\NormalTok{{-} tibble}\ErrorTok{(}
   \ExtensionTok{Bill}\NormalTok{ = Bill\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"h4"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}\ExtensionTok{,}
-  \ExtensionTok{Session}\NormalTok{ = Bill\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{".parliament{-}session"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}\ExtensionTok{,}
+  \ExtensionTok{Session}\NormalTok{ = Bill\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{".parliament{-}session"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}
+  \FunctionTok{html\_text2()}\ExtensionTok{,}
   \ExtensionTok{Name}\NormalTok{ = Bill\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"h5"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}\ExtensionTok{,}
   \ExtensionTok{Status}\NormalTok{ = BillBS\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"dd"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}\ExtensionTok{,}
   \ExtensionTok{Stage}\NormalTok{ = Bill\_stage }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"dd"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
@@ -5016,9 +4960,24 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ExtensionTok{1]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}1"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}2"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}3"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}4"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}5"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}6"}  
- \ExtensionTok{[7]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}7"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}8"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}9"}   \StringTok{"/legisinfo/en/bill/44{-}1/s{-}10"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}11"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}12"} 
-\ExtensionTok{[13]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}13"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}14"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}15"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}16"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}17"}  \StringTok{"/legisinfo/en/bill/44{-}1/s{-}201"}
+\ExtensionTok{1]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}1"}  
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}2"} 
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}3"}  
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}4"}  
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}5"}  
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}6"}  
+ \ExtensionTok{[7]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}7"} 
+ \StringTok{"/legisinfo/en/bill/44{-}1/s{-}8"}  
+ \StringTok{"/legisinfo/en/bill/44{-}1/s{-}9"}  
+ \StringTok{"/legisinfo/en/bill/44{-}1/s{-}10"}  
+ \StringTok{"/legisinfo/en/bill/44{-}1/s{-}11"} 
+ \StringTok{"/legisinfo/en/bill/44{-}1/s{-}12"} 
+\ExtensionTok{[13]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}13"} 
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}14"} 
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}15"}  
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}16"} 
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}17"} 
+\StringTok{"/legisinfo/en/bill/44{-}1/s{-}201"}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5072,8 +5031,7 @@ pour télécharger les données ! C'est le cas de l'exemple utilisé ici
 données directement sur le site web, ce qui rend parfois le besoin de
 moissonner désuet.
 
-\hypertarget{conclusion-et-discussion}{%
-\section{Conclusion et discussion:}\label{conclusion-et-discussion}}
+\section{Conclusion et discussion:}\label{conclusion-et-discussion}
 
 Ce chapitre a comme objectif de dresser un portrait des différents
 outils de collecte de données mis à la disposition des scientifiques
@@ -5103,13 +5061,11 @@ d'extraction permis par la maîtrise de R.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{outils-de-visualisation-graphique}{%
 \chapter{Outils de visualisation
-graphique}\label{outils-de-visualisation-graphique}}
+graphique}\label{outils-de-visualisation-graphique}
 
-\hypertarget{point-dobservation-historique-de-la-visualisation-graphique}{%
 \section{Point d'observation: historique de la visualisation
-graphique}\label{point-dobservation-historique-de-la-visualisation-graphique}}
+graphique}\label{point-dobservation-historique-de-la-visualisation-graphique}
 
 Une fois les données collectées, nettoyées, traitées et analysées, une
 partie centrale du travail d'un scientifique de données est de faire
@@ -5131,7 +5087,7 @@ une base de données dynamique qui recense les grands événements, les
 outils, les auteurs, et les approches ayant façonné le champ de la
 visualisation graphique (Friendly et al., 2016).
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, breakable, arc=.35mm, coltitle=black, leftrule=.75mm, titlerule=0mm, toptitle=1mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, titlerule=0mm, arc=.35mm, bottomrule=.15mm, rightrule=.15mm, opacityback=0, toprule=.15mm, bottomtitle=1mm, coltitle=black, colframe=quarto-callout-note-color-frame, colback=white, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, leftrule=.75mm]
 
 Pour plus d'informations sur le Milestones Project, consultez le site
 web du projet:
@@ -5139,9 +5095,8 @@ web du projet:
 
 \end{tcolorbox}
 
-\hypertarget{les-origines-de-la-visualisation-graphique}{%
 \subsection{Les origines de la visualisation
-graphique}\label{les-origines-de-la-visualisation-graphique}}
+graphique}\label{les-origines-de-la-visualisation-graphique}
 
 On comprend rapidement que cette volonté de vulgariser des données à
 l'aide d'image ne date pas d'hier. En effet, les origines de la
@@ -5158,9 +5113,8 @@ ouvrent la voie à une approche plus intuitive de la présentation des
 données, permettant aux lecteurs de mieux comprendre les relations
 quantitatives (Friendly \& Wainer, 2021).
 
-\hypertarget{la-puxe9riode-moderne-un-premier-uxe2ge-dor}{%
 \subsection{La période moderne : Un premier âge
-d'or}\label{la-puxe9riode-moderne-un-premier-uxe2ge-dor}}
+d'or}\label{la-puxe9riode-moderne-un-premier-uxe2ge-dor}
 
 L'histoire de la visualisation graphique connaît une accélération
 marquée au 19e siècle, qualifiée de premier âge d'or de la visualisation
@@ -5183,9 +5137,8 @@ graphiques met en évidence le rôle fondamental des visualisations dans
 la compréhension de phénomènes complexes, que ce soit dans les sciences
 sociales ou naturelles (Friendly \& Wainer, 2021).
 
-\hypertarget{luxe8re-informatique-de-nouvelles-possibilituxe9s}{%
 \subsection{L'ère informatique : de nouvelles
-possibilités}\label{luxe8re-informatique-de-nouvelles-possibilituxe9s}}
+possibilités}\label{luxe8re-informatique-de-nouvelles-possibilituxe9s}
 
 Avec l'avènement de l'ère informatique au 20e siècle, la visualisation
 graphique entre dans une nouvelle phase de développement. La capacité
@@ -5214,9 +5167,8 @@ interpréter rapidement des volumes importants d'informations. Les
 visualisations sont désormais interactives, dynamiques, et conçues pour
 s'adapter à différents publics, allant des décideurs aux scientifiques.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial}{%
 \section{Arpentage et choix
-éditorial:}\label{arpentage-et-choix-uxe9ditorial}}
+éditorial:}\label{arpentage-et-choix-uxe9ditorial}
 
 Il existe plusieurs outils de visualisation de données qui répondent à
 des besoins variés. Pour comparer ces outils, nous utilisons les
@@ -5301,9 +5253,9 @@ visualisations personnalisées, reproductibles et à moindre coût, ce qui
 en fait un outil incontournable pour les analystes de données.
 
 \begin{table}
-\caption{Résumé des principaux outils de visualisation graphique}
 \centering
-\begin{tblr}[         %% tabularray outer open
+\begin{talltblr}[         %% tabularray outer open
+caption={Résumé des principaux outils de visualisation graphique},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
 width={0.75\linewidth},
@@ -5311,19 +5263,18 @@ colspec={X[]X[]X[]X[]X[]},
 }                     %% tabularray inner close
 \toprule
 Critères & R & Python & Tableau & Excel \\ \midrule %% TinyTableHeader
-Accessibilité (Gratuit ou peu dispendieux) & Oui (Gratuit) & Oui (Gratuit) & Non (Payant) & Non (Payant) \\
-Existence d'une communauté d'utilisateurs & Oui (Forte communauté active) & Oui (Grande communauté active) & Oui (Communauté grandissante) & Oui (Large communauté d'utilisateurs) \\
-Popularité dans le champ & Populaire dans l'analyse de données & Populaire dans l'analyse de données et la science des données & Populaire dans la visualisation des données & Très populaire pour des analyses de données simples \\
-Compatibilité avec d'autres outils & Bonne compatibilité (nombreux packages pour intégration) & Très compatible (bibliothèques telles que pandas, matplotlib, etc.) & Bonne compatibilité (intégration avec diverses bases de données et fichiers) & Bonne compatibilité (partage facile avec d'autres logiciels Microsoft) \\
-Transparence et réplicabilité & Oui (Open-source, réplicable) & Oui (Open-source et réplicable) & Partiellement (Propriétaire, mais partage possible) & Non (Propriétaire, moins réplicable) \\
-Adaptabilité et flexibilité & Flexible (hautement personnalisable avec divers packages) & Flexible (nombreuses bibliothèques disponibles) & Flexible (fonctionnalités avancées mais moins personnalisable que R/Python) & Peu flexible (principalement pour des visualisations simples) \\
+Accessibilité (Gratuit ou peu dispendieux) & Oui (Gratuit)                                             & Oui (Gratuit)                                                       & Non (Payant)                                                                 & Non (Payant)                                                           \\
+Existence d'une communauté d'utilisateurs  & Oui (Forte communauté active)                             & Oui (Grande communauté active)                                      & Oui (Communauté grandissante)                                                & Oui (Large communauté d'utilisateurs)                                  \\
+Popularité dans le champ                   & Populaire dans l'analyse de données                       & Populaire dans l'analyse de données et la science des données       & Populaire dans la visualisation des données                                  & Très populaire pour des analyses de données simples                    \\
+Compatibilité avec d'autres outils         & Bonne compatibilité (nombreux packages pour intégration)  & Très compatible (bibliothèques telles que pandas, matplotlib, etc.) & Bonne compatibilité (intégration avec diverses bases de données et fichiers) & Bonne compatibilité (partage facile avec d'autres logiciels Microsoft) \\
+Transparence et réplicabilité              & Oui (Open-source, réplicable)                             & Oui (Open-source et réplicable)                                     & Partiellement (Propriétaire, mais partage possible)                          & Non (Propriétaire, moins réplicable)                                   \\
+Adaptabilité et flexibilité                & Flexible (hautement personnalisable avec divers packages) & Flexible (nombreuses bibliothèques disponibles)                     & Flexible (fonctionnalités avancées mais moins personnalisable que R/Python)  & Peu flexible (principalement pour des visualisations simples)          \\
 \bottomrule
-\end{tblr}
+\end{talltblr}
 \end{table}
 
-\hypertarget{manuel-dinstruction-la-visualisation-graphique-avec-r}{%
 \section{Manuel d'instruction: La visualisation graphique avec
-R}\label{manuel-dinstruction-la-visualisation-graphique-avec-r}}
+R}\label{manuel-dinstruction-la-visualisation-graphique-avec-r}
 
 Lorsque vous souhaitez créer des graphiques en R, les options abondent.
 De multiples \emph{packages} ont été développés dans le but de
@@ -5335,12 +5286,10 @@ représentent des outils qui ont été grandement vérifiés et améliorés par
 la communauté en ligne, dont la documentation est abondante et pour
 lesquels les ressources d'aide en ligne sont innombrables.
 
-\hypertarget{pour-les-analyses-descriptives}{%
 \subsection{Pour les analyses
-descriptives}\label{pour-les-analyses-descriptives}}
+descriptives}\label{pour-les-analyses-descriptives}
 
-\hypertarget{base-r}{%
-\subsubsection{Base R}\label{base-r}}
+\subsubsection{Base R}\label{base-r}
 
 Le \emph{Base R} est le langage de base de R et il permet de faire de
 nombreuses manipulations statistiques sans avoir à installer de
@@ -5369,8 +5318,7 @@ complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou
 \texttt{lattice} et \texttt{ggplot2} permettent plus facilement(Wickham,
 2009, pp. 3--4).
 
-\hypertarget{lattice}{%
-\subsubsection{\texorpdfstring{\texttt{lattice}}{lattice}}\label{lattice}}
+\subsubsection{\texorpdfstring{\texttt{lattice}}{lattice}}\label{lattice}
 
 Développé par Deepayan Sarkar, lattice cherche à faciliter la
 visualisation de graphique en facettes. Plus précisément, ce package
@@ -5398,9 +5346,8 @@ de ce dernier package ainsi que ses avantages et inconvénients dans la
 prochaine section (Kabacoff, 2022, p.~373‑377 et 390; Wickham, 2009,
 p.~6).
 
-\hypertarget{le-package-ggplot2}{%
 \subsubsection{\texorpdfstring{Le package
-\texttt{ggplot2}}{Le package ggplot2}}\label{le-package-ggplot2}}
+\texttt{ggplot2}}{Le package ggplot2}}\label{le-package-ggplot2}
 
 Développé principalement par Hadley Wickham, \texttt{ggplot2} est un
 \emph{package R} faisant partie de la collection de \emph{packages} de
@@ -5447,17 +5394,10 @@ et personnalisable.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[H]
+\includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-2-1.pdf}
 
-{\centering \includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-2-1.pdf}
-
-}
-
-\end{figure}
-
-\hypertarget{pour-visualiser-les-ruxe9gressions}{%
 \subsection{Pour visualiser les
-régressions}\label{pour-visualiser-les-ruxe9gressions}}
+régressions}\label{pour-visualiser-les-ruxe9gressions}
 
 Lorsque l'on souhaite aller au-delà des analyses descriptives, il
 devient pertinent de recourir aux modèles de régression. Si la fonction
@@ -5469,7 +5409,7 @@ scientifique. La section suivante du chapitre introduira divers outils
 qui facilitent la visualisation, la comparaison et la présentation
 efficace de nos modèles de régression.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, breakable, arc=.35mm, coltitle=black, leftrule=.75mm, titlerule=0mm, toptitle=1mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, titlerule=0mm, arc=.35mm, bottomrule=.15mm, rightrule=.15mm, opacityback=0, toprule=.15mm, bottomtitle=1mm, coltitle=black, colframe=quarto-callout-note-color-frame, colback=white, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, leftrule=.75mm]
 
 Le manuel d'instructions de cette section restera volontairement bref et
 concis en raison de l'abondante documentation déjà existante sur ces
@@ -5477,9 +5417,8 @@ outils. L'objectif ici est de les centraliser en un seul endroit.
 
 \end{tcolorbox}
 
-\hypertarget{le-package-stargazer}{%
 \subsubsection{\texorpdfstring{Le package
-\texttt{stargazer}}{Le package stargazer}}\label{le-package-stargazer}}
+\texttt{stargazer}}{Le package stargazer}}\label{le-package-stargazer}
 
 Le package \texttt{stargazer} est un package qui permet de générer des
 tableaux de régression de manière simple et efficace. Selon son auteur,
@@ -5609,8 +5548,7 @@ régression avec \texttt{stargazer}, nous vous invitons à consulter la
 documentation du package (Hlavac, 2022) ainsi que différents blogs en
 ligne afin de personnaliser votre tableau comme vous le voulez.
 
-\hypertarget{sec-model-summary}{%
-\subsubsection{\texorpdfstring{\texttt{modelsummary}}{modelsummary}}\label{sec-model-summary}}
+\subsubsection{\texorpdfstring{\texttt{modelsummary}}{modelsummary}}\label{sec-model-summary}
 
 Le package \texttt{modelsummary} (Arel-Bundock, 2022), développé dans le
 même but que \texttt{stargazer}, est une nette amélioration au package
@@ -5645,29 +5583,37 @@ régression. Puis, il suffit d'inclure les modèles dans la fonction
 \end{Highlighting}
 \end{Shaded}
 
-\begin{longtable}[]{@{}lrr@{}}
-\toprule\noalign{}
-& Model 1 & Model 2 \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-(Intercept) & 37.227 & 16.030 \\
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+hline{10}={1,2,3}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Model 1 & Model 2 \\ \midrule %% TinyTableHeader
+(Intercept) & 37.227  & 16.030   \\
 & (1.599) & (11.974) \\
-hp & -0.032 & -0.104 \\
-& (0.009) & (0.050) \\
-wt & -3.878 & 0.860 \\
-& (0.633) & (1.299) \\
-drat & & -1.625 \\
-& & (2.073) \\
-Num.Obs. & 32 & 32 \\
-R2 & 0.827 & \\
-R2 Adj. & 0.815 & \\
-AIC & 156.7 & 23.4 \\
-BIC & 162.5 & 29.3 \\
-Log.Lik. & -74.326 & -7.698 \\
-RMSE & 2.47 & 0.29 \\
-\end{longtable}
+hp          & -0.032  & -0.104   \\
+& (0.009) & (0.050)  \\
+wt          & -3.878  & 0.860    \\
+& (0.633) & (1.299)  \\
+drat        &         & -1.625   \\
+&         & (2.073)  \\
+Num.Obs.    & 32      & 32       \\
+R2          & 0.827   &          \\
+R2 Adj.     & 0.815   &          \\
+AIC         & 156.7   & 23.4     \\
+BIC         & 162.5   & 29.3     \\
+Log.Lik.    & -74.326 & -7.698   \\
+RMSE        & 2.47    & 0.29     \\
+\bottomrule
+\end{tblr}
+\end{table}
 
 Tout comme \texttt{stargazer}, \texttt{modelsummary} offre également
 plusieurs options de sortie avec l'argument \texttt{output}. Cependant,
@@ -5678,8 +5624,7 @@ Nous vous invitons à consulter la documentation du package
 \texttt{modelsummary} (Arel-Bundock, 2022) pour plus d'informations sur
 la personnalisation de vos tableaux de régression.
 
-\hypertarget{marginaleffects}{%
-\subsubsection{\texorpdfstring{\texttt{marginaleffects}}{marginaleffects}}\label{marginaleffects}}
+\subsubsection{\texorpdfstring{\texttt{marginaleffects}}{marginaleffects}}\label{marginaleffects}
 
 Les tableaux de régression présentent souvent les résultats des modèles
 de manière brute et difficile à interpréter. Une approche plus intuitive
@@ -5738,13 +5683,7 @@ d'intérêt, \texttt{hp}:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[H]
-
-{\centering \includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-8-1.pdf}
-
-}
-
-\end{figure}
+\includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-8-1.pdf}
 
 Comme on peut voir, la variable \texttt{hp} peut prendre n'importe
 quelle valeur numérique entre 52 et 335. La prochaine étape est de
@@ -5794,13 +5733,13 @@ utilisant la fonction \texttt{predictions} du package:
 
 \begin{verbatim}
   rowid estimate std.error statistic       p.value   s.value  conf.low
-1     1 23.20690 0.9744661 23.814991 2.335875e-125 414.01705 21.296984
-2     2 21.59538 0.6153141 35.096515 7.618699e-270 893.99104 20.389388
+1     1 23.20690 0.9744662 23.814990 2.335922e-125 414.01702 21.296983
+2     2 21.59538 0.6153142 35.096512 7.619361e-270 893.99092 20.389388
 3     3 19.98386 0.4537357 44.042960  0.000000e+00       Inf 19.094556
-4     4 18.37234 0.6567937 27.972775 3.484257e-172 569.57078 17.085050
-5     5 16.76082 1.0271890 16.317174  7.450574e-60 196.41833 14.747568
-6     6 15.14930 1.4412127 10.511496  7.647066e-26  83.43522 12.324576
-7     7 13.53778 1.8701091  7.239033  4.518951e-13  41.00908  9.872435
+4     4 18.37234 0.6567937 27.972773 3.484472e-172 569.57069 17.085050
+5     5 16.76082 1.0271889 16.317175  7.450453e-60 196.41836 14.747568
+6     6 15.14930 1.4412127 10.511496  7.647059e-26  83.43523 12.324576
+7     7 13.53778 1.8701090  7.239033  4.518950e-13  41.00908  9.872435
   conf.high      wt     drat  hp mpg
 1  25.11682 3.21725 3.596563  50  21
 2  22.80138 3.21725 3.596563 100  21
@@ -5845,13 +5784,7 @@ graphique qui nous permet d'interpréter l'effet de \texttt{hp} sur
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[H]
-
-{\centering \includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-11-1.pdf}
-
-}
-
-\end{figure}
+\includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-11-1.pdf}
 
 Et voilà, le tour est joué ! Il existe de nombreuses manières de
 présenter et d'adapter ce graphique selon vos besoins. Il est également
@@ -5861,9 +5794,8 @@ modèles et offrant une large gamme de fonctionnalités. Pour découvrir
 toutes ses possibilités, nous vous invitons à consulter la documentation
 officielle du package (Arel-Bundock, n.d.).
 
-\hypertarget{aller-plus-loin-la-visualisation-interactive-des-donnuxe9es}{%
 \subsection{Aller plus loin: La visualisation interactive des
-données}\label{aller-plus-loin-la-visualisation-interactive-des-donnuxe9es}}
+données}\label{aller-plus-loin-la-visualisation-interactive-des-donnuxe9es}
 
 Si jusqu'à présent la visualisation des données a été présentée comme
 une étape servant à exposer les résultats de recherches, elle peut
@@ -5875,8 +5807,7 @@ seulement de mieux appréhender la structure des données, mais aussi de
 les inspecter plus efficacement, tout en suscitant des questions de
 recherche qui auraient pu être négligées autrement (Sievert, 2020).
 
-\hypertarget{graphiques-interactifs}{%
-\subsubsection{Graphiques interactifs}\label{graphiques-interactifs}}
+\subsubsection{Graphiques interactifs}\label{graphiques-interactifs}
 
 Les graphiques interactifs permettent une exploration dynamique des
 données, offrant aux utilisateurs la possibilité de zoomer, survoler des
@@ -5885,9 +5816,8 @@ entre variables de manière plus intuitive. En R, les packages
 \texttt{ggplotly} et \texttt{plotly} permettent de créer facilement des
 graphiques interactifs à partir de visualisations statiques.
 
-\hypertarget{exemple-avec-ggplotly}{%
 \paragraph{\texorpdfstring{Exemple avec
-\texttt{ggplotly}}{Exemple avec ggplotly}}\label{exemple-avec-ggplotly}}
+\texttt{ggplotly}}{Exemple avec ggplotly}}\label{exemple-avec-ggplotly}
 
 \texttt{ggplotly} permet de transformer un graphique \texttt{ggplot2} en
 une visualisation interactive.
@@ -5915,13 +5845,7 @@ une visualisation interactive.
 PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
 \end{verbatim}
 
-\begin{figure}[H]
-
-{\centering \includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-13-1.pdf}
-
-}
-
-\end{figure}
+\includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-13-1.pdf}
 
 Et voici un exemple avec \texttt{plotly}, un package qui n'emprunte pas
 la grammaire de \texttt{ggplot2}:
@@ -5936,30 +5860,22 @@ la grammaire de \texttt{ggplot2}:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}[H]
-
-{\centering \includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-14-1.pdf}
-
-}
-
-\end{figure}
+\includegraphics{chapitre_6_files/figure-pdf/unnamed-chunk-14-1.pdf}
 
 Nous vous recommandons vivement de consulter la documentation officielle
 des packages \texttt{plotly} et \texttt{ggplotly} pour découvrir toutes
 les options et fonctionnalités disponibles, afin d'enrichir vos
 graphiques interactifs.
 
-\hypertarget{tableaux-interactifs}{%
-\subsubsection{Tableaux interactifs}\label{tableaux-interactifs}}
+\subsubsection{Tableaux interactifs}\label{tableaux-interactifs}
 
 Les tableaux interactifs sont très utiles pour rendre la présentation
 des données plus engageante et informative. Les fonctions
 \texttt{kable()} et \texttt{kableExtra} permettent de créer des tableaux
 élégants et interactifs directement dans R.
 
-\hypertarget{exemple-avec-kable}{%
 \paragraph{\texorpdfstring{Exemple avec
-\texttt{kable()}}{Exemple avec kable()}}\label{exemple-avec-kable}}
+\texttt{kable()}}{Exemple avec kable()}}\label{exemple-avec-kable}
 
 La fonction \texttt{kable()} de \texttt{knitr} permet de transformer un
 dataframe en un tableau bien formaté.
@@ -6056,9 +5972,8 @@ Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15 & 3.440 & 17.02 & 0 & 0
 Valiant & 18.1 & 6 & 225 & 105 & 2.76 & 3.460 & 20.22 & 1 & 0 & 3 & 1 \\
 \end{longtable}
 
-\hypertarget{exemple-avec-kableextra}{%
 \subsubsection{\texorpdfstring{Exemple avec
-\texttt{kableExtra}}{Exemple avec kableExtra}}\label{exemple-avec-kableextra}}
+\texttt{kableExtra}}{Exemple avec kableExtra}}\label{exemple-avec-kableextra}
 
 Le package kableExtra permet de personnaliser et d'enrichir les tableaux
 créés avec kable(), notamment en ajoutant des options interactives comme
@@ -6080,7 +5995,7 @@ des couleurs ou des styles.
 \end{Shaded}
 
 \begin{longtable}[t]{lrrr>{}rrrrrrrr}
-\caption{Exemple de tableau avec la colonne hp colorée en bleu}\\
+\caption{\label{tab:unnamed-chunk-17}Exemple de tableau avec la colonne hp colorée en bleu}\\
 \toprule
  & mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear & carb\\
 \midrule
@@ -6094,9 +6009,8 @@ Valiant & 18.1 & 6 & 225 & \cellcolor{blue}{105} & 2.76 & 3.460 & 20.22 & 1 & 0 
 \bottomrule
 \end{longtable}
 
-\hypertarget{applications-interactives-avec-shiny}{%
 \subsubsection{Applications interactives avec
-Shiny}\label{applications-interactives-avec-shiny}}
+Shiny}\label{applications-interactives-avec-shiny}
 
 \texttt{shiny} est un package R puissant qui permet de créer des
 applications web interactives sans avoir besoin de compétences avancées
@@ -6104,9 +6018,8 @@ en développement web. Il permet de relier facilement des données, des
 visualisations et des contrôles interactifs, rendant les analyses
 accessibles à un large public via une interface web.
 
-\hypertarget{exemple-de-base-avec-shiny}{%
 \paragraph{\texorpdfstring{Exemple de base avec
-\texttt{shiny}}{Exemple de base avec shiny}}\label{exemple-de-base-avec-shiny}}
+\texttt{shiny}}{Exemple de base avec shiny}}\label{exemple-de-base-avec-shiny}
 
 Voici un exemple simple d'application \texttt{shiny} où l'utilisateur
 peut sélectionner une variable pour tracer un graphique interactif. Si
@@ -6160,9 +6073,8 @@ applications.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap7}{%
 \chapter{Baliser les sciences sociales~: langages et
-pratiques}\label{sec-chap7}}
+pratiques}\label{sec-chap7}
 
 Lorsque vous lisez un article scientifique, une page Web ou un
 curriculum vitæ professionnel, vous vous doutez peut-être que le texte
@@ -6200,9 +6112,8 @@ un langage de balisage? Quand et pourquoi utiliser un langage de
 balisage?} L'accent sera mis sur Quarto ainsi que sur les langages
 Markdown et \LaTeX, bien que d'autres langages soient aussi abordés.
 
-\hypertarget{point-dobservation-quest-ce-quun-langage-de-balisage}{%
 \section{Point d'observation~: qu'est-ce qu'un langage de
-balisage?}\label{point-dobservation-quest-ce-quun-langage-de-balisage}}
+balisage?}\label{point-dobservation-quest-ce-quun-langage-de-balisage}
 
 Un langage de balisage constitue un ensemble de commandes qui peuvent
 être entremêlées à du texte afin de produire une action informatique.
@@ -6234,7 +6145,9 @@ loin dans ce chapitre.
 
 \begin{figure}
 
-{\centering \includegraphics[width=5.76in,height=\textheight]{images/chapitre5_vscode.png}
+\centering{
+
+\includegraphics[width=5.76in,height=\textheight]{images/chapitre5_vscode.png}
 
 }
 
@@ -6242,7 +6155,7 @@ loin dans ce chapitre.
 Markdown dans un fichier Quarto sur la plateforme VS Code
 \newline \textit{Source}~: Auteurs du présent chapitre.}
 
-\end{figure}
+\end{figure}%
 
 Le premier langage de balisage, le Generalized Markup Language (GML), a
 été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et
@@ -6357,10 +6270,9 @@ ou sur un site Web. C'est principalement de cette manière que sont
 utilisés les langages de programmation et de balisage dans le cadre de
 la recherche en sciences sociales.
 
-\hypertarget{arpentage-et-choix-uxe9ditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage}{%
 \section{Arpentage et choix éditorial~: quand et pourquoi utiliser un
 langage de
-balisage?}\label{arpentage-et-choix-uxe9ditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage}}
+balisage?}\label{arpentage-et-choix-uxe9ditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage}
 
 La plupart des langages de balisage permettent de remplir l'une des deux
 fonctions suivantes, qui sont particulièrement importantes dans le
@@ -6399,7 +6311,9 @@ principaux~: \emph{automatisation}, \emph{personnalisation},
 
 \begin{figure}
 
-{\centering \includegraphics[width=4.18in,height=\textheight]{images/chapitre5_word-vs-latex.png}
+\centering{
+
+\includegraphics[width=4.18in,height=\textheight]{images/chapitre5_word-vs-latex.png}
 
 }
 
@@ -6407,7 +6321,7 @@ principaux~: \emph{automatisation}, \emph{personnalisation},
 \LaTeX~selon la complexité et la taille du document
 \newline \textit{Source}~: (\textbf{dufresne15?}).}
 
-\end{figure}
+\end{figure}%
 
 \begin{table}
 \centering
@@ -6432,11 +6346,9 @@ Adaptabilité et flexibilité                & Très forte  & Forte  & Forte   &
 \end{talltblr}
 \end{table}
 
-\hypertarget{avantages}{%
-\subsection{Avantages}\label{avantages}}
+\subsection{Avantages}\label{avantages}
 
-\hypertarget{ruxe9fuxe9rencement}{%
-\subsubsection{Référencement}\label{ruxe9fuxe9rencement}}
+\subsubsection{Référencement}\label{ruxe9fuxe9rencement}
 
 Premièrement, \LaTeX~et Markdown permettent d'intégrer une bibliographie
 \emph{automatique} et professionnelle en utilisant \textsc{Bib}\TeX.
@@ -6476,8 +6388,7 @@ bibliographiques grâce à sa capacité à \emph{personnaliser} et
   source par source, ce qui prend un temps important et peut occasionner
   des erreurs humaines.}.
 
-\hypertarget{figures-et-tableaux}{%
-\subsubsection{Figures et tableaux}\label{figures-et-tableaux}}
+\subsubsection{Figures et tableaux}\label{figures-et-tableaux}
 
 L'intégration de figures et de tableaux dans le texte est aussi rendue
 très simple et professionnelle grâce à \LaTeX~et à Markdown. La taille
@@ -6530,8 +6441,7 @@ produire au-delà d'un certain niveau de complexité, en raison des
 limitations du langage Markdown. Il demeure possible de produire des
 tableaux en langage \LaTeX~dans un fichier Markdown ou Quarto.
 
-\hypertarget{uxe9quations}{%
-\subsubsection{Équations}\label{uxe9quations}}
+\subsubsection{Équations}\label{uxe9quations}
 
 \LaTeX~permet également d'ajouter des équations mathématiques poussées.
 En effet, il existe des balises pour chaque symbole mathématique, et
@@ -6539,9 +6449,8 @@ celles-ci peuvent être agencées de manière à former des équations
 cohérentes. Ces équations peuvent être intégrées au sein même d'une
 phrase ou être mises de l'avant dans un paragraphe à part centré.
 
-\hypertarget{table-des-matiuxe8res-et-mise-en-page}{%
 \subsubsection{Table des matières et mise en
-page}\label{table-des-matiuxe8res-et-mise-en-page}}
+page}\label{table-des-matiuxe8res-et-mise-en-page}
 
 Markdown et \LaTeX~permettent aussi la gestion \emph{automatisée} de la
 table des matières, et les références aux pages appropriées à partir de
@@ -6586,25 +6495,29 @@ articles, des livres, des rapports, des \emph{curriculum vitæs}
 
 \begin{figure}
 
-{\centering \includegraphics[width=6.07in,height=\textheight]{images/chapitre5_CVtemp.png}
+\centering{
+
+\includegraphics[width=6.07in,height=\textheight]{images/chapitre5_CVtemp.png}
 
 }
 
 \caption{\label{fig-cv}Exemple de gabarit \LaTeX~de curriculum vitae
 \newline \textit{Source}~: LianTze (2023).}
 
-\end{figure}
+\end{figure}%
 
 \begin{figure}
 
-{\centering \includegraphics[width=5.51in,height=\textheight]{images/chapitre5_TStemp.png}
+\centering{
+
+\includegraphics[width=5.51in,height=\textheight]{images/chapitre5_TStemp.png}
 
 }
 
 \caption{\label{fig-invoice}Exemple de gabarit \LaTeX~de feuille de
 temps \newline \textit{Source}~: Roux (2013).}
 
-\end{figure}
+\end{figure}%
 
 La Figure~\ref{fig-cv} et la Figure~\ref{fig-invoice} ne sont que
 quelques exemples des milliers de gabarits de documents
@@ -6622,9 +6535,8 @@ revues scientifiques, maisons d'édition et universités, dans le cadre de
 la rédaction d'articles, de mémoires et de thèses par exemple, imposent
 ce type de gabarit inflexible et parfois plutôt capricieux.
 
-\hypertarget{compatibilituxe9-entre-types-de-documents}{%
 \subsubsection{Compatibilité entre types de
-documents}\label{compatibilituxe9-entre-types-de-documents}}
+documents}\label{compatibilituxe9-entre-types-de-documents}
 
 Un autre avantage non négligeable de Markdown --- qui le distingue à cet
 égard de \LaTeX~--- est la \emph{flexibilité} des formats de documents
@@ -6646,8 +6558,7 @@ langages de balisage ainsi que lors de l'envoi de manuscrits à des
 revues scientifiques, puisque certaines d'entre elles exigent de
 recevoir ceux-ci sous forme de document Word.
 
-\hypertarget{popularituxe9}{%
-\subsubsection{Popularité}\label{popularituxe9}}
+\subsubsection{Popularité}\label{popularituxe9}
 
 La popularité de certains langages de balisage dans le monde de la
 recherche confère un avantage considérable à celles et ceux qui savent
@@ -6663,8 +6574,7 @@ d'utilisateurs et utilisatrices dans 189 pays autour du globe. Plus de
 langages de balisage en fait donc des outils utiles pour une personne
 qui voudrait poursuivre une carrière en recherche académique.
 
-\hypertarget{gestion-des-embuxfbches}{%
-\subsubsection{Gestion des embûches}\label{gestion-des-embuxfbches}}
+\subsubsection{Gestion des embûches}\label{gestion-des-embuxfbches}
 
 Bien que l'apprentissage de \LaTeX~et de Markdown puisse être parsemé de
 nombreuses embûches, ces deux langages bénéficient d'une communauté
@@ -6714,9 +6624,8 @@ de s'appuyer autant sur la communauté d'utilisatrices et d'utilisateurs
 de langages de balisage qui échange des ressources en ligne que sur les
 modèles de langage basés sur l'IA.
 
-\hypertarget{philosophie-du-code-source-ouvert-et-du-logiciel-libre}{%
 \subsubsection{Philosophie du code source ouvert et du logiciel
-libre}\label{philosophie-du-code-source-ouvert-et-du-logiciel-libre}}
+libre}\label{philosophie-du-code-source-ouvert-et-du-logiciel-libre}
 
 L'utilisation des langages de balisage s'inscrit bien dans la
 philosophie du logiciel libre. Le langage \LaTeX~est distribué sous la
@@ -6743,8 +6652,7 @@ programmes. Elles sont également technologiquement neutres, rendant
 ainsi \LaTeX~et Quarto accessibles aux utilisateurs de tous les systèmes
 d'exploitation.
 
-\hypertarget{inconvuxe9nients}{%
-\subsection{Inconvénients}\label{inconvuxe9nients}}
+\subsection{Inconvénients}\label{inconvuxe9nients}
 
 Il existe toutefois des désavantages inhérents à l'utilisation des
 langages de balisage. L'un des principaux désavantages de Markdown et de
@@ -6865,9 +6773,8 @@ langages permettra de s'aligner sur les pratiques répandues dans le
 milieu académique et d'améliorer davantage la qualité de la production
 d'écrits scientifiques.
 
-\hypertarget{manuel-dinstructions-comment-utiliser-un-langage-de-balisage}{%
 \section{Manuel d'instructions~: comment utiliser un langage de
-balisage?}\label{manuel-dinstructions-comment-utiliser-un-langage-de-balisage}}
+balisage?}\label{manuel-dinstructions-comment-utiliser-un-langage-de-balisage}
 
 En pratique, comment utilise-t-on Markdown, \LaTeX~et \textsc{Bib}\TeX?
 D'emblée, \LaTeX~a une syntaxe particulière qui demande un certain temps
@@ -7002,9 +6909,8 @@ la notice bibliographique correspondante. L'ordre des publications dans
 le document \textsc{Bib}\TeX~a peu d'importance, puisque
 \LaTeX~réordonne par défaut la bibliographie en ordre alphabétique.
 
-\hypertarget{environnements-duxe9dition-et-de-compilation}{%
 \subsection{Environnements d'édition et de
-compilation}\label{environnements-duxe9dition-et-de-compilation}}
+compilation}\label{environnements-duxe9dition-et-de-compilation}
 
 Contrairement à Microsoft Word et Apple Pages, il existe plusieurs
 options d'environnements d'édition et de compilation spécifiques à
@@ -7077,9 +6983,8 @@ en format DOCX ou HTML, ce qui constitue une limite de l'application.
 Overleaf comporte un compteur de mots intégré, ce qui n'est pas le cas
 des autres logiciels et environnements présentés plus haut.
 
-\hypertarget{conclusion-piuxe8ges-et-astuces}{%
 \section{Conclusion~: pièges et
-astuces}\label{conclusion-piuxe8ges-et-astuces}}
+astuces}\label{conclusion-piuxe8ges-et-astuces}
 
 Maintenant que vous avez une meilleure idée de ce que sont les langages
 de balisage et de leur utilité, la prochaine étape consiste à
@@ -7150,8 +7055,7 @@ automatisés, avec une grande qualité graphique.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-chap8}{%
-\chapter{Outils d'intelligence artificielle}\label{sec-chap8}}
+\chapter{Outils d'intelligence artificielle}\label{sec-chap8}
 
 \begin{center}
 
@@ -7183,9 +7087,8 @@ de ces nouvelles technologies. La dernière section se penchera sur la
 place de cette technologie en sciences sociales. Quel usage pourrait-on
 en faire, et surtout quels en sont les limites.
 
-\hypertarget{duxe9finition-et-diffuxe9rents-type-dia}{%
 \section{Définition et différents type
-d'IA}\label{duxe9finition-et-diffuxe9rents-type-dia}}
+d'IA}\label{duxe9finition-et-diffuxe9rents-type-dia}
 
 Qu'est-ce que l'intelligence artificielle (IA)? Est-ce quelque chose
 d'homogène, ou s'agit-il plutôt « des intelligences artificielles »?
@@ -7304,9 +7207,8 @@ reconnaissance vocale ou d'image, par exemple, ne prend que quelques
 minutes grâce à cela, contrairement à plusieurs heures lorsque fait par
 des humains (IBM, 2023b).
 
-\hypertarget{luxe9volution-constante-de-lia}{%
 \section{L'évolution constante de
-l'IA}\label{luxe9volution-constante-de-lia}}
+l'IA}\label{luxe9volution-constante-de-lia}
 
 Plusieurs chercheurs, dont le professeur Yoshua Bengio de l'Université
 de Montréal, ont lancé plusieurs avertissements sur le développement de
@@ -7360,9 +7262,8 @@ collaborative. Une compréhension plus complète de ces changements ainsi
 qu'une communication de ce savoir ne pourra que générer des bénéfices
 pour le monde académique, social et politique.
 
-\hypertarget{les-diffuxe9rents-outils-de-lia}{%
 \section{Les différents outils de
-l'IA}\label{les-diffuxe9rents-outils-de-lia}}
+l'IA}\label{les-diffuxe9rents-outils-de-lia}
 
 Cette section vise à présenter différents outils de l'intelligence
 artificielle aux lecteurs. Ce qui est important de comprendre ici, et
@@ -7382,8 +7283,7 @@ Trois catégories d'outils seront présentées: les « \emph{Large Language
 Models} » (LLM), les assistants de traduction ainsi que les assistants
 de revue de littérautre.
 
-\hypertarget{les-llms}{%
-\subsection{1. Les LLMs}\label{les-llms}}
+\subsection{1. Les LLMs}\label{les-llms}
 
 (\textbf{openai19?}) définissent les grands modèles linguistiques (Large
 language models ou LLMs en anglais) comme des modèles d'apprentissage
@@ -7511,9 +7411,8 @@ Voici un exemple simple d'utilisation de l'API d'OpenAI :
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{les-assistants-de-traduction}{%
 \subsection{2. Les Assistants de
-Traduction}\label{les-assistants-de-traduction}}
+Traduction}\label{les-assistants-de-traduction}
 
 L'IA a aussi permis la création d'outils de nouveaux outils de
 traduction automatique (\emph{machine translation}). Pris au sens large,
@@ -7619,7 +7518,7 @@ faiblesses. Il est important de noter que ces outils sont en constante
 évolution et que leur qualité peut varier en fonction de la langue, du
 contexte et du type de texte à traduire.
 
-\begin{tcolorbox}[enhanced jigsaw, opacityback=0, rightrule=.15mm, colback=white, colframe=quarto-callout-tip-color-frame, left=2mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Banques de données terminologiques}, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, breakable, arc=.35mm, coltitle=black, leftrule=.75mm, titlerule=0mm, toptitle=1mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, left=2mm, titlerule=0mm, arc=.35mm, bottomrule=.15mm, rightrule=.15mm, opacityback=0, toprule=.15mm, bottomtitle=1mm, coltitle=black, colframe=quarto-callout-tip-color-frame, colback=white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Banques de données terminologiques}, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, leftrule=.75mm]
 
 Bien que ces outils n'utilisent pas l'intelligence artificielle, il nous
 semble essentiel de mentionner des ressources telles que TERMIUM Plus et
@@ -7634,8 +7533,7 @@ présents dans ce chapitre.
 
 \end{tcolorbox}
 
-\hypertarget{google-traduction}{%
-\subsubsection{Google Traduction}\label{google-traduction}}
+\subsubsection{Google Traduction}\label{google-traduction}
 
 Très connu, l'une des forces de Google Traduction est son support d'une
 large variété de langues, tant des langues globalement utilisées et des
@@ -7644,16 +7542,14 @@ sur de la traduction automatique neuronale, prenant donc le sens et le
 contexte d'une phrase en considération. De plus, il supporte aussi la
 traduction de documents complets.
 
-\hypertarget{deepl}{%
-\subsubsection{DeepL}\label{deepl}}
+\subsubsection{DeepL}\label{deepl}
 
 DeepL se démarque par une qualité supérieure de traduction mais dans un
 nombre de langues plus restreint que d'autres outils. Il est aussi basé
 sur de la traduction automatique neuronale, ce qui lui permet de prendre
 en compte le contexte et la complexité d'une structure de phrase.
 
-\hypertarget{mate-translate}{%
-\subsubsection{Mate Translate}\label{mate-translate}}
+\subsubsection{Mate Translate}\label{mate-translate}
 
 Mate Translate est une extension de navigateur qui permet de traduire
 des pages web entières, des phrases ou des mots en un seul clic. Il
@@ -7662,8 +7558,7 @@ supplémentaires telles que la prononciation des mots et des phrases
 traduits. Son avantage réside vraiment dans sa facilité d'utilisation et
 sa rapidité.
 
-\hypertarget{chatgpt}{%
-\subsubsection{ChatGPT}\label{chatgpt}}
+\subsubsection{ChatGPT}\label{chatgpt}
 
 Évidemment, CHatGPT est un outil de traduction automatique basé sur des
 modèles de langage génératif. Il est très populaire pour sa capacité à
@@ -7672,8 +7567,7 @@ de traduction très efficace pour les textes longs et complexes. De plus,
 il est possible de raffiner la traduction en quelques itérations en
 suggérant des modifications au texte traduit.
 
-\hypertarget{autres-outils}{%
-\subsubsection{Autres outils}\label{autres-outils}}
+\subsubsection{Autres outils}\label{autres-outils}
 
 Comme mentionné plus haut, il existe une panoplie d'outils de traduction
 automatique qui utilisent l'IA et qui sont accessibles gratuitement.
@@ -7684,9 +7578,8 @@ outils. Parmi les autres outils populaires, on peut citer Microsoft
 Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee,
 Yandex.Translate, HIX Translate, etc.
 
-\hypertarget{les-assistants-de-revue-de-littuxe9rature}{%
 \subsection{3. Les Assistants de Revue de
-littérature}\label{les-assistants-de-revue-de-littuxe9rature}}
+littérature}\label{les-assistants-de-revue-de-littuxe9rature}
 
 Dans cette section, deux principaux outils seront présentés:
 \emph{research rabbit} et \emph{ellicit}. Il s'agit de deux ressources
@@ -7706,13 +7599,15 @@ démontrer l'utilité de ce logiciel, utilision un exemple concret.
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre9_image2.png}
+\centering{
+
+\includegraphics{images/chapitre9_image2.png}
 
 }
 
 \caption{\label{fig-ellicit}Menu d'accueil d'Ellicit}
 
-\end{figure}
+\end{figure}%
 
 Par exemple, disons que je m'intéresse à la question suivante: Qu'est-ce
 que la démocratie? Cependant, je ne sais par où commencé pour me faire
@@ -7724,11 +7619,11 @@ dans la Figure~\ref{fig-results1} et Figure~\ref{fig-results2}
 
 \begin{figure}
 
-\begin{minipage}[t]{0.50\linewidth}
+\begin{minipage}{0.50\linewidth}
 
-{\centering 
+\begin{figure}[H]
 
-\raisebox{-\height}{
+\centering{
 
 \includegraphics{images/chapitre9_image3.png}
 
@@ -7736,15 +7631,15 @@ dans la Figure~\ref{fig-results1} et Figure~\ref{fig-results2}
 
 \caption{\label{fig-results1}Court résumé du sujet}
 
-}
+\end{figure}%
 
 \end{minipage}%
 %
-\begin{minipage}[t]{0.50\linewidth}
+\begin{minipage}{0.50\linewidth}
 
-{\centering 
+\begin{figure}[H]
 
-\raisebox{-\height}{
+\centering{
 
 \includegraphics{images/chapitre9_image4.png}
 
@@ -7752,11 +7647,11 @@ dans la Figure~\ref{fig-results1} et Figure~\ref{fig-results2}
 
 \caption{\label{fig-results2}Suggestions de lectures}
 
-}
+\end{figure}%
 
 \end{minipage}%
 
-\end{figure}
+\end{figure}%
 
 Le logiciel offre donc un moyen intéressant afin de faire un premier «
 filtrage » de la littérature sur un sujet, tout en fournissant un résumé
@@ -7785,43 +7680,51 @@ Figure~\ref{fig-rr1} présente le menu principal du site web.
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre9_RR1.png}
+\centering{
+
+\includegraphics{images/chapitre9_RR1.png}
 
 }
 
 \caption{\label{fig-rr1}Menu principal}
 
-\end{figure}
+\end{figure}%
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre9_rr2.png}
+\centering{
+
+\includegraphics{images/chapitre9_rr2.png}
 
 }
 
 \caption{\label{fig-rr2}Importation manuelle de documents}
 
-\end{figure}
+\end{figure}%
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre9_RR3.png}
+\centering{
+
+\includegraphics{images/chapitre9_RR3.png}
 
 }
 
 \caption{\label{fig-rr3}Présentation de la littérature similaire}
 
-\end{figure}
+\end{figure}%
 
 \begin{figure}
 
-{\centering \includegraphics{images/chapitre9_rr4.png}
+\centering{
+
+\includegraphics{images/chapitre9_rr4.png}
 
 }
 
 \caption{\label{fig-rr4}Vue « Timeline » des références}
 
-\end{figure}
+\end{figure}%
 
 Avant toute chose, \emph{Research Rabbit} doit être considéré comme un
 outils qui m'aidera à \emph{complémenter} ma revue des écrits. En
@@ -7882,9 +7785,8 @@ complémentaire avec plusieurs articles différents. Il est donc utile
 d'ajouter au fur et à mesure ses sources dans \emph{Research Rabbit}
 afin de visualiser la couverture de notre revue des écrits.
 
-\hypertarget{quelle-est-la-place-du-chercheur-maintenant}{%
 \section{Quelle est la place du chercheur
-maintenant?}\label{quelle-est-la-place-du-chercheur-maintenant}}
+maintenant?}\label{quelle-est-la-place-du-chercheur-maintenant}
 
 Avec l'avènement de l'IA, il est tout à fait raisonnable de se demander
 quelle est la place du chercheur aujourd'hui. L'avenir du chercheur
@@ -7955,8 +7857,7 @@ autant qu'initier la réflexion est nécessaire. Encore une fois, les
 universités sont des lieux privilégiés pour avoir ce genre de réflexion,
 tant venant des étudiants que des enseignants.
 
-\hypertarget{lia-en-sciences-sociales}{%
-\section{L'IA en sciences sociales}\label{lia-en-sciences-sociales}}
+\section{L'IA en sciences sociales}\label{lia-en-sciences-sociales}
 
 Malgré que l'utilisation de l'IA en sciences sociales soit relativement
 récente, il y a déjà quelques recherches qui se sont penchées sur son
@@ -8013,8 +7914,7 @@ interactions et des dynamiques sociales pourrait avoir des conséquences
 vraiment importantes sur le bien-être de nos sociétés. Restons
 vigilants.
 
-\hypertarget{conclusion-2}{%
-\section{Conclusion}\label{conclusion-2}}
+\section{Conclusion}\label{conclusion-2}
 
 En guise de conclusion, nous souhaitons lancer une dernière réflexion un
 peu plus philosophique, mais tout aussi importante: le transhumanisme,
@@ -8085,13 +7985,11 @@ fondamental pour chaque étudiant.e universitaire, ainsi que pour les
 futurs chercheur.euse.s. Commencez dès maintenant à développer ces
 capacités plutôt que de demander à ChatGPT de le faire à votre place.
 
-\hypertarget{utilisation-du-package-openai}{%
 \section{Utilisation du package
-OpenAI}\label{utilisation-du-package-openai}}
+OpenAI}\label{utilisation-du-package-openai}
 
-\hypertarget{installation-et-chargement-du-package}{%
 \subsection{Installation et chargement du
-package}\label{installation-et-chargement-du-package}}
+package}\label{installation-et-chargement-du-package}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -8100,8 +7998,7 @@ package}\label{installation-et-chargement-du-package}}
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{configuration-de-lapi}{%
-\section{Configuration de l'API}\label{configuration-de-lapi}}
+\section{Configuration de l'API}\label{configuration-de-lapi}
 
 Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que vous
 aurez besoin d'une carte de crédit pour vous inscrire et que
@@ -8129,8 +8026,7 @@ Ajoutez la ligne suivante à votre fichier \texttt{.Renviron}.
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{utilisation-de-lapi}{%
-\section{Utilisation de l'API}\label{utilisation-de-lapi}}
+\section{Utilisation de l'API}\label{utilisation-de-lapi}
 
 La fonction principale du package openai est create\_chat\_completion().
 Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le
@@ -8166,8 +8062,7 @@ travers d'autres API, analyser des sites webs en temps réel en scraping
 avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux
 possibilités que vous souhaitez explorer.
 
-\hypertarget{notes}{%
-\section{Notes}\label{notes}}
+\section{Notes}\label{notes}
 
 \begin{itemize}
 \item
@@ -8193,8 +8088,7 @@ possibilités que vous souhaitez explorer.
   est suffisant pour la plupart des utilisations.
 \end{itemize}
 
-\hypertarget{annexe-1}{%
-\section{Annexe 1}\label{annexe-1}}
+\section{Annexe 1}\label{annexe-1}
 
 Bonnes pratiques d'utilisation Harvard. 2023. « Guidelines for using
 ChatGPT and other Generative AI tools at Harvard ».
@@ -8204,8 +8098,7 @@ MIT. 2023. « Advice and responses from faculty on ChatGTP and
 A.I.-assisted writing ».
 https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
 
-\hypertarget{annexe-2}{%
-\section{Annexe 2}\label{annexe-2}}
+\section{Annexe 2}\label{annexe-2}
 
 Q : Qu'est-ce que le totalitarisme? R : Le totalitarisme est un système
 politique et idéologique caractérisé par un contrôle absolu et
@@ -8223,8 +8116,7 @@ MIT. 2023. « Advice and responses from faculty on ChatGTP and
 A.I.-assisted writing ».
 https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
 
-\hypertarget{annexe-2-1}{%
-\section{Annexe 2}\label{annexe-2-1}}
+\section{Annexe 2}\label{annexe-2-1}
 
 Q : Qu'est-ce que le totalitarisme? R : Le totalitarisme est un système
 politique et idéologique caractérisé par un contrôle absolu et
@@ -8289,12 +8181,10 @@ individuelles, la séparation des pouvoirs et la participation citoyenne.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{uxe0-voir}{%
-\chapter{À voir}\label{uxe0-voir}}
+\chapter{À voir}\label{uxe0-voir}
 
-\hypertarget{duxe9fis-et-enjeux-uxe9thiques-de-lia-focus-sur-chatgpt}{%
 \section{Défis et enjeux éthiques de l'IA, focus sur
-ChatGPT}\label{duxe9fis-et-enjeux-uxe9thiques-de-lia-focus-sur-chatgpt}}
+ChatGPT}\label{duxe9fis-et-enjeux-uxe9thiques-de-lia-focus-sur-chatgpt}
 
 En tant qu'étudiant, professeur, professionnel ou chercheur, il faut se
 questionner par rapport à notre propre utilisation des différents outils
@@ -8409,9 +8299,8 @@ demandez pas à ChatGPT de le faire à votre place.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{kit-de-duxe9marrage-pour-les-sciences-sociales-numuxe9riques}{%
 \chapter{Kit de démarrage pour les sciences sociales
-numériques}\label{kit-de-duxe9marrage-pour-les-sciences-sociales-numuxe9riques}}
+numériques}\label{kit-de-duxe9marrage-pour-les-sciences-sociales-numuxe9riques}
 
 \begin{center}
 
@@ -8419,8 +8308,7 @@ Marc-Antoine Rancourt, Flavie Lachance, Justine Béchard, William Poirier
 
 \end{center}
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}
 
 Alors que les chapitres précédents se sont consacrés à la présentation
 théorique et pratique des sciences sociales numériques, le présent
@@ -8440,8 +8328,7 @@ des différents outils numériques: débutant, intermédiaire et avancé. De
 plus, chaque partie termine par une liste de pièges à éviter et qui est
 associé au niveau d'apprentissage qui lui est propre.
 
-\hypertarget{duxe9butant}{%
-\section{Débutant}\label{duxe9butant}}
+\section{Débutant}\label{duxe9butant}
 
 Cette section peut s'adresser à tous les lecteurs, mais elle vise
 particulièrement ceux et celles qui débutent leurs parcours dans le
@@ -8455,8 +8342,7 @@ apprendre à utiliser R et naviguer RStudio adéquatement. La seconde
 section guide le lecteur dans l'installation de \LaTeX, puis présente
 des ressources utiles à son utilisation.
 
-\hypertarget{r-et-rstudio}{%
-\subsection{R et RStudio}\label{r-et-rstudio}}
+\subsection{R et RStudio}\label{r-et-rstudio}
 
 Le chapitre 4 du présent livre introduit le langage de programmation R,
 ses avantages, ses inconvénients et son utilité. Cette partie du livre
@@ -8543,9 +8429,8 @@ forums tels que Stack Overflow et la section discussion de GitHub
 peuvent être très utiles pour avoir une réponse rapide à une question
 technique.
 
-\hypertarget{les-alternatives-uxe0-word-les-langages-de-balisage}{%
 \subsection{Les alternatives à Word : les langages de
-balisage}\label{les-alternatives-uxe0-word-les-langages-de-balisage}}
+balisage}\label{les-alternatives-uxe0-word-les-langages-de-balisage}
 
 Le chapitre 5 du présent ouvrage introduit les langages de balisage
 \LaTeX et Markdown, leurs historiques ainsi que leurs avantages et
@@ -8620,9 +8505,8 @@ d'information et de ressources qui peuvent être même utiles aux usagers
 avancés. Comme pour \LaTeX, une grande quantité d'autres ressources sont
 facilement accessibles sur le Web.
 
-\hypertarget{piuxe8ges-pour-usagers-duxe9butants}{%
 \subsection{Pièges pour usagers
-débutants}\label{piuxe8ges-pour-usagers-duxe9butants}}
+débutants}\label{piuxe8ges-pour-usagers-duxe9butants}
 
 Beaucoup de nouvelles informations ont été présentées jusqu'à présent
 dans ce livre. Il est normal de se sentir dépassé et de ne pas tout
@@ -8670,8 +8554,7 @@ projets plus complexes. Bien qu'il ne soit pas requis de connaître la
 mécanique pour conduire une automobile, il est tout de même parfois
 utile -- voir nécessaire -- de comprendre comment entretenir celle-ci.
 
-\hypertarget{intermuxe9diaire}{%
-\section{Intermédiaire}\label{intermuxe9diaire}}
+\section{Intermédiaire}\label{intermuxe9diaire}
 
 Tout comme la section précédente, cette section peut tout à fait être
 utile à tous les lecteurs. Cependent, elle vise particulièrement ceux et
@@ -8687,9 +8570,8 @@ adéquatement. La seconde section guide le lecteur l'apprentissage de la
 visualisation graphique en R, puis présente des ressources utiles à sa
 pratique.
 
-\hypertarget{la-gestion-des-ruxe9fuxe9rences}{%
 \subsection{La gestion des
-références}\label{la-gestion-des-ruxe9fuxe9rences}}
+références}\label{la-gestion-des-ruxe9fuxe9rences}
 
 Le chapitre 6 du présent livre porte sur la gestion des références. Il
 présente deux ressources de gestion bibliographique largement utilisés :
@@ -8757,9 +8639,8 @@ plus d'un historique des versions du package depuis 2012. Le document
 est à jour pour l'année 2023, et il est constamment mis à jour par les
 auteurs.
 
-\hypertarget{visualisation-graphique-en-r}{%
 \subsection{Visualisation graphique en
-R}\label{visualisation-graphique-en-r}}
+R}\label{visualisation-graphique-en-r}
 
 Le chapitre 7 du présent ouvrage porte sur la visualisation graphique en
 R, les différentes options pour visualiser des données et une discussion
@@ -8806,9 +8687,8 @@ permettant à de nouveaux utilisateurs de se pratiquer avec
 de tutoriels, sur la visualisation en R avec \emph{ggplot2}, allant du
 niveau de débutant jusqu'au niveau avancé.
 
-\hypertarget{piuxe8ges-pour-usagers-intermuxe9diaires}{%
 \subsection{Pièges pour usagers intermédiaires
-:}\label{piuxe8ges-pour-usagers-intermuxe9diaires}}
+:}\label{piuxe8ges-pour-usagers-intermuxe9diaires}
 
 À la suite des différents exercices et lectures complètés dans le cadre
 de cette familiarisation aux sciences sociales numériques, le lecteur
@@ -8858,11 +8738,9 @@ connait pas tout et qu'il y aura des échecs et des frustrations. C'est
 ainsi qu'un chercheur intermédiaire peut dépasser ses limites et devenir
 un chercheur de niveau avancé.
 
-\hypertarget{avancuxe9}{%
-\section{Avancé}\label{avancuxe9}}
+\section{Avancé}\label{avancuxe9}
 
-\hypertarget{le-travail-collaboratif}{%
-\subsection{Le travail collaboratif}\label{le-travail-collaboratif}}
+\subsection{Le travail collaboratif}\label{le-travail-collaboratif}
 
 Le chapitre 8 du présent ouvrage présente principalement trois types
 d'outils complémentaires pour le travail collaboratif : les outils de
@@ -8936,9 +8814,8 @@ essentiellement des copiés-collés de leur site Web. AWS a aussi un
 chatbot qui peut répondre à vos question en temps réel et il apparaît
 assez efficace.
 
-\hypertarget{outils-dintelligence-artificielle}{%
 \subsection{Outils d'intelligence
-artificielle}\label{outils-dintelligence-artificielle}}
+artificielle}\label{outils-dintelligence-artificielle}
 
 Le chapitre 9 porte sur les différents outils liés à l'utilisation de
 l'intelligence artificielle. Plus spécifiquement, il présente le site
@@ -8980,9 +8857,8 @@ récentes versions de ChatGPT, et de Patton et al.~(2023) qui écrivent
 sur les opportunités et les défis de ChatGPT en sciences sociales
 numériques.
 
-\hypertarget{piuxe8ges-pour-usagers-avancuxe9s}{%
 \subsection{Pièges pour usagers
-avancés}\label{piuxe8ges-pour-usagers-avancuxe9s}}
+avancés}\label{piuxe8ges-pour-usagers-avancuxe9s}
 
 L'un des pièges importants à éviter lorsque le chercheur se retrouve à
 un niveau avancé est la peur de partager son code. Ceci est spécialement
@@ -9021,8 +8897,7 @@ débutant. Soutenir les nouveaux utilisateurs dans leur apprentissage
 avec patients et empathie permet une meilleure transmission des
 connaissances.
 
-\hypertarget{conclusion-3}{%
-\section{Conclusion}\label{conclusion-3}}
+\section{Conclusion}\label{conclusion-3}
 
 Le but du présent chapitre était d'offrir des informations
 additionnelles aux chapitres précédents dans le but de faciliter
@@ -9052,8 +8927,7 @@ des sciences sociales numériques avertit en vaut deux.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{lordinateur}{%
-\chapter{L'ordinateur}\label{lordinateur}}
+\chapter{L'ordinateur}\label{lordinateur}
 
 Cet appendice s'adresse à un public de nouveaux initiés en informatique.
 Son objectif est de convaincre les chercheurs de l'importance de se
@@ -9075,12 +8949,10 @@ composants d'un ordinateur et de comprendre leur fonction. Cette annexe
 présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de
 l'espace de stockage (HDD ou SSD).
 
-\hypertarget{les-composants-dun-ordinateur}{%
 \section{Les composants d'un
-ordinateur}\label{les-composants-dun-ordinateur}}
+ordinateur}\label{les-composants-dun-ordinateur}
 
-\hypertarget{la-muxe9moire-vive-ram}{%
-\subsection{La mémoire vive (RAM)}\label{la-muxe9moire-vive-ram}}
+\subsection{La mémoire vive (RAM)}\label{la-muxe9moire-vive-ram}
 
 La mémoire vive (RAM) est une composante essentielle de l'ordinateur.
 Elle permet de stocker temporairement les données nécessaires au
@@ -9110,8 +8982,7 @@ Lors de la rédaction de cette annexe, ChatGPT recommandait d'avoir au
 moins 16 Go de mémoire vive pour un ordinateur de recherche et au
 minimum 8 Go.
 
-\hypertarget{le-processeur-cpu}{%
-\subsection{Le processeur (CPU)}\label{le-processeur-cpu}}
+\subsection{Le processeur (CPU)}\label{le-processeur-cpu}
 
 Le processeur (CPU) est le cerveau de l'ordinateur. Il est responsable
 de l'exécution des programmes et des calculs. Plus le processeur est
@@ -9168,9 +9039,8 @@ série Athlon sont moins puissants. Idéalement, il serait recommandé
 d'avoir un processeur i7 ou Ryzen pour un ordinateur de recherche mais
 n'importe quel processeur intel ou AMD pas trop vieux peut convenir.
 
-\hypertarget{lespace-de-stockage-hdd-ou-ssd}{%
 \subsection{L'espace de stockage (HDD ou
-SSD)}\label{lespace-de-stockage-hdd-ou-ssd}}
+SSD)}\label{lespace-de-stockage-hdd-ou-ssd}
 
 L'espace de stockage est un autre composant clé de l'ordinateur. Il
 permet de stocker les données de manière permanente. Il existe deux
@@ -9201,8 +9071,7 @@ carte mère, rendant impossible l'ajout ultérieur de stockage
 supplémentaire. Il est donc primordial de choisir un ordinateur avec un
 espace de stockage adéquat dès l'achat.
 
-\hypertarget{acheter-un-ordinateur}{%
-\section{Acheter un ordinateur}\label{acheter-un-ordinateur}}
+\section{Acheter un ordinateur}\label{acheter-un-ordinateur}
 
 Il est judicieux de bien choisir son ordinateur. Pour cela, il est
 recommandé de faire des recherches préalables. MacOS est un choix
@@ -9229,173 +9098,172 @@ environ 250-300 dollars canadiens.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{references}{%
-\chapter*{References}\label{references}}
+\chapter*{References}\label{references}
 \addcontentsline{toc}{chapter}{References}
 
 \markboth{References}{References}
 
-\hypertarget{refs}{}
+\phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-alpaydin_bach14}{}}%
+\bibitem[\citeproctext]{ref-alpaydin_bach14}
 Alpaydin, E., \& Bach, F. (2014). \emph{Introduction to {Machine
 Learning}} (3e ed.). MIT Press.
 \url{https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851}
 
-\leavevmode\vadjust pre{\hypertarget{ref-arel-bundock}{}}%
+\bibitem[\citeproctext]{ref-arel-bundock}
 Arel-Bundock, V. (n.d.). \emph{Marginal {Effects Zoo}}. Retrieved
 October 7, 2024, from \url{https://marginaleffects.com/}
 
-\leavevmode\vadjust pre{\hypertarget{ref-arel-bundock22a}{}}%
+\bibitem[\citeproctext]{ref-arel-bundock22a}
 Arel-Bundock, V. (2022). \emph{Modelsummary: {Data} and {Model
 Summaries} in {R}}. \url{https://modelsummary.com/}
 
-\leavevmode\vadjust pre{\hypertarget{ref-argyle_etal23}{}}%
+\bibitem[\citeproctext]{ref-argyle_etal23}
 Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., \&
 Wingate, D. (2023). Out of {One}, {Many}: {Using Language Models} ot
 {Simulate Human Samples}. \emph{Political Analysis}, \emph{31}(3),
 337--351. \url{https://doi.org/10.1017/pan.2023.2}
 
-\leavevmode\vadjust pre{\hypertarget{ref-ballhausen19}{}}%
+\bibitem[\citeproctext]{ref-ballhausen19}
 Ballhausen, M. (2019). Free and {Open Source Software Licenses
 Explained}. \emph{Computer}, \emph{52}(6), 82--86. Computer.
 \url{https://doi.org/10.1109/MC.2019.2907766}
 
-\leavevmode\vadjust pre{\hypertarget{ref-bengio23}{}}%
+\bibitem[\citeproctext]{ref-bengio23}
 Bengio, Y. (2023). One of the "godfathers of {AI}" airs his concerns.
 \emph{The Economist}.
 \url{https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns}
 
-\leavevmode\vadjust pre{\hypertarget{ref-beraud07}{}}%
+\bibitem[\citeproctext]{ref-beraud07}
 Béraud, C. (2007). \emph{Le logiciel libre, une cause nationale, une
 opportunité pour le {Québec}} (p. 20). FACIL.
 \url{https://facil.qc.ca/files/2008-11-06_Assnat_0.pdf}
 
-\leavevmode\vadjust pre{\hypertarget{ref-bertolini20}{}}%
+\bibitem[\citeproctext]{ref-bertolini20}
 Bertolini, A. (2020). \emph{Artificial {Intelligence} and {Civil
 Liability}} {[}Policy Department for Citizen\textquotesingle s Rights
 and Constitutional Affairs{]}. European Union.
 \url{https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf}
 
-\leavevmode\vadjust pre{\hypertarget{ref-bessen02}{}}%
+\bibitem[\citeproctext]{ref-bessen02}
 Bessen, J. (2002). What {Good Is Free Software}? In R. W. Hahn (Ed.),
 \emph{Government {Policy} toward {Open Source Software}} (pp. 12--33).
 Brookings Institution Press.
 \url{https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.5}
 
-\leavevmode\vadjust pre{\hypertarget{ref-bourgeois21}{}}%
+\bibitem[\citeproctext]{ref-bourgeois21}
 Bourgeois, I. (2021). Qu'est-ce que la recherche sociale? In
 \emph{Recherche sociale. {De} la problématique à la collecte des
 données} (7e ed., pp. 1--14). Presses de l'Université du Québec.
 
-\leavevmode\vadjust pre{\hypertarget{ref-brady_collier10}{}}%
+\bibitem[\citeproctext]{ref-brady_collier10}
 Brady, H. E., \& Collier, D. (Eds.). (2010). \emph{Rethinking {Social
 Inquiry}. {Diverse Tools}, {Shared Standards}} (2nd ed.). Rowman \&
 Littlefield Publishers.
 
-\leavevmode\vadjust pre{\hypertarget{ref-bremmer_suleyman23}{}}%
+\bibitem[\citeproctext]{ref-bremmer_suleyman23}
 Bremmer, I., \& Suleyman, M. (2023). The {AI Power Paradox}.
 \emph{Foreign Affairs}, \emph{102}(5), 26--43.
 
-\leavevmode\vadjust pre{\hypertarget{ref-broca13}{}}%
+\bibitem[\citeproctext]{ref-broca13}
 Broca, S. (2013). \emph{Utopie du lociel libre. {Du} bricolage
 informatique à la réinvention sociale.} Le passage clandestin.
 
-\leavevmode\vadjust pre{\hypertarget{ref-burrows_savage14}{}}%
+\bibitem[\citeproctext]{ref-burrows_savage14}
 Burrows, R., \& Savage, M. (2014). After the crisis? {Big Data} and the
 methodological challenges of empirical sociology. \emph{Big Data \&
 Society}, \emph{1}(1), 2053951714540280.
 \url{https://doi.org/10.1177/2053951714540280}
 
-\leavevmode\vadjust pre{\hypertarget{ref-chakravorty_etal22}{}}%
+\bibitem[\citeproctext]{ref-chakravorty_etal22}
 Chakravorty, N., Sharma, C. S., Molla, K. A., \& Pattanaik, J. K.
 (2022). Open {Science}: {Challenges}, {Possible Solutions} and the {Way
 Forward}. \emph{Proceedings of the Indian National Science Academy},
 \emph{88}(3), 456--471. \url{https://doi.org/10.1007/s43538-022-00104-2}
 
-\leavevmode\vadjust pre{\hypertarget{ref-chiware_skelly23}{}}%
+\bibitem[\citeproctext]{ref-chiware_skelly23}
 Chiware, E. R. T., \& Skelly, L. (2023). Overcoming {Challenges} to
 {Open Research Practices} -- {A Perspective From} the {Global South}: {A
 Commentary} on {``({Why}) {Are Open Research Practices} the {Future} for
 the {Study} of {Language Learning}?''} \emph{Language Learning}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-connelly_etal16}{}}%
+\bibitem[\citeproctext]{ref-connelly_etal16}
 Connelly, R., Playford, C. J., Gayle, V., \& Dibben, C. (2016). The role
 of administrative data in the big data revolution in social science
 research. \emph{Social Science Research}, \emph{59}, 1--12.
 \url{https://www.sciencedirect.com/science/article/pii/S0049089X1630206X}
 
-\leavevmode\vadjust pre{\hypertarget{ref-couture14}{}}%
+\bibitem[\citeproctext]{ref-couture14}
 Couture, S. (2014). \emph{Les logiciels libres, un an plus tard}.
 Institut de recherche et d'informations socioéconomiques.
 \url{https://iris-recherche.qc.ca/blogue/secteur-public-et-communautaire/les-logiciels-libres-un-an-plus-tard/}
 
-\leavevmode\vadjust pre{\hypertarget{ref-couture20}{}}%
+\bibitem[\citeproctext]{ref-couture20}
 Couture, S. (2020). Free and {Open Source Software}. In \emph{The
 {Handbook} of {Peer Production}} (pp. 153--168). John Wiley \& Sons,
 Ltd. \url{https://doi.org/10.1002/9781119537151.ch12}
 
-\leavevmode\vadjust pre{\hypertarget{ref-devedec21}{}}%
+\bibitem[\citeproctext]{ref-devedec21}
 Dévédec, N. L. (2021). "{Sans} limites": Une critique politique et
 écologique du transhumanisme et de son monde. \emph{Cahiers Société},
 \emph{3}, 99--122. \url{https://doi.org/10.7202/1090180ar}
 
-\leavevmode\vadjust pre{\hypertarget{ref-devedzic22}{}}%
+\bibitem[\citeproctext]{ref-devedzic22}
 Devedzic, V. (2022). Identity of {AI}. \emph{Discover Artificial
 Intelligence}, \emph{2}(23).
 \url{https://doi.org/10.1007/s44163-022-00038-0}
 
-\leavevmode\vadjust pre{\hypertarget{ref-evans_mathur18}{}}%
+\bibitem[\citeproctext]{ref-evans_mathur18}
 Evans, J. R., \& Mathur, A. (2018). The value of online surveys: {A}
 look back and a look ahead. \emph{Internet Research}, \emph{28}(4),
 854--887.
 \url{https://www.emerald.com/insight/content/doi/10.1108/IntR-03-2018-0089/full/html}
 
-\leavevmode\vadjust pre{\hypertarget{ref-forestier_ansermet21}{}}%
+\bibitem[\citeproctext]{ref-forestier_ansermet21}
 Forestier, F., \& Ansermet, F. (2021). Le transhumanisme. In \emph{La
 {Dévoration Numérique}} (pp. 19--54). Odile Jacob.
 \url{https://www.cairn.info/la-devoration-numerique--9782415000240-page-19.htm}
 
-\leavevmode\vadjust pre{\hypertarget{ref-fortunato_galassi21}{}}%
+\bibitem[\citeproctext]{ref-fortunato_galassi21}
 Fortunato, L., \& Galassi, M. (2021). The case for free and open source
 software in research and scholarship. \emph{Philosophical Transactions
 of the Royal Society A: Mathematical, Physical and Engineering
 Sciences}, \emph{379}(2197), 20200079.
 \url{https://doi.org/10.1098/rsta.2020.0079}
 
-\leavevmode\vadjust pre{\hypertarget{ref-friendly08}{}}%
+\bibitem[\citeproctext]{ref-friendly08}
 Friendly, M. (2008). The {Golden Age} of {Statistical Graphics}.
 \emph{Statistical Science}, \emph{23}(4), 502--535.
 \url{https://www.jstor.org/stable/20697655}
 
-\leavevmode\vadjust pre{\hypertarget{ref-friendly_etal16}{}}%
+\bibitem[\citeproctext]{ref-friendly_etal16}
 Friendly, M., Sigal, M., \& Harnanansingh, D. (2016). The {Milestones
 Project}: {A Database} for the {History} of {Data Visualization}. In
 \emph{Visible {Numbers}}. Routledge.
 
-\leavevmode\vadjust pre{\hypertarget{ref-friendly_wainer21}{}}%
+\bibitem[\citeproctext]{ref-friendly_wainer21}
 Friendly, M., \& Wainer, H. (2021). \emph{A {History} of {Data
 Visualization} and {Graphic Communication}}. Harvard University Press.
 \url{https://doi.org/10.4159/9780674259034}
 
-\leavevmode\vadjust pre{\hypertarget{ref-gaudeul07}{}}%
+\bibitem[\citeproctext]{ref-gaudeul07}
 Gaudeul, A. (2007). Do {Open Source Developers Respond} to
 {Competition}? {The LATEX Case Study}. \emph{Review of Network
 Economics}, \emph{6}(2). \url{https://doi.org/10.2202/1446-9022.1119}
 
-\leavevmode\vadjust pre{\hypertarget{ref-glover24}{}}%
+\bibitem[\citeproctext]{ref-glover24}
 Glover, E. (2024, February 13). \emph{Machine {Translation}: {How It
 Works} and {Tools} to {Choose From}}.
 \url{https://builtin.com/artificial-intelligence/machine-translation}
 
-\leavevmode\vadjust pre{\hypertarget{ref-greussing_etal20}{}}%
+\bibitem[\citeproctext]{ref-greussing_etal20}
 Greussing, E., Kuballa, S., Taddicken, M., Schulze, M., Mielke, C., \&
 Haux, R. (2020). Drivers and {Obstacles} of {Open Access Publishing}. {A
 Qualitative Investigation} of {Individual} and {Institutional Factors}.
 \emph{Frontiers in Communication}, \emph{5}, 587465.
 \url{https://doi.org/10.3389/fcomm.2020.587465}
 
-\leavevmode\vadjust pre{\hypertarget{ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23}{}}%
+\bibitem[\citeproctext]{ref-hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23}
 Hanchen Wang, Tianfan Fu, Yuanqi Du, Wenhao Gao, Kexin Huang, Ziming
 Liu, Payal Chandak, Shengchao Liu, Peter Van Katwyk, Andreea Deac, Anima
 Anandkumar, Karianne Bergen, Carla P. Gomes, Shirley Ho, Pushmeet Kohli,
@@ -9406,256 +9274,261 @@ Zitnik. (2023). Scientific discovery in the age of artificial
 intelligence. \emph{Nature}, \emph{620}, 47--60.
 \url{https://www.nature.com/articles/s41586-023-06221-2}
 
-\leavevmode\vadjust pre{\hypertarget{ref-harari23}{}}%
+\bibitem[\citeproctext]{ref-harari23}
 Harari, Y. N. (2023). Yuval {Noah Harari} argues that {AI} has hacked
 the operating system of human civilisation. \emph{The Economist}.
 \url{https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation}
 
-\leavevmode\vadjust pre{\hypertarget{ref-hlavac22}{}}%
+\bibitem[\citeproctext]{ref-hlavac22}
 Hlavac, M. (2022). \emph{Stargazer: Beautiful {LATEX}, {HTML} and
 {ASCII} tables from {R} statistical output}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-hughes13}{}}%
+\bibitem[\citeproctext]{ref-hughes13}
 Hughes, J. (2013). Cameos, supporting roles and stars: Citation and
 reflection in the context of initial teacher education.
 \emph{Educational Research}, \emph{55}(1), 16--30.
 \url{https://doi.org/10.1080/00131881.2013.767023}
 
-\leavevmode\vadjust pre{\hypertarget{ref-ibm23}{}}%
+\bibitem[\citeproctext]{ref-ibm23}
 IBM. (2023a). \emph{What are {Neural Networks}? \textbar{} {IBM}}.
 \url{https://www.ibm.com/topics/neural-networks}
 
-\leavevmode\vadjust pre{\hypertarget{ref-ibm23a}{}}%
+\bibitem[\citeproctext]{ref-ibm23a}
 IBM. (2023b). \emph{What is {Artificial Intelligence} ({AI}) ?
 \textbar{} {IBM}}. IBM.
 \url{https://www.ibm.com/topics/artificial-intelligence}
 
-\leavevmode\vadjust pre{\hypertarget{ref-janssen17}{}}%
+\bibitem[\citeproctext]{ref-janssen17}
 Janssen, M. A. (2017). The {Practice} of {Archiving Model Code} of
 {Agent-Based Models}. \emph{Journal of Artificial Societies and Social
 Simulation}, \emph{20}(1), 2.
 
-\leavevmode\vadjust pre{\hypertarget{ref-janssen_etal20}{}}%
+\bibitem[\citeproctext]{ref-janssen_etal20}
 Janssen, M. A., Pritchard, C., \& Lee, A. (2020). On code sharing and
 model documentation of published individual and agent-based models.
 \emph{Environmental Modelling \& Software}, \emph{134}, 104873.
 \url{https://doi.org/10.1016/j.envsoft.2020.104873}
 
-\leavevmode\vadjust pre{\hypertarget{ref-just13}{}}%
+\bibitem[\citeproctext]{ref-just13}
 Just, J. (2013, March 25). \emph{Les distributions - {Groupe}
 francophone des {Utilisateurs} de {TeX}, {LaTeX} et logiciels
 compagnons}. \url{https://www.gutenberg-asso.fr/Les-distributions}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kabacoff22}{}}%
+\bibitem[\citeproctext]{ref-kabacoff22}
 Kabacoff, R. (2022). \emph{R in action: Data analysis and graphics with
 {R} and {Tidyverse}} (Third edition). Manning Publications.
 
-\leavevmode\vadjust pre{\hypertarget{ref-king_etal21}{}}%
+\bibitem[\citeproctext]{ref-king_etal21}
 King, G., Keohane, R. O., \& Verba, S. (2021). \emph{Designing {Social
 Inquiry}. {Scientific Inference} in {Qualitative Research}.} (Nouvelle
 édition). Princeton University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-knauff_nejasmic14}{}}%
+\bibitem[\citeproctext]{ref-knauff_nejasmic14}
 Knauff, M., \& Nejasmic, J. (2014). An {Efficiency Comparison} of
 {Document Preparation Systems Used} in {Academic Research} and
 {Development}. \emph{PLoS ONE}, \emph{9}(12), e115069.
 \url{https://doi.org/10.1371/journal.pone.0115069}
 
-\leavevmode\vadjust pre{\hypertarget{ref-konig_etal22}{}}%
+\bibitem[\citeproctext]{ref-konig_etal22}
 König, P. D., Krafft, T. D., Schulz, W., \& Zweig, K. A. (2022). Essence
 of {AI}. {What Is AI}? In and M. Cannarsa Cristina Poncibò (Ed.),
 \emph{The {Cambridge Handbook} of {Artificial Intelligence}} (pp.
 18--34). Cambridge University Press.
 \url{https://doi.org/10.1017/9781009072168.005}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kostoff_cummings13}{}}%
+\bibitem[\citeproctext]{ref-kostoff_cummings13}
 Kostoff, R. N., \& Cummings, R. M. (2013). Highly cited literature of
 high-speed compressible flow research. \emph{Aerospace Science and
 Technology}, \emph{26}(1), 216--234.
 \url{https://doi.org/10.1016/j.ast.2012.04.006}
 
-\leavevmode\vadjust pre{\hypertarget{ref-krahmer_etal23}{}}%
+\bibitem[\citeproctext]{ref-krahmer_etal23}
 Krähmer, D., Schächtele, L., \& Schneck, A. (2023). Care to share?
 {Experimental} evidence on code sharing behavior in the social sciences.
 \emph{PLOS ONE}, \emph{18}(8), e0289380.
 \url{https://doi.org/10.1371/journal.pone.0289380}
 
-\leavevmode\vadjust pre{\hypertarget{ref-kramer_etal14}{}}%
+\bibitem[\citeproctext]{ref-kramer_etal14}
 Kramer, A. D. I., Guillory, J. E., \& Hancock, J. T. (2014).
 Experimental evidence of massive-scale emotional contagion through
 social networks. \emph{Proceedings of the National Academy of Sciences},
 \emph{111}(24), 8788--8790.
 \url{https://doi.org/10.1073/pnas.1320040111}
 
-\leavevmode\vadjust pre{\hypertarget{ref-encyclopaediabritannica23a}{}}%
+\bibitem[\citeproctext]{ref-encyclopaediabritannica23a}
 {LaTeX} (2023).
 \url{https://www.britannica.com/technology/LaTeX-computer-programming-language}
 
-\leavevmode\vadjust pre{\hypertarget{ref-liantze23}{}}%
+\bibitem[\citeproctext]{ref-liantze23}
 LianTze, L. (2023). \emph{{ModèleCV}}.
 \url{https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv}
 
-\leavevmode\vadjust pre{\hypertarget{ref-manovich11}{}}%
+\bibitem[\citeproctext]{ref-manovich11}
 Manovich, L. (2011). Trending: {The} promises and the challenges of big
 social data. \emph{Debates in the Digital Humanities}, \emph{2}(1),
 460--475.
 \url{http://manovich.net/content/old/03-articles/64-article-2011/64-article-2011.pdf}
 
-\leavevmode\vadjust pre{\hypertarget{ref-marres17}{}}%
+\bibitem[\citeproctext]{ref-marres17}
 Marres, N. (2017). \emph{Digital {Sociology}. {The Reinvention} of
 {Social Research}.} Polity.
 
-\leavevmode\vadjust pre{\hypertarget{ref-mcadoo23}{}}%
+\bibitem[\citeproctext]{ref-mcadoo23}
 McAdoo, T. (2023, April 7). \emph{How to cite {ChatGPT}}.
 https://apastyle.apa.org.
 \url{https://apastyle.apa.org/blog/how-to-cite-chatgpt}
 
-\leavevmode\vadjust pre{\hypertarget{ref-mccarthy07}{}}%
+\bibitem[\citeproctext]{ref-mccarthy07}
 McCarthy, J. (2007). \emph{{WHAT IS ARTIFICIAL INTELLIGENCE}?}
 
-\leavevmode\vadjust pre{\hypertarget{ref-overleaf23}{}}%
+\bibitem[\citeproctext]{ref-overleaf23}
 Modèles (2023). \url{https://fr.overleaf.com/latex/templates}
 
-\leavevmode\vadjust pre{\hypertarget{ref-muenchen11}{}}%
+\bibitem[\citeproctext]{ref-muenchen11}
 Muenchen, R. A. (2011). \emph{R for {SAS} and {SPSS} users} (2nd ed).
 Springer.
 
-\leavevmode\vadjust pre{\hypertarget{ref-nayak_ka19}{}}%
+\bibitem[\citeproctext]{ref-nayak_ka19}
 Nayak, M., \& KA, N. (2019). Strengths and weakness of online surveys.
 24, 31--38. \emph{DOI}, \emph{10}, 0837--2405053138.
 
-\leavevmode\vadjust pre{\hypertarget{ref-odeny_bosurgi22}{}}%
+\bibitem[\citeproctext]{ref-odeny_bosurgi22}
 Odeny, B., \& Bosurgi, R. (2022). Time to end parachute science.
 \emph{PLOS MEDICINE}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-opensourceinitiative06}{}}%
+\bibitem[\citeproctext]{ref-opensourceinitiative06}
 Open Source Initiative. (2006, July 7). \emph{The {Open Source
 Definition}}. Open Source Initiative. \url{https://opensource.org/osd/}
 
-\leavevmode\vadjust pre{\hypertarget{ref-ozgur_etal17}{}}%
+\bibitem[\citeproctext]{ref-ozgur_etal17}
 Ozgur, C., Colliau, T., Rogers, G., Hughes, Z., \& Myer-Tyson, E.
 ＂Bennie＂. (2017). {MatLab} vs. {Python} vs. {R}. \emph{Journal of Data
 Science}, \emph{15}(3), 355--371.
 \url{https://doi.org/10.6339/JDS.201707_15(3).0001}
 
-\leavevmode\vadjust pre{\hypertarget{ref-park_etal23}{}}%
+\bibitem[\citeproctext]{ref-park_etal23}
 Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., \&
 Bernstein, M. S. (2023). Generative {Agents}: {Interactive Simulacra} of
 {Human Behavior}. \emph{arXiv}.
 \url{https://doi.org/10.48550/arXiv.2304.03442}
 
-\leavevmode\vadjust pre{\hypertarget{ref-paura_arhipova12}{}}%
+\bibitem[\citeproctext]{ref-paura_arhipova12}
 Paura, L., \& Arhipova, I. (2012). Advantages and {Disadvantages} of
 {Professional} and {Free Software} for {Teaching Statistics}.
 \emph{Information Technology and Management Science}, \emph{15}(1).
 \url{https://doi.org/10.2478/v10313-012-0001-z}
 
-\leavevmode\vadjust pre{\hypertarget{ref-peterson_etal21}{}}%
+\bibitem[\citeproctext]{ref-peterson_etal21}
 Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., \&
 Griffiths, T. L. (2021). Using {Large-Scale Experiments} and {Machine
 Learning} to {Discover Theories} of {Human Decision-Making}.
 \emph{Science}, \emph{372}(6547), 1209--1214.
 \url{https://doi.org/10.1126/science.abe2629}
 
-\leavevmode\vadjust pre{\hypertarget{ref-powell_etal}{}}%
+\bibitem[\citeproctext]{ref-powell_etal}
 Powell, A., Johnson, R., \& Herbert, R. (n.d.). \emph{Achieving an
 {Equitable Transition} to {Open Access} for {Researchers} in {Lower} and
 {Middle-Income Countries}}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-przeworski_teune70}{}}%
+\bibitem[\citeproctext]{ref-przeworski_teune70}
 Przeworski, A., \& Teune, H. (1970). \emph{The logic of comparative
 social inquiry}. John Wiley \& Sons, Ltd.
 
-\leavevmode\vadjust pre{\hypertarget{ref-racz_markovic18}{}}%
+\bibitem[\citeproctext]{ref-racz_markovic18}
 Racz, A., \& Marković, S. (2018). {``{Worth}(less) papers''} -- are
 journal impact factor and number of citations suitable indicators to
 evaluate quality of scientists? \emph{Nova Prisutnost}, \emph{XVI}(2),
 369--388. \url{https://doi.org/10.31192/np.16.2.10}
 
-\leavevmode\vadjust pre{\hypertarget{ref-roser22}{}}%
+\bibitem[\citeproctext]{ref-roser22}
 Roser, M. (2022, December 6). \emph{The {Brief History} of {Artificial
 Intelligence}: {The World Has Changed Fast} -- {What Might Be Next}?}
 Our World in Data. \url{https://ourworldindata.org/brief-history-of-ai}
 
-\leavevmode\vadjust pre{\hypertarget{ref-roux13}{}}%
+\bibitem[\citeproctext]{ref-roux13}
 Roux, E. (2013). \emph{Yet {Another Invoice Template}}. Overleaf.
 \url{https://www.overleaf.com/latex/templates/yet-another-invoice-template/ykjwmwqqjhgh}
 
-\leavevmode\vadjust pre{\hypertarget{ref-santillan-anguiano_gonzalez-machado23}{}}%
+\bibitem[\citeproctext]{ref-santillan-anguiano_gonzalez-machado23}
 Santillán-Anguiano, E. I., \& González-Machado, E. C. (2023). Advantages
 of a {Free Software Culture} for {Qualitative Researchers} in the
 {Social Sciences}. \emph{International Journal of Qualitative Research},
 \emph{3}(1), 97--103.
 \url{https://www.ojs.literacyinstitute.org/index.php/ijqr/article/view/841}
 
-\leavevmode\vadjust pre{\hypertarget{ref-sartre96}{}}%
+\bibitem[\citeproctext]{ref-sartre96}
 Sartre, J.-P. (1996). \emph{L'existentialisme est un humanisme}.
 Gallimard.
 
-\leavevmode\vadjust pre{\hypertarget{ref-serwadda_etal18}{}}%
+\bibitem[\citeproctext]{ref-schroeder14}
+Schroeder, R. (2014). Big {Data} and the brave new world of social media
+research. \emph{Big Data \& Society}, \emph{1}(2), 2053951714563194.
+\url{https://doi.org/10.1177/2053951714563194}
+
+\bibitem[\citeproctext]{ref-serwadda_etal18}
 Serwadda, D., Ndebele, P., Grabowski, M. K., Bajunirwe, F., \& Wanyenze,
 R. K. (2018). Open data sharing and the {Global South}---{Who} benefits?
 \emph{Science}, \emph{359}(6376), 642--643.
 \url{https://doi.org/10.1126/science.aap8395}
 
-\leavevmode\vadjust pre{\hypertarget{ref-sievert20}{}}%
+\bibitem[\citeproctext]{ref-sievert20}
 Sievert, C. (2020). \emph{Interactive {Web-Based Data Visualization}
 with {R}, plotly, and shiny}. CRC Press.
 \url{https://books.google.com?id=7zPNDwAAQBAJ}
 
-\leavevmode\vadjust pre{\hypertarget{ref-smith02}{}}%
+\bibitem[\citeproctext]{ref-smith02}
 Smith, B. L. (2002). The {Future} of {Software}: {Enabling} the
 {Marketplace} to {Decide}. In R. W. Hahn (Ed.), \emph{Government
 {Policy} toward {Open Source Software}} (pp. 69--86). Brookings
 Institution Press.
 \url{https://www.jstor.org/stable/10.7864/j.ctvbd8kmv.8}
 
-\leavevmode\vadjust pre{\hypertarget{ref-stallman86}{}}%
+\bibitem[\citeproctext]{ref-stallman86}
 Stallman, R. (1986). \emph{{GNU}'s {Bulletin}}.
 \url{https://www.gnu.org/bulletins/bull1.txt}
 
-\leavevmode\vadjust pre{\hypertarget{ref-stallman22}{}}%
+\bibitem[\citeproctext]{ref-stallman22}
 Stallman, R. (2022). \emph{En quoi l'open source perd de vue l'éthique
 du logiciel libre - {Projet GNU} - {Free Software Foundation}}. Système
 d'exploitation GNU.
 \url{https://www.gnu.org/philosophy/open-source-misses-the-point.html}
 
-\leavevmode\vadjust pre{\hypertarget{ref-systemedexploitationgnu23}{}}%
+\bibitem[\citeproctext]{ref-systemedexploitationgnu23}
 Système d'exploitation GNU. (2023). \emph{Catégories de logiciels libres
 et non libres - {Projet GNU} - {Free Software Foundation}}. Système
 d'exploitation GNU.
 \url{https://www.gnu.org/philosophy/categories.html\#}
 
-\leavevmode\vadjust pre{\hypertarget{ref-tabsharani23}{}}%
+\bibitem[\citeproctext]{ref-tabsharani23}
 Tabsharani, F. (2023, August). \emph{What is {Machine Translation}?
 {Definition} from {TechTarget}}. Enterprise AI.
 \url{https://www.techtarget.com/searchenterpriseai/definition/machine-translation}
 
-\leavevmode\vadjust pre{\hypertarget{ref-goldfarb96}{}}%
+\bibitem[\citeproctext]{ref-goldfarb96}
 The {Roots} of {SGML} -- {A Personal Recollection} (1996).
 \url{http://www.sgmlsource.com/history/roots.htm}
 
-\leavevmode\vadjust pre{\hypertarget{ref-tippmann15}{}}%
+\bibitem[\citeproctext]{ref-tippmann15}
 Tippmann, S. (2015). Programming tools: {Adventures} with {R}.
 \emph{Nature}, \emph{517}(7532), 109--110.
 \url{https://doi.org/10.1038/517109a}
 
-\leavevmode\vadjust pre{\hypertarget{ref-wang19}{}}%
+\bibitem[\citeproctext]{ref-wang19}
 Wang, P. (2019). On {Defining Artificial Intelligence}. \emph{Journal of
 Artificial General Intelligence}, \emph{10}(2), 1--37.
 \url{https://doi.org/10.2478/jagi-2019-0002}
 
-\leavevmode\vadjust pre{\hypertarget{ref-weise_metz23}{}}%
+\bibitem[\citeproctext]{ref-weise_metz23}
 Weise, K., \& Metz, C. (2023). When {A}.{I}. {Chatbots Hallucinate}.
 \emph{The New York Times}.
 \url{https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html}
 
-\leavevmode\vadjust pre{\hypertarget{ref-wickham09}{}}%
+\bibitem[\citeproctext]{ref-wickham09}
 Wickham, H. (2009). \emph{Ggplot2: {Elegant Graphics} for {Data
 Analysis}}. Springer New York.
 \url{https://doi.org/10.1007/978-0-387-98141-3}
 
-\leavevmode\vadjust pre{\hypertarget{ref-wickham_etal19}{}}%
+\bibitem[\citeproctext]{ref-wickham_etal19}
 Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L., François,
 R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen,
 T., Miller, E., Bache, S., Müller, K., Ooms, J., Robinson, D., Seidel,
@@ -9663,28 +9536,28 @@ D., Spinu, V., \ldots{} Yutani, H. (2019). Welcome to the {Tidyverse}.
 \emph{Journal of Open Source Software}, \emph{4}(43), 1686.
 \url{https://doi.org/10.21105/joss.01686}
 
-\leavevmode\vadjust pre{\hypertarget{ref-wickham_etal23}{}}%
+\bibitem[\citeproctext]{ref-wickham_etal23}
 Wickham, H., Çetinkaya-Rundel, M., \& Grolemund, G. (2023). \emph{R for
 data science: Import, tidy, transform, visualize, and model data}
 (Second edition). O'Reilly.
 
-\leavevmode\vadjust pre{\hypertarget{ref-williams_etal10}{}}%
+\bibitem[\citeproctext]{ref-williams_etal10}
 Williams, S., Stallman, R. M., \& Masutti, C. (2010). \emph{Richard
 Stallman et la révolution du logiciel libre - Une biographie autorisée}.
 Eyrolles.
 \url{https://iso.framadvd.org/standard/content2011/ubuntu/Data/Documents/pdf/framabooks/framabook6_stallman_v1_gnu-fdl.pdf}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Wow}{}}%
+\bibitem[\citeproctext]{ref-Wow}
 \emph{Wow! {Ten} million users!} (n.d.). Retrieved March 9, 2024, from
 \url{https://www.overleaf.com/blog/wow-ten-million-users}
 
-\leavevmode\vadjust pre{\hypertarget{ref-yu_munoz-justicia22}{}}%
+\bibitem[\citeproctext]{ref-yu_munoz-justicia22}
 Yu, J., \& Muñoz-Justicia, J. (2022). Free and {Low-Cost Twitter
 Research Software Tools} for {Social Science}. \emph{Social Science
 Computer Review}, \emph{40}(1), 124--149.
 \url{https://doi.org/10.1177/0894439320904318}
 
-\leavevmode\vadjust pre{\hypertarget{ref-zaid_etal17}{}}%
+\bibitem[\citeproctext]{ref-zaid_etal17}
 Zaid, Y. H., Shamsudin, S., \& Habil, H. (2017). Exploring {Citations}
 in {Chemical Engineering Literature Review}. \emph{LSP International
 Journal}, \emph{4}(1, 1). \url{https://doi.org/10.11113/lspi.v4n1.46}
