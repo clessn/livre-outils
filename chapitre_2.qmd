@@ -4,7 +4,7 @@
 
 Commentaires d'Adrien
 
-- Manque intro - Qu'est-ce que ça fait un langage de prog? - MARC
+- Manque intro - Qu'est-ce que ça fait un langage de prog? - MARC [x]
 - Mentionner les compagnies pour les autres logiciels? - MARC
 - Expliquer bottom up en francais - LAURENCE-OLIVIER [x] 
 - Ajouter CRAN dans l'historique de R - MARC
@@ -19,15 +19,24 @@ Commentaires d'Adrien
 -->
 ## Introduction: Qu'est-ce que c'est, la programmation? 
 
-<<<<<<< HEAD
-Un langage de programmation est un ensemble d'instructions écrites par un programmeur pour fournir des instructions à l'ordinateur afin d'exécuter et d'accomplir une tâche. C’est comme une recette de cuisine, vous pouvez vous considérer comme l’ordinateur et l’auteur de la recette comme un programmeur. L’auteur de la recette vous fournit un ensemble d’instructions que vous lisez puis suivez. Plus les instructions sont complexes, plus le résultat l’est aussi. 
+Un langage de programmation est un ensemble d'instructions écrites par un programmeur pour fournir des instructions à l'ordinateur afin d'exécuter et d'accomplir une tâche. 
+C’est comme une recette de cuisine, vous pouvez vous considérer comme l’ordinateur et l’auteur de la recette comme un programmeur.
+L’auteur de la recette vous fournit un ensemble d’instructions que vous lisez puis suivez. 
+Plus les instructions sont complexes, plus le résultat l’est aussi. 
 
-Un langage de programmation est utilisé dans la programmation informatique en tant que langage formel. Il se compose d'ensembles d'instructions pour les ordinateurs afin d'implémenter des algorithmes. Les langages de haut niveau, tels que R, Python, Java et C++, sont indépendants du matériel. Ils sont traduits à l'aide d'un compilateur ou d'un traducteur. Le langage assembleur est un langage de bas niveau. L'assembleur est type de langage de programmation constitué principalement d'équivalents symboliques du langage machine d'un ordinateur particulier. 
+Un langage de programmation est utilisé dans la programmation informatique en tant que langage formel. 
+Il se compose d'ensembles d'instructions pour les ordinateurs afin d'implémenter des algorithmes. 
+Les langages de haut niveau, tels que R, Python, Java et C++, sont indépendants du matériel. 
+Ils sont traduits à l'aide d'un compilateur ou d'un traducteur.
+Le langage assembleur est un langage de bas niveau.
+L'assembleur est type de langage de programmation constitué principalement d'équivalents symboliques du langage machine d'un ordinateur particulier. 
 
-Les langages de programmation ne sont pas seulement des langages formels et machines, mais aussi des langages fondamentalement humains. Ils impliquent des processus cognitifs favorisant la construction de modèles mentaux. Ils ressemblent aux langues comme l’anglais et le français, dans le sens où les langages de programmation contiennent notamment aussi la syntaxe, la grammaire et le vocabulaire. La programmation implique la codification des concepts informatiques fondamentaux qui apparaissent dans tous les langages et la synthèse de ces concepts dans la construction d'outils et de systèmes pour le développement de programmes. Les langages de programmation sont essentiels pour exprimer des idées de manière précise et rigoureuse, permettant à la fois aux machines d'exécuter des commandes et aux humains de comprendre la logique sous-jacente. 
+Les langages de programmation ne sont pas seulement des langages formels et machines, mais aussi des langages fondamentalement humains. 
+Ils impliquent des processus cognitifs favorisant la construction de modèles mentaux. 
+Ils ressemblent aux langues comme l’anglais et le français, dans le sens où les langages de programmation contiennent notamment aussi la syntaxe, la grammaire et le vocabulaire. 
+La programmation implique la codification des concepts informatiques fondamentaux qui apparaissent dans tous les langages et la synthèse de ces concepts dans la construction d'outils et de systèmes pour le développement de programmes. 
+Les langages de programmation sont essentiels pour exprimer des idées de manière précise et rigoureuse, permettant à la fois aux machines d'exécuter des commandes et aux humains de comprendre la logique sous-jacente. 
 
-=======
->>>>>>> 075ee18ec5602d7eb8654dd5c7d7cc3902701b44
 ## Point d'observation: Histoire des langages de programmation pour l'analyse de données
 
 L’histoire des langages de programmation dédiés à l’analyse de données s’inscrit dans une évolution constante des besoins et des méthodes en sciences sociales. 
