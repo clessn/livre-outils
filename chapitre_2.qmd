@@ -1,12 +1,31 @@
 # Langages de programmation {#sec-chap2}
 
+<!-- TODO: 
+
+Commentaires d'Adrien
+
+- Manque intro - Qu'est-ce que ça fait un langage de prog?
+- Mentionner les compagnies pour les autres logiciels?
+- Expliquer bottom up en francais
+- Ajouter CRAN dans l'historique
+- Préciser c'est quoi la coloration syntaxique.
+- Pourquoi RStudio ? Clarifier que pour utiliser R on a besoin de RStudio ou un IDE
+- Mentionner que R est un outil versatile qui permet de faire tout ce qu'on veut?
+- Metter plus l'accent sur pourquoi R est le best pour ce qu'on fait.
+- Expliquer le terminal?
+- Présenter et mettre le tableau plus haut. Après avoir discuté des autres langages de programmation.
+- Pertinence dans le monde du travail
+
+-->
+
+
 ## Point d'observation: Histoire des langages de programmation pour l'analyse de données
 
 L’histoire des langages de programmation dédiés à l’analyse de données s’inscrit dans une évolution constante des besoins et des méthodes en sciences sociales. 
 Avant l’ère numérique, l’analyse de données se faisait principalement à la main ou à l’aide de calculatrices mécaniques, avec des méthodes statistiques standardisées mais limitées par la capacité humaine à traiter des volumes massifs d’informations. 
 Ces contraintes ont poussé les chercheurs à chercher des moyens plus efficaces de manipuler les données, ce qui a ouvert la voie à l’ère informatique et aux premiers logiciels dédiés à la statistique.
 
-Dans les années 1960 et 1970, les premiers langages et logiciels statistiques, tels que kSPSS (1968), SAS (1976), et STATA (1985), ont vu le jour.
+Dans les années 1960 et 1970, les premiers langages et logiciels statistiques, tels que SPSS (1968), SAS (1976), et STATA (1985), ont vu le jour.
 Ces outils permettaient aux chercheurs d’automatiser les calculs statistiques complexes sur des ordinateurs de grande taille, en accélérant considérablement les analyses. 
 Ces logiciels propriétaires ont joué un rôle crucial dans la standardisation de l’analyse statistique en sciences sociales, en offrant des plateformes robustes, mais souvent coûteuses et rigides.
 
