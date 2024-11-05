@@ -5,11 +5,11 @@
 Commentaires d'Adrien
 
 - Manque intro - Qu'est-ce que ça fait un langage de prog? - MARC [x]
-- Mentionner les compagnies pour les autres logiciels? - MARC
+- Mentionner les compagnies pour les autres logiciels? - MARC [cancel]
 - Expliquer bottom up en francais - LAURENCE-OLIVIER [x] 
-- Ajouter CRAN dans l'historique de R - MARC
+- Ajouter CRAN dans l'historique de R - MARC [cancel]
 - Préciser c'est quoi la coloration syntaxique. -LAURENCE-OLIVIER [x]
-- Pourquoi RStudio ? Clarifier que pour utiliser R on a besoin de RStudio ou un IDE - MARC
+- Pourquoi RStudio ? Clarifier que pour utiliser R on a besoin de RStudio ou un IDE - MARC [x]
 - Mentionner que R est un outil versatile qui permet de faire tout ce qu'on veut? - MARC
 - Mettez plus l'accent sur pourquoi R est le best pour ce qu'on fait. -MARC
 - Expliquer le terminal? - LAURENCE-OLIVIER [x]
@@ -103,13 +103,13 @@ tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils
 
 ## Arpentage et choix éditorial: Pourquoi R?
 
-Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages *OpenSource* tels que Python et Julia. 
-**R** est un langage de programmation *OpenSource* développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. 
-Le langage de programmation **R** a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. 
-L'un de ses grands avantages est qu'il est *OpenSource*. 
+Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages *open source* tels que Python et Julia. 
+R est un langage de programmation *OpenSource* développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. 
+Le langage de programmation R a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. 
+L'un de ses grands avantages est qu'il est *open source*. 
 Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l'argument, à savoir que : 
-1) l'*OpenSource* est gratuit d'utilisation; 
-2) l'*OpenSource* est développé par les utilisateurs et non par des corporations, ce qui lui procure une grande flexibilité; et 
+1) l'*open source* est gratuit d'utilisation; 
+2) l'*open source* est développé par les utilisateurs et non par des corporations, ce qui lui procure une grande flexibilité; et 
 3) il permet aux utilisateurs de créer leurs propres fonctions qui répondent à leurs besoins. 
 À l'inverse, les logiciels à licences sont coûteux, rigides et l'ajout de fonctionnalités se fait par les développeurs internes à la compagnie. 
 Ces formalités rendent le processus plus lent et réduisent l'éventail des possibilités pour la personne chercheuse. 
@@ -118,27 +118,27 @@ Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, @muenchen11 soul�
 Il en va de même pour le développement des *packages* R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. 
 De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. 
 Le fait que SAS et SPSS permettent à leur utilisateur d'intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l'utilité de R [@muenchen11]. 
-Le langage de programmation **R** permet également de réaliser une grande quantité de tâches de recherche. 
-En effet, les personnes programmant en **R** peuvent notamment manipuler et visualiser des données, faire différents types d'analyses, créer des fonctions et faire les automatiser en plus de pouvoir combiner **R** avec certains langages de balisages comme LaTeX, Markdown et HTML.
+Le langage de programmation R permet également de réaliser une grande quantité de tâches de recherche. 
+En effet, les personnes programmant en R peuvent notamment manipuler et visualiser des données, faire différents types d'analyses, créer des fonctions et faire les automatiser en plus de pouvoir combiner R avec certains langages de balisages comme LaTeX, Markdown et HTML.
 
-D'un autre côté, l'utilisation du langage de programmation **R** peut être perçue comme ayant certains inconvénients. 
+D'un autre côté, l'utilisation du langage de programmation R peut être perçue comme ayant certains inconvénients. 
 Plusieurs disent que la courbe d'apprentissage peut être plus grande que celle de programmes à licences. 
 La véracité de cet argument est discutable. Les programmes demandant des licences ont également un coût d'entrée. 
 De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d'adaptation pour la personne chercheuse. 
-D'autres disent que le développement *OpenSource*, spécifiquement celui du langage de programmation **R**, se fait de façon anarchique. 
+D'autres disent que le développement *open source*, spécifiquement celui du langage de programmation R, se fait de façon anarchique. 
 Cela est davantage une question d'opinion et de conception du monde qu'une vérité. 
-Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en **R** peut collaborer à cette communauté. 
+Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en R peut collaborer à cette communauté. 
 Bien qu'il n'y ait pas d'autorité centrale, les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Le site a une politique de dépôt stricte, ainsi les *packages* doivent être suffisamment documentés. 
-Il est également possible d'y télécharger le langage de programmation **R**. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
+Il est également possible d'y télécharger le langage de programmation R. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
 
 
 ## Manuel d'instruction: Apprendre à programmer en R
 
 ### Où coder en R ?
 
-Un environnement de développement intégré (IDE) permet aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique.
+La programmation peut se faire de différentes façons, mais un point commun entre tous les langages est la nécessité  pour l'utilisateur de communiquer avec son ordinateur. Cette communication peut se faire par le terminal ou directement dans l'éditeur du langage. Elle peut aussi se faire dans un environnement de développement intégré (IDE). Les IDE permettent aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique.
 Il permet de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit.
-Les environnements de développement intégrés sont conçus pour maximiser la productivité des programmeurs.
+Les environnements de développement intégrés sont conçus pour maximiser la productivité des programmeurs. L'utilisation d'un IDE n'est pas obligatoire, mais elle facilite la tâche des programmeurs, surtout pour les utilisateurs débutants. 
 Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique (Le surlignage différent pour chaques éléments du code) et le contrôle de version -- pour créer, modifier et compiler du code.
 Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique.
 Par conséquent, ils contiennent des fonctionnalités qui sont plus adaptées aux paradigmes de programmation du langage auquel ils sont associés.
