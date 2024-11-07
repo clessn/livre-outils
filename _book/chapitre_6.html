@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr_FR" xml:lang="fr_FR"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)">
-<title>6&nbsp; Outils de visualisation graphique – Outils de recherche en sciences sociales numériques</title>
+<title>Outils de recherche en sciences sociales numériques - 6&nbsp; Outils de visualisation graphique</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -31,7 +31,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -56,7 +56,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -100,13 +99,7 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -115,7 +108,6 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -129,23 +121,23 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Outils de recherche en sciences sociales numériques</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/clessn/livre-outils" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -236,7 +228,7 @@ div.csl-indent {
 </li>
     </ul>
 </div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
@@ -259,7 +251,7 @@ div.csl-indent {
   <li><a href="#aller-plus-loin-la-visualisation-interactive-des-donn%C3%A9es" id="toc-aller-plus-loin-la-visualisation-interactive-des-données" class="nav-link" data-scroll-target="#aller-plus-loin-la-visualisation-interactive-des-donn%C3%A9es"><span class="header-section-number">6.3.3</span> Aller plus loin: La visualisation interactive des données</a></li>
   </ul>
 </li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -278,10 +270,9 @@ div.csl-indent {
   </div>
   
 
-
 </header><section id="point-dobservation-historique-de-la-visualisation-graphique" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="point-dobservation-historique-de-la-visualisation-graphique">
 <span class="header-section-number">6.1</span> Point d’observation: historique de la visualisation graphique</h2>
-<p>Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d’un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s’agit alors de trouver la meilleure manière de rendre l’information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d’une recherche empirique.</p>
+<p>Ce chapitre a pour objectif de souligner l’importance de la visualisation des données tout au long du processus de recherche, depuis l’obtention des données pour l’analyse exploratoire des données (exploratory data analysis) jusqu’aux graphiques finaux de vos articles. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, le chercheur peut rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s’agit de trouver la meilleure manière de rendre l’information digeste pour les experts de votre discipline académique ou pour le grand public. Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d’une recherche empirique.</p>
 <p>Pour comprendre l’évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le <em>Milestones Project</em> de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique <span class="citation" data-cites="friendly_etal16">(<a href="references.html#ref-friendly_etal16" role="doc-biblioref">Friendly et al., 2016</a>)</span>.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -306,25 +297,101 @@ div.csl-indent {
 <p>Aujourd’hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l’essor des données massives (<em>Big data</em>) et de l’intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d’informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques.</p>
 </section></section><section id="arpentage-et-choix-éditorial" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial">
 <span class="header-section-number">6.2</span> Arpentage et choix éditorial:</h2>
-<p>Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélections établis au chapitre 1.</p>
-<p>Tout d’abord, il est important de comprendre que l’accessibilité financière est un critère déterminant. <em>R</em> est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. <em>Python</em> partage cette accessibilité, ce qui le place également parmi les outils favoris pour l’analyse de données <span class="citation" data-cites="ozgur_etal17">(<a href="references.html#ref-ozgur_etal17" role="doc-biblioref">Ozgur et al., 2017</a>)</span>. En revanche, d’autres logiciels comme <em>Tableau</em> ou <em>Excel</em> nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.</p>
-<p>L’existence d’une communauté d’utilisateurs solide est un autre point fort pour <em>R</em>. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l’apprentissage, la résolution de problèmes, et le partage de connaissances. <em>Python</em>, lui aussi, bénéficie d’une communauté active, couvrant un large spectre d’applications allant bien au-delà de la visualisation de données, tandis que les communautés autour de logiciels comme <em>Tableau</em> ou <em>Excel</em> sont davantage orientées vers des usages plus standardisés.</p>
-<p>La popularité dans le champ de la visualisation est également un facteur de taille. <em>R</em> est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque <em>ggplot2</em> est devenue une référence pour créer des graphiques sophistiqués et clairs. <em>Python</em> est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme matplotlib et seaborn. <em>Tableau</em> et <em>Excel</em>, quant à eux, sont plus fréquemment utilisés dans le secteur commercial pour des visualisations rapides et des analyses exploratoires, mais ils peuvent être limités en termes de complexité graphique et de personnalisation.</p>
-<p>L’un des aspects les plus convaincants pour choisir <em>R</em> est sa compatibilité avec d’autres outils et formats de données. Que ce soit pour importer des fichiers <em>CSV</em>, <em>Excel</em>, ou accéder à des bases de données <em>SQL</em>, <em>R</em> offre une variété de packages qui facilitent l’intégration de données dans des flux de travail complexes. <em>Python</em> partage cette compatibilité, avec des outils tels que pandas pour la manipulation de données. Bien que <em>Tableau</em> et <em>Excel</em> offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s’avérer plus contraignante, notamment pour automatiser des processus d’analyse.</p>
-<p>Un autre critère essentiel est la transparence et la réplicabilité. <em>R</em>, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. <em>Python</em> offre le même niveau de transparence, tandis que <em>Tableau</em> et <em>Excel</em>, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données.</p>
-<p>Enfin, l’adaptabilité et la flexibilité de <em>R</em> le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l’infini avec <code>ggplot2</code> ou d’ajouter de l’interactivité avec <code>shiny</code> confère à <em>R</em> une flexibilité inégalée. <em>Python</em> est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans <em>R</em>. <em>Tableau</em> offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à <em>Excel</em>, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec <em>R</em> et <em>Python</em>.</p>
-<p>En somme, nous mettons en avant <em>R</em> comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de <em>Python</em>, et la pertinence d’autres logiciels comme <em>Tableau</em> ou <em>Excel</em> pour des usages spécifiques, <em>R</em> se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.</p>
+<p>Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélection établis au chapitre 1, résumés dans le <strong>Tableau 6</strong>.</p>
+<p>Tout d’abord, il est important de comprendre que l’accessibilité financière est un critère déterminant. Comme le montre le <strong>Tableau 6</strong>, <em>R</em> est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. <em>Python</em> partage cette accessibilité, ce qui le place également parmi les outils favoris pour l’analyse de données <span class="citation" data-cites="ozgur_etal17">(<a href="references.html#ref-ozgur_etal17" role="doc-biblioref">Ozgur et al., 2017</a>)</span>. En revanche, d’autres logiciels comme <em>Tableau</em> ou <em>Excel</em> nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.</p>
+<p>L’existence d’une communauté d’utilisateurs solide est un autre point fort pour <em>R</em>. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l’apprentissage, la résolution de problèmes, et le partage de connaissances. Comme indiqué dans le <strong>Tableau 6</strong>, <em>Python</em> bénéficie également d’une grande et active communauté, couvrant un large spectre d’applications allant bien au-delà de la visualisation de données. Les communautés autour de logiciels comme <em>Tableau</em> ou <em>Excel</em> sont présentes mais davantage orientées vers des usages plus standardisés.</p>
+<p>La popularité dans le champ de la visualisation est également un facteur de taille. <em>R</em> est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque <em>ggplot2</em> est devenue une référence pour créer des graphiques sophistiqués et clairs. <em>Python</em> est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme <code>matplotlib</code> et <code>seaborn</code>. Comme le souligne le <strong>Tableau 6</strong>, <em>Tableau</em> est populaire pour la visualisation, surtout dans le secteur commercial, tandis que <em>Excel</em> est souvent utilisé pour des tâches plus simples.</p>
+<p>L’un des aspects les plus convaincants pour choisir <em>R</em> est sa compatibilité avec d’autres outils et formats de données. Que ce soit pour importer des fichiers CSV, Excel, ou accéder à des bases de données SQL, <em>R</em> offre une variété de packages qui facilitent l’intégration de données dans des flux de travail complexes. <em>Python</em> partage cette compatibilité, avec des outils tels que <code>pandas</code> pour la manipulation de données. Bien que <em>Tableau</em> et <em>Excel</em> offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s’avérer plus contraignante, notamment pour automatiser des processus d’analyse.</p>
+<p>Un autre critère essentiel est la transparence et la réplicabilité. <em>R</em>, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. <em>Python</em> offre le même niveau de transparence. Cependant, comme le montre le <strong>Tableau 6</strong>, <em>Tableau</em> et <em>Excel</em>, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données, ce qui limite la réplicabilité.</p>
+<p>Enfin, l’adaptabilité et la flexibilité de <em>R</em> le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l’infini avec <code>ggplot2</code> ou d’ajouter de l’interactivité avec <code>shiny</code> confère à <em>R</em> une flexibilité inégalée. <em>Python</em> est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans <em>R</em>. Comme indiqué dans le <strong>Tableau 6</strong>, <em>Tableau</em> offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à <em>Excel</em>, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec <em>R</em> et <em>Python</em>.</p>
+<p>En somme, comme le résume le <strong>Tableau 6</strong>, nous mettons en avant <em>R</em> comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de <em>Python</em> et la pertinence d’autres logiciels comme <em>Tableau</em> ou <em>Excel</em> pour des usages spécifiques, <em>R</em> se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.</p>
 <div class="cell">
 <div class="cell-output-display">
-<!-- preamble start -->
+
+ 
+
+  
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tinytable_jy6vq4c0moyqi3j2g564</title>
+<style>
+.table td.tinytable_css_ouszegwgzpjt42n6c634, .table th.tinytable_css_ouszegwgzpjt42n6c634 {    border-bottom: solid 0.1em #d3d8dc; }
+    </style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script><div class="container">
+      <table class="table table-borderless" id="tinytable_jy6vq4c0moyqi3j2g564" style="table-layout: fixed; width: 75% !important; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+<thead>
+</thead><caption>Résumé des principaux outils de visualisation graphique</caption>
+              <tbody><tr>
+<th scope="col">Critères</th>
+                <th scope="col">R</th>
+                <th scope="col">Python</th>
+                <th scope="col">Tableau</th>
+                <th scope="col">Excel</th>
+              </tr>
+
+</tbody><tbody>
+<tr>
+<td>Accessibilité (Gratuit ou peu dispendieux)</td>
+                  <td>Gratuit                        </td>
+                  <td>Gratuit                            </td>
+                  <td>Payant                               </td>
+                  <td>Payant                       </td>
+                </tr>
+<tr>
+<td>Existence d'une communauté d'utilisateurs </td>
+                  <td>Forte et active                </td>
+                  <td>Grande et active                   </td>
+                  <td>En croissance                        </td>
+                  <td>Large                        </td>
+                </tr>
+<tr>
+<td>Popularité dans le champ                  </td>
+                  <td>Populaire                      </td>
+                  <td>Courant en science des données     </td>
+                  <td>Populaire                            </td>
+                  <td>Populaire pour tâches simples</td>
+                </tr>
+<tr>
+<td>Compatibilité avec d'autres outils        </td>
+                  <td>Nombreux packages d'intégration</td>
+                  <td>Nombreux packages d'intégration    </td>
+                  <td>Intégration variée (bases de données)</td>
+                  <td>Compatibilité avec Microsoft </td>
+                </tr>
+<tr>
+<td>Transparence et réplicabilité             </td>
+                  <td>Open-source, réplicable        </td>
+                  <td>Open-source, réplicable            </td>
+                  <td>Peu réplicable (propriétaire)        </td>
+                  <td>Peu réplicable (propriétaire)</td>
+                </tr>
+<tr>
+<td>Adaptabilité et flexibilité               </td>
+                  <td>Hautement personnalisable      </td>
+                  <td>Flexible (nombreuses bibliothèques)</td>
+                  <td>Moins personnalisable                </td>
+                  <td>Pour visualisations simples  </td>
+                </tr>
+</tbody>
+</table>
+</div>
 
     <script>
-      function styleCell_73ty8vvivaie4t87ph1x(i, j, css_id) {
-        var table = document.getElementById("tinytable_73ty8vvivaie4t87ph1x");
+      function styleCell_tinytable_5psujxh7ddykiqq9vwl8(i, j, css_id) {
+        var table = document.getElementById("tinytable_jy6vq4c0moyqi3j2g564");
         table.rows[i].cells[j].classList.add(css_id);
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_73ty8vvivaie4t87ph1x');
+        var table = document.getElementById('tinytable_jy6vq4c0moyqi3j2g564');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -332,8 +399,8 @@ div.csl-indent {
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_73ty8vvivaie4t87ph1x(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_73ty8vvivaie4t87ph1x");
+      function spanCell_tinytable_5psujxh7ddykiqq9vwl8(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_jy6vq4c0moyqi3j2g564");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -359,73 +426,13 @@ div.csl-indent {
         targetCell.rowSpan = rowspan;
         targetCell.colSpan = colspan;
       }
-window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 0, 'tinytable_css_id1ss3hrhfckbd5befvwo6') })
-window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 1, 'tinytable_css_id1ss3hrhfckbd5befvwo6') })
-window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 2, 'tinytable_css_id1ss3hrhfckbd5befvwo6') })
-window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 3, 'tinytable_css_id1ss3hrhfckbd5befvwo6') })
-window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 4, 'tinytable_css_id1ss3hrhfckbd5befvwo6') })
-    </script><style>
-    .table td.tinytable_css_id1ss3hrhfckbd5befvwo6, .table th.tinytable_css_id1ss3hrhfckbd5befvwo6 {  border-bottom: solid 0.1em #d3d8dc; }
-    </style>
-<div class="container">
-      <table class="table table-borderless" id="tinytable_73ty8vvivaie4t87ph1x" style="table-layout: fixed; width: 75% !important; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-<thead>
-</thead><caption>Résumé des principaux outils de visualisation graphique</caption>
-              <tbody><tr>
-<th scope="col">Critères</th>
-                <th scope="col">R</th>
-                <th scope="col">Python</th>
-                <th scope="col">Tableau</th>
-                <th scope="col">Excel</th>
-              </tr>
 
-</tbody><tbody>
-<tr>
-<td>Accessibilité (Gratuit ou peu dispendieux)</td>
-                  <td>Oui (Gratuit)                                            </td>
-                  <td>Oui (Gratuit)                                                      </td>
-                  <td>Non (Payant)                                                                </td>
-                  <td>Non (Payant)                                                          </td>
-                </tr>
-<tr>
-<td>Existence d'une communauté d'utilisateurs </td>
-                  <td>Oui (Forte communauté active)                            </td>
-                  <td>Oui (Grande communauté active)                                     </td>
-                  <td>Oui (Communauté grandissante)                                               </td>
-                  <td>Oui (Large communauté d'utilisateurs)                                 </td>
-                </tr>
-<tr>
-<td>Popularité dans le champ                  </td>
-                  <td>Populaire dans l'analyse de données                      </td>
-                  <td>Populaire dans l'analyse de données et la science des données      </td>
-                  <td>Populaire dans la visualisation des données                                 </td>
-                  <td>Très populaire pour des analyses de données simples                   </td>
-                </tr>
-<tr>
-<td>Compatibilité avec d'autres outils        </td>
-                  <td>Bonne compatibilité (nombreux packages pour intégration) </td>
-                  <td>Très compatible (bibliothèques telles que pandas, matplotlib, etc.)</td>
-                  <td>Bonne compatibilité (intégration avec diverses bases de données et fichiers)</td>
-                  <td>Bonne compatibilité (partage facile avec d'autres logiciels Microsoft)</td>
-                </tr>
-<tr>
-<td>Transparence et réplicabilité             </td>
-                  <td>Oui (Open-source, réplicable)                            </td>
-                  <td>Oui (Open-source et réplicable)                                    </td>
-                  <td>Partiellement (Propriétaire, mais partage possible)                         </td>
-                  <td>Non (Propriétaire, moins réplicable)                                  </td>
-                </tr>
-<tr>
-<td>Adaptabilité et flexibilité               </td>
-                  <td>Flexible (hautement personnalisable avec divers packages)</td>
-                  <td>Flexible (nombreuses bibliothèques disponibles)                    </td>
-                  <td>Flexible (fonctionnalités avancées mais moins personnalisable que R/Python) </td>
-                  <td>Peu flexible (principalement pour des visualisations simples)         </td>
-                </tr>
-</tbody>
-</table>
-</div>
-<!-- hack to avoid NA insertion in last line -->
+window.addEventListener('load', function () { styleCell_tinytable_5psujxh7ddykiqq9vwl8(0, 0, 'tinytable_css_ouszegwgzpjt42n6c634') })
+window.addEventListener('load', function () { styleCell_tinytable_5psujxh7ddykiqq9vwl8(0, 1, 'tinytable_css_ouszegwgzpjt42n6c634') })
+window.addEventListener('load', function () { styleCell_tinytable_5psujxh7ddykiqq9vwl8(0, 2, 'tinytable_css_ouszegwgzpjt42n6c634') })
+window.addEventListener('load', function () { styleCell_tinytable_5psujxh7ddykiqq9vwl8(0, 3, 'tinytable_css_ouszegwgzpjt42n6c634') })
+window.addEventListener('load', function () { styleCell_tinytable_5psujxh7ddykiqq9vwl8(0, 4, 'tinytable_css_ouszegwgzpjt42n6c634') })
+    </script>
 </div>
 </div>
 </section><section id="manuel-dinstruction-la-visualisation-graphique-avec-r" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="manuel-dinstruction-la-visualisation-graphique-avec-r">
@@ -435,13 +442,13 @@ window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 
 <span class="header-section-number">6.3.1</span> Pour les analyses descriptives</h3>
 <section id="base-r" class="level4" data-number="6.3.1.1"><h4 data-number="6.3.1.1" class="anchored" data-anchor-id="base-r">
 <span class="header-section-number">6.3.1.1</span> Base R</h4>
-<p>Le <em>Base R</em> est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de <em>packages</em> au préalable. Le <em>Base R</em> permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d’une variable ou pour regarder la relation entre deux d’entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction <em>plot()</em>. Avec la fonction <em>plot()</em>, le codeur peut visualiser la distribution d’une variable seule en spécifiant l’axe des <em>x</em> dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l’intérieur de la fonction celles qui composeront les axes des <em>x</em> et des <em>y</em> du graphique. Les fonctions <em>barplot(), hist()</em> ou <em>boxplot()</em> disponibles dans le <em>Base R</em> permettent de spécifier le style de graphique souhaité, qu’on veuille représenter nos données sous forme de diagramme à barre, d’histogramme ou de diagramme en boîtes <span class="citation" data-cites="kabacoff22">(<a href="references.html#ref-kabacoff22" role="doc-biblioref">Kabacoff, 2022, p. 119‑132</a>)</span>.</p>
-<p>Alors qu’un peu tout peut être fait avec le <em>Base R</em>, ce langage demeure élémentaire; il est difficile d’innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le <em>Base R</em> peut sembler plus simple pour l’exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu’on cherche à améliorer l’esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que <code>lattice</code> et <code>ggplot2</code> permettent plus facilement<span class="citation" data-cites="wickham09">(<a href="references.html#ref-wickham09" role="doc-biblioref">Wickham, 2009, p. 3‑4</a>)</span>.</p>
+<p>Le Base R est le langage de base de <em>R</em> et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l’analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d’un jeu de données. Par exemple, les fonctions comme <code><a href="https://rdrr.io/r/graphics/plot.default.html">plot()</a></code>, <code><a href="https://rdrr.io/r/graphics/hist.html">hist()</a></code>, <code><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot()</a></code> et <code><a href="https://rdrr.io/r/graphics/barplot.html">barplot()</a></code> permettent aux chercheurs de visualiser les distributions des variables, d’identifier des valeurs aberrantes et d’examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.</p>
+<p>Alors qu’un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu’il s’agit d’innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l’exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu’il s’agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et <code>ggplot2</code> offrent plus de flexibilité et d’esthétique avancée <span class="citation" data-cites="wickham09">(<a href="references.html#ref-wickham09" role="doc-biblioref">Wickham, 2009, p. 3‑4</a>)</span>.</p>
 </section><section id="lattice" class="level4" data-number="6.3.1.2"><h4 data-number="6.3.1.2" class="anchored" data-anchor-id="lattice">
 <span class="header-section-number">6.3.1.2</span> <code>lattice</code>
 </h4>
 <p>Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p.&nbsp;373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).</p>
-<p>Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de ggplot2 lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p.&nbsp;373‑377 et 390; Wickham, 2009, p.&nbsp;6).</p>
+<p>Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de <code>ggplot2</code> lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p.&nbsp;373‑377 et 390; Wickham, 2009, p.&nbsp;6).</p>
 </section><section id="le-package-ggplot2" class="level4" data-number="6.3.1.3"><h4 data-number="6.3.1.3" class="anchored" data-anchor-id="le-package-ggplot2">
 <span class="header-section-number">6.3.1.3</span> Le package <code>ggplot2</code>
 </h4>
@@ -461,10 +468,7 @@ window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span>  <span class="co"># Appliquer un thème minimaliste pour un aspect propre et simple</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="chapitre_6_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="chapitre_6_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section></section><section id="pour-visualiser-les-régressions" class="level3" data-number="6.3.2"><h3 data-number="6.3.2" class="anchored" data-anchor-id="pour-visualiser-les-régressions">
@@ -483,7 +487,7 @@ window.addEventListener('load', function () { styleCell_73ty8vvivaie4t87ph1x(0, 
 <section id="le-package-stargazer" class="level4" data-number="6.3.2.1"><h4 data-number="6.3.2.1" class="anchored" data-anchor-id="le-package-stargazer">
 <span class="header-section-number">6.3.2.1</span> Le package <code>stargazer</code>
 </h4>
-<p>Le package <code>stargazer</code> est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d’utilisation, la diversité des modèles supportés et son esthétisme <span class="citation" data-cites="hlavac22">(<a href="references.html#ref-hlavac22" role="doc-biblioref">Hlavac, 2022</a>)</span>. Bien que nous soyons partiellement d’accord avec ces propos et que <code>stargazer</code> réponde effectivement à ces trois aspects, nous estimons que le package <code>modelsummary</code> (<a href="#sec-model-summary" class="quarto-xref"><span>Section 6.3.2.2</span></a>) surpasse <code>stargazer</code> dans chacun de ces domaines.</p>
+<p>Le package <code>stargazer</code> est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d’utilisation, la diversité des modèles supportés et son esthétisme <span class="citation" data-cites="hlavac22">(<a href="references.html#ref-hlavac22" role="doc-biblioref">Hlavac, 2022</a>)</span>. Bien que nous soyons partiellement d’accord avec ces propos et que <code>stargazer</code> réponde effectivement à ces trois aspects, nous estimons que le package <code>modelsummary</code> (<a href="#sec-model-summary"><span>Section&nbsp;6.3.2.2</span></a>) surpasse <code>stargazer</code> dans chacun de ces domaines.</p>
 <p>Voici une façon standard d’utiliser <code>stargazer</code> pour créer un tableau de deux modèles de régression:</p>
 <div class="cell">
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Il faut premièrement installer et importer le package stargazer si ce n'est pas déjà fait.</span></span>
@@ -545,7 +549,7 @@ Note:                   *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-% Date and time: Mon, Oct 07, 2024 - 07:10:02 PM
+% Date and time: Wed, Nov 06, 2024 - 10:26:16 PM
 \begin{table}[!htbp] \centering 
   \caption{Tableau de régression des modèles} 
   \label{} 
@@ -639,110 +643,31 @@ F Statistic &amp; 69.211$^{***}$ (df = 2; 29) &amp;  \\
 <span><span class="co">## Utiliser modelsummary pour créer un tableau de deux modèles de régression</span></span>
 <span><span class="fu"><a href="https://modelsummary.com/man/modelsummary.html">modelsummary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="st">"Model 1"</span> <span class="op">=</span> <span class="va">mod_lm</span>, <span class="st">"Model 2"</span> <span class="op">=</span> <span class="va">mod_glm</span><span class="op">)</span>, output <span class="op">=</span> <span class="st">"markdown"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<!-- preamble start -->
 
-    <script>
-      function styleCell_kdzkuo7iraaukn2jfrj1(i, j, css_id) {
-        var table = document.getElementById("tinytable_kdzkuo7iraaukn2jfrj1");
-        table.rows[i].cells[j].classList.add(css_id);
-      }
-      function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_kdzkuo7iraaukn2jfrj1');
-        var newRow = table.insertRow(i);
-        var newCell = newRow.insertCell(0);
-        newCell.setAttribute("colspan", colspan);
-        // newCell.innerText = content;
-        // this may be unsafe, but innerText does not interpret <br>
-        newCell.innerHTML = content;
-      }
-      function spanCell_kdzkuo7iraaukn2jfrj1(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_kdzkuo7iraaukn2jfrj1");
-        const targetRow = table.rows[i];
-        const targetCell = targetRow.cells[j];
-        for (let r = 0; r < rowspan; r++) {
-          // Only start deleting cells to the right for the first row (r == 0)
-          if (r === 0) {
-            // Delete cells to the right of the target cell in the first row
-            for (let c = colspan - 1; c > 0; c--) {
-              if (table.rows[i + r].cells[j + c]) {
-                table.rows[i + r].deleteCell(j + c);
-              }
-            }
-          }
-          // For rows below the first, delete starting from the target column
-          if (r > 0) {
-            for (let c = colspan - 1; c >= 0; c--) {
-              if (table.rows[i + r] && table.rows[i + r].cells[j]) {
-                table.rows[i + r].deleteCell(j);
-              }
-            }
-          }
-        }
-        // Set rowspan and colspan of the target cell
-        targetCell.rowSpan = rowspan;
-        targetCell.colSpan = colspan;
-      }
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(0, 0, 'tinytable_css_id66e1my9awmpguchh2ttu') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(0, 1, 'tinytable_css_idfyg17yayfhbahz19vjsp') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(0, 2, 'tinytable_css_idfyg17yayfhbahz19vjsp') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(1, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(1, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(1, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(2, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(2, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(2, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(3, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(3, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(3, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(4, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(4, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(4, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(5, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(5, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(5, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(6, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(6, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(6, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(7, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(7, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(7, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(8, 0, 'tinytable_css_idwqvp50jgvch8qw5ndwl1') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(8, 1, 'tinytable_css_id3ziuwrct0z42iew7mupr') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(8, 2, 'tinytable_css_id3ziuwrct0z42iew7mupr') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(9, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(9, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(9, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(10, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(10, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(10, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(11, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(11, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(11, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(12, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(12, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(12, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(13, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(13, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(13, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(14, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(14, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(14, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(15, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(15, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(15, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16, 0, 'tinytable_css_ida2lulhxpd0s326wkt4r0') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16, 1, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16, 2, 'tinytable_css_idjdlw6zhwknk1vq0xfdie') })
-    </script><style>
-    .table td.tinytable_css_id66e1my9awmpguchh2ttu, .table th.tinytable_css_id66e1my9awmpguchh2ttu {  text-align: left;  border-bottom: solid 0.1em #d3d8dc; }
-    .table td.tinytable_css_idfyg17yayfhbahz19vjsp, .table th.tinytable_css_idfyg17yayfhbahz19vjsp {  text-align: center;  border-bottom: solid 0.1em #d3d8dc; }
-    .table td.tinytable_css_ida2lulhxpd0s326wkt4r0, .table th.tinytable_css_ida2lulhxpd0s326wkt4r0 {  text-align: left; }
-    .table td.tinytable_css_idjdlw6zhwknk1vq0xfdie, .table th.tinytable_css_idjdlw6zhwknk1vq0xfdie {  text-align: center; }
-    .table td.tinytable_css_idwqvp50jgvch8qw5ndwl1, .table th.tinytable_css_idwqvp50jgvch8qw5ndwl1 {  border-bottom: solid 0.05em black;  text-align: left; }
-    .table td.tinytable_css_id3ziuwrct0z42iew7mupr, .table th.tinytable_css_id3ziuwrct0z42iew7mupr {  border-bottom: solid 0.05em black;  text-align: center; }
+ 
+
+  
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tinytable_atrxr56ohdrjz61c903k</title>
+<style>
+.table td.tinytable_css_zccjhes3gnpjapjcv9xn, .table th.tinytable_css_zccjhes3gnpjapjcv9xn {    border-bottom: solid 0.1em #d3d8dc; }
+.table td.tinytable_css_slcbbymkxp6y1zjadsnk, .table th.tinytable_css_slcbbymkxp6y1zjadsnk {    text-align: left; }
+.table td.tinytable_css_qj2gbo7ynejbwccdnstg, .table th.tinytable_css_qj2gbo7ynejbwccdnstg {    text-align: center; }
+.table td.tinytable_css_ldedwyjt63te052r38gy, .table th.tinytable_css_ldedwyjt63te052r38gy {    text-align: center; }
+.table td.tinytable_css_oq8n1e4qk6citpkpy3nj, .table th.tinytable_css_oq8n1e4qk6citpkpy3nj {    border-bottom: solid 0.05em black; }
     </style>
-<div class="container">
-      <table class="table table-borderless" id="tinytable_kdzkuo7iraaukn2jfrj1" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script><div class="container">
+      <table class="table table-borderless" id="tinytable_atrxr56ohdrjz61c903k" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
 <thead><tr>
 <th scope="col"> </th>
                 <th scope="col">Model 1</th>
@@ -820,11 +745,6 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
                   <td>-7.698  </td>
                 </tr>
 <tr>
-<td>F          </td>
-                  <td>69.211 </td>
-                  <td>1.892   </td>
-                </tr>
-<tr>
 <td>RMSE       </td>
                   <td>2.47   </td>
                   <td>0.29    </td>
@@ -832,7 +752,104 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 </tbody>
 </table>
 </div>
-<!-- hack to avoid NA insertion in last line -->
+
+    <script>
+      function styleCell_tinytable_6jpaxqk6ghm08szt1ao2(i, j, css_id) {
+        var table = document.getElementById("tinytable_atrxr56ohdrjz61c903k");
+        table.rows[i].cells[j].classList.add(css_id);
+      }
+      function insertSpanRow(i, colspan, content) {
+        var table = document.getElementById('tinytable_atrxr56ohdrjz61c903k');
+        var newRow = table.insertRow(i);
+        var newCell = newRow.insertCell(0);
+        newCell.setAttribute("colspan", colspan);
+        // newCell.innerText = content;
+        // this may be unsafe, but innerText does not interpret <br>
+        newCell.innerHTML = content;
+      }
+      function spanCell_tinytable_6jpaxqk6ghm08szt1ao2(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_atrxr56ohdrjz61c903k");
+        const targetRow = table.rows[i];
+        const targetCell = targetRow.cells[j];
+        for (let r = 0; r < rowspan; r++) {
+          // Only start deleting cells to the right for the first row (r == 0)
+          if (r === 0) {
+            // Delete cells to the right of the target cell in the first row
+            for (let c = colspan - 1; c > 0; c--) {
+              if (table.rows[i + r].cells[j + c]) {
+                table.rows[i + r].deleteCell(j + c);
+              }
+            }
+          }
+          // For rows below the first, delete starting from the target column
+          if (r > 0) {
+            for (let c = colspan - 1; c >= 0; c--) {
+              if (table.rows[i + r] && table.rows[i + r].cells[j]) {
+                table.rows[i + r].deleteCell(j);
+              }
+            }
+          }
+        }
+        // Set rowspan and colspan of the target cell
+        targetCell.rowSpan = rowspan;
+        targetCell.colSpan = colspan;
+      }
+
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 0, 'tinytable_css_zccjhes3gnpjapjcv9xn') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 1, 'tinytable_css_zccjhes3gnpjapjcv9xn') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 2, 'tinytable_css_zccjhes3gnpjapjcv9xn') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(1, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(2, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(3, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(4, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(5, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(6, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(7, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(9, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(10, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(11, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(12, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(13, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(14, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(15, 0, 'tinytable_css_slcbbymkxp6y1zjadsnk') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(1, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(2, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(3, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(4, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(5, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(6, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(7, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(9, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(10, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(11, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(12, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(13, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(14, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(15, 1, 'tinytable_css_qj2gbo7ynejbwccdnstg') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(0, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(1, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(2, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(3, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(4, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(5, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(6, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(7, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(9, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(10, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(11, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(12, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(13, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(14, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(15, 2, 'tinytable_css_ldedwyjt63te052r38gy') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 0, 'tinytable_css_oq8n1e4qk6citpkpy3nj') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 1, 'tinytable_css_oq8n1e4qk6citpkpy3nj') })
+window.addEventListener('load', function () { styleCell_tinytable_6jpaxqk6ghm08szt1ao2(8, 2, 'tinytable_css_oq8n1e4qk6citpkpy3nj') })
+    </script>
 </div>
 </div>
 <p>Tout comme <code>stargazer</code>, <code>modelsummary</code> offre également plusieurs options de sortie avec l’argument <code>output</code>. Cependant, <code>modelsummary</code> en supporte plus, comme <code>kableExtra</code>, <code>html</code>, <code>latex</code> et bien d’autres formats.</p>
@@ -863,15 +880,12 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 </div>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">hp</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="chapitre_6_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="chapitre_6_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Comme on peut voir, la variable <code>hp</code> peut prendre n’importe quelle valeur numérique entre 52 et 335. La prochaine étape est de construire notre grille en utilisant la fonction <code>datagrid</code> du package:</p>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">grille</span> <span class="op">&lt;-</span> <span class="fu">marginaleffects</span><span class="fu">::</span><span class="fu"><a href="https://marginaleffects.com/man/datagrid.html">datagrid</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">grille</span> <span class="op">&lt;-</span> <span class="fu">marginaleffects</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/marginaleffects/man/datagrid.html">datagrid</a></span><span class="op">(</span></span>
 <span>      model <span class="op">=</span> <span class="va">mod_lm</span>,</span>
 <span>      hp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">50</span>, <span class="fl">100</span>, <span class="fl">150</span>, <span class="fl">200</span>, <span class="fl">250</span>, <span class="fl">300</span>, <span class="fl">350</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
@@ -891,7 +905,7 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <p>Comme on peut le voir, la variable <code>grille</code> est maintenant une <code>dataframe</code> qui contient 7 rangées. Les variables <code>wt</code> et <code>drat</code> conservent la même valeur dans chaque rangée ; la variable <code>hp</code> prend cependant les 7 valeurs que nous avons définies.</p>
 <p>La prochaine étape est celle de prédire notre modèle sur ces données en utilisant la fonction <code>predictions</code> du package:</p>
 <div class="cell">
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">predictions</span> <span class="op">&lt;-</span> <span class="fu">marginaleffects</span><span class="fu">::</span><span class="fu"><a href="https://marginaleffects.com/man/predictions.html">predictions</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">predictions</span> <span class="op">&lt;-</span> <span class="fu">marginaleffects</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/marginaleffects/man/predictions.html">predictions</a></span><span class="op">(</span></span>
 <span>      model <span class="op">=</span> <span class="va">mod_lm</span>,</span>
 <span>      newdata <span class="op">=</span> <span class="va">grille</span> <span class="co">## Ici, on dit à R de prédire notre modèle sur nos nouvelles données, ie: grille</span></span>
 <span><span class="op">)</span></span>
@@ -933,10 +947,7 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <span>      <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>      <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_linerange.html">geom_linerange</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>ymin <span class="op">=</span> <span class="va">conf.low</span>, ymax <span class="op">=</span> <span class="va">conf.high</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="chapitre_6_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
+<p><img src="chapitre_6_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter et d’adapter ce graphique selon vos besoins. Il est également important de souligner que le package <code>marginaleffects</code> est extrêmement polyvalent, prenant en charge des centaines de types de modèles et offrant une large gamme de fonctionnalités. Pour découvrir toutes ses possibilités, nous vous invitons à consulter la documentation officielle du package <span class="citation" data-cites="arel-bundock">(<a href="references.html#ref-arel-bundock" role="doc-biblioref">Arel-Bundock, s.&nbsp;d.</a>)</span>.</p>
@@ -963,8 +974,8 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <span><span class="co"># Transformation en graphique interactif</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/ggplotly.html">ggplotly</a></span><span class="op">(</span><span class="va">p</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-df2f9d517e6913909c2f" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-df2f9d517e6913909c2f">{"x":{"data":[{"x":[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109],"y":[21,21,22.800000000000001,21.399999999999999,18.699999999999999,18.100000000000001,14.300000000000001,24.399999999999999,22.800000000000001,19.199999999999999,17.800000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,32.399999999999999,30.399999999999999,33.899999999999999,21.5,15.5,15.199999999999999,13.300000000000001,19.199999999999999,27.300000000000001,26,30.399999999999999,15.800000000000001,19.699999999999999,15,21.399999999999999],"text":["hp: 110<br />mpg: 21.0","hp: 110<br />mpg: 21.0","hp:  93<br />mpg: 22.8","hp: 110<br />mpg: 21.4","hp: 175<br />mpg: 18.7","hp: 105<br />mpg: 18.1","hp: 245<br />mpg: 14.3","hp:  62<br />mpg: 24.4","hp:  95<br />mpg: 22.8","hp: 123<br />mpg: 19.2","hp: 123<br />mpg: 17.8","hp: 180<br />mpg: 16.4","hp: 180<br />mpg: 17.3","hp: 180<br />mpg: 15.2","hp: 205<br />mpg: 10.4","hp: 215<br />mpg: 10.4","hp: 230<br />mpg: 14.7","hp:  66<br />mpg: 32.4","hp:  52<br />mpg: 30.4","hp:  65<br />mpg: 33.9","hp:  97<br />mpg: 21.5","hp: 150<br />mpg: 15.5","hp: 150<br />mpg: 15.2","hp: 245<br />mpg: 13.3","hp: 175<br />mpg: 19.2","hp:  66<br />mpg: 27.3","hp:  91<br />mpg: 26.0","hp: 113<br />mpg: 30.4","hp: 264<br />mpg: 15.8","hp: 175<br />mpg: 19.7","hp: 335<br />mpg: 15.0","hp: 109<br />mpg: 21.4"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Effet de hp sur mpg","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[37.850000000000001,349.14999999999998],"tickmode":"array","ticktext":["100","200","300"],"tickvals":[100,200,300],"categoryorder":"array","categoryarray":["100","200","300"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"hp","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[9.2249999999999996,35.074999999999996],"tickmode":"array","ticktext":["10","15","20","25","30","35"],"tickvals":[10,15,20,25,30,35],"categoryorder":"array","categoryarray":["10","15","20","25","30","35"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"mpg","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"1b2c82fd3dc10":{"x":{},"y":{},"type":"scatter"}},"cur_data":"1b2c82fd3dc10","visdat":{"1b2c82fd3dc10":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-07254ec2c21b5dcd4158" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-07254ec2c21b5dcd4158">{"x":{"data":[{"x":[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109],"y":[21,21,22.800000000000001,21.399999999999999,18.699999999999999,18.100000000000001,14.300000000000001,24.399999999999999,22.800000000000001,19.199999999999999,17.800000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,32.399999999999999,30.399999999999999,33.899999999999999,21.5,15.5,15.199999999999999,13.300000000000001,19.199999999999999,27.300000000000001,26,30.399999999999999,15.800000000000001,19.699999999999999,15,21.399999999999999],"text":["hp: 110<br />mpg: 21.0","hp: 110<br />mpg: 21.0","hp:  93<br />mpg: 22.8","hp: 110<br />mpg: 21.4","hp: 175<br />mpg: 18.7","hp: 105<br />mpg: 18.1","hp: 245<br />mpg: 14.3","hp:  62<br />mpg: 24.4","hp:  95<br />mpg: 22.8","hp: 123<br />mpg: 19.2","hp: 123<br />mpg: 17.8","hp: 180<br />mpg: 16.4","hp: 180<br />mpg: 17.3","hp: 180<br />mpg: 15.2","hp: 205<br />mpg: 10.4","hp: 215<br />mpg: 10.4","hp: 230<br />mpg: 14.7","hp:  66<br />mpg: 32.4","hp:  52<br />mpg: 30.4","hp:  65<br />mpg: 33.9","hp:  97<br />mpg: 21.5","hp: 150<br />mpg: 15.5","hp: 150<br />mpg: 15.2","hp: 245<br />mpg: 13.3","hp: 175<br />mpg: 19.2","hp:  66<br />mpg: 27.3","hp:  91<br />mpg: 26.0","hp: 113<br />mpg: 30.4","hp: 264<br />mpg: 15.8","hp: 175<br />mpg: 19.7","hp: 335<br />mpg: 15.0","hp: 109<br />mpg: 21.4"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Effet de hp sur mpg","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[37.850000000000001,349.14999999999998],"tickmode":"array","ticktext":["100","200","300"],"tickvals":[100,200,300],"categoryorder":"array","categoryarray":["100","200","300"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"hp","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[9.2249999999999996,35.074999999999996],"tickmode":"array","ticktext":["10","15","20","25","30","35"],"tickvals":[10,15,20,25,30,35],"categoryorder":"array","categoryarray":["10","15","20","25","30","35"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"mpg","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"829d5754be2a":{"x":{},"y":{},"type":"scatter"}},"cur_data":"829d5754be2a","visdat":{"829d5754be2a":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Et voici un exemple avec <code>plotly</code>, un package qui n’emprunte pas la grammaire de <code>ggplot2</code>:</p>
@@ -975,8 +986,8 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <span></span>
 <span><span class="va">fig</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-577140ec4bb5d06999c7" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-577140ec4bb5d06999c7">{"x":{"visdat":{"1b2c824ce4d":["function () ","plotlyVisDat"]},"cur_data":"1b2c824ce4d","attrs":{"1b2c824ce4d":{"x":{},"y":{},"mode":"markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Effet de hp sur mpg","xaxis":{"domain":[0,1],"automargin":true,"title":"hp"},"yaxis":{"domain":[0,1],"automargin":true,"title":"mpg"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109],"y":[21,21,22.800000000000001,21.399999999999999,18.699999999999999,18.100000000000001,14.300000000000001,24.399999999999999,22.800000000000001,19.199999999999999,17.800000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,32.399999999999999,30.399999999999999,33.899999999999999,21.5,15.5,15.199999999999999,13.300000000000001,19.199999999999999,27.300000000000001,26,30.399999999999999,15.800000000000001,19.699999999999999,15,21.399999999999999],"mode":"markers","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6cc958cb38b5c289990d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6cc958cb38b5c289990d">{"x":{"visdat":{"829d1076f9f8":["function () ","plotlyVisDat"]},"cur_data":"829d1076f9f8","attrs":{"829d1076f9f8":{"x":{},"y":{},"mode":"markers","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Effet de hp sur mpg","xaxis":{"domain":[0,1],"automargin":true,"title":"hp"},"yaxis":{"domain":[0,1],"automargin":true,"title":"mpg"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109],"y":[21,21,22.800000000000001,21.399999999999999,18.699999999999999,18.100000000000001,14.300000000000001,24.399999999999999,22.800000000000001,19.199999999999999,17.800000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,32.399999999999999,30.399999999999999,33.899999999999999,21.5,15.5,15.199999999999999,13.300000000000001,19.199999999999999,27.300000000000001,26,30.399999999999999,15.800000000000001,19.699999999999999,15,21.399999999999999],"mode":"markers","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Nous vous recommandons vivement de consulter la documentation officielle des packages <code>plotly</code> et <code>ggplotly</code> pour découvrir toutes les options et fonctionnalités disponibles, afin d’enrichir vos graphiques interactifs.</p>
@@ -993,7 +1004,7 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <span><span class="co"># Création d'un tableau avec kable</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span>, caption <span class="op">=</span> <span class="st">"Exemple de tableau avec kable"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
+<table class="table table-sm table-striped small">
 <caption>Exemple de tableau avec kable</caption>
 <colgroup>
 <col style="width: 26%">
@@ -1125,7 +1136,7 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 <span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_styling.html">kable_styling</a></span><span class="op">(</span>bootstrap_options <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/column_spec.html">column_spec</a></span><span class="op">(</span><span class="fl">5</span>, background <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed table-sm small" data-quarto-postprocess="true">
 <caption>Exemple de tableau avec la colonne hp colorée en bleu</caption>
 <thead><tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1269,6 +1280,7 @@ window.addEventListener('load', function () { styleCell_kdzkuo7iraaukn2jfrj1(16,
 </div>
 <p>Cette application simple permet à l’utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (<code>mpg</code>), visualisée à travers un graphique interactif.</p>
 <p>Pour explorer davantage les possibilités de <code>shiny</code>, nous vous recommandons de consulter la documentation officielle du package <code>shiny</code> ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications.</p>
+
 <!--
 
 
@@ -1362,7 +1374,7 @@ Miro
       -->
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-arel-bundock" class="csl-entry" role="listitem">
 Arel-Bundock, V. (s.&nbsp;d.). <em>Marginal <span>Effects Zoo</span></em>. Consulté 7 octobre 2024, à l'adresse <a href="https://marginaleffects.com/">https://marginaleffects.com/</a>
 </div>
@@ -1377,9 +1389,6 @@ Friendly, M., &amp; Wainer, H. (2021). <em>A <span>History</span> of <span>Data 
 </div>
 <div id="ref-hlavac22" class="csl-entry" role="listitem">
 Hlavac, M. (2022). <em>Stargazer: Beautiful <span>LATEX</span>, <span>HTML</span> and <span>ASCII</span> Tables from <span>R</span> Statistical Output</em>.
-</div>
-<div id="ref-kabacoff22" class="csl-entry" role="listitem">
-Kabacoff, R. (2022). <em>R in Action: Data Analysis and Graphics with <span>R</span> and <span>Tidyverse</span></em> (Third edition). Manning Publications.
 </div>
 <div id="ref-ozgur_etal17" class="csl-entry" role="listitem">
 Ozgur, C., Colliau, T., Rogers, G., Hughes, Z., &amp; Myer-Tyson, E. ＂Bennie＂. (2017). <span>MatLab</span> vs. <span>Python</span> vs. <span>R</span>. <em>Journal of Data Science</em>, <em>15</em>(3), 355‑371. <a href="https://doi.org/10.6339/JDS.201707_15(3).0001">https://doi.org/10.6339/JDS.201707_15(3).0001</a>
@@ -1438,33 +1447,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1533,15 +1515,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1576,7 +1556,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1608,50 +1599,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1661,17 +1613,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1683,130 +1626,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -1850,7 +1670,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1876,32 +1695,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1961,27 +1754,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./chapitre_5.html" class="pagination-link" aria-label="Outils de collecte de données">
+      <a href="./chapitre_5.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de collecte de données</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapitre_7.html" class="pagination-link" aria-label="Langages de balisage">
+      <a href="./chapitre_7.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Langages de balisage</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Livre-outils</p>
-</div>   
+    <div class="nav-footer-left">Livre-outils</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
-<p>Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
+    </div>
+    <div class="nav-footer-right">Ce livre a été écrit avec <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
 

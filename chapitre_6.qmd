@@ -1,7 +1,7 @@
 # Outils de visualisation graphique
 
 ## Point d'observation: historique de la visualisation graphique
-Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
+Ce chapitre a pour objectif de souligner l'importance de la visualisation des données tout au long du processus de recherche, depuis l'obtention des données pour l'analyse exploratoire des données (exploratory data analysis) jusqu'aux graphiques finaux de vos articles. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, le chercheur peut rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s'agit de trouver la meilleure manière de rendre l'information digeste pour les experts de votre discipline académique ou pour le grand public. Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d'une recherche empirique.
 
 Pour comprendre l'évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le *Milestones Project* de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique [@friendly_etal16].
 
@@ -24,23 +24,25 @@ Avec l’ère informatique, la visualisation graphique est entrée dans une phas
 
 Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*Big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques. 
 
+
 ## Arpentage et choix éditorial:
 
-Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélections établis au chapitre 1.  
+Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélection établis au chapitre 1, résumés dans le **Tableau 6**.
 
-Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
+Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. Comme le montre le **Tableau 6**, *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
 
-L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. *Python*, lui aussi, bénéficie d'une communauté active, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données, tandis que les communautés autour de logiciels comme *Tableau* ou *Excel* sont davantage orientées vers des usages plus standardisés.
+L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. Comme indiqué dans le **Tableau 6**, *Python* bénéficie également d'une grande et active communauté, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données. Les communautés autour de logiciels comme *Tableau* ou *Excel* sont présentes mais davantage orientées vers des usages plus standardisés.
 
-La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme matplotlib et seaborn. *Tableau* et *Excel*, quant à eux, sont plus fréquemment utilisés dans le secteur commercial pour des visualisations rapides et des analyses exploratoires, mais ils peuvent être limités en termes de complexité graphique et de personnalisation.
+La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme `matplotlib` et `seaborn`. Comme le souligne le **Tableau 6**, *Tableau* est populaire pour la visualisation, surtout dans le secteur commercial, tandis que *Excel* est souvent utilisé pour des tâches plus simples.
 
-L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers *CSV*, *Excel*, ou accéder à des bases de données *SQL*, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que pandas pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
+L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers CSV, Excel, ou accéder à des bases de données SQL, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que `pandas` pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
 
-Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence, tandis que *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données.
+Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence. Cependant, comme le montre le **Tableau 6**, *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données, ce qui limite la réplicabilité.
 
-Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
+Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. Comme indiqué dans le **Tableau 6**, *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
 
-En somme, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python*, et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
+En somme, comme le résume le **Tableau 6**, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python* et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
+
 
 
 ```{r}
@@ -49,40 +51,27 @@ En somme, nous mettons en avant *R* comme le choix éditorial pour la visualisat
 library(tidyverse)
 library(tinytable)
 
-tbl_resume_chap_X <- tibble(
+tbl_resume_chap_6 <- tibble(
     Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
                  'Existence d\'une communauté d\'utilisateurs', 
                  'Popularité dans le champ', 
                  'Compatibilité avec d\'autres outils', 
                  'Transparence et réplicabilité',
                  'Adaptabilité et flexibilité'),
-    'R' = c('Oui (Gratuit)', 
-            'Oui (Forte communauté active)', 
-            'Populaire dans l\'analyse de données', 
-            'Bonne compatibilité (nombreux packages pour intégration)', 
-            'Oui (Open-source, réplicable)', 
-            'Flexible (hautement personnalisable avec divers packages)'),
-    'Python' = c('Oui (Gratuit)', 
-                 'Oui (Grande communauté active)', 
-                 'Populaire dans l\'analyse de données et la science des données', 
-                 'Très compatible (bibliothèques telles que pandas, matplotlib, etc.)', 
-                 'Oui (Open-source et réplicable)', 
-                 'Flexible (nombreuses bibliothèques disponibles)'),
-    'Tableau' = c('Non (Payant)', 
-                  'Oui (Communauté grandissante)', 
-                  'Populaire dans la visualisation des données', 
-                  'Bonne compatibilité (intégration avec diverses bases de données et fichiers)', 
-                  'Partiellement (Propriétaire, mais partage possible)', 
-                  'Flexible (fonctionnalités avancées mais moins personnalisable que R/Python)'),
-    'Excel' = c('Non (Payant)', 
-                'Oui (Large communauté d\'utilisateurs)', 
-                'Très populaire pour des analyses de données simples', 
-                'Bonne compatibilité (partage facile avec d\'autres logiciels Microsoft)', 
-                'Non (Propriétaire, moins réplicable)', 
-                'Peu flexible (principalement pour des visualisations simples)')
+    'R' = c('Gratuit', 'Forte et active', 'Populaire', 'Nombreux packages d\'intégration', 
+            'Open-source, réplicable', 'Hautement personnalisable'),
+    'Python' = c('Gratuit', 'Grande et active', 'Courant en science des données', 
+                 'Nombreux packages d\'intégration', 'Open-source, réplicable', 
+                 'Flexible (nombreuses bibliothèques)'),
+    'Tableau' = c('Payant', 'En croissance', 'Populaire', 
+                  'Intégration variée (bases de données)', 'Peu réplicable (propriétaire)', 
+                  'Moins personnalisable'),
+    'Excel' = c('Payant', 'Large', 'Populaire pour tâches simples', 
+                'Compatibilité avec Microsoft', 'Peu réplicable (propriétaire)', 
+                'Pour visualisations simples')
 )
 
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
+tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
 
 
 
@@ -95,14 +84,14 @@ Lorsque vous souhaitez créer des graphiques en R, les options abondent. De mult
 ### Pour les analyses descriptives
 
 #### Base R
-Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
+Le Base R est le langage de base de *R* et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l'analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d'un jeu de données. Par exemple, les fonctions comme `plot()`, `hist()`, `boxplot()` et `barplot()` permettent aux chercheurs de visualiser les distributions des variables, d'identifier des valeurs aberrantes et d'examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.
 
-Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que `lattice` et `ggplot2` permettent plus facilement[@wickham09, p. 3-4].
+Alors qu'un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu'il s'agit d'innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l'exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu'il s'agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et `ggplot2` offrent plus de flexibilité et d'esthétique avancée [@wickham09, p. 3-4].
 
 #### `lattice`
 Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
 
-Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de ggplot2 lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
+Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de `ggplot2` lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
 
 #### Le package `ggplot2`
 Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
