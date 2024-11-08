@@ -129,6 +129,7 @@ Le package `stargazer` est un package qui permet de générer des tableaux de r�
 Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
 
 ```{r}
+#| label: stargazer
 #| code-overflow: wrap
 # Il faut premièrement installer et importer le package stargazer si ce n'est pas déjà fait.
 # install.packages("stargazer") # installer
@@ -145,12 +146,14 @@ stargazer(mod_lm, mod_glm, type = "text", title = "Tableau de régression des mo
 Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
 
 ```{r}
+#| label: stargazer2
 stargazer(mod_lm, mod_glm, type = "latex", title = "Tableau de régression des modèles")
 ```
 
 Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, cette sortie a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html:
 
 ```{r}
+#| label: stargazer3
 stargazer(mod_lm, mod_glm, type = "html", title = "Tableau de régression des modèles")
 ```
 
@@ -275,6 +278,10 @@ library(ggplot2)
 library(plotly)
 ```
 ```{r}
+
+# Ce package, webshot2, peut être nécessaire pour visualiser des graphiques interactifs
+#install.packages("webshot2")
+
 # Création d'un graphique ggplot
 p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
   geom_point() +
@@ -287,6 +294,7 @@ ggplotly(p)
 Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`:
 
 ```{r}
+#| eval: false
 # Création d'un graphique interactif avec plotly
 fig <- plot_ly(data = mtcars, x = ~hp, y = ~mpg, type = 'scatter', mode = 'markers') %>%
   layout(title = "Effet de hp sur mpg")
@@ -306,10 +314,10 @@ Les tableaux interactifs sont très utiles pour rendre la présentation des donn
 La fonction `kable()` de `knitr` permet de transformer un dataframe en un tableau bien formaté.
 
 ```{r}
-library(knitr)
+#library(knitr)
 
 # Création d'un tableau avec kable
-kable(head(mtcars), caption = "Exemple de tableau avec kable")
+#kable(head(mtcars), caption = "Exemple de tableau avec kable")
 ```
 
 #### Exemple avec `kableExtra`
@@ -318,13 +326,13 @@ Le package kableExtra permet de personnaliser et d'enrichir les tableaux créés
 
 ```{r}
 #| message: false
-library(kableExtra)
+#library(kableExtra)
 ```
 ```{r}
 # Création d'un tableau interactif avec kableExtra
-kable(head(mtcars), caption = "Exemple de tableau avec la colonne hp colorée en bleu") %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
-  column_spec(5, background = "lightblue")
+#kable(head(mtcars), caption = "Exemple de tableau avec la colonne hp colorée en bleu") %>%
+#  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+#  column_spec(5, background = "lightblue")
 ```
 
 
@@ -339,6 +347,7 @@ Voici un exemple simple d'application `shiny` où l'utilisateur peut sélectionn
 
 ```{r}
 #| eval: false
+#| label: shiny
 library(shiny)
 library(ggplot2)
 
