@@ -9,7 +9,7 @@ author:
 
 Lorsque vous lisez un article scientifique, une page Web ou un curriculum vitæ professionnel, vous vous doutez peut-être que le texte n'est pas toujours produit à l'aide d'un logiciel de traitement de texte comme Microsoft Word, Apple Pages ou LibreOffice Writer. La mise en page complexe réglée au millimètre près, la qualité des figures et des tableaux, l'utilisation de gabarits professionnels, le style des références ou encore la présence d'éléments interactifs sont difficiles et parfois impossibles à reproduire à l'aide d'un logiciel de traitement de texte régulier. L'ajout d'extraits de code, de tableaux de régression ou encore de figures de haute qualité graphique, ainsi que leur personnalisation, nécessitent une interface particulière.
 
-Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou *markup languages*. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l'aide du langage de balisage Markdown avec l'aide du système de publication Quarto. Les logiciels de traitement de texte et les langages de balisage font tous partie de la catégorie des **outils de rédaction**. D'entrée de jeu, vous vous demandez peut-être quelle est l'utilité d'apprendre des langages de balisage alors que les logiciels de traitement de texte sont nombreux, simples d'approche et en amélioration constante. Ce chapitre n'a pas pour objectif de décourager l'utilisation de ces logiciels, qui sont utiles et même souvent essentiels pour la production rapide de documents ainsi que pour des tâches de suivi des modifications et de travail avec des équipes multidisciplinaires. Le chapitre tentera plutôt de démontrer que la maîtrise des langages de balisage constitue un avantage pour ceux qui souhaitent s'initier au monde de la recherche académique, même si quelques difficultés initiales d'apprentissage peuvent se présenter. Il s'agira de répondre, tour à tour, aux trois grandes questions suivantes : *Qu'est-ce qu'un langage de balisage? Comment utiliser un langage de balisage? Quand et pourquoi utiliser un langage de balisage?* L'accent sera mis sur Quarto ainsi que sur les langages Markdown et \LaTeX, bien que d'autres langages soient aussi abordés.
+Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou *markup languages*. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l'aide du langage de balisage Markdown avec l'aide du système de publication Quarto. Les logiciels de traitement de texte et les langages de balisage font tous partie de la catégorie des **outils de rédaction**. D'entrée de jeu, il peut sembler curieux d'apprendre des langages de balisage alors que les logiciels de traitement de texte sont nombreux, simples d'approche et en amélioration constante. Ce chapitre n'a pas pour objectif de décourager l'utilisation de ces logiciels, qui sont utiles et même souvent essentiels pour la production rapide de documents ainsi que pour des tâches de suivi des modifications et de travail avec des équipes multidisciplinaires. Le chapitre tentera plutôt de démontrer que la maîtrise des langages de balisage constitue un avantage pour ceux qui souhaitent s'initier au monde de la recherche académique, même si quelques difficultés initiales d'apprentissage peuvent se présenter. Il s'agira de répondre, tour à tour, aux trois grandes questions suivantes : *Qu'est-ce qu'un langage de balisage? Comment utiliser un langage de balisage? Quand et pourquoi utiliser un langage de balisage?* L'accent sera mis sur Quarto ainsi que sur les langages Markdown et \LaTeX, bien que d'autres langages soient aussi abordés.
 
 ## Point d'observation : qu'est-ce qu'un langage de balisage?
 
@@ -19,7 +19,7 @@ Un langage de balisage constitue un ensemble de commandes qui peuvent être entr
 #| label: fig-vscode
 #| echo: false
 #| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
-knitr::include_graphics("images/chapitre5_vscode.png", dpi = 500)
+knitr::include_graphics("images/chapitre7_vscode.png", dpi = 500)
 ```
 
 Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage : les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme @goldfarb96. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX en 1985, [Bib]{.smallcaps}\TeX en 1988, HTML en 1993, XML en 1998, Markdown en 2004 et `R` Markdown en 2012 [@encyclopaediabritannica23a; @hameed23a; @markdownguide23a; @worldwidewebconsortiumw3c98a; @xie23a].
@@ -50,7 +50,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 #| label: fig-latex-vs-word
 #| echo: false
 #| fig-cap: "Utilité relative de Word et des langages de balisage selon la complexité et la taille du document"
-knitr::include_graphics("images/chapitre5_word-vs-latex.png")
+knitr::include_graphics("images/chapitre7_word-vs-latex.png")
 ```
 
 ```{r tab_avantages}
@@ -107,14 +107,14 @@ Bien que la mise en page de documents produits via Markdown et \LaTeX puisse ê
 #| label: fig-cv
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de curriculum vitae \\newline \\textit{Source}&nbsp;: @liantze23."
-knitr::include_graphics("images/chapitre5_CVtemp.png", dpi = 100)
+knitr::include_graphics("images/chapitre7_CVtemp.png", dpi = 100)
 ```
 
 ```{r}
 #| label: fig-invoice
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de facture \\newline \\textit{Source}&nbsp;: @roux13."
-knitr::include_graphics("images/chapitre5_TStemp.png")
+knitr::include_graphics("images/chapitre7_TStemp.png")
 ```
 
 La @fig-cv et la @fig-invoice ne sont que quelques exemples des milliers de gabarits de documents \LaTeX disponible en ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site Web d'@overleaf23. Vous pouvez y naviguer et voir quel gabarit convient le mieux à vos besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec \LaTeX ou Markdown bien que non disponibles en Word, ce qui constitue une autre preuve de leur grande *flexibilité* et capacité de *personnalisation*. Bien qu'il soit rare que nous ayons absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s'avérer utiles lorsque vous rédigez un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d'édition et universités, dans le cadre de la rédaction d'articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.
