@@ -49,6 +49,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 ```{r}
 #| label: fig-latex-vs-word
 #| echo: false
+#| out.width: "70%"
 #| fig-cap: "Utilité relative de Word et des langages de balisage selon la complexité et la taille du document"
 knitr::include_graphics("images/chapitre5_word-vs-latex.png")
 ```
