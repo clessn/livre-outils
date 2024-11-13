@@ -10,14 +10,14 @@ Commentaires d'Adrien
 - Ajouter CRAN dans l'historique de R - MARC [cancel]
 - Préciser c'est quoi la coloration syntaxique. -LAURENCE-OLIVIER [x]
 - Pourquoi RStudio ? Clarifier que pour utiliser R on a besoin de RStudio ou un IDE - MARC [x]
-- Mentionner que R est un outil versatile qui permet de faire tout ce qu'on veut? - MARC
-- Mettez plus l'accent sur pourquoi R est le best pour ce qu'on fait. -MARC
+- Mentionner que R est un outil versatile qui permet de faire tout ce qu'on veut? - MARC [x]
+- Mettez plus l'accent sur pourquoi R est le best pour ce qu'on fait. -MARC [x]
 - Expliquer le terminal? - LAURENCE-OLIVIER [x]
 - Présenter et mettre le tableau plus haut. Après avoir discuté des autres langages de programmation. - LAURENCE-OLIVIER
 - Pertinence dans le monde du travail - LAURENCE-OLIVIER [x]
 
 -->
-## Introduction: Qu'est-ce que c'est, la programmation? 
+## Qu'est-ce que c'est, la programmation? 
 
 Un langage de programmation est un ensemble d'instructions écrites par un programmeur pour fournir des instructions à l'ordinateur afin d'exécuter et d'accomplir une tâche. 
 C’est comme une recette de cuisine, vous pouvez vous considérer comme l’ordinateur et l’auteur de la recette comme un programmeur.
@@ -37,7 +37,7 @@ Ils ressemblent aux langues comme l’anglais et le français, dans le sens où 
 La programmation implique la codification des concepts informatiques fondamentaux qui apparaissent dans tous les langages et la synthèse de ces concepts dans la construction d'outils et de systèmes pour le développement de programmes. 
 Les langages de programmation sont essentiels pour exprimer des idées de manière précise et rigoureuse, permettant à la fois aux machines d'exécuter des commandes et aux humains de comprendre la logique sous-jacente. 
 
-## Point d'observation: Histoire des langages de programmation pour l'analyse de données
+## Histoire des langages de programmation pour l'analyse de données
 
 L’histoire des langages de programmation dédiés à l’analyse de données s’inscrit dans une évolution constante des besoins et des méthodes en sciences sociales. 
 Avant l’ère numérique, l’analyse de données se faisait principalement à la main ou à l’aide de calculatrices mécaniques, avec des méthodes statistiques standardisées mais limitées par la capacité humaine à traiter des volumes massifs d’informations. 
@@ -93,7 +93,7 @@ tbl_resume_chap_prog <- tibble(
     'R' = c('Oui', 
             'Très élevée', 
             'Très populaire en sciences sociales et statistiques', 
-            'très bonne', 
+            'Très bonne', 
             'Très élevée', 
             'Très flexible')
 )
@@ -101,16 +101,17 @@ tbl_resume_chap_prog <- tibble(
 tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
 ```
 
-## Arpentage et choix éditorial: Pourquoi R?
+## Pourquoi R?
 
-Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages *open source* tels que Python et Julia. 
-R est un langage de programmation *OpenSource* développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. 
+Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages en source ouverte tels que Python et Julia. 
+R est un langage de programmation en source ouverte développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. 
 Le langage de programmation R a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. 
-L'un de ses grands avantages est qu'il est *open source*. 
+L'un de ses grands avantages est qu'il est en source ouverte. 
 Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l'argument, à savoir que : 
-1) l'*open source* est gratuit d'utilisation; 
-2) l'*open source* est développé par les utilisateurs et non par des corporations, ce qui lui procure une grande flexibilité; et 
+1) le logiciel libre est gratuit d'utilisation; 
+2) le logiciel libre  est développé par les utilisateurs et non par des corporations, ce qui lui procure une grande flexibilité; et 
 3) il permet aux utilisateurs de créer leurs propres fonctions qui répondent à leurs besoins. 
+
 À l'inverse, les logiciels à licences sont coûteux, rigides et l'ajout de fonctionnalités se fait par les développeurs internes à la compagnie. 
 Ces formalités rendent le processus plus lent et réduisent l'éventail des possibilités pour la personne chercheuse. 
 Ceci étant dit, certains avanceront que c'est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. 
@@ -125,14 +126,26 @@ D'un autre côté, l'utilisation du langage de programmation R peut être perçu
 Plusieurs disent que la courbe d'apprentissage peut être plus grande que celle de programmes à licences. 
 La véracité de cet argument est discutable. Les programmes demandant des licences ont également un coût d'entrée. 
 De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d'adaptation pour la personne chercheuse. 
-D'autres disent que le développement *open source*, spécifiquement celui du langage de programmation R, se fait de façon anarchique. 
+D'autres disent que le développement en source ouverte, spécifiquement celui du langage de programmation R, se fait de façon anarchique. 
 Cela est davantage une question d'opinion et de conception du monde qu'une vérité. 
 Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en R peut collaborer à cette communauté. 
 Bien qu'il n'y ait pas d'autorité centrale, les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Le site a une politique de dépôt stricte, ainsi les *packages* doivent être suffisamment documentés. 
 Il est également possible d'y télécharger le langage de programmation R. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
 
+Quel langage un programmeur devrait-il choisir? Bien qu'il y ait différentes options qui puissent être pertinentes dépendemment des situations, nous conseillons le langage de programmation R pour les chercheurs en sciences sociales pour plusieurs raisons. 
+Une des plus importantes raisons est son caractère de logiciel libre à source ouverte. L'utilisation du langage R est et restera gratuite pour toujours. 
+C'est d'ailleurs une des charactéristiques de R qui rassemble un grande quantité de ces utilisateurs.
+Ce nombre d'utilisateurs est d'ailleurs en croyance depuis plusieurs années. 
+R est particulièrement versatile pour effectuer des tâches notamment liées aux statistiques et à la visualisation graphique. 
+Les différents packages R sont généralement très « clés en main » ce qui est avantageux pour les utilisateurs débutants. 
+Mais ils sont aussi souvent bâtis sur des fondations communes permettant également aux utlisateurs plus avancés de personnalisé et d'adapter leur code aux besoins de leurs analyses. 
+Les charactéristiques du langage de programmation R permet aussi la réplicabilité des résultats, même lorsqu'il y a des changements de version ou des nouvelles fonctions.
+Ce n'est pas toujours le cas avec les logiciels à license qui changent parfois comment certaines fonctionalités marchent entre les versions, sans pour autant permettre aux utilisateurs d'en ajuster le fonctionnement. 
+Finalement, la connaissance du langage de programmation R est valorisée dans plusieurs disciplines des sciences sociales, tant dans le monde académique que dans les secteurs public et privé.
+Cela étant, son apprentissage est une valeurs sûre.
 
-## Manuel d'instruction: Apprendre à programmer en R
+
+## Apprendre à programmer en R
 
 ### Où coder en R ?
 
