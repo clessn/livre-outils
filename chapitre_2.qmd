@@ -101,6 +101,10 @@ tbl_resume_chap_prog <- tibble(
 tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
 ```
 
+<-- Il pourrait être intéressant d'approfondir davantage les langages Python et Julia, même si ce ne sont pas les langages principaux utilisés dans les chapitres. Ce sont des langages fréquemment mentionnés dans le domaine, et il serait utile de connaître leurs spécificités, leurs potentiels d'application, ainsi que leurs différences, au-delà du simple tableau comparatif. Cela permettrait d’offrir une vision plus complète de ces outils populaires et de leur pertinence selon les contextes.-->
+
+## Manuel d'instruction: Apprendre à programmer en R
+
 ## Pourquoi R?
 
 Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages en source ouverte tels que Python et Julia. 
@@ -146,6 +150,7 @@ Cela étant, son apprentissage est une valeurs sûre.
 
 
 ## Apprendre à programmer en R
+>>>>>>> 2c6566314e941b1bd8b982f7f194927b7137aaec
 
 ### Où coder en R ?
 
