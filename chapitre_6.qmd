@@ -1,22 +1,20 @@
 # Outils de visualisation graphique
 
 ## Point d'observation: historique de la visualisation graphique
-
-Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
+Ce chapitre a pour objectif de souligner l'importance de la visualisation des données tout au long du processus de recherche, depuis l'obtention des données pour l'analyse exploratoire des données (exploratory data analysis) jusqu'aux graphiques finaux de vos articles. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, le chercheur peut rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s'agit de trouver la meilleure manière de rendre l'information digeste pour les experts de votre discipline académique ou pour le grand public. Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d'une recherche empirique.
 
 Pour comprendre l'évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le *Milestones Project* de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique [@friendly_etal16].
 
-::: callout-note
-Pour plus d'informations sur le Milestones Project, consultez le site web du projet: <https://www.datavis.ca/milestones/index.php?page=introduction>.
+:::::: {.callout-note}
+Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
 :::
 
 ### Les origines de la visualisation graphique
-
 On comprend rapidement que cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, les origines de la visualisation graphique remontent à des efforts rudimentaires pour représenter visuellement des données et des relations. Dès le 17e siècle, les cartes thématiques font leur apparition, notamment avec des représentations géographiques de phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
 
 ### La période moderne : Un premier âge d’or
-
-L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée de premier âge d’or de la visualisation graphique [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées. L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
+L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée de premier âge d’or de la visualisation graphique [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
+L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
 
 ### L’ère informatique : de nouvelles possibilités
 
@@ -24,25 +22,28 @@ Avec l’avènement de l’ère informatique au 20e siècle, la visualisation gr
 
 Avec l’ère informatique, la visualisation graphique est entrée dans une phase de transformation, marquée par la capacité des ordinateurs à traiter rapidement de vastes quantités de données. Dès les années 1960, les premières visualisations générées par ordinateur ont ouvert la voie à des graphiques plus complexes. Dans les années 1980 et 1990, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large. Durant cette période, l’intérêt pour l'esthétique et l’interactivité, promu notamment par Edward Tufte, a renforcé l’importance de la visualisation comme moyen de communication efficace des données [@friendly_wainer21].
 
-Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*Big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques.
+Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*Big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques. 
+
 
 ## Arpentage et choix éditorial:
 
-Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélections établis au chapitre 1.
+Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélection établis au chapitre 1, résumés dans le **Tableau 6**.
 
-Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
+Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. Comme le montre le **Tableau 6**, *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
 
-L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. *Python*, lui aussi, bénéficie d'une communauté active, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données, tandis que les communautés autour de logiciels comme *Tableau* ou *Excel* sont davantage orientées vers des usages plus standardisés.
+L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. Comme indiqué dans le **Tableau 6**, *Python* bénéficie également d'une grande et active communauté, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données. Les communautés autour de logiciels comme *Tableau* ou *Excel* sont présentes mais davantage orientées vers des usages plus standardisés.
 
-La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme matplotlib et seaborn. *Tableau* et *Excel*, quant à eux, sont plus fréquemment utilisés dans le secteur commercial pour des visualisations rapides et des analyses exploratoires, mais ils peuvent être limités en termes de complexité graphique et de personnalisation.
+La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme `matplotlib` et `seaborn`. Comme le souligne le **Tableau 6**, *Tableau* est populaire pour la visualisation, surtout dans le secteur commercial, tandis que *Excel* est souvent utilisé pour des tâches plus simples.
 
-L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers *CSV*, *Excel*, ou accéder à des bases de données *SQL*, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que pandas pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
+L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers CSV, Excel, ou accéder à des bases de données SQL, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que `pandas` pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
 
-Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence, tandis que *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données.
+Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence. Cependant, comme le montre le **Tableau 6**, *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données, ce qui limite la réplicabilité.
 
-Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
+Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. Comme indiqué dans le **Tableau 6**, *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
 
-En somme, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python*, et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
+En somme, comme le résume le **Tableau 6**, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python* et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
+
+
 
 ```{r}
 #| echo: false
@@ -50,88 +51,83 @@ En somme, nous mettons en avant *R* comme le choix éditorial pour la visualisat
 library(tidyverse)
 library(tinytable)
 
-tbl_resume_chap_X <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)',
-                 'Existence d\'une communauté d\'utilisateurs',
-                 'Popularité dans le champ',
-                 'Compatibilité avec d\'autres outils',
+tbl_resume_chap_6 <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
+                 'Existence d\'une communauté d\'utilisateurs', 
+                 'Popularité dans le champ', 
+                 'Compatibilité avec d\'autres outils', 
                  'Transparence et réplicabilité',
                  'Adaptabilité et flexibilité'),
-    'R' = c('Oui (Gratuit)',
-            'Oui (Forte communauté active)',
-            'Populaire dans l\'analyse de données',
-            'Bonne compatibilité (nombreux packages pour intégration)',
-            'Oui (Open-source, réplicable)',
-            'Flexible (hautement personnalisable avec divers packages)'),
-    'Python' = c('Oui (Gratuit)',
-                 'Oui (Grande communauté active)',
-                 'Populaire dans l\'analyse de données et la science des données',
-                 'Très compatible (bibliothèques telles que pandas, matplotlib, etc.)',
-                 'Oui (Open-source et réplicable)',
-                 'Flexible (nombreuses bibliothèques disponibles)'),
-    'Tableau' = c('Non (Payant)',
-                  'Oui (Communauté grandissante)',
-                  'Populaire dans la visualisation des données',
-                  'Bonne compatibilité (intégration avec diverses bases de données et fichiers)',
-                  'Partiellement (Propriétaire, mais partage possible)',
-                  'Flexible (fonctionnalités avancées mais moins personnalisable que R/Python)'),
-    'Excel' = c('Non (Payant)',
-                'Oui (Large communauté d\'utilisateurs)',
-                'Très populaire pour des analyses de données simples',
-                'Bonne compatibilité (partage facile avec d\'autres logiciels Microsoft)',
-                'Non (Propriétaire, moins réplicable)',
-                'Peu flexible (principalement pour des visualisations simples)')
+    'R' = c('Gratuit', 'Forte et active', 'Populaire', 'Nombreux packages d\'intégration', 
+            'Open-source, réplicable', 'Hautement personnalisable'),
+    'Python' = c('Gratuit', 'Grande et active', 'Courant en science des données', 
+                 'Nombreux packages d\'intégration', 'Open-source, réplicable', 
+                 'Flexible (nombreuses bibliothèques)'),
+    'Tableau' = c('Payant', 'En croissance', 'Populaire', 
+                  'Intégration variée (bases de données)', 'Peu réplicable (propriétaire)', 
+                  'Moins personnalisable'),
+    'Excel' = c('Payant', 'Large', 'Populaire pour tâches simples', 
+                'Compatibilité avec Microsoft', 'Peu réplicable (propriétaire)', 
+                'Pour visualisations simples')
 )
 
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
+tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
+
+
 
 ```
 
-## Manuel d'instruction: La visualisation graphique avec R
 
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables.
+## Manuel d'instruction: La visualisation graphique avec R
+Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
 
 ### Pour les analyses descriptives
 
 #### Base R
+Le Base R est le langage de base de *R* et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l'analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d'un jeu de données. Par exemple, les fonctions comme `plot()`, `hist()`, `boxplot()` et `barplot()` permettent aux chercheurs de visualiser les distributions des variables, d'identifier des valeurs aberrantes et d'examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.
 
-Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
-
-Alors qu'un peu tout peut être fait avec le *Base R*, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques plus sophistiqués. Le *Base R* peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient rapidement complexe lorsqu'on cherche à améliorer l'esthétique de son graphique ou à visualiser des relations entre plusieurs variables, ce que `lattice` et `ggplot2` permettent plus facilement[@wickham09, p. 3-4].
+Alors qu'un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu'il s'agit d'innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l'exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu'il s'agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et `ggplot2` offrent plus de flexibilité et d'esthétique avancée [@wickham09, p. 3-4].
 
 #### `lattice`
+Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
 
-Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula \| variable en facettes, data=)).
-
-Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de ggplot2 lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
+Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de `ggplot2` lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
 
 #### Le package `ggplot2`
-
 Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
 
 Le principal avantage de `ggplot2` reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques `ggplot2` se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire. Dans `ggplot2`, la fonction *aes()* définit les mappings esthétiques, liant les variables des données aux éléments visuels du graphique (comme les axes ou la couleur). Les "geoms", tels que *geom_point()*, déterminent le type de graphique (points, lignes, barres). La fonction *labs()* sert à ajouter des étiquettes et des titres aux axes ou au graphique. Enfin, *theme()* ajuste l'apparence globale du graphique, en modifiant des éléments comme le fond, les grilles, ou le style de texte. Ces composants travaillent ensemble pour construire un graphique clair et personnalisable.
 
 ```{r}
+#| warning: false
+#| message: false
 library(ggplot2) # importer le package
+library(dplyr)
 
-# Nous utilisons dans cet exemple le jeu de données intégré mtcars
+# Nous utilisons dans cet exemple le
+#   jeu de données intégré starwars (dans dplyr)
+
 # Créer un graphique de dispersion (scatter plot) avec ggplot2
-ggplot(mtcars, aes(x = wt, y = mpg)) +  # Définir les mappings esthétiques: poids (wt) sur l'axe x, consommation (mpg) sur l'axe y
-  geom_point(color = "red", size = 3) +  # Ajouter des points rouges de taille 3
+ggplot(starwars, aes(x = mass, y = height)) +
+  # Ajouter des points rouges de taille 3
+  geom_point(color = "red", size = 3) +
   labs(
-    title = "Relation entre le poids de la voiture et la consommation",  # Titre du graphique
-    x = "Poids (1000 lbs)",  # Étiquette de l'axe x
-    y = "Miles par gallon (MPG)"  # Étiquette de l'axe y
+    # Titre du graphique
+    title = "Poids et taille des personnages de Star Wars",
+    # Étiquette de l'axe x
+    x = "Poids",
+    # Étiquette de l'axe y
+    y = "Taille"
   ) +
-  theme_minimal()  # Appliquer un thème minimaliste pour un aspect propre et simple
-
+  # Appliquer un thème minimaliste
+  theme_minimal()
 ```
 
 ### Pour visualiser les régressions
 
 Lorsque l'on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction `summary(model)` offre une manière simple et rapide d'obtenir un aperçu d'un modèle, ses limites se manifestent lorsqu'il s'agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d'une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.
 
-::: callout-note
+:::::: {.callout-note}
 Le manuel d'instructions de cette section restera volontairement bref et concis en raison de l'abondante documentation déjà existante sur ces outils. L'objectif ici est de les centraliser en un seul endroit.
 :::
 
@@ -142,9 +138,13 @@ Le package `stargazer` est un package qui permet de générer des tableaux de r�
 Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
 
 ```{r}
+#| label: stargazer
 #| code-overflow: wrap
-# Il faut premièrement installer et importer le package stargazer si ce n'est pas déjà fait.
-# install.packages("stargazer") # installer
+#| message: false
+# Il faut premièrement installer et importer le package stargazer si ce n'est
+#   pas déjà fait.
+
+# install.packages("stargazer") # pour installer
 
 library(stargazer) # importer le package
 
@@ -152,22 +152,40 @@ library(stargazer) # importer le package
 mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
 mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
 
-stargazer(mod_lm, mod_glm, type = "text", title = "Tableau de régression des modèles")
+stargazer(
+  mod_lm,
+  mod_glm,
+  type = "text",
+  title = "Tableau de régression des modèles"
+  )
 ```
 
-<!-- Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`: -->
-
-<!-- ```{r} -->
-
-<!-- stargazer(mod_lm, mod_glm, type = "latex", title = "Tableau de régression des modèles") -->
-
-<!-- ``` -->
-
-Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, cette sortie a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html:
+Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
 
 ```{r}
-stargazer(mod_lm, mod_glm, type = "html", title = "Tableau de régression des modèles")
+#| label: stargazer2
+stargazer(
+  mod_lm,
+  mod_glm,
+  type = "latex",
+  title = "Tableau de régression des modèles"
+  )
 ```
+
+Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, elle a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html (à des fins de lisibilité, nous n'avons pas présenté la sortie de cette commande. Essayez-le dans votre environnement de programmation!):
+
+```{r}
+#| eval: false
+#| label: stargazer3
+stargazer(
+  mod_lm,
+  mod_glm,
+  type = "html",
+  title = "Tableau de régression des modèles"
+  )
+```
+
+
 
 Bien qu'il existe des milliers de façons de personnaliser son tableau de régression avec `stargazer`, nous vous invitons à consulter la documentation du package [@hlavac22] ainsi que différents blogs en ligne afin de personnaliser votre tableau comme vous le voulez.
 
@@ -180,20 +198,31 @@ Tout comme `stargazer`, il faut commencer en créant un modèle de régression. 
 ```{r}
 #| code-overflow: wrap
 #| message: false
-# Il faut premièrement installer et importer le package modelsummary si ce n'est pas déjà fait.
-# install.packages("modelsummary") # installer
+# Il faut premièrement installer et importer le package modelsummary si ce
+#   n'est pas déjà fait.
+
+# install.packages("modelsummary") # pour installer
 
 library(modelsummary) # importer le package
 ```
 
+
 ```{r}
-#| code-overflow: wrap
+#| echo: true
+#| results: asis
 ## Créer deux modèles de régression
 mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
 mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
 
 ## Utiliser modelsummary pour créer un tableau de deux modèles de régression
-modelsummary(list("Model 1" = mod_lm, "Model 2" = mod_glm), output = "markdown")
+modelsummary(
+  list(
+    "Model 1" = mod_lm,
+    "Model 2" = mod_glm
+    ),
+    stars = TRUE,
+    output = "markdown"
+  )
 ```
 
 Tout comme `stargazer`, `modelsummary` offre également plusieurs options de sortie avec l'argument `output`. Cependant, `modelsummary` en supporte plus, comme `kableExtra`, `html`, `latex` et bien d'autres formats.
@@ -208,17 +237,18 @@ La première étape est de faire son modèle comme on le fait habituellement:
 
 ```{r}
 #| code-overflow: wrap
-# Il faut premièrement installer et importer le package marginaleffects si ce n'est pas déjà fait.
-# install.packages("marginaleffects") # installer
+# Il faut premièrement installer et importer le package marginaleffects si
+#  ce n'est pas déjà fait.
+
+# install.packages("marginaleffects") # pour installer
 
 library(marginaleffects) # importer le package
 
-## Créer deux modèles de régression
+## Créer un modèle de régression
 mod_lm <- lm(mpg ~ hp + wt + drat, data = mtcars)
 ```
 
 Ensuite, il est nécessaire de créer une grille où notre variable indépendante d'intérêt varie tandis que les autres variables restent constantes. Prenons, par exemple, le cas où nous souhaitons estimer et interpréter l'effet de `hp` sur `mpg`. Pour ce faire, nous construisons une `dataframe` représentant une grille de différents niveaux de `hp`, tout en maintenant les variables `wt` et `drat` constantes. Cela nous permet d'isoler l'effet spécifique de `hp` et d'explorer son impact sur la variable dépendante `mpg`. La première sous-étape ici est de comprendre les différentes valeurs que peut prendre notre variable d'intérêt, `hp`:
-
 ```{r}
 #| code-overflow: wrap
 table(mtcars$hp)
@@ -247,7 +277,9 @@ La prochaine étape est celle de prédire notre modèle sur ces données en util
 
 predictions <- marginaleffects::predictions(
       model = mod_lm,
-      newdata = grille ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données, ie: grille
+      ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données
+      ##  ie: grille
+      newdata = grille
 )
 
 print(as.data.frame(predictions))
@@ -255,10 +287,10 @@ print(as.data.frame(predictions))
 
 La `dataframe` predictions contient maintenant des informations très intéressantes:
 
--   `estimate`: la valeur prédite de `mpg` pour cette observation.
--   `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
--   `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
--   `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
+- `estimate`: la valeur prédite de `mpg` pour cette observation.
+- `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
+- `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
+- `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
 
 Nous pouvons maintenant utiliser `predictions` pour construire un graphique qui nous permet d'interpréter l'effet de `hp` sur `mpg` à l'intérieur de notre modèle en contrôlant pour `wt` et `drat` en utilisant le package `ggplot2`:
 
@@ -280,6 +312,10 @@ Si jusqu'à présent la visualisation des données a été présentée comme une
 
 Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En R, les packages `ggplotly` et `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
 
+:::::: {.callout-note}
+Note: Le rendu de graphiques interactifs n'est pas possible dans un document PDF. Par conséquent, seuls les codes sont fournis ci-dessous. Vous pouvez essayer ces codes dans votre environnement de développement pour voir le résultat.
+:::
+
 ##### Exemple avec `ggplotly`
 
 `ggplotly` permet de transformer un graphique `ggplot2` en une visualisation interactive.
@@ -289,8 +325,13 @@ Les graphiques interactifs permettent une exploration dynamique des données, of
 library(ggplot2)
 library(plotly)
 ```
-
 ```{r}
+#| eval: false
+# Ce package, webshot2, peut être nécessaire pour visualiser
+#  des graphiques interactifs
+
+#install.packages("webshot2")
+
 # Création d'un graphique ggplot
 p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
   geom_point() +
@@ -303,14 +344,21 @@ ggplotly(p)
 Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`:
 
 ```{r}
+#| eval: false
 # Création d'un graphique interactif avec plotly
-fig <- plot_ly(data = mtcars, x = ~hp, y = ~mpg, type = 'scatter', mode = 'markers') %>%
+fig <- plot_ly(
+  data = mtcars,
+  x = ~hp, y = ~mpg,
+  type = 'scatter',
+  mode = 'markers'
+  ) %>%
   layout(title = "Effet de hp sur mpg")
 
 fig
 ```
 
 Nous vous recommandons vivement de consulter la documentation officielle des packages `plotly` et `ggplotly` pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir vos graphiques interactifs.
+
 
 #### Tableaux interactifs
 
@@ -335,17 +383,21 @@ Le package kableExtra permet de personnaliser et d'enrichir les tableaux créés
 #| message: false
 library(kableExtra)
 ```
-
 ```{r}
 # Création d'un tableau interactif avec kableExtra
-kable(head(mtcars), caption = "Exemple de tableau avec la colonne hp colorée en bleu") %>%
+kable(
+  head(mtcars),
+  caption = "Exemple de tableau avec la colonne hp colorée en rouge"
+  ) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
-  column_spec(5, background = "blue")
+  column_spec(5, background = "red")
 ```
+
 
 #### Applications interactives avec Shiny
 
 `shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
+
 
 ##### Exemple de base avec `shiny`
 
@@ -353,6 +405,7 @@ Voici un exemple simple d'application `shiny` où l'utilisateur peut sélectionn
 
 ```{r}
 #| eval: false
+#| label: shiny
 library(shiny)
 library(ggplot2)
 
@@ -386,97 +439,3 @@ shinyApp(ui = ui, server = server)
 Cette application simple permet à l'utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (`mpg`), visualisée à travers un graphique interactif.
 
 Pour explorer davantage les possibilités de `shiny`, nous vous recommandons de consulter la documentation officielle du package `shiny` ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications.
-
-````{=html}
-<!--
-```{=html}
-
-## Réflexion théorique
-
-### Les options disponibles
-
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables.
-
-Trois options vous sont présentées: Base R, Lattice et ggplot2. Les avantages et inconvénients respectifs de ces trois approches pour la création de graphiques sont explicités dans les sections suivantes.
-
-#### Avantages et inconvénients de Base R
-
-Base R est le logiciel de base qui contient le langage de programmation R. Lorsque R Studio est installé sur un ordinateur, il est toujours possible d'utiliser le langage de base de R pour coder sans même avoir à installer des *packages*. Base R permet donc de produire des graphiques rapidement sans avoir à installer quoi que ce soit.
-
-
-Pour produire un graphique avec ce langage de base, il suffit de faire appel à la fonction *plot()* dans laquelle il est spécifié un x et y à partir d'une base de données et un graphiques est déjà créé. Les fonctions *barplot(), hist()* ou *boxplot()* ajoutés au graphiques permettent de spécifier le style de visualisation souhaitée.
-
-## Réflexion théorique
-
-
-Alors qu'un peu tout peut être fait avec Base R, ce langage demeure élémentaire; il est difficile d'innover dans la visualisation ou même de produire des graphiques moindrement sophistiqués. Base R peut sembler plus simple pour l'exploration de données ou pour produire des graphiques de base rapidement, mais ce langage devient vite complexe.
-
-**Exemple Base R**
-
-#### Avantages et inconvénients de Lattice
-
-Développé par Deepayan Sarkar, Lattice est un système graphique qui implémente spécifiquement l'idée des graphiques à facettes, qui a été initialement développée pour des langages informatique comme *S* et *S-Plus* [sarkar23]. Ce langage vise à améliorer les graphiques de Base R en fournissant de meilleures valeurs par défaut et la possibilité d'afficher facilement des relations multivariées. Le package prend en charge la création de graphiques en treillis (afficher une variable ou la relation entre les variables, conditionné par une ou plusieurs autres variables).
-
-Pour produire un grpahique de base avec Lattice, le *package lattice* doit préalablement être installé sur l'ordinateur et chargé dans la session d'utilisation. Il suffit ensuite de spécifier un type de graphique, la formule qui lie x et y ainsi que les données qui serviront à produire le graphique (*graph_type(formula, data=)*).
-
-Il est, de manière générale, plus complexe de se familiariser avec ce langage qui est moins instinctif et moins populaire; la communauté en ligne est donc moins développée.
-
-**Exemple Lattice**
-
-#### Avantages et inconvénients de ggplot2
-
-Développé principalement par Hadley Wickham, **ggplot2** est un  *package R* faisant partie de la collection de *packages* de **tidyverse**. L'utilisation de **ggplot2** permet donc une adéquation avec d'autres *packages* centraux au développement de la visualisation des données et des analyses statistiques, comme  **dplyr** [@wickham_etal19]. Lorsque la **tidyverse** est utilisée de l'importation des données à leur visualisation graphique, la cohérence entre les *packages* présente l'avantage d'assurer qu'il n'y a pas de conflits entre les fonctions, et donc, réduit les erreurs introduites potentiellement.
-
-
-Avantages: tidyverse, beauté et possibilités infinies (on peut les animer!!!), beaux résultats même pour les débutants, rapidité pour l'exploration de données, facettes
-          - Inconvénients: complexité potentielle, package extérieur, courbe d'apprentissage plus élevée
-
-
-# Plan
-- Question: Comment opimiser l'intelligibilité des données?
-      - Communication et vulgarisation **Question : Est-ce qu'il nous faut nécessairement une question de recherche dans ce chapitre qui est plus technique**
-
-- Réflexion théorique:
-      - Différentes options disponibles (base R, lattice et ggplot2)
-      - Avantages et inconvénients de ggplot2
-          - Avantages: tidyverse, beauté et possibilités infinies (on peut les animer!!!), beaux résultats même pour les débutants, rapidité pour l'exploration de données, facettes
-          - Inconvénients: complexité potentielle, package extérieur, Base R est toujours là, courbe d'apprentissage plus élevée **Montrer un exemple de graphique construit layer par layer (couche par couche)**
-      - Comparaison
-          - Base R: la fonction plot() de base ou avec arguments, les fonctions barplot(), hist(), boxplot(), les grids. Base R peut sembler plus siple pour l'exploration de données, mais de vient vite plus complexe (même pour visualiser avec grid).
-          - Lattice: explication du package densityplot(), splom(), xyplot()
-- Réflexion méthodologique :
-      - Comment utiliser ggplot2:
-          - Grammar of graphics: créer toutes sortes de graphiques à partir de quelques composants: data, geom, coordinate system et plot
-          - Aesthetic propreties de base: size, color, emplacements de x et y
-          - Transformation de la base de données d'origine directement dans le graphique (ex: stat)
-      - Exemples et fonctionnalités
-          - Graphiques les plus communs avec variables discrètes ou continues
-          - Cartes
-          - Visualisation de 3 variables
-          - Visualisation des marges d'erreur, juste spécifier que l'option est possible
-– Trucs et astuces :
-      - ggplot2 cheat sheet
-      - Pleins d'idées de visualisation en ligne et de codes adaptables disponibles
-      - Retour sur la communication des données: choix du graphique en fonction des données et de l'objectif de communication
-
-
-Outils pour les schémas
-
-Il peut être nécessaire au cours d’un processus scientifique, une présentation, autre de faire des schémas.
-
-Toujours pertinent de faire un croquis à la main, mais lorsque vient le temps de le rendre propre, présentable quels outils s’offrent à nous?
-
-Moody, D. (2007). What Makes a Good Diagram? Improving the Cognitive Effectiveness of Diagrams in IS Development. In W. Wojtkowski, W. G. Wojtkowski, J. Zupancic, G. Magyar, & G. Knapp (Eds.), Advances in Information Systems Development (pp. 481–492). Springer US.
-
-Larkin, J. H., & Simon, H. A. (1987). Why a Diagram is (Sometimes) Worth Ten Thousand Words. Cognitive Science, 11(1), 65–100.
-
-Suttorp, M. M., Siegerink, B., Jager, K. J., Zoccali, C., & Dekker, F. W. (2015). Graphical presentation of confounding in directed acyclic graphs. Nephrology Dialysis Transplantation, 30(9), 1418–1423.
-
-Diagrams.net (anciennement Draw.io)
-the best free diagram and flowchart app
-Lucidchart
-
-Miro
-
-      -->
-````
