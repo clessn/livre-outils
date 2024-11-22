@@ -15,7 +15,9 @@ Ce chapitre vise à initier les lecteurs et lectrices à l'intelligence artifici
 Définir et expliquer ce qu’est l’intelligence artificielle n’est pas une tâche simple, mais il s’agit d’une étape essentielle pour ensuite aborder les enjeux qui y sont reliés, notamment en raison de son évolution constante. Du point de vue éthique, différentes préoccupations telles que le plagiat à l’aide de l’IA peuvent être abordés. Cela mène à se questionner sur la place du chercheur.euse, aujourd'hui et dans le futur, avec l'arrivée de ces nouvelles technologies. Enfin, la dernière section se penche sur la place de cette technologie en sciences sociales. Quel usage pourrait-on en faire, et surtout quelles en sont les limites?
 -->
 
-## Définition et différents type d'IA
+## Point d'observation: 
+
+### Définition et différents type d'IA
 
 Qu'est-ce que l'intelligence artificielle (IA)? Est-ce quelque chose d'homogène, ou s'agit-il plutôt « des intelligences artificielles »? Dans un premier temps, il est important de préciser que l'intelligence artificielle est un champ d'études [@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets, relativement vaste et en constante expansion, qui s'intéressent, à sa façon, à l'intelligence artificielle. Pour préciser ce propos, prenons l'exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d'études, qui ont chacun leur propre objet d'intérêt. La philosophie politique, les relations internationales, la politique comparée et l'étude de l'opinion publique, par exemple, sont tous des sous-champs qui s'intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu'il n'y a pas de consensus dans la définition de l'IA [@wang19 ; @konig_etal22]. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d'une manière précise et consensuelle, quelque chose qui évolue constamment [@devedzic22 ; @bertolini20, pp. 15]?
 
@@ -33,7 +35,7 @@ Ensuite, un sous-champ de l'apprentissage machine, l'apprentissage profond : « 
 
 C'est d'ailleurs la tâche de ceux qui s'intéressent aux réseaux neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA) sont constitués d'une couche de nœuds, contenant une couche d'entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque nœud, ou neurone artificiel, se connecte à un autre et possède un poids et un seuil associés. Si la sortie d'un nœud individuel est supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie des données à la couche suivante du réseau. Dans le cas contraire, aucune donnée n'est transmise à la couche suivante du réseau. » \[Traduction DeepL\] (IBM 2023b). Ainsi, le but est de reproduire les structures cognitives humaines, afin de permettre à l'IA d'accomplir des tâches plus complexes. L'une des principales utilités de ce sous-champ est qu'il permet d'augmenter la rapidité du classement de données ; la reconnaissance vocale ou d'image, par exemple, ne prend que quelques minutes grâce à cela, contrairement à plusieurs heures lorsque fait par des humains [@ibm23a].
 
-## L'évolution constante de l'IA
+### L'évolution constante de l'IA
 
 Plusieurs chercheurs, dont le professeur Yoshua Bengio de l'Université de Montréal, ont lancé plusieurs avertissements sur le développement de l'IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans The Economist, M. Bengio [-@bengio23] nous dit qu'il prévoyait le développement d'une IA avec des capacités similaires à celles de l'humain d'ici quelques décennies, peut-être un siècle. Depuis l'arrivée de ChatGPT-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies [@bengio23]. Dans les dix dernières années seulement, les systèmes de reconnaissance d'images et de langages en sont venus à dépasser les capacités humaines [@roser22]. La figure 1 présente cette évolution.
 
@@ -43,7 +45,7 @@ Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. De
 
 En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l'IA? Tout d'abord, il est intéressant de commencer à réfléchir ainsi qu'à analyser les différents impacts que l'IA a sur nos sociétés. Les avancés dans le domaine en plus de l'accessibilité à ces technologies, tel que Large Language Model (LLM), en font de nouveaux objets d'étude actuel, et surtout sans grandes réponses. Yuval Noah Harrari [-@harari23], historien et philosophe, explique dans un article que la capacité de l'IA à manipuler ainsi qu'à générer du langage en font des outils puissants qui ont le potentiel d'avoir de profond impact sur nos civilisations. Par conséquent, l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « générer et partager de fausses informations, érodant la confiance sociale et la démocratie; pour surveiller, manipuler et maîtriser les citoyens, nuisant aux libertés individuelles et collectives; ou pour créer de puissantes armes physiques ou digitales qui menaceraient la vie humaine. » \[Traduction libre\] [@bremmer_suleyman23, pp. 32]. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l'interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu'une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.
 
-## Les différents outils de l'IA
+## Arpentage et choix éditoriaux: les différents outils de l'IA
 
 Cette section vise à présenter différents outils de l'intelligence artificielle aux lecteurs. Ce qui est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils présenté ici risque d'avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs liront le chapitre. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lectuers à développer leurs propres capacités réflexives quant à leur utilisation de l'IA. Cette technologie offre de nouvelles opportunités, mais elle apportea aussi son lot d'enjeux et de questions dont il vaut mieux s'y intéresser afin de développer une utilisation saine et intégre de ces outils.
 
@@ -260,7 +262,10 @@ Cependant, avec l'arrivée de l'IA et ce désir de constamment repousser les lim
 Le propos ici n'est pas d'encourager les lecteurs à ne pas utiliser l'IA. En fait, nous souhaitons tout simplement appeler à une certaine prudence. Le risque que cette technologie nous pose est d'en devenir dépendant [@park_etal23] et d'ainsi se dénaturer. Bien qu'elle offre de nombreux avantages, elle a aussi le piège d'offrir beaucoup de raccourcis et de nuire à plusieurs de nos capacités intellectuelles et physiques. Il faut donc développer un jugement critique dans notre utilisation de l'IA. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
 -->
 ```
-## Utilisation du package OpenAI
+
+{{< pagebreak >}}
+
+## Manuel d'instruction: utilisation du package OpenAI
 
 ### Installation et chargement du package
 
