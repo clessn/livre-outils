@@ -1,8 +1,7 @@
 # Outils de visualisation graphique
 
 ## Point d'observation: historique de la visualisation graphique
-
-Une fois les données collectées, nettoyées, traitées et analysées, une partie centrale du travail d'un scientifique de données est de faire parler les résultats de ses tests empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information digeste pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de vulgariser les résultats d'une recherche empirique.
+Une fois les données collectées, nettoyées, traitées et analysées, l’une des tâches essentielles du data scientist consiste à donner du sens aux résultats obtenus à partir des analyses empiriques. Il s'agit alors de trouver la meilleure manière de rendre l'information comprehensible pour les experts et initiés de votre discipline académique ou pour le grand public. La visualisation graphique des données est donc centrale afin de partager les résultats d'une recherche empirique.
 
 Pour comprendre l'évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le *Milestones Project* de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique [@friendly_etal16].
 
