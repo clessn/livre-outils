@@ -44,6 +44,8 @@ Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des
 
 En somme, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python*, et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
 
+<!--# Un autre point qu'on pourrait ajouter: Si on sort du Québec, utiliser R pour ses visualisations ça fait plus professionnel/c'est plus le standard -->
+
 ```{r}
 #| echo: false
 #| warning: false
@@ -89,7 +91,7 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de
 
 ## Manuel d'instruction: La visualisation graphique avec R
 
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables.
+Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables.
 
 ### Pour les analyses descriptives
 
