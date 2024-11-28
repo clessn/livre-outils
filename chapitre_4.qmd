@@ -140,7 +140,7 @@ L'intégration de Zotero dans le processus de recherche académique permet une g
 
 La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
 
-### Ajouter des références à Zotero
+### Ajouter des références à Zotero <!--# Ce serait bien d'ajouter des images pour les différentes choses à faire avec Zotero -->
 
 Zotero offre plusieurs méthodes pour ajouter des références à une bibliothèque :
 
