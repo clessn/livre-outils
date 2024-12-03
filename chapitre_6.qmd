@@ -90,7 +90,7 @@ Une fois les données collectées, nettoyées, traitées et analysées, une part
 
 Mais qu'est-ce qu'une bonne visualisation de données? Quel type de graphique choisir? Quelles couleurs utiliser? Quelles informations mettre en évidence? Ce chapitre ne répond pas à ces questions, une myriade d'ouvrages les ont déjà traitées. Du classique *The Visual Display of Quantitative Information* de Edward Tufte (1983) jusqu'aux plus récents ouvrages tels que *Data Visualization: A Practical Introduction* de Kieran Healy (2018) ou *Fundamentals of Data Visualization* de Claus O. Wilke (2019), les ressources sont nombreuses pour vous aider à améliorer vos compétences en visualisation de données. Il en ressort souvent un adage qui revient sous différentes versions: excellence et intégrité [@tufte83]; "Be Brief, Clear, Picturesque, and Accurate" pour Bessler (2023); "accuracy, utility, and efficiency" pour [@zhuMeasuringEffectiveData2007] , "Intégrité, Simplicité, Contexte, Esthétique" pour Arel-Bundock (2021). En somme, bien qu'il n'existe pas de solution toute faite, il est largement reconnu que l'adaptation de la visualisation selon l'objectif et les données à communiquer est cruciale. Il faut équilibrer soigneusement ces éléments.
 
-Ce chapitre se concentre plutôt à faire une sommaire recension des outils de visualisation nécessaires aux personnes s'intéressant à la recherche en sciences sociales. Une première section discute de la sélection des outils. Ensuite, ceux-ci sont présentés selon trois catégories: les outils pour les diagrammes, les outils pour les analyses descriptives et les outils pour visualiser les régressions. Une dernière section ouvre une réflexion sur les visualisations réactives.
+Ce chapitre se concentre plutôt à faire une recension sommaire des outils de visualisation nécessaires aux personnes s'intéressant à la recherche en sciences sociales. Une première section discute de la sélection des outils. Ensuite, ceux-ci sont présentés selon trois catégories: les outils pour les diagrammes, les outils pour les analyses descriptives et les outils pour visualiser les régressions. Une dernière section ouvre une réflexion sur les visualisations réactives.
 
 ## Sélection des outils: débat R et Python
 
@@ -112,7 +112,7 @@ https://www.r-project.org/about.html
 
 Il peut être nécessaire au cours d’un processus scientifique, une présentation, autre de faire des schémas.
 
-Toujours pertinent de faire un croquis à la main, mais lorsque vient le temps de le rendre propre, présentable quels outils s’offrent à nous?
+Il est toujours pertinent de faire un croquis à la main, mais lorsque vient le temps de le rendre propre, présentable quels outils s’offrent à nous?
 
 Moody, D. (2007). What Makes a Good Diagram? Improving the Cognitive Effectiveness of Diagrams in IS Development. In W. Wojtkowski, W. G. Wojtkowski, J. Zupancic, G. Magyar, & G. Knapp (Eds.), Advances in Information Systems Development (pp. 481–492). Springer US.
 
@@ -129,7 +129,7 @@ the best free diagram and flowchart app
 ## Outils pour les analyses descriptives
 
 ### R
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
+Lorsque vous souhaitez créer des graphiques en R, les options sont plusieurs. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
 
 Trois options vous sont présentées: Base R, Lattice et ggplot2. Les avantages et inconvénients respectifs de ces trois approches pour la création de graphiques sont explicités dans les sections suivantes.
 
@@ -161,7 +161,7 @@ Le principal avantage de *ggplot2* reste sa grammaire qui permet à l'utilisateu
 
 ### Aller plus loin: La visualisation interactive des données
 
-Si jusqu'à présent la visualisation des données a été présentée comme une étape permettant de présenter les résultats de recherches, il est également possible de considérer la visualisation comme une utile au processus d'exploration des données comportants de nombreuses dimensions (autres façons de le dire peut-être?). En effet, les formes de visualisations dites interactives permettant d'explorer et même d'analyser les données à même notre graphique ou notre tableau. Cela contribue à mieux comprendre la structures des données, à inspecter plus rapidement ces dernières et même susciter des questions de recherches peut-être omises autrement (citer Sievert, 2020). 
+Si jusqu'à présent la visualisation des données a été présentée comme une étape permettant de présenter les résultats de recherches, il est également possible de considérer la visualisation comme utile au processus d'exploration des données comportants de nombreuses dimensions (autres façons de le dire peut-être?). En effet, les formes de visualisations dites interactives permettant d'explorer et même d'analyser les données à même notre graphique ou notre tableau. Cela contribue à mieux comprendre la structures des données, à inspecter plus rapidement ces dernières et même susciter des questions de recherches peut-être omises autrement (citer Sievert, 2020). 
 
 - ggplotly et plotly
 - Tableaux interactifs? fonctions kable() et kableExtra du package knitr
