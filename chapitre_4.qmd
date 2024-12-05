@@ -125,8 +125,7 @@ L'intégration de Zotero dans le processus de recherche académique permet une g
 #### Installation et Configuration
 
 L'installation de Zotero commence par le téléchargement de l'application Zotero ainsi que de son extension pour navigateur, Zotero Connector. Cette extension permet de capturer facilement des références à partir de sources en ligne. Une fois l'installation terminée, il est recommandé de créer un compte Zotero via le lien d'inscription. Ce compte facilitera la synchronisation des données entre différents appareils et permettra le partage de bibliothèques de références avec des collaborateurs.
-
-La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
+Il est important de configurer Zotero en premier lieu afin de profiter pleinement dans le travail d'équipe. La mise en place  des bibliothèques partagées permettrons aux chercheurs de se regrouper et gérer ensemble les references d'un projet 
 
 #### Ajouter des références à Zotero
 
