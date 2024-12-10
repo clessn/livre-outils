@@ -201,7 +201,6 @@ Des propositions de logiciels libres *open source* sont bien sûr présentes en 
 
 <!-- L'utilisation d'outils numériques pour la gestion des tâches ne signifie pas qu'il faut abandonner l'agenda papier ou le cahier de notes. Plusieurs trouvent essentiels de prendre des notes et de se faire des listes de tâches à la main. Il est tout à fait possible de combiner les méthodes. À chaque début de semaine, mettez à jour votre gestionnaire de tâches, puis faites votre liste de tâches à la main en conséquence, et planifiez votre semaine. De cette façon, vous savez chaque jour le travail à prioriser. -->
 
-```{=html}
 <!-- Gilbert : Je crois que cette section n'est plus pertinente ### Enregistrement de protocole
 
 Après avoir établi l'importance de la gestion des tâches et comment une approche agile peut optimiser ce processus, il est complémentaire de d'aborder l'enregistrement méthodique de ces tâches et des étapes du projet. Cette documentation assure la transparence, la réplicabilité et la rigueur scientifique de la recherche. L'enregistrement du protocole de recherche sert plusieurs objectifs clés qui se connectent directement à la gestion agile des tâches. Il agit comme une archive vivante des décisions prises, des méthodes utilisées et des modifications apportées tout au long du projet. Cela permet la vérification et la validation des résultats, et de maintenir une vision claire de l'évolution du projet.
@@ -219,7 +218,7 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 3.  Valider le protocole. Le protocole est évalué par les pairs, pour assurer sa complétude, puis il devient public. Ainsi, vous obtenez des commentaires avant même de soumettre à une revue, ce qui peut vous faire sauver du temps en apportant des modifications avant la réalisation, plutôt qu'après.
 4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
 -->
-```
+
 ```{r}
 #| echo: false
 #| warning: false
@@ -323,7 +322,6 @@ Dans le cadre de la recherche académique en sciences sociales, la gestion des d
 
 Aujourd’hui, les chercheurs manipulent une quantité croissante de données. L'accès facile aux fichiers, la possibilité de les partager rapidement avec des collègues et la sauvegarde automatique sont devenus des impératifs dans la gestion de projet. De plus, dans un environnement où la collaboration à distance est omniprésente, la gestion efficace des données permet de maintenir un haut niveau de productivité et de transparence dans les travaux de recherche.
 
-```{=html}
 <!-- #### Code en open access (Repository github)
  (À valider si on parle de github. Je ne pense pas que c'est de la gestion de données. Et puisqu'on ne parle plus d'enregistrement de protocole... )
 L'enregistrement de protocole est seulement un volet de la transparence en science. De même que pour les protocoles, la mise à disposition du code source employé pour les analyses permet non seulement de vérifier les résultats publiés mais aussi de renforcer la confiance dans les conclusions de la recherche. Le partage du code, structuré et commenté, via une plateforme comme GitHub, s'inscrit dans cette démarche de recherche ouverte.
@@ -345,7 +343,7 @@ b.  Structuration du code + commentaires
 
 a.  Création du repo
 b.  Gestion des version (git) -->
-```
+
 Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage infonuagiques se révèlent indispensables. Voici quelques avantages d'un entreposage sur le nuage pour la recherche :
 
 1.  *Sécurité des données* : Que vous travailliez avec des données sensibles ou non, la sécurité est essentielle pour protéger l’intégrité de vos fichiers. De bons outils garantissent que vos données ne sont pas exposées à des risques tels que des piratages ou des pertes accidentelles.
@@ -364,7 +362,6 @@ Microsoft OneDrive Fait partie de la suite Microsoft 365. C'est donc un choix ju
 
 Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l'installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main".
 
-```{=html}
 <!-- ### Entreposage de données sensibles
 
 Lorsqu'il s'agit d'entreposer des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n'est pas adapté à l'entreposage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source ouvert. Une solution courante est d'utiliser des services de cloud sécurisés, tels qu'AWS, qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.
@@ -380,7 +377,7 @@ AWS regroupe un ensemble de services *cloud*  proposés par Amazon. Il offre une
 4.  *Collaboration simplifiée* : Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
 
 AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable. -->
-```
+
 <!--L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche. -->
 
 ```{r}
@@ -440,20 +437,18 @@ Il est également conseillé de travailler sur des branches distinctes pour chaq
 
 <!-- 2.  *Inclure des mots de passe et clés d'accès* : Ne jamais inclure de mots de passe, de clés d'accès ou d'informations d'identification dans votre code source. Cela peut compromettre la sécurité de vos systèmes et de vos données. Utilisez plutôt des méthodes sécurisées pour gérer ces informations, telles que les variables d'environnement ou les fichiers de configuration externes. <!-- Un peut vague comme explication -->
 
-```{=html}
 <!-- 3.  *Entreposer des fichiers lourds* : Évitez d'entreposer des fichiers volumineux sur GitHub, notamment des fichiers binaires, des données brutes massives ou des ensembles de données volumineux. Ces fichiers peuvent ralentir les opérations de clonage et de fusion, ce qui affecte la performance globale du dépôt. Utilisez plutôt des services d'entreposage dédiés pour ces fichiers et fournissez des liens vers ces ressources dans votre dépôt. 
 
 4.  *Inclure des identifiants personnels* : Évitez de publier vos propres identifiants personnels, tels que des numéros de sécurité sociale, des numéros de carte de crédit ou d'autres informations confidentielles. Ces informations pourraient être exploitées à des fins malveillantes si elles tombent entre de mauvaises mains.<!--AFC: Remonter en 3e position ou fusionner avec le point sur les mots de passe.-->
-```
+
 <!-- 5.  *Ignorer les pratiques de branches et de fusion* : Évitez de fusionner directement du code dans la branche principale (habituellement appelée *main* ou *master*). Utilisez plutôt des branches distinctes pour les fonctionnalités et les corrections, et suivez les pratiques de fusion pour intégrer proprement les changements. Ignorer ces pratiques peut entraîner des conflits et une perte de trace des modifications. <!-- Je ne crois pas qu'il peut y avoir une perte des traces de modification? -LO -->
 
-```{=html}
 <!-- 6.  *Ignorer les commentaires des collaborateurs* : Lorsque vous travaillez avec d'autres chercheurs, ne négligez pas les commentaires et les suggestions qu'ils fournissent. Les retours d'expérience et les idées des autres peuvent contribuer à améliorer la qualité de votre code et de vos analyses.
 
 7.  *Ne pas documenter* : Évitez de ne pas documenter votre code. Une documentation claire et détaillée est essentielle pour permettre à d'autres chercheurs de comprendre vos méthodes et vos résultats. Utilisez des commentaires explicatifs et fournissez des explications sur la manière d'exécuter votre code.
 
 En suivant ces conseils et en évitant ces erreurs courantes, les chercheurs en sciences sociales peuvent garantir la sécurité, la qualité et l'efficacité de leurs projets sur GitHub. La responsabilité de préserver la confidentialité des données et de créer un environnement de travail collaboratif et respectueux repose sur les épaules de chaque contributeur. -->
-```
+
 Dans le contexte de la recherche en sciences sociales numériques, la gestion efficace du code, la collaboration transparente et la préservation des données sensibles sont des impératifs. Imaginons que vous êtes un jeune chercheur en sciences sociales qui étudie l'impact des médias sur l'opinion publique. Vous utilisez le langage de programmation R pour analyser des données de médias et des données de sondage. Bien que vous travailliez seul, vous souhaitez rendre votre travail accessible à votre équipe pour validation et permettre à vos collègues de contribuer aux améliorations. Voici comment vous pouvez utiliser Git et GitHub pour gérer votre projet de manière structurée et collaborative.
 
 Étape 1 : Création d'un répertoire local et initialisation de Git
@@ -568,11 +563,10 @@ knitr::include_graphics("images/chapitre8_dropbox.png", dpi = 600)
 
 <!--AFC: Parler de l'image?-->
 
-```{=html}
 <!-- Dropbox offre un suivi automatique des modifications, ce qui vous permet de remonter dans le temps pour restaurer des versions antérieures de vos fichiers. Cela garantit l'intégrité de vos données et vous permet de revenir à des versions précédentes si nécessaire. De plus, l'archivage de dossiers et de projets complets peut aider à conserver une vue chronologique de votre travail au fil du temps.
 
 Il est également crucial de considérer la taille de vos données. Si vous traitez des fichiers volumineux tels que des images, des vidéos ou des ensembles de données massifs, il peut être judicieux d'utiliser un service cloud pour entreposer ces fichiers et les partager avec vos collaborateurs, plutôt que de les pousser sur des plateformes de gestion de versions comme GitHub. -->
-```
+
 <!-- Pour les données sensibles, les services cloud tels que Dropbox et Google Drive peuvent ne pas être suffisamment sécurisés.<!--AFC: En lisant ce chapitre, j'ai l'impression que la sécurité des données est un problème avec Dropbox et compagnie. Je pense qu'il faut relativiser ici et plus tôt. Ce sont des plateformes sécuritaires, mais AWS est juste une coche au-dessus.-->
 
 <!--C'est là que des solutions comme AWS entrent en jeu. Cependant, il est important de noter que l'utilisation d'AWS peut s'avérer complexe, en particulier pour un jeune chercheur travaillant en solo ou en petite équipe. -->
@@ -611,6 +605,7 @@ Il est également crucial de considérer la taille de vos données. Si vous trai
 
 <!-- Dropbox se concentre principalement sur l'entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services *cloud*, y compris l'entreposage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?-->
 
+````{=html}
 <!-- ## Les outils de gestion de la communication
 
 ### Arpentage et choix éditorial: pourquoi utiliser Slack
@@ -686,6 +681,8 @@ La structure des chaînes de discussion est cruciale pour éviter le chaos et la
 <!-- ##### Maintenance
 (Je crois que cette section n'est pas nécessaire. Ça s'adresse pas vraiment à des étudiants en général. Qui a vraiment accès à l'archivage des canaux?)
 Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n'est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d'équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, puisque vous pourrez toujours les désarchiver quand cela sera nécessaire.  Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Faites le tour de ce qui est épinglé à l'occasion pour vérifier si c'est encore pertinent. Cela peut paraître énergivore, mais l'efficacité de votre travail d'équipe va en bénéficier. Également, rappelez aux membres de votre équipe d'utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes. Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d'équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l'usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux. Vous pouvez alors retourner à la planche à dessin. Assurez-vous que toute l'équipe comprenne bien comment utiliser Slack. Si ce n'est pas le cas, formez-les. Une structure adaptée et une équipe bien formée peuvent faire des miracles. -->
+````
+
 <!-- ```
 La transparence est un des principes clés de Slack, et il est important que la majorité des discussions liées aux projets se déroulent dans les chaînes publiques et non dans des messages privés. Tentez de suivre ces lignes directrices :
 
@@ -729,4 +726,5 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 <!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
-<!-- ```
+
+\<!-- \`\`\` Il serait bien d'inclure une section ou meme un paragraphe sur l'arborescence elle meme. Ce concept est tellement important afin que tes fichiers esoient inclus dans tes projets. DE plus les repos tournent autour d'une bonne arborescence.
