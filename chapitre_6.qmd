@@ -92,6 +92,10 @@ Mais qu'est-ce qu'une bonne visualisation de données? Quel type de graphique ch
 
 Ce chapitre se concentre plutôt à faire une sommaire recension des outils de visualisation nécessaires aux personnes s'intéressant à la recherche en sciences sociales. Une première section discute de la sélection des outils. Ensuite, ceux-ci sont présentés selon trois catégories: les outils pour les diagrammes, les outils pour les analyses descriptives et les outils pour visualiser les régressions. Une dernière section ouvre une réflexion sur les visualisations réactives.
 
+<! -- Il y avait précédemment une section 6.1 historique avec une division par période intéressante. J'aurais suggéré d'y adjoindre une ligne du temps pour mieux visualiser le tout. -->
+
+<! -- Il y avait également une note informative sur le Milestones Project qui était particulièrement bien mise en forme. J'aurais suggéré de reprendre ce format à travers tout le livre pour présenter des infos supplémentaires ou des sources pertinentes. -->
+
 ## Sélection des outils: débat R et Python
 
 Il existe plusieurs outils de visualisation qui répondent à des besoins différents. Nous nous concentrerons sur les outils respectant au mieux les critères de sélections établis au chapitre 1.
@@ -126,12 +130,16 @@ the best free diagram and flowchart app
 
 ### Miro
 
+<! -- Si vous envisagez parler de Miro, je soulignerais les frais importants reliés à son utilisation qui en limite énormément l'usage. Il limite l'utilisateur à 3 tableaux, ce qui est très peu lorsqu'on souhaite l'utiliser comme principal outil de visualisation. Il permet cependant de produire des cartes conceptuelles ou des cartes mentales relativement impressionnantes. -->
+
 ## Outils pour les analyses descriptives
 
 ### R
 Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
 
 Trois options vous sont présentées: Base R, Lattice et ggplot2. Les avantages et inconvénients respectifs de ces trois approches pour la création de graphiques sont explicités dans les sections suivantes.
+
+<! -- J'ajouterais une note ici, dans le même format que précédemment, qui irait comme suit: Pour trouver de l'inspiration pour la réalisation de vis graphiques en R, nous vous conseillons le site [R Graph Gallery](https://r-graph-gallery.com/), qui constitue une référence sur le sujet. -->
 
 #### Base R
 Le *Base R* est le langage de base de R et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de *packages* au préalable. Le *Base R* permet notamment de produire des graphiques rapidement. Cela peut être utile pour visualiser la distribution d'une variable ou pour regarder la relation entre deux d'entre elles, par exemple. Pour produire un graphique avec le langage de base R, il suffit de faire appel à la fonction *plot()*. Avec la fonction *plot()*, le codeur peut visualiser la distribution d'une variable seule en spécifiant l'axe des *x* dans cette dernière. Le codeur peut également visualiser la relation entre deux variables en spécifiant à l'intérieur de la fonction celles qui composeront les axes des *x* et des *y* du graphique. Les fonctions *barplot(), hist()* ou *boxplot()* disponibles dans le *Base R* permettent de spécifier le style de graphique souhaité, qu'on veuille représenter nos données sous forme de diagramme à barre, d'histogramme ou de diagramme en boîtes [@kabacoff22, p. 119-132].
