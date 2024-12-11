@@ -708,7 +708,7 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 -   *Sections et favoris* : Organisez vos chaînes en créant des sections thématiques et des favoris. Par exemple, regroupez les chaînes de projet dans une section et les chaînes de financement dans une autre. Vous pouvez aussi sélectionner les chaines que vous utilisez davantage dans une section de favoris pour y accéder plus rapidement.
 
--   *Paramètres de notification* : Ajustez vos notifications pour ne pas être submergé. Vous pouvez choisir d’être alerté seulement pour les chaînes prioritaires et désactiver les notifications pour les discussions moins urgentes.
+-   *Paramètres de notification* : Ajustez vos notifications pour ne pas être submergé. Vous pouvez choisir d’être alerté seulement pour les chaînes prioritaires et désactiver les notifications pour les discussions moins urgentes. De plus, dans l'optique d'un droit à la déconnexion, Slack permet de paramétrer une option «Ne pas déranger» qui vous permet d'identifier vos heures de travail, de ne pas recevoir de notifications hors de ces heures et d'aviser autrui que vous ne prendrez connaissance de sa sollicitation que lorsque vous reviendrez en ligne.
 
 -   *Intégrations avec d’autres outils* : Slack offre des intégrations avec des outils que vous utilisez peut-être déjà, comme Google Calendar, GitHub ou Notion. Explorez ces intégrations pour recevoir des notifications directement dans Slack et automatiser certains processus.
 
