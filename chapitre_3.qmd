@@ -268,6 +268,11 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de
 
 ### Manuel d'instruction: Notion pour la vie professionnelle et personnelle
 
+```{=html}
+<!-- ##### Modification suggérée
+  La section du manuel d'instructions gagnerait en clareté et en concision si les principes de bases étaient structurés sous forme de tableau. En étant plus concis et synthétique, ou du moins toute l'information se retrouvant sur une seule page, il serait plus facile de consulter la section du chapitre en parallèle de son compte Slack ouvert et d'appliquer ce qui est vu.
+```
+
 En août 2024, [*Notion*](https://www.notion.so/fr) dépasse la barre du 100 millions d'utilisateurs. Juste avant la pandémie de COVID-19, *Notion* atteignait son premier million. En l'espace de quelques années, l'outil a rejoint, voire dépassé ses concurrents. Une popularité incontestable, notamment due à sa grande flexibilité. 
 
 Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif. 

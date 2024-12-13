@@ -51,6 +51,19 @@ Trois catégories d'outils seront présentées: les « *Large Language Models* �
 
 ### 1. Les LLMs
 
+```{=html}
+Un tableau nommé "Exemples d'utilisation des LLMs en sciences sociales" semblerait être de mise pour donner un appercu général de ce qui peut être fait.
+Capacités//Description//Sources de données nécessaires
+Analyse des sentiments//
+Extraction d'entités et de relations//
+Génération automatique de résumés de textes//
+Génération de simulations//
+Traduction et localisation//
+Transcription automatique//
+Analyse de contenu visuel//
+Développement d'outils personnalisés à la recherche//
+```
+
 @openai19 définissent les grands modèles linguistiques (Large language models ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages web, des courriels, des messages de médias sociaux, etc. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter que les GML ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
 
 L'intégration des grands modèles de langage (LLMs) via l'API d'OpenAI dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l'analyse qualitative et quantitative des données textuelles. L'utilisation de ces modèles en R permet aux chercheurs d'exploiter des capacités avancées de traitement du langage naturel pour une variété d'applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l'analyse de biais algorithmiques en comparant l'information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l'analyse de sentiments, l'extraction d'entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d'outils personnalisés pour des besoins spécifiques de recherche.

@@ -128,6 +128,14 @@ knitr::include_graphics("images/chapitre5_word-vs-latex.png")
 
 ### Avantages
 
+```{=html}
+À l'instar du tableau comparatif à la page 150 (chapitre 8), il serait bien de pouvoir retrouver un tableau des avantages et inconvénients des différents langages de balisages.Bien qu'on puisse imaginer le lecteur passer à travers le chapitre, on se doute qu'une fois qu'ils s'apprêtent à jouer dans les différents langages, il voudra quelque chose de plus synthétique à ce moment.
+        Avantages//Inconvénients
+LaTeX// ... // ...
+Markdown// ... // ...
+Quarto// ... // ...
+```
+
 #### Référencement
 
 Premièrement, \LaTeX et Markdown permettent d'intégrer une bibliographie *automatique* et professionnelle en utilisant [Bib]{.smallcaps}\TeX. Cette bibliographie peut être adaptée très facilement en différents styles bibliographiques reconnus ou en un style bibliographique *personnalisé* à partir d'un des nombreux gabarits professionnels disponibles. Avec [Bib]{.smallcaps}\TeX, il n'y a pas à vérifier si le titre de l'article est toujours en italique, si le numéro de volume est toujours entre parenthèses ou si le nom de famille des deuxièmes auteurs est toujours avant ou après le prénom puisque toutes ces opérations sont effectuées de manière *automatique*. [Bib]{.smallcaps}\TeX comprend également les différences entre les types de sources --- articles scientifiques, livres, sites Internet, etc. --- et ajuste leur présentation en conséquence. De plus, si une des sources que vous citez n'est pas incluse dans la bibliographie, une erreur s'affiche, vous permettant d'identifier le problème plutôt que de vous retrouver avec une référence manquante. À l'inverse, si une source est retirée du texte, elle disparait *automatiquement* de la bibliographie dans le document final mais demeure présente dans le fichier où se trouvent les références bibliographiques. Cela évite les aller-retour pour vérifier que chaque source de la bibliographie se trouve au moins une fois dans le texte et que chaque source dans le texte est citée en bibliographie. Grâce aux balises, en cliquant sur les références incluses dans le document, vous vous retrouverez immédiatement plus loin dans le document, à l'endroit où se trouve l'entrée bibliographique associée. Les références [Bib]{.smallcaps}\TeX pour articles scientifiques peuvent être copiées-collées à partir de Google Scholar. [Bib]{.smallcaps}\TeX rend donc extrêmement simple et efficace l'utilisation des références bibliographiques grâce à sa capacité à *personnaliser* et *automatiser* leur présentation[^chapitre_5-4].
