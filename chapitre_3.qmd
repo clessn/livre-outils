@@ -18,7 +18,7 @@ Loin de souhaiter offrir des leçons, ou proposer *LA* bonne manière de travail
 
 Autrement dit, la gestion optimale d'un flux de travaux est propre à vous! Votre personnalité, vos qualités, vos défis, vos connaissances et vos compétences sont autant de facteurs qui peuvent vous mener à préférer un outil plutôt qu'un autre, à choisir une méthode de travail particulière plutôt qu'une autre. Si vous préférez travailler seul.e, certains outils vous seront bien davantage utiles. Par contre, si vous êtes du genre à collaborer, d'autres outils offriront à vous et vos collègues une optimisation de votre communication et de votre gestion de tâches. Votre flux de travaux est unique à vous, à vos besoins, mais ce chapitre vous permettra d'y réfléchir et de le structurer.
 
-Il est utile de noter qu'à l'ère du numérique et de la multiplication des technologies de l'information et de la communication, le travail collaboratif est plus simple et nécessaire que jamais. L'époque où il était plus naturel pour les chercheur.e.s de travailler seul, isolé avec leurs livres, leurs données et leurs idées, est désormais révolue. Les outils de communication comme *Slack* et *Microsoft Teams* permettent d'intégrer de plus en plus de membres à une équipe, les outils de gestion de projet comme *Notion*, *Trello* ou *Asana* d'en diviser les activités et d'en suivre les progrès, et les outils de gestion de données comme *git*, *GitHub*, *Google Drive* ou *Dropbox* d'en partager les codes, les fichiers textes, les données et les résultats avec le monde entier. La philosophie et les valeurs du logiciel libre et de l'*open-source* s'inscrivent désormais facilement à toutes les étapes du processus scientifique.
+Il est utile de noter qu'à l'ère du numérique et de la multiplication des technologies de l'information et de la communication, le travail collaboratif est plus simple et nécessaire que jamais. L'époque où il était plus naturel pour les chercheur.e.s de travailler seul, isolé avec leurs livres, leurs données et leurs idées, est désormais révolue. Les outils de gestion de projet comme *Notion*, *Trello* ou *Asana* permettent de diviser les activités et d'en suivre les progrès, et les outils de gestion de données comme *git*, *GitHub*, *Google Drive* ou *Dropbox* d'en partager les codes, les fichiers textes, les données et les résultats avec le monde entier. La philosophie et les valeurs du logiciel libre et de l'*open-source* s'inscrivent désormais facilement à toutes les étapes du processus scientifique.
 
 Si vous travaillez actuellement seul, ce chapitre vous recommandera d'emblée de vous intéresser aux groupes, centres ou chaires de recherche dans votre champ. Vous constaterez que de nombreux universitaires partagent vos champs d'intérêt, et recherchent la collaboration. Des réseaux existent autour de vous, à l'intérieur de votre université, mais également à l'international. La coopération scientifique n'a plus de frontière. Les outils numériques permettent à notre époque de créer des synergies internationales, et d'augmenter rapidement votre production en échangeant des visions et en partageant des responsabilités. Si ce n'est pas déjà le cas, plus tard dans votre carrière, vous serez mené à travailler en équipe. Il vaut mieux, dès maintenant, développer votre réseau et en maitriser les codes et les outils.
 
@@ -220,8 +220,6 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 4.  Suivi du protocole. À chaque étape de la recherche, les chercheurs confirment qu'ils suivent le processus annoncé, ou justifient les changements apportés, ce qui assure la transparence dans leurs démarchent scientifiques.
 -->
 ```
-
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -265,8 +263,8 @@ tbl_resume_chap_X <- tibble(
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de projet')
 ```
 
-
 ### Manuel d'instruction: Notion pour la vie professionnelle et personnelle
+
 
 ```{=html}
 <!-- ##### Modification suggérée
@@ -275,21 +273,21 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de
 
 En août 2024, [*Notion*](https://www.notion.so/fr) dépasse la barre du 100 millions d'utilisateurs. Juste avant la pandémie de COVID-19, *Notion* atteignait son premier million. En l'espace de quelques années, l'outil a rejoint, voire dépassé ses concurrents. Une popularité incontestable, notamment due à sa grande flexibilité. 
 
-Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif. 
+Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif.
 
-Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches. 
+Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches.
 
-Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données. 
+Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données.
 
 Il n'est toutefois pas nécessaire d'aller dans la complexité: sans être un logiciel libre, *Notion* offre la possibilité à ses utilisateurs de créer leur propre « modèle », et de les offrir (voire de les vendre, si désiré!) à la communauté Web. Ainsi, [plus de 20 000 modèles *Notion* sont disponibles en ligne](https://www.notion.so/fr/templates)! Vous trouverez de multiples modèles pour répondre à tous vos besoins: que ce soit pour la gestion de vos finances ou pour gérer votre vie étudiante, la communauté *Notion* est large et structurée. Tous les modèles disponibles s'importent en deux clics, et vous permettent de les modifier complètement au besoin. Avec le temps et l'expérience, vous pourrez vous-même créer vos propres modèles et les offrir gratuitement (ou à votre prix!) à la communauté.
 
-Notez également que l'utilisation individuelle de *Notion* est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de *Notion*), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins. 
+Notez également que l'utilisation individuelle de *Notion* est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de *Notion*), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins.
 
 Avec un seul outil, *Notion* peut vous permettre de gérer à la fois votre vie personnelle et votre vie professionnelle. Pour se lancer, [des guides simples sont disponibles (en français!) sur le site Web](https://www.notion.so/fr/help/category/new-to-notion).
 
-Notez également que *Notion* possède sa propre application de calendrier. *Notion Calendar* permet d'importer vos calendriers *Google*, en plus d'afficher tous les jours vos échéances de stories. 
+Notez également que *Notion* possède sa propre application de calendrier. *Notion Calendar* permet d'importer vos calendriers *Google*, en plus d'afficher tous les jours vos échéances de stories.
 
-Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web.  En deux clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
+Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web. En deux clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
 
 Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir à quoi ressemblera l'application dans 10 ans. Victime de son succès, l'entreprise s'est plusieurs fois réinventée, misant sur une gestion de projet Agile, en communication avec sa clientèle, pour développer un outil à l'image des besoins et des intérêts de ses utilisateurs.
 
@@ -299,17 +297,19 @@ Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir
 
 Lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace du code deviennent des éléments cruciaux pour progresser dans ses projets. Dans cette optique, les outils de gestion de versions décentralisés ont pris une place prépondérante. Parmi eux, Git et GitHub se démarquent tant par leur popularité que par leur efficacité.
 
-Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications apportées au code source. Chaque modification est enregistrée sous forme de dépôts (*commits*), avec un message explicatif, permettant aux collaborateurs de comprendre facilement les évolutions du projet.
+Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Avec l'essor des projets logiciels dans les décennies précédentes, un besoin s'est créé pour suivre l'évolution des fichiers de code au fil du temps. Quand plusieurs centaines de développeurs travaillent sur un même projet, ce suivi est essentiel pour éviter les conflits entre les versions. Bien que des systèmes centralisés existaient pour ce type de gestion, Git se distingue par sa décentralisation : chaque développeur détient une copie complète du projet, incluant toutes les modifications passées. Cela permet aux équipes de travailler de manière indépendante, sans dépendre d'un serveur central, ce qui réduit les risques de conflits. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications du code source. Chaque modification, ou commit, est enregistrée avec un message explicatif et un identifiant unique, permettant aux collaborateurs de comprendre facilement les évolutions du projet et d'assurer l'intégrité des données.
 
-GitHub, lancé en 2008, est une plateforme qui utilise Git comme base pour l'entreposage et la gestion de projets. C'est une vitrine virtuelle où les développeurs peuvent héberger leurs dépôts Git et collaborer de manière transparente. L'aspect social de GitHub, avec ses fonctionnalités de suivi des projets, de gestion des problèmes et de requêtes de tirage, en fait un lieu de choix pour les projets en code source ouvert et collaboratifs.
+GitHub, lancé en 2008, est né pour répondre aux besoins de collaboration croissants dans le monde du développement open source. Avant GitHub, les développeurs pouvaient utiliser Git en local pour gérer les versions, mais il manquait un espace centralisé pour partager le code et coordonner les efforts. GitHub a donc apporté cette solution en intégrant Git à une plateforme web, où les développeurs pouvaient héberger leurs dépôts, collaborer, et suivre le développement en ligne. Ce qui distingue GitHub, c'est son aspect social : les fonctionnalités comme les *pull requests*, les gestionnaires de problèmes, et le suivi des modifications permettent aux équipes de travailler efficacement et d'interagir facilement autour du code. Cette combinaison d’outils a transformé GitHub en un espace incontournable pour les projets open source, facilitant le partage des connaissances et la collaboration.
 
-En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente du code, ce qui est particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. Lorsqu'un projet est initialisé avec Git, un dossier caché appelé .git est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque dépot, les branches, et les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail n'est perdue.
+Git et GitHub incarnent efficacement l'évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d’historique des modifications, ils permettent aux chercheurs d’embrasser une philosophie Agile en assurant un suivi minutieux des changements, facilitant ainsi l’itération rapide et la reproductibilité des projets.
 
-De plus, Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient le même fichier ou la même partie de texte de manière indépendante, et que Git ne sait pas quelle version garder. Dans ces cas-là, il est nécessaire de comparer les deux versions, paragraphe par paragraphe, pour décider de la meilleure solution. Contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique. Cette gestion des conflits simplifie la collaboration et évite bien des frustrations, tout en facilitant la répartition des tâches au sein de l'équipe.
+En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. Tout d'abord, ils permettent de suivre les modifications apportées au texte ou au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente de leur projet, une fonctionnalité particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. Lorsqu'un projet est initialisé avec Git, un dossier caché appelé .git est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque *commit*, sur les différentes « branches » créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail ne soit perdue.
+
+Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches (encore une fois, comprendre ici les différentes « versions ») pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier Dropbox partagé. Ainsi, contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique.
 
 Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub.
 
-Alors que Github n'est pas un logiciel libre, il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse. Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les requêtes de tirage. Voici un résumé des avantages de git et Github :
+Github n'est pas un logiciel libre, mais il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs textes et leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse. Cependant, Git et GitHub ne sont pas sans leurs défis. La courbe d'apprentissage peut être raide pour les débutants, car ces outils impliquent des concepts spécifiques tels que les branches, les conflits de fusion et les *pull requests*. Voici un résumé des avantages de Git et Github :
 
 1.  *Intégration et adoption répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
 
@@ -368,7 +368,7 @@ Google Drive est très facile d'utilisation par son intégration au sein des out
 
 Microsoft OneDrive Fait partie de la suite Microsoft 365. C'est donc un choix judicieux pour les utilisateurs des outils Microsoft, pour leur compatibilité. Comme Dropbox, OneDrive permet la sauvegarde de fichiers en local, ce qui facilité son utilisation pour l'entreposage de fichiers manipulés avec un language de programmation. OneDrive est généralement perçu comme étant moins simple et rapide pour sa synchronisation que Dropbox, mais sa valeur de centralisation est indégnable si la suite Microsoft est employée.
 
-Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l’installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main".
+Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l'installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main".
 
 ```{=html}
 <!-- ### Entreposage de données sensibles
@@ -388,7 +388,6 @@ AWS regroupe un ensemble de services *cloud*  proposés par Amazon. Il offre une
 AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable. -->
 ```
 <!--L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche. -->
-
 
 ```{r}
 #| echo: false
@@ -435,7 +434,7 @@ tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils de
 
 ### Manuel d'instructions: comment utiliser Git, Github et Dropbox
 
-Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son répertoire Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de dépôt doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
+Pour utiliser Git et GitHub efficacement dans un contexte de recherche en sciences sociales numériques, il est recommandé de suivre quelques bonnes pratiques. Tout d'abord, il est important de structurer son répertoire Git de manière logique, en organisant les fichiers et les dossiers de manière cohérente. Les messages de *commit* doivent être descriptifs et clairs, pour permettre à tous les collaborateurs de comprendre les changements effectués.
 
 Il est également conseillé de travailler sur des branches distinctes pour chaque fonctionnalité majeure. Cela facilite la gestion des changements et minimise les conflits lors de la fusion. Les chercheurs devraient également consulter régulièrement les projets et les problèmes sur GitHub pour encourager une communication ouverte et résoudre rapidement les problèmes.
 
@@ -513,7 +512,7 @@ git commit -m "Ajout du code d'analyse des médias et des sondages"
 
 Étape 4 : Création du répertoire sur GitHub et du lien avec votre répertoire local
 
-Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom "sous la forme" *mon_projet*.
+Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire vide avec le nom sous la forme *mon_projet*.
 
 De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.
 
@@ -531,11 +530,11 @@ git push -u origin master
 
 Étape 6 : Collaboration avec vos collègues
 
-Si vos collègues souhaitent contribuer à votre projet, ils peuvent *fourcher* (Fork)votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
+Si vos collègues souhaitent contribuer à votre projet, ils peuvent dupliquer (en langage Git, on utilise le terme *Fork*) votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
 
-Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *demande de tirage* pour vous demander de fusionner leurs modifications dans votre répertoire principal.
+Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *demande de pull request* pour vous demander la permission de fusionner leurs modifications dans votre répertoire principal.
 
-Étape 7 : Tirage des modifications de vos collègues
+Étape 7 : Acceptation des modifications de vos collègues
 
 Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
 
@@ -545,18 +544,18 @@ git pull origin master
 
 Étape 8 : Répéter le processus
 
-Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le dépôt à jour.
+Répétez les étapes 2 à 7 au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le répartoire à jour.
 
-Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que GitHub Desktop qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel. La plupart des environnements de code comme RStudios et VSCode ont également des interfaces pour faciliter ces opérations.
+Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que *GitHub Desktop* qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. Cependant, comprendre son fonctionnement et équilibrer les avantages et les inconvénients est essentiel. La plupart des environnements de code comme RStudio et VSCode ont également des interfaces pour faciliter ces opérations.
 
 ```{r, out.width="80%"}
 #| label: fig-github
 #| echo: false
-#| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de git et de GitHub."
+#| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de Git et de GitHub."
 knitr::include_graphics("images/chapitre8_gitdesktop.png", dpi = 600)
 ```
 
-GitHub Desktop fournit une vue claire de vos dépôts, de vos modifications, de vos branches et de vos demandes de fusion. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
+GitHub Desktop fournit une vue claire de vos répertoires, de vos modifications, de vos branches et de vos demandes de fusion (*pull requests*. Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
 
 Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhension des commandes Git en ligne de commande, ce qui pourrait devenir un inconvénient si vous devez travailler dans un environnement sans interface visuelle. De plus, GitHub Desktop est spécifiquement conçu pour interagir avec GitHub. Si vous devez travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
 
@@ -572,7 +571,6 @@ Pour utiliser Dropbox efficacement, organisez vos fichiers en arborescence logiq
 #| fig-cap: "Une arborescence claire vers le repository du livre d'outils en local."
 knitr::include_graphics("images/chapitre8_dropbox.png", dpi = 600)
 ```
-
 
 <!--AFC: Parler de l'image?-->
 
@@ -619,7 +617,7 @@ Il est également crucial de considérer la taille de vos données. Si vous trai
 
 <!-- Dropbox se concentre principalement sur l'entreposage et la collaboration de fichiers, alors que AWS offre une gamme de services *cloud*, y compris l'entreposage sécurisé de données sensibles et la mise en place d'infrastructures évolutives. GitHub, d'autre part, se concentre sur la gestion de versions et la collaboration de code source. Chaque outil a son propre domaine d'expertise et peut être utilisé de manière complémentaire pour différents aspects de la recherche.<!--AFC: Vraiment mêlé dans les niveaux hiérarchiques. C'est un résumé de quelle section ou sous-section ici? Pourquoi revient-on sur GitHub mais pas sur Slack?-->
 
-## Les outils de gestion de la communication
+<!-- ## Les outils de gestion de la communication
 
 ### Arpentage et choix éditorial: pourquoi utiliser Slack
 
@@ -636,7 +634,6 @@ Teams est entré sur le marché afin d'entrer en compétition avec le deuxième 
 Moins populaire que les deux premiers outils proposés, Mattermost, cependant, est libre d'accès. C'est donc l'option la plus accessible, et elle permet le plus grand contrôle, le plus de transparence, et la plus grande flexibilité. Cette flexibilité peut nécessité une courbe d'apprentissage plus importante, mais étant libre d'accès, toute ressource par rapport à sa conception ou à son utilisation est disponible en ligne. Mattermost est donc très compatible à d'autres outils, mais peut nécessité des compétences un peu plus pointues pour permettre ces compatibilités. Autrement dit, les utilisateurs de Mattermost se font moins prendre par la main, mais les possibilité qu'offre sa plateforme flexible sont plus grandes. La popularité de l'outil repose donc davantage parmis des groupes de développeurs, et moins dans des entreprises ou dans des groupes de recherche académiques.
 
 Nous apprécions particulièrement son interface intuitive, ses canaux de discussion, et son intégration avec d'autres outils populaires que nous utilisons régulièrement. Slack s'est avéré être une solution flexible et accessible, capable de répondre aux besoins variés de nos équipes académiques.
-
 
 ```{r}
 #| echo: false
@@ -675,7 +672,6 @@ tbl_resume_chap_X <- tibble(
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de communication')
 ```
 
-
 ### Manuel d'instruction : comment utiliser Slack
 
 Notre outil de communication sélectionné est Slack. Nous vous proposons quelques conseils pratiques pour bien l'utiliser en équipe, mais aussi de façon plus personnalisée. Bien structurer votre utilisation de Slack vous aidera à mieux collaborer avec vos collègues, à suivre les conversations importantes, et à éviter la confusion entre les différentes chaînes de discussion.
@@ -696,7 +692,7 @@ La structure des chaînes de discussion est cruciale pour éviter le chaos et la
 <!-- ##### Maintenance
 (Je crois que cette section n'est pas nécessaire. Ça s'adresse pas vraiment à des étudiants en général. Qui a vraiment accès à l'archivage des canaux?)
 Slack est un espace dynamique, tout comme votre équipe! La structure que vous avez choisie n'est pas permanente. Vous devriez rapidement vous questionner à savoir si elle convient toujours à vos activités. Votre espace d'équipe est comme votre réel lieu de travail, faites-y régulièrement le ménage pour vous assurer que tout est propre et en ordre. Archivez les chaînes qui ne sont plus pertinentes ou actives, puisque vous pourrez toujours les désarchiver quand cela sera nécessaire.  Épinglez des messages importants et des documents utiles aux projets dans les chaînes appropriées. Faites le tour de ce qui est épinglé à l'occasion pour vérifier si c'est encore pertinent. Cela peut paraître énergivore, mais l'efficacité de votre travail d'équipe va en bénéficier. Également, rappelez aux membres de votre équipe d'utiliser les bonnes chaînes pour chacune des discussions. Il ne faut pas que les conversations se croisent à travers les chaînes. Chaque chaîne a son utilité et doit être utilisée en conséquence. Les appels d'équipe doivent aussi se faire dans les bonnes chaînes. Quand vous êtes en appel, utilisez le fil de discussion pour conserver des traces écrites des points abordés dans la réunion. Les fils de discussions sont en général un bon outil pour ne pas se perdre dans un discussion. Si l'usage des mauvaises chaînes est un problème récurent, il est possible que la structure que vous employez est mal adaptée à vos travaux. Vous pouvez alors retourner à la planche à dessin. Assurez-vous que toute l'équipe comprenne bien comment utiliser Slack. Si ce n'est pas le cas, formez-les. Une structure adaptée et une équipe bien formée peuvent faire des miracles. -->
-```
+<!-- ```
 La transparence est un des principes clés de Slack, et il est important que la majorité des discussions liées aux projets se déroulent dans les chaînes publiques et non dans des messages privés. Tentez de suivre ces lignes directrices :
 
 -   *Favoriser les conversations dans les chaînes* : Si une discussion concerne tout le monde sur un projet, évitez d’utiliser des messages privés. Cela permet à tous les membres de rester informés et de participer aux discussions importantes.
@@ -717,7 +713,7 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 <!-- ## L'importance d'une méthode de travail efficace -->
 
-<!-- <!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente --> -->
+<!-- <!-- Gilbert : Je ne sais pas où mettre cette section, et si elle est pertinente -->
 
 <!-- Avant même de plonger dans les détails des méthodes de recherche et des analyses, il est crucial de poser les bases d'une méthode de travail efficace. Qu'il s'agisse de travailler en solitaire ou en équipe, l'ordre et la structure sont des éléments essentiels. Des dossiers bien organisés, une arborescence claire et un entreposage sécurisé deviennent les piliers sur lesquels repose votre productivité. Après tout, un environnement de travail organisé engendre des résultats ordonnés. -->
 
@@ -731,13 +727,12 @@ Bien qu'il soit important de structurer en équipe votre Slack pour en faciliter
 
 <!-- Chacun de ces outils est une pièce du puzzle, conçue pour vous aider à gagner du temps, à collaborer de manière plus fluide et à renforcer la qualité de votre recherche en sciences sociales numériques. Plongeons dans ces outils avec un désir commun d'optimisation et d'excellence dans notre travail. -->
 
-
 <!--AFC: Conclusion du chapitre au complet à ajouter!-->
 
 <!-- Les auteurs devraient aborder d'autres logiciels que Slack, tel que d'autres. -->
 
-```{=html}
+<!-- ```{=html}
 <!-- C'est quoi le but de ce chapitre? Il chevauche le: Essayer de convaincre les lecteurs d'utiliser les outils et Expliquer au lecteur comment utiliser les outils. Peut-être devrait-on enlever un peut d'explications techniques et mettre l'emphase sur convaincre le lecteur que d'utiliser ces outils sont bénéfiques. (Le chapitre le fait déjà mais on pourrait condenser la sauce.) Peut-être devrait-on y aller avec des explications détaillées sur comment créer une chaine slack, comment résoudre un merge conflict, comment ajouter les credentials sur github, comment configurer un gitignore, etc.
 
 Juste comme ça le chapitre est bon. Je n'aurais pas fait mieux mais je crois que c'est tout de même une question à se poser. Quel est l'identité du livre et son rôle vis-a-vis du lecteur? -->
-```
+<!-- ```

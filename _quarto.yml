@@ -23,6 +23,6 @@ book:
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
 
-format: html 
+format: pdf
 
 editor: visual
