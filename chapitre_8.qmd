@@ -74,7 +74,24 @@ Un autre outil s’offre à nous afin de trouver des références supplémentair
 
 ![Importation manuelle de documents](images/chapitre9_rr2.png){#fig-rr2}
 
+
+```{=html}
+Un tableau nommé "Exemples d'utilisation des LLMs en sciences sociales" semblerait être de mise pour donner un appercu général de ce qui peut être fait.
+Capacités//Description//Sources de données nécessaires
+Analyse des sentiments//
+Extraction d'entités et de relations//
+Génération automatique de résumés de textes//
+Génération de simulations//
+Traduction et localisation//
+Transcription automatique//
+Analyse de contenu visuel//
+Développement d'outils personnalisés à la recherche//
+```
+
+@openai19 définissent les grands modèles linguistiques (Large language models ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages web, des courriels, des messages de médias sociaux, etc. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter que les GML ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
+
 ![Présentation de la littérature similaire](images/chapitre9_RR3.png){#fig-rr3}
+
 
 ![Vue « Timeline » des références](images/chapitre9_rr4.png){#fig-rr4}
 
