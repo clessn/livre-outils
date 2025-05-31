@@ -24,9 +24,64 @@ knitr::include_graphics("images/chapitre7_vscode.png", dpi = 500)
 
 Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage : les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb96]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX en 1985, [Bib]{.smallcaps}\TeX en 1988, HTML en 1993, XML en 1998, Markdown en 2004 et `R` Markdown en 2012 [@encyclopaediabritannica23a; @hameed23a; @markdownguide23a; @worldwidewebconsortium98; @xie23a].
 
-Les langages de balisage permettent d'effectuer différentes tâches. HTML, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. XML, quant à lui, permet de structurer de larges volumes de données. \LaTeX permet pour sa part de formater du texte et de créer des documents en format PDF. Markdown permet également de créer des documents en format PDF, mais aussi en format HTML ou DOCX --- format utilisé pour les documents Word ---, contrairement à \LaTeX. `R` Markdown permet aussi d'ajouter des extraits de code `R` à un fichier en langage Markdown. Enfin, depuis 2022, le système de publication scientifique et technique multilingue Quarto permet de créer des documents qui intègrent des extraits de code `R`, \LaTeX, Python, Julia ou JavaScript, créés dans différents types d'environnements, à un fichier en langage Markdown [@allaire22]. \LaTeX, Markdown, `R` Markdown et Quarto permettent aussi d'intégrer les références bibliographiques du système de traitement de références [Bib]{.smallcaps}\TeX. Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d'un même fichier. Le chapitre 4 explique la manière de citer les références en langage [Bib]{.smallcaps}\TeX par le biais de Zotero et de Better [Bib]{.smallcaps}\TeX.
+Les langages de balisage permettent d'effectuer différentes tâches. HTML, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. XML, quant à lui, permet de structurer de larges volumes de données. \LaTeX permet pour sa part de formater du texte et de créer des documents en format PDF. Markdown permet également de créer des documents en format PDF, mais aussi en format HTML ou DOCX --- format utilisé pour les documents Word ---, contrairement à \LaTeX. `R` Markdown permet aussi d'ajouter des extraits de code `R` à un fichier en langage Markdown. Enfin, depuis 2022, le système de publication scientifique et technique multilingue Quarto permet de créer des documents qui intègrent des extraits de code `R`, \LaTeX, Python, Julia ou JavaScript, créés dans différents types d'environnements, à un fichier en langage Markdown [@allaire22]. \LaTeX, Markdown, `R` Markdown et Quarto permettent aussi d'intégrer les références bibliographiques du système de traitement de références [Bib]{.smallcaps}\TeX. Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d'un même fichier. Le chapitre 4 explique la manière de citer les références en langage [Bib]{.smallcaps}\TeX par le biais de Zotero et de Better [Bib]{.smallcaps}\TeX.
 
-Les balises constituent une manière de donner manuellement des commandes au logiciel utilisé. Par contraste, avec Microsoft Word, une panoplie de boutons permettent de formater le texte. Les balises exercent les mêmes fonctions de formatage pour les fichiers produits en \LaTeX ou en Markdown, mais doivent être ajoutées à l'écrit par l'utilisateur. Lorsque l'on appuie sur un bouton pour formater le texte ou que l'on utilise une commande comme `Ctrl-G` ou `Cmd-I` dans Word, en réalité, cette commande ajoute des balises au travers du texte, mais rend celles-ci invisibles dans l'interface utilisée. Cela permet d'avoir un texte élégant et facile à lire, mais comporte aussi plusieurs inconvénients. Le principal inconvénient est de limiter le pouvoir de l'utilisateur sur le formatage de son texte. En effet, si les boutons à sa disposition dans le logiciel de traitement de texte ne lui permettent pas de réaliser une action, celle-ci sera éternellement impossible à réaliser pour lui. A contrario, les langages de balisage permettent un contrôle presque infini sur les opérations que l'on souhaite réaliser. Incidemment, dans la mesure où l'on utilise le langage approprié pour la tâche que l'on souhaite accomplir, il est possible de donner exactement la commande nécessaire pour réaliser cette action. Les langages de balisage, au-delà du coût d'apprentissage et de l'interface de travail moins intuitive qu'un document Word, offrent une plus grande flexibilité.
+Pour mieux comprendre ces différents langages, il est utile de les concevoir selon différents **niveaux d'abstraction**. L'abstraction, définie comme le processus qui consiste à simplifier des systèmes complexes en se concentrant sur les aspects essentiels [@kramer07; @hazzan02], constitue un concept fondamental en informatique. Dans le contexte des langages de balisage, cette perspective permet de distinguer différents niveaux selon leur complexité syntaxique et leur facilité d'utilisation. Comme le souligne @neumanns19, il existe une tension fondamentale entre la facilité d'usage et la puissance pour les documents complexes. Bien que les langages de balisage forment en réalité un continuum entre puissance et simplicité [@arloing_etal16], ce chapitre propose de les organiser selon trois niveaux d'abstraction pour faciliter leur compréhension. Cette simplification pédagogique, illustrée dans la @fig-niveaux-abstraction, permet de distinguer les principales approches de balisage selon leur complexité d'usage.
+
+::: {#fig-niveaux-abstraction}
+```{mermaid}
+
+flowchart TD
+    subgraph level1 ["Niveau 1: Syntaxe complexe"]
+        A1[HTML<br/>Sites web]
+        A2[XML<br/>Données] 
+        A3[LaTeX<br/>Académique]
+    end
+    
+    subgraph level2 ["Niveau 2: Syntaxe simplifiée"]
+        B1[Markdown<br/>Simple & lisible]
+    end
+    
+    subgraph level3 ["Niveau 3: Computationnels"]
+        C1[R Markdown<br/>Code R intégré]
+        C2[Quarto<br/>Multi-langages]
+    end
+    
+    D[Pandoc<br/>Convertisseur universel]
+    
+    subgraph output ["Formats de sortie"]
+        E1[PDF]
+        E2[DOCX] 
+        E3[HTML]
+    end
+    
+    level1 --> level2
+    level2 --> level3
+    level1 --> D
+    level2 --> D
+    level3 --> D
+    D --> output
+    
+    style D fill:#e1f5fe,stroke:#0277bd
+    style level1 fill:#ffebee,stroke:#c62828
+    style level2 fill:#e8f5e8,stroke:#2e7d32
+    style level3 fill:#f3e5f5,stroke:#6a1b9a
+```
+Niveaux d'abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d'usage
+:::
+
+**Niveau 1 : Langages à syntaxe complexe** - Ces langages nécessitent de spécifier explicitement de nombreux détails techniques [@gratzer08]. L'utilisateur doit comprendre et contrôler directement les mécanismes sous-jacents : balises détaillées en HTML, schémas complexes en XML, commandes typographiques précises en \LaTeX.
+
+**Niveau 2 : Langages à syntaxe simplifiée** -  Markdown simplifie l'interaction en cachant la complexité technique derrière une syntaxe intuitive [@arloing_etal16]. L'utilisateur se concentre sur le contenu plutôt que sur les détails de formatage, le système gérant automatiquement la conversion vers différents formats.
+
+**Niveau 3 : Systèmes de publication computationnelle** - Contrairement aux langages traditionnels qui peuvent être étendus pour supporter l'exécution de code, R Markdown et Quarto sont conçus dès le départ pour intégrer programmation lettrée et recherche reproductible [@knuth84; @allaire22]. Ces systèmes masquent automatiquement la complexité du balisage, de l'exécution du code et de la génération de résultats dans un flux de travail unifié.
+
+**Rôle central de Pandoc** - Au cœur de cet écosystème se trouve Pandoc, présenté comme un convertisseur universel de documents [@Pandoc]. Pandoc peut convertir entre plus de 30 formats différents grâce à son architecture modulaire : il lit un document dans un format donné, le convertit en représentation intermédiaire, puis l'écrit dans le format de sortie désiré. Cette capacité de conversion universelle explique pourquoi Quarto et R Markdown peuvent produire des documents PDF, DOCX et HTML à partir d'une seule source Markdown.
+
+Cette hiérarchisation illustre comment l'abstraction permet de gérer la complexité [@kramer07] : chaque niveau supérieur simplifie l'usage tout en s'appuyant sur les capacités techniques des niveaux inférieurs. Pour l'étudiant en sciences sociales, Markdown et Quarto représentent souvent le meilleur compromis, alliant simplicité d'usage et fonctionnalités avancées pour la recherche académique, tout en bénéficiant de la puissance de conversion de Pandoc.
+
+
+Les balises constituent une manière de donner manuellement des commandes au logiciel utilisé. Par contraste, avec Microsoft Word, une panoplie de boutons permettent de formater le texte. Les balises exercent les mêmes fonctions de formatage pour les fichiers produits en \LaTeX ou en Markdown, mais doivent être ajoutées à l'écrit par l'utilisateur. Lorsque l'on appuie sur un bouton pour formater le texte ou que l'on utilise une commande comme `Ctrl-G` ou `Cmd-I` dans Word, en réalité, cette commande ajoute des balises au travers du texte, mais rend celles-ci invisibles dans l'interface utilisée. Cela permet d'avoir un texte élégant et facile à lire, mais comporte aussi plusieurs inconvénients. Le principal inconvénient est de limiter le pouvoir de l'utilisateur sur le formatage de son texte. En effet, si les boutons à sa disposition dans le logiciel de traitement de texte ne lui permettent pas de réaliser une action, celle-ci sera éternellement impossible à réaliser pour lui. A contrario, les langages de balisage permettent un contrôle presque infini sur les opérations que l'on souhaite réaliser. Incidemment, dans la mesure où l'on utilise le langage approprié pour la tâche que l'on souhaite accomplir, il est possible de donner exactement la commande nécessaire pour réaliser cette action. Ainsi, bien que l'utilisation de langages de balisage puisse paraître complexe à première vue, il convient de rester attentif aux avantages qu'ils procurent. Les langages de balisage, au-delà du coût d'apprentissage et de l'interface de travail moins intuitive qu'un document Word, offrent une plus grande flexibilité.
 
 Afin d'utiliser un langage de balisage, il est impératif que le logiciel utilisé puisse prendre en compte ce langage. Un logiciel permet rarement d'utiliser n'importe quel langage. Par exemple, le logiciel \TeX{}Shop permet seulement d'utiliser le langage \LaTeX. Il est aussi important de bien utiliser le langage de balisage. En effet, comme pour les langages de programmation, les langages de balisage ne peuvent pas déduire ce que l'on souhaite leur faire comprendre. Pour mettre du texte en gras, il faut utiliser les bonnes balises. La moindre erreur peut être coûteuse, puisqu'une erreur dans la balise utilisée risque de produire une commande incompréhensible et un message d'erreur, le logiciel ne réussissant pas à associer la balise mal inscrite à une action informatisée. Conséquemment, il est impératif de bien vérifier les balises utilisées afin d'éviter toute erreur qui empêcherait le document d'être compilé, c'est-à-dire d'être traduit dans son format final[^chapitre_7-1]. Chaque caractère dans une balise est important et il y a rarement plus d'une seule manière de commander une action. Par exemple, en \LaTeX, il n'y a qu'une seule manière de mettre du texte en gras. Il faut précisément utiliser cette commande : `\textbf{}`. Le positionnement des balises est lui aussi critique : il délimite la portion de texte à laquelle doit être appliquée l'action commandée par la balise.
 
