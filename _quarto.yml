@@ -1,7 +1,6 @@
 project:
   type: book
-  output-dir: _book
-
+output-dir: _book
 book:
   title: "Outils de recherche en sciences sociales numériques"
   author: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
@@ -19,10 +18,8 @@ book:
     - conclusion.qmd
     - annexe_1.qmd
     - references.qmd
-
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
-
+lang: fr
 format: pdf
-
 editor: visual
