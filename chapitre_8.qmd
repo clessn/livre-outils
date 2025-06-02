@@ -191,13 +191,9 @@ Il est très utile pour les chercheurs en sciences sociales numériques de conna
 
 :::
 
-Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire.
+Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire. Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence artificielle, des ressources comme *TERMIUM Plus* et *Interactive Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel dans le travail de traduction[^chapitre_8-4].
 
-::: callout-tip
-## Banques de données terminologiques
-
-Bien que ces outils n'utilisent pas l'intelligence artificielle, il nous semble essentiel de mentionner des ressources telles que TERMIUM Plus et Interactive Terminology for Europe (IATE), qui sont des bases de données terminologiques de référence. Ces bases de données, gérées par des langagiers professionnels, facilitent la compréhension des termes spécifiques à une discipline en fournissant des définitions claires et des équivalents dans plusieurs langues et assurent également une cohérence terminologique dans les traductions. D'ailleurs, TERMIUM Plus a été fréquemment sollicité pour la traduction de plusieurs termes présents dans ce chapitre.
-:::
+[^chapitre_8-4]: TERMIUM Plus et IATE sont des banques de données terminologiques de référence, gérées par des langagiers professionnels. Elles facilitent la compréhension des termes spécialisés en fournissant des définitions et des équivalents multilingues, assurant ainsi la cohérence terminologique des traductions.
 
 #### Google Traduction
 
