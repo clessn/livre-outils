@@ -34,7 +34,8 @@ Pour mieux comprendre ces différents langages, il est utile de les concevoir se
 
 ::: {#fig-niveaux-abstraction}
 ```{mermaid}
-
+%%| fig-width: 4
+%%| fig-height: 8
 flowchart TD
     subgraph level1 ["Niveau 1: Syntaxe complexe"]
         A1[HTML<br/>Sites web]
@@ -204,7 +205,11 @@ D'autre part, \LaTeX et Quarto sont deux langages à code source ouvert (*open 
 
 Il existe toutefois des désavantages inhérents à l'utilisation des langages de balisage. L'un des principaux désavantages de Markdown et de \LaTeX est le fait qu'ils ne comportent aucun système de suivi des modifications lors de travaux collaboratifs. Pour réviser un travail fait en langage de balisage, des commentaires peuvent être ajoutés sur le fichier sortant --- nécessairement PDF pour un fichier sortant produit avec \LaTeX. Des commentaires peuvent aussi être faits directement dans le document \LaTeX ou Markdown, à l'aide de balises spécifiques. Ces commentaires n'apparaissent cependant pas dans le fichier sortant. Le suivi des modifications en \LaTeX et Markdown nécessite donc souvent l'utilisation de Git et de GitHub, qui sont abordés plus en détail dans le chapitre 3. Même avec une plateforme de gestion des versions comme GitHub, les longs paragraphes ayant fait l'objet de plusieurs modifications peuvent être longs à comparer par rapport aux logiciels de traitement de texte, qui permettent de visualiser les propositions d'ajouts et de retraits de caractères de manière plus intuitive. Le suivi des modifications en logiciel de traitement de texte permet également de distinguer les auteurs de différents commentaires par leurs noms, alors que les ajouts et retraits itératifs en GitHub peuvent rendre difficile l'identification de l'auteur d'une modification. Pour ces raisons, et aussi pour faciliter la mise en page par les éditeurs, certaines revues scientifiques refusent les fichiers PDF et demandent que les soumissions soient faites en format DOCX --- ce qui pose problème pour les utilisateurs de \LaTeX mais pas ceux de Markdown ou Quarto.
 
-Les langages de balisage comportent également un autre désavantage important dans certains cas : l'absence d'un correcteur de fautes de français complet, en particulier pour corriger les fautes autres que celles d'orthographe en français. Parmi les principaux endroits permettant l'édition en langages de balisage, Visual Studio Code (VS Code) et Overleaf comprennent tous deux une extension LanguageTool (L\TeX pour VS Code, à ne pas confondre avec \LaTeX), qui permet la révision orthographique et syntaxique dans plusieurs langues. VS Code possède également une extension Antidote pour les personnes qui paient déjà pour ce logiciel. D'autres extensions linguistiques existent également pour VS Code, de même que pour les logiciels de traitement de texte comme Word. Cependant, RStudio ne possède qu'un correcteur *orthographique* de base, disponible en plusieurs langues. Ce correcteur ne repère pas les erreurs de syntaxe, de grammaire ou de forme, entre autres. Ces éléments sont pourtant essentiels pour la rédaction de textes académiques[^chapitre_7-5], d'autant plus que les utilisateurs de \LaTeX ont tendance à faire davantage de fautes d'orthographe et de grammaire lors de la rédaction que les utilisateurs de Word [@knauff_nejasmic14]. Bien que RStudio soit excellent pour la programmation en R et l'analyse de données, les auteurs du présent ouvrage suggèrent fortement que les utilisateurs des langages de balisage fassent appel à VS Code ou Overleaf plutôt qu'à RStudio pour l'édition de leurs documents, afin de profiter d'extensions de correction grammaticale plus complètes comme LanguageTool/L\TeX. Une approche hybride – RStudio pour l'analyse, VS Code/Overleaf pour la rédaction – peut s'avérer particulièrement efficace.
+Les langages de balisage comportent également un autre désavantage important dans certains cas : l'absence d'un correcteur de fautes de français complet, en particulier pour corriger les fautes autres que celles d'orthographe en français. Parmi les principaux endroits permettant l'édition en langages de balisage, Visual Studio Code (VS Code) et Overleaf comprennent tous deux une extension LanguageTool (L\TeX pour VS Code, à ne pas confondre avec \LaTeX), qui permet la révision orthographique et syntaxique dans plusieurs langues. VS Code possède également une extension Antidote pour les personnes qui paient déjà pour ce logiciel. D'autres extensions linguistiques existent également pour VS Code, de même que pour les logiciels de traitement de texte comme Word.
+
+Positron, le nouvel IDE développé par Posit (les créateurs de RStudio) et actuellement en version bêta au moment de la rédaction, représente une option prometteuse pour l'édition de documents en langages de balisage. Construit sur la même base technologique que VS Code, Positron peut utiliser les mêmes extensions de vérification orthographique, incluant potentiellement LanguageTool et d'autres correcteurs avancés. De plus, l'équipe de développement a identifié le besoin d'offrir une expérience d'écriture scientifique agréable dès l'installation, sans avoir besoin d'installer des plugins [@jmcphers23], suggérant qu'un système de vérification orthographique intégré pourrait être développé à l'avenir.
+
+Cependant, RStudio ne possède qu'un correcteur orthographique de base, disponible en plusieurs langues. Ce correcteur ne repère pas les erreurs de syntaxe, de grammaire ou de forme, entre autres. Ces éléments sont pourtant essentiels pour la rédaction de textes académiques[^chapitre_7-5], d'autant plus que les utilisateurs de \LaTeX ont tendance à faire davantage de fautes d'orthographe et de grammaire lors de la rédaction que les utilisateurs de Word [@knauff_nejasmic14]. Bien que RStudio soit excellent pour la programmation en R et l'analyse de données, les auteurs du présent ouvrage suggèrent fortement que les utilisateurs des langages de balisage fassent appel à VS Code, Positron, ou Overleaf plutôt qu'à RStudio pour l'édition de leurs documents, afin de profiter d'extensions de correction grammaticale plus complètes comme LanguageTool/L\TeX. Une approche hybride – RStudio pour l'analyse de données, Positron/VS Code/Overleaf pour la rédaction – peut s'avérer particulièrement efficace.
 
 [^chapitre_7-5]: Pour les utilisateurs de RStudio, il est souvent nécessaire de modifier le texte dans un logiciel de traitement de texte externe pour faire une révision linguistique complète, puis d'intégrer les corrections en collant le texte corrigé dans le document original en Markdown ou \LaTeX. Une application de bureau Grammarly peut également être intégrée sur RStudio. Cette application repère les erreurs de syntaxe, mais ne corrige que l'anglais, et certains soucis de repérage des mots aux bons endroits dans le texte en rendent présentement l'utilisation difficile.
 
@@ -279,7 +284,7 @@ or the Preservation of Favoured Races in the Struggle for Life}},
 #| label: fig-ggscholar
 #| echo: false
 #| fig-cap: "Capture d'écran d'un exemple illustrant comment trouver le [Bib]{.smallcaps}\\TeX\\ sur Google Scholar.\\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
-#| out-width: "150%"
+#| out-width: "100%"
 knitr::include_graphics("images/chapitre7_google_scholar_bibtex.png", dpi = 500)
 ```
 
@@ -287,9 +292,64 @@ Un fichier [Bib]{.smallcaps}\TeX ne contient rien de plus qu'une série de publ
 
 ### Environnements d'édition et de compilation
 
-Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne.
+Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne. La @fig-environnements-edition présente une vue d'ensemble des principaux environnements d'édition disponibles pour les chercheurs en sciences sociales, organisés selon leur type (logiciels de bureau vs éditeurs en ligne) et les langages de balisage qu'ils supportent.
 
-D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont le logiciels de bureau VS Code et RStudio, également abordé dans le chapitre 2. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`.
+::: {#fig-environnements-edition}
+
+```{mermaid}
+%%| fig-width: 4
+%%| fig-height: 8
+flowchart TD
+    subgraph main ["💻 ENVIRONNEMENTS D'ÉDITION POUR LANGAGES DE BALISAGE"]
+        
+        %% Introduction
+        INTRO["📝 Où écrire vos documents académiques?<br/>Guide pour chercheurs en sciences sociales"]
+        
+        INTRO --> CHOIX["🤔 DEUX GRANDES FAMILLES D'ENVIRONNEMENTS"]
+        
+        %% Branche Logiciels de bureau
+        CHOIX --> BUREAU["🖥️ LOGICIELS DE BUREAU<br/>Installation sur votre ordinateur"]
+        
+        BUREAU --> VSCODE["⚡ Visual Studio Code"]
+        VSCODE --> VSC_DETAILS["✅ Gratuit et open source<br/>✅ Extensions puissantes<br/>✅ Git intégré<br/>✅ Live Share (collaboration)<br/>⚠️ Courbe d'apprentissage"]
+        VSC_DETAILS --> VSC_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
+        
+        BUREAU --> RSTUDIO["📊 RStudio"]
+        RSTUDIO --> RST_DETAILS["✅ Gratuit<br/>✅ Interface intuitive<br/>✅ Visualisation intégrée<br/>✅ Console R native<br/>⚠️ Correcteur basique"]
+        RST_DETAILS --> RST_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
+        
+        BUREAU --> POSITRON["🚀 Positron"]
+        POSITRON --> POS_DETAILS["✅ Gratuit (Beta)<br/>✅ Interface scientifique moderne<br/>✅ Base VS Code<br/>⚠️ Encore en développement"]
+        POS_DETAILS --> POS_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
+        
+        %% Branche En ligne
+        CHOIX --> LIGNE["☁️ ÉDITEURS EN LIGNE<br/>Aucune installation requise"]
+        
+        LIGNE --> OVERLEAF["📄 Overleaf"]
+        OVERLEAF --> OVER_DETAILS["✅ Collaboration temps réel<br/>✅ Pas d'installation LaTeX<br/>✅ Modèles intégrés<br/>⚠️ Internet requis<br/>⚠️ Version gratuite limitée"]
+        OVER_DETAILS --> OVER_LANG["📚 Langages de balisage:<br/>LaTeX (principal)<br/>BibTeX (références)<br/>Markdown (via package, limité)"]
+        
+
+        
+    end
+    
+    %% Styles
+    classDef introStyle fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    classDef bureauStyle fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
+    classDef ligneStyle fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#000
+    classDef detailStyle fill:#f5f5f5,stroke:#616161,stroke-width:1px,color:#000
+    classDef langStyle fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000
+    
+    class INTRO,CHOIX introStyle
+    class BUREAU,VSCODE,RSTUDIO,POSITRON bureauStyle
+    class LIGNE,OVERLEAF ligneStyle
+    class VSC_DETAILS,RST_DETAILS,POS_DETAILS,OVER_DETAILS detailStyle
+    class VSC_LANG,RST_LANG,POS_LANG,OVER_LANG langStyle
+```
+Vue d'ensemble des environnements d'édition pour langages de balisage
+:::
+
+D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont le logiciels de bureau VS Code et RStudio, également abordé dans le chapitre 2. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`. 
 
 Utiliser VS Code ou RStudio pour travailler en langage de balisage permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d'une même fenêtre. Il suffit d'installer certains *packages* contenant les fichiers nécessaires à l'utilisation des langages de balisage. Par exemple, il est possible de produire des documents en \LaTeX en utilisant le code suivant dans la console pour installer le *package* nécessaire à l'utilisation de la distribution \LaTeX Tiny\TeX[^chapitre_7-7] : `install.packages("tinytex")`. Pour l'écriture en langage de balisage, il est en effet nécessaire d'installer l'une des nombreuses distributions \LaTeX en ligne afin de pouvoir compiler ces documents dans un environnement local. Suivant le même principe, il est possible de produire des documents en `R` Markdown sur RStudio en installant le *package* suivant : `install.packages("rmarkdown")`. Pour Quarto, le téléchargement se fait en ligne, directement à partir du site Web de @quarto23a.
 
