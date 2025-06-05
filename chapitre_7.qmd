@@ -5,7 +5,7 @@ author:
 - Maxime Blanchard^[McGill University]
 ---
 
-# Baliser les sciences sociales : outils, langages et pratiques {#sec-chap7}
+# Outils de rédaction en sciences sociales numériques: les langages de balisage {#sec-chap7}
 
 En lisant un article scientifique, une page Web ou un curriculum vitæ professionnel, comme plusieurs lecteurs l'auront sans doute deviné, le texte n'est pas toujours produit à l'aide d'un logiciel de traitement de texte comme Microsoft Word, Apple Pages ou LibreOffice Writer. La mise en page complexe réglée au millimètre près, la qualité des figures et des tableaux, l'utilisation de gabarits professionnels, le style des références ou encore la présence d'éléments interactifs sont difficiles et parfois impossibles à reproduire à l'aide d'un logiciel de traitement de texte régulier. L'ajout d'extraits de code, de tableaux de régression ou encore de figures de haute qualité graphique, ainsi que leur personnalisation, nécessitent une interface particulière.
 
