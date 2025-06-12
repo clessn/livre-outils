@@ -208,7 +208,7 @@ Cela favorise aussi l'apprentissage des gens qui souhaitent apprendre à réalis
 
 Les outils présentés dans ce livre ont aussi une grande flexibilité et adaptabilité. Nous souhaitons que tous puissent trouver des outils qui puissent être adaptés à leurs besoins, immédiats comme futurs. Cette adaptabilité est importante surtout lorsqu'on considère l'investissement en temps qui est nécessaire pour la maîtrise de ces outils. Il est donc important que cet apprentissage ne soit pas à recommencer au complet chaque fois que nos besoins changent. Certes, il se peut que certains approfondissements soient à faire dans le temps. Cependant, ceux-ci devraient être minimes lorsque nous avons de bonnes bases. La logique de plusieurs de ces outils reste inchangée, il s'agit bien souvent d'apprendre une nouvelle commande, ce qui n'est pas très coûteux en temps lorsqu'on connaît le : fonctionnement de l'outil. De plus, plusieurs de ces outils permettent d'avoir un plus grand contrôle sur la production et le formatage du texte et de graphiques, par exemple. Cette flexibilité est un grand avantage lors de la rédaction et de l'analyse des données.
 
-# En terminant
+## En terminant
 
 Pour compléter ce chapitre introductif, il est important de mettre l'accent sur un apprentissage important qui se fait de manière implicite dans l'acquisition de ces compétences pratiques: réfléchir de manière scientifique. À la lecture de ce livre, les lecteurs auront fait des acquis significatifs, et seront mieux outillés pour réfléchir, organiser et produire leurs recherches, peu importe qu'elle soit orientée vers le milieu académique ou professionnel. Il est possible de décliner le tout en trois principaux acquis.
 
@@ -219,6 +219,37 @@ Le deuxième concerne la synergie entre tous ces outils. Comme c'est expliqué d
 Le troisième concerne le développement de sa « pensée de chercheur ». Comprendre et maîtriser certains de ces outils permet de se doter de capacités réflexives qui pourront être mobilisées dès les premiers moments de la recherche, soit ceux de la conceptualisation. Dès qu'un intérêt de recherche se développe nous pourrons déjà réfléchir à propos de sa faisabilité, et de quelle manière pourrais-je récolter et analyser des données qui me permettront de répondre à ma question. Cela permet aussi de découvrir de nouvelles méthodes d'analyses de données. Simplement par ces étapes préliminaires, nous gagnons beaucoup de temps et d'itérations simplement par la capacité que nous avons à pouvoir penser une recherche qui pourra être réalisée dans la mesure du possible. De plus, ces acquis contribuent au développement de son jugement critique et d'analyse, fort utile lorsqu'on lit des articles et des ouvrages scientifiques. De cette façon, nous sommes en meilleure position afin de mieux comprendre, d'analyser et de critiquer ce que les autres chercheurs ont fait dans le cadre de leurs recherches.
 
 ## Tableau des critères
+
+Tout au long des prochains chapitres, des tableaux récapitulatifs seront présentés permettant de résumer comment les outils présentés correspondent aux critères développés. 
+ 
+```{r}
+#| tbl-cap: Tableau des critères de sélection
+
+library(tidyverse)
+library(tinytable)
+
+tableau_critères <- tibble(
+    Critères = c(
+      "Accessibilité",
+      "Existence d'une communauté d'utilisateurs",
+      "Popularité en sciences sociales",
+      "Compatibilité avec d'autres outils",
+      "Transparence et réplicabilité",
+      "Adaptabilité et flexibilité"
+    ),
+    Explication = c(
+      "Accessible gratuitement ou à peu de frais",
+      "Oui/Non",
+      "Très populaire/Populaire/Peu ou pas du tout populaire",
+      "Facilement compatible/Demande un peu d'ajustement/Pas compatible",
+      "Favorise/Ne favorise pas la transparence et la réplicabilité",
+      "Très flexible/Plutôt flexible/Rigide"
+    )
+  )
+
+
+tt(tableau_critères, width = 0.75)
+```
 
 ```{=html}
 <!-- 
@@ -282,4 +313,3 @@ Les logiciels libres permettent aux utilisateurs de jouir d'une plus grande libe
 -->
 ````
 
-{{< pagebreak >}}
