@@ -24,7 +24,7 @@ La recherche en sciences sociales se penche également sur l'analyse de contenu 
 
 Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques: les extracteurs webs.
 
-## **Arpentage et choix éditorial: l'extraction de données web grâce à l'outil *rvest*** 
+## **Arpentage et choix éditorial: l'extraction de données web grâce à l'outil *rvest***
 
 Les extracteurs de données sont des outils qui ont transformé la récolte de données en sciences sociales. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
 
@@ -84,7 +84,7 @@ La structure de base du langage HTML est somme toute simple et intuitive et tous
 
 ### **Le package rvest: son fonctionnement et ses possibilités**
 
-Cet ouvrage recommande l'utilisation du paquetage *rvest* afin de récolter des données sur des pages web, qu'elles aient ou non un API. Rvest est construit autour des paquetages "xml2" et "httr" afin de faciliter la manipulation du HTML et XML. Rvest est principalement conçu pour scraper une seule page web alors que pour scraper de multiples pages, d'autres paquetages sont recommandés, notamment "polite". Ce chapitre ne rentre pas dans les détails et ne se concentrera que sur Rvest.
+Cet ouvrage recommande l'utilisation du paquetage \*rvest\* afin de récolter des données sur des pages web, qu'elles aient ou non un API. Rvest est construit autour des paquetages "xml2" et "httr" afin de faciliter la manipulation du HTML et XML. Rvest est principalement conçu pour scraper une seule page web alors que pour scraper de multiples pages, d'autres paquetages sont recommandés, notamment "polite". Ce chapitre ne rentre pas dans les détails et ne se concentrera que sur Rvest.
 
 #### **Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo**
 
@@ -122,7 +122,7 @@ content="text/html; charset=UTF-8">\n<meta
 
 Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
 
-D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \<a\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.
+D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \\\<a\\\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.
 
 ``` bash
 html_LEGISinfo |> html_elements("a")
@@ -353,7 +353,7 @@ htmltest <- minimal_html("
   html_element(".mytable") |> html_table()
 ```
 
-L'opération précédante produit le résultat suivant dans la console
+L'opération précédente produit le résultat suivant dans la console
 
 ``` bash
 # A tibble: 3 × 2
