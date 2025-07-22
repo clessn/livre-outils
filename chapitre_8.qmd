@@ -66,33 +66,101 @@ Malgré ces avantages, il est important de souligner quelques limites quant à l
 
 Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qui est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA risquent d'avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de développer une utilisation saine et intègre de ces outils.
 
-Avant de situer les outils sélectionnés pour ce chapitre, il est important de mentionner que l'IA, et surtout l'apprentissage machine, n'est pas nouveau dans les sciences sociales. En fait, plusieurs méthodes utilisent des algorithmes, et ce depuis longtemps. Selon l'article de @rahal_etal24, l'apprentissage machine serait utilisé depuis bien avant 1960, même si ce n'était pas très répandu. Avant l'arrivé des robots conversationnels et des logiciels de traduction, les méthodes d'apprentissage machine étaient surtout confinées à l'étape de l'analyse des données. L'arrivée des grands modèles linguistiques ainsi que le perfectionnement des outils de traduction ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui, il est plus difficile de catégoriser ces outils, et de les confiner dans l'avant, le pendant ou après la recherche. À titre d'exemple, les outils de traduction peuvent très bien s'inscrire dans chacune de ces étapes. Ils peuvent être mobilisés pour traduire des articles et des livres lors de la construction du devis, traduire des sources premières telles que des articles de presse dans la partie des analyses et, finalement, assister à la traduction l'article final en plusieurs langues. Bien qu'un tel usage ne soit pas nécessairement idéal, notamment parce que certaines nuances linguistiques ne sont pas totalement saisies par ces logiciels, il convient tout de même de reconnaître la transcendance de ces outils. Les lecteurs sont encouragés à réfléchir à cet aspect en fonction des différents outils de l'IA, à la lumière de ce qui sera présenté dans les prochaines sections.
+Avant de situer les outils sélectionnés pour ce chapitre, il est important de
+mentionner que l'IA, et surtout l'apprentissage machine, n'est pas nouveau dans
+les sciences sociales. En fait, plusieurs méthodes utilisent des algorithmes,
+et ce depuis longtemps. Selon l'article de @rahal_etal24, l'apprentissage
+machine serait utilisé depuis bien avant 1960, même si ce n'était pas très
+répandu. Avant l'arrivé des robots conversationnels et des logiciels de
+traduction, les méthodes d'apprentissage machine étaient surtout confinées à
+l'étape de l'analyse des données. L'arrivée des grands modèles linguistiques
+ainsi que le perfectionnement des outils de traduction ont chamboulé la
+conception de l'utilité de ces outils. Aujourd'hui, il est plus difficile de
+catégoriser ces outils, et de les confiner dans l'avant, le pendant ou après la
+recherche. À titre d'exemple, les outils de traduction peuvent très bien
+s'inscrire dans chacune de ces étapes. Ils peuvent être mobilisés pour traduire
+des articles et des livres lors de la construction du devis, traduire des
+sources premières telles que des articles de presse dans la partie des analyses
+et, finalement, assister à la traduction l'article final en plusieurs langues.
+Bien qu'un tel usage ne soit pas nécessairement idéal, notamment parce que
+certaines nuances linguistiques ne sont pas totalement saisies par ces
+logiciels, il convient tout de même de reconnaître la transcendance de ces
+outils. Les lecteurs sont encouragés à réfléchir à cet aspect en fonction des
+différents outils de l'IA, à la lumière de ce qui sera présenté dans les
+prochaines sections.
 
 <!-- NOTE: Je suis ici dans les corrections -->
 
-Comme le premier chapitre le mentionne, ce livre ne vise pas à présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs qui souhaitent en savoir plus à propos des méthodes d'apprentissage machine, comme le *clustering*, les arbres décisionnels et les régressions par pénalité, sont encouragés à consulter des plans de cours qui portent spécifiquement sur ce sujet et des livres qui présentent ces différentes méthodes et leur application avec certains langages de programmation. Sur ce dernier point, le livre de @boehmke_andson20 offre une excellente description de plusieurs de ces méthodes en plus de leur application dans `R`.
+Comme le premier chapitre le mentionne, ce livre ne vise pas à présenter des
+méthodes, mais plutôt des outils. Ainsi, les lecteurs qui souhaitent en savoir
+plus à propos des méthodes d'apprentissage machine, comme le *clustering*, les
+arbres décisionnels et les régressions par pénalité, sont encouragés à
+consulter des plans de cours qui portent spécifiquement sur ce sujet et des
+livres qui présentent ces différentes méthodes et leur application avec
+certains langages de programmation. Sur ce dernier point, le livre de
+@boehmke_andson20 offre une excellente description de plusieurs de ces méthodes
+en plus de leur application dans `R`.
 
-Trois catégories d'outils seront présentées: les « *Large Language Models* » (LLM), les assistants de traduction ainsi que les assistants de revue de littérature. La présentation de ces outils vise à suivre les grandes étapes de la recherche: avant, pendant et après. Comme il est souligné dans les paragraphes précédents, la catégorisation n'est pas mutuellement exclusive. En d'autres termes, les outils présentés ici ne se situent pas uniquement dans une étape précise. Ils les transcendent toutes. Cependant, selon leurs fonctionnalités respectives, certains s'insèrent mieux à certaines étapes de la production scientifique.
+Trois catégories d'outils seront présentées: les « *Large Language Models* »
+(LLM), les assistants de traduction ainsi que les assistants de revue de
+littérature. La présentation de ces outils vise à suivre les grandes étapes de
+la recherche: avant, pendant et après. Comme il est souligné dans les
+paragraphes précédents, la catégorisation n'est pas mutuellement exclusive. En
+d'autres termes, les outils présentés ici ne se situent pas uniquement dans une
+étape précise. Ils les transcendent toutes. Cependant, selon leurs
+fonctionnalités respectives, certains s'insèrent mieux à certaines étapes de la
+production scientifique.
 
 ### Avant la recherche: trouver des écrits et organiser ses sources
 
-Dans cette section, deux principaux outils sont présentés: *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne qui facilite le début d'une revue des écrits, notamment lorsque l'on ne connaît pas beaucoup la littérature sur un sujet et/ou sur un champ d'études. Ces deux outils sont d'ailleurs compatibles avec *Zotero*, qui fut présenté au chapitre 4 de ce livre.
+Dans cette section, deux principaux outils sont présentés: *ResearchRabbit* et
+*Elicit*. Il s'agit de deux ressources en ligne qui facilite le début d'une
+revue des écrits, notamment lorsque la littérature sur un sujet ou sur une 
+question est étrangère. Ces deux outils sont d'ailleurs compatibles avec *Zotero*, qui est présenté au chapitre 4 de ce livre.
 
-Débutons avec *Elicit*. Grâce à l'intelligence artificielle, cet outil propose des résumés, des articles et des livres scientifiques à partir d'une question de recherche préliminaire, ou à partir de concepts. L'application offre une version gratuite qui est toutefois limitée dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, si le lecteur souhaite s'en tenir à la version gratuite, il faudra l'utiliser avec parcimonie. Afin de démontrer l'utilité de ce logiciel, utilisions un exemple concret.
+Tout d'abord, *Elicit*, qui grâce à l'IA, propose des
+résumés, des articles et des livres scientifiques à partir d'une question de
+recherche préliminaire, ou à partir de concepts. L'application offre une
+version gratuite qui est toutefois limitée dans le nombre de crédits
+disponibles mensuellement afin de faire des recherches. Par conséquent, si le
+lecteur souhaite s'en tenir à la version gratuite, il faudra l'utiliser avec
+parcimonie. 
 
 ![Menu d'accueil d'Elicit](images/chapitre9_image2.png){#fig-elicit}
 
-Par exemple, disons que l'on s'intéresse à la question suivante: qu'est-ce que la démocratie? Il peut être difficile de savoir par où commencer face à l'impressionnant volume d'écrits sur le sujet. *Elicit* offre une solution à ce problème. La @fig-elicit correspond au menu d'accueil du site web. Une fois là, nous inscrivons la question qui nous intéresse dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
+Par exemple, disons que l'on s'intéresse à la question suivante: qu'est-ce que
+la démocratie? Il peut être difficile de savoir par où commencer face à
+l'impressionnant volume d'écrits sur le sujet. *Elicit* offre une solution à ce
+problème. La @fig-elicit correspond au menu d'accueil du site web. Une fois là,
+nous inscrivons la question qui nous intéresse dans la case « *Ask a research
+question* ». Les résultats générés sont représentés dans la @fig-results1 et
+@fig-results2
 
 ![Court résumé du sujet](images/chapitre9_image3.png){#fig-results1}
 
 ![Suggestions de lectures](images/chapitre9_image4.png){#fig-results2}
 
-Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.
+Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage
+» de la littérature sur un sujet, tout en fournissant un résumé des sources
+suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction
+de nos besoins.
 
-Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, **ne jamais faire un copier-coller de ces résumés afin de les inclure dans notre travail de recherche**. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques selon nos besoins qui seront consultés par la suite pour rédiger notre revue des écrits et trouver des références supplémentaires.
+Cependant, il est fortement recommandé d'utiliser le résumé produit par le
+logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la
+@fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En
+d'autres termes, **ne jamais faire un copier-coller de ces résumés afin de les
+inclure dans notre travail de recherche**. Ce logiciel doit impérativement être
+accompagné d'une utilisation intègre de la littérature. Une bonne utilisation
+de ce logiciel devrait se limiter à trouver des articles et/ou des livres
+scientifiques selon nos besoins qui seront consultés par la suite pour rédiger
+notre revue des écrits et trouver des références supplémentaires.
 
-Un autre outil s’offre à nous afin de trouver des références supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que j'ai lu plusieurs articles et/ou chapitres de livre, et que j'ai incorporé les documents dans Zotero, je peux importer mon fichier contenant mes références dans *Research Rabbit*. La @fig-rr1 présente le menu principal du site web.
+Un autre outil s’offre à nous afin de trouver des références supplémentaires:
+*ResearchRabbit*. Ce logiciel est gratuit, mais demande de se créer un compte
+afin de pouvoir utiliser ses services. Une fois que plusieurs articles et/ou
+chapitres de livre ont été lu, et qu'ils ont été ajoutés dans Zotero, il est
+possible d'importer la collection dans *Research Rabbit*. La @fig-rr1 présente
+le menu principal du site web.
 
 ![Menu principal](images/chapitre9_RR1.png){#fig-rr1}
 
@@ -102,11 +170,39 @@ Un autre outil s’offre à nous afin de trouver des références supplémentair
 
 ![Vue « Timeline » des références](images/chapitre9_rr4.png){#fig-rr4}
 
-Avant toute chose, *Research Rabbit* doit être considéré comme un outil qui m'aidera à *complémenter* ma revue des écrits. En d'autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. *Ellicit* peut nous aider pour cette tâche, mais aussi il est pratique de consulter des *handbooks*[^chapitre_8-3] et autres ouvrages de référence afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d'excellente ressource pour débuter une recherche.
+Avant toute chose, *Research Rabbit* doit être considéré comme un outil qui
+aidera à *complémenter* la revue des écrits. En d'autres termes, afin que ce
+logiciel soit utile, il faut déjà avoir des articles sous la main. *Elicit*
+peut aider pour cette tâche, mais aussi il est pratique de consulter des
+manuels de références comme des *hanbooks*[^chapitre_8-3] et autres ouvrages de
+référence afin de se faire une idée sur le sujet qui nous intéresse en plus de
+trouver des références. Au besoin, les bibliothécaires des différents
+départements universitaires sont aussi d'excellente ressource pour débuter une
+recherche.
 
-[^chapitre_8-3]: Il s'agit d'ouvrages généraux qui porte sur un sujet quelconque. Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.
+[^chapitre_8-3]: Il s'agit d'ouvrages généraux qui portent sur divers sujets.
+Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.
 
-Utilisons un exemple concret afin d'illustrer l'utilisation de *Research Rabbit*. Disons que nous nous intéressons à la question suivante: quel est le rôle des normes pacifistes sur les processus politiques au Japon? Après une rapide recherche, je trouve ces articles qui semblent chacun éclairer un aspect particulier à propos de cette question. Une fois qu'ils ont été importés dans Zotero et qu'ils ont été lus, je peux importer ma collection Zotero dans *Research Rabbit* en cliquant sur le bouton *Import Zotero Collection*, situé dans le coin supérieur gauche de la @fig-rr1. Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une alternative est de cliquer sur le bouton vert *Add Paper* situé dans la colonne de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra, et dans laquelle on pourra ajouter manuellement les articles au besoin. Une fois que nous aurons ajouté les premiers articles que nous aurons lus, *Research Rabbit* pourra nous dresser une « cartographie » des différentes sources qui sont en lien avec ces articles. La @fig-rr3 présente cette cartographie.
+Utilisons un exemple concret afin d'illustrer l'utilisation de *Research
+Rabbit*. Disons que nous nous intéressons à la question suivante: quel est le
+rôle des normes pacifistes sur les processus politiques au Japon? Après une
+rapide recherche, certains ouvrages scientifiques jugés comme pertinents
+ont été ajoutés à une nouvelle collection dans Zotero, qui contiendra
+uniquement les ouvrages pour ce projet. Ce dernier point est important afin
+d'éviter d'ajouter du « bruit » dans les suggestions de *Research Rabbit*.
+Une fois ces étapes faites, il est possible d'importer la collection dans
+*Research Rabbit*. Pour ce faire, il faut cliquer sur le bouton *Import Zotero Collection*, situé dans le coin supérieur gauche de la @fig-rr1. 
+
+<!-- NOTE: Je suis rendu ici dans les corrections -->
+
+Il se peut que le logiciel ne trouve pas tous les articles que nous avons dans notre collection Zotero. Une
+alternative est de cliquer sur le bouton vert *Add Paper* situé dans la colonne
+de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra,
+et dans laquelle on pourra ajouter manuellement les articles au besoin. Une
+fois que nous aurons ajouté les premiers articles que nous aurons lus,
+*Research Rabbit* pourra nous dresser une « cartographie » des différentes
+sources qui sont en lien avec ces articles. La @fig-rr3 présente cette
+cartographie.
 
 Nous avons trois possibilités afin de trouver des articles supplémentaires. La première est de consulter les « Similar Work ». Cette option est intéressante afin de visualiser tous les articles qui sont près de mon sujet, et pour voir comment ils sont liés entre eux. Les points en vert sont les sources qui font partie de ma collection. Cependant, ce n'est pas l'option la plus recommandée. Comme nous pouvons le voir dans la @fig-rr3, en fonction des cinq articles que j'ai importés dans Zotero, il y a 1 501 articles similaires. Ce qui complique la tâche de ciblage. Une deuxième option est d'utiliser « Earlier Work » et « Later Work », surtout avec la vue « Timeline » comme dans la @fig-rr4.
 
