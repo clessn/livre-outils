@@ -198,13 +198,14 @@ les capacités humaines [@roser22]. La @fig-evolution présente cette
 
 ```{r}
 #| message: false
+#| label: fig-evolution
 
 source("chapitre_8_file/graphique.R")
 ai_evolution
 ```
 
-![Évolution de l'IA depuis
-1998](images/chapitre9_figure1.png){#fig-evolution}
+<!-- ![Évolution de l'IA depuis -->
+<!-- 1998](images/chapitre9_figure1.png){#fig-evolution} -->
 
 Comme on le remarque, cette évolution ne suit pas une trajectoire
 linéaire.  Depuis 2015, la plupart de ces technologies ont évolué
