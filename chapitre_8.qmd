@@ -8,44 +8,43 @@ Jozef Rivest, Laurence-Olivier Foisy, Hubert Cadieux
 
 Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
 artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son
-potentiel pour les sciences sociales. Nous souhaitons d'abord et
-avant tout mener les lecteurs vers la réflexion. Dans ces pages,
-il y a beaucoup plus de questions que de réponses.  Cet état de
-fait reflète bien l'état de la connaissance que nous avons sur l'IA.
-Malgré cela, nous pensons qu'amorcer la réflexion et la discussion
-s'impose. Se poser des questions et tenter de trouver des réponses
-ne peut que générer des bénéfices. Par conséquent, si ce chapitre
-permet d'éclairer certains enjeux, ou s'il stimule davantage de
-questionnement, alors il aura réussi son objectif. De plus, ce
-chapitre vise à présenter certains outils de l'IA qui s'inscrivent
-dans les grandes étapes de la recherche. Il est important de
-mentionner que ces outils évoluent à une vitesse impressionnante.
-Par conséquent, certaines fonctionnalités présentées dans ce chapitre
-peuvent possiblement changer dans les prochaines années. Les lecteurs
-sont appelés à consulter les dernières mises à jour de ces outils
-afin de connaître les derniers changements et les nouvelles
-fonctionnalités. Bien qu'il soit difficile de catégoriser ces outils
-de manière exclusive dans chacune de ces catégories, un certain
-ordre d'utilisation est proposé. Celui-ci est surtout illustratif
-afin de présenter les fonctionnalités principales. Cependant, les
-lecteurs sont appelés à réfléchir à propos de l'intégration de ces
-outils dans leur flux de travail en fonction de leur besoin.
+potentiel pour les sciences sociales. Dans un premier temps, et en
+trame de fond de ce chapitre, les lecteurs seront appelés à développer
+leurs intuitions dans leur utilisation de différents outils de l'IA.
+Avant tout, au moment d'écrire ces lignes, il est important de
+mentionner que l'étude de l'IA dans les sciences sociales est encore
+jeune. Par conséquent, beaucoup de questions restent encore en
+suspend. Face à ce constat, il est important de développer son
+regard critique afin d'orienter son utilisation de l'IA. Se poser
+des questions et tenter de trouver des réponses ne peut que générer
+des bénéfices. Ainsi, si ce chapitre permet d'éclairer certains
+enjeux, ou s'il stimule davantage de questionnement, alors il aura
+réussi son objectif.
 
-Nous débutons par définir et expliquer ce qu'est l'IA. Bien que ça
-ne soit pas une tâche facile, nous souhaitons simplement donner une
-idée générale de ce qu'il s'agit. Ensuite, nous souhaitons mettre
-l'accent sur l'évolution constante de ce champ de recherche, ainsi
-que les défis que ça pose. La section suivante se penche sur certains
-enjeux éthiques liés à l'utilisation de l'IA, notamment en ce qui
-concerne le plagiat. Avec ces éléments en tête, nous présentons
-trois types d'outils, soit les assistants de revue de littérature,
-les grands modèles linguistiques et les assistants de traduction.
-Face à cette offre et aux capacités surprenantes de ceux-ci, nous
-nous questionnons par la suite quant à la place du chercheur,
-aujourd'hui et dans le futur, avec l'arrivée de ces nouvelles
-technologies. La dernière section se penchera sur la place de cette
-technologie en sciences sociales. Quel usage pourrait-on en faire,
-et surtout quelles en sont les limites ?
+Dans un deuxième temps, ce chapitre vise à présenter certains outils
+de l'IA qui s'inscrivent dans les grandes étapes de la recherche.
+Il est important de mentionner que ces outils évoluent à une vitesse
+impressionnante.  Par conséquent, certaines fonctionnalités présentées
+dans ce chapitre peuvent possiblement changer dans les prochaines
+années. Les lecteurs sont appelés à consulter les dernières mises
+à jour de ces outils afin de connaître les derniers changements et
+les nouvelles fonctionnalités. Bien qu'il soit difficile de catégoriser
+ces outils de manière exclusive dans chacune de ces catégories, un
+certain ordre d'utilisation est proposé. Celui-ci est surtout
+illustratif afin de présenter les fonctionnalités principales.
+Cependant, les lecteurs sont appelés à réfléchir à propos de
+l'intégration de ces outils dans leur flux de travail en fonction
+de leur besoin.
+
+La section point d'observation présentera une définition de l'IA, 
+l'évolution de cette dernière dans les dernières années ainsi 
+que la présence et l'utilisation de l'IA dans les sciences 
+sociales. Ensuite, la section arpentage et choix éditoriaux 
+présentera différents outils de l'IA qui s'insèrent bien dans 
+les diffèrentes étapes de la recherche, de la conception jusqu'à la 
+publication des réusltats. Finalement, avant de conclure le chapitre,
+il est intéressant de se demander ce que devient le chercheur à l'aube 
+de cette révolution technologique. 
 
 ## Point d'observation:
 
@@ -195,6 +194,14 @@ les capacités humaines [@roser22]. La @fig-evolution présente cette
 évolution.
 
 <!-- NOTE: Refaire le graphique manuellement -->
+
+
+```{r}
+#| message: false
+
+source("chapitre_8_file/graphique.R")
+ai_evolution
+```
 
 ![Évolution de l'IA depuis
 1998](images/chapitre9_figure1.png){#fig-evolution}
@@ -441,14 +448,14 @@ divers sujets.  Les éditeurs les plus connus sont notamment *Oxford*,
 *SAGE* et *Routledge*.
 
 Utilisons un exemple concret afin d'illustrer l'utilisation de
-*Research Rabbit*. Supposons que nous nous intéressons à la question 
+*Research Rabbit*. Supposons que nous nous intéressons à la question
 suivante : quel est le rôle des normes pacifistes sur les processus
-politiques au Japon? Dans un premier temps, un survol rapide de la 
-littérature grâce aux ouvrages de références ainsi qu'avec Google 
-Scholar a permis d'identifier quelques textes qui sont jugés comme 
-pertinents afin de fournir une réponse à cette question. Ceux-ci sont 
-ensuite ajouté dans une nouvelle collection Zotero^[Voir le @sec-chap4
-au besoin.], qui contiendra uniquement les ouvrages pour
+politiques au Japon? Dans un premier temps, un survol rapide de la
+littérature grâce aux ouvrages de références ainsi qu'avec Google
+Scholar a permis d'identifier quelques textes qui sont jugés comme
+pertinents afin de fournir une réponse à cette question. Ceux-ci
+sont ensuite ajouté dans une nouvelle collection Zotero^[Voir le
+@sec-chap4 au besoin.], qui contiendra uniquement les ouvrages pour
 ce projet. Ce dernier point est important afin d'éviter d'ajouter
 du « bruit » dans les suggestions de *Research Rabbit*. Une fois
 ces étapes faites, il est possible d'importer la collection dans
@@ -475,14 +482,14 @@ de ma collection. Cependant, la visualisation offerte par cette
 option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre,
 en fonction des cinq articles que j'ai importés dans Zotero, il y
 a 1 501 articles similaires. Cela complique la tâche de ciblage.
-Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later Work*,
-surtout avec la vue *Timeline* comme dans la @fig-rr4. Il est toujours
-utile de classifier les ouvrages en fonction de leur date de parution, 
-notamment afin de suivre l'évolution du débat scientifique à propos 
-du sujet de notre recherche. Cette fonctionnalité de *Research Rabbit* 
-facilite ainsi cette étape, en plus de permettre de découvrir des 
-ouvrages qui ont été publiés avant et aprés ceux qui ont été 
-préalablement identifié.
+Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later
+Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il
+est toujours utile de classifier les ouvrages en fonction de leur
+date de parution, notamment afin de suivre l'évolution du débat
+scientifique à propos du sujet de notre recherche. Cette fonctionnalité
+de *Research Rabbit* facilite ainsi cette étape, en plus de permettre
+de découvrir des ouvrages qui ont été publiés avant et aprés ceux
+qui ont été préalablement identifié.
 
 Une troisième option est de sélectionner une seule source à la fois,
 et de consulter les deux options suivantes : *All References* et
@@ -501,13 +508,13 @@ plusieurs articles différents. Il est donc utile d'ajouter au fur
 et à mesure les nouvelles références dans *Research Rabbit* afin
 de visualiser la couverture de notre revue des écrits.
 
-### Pendant la recherche: l'utilisation de grands modèles linguistiques pour analyser des données
+### Pendant la recherche: l'utilisation de grands modèles linguistiques
+pour analyser des données
 
-L'utilisation des LLMs via l'API d'OpenAI en R représente
-une avancée significative pour les chercheurs en sciences sociales,
-leur offrant des outils puissants pour naviguer et analyser l'immense
-paysage des données textuelles avec une précision et une efficacité
-accrues.
+L'utilisation des LLMs via l'API d'OpenAI en R représente une avancée
+significative pour les chercheurs en sciences sociales, leur offrant
+des outils puissants pour naviguer et analyser l'immense paysage
+des données textuelles avec une précision et une efficacité accrues.
 
 Bien qu'il soit possible de communiquer avec l'API d'OpenAI
 directement, le package `openai` en R offre une interface conviviale
@@ -567,20 +574,20 @@ même des concepts ou des événements, liant ces entités à des thèmes
 spécifiques ou à des contextes historiques et sociopolitiques,
 enrichissant ainsi les bases de données pour des études plus poussées.
 
-3. Troisièmement, la génération automatique de résumés de textes par
-ces modèles permet de condenser de grandes quantités d'informations
+3. Troisièmement, la génération automatique de résumés de textes
+par ces modèles permet de condenser de grandes quantités d'informations
 en résumés concis, facilitant l'analyse préliminaire de vastes
 archives de textes, comme des articles de presse, des mémoires
 juridiques, ou des écrits académiques. Cela aide les chercheurs à
 identifier rapidement les documents pertinents sans nécessiter la
 lecture intégrale des textes.
 
-4. Quatrièmement, les modèles linguistiques peuvent être utilisés pour
-générer des simulations de dialogue ou des réponses à des questions
-hypothétiques, permettant aux chercheurs en sciences sociales de
-modéliser des interactions entre différents acteurs sociaux ou
-d'explorer des scénarios hypothétiques en études de comportement
-sans la mise en place de coûteuses études de terrain.
+4. Quatrièmement, les modèles linguistiques peuvent être utilisés
+pour générer des simulations de dialogue ou des réponses à des
+questions hypothétiques, permettant aux chercheurs en sciences
+sociales de modéliser des interactions entre différents acteurs
+sociaux ou d'explorer des scénarios hypothétiques en études de
+comportement sans la mise en place de coûteuses études de terrain.
 
 5. Cinquièmement, l'intégration de LLMs aide à surmonter les barrières
 linguistiques dans la recherche globale, en offrant des capacités
@@ -600,15 +607,16 @@ d'images ou de vidéos pour compléter des analyses textuelles, ou
 pour étudier des phénomènes visuels comme la représentation des
 genres dans les médias ou les tendances de la mode.
 
-8. Enfin, les chercheurs peuvent utiliser les LLMs pour développer des
-outils personnalisés qui s'adaptent à des besoins spécifiques de
-recherche, comme l'analyse de discours ou la détection de changements
-dans le langage au fil du temps, fournissant ainsi des informations
-précieuses sur l'évolution des discours et pratiques culturelles.
+8. Enfin, les chercheurs peuvent utiliser les LLMs pour développer
+des outils personnalisés qui s'adaptent à des besoins spécifiques
+de recherche, comme l'analyse de discours ou la détection de
+changements dans le langage au fil du temps, fournissant ainsi des
+informations précieuses sur l'évolution des discours et pratiques
+culturelles.
 
 Voici un exemple simple d'utilisation de l'API d'OpenAI :
 
-```r 
+```r
 
 library(openai)
 
@@ -822,8 +830,8 @@ produire un savoir quelconque met au défi nos conceptions
 épistémologiques. Générer des textes entiers avec l'aide de l'IA
 ne devrait donc pas être considéré.
 
-Ainsi, l'avènement de l'IA en recherche apporte des
-questions et des réflexions épistémologiques[^chapitre_8-4] et
+Ainsi, l'avènement de l'IA en recherche apporte des questions et
+des réflexions épistémologiques[^chapitre_8-4] et
 méthodologiques[^chapitre_8-5] importantes. Ces questions sont
 cruciales et doivent être abordées le plus rapidement possible. En
 tant que chercheur, nous devons nous questionner par rapport à
@@ -878,8 +886,7 @@ numériques.
 #### Installation et chargement du package
 
 ```{r} #| eval: false install.packages("openai") ## au besoin
-library(openai)
-```
+library(openai) ```
 
 #### Configuration de l'API
 
@@ -895,14 +902,12 @@ Lorsque vous aurez votre clé API, utilisez le package usethis pour
 la configurer dans votre environnement R.
 
 ```{r} #| eval: false install.packages("usethis") ## au besoin
-usethis::edit_r_environ() 
-```
+usethis::edit_r_environ() ```
 
 Ajoutez la ligne suivante à votre fichier `.Renviron`.
 
 ```{r} #| eval: false
-OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets 
-```
+OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets ```
 
 #### Utilisation de l'API
 
@@ -911,8 +916,7 @@ Elle prend en entrée le modèle que vous souhaitez utiliser ainsi
 que le message que vous souhaitez envoyer au modèle en format list.
 Voici un modèle d'utilisation de la fonction:
 
-```{r} #| eval: false 
-chat_prompt <- create_chat_completion(
+```{r} #| eval: false chat_prompt <- create_chat_completion(
     model = "gpt-3.5-turbo", messages = list(
 	list(
 	    "role" = "system", "content" = "You are a helpful
@@ -921,8 +925,7 @@ chat_prompt <- create_chat_completion(
 	    "role" = "user", "content" = "Please do the following:"
       )
 	)
-)
-```
+) ```
 
 Le résultat de votre requête sera contenu dans l'objet chat_prompt
 formatté en JSON. Vous pouvez accéder aux variables de la même façon
@@ -1214,7 +1217,7 @@ par ChatGPT fait partie des bonnes pratiques. De plus, développer
 un esprit de synthèse est fondamental pour chaque étudiant
 universitaire, ainsi que pour les futurs chercheurs. Commencez dès
 maintenant à vous pratiquer pour développer ces capacités. Ne
-demandez pas à ChatGPT de le faire à votre place. --\> 
+demandez pas à ChatGPT de le faire à votre place. --\>
 
 # Conclusion
 
@@ -1275,5 +1278,4 @@ plutôt que d'utiliser les définitions fournies par ChatGPT fait
 partie des bonnes pratiques. Développer un esprit de synthèse est
 fondamental pour chaque étudiant universitaire, ainsi que pour les
 futurs chercheurs. Commencez dès maintenant à développer ces capacités
-plutôt que de demander à ChatGPT de le faire à votre place.
--->
+plutôt que de demander à ChatGPT de le faire à votre place.  -->
