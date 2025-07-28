@@ -224,6 +224,8 @@ Tout au long des prochains chapitres, des tableaux récapitulatifs seront prése
  
 ```{r}
 #| tbl-cap: Tableau des critères de sélection
+#| message: false
+#| echo: false
 
 library(tidyverse)
 library(tinytable)
