@@ -22,4 +22,5 @@ bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
 lang: fr
 format: pdf
-editor: visual
+
+editor: source
