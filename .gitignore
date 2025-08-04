@@ -28,11 +28,13 @@ build/
 *.meta
 *.obj
 *.pch
+*.json
 *.pdb
 *.pgc
 *.pgd
 *.rsp
 *.sbr
+*.pdf
 *.tlb
 *.tli
 *.tlh
