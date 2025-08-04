@@ -32,46 +32,13 @@ Les langages de balisage permettent d'effectuer différentes tâches. HTML, qui 
 
 Pour mieux comprendre ces différents langages, il est utile de les concevoir selon différents niveaux d'abstraction. L'abstraction, définie comme le processus qui consiste à simplifier des systèmes complexes en se concentrant sur les aspects essentiels [@kramer07; @hazzan02], constitue un concept fondamental en informatique. Dans le contexte des langages de balisage, cette perspective permet de distinguer différents niveaux selon leur complexité syntaxique et leur facilité d'utilisation. Comme le souligne @neumanns19, il existe une tension fondamentale entre la facilité d'usage et la puissance pour les documents complexes. Bien que les langages de balisage forment en réalité un continuum entre puissance et simplicité [@arloing_etal16], ce chapitre propose de les organiser selon trois niveaux d'abstraction pour faciliter leur compréhension. Cette simplification pédagogique, illustrée dans la @fig-niveaux-abstraction, permet de distinguer les principales approches de balisage selon leur complexité d'usage.
 
-::: {#fig-niveaux-abstraction}
-```{mermaid}
-%%| fig-width: 4
-%%| fig-height: 8
-flowchart TD
-    subgraph level1 ["Niveau 1: Syntaxe complexe"]
-        A1[HTML<br/>Sites web]
-        A2[XML<br/>Données]
-        A3[LaTeX<br/>Académique]
-    end
-    subgraph level2 ["Niveau 2: Syntaxe simplifiée"]
-        space1[" "]
-        B1[Markdown<br/>Simple et lisible]
-        space2[" "]
-    end
-    subgraph level3 ["Niveau 3: Computationnels"]
-        C1[R Markdown<br/>Code R intégré]
-        C2[Quarto<br/>Multi-langages]
-    end
-    D[Pandoc<br/>Convertisseur universel]
-    subgraph output ["Formats de sortie"]
-        E1[PDF]
-        E2[DOCX]
-        E3[HTML]
-    end
-    level1 --> level2
-    level2 --> level3
-    level1 --> D
-    level2 --> D
-    level3 --> D
-    D --> output
-    style D fill:#e1f5fe,stroke:#0277bd
-    style level1 fill:#ffebee,stroke:#c62828
-    style level2 fill:#e8f5e8,stroke:#2e7d32
-    style level3 fill:#f3e5f5,stroke:#6a1b9a
-    style space1 fill:#e8f5e8,stroke:#e8f5e8
-    style space2 fill:#e8f5e8,stroke:#e8f5e8
+```{r}
+#| label: fig-niveaux-abstraction
+#| echo: false
+#| fig-cap: "Niveaux d'abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d'usage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| out.width: "90%"
+knitr::include_graphics("images/chapitre7_mermaid1.png", dpi = 500)
 ```
-Niveaux d'abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d'usage
-:::
 
 
 Les langages à syntaxe complexe constituent le premier niveau de cette hiérarchisation. Ces langages nécessitent de spécifier explicitement de nombreux détails techniques [@gratzer08]. L'utilisateur doit comprendre et contrôler directement les mécanismes sous-jacents : balises détaillées en HTML, schémas complexes en XML, commandes typographiques précises en \LaTeX. Au deuxième niveau, un langage comme Markdown simplifie l'interaction en cachant la complexité technique derrière une syntaxe intuitive [@arloing_etal16]. L'utilisateur se concentre sur le contenu plutôt que sur les détails de formatage, le système gérant automatiquement la conversion vers différents formats.
@@ -294,60 +261,14 @@ Un fichier [Bib]{.smallcaps}\TeX ne contient rien de plus qu'une série de publ
 
 Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne. La @fig-environnements-edition présente une vue d'ensemble des principaux environnements d'édition disponibles pour les chercheurs en sciences sociales, organisés selon leur type (logiciels de bureau vs éditeurs en ligne) et les langages de balisage qu'ils supportent.
 
-::: {#fig-environnements-edition}
 
-```{mermaid}
-%%| fig-width: 4
-%%| fig-height: 8
-flowchart TD
-    subgraph main ["💻 ENVIRONNEMENTS D'ÉDITION POUR LANGAGES DE BALISAGE"]
-        
-        %% Introduction
-        INTRO["📝 Où écrire vos documents académiques?<br/>Guide pour chercheurs en sciences sociales"]
-        
-        INTRO --> CHOIX["🤔 DEUX GRANDES FAMILLES D'ENVIRONNEMENTS"]
-        
-        %% Branche Logiciels de bureau
-        CHOIX --> BUREAU["🖥️ LOGICIELS DE BUREAU<br/>Installation sur votre ordinateur"]
-        
-        BUREAU --> VSCODE["⚡ Visual Studio Code"]
-        VSCODE --> VSC_DETAILS["✅ Gratuit et open source<br/>✅ Extensions puissantes<br/>✅ Git intégré<br/>✅ Live Share (collaboration)<br/>⚠️ Courbe d'apprentissage"]
-        VSC_DETAILS --> VSC_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
-        
-        BUREAU --> RSTUDIO["📊 RStudio"]
-        RSTUDIO --> RST_DETAILS["✅ Gratuit<br/>✅ Interface intuitive<br/>✅ Visualisation intégrée<br/>✅ Console R native<br/>⚠️ Correcteur basique"]
-        RST_DETAILS --> RST_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
-        
-        BUREAU --> POSITRON["🚀 Positron"]
-        POSITRON --> POS_DETAILS["✅ Gratuit (Beta)<br/>✅ Interface scientifique moderne<br/>✅ Base VS Code<br/>⚠️ Encore en développement"]
-        POS_DETAILS --> POS_LANG["📚 Langages de balisage:<br/>LaTeX, Markdown, R Markdown,<br/>Quarto, HTML, BibTeX"]
-        
-        %% Branche En ligne
-        CHOIX --> LIGNE["☁️ ÉDITEURS EN LIGNE<br/>Aucune installation requise"]
-        
-        LIGNE --> OVERLEAF["📄 Overleaf"]
-        OVERLEAF --> OVER_DETAILS["✅ Collaboration temps réel<br/>✅ Pas d'installation LaTeX<br/>✅ Modèles intégrés<br/>⚠️ Internet requis<br/>⚠️ Version gratuite limitée"]
-        OVER_DETAILS --> OVER_LANG["📚 Langages de balisage:<br/>LaTeX (principal)<br/>BibTeX (références)<br/>Markdown (via package, limité)"]
-        
-
-        
-    end
-    
-    %% Styles
-    classDef introStyle fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-    classDef bureauStyle fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
-    classDef ligneStyle fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px,color:#000
-    classDef detailStyle fill:#f5f5f5,stroke:#616161,stroke-width:1px,color:#000
-    classDef langStyle fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000
-    
-    class INTRO,CHOIX introStyle
-    class BUREAU,VSCODE,RSTUDIO,POSITRON bureauStyle
-    class LIGNE,OVERLEAF ligneStyle
-    class VSC_DETAILS,RST_DETAILS,POS_DETAILS,OVER_DETAILS detailStyle
-    class VSC_LANG,RST_LANG,POS_LANG,OVER_LANG langStyle
+```{r}
+#| label: fig-environnements-edition
+#| echo: false
+#| fig-cap: "Vue d'ensemble des environnements d'édition pour langages de balisage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| out.width: "90%"
+knitr::include_graphics("images/chapitre7_mermaid2.png", dpi = 500)
 ```
-Vue d'ensemble des environnements d'édition pour langages de balisage
-:::
 
 D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont le logiciels de bureau VS Code et RStudio, également abordé dans le chapitre 2. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`. 
 
