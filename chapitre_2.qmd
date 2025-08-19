@@ -1,63 +1,31 @@
 # Langages de programmation {#sec-chap2}
 
-<!-- TODO: 
+## Qu'est-ce que c'est, la programmation ? 
 
-Commentaires d'Adrien
+La programmation informatique est la codification de concepts fondamentaux qui apparaissent dans tous les langages et la synthèse de ces concepts dans la construction d'outils et de systèmes pour le développement de programmes. Un langage de programmation est un système de communication formalisé qui permet aux programmeurs de donner des instructions précises à un ordinateur. Contrairement aux langages naturels comme le français ou l'anglais, les langages de programmation suivent des syntaxes strictes et utilisent un vocabulaire limité mais précis. Un langage de programmation traduit des concepts complexes en séquences d'opérations qu'un ordinateur peut exécuter. Les langages de haut niveau, tels que R, Python, Java et C++, sont indépendants du matériel. Ils sont traduits à l'aide d'un compilateur ou d'un traducteur. Les langages de haut niveau permettent aux programmeurs de se concentrer sur la logique de leurs applications sans se préoccuper des détails techniques de la machine. À l'inverse, on retrouve les langages de bas niveau, tels que le langage Assembleur. Les langages de bas niveau offrent un contrôle direct sur l'ordinateur mais demandent une compréhension approfondie de son architecture interne. L'Assembleur est un type de langage de programmation constitué principalement d'équivalents symboliques du langage machine d'un ordinateur particulier. Les langages de programmation sont essentiels pour exprimer des idées de manière précise et rigoureuse, permettant à la fois aux machines d'exécuter des commandes et aux programmeurs de comprendre la logique sous-jacente. 
 
-- Manque intro - Qu'est-ce que ça fait un langage de prog? - MARC [x]
-- Mentionner les compagnies pour les autres logiciels? - MARC [cancel]
-- Expliquer bottom up en francais - LAURENCE-OLIVIER [x] 
-- Ajouter CRAN dans l'historique de R - MARC [cancel]
-- Préciser c'est quoi la coloration syntaxique. -LAURENCE-OLIVIER [x]
-- Pourquoi RStudio ? Clarifier que pour utiliser R on a besoin de RStudio ou un IDE - MARC [x]
-- Mentionner que R est un outil versatile qui permet de faire tout ce qu'on veut? - MARC [x]
-- Mettez plus l'accent sur pourquoi R est le best pour ce qu'on fait. -MARC [x]
-- Expliquer le terminal? - LAURENCE-OLIVIER [x]
-- Présenter et mettre le tableau plus haut. Après avoir discuté des autres langages de programmation. - LAURENCE-OLIVIER
-- Pertinence dans le monde du travail - LAURENCE-OLIVIER [x]
+Chaque langage de programmation possède ses propres caractéristiques et domaines d'application privilégiés. Par exemple, C est connu pour sa performance dans le développement de systèmes d'exploitation. Pour leurs parts, HTML et CSS sont spécialisés dans la création de pages web. SQL est notamment utile pour la gestion de bases de données, alors que le langage R se distingue dans l'analyse statistique et la visualisation de données. Python a de nombreux avantages et est utilisé entre autres dans le développement d'applications et en intelligence artificielle. Cette diversité reflète l'évolution constante des besoins informatiques et permet aux développeurs de sélectionner l'outil le plus adapté à chaque situation. L'apprentissage d'un langage de programmation implique de devoir comprendre plusieurs éléments fondamentaux, tels que la syntaxe, la sémantique et la structure des données. La programmation moderne implique souvent la maîtrise de plusieurs langages (ou du moins de plusieurs librairies) et la compréhension des écosystèmes qui les entourent.
 
--->
-## Qu'est-ce que c'est, la programmation? 
+La multiplicité des langages de programmation et des options offertes aux programmeurs sont loin d'être des obstacles. En effet, elle reflète plutôt la constante évolution qui et les besoins croissants de notre société numérique. Savoir programmer, c'est acquérir plusieurs compétences fondamentales au 21e siècle. Non seulement la programmation permet de développer des capacités techniques, elle permet aussi de déployer une pensée logique et structurée applicable bien au-delà du monde informatique.
 
-Un langage de programmation est un ensemble d'instructions écrites par un programmeur pour fournir des instructions à l'ordinateur afin d'exécuter et d'accomplir une tâche. 
-C’est comme une recette de cuisine, vous pouvez vous considérer comme l’ordinateur et l’auteur de la recette comme un programmeur.
-L’auteur de la recette vous fournit un ensemble d’instructions que vous lisez puis suivez. 
-Plus les instructions sont complexes, plus le résultat l’est aussi. 
+## Comment choisir quel langage de programmation apprendre ?
 
-Un langage de programmation est utilisé dans la programmation informatique en tant que langage formel. 
-Il se compose d'ensembles d'instructions pour les ordinateurs afin d'implémenter des algorithmes. 
-Les langages de haut niveau, tels que R, Python, Java et C++, sont indépendants du matériel. 
-Ils sont traduits à l'aide d'un compilateur ou d'un traducteur.
-Le langage assembleur est un langage de bas niveau.
-L'assembleur est type de langage de programmation constitué principalement d'équivalents symboliques du langage machine d'un ordinateur particulier. 
+Pour choisir quel langage de programmation apprendre, il faut d'abord considérer ses objectifs personnels et professionnels. Bien que la majorité des langages de programmation principaux peuvent réaliser une grande quantité de tâches, ils ont tous leurs spécialités et leurs avantages. Si l'objectif est de développer des sites web, JavaScript est incontournable, tandis qu'HTML et CSS constitueront les bases du design web. Pour ceux qui s'intéressent à l'analyse de données ou à la recherche scientifique, Python ou R représentent d'excellents choix grâce à leurs nombreuses bibliothèques spécialisées. Julia peut être intéressant pour ceux qui souhaitent faire de la science des données et de l'apprentissage machine. L'apprentissage d'un langage de programmation demande une certaine quantité d'efforts et de temps. Il est recommandé de commencé son apprentissage avec des langages tels que Python et R en raison de leurs syntaxes claires et intuitives qui ressemblent au langage naturel. En effet, cela permet au programmeur débutant de se concentrer sur les concepts fondamentaux de la programmation, tels que les variables, les boucles et les fonctions, sans être découragé par une syntaxe complexe. L'environnement d'apprentissage et les ressources disponibles en ligne jouent également un rôle important sur le choix d'un langage de programmation. Python et R ont des communautés très actives en plus d'une grande quantité de documentation et d'innombrables tutoriels gratuits, permettant l'apprentissage autonome et efficace. Les programmeurs débutants peuvent s'inscrire sur des sites tels que DataCamp, Codecademy et Coursera afin d'avoir de l'aide dans leur apprentissage. D'autres éléments à garder en tête lors du choix d'un langage de programmation est la courbe d'apprentissage, la marché du travail dans son domaine et sa région, ainsi que la compatibilité avec ses contraintes techniques et organisationnelles. 
 
-Les langages de programmation ne sont pas seulement des langages formels et machines, mais aussi des langages fondamentalement humains. 
-Ils impliquent des processus cognitifs favorisant la construction de modèles mentaux. 
-Ils ressemblent aux langues comme l’anglais et le français, dans le sens où les langages de programmation contiennent notamment aussi la syntaxe, la grammaire et le vocabulaire. 
-La programmation implique la codification des concepts informatiques fondamentaux qui apparaissent dans tous les langages et la synthèse de ces concepts dans la construction d'outils et de systèmes pour le développement de programmes. 
-Les langages de programmation sont essentiels pour exprimer des idées de manière précise et rigoureuse, permettant à la fois aux machines d'exécuter des commandes et aux humains de comprendre la logique sous-jacente. 
+En contraste aux langages de programmation précédemment mentionnés, dits en « source ouverte », il existe des logiciels à licenses comme SAS, STATA, Excel et SPSS. Ces logiciels présentent plusieurs avantages spécifiques qui peuvent justifier leur choix par rapport aux langages de programmation généralistes. L'accessibilité et la facilité d'utilisation constituent l'argument principal en leur faveur. Les logiciels à licenses peuvent être installés et utilisés rapidement et à faible coûts en termes d'apprentissage, contrairement aux langages de programmation qui exigent une maîtrise de la syntaxe et des concepts algorithmique. Ces logiciels se distinguent des langages de programmation notamment part leurs interfaces graphiques intuitive permettant de réaliser des analyses statistiques complexes par simple clic. Cette approche dite du *point-and-click* élimine pour plusieurs utilisateurs la barrière d'entrée technique. De plus, elle permet aux chercheurs de se concentrer sur l'interprétation des résultats plutôt que sur l'apprentissage de la programmation. Ceci est particulièrement utile pour des utilisateurs occasionnels ou pour des chercheurs dans des domaines où l'analyse statistique n'est qu'un outil parmi d'autres. Cette simplicité représente un gain de temps non négligeable.
 
-## Histoire des langages de programmation pour l'analyse de données
 
-L’histoire des langages de programmation dédiés à l’analyse de données s’inscrit dans une évolution constante des besoins et des méthodes en sciences sociales. 
-Avant l’ère numérique, l’analyse de données se faisait principalement à la main ou à l’aide de calculatrices mécaniques, avec des méthodes statistiques standardisées mais limitées par la capacité humaine à traiter des volumes massifs d’informations. 
-Ces contraintes ont poussé les chercheurs à chercher des moyens plus efficaces de manipuler les données, ce qui a ouvert la voie à l’ère informatique et aux premiers logiciels dédiés à la statistique.
+### Pourquoi choisir le langage de programmation R ?
 
-Dans les années 1960 et 1970, les premiers langages et logiciels statistiques, tels que SPSS (1968), SAS (1976), et STATA (1985), ont vu le jour.
-Ces outils permettaient aux chercheurs d’automatiser les calculs statistiques complexes sur des ordinateurs de grande taille, en accélérant considérablement les analyses. 
-Ces logiciels propriétaires ont joué un rôle crucial dans la standardisation de l’analyse statistique en sciences sociales, en offrant des plateformes robustes, mais souvent coûteuses et rigides.
+Le langage de programmation R présente des avantages uniques qui en font un choix pertinent pour la recherche en science sociales numériques spécifiquement, et la science des données plus généralement. Il est souvent dit que R est un langage de programmation développé par des statisticiens, pour des statisticiens. Le langage de programmation R a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. Un de ces avantages majeurs est qu'il est en source ouverte. Cela signifie que le langage de programmation R est gratuit d'utilisation, est développé par les utilisateurs et non par des grandes entreprises -- ce qui lui procure une plus grande flexibilité -- et qu'il permet aux utilisateurs de créer leurs propres fonctions pour répondre à leurs besoins spécifiques. Le caractère source ouverte du langage de programmation R est une de ses charactéristiques qui rassemble un grande quantité de ces utilisateurs. Ce nombre d'utilisateurs est d'ailleurs en croyance importante depuis plusieurs années. Pour les institutions académiques, les startups ou les organisations à budget limité, le langage de programmation R permet d'accéder à des capacités d'analyse de niveau professionnel sans investissement financier important. Cette gratuité ne se limite pas aux coûts d'achat de licence. Elle s'étend à l'ensemble de l'écosystème R, notamment à l'accès la formation, à la documentation et aux différents fonctionnalités se retrouvant dans les packages. Les packages sont des groupes de fonctionnalités et d'extensions utilisées par les usagers du langage de programmation R afin d'étendre les possiblités du langage et de réaliser des opérations plus complexes. De nouveaux packages comportant notamment de nouvelles méthodes statistiques et de visualisation graphique sont souvent implémentées et améliorées.
 
-L’émergence de l’open source dans les années 1990, avec des projets tels que Linux et d’autres logiciels libres, a commencé à influencer le domaine de la statistique. 
-C’est dans ce contexte que le langage R a été créé, en 1993, par Ross Ihaka et Robert Gentleman, à l’université d’Auckland, en Nouvelle-Zélande. 
-R est basé sur le langage de programmation S, développé chez Bell Labs à la fin des années 1970. 
-Contrairement à ses prédécesseurs propriétaires, R a été conçu pour être gratuit, flexible et extensible, ce qui en a fait un outil populaire parmi les chercheurs qui cherchaient à personnaliser leurs analyses tout en ayant accès à des ressources communautaires.
+Le langage de programmation R est particulièrement versatile pour effectuer des tâches notamment en recherche en sciences sociales numériques, notamment liées aux statistiques et à la visualisation graphique. Il dispose d'un large éventail de fonctions avec plusieurs milliers de packages disponibles. Cette richesse de l'écosystème signifie que pratiquement toutes les techniques et méthodes statistiques -- des plus classiques aux plus récentes -- sont disponibles et utilisables dans R. Qui plus est, les différents packages sont généralement très « clés en main » ce qui est avantageux pour les programmeurs débutants. Ils sont aussi souvent bâtis sur des fondations communes permettant également aux programmeurs plus avancés de personnalisé et d'adapter leur code aux besoins de leurs analyses. Les caractéristiques du langage de programmation R permet aussi la réplicabilité des résultats, même lorsqu'il y a des changements de version ou des nouvelles fonctions. Ce n'est pas toujours le cas avec les logiciels à license qui changent parfois comment certaines fonctionalités marchent entre les versions, sans pour autant permettre aux utilisateurs d'en ajuster le fonctionnement. Les logiciels à licences sont coûteux, rigides et l'ajout de fonctionnalités se fait par les développeurs internes à la compagnie. 
+Ces formalités rendent le processus plus lent et réduisent l'éventail des possibilités pour l'utilisateur. Le fait que SAS et SPSS permettent à leurs utilisateurs d'intégrer des éléments de programmation R à leur logiciels est un indicateur fort ne serait-ce que de l'utilité de R pour tous. 
 
-R a répondu à un besoin pressant de la communauté scientifique : celui de pouvoir accéder à des outils puissants sans avoir à payer des licences onéreuses, tout en bénéficiant d’une liberté totale dans le développement de nouvelles méthodes d’analyse. 
-Grâce à sa structure ouverte, R a rapidement évolué dû aux contributions de statisticiens et de programmeurs du monde entier, devenant l’un des langages de programmation les plus populaires pour l’analyse de données. 
-Aujourd’hui, il est largement utilisé non seulement en sciences sociales, mais aussi en biostatistique, en économie et en science des données.
+Il existe un débat en sciences sociales numériques sur le langage de programmation le plus approprié à apprendre. Comme discuté ci-dessus, apprendre le langage de programmation R a de nombreux avantages. Toutefois, certains notent que le langage de programmation R peut avoir des inconvénients. La courbe d'apprentissage peut être plus grande que celle de logiciels à licence. Bien que l'apprentissage de ces logiciels aient aussi un coût d'entrée, ils peuvent apparaître être plus intuitifs et facile d'accès. Le développement en source ouverte, spécifiquement celui du langage de programmation R, peut sembler se faire de façon anarchique. En effet, le développement de package se fait de manière décentralisée et toute personne sachant programmer en R peut collaborer à cette communauté. Les packages sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Bien que le site a une politique de dépôt stricte et les packages doivent être suffisamment documentés, il n'y a pas d'autorité centrale, ce qui peut refroidir certains usagers. 
 
-L’évolution des langages de programmation pour l’analyse de données illustre comment les besoins des chercheurs en termes de flexibilité, d’accessibilité et de partage ont façonné les outils que nous utilisons aujourd’hui. 
-Au fil des décennies, les langages se sont adaptés aux nouvelles méthodes et à l’augmentation des capacités de calcul, offrant des possibilités toujours plus larges pour l’exploration et l’analyse de données.
+Considérant les avantages et les inconvéninents sur langage de programmation R, certains chercheurs en sciences sociales numériques préfèrent d'autres langages de programmation tels que Python et Julia. Python est un langage de programmation considéré comme plus généraliste qui permet de développer des applications web, des logiciels et des modèles d'apprentissage machine et d'intelligence artificielle. Sa syntaxe est considérée par certains comme étant plus intuitive et proche du langage naturel, en plus de bénéficier d'une communauté plus vaste et diversifiée. De plus, dans certains domaines, le marché de l'emploi offre plus d'opportunités pour Python. Toutefois, il n'est pas aussi performant que R pour l'analyse et la visualisation de données. Pour sa part, Julia est avantageux pour des calculs intensifs, de la modélisation mathématique, ou si la performance est critique. En effet, Julia est conçu pour être aussi rapide que C ou Fortran tout en restant aussi simple que Python, et il a été créé dès le départ pour le calcul haute performance et la recherche scientifique moderne. Toutefois, Julia reste moins populaire quee R, avec moins de packages spécialisés, surtout pour les analyses statistiques. Bien que pertinent, le débat sur le choix d'un langage de programmation est infini. Il n'y a pas de réponse absolue et objective à quel langage de programmation un chercheur en sciences sociales numériques devrait apprendre. Le choix dépend des objectifs spécifiques propres à chacun. Cependant, considérant les tâches à effectuer par des programmeurs en sciences sociales numériques, apprendre le langage de programmation R est un excellent choix.
+
 
 ```{r}
 #| echo: false
@@ -98,104 +66,68 @@ tbl_resume_chap_prog <- tibble(
             'Très flexible')
 )
 
-tt(tbl_resume_chap_prog, width = 0.75, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
+tt(tbl_resume_chap_prog, width = 0.9, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
 ```
 
-## Pourquoi R?
 
-Il existe deux types de langages de programmation pour analyse de données. Les logiciels à licences comme SAS, STATA et SPSS, et les langages en source ouverte tels que Python et Julia. 
-R est un langage de programmation en source ouverte développé par des statisticiens, pour des statisticiens, dans les années 1990 [@tippmann15]. 
-Le langage de programmation R a plusieurs avantages qui font de lui un outil puissant et utile pour tout chercheur. 
-L'un de ses grands avantages est qu'il est en source ouverte. 
-Ayant déjà abordé le sujet dans le chapitre précédent, il sera question ici de simplement rappeler les grandes lignes de l'argument, à savoir que : 
-1) le logiciel libre est gratuit d'utilisation; 
-2) le logiciel libre  est développé par les utilisateurs et non par des corporations, ce qui lui procure une grande flexibilité; et 
-3) il permet aux utilisateurs de créer leurs propres fonctions qui répondent à leurs besoins. 
+## Une brève histoire du langage de programmation R
 
-À l'inverse, les logiciels à licences sont coûteux, rigides et l'ajout de fonctionnalités se fait par les développeurs internes à la compagnie. 
-Ces formalités rendent le processus plus lent et réduisent l'éventail des possibilités pour la personne chercheuse. 
-Ceci étant dit, certains avanceront que c'est justement ce processus interne lent qui assure la validité et la fiabilité des analyses effectuées par SAS, STATA ou SPSS. 
-Or, dans son livre dédié aux utilisateurs de SPSS et de SAS, @muenchen11 soulève le point que bien souvent, ce sont des individus atomisés qui développent les nouvelles fonctionnalités de ces langages et que le processus de révisions se fait ensuite par des comités internes de testeurs. 
-Il en va de même pour le développement des *packages* R dans la mesure où ce dernier se voit testé et amendé par plusieurs programmeurs indépendants dans un processus itératif des plateformes telles que GitHub. 
-De plus, bien des nouvelles techniques statistiques sont développées pour R par des chercheurs qui publient leur travail dans des journaux académiques revus par des pairs, assurant la qualité du procédé. 
-Le fait que SAS et SPSS permettent à leur utilisateur d'intégrer des routines R à leur programme est un indicateur fort ne serait-ce que de l'utilité de R [@muenchen11]. 
-Le langage de programmation R permet également de réaliser une grande quantité de tâches de recherche. 
-En effet, les personnes programmant en R peuvent notamment manipuler et visualiser des données, faire différents types d'analyses, créer des fonctions et faire les automatiser en plus de pouvoir combiner R avec certains langages de balisages comme LaTeX, Markdown et HTML.
+L’histoire du langage de programmation R s’inscrit dans une évolution constante des besoins et des méthodes en sciences sociales. Avant l’ère numérique, l’analyse de données se faisait principalement à la main ou à l’aide de calculatrices mécaniques, avec des méthodes statistiques standardisées mais limitées par la capacité humaine à traiter des volumes massifs d’informations. Ces contraintes ont poussé les chercheurs à chercher des moyens plus efficaces de manipuler les données, ce qui a ouvert la voie à l’ère informatique et aux premiers logiciels dédiés à la statistique. Dans les années 1960 et 1970, les premiers langages et logiciels statistiques, tels que SPSS (1968), SAS (1976), STATA (1985) et Excel (1985) ont vu le jour. Ces outils permettaient aux chercheurs d’automatiser les calculs statistiques complexes sur des ordinateurs de grande taille, en accélérant considérablement les analyses. Ces logiciels à license ont joué un rôle crucial dans la standardisation de l’analyse statistique en sciences sociales, en offrant des plateformes robustes, mais souvent coûteuses et rigides.
 
-D'un autre côté, l'utilisation du langage de programmation R peut être perçue comme ayant certains inconvénients. 
-Plusieurs disent que la courbe d'apprentissage peut être plus grande que celle de programmes à licences. 
-La véracité de cet argument est discutable. Les programmes demandant des licences ont également un coût d'entrée. 
-De plus, les nouvelles itérations de ces logiciels amènent des changements demandant une période d'adaptation pour la personne chercheuse. 
-D'autres disent que le développement en source ouverte, spécifiquement celui du langage de programmation R, se fait de façon anarchique. 
-Cela est davantage une question d'opinion et de conception du monde qu'une vérité. 
-Le développement de *package* se fait effectivement de manière décentralisée et toute personne sachant programmer en R peut collaborer à cette communauté. 
-Bien qu'il n'y ait pas d'autorité centrale, les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir le https://cran.r-project.org/ pour plus d'information). Le site a une politique de dépôt stricte, ainsi les *packages* doivent être suffisamment documentés. 
-Il est également possible d'y télécharger le langage de programmation R. Ce langage, ainsi que ces différents *packages*, sont disponible sur Windows, macOS et Linux.
+L’émergence du logiciel libre dans les années 1990, avec des projets tels que Linux et d’autres logiciels libres, a commencé à influencer le domaine de la statistique. 
+C’est dans ce contexte que le langage R a été créé, en 1993, par Ross Ihaka et Robert Gentleman, à l’Université d’Auckland, en Nouvelle-Zélande. R est basé sur le langage de programmation S, développé chez Bell Labs à la fin des années 1970. Contrairement à ses prédécesseurs propriétaires, R a été conçu pour être gratuit, flexible et extensible, ce qui en a fait un outil populaire parmi les chercheurs qui désiraient personnaliser leurs analyses tout en ayant accès à des ressources communautaires. Le créateurs de langage de programmation S -- et ceux de R par extension -- ne viennent pas d'un background de programmation classique. En effet, l'objectif à la base de ces langages était de rendre plus facile et accessible l'analyse de données. Le langage de programmation R a répondu à des besoins pressants de la communauté scientifique de l'époque : ceux de pouvoir accéder à des outils puissants sans avoir à payer des licences onéreuses et de bénéficier d’une liberté totale dans le développement de nouvelles méthodes d’analyse. Grâce à sa structure ouverte, R a rapidement évolué dû aux contributions de statisticiens et de programmeurs du monde entier, devenant l’un des langages de programmation les plus populaires pour l’analyse de données. Aujourd’hui, il est largement utilisé non seulement en sciences sociales, mais aussi en biostatistique, en économie et en science des données. Avec l'émergence des mégadonnées et de la science des données, le langage de programmation R est incontournable. Des entreprises telles que RStudio (maintenant Posit) développent des outils intégrés qui rendent R plus accessible et qui permettent d'aller encore plus loin, poussant les limites d'un langage souvent perçu comme étant principalement utilisé pour l'analyse de données. L'écosystème R se diversifie avec des packages comme ggplot2 (servant à la visualisation graphique), tidyverse (servant à la manipulation et au traitement de données), ou Shiny (qui permet de faire applications web interactives).
 
-Quel langage un programmeur devrait-il choisir? Bien qu'il y ait différentes options qui puissent être pertinentes dépendemment des situations, nous conseillons le langage de programmation R pour les chercheurs en sciences sociales pour plusieurs raisons. 
-Une des plus importantes raisons est son caractère de logiciel libre à source ouverte. L'utilisation du langage R est et restera gratuite pour toujours. 
-C'est d'ailleurs une des charactéristiques de R qui rassemble un grande quantité de ces utilisateurs.
-Ce nombre d'utilisateurs est d'ailleurs en croyance depuis plusieurs années. 
-R est particulièrement versatile pour effectuer des tâches notamment liées aux statistiques et à la visualisation graphique. 
-Les différents packages R sont généralement très « clés en main » ce qui est avantageux pour les utilisateurs débutants. 
-Mais ils sont aussi souvent bâtis sur des fondations communes permettant également aux utlisateurs plus avancés de personnalisé et d'adapter leur code aux besoins de leurs analyses. 
-Les charactéristiques du langage de programmation R permet aussi la réplicabilité des résultats, même lorsqu'il y a des changements de version ou des nouvelles fonctions.
-Ce n'est pas toujours le cas avec les logiciels à license qui changent parfois comment certaines fonctionalités marchent entre les versions, sans pour autant permettre aux utilisateurs d'en ajuster le fonctionnement. 
-Finalement, la connaissance du langage de programmation R est valorisée dans plusieurs disciplines des sciences sociales, tant dans le monde académique que dans les secteurs public et privé.
-Cela étant, son apprentissage est une valeurs sûre.
+L’évolution des langages de programmation, notamment le langage de programmation R, illustre comment les besoins des chercheurs en termes de flexibilité, d’accessibilité et de partage ont façonné les outils que nous utilisons aujourd’hui. Au fil des décennies, les langages se sont adaptés aux nouvelles méthodes et à l’augmentation des capacités de calcul, offrant des possibilités toujours plus larges pour l’exploration et l’analyse de données.
 
 
 ## Apprendre à programmer en R
 
 ### Où coder en R ?
 
-La programmation peut se faire de différentes façons, mais un point commun entre tous les langages est la nécessité  pour l'utilisateur de communiquer avec son ordinateur. Cette communication peut se faire par le terminal ou directement dans l'éditeur du langage. Elle peut aussi se faire dans un environnement de développement intégré (IDE). Les IDE permettent aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique.
-Il permet de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit.
+La programmation peut se faire de différentes façons, mais un point commun entre tous les langages est la nécessité pour l'utilisateur de communiquer avec son ordinateur. Cette communication peut se faire par le terminal ou directement dans l'éditeur du langage. Elle peut aussi se faire dans un environnement de développement intégré (IDE). Les IDE permettent aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique. Il permet de réaliser toutes les activités courantes d'un programmeur -- l'édition du code, la construction des exécutables et le débogage -- au même endroit.
 Les environnements de développement intégrés sont conçus pour maximiser la productivité des programmeurs. L'utilisation d'un IDE n'est pas obligatoire, mais elle facilite la tâche des programmeurs, surtout pour les utilisateurs débutants. 
-Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique (Le surlignage différent pour chaques éléments du code) et le contrôle de version -- pour créer, modifier et compiler du code.
+Ils fournissent de nombreuses fonctionnalités -- notamment la coloration syntaxique (le surlignage différent pour chaques éléments du code) et le contrôle de version -- pour créer, modifier et compiler du code.
 Certains environnements de développement intégré sont dédiés à un langage de programmation spécifique.
 Par conséquent, ils contiennent des fonctionnalités qui sont plus adaptées aux paradigmes de programmation du langage auquel ils sont associés.
-Enfin, il existe de nombreux environnements de développement intégré multilingues.
+Enfin, il existe de nombreux environnements de développement intégré multilingues qui peuvent notamment comprendre le langage de programmation R mais aussi le langage de balisage LaTeX, le langage de programmation Python, etc. 
 
-Comme mentionné précédemment, R est l'un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales.
-R est pris en charge par de nombreux environnements de programmation.
-Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- qui prennent en charge R via des plugins.
+Comme mentionné précédemment, le langage de programmation R est l'un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales numériques.
+Le langage de programmation R est pris en charge par de nombreux environnements de programmation.
+Plusieurs ont été spécialement conçus pour la programmation en R -- le plus notable étant RStudio -- tandis que d'autres sont des environnements de programmation universels -- tels que Visual Studio Code -- qui prennent en charge R via des extensions et des modules complémentaires.
 Il est également possible de coder en R à partir d'une interface en ligne de commande.
 Une telle méthode permet la communication entre l'utilisateur et son ordinateur.
 Cette communication s'effectue en mode texte : l'utilisateur tape une « ligne de commande » -- c'est-à-dire du texte dans la console -- pour demander à son ordinateur d'effectuer une opération précise, telle que l'exécution d'un fichier de code R.
 
-La suite du chapitre présente RStudio, l'interface de développement le plus populaire pour l'utilisation de R. 
 
 ### Qu'est-ce que RStudio ?
 
-RStudio est un projet open source destiné à regrouper les différentes composantes du langage de programmation R en un seul outil (Allaire, 2011).
-RStudio fonctionne sur tous les systèmes d'exploitation, y compris Windows, Mac OS et Linux.
-En plus de l'application de bureau, RStudio peut être déployé en tant que serveur pour permettre l'accès Web aux sessions R s'exécutant sur des systèmes distants (Allaire, 2011).
+RStudio (maintenant appelé Studio IDE par Posit) est un projet en logiciel libre destiné à regrouper les différentes composantes du langage de programmation R en un seul outil.
+RStudio fonctionne sur tous les systèmes d'exploitation, y compris Windows, Mac OS et Linux. Il existe trois versions de RStudio : RStudio Desktop, qui est une version gratuite pour usage sur les ordinateurs personnels, RStudio Server, une version web accessible via le navigateur, et RStudio Workbench : une version professionnelle avec fonctionnalités avancées pour les entreprises. 
 RStudio facilite l'utilisation du langage de programmation R en offrant de nombreux outils permettant à l'utilisateur de réaliser aisément ses tâches.
-Parmi les outils les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur de l'environnement de travail, une visionneuse de données, ainsi que la prise en charge de la coloration syntaxique (Horton, Kleinman, 2015).
+Parmi les outils les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents packages R, un navigateur de l'environnement de travail, une visionneuse de données, ainsi que la prise en charge de la coloration syntaxique.
 De plus, RStudio permet de coder dans plusieurs langages et de gérer une grande variété de formats.
-Il offre également un support pour plusieurs projets ainsi qu'une interface permettant l'utilisation de systèmes de contrôle de version, tels que GitHub (Horton, Kleinman, 2015).
+
+
+### Pourquoi choisir RStudio ?
 
 RStudio présente plusieurs avantages. Son utilisation est facile à apprendre pour les débutants.
-Les principaux éléments d'un IDE sont intégrés dans une interface à quatre volets (Verzani, 2011).
+Les principaux éléments d'un IDE sont intégrés dans une interface à quatre volets. 
 Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace dédié à l'environnement de travail, et un quatrième volet permettant d'afficher des graphiques ou de consulter la documentation sur les différents packages.
-Ce volet permet également d'accéder au répertoire des packages disponibles pour R et à l'arborescence des fichiers de l'utilisateur.
-De plus, il est possible de créer plusieurs espaces de travail -- appelés projets -- facilitant l'organisation des différents workflows.
+Ce volet permet également d'accéder au répertoire des packages disponibles pour R et à l'arborescence des fichiers de l'utilisateur. De plus, l'IDE RStudio permet de créer des projets qui organisent automatiquement les fichiers, scripts, données et résultats. Cela facilite grandement la reproductibilité et le partage du travail.
 
 Il existe plusieurs autres aspects de RStudio que les programmeurs apprécient.
-Parmi eux, le fait que l'application peut être utilisée via un navigateur Web pour un accès à distance (Verzani, 2011).
-De plus, RStudio prend en charge plusieurs langages de programmation ainsi que différents langages de balisage.
-Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour répondre aux besoins de la communauté scientifique.
-Enfin, le logiciel R lui-même est souvent mis à jour.
+Parmi eux, le fait que l'application peut être utilisée via un navigateur Web pour un accès à distance.
+Malgré son nom, RStudio prend en charge plusieurs langages de programmation ainsi que différents langages de balisage. Par exemple, RStudio excelle dans la création de documents R Markdown, permettant de mélanger code, texte et résultats pour créer des rapports, présentations ou sites web dynamiques. Il permet aussi d'utiliser des langages de balisages tels que Markdown et LaTeX. Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour répondre aux besoins de la communauté scientifique. RStudio inclut également nativement le contrôle de version Git, facilitant la collaboration et le suivi des modifications pour le travail en équipe.
 
 Parmi ce que certains considèrent comme les points faibles de RStudio, on retrouve des éléments liés à la configuration.
 Certains utilisateurs trouvent que le nombre de raccourcis est limité.
 D'autres jugent que l'organisation des différents panneaux n'est pas ergonomique, ou que la personnalisation de l'environnement de programmation est insuffisante.
 De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour certaines opérations, notamment celles impliquant de longs scripts.
 
+
 ### Comment utiliser RStudio ?
 
-Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux (Verzani, 2011).
+Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de RStudio est composée de quatre volets principaux.
 Dans le coin supérieur gauche se trouve le volet principal.
 C'est dans celui-ci que l'utilisateur passera la majeure partie de son temps.
 On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données.
@@ -212,17 +144,17 @@ L'onglet connexions, quant à lui, permet de connecter l'IDE à une variété de
 Il est conçu pour fonctionner avec divers outils permettant de travailler avec des bases de données en R dans RStudio.
 
 Le volet dans le coin inférieur droit, quant à lui, contient plusieurs outils très utiles pour les utilisateurs de RStudio.
-L'onglet Files permet de naviguer dans les fichiers présents sur l'ordinateur sans avoir à quitter RStudio.
-L'onglet Plots permet de visualiser les graphiques générés à partir de R, que ce soit en utilisant ggplot2, lattice ou base R.
-L'onglet Packages permet de consulter les packages installés précédemment par l'utilisateur et d'en consulter la documentation.
+L'onglet *Files* permet de naviguer dans les fichiers présents sur l'ordinateur sans avoir à quitter RStudio.
+L'onglet *Plots* permet de visualiser les graphiques générés à partir de R, que ce soit en utilisant ggplot2, lattice ou base R.
+L'onglet *Packages* permet de consulter les packages installés précédemment par l'utilisateur et d'en consulter la documentation.
 C'est aussi un des endroits où il est possible d'installer des packages avec RStudio.
-L'onglet Help permet à l'utilisateur de rechercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages.
-L'onglet Viewer, quant à lui, permet de visualiser du contenu web local.
+L'onglet *Help* permet à l'utilisateur de rechercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en R ainsi que sur les packages.
+L'onglet *Viewer*, quant à lui, permet de visualiser du contenu web local.
 
 Enfin, l'utilisateur peut modifier les dimensions par défaut de chacun des quatre volets principaux.
 En cliquant sur la séparation entre les sections, il est possible d'ajuster la répartition horizontale de l'espace.
 De plus, chaque côté dispose d'une autre séparation permettant d'ajuster l'espace vertical.
-Qui plus est, la barre de titre de chaque volet comporte des icônes pour réduire un composant, maximiser un volet verticalement ou modifier la taille de l'espace de travail (Verzani, 2011 ; Nierhoff et Hillebrand, 2015).
+Qui plus est, la barre de titre de chaque volet comporte des icônes pour réduire un composant, maximiser un volet verticalement ou modifier la taille de l'espace de travail.
 
 ## Conclusion
 
@@ -233,6 +165,6 @@ Bien que le langage de programmation R ne doive pas obligatoirement être utilis
 RStudio permet également d'utiliser différents langages de balisage compatibles avec R, facilitant ainsi l'utilisation de plusieurs outils complémentaires.
 L'apprentissage du langage de programmation R apparaît également comme une valeur sûre.
 Sa longévité dans plusieurs domaines ainsi que la forte croissance de sa base d'utilisateurs laissent présager que connaître au moins les bases de R constitue un énorme avantage pour tout le monde.
-Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui souhaitent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R -- notamment RConference et useR! -- ainsi qu'un journal académique, The R Journal.
+Pour ceux qui sont particulièrement intéressés par le langage de programmation R et qui souhaitent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur R -- notamment RConference et useR! -- ainsi qu'un journal académique, *The R Journal*.
 On retrouve également différentes communautés, telles que R-Ladies, qui mettent de l'avant la diversité des genres dans la communauté du langage de programmation R.
 Le langage de programmation R est plus qu'un simple outil statistique, il est au centre d'une grande communauté de personnes qui ont à cœur des principes liés à l'inclusion et à l'avancement humain.
