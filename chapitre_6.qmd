@@ -16,18 +16,26 @@ knitr::include_graphics("images/chapitre6_milestones.png", dpi = 600)
 
 [^chapitre_6-1]: Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
 
-### Les origines de la visualisation graphique (DATE)
-On comprend rapidement que cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, les origines de la visualisation graphique remontent à des efforts rudimentaires pour représenter visuellement des données et des relations. Dès le 17e siècle, les cartes thématiques font leur apparition, notamment avec des représentations géographiques de phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
+### Historique de la visualisation graphique
+L’histoire de la visualisation graphique est marquée par une évolution continue, où chaque époque a apporté de nouvelles façons de représenter et de comprendre les données. Des premières tentatives rudimentaires à l’ère numérique actuelle, les avancées reflètent autant le développement des outils que l’évolution des besoins sociaux et scientifiques.  
 
-### La période moderne : Un premier âge d’or (DATE)
-L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée de premier âge d’or de la visualisation graphique [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
-L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
+Les origines de la visualisation graphique remontent à des efforts visant à vulgariser des données à l’aide d’images. Dès le 17e siècle, les cartes thématiques apparaissent, représentant visuellement des phénomènes physiques et sociaux.  Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
 
-### L’ère informatique : de nouvelles possibilités (DATE)
+Au 19e siècle, la visualisation connaît une véritable accélération, qualifiée de premier âge d’or [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
+L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Dans la deuxième moitié du 19e siècle, Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
 
-Avec l’avènement de l’ère informatique au 20e siècle, la visualisation graphique entre dans une nouvelle phase de développement. La capacité des ordinateurs à traiter de grandes quantités de données rapidement et efficacement transforme la manière dont les graphiques sont créés et utilisés. Les années 1960 voient l’émergence des premières visualisations générées par ordinateur, ouvrant la voie à des représentations plus complexes et dynamiques.
+```{r, out.width="80%"}
+#| label: fig-minard_napoleon
+#| echo: false
+#| fig-cap: "Carte des flux de l'invasion de la Russie par Napoléon de Charles Joseph Minard"
+knitr::include_graphics("images/chapitre6_minard_napoleon.png", dpi = 600)
+```
 
-Avec l’ère informatique, la visualisation graphique est entrée dans une phase de transformation, marquée par la capacité des ordinateurs à traiter rapidement de vastes quantités de données. Dès les années 1960, les premières visualisations générées par ordinateur ont ouvert la voie à des graphiques plus complexes. Dans les années 1980 et 1990, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large. Durant cette période, l’intérêt pour l'esthétique et l’interactivité, promu notamment par Edward Tufte, a renforcé l’importance de la visualisation comme moyen de communication efficace des données [@friendly_wainer21].
+[^chapitre_6-2]: [Image récupérée sur ce site](https://ageofrevolution.org/200-object/flow-map-of-napoleons-invasion-of-russia/).
+
+L’entrée dans le 20e siècle et l’ère informatique ouvre une nouvelle phase pour la visualisation. La capacité des ordinateurs à traiter rapidement de grandes quantités de données transforme en profondeur les pratiques. Dès les années 1960, les premières visualisations générées par ordinateur permettent d’envisager des représentations plus complexes et dynamiques. Dans les décennies suivantes, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large. 
+
+Un acteur majeur de cette période est le politologue et statisticien Edward Tufte, dont les ouvrages ont profondément marqué la réflexion sur la visualisation des données [@friendly_wainer21]. Dans des livres devenus des références, tels que *The Visual Display of Quantitative Information* (1983, rééd. 2001), *Envisioning Information* (1990) et *Visual Explanations* (1997), Tufte développe une véritable philosophie de la communication graphique. Il insiste sur la nécessité de maximiser le rapport « data-ink ratio », c’est-à-dire de réduire les éléments décoratifs superflus afin de concentrer l’attention du lecteur sur l’information essentielle.  
 
 Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*Big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques. 
 
@@ -81,11 +89,11 @@ Concrètement, *ggplot2* permet de spécifier de manière explicite et déclarat
 ```{r, out.width="80%"}
 #| label: fig-grammar_graphic
 #| echo: false
-#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-2]."
+#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-3]."
 knitr::include_graphics("images/chapitre6_grammar_graphic.png", dpi = 600)
 ```
 
-[^chapitre_6-2]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
+[^chapitre_6-3]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
 
 
 Cette approche modulaire et incrémentale distingue *ggplot2* des systèmes graphiques traditionnels. Comme le souligne Wickham [@wickham09, chap. 1], l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs : annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.
