@@ -16,14 +16,14 @@ knitr::include_graphics("images/chapitre6_milestones.png", dpi = 600)
 
 [^chapitre_6-1]: Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
 
-### Les origines de la visualisation graphique
+### Les origines de la visualisation graphique (DATE)
 On comprend rapidement que cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, les origines de la visualisation graphique remontent à des efforts rudimentaires pour représenter visuellement des données et des relations. Dès le 17e siècle, les cartes thématiques font leur apparition, notamment avec des représentations géographiques de phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
 
-### La période moderne : Un premier âge d’or
+### La période moderne : Un premier âge d’or (DATE)
 L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée de premier âge d’or de la visualisation graphique [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
 L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
 
-### L’ère informatique : de nouvelles possibilités
+### L’ère informatique : de nouvelles possibilités (DATE)
 
 Avec l’avènement de l’ère informatique au 20e siècle, la visualisation graphique entre dans une nouvelle phase de développement. La capacité des ordinateurs à traiter de grandes quantités de données rapidement et efficacement transforme la manière dont les graphiques sont créés et utilisés. Les années 1960 voient l’émergence des premières visualisations générées par ordinateur, ouvrant la voie à des représentations plus complexes et dynamiques.
 
@@ -85,8 +85,14 @@ tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de
 ```
 
 
-## Manuel d'instruction: La visualisation graphique avec R
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
+## Manuel d'instruction:: la grammaire des graphiques et ggplot2  
+
+L’une des contributions majeures à la visualisation moderne est la formalisation d’une *grammaire des graphiques*. Contrairement à une approche qui catégorise les visualisations par « types » (diagramme en barres, nuage de points, etc.), une grammaire vise à décomposer tout graphique en un ensemble de composants fondamentaux. Wilkinson, Anand et Grossman [@wilkinson_etal05] proposent ainsi une structure théorique permettant de décrire systématiquement les éléments constitutifs d’un graphique : données, variables esthétiques, transformations statistiques, objets géométriques, échelles, systèmes de coordonnées et guides. Cette formalisation a deux avantages principaux. Sur le plan conceptuel, elle permet de comprendre les liens entre des visualisations en apparence différentes mais reposant sur les mêmes principes sous-jacents. Sur le plan pratique, elle ouvre la voie à des outils plus souples, capables de générer une variété quasi infinie de graphiques à partir d’un petit nombre de règles combinatoires.  
+
+C’est dans cet esprit qu’Hadley Wickham a développé **ggplot2**, une implémentation en R de cette grammaire, qu’il affine dans sa version dite *layered grammar of graphics* [@wickham10]. Plutôt que de voir un graphique comme une entité figée, ggplot2 le conçoit comme une superposition de *couches* (*layers*). Chaque couche combine un jeu de données, une transformation statistique (par exemple un lissage ou un regroupement en classes), un objet géométrique (points, lignes, barres, etc.) et un ajustement de position. Cette approche modulaire rend possible la construction incrémentale de graphiques : on peut partir d’un nuage de points, puis ajouter un lissage, des annotations ou encore des facettes pour comparer des sous-groupes. Les échelles, coordonnées et guides (axes, légendes) complètent l’architecture et assurent une cohérence visuelle.  
+
+
+
 
 ### Pour les analyses descriptives
 
@@ -130,186 +136,7 @@ ggplot(starwars, aes(x = mass, y = height)) +
   theme_minimal()
 ```
 
-### Pour visualiser les régressions
 
-Lorsque l'on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction `summary(model)` offre une manière simple et rapide d'obtenir un aperçu d'un modèle, ses limites se manifestent lorsqu'il s'agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d'une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.
-
-:::::: {.callout-note}
-Le manuel d'instructions de cette section restera volontairement bref et concis en raison de l'abondante documentation déjà existante sur ces outils. L'objectif ici est de les centraliser en un seul endroit.
-:::
-
-#### Le package `stargazer`
-
-Le package `stargazer` est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d'utilisation, la diversité des modèles supportés et son esthétisme [@hlavac22]. Bien que nous soyons partiellement d'accord avec ces propos et que `stargazer` réponde effectivement à ces trois aspects, nous estimons que le package `modelsummary` (@sec-model-summary) surpasse `stargazer` dans chacun de ces domaines.
-
-Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
-
-```{r}
-#| label: stargazer
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package stargazer si ce n'est
-#   pas déjà fait.
-
-# install.packages("stargazer") # pour installer
-
-library(stargazer) # importer le package
-
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "text",
-  title = "Tableau de régression des modèles"
-  )
-```
-
-Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
-
-```{r}
-#| label: stargazer2
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "latex",
-  title = "Tableau de régression des modèles"
-  )
-```
-
-Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, elle a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html (à des fins de lisibilité, nous n'avons pas présenté la sortie de cette commande. Essayez-le dans votre environnement de programmation!):
-
-```{r}
-#| eval: false
-#| label: stargazer3
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "html",
-  title = "Tableau de régression des modèles"
-  )
-```
-
-
-
-Bien qu'il existe des milliers de façons de personnaliser son tableau de régression avec `stargazer`, nous vous invitons à consulter la documentation du package [@hlavac22] ainsi que différents blogs en ligne afin de personnaliser votre tableau comme vous le voulez.
-
-#### `modelsummary` {#sec-model-summary}
-
-Le package `modelsummary` [@arel-bundock22a], développé dans le même but que `stargazer`, est une nette amélioration au package `stargazer` selon l'avis des auteurs du chapitre: il est encore plus facile d'utilisation, supporte une grande variété de modèles et se connecte à divers autres outils afin de contrôler l'esthétisme de son résultat. De plus, la documentation officielle du package est beaucoup plus abondante et claire. Finalement, le package est plus intuitif à utiliser.
-
-Tout comme `stargazer`, il faut commencer en créant un modèle de régression. Puis, il suffit d'inclure les modèles dans la fonction `modelsummary`:
-
-```{r}
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package modelsummary si ce
-#   n'est pas déjà fait.
-
-# install.packages("modelsummary") # pour installer
-
-library(modelsummary) # importer le package
-```
-
-
-```{r}
-#| echo: true
-#| results: asis
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-## Utiliser modelsummary pour créer un tableau de deux modèles de régression
-modelsummary(
-  list(
-    "Model 1" = mod_lm,
-    "Model 2" = mod_glm
-    ),
-    stars = TRUE,
-    output = "markdown"
-  )
-```
-
-Tout comme `stargazer`, `modelsummary` offre également plusieurs options de sortie avec l'argument `output`. Cependant, `modelsummary` en supporte plus, comme `kableExtra`, `html`, `latex` et bien d'autres formats.
-
-Nous vous invitons à consulter la documentation du package `modelsummary` [@arel-bundock22a] pour plus d'informations sur la personnalisation de vos tableaux de régression.
-
-#### `marginaleffects`
-
-Les tableaux de régression présentent souvent les résultats des modèles de manière brute et difficile à interpréter. Une approche plus intuitive pour visualiser et comprendre ces modèles consiste à utiliser les prédictions qu'ils génèrent, puis à interpréter l'impact des variables indépendantes sur la variable dépendante. Bien que cette démarche puisse être complexe et fastidieuse à réaliser avec les fonctions de base de R ou Python, le package R `marginaleffects` a été spécifiquement conçu pour simplifier cette tâche et rendre ces analyses plus accessibles [@arel-bundock].
-
-La première étape est de faire son modèle comme on le fait habituellement:
-
-```{r}
-#| code-overflow: wrap
-# Il faut premièrement installer et importer le package marginaleffects si
-#  ce n'est pas déjà fait.
-
-# install.packages("marginaleffects") # pour installer
-
-library(marginaleffects) # importer le package
-
-## Créer un modèle de régression
-mod_lm <- lm(mpg ~ hp + wt + drat, data = mtcars)
-```
-
-Ensuite, il est nécessaire de créer une grille où notre variable indépendante d'intérêt varie tandis que les autres variables restent constantes. Prenons, par exemple, le cas où nous souhaitons estimer et interpréter l'effet de `hp` sur `mpg`. Pour ce faire, nous construisons une `dataframe` représentant une grille de différents niveaux de `hp`, tout en maintenant les variables `wt` et `drat` constantes. Cela nous permet d'isoler l'effet spécifique de `hp` et d'explorer son impact sur la variable dépendante `mpg`. La première sous-étape ici est de comprendre les différentes valeurs que peut prendre notre variable d'intérêt, `hp`:
-```{r}
-#| code-overflow: wrap
-table(mtcars$hp)
-hist(mtcars$hp)
-```
-
-Comme on peut voir, la variable `hp` peut prendre n'importe quelle valeur numérique entre 52 et 335. La prochaine étape est de construire notre grille en utilisant la fonction `datagrid` du package:
-
-```{r}
-#| code-overflow: wrap
-
-grille <- marginaleffects::datagrid(
-      model = mod_lm,
-      hp = c(50, 100, 150, 200, 250, 300, 350)
-)
-
-print(grille)
-```
-
-Comme on peut le voir, la variable `grille` est maintenant une `dataframe` qui contient 7 rangées. Les variables `wt` et `drat` conservent la même valeur dans chaque rangée ; la variable `hp` prend cependant les 7 valeurs que nous avons définies.
-
-La prochaine étape est celle de prédire notre modèle sur ces données en utilisant la fonction `predictions` du package:
-
-```{r}
-#| code-overflow: wrap
-
-predictions <- marginaleffects::predictions(
-      model = mod_lm,
-      ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données
-      ##  ie: grille
-      newdata = grille
-)
-
-print(as.data.frame(predictions))
-```
-
-La `dataframe` predictions contient maintenant des informations très intéressantes:
-
-- `estimate`: la valeur prédite de `mpg` pour cette observation.
-- `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
-
-Nous pouvons maintenant utiliser `predictions` pour construire un graphique qui nous permet d'interpréter l'effet de `hp` sur `mpg` à l'intérieur de notre modèle en contrôlant pour `wt` et `drat` en utilisant le package `ggplot2`:
-
-```{r}
-#| code-overflow: wrap
-
-ggplot(predictions, aes(x = hp, y = estimate)) +
-      geom_point() +
-      geom_linerange(aes(ymin = conf.low, ymax = conf.high))
-```
-
-Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter et d'adapter ce graphique selon vos besoins. Il est également important de souligner que le package `marginaleffects` est extrêmement polyvalent, prenant en charge des centaines de types de modèles et offrant une large gamme de fonctionnalités. Pour découvrir toutes ses possibilités, nous vous invitons à consulter la documentation officielle du package [@arel-bundock].
 
 ### Aller plus loin: La visualisation interactive des données
 
