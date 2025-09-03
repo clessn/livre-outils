@@ -64,231 +64,27 @@ tt(tbl_systemes_graphiques_r, width = 3, caption = 'Comparaison des systèmes gr
 ```
 
 
-## Manuel d'instruction: La visualisation graphique avec R
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
+## Manuel d'instruction:: la grammaire des graphiques et ggplot2  
 
-### Pour les analyses descriptives
+La force de *ggplot2* réside dans sa mise en œuvre de la *Grammar of Graphics*, qui décompose tout graphique en éléments fondamentaux. Hadley Wickham [@wickham10] développe une approche dite *layered grammar of graphics*, où un graphique est construit par superposition de couches (*layers*). Chacune de ces couches combine des données, une transformation statistique éventuelle, un objet géométrique (*geom*), et des mappings esthétiques définis par l’utilisateur. Cette architecture reflète la vision de Wilkinson, Anand et Grossman [@wilkinson_etal05], qui ont cherché à formaliser les principes universels de la visualisation.  
 
-#### Base R
-Le Base R est le langage de base de *R* et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l'analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d'un jeu de données. Par exemple, les fonctions comme `plot()`, `hist()`, `boxplot()` et `barplot()` permettent aux chercheurs de visualiser les distributions des variables, d'identifier des valeurs aberrantes et d'examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.
+Concrètement, *ggplot2* permet de spécifier de manière explicite et déclarative les différents composants d’un graphique. La fonction `aes()` définit les **mappings esthétiques**, c’est-à-dire le lien entre les variables du jeu de données et leurs attributs visuels (position sur les axes, couleur, taille, forme). Les **objets géométriques** (*geoms*) déterminent la nature de la représentation : `geom_point()` trace des points, `geom_line()` des lignes, `geom_bar()` des barres, etc. Chaque *geom* peut être associé à une **transformation statistique** (*stat*), par exemple `stat_smooth()` pour ajouter un lissage ou `stat_bin()` pour construire un histogramme.  
 
-Alors qu'un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu'il s'agit d'innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l'exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu'il s'agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et `ggplot2` offrent plus de flexibilité et d'esthétique avancée [@wickham09, p. 3-4].
+À ces éléments s’ajoutent les **échelles** (`scale_x_log10()`, `scale_color_manual()`), qui traduisent les valeurs des données en valeurs perceptibles, et les **systèmes de coordonnées** (`coord_cartesian()`, `coord_polar()`), qui définissent la projection de l’espace graphique. Les **facettes** (`facet_wrap()`, `facet_grid()`) permettent de subdiviser le graphique en multiples panneaux pour comparer des sous-groupes. Enfin, la fonction `theme()` ajuste l’apparence générale du graphique (grilles, polices, arrière-plans), tandis que `labs()` ajoute des titres et des étiquettes.  
 
-#### `lattice`
-Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
-
-Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de `ggplot2` lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
-
-#### Le package `ggplot2`
-Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
-
-Le principal avantage de `ggplot2` reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques `ggplot2` se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire. Dans `ggplot2`, la fonction *aes()* définit les mappings esthétiques, liant les variables des données aux éléments visuels du graphique (comme les axes ou la couleur). Les "geoms", tels que *geom_point()*, déterminent le type de graphique (points, lignes, barres). La fonction *labs()* sert à ajouter des étiquettes et des titres aux axes ou au graphique. Enfin, *theme()* ajuste l'apparence globale du graphique, en modifiant des éléments comme le fond, les grilles, ou le style de texte. Ces composants travaillent ensemble pour construire un graphique clair et personnalisable.
-
-```{r}
-#| warning: false
-#| message: false
-library(ggplot2) # importer le package
-library(dplyr)
-
-# Nous utilisons dans cet exemple le
-#   jeu de données intégré starwars (dans dplyr)
-
-# Créer un graphique de dispersion (scatter plot) avec ggplot2
-ggplot(starwars, aes(x = mass, y = height)) +
-  # Ajouter des points rouges de taille 3
-  geom_point(color = "red", size = 3) +
-  labs(
-    # Titre du graphique
-    title = "Poids et taille des personnages de Star Wars",
-    # Étiquette de l'axe x
-    x = "Poids",
-    # Étiquette de l'axe y
-    y = "Taille"
-  ) +
-  # Appliquer un thème minimaliste
-  theme_minimal()
+```{r, out.width="80%"}
+#| label: fig-grammar_graphic
+#| echo: false
+#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-2]."
+knitr::include_graphics("images/chapitre6_grammar_graphic.png", dpi = 600)
 ```
 
-### Pour visualiser les régressions
-
-Lorsque l'on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction `summary(model)` offre une manière simple et rapide d'obtenir un aperçu d'un modèle, ses limites se manifestent lorsqu'il s'agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d'une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.
-
-:::::: {.callout-note}
-Le manuel d'instructions de cette section restera volontairement bref et concis en raison de l'abondante documentation déjà existante sur ces outils. L'objectif ici est de les centraliser en un seul endroit.
-:::
-
-#### Le package `stargazer`
-
-Le package `stargazer` est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d'utilisation, la diversité des modèles supportés et son esthétisme [@hlavac22]. Bien que nous soyons partiellement d'accord avec ces propos et que `stargazer` réponde effectivement à ces trois aspects, nous estimons que le package `modelsummary` (@sec-model-summary) surpasse `stargazer` dans chacun de ces domaines.
-
-Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
-
-```{r}
-#| label: stargazer
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package stargazer si ce n'est
-#   pas déjà fait.
-
-# install.packages("stargazer") # pour installer
-
-library(stargazer) # importer le package
-
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "text",
-  title = "Tableau de régression des modèles"
-  )
-```
-
-Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
-
-```{r}
-#| label: stargazer2
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "latex",
-  title = "Tableau de régression des modèles"
-  )
-```
-
-Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, elle a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html (à des fins de lisibilité, nous n'avons pas présenté la sortie de cette commande. Essayez-le dans votre environnement de programmation!):
-
-```{r}
-#| eval: false
-#| label: stargazer3
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "html",
-  title = "Tableau de régression des modèles"
-  )
-```
+[^chapitre_6-2]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
 
 
+Cette approche modulaire et incrémentale distingue *ggplot2* des systèmes graphiques traditionnels. Comme le souligne Wickham [@wickham09, chap. 1], l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs : annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.
 
-Bien qu'il existe des milliers de façons de personnaliser son tableau de régression avec `stargazer`, nous vous invitons à consulter la documentation du package [@hlavac22] ainsi que différents blogs en ligne afin de personnaliser votre tableau comme vous le voulez.
-
-#### `modelsummary` {#sec-model-summary}
-
-Le package `modelsummary` [@arel-bundock22a], développé dans le même but que `stargazer`, est une nette amélioration au package `stargazer` selon l'avis des auteurs du chapitre: il est encore plus facile d'utilisation, supporte une grande variété de modèles et se connecte à divers autres outils afin de contrôler l'esthétisme de son résultat. De plus, la documentation officielle du package est beaucoup plus abondante et claire. Finalement, le package est plus intuitif à utiliser.
-
-Tout comme `stargazer`, il faut commencer en créant un modèle de régression. Puis, il suffit d'inclure les modèles dans la fonction `modelsummary`:
-
-```{r}
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package modelsummary si ce
-#   n'est pas déjà fait.
-
-# install.packages("modelsummary") # pour installer
-
-library(modelsummary) # importer le package
-```
-
-
-```{r}
-#| echo: true
-#| results: asis
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-## Utiliser modelsummary pour créer un tableau de deux modèles de régression
-modelsummary(
-  list(
-    "Model 1" = mod_lm,
-    "Model 2" = mod_glm
-    ),
-    stars = TRUE,
-    output = "markdown"
-  )
-```
-
-Tout comme `stargazer`, `modelsummary` offre également plusieurs options de sortie avec l'argument `output`. Cependant, `modelsummary` en supporte plus, comme `kableExtra`, `html`, `latex` et bien d'autres formats.
-
-Nous vous invitons à consulter la documentation du package `modelsummary` [@arel-bundock22a] pour plus d'informations sur la personnalisation de vos tableaux de régression.
-
-#### `marginaleffects`
-
-Les tableaux de régression présentent souvent les résultats des modèles de manière brute et difficile à interpréter. Une approche plus intuitive pour visualiser et comprendre ces modèles consiste à utiliser les prédictions qu'ils génèrent, puis à interpréter l'impact des variables indépendantes sur la variable dépendante. Bien que cette démarche puisse être complexe et fastidieuse à réaliser avec les fonctions de base de R ou Python, le package R `marginaleffects` a été spécifiquement conçu pour simplifier cette tâche et rendre ces analyses plus accessibles [@arel-bundock].
-
-La première étape est de faire son modèle comme on le fait habituellement:
-
-```{r}
-#| code-overflow: wrap
-# Il faut premièrement installer et importer le package marginaleffects si
-#  ce n'est pas déjà fait.
-
-# install.packages("marginaleffects") # pour installer
-
-library(marginaleffects) # importer le package
-
-## Créer un modèle de régression
-mod_lm <- lm(mpg ~ hp + wt + drat, data = mtcars)
-```
-
-Ensuite, il est nécessaire de créer une grille où notre variable indépendante d'intérêt varie tandis que les autres variables restent constantes. Prenons, par exemple, le cas où nous souhaitons estimer et interpréter l'effet de `hp` sur `mpg`. Pour ce faire, nous construisons une `dataframe` représentant une grille de différents niveaux de `hp`, tout en maintenant les variables `wt` et `drat` constantes. Cela nous permet d'isoler l'effet spécifique de `hp` et d'explorer son impact sur la variable dépendante `mpg`. La première sous-étape ici est de comprendre les différentes valeurs que peut prendre notre variable d'intérêt, `hp`:
-```{r}
-#| code-overflow: wrap
-table(mtcars$hp)
-hist(mtcars$hp)
-```
-
-Comme on peut voir, la variable `hp` peut prendre n'importe quelle valeur numérique entre 52 et 335. La prochaine étape est de construire notre grille en utilisant la fonction `datagrid` du package:
-
-```{r}
-#| code-overflow: wrap
-
-grille <- marginaleffects::datagrid(
-      model = mod_lm,
-      hp = c(50, 100, 150, 200, 250, 300, 350)
-)
-
-print(grille)
-```
-
-Comme on peut le voir, la variable `grille` est maintenant une `dataframe` qui contient 7 rangées. Les variables `wt` et `drat` conservent la même valeur dans chaque rangée ; la variable `hp` prend cependant les 7 valeurs que nous avons définies.
-
-La prochaine étape est celle de prédire notre modèle sur ces données en utilisant la fonction `predictions` du package:
-
-```{r}
-#| code-overflow: wrap
-
-predictions <- marginaleffects::predictions(
-      model = mod_lm,
-      ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données
-      ##  ie: grille
-      newdata = grille
-)
-
-print(as.data.frame(predictions))
-```
-
-La `dataframe` predictions contient maintenant des informations très intéressantes:
-
-- `estimate`: la valeur prédite de `mpg` pour cette observation.
-- `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
-
-Nous pouvons maintenant utiliser `predictions` pour construire un graphique qui nous permet d'interpréter l'effet de `hp` sur `mpg` à l'intérieur de notre modèle en contrôlant pour `wt` et `drat` en utilisant le package `ggplot2`:
-
-```{r}
-#| code-overflow: wrap
-
-ggplot(predictions, aes(x = hp, y = estimate)) +
-      geom_point() +
-      geom_linerange(aes(ymin = conf.low, ymax = conf.high))
-```
-
-Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter et d'adapter ce graphique selon vos besoins. Il est également important de souligner que le package `marginaleffects` est extrêmement polyvalent, prenant en charge des centaines de types de modèles et offrant une large gamme de fonctionnalités. Pour découvrir toutes ses possibilités, nous vous invitons à consulter la documentation officielle du package [@arel-bundock].
+En voici un exemple: HUBERT
 
 ### Aller plus loin: La visualisation interactive des données
 
