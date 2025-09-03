@@ -34,22 +34,19 @@ Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effr�
 
 ## Arpentage et choix éditorial:
 
-Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélection établis au chapitre 1, résumés dans le **Tableau 6**.
+Le langage *R* s'est imposé comme un outil de référence pour la visualisation de données, particulièrement dans les domaines de la recherche et de l'analyse statistique. Plusieurs facteurs expliquent cette popularité : *R* est un logiciel libre et gratuit, bénéficiant d'une communauté d'utilisateurs très active qui développe et maintient des milliers de packages spécialisés. Cette nature libre assure une transparence complète du code, facilitant la reproductibilité des analyses — un critère essentiel dans la recherche scientifique.
 
-Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. Comme le montre le **Tableau 6**, *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
+La flexibilité de *R* constitue également un atout majeur. Contrairement aux logiciels propriétaires comme *Excel* ou *Tableau*, *R* permet une personnalisation poussée des visualisations et s'intègre facilement dans des flux de travail automatisés. Cette adaptabilité en fait un choix privilégié pour les analystes qui souhaitent créer des visualisations sur mesure plutôt que de se limiter à des modèles prédéfinis.
 
-L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. Comme indiqué dans le **Tableau 6**, *Python* bénéficie également d'une grande et active communauté, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données. Les communautés autour de logiciels comme *Tableau* ou *Excel* sont présentes mais davantage orientées vers des usages plus standardisés.
+Au sein de l'écosystème *R*, plusieurs systèmes graphiques coexistent, chacun avec ses spécificités. Le tableau 6 présente une comparaison de ces différentes approches.
 
-La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme `matplotlib` et `seaborn`. Comme le souligne le **Tableau 6**, *Tableau* est populaire pour la visualisation, surtout dans le secteur commercial, tandis que *Excel* est souvent utilisé pour des tâches plus simples.
+Dans *R* de base (*base R*), les graphiques sont créés de manière procédurale, en construisant les éléments un par un. Le package *lattice* offre une approche plus structurée, particulièrement efficace pour les graphiques conditionnels. Cependant, c'est *ggplot2* qui révolutionne véritablement la création de graphiques en *R* en implémentant une grammaire cohérente de la visualisation.
 
-L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers CSV, Excel, ou accéder à des bases de données SQL, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que `pandas` pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
+Notre choix éditorial se porte sur *ggplot2*, développé par Hadley Wickham, qui repose sur la "Grammaire des graphiques" (*Grammar of Graphics*) théorisée par Leland Wilkinson [@wilkinson05]. Cette approche conceptualise un graphique comme la combinaison de composants indépendants : les données, les mappings esthétiques (couleur, forme, taille), les objets géométriques (points, lignes, barres), les transformations statistiques, et les systèmes de coordonnées.
 
-Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence. Cependant, comme le montre le **Tableau 6**, *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données, ce qui limite la réplicabilité.
+Cette grammaire présente plusieurs avantages pédagogiques et pratiques. Elle offre un cadre conceptuel unifié pour comprendre et créer des visualisations, réduisant l'apprentissage par cœur de syntaxes spécifiques. Les graphiques se construisent par couches successives, permettant une approche itérative et modulaire. Cette logique facilite non seulement l'apprentissage pour les novices, mais permet également aux utilisateurs expérimentés de concevoir des visualisations innovantes en combinant les composants de manière créative.
 
-Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. Comme indiqué dans le **Tableau 6**, *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
-
-En somme, comme le résume le **Tableau 6**, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python* et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
-
+Les sections suivantes de ce chapitre exploreront en détail les principes de *ggplot2* et illustreront comment cette grammaire des graphiques peut transformer votre approche de la visualisation de données.
 
 
 ```{r}
@@ -58,27 +55,15 @@ En somme, comme le résume le **Tableau 6**, nous mettons en avant *R* comme le 
 library(tidyverse)
 library(tinytable)
 
-tbl_resume_chap_6 <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    'R' = c('Gratuit', 'Forte et active', 'Populaire', 'Nombreux packages d\'intégration', 
-            'Open-source, réplicable', 'Hautement personnalisable'),
-    'Python' = c('Gratuit', 'Grande et active', 'Courant en science des données', 
-                 'Nombreux packages d\'intégration', 'Open-source, réplicable', 
-                 'Flexible (nombreuses bibliothèques)'),
-    'Tableau' = c('Payant', 'En croissance', 'Populaire', 
-                  'Intégration variée (bases de données)', 'Peu réplicable (propriétaire)', 
-                  'Moins personnalisable'),
-    'Excel' = c('Payant', 'Large', 'Populaire pour tâches simples', 
-                'Compatibilité avec Microsoft', 'Peu réplicable (propriétaire)', 
-                'Pour visualisations simples')
+tbl_systemes_graphiques_r <- tibble(
+    Système = c('Base R', 'Lattice', 'ggplot2'),
+    Approche = c('Procédurale', 'Conditionnelle', 'Grammaire des graphiques'),
+    'Facilité d\'apprentissage' = c('Complexe pour graphiques avancés', 'Modérée', 'Intuitive avec la grammaire'),
+    Flexibilité = c('Haute mais laborieuse', 'Modérée', 'Haute et cohérente'),
+    'Cas d\'usage privilégiés' = c('Graphiques simples et rapides', 'Graphiques conditionnels', 'Visualisations complexes et publications')
 )
 
-tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
+tt(tbl_systemes_graphiques_r, width = 3, caption = 'Comparaison des systèmes graphiques dans R')
 
 
 
@@ -87,54 +72,28 @@ tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de
 
 ## Manuel d'instruction:: la grammaire des graphiques et ggplot2  
 
-L’une des contributions majeures à la visualisation moderne est la formalisation d’une *grammaire des graphiques*. Contrairement à une approche qui catégorise les visualisations par « types » (diagramme en barres, nuage de points, etc.), une grammaire vise à décomposer tout graphique en un ensemble de composants fondamentaux. Wilkinson, Anand et Grossman [@wilkinson_etal05] proposent ainsi une structure théorique permettant de décrire systématiquement les éléments constitutifs d’un graphique : données, variables esthétiques, transformations statistiques, objets géométriques, échelles, systèmes de coordonnées et guides. Cette formalisation a deux avantages principaux. Sur le plan conceptuel, elle permet de comprendre les liens entre des visualisations en apparence différentes mais reposant sur les mêmes principes sous-jacents. Sur le plan pratique, elle ouvre la voie à des outils plus souples, capables de générer une variété quasi infinie de graphiques à partir d’un petit nombre de règles combinatoires.  
+La force de *ggplot2* réside dans sa mise en œuvre de la *Grammar of Graphics*, qui décompose tout graphique en éléments fondamentaux. Hadley Wickham [@wickham10] développe une approche dite *layered grammar of graphics*, où un graphique est construit par superposition de couches (*layers*). Chacune de ces couches combine des données, une transformation statistique éventuelle, un objet géométrique (*geom*), et des mappings esthétiques définis par l’utilisateur. Cette architecture reflète la vision de Wilkinson, Anand et Grossman [@wilkinson_etal05], qui ont cherché à formaliser les principes universels de la visualisation.  
 
-C’est dans cet esprit qu’Hadley Wickham a développé **ggplot2**, une implémentation en R de cette grammaire, qu’il affine dans sa version dite *layered grammar of graphics* [@wickham10]. Plutôt que de voir un graphique comme une entité figée, ggplot2 le conçoit comme une superposition de *couches* (*layers*). Chaque couche combine un jeu de données, une transformation statistique (par exemple un lissage ou un regroupement en classes), un objet géométrique (points, lignes, barres, etc.) et un ajustement de position. Cette approche modulaire rend possible la construction incrémentale de graphiques : on peut partir d’un nuage de points, puis ajouter un lissage, des annotations ou encore des facettes pour comparer des sous-groupes. Les échelles, coordonnées et guides (axes, légendes) complètent l’architecture et assurent une cohérence visuelle.  
+Concrètement, *ggplot2* permet de spécifier de manière explicite et déclarative les différents composants d’un graphique. La fonction `aes()` définit les **mappings esthétiques**, c’est-à-dire le lien entre les variables du jeu de données et leurs attributs visuels (position sur les axes, couleur, taille, forme). Les **objets géométriques** (*geoms*) déterminent la nature de la représentation : `geom_point()` trace des points, `geom_line()` des lignes, `geom_bar()` des barres, etc. Chaque *geom* peut être associé à une **transformation statistique** (*stat*), par exemple `stat_smooth()` pour ajouter un lissage ou `stat_bin()` pour construire un histogramme.  
 
+À ces éléments s’ajoutent les **échelles** (`scale_x_log10()`, `scale_color_manual()`), qui traduisent les valeurs des données en valeurs perceptibles, et les **systèmes de coordonnées** (`coord_cartesian()`, `coord_polar()`), qui définissent la projection de l’espace graphique. Les **facettes** (`facet_wrap()`, `facet_grid()`) permettent de subdiviser le graphique en multiples panneaux pour comparer des sous-groupes. Enfin, la fonction `theme()` ajuste l’apparence générale du graphique (grilles, polices, arrière-plans), tandis que `labs()` ajoute des titres et des étiquettes.  
 
-
-
-### Pour les analyses descriptives
-
-#### Base R
-Le Base R est le langage de base de *R* et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l'analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d'un jeu de données. Par exemple, les fonctions comme `plot()`, `hist()`, `boxplot()` et `barplot()` permettent aux chercheurs de visualiser les distributions des variables, d'identifier des valeurs aberrantes et d'examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.
-
-Alors qu'un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu'il s'agit d'innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l'exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu'il s'agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et `ggplot2` offrent plus de flexibilité et d'esthétique avancée [@wickham09, p. 3-4].
-
-#### `lattice`
-Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
-
-Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de `ggplot2` lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
-
-#### Le package `ggplot2`
-Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
-
-Le principal avantage de `ggplot2` reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques `ggplot2` se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire. Dans `ggplot2`, la fonction *aes()* définit les mappings esthétiques, liant les variables des données aux éléments visuels du graphique (comme les axes ou la couleur). Les "geoms", tels que *geom_point()*, déterminent le type de graphique (points, lignes, barres). La fonction *labs()* sert à ajouter des étiquettes et des titres aux axes ou au graphique. Enfin, *theme()* ajuste l'apparence globale du graphique, en modifiant des éléments comme le fond, les grilles, ou le style de texte. Ces composants travaillent ensemble pour construire un graphique clair et personnalisable.
-
-```{r}
-#| warning: false
-#| message: false
-library(ggplot2) # importer le package
-library(dplyr)
-
-# Nous utilisons dans cet exemple le
-#   jeu de données intégré starwars (dans dplyr)
-
-# Créer un graphique de dispersion (scatter plot) avec ggplot2
-ggplot(starwars, aes(x = mass, y = height)) +
-  # Ajouter des points rouges de taille 3
-  geom_point(color = "red", size = 3) +
-  labs(
-    # Titre du graphique
-    title = "Poids et taille des personnages de Star Wars",
-    # Étiquette de l'axe x
-    x = "Poids",
-    # Étiquette de l'axe y
-    y = "Taille"
-  ) +
-  # Appliquer un thème minimaliste
-  theme_minimal()
+```{r, out.width="80%"}
+#| label: fig-grammar_graphic
+#| echo: false
+#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-2]."
+knitr::include_graphics("images/chapitre6_grammar_graphic.png", dpi = 600)
 ```
+
+[^chapitre_6-2]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
+
+
+Cette approche modulaire et incrémentale distingue *ggplot2* des systèmes graphiques traditionnels. Comme le souligne Wickham [@wickham09, chap. 1], l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs : annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.
+
+En voici un exemple: HUBERT
+
+
+
 
 
 
