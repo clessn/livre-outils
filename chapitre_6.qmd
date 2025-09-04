@@ -97,7 +97,35 @@ knitr::include_graphics("images/chapitre6_grammar_graphic.png", dpi = 600)
 
 Cette approche modulaire et incrémentale distingue *ggplot2* des systèmes graphiques traditionnels. Comme le souligne Wickham [@wickham09, chap. 1], l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs : annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.
 
-En voici un exemple: HUBERT
+En voici un exemple d'ajout progressif de couches (*layers*) avec le jeu de données `mtcars`:
+
+```{r}
+library(ggplot2)
+
+# Couche de base avec les données
+p1 <- ggplot(mtcars, aes(x = wt, y = mpg))
+print(p1)
+```
+
+```{r}
+# Ajout des points
+p2 <- p1 + geom_point()
+print(p2)
+```
+
+```{r}
+# Ajout d'une ligne de tendance
+p3 <- p2 + geom_smooth(method = "lm")
+print(p3)
+```
+
+```{r}
+# Ajout de labels
+p4 <- p3 + labs(title = "Consommation vs Poids", 
+                x = "Poids (1000 lbs)", 
+                y = "Miles par gallon")
+print(p4)
+```
 
 ### Aller plus loin: La visualisation interactive des données
 
@@ -120,6 +148,7 @@ Note: Le rendu de graphiques interactifs n'est pas possible dans un document PDF
 library(ggplot2)
 library(plotly)
 ```
+
 ```{r}
 #| eval: false
 # Ce package, webshot2, peut être nécessaire pour visualiser
@@ -153,41 +182,6 @@ fig
 ```
 
 Nous vous recommandons vivement de consulter la documentation officielle des packages `plotly` et `ggplotly` pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir vos graphiques interactifs.
-
-
-#### Tableaux interactifs
-
-Les tableaux interactifs sont très utiles pour rendre la présentation des données plus engageante et informative. Les fonctions `kable()` et `kableExtra` permettent de créer des tableaux élégants et interactifs directement dans R.
-
-##### Exemple avec `kable()`
-
-La fonction `kable()` de `knitr` permet de transformer un dataframe en un tableau bien formaté.
-
-```{r}
-library(knitr)
-
-# Création d'un tableau avec kable
-kable(head(mtcars), caption = "Exemple de tableau avec kable")
-```
-
-#### Exemple avec `kableExtra`
-
-Le package kableExtra permet de personnaliser et d'enrichir les tableaux créés avec kable(), notamment en ajoutant des options interactives comme des couleurs ou des styles.
-
-```{r}
-#| message: false
-library(kableExtra)
-```
-```{r}
-# Création d'un tableau interactif avec kableExtra
-kable(
-  head(mtcars),
-  caption = "Exemple de tableau avec la colonne hp colorée en rouge"
-  ) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
-  column_spec(5, background = "red")
-```
-
 
 #### Applications interactives avec Shiny
 
