@@ -1,24 +1,24 @@
----
-author: "Jozef Rivest et Catherine Ouellet"
----
-
 # Le logiciel libre et le code source ouvert {#sec-chap1}
 
-<!-- # Vers une science numérique plus transparante: l'apport du logiciel libre et du code ouvert dans les sciences sociales {#sec-chap1 .unnumbered} -->
+\begin{center}
+\textit{Jozef Rivest et Catherine Ouellet}
+\end{center}
 
-Ce chapitre ne présentera pas un outil en soi. Il vise à initier les lecteurs à la philosophie du logiciel libre et surtout de situer ces réflexions dans le contexte de la recherche en sciences sociales. En fait, l'outil ici est plutôt de l'ordre réflexif que concret. À la fin de ce chapitre, les lecteurs seront en meilleures positions afin de situer les outils qui seront présentés dans le grand univers des logiciels libres et payants. Ils et elles pourront comprendre les motivations derrière le développement et l'utilisation de tels logiciels. La création et l'utilisation de logiciels libres dépassent le simple calcul coûts et bénéfices utilitaires, gratuit contre payant. Tout cela s'inscrit dans des réflexions philosophiques, éthiques et épistémologiques plus grandes qui continuent, à ce jour, d'influencer les développeurs et les utilisateurs. Tout au long de ce chapitre il est démontré que certaines de ces motivations rejoignent la méthode scientifique, qui est au coeur de notre quête de savoir et de compréhension du monde social [@king_etal20]. Ainsi, ce chapitre jette la base réflexive qui est derrière les choix des outils numériques présentés dans ce livre, où nous avons tenté de joindre les avantages des logiciels libres avec certains qui sont payants dans le but de créer un environnement de travail à la fois individuel et collaboratif. Avant d'aller plus en profondeur, une certaine distinction mérite d'être faite, qui permettra de clarifier le but de ce livre et à la terminologie utilisée. 
+<!-- # Vers une science numérique plus transparente: l'apport du logiciel libre et du code ouvert dans les sciences sociales {#sec-chap1 .unnumbered} -->
 
-Il est donc important de faire une première distinction entre une méthode et un outil numérique. La méthodologie est le champ de la philosophie des sciences qui s'intéresse à l'étude des méthodes scientifiques ou techniques. Celles-ci visent à collecter et à analyser des données, suivant les impératifs scientifiques, et qui ont pour but de contribuer au savoir et à la connaissance. Il faut faire attention puisque dans certains ouvrages il est possible que les auteurs décrivent les méthodes qu'ils ont utilisées comme étant des *outils*. D'un point de vue méthodologique, lié à la philosophie des sciences, il est approprié d'utiliser ce genre de vocabulaire. Ainsi, la régression linéaire, le *clustering*, les entretiens semi-dirigés et l'analyse de contenu sont des méthodes. En revanche, les outils dits numériques qui sont présentés dans ce livre ne sont pas des méthodes scientifiques. Des outils numériques comme `R`, Dropbox ou GitHub ne sont pas des méthodes, mais des outils qui permettent de structurer sa pensée, d'organiser son espace et son environnement de travail, et d'implémenter son protocole de recherche afin de collecter et d'analyser des données et d'en dériver des conclusions. Il est donc utile de distinguer les outils numériques des méthodes.  
+Ce chapitre ne présentera pas un outil en soi. Il vise à initier les lecteurs à la philosophie du logiciel libre et, surtout, à situer ces réflexions dans le contexte de la recherche en sciences sociales. À la fin de ce chapitre, les lecteurs seront en mesure de situer les nombreux outils numériques dans le grand univers des logiciels libres et propriétaires, et de comprendre les motivations derrière le développement et l'utilisation des logiciels. La sélection d'un outil dépasse le simple calcul coûts et bénéfices utilitaires, gratuit contre payant. Ce choix s'inscrit dans un ensemble de réflexions philosophiques, éthiques et épistémologiques plus grand qui continue, encore à ce jour, à influencer les développeurs et les utilisateurs. Tout au long de ce chapitre, il est démontré que certaines de ces motivations rejoignent la méthode scientifique, au cœur de la quête de savoir et de compréhension du monde social [@king_etal21]. Ce chapitre jette ainsi la base réflexive derrière les choix des outils numériques présentés dans ce livre, dans lequel nous avons tenté de joindre les avantages des logiciels libres avec les autres critères de sélection nécessaires à prendre en compte, dans le but de créer un environnement de travail efficace autant sur le plan individuel que collaboratif. 
+
+Avant d'aller plus en profondeur, la distinction entre « outil » et « méthodologie » doit d'être faite, afin de clarifier le but de ce livre et la terminologie utilisée. La méthodologie est le champ de la philosophie des sciences qui s'intéresse à l'étude des méthodes scientifiques ou techniques. Celles-ci visent à collecter et à analyser des données, suivant les impératifs scientifiques, et qui ont pour but de contribuer au savoir et à la connaissance. Il faut faire attention puisque dans certains ouvrages il est possible que les auteurs décrivent les méthodes qu'ils ont utilisées comme étant des *outils*. D'un point de vue méthodologique, lié à la philosophie des sciences, il est approprié d'utiliser ce genre de vocabulaire. Ainsi, la régression linéaire, le *clustering*, les entretiens semi-dirigés et l'analyse de contenu sont des méthodes. En revanche, les outils dits numériques qui sont présentés dans ce livre ne sont pas des méthodes scientifiques. Des outils numériques comme `R`, Dropbox ou GitHub ne sont pas des méthodes, mais des outils qui permettent de structurer sa pensée, d'organiser son espace et son environnement de travail, et d'implémenter son protocole de recherche afin de collecter et d'analyser des données et d'en dériver des conclusions. Il est donc utile de distinguer les outils numériques des méthodes. Les outils sont à la science ce que le mélangeur, la cuillère et la spatule sont à la cuisine. La méthodologie, c'est la recette.
 
 <!-- NOTE: Voir pour le signe R -->
 
-Ce livre ne vise donc pas à présenter des *outils méthodologiques* - compris ici comme étant des outils qui permettent de *désigner*, d'exécuter et d'évaluer une recherche [@brady_collier10]. Le but est plutôt de présenter des choix *d'outils numériques* qui ont un fort potentiel d'aider les chercheurs à *structurer leur pensée, d'organiser leur espace de travail et à implémenter certaines méthodes*. Cette distinction est importante puisqu'elle définit la distinction entre ce livre et les nombreux livres de méthodes. 
+Ce livre ne vise donc pas à présenter des *outils méthodologiques* - compris ici comme étant des outils qui permettent de *désigner*, d'exécuter et d'évaluer une recherche [@brady_collier10]. Le but est plutôt de présenter des choix *d'outils numériques* qui ont un fort potentiel d'aider les chercheurs à *structurer leur pensée, d'organiser leur espace de travail et à implémenter certaines méthodes*. Cette distinction est importante puisqu'elle définit la distinction entre ce livre et les nombreux livres de méthodes sur le marché. 
 
 <!-- NOTE: Commentaire de Yannick à vérifier --> 
 
-Celles-ci leur permettront de développer un nouveau langage à partir duquel ils et elles pourront réfléchir et penser leur recherche, et surtout interagir avec les autres personnes dans leurs champs; avec qui ils et elles pourront plus aisément collaborer en organisant leur environnement de travail; avec qui ils et elles pourront partager des documents et leurs résultats. Ce livre cherche ___ à guider les chercheurs dans la ___ ___ d'___ ___ dont le nombre ne cesse de croitre à l'ère numérique. Des choix ont été faits et justifiés sur la base de différents critères décrits plus loin dans ce chapitre. Après la lecture de ce livre, le lecteur auront été initié aux langage distinctif et parfois technique lié aux outils numériques. Surtout, il sera mieux équipé et informé pour faire ses choix d'outils qui lui permettront d'être plus efficace en recherche. 
+<!-- Celles-ci leur permettront de développer un nouveau langage à partir duquel ils et elles pourront réfléchir et penser leur recherche, et surtout interagir avec les autres personnes dans leurs champs; avec qui ils et elles pourront plus aisément collaborer en organisant leur environnement de travail; avec qui ils et elles pourront partager des documents et leurs résultats. Ce livre cherche ___ à guider les chercheurs dans la ___ ___ d'___ ___ dont le nombre ne cesse de croitre à l'ère numérique. Des choix ont été faits et justifiés sur la base de différents critères décrits plus loin dans ce chapitre. Après la lecture de ce livre, le lecteur auront été initié aux langage distinctif et parfois technique lié aux outils numériques. Surtout, il sera mieux équipé et informé pour faire ses choix d'outils qui lui permettront d'être plus efficace en recherche.  -->
 
-Avant toute chose, il est important de commencer pas la base - comprendre d'où vient le logiciel libre et qu'est-ce que c'est. Le logiciel libre a, et continu d'avoir, une place importante dans le développement des outils numériques. Dans les sections suivantes, l'historique de cette philosophie est présentée afin de mettre en contraste et mieux comprendre ses motivations et revendications. Après cette mise en contexte, suit une discussion concrète sur la manière dont le logiciel payant du logiciel libre sont distingués, avant d'aborder la différence entre le logiciel libre et le code ouvert. Après coup, nous aborderons en quoi ces réflexions sont intéressantes et importantes pour les sciences sociales à l'ère du numérique, ainsi que les avantages et les inconvénients qui y sont liés. Les outils numériques s'inscrivent dans chacune des grandes étapes de la recherche - avant, pendant et après. 
+Le logiciel libre a --- et continu d'avoir --- une place importante dans le développement des outils numériques. Dans les sections suivantes, l'historique de cette philosophie est présentée afin de mettre en contraste et mieux comprendre ses motivations et revendications. Après cette mise en contexte suit une discussion concrète sur la distinction entre logiciel propriétaire et libre, puis sur la différence entre le logiciel libre et le code ouvert. Après coup, nous aborderons en quoi ces réflexions sont intéressantes et importantes pour les sciences sociales à l'ère du numérique, ainsi que les avantages et les inconvénients qui y sont liés. Les outils numériques s'inscrivent dans chacune des grandes étapes de la recherche --- avant, pendant et après. 
 
 Cette discussion sur le logiciel libre se veut une introduction aux critères qui ont justifiés les choix des outils numériques de ce livre. 
 
@@ -28,7 +28,7 @@ Cette discussion sur le logiciel libre se veut une introduction aux critères qu
 
 *« Vous n'avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel, car votre médecin vous le conseille --- peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n'y perd que du temps et le coût du papier sur lequel il l'inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d'électricité. Dans tous les cas, la personne qui donne l'information y gagne deux choses : davantage d'amitié et la possibilité de récupérer en retour d'autres recettes intéressantes. »* - Richard Stallman [@williams_etal10]
 
-Cette analogie illustre bien trois concepts au cœur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s'encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d'une collaboration entre développeurs qui peuvent provenir des quatre coins du globe. Au centre de ce mouvement se trouve une réflexion éthique à propos de la liberté des utilisateurs, dont les militants font campagne depuis le début des années 1980. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel «libre» \[free\] comme étant garant de quatre libertés fondamentales de l'utilisateur: 1) la liberté d'utiliser le logiciel sans restrictions; 2) la liberté de le copier; 3) la liberté de l'étudier; 4) puis la liberté de le modifier pour l'adapter à ses besoins et le redistribuer[^chapitre_1-1]. Il s'agit ainsi d'un logiciel dont le code source[^chapitre_1-2] est disponible, afin de permettre aux internautes de l'utiliser tel quel ou de le modifier à leur guise. L'accès au code source devient essentiel afin de permettre à l'utilisateur de savoir ce que le programme fait réellement. Seulement de cette façon, l'utilisateur peut *contrôler* le logiciel, plutôt que de se faire contrôler par ce dernier [@stallman86].
+Cette analogie illustre bien trois concepts au cœur de la philosophie de Richard Stallman, souvent considéré comme le père fondateur du logiciel libre : liberté, égalité, fraternité. Les utilisateurs de ces logiciels sont libres, égaux, et doivent s'encourager mutuellement à contribuer à la communauté. Ainsi, un logiciel libre est généralement le fruit d'une collaboration entre développeurs qui peuvent provenir des quatre coins du globe. Au centre de ce mouvement se trouve une réflexion éthique à propos de la liberté des utilisateurs, dont les militants font campagne depuis le début des années 1980. La Free Software Foundation (FSF), fondée par Richard Stallman en 1985, définit rapidement le logiciel « libr e» \[free\] comme étant garant de quatre libertés fondamentales de l'utilisateur: 1) la liberté d'utiliser le logiciel sans restrictions; 2) la liberté de le copier; 3) la liberté de l'étudier; 4) puis la liberté de le modifier pour l'adapter à ses besoins et le redistribuer[^chapitre_1-1]. Il s'agit ainsi d'un logiciel dont le code source[^chapitre_1-2] est disponible, afin de permettre aux internautes de l'utiliser tel quel ou de le modifier à leur guise. L'accès au code source devient essentiel afin de permettre à l'utilisateur de savoir ce que le programme fait réellement. Seulement de cette façon, l'utilisateur peut *contrôler* le logiciel, plutôt que de se faire contrôler par ce dernier [@stallman86].
 
 [^chapitre_1-1]: La redistribution doit évidemment respecter certaines conditions précises, dont l'enfreint peut mener à des condamnations \[http://www.softwarefreedom.org/resources/2008/shareware.html\]
 
@@ -74,7 +74,7 @@ Rappelons tout d'abord que le logiciel libre se définit sur la base de quatre l
 
 [^chapitre_1-7]: Pour plus d'informations sur ces caractéristiques, nous encourageons les lecteurs à se référer au lien web de @opensourceinitiative06. Ils y trouveront un contenu détaillé pour chacune des caractéristiques susmentionnées.
 
-Il est aussi utile de les distinguer des logiciels « non libres », soit les logiciels propriétaires: « Son utilisation, sa redistribution ou sa modification sont interdites, ou exigent une autorisation spécifique, ou sont tellement restreintes qu'en pratique vous ne pouvez pas le faire librement » [@systemedexploitationgnu23]. Par contraste, la licence libre confère des droits de propriétaire. L'utilisateur a le droit d'installer le logiciel sur autant d'ordinateurs que désiré, le modifier selon ses besoins et le distribuer avec ou sans ses modifications. Il peut même demander d'être payé pour distribuer des copies, avec ou sans ses modifications.
+Il est aussi utile de les distinguer des logiciels « non libres », soit les logiciels propriétaires: « Son utilisation, sa redistribution ou sa modification sont interdites, ou exigent une autorisation spécifique, ou sont tellement restreintes qu'en pratique vous ne pouvez pas le faire librement » [@systemedexploitationgnu23]. Par contraste, la licence libre confère des droits de propriétaire. L'utilisateur a le droit d'installer le logiciel sur autant d'ordinateurs que désiré, le modifier selon ses besoins et le distribuer avec ou sans ses modifications. Il peut même demander d'être payé pour distribuer des copies, avec ou sans ses modifications.
 
 Le logiciel libre et le *code ouvert* ont certaines similitudes puisqu'ils adhèrent tous les deux à la même vision du logiciel, ainsi que de son accessibilité. Toutefois, il est important tout de même de les distinguer puisqu'ils ont des origines différentes, et qu'ils mènent à certaines pratiques qui sont différentes. La prochaine section utilise un cas concret afin d'expliquer l'effet du libre, et l'utilité que cela peut avoir.
 
@@ -102,7 +102,7 @@ Chacun de ces outils a toutefois ses forces et ses faiblesses. Inspiré de @prze
 Il est intéressant de concevoir la réalité sociale comme étant un prisme ayant un nombre infini de face. Chacune de ces faces correspond à une compréhension partielle de la réalité. Pour y avoir accès, nous devons utiliser une méthode de collecte et d'analyse de données, informées par une question de recherche et/ou par la théorie[^chapitre_1-11]. Étant donné que chaque outil méthodologique à ses limites et que nous devons constamment faire des compromis, notre compréhension de la réalité n'est que partielle une fois la recherche complétée. De plus, il ne faut pas oublier que la compréhension que nous avons de cette face reste incertaine.
 -->
 
-[^chapitre_1-11]: Nous préférons formuler la phrase ici en stipulant que le choix d'une méthode de recherche peut être informé par la théorie et notre question de recherche simultanément, mais peut aussi être fait seulement à partir d'une question de recherche. Cela fait référence à deux processus de recherche différents soit la méthode hypothético-inductive, et celle déductive.
+<!-- [^chapitre_1-11]: Nous préférons formuler la phrase ici en stipulant que le choix d'une méthode de recherche peut être informé par la théorie et notre question de recherche simultanément, mais peut aussi être fait seulement à partir d'une question de recherche. Cela fait référence à deux processus de recherche différents soit la méthode hypothético-inductive, et celle déductive. -->
 
 En sommes, les enseignements de la philosophie du code ouvert, les avantages pratiques du logiciel libre et les outils qui en découlent ont le potentiel de permettre non seulement une plus grande transparence des protocoles scientifiques, mais aussi un plus grand partage du savoir, et ce, du début de la recherche jusqu'à la publication des résultats.
 
@@ -130,7 +130,7 @@ Afin de remédier à ce problème, certains outils tels que GitHub[^chapitre_1-1
 
 Cependant, le partage du code reste encore majoritairement volontaire. @janssen_etal20 soutiennent que plus d'effort et d'actions concertés doivent être mis en place afin d'améliorer l'accessibilité aux codes. Toujours selon ces auteurs, les journaux scientifiques pourraient exiger que les auteurs rendent leur code public lors du processus de publication. D'ailleurs, les résultats d'une expérience sur les facteurs qui influencent les chercheurs à partager leur code démontrent que les initiatives individuelles ne seront pas suffisantes pour une augmentation du partage du code [@krahmer_etal23]. Par conséquent, rendre le code accessible devrait devenir un standard institutionnalisé.
 
-### Appropration commerciale
+### Appropriation commerciale
 
 Dans ce cas-ci, il s'agit plutôt d'un défi auquel le logiciel libre est confronté plutôt qu'une critique quant aux limites de son utilisation. En fait, l'accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constitue un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste [@broca13; @bessen02]. Certaines compagnies profiteraient des utilisateurs comme une main-d'œuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l'entreprise est la seule bénéficiaire [@couture20]. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales trouble l'essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu'un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui a donné lieu à ce mouvement.
 
@@ -162,7 +162,7 @@ Une fois l'article écrit et publié, les auteurs peuvent décider de rendre acc
 
 Cela permet de rendre non seulement les publications accessibles à tous sur internet gratuitement, mais aussi les données utilisées, par exemple, pour la réalisation de l'étude. Ces données peuvent ensuite être réutilisées par d'autres chercheurs. Il s'agit d'avantages très importants, et surtout très prometteurs. D'une part, un plus grand accès au savoir scientifique aux décideurs publics permettra de prendre des décisions qui s'appuient sur la science, et idéalement, sur une pluralité de sources scientifiques afin de pouvoir évaluer adéquatement les effets positifs et négatifs. <!--D'autre part, la société civile a tout à gagner d'avoir un meilleur accès aux publications scientifiques.--> Finalement, la réutilisation des données peut réduire considérablement les coûts de la recherche. Bien souvent, la production des données peut engendrer des coûts importants. Par exemple, la production d'un sondage peut coûter plusieurs milliers de dollars, et les données sont bien souvent utilisées qu'une seule fois <!-- Trouver des articles sur ça -->. Le partage des données de manière gratuite permet à des chercheurs qui n'ont pas toujours les moyens de financer un sondage d'avoir accès à des données. En somme, il s'agit de décloisonner le savoir des milieux académiques. Ce qui vaut non seulement pour les publications, mais aussi pour les données et les protocoles de recherche.
 
-Toutefois, le libre accès reste confronté à certains défis. D'une part, il y a un transfert de la charge financière qui se fait parfois vers les chercheurs et les universités. Afin que les publications soient accessibles en libre accès, les chercheurs et les universités doivent souvent payer des sommes importantes. Cela soulève plusieurs questions quant aux capacités des universités du Sud global et pour les chercheurs hors universités<!--À VOIR, PEUVENT-ILS PUBLIER DANS LES REVUES SCIENTIFIQUES ? -->, par exemple, de pouvoir assumer la charge financière qui est liée à la publication en accès libre [@greussing_etal20]. D'autre part, bien que plusieurs pensent que les données ouvertes et la science ouverte puissent contribuer à réduire les inégalités dans la production du savoir entre le Nord et le Sud, certains restent sceptiques quant à ce scénari[@powell_etal20]. En fait, les données ouvertes permettent de réduire les coûts d'accès aux données, mais ne réduisent pas les coûts de production pour autant. Par conséquent, un scénario évoqué par @serwadda_etal18 est un retour à la recherche parachute[^chapitre_1-16]. En d'autres termes, les chercheurs du Sud resteraient des acteurs de second plan, et qui pour étudier leur propre société, devraient utiliser des données de chercheurs du Nord qui auraient été produits sans la participation des chercheurs locaux. Finalement, il y a aussi des enjeux quant à la confidentialité des répondants et des utilisateurs [@chiware_skelly23]. Plusieurs individus, comme dans le cas d'entretiens ou d'un sondage, vont accepter de participer à l'enquête parce que leurs réponses seront anonymisées et qu'elles ne seront pas partagées publiquement. Tous ces éléments soulèvent d'importantes réflexions éthiques quant aux bonnes pratiques à développer dans le cadre de la science ouverte. La science ouverte à un avenir très prometteur et peut générer des retombées positives, à conditions quelle s'intéresse aux différents défis auxquels elle est confrontée.
+Toutefois, le libre accès reste confronté à certains défis. D'une part, il y a un transfert de la charge financière qui se fait parfois vers les chercheurs et les universités. Afin que les publications soient accessibles en libre accès, les chercheurs et les universités doivent souvent payer des sommes importantes. Cela soulève plusieurs questions quant aux capacités des universités du Sud global et pour les chercheurs hors universités<!--À VOIR, PEUVENT-ILS PUBLIER DANS LES REVUES SCIENTIFIQUES ? -->, par exemple, de pouvoir assumer la charge financière qui est liée à la publication en accès libre [@greussing_etal20]. D'autre part, bien que plusieurs pensent que les données ouvertes et la science ouverte puissent contribuer à réduire les inégalités dans la production du savoir entre le Nord et le Sud, certains restent sceptiques quant à ce scénario [@powell_etal]. En fait, les données ouvertes permettent de réduire les coûts d'accès aux données, mais ne réduisent pas les coûts de production pour autant. Par conséquent, un scénario évoqué par @serwadda_etal18 est un retour à la recherche parachute[^chapitre_1-16]. En d'autres termes, les chercheurs du Sud resteraient des acteurs de second plan, et qui pour étudier leur propre société, devraient utiliser des données de chercheurs du Nord qui auraient été produits sans la participation des chercheurs locaux. Finalement, il y a aussi des enjeux quant à la confidentialité des répondants et des utilisateurs [@chiware_skelly23]. Plusieurs individus, comme dans le cas d'entretiens ou d'un sondage, vont accepter de participer à l'enquête parce que leurs réponses seront anonymisées et qu'elles ne seront pas partagées publiquement. Tous ces éléments soulèvent d'importantes réflexions éthiques quant aux bonnes pratiques à développer dans le cadre de la science ouverte. La science ouverte à un avenir très prometteur et peut générer des retombées positives, à conditions quelle s'intéresse aux différents défis auxquels elle est confrontée.
 
 [^chapitre_1-16]: La recherche parachute est une « pratique extractive par laquelle des chercheurs - généralement issus de pays dotés de ressources élevées - effectuent des recherches et extraient des données et des échantillons de régions ou de populations autochtones, généralement des contextes ou des pays à faibles ressources, sans reconnaître de manière appropriée l'importance de l'infrastructure et de l'expertise locales. Ce faisant, les chercheurs étrangers ne parviennent pas à établir des collaborations équitables et à long terme avec des partenaires locaux. » [@odeny_bosurgi22]
 
@@ -174,7 +174,54 @@ Toutefois, le libre accès reste confronté à certains défis. D'une part, il y
 
 Six critères jugés pragmatiquement bénéfiques pour la recherche constituent la d'évaluation de chacun des outils. Ainsi, bien que le logiciel libre ait été mis de l'avant tout au long de ce chapitre, ce ne sont pas tous les outils numériques présentés dans ce livre qui sont issus du monde du logiciel libre. En fondant nos évaluations et nos choix sur des considérations pratiques, certains logiciels payants sont parfois recommandés même lorsqu'une version libre existe. Par exemple, l'utilisation coûte que coûte, voire idéologique, de certains outils issus du monde du logiciel libre peut cloisonner les chercheurs entre les utilisateurs et les non-utilisateurs de ces logiciels. D'où l'importance de conidérer d'autres critères afin de s'assurer que ce soit la collaboration scientifique qui soit optimisée, et non un principe idéologique ou philosophique. 
 
-Les lecteurs sont encouragés à réfléchir à propos de leur propre besoin afin de déterminer quels outils qui répondent le mieux à leurs besoins individuels et collectifs. Par exemple, si dans leur communauté, les gens utilisent Python plutôt que R, alors nous recommandons d'utiliser Python. En d'autres termes, les critères et les outils de ce livre ne visent pas un dogmatisme, et un rejet total de tous les autres outils qui ne sont pas couverts dans ce livre. Il est important d'évaluer ses besoins afin de choisir quels outils devraient être utilisés.
+Les lecteurs sont encouragés à réfléchir à propos de leur propre besoin afin de déterminer quels outils qui répondent le mieux à leurs besoins individuels et collectifs. Par exemple, si dans leur communauté, les gens utilisent Python plutôt que R, alors nous recommandons d'utiliser Python. En d'autres termes, les critères et les outils de ce livre ne visent pas un dogmatisme, et un rejet total de tous les autres outils qui ne sont pas couverts dans ce livre. Il est important d'évaluer ses besoins afin de choisir quels outils devraient être utilisés. Tout au long des prochains chapitres, des tableaux récapitulatifs seront présentés permettant de résumer comment les outils présentés correspondent aux critères développés. 
+ 
+```{r}
+#| tbl-cap: Tableau des critères de sélection
+#| message: false
+#| echo: false
+#| warning: FALSE
+
+library(tidyverse)
+library(gt)
+
+tableau_criteres <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Explication = c(
+    "Accessible gratuitement ou à peu de frais",
+    "Oui/Non",
+    "Très populaire/Populaire/Peu ou pas du tout populaire",
+    "Facilement compatible/Demande un peu d'ajustement/Pas compatible",
+    "Favorise/Ne favorise pas la transparence et la réplicabilité",
+    "Très flexible/Plutôt flexible/Rigide"
+  )
+)
+
+tableau_criteres |>
+  gt() |>
+  cols_label(Critères = "Critères", Explication = "Explication") |>
+  cols_align("left", columns = everything()) |>
+  cols_width(Critères ~ pct(38), Explication ~ pct(62)) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),   # <— augmente l’espace vertical
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
+```
+
 
 ### Accessibilité (Gratuit ou peu dispendieux)
 
@@ -210,48 +257,13 @@ Les outils présentés dans ce livre ont aussi une grande flexibilité et adapta
 
 ## En terminant
 
-Pour compléter ce chapitre introductif, il est important de mettre l'accent sur un apprentissage important qui se fait de manière implicite dans l'acquisition de ces compétences pratiques: réfléchir de manière scientifique. À la lecture de ce livre, les lecteurs auront fait des acquis significatifs, et seront mieux outillés pour réfléchir, organiser et produire leurs recherches, peu importe qu'elle soit orientée vers le milieu académique ou professionnel. Il est possible de décliner le tout en trois principaux acquis.
+Pour compléter ce chapitre introductif, il est important de mettre l'emphase sur un apprentissage important qui se fait de manière implicite dans l'acquisition de ces compétences pratiques: réfléchir de manière scientifique. À la lecture de ce livre, les lecteurs auront fait des acquis significatifs, et seront mieux outillés pour réfléchir, organiser et produire leurs recherches, peu importe qu'elle soit orientée vers le milieu académique ou professionnel. Il est possible de décliner le tout en trois principaux acquis.
 
-Le premier concerne les gains à long terme. Cet argument est présenté, en partie, dans la section sur les critères. Les outils qui sont présentés dans ce livre sont, pour la plupart, très versatiles. Nous pouvons réaliser beaucoup de tâches avec ceux-ci. Bien qu'ils soient, pour certains, coûteux en temps dans leur apprentissage, leurs bénéfices dépassent largement leur coût. Le chapitre 7, à propos des langages de balisage, approfondira ce point davantage, et expliquera pourquoi l'apprentissage d'un langage comme \LaTeX à ses bénéfices, en comparaison avec Microsoft Word.
+Le premier concerne les gains à long terme. Cet argument est présenté, en partie, dans la section sur les critères. Les outils qui sont présentés dans ce livre sont, pour la plupart, très versatiles. Nous pouvons réaliser beaucoup de tâches avec ceux-ci. Bien qu'ils soient, pour certains, coûteux en temps dans leur apprentissage, leurs bénéfices dépassent largement leurs coûts. Le chapitre 7, à propos des langages de balisage, approfondira ce point davantage, et expliquera pourquoi l'apprentissage d'un langage comme \LaTeX à ses bénéfices, en comparaison avec Microsoft Word.
 
-Le deuxième concerne la synergie entre tous ces outils. Comme c'est expliqué dans les critères de sélection, l'apprentissage de ces différents outils favorise le développement d'une synergie entre les différentes étapes et besoin d'une recherche; notamment dans le développement de sa capacité à récolter, à entreposer, à partager, à analyser et à publier ses données ainsi que ses résultats de recherche.
+Le deuxième concerne la synergie entre tous ces outils. Comme expliqué dans les critères de sélection, l'apprentissage de ces différents outils favorise le développement d'une synergie entre les différentes étapes et besoin d'une recherche; notamment dans le développement de sa capacité à récolter, à entreposer, à partager, à analyser et à publier ses données ainsi que ses résultats de recherche.
 
-Le troisième concerne le développement de sa « pensée de chercheur ». Comprendre et maîtriser certains de ces outils permet de se doter de capacités réflexives qui pourront être mobilisées dès les premiers moments de la recherche, soit ceux de la conceptualisation. Dès qu'un intérêt de recherche se développe nous pourrons déjà réfléchir à propos de sa faisabilité, et de quelle manière pourrais-je récolter et analyser des données qui me permettront de répondre à ma question. Cela permet aussi de découvrir de nouvelles méthodes d'analyses de données. Simplement par ces étapes préliminaires, nous gagnons beaucoup de temps et d'itérations simplement par la capacité que nous avons à pouvoir penser une recherche qui pourra être réalisée dans la mesure du possible. De plus, ces acquis contribuent au développement de son jugement critique et d'analyse, fort utile lorsqu'on lit des articles et des ouvrages scientifiques. De cette façon, nous sommes en meilleure position afin de mieux comprendre, d'analyser et de critiquer ce que les autres chercheurs ont fait dans le cadre de leurs recherches.
-
-## Tableau des critères
-
-Tout au long des prochains chapitres, des tableaux récapitulatifs seront présentés permettant de résumer comment les outils présentés correspondent aux critères développés. 
- 
-```{r}
-#| tbl-cap: Tableau des critères de sélection
-#| message: false
-#| echo: false
-
-library(tidyverse)
-library(tinytable)
-
-tableau_critères <- tibble(
-    Critères = c(
-      "Accessibilité",
-      "Existence d'une communauté d'utilisateurs",
-      "Popularité en sciences sociales",
-      "Compatibilité avec d'autres outils",
-      "Transparence et réplicabilité",
-      "Adaptabilité et flexibilité"
-    ),
-    Explication = c(
-      "Accessible gratuitement ou à peu de frais",
-      "Oui/Non",
-      "Très populaire/Populaire/Peu ou pas du tout populaire",
-      "Facilement compatible/Demande un peu d'ajustement/Pas compatible",
-      "Favorise/Ne favorise pas la transparence et la réplicabilité",
-      "Très flexible/Plutôt flexible/Rigide"
-    )
-  )
-
-
-tt(tableau_critères, width = 0.75)
-```
+Le troisième concerne le développement de sa « pensée de chercheur ». Comprendre et maîtriser certains de ces outils permet de se doter de capacités réflexives qui pourront être mobilisées dès les premiers moments de la recherche, soit ceux de la conceptualisation. Dès qu'un intérêt de recherche se développe, le chercheur sera mieux outillé pour réfléchir à sa faisabilité et à la manière de récolter et d'analyser les données. Ces compétences contribuent au développement d'un jugement critique, fort utile lors de la lecture d'articles et d'ouvrages scientifiques. 
 
 ```{=html}
 <!-- 

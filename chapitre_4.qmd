@@ -24,9 +24,7 @@ Ces logiciels de première génération, tels que EndNote (1988) et Bookends (19
 
 Bien que ce chapitre aborde à la fois les outils de synthèse de la connaissance et de gestion des références, il est essentiel de préciser que ces deux types d'outils ont des utilités et fonctionnalités distinctes. Les outils de synthèse de la connaissance, comme Covidence, Colandr et Rayyan, sont conçus pour gérer des processus de recherche plus complexes, tels que les revues systématiques, en facilitant la sélection, l'évaluation critique et la synthèse des études alors que les outils de gestion des références, tels que EndNote et Zotero, se concentrent sur l'organisation, l'annotation et la création de bibliographies à partir de références.
 
-::: column-page
 ![Schéma 1 : Cycle de la recherche scientifique](images/chapitre4_cycleRecherche.png){width="80%" fig-align="center"}
-:::
 
 Avant d'entrer dans les outils, il convient de glisser quelques mots sur les méthodes pour lesquelles ces outils sont utiles. Dans le cadre de l'élaboration d'une recherche scientifique, la phase de synthèse de la connaissance constitue une étape fondamentale permettant de circonscrire le champ d'étude, d'identifier les travaux antérieurs pertinents et de déceler les lacunes dans les connaissances existantes (Schéma 1). Parmi les différentes approches méthodologiques adoptées pour mener à bien cette synthèse des connaissances, la revue narrative est généralement la plus populaire, notamment pour des travaux scolaires ou de courtes recherches. Des outils comme *Elicit*, *Connected Papers*, ou *Research Rabbit* sont d'ailleurs très utiles dans ce contexte, car ils facilitent l'élargissement de la portée de la revue de littérature en proposant des références supplémentaires ou des publications liées aux travaux déjà identifiés.
 
