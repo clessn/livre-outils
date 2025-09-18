@@ -112,45 +112,76 @@ Cependant, considérant les tâches à effectuer par des programmeurs en science
 
 
 ```{r}
+#| tbl-cap: Résumé des principaux outils de programmation pour l'analyse de données
 #| echo: false
+#| message: false
 #| warning: false
+
 library(tidyverse)
-library(tinytable)
+library(gt)
 
 tbl_resume_chap_prog <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    'Logiciels sous licence (SAS, SPSS, STATA)' = c('Non', 
-                                                    'Modérée', 
-                                                    'Élevée dans certains secteurs', 
-                                                    'Bonne', 
-                                                    'Faible', 
-                                                    'Limitée'),
-    'Python' = c('Oui', 
-                 'Très élevée', 
-                 'Très populaire', 
-                 'Excellente', 
-                 'Bonne', 
-                 'Très flexible'),
-    'Julia' = c('Oui', 
-                'En croissance', 
-                'Modérée', 
-                'Bonne', 
-                'Bonne', 
-                'Très flexible'),
-    'R' = c('Oui', 
-            'Très élevée', 
-            'Très populaire en sciences sociales et statistiques', 
-            'Très bonne', 
-            'Très élevée', 
-            'Très flexible')
+  Critères = c(
+    "Accessibilité (Gratuit ou peu dispendieux)",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité dans le champ",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  `Logiciels sous licence (SAS, SPSS, STATA)` = c(
+    "Non", "Modérée", "Élevée dans certains secteurs",
+    "Bonne", "Faible", "Limitée"
+  ),
+  Python = c(
+    "Oui", "Très élevée", "Très populaire",
+    "Excellente", "Bonne", "Très flexible"
+  ),
+  Julia = c(
+    "Oui", "En croissance", "Modérée",
+    "Bonne", "Bonne", "Très flexible"
+  ),
+  R = c(
+    "Oui", "Très élevée",
+    "Très populaire en sciences sociales et statistiques",
+    "Très bonne", "Très élevée", "Très flexible"
+  )
 )
 
-tt(tbl_resume_chap_prog, width = 0.9, caption = 'Résumé des principaux outils de programmation pour l\'analyse de données')
+tbl_resume_chap_prog |>
+  gt() |>
+  # Légende du tableau
+  tab_caption("Résumé des principaux outils de programmation pour l’analyse de données") |>
+  # Libellés de colonnes (avec saut de ligne dans l’en-tête long)
+  cols_label(
+    Critères = "Critères",
+    `Logiciels sous licence (SAS, SPSS, STATA)` = md("Logiciels sous licence<br>(SAS, SPSS, STATA)"),
+    Python = "Python",
+    Julia = "Julia",
+    R = "R"
+  ) |>
+  # Alignements + largeurs
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    `Logiciels sous licence (SAS, SPSS, STATA)` ~ pct(17),
+    Python ~ pct(17),
+    Julia ~ pct(17),
+    R ~ pct(17)
+  ) |>
+  # Style “booktabs” + entêtes en gras
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  # Typo / espacement (mêmes réglages que ton modèle)
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
 
