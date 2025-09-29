@@ -1,36 +1,36 @@
----
-author:
-- Adrien Cloutier^[Université Laval]
-- Jérémy Gilbert^[Université Laval]
----
-
 # Outils de gestion de flux de travaux: la méthode Agile pour le monde académique {#sec-chap3}
 
-À l'ère du numérique, le monde de la recherche est en fulgurante transformation. Les outils de recherche sont plus nombreux que jamais et l'écart dans la littératie numérique des chercheur.e.s, comme dans la population générale, augmente chaque année. Avant même de se lancer dans la recherche scientifique -- mais ceci est vrai pour tous les domaines d'emplois -- celles et ceux qui prennent le temps de s'intéresser et de réfléchir à la gestion de leur « workflow » (l'OQLF recommande la traduction « flux de travaux », qui sera utilisée dans ce chapitre pour représenter la large catégorie des outils numériques permettant d'augmenter l'efficacité et la productivité), en visant l'apprentissage et l'utilisation des meilleurs outils numériques sur le marché, sortiront avec un avantage compétitif énorme par rapport à leurs collègues.
+\begin{center}
+\textit{Adrien Cloutier\footnotemark[1]}
+\end{center}
 
-Dans cette quête incessante de l'optimisation du travail, la réflexion sur vos méthodes de travail et l'utilisation des bons outils devient une clé de la réussite. Que vous soyez un.e chercheur.e en herbe ou un.e professionnel.le chevronné.e, la manière dont vous organisez votre flux de travaux et gérez vos ressources peut déterminer la qualité, la quantité et l'impact de vos résultats professionnels.
+\footnotetext[1]{Université Laval}
 
-Attention cependant: à notre époque, se perdre dans un monde infini d'outils, dont la constante évolution est bien souvent menée par des entreprises désireuses de fidéliser une clientèle en lui offrant toujours plus de possibilités peut, ironiquement, entrainer une contre-productivité. Il est, dès lors, essentiel de réfléchir à ses besoins, et de cibler les outils pertinents à son travail, sans exagération. Viser à tout savoir, tout connaitre des dernières tendances et innovations sur le marché de l'outil numérique peut être aussi fastidieux et prenant que de ne pas en utiliser. Nombreux sont les chercheur.e.s qui perdent une quantité impressionnante de leur temps à passer d'un outil à l'autre, coincé dans la peur de ne pas être à la fine pointe des dernières tendances. Dans une recherche incessante de la dernière mode.
+À l'ère du numérique, le monde de la recherche est en fulgurante transformation. Les outils de recherche sont plus nombreux que jamais et l'écart dans la littératie numérique des chercheurs, comme dans la population générale, se creuse chaque année. Avant même de se lancer dans la recherche scientifique -- mais ceci est vrai pour tous les domaines d'emplois -- les travailleurs qui prennent le temps de s'intéresser et de réfléchir à la gestion de leur « workflow » (l'OQLF recommande la traduction « flux de travaux », qui sera utilisée dans ce chapitre pour représenter la large catégorie des outils numériques permettant d'augmenter l'efficacité et la productivité), en visant l'apprentissage et l'utilisation des meilleurs outils numériques sur le marché, sortiront avec un avantage compétitif énorme par rapport à leurs collègues.
 
-Ce chapitre vise à offrir une voie de passage structurée; une classification logique des différents « types » d'outils de gestion de flux de travaux, dans l'objectif de calmer la *FOMO* (*Fear of missing out*: expression anglophone représentant la peur de ne pas tout savoir, d'être en retard sur les tendances, sur les connaissances et les nouvelles opportunités). Si les outils numériques changent et évoluent, les méthodologies derrière demeurent.
+Dans cette quête incessante de l'optimisation du travail, la réflexion sur vos méthodes de travail et l'utilisation des bons outils devient une clé de la réussite. Que vous soyez un chercheur en herbe ou un professionnel chevronné, la manière dont vous organisez votre flux de travaux et gérez vos ressources peut déterminer la qualité, la quantité et l'impact de vos résultats professionnels.
 
-Loin de souhaiter offrir des leçons, ou proposer *LA* bonne manière de travailler et de structurer son flux de travaux, ce chapitre (et ce livre dans sa globalité) fait le choix de présenter de manière plus générale les différentes méthodes, l'historique des outils, puis d'en présenter les leaders, avant d'entrer dans une présentation détaillée des « choix éditoriaux » de notre équipe. Ces choix sont le fruit d'une utilisation sérieuse et réfléchie de ces outils sur plusieurs années, avec la constante compréhension qu'il existe autant d'outils et d'utilisation pertinents qu'il existe d'individus et de besoins.
+<!-- Attention cependant: à notre époque, se perdre dans un monde infini d'outils, dont la constante évolution est bien souvent menée par des entreprises désireuses de fidéliser une clientèle en lui offrant toujours plus de possibilités peut, ironiquement, entrainer une contre-productivité. Il est, dès lors, essentiel de réfléchir à ses besoins, et de cibler les outils pertinents à son travail, sans exagération. Viser à tout savoir, tout connaitre des dernières tendances et innovations sur le marché de l'outil numérique peut être aussi fastidieux et prenant que de ne pas en utiliser. Nombreux sont les chercheur.e.s qui perdent une quantité impressionnante de leur temps à passer d'un outil à l'autre, coincé dans la peur de ne pas être à la fine pointe des dernières tendances. Dans une recherche incessante de la dernière mode. -->
 
-Autrement dit, la gestion optimale d'un flux de travaux est propre à vous! Votre personnalité, vos qualités, vos défis, vos connaissances et vos compétences sont autant de facteurs qui peuvent vous mener à préférer un outil plutôt qu'un autre, à choisir une méthode de travail particulière plutôt qu'une autre. Si vous préférez travailler seul.e, certains outils vous seront bien davantage utiles. Par contre, si vous êtes du genre à collaborer, d'autres outils offriront à vous et vos collègues une optimisation de votre communication et de votre gestion de tâches. Votre flux de travaux est unique à vous, à vos besoins, mais ce chapitre vous permettra d'y réfléchir et de le structurer.
+<!-- Ce chapitre vise à offrir une voie de passage structurée; une classification logique des différents « types » d'outils de gestion de flux de travaux, dans l'objectif de calmer la *FOMO* (*Fear of missing out*: expression anglophone représentant la peur de ne pas tout savoir, d'être en retard sur les tendances, sur les connaissances et les nouvelles opportunités). Si les outils numériques changent et évoluent, les méthodologies derrière demeurent. -->
 
-Il est utile de noter qu'à l'ère du numérique et de la multiplication des technologies de l'information et de la communication, le travail collaboratif est plus simple et nécessaire que jamais. L'époque où il était plus naturel pour les chercheur.e.s de travailler seul, isolé avec leurs livres, leurs données et leurs idées, est désormais révolue. Les outils de gestion de projet comme *Notion*, *Trello* ou *Asana* permettent de diviser les activités et d'en suivre les progrès, et les outils de gestion de données comme *git*, *GitHub*, *Google Drive* ou *Dropbox* d'en partager les codes, les fichiers textes, les données et les résultats avec le monde entier. La philosophie et les valeurs du logiciel libre et de l'*open-source* s'inscrivent désormais facilement à toutes les étapes du processus scientifique.
+Loin de souhaiter proposer *LA* bonne manière de travailler et de structurer son flux de travaux, ce chapitre (et ce livre dans sa globalité) fait le choix de présenter de manière plus générale les différentes méthodes, l'historique des outils, puis d'en présenter les leaders, avant d'entrer dans une présentation détaillée des « choix éditoriaux » de notre équipe. Ces choix sont le fruit d'une utilisation sérieuse et réfléchie de ces outils sur plusieurs années, avec la constante compréhension qu'il existe autant d'outils et d'utilisation pertinents qu'il existe d'individus et de besoins.
 
-Si vous travaillez actuellement seul, ce chapitre vous recommandera d'emblée de vous intéresser aux groupes, centres ou chaires de recherche dans votre champ. Vous constaterez que de nombreux universitaires partagent vos champs d'intérêt, et recherchent la collaboration. Des réseaux existent autour de vous, à l'intérieur de votre université, mais également à l'international. La coopération scientifique n'a plus de frontière. Les outils numériques permettent à notre époque de créer des synergies internationales, et d'augmenter rapidement votre production en échangeant des visions et en partageant des responsabilités. Si ce n'est pas déjà le cas, plus tard dans votre carrière, vous serez mené à travailler en équipe. Il vaut mieux, dès maintenant, développer votre réseau et en maitriser les codes et les outils.
+Autrement dit, la gestion optimale d'un flux de travaux est propre à vous! Votre personnalité, vos qualités, vos défis, vos connaissances, votre emploi du temps et vos compétences sont autant de facteurs qui peuvent vous mener à préférer un outil plutôt qu'un autre, à choisir une méthode de travail particulière plutôt qu'une autre. Si vous préférez travailler seul, certains outils vous seront bien davantage utiles. Si vous connaissez la suite Microsoft par coeur, y demeurer pour la gestion de vos tâches peut être efficace. Par contre, si vous êtes du genre à collaborer, d'autres outils offriront à vous et vos collègues une optimisation de votre communication et de votre gestion de projet. Votre flux de travaux est unique à vous, à vos besoins, mais ce chapitre vous permettra d'y réfléchir et de le structurer.
 
-Un flux de travaux médité, personnalisé et collaboratif construit pendant vos études universitaires tracera la voie d'une efficacité optimisée tout au long de votre carrière, créant et augmentant sur le court, moyen et long terme votre « valeur » sur le marché professionnel.
+Il est utile de noter qu'à l'ère du numérique et de la multiplication des technologies de l'information et de la communication, le travail collaboratif est plus simple et nécessaire que jamais. L'époque où il était plus naturel pour les chercheurs de travailler seul, isolés avec leurs livres, leurs données et leurs idées, est loin derrière. Les outils de gestion de projet comme *Notion*, *Trello* ou *Asana* permettent de diviser les activités et d'en suivre les progrès, et les outils de gestion de données comme *git*, *GitHub*, *Google Drive* ou *Dropbox* d'en partager les codes, les fichiers textes, les données et les résultats avec le monde entier. La philosophie et les valeurs du logiciel libre et du code source ouvert s'inscrivent désormais facilement à toutes les étapes du processus scientifique.
 
-Voici un secret: dans le milieu universitaire, des capacités en gestion de flux de travaux vous permettront de vous distinguer, d'augmenter rapidement votre valeur en présentant des compétences rares et recherchées. Ceci est vrai dans tous les domaines, mais comme étudiant.e et professionnel.le dans les études supérieures, à la recherche de moyens de sortir du lot, entouré.e d'une multitude de collègues brillant.e.s qui s'illustrent académiquement, qui s'imposent par leurs expertises techniques et intellectuelles, leur travail acharné et leur volonté d'être remarqué, votre savoir-faire en gestion de projet pourrait bien faire la différence.
+<!-- Si vous travaillez actuellement seul, ce chapitre vous recommandera d'emblée de vous intéresser aux groupes, centres ou chaires de recherche dans votre champ. Vous constaterez que de nombreux universitaires partagent vos champs d'intérêt, et recherchent la collaboration. Des réseaux existent autour de vous, à l'intérieur de votre université, mais également à l'international. La coopération scientifique n'a plus de frontière. Les outils numériques permettent à notre époque de créer des synergies internationales, et d'augmenter rapidement votre production en échangeant des visions et en partageant des responsabilités. Si ce n'est pas déjà le cas, plus tard dans votre carrière, vous serez mené à travailler en équipe. Il vaut mieux, dès maintenant, développer votre réseau et en maitriser les codes et les outils. -->
 
-Il existe particulièrement six grandes « fonctions » à maitriser pour opérer dans le milieu académique: la communication, la gestion de partenaires, le développement, l'enseignement, le financement, et la publication. Tout professeur.e doit jongler quotidiennement avec ces fonctions. Dans ses tâches, il est attendu de lui et d'elle d'enseigner, il en va de soi, mais également de publier des études scientifiques, de travailler avec sa communauté, de développer des projets novateurs et porteurs, d'encadrer des étudiant.e.s à la maitrise et au doctorat, de trouver le financement nécessaire pour mener ses recherches et d'en communiquer les résultats. Un.e professeur.e doit faire tout cela, minimalement, en plus de participer à la vie administrative de son département, de diriger des groupes, des centres ou des chaires de recherches, et plus encore.
+Un flux de travaux médité, personnalisé et collaboratif construit en début de carrière tracera la voie d'une efficacité optimisée des années durant, créant et augmentant sur le court, moyen et long terme votre « valeur » sur le marché professionnel.
 
-De toute évidence, rares sont les professeur.e.s, les étudiant.e.s ou les professionnel.le.s à parfaitement maitriser chacune de ces six fonctions. Certain.e.s vont s'illustrer en enseignement, d'autres seront particulièrement doué.e.s dans la recherche et la publication scientifique. Il y a celles et ceux que l'ont lit dans les journaux, écoute à la radio ou regarde à la télé, vulgarisant leur expertise au grand public. Quelques-un.e.s sont habiles pour remplir des demandes de financements pour leurs travaux de recherches, alors que des scientifiques préfèrent créer des partenariats avec des entreprises de la société civile et développer des projets pour leur collectivité, enregistrant des brevets et quelques fois même, transformant des idées en *start-up*.
+Voici un secret: dans le milieu universitaire, des capacités en gestion de flux de travaux vous permettront de vous distinguer, d'augmenter rapidement votre valeur en présentant des compétences rares et recherchées. Ceci est vrai dans tous les domaines, mais comme étudiant et professionnel aux études supérieures, à la recherche de moyens de sortir du lot, entouré d'une multitude de collègues brillants qui s'illustrent académiquement, qui s'imposent par leurs expertises techniques et intellectuelles, leur travail acharné et leur volonté d'être remarqué, votre savoir-faire en gestion de projet pourrait bien faire la différence.
 
-Malgré les talents particuliers et les préférences, dès l'entrée aux cycles supérieurs, le travail sur ces six fonctions mené en parallèle n'est pas optionnel. Il existe cependant une septième fonction, transversale aux six autres, plus rarement perfectionnée et mise de l'avant: la capacité de gestion de cet immense flux de travaux. Cette septième fonction permet de diriger simultanément les six autres fonctions pour créer un tout cohérent, efficace et productif. De multiples projets, publications, contributions peuvent alors être menées parallèlement ou conjointement, en accomplissant de multiples pierres d'un coup. Bien gérées, des équipes comptant des dizaines d'étudiant.e.s, professeur.e.s et professionnel.le.s peuvent collaborer, se partager des tâches et miser sur les talents particuliers de leurs membres pour offrir des résultats supérieurs en qualité et en quantité.
+Il existe particulièrement six grandes « fonctions » à maitriser pour opérer dans le milieu académique: la communication, la gestion de partenaires, le développement, l'enseignement, le financement, et la publication. Tout professeur doit jongler presque quotidiennement avec ces fonctions. Dans ses tâches, il est attendu d'enseigner, il en va de soi, mais également de publier des études scientifiques, de travailler avec sa communauté, de développer des projets novateurs et porteurs, d'encadrer des étudiant.e.s à la maitrise et au doctorat, de trouver le financement nécessaire pour mener ses recherches et d'en communiquer les résultats. Un professeur doit faire tout cela, minimalement, en plus de participer à la vie administrative de son département, de diriger des groupes, des centres ou des chaires de recherches, et plus encore.
+
+Rares sont les professeurs, les étudiants ou les professionnels à parfaitement maitriser chacune de ces six fonctions. Certains vont s'illustrer en enseignement, d'autres seront particulièrement doués dans la recherche et la publication scientifique. Il y a celles et ceux que l'ont lit dans les journaux, écoute à la radio ou regarde à la télé, vulgarisant leur expertise au grand public. Quelques-uns.s sont habiles pour remplir des demandes de financements pour leurs travaux de recherches, alors que des scientifiques préfèrent créer des partenariats avec des entreprises de la société civile et développer des projets pour leur collectivité, enregistrant des brevets et quelques fois même, transformant des idées en *start-up*.
+
+Malgré les talents particuliers et les préférences, dès l'entrée aux cycles supérieurs, le travail sur ces six fonctions mené en parallèle n'est pas optionnel. Il existe cependant une septième fonction, transversale aux six autres, plus rarement perfectionnée et mise de l'avant: la capacité de gestion de cet immense flux de travaux. Cette septième fonction permet de diriger simultanément les six autres fonctions pour créer un tout cohérent, efficace et productif. De multiples projets, publications, contributions peuvent alors être menées parallèlement ou conjointement, en accomplissant de multiples pierres d'un coup. Bien gérées, des équipes comptant des dizaines d'étudiants, professeurs et professionnels peuvent collaborer, se partager des tâches et miser sur les talents particuliers de leurs membres pour offrir des résultats supérieurs en qualité et en quantité.
 
 L'exercice de cette septième fonction est le secret bien gardé de grands talents de notre société. Elle vous permettra d'émerger et de vous faire remarquer à l'intérieur d'un immense bassin de personnes qualifiées, voire surdouées, car peu y accorde le temps et l'énergie nécessaire. Pour comprendre comment développer une expertise en gestion de flux de travaux, ce chapitre présente trois sous-catégories d'outils:
 
@@ -38,7 +38,7 @@ L'exercice de cette septième fonction est le secret bien gardé de grands talen
 2.  Les outils de gestion de données;
 3.  Les outils de gestion de la communication.
 
-Chacune de ces « sous-catégories » d'outils de gestion de flux de travaux vous sera d'abord présentée, puis des exemples d'utilisation seront offerts. Rappelez-vous cependant: bien que nous vous présentions des formes possibles d'utilisation, il existera toujours autant de bonnes façons de travailler qu'il existe d'individus uniques, de contextes ou d'équipes. Ces exemples sont donc offerts uniquement à des fins d'inspiration. Au bout du compte, la réflexion sur votre flux de travaux vous reviendra. L'important est que vous preniez le temps nécessaire pour mener cette réflexion.
+Chacune de ces « sous-catégories » d'outils de gestion de flux de travaux vous sera d'abord présentée, puis des exemples d'utilisation seront offerts. Rappelez-vous cependant: bien que nous vous présentions des formes possibles d'utilisation, il existera toujours autant de bonnes façons de travailler qu'il existe d'individus uniques, de contextes ou d'équipes. Ces exemples sont donc offerts uniquement à des fins d'inspiration. Au bout du compte, la réflexion sur votre flux de travaux vous appartient. L'important est que vous preniez le temps nécessaire pour mener cette réflexion.
 
 ## Point d'observation : retour sur l'origine de la recherche de productivité
 
@@ -48,44 +48,54 @@ Des pyramides aux chemins de fer, de multiples solutions de gestion ont été d�
 
 À partir de ce succès, les entreprises modernes à la recherche de profits ont vite compris les avantages liés à l'optimisation du travail. Le « Project Management Institut » (PMI) est lancé en 1969 aux États-Unis, structurant et distribuant un langage désormais universel pour la gestion de projet, basé sur l'idée d'une « méthodologie » bien définie. Le PMI décrit la méthodologie comme « un système de pratiques, de techniques, de procédures et de règles utilisé par ceux qui travaillent dans une discipline ». De nombreuses méthodologies de gestion de flux de travaux se sont développées au cours des dernières décennies, dans une course vers la *recette secrète* de la productivité d'entreprise. Tous les outils numériques de gestion de flux de travaux contemporain mettent de l'avant une ou plusieurs de ces différentes méthodologies.
 
-Aujourd'hui, ces méthodes se divisent en deux grandes catégories: les méthodes dites « traditionnelles », comme celles présentées ci-dessus (en plus des méthodes Waterfall, PRINCE2, etc.), et les méthodes « Agiles ». L'Agilité voit le jour en 2001, avec la publication du [*Manifeste Agile*](https://agilemanifesto.org/iso/fr/manifesto.html), conceptualisé et destiné au nouveau domaine en pleine expansion du développement logiciel. Contrairement aux méthodes traditionnelles privilégiant la planification du « haut vers le bas » (des décisions prises par les dirigeant.e.s, qui envoient les ordres à accomplir à l'intérieur d'un budget et d'un calendrier), la gestion de projet Agile mise sur des cycles itératifs courts, des équipes autonomes et disciplinées, dans une logique du bas vers le haut, basée sur les besoins réels de la clientèle.
+Aujourd'hui, ces méthodes sont généralement présentées en deux grandes catégories: les méthodes dites « traditionnelles », comme celles présentées ci-dessus (en plus des méthodes Waterfall, PRINCE2, etc.), et les méthodes « Agiles ». L'Agilité voit le jour en 2001, avec la publication du [*Manifeste Agile*](https://agilemanifesto.org/iso/fr/manifesto.html), conceptualisé et destiné au nouveau domaine en pleine expansion du développement logiciel. 
 
-Pour illustrer la différence entre les deux méthodologies, un exemple fréquemment donné est celui du logiciel *Excel* de *Microsoft*, dont le développement était, à l'origine, issu d'une méthode traditionnelle de gestion de projet. La compagnie rendait disponible à l'utilisateur des versions créées à l'interne, par des développeurs respectant des budgets, des calendriers et des directives provenant de leur gestionnaire. Dans les années 1990 et 2000, le public a ainsi connu Excel 97, puis Excel 2000, et Excel 2007. Il est régulièrement cité qu'environ 70% à 80% des fonctionnalités d'Excel ne sont que rarement utilisées par le consommateur, alors qu'elles ont pris des années à être développées.
+Les auteurs se sont toutefois bien retenus d'en inscrire une définition précise, misant plutôt sur une séries de valeurs et de principes qui se doivent d'être partagés par tous les membres d'une équipe dite « agile ». C'est peut-être cette décision qui permit à l'Agilité de traverser le temps et de s'inscrire davantage comme une grande philosophie du travail, pouvant être facilement adaptée à divers contexte parfois bien éloigné du développement logiciel, plutôt que comme une méthodologie aux règles strictes.
 
-La logique de la gestion de projet Agile est inversée: un logiciel se construit sur de courtes périodes itératives, en offrant à chaque fin d'itération un nouvel incrément du produit en fonction du besoin communiqué par l'utilisateur. Ainsi, *Apple* propose des mises à jour régulières de ses logiciels, réglant des *bugs* ou offrant un nouveau service attendu de sa clientèle. La très forte majorité des entreprises informatiques ont aujourd'hui délaissé les méthodes traditionnelles pour se retourner vers le travail en Agilité.
+Ainsi, pour être considéré Agile, un respect des valeurs et des principes demeure essentiel. Contrairement aux méthodes traditionnelles privilégiant la planification du « haut vers le bas » (des décisions prises par les dirigeant.e.s, qui envoient les ordres à accomplir à l'intérieur d'un budget et d'un calendrier), la gestion de projet Agile mise sur des cycles itératifs courts, des équipes autonomes et disciplinées, dans une logique du bas vers le haut, basée sur les besoins réels de la clientèle.
 
-Si ces méthodes de gestion de projet peuvent sembler à première vue en complète opposition, elles offrent chacunes des avantages et des inconvénients qui peuvent encourager le développement d'une utilisation mixte, adaptée aux besoins de son utilisateur. Et si ces méthodes ont été développées pour optimiser la production en entreprise ou le développement logiciel, elles sont aujourd'hui répandues dans toutes les sphères de travail de la société. Au Québec, par exemple, plusieurs municipalités, caisses, milieux d'enseignement et entreprises de tous les secteurs opèrent actuellement un virage *Agile*. Chaque année en octobre, depuis déjà plus de 15 ans, la ville de Québec accueille [l'*Agile Tour*](https://www.agilequebec.ca/fr/), grand évènement organisé par l'organisme *Agile Québec* lors duquel se rencontrent plus de 700 adeptes de l'Agilité pour « partager leurs savoirs, leurs expériences et leurs dernières découvertes ».
+Pour illustrer la différence entre les deux approches, un exemple fréquemment donné est celui du logiciel *Excel* de *Microsoft*, dont le développement était, à l'origine, issu d'une méthode traditionnelle de gestion de projet. La compagnie rendait disponible à l'utilisateur des versions créées à l'interne, par des développeurs respectant des budgets, des calendriers et des directives provenant de leur gestionnaire. Dans les années 1990 et 2000, le public a ainsi connu Excel 97, puis Excel 2000, et Excel 2007. Il est régulièrement cité qu'environ 70% à 80% des fonctionnalités d'Excel ne sont que rarement utilisées par le consommateur, alors qu'elles ont pris des années à être développées.
 
-Les méthodes Agiles ont le vent dans les voiles, et leur popularité prouve que la gestion de projet ne se limite pas au déploiement de nouvelles technologies. Peu d'universitaires prennent le temps, cependant, de réfléchir à leur processus afin d'optimiser leur production (c'est-à-dire le rapport entre le temps investi, la qualité, la quantité et la pertinence de leurs travaux scientifiques).
+La logique de la gestion de projet Agile est inversée: un logiciel se construit sur de courtes périodes *itératives*, en offrant à chaque fin d'itération un nouvel *incrément* du produit en fonction du besoin communiqué par l'utilisateur. Ainsi, *Apple* propose des mises à jour régulières de ses logiciels, réglant des *bugs* ou offrant un nouveau service attendu de sa clientèle. La très forte majorité des entreprises informatiques ont aujourd'hui délaissé les méthodes traditionnelles pour se retourner vers le travail Agile, *itératif et incrémental*. 
+
+Si ces philosophies de gestion de projet peuvent sembler à première vue en complète opposition, elles offrent chacunes des avantages et des inconvénients qui peuvent encourager le développement d'une utilisation mixte, précisément adaptée aux besoins de son utilisateur. Et si ces méthodes ont été développées pour optimiser la production en entreprise ou le développement logiciel, elles sont aujourd'hui répandues dans toutes les sphères de travail de la société. Au Québec, par exemple, plusieurs municipalités, caisses, milieux d'enseignement et entreprises de tous les secteurs opèrent actuellement un virage *Agile*. Chaque année en octobre, depuis déjà plus de 15 ans, la ville de Québec accueille [l'*Agile Tour*](https://www.agilequebec.ca/fr/), grand évènement organisé par l'organisme *Agile Québec* lors duquel se rencontrent plus de 700 adeptes de l'Agilité pour « partager leurs savoirs, leurs expériences et leurs dernières découvertes ».
+
+Les « méthodes Agiles », grande famille toujours en expansion dont tous le membres (méthodes Scrum, Kanban, XP, etc.) ont en commun la « philosophie » Agile, ont le vent dans les voiles. Leur popularité prouve que la gestion de projet ne se limite pas au déploiement de nouvelles technologies. Si les entreprises et les administrations ont toutes le réflexe de mettre en place une méthode de gestion de projet, peu d'universitaires prennent le temps de réfléchir à leur processus afin d'optimiser leur production (c'est-à-dire le rapport entre le temps investi, la qualité, la quantité et la pertinence de leurs travaux scientifiques). 
+
+Dans ce contexte, certains qualifient l'Agilité de « mode », davantage utile pour des exercices de communication publique et d'image d'entreprise, plutôt que pour une réelle recherche d'efficacité et d'optimisation. L'Agilité a été (et est toujours) galvaudée et utilisée à toutes les sauces. Mais les valeurs et les principes du manifeste de 2001 demeurent. Sans un respect et une bonne compréhension de ceux-ci, une équipe échouera dans sa mise en place d'une stratégie agile. Lorsque bien réfléchie et adaptée à son contexte, la philosophie Agile a maintes fois fait ses preuves.
 
 La suite de ce chapitre propose une marche à suivre Agile, adaptée au milieu académique, ainsi que des outils pour développer et appliquer une gestion du flux de travaux efficace, utile à la fois pour les individus travaillant seuls, mais particulièrement adaptée pour les équipes de recherche.
 
 ## Les outils de gestion de projet
 
-Comme le logiciel libre, l'Agilité est avant tout une philosophie. Une façon de percevoir son travail, son temps, la division de son travail et l'implication de son équipe, afin de produire des livrables structurés qui répondent à des besoins concrets. Cette philosophie repose sur quatre grandes valeurs fondamentales visant à valoriser:
+Comme le logiciel libre, l'Agilité est avant tout une philosophie. Une façon de percevoir son travail, son temps, la division de son travail, les relations et l'implication de son équipe, afin de produire des livrables structurés qui répondent à des besoins concrets. Cette philosophie repose sur quatre grandes valeurs fondamentales visant à valoriser:
 
-1.  **Les individus et leurs interactions**, plutôt que les processus et les outils;
-2.  **La collaboration avec les clients**, plutôt que la négociation contractuelle;
-3.  **L'adaptation au changement**, plutôt que le suivi et le respect absolu d'un plan;
-4.  **Des logiciels opérationnels**, plutôt qu'une documentation exhaustive.
+1.  **Les individus et leurs interactions**, de préférence aux processus et aux outils;
+2.  **Des solutions opérationnelles**, de préférence à une documentation exhaustive.
+2.  **La collaboration avec les clients**, de préférence aux négociations contractuelles;
+3.  **L'adaptation au changement**, de préférence au respect d'un plan;
 
-Dans le cadre du milieu académique, cela peut se traduire par:
+Dans le contexte du milieu académique, cela pourrait se traduire par:
 
-1.  **Le travail collaboratif à l'intérieur d'une équipe de recherche**, plutôt qu'un apprentissage et une utilisation solitaire de méthodologies ou d'outils numériques;
-2.  **La compréhension des lacunes de la littérature scientifique**, plutôt que la tentative de forcer une contribution théorique ou méthodologique qui n'est pas utile au champ d'études;
-3.  **L'adaptation aux imprévus et aux nouvelles découvertes**, plutôt que le suivi d'un devis de recherche initial rigide;
-4.  **Un processus itératif et incrémental de dépôt de ses travaux**, plutôt qu'une remise volumineuse à la toute fin.
+1.  **Des échanges constructifs avec la direction et les pairs**, de préférence aux apprentissages isolés des méthodologies et des outils de recherche;
+2.  **Des résultats tangibles et réguliers**, de préférence à une idéation interminable;
+3.  **Une contribution scientifique utile à la société et à l'avancement des connaissances**, de préférence à un acharnement intellectuel aussitôt tabletté;
+4.  **L'adaptation aux nouvelles découvertes et aux nouvelles idées**, de préférence à l'application rigide du devis de recherche initial.
 
-Loin de dire que l'utilisation d'outils n'est pas valorisée en Agilité, la première valeur rappelle, comme mentionné en introduction du chapitre, que la recherche académique est avant tout une aventure collaborative où les discussions avec les directeurs/directrices de thèse, collègues et étudiant.e.s permettent de résoudre des problèmes, de comprendre les contributions recherchées et de créer des publications ou projets pertinents et de qualité. L'utilité des méthodes de travail et des outils est optimisée à l'intérieur d'une équipe engagée.
+Loin de dire que l'apprentissage d'outils n'est pas utile en Agilité, la première valeur rappelle que la recherche académique est avant tout une aventure collaborative lors de laquelle les discussions avec les collègues permettent de résoudre de nombreux défis, de comprendre les contributions recherchées et de créer des publications ou projets pertinents et de qualité. L'utilité des méthodes de travail et des outils est optimisée à l'intérieur d'une équipe engagée.
 
-La deuxième valeur répond à un impératif de la science: offrir des contributions originales répondant à des lacunes de la littérature. Le chapitre 4 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'études et à repérer les failles et apports potentiels. La troisième valeur a été traitée dans le précédent chapitre: la science postule que ses résultats sont toujours incertains. En recherche, il est essentiel d'accepter que les résultats puissent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
+La deuxième valeur présente le coeur de l'application concrète de l'Agilité: un projet Agile doit être divisés, dès le départ, en de nombreux livrables, chacun avec une date d'échéance déterminée. Plutôt que de prendre des mois, voire des années à rédiger un devis --- qui sera largement modifié dans tous les cas, la version finale d'une thèse n'a bien souvent rien à voir avec son idéation initiale --- un projet Agile produit une grande quantité de petits « incréments », qui permettent de le faire avancer concrètement. Chaque livrable (une petite partie du projet, par exemple « 2 pages de la revue de littérature ») peuvent ensuite être évaluée, adaptée et potentiellement permettre une réévaluation du devis initial. 
 
-Le monde académique offre ainsi un terrain fertile à l'application de la philosophie Agile. La dernière valeur, quant à elle, ouvre la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur d'un groupe, d'un centre et d'un réseau de recherche au département de science politique de l'Université Laval. Les approches Agile (il est à noter ici que l'Agilité se divise en de multiples approches, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointe des approches Scrum et Kanban) reposent sur les caractéristiques suivantes:
+La troisième valeur répond à un impératif de la science: offrir des contributions originales répondant à des lacunes de la littérature. Le chapitre 4 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'études et à repérer les failles et apports potentiels. La quatrième valeur présente le  En recherche, il est essentiel d'accepter que les résultats puissent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
 
-1.  Cadence soutenue grâce à un cycle de **Sprints**;
-2.  Suivi régulier des objectifs grâce à de courts **Scrums**;
-3.  Développement **itératif** et **incrémental** pour des **livraisons** régulières de petites parties fonctionnelles;
-4.  Division du travail en **Stories** à l'intérieur d'un tableau **Kanban**.
+Le respects de ces trois valeurs permet ainsi l'application de la dernière: un projet Agile divisé en de multiples petits livrables peut et doit être révisé régulièrement. Des résultats concrets permettent des rétroactions fréquentes, qui viendront alimenter la réflexion sur le devis initial au fur et à mesure de l'évolution parallèle de la science, de la technologie, des méthodologies, de l'arrivée de nouvelles questions de recherche et de nouveaux besoins de la société.
+
+Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur de plusieurs équipes de recherche. Il est à noter ici que l'Agilité se divise en de multiples méthodologies, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointe des approches Scrum et Kanban, particulièrement adaptée et utile au milieu académique, et qui reposent sur les caractéristiques suivantes:
+
+1.  Une cadence de travail soutenue grâce à un cycle de **Sprints**;
+2.  Un suivi régulier des objectifs grâce à de courts **Scrums**;
+3.  Un avancement **itératif** et **incrémental** pour des **livraisons** régulières de petites parties fonctionnelles;
+4.  Une division du travail en **Stories** à l'intérieur d'un tableau **Kanban**.
 
 ```{r, out.width="80%"}
 #| label: fig-scrum
@@ -96,27 +106,27 @@ knitr::include_graphics("images/chapitre8_agilite.png", dpi = 600)
 
 La @fig-scrum présente le cycle traditionnel d'application de l'approche Scrum dans un contexte de travail collaboratif. Dans le cadre académique, toutes ces composantes peuvent facilement être adaptées.
 
-Le processus commence par l'organisation d'une « planification de sprint ». Un sprint dure généralement entre une et quatre semaines (dans le contexte du développement logiciel, une semaine peut être parfois très utile lorsque les délais sont serrés). Dans le contexte académique, un sprint de trois ou quatre semaines s'avèrent plus adaptés, voire de 2 ou 3 mois dans le cas d'une rédaction de thèse. Lors de la planification, toute l'équipe se rencontre quelques heures (généralement 2h ou 3h, en fonction du nombre de projet en cours et/ou des publications en rédaction) pour déterminer les grands objectifs qui devront être réalisés, projet par projet, publication par publication, d'ici la fin du sprint. Un sprint se conclut toujours par le retour en plénière pour la planification du sprint suivant. Cette nouvelle planification de sprint doit désormais, et dorénavant, débuter par une *revue de sprint*, lors de laquelle les objectifs du sprint terminé sont évalués, projet par projet, publication par publication, puis par une *rétrospective*, où les processus cette fois sont évalués. L'équipe est alors invitée à partager son avis sur la méthode de gestion de projet, afin d'adapter le processus au contexte particulier et à renforcer son utilité.
+Le processus commence par l'organisation d'une « planification de sprint ». Un sprint dure généralement entre une et quatre semaines (dans le contexte du développement logiciel, une semaine peut être parfois très utile lorsque les délais sont serrés). Dans le contexte académique, un sprint de trois ou quatre semaines s'avèrent plus adaptés, voire de 2 ou 3 mois dans le cas d'une rédaction de thèse. Lors de la planification, toute l'équipe se rencontre quelques heures (généralement 2h ou 3h, en fonction du nombre de projets en cours et/ou des publications en rédaction) pour déterminer les grands objectifs qui devront être réalisés, projet par projet, publication par publication, d'ici la fin du sprint. Un sprint se conclut toujours par le retour en plénière pour la planification du sprint suivant. Cette nouvelle planification de sprint doit désormais, et dorénavant, débuter par une *revue de sprint*, lors de laquelle les objectifs du sprint terminé sont évalués, projet par projet, publication par publication, puis par une *rétrospective*, où les processus cette fois sont évalués. L'équipe est alors invitée à partager son avis sur la méthode de gestion de projet, afin d'adapter le processus au contexte particulier et à renforcer son utilité.
 
-La planification de sprint est menée par le *Scrum Master*, un membre désigné par l'équipe pour faire le lien entre le *Product Owner* (dans notre contexte, le ou la directeur/directrice de l'équipe de recherche) et tous les membres de l'équipe qui travaillent concrètement sur les projets et publications (les étudiant.e.s, par exemple). Dans le langage universitaire, le Scrum Master pourrait représenter le rôle de *coordonnateur*. Il est toutefois recommandé que le Scrum Master détienne sa certification de Scrum Master, ou ait du moins suivi sa formation. De nombreuses entreprises offrent des formations au Québec pour des prix variant entre 1000\$ et 3000\$, pour 2 à 3 jours de formations. La certification, quant à elle, coûte 100\$, et peut être réalisée via le site Web officiel [scrum.org](https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments). Une formation Agile comme Scrum Master a une énorme valeur sur le marché de l'emploi. De plus en plus d'entreprises au Québec sont à la recherche de Scrum Master certifiés, offrant des salaires dépassant les 100 000\$ par année. Comme mentionné en introduction, des compétences en gestion de projet, mais particulièrement en Agilité, constituent un excellent moyen d'augmenter rapidement votre valeur dans le milieu universitaire et sur le marché de l'emploi.
+La planification de sprint est menée par le *Scrum Master*, un membre désigné par l'équipe pour faire le lien entre le *Product Owner* (dans notre contexte, la direction de l'équipe de recherche) et tous les membres de l'équipe qui travaillent concrètement sur les projets et publications (les étudiants, par exemple). Dans le langage universitaire, le Scrum Master pourrait représenter le rôle de *coordonnateur*. Il est toutefois recommandé que le Scrum Master détienne sa certification de Scrum Master, ou ait du moins suivi sa formation. De nombreuses entreprises offrent des formations au Québec pour des prix variant entre 1000\$ et 3000\$, pour 2 à 3 jours de formations. [AFI U.](https://www.afiexpertise.com/fr/formation/preparation-a-la-certification-scrum-master-1785), par exemple, offre une formation de préparation à la certification Scrum Master deux fois par année. La certification, quant à elle, coûte 100\$, et peut être obtenue après un examen via le site Web officiel [scrum.org](https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments). Une formation Agile comme Scrum Master a une énorme valeur sur le marché de l'emploi. De plus en plus d'entreprises au Québec sont à la recherche de Scrum Master certifiés, offrant des salaires dépassant les 100 000\$ par année. 
 
-Chaque équipe de projet (il serait normal de compter plusieurs équipes de projet représentées lors d'un sprint. En fait, il devrait y avoir autant d'équipes de projet qu'il y a de projet) est dirigée par un.e *chargé.e de projet*, dont le rôle est de veiller à la coordination de son équipe. Le.la chargé.e de projet organise les rencontres d'équipe au besoin, divise les tâches entre les membres, prend la parole lors de la planification de sprint pour présenter la revue du sprint, et annoncer les prochains objectifs prévus, qui seront ensuite discutés en groupe. Quand tous les objectifs pour tous les projets et pour toutes les publications ont été clairement établis, approuvés par l'ensemble les membres, en considération du temps que toutes et tous sont réalistement en mesure d'accorder, puis après avoir déterminé la date de la prochaine planification de sprint, la séance est levée. Une activité sociale d'équipe est à ce moment fortement encouragée!
+Chaque projet est dirigée par un.e *chargé.e de projet*, dont le rôle est de veiller à la coordination de son équipe. Le chargé de projet organise les rencontres d'équipe au besoin, divise les tâches entre les membres, prend la parole lors de la planification de sprint pour présenter la revue du sprint, et annoncer les prochains objectifs prévus, qui seront ensuite discutés en groupe. Quand tous les objectifs pour tous les projets et pour toutes les publications ont été clairement établis, approuvés par l'ensemble les membres, en considération du temps que tous sont réalistement en mesure d'accorder, puis après avoir déterminé la date de la prochaine planification de sprint, la séance est levée. Une activité sociale d'équipe est à ce moment fortement encouragée!
 
-Pour assurer un suivi régulier de l'avancement des objectifs, le Scrum Master met à l'agenda un ou deux *Scrums* par semaine. Il s'agit de très courtes rencontres où l'ensemble de l'équipe se retrouve, idéalement entre 15 et 30 minutes maximum, selon le nombre de projets, pour répondre à trois questions:
+Pour assurer un suivi régulier de l'avancement des objectifs, le Scrum Master met à l'agenda un ou deux *scrums* par semaine. Il s'agit de très courtes rencontres où l'ensemble de l'équipe se retrouve, idéalement entre 15 et 30 minutes maximum, selon le nombre de projets, et lors desquelles chaque chargé de projet doit répondre à trois questions:
 
-1.  Qu'est-ce qui a été fait depuis le dernier scrum?
+1.  Qu'est-ce qui a été accompli par mon équipe depuis le dernier scrum?
 2.  Qu'est-ce qui sera fait d'ici le prochain scrum?
 3.  Y a-t-il des blocages?
 
-Tour à tour, le Scrum Master nomme les projets et les publications, dans leur ordre de priorité, et offre la parole aux chargé.e.s de projet pour résumer les avancées de leur équipe. Contrairement à la planification de sprint, le.la directeur/directrice n'a pas besoin d'assister à ces scrums. Le *Scrum Master* s'assure, si nécessaire, de le.la tenir informé des bloquants ou des ajustements à mener. Les scrums sont l'occasion pour l'équipe d'assurer un suivi régulier des *livraisons* attendues d'ici la fin du sprint.
+Tour à tour, le Scrum Master nomme les projets et les publications, dans leur ordre de priorité, et offre la parole aux chargés de projet pour résumer les avancées de leur équipe. Contrairement à la planification de sprint, la direction n'a pas besoin d'assister à ces scrums. Le *Scrum Master* s'assure, si nécessaire, de la tenir informé des bloquants ou des ajustements à mener au calendrier ou aux prochains livrables. Les scrums sont l'occasion pour l'équipe d'assurer un suivi régulier des *livraisons* attendues d'ici la fin du sprint.
 
-L'une des caractéristiques fondamentales des méthodes Agiles est le développement des projets de manière *itérative* et *incrémentale*. L'itération est le processus répété et cyclique mené grâce aux sprints. Une équipe Agile est en tout temps en sprint, jusqu'à la livraison finale du projet ou de la publication (si fin prévue il y a). Un incrément est la réalisation d'une petite partie dite « fonctionnelle » du projet, qui peut être soumise à évaluation. Dans le cadre académique, un incrément peut-être la remise d'une première version d'une revue de littérature, la réalisation d'une première étape d'un code R pour l'analyse de données de thèse, le premier jet d'un devis. Plutôt que d'attendre à la toute fin du processus pour le dépôt complet d'un projet, une équipe Agile divise son projet en de multiples itérations, qu'elle soumet pour évaluation à chaque planification de sprint lors de la phase de la *revue de sprint*. Par une démonstration, toute l'équipe peut alors constater et discuter du nouvel incrément proposé, par exemple la présentation de la section méthodologie d'un article scientifique, et déterminer ensuite les objectifs du prochain sprint pour la livraison de l'incrément suivant, disons la collecte de données. Tout projet est ainsi divisé en phase, en « séquence de développement », d'un sprint à l'autre, de manière itérative, de sorte à livrer des incréments fonctionnels du projet qui peuvent être discutés et révisés.
+L'une des caractéristiques fondamentales des méthodes Agiles est le développement des projets de manière *itérative* et *incrémentale*. L'itération est le processus répété et cyclique mené grâce aux sprints. Une équipe Agile est en tout temps en sprint, jusqu'à la livraison finale du projet ou de la publication (si fin prévue il y a). Un incrément est la réalisation d'une petite partie dite « fonctionnelle » du projet, qui peut être soumise à évaluation. Dans le cadre académique, un incrément pourrait être la remise d'une première version d'une revue de littérature, la réalisation d'une première étape d'un code R pour l'analyse de données de thèse, le premier jet d'un devis, etc. Plutôt que d'attendre à la toute fin du processus pour le dépôt complet d'un projet, une équipe Agile divise son projet en de multiples itérations, qu'elle soumet pour évaluation à chaque planification de sprint lors de la phase de la *revue de sprint*. Par une démonstration, toute l'équipe peut alors constater et discuter du nouvel incrément proposé, par exemple la présentation de la section méthodologie d'un article scientifique, et déterminer ensuite les objectifs du prochain sprint pour la livraison de l'incrément suivant, disons la collecte de données. Tout projet est ainsi divisé en phase, en « séquence de développement », d'un sprint à l'autre, de manière itérative, de sorte à livrer des incréments fonctionnels du projet qui peuvent être discutés et révisés.
 
 Contrairement aux méthodes traditionnelles, il est essentiel de comprendre que les méthodes Agiles se nomment « Agile » pour une raison: elles encouragent la flexibilité. Plutôt que de passer d'un sprint à l'autre en suivant un plan rigide déterminé des mois, voire des années auparavant en fonction d'un budget et d'un calendrier coulés dans le béton, les méthodes Agiles mettent de l'avant le « cycle » de travail, les *itérations*, qui permettent de revoir le plan, de l'adapter en cours de route, particulièrement lors de la planification de sprint. Normalement, lorsque les objectifs de sprint ont été validés par l'équipe, il n'est pas recommandé de les changer en cours de sprint. Par contre, de retour en *planif*, chaque membre de l'équipe a son mot à dire sur la suite; sur ce qui fonctionne bien, sur ce qui devrait être adapté, toujours avec le projet final en tête.
 
 Pour tout projet ou publication menés seuls, comme la rédaction d'un mémoire, d'une thèse, ou la création d'un grand album de photos familiales, ou pour tout besoin de gestion de vie personnelle et d'objectifs d'avenir, ce processus n'est pas bien différent. Une personne Agile pourrait, le soir du jour de l'an, mettre sur papier un certain nombre de résolutions. Elle peut ensuite découper son année en 12 sprints de 4 semaines, et répartir l'accomplissement de ses résolutions en 12 incréments. Chaque incrément planifié doit être réaliste et faire avancer, petit à petit, les objectifs vers la livraison finale, à la fin de l'année. Une fois aux quatre semaines, cette personne peut prendre un moment seul de *planification de sprint* pour faire la *revue* des quatre dernières semaines et réviser les objectifs à atteindre pour les quatre semaines suivantes.
 
-Comme on l'a vu, l'Agile ne s'applique pas uniquement au monde du développement logiciel, voire à une grande équipe académique. Elle est d'abord et avant tout une philosophie, possible d'être menée, réfléchie et appliquée à son quotidien.
+L'Agilité ne s'applique pas uniquement au monde du développement logiciel, voire à une grande équipe académique. Elle est d'abord et avant tout une philosophie, possible d'être menée, réfléchie et appliquée à son quotidien.
 
 L'efficacité et les nombreuses possibilités qu'offre cette méthode ont généré, bien entendu, un marché très lucratif d'outils numériques. La section suivante présentera les leaders du marché, et offrira des instructions sous forme de conseils pour l'utilisation adaptée de ces outils, notamment par la création de *stories* à l'intérieur d'un tableau *Kanban*.
 
@@ -124,7 +134,7 @@ L'efficacité et les nombreuses possibilités qu'offre cette méthode ont géné
 
 Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose en premier lieu l'application de l'approche Scrum, détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement à l'approche Scrum et au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaires les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même la plateforme de communication *Slack*, qui propose depuis 2024 sa solution de gestion de projet pour répondre aux attentes en gestion de projet de ses clients).
 
-Offert de base dans tous les outils numériques nommés ci-dessus, le Kanban permet d'intégrer et de visualiser, dans un tableau comptant au minimum 3 colonnes (« À faire », « En cours », « Terminé »), les « tâches » à réaliser dans une échéance pour avancer la réalisation des objectifs de sprint. En Agilité, une tâche est nommée *Story*. Une story est un livrable, un morceau du projet (le « quoi »), pris en charge volontairement ou délégué à un membre de l'équipe par le.la chargé.e de projet. On utilise le terme story pour distinguer de la rapide tâche; une story peut quelques fois comporter plusieurs tâches (le « comment »).
+Offert de base dans tous les outils numériques nommés ci-dessus, le Kanban permet d'intégrer et de visualiser, dans un tableau comptant au minimum 3 colonnes (« À faire », « En cours », « Terminé »), les « tâches » à réaliser dans une échéance pour avancer la réalisation des objectifs de sprint. En Agilité, une tâche est nommée *Story*. Une story est un livrable, un morceau du projet (le « quoi »), pris en charge volontairement ou délégué à un membre de l'équipe par le chargé de projet. On utilise le terme story pour distinguer de la rapide tâche; une story peut quelques fois comporter plusieurs tâches (le « comment »).
 
 Voici un exemple d'application de tous les concepts Agile vu jusqu'à présent. Dans le milieu académique, un *projet* pourrait être la création d'une étude scientifique. La création de cette étude pourrait être divisée en dix *sprints* de quatre semaines, présentant ainsi dix *livrables* clairs qui permettent un suivi en planification de sprint (bien sûr, certaines études peuvent prendre des années à aboutir. Certaines collectes de données sont plus longues, mais là n'est pas le point: toute étude menée en gestion de projet Agile peut être réfléchie d'emblée en fonction de son contexte et de ses objectifs, et être divisée en un nombre logique et réaliste de sprints, que ce soit 5 ou 15):
 
@@ -141,9 +151,9 @@ Voici un exemple d'application de tous les concepts Agile vu jusqu'à présent. 
 
 En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchies et réparties à l'avance (par exemple: il faudra engager deux auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les objectifs de sprint deviennent évidents et prévisibles, et chaque story peut être rédigée pour accomplir ces objectifs.
 
-Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et remplir un Kanban, qui se compose de quatre colonnes:
+Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et remplir un Kanban, qui se compose ici de quatre colonnes:
 
-1.  **À venir**: c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser lors de sprints futurs s'y trouvent déjà, en ordre, de sorte à visualiser le travail « à venir »;
+1.  **À venir**: c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser pour chaque objectif lors de sprints futurs s'y trouvent déjà, en ordre, de sorte à visualiser le travail précis « à venir »;
 2.  **À faire**: c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation;
 3.  **En cours**: Quand une story du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement;
 4.  **Terminé**: Toutes les stories du sprint en cours qui sont accomplies y apparaissent.
@@ -157,7 +167,7 @@ knitr::include_graphics("images/chapitre8_kanban_notion.png", dpi = 600)
 
 En sortant de la première planification de sprint, l'équipe de recherche se retrouve face à des objectifs clairs, réalistes, divisés en stories rédigées dans un Kanban bien rempli. Ne reste plus qu'à se mettre à la tâche, et à se retrouver lors des scrums hebdomadaires pour assurer le suivi.
 
-À la fin du sprint, lors de la rencontre de planification du sprint suivant, une équipe Agile débute toujours par la *revue de sprint*, qui permet de s'assurer que toutes les stories qui avaient été déplacées, il y a quatre semaines, de la colonne « À venir » à « À faire », se trouvent désormais dans « Terminées ». Grâce à la réalisation de toutes les stories, les objectifs de sprint devraient être considérés comme accomplis. Il est maintenant temps de se préparer à l'atteinte des objectifs du sprint suivant, en vidant la colonne « Terminé », puis en déplaçant les stories du sprint suivant, qui étaient dans « À venir », dans « À faire » en leur ajoutant une échéance et une assignation. Le cycle peut alors recommencer. Une itération est terminée, un incrément du projet a été livré, et une nouvelle phase de développement est prête à être lancée.
+À la fin du sprint, lors de la rencontre de planification du sprint suivant, une équipe Agile débute toujours par la *revue de sprint*, qui permet de s'assurer que toutes les stories qui avaient été déplacées, il y a quatre semaines, de la colonne « À venir » à « À faire », se trouvent désormais dans « Terminées ». Grâce à la réalisation de toutes les stories, les objectifs de sprint devraient être considérés comme accomplis. Il est maintenant temps de se préparer à l'atteinte des objectifs du sprint suivant, en vidant la colonne « Terminé », puis en déplaçant les stories du sprint suivant, qui étaient dans « À venir », dans « À faire » en leur ajoutant une échéance et une assignation. Le cycle peut alors recommencer. Une itération est terminée, un incrément du projet a été livré, et une nouvelle phase de développement est prête à être entamée.
 
 En mélangeant de cette manière les approches Agile *Scrum* et *Kanban*, on obtient tout simplement l'approche *Scrumban*!
 
@@ -165,7 +175,7 @@ Comme mentionné, tous les outils numériques sur le marché (ou presque) propos
 
 Longtemps seule et dominante dans le marché, *Microsoft* compétitionne aujourd'hui avec une multitude d'acteurs. Les premières plateformes collaboratives comme *Basecamp* (1999) et *Jira* (2002) marquent le début du suivi en ligne, permettant aux équipes de travailler à distance, en temps réel, et de suivre leur progression de manière Agile. Développé par la compagnie *Atlassian*, *Jira* se concentre particulièrement sur la gestion des suivis de *bugs*, d'incidents et de projets au niveau « macro », par le suivi des *sprints*, des *objectifs de sprint* et des *backlog*. L'application est intégrée à *Google Workspace* en 2021, et évolue en parallèle à *Trello*, un autre outil de gestion de projet en ligne lancé par *Atlassian* en 2011 et concentré sur le Kanban utilisateur, pour le suivi « micro » des tâches. Les différences sont légères avec les applications [*Asana*](https://asana.com/) (2008) et [*monday.com*](monday.com) (2012), toutes basées principalement sur le développement et le suivi de projets Agiles via des vues de tâches en tableau Kanban, en calendrier, voire en Gantt (le diagramme de Gantt, même à l'ère de l'Agilité, demeure toujours très populaire).
 
-Des propositions de logiciels libres *open source* sont bien sûr présentes en ligne. [*OpenProject*](https://www.openproject.org/) (2012) et [*Taiga*](https://taiga.io/) (2014) sont des outils Agiles présentant tous les avantages liés aux logiciels libres tels que la gratuité du service et la possibilité de modification et de redistribution.
+Des propositions de logiciels libres et à code source ouvert sont bien sûr présentes en ligne. [*OpenProject*](https://www.openproject.org/) (2012) et [*Taiga*](https://taiga.io/) (2014) sont des outils Agiles présentant tous les avantages liés aux logiciels libres tels que la gratuité du service et la possibilité de modification et de redistribution.
 
 <!-- Structurer ses tâches est un processus fondamental pour mener un projet à terme. Particulièrement dans le monde académique, où les travaux s'échelonnent souvent sur plusieurs années, il est facile de perdre de vue ses objectifs ou de prendre des détours coûteux en temps si le chemin vers le produit final est mal défini. Gérer et structurer ses tâches de manière efficace facilite la mesure des progrès et permet de constamment vérifier si ceux-ci sont encore alignés avec les objectifs finaux. -->
 
@@ -222,46 +232,91 @@ Pour enregistrer votre protocole de recherche, il faut suivre ces quatre étapes
 ```
 
 ```{r}
+#| tbl-cap: Résumé des principaux outils de gestion de projet
 #| echo: false
+#| message: false
 #| warning: false
-library(tidyverse)
-library(tinytable)
 
-# First table
-tbl_resume_chap_X <- tibble(
-    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    "Microsoft" = c('Payant', 
-              'Oui', 
-              'Oui', 
-              'Avec les outils Microsoft', 
-              'Non',
-              'Non'),
-    "monday.com" = c('Payant', 
-              'Limitée', 
-              'Non', 
-              'Oui', 
-              'Non', 
-              'Non'),       
-    "OpenProject" = c('Gratuit (logiciel libre)', 
-              'Limitée', 
-              'Non', 
-              'Oui', 
-              'Oui', 
-              'Oui'),    
-    "Notion" = c('Utilisation de base gratuite', 
-              'Oui', 
-              'Oui', 
-              'Oui', 
-              'Non',
-              'Oui')
+library(tidyverse)
+library(gt)
+
+tbl_resume_gestion_projet <- tibble(
+  Critères = c(
+    "Accessibilité (Gratuit ou peu dispendieux)",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité dans le champ",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Microsoft = c(
+    "Dispendieux",
+    "Très grande",
+    "Populaire",
+    "Avec les outils Microsoft",
+    "Faible",
+    "Peu flexible"
+  ),
+  `monday.com` = c(
+    "Dispendieux",
+    "Grande",
+    "Peu populaire",
+    "Facilement compatible",
+    "Faible",
+    "Peu flexible"
+  ),
+  OpenProject = c(
+    "Gratuit (logiciel libre)",
+    "Limitée",
+    "Peu populaire",
+    "Demande un peu d'ajustement",
+    "Excellent",
+    "Très flexible"
+  ),
+  Notion = c(
+    "Gratuit jusqu'à un seuil",
+    "Très grande",
+    "Populaire",
+    "Facilement compatible",
+    "Excellent",
+    "Très flexible"
+  )
 )
 
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de projet')
+tbl_resume_gestion_projet |>
+  gt() |>
+  # Légende du tableau
+  tab_caption("Résumé des principaux outils de gestion de projet") |>
+  # Libellés de colonnes (avec possibilité de sauts de ligne si nécessaire)
+  cols_label(
+    Critères = "Critères",
+    Microsoft = "Microsoft",
+    `monday.com` = md("monday.com"),
+    OpenProject = "OpenProject",
+    Notion = "Notion"
+  ) |>
+  # Alignements + largeurs
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Microsoft ~ pct(17),
+    `monday.com` ~ pct(17),
+    OpenProject ~ pct(17),
+    Notion ~ pct(17)
+  ) |>
+  # Style “booktabs” + entêtes en gras
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  # Typo / espacement (mêmes réglages que votre modèle)
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
 ### Manuel d'instruction: Notion pour la vie professionnelle et personnelle
@@ -274,15 +329,15 @@ Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit �
 
 Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de programmation](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données.
 
-Il n'est toutefois pas nécessaire d'aller dans la complexité: sans être un logiciel libre, *Notion* offre la possibilité à ses utilisateurs de créer leur propre « modèle », et de les offrir (voire de les vendre, si désiré!) à la communauté Web. Ainsi, [plus de 20 000 modèles *Notion* sont disponibles en ligne](https://www.notion.so/fr/templates)! Vous trouverez de multiples modèles pour répondre à tous vos besoins: que ce soit pour la gestion de vos finances ou pour gérer votre vie étudiante, la communauté *Notion* est large et structurée. Tous les modèles disponibles s'importent en deux clics, et vous permettent de les modifier complètement au besoin. Avec le temps et l'expérience, vous pourrez vous-même créer vos propres modèles et les offrir gratuitement (ou à votre prix!) à la communauté.
+Il n'est toutefois pas nécessaire d'aller dans la complexité: sans être un logiciel libre, *Notion* offre la possibilité à ses utilisateurs de créer leur propre « modèle », et de les offrir (voire de les vendre, si désiré!) à la communauté Web. Ainsi, [plus de 20 000 modèles *Notion* sont disponibles en ligne](https://www.notion.so/fr/templates). Vous trouverez de multiples modèles pour répondre à tous vos besoins: que ce soit pour la gestion de vos finances ou pour gérer votre vie étudiante, la communauté *Notion* est large et structurée. Tous les modèles disponibles s'importent en deux clics, et vous permettent de les modifier complètement au besoin. Avec le temps et l'expérience, vous pourrez vous-même créer vos propres modèles et les offrir gratuitement (ou à votre prix!) à la communauté.
 
 Notez également que l'utilisation individuelle de *Notion* est tout à fait gratuite. En payant, vous vous offrez bien sûr davantage de possibilités (comme l'utilisation de l'intelligence artificielle intégrée de *Notion*), mais l'utilisation gratuite de base peut être bien suffisante pour vos besoins.
 
-Avec un seul outil, *Notion* peut vous permettre de gérer à la fois votre vie personnelle et votre vie professionnelle. Pour se lancer, [des guides simples sont disponibles (en français!) sur le site Web](https://www.notion.so/fr/help/category/new-to-notion).
+Avec un seul outil, *Notion* peut vous permettre de gérer à la fois votre vie personnelle et votre vie professionnelle. Pour se lancer, [des guides simples sont disponibles sur le site Web](https://www.notion.so/fr/help/category/new-to-notion).
 
 Notez également que *Notion* possède sa propre application de calendrier. *Notion Calendar* permet d'importer vos calendriers *Google*, en plus d'afficher tous les jours vos échéances de stories.
 
-Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web. En deux clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
+Vous souhaitez créer une page *Notion* pour votre prochain voyage entre amis? Rien de plus simple! Vous pourrez y intégrer une liste d'idées d'activités, un calendrier de vos destinations, un Kanban rassemblant toutes les tâches à accomplir d'ici au départ, et partager le tout à vos amis via le Web. En quelques clics, toutes les pages *Notion* peuvent être transformées en site Web consultable et modifiable (si on le souhaite et l'autorise).
 
 Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir à quoi ressemblera l'application dans 10 ans. Victime de son succès, l'entreprise s'est plusieurs fois réinventée, misant sur une gestion de projet Agile, en communication avec sa clientèle, pour développer un outil à l'image des besoins et des intérêts de ses utilisateurs.
 

@@ -1,8 +1,12 @@
 # Le logiciel libre et le code source ouvert {#sec-chap1}
 
 \begin{center}
-\textit{Jozef Rivest et Catherine Ouellet}
+\textit{Jozef Rivest\footnotemark[1], 
+Catherine Ouellet\footnotemark[2]}
 \end{center}
+
+\footnotetext[1]{University of Michigan}
+\footnotetext[2]{Université de Montréal}
 
 <!-- # Vers une science numérique plus transparente: l'apport du logiciel libre et du code ouvert dans les sciences sociales {#sec-chap1 .unnumbered} -->
 
