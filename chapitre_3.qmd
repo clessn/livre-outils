@@ -84,7 +84,11 @@ Dans le contexte du milieu académique, cela pourrait se traduire par:
 
 Loin de dire que l'apprentissage d'outils n'est pas utile en Agilité, la première valeur rappelle que la recherche académique est avant tout une aventure collaborative lors de laquelle les discussions avec les collègues permettent de résoudre de nombreux défis, de comprendre les contributions recherchées et de créer des publications ou projets pertinents et de qualité. L'utilité des méthodes de travail et des outils est optimisée à l'intérieur d'une équipe engagée.
 
-La deuxième valeur présente le coeur de l'application concrète de l'Agilité: un projet Agile doit être divisés, dès le départ, en de nombreux livrables, chacun avec une date d'échéance déterminée. Plutôt que de prendre des mois, voire des années à rédiger un devis --- qui sera largement modifié dans tous les cas, la version finale d'une thèse n'a bien souvent rien à voir avec son idéation initiale --- un projet Agile produit une grande quantité de petits « incréments », qui permettent de le faire avancer concrètement. Chaque livrable (une petite partie du projet, par exemple « 2 pages de la revue de littérature ») peuvent ensuite être évaluée, adaptée et potentiellement permettre une réévaluation du devis initial. 
+La deuxième valeur illustre concrètement l’esprit de l’Agilité. Dès le départ, un projet Agile doit être divisé en plusieurs livrables, chacun associé à une date d’échéance claire. 
+
+Plutôt que de consacrer des mois — voire des années — à rédiger un devis qui sera de toute façon modifié, l’approche Agile consiste à produire de petits incréments réguliers. Ces résultats partiels font progresser le projet de manière tangible. 
+
+Chaque livrable (par exemple, deux pages de la revue de littérature) peut ensuite être évalué, ajusté et, si nécessaire, amener une révision du plan initial.
 
 La troisième valeur répond à un impératif de la science: offrir des contributions originales répondant à des lacunes de la littérature. Le chapitre 4 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'études et à repérer les failles et apports potentiels. La quatrième valeur présente le  En recherche, il est essentiel d'accepter que les résultats puissent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
 
