@@ -306,19 +306,19 @@ importantes sur le bien-être de nos sociétés. Restons vigilants.
 
 ## Arpentage et choix éditoriaux: les différents outils de l'IA
 
+# [Kateline] - 2025-10-15 : Texte  que je veux modificier ci-dessous
 Cette section vise à présenter différents outils de l'IA aux lecteurs.
 Ce qui est important de comprendre ici, et pour faire suite à la
 section précédente, c'est que les outils de l'IA risquent d'avoir
 changé entre le moment d'écrire ce chapitre et le moment où les
 lecteurs le liront. Certaines fonctionnalités pourraient toujours
 être les mêmes, certaines pourraient avoir été améliorées et d'autres
-pourraient être complètement nouvelles. Par conséquent, l'objectif
-ici est de présenter certaines utilités et fonctionnalités de l'IA,
-et surtout d'inciter les lecteurs à développer leurs propres capacités
-réflexives quant à leur utilisation de ces outils. Cette technologie
-offre de nouvelles opportunités, mais elle apporte aussi son lot
-d'enjeux et de questions dont il est important de soulever afin de
+pourraient être complètement nouvelles. 
+Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA,et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils.
+Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de
 développer une utilisation saine et intègre de ces outils.
+# [Kateline] - 2025-10-15 : Texte modifoer et remplacer ci-dessous pour clarifier les enjeux et fludifier le texte 
+Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qui est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA risquent d'avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. L'objectif est donc de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Nous examinerons notamment comment ces outils peuvent être utilisés de manière efficace dans divers contextes, tout en soulevant des questions importantes concernant la vie privée, les biais algorithmiques et la fiabilité de l'information. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux dont il est crucial de prendre conscience afin de développer une utilisation saine, éthique et intègre de ces outils.
 
 Avant de situer les outils sélectionnés pour ce chapitre, il est
 important de mentionner que l'IA, et surtout l'apprentissage machine,
