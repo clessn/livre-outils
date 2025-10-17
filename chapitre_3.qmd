@@ -1,10 +1,12 @@
 # Outils de gestion de flux de travaux: la méthode Agile pour le monde académique {#sec-chap3}
 
 \begin{center}
-\textit{Adrien Cloutier\footnotemark[1]}
+\textit{Adrien Cloutier\footnotemark[1], 
+Jérémy Gilbert\footnotemark[2]}
 \end{center}
 
 \footnotetext[1]{Université Laval}
+\footnotetext[2]{Western University}
 
 À l'ère du numérique, le monde de la recherche est en fulgurante transformation. Les outils de recherche sont plus nombreux que jamais et l'écart dans la littératie numérique des chercheurs, comme dans la population générale, se creuse chaque année. Avant même de se lancer dans la recherche scientifique -- mais ceci est vrai pour tous les domaines d'emplois -- les travailleurs qui prennent le temps de s'intéresser et de réfléchir à la gestion de leur « workflow » (l'OQLF recommande la traduction « flux de travaux », qui sera utilisée dans ce chapitre pour représenter la large catégorie des outils numériques permettant d'augmenter l'efficacité et la productivité), en visant l'apprentissage et l'utilisation des meilleurs outils numériques sur le marché, sortiront avec un avantage compétitif énorme par rapport à leurs collègues.
 
