@@ -19,7 +19,10 @@ Bienvenue ! Ce guide vous aidera à contribuer à notre projet de livre héber
 6. [Valider vos modifications](#valider-vos-modifications)
 7. [Pousser les modifications sur GitHub](#pousser-les-modifications-sur-github)
 8. [Créer une Pull Request](#créer-une-pull-request)
-9. [Étapes suivantes](#étapes-suivantes)
+9. [Compiler le livre complet](#compiler-le-livre-complet)
+10. [À propos du fichier .gitignore](#à-propos-du-fichier-gitignore)
+11. [Gestion de la bibliographie avec Zotero](#gestion-de-la-bibliographie-avec-zotero)
+12. [Étapes suivantes](#étapes-suivantes)
 
 ---
 
@@ -141,6 +144,136 @@ git push --set-upstream origin main
 
 7. Cliquez à nouveau sur **Create Pull Request** pour soumettre.
 
+## Compiler le livre complet
+
+### Pourquoi compiler le livre complet ?
+
+Ce projet est un **livre Quarto**, pas une collection de documents indépendants. Il est essentiel de toujours compiler le livre dans son ensemble et **jamais** les chapitres individuellement.
+
+### La commande à utiliser
+
+Pour compiler le livre en PDF, ouvrez votre terminal dans le dossier du projet et exécutez :
+
+```bash
+quarto render index.qmd --to pdf
+```
+
+Ou simplement :
+
+```bash
+quarto render
+```
+
+Le PDF final sera généré dans le dossier `_book/`.
+
+### Pourquoi compiler via `index.qmd` et non par chapitre ?
+
+**Compiler via `index.qmd`** (le point d'entrée du livre) permet à Quarto de :
+
+1. **Traiter tous les chapitres dans le bon ordre** tel que défini dans `_quarto.yml`
+2. **Gérer correctement les références croisées** entre chapitres (ex: `@sec-chap5`)
+3. **Compiler la bibliographie une seule fois** pour tout le livre à partir de `livre-outils.bib`
+4. **Centraliser les ressources** (images, tableaux, graphiques) dans le dossier `images/`
+5. **Générer une table des matières cohérente** pour l'ensemble du livre
+
+**⚠️ NE PAS compiler les chapitres individuellement !**
+
+Si vous compilez un chapitre seul (ex: `quarto render chapitre_3.qmd`), cela :
+- Crée des dossiers `chapitre_X_files/` indésirables à la racine du projet
+- Produit des PDFs autonomes qui ne s'intègrent pas au livre
+- Empêche les références croisées de fonctionner
+- Duplique inutilement les ressources
+
+### Prévisualiser pendant l'édition
+
+Pour voir vos modifications en temps réel pendant que vous éditez :
+
+```bash
+quarto preview
+```
+
+Cela ouvre le livre dans votre navigateur et se met à jour automatiquement quand vous sauvegardez vos changements.
+
+## À propos du fichier .gitignore
+
+### Qu'est-ce que le .gitignore ?
+
+Le fichier `.gitignore` indique à Git quels fichiers et dossiers **ne doivent pas** être suivis dans le dépôt. Cela garde le projet propre et évite de partager des fichiers inutiles ou problématiques.
+
+### Ce qui est ignoré dans ce projet
+
+Le `.gitignore` est configuré pour exclure :
+
+- **`_book/`** : Le dossier contenant le PDF compilé (peut être regénéré)
+- **`.quarto/`** : Cache interne de Quarto
+- **`*_files/` et `*_cache/`** : Dossiers créés par erreur lors de rendus de chapitres individuels
+- **Fichiers LaTeX temporaires** : `.aux`, `.log`, `.toc`, `.out`, etc.
+- **Fichiers système** : `.DS_Store` (macOS), `Thumbs.db` (Windows)
+- **Fichiers Office temporaires** : `~$*.docx`, `~$*.xlsx`, etc.
+
+### Pourquoi c'est important
+
+- **Dépôt plus propre** : Seuls les fichiers sources (`.qmd`, images, données) sont versionnés
+- **Éviter les conflits** : Les fichiers générés diffèrent d'une machine à l'autre
+- **Taille réduite** : Le dépôt reste léger et rapide à cloner
+- **Reproductibilité** : N'importe qui peut cloner le projet et exécuter `quarto render` pour obtenir le même résultat
+
+## Gestion de la bibliographie avec Zotero
+
+**Cette section explique comment gérer les références bibliographiques du livre.** Toutes les citations dans le texte (format `@auteur_annee`) sont automatiquement compilées en une bibliographie à la fin du livre. La source unique de vérité pour toutes les références est la bibliothèque de groupe Zotero **CLESSN**, qui est automatiquement exportée vers le fichier `livre-outils.bib`.
+
+### Installation et configuration de Zotero
+
+Dans cette section, vous serez amené à installer Zotero ainsi que Better BibTeX, une extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
+
+#### Zotero
+
+- Installer [Zotero](https://www.zotero.org/download/)
+- Installer [Zotero Connector](https://www.zotero.org/download/)
+
+- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez-le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+
+- Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
+
+#### Better BibTeX
+
+- La prochaine étape sera d'installer [Better BibTeX](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools > Add-ons ensuite cliquez sur l'icône de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
+
+*IMPORTANT*
+
+- Une fois l'add-on installé, allez dans les paramètres de Better BibTeX en allant dans l'onglet Zotero > Settings > Onglet Better BibTeX > Open Better BibTeX preferences...
+
+- Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
+
+#### Génération du fichier .bib
+
+Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries.
+
+*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
+
+Clic-droit sur la collection livre-outils > Export Collection, choisissez le format Better BibLaTeX et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le repo du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet GitHub quand vous ferez vos pull requests.
+
+Vous remarquerez qu'il y a déjà un fichier .bib dans le dossier. Vous pouvez le supprimer et le remplacer par le fichier que vous venez de générer.
+
+#### Utilisation de Zotero lors de l'écriture
+
+Lors de l'écriture, vous n'avez qu'à écrire @ dans votre éditeur pour faire sortir la palette de référencement.
+
+#### Ajouter des références à Zotero
+
+Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
+
+- Drag & drop à partir de votre librairie personnelle
+- Drag & drop les PDF que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
+- Si il ne réussit pas, vous pourrez ajouter la référence en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
+- Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection appropriée.
+
+#### Autres avantages de Zotero
+- Centralisation des PDFs
+- Organisation des lectures par projet
+- Annotations et notes directement dans Zotero
+- Recherche rapide dans votre bibliothèque
+
 ## Étapes suivantes
 
 - **Attendre la revue** : Les mainteneurs du projet examineront vos modifications. Ils peuvent poser des questions ou demander des ajustements.
@@ -161,58 +294,5 @@ Si vous rencontrez des problèmes ou avez des questions, veuillez contacter les 
 ---
 
 Merci pour votre contribution !
-
-
-## À propos de Zotero
-
-### Installation et configuration de Zotero 
-
-Dans cette section, vous serez amené à Installer Zotero ainsi que Better Bibtex, un extension de Zotero servant à générer et maintenir à jour des fichiers .bib à partir de Zotero.
-
-#### Zotero
-
-- Installer [Zotero](https://www.zotero.org/download/)
-- Installer [Zotero Connector](https://www.zotero.org/download/)
-
-- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
-
-- Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
-
-#### Better Bibtex
-
-- La prochaine étape sera d'installer [Better BibTex](https://retorque.re/zotero-better-bibtex/installation/). Pour ce faire, allez dans l'onglet tools > Add-ons ensuite cliquez sur l'icone de paramètre et faites Install Add-on From File. Sélectionnez le fichier .xpi que vous avez téléchargé.
-
-*IMPORTANT* 
-
-- Une fois l'add-on installé, allez dans les paramètres de Better Bibtex en allant dans l'onglet Zotero > Settings > Onglet Better Bibtex>Open Better Bibtex preferences...
-
-- Dans la section Citation Key Format, collez ceci: `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`
-
-#### Génération du fichier .bib 
-
-Dans Zotero, vous devriez maintenant voir le groupe Zotero CLESSN dans les Group Libraries. 
-
-*Il est important de comprendre que tout changement que vous faites dans Zotero sera automatiquement synchronisé avec le groupe Zotero CLESSN. Si vous supprimez une référence, elle sera supprimée pour tout le monde!*
-
-Clic-droit sur la collection livre-outils > Export Collection choisissez le format Better BibLaTex et cochez la case [x] Keep updated. Faites OK et sauvegardez le fichier dans le repo du projet livre-outils. Ce dossier sera constamment mis à jour avec les changements que vous faites dans Zotero et sera synchronisé avec le projet Github quand vous ferez vos pull requests.
-
-Vous remarquerez qu'il y a déjà un fichier .bib dans le dossier. Vous pouvez le supprimer et le remplacer par le fichier que vous venez de générer.
-
-#### Utilisation de Zotero lors de l'écriture
-
-Lors de l'écriture, vous n'avez qu'a écrire @ dans votre éditeur pour faire sortir la palette de référencement.
-
-#### Ajouter des références à Zotero
-
-Il y a différentes façon d'ajouter des références au groupe Zotero CLESSN.
-
-- Drag & drop à partir de votre librairie personelle
-- Drag & drop les pdf que vous avez sur votre ordinateur dans la collection livre-outils. Zotero va essayer de trouver les métadonnées automatiquement.
-- Si il ne réussi pas, vous pourrez ajouter la références en cliquant sur la baguette magique en haut à gauche du symbole " + " vert. L'outil de baguette magique est utile si vous possédez le DOI ou le ISBN de l'article/livre que vous devez ajouter. Dans les rares cas où Zotero ne trouve rien à propos de votre référence, vous pourrez remplir les différents champs manuellement.
-- Utiliser le connecteur à l'intérieur de votre fureteur web. Zotero va aussi tenter de télécharger l'article directement et l'inclure dans la collection approprié.
-
-#### Autres raisons d'utiliser Zotero
-- Centralisation des pdf
-- Autre
 
 

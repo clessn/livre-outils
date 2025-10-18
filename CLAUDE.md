@@ -2,53 +2,94 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [How to Compile the Book](#how-to-compile-the-book)
+3. [Project Structure](#project-structure)
+4. [Bibliography Management with Zotero](#bibliography-management-with-zotero)
+5. [Git and Version Control](#git-and-version-control)
+6. [Collaboration Workflow](#collaboration-workflow)
+7. [Writing Guidelines](#writing-guidelines)
+8. [Common Tasks](#common-tasks)
+
 ## Project Overview
 
 This is a Quarto book project titled "Outils de recherche en sciences sociales numériques" (Digital Research Tools in Social Sciences), authored by CLESSN (Chaire de leadership en enseignement des sciences sociales numériques). The book is written in French and covers digital tools and methodologies for social science research.
 
-## Building and Rendering
+## How to Compile the Book
 
-**IMPORTANT**: Always render the complete book using the commands below. Do NOT render individual chapters as this creates unwanted `*_files/` directories at the project root and bypasses the proper book structure.
+### The Correct Way: Compile via `index.qmd`
 
-### Render the book to PDF (RECOMMENDED)
+**IMPORTANT**: Always render the complete book by targeting `index.qmd`. This is the entry point that Quarto uses to orchestrate the entire book compilation.
+
 ```bash
-quarto render
-# or explicitly:
+# Recommended command from terminal:
 quarto render index.qmd --to pdf
 ```
 
-The output will be generated in the `_book/` directory as specified in `_quarto.yml`.
+Or simply:
+```bash
+quarto render
+```
 
-### Preview the book during development
+**Why compile through `index.qmd` and not individual chapters?**
+
+1. **Book Structure**: Quarto treats this as a book project (defined in `_quarto.yml`). The `index.qmd` file serves as the front matter and triggers the complete book build process.
+
+2. **Centralized Resource Management**: When compiling through `index.qmd`:
+   - All chapters are processed in the correct order
+   - Cross-references between chapters work properly (`@sec-chapX`)
+   - The bibliography (`livre-outils.bib`) is compiled once for the entire book
+   - Images and resources are managed centrally in the `images/` directory
+   - Output goes to the `_book/` directory as configured
+
+3. **Avoid Pollution**: Compiling individual chapters (e.g., `quarto render chapitre_1.qmd`) creates:
+   - Unwanted `chapitre_X_files/` directories at the project root
+   - Standalone PDFs that don't integrate with the book structure
+   - Duplicate resource processing and broken cross-references
+
+### Output Location
+
+The compiled PDF will be generated in:
+```
+_book/Outils-de-recherche-en-sciences-sociales-numériques.pdf
+```
+
+### Preview During Development
+
+To preview the book in your browser while editing:
 ```bash
 quarto preview
 ```
 
-### Testing changes after editing
-After modifying chapters, always render the complete book to verify changes:
-```bash
-quarto render
-```
+This starts a local server and automatically refreshes when you save changes to `.qmd` files.
 
-### WARNING: Do NOT render individual chapters
-Rendering individual chapters like `quarto render chapitre_1.qmd --to pdf` will:
-- Create unwanted `chapitre_X_files/` directories in the project root
-- Bypass the book's centralized resource management
-- Produce standalone PDFs instead of integrated book chapters
+### Testing Changes
 
-If you need to test a specific chapter, render the complete book instead.
+After modifying any chapter, always render the complete book to verify:
+- Cross-references still work
+- Bibliography citations are correct
+- Images display properly
+- Table of contents is updated
 
 ## Project Structure
 
 ### Content Organization
+
 - **index.qmd**: Front matter (avant-propos) introducing big data and causality in social sciences
-- **chapitre_1.qmd** to **chapitre_8.qmd**: Main chapters covering topics including:
-  - Chapter 1: Free and open-source software philosophy
-  - Chapter 3: Agile methodology for academic workflows
-  - Other chapters covering various digital research tools
+- **chapitre_1.qmd**: Free and open-source software philosophy
+- **chapitre_2.qmd**: [Chapter 2 topic]
+- **chapitre_3.qmd**: Outils de gestion de projet (Agile methodology for academic workflows)
+- **chapitre_4.qmd**: Outils de gestion de données (data management tools)
+- **chapitre_5.qmd**: Outils de synthèses de la connaissance et gestion des références (Zotero)
+- **chapitre_6.qmd**: Outils de collecte de données (data collection tools)
+- **chapitre_7.qmd**: Outils de visualisation graphique (data visualization)
+- **chapitre_8.qmd**: Outils de rédaction - langages de balisage (LaTeX, Markdown)
+- **chapitre_9.qmd**: Outils d'intelligence artificielle (AI tools for research)
 - **conclusion.qmd**: Concluding chapter
 - **annexe_1.qmd**: Appendix
-- **references.qmd**: Bibliography page
+- **references.qmd**: Bibliography page (automatically generated from citations)
 
 ### Configuration Files
 - **_quarto.yml**: Main Quarto configuration file defining:
@@ -62,10 +103,15 @@ If you need to test a specific chapter, render the complete book instead.
 - **images/**: Directory containing figures and images referenced in chapters
 - **data/**: Contains data files (e.g., titanic.csv)
 - **R/**: Directory containing R scripts used by chapters (e.g., `graphique.R` for Chapter 8)
+- **.gitignore**: Specifies which files and directories Git should ignore (see [Git and Version Control](#git-and-version-control))
 
 ## Bibliography Management with Zotero
 
-The project uses Zotero for reference management:
+**Purpose**: This section explains how the book's bibliography is managed. All citations in the book (formatted as `@author_year` in the `.qmd` files) are automatically compiled into a bibliography at the end of the book. The source of truth for all references is a Zotero group library, which is automatically exported to the `livre-outils.bib` file.
+
+### Workflow Overview
+
+The project uses Zotero as the centralized reference management system:
 
 1. **Zotero Setup**: Team members use a shared Zotero group library called "CLESSN"
 2. **Better BibTeX**: The bibliography file is auto-generated and kept in sync using Better BibTeX
@@ -77,6 +123,53 @@ When modifying bibliography:
 - Changes in Zotero automatically sync to the group library and propagate to the .bib file
 - Be careful: deletions affect all team members
 - Add references via drag-and-drop, magic wand tool (DOI/ISBN), or browser connector
+
+## Git and Version Control
+
+### The `.gitignore` File
+
+**Purpose**: The `.gitignore` file tells Git which files and directories should **not** be tracked or committed to the repository. This is crucial for keeping the repository clean and avoiding unnecessary or problematic files.
+
+### What is Ignored in This Project
+
+The `.gitignore` is configured to exclude:
+
+1. **Build Artifacts and Temporary Files**:
+   - `_book/` - The compiled PDF output directory
+   - `.quarto/` - Quarto's internal cache and processing files
+   - `*_files/` - Chapter-specific resource directories (created when rendering individual chapters incorrectly)
+   - `*_cache/` - Cached computation results
+
+2. **LaTeX Auxiliary Files**:
+   - `.aux`, `.log`, `.toc`, `.out`, `.synctex.gz`, etc.
+   - These are generated during PDF compilation and can be regenerated
+
+3. **System Files**:
+   - `.DS_Store` (macOS)
+   - `Thumbs.db`, `Desktop.ini` (Windows)
+   - These are OS-specific files that don't belong in version control
+
+4. **Office Document Temporary Files**:
+   - `~$*.docx`, `~$*.xlsx`, etc.
+   - Created by Microsoft Office when files are open
+
+### Why This Matters
+
+- **Cleaner Repository**: Only source files (`.qmd`, `.bib`, images, data) are tracked
+- **Avoid Conflicts**: Build artifacts can differ between machines and cause merge conflicts
+- **Smaller Repo Size**: Excluding generated files keeps the repository lightweight
+- **Reproducibility**: Anyone can clone the repo and run `quarto render` to get the same output
+
+### What IS Tracked
+
+The following are tracked in Git:
+- All `.qmd` source files
+- `_quarto.yml` configuration
+- `livre-outils.bib` bibliography
+- Images in `images/`
+- Data files in `data/`
+- R scripts in `R/`
+- `CLAUDE.md` and `.gitignore` itself
 
 ## Collaboration Workflow
 

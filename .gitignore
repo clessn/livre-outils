@@ -103,3 +103,5 @@ _book/
 *.tmp
 *.temp
 *.vdoc.r
+
+/.quarto/

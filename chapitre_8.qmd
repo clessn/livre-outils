@@ -1,1282 +1,303 @@
-# Outils d'intelligence artificielle {#sec-chap8}
+# Outils de rédaction en sciences sociales numériques: les langages de balisage {#sec-chap8}
 
 \begin{center}
-
-Jozef Rivest, Laurence-Olivier Foisy, Hubert Cadieux
-
+\textit{Alexandre Fortier-Chouinard\footnotemark[1], 
+Étienne Proulx\footnotemark[1], 
+Maxime Blanchard\footnotemark[2]}
 \end{center}
 
-Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
-artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son
-potentiel pour les sciences sociales. Dans un premier temps, et en
-trame de fond de ce chapitre, les lecteurs seront appelés à développer
-leurs intuitions dans leur utilisation de différents outils de l'IA.
-Avant tout, au moment d'écrire ces lignes, il est important de
-mentionner que l'étude de l'IA dans les sciences sociales est encore
-jeune. Par conséquent, beaucoup de questions restent encore en
-suspend. Face à ce constat, il est important de développer son
-regard critique afin d'orienter son utilisation de l'IA. Se poser
-des questions et tenter de trouver des réponses ne peut que générer
-des bénéfices. Ainsi, si ce chapitre permet d'éclairer certains
-enjeux, ou s'il stimule davantage de questionnement, alors il aura
-réussi son objectif.
+\footnotetext[1]{Université Laval}
+\footnotetext[2]{McGill University}
 
-Dans un deuxième temps, ce chapitre vise à présenter certains outils
-de l'IA qui s'inscrivent dans les grandes étapes de la recherche.
-Il est important de mentionner que ces outils évoluent à une vitesse
-impressionnante.  Par conséquent, certaines fonctionnalités présentées
-dans ce chapitre peuvent possiblement changer dans les prochaines
-années. Les lecteurs sont appelés à consulter les dernières mises
-à jour de ces outils afin de connaître les derniers changements et
-les nouvelles fonctionnalités. Bien qu'il soit difficile de catégoriser
-ces outils de manière exclusive dans chacune de ces catégories, un
-certain ordre d'utilisation est proposé. Celui-ci est surtout
-illustratif afin de présenter les fonctionnalités principales.
-Cependant, les lecteurs sont appelés à réfléchir à propos de
-l'intégration de ces outils dans leur flux de travail en fonction
-de leur besoin.
+En lisant un article scientifique, une page Web ou un curriculum vitæ professionnel, comme plusieurs lecteurs l'auront sans doute deviné, le texte n'est pas toujours produit à l'aide d'un logiciel de traitement de texte comme Microsoft Word, Apple Pages ou LibreOffice Writer. La mise en page complexe réglée au millimètre près, la qualité des figures et des tableaux, l'utilisation de gabarits professionnels, le style des références ou encore la présence d'éléments interactifs sont difficiles et parfois impossibles à reproduire à l'aide d'un logiciel de traitement de texte régulier. L'ajout d'extraits de code, de tableaux de régression ou encore de figures de haute qualité graphique, ainsi que leur personnalisation, nécessitent une interface particulière.
 
-La section point d'observation présentera une définition de l'IA, 
-l'évolution de cette dernière dans les dernières années ainsi 
-que la présence et l'utilisation de l'IA dans les sciences 
-sociales. Ensuite, la section arpentage et choix éditoriaux 
-présentera différents outils de l'IA qui s'insèrent bien dans 
-les diffèrentes étapes de la recherche, de la conception jusqu'à la 
-publication des réusltats. Finalement, avant de conclure le chapitre,
-il est intéressant de se demander ce que devient le chercheur à l'aube 
-de cette révolution technologique. 
+Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou *markup languages*. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l'aide du langage de balisage Markdown avec l'aide du système de publication Quarto. Les logiciels de traitement de texte et les langages de balisage font tous partie de la catégorie des **outils de rédaction**. 
 
-## Point d'observation:
+Il est d'ailleurs important de distinguer les langages de balisage des langages de programmation, qui sont abordés plus en détail dans le chapitre 2. En effet, ceux-ci sont similaires à certains égards, mais ont des vocations différentes. Les deux s'appuient sur un langage informatisé, mais les langages et leurs objectifs diffèrent. Un langage de programmation définit des processus informatisés alors qu'un langage de balisage permet d'encoder du contenu de manière à ce que celui-ci soit lisible tant pour l'humain que pour son ordinateur.
 
-### Définition et différents types d'IA
+D'entrée de jeu, il peut sembler curieux d'apprendre des langages de balisage alors que les logiciels de traitement de texte sont nombreux, simples d'approche et en amélioration constante. Ce chapitre n'a pas pour objectif de décourager l'utilisation de ces logiciels, qui sont utiles et même souvent essentiels pour la production rapide de documents ainsi que pour des tâches de suivi des modifications et de travail avec des équipes multidisciplinaires. Le chapitre tentera plutôt de démontrer que la maîtrise des langages de balisage constitue un avantage pour ceux qui souhaitent s'initier au monde de la recherche académique, même si quelques difficultés initiales d'apprentissage peuvent se présenter. Il s'agira de répondre, tour à tour, aux trois grandes questions suivantes : *Qu'est-ce qu'un langage de balisage? Comment utiliser un langage de balisage? Quand et pourquoi utiliser un langage de balisage?* L'accent sera mis sur Quarto ainsi que sur les langages Markdown et \LaTeX, bien que d'autres langages soient aussi abordés.
 
-Qu'est-ce que l'IA ? Est-ce quelque chose d'homogène, ou s'agit-il
-plutôt « des intelligences artificielles »? Dans un premier temps,
-il est important de préciser que l'IA est un champ d'études
-[@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets,
-relativement vaste et en constante expansion, qui s'intéresse, à
-sa façon, à l'IA. Pour préciser ce propos, prenons l'exemple de la
-science politique. Malgré la formulation au singulier, la science
-politique est un grand ensemble de différents sous-champs d'études,
-qui ont chacun leur propre objet d'intérêt. La philosophie politique,
-les relations internationales, la politique comparée et l'étude de
-l'opinion publique, par exemple, sont tous des sous-champs qui
-s'intéressent, à leur façon, au phénomène politique. Dans le même
-sens, et compte tenu de cette pluralité de perspectives, il est
-important de noter qu'il n'y a pas de consensus dans la définition
-de l'IA [@wang19; @konig_etal22]. De plus, la rapidité du développement
-de ce champ rend le traçage de frontières définitionnelles plutôt
-difficile : comment définir, d'une manière précise et consensuelle,
-quelque chose qui évolue constamment [@devedzic22; @bertolini20,
-pp. 15]?
+## Point d'observation : qu'est-ce qu'un langage de balisage?
 
-Deux définitions de l’IA peuvent tout de même être retenues. La
-première vient de John McCarthy [-@mccarthy07, pp. 2] : « Il s'agit
-de la science et de l'ingénierie qui consistent à créer des machines
-intelligentes[^chapitre_8-1], en particulier des programmes
-informatiques intelligents. Elle est liée à la tâche similaire
-consistant à utiliser des ordinateurs pour comprendre l'intelligence
-humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont
-biologiquement observables. »[^chapitre_8-2]. La seconde définition
-provient de la compagnie IBM [-@ibm23] : « Dans sa forme la plus
-simple, l'IA est un domaine qui combine l'informatique et des
-ensembles de données robustes pour permettre la résolution de
-problèmes. Elle englobe également les sous-domaines de l'apprentissage
-automatique et de l'apprentissage profond, qui sont souvent mentionnés
-en conjonction avec l'IA. Ces disciplines sont composées d'algorithmes
-d'IA qui cherchent à créer des systèmes experts qui font des
-prédictions ou des classifications basées sur des données d'entrée
-». Ces extraits permettent de comprendre que l'IA consiste à
-reproduire artificiellement certaines capacités cognitives humaines,
-afin de rendre les machines « intelligentes » en leur donnant la
-capacité de résoudre des problèmes par elles-mêmes.
+Un langage de balisage constitue un ensemble de commandes qui peuvent être entremêlées à du texte afin de produire une action informatique. Chaque langage contient son propre ensemble de commandes cohérentes et complémentaires. De manière plus formelle, ces commandes sont nommées *balises* (*tags* en anglais) et inscrites par le chercheur au travers du texte. Les balises constituent une manière de communiquer avec le logiciel utilisé dans un langage qu'il peut comprendre. Par exemple, une balise permet d'indiquer au programme qui exécutera la commande que l'on désire qu'une section du texte soit écrite en caractères gras, en italique, à double interligne ou encore que l'on souhaite positionner une image d'une certaine manière au travers du texte. Cette interaction est rendue possible par la standardisation des langages de balisage : chaque balise correspond à une action précise, peu importe le logiciel utilisé, la langue dans laquelle le texte est rédigé, le type d'ordinateur utilisé, etc. Dans le document source, les balises sont entremêlées au contenu du document. Au moment de compiler ce dernier, les balises produisent les actions informatisées qu'elles commandent et laissent comme document final le contenu mis en page tel que défini par l'auteur via les balises utilisées. La compilation est le processus par lequel un document écrit en langage de balisage est transformé en fichier textuel, en format PDF dans le cas de \LaTeX par exemple. La @fig-vscode montre un exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme-logiciel Visual Studio Code (VS Code). L'écran à droite de l'image montre le fichier PDF résultant du formatage réalisé dans la partie centrale de l'écran. Les balises utilisées sont décrites plus loin dans ce chapitre.
 
-[^chapitre_8-1]: Intelligence étant défini de la façon suivante :
-« L'intelligence est la partie informatique de la capacité à atteindre
-des objectifs dans le monde. On trouve différents types et degrés
-d'intelligence chez l'homme, chez de nombreux animaux et chez
-certaines machines. » [@mccarthy07, pp. 2]
+```{r}
+#| label: fig-vscode
+#| echo: false
+#| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+knitr::include_graphics("images/chapitre_8_vscode.png", dpi = 500)
+```
 
-[^chapitre_8-2]: Toutes les traductions ont été effectuées par le
-logiciel DeepL
+Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage : les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb96]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX en 1985, [Bib]{.smallcaps}\TeX en 1988, HTML en 1993, XML en 1998, Markdown en 2004 et `R` Markdown en 2012 [@encyclopaediabritannica23a; @hameed23a; @markdownguide23a; @worldwidewebconsortium98; @xie23a].
 
-Ces définitions restent toutefois à préciser, notamment dans le
-champ d'application de l'IA : qu'en est-il concrètement ? Comment
-est-ce utilisé ?  Comment ça fonctionne ? Si l’IA se distingue en
-plusieurs types, en faire la liste et identifier leurs différentes
-branches et applications possibles serait fastidieux et s'écarterait
-de l'objectif de ce chapitre introductif. Cependant, pour ceux
-désirant en savoir plus sur le sujet, les articles de McCarthy
-[-@mccarthy07] et de Hanchen et al.
-[-@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23], ainsi
-que le Cambridge Handbook of Artificial Intelligence [@konig_etal22]
-sont très riches et illustratifs.
+Les langages de balisage permettent d'effectuer différentes tâches. HTML, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. XML, quant à lui, permet de structurer de larges volumes de données. \LaTeX permet pour sa part de formater du texte et de créer des documents en format PDF. Markdown permet également de créer des documents en format PDF, mais aussi en format HTML ou DOCX --- format utilisé pour les documents Word ---, contrairement à \LaTeX. `R` Markdown permet aussi d'ajouter des extraits de code `R` à un fichier en langage Markdown. Enfin, depuis 2022, le système de publication scientifique et technique multilingue Quarto permet de créer des documents qui intègrent des extraits de code `R`, \LaTeX, Python, Julia ou JavaScript, créés dans différents types d'environnements, à un fichier en langage Markdown [@allaire22]. \LaTeX, Markdown, `R` Markdown et Quarto permettent aussi d'intégrer les références bibliographiques du système de traitement de références [Bib]{.smallcaps}\TeX. Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d'un même fichier. Le chapitre 4 explique la manière de citer les références en langage [Bib]{.smallcaps}\TeX par le biais de Zotero et de Better [Bib]{.smallcaps}\TeX.
 
-Avant toute chose, il est important de distinguer l'IA général
-(strong) du précis (narrow). Le premier, et le moins populaire en
-nombre de recherches et d'applications, cherche à développer une
-machine qui aurait les mêmes capacités cognitives que l'humain, non
-seulement en termes de résolution de problème, d'apprentissage et
-de planification, mais aussi qui serait dotée d'une conscience de
-soi [@ibm23; @konig_etal22]. Le deuxième est plus restrictif, se
-limitant à la réalisation d'un ou de plusieurs objectifs spécifiques.
-De ces deux visées, il y a trois principaux champs de recherche qui
-se penchent sur les méthodes de fonctionnement de l'IA : l'apprentissage
-machine (machine learning), les réseaux neuronaux artificiels
-(artificial neural networks) ainsi que l'apprentissage profond (deep
-learning).
+Pour mieux comprendre ces différents langages, il est utile de les concevoir selon différents niveaux d'abstraction. L'abstraction, définie comme le processus qui consiste à simplifier des systèmes complexes en se concentrant sur les aspects essentiels [@kramer07; @hazzan02], constitue un concept fondamental en informatique. Dans le contexte des langages de balisage, cette perspective permet de distinguer différents niveaux selon leur complexité syntaxique et leur facilité d'utilisation. Comme le souligne @neumanns19, il existe une tension fondamentale entre la facilité d'usage et la puissance pour les documents complexes. Bien que les langages de balisage forment en réalité un continuum entre puissance et simplicité [@arloing_etal16], ce chapitre propose de les organiser selon trois niveaux d'abstraction pour faciliter leur compréhension. Cette simplification pédagogique, illustrée dans la @fig-niveaux-abstraction, permet de distinguer les principales approches de balisage selon leur complexité d'usage.
 
-L'apprentissage machine :
+```{r}
+#| label: fig-niveaux-abstraction
+#| echo: false
+#| fig-cap: "Niveaux d'abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d'usage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| out.width: "90%"
+knitr::include_graphics("images/chapitre_8_niveaux_abstraction.png", dpi = 500)
+```
 
-\begin{singlespacing} \begin{displayquote} « [...] consiste à
-programmer des ordinateurs pour optimiser un critère de performance
-à l'aide de données d'exemple ou d'expériences passées. Nous avons
-un modèle défini jusqu'à certains paramètres, et l'apprentissage
-est l'exécution d'un programme informatique pour optimiser les
-paramètres du modèle à l'aide des données d'entraînement ou de
-l'expérience passée » (Alpaydin et Bach 2014, pp. 3).  \end{displayquote}
-\end{singlespacing}
 
-Le but est d'entraîner le modèle afin qu'il puisse reconnaître des
-tendances, et qu'il puisse décrire et/ou faire des prédictions à
-partir de ces tendances [@alpaydin_bach14, pp. 3]. Il est le champ
-le plus populaire dans la recherche faite sur l'IA, notamment parce
-qu'il constitue une base importante pour les autres recherches dans
-le domaine [@devedzic22].
+Les langages à syntaxe complexe constituent le premier niveau de cette hiérarchisation. Ces langages nécessitent de spécifier explicitement de nombreux détails techniques [@gratzer08]. L'utilisateur doit comprendre et contrôler directement les mécanismes sous-jacents : balises détaillées en HTML, schémas complexes en XML, commandes typographiques précises en \LaTeX. Au deuxième niveau, un langage comme Markdown simplifie l'interaction en cachant la complexité technique derrière une syntaxe intuitive [@arloing_etal16]. L'utilisateur se concentre sur le contenu plutôt que sur les détails de formatage, le système gérant automatiquement la conversion vers différents formats.
 
-Ensuite, un sous-champ de l'apprentissage machine, l'apprentissage
-profond, « \[...\] fait référence à un réseau neuronal composé de
-plus de trois couches \[...\]. L'apprentissage en profondeur
-automatise une grande partie de l'extraction des caractéristiques,
-éliminant ainsi une partie de l'intervention humaine manuelle
-nécessaire et permettant l'utilisation d'ensembles de données plus
-importants. Il peut ingérer des données non structurées dans leur
-forme brute et déterminer automatiquement la hiérarchie des
-caractéristiques qui distinguent les différentes catégories de
-données les unes des autres, ne nécessitant pas d'intervention
-humaine. » [@ibm23]. Ainsi, l'apprentissage profond permet une
-certaine forme d'automatisation des tâches demandées à l'IA, en lui
-fournissant les capacités nécessaires d'apprendre par lui-même pour
-corriger et améliorer son fonctionnement. Pour ce faire, on doit
-développer des structures neuronales artificielles, qui s'inspirent
-des neurones du cerveau humain.
+Le troisième niveau comprend les systèmes de publication computationnelle. Contrairement aux langages traditionnels qui peuvent être étendus pour supporter l'exécution de code, R Markdown et Quarto sont conçus dès le départ pour intégrer programmation lettrée et recherche reproductible [@knuth84; @allaire22]. Ces systèmes masquent automatiquement la complexité du balisage, de l'exécution du code et de la génération de résultats dans un flux de travail unifié. Au cœur de cet écosystème se trouve Pandoc, présenté comme un convertisseur universel de documents [@Pandoc]. Pandoc peut convertir entre plus de nombreux formats différents grâce à son architecture modulaire : il lit un document dans un format donné, le convertit en représentation intermédiaire, puis l'écrit dans le format de sortie désiré. Cette capacité de conversion universelle explique pourquoi Quarto et R Markdown peuvent produire des documents PDF, DOCX et HTML à partir d'une seule source Markdown. Cette hiérarchisation illustre comment l'abstraction permet de gérer la complexité [@kramer07] : chaque niveau supérieur simplifie l'usage tout en s'appuyant sur les capacités techniques des niveaux inférieurs. 
 
-C'est d'ailleurs la tâche de ceux qui s'intéressent aux réseaux
-neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA)
-sont constitués d'une couche de nœuds, contenant une couche d'entrée,
-une ou plusieurs couches cachées et une couche de sortie. Chaque
-nœud, ou neurone artificiel, se connecte à un autre et possède un
-poids et un seuil associés. Si la sortie d'un nœud individuel est
-supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie
-des données à la couche suivante du réseau. Dans le cas contraire,
-aucune donnée n'est transmise à la couche suivante du réseau » (IBM
-2023b).  Ainsi, le but est de reproduire les structures cognitives
-humaines, afin de permettre à l'IA d'accomplir des tâches plus
-complexes. L'une des principales utilités de ce sous-champ est qu'il
-permet d'augmenter la rapidité du classement de données ; la
-reconnaissance vocale ou d'image, par exemple, ne prend que quelques
-minutes grâce à cela, contrairement à plusieurs heures, lorsque
-fait par des humains [@ibm23a].
+Les balises constituent une manière de donner manuellement des commandes au logiciel utilisé. Par contraste, avec Microsoft Word, une panoplie de boutons permettent de formater le texte. Les balises exercent les mêmes fonctions de formatage pour les fichiers produits en \LaTeX ou en Markdown, mais doivent être ajoutées à l'écrit par l'utilisateur. Lorsque l'on appuie sur un bouton pour formater le texte ou que l'on utilise une commande comme `Ctrl-G` ou `Cmd-I` dans Word, en réalité, cette commande ajoute des balises au travers du texte, mais rend celles-ci invisibles dans l'interface utilisée. Cela permet d'avoir un texte élégant et facile à lire, mais comporte aussi plusieurs inconvénients. Le principal inconvénient est de limiter le pouvoir de l'utilisateur sur le formatage de son texte. En effet, si les boutons à sa disposition dans le logiciel de traitement de texte ne lui permettent pas de réaliser une action, celle-ci sera éternellement impossible à réaliser pour lui. A contrario, les langages de balisage permettent un contrôle presque infini sur les opérations que l'on souhaite réaliser. Incidemment, dans la mesure où l'on utilise le langage approprié pour la tâche que l'on souhaite accomplir, il est possible de donner exactement la commande nécessaire pour réaliser cette action. Bien que l'utilisation de langages de balisage puisse paraître complexe à première vue, il convient de rester attentif aux avantages qu'ils procurent. Les langages de balisage, au-delà du coût d'apprentissage et de l'interface de travail moins intuitive qu'un document Word, offrent notamment une plus grande flexibilité.
 
-### L'évolution constante de l'IA
+Afin d'utiliser un langage de balisage, il est impératif que le logiciel ou environnement de développement intégré utilisé puisse prendre en compte ce langage. Un logiciel permet rarement d'utiliser n'importe quel langage. Par exemple, le logiciel \TeX{}Shop permet seulement d'utiliser le langage \LaTeX. Il est aussi important de bien utiliser le langage de balisage. En effet, comme pour les langages de programmation, les langages de balisage ne peuvent pas déduire ce que l'on souhaite leur faire comprendre. Pour mettre du texte en gras, il faut utiliser les bonnes balises. La moindre erreur peut être coûteuse, puisqu'une erreur dans la balise utilisée risque de produire une commande incompréhensible et un message d'erreur, le logiciel ne réussissant pas à associer la balise mal inscrite à une action informatisée. Conséquemment, il est impératif de bien vérifier les balises utilisées afin d'éviter toute erreur qui empêcherait le document d'être compilé, c'est-à-dire d'être traduit dans son format final[^chapitre_7-1]. Chaque caractère dans une balise est important et il y a rarement plus d'une seule manière de commander une action. Par exemple, en \LaTeX, il n'y a qu'une seule manière de mettre du texte en gras. Il faut précisément utiliser cette commande : `\textbf{}`. Le positionnement des balises est lui aussi critique : il délimite la portion de texte à laquelle doit être appliquée l'action commandée par la balise.
 
-Plusieurs chercheurs, dont le professeur Yoshua Bengio de l'Université
-de Montréal, ont lancé plusieurs avertissements sur le développement
-de l'IA, notamment à cause de la rapidité de son évolution. Dans
-un article paru dans The Economist, Dr. Bengio [-@bengio23] déclare
-qu'il prévoyait le développement d'une IA avec des capacités
-similaires à celles de l'humain d'ici quelques décennies, peut-être
-un siècle. Depuis l'arrivée de ChatGPT-4, celui-ci a revu sa
-prédiction pour la situer entre quelques années et quelques décennies
-[@bengio23]. Dans les dix dernières années seulement, les systèmes
-de reconnaissance d'images et de langages en sont venus à dépasser
-les capacités humaines [@roser22]. La @fig-evolution présente cette
-évolution.
+[^chapitre_7-1]: Certains logiciels et environnements de développement intégrés permettent d'identifier les balises problématiques plus facilement que d'autres. Certains ne produisent qu'un message d'erreur sans donner d'indication sur la source du problème, alors que d'autres ciblent très spécifiquement la ligne de syntaxe où se situe la balise problématique.
 
-<!-- NOTE: Refaire le graphique manuellement -->
+Dans le contexte de la recherche en sciences sociales, la programmation est généralement utilisée afin de récolter, d'analyser et de présenter visuellement des données. Une fois cartes, tableaux et graphiques produits, ceux-ci peuvent être enregistrés --- par exemple en format PDF ou PNG --- et inclus au sein d'un document qui sera formaté en utilisant un langage de balisage. En `R` Markdown et en Quarto, des extraits de langage de programmation peuvent être inclus dans des sections bien délimitées de documents écrits en langage de balisage. Plus généralement, le langage de programmation contribue à l'analyse alors que le langage de balisage est essentiellement utile afin de présenter les travaux de recherche, que ce soit dans un document écrit ou sur un site Web. C'est principalement de cette manière que sont utilisés les langages de programmation et de balisage dans le cadre de la recherche en sciences sociales.
+
+## Arpentage et choix éditorial : quand et pourquoi utiliser un langage de balisage?
+
+La plupart des langages de balisage permettent de remplir l'une des deux fonctions suivantes, qui sont particulièrement importantes dans le contexte de la recherche en sciences sociales : produire des documents écrits et formater des pages Web. Dans les deux cas, ces actions peuvent être réalisées à partir de logiciels simples, mais ces logiciels ont des limites importantes auxquelles les langages de balisage apportent des solutions[^chapitre_7-2].
+
+[^chapitre_7-2]: Les langages de balisage permettent également de créer des pages Web. Bien que des plateformes comme WordPress facilitent cette tâche, HTML offre plus de personnalisation et d'automatisation. Il s'agit encore d'une question d'abstraction : WordPress simplifie l'usage en s'appuyant sur HTML et JavaScript.
+
+Pour l'écriture de documents très simples comme une liste d'épicerie ou des notes rapides pendant une conférence, les logiciels de traitement de texte sont tout à fait convenables : ils sont simples et rapides à utiliser, un formatage professionnel du document n'est pas de mise. Utiliser un langage de balisage pour des tâches de base peut en effet rendre la tâche inutilement longue et complexe. Toutefois, plus la complexité d'un document augmente, plus il devient difficile d'obtenir un résultat satisfaisant en utilisant un logiciel de traitement de texte tel que Word, Pages ou Writer. A contrario, \LaTeX permet de produire des documents de tous les niveaux de complexité, tel que démontré sur la @fig-latex-vs-word. Quant à Markdown, sa courbe d'apprentissage se situerait logiquement entre celles de \LaTeX et de Word, puisque ses balises sont simplifiées. Plus généralement, utiliser un langage de balisage comme \LaTeX ou Markdown[^chapitre_7-3] comporte plusieurs avantages par rapport aux logiciels de traitement de texte traditionnels (voir le Tableau 7.1). Ces avantages font tous appel à un mélange de quatre concepts principaux : *automatisation*, *personnalisation*, *flexibilité* et *qualité graphique*.
+
+[^chapitre_7-3]: Les avantages et désavantages de Markdown cités dans cette section s'appliquent également à Quarto et à `R` Markdown, puisque ces derniers font appel au langage Markdown.
+
+```{r}
+#| label: fig-latex-vs-word
+#| echo: false
+#| out.width: "70%"
+#| fig-cap: "Utilité relative de Word et des langages de balisage selon la complexité et la taille du document \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre inspiré de @quangtrungluu23."
+knitr::include_graphics("images/chapitre_8_word_vs_latex.png")
+```
+
+```{r tab_avantages}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(tinytable)
+
+tbl_langages_balisage <- tibble(
+    Critères = c('Accessibilité (Gratuit ou peu dispendieux)',
+                 'Existence d\'une communauté d\'utilisateurs',
+                 'Popularité dans le champ',
+                 'Compatibilité avec d\'autres outils',
+                 'Transparence et réplicabilité',
+                 'Adaptabilité et flexibilité'),
+    'LaTeX' = c('Oui', 'Très grande', 'Oui', 'Moyenne', 'Oui', 'Très forte'),
+    'R Markdown' = c('Oui', 'Grande', 'Oui', 'Forte', 'Oui', 'Forte'),
+    'Quarto' = c('Oui', 'Moyenne', 'Oui', 'Forte', 'Oui', 'Forte'),
+    'Word' = c('Non', 'Très grande', 'Oui', 'Faible', 'Non', 'Forte'))
+
+tt(tbl_langages_balisage, width =  c(.35, .15, .15, .15, .15), caption = 'Tableau 7.1: Comparaison des outils de rédaction', notes = list(
+  a = list(i = 5:5, j = 2, text = "Bien que \\LaTeX\\ offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code."),
+  b = list(i = 2:2, j = 4, text = "Quarto est relativement récent et semble prendre de plus en plus la place de R Markdown parmi la communauté d'utilisateurs de R. Le nombre d'utilisateurs de Quarto est donc appelé à croître dans les prochaines années."))
+)
+```
+
+### Avantages
+
+#### Référencement
+
+Premièrement, \LaTeX et Markdown permettent d'intégrer une bibliographie *automatique* et professionnelle en utilisant [Bib]{.smallcaps}\TeX. Cette bibliographie peut être adaptée très facilement en différents styles bibliographiques reconnus ou en un style bibliographique *personnalisé* à partir d'un des nombreux gabarits professionnels disponibles. Avec [Bib]{.smallcaps}\TeX, il n'y a pas à vérifier si le titre de l'article est toujours en italique, si le numéro de volume est toujours entre parenthèses ou si le nom de famille des deuxièmes auteurs est toujours avant ou après le prénom puisque toutes ces opérations sont effectuées de manière *automatique*. [Bib]{.smallcaps}\TeX comprend également les différences entre les types de sources --- articles scientifiques, livres, sites Internet, etc. --- et ajuste leur présentation en conséquence. De plus, si l'une des sources citées n'est pas incluse dans la bibliographie, une erreur s'affiche, permettant d'identifier le problème plutôt que de se retrouver avec une référence manquante. À l'inverse, si une source est retirée du texte, elle disparait *automatiquement* de la bibliographie dans le document final mais demeure présente dans le fichier où se trouvent les références bibliographiques. Cela évite les aller-retour pour vérifier que chaque source de la bibliographie se trouve au moins une fois dans le texte et que chaque source dans le texte est citée en bibliographie. Grâce aux balises, en cliquant sur les références incluses dans le document, on se retrouve immédiatement plus loin dans le document, à l'endroit où se trouve l'entrée bibliographique associée. Les références [Bib]{.smallcaps}\TeX pour articles scientifiques peuvent généralement être copiées-collées à partir de Google Scholar, en cliquant en dessous d'une source sur «&nbsp;Citer&nbsp;» puis «&nbsp;BibTeX&nbsp;». [Bib]{.smallcaps}\TeX rend donc extrêmement simple et efficace l'utilisation des références bibliographiques grâce à sa capacité à *personnaliser* et *automatiser* leur présentation[^chapitre_7-4].
+
+[^chapitre_7-4]: L'utilisation d'un logiciel de traitement de texte, en particulier lorsque combiné avec une extension Zotero, peut également produire un résultat automatisé et personnalisé à un certain degré. Cependant, au moment où ce chapitre est écrit, le retrait d'une citation du texte principal en Word avec Zotero n'enlève pas immédiatement cette citation de la bibliographie, et l'ajout de liens vers la bibliographie doit se faire source par source, ce qui prend un temps important et peut occasionner des erreurs humaines. Ainsi, les logiciels de traitement de texte peuvent devenir contraignants lorsqu'un utilisateur cherche à accomplir une tâche qui ne cadre pas avec leurs fonctionnalités de base. Dans ces cas, les langages de balisage plus complexes et donc de plus bas niveau d'abstraction peuvent offrir plus de contrôle à l'utilisateur.
+
+#### Figures et tableaux
+
+L'intégration de figures et de tableaux dans le texte est aussi rendue très simple et professionnelle grâce à \LaTeX et à Markdown. La taille de la figure ou du tableau, son positionnement et son intégration par rapport au texte environnant peuvent être réglés avec précision. Cependant, l'ajout de texte avant ou après la figure ou le tableau ne produira pas des résultats inattendus tels qu'une demi-page vide avant un graphique ou un titre de tableau complètement en bas d'une page. En définissant des paramètres pour l'ensemble du texte, le chercheur peut *personnaliser* entièrement la présentation des figures et des tableaux. De plus, la *qualité des figures et des tableaux* ne diminue pas lors de leur intégration : les figures restent aussi belles qu'elles l'étaient originalement, ce qui n'est pas toujours le cas dans les logiciels de traitement de texte. Les figures et les tableaux sont aussi numérotés *automatiquement*, ce qui veut dire que l'utilisateur n'a jamais à se préoccuper de modifier les numéros si l'ordre des figures et tableaux est modifié dans le texte. Grâce aux balises, en cliquant sur le numéro associé à la figure ou au tableau dans le texte, le document se retrouve automatiquement à l'endroit où se trouve la figure ou le tableau. De plus, les figures peuvent être intégrées en format PDF, ce qui permet au lecteur de sélectionner le texte se trouvant sur le graphique directement, incluant les titres des axes et les annotations, ce qui n'est pas possible avec les images PNG intégrées dans Word ou autres logiciels similaires.
+
+Surtout, l'intégration de graphiques produits par `R` au texte en langage de balisage est simplifiée et *automatisée*. En effet, même lorsque les données ou le code pour produire un graphique changent, `R` resauvegarde le fichier dans le même chemin d'arborescence (*path*) particulier que l'on a indiqué, par exemple `C:/Users/Jean/Dropbox/projet1/graphs/Figure1.pdf`. Le langage de balisage peut ensuite indiquer le même chemin d'arborescence, de sorte qu'il n'est pas nécessaire de recopier-coller la figure à l'intérieur du document chaque fois que des changements y sont apportés; la figure est mise à jour *automatiquement*. En plus, les figures et tableaux qui sont ajoutés peuvent être automatiquement ajoutés à une liste de tableaux et à une liste de figures juste après la table des matières, dans le cas d'une thèse par exemple.
+
+L'intégration de figures et de tableaux est particulièrement simple et *flexible* avec Quarto. Contrairement à \LaTeX, qui nécessite la production de tableaux et de figures dans un document en langage de programmation (comme `R`), Quarto permet de créer une figure grâce à du code `R` *et* d'intégrer celle-ci au texte dans un même document. Cela se fait grâce à l'intégration de blocs de code `R` (*code chunks*) dans le document. Le code est produit dans le bloc de code et la figure ou le tableau qui en résulte apparait à la fois dans le document Quarto, où des balises supplémentaires permettent d'adapter le formatage, et sur le document fini. Cependant, certains *packages* R tels que *modelsummary* et *stargazer* permettent de créer des tableaux de régression de grande qualité en format \LaTeX [@arel-bundock22a; @hlavac22]. Les tableaux de régression en format Markdown sont pour l'instant plus difficiles à produire au-delà d'un certain niveau de complexité, en raison des limitations du langage Markdown. Cela dit, il est facile de produire des tableaux de très grande qualité en langage \LaTeX dans un fichier Markdown ou Quarto.
+
+#### Équations
+
+\LaTeX permet également d'ajouter des équations mathématiques poussées pour les projets de recherche qui les nécessitent. En effet, il existe des balises pour chaque symbole mathématique, et celles-ci peuvent être agencées de manière à former des équations cohérentes. Ces équations peuvent être intégrées au sein même d'une phrase ou être mises de l'avant dans un paragraphe à part centré. Voici un exemple d'équation pour une régression multiple écrite en \LaTeX&nbsp;:
+
+\begin{equation}
+    Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \cdots + \beta_k X_k + \epsilon
+\end{equation}
+
+#### Table des matières et mise en page
+
+Markdown et \LaTeX permettent aussi la gestion *automatisée* de la table des matières, et les références aux pages appropriées à partir de la table des matières se mettent à jour en continu. La table des matières prend en compte l'architecture du texte choisie manuellement par le chercheur, qui est définie par des balises définissant différents niveaux hiérarchiques de sections, sous-sections ou chapitres. Des manières *automatiques* de référencer les figures et les tableaux dans des sections distinctes de la table des matières sont également offertes, encore une fois *personnalisables* au goût du chercheur.
+
+Bien que la mise en page de documents produits via Markdown et \LaTeX puisse être définie entièrement manuellement par les personnes plus expérimentées, les novices apprécieront les nombreux gabarits (*templates*) qui permettent de gérer *automatiquement* la mise en page clés en main. Les gabarits permettent de rendre l'apparence d'un document plus esthétique et uniforme et peuvent être utilisés tels quels ou servir de point de départ pour un chercheur souhaitant y apporter certaines modifications sans toutefois partir d'une feuille blanche. La majorité des personnes qui utilisent ces langages, même les plus expérimentées, utilisent ces gabarits comme base lorsqu'elles rédigent un document. Ces gabarits constituent une mine d'or puisqu'ils rendent accessible le code Markdown ou \LaTeX ayant servi à la conception du gabarit, permettant au chercheur de comprendre comment est obtenu le résultat que lui offre le gabarit. Incidemment, il est possible d'identifier les sections de code produisant certains éléments de mise en page --- positionnement des numéros de page, positionnement du nom des auteurs en début de document, etc. --- et les modifier ou s'en inspirer afin de modifier d'autres gabarits. L'utilisation de ces gabarits peut s'avérer complexe au départ, mais retravailler ces gabarits peut permettre de devenir autonome et de produire exactement le résultat désiré en termes de mise en page, et surtout de les réutiliser. En comparaison, les logiciels de traitement de texte rendent souvent très ardue la mise en page uniforme d'un document, puisque cet élément ne peut pas être *automatisé*. La liste des gabarits disponibles est extrêmement large, et ceux-ci ont une variété de fonctions. En effet, une variété de gabarits professionnels et de haute *qualité graphique* sont offerts gratuitement en ligne pour des articles, des livres, des rapports, des *curriculum vitæs* (@fig-cv) ou encore des factures professionnelles (@fig-invoice).
+
+```{r}
+#| label: fig-cv
+#| echo: false
+#| fig-cap: "Exemple de gabarit \\LaTeX\\ de curriculum vitae \\newline \\textit{Source}&nbsp;: @liantze23."
+knitr::include_graphics("images/chapitre_8_exemple_cv.png", dpi = 100)
+```
+
+```{r}
+#| label: fig-invoice
+#| echo: false
+#| fig-cap: "Exemple de gabarit \\LaTeX\\ de facture \\newline \\textit{Source}&nbsp;: @roux13."
+knitr::include_graphics("images/chapitre_8_exemple_facture.png")
+```
+
+La @fig-cv et la @fig-invoice ne sont que quelques exemples des milliers de gabarits de documents \LaTeX disponible en ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site Web d'@overleaf23. Les utilisateurs peuvent y naviguer et voir quel gabarit convient le mieux à leurs besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec \LaTeX ou Markdown bien que non disponibles en Word, ce qui constitue une autre démonstration de leur grande *flexibilité* et capacité de *personnalisation*. Bien qu'il soit rare que l'on ait absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s'avérer utiles lorsque l'on rédige un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d'édition et universités, dans le cadre de la rédaction d'articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.
+
+#### Compatibilité entre types de documents
+
+Un autre avantage non négligeable de Markdown --- qui le distingue à cet égard de \LaTeX --- est la *flexibilité* des formats de documents qui peuvent être produits. En effet, Pandoc Markdown, une extension du langage Markdown de base, permet d'intégrer dans un seul document plusieurs langages de balisage différents tels que Markdown, \LaTeX et HTML. Quarto utilise Pandoc Markdown et est également habilité à travailler avec des extraits de code `R` ou Python. Ceci permet donc à l'utilisateur ou à l'utilisatrice de bénéficier des fonctionnalités de différents langages dans un seul document, rendant ainsi possible une variété de *personnalisations* qui ne seraient pas possibles autrement. Qui plus est, puisque Markdown permet de créer des fichiers Word réguliers, PDF professionnels et HTML à partir d'un même document, l'utilisateur peut choisir à sa convenance et à tout moment de quelle manière sera compilé le document rédigé. Cette possibilité de créer des documents Word est particulièrement pratique dans le cadre de collaboration avec des chercheurs n'utilisant pas les langages de balisage ainsi que lors de l'envoi de manuscrits à des revues scientifiques, puisque certaines d'entre elles exigent de recevoir ceux-ci sous forme de document Word.
+
+#### Popularité
+
+La popularité de certains langages de balisage dans le monde de la recherche confère un avantage considérable à ceux qui savent les utiliser. La maîtrise de ces langages offre aux chercheurs une polyvalence lorsqu'ils doivent collaborer avec diverses équipes de recherche utilisant différentes méthodes de travail. Par exemple, depuis sa création, \LaTeX a été adopté largement par le milieu de la publication de travaux scientifiques [@gaudeul07]. À titre indicatif, Overleaf, l'éditeur en ligne mentionné précédemment, était utilisé en 2022 par 11 millions d'utilisateurs et utilisatrices dans 189 pays autour du globe. Plus de 2000 compagnies et 6800 universités utilisent Overleaf pour écrire en \LaTeX [@Wow]. La popularité des langages de balisage en fait donc des outils utiles pour une personne qui voudrait poursuivre une carrière en recherche académique.
+
+#### Gestion des embûches
+
+Bien que l'apprentissage de \LaTeX et de Markdown puisse être parsemé de nombreuses embûches, ces deux langages bénéficient d'une communauté d'utilisateurs en ligne sur laquelle il est possible de s'appuyer afin de résoudre tout problème rencontré, vu la popularité de ces langages. Ces individus --- particulièrement les plus expérimentés --- sont nombreux à partager leur expérience à leurs collègues rencontrant des problèmes afin de contribuer à régler ceux-ci. Cette communauté est présente sur une multitude de sites Web, bien que le point de rencontre principal soit le forum @stackoverflow23, qui est également utilisé pour régler des problèmes de programmation. Une simple recherche sur Google d'un problème rencontré avec \LaTeX ou Markdown offrira des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow ou encore vers de la documentation technique. L'utilisateur peut donc filtrer les résultats et observer les nombreuses solutions envisageables à son problème afin de définir laquelle est la plus appropriée dans sa situation. Il est important de noter, toutefois, que cette communauté est nettement plus développée pour les utilisateurs de \LaTeX que de Markdown, puisque ce dernier langage est moins répandu que le premier.
+
+Également, avec l'émergence de l'intelligence artificielle (IA), de nombreux modèles d'IA génératifs commencent à émerger comme des ressources d'aides utiles pour les chercheurs. Au moment de la rédaction du présent chapitre, le *chatbot* ChatGPT, développé par OpenAI et basé sur le grand modèle de langage (*large language model*, LLM) GPT-4o, est une ressource d'aide en émergence en ce qui a trait aux langages de balisage. Le corpus de données sur lequel il a été formé inclut une grande variété de langages et de styles d'écriture, incluant \LaTeX et Markdown. Ainsi, il est possible de poser des questions en langage courant à ce *chatbot* lorsque des problèmes de balisage sont rencontrés. Celui-ci fournira en réponse le texte avec les balises adéquates pour régler le problème (voir la @fig-gpt). Cela s'applique même pour des problèmes pour lesquels la réponse n'est pas directement indiquée sur Stack Overflow, lorsque la logique des langages est comprise par ces modèles basés sur l'IA. ChatGPT est toutefois plus outillé en \LaTeX qu'en Markdown ou en Quarto en raison de la plus grande abondance de ressources en \LaTeX disponibles en ligne, bien que ses capacités soient en constante amélioration. Il arrive cependant régulièrement que les réponses des modèles de langage comme ChatGPT soit erronées --- tout comme certaines réponses sur Stack Overflow peuvent ne pas être adaptées à régler un problème similaire vécu sur un autre ordinateur, avec des paramètres différents. Il demeure donc important de vérifier les réponses des modèles basés sur l'IA afin de ne pas avoir de mauvaises surprises lors de la compilation du code. Ainsi, il est utile de s'appuyer autant sur la communauté d'utilisateurs de langages de balisage qui échange des ressources en ligne que sur les modèles de langage basés sur l'IA.
+
+```{r}
+#| label: fig-gpt
+#| echo: false
+#| fig-cap: "Exemple d'utilisation de ChatGPT pour une erreur en code LaTeX \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+knitr::include_graphics("images/chapitre_8_chatgpt_latex.png", dpi = 500)
+```
+
+#### Philosophie du code source ouvert et du logiciel libre
+
+L'utilisation des langages de balisage s'inscrit bien dans la philosophie du logiciel libre. Le langage \LaTeX est distribué sous la license \LaTeX project public license (LPPL), alors que Quarto 1.4 est distribué sous la license du Massachusetts Institute of Technology (MIT). Moyennant le respect de leurs licenses respectives, ces licenses permettent ainsi aux utilisateurs de \LaTeX et de Quarto d'utiliser ces langages comme ils le souhaitent, de redistribuer des copies, de modifier le fonctionnement de ces langages et d'en redistribuer des versions améliorées. Bien que \LaTeX et Quarto ne soient pas des logiciels, leur license d'utilisation est cohérente avec la philosophie du logiciel libre et permet à ces langages d'être utilisés dans de nombreux logiciels.
+
+D'autre part, \LaTeX et Quarto sont deux langages à code source ouvert (*open source*). Ainsi, leur distribution est entièrement gratuite, il n'y a rien à payer. Leur code source est disponible et les changements à ce code doivent être indiqués. Les licences LPPL et MIT ne discriminent pas certains groupes ou personnes, et elles ne restreignent personne dans l'utilisation pour un domaine d’activité. Ces deux licences ne sont pas spécifiques pour un produit, ce qui signifie que ces deux langages peuvent être utilisés dans plusieurs logiciels et programmes, dont certains sont payants --- Overleaf comporte ainsi une version payante. Ces licences sont également technologiquement neutres, rendant ainsi \LaTeX et Quarto accessibles aux utilisateurs de tous les systèmes d'exploitation.
+
+### Inconvénients
+
+Il existe toutefois des désavantages inhérents à l'utilisation des langages de balisage. L'un des principaux désavantages de Markdown et de \LaTeX est le fait qu'ils ne comportent aucun système de suivi des modifications lors de travaux collaboratifs. Pour réviser un travail fait en langage de balisage, des commentaires peuvent être ajoutés sur le fichier sortant --- nécessairement PDF pour un fichier sortant produit avec \LaTeX. Des commentaires peuvent aussi être faits directement dans le document \LaTeX ou Markdown, à l'aide de balises spécifiques. Ces commentaires n'apparaissent cependant pas dans le fichier sortant. Le suivi des modifications en \LaTeX et Markdown nécessite donc souvent l'utilisation de Git et de GitHub, qui sont abordés plus en détail dans le chapitre 3. Même avec une plateforme de gestion des versions comme GitHub, les longs paragraphes ayant fait l'objet de plusieurs modifications peuvent être longs à comparer par rapport aux logiciels de traitement de texte, qui permettent de visualiser les propositions d'ajouts et de retraits de caractères de manière plus intuitive. Le suivi des modifications en logiciel de traitement de texte permet également de distinguer les auteurs de différents commentaires par leurs noms, alors que les ajouts et retraits itératifs en GitHub peuvent rendre difficile l'identification de l'auteur d'une modification. Pour ces raisons, et aussi pour faciliter la mise en page par les éditeurs, certaines revues scientifiques refusent les fichiers PDF et demandent que les soumissions soient faites en format DOCX --- ce qui pose problème pour les utilisateurs de \LaTeX mais pas ceux de Markdown ou Quarto.
+
+Les langages de balisage comportent également un autre désavantage important dans certains cas : l'absence d'un correcteur de fautes de français complet, en particulier pour corriger les fautes autres que celles d'orthographe en français. Parmi les principaux endroits permettant l'édition en langages de balisage, Visual Studio Code (VS Code) et Overleaf comprennent tous deux une extension LanguageTool (L\TeX pour VS Code, à ne pas confondre avec \LaTeX), qui permet la révision orthographique et syntaxique dans plusieurs langues. VS Code possède également une extension Antidote pour les personnes qui paient déjà pour ce logiciel. D'autres extensions linguistiques existent également pour VS Code, de même que pour les logiciels de traitement de texte comme Word.
+
+Positron, le nouvel IDE développé par Posit (les créateurs de RStudio) et actuellement en version bêta au moment de la rédaction, représente une option prometteuse pour l'édition de documents en langages de balisage. Construit sur la même base technologique que VS Code, Positron peut utiliser les mêmes extensions de vérification orthographique, incluant potentiellement LanguageTool et d'autres correcteurs avancés. De plus, l'équipe de développement a identifié le besoin d'offrir une expérience d'écriture scientifique agréable dès l'installation, sans avoir besoin d'installer des plugins [@jmcphers23], suggérant qu'un système de vérification orthographique intégré pourrait être développé à l'avenir.
+
+Cependant, RStudio ne possède qu'un correcteur orthographique de base, disponible en plusieurs langues. Ce correcteur ne repère pas les erreurs de syntaxe, de grammaire ou de forme, entre autres. Ces éléments sont pourtant essentiels pour la rédaction de textes académiques[^chapitre_7-5], d'autant plus que les utilisateurs de \LaTeX ont tendance à faire davantage de fautes d'orthographe et de grammaire lors de la rédaction que les utilisateurs de Word [@knauff_nejasmic14]. Bien que RStudio soit excellent pour la programmation en R et l'analyse de données, les auteurs du présent ouvrage suggèrent fortement que les utilisateurs des langages de balisage fassent appel à VS Code, Positron, ou Overleaf plutôt qu'à RStudio pour l'édition de leurs documents, afin de profiter d'extensions de correction grammaticale plus complètes comme LanguageTool/L\TeX. Une approche hybride – RStudio pour l'analyse de données, Positron/VS Code/Overleaf pour la rédaction – peut s'avérer particulièrement efficace.
+
+[^chapitre_7-5]: Pour les utilisateurs de RStudio, il est souvent nécessaire de modifier le texte dans un logiciel de traitement de texte externe pour faire une révision linguistique complète, puis d'intégrer les corrections en collant le texte corrigé dans le document original en Markdown ou \LaTeX. Une application de bureau Grammarly peut également être intégrée sur RStudio. Cette application repère les erreurs de syntaxe, mais ne corrige que l'anglais, et certains soucis de repérage des mots aux bons endroits dans le texte en rendent présentement l'utilisation difficile.
+
+Enfin, les langages de balisage, contrairement aux logiciels de traitement de texte, nécessitent d'être compilés, ce qui implique que deux fichiers coexistent : le fichier où le langage de balisage est utilisé --- format `.tex` pour \LaTeX, `.md` pour Markdown ou encore `.qmd` pour Quarto --- ainsi que le fichier où le texte final balisé apparait --- généralement `.pdf`, `.docx` ou `.html`. La compilation peut prendre un temps variable selon la complexité du document, mais dure typiquement une quinzaine de secondes. Le fait de devoir travailler avec deux fichiers en parallèle et de ne pas voir immédiatement l'effet des balises sur le document final constitue ainsi un autre désavantage des langages de balisage.
+
+\LaTeX comporte aussi quelques difficultés techniques particulières qui peuvent être réglées ou diminuées en travaillant en Markdown. Premièrement, \LaTeX est difficile à apprendre. Certaines tâches qui peuvent sembler simples comme l'ajout d'un tableau peuvent nécessiter de nombreuses lignes de code. De plus, à la moindre erreur de frappe dans l'utilisation d'une balise, le code risque de ne pas fonctionner et de ne pas produire le document PDF souhaité. C'est ce qu'on appelle une erreur de compilation. Markdown est un langage plus simple à apprendre, avec des balises plus courtes et intuitives. Il occasionne donc moins d'erreurs de compilation.
+
+
+Deuxièmement, \LaTeX est peu compatible avec les logiciels de traitement de texte comme Word. Dans un sens, pour transférer un fichier créé à partir d'un logiciel de traitement de texte vers \LaTeX, les balises doivent être ajoutées manuellement une par une. Dans l'autre sens, pour transférer un document \LaTeX vers un fichier de traitement de texte, le convertisseur Pandoc peut être utilisé, mais celui-ci ne repère pas toutes les balises. Il est alors souvent nécessaire de faire des aller-retour entre le fichier \LaTeX original et le fichier converti en format DOCX pour s'assurer du succès de la conversion. Parfois, les balises doivent même être retirées une par une et le formatage doit être refait en utilisant les boutons fournis sur le logiciel de traitement de texte. Une autre option consiste à copier le texte directement à partir du fichier PDF produit par \LaTeX vers un logiciel de traitement de texte, mais cette méthode présente aussi des défis : les fins de ligne sont interprétées par Word, Pages ou Writer comme des retours plutôt que des espaces, et les accents sont souvent mal copiés et doivent être réécrits manuellement.
+
+Markdown et Quarto évitent en grande partie ce problème en permettant d'écrire un fichier DOCX à partir du langage de balisage. Le formatage du fichier DOCX demeure un peu compliqué cependant et doit être fait à partir du modèle d'un autre document DOCX formaté tel que souhaité. Quarto facilite particulièrement cette tâche en permettant d'écrire un texte en format Markdown et de produire un fichier DOCX à partir d'un gabarit Word. Cependant, les fichiers DOCX ne peuvent toujours pas être transformés en format Markdown. Pour les fichiers Word à transformer en format Markdown, les balises plus simples en Markdown qu'en \LaTeX rendent néanmoins la tâche plus simple.
+
+Somme toute, Word n'est pas à antagoniser et demeure très utile pour des tâches simples. Cependant, dans le monde académique, la production de fichiers de qualité faisant appel à des graphiques, tableaux et blocs de code personnalisés de qualité et automatisés est simplifiée en utilisant des langages de balisage. Il n'est ainsi pas anodin que ces langages soient adoptés par plusieurs dans le monde académique, surtout pour la rédaction de manuscrits au formatage très strict comme des mémoires et des thèses --- plusieurs universités possèdent ainsi que gabarits \LaTeX de mémoires et de thèses. Pour ces raisons, il est avantageux pour une personne poursuivant des études supérieures en sciences sociales, par exemple, de passer outre la difficulté initiale d'apprentissage des langages de balisage. L'apprentissage de ces langages permettra de s'aligner sur les pratiques répandues dans le milieu académique et d'améliorer davantage la qualité de la production d'écrits scientifiques.
+
+## Manuel d'instructions : comment utiliser un langage de balisage?
+
+En pratique, comment utilise-t-on Markdown, \LaTeX et [Bib]{.smallcaps}\TeX? D'emblée, \LaTeX a une syntaxe particulière qui demande un certain temps d'adaptation. Pour écrire une phrase simple comme celle-ci, la phrase peut être écrite telle quelle. Par contre, pour mettre un **mot** en caractères gras, il faut utiliser la balise suivante : `\textbf{mot}`. Pour mettre le \textcolor{red}{mot} en rouge, la balise est `\textcolor{red}{mot}`. Pour le mettre en italique et en note de bas de page[^chapitre_7-6], les balises `\footnote{\emph{mot}}` peuvent être utilisées. Ainsi, des balises peuvent contenir d'autres balises. En langage \LaTeX, une balise commence toujours par une barre oblique inversée. Par la suite, le nom de la fonction --- *emph*, *textbf*, *textcolor*, etc. --- est appelé. Enfin, généralement, le mot à formater est placé entre accolades (`{}`).
+
+[^chapitre_7-6]: *mot*
+
+Chaque document \LaTeX{} commence par un préambule. Celui-ci présente des informations telles que la taille des caractères, le type de document, le format de mise en page, la police de caractères, l'utilisation d'en-têtes et de pieds de page, ainsi que l'utilisation de *packages* \LaTeX permettant différentes fonctionnalités de personnalisation du document. Il n'est pas nécessaire ni souhaitable d'apprendre l'ensemble des fonctions et des *packages* \LaTeX qui existent. Au contraire, il est souvent mieux pour l'utilisateur de commencer par un gabarit de document qui convient au type de document désiré et ensuite de rechercher en anglais sur Stack Overflow la manière d'ajouter des éléments de formatage qui lui sont inconnus, par exemple en recherchant `highlight latex text`.
+
+Markdown fonctionne de manière similaire à \LaTeX, mais se démarque par sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par contre, il nécessite parfois l'utilisation de balises \LaTeX afin de réaliser certaines tâches, comme changer la couleur du texte. Tout document Markdown débute avec un court bloc de syntaxe YAML (acronyme de *Yet Another Markup Language*) qui définit les paramètres généraux du document. Voici un bloc YAML typique pour un document Quarto :
+
+```
+---
+title: "Baliser les sciences sociales"
+subtitle: "Langages et pratiques"
+date: today
+author:
+  - Alexandre Fortier-Chouinard^[University of Toronto]
+  - Étienne Proulx^[Université Laval]
+  - Maxime Blanchard^[McGill University]
+format: pdf
+toc: true
+date-format: "MMMM D, YYYY"
+bibliography: other_files/livre-outils.bib
+---
+```
+
+Outre le titre, le sous-titre et le nom des auteurs, on trouve aussi dans l'en-tête YAML la présence d'une table des matières (`toc`), la date et son format, le format du document compilé --- dans ce cas-ci, PDF --- ainsi que le chemin d'arborescence afin d'accéder au document [Bib]{.smallcaps}\TeX où sont enregistrées les références utilisées. Il est aussi possible d'y définir la taille de la police de caractères ou encore le gabarit Word servant à définir le format d'un document DOCX à produire. De manière particulièrement importante, l'entête YAML est l'endroit où sont chargés les *packages* \LaTeX qui seront utilisés. En effet, la majorité des *packages* et fonctions \LaTeX sont utilisables dans Markdown, alors que l'inverse n'est pas vrai. Il est donc possible de personnaliser un document Markdown en utilisant des *packages* ayant été créés pour \LaTeX.
+
+La syntaxe à utiliser au travers du texte en Markdown est somme toute plutôt simple. Pour mettre un ou plusieurs **mots en gras**, il suffit de les entourer de deux astérisques (`**mots en gras**`); pour les mettre *en italique*, il faut les encadrer d'une seule astérisque (`*en italique*`). Pour définir un titre de section ou de sous-section, il suffit de mettre des `#` devant le titre en question. Plus on ajoute de `#`, plus le titre sera petit et plus il sera considéré à un niveau hiérarchique inférieur dans la structure du texte. La syntaxe Markdown est donc plus légère que celle de \LaTeX, dans le but d'en rendre la lecture plus simple pour les utilisateurs et utilisatrices.
+
+Bien que des gabarits Markdown soient disponibles, ceux-ci sont plus rares. Ils se trouvent pour la plupart sur GitHub et sont rendus disponibles par leur créateur. Cela étant dit, leur personnalisation peut s'avérer plutôt complexe. En somme, Markdown est particulièrement pratique pour les documents ne nécessitant pas de respecter un gabarit précis et requérant simplement un document d'allure simple et professionnelle.
+
+Pour sa part, [Bib]{.smallcaps}\TeX a une syntaxe relativement simple. D'emblée, les références [Bib]{.smallcaps}\TeX pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. La @fig-ggscholar montre comment accéder facilement à ces références. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur [Bib]{.smallcaps}\TeX peut ressembler à ceci :
+
+```
+@book{darwin03,
+  address = {London},
+  author = {Darwin, Charles},
+  publisher = {John Murray},
+  title = {{On the Origin of Species by Means of Natural Selection
+or the Preservation of Favoured Races in the Struggle for Life}},
+  year = {1859}
+}
+
+@article{goldfarb96,
+  title={The Roots of SGML: A Personal Recollection},
+  author={Goldfarb, Charles F},
+  journal={Technical communication},
+  volume={46},
+  number={1},
+  pages={75},
+  year={1999},
+  publisher={Society for Technical Communication}
+}
+```
+
+```{r}
+#| label: fig-ggscholar
+#| echo: false
+#| fig-cap: "Capture d'écran d'un exemple illustrant comment trouver le [Bib]{.smallcaps}\\TeX\\ sur Google Scholar.\\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| out-width: "100%"
+knitr::include_graphics("images/chapitre_8_google_scholar_bibtex.png", dpi = 500)
+```
+
+Un fichier [Bib]{.smallcaps}\TeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document [Bib]{.smallcaps}\TeX a peu d'importance, puisque \LaTeX réordonne par défaut la bibliographie en ordre alphabétique.
+
+### Environnements d'édition et de compilation
+
+Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'environnements d'édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l'édition, la mise en forme et la compilation de documents dans des langages de balisage tels que \LaTeX et Markdown. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d'environnements d'édition et de compilation, et le choix est libre pour la chercheuse ou le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories : les logiciels de bureau et les éditeurs en ligne. La @fig-environnements-edition présente une vue d'ensemble des principaux environnements d'édition disponibles pour les chercheurs en sciences sociales, organisés selon leur type (logiciels de bureau vs éditeurs en ligne) et les langages de balisage qu'ils supportent.
 
 
 ```{r}
-#| message: false
-#| label: fig-evolution
-
-source("R/graphique.R")
-ai_evolution
+#| label: fig-environnements-edition
+#| echo: false
+#| fig-cap: "Vue d'ensemble des environnements d'édition pour langages de balisage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
+#| out.width: "90%"
+knitr::include_graphics("images/chapitre_8_environnements_edition.png", dpi = 500)
 ```
 
-<!-- ![Évolution de l'IA depuis -->
-<!-- 1998](images/chapitre9_figure1.png){#fig-evolution} -->
+D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont le logiciels de bureau VS Code et RStudio, également abordé dans le chapitre 2. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`. 
 
-Comme on le remarque, cette évolution ne suit pas une trajectoire
-linéaire.  Depuis 2015, la plupart de ces technologies ont évolué
-de manière quasi exponentielle. Cette progression fulgurante nous
-permet de faire quelques constats pour appréhender l'évolution
-future. Tout d'abord, le développement dans les capacités de l'IA
-permet d'accélérer de manière exponentielle le champ dans son
-ensemble, ce qui rend cette technologie exponentiellement plus
-puissante [@harari23]. Elle est capable de se faire évoluer à une
-vitesse plus grande, grâce à ses capacités de traitement de données
-et d'auto améliorations, que si elle était uniquement dépendante
-de l'humain.
+Utiliser VS Code ou RStudio pour travailler en langage de balisage permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d'une même fenêtre. Il suffit d'installer certains *packages* contenant les fichiers nécessaires à l'utilisation des langages de balisage. Par exemple, il est possible de produire des documents en \LaTeX en utilisant le code suivant dans la console pour installer le *package* nécessaire à l'utilisation de la distribution \LaTeX Tiny\TeX[^chapitre_7-7] : `install.packages("tinytex")`. Pour l'écriture en langage de balisage, il est en effet nécessaire d'installer l'une des nombreuses distributions \LaTeX en ligne afin de pouvoir compiler ces documents dans un environnement local. Suivant le même principe, il est possible de produire des documents en `R` Markdown sur RStudio en installant le *package* suivant : `install.packages("rmarkdown")`. Pour Quarto, le téléchargement se fait en ligne, directement à partir du site Web de @quarto23a.
 
-En tant que chercheur en sciences sociales, pourquoi devrait-on
-être préoccupé par le développement de l'IA? Tout d'abord, il est
-important de commencer à réfléchir ainsi qu'à analyser les différents
-impacts que l'IA a sur nos sociétés. Les avancer dans le domaine
-en plus de l'accessibilité à ces technologies, tel que Large Language
-Model (LLM), en font de nouveaux objets d'étude qui génèrent beaucoup
-de questions. Yuval Noah Harrari [-@harari23], historien et philosophe,
-explique dans un article que la capacité de l'IA à manipuler ainsi
-qu'à générer du langage en fait un outil puissant qui a le potentiel
-d'avoir de profonds impacts sur nos civilisations. Par conséquent,
-l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet
-de recherche dont tous les champs des sciences sociales et sciences
-humaines ont intérêt à se pencher. Présentement, il est anticipé
-que cette technologie puisse être utilisée pour « produire et
-diffuser des informations erronées et toxiques, éroder la confiance
-sociale et la démocratie ; surveiller, manipuler et soumettre les
-citoyens, en sapant les libertés individuelles et collectives ; ou
-créer des armes numériques ou physiques puissantes qui menacent la
-vie humaine » [@bremmer_suleyman23, pp. 32]. Compte tenu des
-conséquences potentielles que ces technologies peuvent avoir sur
-le monde social, tous les domaines scientifiques ont un fort incitatif
-à décloisonner leur savoir et leurs analyses, en plus de maximiser
-l'interdisciplinarité et la recherche collaborative. Une compréhension
-plus complète de ces changements ainsi qu'une communication de ce
-savoir ne pourra que générer des bénéfices pour le monde académique,
-social et politique.
+[^chapitre_7-7]: Outre Tiny\TeX, il existe d'autres distributions telles que Mac\TeX pour Mac et Mik\TeX pour Windows [@just13]. Ces distributions se distinguent par les différents *packages* avec lesquelles elles sont compatibles.
 
-### L'IA en sciences sociales
+Lorsque vient le temps de collaborer à plusieurs sur un document écrit en Markdown ou en \LaTeX, les logiciels de bureau évoqués précédemment nécessitent l'utilisation de GitHub et de Git. L'utilisation de ces éditeurs peut présenter un défi supplémentaire pour les équipes de recherche non initiées. Il existe ainsi des éditeurs en ligne qui permettent de collaborer en temps réel sans passer par Git et GitHub, de manière similaire à Google Docs. Le plus connu de ces éditeurs en ligne est Overleaf, qui permet de produire des documents en langage \LaTeX[^chapitre_7-8]. Puisqu'Overleaf permet d'avoir accès à ses documents \LaTeX à partir de n'importe quel navigateur, il n'y a pas de dépendance à un logiciel local sur un ordinateur, ce qui constitue un avantage important. La contrepartie de cet avantage est qu'en utilisant Overleaf, l'équipe de recherche est dépendante d'une connexion à Internet. En utilisant le package \LaTeX `rmarkdown`, Overleaf peut également inclure du code Markdown. Cependant, Overleaf ne permet pas de créer des documents en format DOCX ou HTML, ce qui constitue une limite de l'application. Overleaf comporte un compteur de mots intégré, ce qui n'est pas le cas des logiciels et environnements présentés plus haut.
 
-Malgré que l'utilisation de l'IA en sciences sociales soit relativement
-récente, il y a déjà quelques recherches qui se sont penchées sur
-son utilisation dans un contexte scientifique. Tout d'abord, la
-recherche de Peterson et al. [-@peterson_etal21], qui s'intéresse
-à comprendre comment les individus prennent des décisions, utilise
-l'IA afin de traiter une importante quantité de données rapidement.
-Leur base de données est environ trente fois plus importante que
-celles des études précédentes. De plus, ils ont programmé différentes
-théories afin de vérifier laquelle correspondait le mieux aux
-régularités présentes dans les données. L'utilisation de l'IA dans
-cette recherche est très intéressante puisqu'elle permet de tester
-des théories existantes sur un vaste ensemble de données, qui
-auraient pris beaucoup plus de temps si cela avait été réalisé «
-manuellement ».
+[^chapitre_7-8]: VS Code possède également une extension, Live Share, qui permet de travailler en temps réel sur un même document.
 
-Ensuite, la recherche de Park et al. [-@park_etal23] utilise l'IA
-pour créer des « generative agents » qui interagissent entre eux
-reproduisant des comportements individuels et collectifs humains.
-Leur objectif et d'en faire des proxys pour étudier le comportement
-humain. Leur modèle prend la forme d'une simulation interactive,
-similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au
-point, cette application de l'IA permettrait de tester des prototypes
-de systèmes sociaux ainsi que des théories [@park_etal23].
+## Conclusion : pièges et astuces
 
-Similairement, la recherche de Argyle et al. [-@argyle_etal23]
-utilise ChatGPT comme proxy pour étudier l'opinion publique dans
-certains sous-groupes sociaux. Leur objectif est de démontrer que
-ChatGPT peut être utilisé, avec un bon niveau de confiance, pour
-explorer et tester des hypothèses qui seraient coûteuses. En effet,
-le déploiement d'un sondage est toujours une sorte pari; ils sont
-en général relativement coûteux, et il est difficile de prévoir si
-les résultats obtenus seront significatifs. ChatGPT permettrait
-donc de faire un prétest afin d'améliorer et de corriger un
-questionnaire avant de le déployer sur des sujets humains.
+Maintenant que le lecteur de ce chapitre a une meilleure idée de ce que sont les langages de balisage et de leur utilité, la prochaine étape consiste à expérimenter par lui-même. Le chapitre se termine donc par un résumé des étapes à suivre pour devenir expert dans les langages de balisage.
 
-Malgré ces avantages, il est important de souligner quelques limites
-quant à l'utilisation de l'IA en sciences sociales. La limite la
-plus importante est que l'IA ne remplace en aucun cas un être humain.
-Étant des chercheurs en sciences sociales et sciences humaines,
-nous dénaturerions nos disciplines si l'on se limitait à l'IA pour
-répondre à nos questions. Par conséquent, un test réalisé avec l'IA
-ne pourra jamais avoir le même niveau de confiance qu'une recherche
-réalisée avec des humains. Il est donc important de limiter
-l'utilisation de l'IA à des fins exploratoires. Une autre limite
-importante, mentionnée par Park et al. [-@park_etal23] dans leur
-recherche, est que l'IA peut être sujette à des hallucinations. En
-d'autres termes, l'IA peut fabriquer des informations de toute pièce
-[@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité
-des informations générées par l'IA. C'est pour cette raison,
-notamment, que nous devons toujours rester vigilants. Les conséquences
-d'attribuer une valeur scientifique à des informations qui seraient
-fausses seraient graves. La science ne vise pas à construire une
-compréhension fictive de la réalité. Une fausse compréhension des
-interactions et des dynamiques sociales pourrait avoir des conséquences
-importantes sur le bien-être de nos sociétés. Restons vigilants.
+La première étape consiste à commencer à expérimenter dès que possible, sans se laisser freiner par l'incompréhension. Il n'est pas nécessaire de tout comprendre des langages de balisage pour produire un document de qualité. Avec cet état d'esprit, il franchira les difficultés initiales de l'apprentissage des langages de balisage plus rapidement. Avant de commencer, il doit s'assurer d'avoir un ordinateur de bonne qualité qui lui permet de travailler rapidement (voir l'Annexe I à ce sujet).
 
-## Arpentage et choix éditoriaux: les différents outils de l'IA
+En deuxième lieu, il ne faut pas hésiter à utiliser les ressources disponibles pour gagner du temps. Les *cheat sheets* disponibles en ligne, l'aide de LLMs qui connaissent les langages de balisage (par exemple, ChatGPT) et le recours à des sites comme Stack Overflow peuvent être très utiles. Si on ne fait pas appel à des ressources externes, il peut être facile de devenir fâché contre soi-même ou contre l'infrastructure informatique. Il est parfaitement normal de demander de l'aide externe. Même les experts le font.
 
-Cette section vise à présenter différents outils de l'IA aux lecteurs.
-Ce qui est important de comprendre ici, et pour faire suite à la
-section précédente, c'est que les outils de l'IA risquent d'avoir
-changé entre le moment d'écrire ce chapitre et le moment où les
-lecteurs le liront. Certaines fonctionnalités pourraient toujours
-être les mêmes, certaines pourraient avoir été améliorées et d'autres
-pourraient être complètement nouvelles. Par conséquent, l'objectif
-ici est de présenter certaines utilités et fonctionnalités de l'IA,
-et surtout d'inciter les lecteurs à développer leurs propres capacités
-réflexives quant à leur utilisation de ces outils. Cette technologie
-offre de nouvelles opportunités, mais elle apporte aussi son lot
-d'enjeux et de questions dont il est important de soulever afin de
-développer une utilisation saine et intègre de ces outils.
+La troisième étape est de ne surtout pas sous-estimer l'aide de ses pairs. Il ne faut pas hésiter à poser des questions et à demander de l'aide à des personnes plus expérimentées pour résoudre des problèmes que l'on ne parvient pas à résoudre avec les ressources externes.
 
-Avant de situer les outils sélectionnés pour ce chapitre, il est
-important de mentionner que l'IA, et surtout l'apprentissage machine,
-n'est pas nouveau dans les sciences sociales. En fait, plusieurs
-méthodes utilisent des algorithmes, et ce depuis longtemps. Selon
-l'article de @rahal_etal24, l'apprentissage machine serait utilisé
-depuis bien avant 1960, même si ce n'était pas très répandu. Avant
-l'arrivé des robots conversationnels et des logiciels de traduction,
-les méthodes d'apprentissage machine étaient surtout confinées à
-l'étape de l'analyse des données. L'arrivée des grands modèles
-linguistiques ainsi que le perfectionnement des outils de traduction
-ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui,
-il est plus difficile de catégoriser ces outils, et de les confiner
-dans l'avant, le pendant ou après la recherche. À titre d'exemple,
-les outils de traduction peuvent très bien s'inscrire dans chacune
-de ces étapes. Ils peuvent être mobilisés pour traduire des articles
-et des livres lors de la construction du devis, traduire des sources
-premières telles que des articles de presse dans la partie des
-analyses et, finalement, assister à la traduction l'article final
-en plusieurs langues.  Bien qu'un tel usage ne soit pas nécessairement
-idéal, notamment parce que certaines nuances linguistiques ne sont
-pas totalement saisies par ces logiciels, il convient tout de même
-de reconnaître la transcendance de ces outils. Les lecteurs sont
-encouragés à réfléchir à cet aspect en fonction des différents
-outils de l'IA, à la lumière de ce qui sera présenté dans les
-prochaines sections.
+Avant d'aborder la quatrième et dernière étape, il est important de mentionner quelques pièges à éviter lors de la transition de débutant à expert. Tout d'abord, faites attention aux exigences des revues lorsqu'il soumet des articles scientifiques. Certaines demandent des articles au format Word tandis que d'autres préfèrent les langages de balisage. Savoir comment convertir correctement les documents est donc un atout.
 
-Comme le premier chapitre le mentionne, ce livre ne vise pas à
-présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs
-qui souhaitent en savoir plus à propos des méthodes d'apprentissage
-machine, comme le *clustering*, les arbres décisionnels et les
-régressions par pénalité, sont encouragés à consulter des plans de
-cours qui portent spécifiquement sur ce sujet et des livres qui
-présentent ces différentes méthodes et leur application avec certains
-langages de programmation. Sur ce dernier point, le livre de
-@boehmke_andson20 offre une excellente description de plusieurs de
-ces méthodes en plus de leur application dans `R`.
+De plus, il ne faut pas se limiter à un seul langage de balisage et se montrer polyvalent, car travailler en collaboration peut nécessiter de s'adapter aux pratiques des partenaires. Il faut également éviter les erreurs lors de la compilation des documents écrits en langage de balisage en portant une attention particulière aux balises et en ne les laissant pas s'accumuler. Une bonne façon de veiller à ce que les erreurs ne s'accumulent pas est de compiler fréquemment les documents en cours de production.
 
-Trois catégories d'outils seront présentées: les « *Large Language
-Models* » (LLM), les assistants de traduction ainsi que les assistants
-de revue de littérature. La présentation de ces outils vise à suivre
-les grandes étapes de la recherche: avant, pendant et après. Comme
-il est souligné dans les paragraphes précédents, la catégorisation
-n'est pas mutuellement exclusive. En d'autres termes, les outils
-présentés ici ne se situent pas uniquement dans une étape précise.
-Ils les transcendent toutes. Cependant, selon leurs fonctionnalités
-respectives, certains s'insèrent mieux à certaines étapes de la
-production scientifique.
+Un des pièges qui peut sembler évident, mais qui mérite d'être répété, est l'attention portée à la qualité de la langue écrite. L'utilisateur doit être à l'affût de la présence de correcteurs automatiques ou non dans ses environnements d'édition. S'il y en a un, il faut aussi vérifier si ce correcteur automatique est dans la bonne langue (français canadien, anglais canadien, etc.).
 
-### Avant la recherche: trouver des écrits et organiser ses sources
+Enfin, il faut éviter les conflits Git lors de la collaboration sur GitHub en coordonnant efficacement les travaux d'équipe et en utilisant Git de manière optimale pour tirer parti des langages de balisage. Il est donc important de se renseigner quant aux bonnes pratiques à suivre afin de collaborer efficacement avec Git. À cet égard, la section 3.3 du chapitre 3 présente un guide détaillé des meilleures pratiques pour utiliser Git et GitHub dans un contexte de recherche collaborative.
 
-Dans cette section, deux principaux outils sont présentés:
-*ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne
-qui facilite le début d'une revue des écrits, notamment lorsque la
-littérature sur un sujet ou sur une question est étrangère. Ces
-deux outils sont d'ailleurs compatibles avec *Zotero*, qui est
-présenté au chapitre 4 de ce livre.
-
-Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des
-articles et des livres scientifiques à partir d'une question de
-recherche préliminaire, ou à partir de concepts. L'application offre
-une version gratuite qui est toutefois limitée dans le nombre de
-crédits disponibles mensuellement afin de faire des recherches. Par
-conséquent, si le lecteur souhaite s'en tenir à la version gratuite,
-il faudra l'utiliser avec parcimonie.
-
-![Menu d'accueil d'Elicit](images/chapitre_8_elicit_menu.png){#fig-elicit}
-
-Par exemple, disons que l'on s'intéresse à la question suivante:
-qu'est-ce que la démocratie? Il peut être difficile de savoir par
-où commencer face à l'impressionnant volume d'écrits sur le sujet.
-*Elicit* offre une solution à ce problème. La @fig-elicit correspond
-au menu d'accueil du site web. Une fois là, nous inscrivons la
-question qui nous intéresse dans la case « *Ask a research question*
-». Les résultats générés sont représentés dans la @fig-results1 et
-@fig-results2
-
-![Court résumé du sujet](images/chapitre_8_elicit_resume.png){#fig-results1}
-
-![Suggestions de lectures](images/chapitre_8_elicit_suggestions.png){#fig-results2}
-
-Le logiciel offre donc un moyen intéressant afin de faire un premier
-« filtrage » de la littérature sur un sujet, tout en fournissant
-un résumé des sources suggérées à partir desquelles nous pouvons
-juger de sa pertinence en fonction de nos besoins.
-
-Cependant, il est fortement recommandé d'utiliser le résumé produit
-par le logiciel, dans la @fig-results1, et ceux de chaque suggestion,
-dans la @fig-results2, à titre indicatif et uniquement pour notre
-propre réflexion. En d'autres termes, **ne jamais faire un copier-coller
-de ces résumés afin de les inclure dans notre travail de recherche**.
-Ce logiciel doit impérativement être accompagné d'une utilisation
-intègre de la littérature. Une bonne utilisation de ce logiciel
-devrait se limiter à trouver des articles et/ou des livres scientifiques
-selon nos besoins qui seront consultés par la suite pour rédiger
-notre revue des écrits et trouver des références supplémentaires.
-
-Un autre outil s’offre à nous afin de trouver des références
-supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais
-demande de se créer un compte afin de pouvoir utiliser ses services.
-Une fois que plusieurs articles et/ou chapitres de livre ont été
-lu, et qu'ils ont été ajoutés dans Zotero, il est possible d'importer
-la collection dans *Research Rabbit*. La @fig-rr1 présente le menu
-principal du site web.
-
-![Menu principal](images/chapitre_8_research_rabbit_menu.png){#fig-rr1}
-
-![Importation manuelle de documents](images/chapitre_8_research_rabbit_import.png){#fig-rr2}
-
-![Présentation de la littérature
-similaire](images/chapitre_8_research_rabbit_similar.png){#fig-rr3}
-
-![Vue « Timeline » des références](images/chapitre_8_research_rabbit_timeline.png){#fig-rr4}
-
-Avant toute chose, *Research Rabbit* doit être considéré comme un
-outil qui aidera à *complémenter* la revue des écrits. En d'autres
-termes, afin que ce logiciel soit utile, il faut déjà avoir des
-articles sous la main. *Elicit* peut aider pour cette tâche, mais
-aussi il est pratique de consulter des manuels de références comme
-des *hanbooks*[^chapitre_8-3] et autres ouvrages de référence afin
-de se faire une idée sur le sujet qui nous intéresse en plus de
-trouver des références. Au besoin, les bibliothécaires des différents
-départements universitaires sont aussi d'excellente ressource pour
-débuter une recherche.
-
-[^chapitre_8-3]: Il s'agit d'ouvrages généraux qui portent sur
-divers sujets.  Les éditeurs les plus connus sont notamment *Oxford*,
-*SAGE* et *Routledge*.
-
-Utilisons un exemple concret afin d'illustrer l'utilisation de
-*Research Rabbit*. Supposons que nous nous intéressons à la question
-suivante : quel est le rôle des normes pacifistes sur les processus
-politiques au Japon? Dans un premier temps, un survol rapide de la
-littérature grâce aux ouvrages de références ainsi qu'avec Google
-Scholar a permis d'identifier quelques textes qui sont jugés comme
-pertinents afin de fournir une réponse à cette question. Ceux-ci
-sont ensuite ajouté dans une nouvelle collection Zotero^[Voir le
-@sec-chap4 au besoin.], qui contiendra uniquement les ouvrages pour
-ce projet. Ce dernier point est important afin d'éviter d'ajouter
-du « bruit » dans les suggestions de *Research Rabbit*. Une fois
-ces étapes faites, il est possible d'importer la collection dans
-*Research Rabbit*. Pour ce faire, il faut cliquer sur le bouton
-*Import Zotero Collection*, situé dans le coin supérieur gauche de
-la @fig-rr1.
-
-Il se peut que le logiciel ne trouve pas tous les articles qui se
-trouvent dans la collection Zotero. Une solution, lorsque ce problème
-arrive, est de cliquer sur le bouton vert *Add Paper* situé dans
-la colonne de notre collection. La @fig-rr2 montre la barre de
-recherche qui apparaitra, et dans laquelle il est possible d'ajouter
-manuellement les articles au besoin. Une fois que les références
-ont été ajoutées, *Research Rabbit* pourra dresser une « cartographie
-» des différentes sources qui sont en lien avec ces articles. La
-@fig-rr3 présente cette cartographie.
-
-Il est possible de trouver des articles supplémentaires à l'aide
-de trois fonctionnalités. La première est de consulter les *Similar
-Work*. Cette option est intéressante afin de visualiser tous les
-articles qui sont similaires aux ouvrages qui ont été identifiés
-au tout début.  Les points en vert sont les sources qui font partie
-de ma collection. Cependant, la visualisation offerte par cette
-option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre,
-en fonction des cinq articles que j'ai importés dans Zotero, il y
-a 1 501 articles similaires. Cela complique la tâche de ciblage.
-Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later
-Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il
-est toujours utile de classifier les ouvrages en fonction de leur
-date de parution, notamment afin de suivre l'évolution du débat
-scientifique à propos du sujet de notre recherche. Cette fonctionnalité
-de *Research Rabbit* facilite ainsi cette étape, en plus de permettre
-de découvrir des ouvrages qui ont été publiés avant et aprés ceux
-qui ont été préalablement identifié.
-
-Une troisième option est de sélectionner une seule source à la fois,
-et de consulter les deux options suivantes : *All References* et
-*All Citations*. Elles permettent, respectivement, de visualiser
-tous les articles qui sont cités dans l'article selectionné, et de
-visualiser les travaux qui ont cité l’article en question.  Ces
-options sont donc très utiles pour passer au « peigne fin » chacun
-des articles afin de dénicher des sources supplémentaires selon la
-méthode « boule de neige ». Cependant, il faut faire attention dans
-l'utilisation de cette méthode. Il y a un risque « d'effet tunnel
-», soit que la revue des écrits qui sera faite à partir de ces
-sources manque de largeur et de représentativité dans le traitement
-du sujet.  C'est pourquoi il est important de diversifier ces sources
-et d'utiliser ces deux options d'une façon complémentaire avec
-plusieurs articles différents. Il est donc utile d'ajouter au fur
-et à mesure les nouvelles références dans *Research Rabbit* afin
-de visualiser la couverture de notre revue des écrits.
-
-### Pendant la recherche: l'utilisation de grands modèles linguistiques
-pour analyser des données
-
-L'utilisation des LLMs via l'API d'OpenAI en R représente une avancée
-significative pour les chercheurs en sciences sociales, leur offrant
-des outils puissants pour naviguer et analyser l'immense paysage
-des données textuelles avec une précision et une efficacité accrues.
-
-Bien qu'il soit possible de communiquer avec l'API d'OpenAI
-directement, le package `openai` en R offre une interface conviviale
-pour interagir avec les modèles de langage, permettant aux chercheurs
-de tirer parti de ces outils avancés sans nécessiter une expertise
-en informatique ou en apprentissage automatique. Le package fournit
-des fonctions pour générer du texte, analyser des sentiments,
-extraire des entités, et biens plus encore, facilitant l'intégration
-des LLMs dans le flux de travail des recherches existantes.
-
-@openai19 définit les grands modèles linguistiques (Large language
-models ou LLMs en anglais) comme des modèles d'apprentissage
-automatique de grande échelle, formés pour prédire le mot suivant
-dans un texte en se basant sur les mots précédents. Ils sont entraînés
-sur de vastes quantités de données textuelles, telles que des
-articles de journaux, des livres, des pages Web, des courriels, des
-messages de médias sociaux. Cette méthode d'entraînement simple
-permet aux modèles de démontrer naturellement des compétences dans
-de nombreuses tâches et domaines divers, sans nécessiter de formation
-spécifique à la tâche. Il est important de noter qu'ils ne sont que
-des algorithmes de prédiction textuelle et ne possèdent pas la
-faculté de réfléchir ou de comprendre.
-
-L'intégration des grands modèles de langage via l'API d'OpenAI dans
-la recherche en sciences sociales numériques ouvre des horizons
-prometteurs pour l'analyse qualitative et quantitative des données
-textuelles. L'utilisation de ces modèles en R permet aux chercheurs
-d'exploiter des capacités avancées de traitement du langage naturel
-pour une variété d'applications allant de la simple extraction de
-données à des analyses complexes de contenu et de sentiment. Elle
-permet aussi de générer des données pour l'analyse de biais
-algorithmiques en comparant l'information générée par les modèles
-avec des données de référence générées par des humains. Les LLMs
-peuvent être utilisés pour l'analyse de sentiments, l'extraction
-d'entités et de relations, la génération de résumés de texte, la
-simulation de dialogue, la traduction et la localisation, et le
-développement d'outils personnalisés pour des besoins spécifiques
-de recherche.
-
-Voici quelques exemples d'utilisation des LLMs en sciences sociales.
-Pour des cas concrets d'application, voir la section « L'IA en
-sciences sociales » dans ce chapitre.
-
-1. Premièrement, les LLMs peuvent être utilisés pour l'analyse de
-sentiments, permettant aux chercheurs de détecter des nuances dans
-les opinions exprimées dans des corpus de données volumineux, tels
-que des commentaires sur les réseaux sociaux, des critiques de
-produits, ou des discours politiques. Cette analyse peut révéler
-des tendances de sentiment général ou être segmentée pour examiner
-des variations entre différents groupes démographiques ou chronologiques.
-
-2. Deuxièmement, les LLMs offrent des capacités d'extraction d'entités
-et de relation, ce qui est crucial pour structurer des données non
-structurées comme des questions de sondage ouvertes. Les chercheurs
-peuvent extraire des personnes, des lieux, des institutions, et
-même des concepts ou des événements, liant ces entités à des thèmes
-spécifiques ou à des contextes historiques et sociopolitiques,
-enrichissant ainsi les bases de données pour des études plus poussées.
-
-3. Troisièmement, la génération automatique de résumés de textes
-par ces modèles permet de condenser de grandes quantités d'informations
-en résumés concis, facilitant l'analyse préliminaire de vastes
-archives de textes, comme des articles de presse, des mémoires
-juridiques, ou des écrits académiques. Cela aide les chercheurs à
-identifier rapidement les documents pertinents sans nécessiter la
-lecture intégrale des textes.
-
-4. Quatrièmement, les modèles linguistiques peuvent être utilisés
-pour générer des simulations de dialogue ou des réponses à des
-questions hypothétiques, permettant aux chercheurs en sciences
-sociales de modéliser des interactions entre différents acteurs
-sociaux ou d'explorer des scénarios hypothétiques en études de
-comportement sans la mise en place de coûteuses études de terrain.
-
-5. Cinquièmement, l'intégration de LLMs aide à surmonter les barrières
-linguistiques dans la recherche globale, en offrant des capacités
-de traduction et de localisation qui permettent une analyse plus
-inclusive des textes dans différentes langues, essentielle pour les
-études comparatives internationales.
-
-6. Sixièmement, les modèles de "speech-to-text" peuvent être utilisés
-pour transcrire automatiquement des enregistrements audio en texte,
-comme des entrevues, facilitant l'analyse de discours oraux ou de
-conversations enregistrées, et permettant aux chercheurs de travailler
-avec des données multimodales pour des études interdisciplinaires.
-
-7. Septièmement, les modèles de vision algorithmiques permettent
-l'analyse de contenu visuel, en extrayant des informations à partir
-d'images ou de vidéos pour compléter des analyses textuelles, ou
-pour étudier des phénomènes visuels comme la représentation des
-genres dans les médias ou les tendances de la mode.
-
-8. Enfin, les chercheurs peuvent utiliser les LLMs pour développer
-des outils personnalisés qui s'adaptent à des besoins spécifiques
-de recherche, comme l'analyse de discours ou la détection de
-changements dans le langage au fil du temps, fournissant ainsi des
-informations précieuses sur l'évolution des discours et pratiques
-culturelles.
-
-Voici un exemple simple d'utilisation de l'API d'OpenAI :
-
-```r
-
-library(openai)
-
-system <- "You are a helpful assistant" # Donne un role au modèle.
-Doit être clair et concis
-
-prompt <- "Quelle est la capitale du Québec?" # Le prompt
-
-chat_prompt <- openai::create_chat_completion(
-	model = "gpt-3.5-turbo-0125", messages = list(
-	    list("role" = "system",
-		 "content" = system
-	    ), list(
-		"role" = "user", "content" = prompt)
-	    )
-    )
-
-output <- chat_prompt$choices$message.content
-
-print(output)
-
-```
-
-### Après la recherche: traduire ses écrits pour la diffusion
-
-L'IA a aussi permis la création de nouveaux outils de traduction
-automatique (*machine translation*). Pris au sens large, le concept
-de traduction automatique englobe n'importe quelle tâche de traduction
-qui est réalisée par un algorithme, une machine ou des ordinateurs.
-sans aucune aide d'un humain [@glover24; @tabsharani23]. Il existe
-différentes approches de traduction automatique:
-
-1.  Basée sur des règles (*rules-based*): utilise des règles
-linguistiques et des dictionnaires pour transformer les mots et
-phrases d'une langue source en langue cible. Nécessite des experts
-pour créer et maintenir ces règles, ce qui rend le processus
-laborieux, mais efficace pour les langues à grammaire bien définie.
-2.  Statistique (*statistical*): analyse de grands volumes de textes
-bilingues pour identifier des motifs et probabilités. Utilise des
-modèles statistiques plutôt que des règles linguistiques pour
-déterminer les traductions les plus probables à partir des données
-d'apprentissage. Fonctionne bien avec des données volumineuses,
-mais peut parfois produire des traductions imprécises faute de
-contextualisation.  3.  Basée sur des exemples (*example-based*) :
-repose sur une base de données de phrases ou de segments précédemment
-traduits pour générer des traductions, en recherchant des exemples
-similaires dans la base de données et en récupérant les traductions
-les plus pertinentes, ce qui est utile pour des domaines spécifiques
-ou des textes très répétitifs, mais peut être limité face à des
-usages linguistiques nouveaux ou créatifs.  4.  Neuronale (*neural*)
-: utilise des modèles d'apprentissage profond pour apprendre les
-schémas de traduction, traitant des phrases entières et leur contexte,
-ce qui améliore la qualité et la fluidité des traductions, bien
-qu'elle ne remplace pas entièrement les traducteurs humains.  5.
-Hybride : les quatres approches peuvent également être combinées.
-
-C'est au sein de l'approche neuronale que les avancées en intelligence
-artificielle ont permis de développer de nouveaux outils de traduction
-automatique. En effet, les réseaux neuronaux transformeurs (*transformer
-neural networks*) ont révolutionné le domaine de la traduction
-automatique en traitant des phrases entières dans leur contexte
-global plutôt que des mots isolés, ce qui a considérablement amélioré
-la qualité et la fluidité des traductions [@glover24; @tabsharani23].
-En tant que forme d'IA générative, ces outils exploitent le traitement
-du langage naturel (*natural language processing*), l'apprentissage
-profond (*deep learning*) et l'auto-attention (*self-attention*)
-pour réaliser ces avancées. Ces outils de traduction automatique
-sont devenus de plus en plus populaires et accessibles, permettant
-à des personnes de traduire des textes entiers, des sites Web, des
-documents, en quelques secondes, sans avoir besoin de connaître la
-langue cible.
-
-Il est très utile pour les chercheurs en sciences sociales numériques
-de connaître et d'utiliser les outils de traduction automatique,
-car ils facilitent la recherche, la communication et la collaboration
-à l'échelle internationale, particulièrement dans le contexte d'un
-monde académique dominé par l'anglais. Toutefois, il est crucial
-de comprendre que ces outils ne remplacent pas complètement les
-traducteurs humains. Voici, d'une perspective générique, les avantages
-et inconvénients de ces outils par rapport à la traduction humaine
-[@glover24]:
-
-::: {.center}
-
-| Avantages | Inconvénients |
-|-------------------------------|-----------------------------------------|
-| Amélioration de la productivité : traductions rapides et de grande
-échelle | Données biaisées : reproduction de stéréotypes et erreurs
-de genre | | Apprentissage autonome : amélioration continue grâce
-à l'apprentissage non supervisé | Manque de subtilité : difficultés
-avec les expressions idiomatiques et le jargon spécifique | |
-Réduction des coûts : minimise le besoin d'intervention humaine |
-Difficultés avec le contexte : erreurs de cohérence et de pertinence
-contextuelle | | Amélioration de l'accessibilité : accessible en
-plusieurs langues et adapté aux besoins spéciaux |  |
-
-:::
-
-Il existe des milliers d'outils de traduction automatique qui
-utilisent l'IA d'une façon ou d'une autre. Dans les prochaines
-pages, nous présenterons rapidement quelques-uns de ces outils
-gratuits parmi les plus populaires actuellement en mettant en lumière
-leurs forces et leurs faiblesses. Il est important de noter que ces
-outils sont en constante évolution et que leur qualité peut varier
-en fonction de la langue, du contexte et du type de texte à traduire.
-Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence
-artificielle, des ressources comme *TERMIUM Plus* et *Interactive
-Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel
-dans le travail de traduction[^chapitre_8-4].
-
-[^chapitre_8-4]: TERMIUM Plus et IATE sont des banques de données
-terminologiques de référence, gérées par des langagiers professionnels.
-Elles facilitent la compréhension des termes spécialisés en fournissant
-des définitions et des équivalents multilingues, assurant ainsi la
-cohérence terminologique des traductions.
-
-#### Google Traduction
-
-Très connue, l'une des forces de Google Traduction est son support
-d'une large variété de langues, tant des langues globalement utilisées
-et des langues plus régionales et moins utilisées. Google Traduction
-est basé sur de la traduction automatique neuronale, prenant donc
-le sens et le contexte d'une phrase en considération. De plus, il
-supporte aussi la traduction de documents complets.
-
-#### DeepL
-
-DeepL se démarque par une qualité supérieure de traduction, mais
-dans un nombre de langues plus restreint que d'autres outils. Il
-est aussi basé sur de la traduction automatique neuronale, ce qui
-lui permet de prendre en compte le contexte et la complexité d'une
-structure de phrase.
-
-#### Mate Translate
-
-Mate Translate est une extension de navigateur qui permet de traduire
-des pages web entières, des phrases ou des mots en un seul clic.
-Il supporte un grand nombre de langues et offre des fonctionnalités
-supplémentaires telles que la prononciation des mots et des phrases
-traduits. Son avantage réside vraiment dans sa facilité d'utilisation
-et sa rapidité.
-
-#### ChatGPT
-
-Évidemment, ChatGPT est un outil de traduction automatique basé sur
-des modèles de langage génératif. Il est très populaire pour sa
-capacité à générer du texte de manière fluide et naturelle, ce qui
-en fait un outil de traduction très efficace pour les textes longs
-et complexes. De plus, il est possible de raffiner la traduction
-en quelques itérations en suggérant des modifications au texte
-traduit.
-
-#### Autres outils
-
-Comme mentionné plus haut, il existe une panoplie d'outils de
-traduction automatique qui utilisent l'IA et qui sont accessibles
-gratuitement. Cependant, considérant que ces outils sont en constante
-évolution, l'objectif de ce livre n'est pas d'en faire une description
-exhaustive, mais plutôt de donner un aperçu des possibilités offertes
-par ces outils. Parmi les autres outils populaires, on peut citer
-Microsoft Translator, Pairaphrase, Amazon Translate, Smartling,
-Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.
-
-## Quelle est la place du chercheur maintenant?
-
-Avec l'avènement de l'IA, il est tout à fait raisonnable de se
-demander quelle est la place du chercheur aujourd'hui. L'avenir du
-chercheur est-il en danger? Pourrait-on assister au développement
-des sciences sociales sans chercheur humain derrière? Si tel est
-le cas, est-ce que ça ne constituerait pas un paradoxe important?
-Est-ce que la machine est mieux placée pour comprendre la réalité
-du monde sociale, ainsi que ses mécanismes, que l'humain? D'une
-part, certains pensent que l'IA risque de générer des « laboratoires
-autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23,
-pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le
-processus scientifique, de la conception jusqu'à la communication,
-serait fait par l'IA. Le chercheur perdrait ainsi sa profession,
-et se limiterait à n'être qu'une partie de l'auditoire vers qui les
-résultats sont présentés.
-
-Bien que nous n'en sommes pas encore là, il est important de réfléchir
-aux différents enjeux qui se posent à l'aube d'une révolution
-technologique. Par exemple, étant donné que l'IA est, pour l'instant,
-très opaque dans tout le processus qui le mène de l'intrant vers
-le résultat, comment pourrait-on s'assurer que la machine a pris
-toutes les précautions nécessaires pour respecter les différents
-enjeux éthiques?  A-t-elle eu le consentement libre et éclairé de
-tous les participants?  De plus, quel est le niveau de confiance
-que nous pouvons avoir envers des résultats dont on ne connait pas
-le processus qui y a mené? Sur cette dernière question, l'une des
-caractéristiques fondamentales de la science est la reproductibilité
-des protocoles scientifiques [@king_etal21; @bourgeois21]. Toutes
-les recherches doivent présenter, d'une manière très précise, comment
-les données ont été choisies, comment elles ont été collectées et
-comment elles ont été analysées. Le terme transparence est très
-important, et résume l'esprit de toute communication scientifique.
-Or, c'est une limite importante de l'IA en ce moment: nous n'avons
-pas accès aux processus qui mènent de l'intrant à l'extrant
-[@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56].
-Cette opacité nous empêche d'évaluer correctement la validité d'un
-protocole scientifique qui serait réalisée par l'IA. La conséquence
-logique de cette situation est de toujours rester vigilant et de
-questionner constamment les informations fournies par le robot
-conversationnel. L'utilisation exclusive de tels logiciels, sans
-se référer à des sources scientifiques qui ont été publiées par des
-revues scientifiques ou des éditeurs scientifiques, ne devrait
-jamais être une option. Il n'est pas seulement question d'intégrité
-et d'éthique, mais de toute la conception de ce que constitue un
-savoir scientifique. L'utilisation de ChatGPT, par exemple, pour
-produire un savoir quelconque met au défi nos conceptions
-épistémologiques. Générer des textes entiers avec l'aide de l'IA
-ne devrait donc pas être considéré.
-
-Ainsi, l'avènement de l'IA en recherche apporte des questions et
-des réflexions épistémologiques[^chapitre_8-4] et
-méthodologiques[^chapitre_8-5] importantes. Ces questions sont
-cruciales et doivent être abordées le plus rapidement possible. En
-tant que chercheur, nous devons nous questionner par rapport à
-l'utilisation de ces nouvelles technologies. Il faut être proactif
-et initier les réflexions sur la place du chercheur maintenant.
-
-[^chapitre_8-4]: L'épistémologie est l'une des branches de la
-philosophie des sciences qui s'intéresse au savoir et à la connaissance.
-De manière générale, et très simplifié, l'une des questions
-fondamentales de l'épistémologie et de se questionner quant à savoir
-ce qu'est un savoir qui serait scientifique.
-
-[^chapitre_8-5]: La méthodologie est le champ de la philosophie des
-sciences qui s'intéresse à l'étude des méthodes scientifiques ou
-techniques.
-
-## Conclusion
-
-Le but principal de ce chapitre était d'initier la discussion à
-propos de la place de l'IA dans les sciences sociales. L'objectif
-de la discussion était de pas encourager les lecteurs à ne pas
-utiliser l'IA. Au contraire, ce sont des outils qui offrent des
-fonctionnalités très utiles. Les différents outils présentés dans
-ce chapitre en témoigne. Malgré cela, il est important de rappeler
-que l'IA possède aussi son lot de défis et d'enjeux. Ceux-ci appelent
-donc à la prudence ainsi qu'à une utilisation réfléchie de ces
-outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23].
-Bien qu'elle offre de nombreux avantages, cette technologie offre
-beaucoup de raccourcis attirants qui pourraient potentiellement
-nuire à plusieurs de nos capacités intellectuelles et physiques
-[@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25
-démontre que la rétention d'information du cerveau lors de l'utilisation
-de l'IA pour accomplir des tâches complètes à notre place est moindre
-que lorsque la tâche est accomplie sans l'utilisation de l'IA. De
-plus, les régions du cerveau qui sont mobilisées pour accomplir une
-même tâche, avec et sans l'IA, ne sont pas les mêmes. En ce sens,
-il est important de trouver l'équilibre entre une utilisation qui
-permet de dépasser les contraintes qui sont imposées par le temps
-ou par nos capacités intellectuelles sans pour autant tout reléguer
-à l'IA. Il ne faut pas perdre de vue non plus qu'il est important
-de développer ses propres capacités réflexives. Se poser des questions
-sur notre utilisation personnelle de ces outils constitue, dès
-aujourd'hui, le fondement des chercheurs en sciences sociales
-numériques.
-
-{{< pagebreak >}}
-
-## Annexe
-
-### Manuel d'instruction: utilisation du package OpenAI avec R
-
-#### Installation et chargement du package
-
-```{r} #| eval: false install.packages("openai") ## au besoin
-library(openai) ```
-
-#### Configuration de l'API
-
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que
-vous aurez besoin d'une carte de crédit pour vous inscrire et que
-l'utilisation de l'API est payante. Renseignez-vous sur les modèles
-disponibles et leurs frais d'utilisation. En date de la publication
-du livre, le modèle de tarification d'OpenAi est de charger un prix
-spécifique par 1000 tokens. Le prix des Tokens en entrée est moins
-élevé que celui des tokens en sortie.
-
-Lorsque vous aurez votre clé API, utilisez le package usethis pour
-la configurer dans votre environnement R.
-
-```{r} #| eval: false install.packages("usethis") ## au besoin
-usethis::edit_r_environ() ```
-
-Ajoutez la ligne suivante à votre fichier `.Renviron`.
-
-```{r} #| eval: false
-OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets ```
-
-#### Utilisation de l'API
-
-La fonction principale du package openai est create_chat_completion().
-Elle prend en entrée le modèle que vous souhaitez utiliser ainsi
-que le message que vous souhaitez envoyer au modèle en format list.
-Voici un modèle d'utilisation de la fonction:
-
-```{r} #| eval: false chat_prompt <- create_chat_completion(
-    model = "gpt-3.5-turbo", messages = list(
-	list(
-	    "role" = "system", "content" = "You are a helpful
-	    assistant."
-	), list(
-	    "role" = "user", "content" = "Please do the following:"
-      )
-	)
-) ```
-
-Le résultat de votre requête sera contenu dans l'objet chat_prompt
-formatté en JSON. Vous pouvez accéder aux variables de la même façon
-qu'un dataframe normal. Le contenu de la réponse sera dans
-`chat_prompt$choices$content`.
-
-Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer
-des instructions sur un ensemble d'observations à l'aide de boucles,
-utiliser des fonctions pour générer des messages et les appliquer
-à travers d'autres API, analyser des sites webs en temps réel en
-scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir
-aux possibilités que vous souhaitez explorer.
-
-## Notes
-
--   Il est possible d'accéder aux statistiques d'utilisation de
-token dans `chat_prompt$usage$prompt_tokens` et
-`chat_prompt$usage$completion_tokens`. Vous pouvez donc calculer
-le coût de votre requête en fonction du modèle que vous utilisez.
-
--   Ne pas oublier d'inclure .Renviron dans votre gitignore pour
-ne pas vous faire voler votre clé API.
-
--   Il est possible de créer des images avec la fonction
-create_image("Inserez votre texte ici")
-
--   Il est possible d'effectuer du speech-to-text avec la fonction
-create_transcription() et create_translation()
-
--   Plus de documentation est disponible au
-https://irudnyts.github.io/openai/
-
--   Plus de fonctionalités sont disponibles en python, mais le
-package R est suffisant pour la plupart des utilisations.
-
-{{< pagebreak >}}
-
-### Bonnes pratiques d'utilisation
-
-Harvard. 2023. « Guidelines for using ChatGPT and other Generative
-AI tools at Harvard ».
-https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard
-
-MIT. 2023. « Advice and responses from faculty on ChatGTP and
-A.I.-assisted writing ».
-https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
-
-{{< pagebreak >}}
-
-<!--
- # À voir
-
- ## Défis et enjeux éthiques de l'IA, focus sur ChatGPT
-
- En tant qu'étudiant, professeur, professionnel ou chercheur, il
- faut se questionner par rapport à notre propre utilisation des
- différents outils de l'IA. Tout d'abord, il est important de
- comprendre qu'il y a plus de questions que de réponses pour
- l'instant. Face à ce constat, nous n'avons pas la prétention d'être
- en mesure de cibler toutes les questions qui émergent actuellement,
- et encore moins d'avoir les réponses. Cependant, cela ne justifie
- pas pour autant d'être passif. Nous devons essayer d'être réflexifs
- et critiques dans la limite de nos capacités et de nos connaissances.
- En ce sens, les étudiants et les enseignants doivent aussi être
- proactifs en entreprenant les démarches nécessaires ainsi qu'en
- s'engageant dans la réflexion.
-
- Dans un premier temps, un bon usage de ces outils débute avec une
- bonne réflexion quant à leur utilisation. Par conséquent, les
- universités constituent des endroits privilégiés pour favoriser
- les discussions et les réflexions quant à l'utilisation de ces
- technologies. D'ailleurs, certaines universités se sont déjà dotées
- de lignes directrices quant à l'utilisation de robots conversationnels
- et de l'IA générative[^chapitre_8-5]. Nous sommes d'avis que chaque
- université aurait intérêt à se doter de tel document, afin de
- fournir les ressources nécessaires aux étudiants ainsi qu'aux
- membres du corps professoral dans leur utilisation de ces outils.
- L'accompagnement et l'encadrement dans l'exploration et l'utilisation
- de l'IA nous paraissent être une bonne stratégie à adopter afin
- de permettre le développement de bonnes pratiques.
-
- [^chapitre_8-5]: Sur ce sujet, nous recommandons de consulter les
- ressources dans la section Bonnes pratiques d'utilisation de l'IA
- dans l'Annexe 1 du chapitre.
-
- Actuellement, un enjeu majeur, surtout avec les robots conversationnels,
- est le plagiat. Notre but ici est de présenter les différentes
- ressources qui s'offrent aux lecteurs pour qu'ils puissent développer
- les bonnes pratiques d'utilisation de ces outils tout en restant
- intègres. Pour ce faire, nous présenterons dans les paragraphes
- suivants les bonnes pratiques de citation selon l'American
- Psychological Association et The Chicago Manual of Style. Avant
- cela, il est important de spécifier que notre point de vue, et les
- propos tenus dans ce livre, ne remplace en aucun cas les règlements
- disciplinaires et/ou codes de conduite établis par une institution
- académique quelconque. Par conséquent, nous invitons fortement les
- lecteurs à consulter les sites web de ces associations, à se référer
- aux personnels appropriés pour toutes questions relatives à
- l'utilisation de texte généré par l'IA ainsi qu'à tout document
- relatif au plagiat produit par l'institution académique fréquentée.
- Passons maintenant à la présentation de ces manuels de style.
-
- L'American Psychological Association (APA) encourage les utilisateurs
- à être transparents quant à leur utilisation de logiciels tel que
- ChatGPT. Lorsqu'utilisés, les chercheurs devraient spécifier
- clairement qu'ils ont utilisé le logiciel, en plus de décrire
- comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé
- et quel a été le résultat en plus de fournir des extraits textuels
- [@mcadoo23]. Il est recommandé de documenter chaque utilisation.
- Se créer un document qui inclue la date d'utilisation, la question
- demandée ainsi que la réponse obtenue doit faire partie des bonnes
- pratiques de chacun. Ces éléments peuvent être ajoutés en annexe
- au besoin [@mcadoo23]. Sans grande surprise, il est impératif de
- citer l'auteur lorsqu'on utilise des idées qui ne sont pas les
- nôtres. Dans le cas de robots conversationnels, nous devons citer
- le développeur [@mcadoo23]. Par exemple, pour une citation de
- ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.
-
- Utilisons un exemple concret afin d'illustrer le tout. Supposons
- que je m'intéresse au concept du totalitarisme, mais que je n'ai
- pas une compréhension claire de ce que ça signifie. Je pourrais
- utiliser ChatGPT pour me fournir une définition du concept. Si je
- souhaite l'inclure dans mon travail, je procèderais de la façon
- suivante : nous avons utilisé ChatGPT afin de nous donner une
- définition du totalitarisme. Pour ce faire, nous lui avons posé
- la question suivante : « Qu'est-ce que le totalitarisme? ». Le
- logiciel nous a fourni la définition suivante : « Le totalitarisme
- est un système politique et idéologique caractérisé par un contrôle
- absolu et centralisé du gouvernement sur tous les aspects de la
- vie publique et privée d'une société. Dans un régime totalitaire,
- le gouvernement exerce un pouvoir autoritaire et oppressif, limitant
- sévèrement les libertés individuelles, supprimant les droits de
- l'homme, et éliminant ou réprimant toute opposition ou critique.
- » (OpenAI 2023)
-
- En bibliographie, la référence serait insérée comme suit, et ensuite
- j'irai insérer la question et la réponse complète en
- annexe[^chapitre_8-6].
-
- [^chapitre_8-6]: Référez-vous à l'Annexe 2 pour un exemple.
-
- OpenAI. (2023). ChatGPT (Version du 3 août 2023) \[Large Language
- Model\]. https://chat.openai.com/auth/login (exemple tiré de McAdoo
- 2023)
-
- ```{=html} <!-- Cette évolution ne suit pas une trajectoire linéaire.
- Depuis 2015, la plupart de ces technologies ont évolué de manière
- quasi exponentielle. Cette progression fulgurante nous permet de
- faire quelque constat pour appréhender l'évolution future. Ce qui
- est intéressant de la recherche dans ce domaine, c'est que le
- développement des capacités de l'IA permet, en retour, de la
- développer encore plus rapidement. L'IA peut rendre l'IA
- exponentiellement plus puissante [@harari23]. Elle est capable de
- se faire évoluer à une vitesse plus grande, grâce à ses capacités
- de traitement de données et d'auto améliorations, que si elle était
- uniquement dépendante de l'humain.
-
- En tant que chercheur.euse.s en sciences sociales, pourquoi
- devrait-on être préoccupés par le développement de l'IA? Considérons
- d'abord les différents impacts que l'IA a sur nos sociétés. Les
- avancées dans le domaine en plus de l'accessibilité à ces technologies,
- tels que les Large Language Model (LLM), en font de nouveaux objets
- d'étude actuels, et surtout sans grandes réponses. Yuval Noah
- Harrari [-@harari23], historien et philosophe, explique dans un
- article que la capacité de l'IA à manipuler ainsi qu'à générer du
- langage en font des outils puissants qui ont le potentiel d'avoir
- de profond impact sur nos civilisations. Par conséquent, l'étude
- des effets de l'IA sur nos sociétés devient un nouveau sujet de
- recherche dont tous les champs des sciences sociales et sciences
- humaines ont intérêt à se pencher. Présentement, il est anticipé
- que cette technologie puisse être utilisée pour « générer et
- partager de fausses informations, érodant la confiance sociale et
- la démocratie; pour surveiller, manipuler et maîtriser les citoyens,
- nuisant aux libertés individuelles et collectives; ou pour créer
- de puissantes armes physiques ou digitales qui menaceraient la vie
- humaine. » \[Traduction libre\] [@bremmer_suleyman23, pp. 32].
- Compte tenu des conséquences potentielles que ces technologies
- peuvent avoir sur le monde social, tous les domaines scientifiques
- ont un fort incitatif à décloisonner leur savoir et leurs analyses,
- en plus de maximiser l'interdisciplinarité et la recherche
- collaborative. Une compréhension plus complète de ces changements
- ainsi qu'une communication de ce savoir ne pourra que générer des
- bénéfices pour le monde académique, social et politique.
-
- ## Défis et enjeux éthiques de l'IA, accent sur ChatGPT
-
- Étudiant.e.s, professeur.e.s, professionnel.le.s et chercheur.euse.s
- se doivent d’être proactifs et entreprendre les démarches nécessaires
- pour questionner leur utilisation des différents outils de l’IA.
- Les universités constituent des endroits privilégiés pour favoriser
- les discussions et les réflexions quant à l'utilisation de ces
- technologies. D'ailleurs, certaines universités se sont déjà dotées
- de lignes directrices quant à l'utilisation de robots conversationnels
- et de l'IA générative[^chapitre_9-2]. Nous sommes d'avis que chaque
- université aurait intérêt à se doter de tel document, afin de
- fournir les ressources nécessaires aux étudiants ainsi qu'aux
- membres du corps professoral dans leur utilisation de ces outils.
- L'accompagnement et l'encadrement dans l'exploration et l'utilisation
- de l'IA sont des stratégies à adopter afin de permettre le
- développement de bonnes pratiques.
-
- [^chapitre_9-2]: Sur ce sujet, nous recommandons de consulter les
- ressources dans la section Bonnes pratiques d'utilisation de l'IA
- dans l'Annexe 1 du chapitre.
-
- Actuellement, un enjeu majeur, surtout avec les robots conversationnels,
- est le plagiat. Différentes ressources s'offrent aux lecteurs pour
- qu'ils puissent développer les bonnes pratiques d'utilisation de
- ces outils tout en restant intègres. Les paragraphes suivants
- présentent les bonnes pratiques de citation selon l'American
- Psychological Association et The Chicago Manual of Style. Or, les
- propos tenus dans ce livre ne remplacent en aucun cas les règlements
- disciplinaires et/ou codes de conduite établis par une institution
- académique quelconque ni aux politiques mises en place dans le
- cadre des cours. Par conséquent, nous invitons fortement les
- lecteurs à consulter les sites web de ces associations, à se référer
- aux personnels appropriés pour toutes questions relatives à
- l'utilisation de texte généré par l'IA ainsi qu'à tout document
- relatif au plagiat produit par l'institution académique fréquentée.
-
- L'American Psychological Association (APA) encourage les utilisateurs
- à être transparents quant à leur utilisation de logiciels tel que
- ChatGPT. Lorsqu'utilisés, les chercheurs devraient spécifier
- clairement qu'ils ont utilisé le logiciel, en plus de décrire
- comment ils ont utilisé le logiciel, quel prompt ont-ils utilisé
- et quel a été le résultat en plus de fournir des extraits textuels
- [@mcadoo23]. Il est recommandé de documenter chaque utilisation.
- Se créer un document qui inclue la date d'utilisation, la question
- demandée ainsi que la réponse obtenue doit faire partie des bonnes
- pratiques de chacun. Ces éléments peuvent être ajoutés en annexe
- au besoin [@mcadoo23]. Sans grande surprise, il est impératif de
- citer l'auteur lorsqu'on utilise des idées qui ne sont pas les
- nôtres. Dans le cas de robots conversationnels, nous devons citer
- le développeur [@mcadoo23]. Par exemple, pour une citation de
- ChatGPT, il faudra référer à OpenAI, soit le développeur du logiciel.
-
- Utilisons un exemple concret afin d'illustrer le tout. Supposons
- que je m'intéresse au concept du totalitarisme, mais que je n'ai
- pas une compréhension claire de ce que ça signifie. Je pourrais
- utiliser ChatGPT pour me fournir une définition du concept. Si je
- souhaite l'inclure dans mon travail, je procèderais de la façon
- suivante : nous avons utilisé ChatGPT afin de nous donner une
- définition du totalitarisme. Pour ce faire, nous lui avons posé
- la question suivante : « Qu'est-ce que le totalitarisme ? ». Le
- logiciel nous a fourni la définition suivante : « Le totalitarisme
- est un système politique et idéologique caractérisé par un contrôle
- absolu et centralisé du gouvernement sur tous les aspects de la
- vie publique et privée d'une société. Dans un régime totalitaire,
- le gouvernement exerce un pouvoir autoritaire et oppressif, limitant
- sévèrement les libertés individuelles, supprimant les droits de
- l'homme, et éliminant ou réprimant toute opposition ou critique.
- » (OpenAI 2023)
-
- En bibliographie, la référence serait insérée comme suit, et ensuite
- j'irai insérer la question et la réponse complète en
- annexe[^chapitre_9-3].
-
- [^chapitre_9-3]: Référez-vous à l'Annexe 2 pour un exemple.
-
- OpenAI. (2023). ChatGPT (Version du 3 août 2023) [Large Language
- Model].  https://chat.openai.com/auth/login (exemple tiré de McAdoo
- 2023)
-
-
-Quant au manuel de style Chicago, il est recommandé de mentionner
-et d'expliquer que nous avons utilisé ChatGPT pour accomplir une
-certaine tâche dans notre texte. Toutefois, comme le lien généré
-lors de l'utilisation individuelle de ChatGPT n'est pas public et
-ne peut pas être consulté par les autres, il n'est pas recommandé
-d'insérer la référence en bibliographie.
-
-Toutefois, à moins que la recherche porte directement sur ChatGPT,
-nous déconseillons fortement d'utiliser uniquement ce que le robot
-conversationnel fournit comme réponse. Reprenons l'exemple du
-totalitarisme. Dans ce cas, bien que la définition fournît soit
-relativement bonne, nous recommandons d'aller consulter des sources
-académiques afin de trianguler la définition qui a été générée,
-d'une part, et surtout de présenter une définition qui est reconnue
-par les pairs scientifiques. Toutefois, pour ce faire, il est
-possible d'utiliser ChatGPT. Nous pouvons lui demander de nous
-fournir 5 livres qui portent sur le sujet. À partir de ces
-recommandations, nous pouvons nous référer directement à ces ouvrages
-et débuter notre revue des écrits. Surtout, à moins que ce ne soit
-que pour vous faire une idée du contenue, n'utilisez pas ChatGPT
-pour résumer un livre et utiliser le résumé pour votre travail!
-Cette pratique constitue une forme de plagiat. Aller consulter les
-ouvrages directement plutôt que d'utiliser les définitions fournies
-par ChatGPT fait partie des bonnes pratiques. De plus, développer
-un esprit de synthèse est fondamental pour chaque étudiant
-universitaire, ainsi que pour les futurs chercheurs. Commencez dès
-maintenant à vous pratiquer pour développer ces capacités. Ne
-demandez pas à ChatGPT de le faire à votre place. --\>
-
-# Conclusion
-
-En guise de conclusion, nous souhaitons lancer une dernière réflexion
-un peu plus philosophique, mais tout aussi importante. Le transhumanisme,
-«\[...\] un mouvement international, culturel et intellectuel,
-prônant l'usage des sciences et des techniques dans le but d'améliorer
-la condition humaine, notamment par l'augmentation des capacités
-physiques et mentales des êtres humains » [@forestier_ansermet21].
-La question principale qui se pose est: est-ce vraiment raisonnable
-d'augmenter les capacités humaines au-delà de leur limite biologique?
-Surtout, que deviendront les sciences sociales et humaines si le
-principal sujet d'étude, soit l'humain, n'est plus tout à fait
-humain? Peut-on faire des sciences sociales sur des sujets qui sont
-partiellement humains? Ce qui rend les sciences sociales aussi
-intéressantes et pertinentes c'est peut-être, justement, parce que
-l'humain n'a pas d'essence. Pour reprendre les mots de Sartre
-[-@sartre96, pp. 26], « l'existence précède l'essence ». En d'autres
-termes, et comme Sartre l'explique, l'humain n'existe pas pour
-remplir une fonction prédéterminée, contrairement à un crayon qui
-a été conçu pour remplir la tâche spécifique d'écrire. C'est dans
-cette liberté, et c'est par l'expérience, que l'humain se construit
-et se définit. Notre existence en tant que scientifique du monde
-social et humain est possible que grâce à cette condition fondamentale
-: l'absence d'une essence qui précède l'existence. Sinon, à quoi
-bon étudier le monde social s'il a une fonction prédéterminée et
-fixe, dans lequel les humains n'auraient aucune agentivité?
-
-Cependant, avec l'arrivée de l'IA et ce désir de constamment repousser
-les limites humaines, ne sommes-nous pas en train de prouver à
-Sartre qu'il a tort? En fait, l'humain se serait imposé une essence,
-soit celle d'être une pièce indispensable pour faire fonctionner
-les rouages du système capitaliste. Face à la conception de la «
-croissance infinie » qui est entretenue par ce système, l'être
-humain a besoin de quelque chose pour « briser » ses capacités qui
-elles sont limitées : « \[...\] un remodelage technoscientifique
-et biomédical des corps et des vies, dans leur matérialité biologique
-même, afin d'adapter les individus au régime capitaliste globalisé
-de l'accélération. » [@devedec21, pp. 100]. L'IA sera-t-elle une
-pièce de plus vers la réalisation de cet idéal transhumaniste?
-
-Toutefois, à moins que la recherche porte directement sur ChatGPT,
-nous déconseillons fortement d'utiliser uniquement ce que le robot
-conversationnel fournit comme réponse. Prenons l'exemple du
-totalitarisme. Dans ce cas, bien que la définition fournie soit
-relativement adéquate, nous recommandons d'aller consulter des
-sources académiques afin de trianguler la définition générée, d'une
-part, et surtout de présenter une définition qui est reconnue par
-les pairs scientifiques. Pour ce faire, il est possible d'utiliser
-ChatGPT. Nous pouvons lui demander de nous fournir 5 livres qui
-portent sur le sujet. À partir de ces recommandations, nous pouvons
-nous référer directement à ces ouvrages et débuter notre revue des
-écrits. Surtout, à moins que ce ne soit que pour vous faire une
-idée du contenu, n'utilisez pas ChatGPT pour résumer un livre et
-utiliser le résumé pour votre travail ! Cette pratique constitue
-une forme de plagiat. Aller consulter les ouvrages directement
-plutôt que d'utiliser les définitions fournies par ChatGPT fait
-partie des bonnes pratiques. Développer un esprit de synthèse est
-fondamental pour chaque étudiant universitaire, ainsi que pour les
-futurs chercheurs. Commencez dès maintenant à développer ces capacités
-plutôt que de demander à ChatGPT de le faire à votre place.  -->
+Pour conclure, la dernière étape pour devenir expert en langages de balisage est d'être créatif. Il est recommandé d'explorer les différentes balises et de les utiliser de manière inventive. Les langages de balisage permettront d'effectuer des tâches que l'utilisateur n'aurait pas pu réaliser facilement en utilisant un logiciel de traitement de texte classique. Ils permettront de produire des documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique.
