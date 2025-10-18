@@ -68,7 +68,7 @@ Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le pa
 #| label: html-input
 #| echo: false
 #| fig-cap: "Exemple de code HTML"
-knitr::include_graphics("images/chapitre5_html_input.png", dpi = 600)
+knitr::include_graphics("images/chapitre_5_html_input.png", dpi = 600)
 ```
 
 Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La Figure 5.4 démontre le texte produit par le code HTML.
@@ -77,7 +77,7 @@ Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p p
 #| label: html-output
 #| echo: false
 #| fig-cap: "Exemple du résultat de code HTML"
-knitr::include_graphics("images/chapitre5_html_output.png", dpi = 600)
+knitr::include_graphics("images/chapitre_5_html_output.png", dpi = 600)
 ```
 
 La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Il est donc fortement encourager d'explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites webs dont on souhaite l'extraction. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites webs sont facilement accessible à la communauté scientifique.

@@ -10,7 +10,7 @@ Pour comprendre l'évolution de la visualisation graphique, il est utile de se t
 #| label: fig-milestones_project
 #| echo: false
 #| fig-cap: "Image cool issue du Milestones project."
-knitr::include_graphics("images/chapitre6_milestones.png", dpi = 600)
+knitr::include_graphics("images/chapitre_6_milestones_projet.png", dpi = 600)
 ```
 
 [^chapitre_6-1]: Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
@@ -26,7 +26,7 @@ L’essor de la statistique comme discipline académique contribue également à
 #| label: fig-minard_napoleon
 #| echo: false
 #| fig-cap: "Carte des flux de l'invasion de la Russie par Napoléon de Charles Joseph Minard"
-knitr::include_graphics("images/chapitre6_minard_napoleon.png", dpi = 600)
+knitr::include_graphics("images/chapitre_6_minard_napoleon.png", dpi = 600)
 ```
 
 [^chapitre_6-2]: [Image récupérée sur ce site](https://ageofrevolution.org/200-object/flow-map-of-napoleons-invasion-of-russia/).
@@ -89,7 +89,7 @@ Concrètement, *ggplot2* permet de spécifier de manière explicite et déclarat
 #| label: fig-grammar_graphic
 #| echo: false
 #| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-2]."
-knitr::include_graphics("images/chapitre6_grammar_graphic.png", dpi = 600)
+knitr::include_graphics("images/chapitre_6_grammaire_graphique.png", dpi = 600)
 ```
 
 [^chapitre_6-2]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).

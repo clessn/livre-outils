@@ -25,7 +25,7 @@ Un langage de balisage constitue un ensemble de commandes qui peuvent être entr
 #| label: fig-vscode
 #| echo: false
 #| fig-cap: "Exemple d'utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
-knitr::include_graphics("images/chapitre7_vscode.png", dpi = 500)
+knitr::include_graphics("images/chapitre_7_vscode.png", dpi = 500)
 ```
 
 Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d'un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d'interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage : les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme [@goldfarb96]. GML a été amélioré durant les décennies suivantes et a été suivi par d'autres langages de balisage, dont \LaTeX en 1985, [Bib]{.smallcaps}\TeX en 1988, HTML en 1993, XML en 1998, Markdown en 2004 et `R` Markdown en 2012 [@encyclopaediabritannica23a; @hameed23a; @markdownguide23a; @worldwidewebconsortium98; @xie23a].
@@ -39,7 +39,7 @@ Pour mieux comprendre ces différents langages, il est utile de les concevoir se
 #| echo: false
 #| fig-cap: "Niveaux d'abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d'usage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
 #| out.width: "90%"
-knitr::include_graphics("images/chapitre7_mermaid1.png", dpi = 500)
+knitr::include_graphics("images/chapitre_7_niveaux_abstraction.png", dpi = 500)
 ```
 
 
@@ -70,7 +70,7 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 #| echo: false
 #| out.width: "70%"
 #| fig-cap: "Utilité relative de Word et des langages de balisage selon la complexité et la taille du document \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre inspiré de @quangtrungluu23."
-knitr::include_graphics("images/chapitre7_word-vs-latex.png")
+knitr::include_graphics("images/chapitre_7_word_vs_latex.png")
 ```
 
 ```{r tab_avantages}
@@ -131,14 +131,14 @@ Bien que la mise en page de documents produits via Markdown et \LaTeX puisse ê
 #| label: fig-cv
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de curriculum vitae \\newline \\textit{Source}&nbsp;: @liantze23."
-knitr::include_graphics("images/chapitre7_CVtemp.png", dpi = 100)
+knitr::include_graphics("images/chapitre_7_exemple_cv.png", dpi = 100)
 ```
 
 ```{r}
 #| label: fig-invoice
 #| echo: false
 #| fig-cap: "Exemple de gabarit \\LaTeX\\ de facture \\newline \\textit{Source}&nbsp;: @roux13."
-knitr::include_graphics("images/chapitre7_TStemp.png")
+knitr::include_graphics("images/chapitre_7_exemple_facture.png")
 ```
 
 La @fig-cv et la @fig-invoice ne sont que quelques exemples des milliers de gabarits de documents \LaTeX disponible en ligne. Plusieurs d'entre eux peuvent être téléchargés à partir du site Web d'@overleaf23. Les utilisateurs peuvent y naviguer et voir quel gabarit convient le mieux à leurs besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec \LaTeX ou Markdown bien que non disponibles en Word, ce qui constitue une autre démonstration de leur grande *flexibilité* et capacité de *personnalisation*. Bien qu'il soit rare que l'on ait absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s'avérer utiles lorsque l'on rédige un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d'édition et universités, dans le cadre de la rédaction d'articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.
@@ -161,7 +161,7 @@ Bien que l'apprentissage de \LaTeX et de Markdown puisse être parsemé de nomb
 #| label: fig-gpt
 #| echo: false
 #| fig-cap: "Exemple d'utilisation de ChatGPT pour une erreur en code LaTeX \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
-knitr::include_graphics("images/chapitre7_gpt.png", dpi = 500)
+knitr::include_graphics("images/chapitre_7_chatgpt_latex.png", dpi = 500)
 ```
 
 #### Philosophie du code source ouvert et du logiciel libre
@@ -254,7 +254,7 @@ or the Preservation of Favoured Races in the Struggle for Life}},
 #| echo: false
 #| fig-cap: "Capture d'écran d'un exemple illustrant comment trouver le [Bib]{.smallcaps}\\TeX\\ sur Google Scholar.\\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
 #| out-width: "100%"
-knitr::include_graphics("images/chapitre7_google_scholar_bibtex.png", dpi = 500)
+knitr::include_graphics("images/chapitre_7_google_scholar_bibtex.png", dpi = 500)
 ```
 
 Un fichier [Bib]{.smallcaps}\TeX ne contient rien de plus qu'une série de publications commençant chacune par la balise `@` suivie du type d'article --- *article*, *book* pour un livre, *incollection* pour un chapitre de livre, *inproceedings* pour une présentation dans une conférence, *unpublished* pour un article non publié et *online* pour un site Web sont parmi les plus connus --- et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple `goldfarb96`. Dans le fichier \LaTeX, l'auteur doit écrire `\cite{goldfarb96}` pour voir dans le document PDF compilé @goldfarb96; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L'ordre des publications dans le document [Bib]{.smallcaps}\TeX a peu d'importance, puisque \LaTeX réordonne par défaut la bibliographie en ordre alphabétique.
@@ -269,7 +269,7 @@ Contrairement à Microsoft Word et Apple Pages, il existe plusieurs options d'en
 #| echo: false
 #| fig-cap: "Vue d'ensemble des environnements d'édition pour langages de balisage \\newline \\textit{Source}&nbsp;: Auteurs du présent chapitre."
 #| out.width: "90%"
-knitr::include_graphics("images/chapitre7_mermaid2.png", dpi = 500)
+knitr::include_graphics("images/chapitre_7_environnements_edition.png", dpi = 500)
 ```
 
 D'abord, il existe plusieurs logiciels de bureau qui offrent un environnement d'édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont le logiciels de bureau VS Code et RStudio, également abordé dans le chapitre 2. VS Code prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis qu'RStudio est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en `R`. 

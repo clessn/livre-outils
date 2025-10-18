@@ -103,7 +103,7 @@ Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitr
 #| label: fig-scrum
 #| echo: false
 #| fig-cap: "Cycle d'application du processus Scrum, une approche Agile."
-knitr::include_graphics("images/chapitre8_agilite.png", dpi = 600)
+knitr::include_graphics("images/chapitre_3_methode_scrum.png", dpi = 600)
 ```
 
 La @fig-scrum présente le cycle traditionnel d'application de l'approche Scrum dans un contexte de travail collaboratif. Dans le cadre académique, toutes ces composantes peuvent facilement être adaptées.
@@ -164,7 +164,7 @@ Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et re
 #| label: fig-kanban
 #| echo: false
 #| fig-cap: "L'outil de gestion de projet Notion propose d'emblée des modèles de Kanban pour la création et le suivi des stories."
-knitr::include_graphics("images/chapitre8_kanban_notion.png", dpi = 600)
+knitr::include_graphics("images/chapitre_3_kanban_notion.png", dpi = 600)
 ```
 
 En sortant de la première planification de sprint, l'équipe de recherche se retrouve face à des objectifs clairs, réalistes, divisés en stories rédigées dans un Kanban bien rempli. Ne reste plus qu'à se mettre à la tâche, et à se retrouver lors des scrums hebdomadaires pour assurer le suivi.
@@ -825,7 +825,7 @@ Alors que le terminal reste une approche fondamentale pour maîtriser Git et Git
 #| label: fig-github
 #| echo: false
 #| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de Git et de GitHub."
-knitr::include_graphics("images/chapitre8_gitdesktop.png", dpi = 600)
+knitr::include_graphics("images/chapitre_3_github_desktop.png", dpi = 600)
 ```
 
 GitHub Desktop fournit une vue claire de vos répertoires, de vos modifications, de vos branches et de vos demandes de fusion (*pull requests*). Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
