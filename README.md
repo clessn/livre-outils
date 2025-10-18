@@ -195,13 +195,6 @@ Le `.gitignore` est configuré pour exclure :
 - **Fichiers système** : `.DS_Store` (macOS), `Thumbs.db` (Windows)
 - **Fichiers Office temporaires** : `~$*.docx`, `~$*.xlsx`, etc.
 
-### Pourquoi c'est important
-
-- **Dépôt plus propre** : Seuls les fichiers sources (`.qmd`, images, données) sont versionnés
-- **Éviter les conflits** : Les fichiers générés diffèrent d'une machine à l'autre
-- **Taille réduite** : Le dépôt reste léger et rapide à cloner
-- **Reproductibilité** : N'importe qui peut cloner le projet et exécuter `quarto render` pour obtenir le même résultat
-
 ## Gestion de la bibliographie avec Zotero
 
 **Cette section explique comment gérer les références bibliographiques du livre.** Toutes les citations dans le texte (format `@auteur_annee`) sont automatiquement compilées en une bibliographie à la fin du livre. La source unique de vérité pour toutes les références est la bibliothèque de groupe Zotero **CLESSN**, qui est automatiquement exportée vers le fichier `livre-outils.bib`.
