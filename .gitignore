@@ -191,12 +191,25 @@ _privatefolder*
 .Rproj
 /.quarto/
 
-# Trucs qui créaient des conflits
-.json
-.pdf
-.vdoc.r
-.pdf
-.html
-.js
-.css
-.wof
+# Quarto temporary files from individual chapter renders
+*_files/
+
+# Trucs qui créaient des conflits (LaTeX temporaires)
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Fichiers générés
+*.json
+*.pdf
+*.vdoc.r
+*.html
+*.js
+*.css
+*.woff
