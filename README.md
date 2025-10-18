@@ -166,23 +166,7 @@ quarto render
 
 Le PDF final sera généré dans le dossier `_book/`.
 
-### Pourquoi compiler via `index.qmd` et non par chapitre ?
-
-**Compiler via `index.qmd`** (le point d'entrée du livre) permet à Quarto de :
-
-1. **Traiter tous les chapitres dans le bon ordre** tel que défini dans `_quarto.yml`
-2. **Gérer correctement les références croisées** entre chapitres (ex: `@sec-chap5`)
-3. **Compiler la bibliographie une seule fois** pour tout le livre à partir de `livre-outils.bib`
-4. **Centraliser les ressources** (images, tableaux, graphiques) dans le dossier `images/`
-5. **Générer une table des matières cohérente** pour l'ensemble du livre
-
 **⚠️ NE PAS compiler les chapitres individuellement !**
-
-Si vous compilez un chapitre seul (ex: `quarto render chapitre_3.qmd`), cela :
-- Crée des dossiers `chapitre_X_files/` indésirables à la racine du projet
-- Produit des PDFs autonomes qui ne s'intègrent pas au livre
-- Empêche les références croisées de fonctionner
-- Duplique inutilement les ressources
 
 ### Prévisualiser pendant l'édition
 
