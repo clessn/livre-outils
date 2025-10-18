@@ -200,7 +200,7 @@ les capacités humaines [@roser22]. La @fig-evolution présente cette
 #| message: false
 #| label: fig-evolution
 
-source("chapitre_8_file/graphique.R")
+source("R/graphique.R")
 ai_evolution
 ```
 
@@ -385,7 +385,7 @@ crédits disponibles mensuellement afin de faire des recherches. Par
 conséquent, si le lecteur souhaite s'en tenir à la version gratuite,
 il faudra l'utiliser avec parcimonie.
 
-![Menu d'accueil d'Elicit](images/chapitre9_image2.png){#fig-elicit}
+![Menu d'accueil d'Elicit](images/chapitre_8_elicit_menu.png){#fig-elicit}
 
 Par exemple, disons que l'on s'intéresse à la question suivante:
 qu'est-ce que la démocratie? Il peut être difficile de savoir par
@@ -396,9 +396,9 @@ question qui nous intéresse dans la case « *Ask a research question*
 ». Les résultats générés sont représentés dans la @fig-results1 et
 @fig-results2
 
-![Court résumé du sujet](images/chapitre9_image3.png){#fig-results1}
+![Court résumé du sujet](images/chapitre_8_elicit_resume.png){#fig-results1}
 
-![Suggestions de lectures](images/chapitre9_image4.png){#fig-results2}
+![Suggestions de lectures](images/chapitre_8_elicit_suggestions.png){#fig-results2}
 
 Le logiciel offre donc un moyen intéressant afin de faire un premier
 « filtrage » de la littérature sur un sujet, tout en fournissant
@@ -424,14 +424,14 @@ lu, et qu'ils ont été ajoutés dans Zotero, il est possible d'importer
 la collection dans *Research Rabbit*. La @fig-rr1 présente le menu
 principal du site web.
 
-![Menu principal](images/chapitre9_RR1.png){#fig-rr1}
+![Menu principal](images/chapitre_8_research_rabbit_menu.png){#fig-rr1}
 
-![Importation manuelle de documents](images/chapitre9_rr2.png){#fig-rr2}
+![Importation manuelle de documents](images/chapitre_8_research_rabbit_import.png){#fig-rr2}
 
 ![Présentation de la littérature
-similaire](images/chapitre9_RR3.png){#fig-rr3}
+similaire](images/chapitre_8_research_rabbit_similar.png){#fig-rr3}
 
-![Vue « Timeline » des références](images/chapitre9_rr4.png){#fig-rr4}
+![Vue « Timeline » des références](images/chapitre_8_research_rabbit_timeline.png){#fig-rr4}
 
 Avant toute chose, *Research Rabbit* doit être considéré comme un
 outil qui aidera à *complémenter* la revue des écrits. En d'autres
