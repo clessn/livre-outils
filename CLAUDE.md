@@ -73,6 +73,79 @@ After modifying any chapter, always render the complete book to verify:
 - Images display properly
 - Table of contents is updated
 
+### Important Note for Claude Code
+
+**CRITICAL - DO NOT RENDER THE BOOK YOURSELF**: This project is stored in Dropbox, which **ALWAYS creates sync conflicts and temporary files** when Claude Code renders the book, even with a simple command.
+
+**⚠️ MANDATORY POLICY - User Must Render ⚠️**:
+
+When a user asks to:
+- "Verify compilation"
+- "Check for errors"
+- "Render the book"
+- "See if it compiles"
+- Any variation of these requests
+
+**YOUR FIRST RESPONSE MUST BE**:
+```
+Il est préférable que vous exécutiez cette commande dans votre terminal pour éviter des conflits Dropbox et des fichiers temporaires :
+
+quarto render index.qmd --to pdf
+
+Cela vous donnera les warnings et erreurs directement sans polluer le repository.
+```
+
+**Why Claude Code MUST NOT Render**:
+Even with the simplest command (`quarto render index.qmd --to pdf`), the Bash tool execution context causes:
+1. **Dropbox sync conflicts**: Creates files like `index (Copie en conflit de Adrien Cloutier 2025-10-19).pdf`
+2. **Leftover auxiliary files**: `index.aux`, `index.log`, sometimes `index.tex`
+3. **Process timing issues**: Dropbox sees concurrent writes from the render process
+4. **Repository pollution**: Extra cleanup steps always required
+
+**When the User Explicitly Says "render stp" or Similar**:
+
+Only if the user explicitly insists (e.g., "render stp", "fais-le toi-même"), then proceed but follow this protocol:
+
+1. **Render with simple command**:
+   ```bash
+   quarto render index.qmd --to pdf
+   ```
+
+2. **NEVER use**:
+   - `| tee output.log`
+   - `> output.log`
+   - Any redirection or pipe that creates files
+
+3. **MANDATORY cleanup after render** (success OR failure):
+   ```bash
+   rm -f index.aux index.log index.tex "index (Copie en conflit de "*.pdf "index (Copie en conflit de "*.aux
+   ```
+
+4. **VERIFY repository is clean**:
+   ```bash
+   git status --short
+   ```
+   If ANY unexpected files remain (`index.*` except `index.qmd`, or "Copie en conflit"), remove them immediately.
+
+5. **If cleanup fails**: Explicitly tell the user what files remain and ask them to delete manually.
+
+**Example Interaction**:
+
+```
+User: "Peux-tu vérifier si le livre compile correctement?"
+Claude: "Il est préférable que vous exécutiez `quarto render index.qmd --to pdf`
+         dans votre terminal pour éviter des conflits Dropbox et des fichiers temporaires."
+
+User: "Non, fais-le toi"
+Claude: [Renders] [Cleans up] [Verifies with git status]
+```
+
+**DO NOT**:
+- Render proactively to "check" something
+- Render just to see warnings
+- Render to answer questions about citations or errors
+- Instead: Ask user to run the command and share the output if needed
+
 ## Project Structure
 
 ### Content Organization
