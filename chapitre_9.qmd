@@ -375,7 +375,7 @@ Dans cette section, deux principaux outils sont présentés:
 qui facilite le début d'une revue des écrits, notamment lorsque la
 littérature sur un sujet ou sur une question est étrangère. Ces
 deux outils sont d'ailleurs compatibles avec *Zotero*, qui est
-présenté au chapitre 4 de ce livre.
+présenté au @sec-chap5 de ce livre.
 
 Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des
 articles et des livres scientifiques à partir d'une question de
