@@ -49,40 +49,76 @@ En outre, l'interface intuitive de Covidence réduit la courbe d'apprentissage, 
 Cependant, l'utilisation de Covidence présente certaines contraintes. Le coût de l'abonnement peut constituer un frein pour certains chercheurs, limitant ainsi l'accès à cet outil pourtant utile en recherche. De plus, bien que Covidence propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. Malgré ces défis, Covidence demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
 
 ```{r}
+#| tbl-cap: Résumé des principaux outils de gestion de la connaissance
 #| echo: false
+#| message: false
 #| warning: false
-library(tidyverse)
-library(tinytable)
 
-tbl_resume_chap_X <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    'Covidence' = c('Non (Abonnement requis)', 
-                    'Oui', 
-                    'Très populaire dans la revue systématique', 
-                    'Oui (Importation facile de citations)', 
-                    'Non (propriétaire)', 
-                    'Oui (mais limité)'),
-    'Colandr' = c('Oui (Gratuit)', 
-                  'Modérée', 
-                  'Moins connu mais en croissance', 
-                  'Oui (supports RIS, BibTeX, etc.)', 
-                  'Oui (Open-source)', 
-                  'Oui (beaucoup de flexibilité)'),
-    'Rayyan' = c('Oui (Freemium)', 
-                 'Oui', 
-                 'Populaire pour la revue systématique', 
-                 'Oui (Intégration facile avec citation managers)', 
-                 'Partiellement (propriétaire)', 
-                 'Oui (partiellement flexible)')
+library(tidyverse)
+library(gt)
+
+tbl_resume_chap_5_connaissance <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Covidence = c(
+    "Abonnement requis",
+    "Oui",
+    "Très populaire",
+    "Facilement compatible",
+    "Propriétaire",
+    "Plutôt flexible"
+  ),
+  Colandr = c(
+    "Gratuit",
+    "Modérée",
+    "En croissance",
+    "Facilement compatible",
+    "Open-source",
+    "Très flexible"
+  ),
+  Rayyan = c(
+    "Freemium",
+    "Oui",
+    "Populaire",
+    "Facilement compatible",
+    "Partiellement propriétaire",
+    "Plutôt flexible"
+  )
 )
 
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de la connaissance')
-
+tbl_resume_chap_5_connaissance |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de gestion de la connaissance") |>
+  cols_label(
+    Critères = "Critères",
+    Covidence = "Covidence",
+    Colandr = "Colandr",
+    Rayyan = "Rayyan"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Covidence ~ pct(23),
+    Colandr ~ pct(23),
+    Rayyan ~ pct(22)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
 ## Manuel d'instruction: Comment utiliser Covidence
@@ -116,40 +152,76 @@ Cependant, Zotero présente également quelques inconvénients, notamment sa ges
 Dans le chapitre 7, vous apprendrez à connaître et à utiliser le langage de balisage LaTeX. Un des avantages majeurs de Zotero réside justement dans sa capacité à s'intégrer parfaitement avec LaTeX : il est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
 
 ```{r}
+#| tbl-cap: Résumé des principaux outils de gestion des références
 #| echo: false
+#| message: false
 #| warning: false
-library(tidyverse)
-library(tinytable)
 
-tbl_resume_chap_X <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    'Zotero' = c('Gratuit', 
-                'Environ 7.5m d\'utilisateurs', 
-                'Très populaire', 
-                'Oui (Intégration facile avec Word, Google Docs, etc.)', 
-                'Oui (Open-source)', 
-                'Oui (personnalisable avec plugins)'),
-    'Mendeley' = c('Partiellement payant', 
-                'Oui', 
-                'Très populaire', 
-                'Oui (Microsoft Word, LibreOffice)', 
-                'Partiellement (propriétaire)', 
-                'Oui (moins flexible que Zotero)'),
-    'Endnote' = c('Payant', 
-                'Oui', 
-                'Populaire', 
-                'Oui (Intégration avec Word)', 
-                'Non (propriétaire)', 
-                'Partiellement (moins flexible)')
+library(tidyverse)
+library(gt)
+
+tbl_resume_chap_5_references <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Zotero = c(
+    "Gratuit",
+    "Très grande (7.5M+)",
+    "Très populaire",
+    "Facilement compatible",
+    "Open-source",
+    "Très flexible"
+  ),
+  Mendeley = c(
+    "Partiellement payant",
+    "Oui",
+    "Très populaire",
+    "Facilement compatible",
+    "Partiellement propriétaire",
+    "Plutôt flexible"
+  ),
+  EndNote = c(
+    "Payant",
+    "Oui",
+    "Populaire",
+    "Facilement compatible",
+    "Propriétaire",
+    "Peu flexible"
+  )
 )
 
-tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils')
-
+tbl_resume_chap_5_references |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de gestion des références") |>
+  cols_label(
+    Critères = "Critères",
+    Zotero = "Zotero",
+    Mendeley = "Mendeley",
+    EndNote = "EndNote"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Zotero ~ pct(23),
+    Mendeley ~ pct(23),
+    EndNote ~ pct(22)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
 ## Manuel d'instruction: Comment utiliser Zotero

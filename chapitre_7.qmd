@@ -88,11 +88,11 @@ Concrètement, *ggplot2* permet de spécifier de manière explicite et déclarat
 ```{r, out.width="80%"}
 #| label: fig-grammar_graphic
 #| echo: false
-#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_6-2]."
+#| fig-cap: "La logique en couches de la grammaire des graphiques [^chapitre_7-2]."
 knitr::include_graphics("images/chapitre_7_grammaire_graphique.png", dpi = 600)
 ```
 
-[^chapitre_6-2]: [Image provenant du site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
+[^chapitre_7-2]: Image provenant du site officiel de ggplot2: https://ggplot2.tidyverse.org/articles/ggplot2.html
 
 
 Cette approche modulaire et incrémentale distingue *ggplot2* des systèmes graphiques traditionnels. Comme le souligne Wickham [@wickham09, chap. 1], l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs : annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.

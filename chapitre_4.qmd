@@ -1,12 +1,10 @@
 # Les outils de gestion de données {#sec-chap4}
 
 \begin{center}
-\textit{Adrien Cloutier\footnotemark[1], 
-Jérémy Gilbert\footnotemark[2]}
+Jérémy Gilbert\footnotemark[1]}
 \end{center}
 
-\footnotetext[1]{Université Laval}
-\footnotetext[2]{Western University}
+\footnotetext[1]{Western University}
 
 En débutant en recherche, vous êtes probablement dans une position où vous devez débuter prochainement la rédaction d'un mémoire ou d'une thèse. Vous avez peut-être commencer à prendre des notes sur la littérature, vous créez des fichiers, vous commencez à collecter des données. Rapidement, une question simple mais cruciale se pose : **où devriez-vous mettre tout ce contenu?**
 

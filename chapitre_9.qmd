@@ -726,9 +726,9 @@ en fonction de la langue, du contexte et du type de texte à traduire.
 Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence
 artificielle, des ressources comme *TERMIUM Plus* et *Interactive
 Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel
-dans le travail de traduction[^chapitre_8-4].
+dans le travail de traduction[^chapitre_9-4].
 
-[^chapitre_8-4]: TERMIUM Plus et IATE sont des banques de données
+[^chapitre_9-4]: TERMIUM Plus et IATE sont des banques de données
 terminologiques de référence, gérées par des langagiers professionnels.
 Elles facilitent la compréhension des termes spécialisés en fournissant
 des définitions et des équivalents multilingues, assurant ainsi la
@@ -832,20 +832,20 @@ produire un savoir quelconque met au défi nos conceptions
 ne devrait donc pas être considéré.
 
 Ainsi, l'avènement de l'IA en recherche apporte des questions et
-des réflexions épistémologiques[^chapitre_8-4] et
-méthodologiques[^chapitre_8-5] importantes. Ces questions sont
+des réflexions épistémologiques[^chapitre_9-5] et
+méthodologiques[^chapitre_9-6] importantes. Ces questions sont
 cruciales et doivent être abordées le plus rapidement possible. En
 tant que chercheur, nous devons nous questionner par rapport à
 l'utilisation de ces nouvelles technologies. Il faut être proactif
 et initier les réflexions sur la place du chercheur maintenant.
 
-[^chapitre_8-4]: L'épistémologie est l'une des branches de la
+[^chapitre_9-5]: L'épistémologie est l'une des branches de la
 philosophie des sciences qui s'intéresse au savoir et à la connaissance.
 De manière générale, et très simplifié, l'une des questions
 fondamentales de l'épistémologie et de se questionner quant à savoir
 ce qu'est un savoir qui serait scientifique.
 
-[^chapitre_8-5]: La méthodologie est le champ de la philosophie des
+[^chapitre_9-6]: La méthodologie est le champ de la philosophie des
 sciences qui s'intéresse à l'étude des méthodes scientifiques ou
 techniques.
 
