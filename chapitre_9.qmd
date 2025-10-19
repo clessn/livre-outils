@@ -354,7 +354,7 @@ régressions par pénalité, sont encouragés à consulter des plans de
 cours qui portent spécifiquement sur ce sujet et des livres qui
 présentent ces différentes méthodes et leur application avec certains
 langages de programmation. Sur ce dernier point, le livre de
-@boehmke_andson20 offre une excellente description de plusieurs de
+@boehmke_greenwell20 offre une excellente description de plusieurs de
 ces méthodes en plus de leur application dans `R`.
 
 Trois catégories d'outils seront présentées: les « *Large Language
