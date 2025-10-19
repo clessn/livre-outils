@@ -16,7 +16,7 @@ Ce chapitre ne prétend pas offrir de réponses définitives à ces questions, m
 
 Il existe au moins trois approches conceptuelles permettant de définir les « données massives » (voir Figure 1.1.).
 
-![image1_1](images/chapitre1_definitions.png) 1. Premièrement, les données massives représentent une ***quantité importante de points d'information*** qui varient selon la nature, le type, la source, etc. Ici, la distinction entre données massives et données plus traditionnelles (ou « non-massives ») est simplement quantitative.
+![image1_1](images/index_definitions_big_data.png) 1. Premièrement, les données massives représentent une ***quantité importante de points d'information*** qui varient selon la nature, le type, la source, etc. Ici, la distinction entre données massives et données plus traditionnelles (ou « non-massives ») est simplement quantitative.
 
 2.  Deuxièmement, les données massives constituent un ***ensemble de pratiques*** de collecte, de traitement et d'analyse de ces points d'information. Les données massives représentent une technique, c’est-à-dire une manière ou une méthode nouvelle de faire de la recherche.
 
@@ -98,7 +98,7 @@ Les données massives peuvent aussi jouer d'autres rôles importants relatifs à
 
 Deuxièmement, la quantité importante de données rend possible l'observation d'effets précis, spécifiques et inédits par sous-groupes (Grimmer 2015: 81). Alors qu'auparavant, la taille réduite des échantillons ne permettait pas d'effectuer des inférences valides pour des sous-groupes de la population --- les écarts-types par sous-groupes étaient trop grands, rendant difficile l'estimation précise d'un paramètre comme la moyenne et impossible celle d'un coefficient ---, la taille énorme des échantillons de données massives permet aux chercheurs d'estimer des paramètres qui étaient demeurés extrêmement imprécis jusqu'à aujourd'hui. Notre compréhension des phénomènes sociaux s'en trouve par le fait même approfondie de façon considérable.
 
-![image2_2](images/chapitre1_tableau.png)
+![image2_2](images/index_tableau_donnees_experimentales.png)
 
 ## Conclusion : trois questions ouvertes pour le futur
 

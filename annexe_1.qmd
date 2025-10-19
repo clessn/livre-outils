@@ -1,8 +1,12 @@
 # L'ordinateur
 
-Cet appendice s'adresse à un public de nouveaux initiés en informatique. Son objectif est de convaincre les chercheurs de l'importance de se munir d'ordinateurs qui leur sont adéquats. En effet, un élément lie l'entièreté des outils présentés dans ce livre : l'ordinateur. L'ordinateur est la plateforme principale qui réunit tous les outils numériques nécessaires aux chercheurs. Que ce soit pour la collecte de données, le traitement de ces données, la visualisation, la rédaction ou la communication, l'ordinateur est l'outil principal. Il est donc crucial de bien le connaître, de le maintenir propre et organisé et de l'utiliser efficacement. Apprécier l'ordinateur sur lequel vous travaillez est un excellent moyen de rester motivé et productif.
+\begin{center}
+\textit{Laurence-Olivier M. Foisy}
+\end{center}
 
-Beaucoup d'étudiants acquièrent des ordinateurs sans effectuer de recherche préalable. Ils se retrouvent alors avec un appareil qui ne correspond pas à leurs besoins. Il est donc primordial de bien choisir son ordinateur. Pour cela, il est essentiel de connaître les différents composants d'un ordinateur et de comprendre leur fonction. Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD).
+Cet annexe s'adresse à un public de nouveaux initiés en informatique. Son objectif est de convaincre les chercheurs de l'importance de se munir d'ordinateurs qui leur sont adéquats. En effet, un élément lie l'entièreté des outils présentés dans ce livre : l'ordinateur. L'ordinateur est la plateforme principale qui réunit tous les outils numériques nécessaires aux chercheurs. Que ce soit pour la collecte de données, le traitement de ces données, la visualisation, la rédaction ou la communication, l'ordinateur est l'outil principal. Il est donc crucial de bien le connaître, de le maintenir propre et organisé et de l'utiliser efficacement. Apprécier l'ordinateur sur lequel vous travaillez est un excellent moyen de rester motivé et productif.
+
+Beaucoup de chercheurs acquièrent des ordinateurs sans effectuer de recherche préalable. Ils se retrouvent alors avec un appareil qui ne correspond pas à leurs besoins. Il est donc primordial de bien choisir son ordinateur. Pour cela, il est essentiel de connaître les différents composants d'un ordinateur et de comprendre leur fonction. Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD).
  
 ## Les composants d'un ordinateur
 

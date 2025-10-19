@@ -2,7 +2,7 @@ project:
   type: book
 output-dir: _book
 book:
-  title: "Outils de rédaction en sciences sociales numériques: les langages de balisage?"
+  title: "Outils de recherche en sciences sociales numériques"
   author: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
   date: today
   chapters:
@@ -15,11 +15,20 @@ book:
     - chapitre_6.qmd
     - chapitre_7.qmd
     - chapitre_8.qmd
+    - chapitre_9.qmd
     - conclusion.qmd
     - annexe_1.qmd
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
 lang: fr
-format: pdf
-editor: visual
+format:
+  pdf:
+    classoption: [oneside]        # mêmes marges à gauche/droite partout
+    geometry: margin=30mm         # ajuste à ton goût
+    include-in-header:
+      - text: |
+          \usepackage{setspace}
+          \usepackage{csquotes}
+
+editor: source

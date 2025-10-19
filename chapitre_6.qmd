@@ -1,441 +1,373 @@
-# Outils de visualisation graphique
+# Outils de collecte de données {#sec-chap6}
 
-## Point d'observation: historique de la visualisation graphique
-Ce chapitre a pour objectif de souligner l'importance de la visualisation des données tout au long du processus de recherche, depuis l'obtention des données pour l'analyse exploratoire des données (exploratory data analysis) jusqu'aux graphiques finaux de vos articles. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, le chercheur peut rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s'agit de trouver la meilleure manière de rendre l'information digeste pour les experts de votre discipline académique ou pour le grand public. Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d'une recherche empirique.
+La révolution numérique engendrée par l'émergence des données massives et de l'intelligence artificielle représente un important défi pour la communauté académique en sciences sociales [@manovich11; @burrows_savage14]. Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension accrue des phénomènes sociaux étudiés par la communauté scientifique [@connelly_etal16]. Cette meilleure compréhension est permise, entre autres, par l'accès à une variété inégalée et une quantité massive de données permettant l'étude des différents objets de recherche [@kramer_etal14; @schroeder14]. Si l'accès à ces données numériques massives représente un défi éthique et théorique, il représente également un défi technique pour les chercheurs voulant exploiter le potentiel et les opportunités offertes par les données massives numériques [@burrows_savage14].
 
-Pour comprendre l'évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le *Milestones Project* de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le Milestones Project propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique [@friendly_etal16].
+Le chapitre qui suit vise à présenter la méthode de l'extraction de données web, ou *web scraping*, qui permet de récolter des données provenant de sites internet de manière automatisée. Si le chapitre offre également un bref survol de différents outils de collectes de données pouvant être exploités par les scientifiques désirant entreprendre des recherches en sciences sociales, ce dernier vise surtout à mettre l'accent sur les opportunités offertes par le numérique. En effet, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de récolte de données brutes pouvant être analysées par les chercheurs.ses. Le chapitre débute par une description courte et non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leur capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. L'objectif de cette courte section est de présenter des outils plus traditionnels de collecte de données, certes efficaces, mais qui comportent un certain nombre de limites. Les sections suivantes, représentant le coeur de ce chapitre, mettent un accent particulier sur la méthode de l'extraction de données par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Il sera question de démontrer comment les capacités de programmation avec R permettent l'accès à un volume important de données qui peuvent alimenter de manière significative des projets de recherche. En somme, ce chapitre offre un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter l'extraction web et le package *rvest* et en offrant des exemples concrets de son utilisation.
 
-:::::: {.callout-note}
-Pour plus d'informations sur le Milestones Project, consultez le site web du projet: [https://www.datavis.ca/milestones/index.php?page=introduction](https://www.datavis.ca/milestones/index.php?page=introduction).
-:::
+## **Point d'observation: les outils traditionnels de collecte de données numériques en sciences sociales**
 
-### Les origines de la visualisation graphique
-On comprend rapidement que cette volonté de vulgariser des données à l'aide d'image ne date pas d'hier. En effet, les origines de la visualisation graphique remontent à des efforts rudimentaires pour représenter visuellement des données et des relations. Dès le 17e siècle, les cartes thématiques font leur apparition, notamment avec des représentations géographiques de phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le 18e siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives [@friendly_wainer21].
+Toute recherche empirique repose sur l'analyse d'un objet de recherche, et doit donc comprendre une réflexion sur les manières d'observer l'objet d'étude. Avant l'utilisation de quelconque méthode, il faut un ensemble de données à analyser sur lesquelles les différentes méthodes seront appliquées. Le type de données à analyser dépend de l'objectif analytique de la recherche entreprise, mais surtout, de l'objet de recherche. Une fois que l'on sait *qu'est* ce qu'on veut étudier, il faut déterminer *comment* l'étudier, et ultimement, acquérir les données nécessaires à l'analyse. Les sciences sociales reposent sur l'analyse des sociétés et des phénomènes qui les caractérisent. Les objets d'études sont multiples, tout comme les manières de les observer. Les communautés scientifiques autant qualitatives que quantitatives ont donc besoin de données qui permettent de tels types d'analyses, et il existe un immense éventail d'outils permettant la collecte de données nécessaires à la tenue de recherche en sciences sociales.
 
-### La période moderne : Un premier âge d’or
-L’histoire de la visualisation graphique connaît une accélération marquée au 19e siècle, qualifiée de premier âge d’or de la visualisation graphique [@friendly08]. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées.
-L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Francis Galton, avec ses diagrammes de corrélation, amorce l'exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le scatterplot (nuage de points). L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes, que ce soit dans les sciences sociales ou naturelles [@friendly_wainer21].
+*Les données d'entrevues*
 
-### L’ère informatique : de nouvelles possibilités
+L'exemple des entrevues représente bien l'étendue des manières de récolter des données en sciences sociales. Les entrevues (dirigée, semi-dirigée ou non-dirigée) sont des méthodes de recherche largement employées en sciences sociales, et peuvent constituer un outil de collecte de données qui permet d'aller récolter un savoir pouvant par la suite être analysé sous forme de texte retranscrit. Il s'agit d'une méthode particulièrement efficace pour comprendre certains phénonènes sociaux de manière approfondie et granulaire. Bien que l'objectif de ce chapitre ne soit pas de présenter les manières de conduire ou analyser une entrevue en sciences sociales, il demeure pertinent de mentionner cette méthode afin d'illusrer l'immensité du champ de la collecte de données. Les prochaines lignes présentent quelques outils de collecte de données particulièrement prisés en sciences sociales, soit les données de sondages et les données de médias, et comment l'émergence du numérique a radicalement transformé le processus d'acquisition de telles données. Il est important de noter que les données de sondages et les textes médiatiques se prêtent tout aussi bien aux analyses quantitatives que qualitatives. L'objectif des prochaines lignes vise donc à présenter des outils de qui se démarquent par la portée analytique des données qu'ils permettent de récolter.
 
-Avec l’avènement de l’ère informatique au 20e siècle, la visualisation graphique entre dans une nouvelle phase de développement. La capacité des ordinateurs à traiter de grandes quantités de données rapidement et efficacement transforme la manière dont les graphiques sont créés et utilisés. Les années 1960 voient l’émergence des premières visualisations générées par ordinateur, ouvrant la voie à des représentations plus complexes et dynamiques.
+*Les données de sondages*
 
-Avec l’ère informatique, la visualisation graphique est entrée dans une phase de transformation, marquée par la capacité des ordinateurs à traiter rapidement de vastes quantités de données. Dès les années 1960, les premières visualisations générées par ordinateur ont ouvert la voie à des graphiques plus complexes. Dans les années 1980 et 1990, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large. Durant cette période, l’intérêt pour l'esthétique et l’interactivité, promu notamment par Edward Tufte, a renforcé l’importance de la visualisation comme moyen de communication efficace des données [@friendly_wainer21].
+L'opinion publique, une composante fondamentale des sciences sociales, est traditionnellement étudiée par le biais de données de sondages. L'émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s'il avait été conduit manuellement [@nayak_ka19]. Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas. Parmi les plateformes web les plus reconnues de construction et d'administration de sondage, Qualtrics figure en tête de liste. Cette plateforme est une des plus reconnues et utilisée à l'international, tant dans le milieu académique que dans le secteur privé. En plus d'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l'expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, Qualtrics s'adapte à différents formats en fonction de l'appareil du répondant [@evans_mathur18]. Son principal désavantage provient de son coût d'acquisition, qui est extrêmement dispendieux. La présentation de cet outil dans le cadre de ce chapitre provient du fait qu'il s'agit de la principale plateforme de construction de sondage, autant dans le monde commercial qu'académique. Il devient d'autant plus important de présenter cet outil en raison du fait que, malgré l'obstacle monétaire, certaines universités possèdent des licenses permettant l'utilisation de l'outil par la communauté étudiante. De plus, de nombreus.e.s professeur.e.s possèdent également des comptes Qualtrics qui permettent la construction de sondage.
 
-Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*Big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques. 
+Il convient toutefois de mentionner certaines alternatives à Qualtrics en raison des obstacles monétaires à son utilisation, tels que Research Electronic Data Capture (REDCap), Survey Monkey ou encore Google Forms, qui sont tous des outils permettant d'administrer des sondages. Toutefois, Qualtrics demeure l'outil le plus utilisé en sciences sociales (et dans le monde des affaires) en ce qui concerne l'administration de sondage, ce qui explique la plus grande attention portée envers cette plateforme. De plus, le chapitre porte principalement sur la méthode du web scraping. Ainsi, bien qu'il convienne de présenter des outils plus traditionnels, il se concentre principalement sur les opportunités offertes par le numérique, ce qui explique ce survol bref et incomplet des outils de récolte de données de sondages.
 
+*Les données médiatiques*
 
-## Arpentage et choix éditorial:
+La recherche en sciences sociales se penche également sur l'analyse de contenu médiatique, qui permet une mutltitude de devis de recherche dans un grand nombre de sous-discipline des sciences sociales. L'émergence du numérique facilite largement la récolte de données médiatiques tout en favorisant de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l'importante quantité de données accessibles aux chercheurs.euses. À cet effet, l'outil Factiva offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l'accès à des documents d'entreprises. En revanche, l'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l'accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons. Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur cette plateforme, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva.
 
-Il existe plusieurs outils de visualisation de données qui répondent à des besoins variés. Pour comparer ces outils, nous utilisons les critères de sélection établis au chapitre 1, résumés dans le **Tableau 6**.
+Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques: les extracteurs webs.
 
-Tout d’abord, il est important de comprendre que l'accessibilité financière est un critère déterminant. Comme le montre le **Tableau 6**, *R* est un logiciel open-source, entièrement gratuit, ce qui le rend très attrayant pour les étudiants, les chercheurs, et les professionnels qui cherchent à éviter les coûts élevés de licences. *Python* partage cette accessibilité, ce qui le place également parmi les outils favoris pour l'analyse de données [@ozgur_etal17]. En revanche, d'autres logiciels comme *Tableau* ou *Excel* nécessitent des licences coûteuses, bien que certaines institutions puissent offrir des accès gratuits ou à tarifs réduits.
+## **Arpentage et choix éditorial: l'extraction de données web grâce à l'outil *rvest***
 
-L'existence d'une communauté d'utilisateurs solide est un autre point fort pour *R*. Sa communauté active crée et maintient des milliers de packages, ce qui assure un support technique constant et des mises à jour régulières. Cet aspect est crucial, car il facilite l'apprentissage, la résolution de problèmes, et le partage de connaissances. Comme indiqué dans le **Tableau 6**, *Python* bénéficie également d'une grande et active communauté, couvrant un large spectre d'applications allant bien au-delà de la visualisation de données. Les communautés autour de logiciels comme *Tableau* ou *Excel* sont présentes mais davantage orientées vers des usages plus standardisés.
+Les extracteurs de données sont des outils qui ont transformé la récolte de données en sciences sociales. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
 
-La popularité dans le champ de la visualisation est également un facteur de taille. *R* est largement utilisé dans la recherche académique, où la rigueur statistique et la personnalisation des graphiques sont essentielles. Sa bibliothèque *ggplot2* est devenue une référence pour créer des graphiques sophistiqués et clairs. *Python* est également très répandu, particulièrement dans le domaine de la science des données, grâce à des bibliothèques comme `matplotlib` et `seaborn`. Comme le souligne le **Tableau 6**, *Tableau* est populaire pour la visualisation, surtout dans le secteur commercial, tandis que *Excel* est souvent utilisé pour des tâches plus simples.
+L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent ainsi une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non-fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les dites données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal-structurées. Ainsi, l'accès à des données massives représente un défi considérable pour la communauté scientifique tentant d'entreprendre des recherches utilisant un volume important de données.
 
-L’un des aspects les plus convaincants pour choisir *R* est sa compatibilité avec d'autres outils et formats de données. Que ce soit pour importer des fichiers CSV, Excel, ou accéder à des bases de données SQL, *R* offre une variété de packages qui facilitent l'intégration de données dans des flux de travail complexes. *Python* partage cette compatibilité, avec des outils tels que `pandas` pour la manipulation de données. Bien que *Tableau* et *Excel* offrent également des options d’importation variées, leur intégration dans des flux de travail plus complexes peut s'avérer plus contraignante, notamment pour automatiser des processus d’analyse.
+C'est dans cette optique que les extracteurs de données numériques peuvent être utiles. Il faut faire ici la distinction entre l'outil, soit l'extracteur de données, et la méthode, l'extraction web. Plus précisément, cette dernière est la méthode qui permet l'extraction de données provenant de sites webs qui seront ensuite converties dans un format utile aux scientifiques de données. L'extracteur est l'outil qui permet cette méthode. Il sera question dans les lignes qui suivent de l'outil *rvest*, un package sur R, qui permet de récolter des données de site web gratuitement et efficacement.
 
-Un autre critère essentiel est la transparence et la réplicabilité. *R*, étant un logiciel open-source, permet une transparence totale dans les analyses. Le code est accessible, documenté, et peut être facilement partagé, ce qui facilite la réplicabilité des analyses et des visualisations, une exigence souvent cruciale dans les milieux académiques et professionnels. *Python* offre le même niveau de transparence. Cependant, comme le montre le **Tableau 6**, *Tableau* et *Excel*, étant des logiciels propriétaires, rendent plus difficile la documentation précise des étapes de visualisation et de traitement des données, ce qui limite la réplicabilité.
+Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
 
-Enfin, l’adaptabilité et la flexibilité de *R* le distinguent clairement des autres outils. La capacité de personnaliser les graphiques à l'infini avec `ggplot2` ou d'ajouter de l'interactivité avec `shiny` confère à *R* une flexibilité inégalée. *Python* est également très flexible, mais son orientation généraliste peut rendre certaines tâches de visualisation moins intuitives que dans *R*. Comme indiqué dans le **Tableau 6**, *Tableau* offre des visualisations avancées et une certaine flexibilité, mais reste plus limité par son interface utilisateur. Quant à *Excel*, il est excellent pour des graphiques simples, mais ne rivalise pas en termes de personnalisation ou de complexité avec *R* et *Python*.
+L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter possédait, avant les changements de directions récents, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus de scraping, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
 
-En somme, comme le résume le **Tableau 6**, nous mettons en avant *R* comme le choix éditorial pour la visualisation de données, car il répond au mieux à la plupart des critères essentiels de sélection : accessibilité financière, communauté d’utilisateurs active, popularité dans le domaine de l’analyse, compatibilité avec d’autres outils, transparence, et adaptabilité. Tout en reconnaissant les capacités de *Python* et la pertinence d'autres logiciels comme *Tableau* ou *Excel* pour des usages spécifiques, *R* se distingue par sa capacité à fournir des visualisations personnalisées, reproductibles et à moindre coût, ce qui en fait un outil incontournable pour les analystes de données.
+Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, La Presse change ses Unes plusieurs fois dans une même journée. En extractant l'accès aux fils RSS, il est possible de recevoir lesdites mises à jour automatiquement. Ce processus accélère grandement la collecte de données.
 
+Finalement, les API simplifient le travail de chacun par les mises à jour et maintenances. Pour être plus précis, les API, étant maintenus par les fournisseurs de services, sont modifiés au fur et à mesure que le site évolue. Par exemple, si la structure de X est modifiée, son API sera également modifié. Cela évite à ceux demandant l'accès d'ajuster leurs scripts de scraping pour prendre en compte les changements sur le site.
 
+Il faut cependant être alerte de l'évolution constante de ces outils. En effet, la présence de données ouvertes et la création croissante d'API tend à modifier de manière progressive l'outil. Prenons l'exemple de l'API de X (anciennement Twitter), qui a restreint les accès accordés et augmentés les coûts pour récupérer les informations sur la plateforme. Il faut donc rester à l'affût de ces possibles modifications.
 
-```{r}
+En somme, les extracteurs webs, et dans ce cas précis le package rvest, sont des outils qui facilitent grandement l'acquisition de données massives. Plutôt que d'avoir à payer pour des données dont la qualité n'est pas assurée, l'utilisation d'extracteurs permet un accès plus facile et précis à des données provenant de sites web. L'utilisation de ces outils peut toutefois s'avérer complexe et nécessitent un certain nombre de connaissances en lien avec les langages de programmation. Le @sec-chap2 offre un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l'écriture d'extracteurs et qui permet d'utiliser le package *rvest*. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre. L'utilisation de cet outil permet aux chercheurs de faire plusieurs coups d'une seule pierre. Non seulement *rvest* permet de se familiariser avec le langage R, ce qui est un atout essentiel dans la recherche en sciences sociales numériques, mais ce même développement permet un accès inégalé à des données massives qui pourront ensuite être analysées. Ainsi, des connaissances en R sont un atout fondamental au développement d'extracteurs, et la complexité du code évoluera dépendamment du site qui sera extrait.
+
+### Critères de sélection
+
+L'extracteur *rvest* est un outil accessible, particulièrement comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins de circonstances exceptionnelles, l'extraction avec rvest est gratuite. Le coût serait plutôt dans l'acquisition de connaissances préalables en code puis dans l'apprentissage de la méthode d'utilisation. Malgré cette nuance, l'absence de coûts monétaires liés à cet outil favorise son accessibilité à l'ensemble de la communauté scientifique. Il est par exemple possible d'étudier l'opinion publique grâce à l'extraction de publications sur des médias socionumériques, plutôt que de construire et administrer des sondages coûteux (voir par exemple l'article de Barbera et al., 2015).
+
+Additionnellement, l'outil jouit d'une grande communauté d'utilisateurs rendant accessible leurs connaissances, ce qui favorise la diffusion des savoirs liés à l'utilisation de cet outil. De nombreux forums d'aide peuvent alors être consultés gratuitement par les chercheurs.euses voulant se familiariser avec le package, et plus largement, l'extraction de données web. De nombreux forums sont présents sur le site Stack Overflow, et certains chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil sont également dispinible gratuitement en ligne (voir par exemple le chapitre *Web scraping* du livre *R for Data Science* d'Hadley Wickham, 2022, qui présente comment utiliser l'outil *rvest*). Bien que des outils comme Qualtrics et Factiva aient également un grand nombre d'utilsateurs.ices, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.
+
+Les extracteurs sont des outils de recherche très en vogue dans la communauté des sciences sociales. La possibilité d'obtenir une quantité importante de données de manière efficace et gratuite représente une opportunité depuis largement exploitée par les chercheurs en sciences sociales, en témoigne l'émergence de cours dédiés à l'utilisation d'outils permettant l'extraction web dans de nombreuses écoles méthodologiques de renom (telles qu'ICPSR ou ECPR).
+
+Cette méthode, avec le logiciel R, via l'outil *rvest* permet de récolter des données qui pourront ensuite être traitées et exploiter avec R, ce qui favorise donc la compatibilité de l'outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.
+
+Tel qu'explicité précédemment, la présence d'une grande communauté d'utilisateurs de l'outil favorise la transparence et la réplicabilité des différents résultats produits lors de l'utilisation d'extracteurs.
+
+## Manuel d'instruction: extraire des données avec R
+
+La section suivante présente la méthode d'utilisation de l'outil *rvest*. Elle démontre comment l'outil permet d'extraire des données du web, une méthode très en vogue en science sociales.
+
+### L'importance de comprendre la structure du code HTML
+
+Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le package *rvest*, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure 5.3 représente un exemple de base de code HTML.
+
+```{r, out.width="80%"}
+#| label: html-input
 #| echo: false
-#| warning: false
+#| fig-cap: "Exemple de code HTML"
+knitr::include_graphics("images/chapitre_6_html_input.png", dpi = 600)
+```
+
+Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La Figure 5.4 démontre le texte produit par le code HTML.
+
+```{r, out.width="80%"}
+#| label: html-output
+#| echo: false
+#| fig-cap: "Exemple du résultat de code HTML"
+knitr::include_graphics("images/chapitre_6_html_output.png", dpi = 600)
+```
+
+La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Il est donc fortement encourager d'explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites webs dont on souhaite l'extraction. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites webs sont facilement accessible à la communauté scientifique.
+
+### **Le package rvest: son fonctionnement et ses possibilités**
+
+Cet ouvrage recommande l'utilisation du paquetage \*rvest\* afin de récolter des données sur des pages web, qu'elles aient ou non un API. Rvest est construit autour des paquetages "xml2" et "httr" afin de faciliter la manipulation du HTML et XML. Rvest est principalement conçu pour scraper une seule page web alors que pour scraper de multiples pages, d'autres paquetages sont recommandés, notamment "polite". Ce chapitre ne rentre pas dans les détails et ne se concentrera que sur Rvest.
+
+#### **Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo**
+
+La première étape est l'installation et le chargement des paquetages "tidyverse" et "rvest" sur sa console Rstudio. Il est important de les charger séparément car RVEST ne fait pas partie des paquetages de base du TIDYVERSE. Nous installerons ce dernier car il amène des fonctions pratiques au scraping
+
+``` bash
+install.packages("rvest")
+
+install.packages("tidyverse")
+
+library(rvest)
+
 library(tidyverse)
-library(tinytable)
+```
 
-tbl_resume_chap_6 <- tibble(
-    Critères = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    'R' = c('Gratuit', 'Forte et active', 'Populaire', 'Nombreux packages d\'intégration', 
-            'Open-source, réplicable', 'Hautement personnalisable'),
-    'Python' = c('Gratuit', 'Grande et active', 'Courant en science des données', 
-                 'Nombreux packages d\'intégration', 'Open-source, réplicable', 
-                 'Flexible (nombreuses bibliothèques)'),
-    'Tableau' = c('Payant', 'En croissance', 'Populaire', 
-                  'Intégration variée (bases de données)', 'Peu réplicable (propriétaire)', 
-                  'Moins personnalisable'),
-    'Excel' = c('Payant', 'Large', 'Populaire pour tâches simples', 
-                'Compatibilité avec Microsoft', 'Peu réplicable (propriétaire)', 
-                'Pour visualisations simples')
+Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à scraper et la coller dans l'appel de la fonction read_html(). Il est important de stocker l'URL dans l'objet "html_LEGISinfo.
+
+``` bash
+html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
+
+html_LEGISinfo
+```
+
+Lors de l'exécution des lignes de code ci-hautes, la console retournera les éléments suivants:
+
+``` bash
+{html_document}
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+[1] <head>\n<meta http-equiv="Content-Type" 
+content="text/html; charset=UTF-8">\n<meta 
+...
+[2] <body class="body-wrapper ce-parl vh-100">\r\n    
+<header class="d-print-none"><!-- ...
+```
+
+Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
+
+D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \\\<a\\\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.
+
+``` bash
+html_LEGISinfo |> html_elements("a")
+```
+
+Qui retourne les éléments suivants:
+
+``` bash
+{xml_nodeset (180)}
+ [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only 
+ sr-only-focusable">Skip to m ...
+ [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">
+ Parliament of Cana ...
+ [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
+```
+
+``` bash
+html_LEGISinfo |> html_elements("a")
+```
+
+Qui retourne les éléments suivants:
+
+``` bash
+{xml_nodeset (180)}
+ [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-
+ focusable">Skip to m ...
+ [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">
+ Parliament of Cana ...
+ [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
+```
+
+``` bash
+html_LEGISinfo |> html_elements("a")
+```
+
+``` bash
+{html_node}
+<a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">
+```
+
+Suite à l'inspection des éléments <a>, ceux qui nous intéressent sont ceux de classe "bill-tile-container". Il suffit d'ajouter un point "." avant la classe souhaitée lors de l'appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l'exemple de LEGISinfo, nous obtenons une liste d'éléments de classe bill-tile-container que nous allons stocker dans l'objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
+
+``` bash
+BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
+```
+
+L'exécution du bloc de code ci-haut produit le résultat suivant dans la console
+
+``` bash
+{xml_nodeset (60)}
+ [1] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-1">
+ \r\n\r\n     ...
+ [2] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-2">
+ \r\n\r\n     ...
+ [3] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-3">
+ \r\n\r\n     ...
+```
+
+À partir de la liste d'éléments de classe bill-tile-container, nous appelons la fonction html_element, qui lorsque appliqué à une liste permet d'extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe parliament-session par le biais de la ligne de code suivante:
+
+``` bash
+BillTile_LEGISinfo |> html_element(".parliament-session") 
+```
+
+Ce qui produit le résultat suivant dans la console:
+
+``` bash
+{xml_nodeset (60)}
+ [1] <div class="parliament-session">\n<span class="parl-session-number">
+ 44th</span> Parlia ...
+ [2] <div class="parliament-session">\n<span class="parl-session-number">
+ 44th</span> Parlia ...
+ [3] <div class="parliament-session">\n<span class="parl-session-number">
+ 44th</span> Parlia ...
+```
+
+Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur "id attribute". Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le id attribute retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
+
+``` bash
+html_LEGISinfo |> html_elements("#StartOfContent")
+```
+
+``` bash
+{xml_nodeset (1)}
+[1] <a id="StartOfContent" tabindex="-1"></a>
+```
+
+Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l'imbrication des sélections. Lorsque la fonction html_element est appliquée à un vecteur de liste html_elements, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d'utiliser html_element à cette étape car il retourne un NA même lorsqu'il n'y a pas d'éléments correspondants, alors que html_elements ne retournera pas la valeur manquante. Dans l'exemple de LEGISinfo, c'est exactement ce que l'on a voulu faire pour obtenir les éléments de classe parliament-session. Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple, il ne suffit que d'appliquer la fonction html_text2 sur l'appel de html_element sur l'objet à moissonner, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction "inspect" de Google Chrome ainsi que les diverses fonctions du package rvest. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour moissonnés. Voici les différentes opérations et leurs résultats dans la console:
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element("h4") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "S-1"   "S-2"   "S-3"   "S-4"   "S-5"...
+```
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element(".parliament-session") |> html_text2().
+```
+
+Console
+
+``` bash
+[1] "44th Parliament, 1st session" "44th Parliament, 1st session"...
+```
+
+Code
+
+``` bash
+BillTile_LEGISinfo |> html_element("h5") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "An Act relating to railways"                                                                                                                                                                                                                                                                                  
+ [2] "An Act to amend the Parliament of Canada Act and to make 
+ consequential and related amendments to other Acts"                                                                                                                                                                                                  
+ [3] "An Act to amend the Judges Act"   
+...
+```
+
+Code
+
+``` bash
+BillBS_LEGISinfo <- html_LEGISinfo |> html_elements(".bottom-section")
+BillBS_LEGISinfo |> html_element("dd") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "Introduced as pro forma bill"                                 
+"Senate bill awaiting first reading in the House of Commons"               
+ [3] "Bill not proceeded with"                                              
+ "Royal assent received"                                                    
+ [5] "Royal assent received"                                                 
+ "At second reading in the House of Commons"     
+...
+```
+
+Code
+
+``` bash
+Bill_stage <- html_LEGISinfo |> html_elements(".progress-bar-description")
+Bill_stage |> html_element("dd") |> html_text2()
+```
+
+Console
+
+``` bash
+[1] "First reading in the Senate"            
+"Third reading in the Senate"            
+"First reading in the Senate"           
+"Royal assent"                        
+"Royal assent"                          
+ [6] "First reading in the House of Commons" 
+ "First reading in the House of 
+ Commons"  "Royal assent"                          
+ "First reading in the House of Commons"  "Royal assent"        
+...
+ 
+```
+
+Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu'à utiliser la fonction tibble du tidyverse. Ce paquetage permet de facilement créer des dataframes sur R. Voici le script à produire dans l'exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation :
+
+``` bash
+Table_LEGISinfo <- tibble(
+  Bill = Bill_LEGISinfo |> html_element("h4") |> html_text2(),
+  Session = Bill_LEGISinfo |> html_element(".parliament-session") |>
+  html_text2(),
+  Name = Bill_LEGISinfo |> html_element("h5") |> html_text2(),
+  Status = BillBS_LEGISinfo |> html_element("dd") |> html_text2(),
+  Stage = Bill_stage |> html_element("dd") |> html_text2()
 )
-
-tt(tbl_resume_chap_6, width = 0.75, caption = 'Résumé des principaux outils de visualisation graphique')
-
-
-
 ```
 
+Il est important de noter que ce chapitre ne permet que de scraper des documents html uniques. Afin de scraper plusieurs page web simultanément, il faudra utiliser d'autres paquetages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que vous savez extraire des informations d'un document html pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
 
-## Manuel d'instruction: La visualisation graphique avec R
-Lorsque vous souhaitez créer des graphiques en R, les options abondent. De multiples *packages* ont été développés dans le but de visualiser des données. Heureusement, les choix diminuent lorsque l'on regarde ce qui est le plus utilisé dans la communauté. L'objectif n'est pas simplement de présenter les *packages* les plus courrants parce qu'ils sont les plus communs. Les *packages* les plus utilisés représentent des outils qui ont été grandement vérifiés et améliorés par la communauté en ligne, dont la documentation est abondante et pour lesquels les ressources d'aide en ligne sont innombrables. 
+Il est possible d'extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin de moissonner divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique passe du moissonnage pour devenir de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur le moissonnage.
 
-### Pour les analyses descriptives
-
-#### Base R
-Le Base R est le langage de base de *R* et il permet de faire de nombreuses manipulations statistiques sans avoir à installer de packages au préalable. Il est particulièrement utile pour l'analyse exploratoire des données, où des visualisations rapides et simples sont essentielles pour comprendre les données. Le Base R permet notamment de produire des graphiques rapidement, ce qui peut être inestimable lors de la première exploration d'un jeu de données. Par exemple, les fonctions comme `plot()`, `hist()`, `boxplot()` et `barplot()` permettent aux chercheurs de visualiser les distributions des variables, d'identifier des valeurs aberrantes et d'examiner les relations entre les variables avec un minimum de code. Cette rétroaction visuelle immédiate aide à valider les données, à découvrir des motifs et à sélectionner les variables intéressantes pour des analyses ultérieures.
-
-Alors qu'un peu tout peut être fait avec le Base R, ce langage demeure élémentaire lorsqu'il s'agit d'innover dans la visualisation ou de produire des graphiques plus sophistiqués. Le Base R est excellent pour l'exploration des données en raison de sa simplicité et de sa rapidité, mais lorsqu'il s'agit de peaufiner les graphiques pour des présentations ou des publications, des packages comme lattice et `ggplot2` offrent plus de flexibilité et d'esthétique avancée [@wickham09, p. 3-4].
-
-#### `lattice`
-Développé par Deepayan Sarkar, lattice cherche à faciliter la visualisation de graphique en facettes. Plus précisément, ce package vise à améliorer les graphiques du Base R en fournissant de meilleures options de graphisme par défaut pour visualiser des relations multivariées. Ce package est donc intéressant pour les chercheurs et les codeurs voulant présenter graphiquement la relation entre plus de deux variables (Kabacoff, 2022, p. 373‑377; Sarkar, 2008, 2023). Pour produire un graphique de base avec Lattice, le package lattice doit préalablement être installé dans la bibliothèque de packages du codeur et chargé dans sa session au début de son code (voir annexe). Par la suite, le codeur doit spécifier le type de graphique souhaité avec la fonction appropriée3. Une fois la fonction choisie, il doit spécifier par une formule les variables x et y ainsi que la troisième variable à contrôler et à visualiser en facettes (graph_type(formula | variable en facettes, data=)).
-
-Cependant, le package lattice a pour désavantage d’avoir un modèle formel (une grammaire de graphique) moins compréhensible et intuitif que celui de `ggplot2` lorsque vient le temps d’améliorer l’esthétisme des graphiques. De plus, sa plus faible popularité fait en sorte que ce package demeure moins développé par la communauté de codeurs de R que ne l’est ggplot2. Nous examinons plus en détail la grammaire de graphique de ce dernier package ainsi que ses avantages et inconvénients dans la prochaine section (Kabacoff, 2022, p. 373‑377 et 390; Wickham, 2009, p. 6).
-
-#### Le package `ggplot2`
-Développé principalement par Hadley Wickham, `ggplot2` est un *package R* faisant partie de la collection de *packages* de `tidyverse`. Ainsi, `ggplot2` peut être utilisé avec les autres *packages* centraux de `tidyverse` ce qui limite de potentiels conflits entre les fonctions de *packages* qui puissent être incompatibles avec `ggplot2`. Par exemple, le *package* `dplyr` de `tidyverse` est très utile pour analyser, organiser et préparer vos données à visualiser avec `ggplot2` [@wickham_etal19; @wickham_etal23, p. 30].
-
-Le principal avantage de `ggplot2` reste sa grammaire qui permet à l'utilisateur de rendre ses graphiques beaucoup plus visuellement attrayants en facilitant la personnalisation esthétique. Ceci permet de pousser l'esthétisme de vos graphiques à un très haut niveau par rapport aux autres *packages* de visualisation graphique disponibles en R. Les graphiques `ggplot2` se construisent couche par couche, soit par l'ajout des différents éléments du graphique au fur et à mesure dans le code du graphique à construire. Dans `ggplot2`, la fonction *aes()* définit les mappings esthétiques, liant les variables des données aux éléments visuels du graphique (comme les axes ou la couleur). Les "geoms", tels que *geom_point()*, déterminent le type de graphique (points, lignes, barres). La fonction *labs()* sert à ajouter des étiquettes et des titres aux axes ou au graphique. Enfin, *theme()* ajuste l'apparence globale du graphique, en modifiant des éléments comme le fond, les grilles, ou le style de texte. Ces composants travaillent ensemble pour construire un graphique clair et personnalisable.
-
-```{r}
-#| warning: false
-#| message: false
-library(ggplot2) # importer le package
-library(dplyr)
-
-# Nous utilisons dans cet exemple le
-#   jeu de données intégré starwars (dans dplyr)
-
-# Créer un graphique de dispersion (scatter plot) avec ggplot2
-ggplot(starwars, aes(x = mass, y = height)) +
-  # Ajouter des points rouges de taille 3
-  geom_point(color = "red", size = 3) +
-  labs(
-    # Titre du graphique
-    title = "Poids et taille des personnages de Star Wars",
-    # Étiquette de l'axe x
-    x = "Poids",
-    # Étiquette de l'axe y
-    y = "Taille"
-  ) +
-  # Appliquer un thème minimaliste
-  theme_minimal()
+``` bash
+BillTile_LEGISinfo |> html_attr("href")
 ```
 
-### Pour visualiser les régressions
+La ligne de code ci-haut produit le résultat suivant dans la console
 
-Lorsque l'on souhaite aller au-delà des analyses descriptives, il devient pertinent de recourir aux modèles de régression. Si la fonction `summary(model)` offre une manière simple et rapide d'obtenir un aperçu d'un modèle, ses limites se manifestent lorsqu'il s'agit de visualiser et de comparer plusieurs modèles ou encore de les présenter de manière claire à une équipe ou dans le cadre d'une publication scientifique. La section suivante du chapitre introduira divers outils qui facilitent la visualisation, la comparaison et la présentation efficace de nos modèles de régression.
-
-:::::: {.callout-note}
-Le manuel d'instructions de cette section restera volontairement bref et concis en raison de l'abondante documentation déjà existante sur ces outils. L'objectif ici est de les centraliser en un seul endroit.
-:::
-
-#### Le package `stargazer`
-
-Le package `stargazer` est un package qui permet de générer des tableaux de régression de manière simple et efficace. Selon son auteur, Marek Hlavac, ce package excelle dans trois aspects : sa facilité d'utilisation, la diversité des modèles supportés et son esthétisme [@hlavac22]. Bien que nous soyons partiellement d'accord avec ces propos et que `stargazer` réponde effectivement à ces trois aspects, nous estimons que le package `modelsummary` (@sec-model-summary) surpasse `stargazer` dans chacun de ces domaines.
-
-Voici une façon standard d'utiliser `stargazer` pour créer un tableau de deux modèles de régression:
-
-```{r}
-#| label: stargazer
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package stargazer si ce n'est
-#   pas déjà fait.
-
-# install.packages("stargazer") # pour installer
-
-library(stargazer) # importer le package
-
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "text",
-  title = "Tableau de régression des modèles"
-  )
+``` bash
+1] "/legisinfo/en/bill/44-1/s-1"  
+"/legisinfo/en/bill/44-1/s-2" 
+"/legisinfo/en/bill/44-1/s-3"  
+"/legisinfo/en/bill/44-1/s-4"  
+"/legisinfo/en/bill/44-1/s-5"  
+"/legisinfo/en/bill/44-1/s-6"  
+ [7] "/legisinfo/en/bill/44-1/s-7" 
+ "/legisinfo/en/bill/44-1/s-8"  
+ "/legisinfo/en/bill/44-1/s-9"  
+ "/legisinfo/en/bill/44-1/s-10"  
+ "/legisinfo/en/bill/44-1/s-11" 
+ "/legisinfo/en/bill/44-1/s-12" 
+[13] "/legisinfo/en/bill/44-1/s-13" 
+"/legisinfo/en/bill/44-1/s-14" 
+"/legisinfo/en/bill/44-1/s-15"  
+"/legisinfo/en/bill/44-1/s-16" 
+"/legisinfo/en/bill/44-1/s-17" 
+"/legisinfo/en/bill/44-1/s-201"
 ```
 
-Alors que cette sortie texte est intéressante afin de rapidement visualiser différents modèles de régression, `stargazer` offre également l'option de transformer ces modèles en `latex` avec l'argument `type`:
+Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
 
-```{r}
-#| label: stargazer2
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "latex",
-  title = "Tableau de régression des modèles"
-  )
+``` bash
+htmltest <- minimal_html("
+  <table class='mytable'>
+<tr><th>x</th>   <th>y</th></tr>
+<tr><td>1.5</td> <td>2.7</td></tr>
+<tr><td>4.9</td> <td>1.3</td></tr>
+<tr><td>7.2</td> <td>8.1</td></tr>
+</table>
+  ")
+  htmltest |>
+  html_element(".mytable") |> html_table()
 ```
 
-Alors que cette sortie est moins compréhensible qu'avec `type = "text"`, elle a l'avantage de pouvoir être copiée et collée dans un fichier .tex et ainsi présenter le tableau dans un article par exemple. Une autre option est possible avec `type = "html"` afin d'inclure la table de régression dans un code html (à des fins de lisibilité, nous n'avons pas présenté la sortie de cette commande. Essayez-le dans votre environnement de programmation!):
+L'opération précédente produit le résultat suivant dans la console
 
-```{r}
-#| eval: false
-#| label: stargazer3
-stargazer(
-  mod_lm,
-  mod_glm,
-  type = "html",
-  title = "Tableau de régression des modèles"
-  )
+``` bash
+# A tibble: 3 × 2
+      x     y
+  <dbl> <dbl>
+1   1.5   2.7
+2   4.9   1.3
+3   7.2   8.1
 ```
 
+En conclusion de cette section, lorsque l'on moissonne un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur de votre navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant de scrapper le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), il est possible dans certains cas de télécharger les données directement sur le site web, ce qui rend parfois le besoin de moissonner désuet.
 
+## Conclusion et discussion:
 
-Bien qu'il existe des milliers de façons de personnaliser son tableau de régression avec `stargazer`, nous vous invitons à consulter la documentation du package [@hlavac22] ainsi que différents blogs en ligne afin de personnaliser votre tableau comme vous le voulez.
+Ce chapitre a comme objectif de dresser un portrait des différents outils de collecte de données mis à la disposition des scientifiques s'intéressant aux sciences sociales. Bien que non exhaustif, ce chapitre fait un survol d'outils traditionnels de récolte de données numériques en sciences sociales. Par exemple, les outils de sondages ou de récolte de données médiatiques sont présentés dans les paragraphes ci-haut. En revanche, ce chapitre s'ancre autour du postulat qu'il ne faut pas se limiter aux outils de récolte de données traditionnels, et que la révolution numérique engendre d'importantes opportunités d'acquisition de données massives et exclusives par le biais des extracteurs de données, plus précisemment l'outil d'extraction *rvest*. Ces extracteurs ont pour but de moissonner les données présentes sur un site web afin de les rendre disponibles pour l'analyse scientifique.
 
-#### `modelsummary` {#sec-model-summary}
-
-Le package `modelsummary` [@arel-bundock22a], développé dans le même but que `stargazer`, est une nette amélioration au package `stargazer` selon l'avis des auteurs du chapitre: il est encore plus facile d'utilisation, supporte une grande variété de modèles et se connecte à divers autres outils afin de contrôler l'esthétisme de son résultat. De plus, la documentation officielle du package est beaucoup plus abondante et claire. Finalement, le package est plus intuitif à utiliser.
-
-Tout comme `stargazer`, il faut commencer en créant un modèle de régression. Puis, il suffit d'inclure les modèles dans la fonction `modelsummary`:
-
-```{r}
-#| code-overflow: wrap
-#| message: false
-# Il faut premièrement installer et importer le package modelsummary si ce
-#   n'est pas déjà fait.
-
-# install.packages("modelsummary") # pour installer
-
-library(modelsummary) # importer le package
-```
-
-
-```{r}
-#| echo: true
-#| results: asis
-## Créer deux modèles de régression
-mod_lm <- lm(mpg ~ hp + wt, data = mtcars)
-mod_glm <- glm(vs ~ hp + wt + drat, data = mtcars, family = binomial())
-
-## Utiliser modelsummary pour créer un tableau de deux modèles de régression
-modelsummary(
-  list(
-    "Model 1" = mod_lm,
-    "Model 2" = mod_glm
-    ),
-    stars = TRUE,
-    output = "markdown"
-  )
-```
-
-Tout comme `stargazer`, `modelsummary` offre également plusieurs options de sortie avec l'argument `output`. Cependant, `modelsummary` en supporte plus, comme `kableExtra`, `html`, `latex` et bien d'autres formats.
-
-Nous vous invitons à consulter la documentation du package `modelsummary` [@arel-bundock22a] pour plus d'informations sur la personnalisation de vos tableaux de régression.
-
-#### `marginaleffects`
-
-Les tableaux de régression présentent souvent les résultats des modèles de manière brute et difficile à interpréter. Une approche plus intuitive pour visualiser et comprendre ces modèles consiste à utiliser les prédictions qu'ils génèrent, puis à interpréter l'impact des variables indépendantes sur la variable dépendante. Bien que cette démarche puisse être complexe et fastidieuse à réaliser avec les fonctions de base de R ou Python, le package R `marginaleffects` a été spécifiquement conçu pour simplifier cette tâche et rendre ces analyses plus accessibles [@arel-bundock].
-
-La première étape est de faire son modèle comme on le fait habituellement:
-
-```{r}
-#| code-overflow: wrap
-# Il faut premièrement installer et importer le package marginaleffects si
-#  ce n'est pas déjà fait.
-
-# install.packages("marginaleffects") # pour installer
-
-library(marginaleffects) # importer le package
-
-## Créer un modèle de régression
-mod_lm <- lm(mpg ~ hp + wt + drat, data = mtcars)
-```
-
-Ensuite, il est nécessaire de créer une grille où notre variable indépendante d'intérêt varie tandis que les autres variables restent constantes. Prenons, par exemple, le cas où nous souhaitons estimer et interpréter l'effet de `hp` sur `mpg`. Pour ce faire, nous construisons une `dataframe` représentant une grille de différents niveaux de `hp`, tout en maintenant les variables `wt` et `drat` constantes. Cela nous permet d'isoler l'effet spécifique de `hp` et d'explorer son impact sur la variable dépendante `mpg`. La première sous-étape ici est de comprendre les différentes valeurs que peut prendre notre variable d'intérêt, `hp`:
-```{r}
-#| code-overflow: wrap
-table(mtcars$hp)
-hist(mtcars$hp)
-```
-
-Comme on peut voir, la variable `hp` peut prendre n'importe quelle valeur numérique entre 52 et 335. La prochaine étape est de construire notre grille en utilisant la fonction `datagrid` du package:
-
-```{r}
-#| code-overflow: wrap
-
-grille <- marginaleffects::datagrid(
-      model = mod_lm,
-      hp = c(50, 100, 150, 200, 250, 300, 350)
-)
-
-print(grille)
-```
-
-Comme on peut le voir, la variable `grille` est maintenant une `dataframe` qui contient 7 rangées. Les variables `wt` et `drat` conservent la même valeur dans chaque rangée ; la variable `hp` prend cependant les 7 valeurs que nous avons définies.
-
-La prochaine étape est celle de prédire notre modèle sur ces données en utilisant la fonction `predictions` du package:
-
-```{r}
-#| code-overflow: wrap
-
-predictions <- marginaleffects::predictions(
-      model = mod_lm,
-      ## Ici, on dit à R de prédire notre modèle sur nos nouvelles données
-      ##  ie: grille
-      newdata = grille
-)
-
-print(as.data.frame(predictions))
-```
-
-La `dataframe` predictions contient maintenant des informations très intéressantes:
-
-- `estimate`: la valeur prédite de `mpg` pour cette observation.
-- `conf.low`: la borne inférieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `conf.high`: la borne supérieure de l'intervalle de confiance de la prédiction pour cette observation.
-- `hp`, `wt` et `drat`: les valeurs que prennent nos variables indépendantes pour arriver à cette prédiction. Encore une fois, on peut remarquer comment `hp` varie, mais pas `wt` et `drat`.
-
-Nous pouvons maintenant utiliser `predictions` pour construire un graphique qui nous permet d'interpréter l'effet de `hp` sur `mpg` à l'intérieur de notre modèle en contrôlant pour `wt` et `drat` en utilisant le package `ggplot2`:
-
-```{r}
-#| code-overflow: wrap
-
-ggplot(predictions, aes(x = hp, y = estimate)) +
-      geom_point() +
-      geom_linerange(aes(ymin = conf.low, ymax = conf.high))
-```
-
-Et voilà, le tour est joué ! Il existe de nombreuses manières de présenter et d'adapter ce graphique selon vos besoins. Il est également important de souligner que le package `marginaleffects` est extrêmement polyvalent, prenant en charge des centaines de types de modèles et offrant une large gamme de fonctionnalités. Pour découvrir toutes ses possibilités, nous vous invitons à consulter la documentation officielle du package [@arel-bundock].
-
-### Aller plus loin: La visualisation interactive des données
-
-Si jusqu'à présent la visualisation des données a été présentée comme une étape servant à exposer les résultats de recherches, elle peut également être perçue comme un outil précieux pour l'exploration de données multidimensionnelles. En effet, les visualisations interactives offrent la possibilité d'explorer et même d'analyser les données directement à partir des graphiques ou tableaux. Cela permet non seulement de mieux appréhender la structure des données, mais aussi de les inspecter plus efficacement, tout en suscitant des questions de recherche qui auraient pu être négligées autrement [@sievert20].
-
-#### Graphiques interactifs
-
-Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En R, les packages `ggplotly` et `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
-
-:::::: {.callout-note}
-Note: Le rendu de graphiques interactifs n'est pas possible dans un document PDF. Par conséquent, seuls les codes sont fournis ci-dessous. Vous pouvez essayer ces codes dans votre environnement de développement pour voir le résultat.
-:::
-
-##### Exemple avec `ggplotly`
-
-`ggplotly` permet de transformer un graphique `ggplot2` en une visualisation interactive.
-
-```{r}
-#| message: false
-library(ggplot2)
-library(plotly)
-```
-```{r}
-#| eval: false
-# Ce package, webshot2, peut être nécessaire pour visualiser
-#  des graphiques interactifs
-
-#install.packages("webshot2")
-
-# Création d'un graphique ggplot
-p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
-  geom_point() +
-  labs(title = "Effet de hp sur mpg")
-
-# Transformation en graphique interactif
-ggplotly(p)
-```
-
-Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`:
-
-```{r}
-#| eval: false
-# Création d'un graphique interactif avec plotly
-fig <- plot_ly(
-  data = mtcars,
-  x = ~hp, y = ~mpg,
-  type = 'scatter',
-  mode = 'markers'
-  ) %>%
-  layout(title = "Effet de hp sur mpg")
-
-fig
-```
-
-Nous vous recommandons vivement de consulter la documentation officielle des packages `plotly` et `ggplotly` pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir vos graphiques interactifs.
-
-
-#### Tableaux interactifs
-
-Les tableaux interactifs sont très utiles pour rendre la présentation des données plus engageante et informative. Les fonctions `kable()` et `kableExtra` permettent de créer des tableaux élégants et interactifs directement dans R.
-
-##### Exemple avec `kable()`
-
-La fonction `kable()` de `knitr` permet de transformer un dataframe en un tableau bien formaté.
-
-```{r}
-library(knitr)
-
-# Création d'un tableau avec kable
-kable(head(mtcars), caption = "Exemple de tableau avec kable")
-```
-
-#### Exemple avec `kableExtra`
-
-Le package kableExtra permet de personnaliser et d'enrichir les tableaux créés avec kable(), notamment en ajoutant des options interactives comme des couleurs ou des styles.
-
-```{r}
-#| message: false
-library(kableExtra)
-```
-```{r}
-# Création d'un tableau interactif avec kableExtra
-kable(
-  head(mtcars),
-  caption = "Exemple de tableau avec la colonne hp colorée en rouge"
-  ) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
-  column_spec(5, background = "red")
-```
-
-
-#### Applications interactives avec Shiny
-
-`shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
-
-
-##### Exemple de base avec `shiny`
-
-Voici un exemple simple d'application `shiny` où l'utilisateur peut sélectionner une variable pour tracer un graphique interactif. Si le package `shiny` est installé sur votre poste, vous pouvez simplement copier ce code dans un script R sous RStudio, puis lancer l'application web directement.
-
-```{r}
-#| eval: false
-#| label: shiny
-library(shiny)
-library(ggplot2)
-
-# Interface utilisateur
-ui <- fluidPage(
-  titlePanel("Exemple d'application Shiny"),
-  sidebarLayout(
-    sidebarPanel(
-      selectInput("var", "Choisir une variable:",
-                  choices = names(mtcars))
-    ),
-    mainPanel(
-      plotOutput("plot")
-    )
-  )
-)
-
-# Serveur
-server <- function(input, output) {
-  output$plot <- renderPlot({
-    ggplot(mtcars, aes_string(x = input$var, y = "mpg")) +
-      geom_point() +
-      labs(title = paste("Effet de", input$var, "sur mpg"))
-  })
-}
-
-# Lancement de l'application
-shinyApp(ui = ui, server = server)
-```
-
-Cette application simple permet à l'utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (`mpg`), visualisée à travers un graphique interactif.
-
-Pour explorer davantage les possibilités de `shiny`, nous vous recommandons de consulter la documentation officielle du package `shiny` ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications.
+Toutefois, un seul chapitre ne permet pas de relever l'ensemble des outils de collecte de données disponibles pour la communauté scientifique. Néanmoins, les outils présentés permettent un aperçu à la fois d'outils plus conventionnels et répandus de collecte de données numériques, mais également de dresser un portrait du potentiel d'extraction permis par la maîtrise de R.
