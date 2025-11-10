@@ -9,7 +9,7 @@ Pour comprendre l'évolution de la visualisation graphique, il est utile de se t
 ```{r, out.width="80%"}
 #| label: fig-milestones_project
 #| echo: false
-#| fig-cap: "Image cool issue du Milestones project."
+#| fig-cap: "La ligne du temps du Milestones project."
 knitr::include_graphics("images/chapitre_7_milestones_projet.png", dpi = 600)
 ```
 
