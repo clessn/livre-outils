@@ -1,7 +1,7 @@
 # Les outils de gestion de données {#sec-chap4}
 
 \begin{center}
-Jérémy Gilbert\footnotemark[1]}
+\textit{Jérémy Gilbert\footnotemark[1]}
 \end{center}
 
 \footnotetext[1]{Western University}
