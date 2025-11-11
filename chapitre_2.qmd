@@ -1,12 +1,9 @@
 # Les langages de programmation {#sec-chap2}
 
 \begin{center}
-\textit{Marc-Antoine Rancourt\footnotemark[1], 
-Laurence-Olivier M. Foisy\footnotemark[2]}
+\textit{Marc-Antoine Rancourt (University of Toronto), \\
+Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
-
-\footnotetext[1]{University of Toronto}
-\footnotetext[2]{Université Laval}
 
 ## Point d'observation : qu'est-ce que c'est, la programmation ? 
 

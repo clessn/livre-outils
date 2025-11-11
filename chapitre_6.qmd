@@ -1,13 +1,10 @@
 # Outils de collecte de données {#sec-chap6}
 
 \begin{center}
-\textit{Jérémie Drouin\footnotemark[1],
-Benjamin Carignan\footnotemark[2],
-Arnaud Beaulé\footnotemark[2]}
+\textit{Jérémie Drouin (University of Toronto), \\
+Benjamin Carignan (Université Laval), \\
+Arnaud Beaulé (Université Laval)}
 \end{center}
-
-\footnotetext[1]{University of Toronto}
-\footnotetext[2]{Université Laval}
 
 La révolution numérique engendrée par l'émergence des données massives et de l'intelligence artificielle représente un important défi pour la communauté académique en sciences sociales [@manovich11; @burrows_savage14]. Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension accrue des phénomènes sociaux étudiés par la communauté scientifique [@connelly_etal16]. Cette meilleure compréhension est permise, entre autres, par l'accès à une variété inégalée et une quantité massive de données permettant l'étude des différents objets de recherche [@kramer_etal14; @schroeder14]. Si l'accès à ces données numériques massives représente un défi éthique et théorique, il représente également un défi technique pour les chercheurs voulant exploiter le potentiel et les opportunités offertes par les données massives numériques [@burrows_savage14].
 
