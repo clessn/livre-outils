@@ -191,7 +191,8 @@ prédiction pour la situer entre quelques années et quelques décennies
 [@bengio23]. Dans les dix dernières années seulement, les systèmes
 de reconnaissance d'images et de langages en sont venus à dépasser
 les capacités humaines [@roser22]. La @fig-evolution présente cette
-évolution.
+évolution^[Le graphiqe a été reproduit à partir des données et du 
+graphique de Our World in Data: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?time=1998..2023&tab=line].
 
 <!-- NOTE: Refaire le graphique manuellement -->
 
@@ -711,19 +712,12 @@ et inconvénients de ces outils par rapport à la traduction humaine
 [@glover24]:
 
 ::: {.center}
-
 | Avantages | Inconvénients |
-|-------------------------------|-----------------------------------------|
-| Amélioration de la productivité : traductions rapides et de grande
-échelle | Données biaisées : reproduction de stéréotypes et erreurs
-de genre | | Apprentissage autonome : amélioration continue grâce
-à l'apprentissage non supervisé | Manque de subtilité : difficultés
-avec les expressions idiomatiques et le jargon spécifique | |
-Réduction des coûts : minimise le besoin d'intervention humaine |
-Difficultés avec le contexte : erreurs de cohérence et de pertinence
-contextuelle | | Amélioration de l'accessibilité : accessible en
-plusieurs langues et adapté aux besoins spéciaux |  |
-
+|-----------|---------------|
+| Amélioration de la productivité : traductions rapides et de grande échelle | Données biaisées : reproduction de stéréotypes et erreurs de genre |
+| Apprentissage autonome : amélioration continue grâce à l'apprentissage non supervisé | Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique |
+| Réduction des coûts : minimise le besoin d'intervention humaine | Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle |
+| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux | |
 :::
 
 Il existe des milliers d'outils de traduction automatique qui
@@ -896,8 +890,12 @@ numériques.
 
 #### Installation et chargement du package
 
-```{r} #| eval: false install.packages("openai") ## au besoin
-library(openai) ```
+```{r}
+#| eval: false
+
+install.packages("openai") ## au besoin
+library(openai)
+```
 
 #### Configuration de l'API
 
@@ -912,13 +910,19 @@ spécifique par 1000 tokens. Le prix des Tokens en entrée est moins
 Lorsque vous aurez votre clé API, utilisez le package usethis pour
 la configurer dans votre environnement R.
 
-```{r} #| eval: false install.packages("usethis") ## au besoin
-usethis::edit_r_environ() ```
+```{r}
+#| eval: false
+
+install.packages("usethis") ## au besoin
+usethis::edit_r_environ()
+```
 
 Ajoutez la ligne suivante à votre fichier `.Renviron`.
 
-```{r} #| eval: false
-OPENAI_API_KEY = inserez - votre - cle - api - ici - sans - guillemets ```
+```{r}
+#| eval: false
+OPENAI_API_KEY = inserez - votre - cle - api - ici - sans - guillemets
+```
 
 #### Utilisation de l'API
 
@@ -927,16 +931,24 @@ Elle prend en entrée le modèle que vous souhaitez utiliser ainsi
 que le message que vous souhaitez envoyer au modèle en format list.
 Voici un modèle d'utilisation de la fonction:
 
-```{r} #| eval: false chat_prompt <- create_chat_completion(
-    model = "gpt-3.5-turbo", messages = list(
-	list(
-	    "role" = "system", "content" = "You are a helpful
+```{r}
+#| eval: false
+
+chat_prompt <- create_chat_completion(
+  model = "gpt-3.5-turbo",
+  messages = list(
+    list(
+      "role" = "system",
+      "content" = "You are a helpful
 	    assistant."
-	), list(
-	    "role" = "user", "content" = "Please do the following:"
-      )
-	)
-) ```
+    ),
+    list(
+      "role" = "user",
+      "content" = "Please do the following:"
+    )
+  )
+)
+```
 
 Le résultat de votre requête sera contenu dans l'objet chat_prompt
 formatté en JSON. Vous pouvez accéder aux variables de la même façon
@@ -952,10 +964,11 @@ aux possibilités que vous souhaitez explorer.
 
 ## Notes
 
--   Il est possible d'accéder aux statistiques d'utilisation de
-token dans `chat_prompt$usage$prompt_tokens` et
-`chat_prompt$usage$completion_tokens`. Vous pouvez donc calculer
-le coût de votre requête en fonction du modèle que vous utilisez.
+- Les deux commandes suivantes permettent d'extraire de l'information
+supplémentaires:
+  - `chat_prompt$usage$prompt_tokens`: Permet d'accéder
+  aux statistiques d'utilisation de tokens. Vous pouvez donc calculer
+  le coût de votre requête en fonction du modèle que vous utilisez.
 
 -   Ne pas oublier d'inclure .Renviron dans votre gitignore pour
 ne pas vous faire voler votre clé API.
