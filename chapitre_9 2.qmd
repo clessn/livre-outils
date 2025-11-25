@@ -1,9 +1,9 @@
 # Outils d'intelligence artificielle {#sec-chap9}
 
 \begin{center}
-\textit{Jozef Rivest (University of Michigan), \\
-Laurence-Olivier M. Foisy (Université Laval), \\
-Hubert Cadieux (Université Laval)}
+
+Jozef Rivest, Laurence-Olivier Foisy, Hubert Cadieux
+
 \end{center}
 
 Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
@@ -73,11 +73,11 @@ pp. 15]?
 Deux définitions de l’IA peuvent tout de même être retenues. La
 première vient de John McCarthy [-@mccarthy07, pp. 2] : « Il s'agit
 de la science et de l'ingénierie qui consistent à créer des machines
-intelligentes[^chapitre_9-1], en particulier des programmes
+intelligentes[^chapitre_8-1], en particulier des programmes
 informatiques intelligents. Elle est liée à la tâche similaire
 consistant à utiliser des ordinateurs pour comprendre l'intelligence
 humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont
-biologiquement observables. »[^chapitre_9-2]. La seconde définition
+biologiquement observables. »[^chapitre_8-2]. La seconde définition
 provient de la compagnie IBM [-@ibm23] : « Dans sa forme la plus
 simple, l'IA est un domaine qui combine l'informatique et des
 ensembles de données robustes pour permettre la résolution de
@@ -91,13 +91,13 @@ reproduire artificiellement certaines capacités cognitives humaines,
 afin de rendre les machines « intelligentes » en leur donnant la
 capacité de résoudre des problèmes par elles-mêmes.
 
-[^chapitre_9-1]: Intelligence étant défini de la façon suivante :
+[^chapitre_8-1]: Intelligence étant défini de la façon suivante :
 « L'intelligence est la partie informatique de la capacité à atteindre
 des objectifs dans le monde. On trouve différents types et degrés
 d'intelligence chez l'homme, chez de nombreux animaux et chez
 certaines machines. » [@mccarthy07, pp. 2]
 
-[^chapitre_9-2]: Toutes les traductions ont été effectuées par le
+[^chapitre_8-2]: Toutes les traductions ont été effectuées par le
 logiciel DeepL
 
 Ces définitions restent toutefois à préciser, notamment dans le
@@ -197,13 +197,8 @@ les capacités humaines [@roser22]. La @fig-evolution présente cette
 
 
 ```{r}
-#| echo: false
 #| message: false
 #| label: fig-evolution
-#| warning: false
-#| error: false
-#| width: 6
-#| heigth: 6
 
 source("R/graphique.R")
 ai_evolution
@@ -359,7 +354,7 @@ régressions par pénalité, sont encouragés à consulter des plans de
 cours qui portent spécifiquement sur ce sujet et des livres qui
 présentent ces différentes méthodes et leur application avec certains
 langages de programmation. Sur ce dernier point, le livre de
-@boehmke_greenwell20 offre une excellente description de plusieurs de
+@boehmke_andson20 offre une excellente description de plusieurs de
 ces méthodes en plus de leur application dans `R`.
 
 Trois catégories d'outils seront présentées: les « *Large Language
@@ -443,13 +438,13 @@ outil qui aidera à *complémenter* la revue des écrits. En d'autres
 termes, afin que ce logiciel soit utile, il faut déjà avoir des
 articles sous la main. *Elicit* peut aider pour cette tâche, mais
 aussi il est pratique de consulter des manuels de références comme
-des *hanbooks*[^chapitre_9-3] et autres ouvrages de référence afin
+des *hanbooks*[^chapitre_8-3] et autres ouvrages de référence afin
 de se faire une idée sur le sujet qui nous intéresse en plus de
 trouver des références. Au besoin, les bibliothécaires des différents
 départements universitaires sont aussi d'excellente ressource pour
 débuter une recherche.
 
-[^chapitre_9-3]: Il s'agit d'ouvrages généraux qui portent sur
+[^chapitre_8-3]: Il s'agit d'ouvrages généraux qui portent sur
 divers sujets.  Les éditeurs les plus connus sont notamment *Oxford*,
 *SAGE* et *Routledge*.
 
@@ -627,28 +622,23 @@ Voici un exemple simple d'utilisation de l'API d'OpenAI :
 library(openai)
 
 system <- "You are a helpful assistant" # Donne un role au modèle.
-Doit
-être
-clair
-et
-concis
+Doit être clair et concis
 
 prompt <- "Quelle est la capitale du Québec?" # Le prompt
 
 chat_prompt <- openai::create_chat_completion(
-  model = "gpt-3.5-turbo-0125",
-  messages = list(
-    list("role" = "system", "content" = system),
-    list(
-      "role" = "user",
-      "content" = prompt
+	model = "gpt-3.5-turbo-0125", messages = list(
+	    list("role" = "system",
+		 "content" = system
+	    ), list(
+		"role" = "user", "content" = prompt)
+	    )
     )
-  )
-)
 
 output <- chat_prompt$choices$message.content
 
 print(output)
+
 ```
 
 ### Après la recherche: traduire ses écrits pour la diffusion
@@ -873,7 +863,7 @@ outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23].
 Bien qu'elle offre de nombreux avantages, cette technologie offre
 beaucoup de raccourcis attirants qui pourraient potentiellement
 nuire à plusieurs de nos capacités intellectuelles et physiques
-[@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25a
+[@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25
 démontre que la rétention d'information du cerveau lors de l'utilisation
 de l'IA pour accomplir des tâches complètes à notre place est moindre
 que lorsque la tâche est accomplie sans l'utilisation de l'IA. De
@@ -918,7 +908,7 @@ usethis::edit_r_environ() ```
 Ajoutez la ligne suivante à votre fichier `.Renviron`.
 
 ```{r} #| eval: false
-OPENAI_API_KEY = inserez - votre - cle - api - ici - sans - guillemets ```
+OPENAI_API_KEY=inserez-votre-cle-api-ici-sans-guillemets ```
 
 #### Utilisation de l'API
 
@@ -1010,7 +1000,7 @@ https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assist
  les discussions et les réflexions quant à l'utilisation de ces
  technologies. D'ailleurs, certaines universités se sont déjà dotées
  de lignes directrices quant à l'utilisation de robots conversationnels
- et de l'IA générative[^chapitre_9-5]. Nous sommes d'avis que chaque
+ et de l'IA générative[^chapitre_8-5]. Nous sommes d'avis que chaque
  université aurait intérêt à se doter de tel document, afin de
  fournir les ressources nécessaires aux étudiants ainsi qu'aux
  membres du corps professoral dans leur utilisation de ces outils.
@@ -1018,7 +1008,7 @@ https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assist
  de l'IA nous paraissent être une bonne stratégie à adopter afin
  de permettre le développement de bonnes pratiques.
 
- [^chapitre_9-5]: Sur ce sujet, nous recommandons de consulter les
+ [^chapitre_8-5]: Sur ce sujet, nous recommandons de consulter les
  ressources dans la section Bonnes pratiques d'utilisation de l'IA
  dans l'Annexe 1 du chapitre.
 
@@ -1074,9 +1064,9 @@ https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assist
 
  En bibliographie, la référence serait insérée comme suit, et ensuite
  j'irai insérer la question et la réponse complète en
- annexe[^chapitre_9-6].
+ annexe[^chapitre_8-6].
 
- [^chapitre_9-6]: Référez-vous à l'Annexe 2 pour un exemple.
+ [^chapitre_8-6]: Référez-vous à l'Annexe 2 pour un exemple.
 
  OpenAI. (2023). ChatGPT (Version du 3 août 2023) \[Large Language
  Model\]. https://chat.openai.com/auth/login (exemple tiré de McAdoo

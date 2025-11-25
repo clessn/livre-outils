@@ -113,3 +113,5 @@ _Shared*
 *.vdoc.r
 
 /.quarto/
+
+**/*.quarto_ipynb
