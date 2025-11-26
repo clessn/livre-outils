@@ -198,6 +198,7 @@ graphique de Our World in Data: https://ourworldindata.org/grapher/test-scores-a
 
 
 ```{r}
+#| fig-cap: "Évolution des performances de l'IA comparée aux capacités humaines"
 #| echo: false
 #| message: false
 #| label: fig-evolution
@@ -516,7 +517,6 @@ et à mesure les nouvelles références dans *Research Rabbit* afin
 de visualiser la couverture de notre revue des écrits.
 
 ### Pendant la recherche: l'utilisation de grands modèles linguistiques
-pour analyser des données
 
 L'utilisation des LLMs via l'API d'OpenAI en R représente une avancée
 significative pour les chercheurs en sciences sociales, leur offrant
