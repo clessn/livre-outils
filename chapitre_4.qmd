@@ -239,6 +239,8 @@ Afin d'assurer une cohérence dans les clés de citation utilisées au sein d'un
 Une fois Better BibTeX configuré, il est possible d'exporter une collection Zotero au format BibLaTeX. Pour cela, faites un clic droit sur la collection souhaitée et sélectionnez Exporter la collection. Choisissez le format `Better BibLaTeX` et cochez l'option `[x] Keep updated`. Ce fichier `.bib` sera mis à jour automatiquement chaque fois que de nouvelles références seront ajoutées à Zotero. Cette méthode est particulièrement utile pour synchroniser les références dans des projets partagés via des systèmes de versionnement comme GitHub.
 
 Il est important de noter que toute modification effectuée dans Zotero (ajout, suppression de références) sera automatiquement synchronisée avec les autres membres du groupe. Cela implique qu'une gestion prudente des références est nécessaire pour éviter toute suppression accidentelle.
+<!-- SUGGESTION : Ajouter des images sur les étapes à suivre pour exporter la collection Zotero au format BibLatex, mais cela implique des connaissances (l'exportation elle-même) que je n'ai pas encore, donc je propose seulement. -->
+
 
 #### Utilisation de Zotero lors de la rédaction
 
