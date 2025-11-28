@@ -13,7 +13,7 @@
 
 3ème PR : porte sur le chapitre 2 : Proposition d'ajouter un passage mentionnant les ressources informelles telles que YouTube ou les ressources universitaires (ateliers des bibliothèques universitaires, livres disponibles à l'emprunter) dans la section sur l’apprentissage des langages de programmation (avantage d'être gratuit et permet un apprentissage qui intègre des méthodes diverses et variées) (lignes 56 et 57 du fichier qmd sur R).
 
-4ème PR : porte sur le chapitre 5 : Proposition d'ajouter une phrase ou deux soulignant l’importance (notamment pour les étudiants) de savoir produire une bibliographie sans dépendre entièrement d’un logiciel. Malgré le gain de temps considérable que représentent Zotero ou Mendeley des problèmes techniques peuvent survenir. Il reste utile de maîtriser de manière autonome les bases des styles de citation pour conserver autonomie, cohérence et rigueur. De plus, cela permettrait d'optimiser l'utilisation de Mendeley et Zotero.
+4ème PR : porte sur le chapitre 5 : Proposition d'ajouter une phrase ou deux soulignant l’importance (notamment pour les étudiants) de savoir produire une bibliographie sans dépendre entièrement d’un logiciel. Malgré le gain de temps considérable que représentent Zotero ou Mendeley des problèmes techniques peuvent survenir. Il reste utile de maîtriser de manière autonome les bases des styles de citation pour conserver autonomie, cohérence et rigueur. De plus, cela permettrait d'optimiser l'utilisation de Mendeley et Zotero. Proposition faite à la ligne 287 du fichier qmd sur R).
 
 # Comment contribuer au projet du livre d'outils
 
