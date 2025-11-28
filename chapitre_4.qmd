@@ -115,6 +115,19 @@ tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de
 
 ```
 
+
+## Manuel d'instruction: Comment utiliser Covidence
+
+Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. Comme mentionné dans la section précédente, les méthodes justifiants une utilisation de Covidence impliquent généralement un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
+
+La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
+
+Suite à la révision des titres et des résumés, vient le « Full text review ». Cette deuxième phase implique l'examen complet des textes sélectionnés lors de l'étape précédente. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
+
+La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. L'objectif est de parvenir à un consensus parmi les codeurs. L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
+
+Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des analyses subséquentes ou dans la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme Colandr et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
+
 ### Illustration concrète d’une revue systématique en sciences sociales avec Covidence
 
 Pour illustrer concrètement et simplement le fonctionnement de Covidence dans un contexte de revue sytématique en science sociale, prenons l’exemple suivant. Admettons une étude portant sur l’effet des programmes d’électrification ruraux sur les ménages au Kenya ; l’équipe de chercheurs effectuant la recherche commence par importer 2000 références bibliographiques provenant de Web Of Science, Google Scholar et JSTOR. 
@@ -132,19 +145,6 @@ A la fin de cette étape, il reste 50 articles respectent pleinement tous les cr
 L’équipe procède ensuite à l’extraction des informations essentielles des 90 articles sélectionnés (méthodes, données, indicateurs, résultats). Covidence centralise ces éléments et génère des tableaux qui facilitent la comparaison entre les études et la rédaction de la synthèse.
 
 Cet exemple illustre comment Covidence aide l’équipe à appliquer ses critères de manière uniforme et à gérer efficacement le volume d’articles à analyser pour une revue systématique.
-
-
-## Manuel d'instruction: Comment utiliser Covidence
-
-Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. Comme mentionné dans la section précédente, les méthodes justifiants une utilisation de Covidence impliquent généralement un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
-
-La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
-
-Suite à la révision des titres et des résumés, vient le « Full text review ». Cette deuxième phase implique l'examen complet des textes sélectionnés lors de l'étape précédente. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
-
-La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. L'objectif est de parvenir à un consensus parmi les codeurs. L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
-
-Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des analyses subséquentes ou dans la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme Colandr et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
 
 ## Arpentage et choix éditorial: Les outils de gestion des références
 
