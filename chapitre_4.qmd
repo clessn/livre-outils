@@ -34,6 +34,36 @@ Un deuxième type de synthèse de la connaissance est la revue de portée, ou sc
 
 Dans le domaine des sciences sociales, les revues systématiques et les méta-analyses offrent aussi des outils précieux pour synthétiser et évaluer de manière rigoureuse les preuves issues de multiples études. Ces approches permettent de dégager des tendances, d'identifier des consensus ou des divergences dans la littérature et d'éclairer les débats politiques et sociaux grâce à une base de données empirique solide. En recensant de manière exhaustive et méthodique la littérature existante sur un sujet donné, les chercheurs peuvent offrir une synthèse objective qui reflète l'état actuel des connaissances. La méta-analyse, souvent intégrée dans le cadre d'une revue systématique, va plus loin en combinant quantitativement les résultats de différentes études pour produire une estimation globale de l'effet étudié. Elle offre ainsi une puissance statistique accrue et une meilleure généralisation des conclusions, transcendant les limites des études individuelles.
 
+```{r}
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(tinytable)
+
+tbl_types_revues <- tibble(
+`Type de revue` = c(
+"Revue narrative",
+"Snowballing",
+"Revue de portée (scoping review)",
+"Revue systématique",
+"Méta-analyse"
+),
+`But principal` = c(
+"Donner un aperçu général de la littérature",
+"Trouver d’autres articles à partir de références clés",
+"Explorer un sujet large et cartographier les connaissances",
+"Synthétiser rigoureusement les études sur un sujet précis",
+"Combiner quantitativement les résultats de plusieurs études"
+)
+)
+
+tt(tbl_types_revues,
+width = 0.75,
+caption = "Résumé des principaux types de synthèse de la connaissance"
+)
+``` 
+
 ## Arpentage et choix éditorial: Les outils de synthèse de la connaissance
 
 Plusieurs outils existent afin de faciliter la vie des chercheurs et chercheuses qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme EndNote et Zotero. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une license institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de Covidence, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est probablement l’outil le plus populaire pour les revues systématiques dans certains domaines, y compris les sciences sociales. Gratuit, il offre une interface intuitive et utilise des algorithmes pour faciliter le tri des articles. Toutefois, il propose moins d'options pour l’extraction des données en comparaison à Covidence.
@@ -84,6 +114,25 @@ tbl_resume_chap_X <- tibble(
 tt(tbl_resume_chap_X, width = 0.75, caption = 'Résumé des principaux outils de gestion de la connaissance')
 
 ```
+
+### Illustration concrète d’une revue systématique en sciences sociales avec Covidence
+
+Pour illustrer concrètement et simplement le fonctionnement de Covidence dans un contexte de revue sytématique en science sociale, prenons l’exemple suivant. Admettons une étude portant sur l’effet des programmes d’électrification ruraux sur les ménages au Kenya ; l’équipe de chercheurs effectuant la recherche commence par importer 2000 références bibliographiques provenant de Web Of Science, Google Scholar et JSTOR. 
+
+	Etape 1 : title and abstract screening
+Les chercheurs définissent des critères par exemple : électrification, ménages ruraux, Afrique subsaharienne, évaluations empiriques, etc. Ils peuvent également décider de mettre des critères d’exclusion. 
+Covidence applique ces critères en analysant les titres et résumés des 2000 textes puis, il retient 550 qui entrent dans ces critères et seront soumis à l’étape 2.
+Notons que Covidence met en évidence les situations où, pour un même article, un codeur a sélectionné “inclure” alors qu’un autre a choisi “exclure” ou “incertain”. Ces conflits sont automatiquement listés dans la plateforme, ce qui permet à l’équipe de les regarder ensemble et de discuter pour se mettre d’accord.
+
+	Etape 2 : full text review
+Ici, les membres de l’équipe de recherche, passe à la lecture des articles précédemment retenus. Pour un même article, au moins deux d’entre les membres répondent « oui », « non », « peut-être » selon les critères prédéfinis. Covidence extrait ensuite les articles qui ont reçu « oui » de l’ensemble des lecteurs et exclut ceux avec « non ». Pour les articles avec des réponses différentes, Covidence les mets en évidence pour que les chercheurs puissent se mettre d’accord.
+A la fin de cette étape, il reste 50 articles respectent pleinement tous les critères par consensus et passent à la dernière phase.
+
+	Etape 3 : extraction 
+L’équipe procède ensuite à l’extraction des informations essentielles des 90 articles sélectionnés (méthodes, données, indicateurs, résultats). Covidence centralise ces éléments et génère des tableaux qui facilitent la comparaison entre les études et la rédaction de la synthèse.
+
+Cet exemple illustre comment Covidence aide l’équipe à appliquer ses critères de manière uniforme et à gérer efficacement le volume d’articles à analyser pour une revue systématique.
+
 
 ## Manuel d'instruction: Comment utiliser Covidence
 
