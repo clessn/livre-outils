@@ -5,6 +5,18 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+# Propositions de modifications :
+
+**1er PR :** porte sur le chapitre 1 : Proposition d'ajouter des exemples plus concrets d'outils et méthodes qui dépassent le cadre quotidien et qui s'intégreraient et s'appliqueraient aux sciences sociales (ou plus précisément aux sciences politiques) avec par exemple un nom d'outil et le nom de la méthode qu'il permettrait (inversement) (par exemple R à utiliser pour l'analyse de contenu de tweets). Les propositions ont été faites aux lignes 14 et 18 du fichier qmd sur R. Sinon ajout général d'exemples entre parenthèses quand on parle de logiciel libre. J'ai conscience que le reste du livre le fait mais j'imagine que cela resterait pertinent étant donné que le chapitre 1 introduit les concepts et qu'il est bien d'y être familiarisé avec des choses plus concrètes. 
+
+**2ème PR :** porte sur le chapitre 3 : Proposition d’ajouter un court passage (quelques phrases ou un paragraphe) pour attirer l’attention sur les risques liés à une utilisation trop dépendante d’outils comme Notion et plus généralement du cloud. Il serait pertinent de sensibiliser sur l'importance des enjeux de confidentialité et de protection des données (données stockées sur Notion sont hébergées aux États-Unis et donc potentiellement accessibles par le Cloud Act et du Patriot Act). + Recommandation aux lecteurs de vérifier si les outils qu’ils utilisent sont conformes aux politiques de leur institution (lignes 338 et 339 du fichier qmd sur R).
+
+**3ème PR :** porte sur le chapitre 2 : Proposition d'ajouter un passage mentionnant les ressources informelles telles que YouTube ou les ressources universitaires (ateliers des bibliothèques universitaires, livres disponibles à l'emprunter) dans la section sur l’apprentissage des langages de programmation (avantage d'être gratuit et permet un apprentissage qui intègre des méthodes diverses et variées) (lignes 56 et 57 du fichier qmd sur R).
+
+**4ème PR :** porte sur le chapitre 5 : Proposition d'ajouter une phrase ou deux soulignant l’importance (notamment pour les étudiants) de savoir produire une bibliographie sans dépendre entièrement d’un logiciel. Malgré le gain de temps considérable que représentent Zotero ou Mendeley des problèmes techniques peuvent survenir. Il reste utile de maîtriser de manière autonome les bases des styles de citation pour conserver autonomie, cohérence et rigueur. De plus, cela permettrait d'optimiser l'utilisation de Mendeley et Zotero.
+
+**5ème PR :** porte sur le chapitre 7 : Proposition d’ajouter une recommandation sur l’importance d’harmoniser les graphiques au sein d’un même travail académique. L’idée est de rappeler qu’utiliser une palette de couleurs, des polices et des styles cohérents renforce la lisibilité et facilite la compréhension des résultats. Cela permet aussi une identité visuelle claire. Cette cohérence peut aussi devenir une forme de “signature” graphique qui peut être réutilisée dans d'autres productions scientifiques ou académiques (lignes 10 du fichier qmd sur R).
+
 # Comment contribuer au projet du livre d'outils
 
 Bienvenue ! Ce guide vous aidera à contribuer à notre projet de livre hébergé sur GitHub. Ne vous inquiétez pas si vous êtes nouveau sur Git ou GitHub ; ce guide étape par étape est conçu pour les débutants ayant une expérience technique limitée.
