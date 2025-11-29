@@ -185,8 +185,7 @@ Nous vous recommandons vivement de consulter la documentation officielle des pac
 
 #### Applications interactives avec Shiny
 
-`shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
-
+`shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web. Par exemple, au lieu d’avoir des centaines de pages de pdf, une application web créée avec `shiny` permettrait à l’utilisateur d’accéder directement aux résultats et données qui l’intéressent, ou bien permettrait à un professeur de créer des démonstrations interactives pour enseigner des concepts de statistiques et d’analyse de données à ses étudiants. 
 
 ##### Exemple de base avec `shiny`
 
@@ -227,4 +226,4 @@ shinyApp(ui = ui, server = server)
 
 Cette application simple permet à l'utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (`mpg`), visualisée à travers un graphique interactif.
 
-Pour explorer davantage les possibilités de `shiny`, nous vous recommandons de consulter la documentation officielle du package `shiny` ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications.
+Pour explorer davantage les possibilités de `shiny`, nous vous recommandons de consulter la documentation officielle du package `shiny` ainsi que les forums en ligne qui proposent des exemples plus complexes et des fonctionnalités avancées pour enrichir vos applications. Nous recommandons notamment le livre de Hadley Wickham, intitulé *Mastering Shiny* (2021), disponible en accès libre et destiné aux débutants, afin de comprendre le fonctionnement de `shiny` son utilisation. 
