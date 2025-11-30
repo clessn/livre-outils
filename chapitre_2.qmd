@@ -17,13 +17,9 @@ Un langage de programmation sert d’intermédiaire entre l’humain et la machi
 Il permet de traduire des idées ou des méthodes en une suite d’opérations exécutables.
 On peut ainsi automatiser des calculs statistiques, transformer et visualiser des données, ou développer des applications.
 
-Il existe différents niveaux de langages.
-Les langages de haut niveau, comme R, Python ou Java, sont conçus pour être lisibles et expressifs. 
-Ils sont faciles à comprendre et se rapprochent du langage naturel.
-Ils permettent de se concentrer sur la logique et les objectifs de l’analyse, sans gérer les détails techniques du matériel.
-Ce sont les langages les plus couramment utilisés en sciences sociales.
-Les langages de bas niveau, comme l’Assembleur, se rapprochent du langage machine.
-Ils offrent un contrôle fin sur l’ordinateur, mais sont plus difficiles à apprendre et rarement utilisés en sciences sociales.
+Il existe différents niveaux de langages. Les langages de haut niveau, comme R, Python ou Java, sont conçus pour être lisibles et expressifs. Ils sont faciles à comprendre et se rapprochent du langage naturel. Ils permettent de se concentrer sur la logique et les objectifs de l’analyse, sans gérer les détails techniques du matériel. On peut dire qu’un langage de haut niveau ressemble à la conduite d’une voiture : on se concentre sur la direction à prendre, et la mécanique interne se gère toute seule. Ce sont les langages les plus couramment utilisés en sciences sociales.
+
+Les langages de bas niveau, comme l’Assembleur, se rapprochent du langage machine. Pour reprendre l’image de la voiture, c’est comme travailler directement sous le capot, en réglant soi-même chaque mécanisme pour obtenir un contrôle maximal. Cet avantage s’accompagne toutefois d’une contrepartie : ces langages sont plus difficiles à apprendre et restent rarement utilisés en sciences sociales.
 
 Chaque langage possède des domaines d’application privilégiés.
 R est largement utilisé pour les statistiques et la visualisation.
