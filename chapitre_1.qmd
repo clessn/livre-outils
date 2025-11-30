@@ -83,7 +83,7 @@ Le logiciel libre et le *code ouvert* ont certaines similitudes puisqu'ils adhè
 
 En quoi est-ce que ces deux concepts, issus du monde de l'informatique, sont-ils intéressants et/ou importants pour les sciences sociales ? Pour répondre à cette question, il est important de retourner à la base, soit de se questionner sur ce que constitue la recherche scientifique dans les sciences sociales.
 
-Dans leur célèbre ouvrage *Designing Social Inquiry*, @king_etal21[^chapitre_1-8] propose quatre critères qui définissent la recherche dite scientifique: 1) le but est l'inférence; 2) les procédures sont publiques; 3) les conclusions sont incertaines; 4) le contenu est la méthode. La philosophie du code ouvert et les avantages pratiques du logiciel libre s'arriment parfaitement avec plusieurs de ces critères.
+Dans leur célèbre ouvrage *Designing Social Inquiry*, @king_etal21[^chapitre_1-8] propose quatre critères qui définissent la recherche dite scientifique: 1) le but est l'inférence; 2) les procédures sont publiques; 3) les conclusions sont incertaines; 4) le contenu est la méthode. La philosophie du logiciel libre et les avantages pratiques du code ouvert s'arriment parfaitement avec plusieurs de ces critères.
 
 [^chapitre_1-8]: Ce livre est aussi connu sous l'acronyme *KKV*, en référence à la première lettre du nom de famille de chacun des auteurs.
 
