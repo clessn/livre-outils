@@ -423,6 +423,21 @@ devrait se limiter à trouver des articles et/ou des livres scientifiques
 selon nos besoins qui seront consultés par la suite pour rédiger
 notre revue des écrits et trouver des références supplémentaires.
 
+
+<!-- Paragraphe sur l'utilisation de NotebookLM  -->
+
+Des outils comme NotebookLM permettent de résumer des textes. Cet outil est gratuit, et est reconnu pour être en mesure de traiter un grand nombre de textes. Vous pouvez, par exemple, utiliser la fonction de récupération des PDFs par Zotero, puis les donner à NotebookLM, pour qu'il en fasse des résumés à votre façon. Vous pouvez simplement lui demander les méthodologies utilisées, les hypothèses, les données, etc. C'est une façon d'aller un peu plus loin que le résumé offert par Elicit ou Consensus, un autre outil de synthèse de la connaissance, mais de façon personnalisée. Ces résumés sont à utiliser dans une perspective de tri des articles. Ne laissez pas l'IA faire votre travail à votre place. Tel que montré par Dupuis (2025), une synthèse de la connaissance rédigée par IA sera rapidement détectée, en plus d'enlever toute personnalisation à votre texte, et de n'avoir aucun contrôle sur ce que vous avancez : l'IA peut se tromper. Cependant, si vous souhaitez un survol rapide des textes, d'en prendre connaissance, à l'instar d'une revue de presse le matin, un outil comme NotebookLM vous permet d'en synthétiser les idées importantes, et même d'en faire un résumé audio. En bref, l'outil de résumé de texte d'IA est tout à fait pertinent dans une perspective de survol des écrits ou de tri plus avancé de vos textes. Cependant, ne laissez pas l'IA faire le travail, et cherchez vous-mêmes les citations et les éléments les plus juteux de votre bibliographie. 
+
+
+<!-- Référence :  @misc{dupuis2025redaction,
+  author       = {Dupuis, M.},
+  title        = {La rédaction humaine à l'ère du numérique},
+  year         = {2025},
+  howpublished = {\url{https://www.masdupuis.com/section/projets/thesee_texte.html}},
+  note         = {Consulté le : 23 novembre 2025}
+}
+-->
+
 Un autre outil s’offre à nous afin de trouver des références
 supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais
 demande de se créer un compte afin de pouvoir utiliser ses services.
@@ -773,6 +788,14 @@ en fait un outil de traduction très efficace pour les textes longs
 et complexes. De plus, il est possible de raffiner la traduction
 en quelques itérations en suggérant des modifications au texte
 traduit.
+
+
+<!-- Utilisation des traductions-->
+
+### La traduction de textes en sciences sociales 
+
+Aujourd'hui, avec ces outils, un chercheur n'est plus limité à devoir traduire mot par mot un texte. La plupart des outils IA comme Perplexity, ChatGPT, Gemini supportent la lecture de PDF ou de texte. Particulièrement dans des domaines tels que la politique internationale, si vous traitez des régions d'Europe de l'Est, d'Amérique du Sud, d'Asie, etc. Il est tout à fait pertinent de se rapporter aux auteurs de ces pays qui, bien souvent, n'utilisent pas l'anglais dans leurs publications - voire seulement dans l'abstract. Concrètement, téléchargez votre PDF et donnez-le à l'IA de votre choix. Demandez-lui de le traduire entièrement, ou par morceaux. Idéalement, comparez ce qu'il vous livre avec le PDF original à côté. Vous trouverez peut-être des citations pertinentes, et vous pourrez citer proprement les pages. Le simple fait d'élargir son champ de recherche à d'autres publications qui ne sont ni en anglais ni en français vous permet de mieux cibler certains enjeux. Si vous étudiez la guerre en Ukraine, vous passerez peut-être à côté d'excellents textes écrits en russe, en ukrainien, en polonais ou en roumain.
+
 
 #### Autres outils
 
