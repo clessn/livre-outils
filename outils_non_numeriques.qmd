@@ -1,0 +1,102 @@
+---
+title: "Les outils non numériques"
+author: "Marc-Antoine Dupuis"
+date: today
+bibliography: outils_non_numériques.bib
+format: html
+---
+
+# Les outils non numériques
+
+Bien que cet ouvrage présente en détail de nombreux outils numériques utiles en sciences sociales, il est bon de rappeler qu'il existe des outils non numériques, accessibles et extrêmement puissants pour la recherche. Ces outils sont le cerveau et le corps. L'idée est d'adopter une approche à 360 degrés dans nos travaux, tant professionnels qu'académiques. Les outils suivants ont été sélectionnés selon des critères d'accessibilité et de reproductibilité, à l'instar de la plupart des outils présentés dans ce livre. Notez que nous aborderons l'activité physique comme un outil. Consultez toujours votre médecin si une condition vous empêche de pratiquer une activité physique en toute sécurité.
+
+## Le travail en profondeur
+
+Le cerveau est une machine puissante. Cependant, dans un environnement rempli de distractions — courriels, messages Teams, Slack, Facebook, Instagram, etc. — il est de plus en plus difficile de se concentrer. Le premier outil, mis de l'avant par Cal Newport, est le *deep work*.
+
+> Le travail en profondeur, ou *deep work*, désigne une activité professionnelle menée dans un état de concentration absolue qui pousse nos capacités cognitives jusqu'à leurs limites. [@newport_deep_2017]
+
+Nous disposons tous de 24 heures par jour, mais notre capacité de travail est souvent limitée à quelques heures. Tous les métiers ne permettent pas cela, évidemment. Mais en recherche, particulièrement à l'ère du télétravail, le *deep work* est un outil pratique et facile à mettre en place.
+
+Il existe sur YouTube des vidéos guides pour vos sessions de *deep work*. Grosso modo, choisissez une tâche qui demande une forte concentration. Isolez-vous dans une pièce fermée ou un endroit sans distraction. Laissez votre téléphone de côté et fermez toute fenêtre inutile à votre tâche : boîte courriel, messagerie Facebook, etc.
+
+Une session de *deep work* se déroule généralement ainsi : 50 minutes de travail à intensité modérée/élevée, suivies de 10 minutes de pause active (aller aux toilettes, boire un café, etc.). Puis, recommencez une à deux fois maximum. Après deux ou trois heures, reposez-vous. Après votre session complète, vous pourrez rallumer votre téléphone ou vos messageries.
+
+Notons bien la différence entre travail superficiel et travail en profondeur. Le meilleur exemple est la différence de productivité entre le matin et le soir. Le matin, vous êtes fraîchement réveillé, personne ne vous distrait, et vous pouvez vous réserver 30, 60 ou 90 minutes de travail en profondeur où vous serez très productif. Le soir, après une journée de travail, vous êtes fatigué, distrait, peut-être affamé, et d'autres tâches vous attendent : vaisselle, souper, etc. Que pouvez-vous réellement accomplir dans vos quelques heures de temps libre entre votre arrivée à la maison et votre heure de coucher?
+
+Mieux vaut donc privilégier la qualité de votre session de travail plutôt que la quantité. Regardez dans votre agenda si des blocs vides sont disponibles. Commencez par une session de 60 minutes (50 minutes de travail, 10 minutes de pause) et voyez ce que votre cerveau, dans de bonnes conditions, est capable de réaliser.
+
+## L'activité physique
+
+Tel que mentionné en introduction, consultez toujours votre médecin avant d'entreprendre une activité physique si vous avez une condition particulière.
+
+L'activité physique est parfois négligée. Pourtant, une activité physique « optimale » ne prend pas beaucoup de temps. Selon l'Organisation mondiale de la santé (OMS), deux types d'activités améliorent notre santé mentale et physique, ainsi que nos capacités musculaires et cognitives.
+
+Premièrement, un adulte en santé doit pratiquer une activité aérobique régulière, c'est-à-dire du cardio. L'OMS recommande entre 150 et 300 minutes d'activités légères par semaine, ou 75 à 150 minutes d'activités soutenues par semaine. Une activité légère serait la marche; une activité soutenue serait la course, par exemple [@oms_lignes_2020, p. 4].
+
+Concrètement, les récentes analyses suggèrent comme cible idéale 10 000 pas par jour. Cependant, 7 000 pas par jour sont associés à des améliorations significatives de la santé et sont plus réalistes pour la plupart des personnes [@ding_daily_2025].
+
+Deuxièmement, un adulte en santé doit pratiquer une activité musculaire sollicitant les principaux groupes musculaires. L'OMS recommande de pratiquer cette activité deux fois par semaine [@oms_lignes_2020, p. 4]. La littérature sur le sujet met de l'avant un concept simple : la « dose minimale effective ». En gros, quel est le volume d'entraînement minimum pour voir des gains musculaires?
+
+Une méta-analyse de 2020 par @androulakis-korakakis_minimum_2020 indique qu'une seule série, effectuée avec suffisamment d'intensité, deux à trois fois par semaine, suffit pour voir une augmentation de la force musculaire.
+
+@iversen_no_2021 proposent un guide empirique pour un programme « efficace » en termes de temps. Le minimum à faire par semaine serait : un exercice de poussée pour les jambes (ex. : squat), un exercice de tirage du haut du corps (ex. : rowing ou traction), et un exercice de poussée du haut du corps (ex. : développé pectoraux ou pompes). Quatre séries pour chacun de ces exercices suffisent.
+
+Voici à quoi pourrait ressembler un programme d'entraînement minimaliste :
+
+- **À la maison** : deux fois par semaine, un circuit composé de 2 séries de pompes, 2 séries de tractions et 2 séries de squats.
+- **À la salle de musculation** : deux séances composées de 2 séries de développé au choix (épaules, pectoraux, machine, haltères, barre…), 2 séries de tirage vertical ou horizontal (rowing, tractions, machine, haltères, barre, câble) et 2 séries de poussée des jambes (squats, fentes, presse à cuisses, etc.).
+
+Vous n'avez pas besoin d'être culturiste pour faire de la musculation. Tel que mentionné dans la littérature, deux séances d'une vingtaine de minutes suffisent. Et les bienfaits sur le corps, la santé mentale et la santé globale ont été maintes fois prouvés.
+
+## Sommeil
+
+Nous serons brefs sur cet outil. Le sommeil, parfois négligé, est très important pour la santé physique et mentale, à tous les âges. Une revue systématique de @gardani_systematic_2022 démontre que les troubles du sommeil affectent la santé et le bien-être des étudiants. Pour le cerveau, un sommeil suffisant signifie une activité intellectuelle et des capacités de réaction beaucoup plus grandes [@khan_consequences_2023, p. 98].
+
+En pratique, oublions donc les nuits blanches à compléter des travaux ou à réviser pour le lendemain. Il est plus que probable que vous réussirez mieux votre examen avec plus de sommeil et moins de révisions que l'inverse.
+
+## Répétitions espacées
+
+Il arrive parfois d'oublier, cela fait partie de la vie. Mais pourquoi ? Il y a presque un siècle et demi, @ebbinghaus_memory_1987 a mené la première expérience sur la mémoire, en étudiant la rétention d'information après des intervalles réguliers : 20 minutes, 1 heure, 1 journée… Le résultat a été théorisé sous la forme de la courbe de l'oubli : plus le temps passe, moins nous retenons ce que nous avons appris.
+
+Plus récemment, un protocole testé sur des étudiants par @voice_spaced_2020 a démontré son efficacité. Voici le principe :
+
+1. Testez une question à mémoriser.
+2. Si vous ne l'avez pas bien retenue, répétez-la le lendemain, et ainsi de suite.
+3. Si vous l'avez bien mémorisée, répétez-la le lendemain, puis après 6 jours.
+4. Ensuite, augmentez l'intervalle en le multipliant par 2,5 à chaque fois.
+
+Exemple concret :
+
+- Jour 0 : apprentissage
+- Jour 1 : révision
+- Jour 6 : révision
+- Jour 15 (6 × 2,5)
+- Jour 37 (15 × 2,5)
+- Jour 93 (37 × 2,5)
+- Jour 232 (93 × 2,5), etc. [@voice_spaced_2020, p. 3]
+
+Cette méthode permet de consolider la mémoire à long terme et de contrer la courbe de l'oubli. Elle requiert simplement un peu de discipline et de régularité.
+
+## Café
+
+Largement consommé, le café est probablement l'une de nos boissons favorites. Que dit la littérature sur le sujet ?
+
+Une *umbrella review* regroupant 201 méta-analyses [@poole_coffee_2017] montre que la consommation régulière de café (3 à 4 tasses par jour) est associée à une diminution significative des risques de mortalité. Le café est également lié à une amélioration des performances cognitives [@kim_drinking_2021].
+
+Le timing est cependant important : les bienfaits sont davantage observés lorsqu'on le consomme le matin. Une grande dose (≈ 400 mg) perturbera le sommeil si elle est consommée moins de 12 heures avant le coucher. Si vous dormez à 23 h, évitez donc toute grande tasse après 11 h. [@wang_coffee_2025].
+
+En résumé : le café peut être un outil accessible et pertinent à intégrer dans votre routine, à condition de respecter la modération et le bon timing. 3 à 4 tasses par jour, idéalement en avant-midi.
+
+## Conclusion
+
+Nous avons discuté d'outils numériques, mais il est tout aussi important d'intégrer des outils non numériques dans votre boîte à outils. Ces stratégies sont presque gratuites et accessibles :
+
+- Du café (avec modération)
+- Du temps d'étude de qualité
+- Une meilleure stratégie de révision (répétitions espacées)
+- Un peu de musculation
+- Plus de marche
+
+Ces habitudes simples aideront votre cerveau à être plus performant et à améliorer votre santé globale.
+
