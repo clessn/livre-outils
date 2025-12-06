@@ -311,6 +311,12 @@ compréhension fictive de la réalité. Une fausse compréhension des
 interactions et des dynamiques sociales pourrait avoir des conséquences
 importantes sur le bien-être de nos sociétés. Restons vigilants.
 
+### Bonnes pratiques éthiques pour l’intégration de l’IA
+
+L’intégration de l’intelligence artificielle (IA) au sein d'un protocole de recherche en sciences sociales exige une vigilance méthodologique et éthique soutenue afin d’en assurer une utilisation pleinement responsable. Il est primordial de circonscrire explicitement le rôle conféré à l'IA, en distinguant clairement l'assistance computationnelle de l’analyse humaine, tout en évaluant la nature des données mobilisées quant à la protection de la vie privée, la sensibilité des informations et le respect du consentement éclairé. Sur le plan méthodologique, une transparence complète est indispensable pour garantir la traçabilité et la reproductibilité des travaux : les chercheurs doivent consigner de manière exhaustive les paramètres d’utilisation des outils (modèles, versions, réglages, corpus sollicités, prompts) et demeurer attentifs aux potentiels biais algorithmiques que ces technologies pourraient reproduire ou amplifier. De plus, lorsqu'un outil algorithmique intervient dans la production, la transformation ou l'interprétation de données, l'intégration d'une étape de validation indépendante fondée sur des sources ou méthodes non automatisées est hautement souhaitable. Finalement, l'IA ne doit jamais être envisagée comme un substitut aux compétences analytiques, mais comme un outil complémentaire** : le **jugement critique du chercheur demeure absolument indispensable** pour interpréter les extrants, identifier les erreurs potentielles et s'assurer que les conclusions reposent sur un cadre analytique rigoureux.
+
+
+
 ## Arpentage et choix éditoriaux: les différents outils de l'IA
 
 Cette section vise à présenter différents outils de l'IA aux lecteurs.
@@ -377,7 +383,10 @@ production scientifique.
 
 ### Avant la recherche: trouver des écrits et organiser ses sources
 
-Dans cette section, deux principaux outils sont présentés:
+Avant même d’entamer une revue systématique des écrits, le chercheur est souvent confronté à la tâche de délimiter un sujet de recherche. Des assistants conversationnels fondés sur des LLM, tels que Perplexity, Coral AI ou DeepSeek, peuvent s’avérer utiles dans cette phase préliminaire. Leur principal atout réside dans leur interactivité et leur capacité à engager un dialogue structuré : ils permettent d’explorer une idée de manière dynamique, de la reformuler sous différents angles, d’identifier des concepts clés et des perspectives théoriques potentielles. Contrairement à un moteur de recherche classique, ces outils peuvent proposer des hypothèses de travail, suggérer des cadres d’analyse, ou encore aider à formuler des questions de recherche plus précises et opérationnalisables. Ils peuvent aussi suggérer des références préliminaires, des auteurs, ou des débats académiques émergents, offrant ainsi une première cartographie intellectuelle du domaine. Enfin, leur fonctionnement en langage naturel les rend particulièrement accessibles, même pour des chercheurs non experts en méthodologie quantitative ou en traitement de données.
+Cependant, ces suggestions doivent toujours être validées par une recherche académique rigoureuse. Ces outils ne remplacent pas la lecture critique des sources primaires. Leur force réside plutôt dans leur capacité à accélérer et à enrichir la phase créative de la recherche, en offrant un espace de brainstorming agile et réactif, particulièrement utile lorsque le sujet est encore large ou interdisciplinaire.
+
+Une fois le sujet mieux délimité et les premières pistes identifiées, il convient de passer à la prochaine étape, une revue structurée de la littérature. Dans cette section, deux principaux outils sont présentés:
 *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne
 qui facilite le début d'une revue des écrits, notamment lorsque la
 littérature sur un sujet ou sur une question est étrangère. Ces
@@ -422,6 +431,8 @@ intègre de la littérature. Une bonne utilisation de ce logiciel
 devrait se limiter à trouver des articles et/ou des livres scientifiques
 selon nos besoins qui seront consultés par la suite pour rédiger
 notre revue des écrits et trouver des références supplémentaires.
+
+Un exemple d’outil qui permet, par la suite, de résumer les articles plus en détail, de les comparer et d’analyser en profondeur nos sources est NotebookLM. De manière générale, NotebookLM est un outil qui peut s'avèrer particulièrement utile pour assister l'écriture de la revue de littérature.Cette plateforme se distingue des outils de collecte de sources (comme Elicit, Consensus ou ResearchRabbit), qui excellent à interroger de vastes bases de données académiques publiques, en se positionnant plutôt comme un assistant de recherche gratuit. Son avantage majeur réside dans sa capacité à ancrer ses analyses et ses synthèses aux sources spécifiques et privées que le chercheur lui fournit (articles, notes de terrain, transcriptions d'entretiens, etc.).  Contrairement aux plateformes généralistes qui dépendent de leurs corpus d'entraînement ou de bases de données tierces, NotebookLM permet de générer des analyses fondées uniquement sur les documents téléversés. De plus, sa richesse fonctionnelle offre un éventail d'options au-delà du simple résumé, telles que la création automatisée de guides d'étude (study guides), l'élaboration de rapports structurés ou même des synthèses en format audio. Cette combinaison unique de gratuité, de contrôle sur le corpus source et de diversité des formats en fait un outil particulièrement attrayant pour l'analyse de données primaires et la gestion de la documentation interne, garantissant une traçabilité des sources et une focalisation thématique.
 
 Un autre outil s’offre à nous afin de trouver des références
 supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais
