@@ -376,7 +376,10 @@ production scientifique.
 
 ### Avant la recherche: trouver des écrits et organiser ses sources
 
-Dans cette section, deux principaux outils sont présentés:
+Avant même d’entamer une revue systématique des écrits, le chercheur est souvent confronté à la tâche de délimiter un sujet de recherche. Des assistants conversationnels fondés sur des LLM, tels que Perplexity, Coral AI ou DeepSeek, peuvent s’avérer utiles dans cette phase préliminaire. Leur principal atout réside dans leur interactivité et leur capacité à engager un dialogue structuré : ils permettent d’explorer une idée de manière dynamique, de la reformuler sous différents angles, d’identifier des concepts clés et des perspectives théoriques potentielles. Contrairement à un moteur de recherche classique, ces outils peuvent proposer des hypothèses de travail, suggérer des cadres d’analyse, ou encore aider à formuler des questions de recherche plus précises et opérationnalisables. Ils peuvent aussi suggérer des références préliminaires, des auteurs, ou des débats académiques émergents, offrant ainsi une première cartographie intellectuelle du domaine. Enfin, leur fonctionnement en langage naturel les rend particulièrement accessibles, même pour des chercheurs non experts en méthodologie quantitative ou en traitement de données.
+Cependant, ces suggestions doivent toujours être validées par une recherche académique rigoureuse. Ces outils ne remplacent pas la lecture critique des sources primaires. Leur force réside plutôt dans leur capacité à accélérer et à enrichir la phase créative de la recherche, en offrant un espace de brainstorming agile et réactif, particulièrement utile lorsque le sujet est encore large ou interdisciplinaire.
+
+Une fois le sujet mieux délimité et les premières pistes identifiées, il convient de passer à la prochaine étape, une revue structurée de la littérature. Dans cette section, deux principaux outils sont présentés:
 *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne
 qui facilite le début d'une revue des écrits, notamment lorsque la
 littérature sur un sujet ou sur une question est étrangère. Ces
