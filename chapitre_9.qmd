@@ -304,6 +304,12 @@ compréhension fictive de la réalité. Une fausse compréhension des
 interactions et des dynamiques sociales pourrait avoir des conséquences
 importantes sur le bien-être de nos sociétés. Restons vigilants.
 
+### Bonnes pratiques éthiques pour l’intégration de l’IA
+
+L’intégration de l’intelligence artificielle (IA) au sein d'un protocole de recherche en sciences sociales exige une vigilance méthodologique et éthique soutenue afin d’en assurer une utilisation pleinement responsable. Il est primordial de circonscrire explicitement le rôle conféré à l'IA, en distinguant clairement l'assistance computationnelle de l’analyse humaine, tout en évaluant la nature des données mobilisées quant à la protection de la vie privée, la sensibilité des informations et le respect du consentement éclairé. Sur le plan méthodologique, une transparence complète est indispensable pour garantir la traçabilité et la reproductibilité des travaux : les chercheurs doivent consigner de manière exhaustive les paramètres d’utilisation des outils (modèles, versions, réglages, corpus sollicités, prompts) et demeurer attentifs aux potentiels biais algorithmiques que ces technologies pourraient reproduire ou amplifier. De plus, lorsqu'un outil algorithmique intervient dans la production, la transformation ou l'interprétation de données, l'intégration d'une étape de validation indépendante fondée sur des sources ou méthodes non automatisées est hautement souhaitable. Finalement, l'IA ne doit jamais être envisagée comme un substitut aux compétences analytiques, mais comme un outil complémentaire** : le **jugement critique du chercheur demeure absolument indispensable** pour interpréter les extrants, identifier les erreurs potentielles et s'assurer que les conclusions reposent sur un cadre analytique rigoureux.
+
+
+
 ## Arpentage et choix éditoriaux: les différents outils de l'IA
 
 Cette section vise à présenter différents outils de l'IA aux lecteurs.
