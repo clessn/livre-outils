@@ -849,6 +849,8 @@ De manière générale, et très simplifié, l'une des questions
 fondamentales de l'épistémologie et de se questionner quant à savoir
 ce qu'est un savoir qui serait scientifique.
 
+=> ajouter limites épistémologiques de l'IA : expliquer que les modèles ne “comprennent” pas, ne raisonnent pas, et se basent sur des statistiques qui sont elles-mêmes biaisées car créées par l'homme
+
 [^chapitre_9-6]: La méthodologie est le champ de la philosophie des
 sciences qui s'intéresse à l'étude des méthodes scientifiques ou
 techniques.
