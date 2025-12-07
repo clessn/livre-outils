@@ -982,7 +982,7 @@ create_transcription() et create_translation()
 -   Plus de documentation est disponible au
 https://irudnyts.github.io/openai/
 
--   Plus de fonctionalités sont disponibles en python, mais le
+-   Plus de fonctionnalités sont disponibles en python, mais le
 package R est suffisant pour la plupart des utilisations.
 
 {{< pagebreak >}}
@@ -1283,6 +1283,10 @@ même, afin d'adapter les individus au régime capitaliste globalisé
 de l'accélération. » [@devedec21, pp. 100]. L'IA sera-t-elle une
 pièce de plus vers la réalisation de cet idéal transhumaniste?
 
+=> ajouter une phrase sur les différents débats éthiques entre IA et transhumanisme ? Ex expliquer brièvement les courants (extropiens, posthumanistes, etc.).
+
+=> ajouter transition entre considérations philosophiques / théoriques et passage à conseils pratico-pratiques ci-dessous
+
 Toutefois, à moins que la recherche porte directement sur ChatGPT,
 nous déconseillons fortement d'utiliser uniquement ce que le robot
 conversationnel fournit comme réponse. Prenons l'exemple du
@@ -1297,7 +1301,13 @@ nous référer directement à ces ouvrages et débuter notre revue des
 écrits. Surtout, à moins que ce ne soit que pour vous faire une
 idée du contenu, n'utilisez pas ChatGPT pour résumer un livre et
 utiliser le résumé pour votre travail ! Cette pratique constitue
-une forme de plagiat. Aller consulter les ouvrages directement
+une forme de plagiat. 
+
+=> expliquer davantage lien entre plagiat -> reproduction de contenu non sourcé → responsabilité de vérifier les sources
+
+=> ajouter une phrase expliquant que le Chat peut inventer des sources / de fausses citations = danger, en lien direct avec la nécessité de vérifier les sources
+
+Aller consulter les ouvrages directement
 plutôt que d'utiliser les définitions fournies par ChatGPT fait
 partie des bonnes pratiques. Développer un esprit de synthèse est
 fondamental pour chaque étudiant universitaire, ainsi que pour les
