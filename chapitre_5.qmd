@@ -1,373 +1,284 @@
-# Outils de collecte de données {#sec-chap5}
+# Outils de synthèses de la connaissance et de gestion des références {#sec-chap5}
 
-La révolution numérique engendrée par l'émergence des données massives et de l'intelligence artificielle représente un important défi pour la communauté académique en sciences sociales [@manovich11; @burrows_savage14]. Elle constitue également une opportunité de recherche enrichissante et innovante permettant une compréhension accrue des phénomènes sociaux étudiés par la communauté scientifique [@connelly_etal16]. Cette meilleure compréhension est permise, entre autres, par l'accès à une variété inégalée et une quantité massive de données permettant l'étude des différents objets de recherche [@kramer_etal14; @schroeder14]. Si l'accès à ces données numériques massives représente un défi éthique et théorique, il représente également un défi technique pour les chercheurs voulant exploiter le potentiel et les opportunités offertes par les données massives numériques [@burrows_savage14].
+\begin{center}
+\textit{Sarah-Jane Vincent (Stony Brook University), \\
+Camille Pelletier (Université Laval), \\
+Laurence-Olivier M. Foisy (Université Laval)}
+\end{center}
 
-Le chapitre qui suit vise à présenter la méthode de l'extraction de données web, ou *web scraping*, qui permet de récolter des données provenant de sites internet de manière automatisée. Si le chapitre offre également un bref survol de différents outils de collectes de données pouvant être exploités par les scientifiques désirant entreprendre des recherches en sciences sociales, ce dernier vise surtout à mettre l'accent sur les opportunités offertes par le numérique. En effet, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de récolte de données brutes pouvant être analysées par les chercheurs.ses. Le chapitre débute par une description courte et non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leur capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. L'objectif de cette courte section est de présenter des outils plus traditionnels de collecte de données, certes efficaces, mais qui comportent un certain nombre de limites. Les sections suivantes, représentant le coeur de ce chapitre, mettent un accent particulier sur la méthode de l'extraction de données par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Il sera question de démontrer comment les capacités de programmation avec R permettent l'accès à un volume important de données qui peuvent alimenter de manière significative des projets de recherche. En somme, ce chapitre offre un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter l'extraction web et le package *rvest* et en offrant des exemples concrets de son utilisation.
+La réalisation d'une synthèse de la connaissance représente la première marche à franchir avant d'initier tout projet de recherche. C'est en s'immergeant dans le dialogue établi entre chercheurs qui nous ont précédés que nous pouvons véritablement saisir l'évolution des idées et les contours actuels des débats sur un sujet de recherche. Cette compréhension permet non seulement de cerner les zones de connaissances encore inexplorées, mais aussi de situer comment inscrire notre propre recherche dans un domaine circonscrit. Loin d'être une simple collection de sources choisies aléatoirement, elle doit suivre une démarche méthodique et réfléchie, intégrant des critères tels que la pertinence, la crédibilité, la nouveauté sur le sujet, la diversité des perspectives, la qualité méthodologique, l'impact et la citation des travaux et leur objectivité.
 
-## **Point d'observation: les outils traditionnels de collecte de données numériques en sciences sociales**
+En choisissant des sources qui répondent à ces exigences, on s'assure que la revue de littérature offre une perspective complète sur le sujet. Une grande variété de synthèses de la connaissance existe et chacune répond à des besoins différents dans le domaine académique, sujet sur lequel nous reviendrons bientôt.
 
-Toute recherche empirique repose sur l'analyse d'un objet de recherche, et doit donc comprendre une réflexion sur les manières d'observer l'objet d'étude. Avant l'utilisation de quelconque méthode, il faut un ensemble de données à analyser sur lesquelles les différentes méthodes seront appliquées. Le type de données à analyser dépend de l'objectif analytique de la recherche entreprise, mais surtout, de l'objet de recherche. Une fois que l'on sait *qu'est* ce qu'on veut étudier, il faut déterminer *comment* l'étudier, et ultimement, acquérir les données nécessaires à l'analyse. Les sciences sociales reposent sur l'analyse des sociétés et des phénomènes qui les caractérisent. Les objets d'études sont multiples, tout comme les manières de les observer. Les communautés scientifiques autant qualitatives que quantitatives ont donc besoin de données qui permettent de tels types d'analyses, et il existe un immense éventail d'outils permettant la collecte de données nécessaires à la tenue de recherche en sciences sociales.
+En dressant un portrait structuré et critique de la littérature existante, le chercheur établit les fondements de sa démarche scientifique. Cette étape préliminaire éclaire la formulation de la question de recherche, en mettant en lumière les interstices où de nouvelles contributions sont possibles et souhaitables. Ainsi, une revue de littérature systématique n'est pas simplement un recensement de connaissances ; c'est une étape cruciale qui façonne le cadre de la recherche future, garantissant que chaque nouvelle étude contribue aux connaissances dans un domaine. Cette démarche de synthèse s'accompagne nécessairement d'une gestion rigoureuse des sources bibliographiques.
 
-*Les données d'entrevues*
+La citation des sources quant à elle est une pratique incontournable dans le monde académique. Elle sert de fondement à la contextualisation de nos recherches, nous permettant de situer nos travaux au sein d'un cadre scientifique établi et reconnu. Ce processus de contextualisation facilite non seulement la compréhension de l'évolution des connaissances dans un domaine donné, mais contribue également à la création d'une base de connaissances solide sur laquelle d'autres travaux peuvent être bâtis [@zaid_etal17]. La référenciation des travaux antérieurs garantit la reproductibilité des expériences et des analyses, un pilier central de la méthodologie scientifique. En fournissant des détails précis sur les méthodes et résultats, nous ouvrons la voie à la validation et à l'éventuelle réfutation de nos travaux, renforçant ainsi l'intégrité de la recherche [@hughes13]. De plus, la citation des sources est une marque de respect envers les contributions des autres chercheurs, assurant une juste attribution du mérite. Cela reconnaît l'importance de chaque découverte et idée dans l'avancement de la science, tout en prévenant le plagiat [@racz_markovic18]. Enfin, une référenciation minutieuse aide à éviter les biais, en exposant clairement les fondements sur lesquels se base notre recherche. Cela permet une évaluation critique des sources et des perspectives, encourageant une approche plus équilibrée et nuancée dans l'analyse scientifique [@kostoff_cummings13]. En résumé, la citation des sources est un acte fondamental qui englobe et adresse de multiples aspects cruciaux de la recherche académique : la crédibilité, la contextualisation, la reproductibilité, la création d'une base de connaissances solide, l'attribution du mérite et ce, tout en combattant le plagiat et en minimisant les biais. C'est dans ce contexte que des outils de gestion des références prennent toute leur importance et que s'inscrit l'objectif de ce chapitre.
 
-L'exemple des entrevues représente bien l'étendue des manières de récolter des données en sciences sociales. Les entrevues (dirigée, semi-dirigée ou non-dirigée) sont des méthodes de recherche largement employées en sciences sociales, et peuvent constituer un outil de collecte de données qui permet d'aller récolter un savoir pouvant par la suite être analysé sous forme de texte retranscrit. Il s'agit d'une méthode particulièrement efficace pour comprendre certains phénonènes sociaux de manière approfondie et granulaire. Bien que l'objectif de ce chapitre ne soit pas de présenter les manières de conduire ou analyser une entrevue en sciences sociales, il demeure pertinent de mentionner cette méthode afin d'illusrer l'immensité du champ de la collecte de données. Les prochaines lignes présentent quelques outils de collecte de données particulièrement prisés en sciences sociales, soit les données de sondages et les données de médias, et comment l'émergence du numérique a radicalement transformé le processus d'acquisition de telles données. Il est important de noter que les données de sondages et les textes médiatiques se prêtent tout aussi bien aux analyses quantitatives que qualitatives. L'objectif des prochaines lignes vise donc à présenter des outils de qui se démarquent par la portée analytique des données qu'ils permettent de récolter.
+Pour aborder ces enjeux de manière systématique, ce chapitre se structure autour de quatre axes principaux. 
+Nous commencerons par explorer les différentes méthodes de synthèse de la connaissance, depuis la revue narrative jusqu'aux revues systématiques et méta-analyses, en passant par le snowballing et les revues de portée. 
+Ensuite, nous examinerons les outils spécialisés pour la synthèse de la connaissance, avec un focus particulier sur Covidence et ses alternatives comme Colandr et Rayyan. 
+La troisième section se concentrera sur les outils de gestion des références, comparant Mendeley, EndNote et Zotero, avant de détailler pourquoi Zotero constitue un choix optimal pour les chercheurs. 
+Enfin, nous fournirons un guide pratique d'installation et d'utilisation de Zotero, incluant la configuration de Better BibTeX pour une intégration optimale avec LaTeX et Quarto.
 
-*Les données de sondages*
+## Point d'observation: La connaissance et les références
 
-L'opinion publique, une composante fondamentale des sciences sociales, est traditionnellement étudiée par le biais de données de sondages. L'émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, le numérique permet donc de créer un questionnaire, de cibler une population et de la contacter, d'entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s'il avait été conduit manuellement [@nayak_ka19]. Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi de la ligne du temps, offrent des options qui contraignent le répondant à répondre à certaines questions et permettent d'utiliser des arbres de logique avancés que les sondages manuels ne permettent pas. Parmi les plateformes web les plus reconnues de construction et d'administration de sondage, Qualtrics figure en tête de liste. Cette plateforme est une des plus reconnues et utilisée à l'international, tant dans le milieu académique que dans le secteur privé. En plus d'offrir des outils de collecte de données et de sondages, Qualtrics est utilisé dans le marketing et dans la gestion de l'expérience client. Il est donc pertinent de se familiariser avec cet outil, car il offre des compétences pratiques pour la recherche, mais également pour obtenir des opportunités de carrière. Qualtrics offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, Qualtrics s'adapte à différents formats en fonction de l'appareil du répondant [@evans_mathur18]. Son principal désavantage provient de son coût d'acquisition, qui est extrêmement dispendieux. La présentation de cet outil dans le cadre de ce chapitre provient du fait qu'il s'agit de la principale plateforme de construction de sondage, autant dans le monde commercial qu'académique. Il devient d'autant plus important de présenter cet outil en raison du fait que, malgré l'obstacle monétaire, certaines universités possèdent des licenses permettant l'utilisation de l'outil par la communauté étudiante. De plus, de nombreus.e.s professeur.e.s possèdent également des comptes Qualtrics qui permettent la construction de sondage.
+Les synthèses de la connaissance ainsi que la gestion des références ont longtemps été des processus fastidieux, nécessitant une organisation rigoureuse des références, des notes de lecture et des articles accumulés au fil du temps. Avant l’avènement des outils numériques, les chercheurs dépendaient de méthodes manuelles pour organiser leur documentation. Les bibliographies étaient construites à la main ou à l'aide de logiciels de traitement de texte et les articles scientifiques étaient souvent archivés en version papier dans des classeurs. Cette gestion physique de la littérature et des références était laborieuse, sujette aux erreurs et difficile à partager avec d'autres chercheurs ou collaborateurs.
 
-Il convient toutefois de mentionner certaines alternatives à Qualtrics en raison des obstacles monétaires à son utilisation, tels que Research Electronic Data Capture (REDCap), Survey Monkey ou encore Google Forms, qui sont tous des outils permettant d'administrer des sondages. Toutefois, Qualtrics demeure l'outil le plus utilisé en sciences sociales (et dans le monde des affaires) en ce qui concerne l'administration de sondage, ce qui explique la plus grande attention portée envers cette plateforme. De plus, le chapitre porte principalement sur la méthode du web scraping. Ainsi, bien qu'il convienne de présenter des outils plus traditionnels, il se concentre principalement sur les opportunités offertes par le numérique, ce qui explique ce survol bref et incomplet des outils de récolte de données de sondages.
+Le développement des technologies de l'information et la montée en puissance des bases de données en ligne ont ouvert la voie à l'émergence d'outils numériques de synthèse de la connaissance et de gestion des références. À mesure que les ordinateurs devenaient plus accessibles et que l'informatique évoluait, de nouvelles possibilités se sont offertes pour organiser et gérer la littérature de manière plus efficace et moins chronophage. C’est dans ce contexte que les premiers outils numériques de synthèse de la connaissance et de gestion des références ont vu le jour.
 
-*Les données médiatiques*
+Ces logiciels de première génération, tels que EndNote (1988) et Bookends (1988), répondaient à un besoin pressant : faciliter l’organisation des références ainsi que leur insertion automatique dans des documents, tout en générant des bibliographies conformes à différents standards éditoriaux. Cependant, ces outils se sont rapidement sophistiqués à travers les années. Les logiciels de gestion de références sont devenus des plateformes centralisées permettant aux chercheurs de stocker des milliers de citations, de les classer par mots-clés ou thématiques et de les retrouver facilement. Les utilisateurs pouvaient aussi importer des références directement depuis des bases de données en ligne comme PubMed ou JSTOR, automatisant encore davantage le processus. Aujourd’hui, les outils de synthèse de la connaissance et de gestion des références, tels que Zotero (2006), Mendeley (2008) ou Covidence (2014), permettent non seulement de gérer des bibliographies, mais également de collaborer à plusieurs sur des revues systématiques, d’annoter des articles, d’organiser des données et de générer des rapports structurés. Leurs fonctionnalités cloud facilitent également la synchronisation entre différents appareils et assurent un accès en tout lieu.
 
-La recherche en sciences sociales se penche également sur l'analyse de contenu médiatique, qui permet une mutltitude de devis de recherche dans un grand nombre de sous-discipline des sciences sociales. L'émergence du numérique facilite largement la récolte de données médiatiques tout en favorisant de nouvelles avenues de recherche pour les chercheurs.euses en sciences sociales en raison de l'importante quantité de données accessibles aux chercheurs.euses. À cet effet, l'outil Factiva offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par Dow Jones et offre également l'accès à des documents d'entreprises. En revanche, l'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre l'accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, ils peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, Factiva permet également de filtrer les doublons. Ainsi, Factiva permet d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs.euses, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur Factiva. Dans l'optique ou un média recherché n'est pas trouvable sur cette plateforme, le logiciel Eureka représente une bonne alternative. Eureka se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'Eureka est similaire à celle de Factiva.
+Bien que ce chapitre aborde à la fois les outils de synthèse de la connaissance et de gestion des références, il est essentiel de préciser que ces deux types d'outils ont des utilités et fonctionnalités distinctes. Les outils de synthèse de la connaissance, comme Covidence, Colandr et Rayyan, sont conçus pour gérer des processus de recherche plus complexes, tels que les revues systématiques, en facilitant la sélection, l'évaluation critique et la synthèse des études alors que les outils de gestion des références, tels que EndNote et Zotero, se concentrent sur l'organisation, l'annotation et la création de bibliographies à partir de références.
 
-Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques: les extracteurs webs.
+![Schéma 1 : Cycle de la recherche scientifique](images/chapitre_5_cycle_recherche.png){width="80%" fig-align="center"}
 
-## **Arpentage et choix éditorial: l'extraction de données web grâce à l'outil *rvest***
+Avant d'entrer dans les outils, il convient de glisser quelques mots sur les méthodes pour lesquelles ces outils sont utiles. Dans le cadre de l'élaboration d'une recherche scientifique, la phase de synthèse de la connaissance constitue une étape fondamentale permettant de circonscrire le champ d'étude, d'identifier les travaux antérieurs pertinents et de déceler les lacunes dans les connaissances existantes (Schéma 1). Parmi les différentes approches méthodologiques adoptées pour mener à bien cette synthèse des connaissances, la revue narrative est généralement la plus populaire, notamment pour des travaux scolaires ou de courtes recherches. Des outils comme *Elicit*, *Connected Papers*, ou *Research Rabbit* sont d'ailleurs très utiles dans ce contexte, car ils facilitent l'élargissement de la portée de la revue de littérature en proposant des références supplémentaires ou des publications liées aux travaux déjà identifiés.
 
-Les extracteurs de données sont des outils qui ont transformé la récolte de données en sciences sociales. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
+Au-delà de la revue narrative, certaines méthodes comme le *snowballing* et la revue de portée (*scoping review*) offrent une approche plus systématique et ciblée. La méthode du snowballing se distingue par son adaptabilité et sa capacité à englober un large spectre de travaux pertinents, en particulier dans les phases préliminaires de la recherche où la question d'étude peut ne pas être entièrement définie. Le snowballing est une technique de recherche bibliographique qui se fonde sur la sélection initiale de quelques publications clés dans le champ d'intérêt. Par la suite, à partir de ces références clés, le chercheur identifie de manière itérative d'autres travaux pertinents en examinant les références citées (backward snowballing) ou les articles citant ces travaux (forward snowballing) (Nightingale, 2009).
 
-L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent ainsi une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non-fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les dites données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal-structurées. Ainsi, l'accès à des données massives représente un défi considérable pour la communauté scientifique tentant d'entreprendre des recherches utilisant un volume important de données.
+Un deuxième type de synthèse de la connaissance est la revue de portée, ou scoping review, qui représente une approche systématique et structurée de revue de la littérature. Elle est principalement utilisée afin d'explorer des questions de recherche étendues ou complexes. Son objectif fondamental est de cartographier l'état actuel des connaissances sur un sujet donné, en identifiant les concepts clés, les principaux domaines de recherche ainsi que les lacunes existantes dans un domaine d'étude spécifique (Munn et al., 2018). Cette méthode se distingue par son champ d'application large et son objectif exploratoire, permettant ainsi une compréhension holistique des thématiques étudiées.
 
-C'est dans cette optique que les extracteurs de données numériques peuvent être utiles. Il faut faire ici la distinction entre l'outil, soit l'extracteur de données, et la méthode, l'extraction web. Plus précisément, cette dernière est la méthode qui permet l'extraction de données provenant de sites webs qui seront ensuite converties dans un format utile aux scientifiques de données. L'extracteur est l'outil qui permet cette méthode. Il sera question dans les lignes qui suivent de l'outil *rvest*, un package sur R, qui permet de récolter des données de site web gratuitement et efficacement.
+Dans le domaine des sciences sociales, les revues systématiques et les méta-analyses offrent aussi des outils précieux pour synthétiser et évaluer de manière rigoureuse les preuves issues de multiples études. Ces approches permettent de dégager des tendances, d'identifier des consensus ou des divergences dans la littérature et d'éclairer les débats politiques et sociaux grâce à une base de données empirique solide. En recensant de manière exhaustive et méthodique la littérature existante sur un sujet donné, les chercheurs peuvent offrir une synthèse objective qui reflète l'état actuel des connaissances. La méta-analyse, souvent intégrée dans le cadre d'une revue systématique, va plus loin en combinant quantitativement les résultats de différentes études pour produire une estimation globale de l'effet étudié. Elle offre ainsi une puissance statistique accrue et une meilleure généralisation des conclusions, transcendant les limites des études individuelles.
 
-Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites webs étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
+## Arpentage et choix éditorial: Les outils de synthèse de la connaissance
 
-L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter possédait, avant les changements de directions récents, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus de scraping, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
+Plusieurs outils existent afin de faciliter la vie des chercheurs et chercheuses qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme EndNote et Zotero. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une license institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de Covidence, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est probablement l’outil le plus populaire pour les revues systématiques dans certains domaines, y compris les sciences sociales. Gratuit, il offre une interface intuitive et utilise des algorithmes pour faciliter le tri des articles. Toutefois, il propose moins d'options pour l’extraction des données en comparaison à Covidence.
 
-Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, La Presse change ses Unes plusieurs fois dans une même journée. En extractant l'accès aux fils RSS, il est possible de recevoir lesdites mises à jour automatiquement. Ce processus accélère grandement la collecte de données.
+### Choix éditorial : Pourquoi Covidence ?
 
-Finalement, les API simplifient le travail de chacun par les mises à jour et maintenances. Pour être plus précis, les API, étant maintenus par les fournisseurs de services, sont modifiés au fur et à mesure que le site évolue. Par exemple, si la structure de X est modifiée, son API sera également modifié. Cela évite à ceux demandant l'accès d'ajuster leurs scripts de scraping pour prendre en compte les changements sur le site.
+L'outil de synthèse de la connaissance Covidence permet une avancée majeure dans la pratique des revues systématiques, en offrant des fonctionnalités qui optimisent chaque étape du processus de recherche. Sa capacité à importer et organiser efficacement les références provenant de diverses bases de données bibliographiques permet une gestion structurée des articles à inclure dans une revue. Cet outil facilite également la collaboration, en permettant à plusieurs chercheurs de travailler simultanément sur un même projet. En automatisant les premières phases de sélection des articles, il réduit la charge de travail manuel et limite les biais potentiels. De plus, ses moyens d'extraction de données et d'évaluation de la qualité assurent une analyse rigoureuse et cohérente des résultats. Enfin, son intégration avec d'autres plateformes de recherche en renforce la compatibilité et l'efficacité dans le flux de travail académique.
 
-Il faut cependant être alerte de l'évolution constante de ces outils. En effet, la présence de données ouvertes et la création croissante d'API tend à modifier de manière progressive l'outil. Prenons l'exemple de l'API de X (anciennement Twitter), qui a restreint les accès accordés et augmentés les coûts pour récupérer les informations sur la plateforme. Il faut donc rester à l'affût de ces possibles modifications.
+Bien que Covidence soit développé par une organisation à but non lucratif, il ne répond pas pleinement aux critères du logiciel libre, car son code source n'est pas accessible pour modification ou redistribution par la communauté. Cette limitation peut freiner les utilisateurs souhaitant personnaliser l'outil en fonction de besoins spécifiques. Néanmoins, Covidence propose un modèle de licence adapté à un usage académique et non commercial, rendant l'outil accessible à une large communauté de chercheurs. L'une de ses principales forces réside dans son intégration des données issues de multiples bases bibliographiques, ce qui simplifie considérablement le processus de revue systématique. Covidence est également compatible avec des outils de gestion des références comme EndNote et Zotero, facilitant l'importation et l'organisation des références. De nombreuses institutions universitaires soutiennent l'outil, offrant des licences institutionnelles pour en élargir l'accès.
 
-En somme, les extracteurs webs, et dans ce cas précis le package rvest, sont des outils qui facilitent grandement l'acquisition de données massives. Plutôt que d'avoir à payer pour des données dont la qualité n'est pas assurée, l'utilisation d'extracteurs permet un accès plus facile et précis à des données provenant de sites web. L'utilisation de ces outils peut toutefois s'avérer complexe et nécessitent un certain nombre de connaissances en lien avec les langages de programmation. Le chapitre 2 offre un survol du langage fonctionnel R, qui est utilisé par de nombreux développeurs lors de l'écriture d'extracteurs et qui permet d'utiliser le package *rvest*. R est également reconnu pour ces fonctionnalités statistiques qui sont, elles aussi, abordées ultérieurement dans ce livre. L'utilisation de cet outil permet aux chercheurs de faire plusieurs coups d'une seule pierre. Non seulement *rvest* permet de se familiariser avec le langage R, ce qui est un atout essentiel dans la recherche en sciences sociales numériques, mais ce même développement permet un accès inégalé à des données massives qui pourront ensuite être analysées. Ainsi, des connaissances en R sont un atout fondamental au développement d'extracteurs, et la complexité du code évoluera dépendamment du site qui sera extrait.
+En outre, l'interface intuitive de Covidence réduit la courbe d'apprentissage, guidant les utilisateurs à travers les différentes phases de la revue systématique de manière structurée et simplifiée par rapport aux méthodes traditionnelles. Ses fonctionnalités de double codage, de filtrage et d'extraction de données garantissent une méthodologie rigoureuse et standardisée, indispensable pour assurer la qualité des revues systématiques. De plus, Covidence excelle dans la facilitation de la collaboration entre chercheurs. La plateforme permet à plusieurs utilisateurs de travailler simultanément sur un même projet, d'échanger sur l'inclusion ou l'exclusion d'études, et de résoudre efficacement les divergences, ce qui s'avère particulièrement précieux pour les projets de grande envergure impliquant des équipes dispersées géographiquement.
 
-### Critères de sélection
+Cependant, l'utilisation de Covidence présente certaines contraintes. Le coût de l'abonnement peut constituer un frein pour certains chercheurs, limitant ainsi l'accès à cet outil pourtant utile en recherche. De plus, bien que Covidence propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. Malgré ces défis, Covidence demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
 
-L'extracteur *rvest* est un outil accessible, particulièrement comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins de circonstances exceptionnelles, l'extraction avec rvest est gratuite. Le coût serait plutôt dans l'acquisition de connaissances préalables en code puis dans l'apprentissage de la méthode d'utilisation. Malgré cette nuance, l'absence de coûts monétaires liés à cet outil favorise son accessibilité à l'ensemble de la communauté scientifique. Il est par exemple possible d'étudier l'opinion publique grâce à l'extraction de publications sur des médias socionumériques, plutôt que de construire et administrer des sondages coûteux (voir par exemple l'article de Barbera et al., 2015).
-
-Additionnellement, l'outil jouit d'une grande communauté d'utilisateurs rendant accessible leurs connaissances, ce qui favorise la diffusion des savoirs liés à l'utilisation de cet outil. De nombreux forums d'aide peuvent alors être consultés gratuitement par les chercheurs.euses voulant se familiariser avec le package, et plus largement, l'extraction de données web. De nombreux forums sont présents sur le site Stack Overflow, et certains chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil sont également dispinible gratuitement en ligne (voir par exemple le chapitre *Web scraping* du livre *R for Data Science* d'Hadley Wickham, 2022, qui présente comment utiliser l'outil *rvest*). Bien que des outils comme Qualtrics et Factiva aient également un grand nombre d'utilsateurs.ices, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.
-
-Les extracteurs sont des outils de recherche très en vogue dans la communauté des sciences sociales. La possibilité d'obtenir une quantité importante de données de manière efficace et gratuite représente une opportunité depuis largement exploitée par les chercheurs en sciences sociales, en témoigne l'émergence de cours dédiés à l'utilisation d'outils permettant l'extraction web dans de nombreuses écoles méthodologiques de renom (telles qu'ICPSR ou ECPR).
-
-Cette méthode, avec le logiciel R, via l'outil *rvest* permet de récolter des données qui pourront ensuite être traitées et exploiter avec R, ce qui favorise donc la compatibilité de l'outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.
-
-Tel qu'explicité précédemment, la présence d'une grande communauté d'utilisateurs de l'outil favorise la transparence et la réplicabilité des différents résultats produits lors de l'utilisation d'extracteurs.
-
-## Manuel d'instruction: extraire des données avec R
-
-La section suivante présente la méthode d'utilisation de l'outil *rvest*. Elle démontre comment l'outil permet d'extraire des données du web, une méthode très en vogue en science sociales.
-
-### L'importance de comprendre la structure du code HTML
-
-Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le package *rvest*, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La Figure 5.3 représente un exemple de base de code HTML.
-
-```{r, out.width="80%"}
-#| label: html-input
+```{r}
+#| tbl-cap: Résumé des principaux outils de gestion de la connaissance
 #| echo: false
-#| fig-cap: "Exemple de code HTML"
-knitr::include_graphics("images/chapitre5_html_input.png", dpi = 600)
-```
-
-Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La Figure 5.4 démontre le texte produit par le code HTML.
-
-```{r, out.width="80%"}
-#| label: html-output
-#| echo: false
-#| fig-cap: "Exemple du résultat de code HTML"
-knitr::include_graphics("images/chapitre5_html_output.png", dpi = 600)
-```
-
-La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites webs et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Il est donc fortement encourager d'explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites webs dont on souhaite l'extraction. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites webs sont facilement accessible à la communauté scientifique.
-
-### **Le package rvest: son fonctionnement et ses possibilités**
-
-Cet ouvrage recommande l'utilisation du paquetage \*rvest\* afin de récolter des données sur des pages web, qu'elles aient ou non un API. Rvest est construit autour des paquetages "xml2" et "httr" afin de faciliter la manipulation du HTML et XML. Rvest est principalement conçu pour scraper une seule page web alors que pour scraper de multiples pages, d'autres paquetages sont recommandés, notamment "polite". Ce chapitre ne rentre pas dans les détails et ne se concentrera que sur Rvest.
-
-#### **Fonctions de base du paquetage rvest utilisant pour exemple le site de LEGISinfo**
-
-La première étape est l'installation et le chargement des paquetages "tidyverse" et "rvest" sur sa console Rstudio. Il est important de les charger séparément car RVEST ne fait pas partie des paquetages de base du TIDYVERSE. Nous installerons ce dernier car il amène des fonctions pratiques au scraping
-
-``` bash
-install.packages("rvest")
-
-install.packages("tidyverse")
-
-library(rvest)
+#| message: false
+#| warning: false
 
 library(tidyverse)
-```
+library(gt)
 
-Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à scraper et la coller dans l'appel de la fonction read_html(). Il est important de stocker l'URL dans l'objet "html_LEGISinfo.
-
-``` bash
-html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
-
-html_LEGISinfo
-```
-
-Lors de l'exécution des lignes de code ci-hautes, la console retournera les éléments suivants:
-
-``` bash
-{html_document}
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-[1] <head>\n<meta http-equiv="Content-Type" 
-content="text/html; charset=UTF-8">\n<meta 
-...
-[2] <body class="body-wrapper ce-parl vh-100">\r\n    
-<header class="d-print-none"><!-- ...
-```
-
-Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (cascading style sheets), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases du scraping, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin d'en faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités, sans avoir à comprendre le sélecteur en question.
-
-D'abord, html_elements doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les noeuds qui matchent avec l'appel de fonction. Le nombre d'observations est indiqué par xml_nodeset(). Comme html_element retourne seulement le premier élément qui match, il faut l'utiliser en deuxième, après html_elements. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \\\<a\\\>. Comme html_elements retourne une liste, nous voulons commencer avec cette fonction.
-
-``` bash
-html_LEGISinfo |> html_elements("a")
-```
-
-Qui retourne les éléments suivants:
-
-``` bash
-{xml_nodeset (180)}
- [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only 
- sr-only-focusable">Skip to m ...
- [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">
- Parliament of Cana ...
- [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
-```
-
-``` bash
-html_LEGISinfo |> html_elements("a")
-```
-
-Qui retourne les éléments suivants:
-
-``` bash
-{xml_nodeset (180)}
- [1] <a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-
- focusable">Skip to m ...
- [2] <a href="//www.parl.ca" class="ce-parl-btn float-left text-nowrap">
- Parliament of Cana ...
- [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
-```
-
-``` bash
-html_LEGISinfo |> html_elements("a")
-```
-
-``` bash
-{html_node}
-<a href="#StartOfContent" class="ce-parl-skipnav sr-only sr-only-focusable">
-```
-
-Suite à l'inspection des éléments <a>, ceux qui nous intéressent sont ceux de classe "bill-tile-container". Il suffit d'ajouter un point "." avant la classe souhaitée lors de l'appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l'exemple de LEGISinfo, nous obtenons une liste d'éléments de classe bill-tile-container que nous allons stocker dans l'objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
-
-``` bash
-BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
-```
-
-L'exécution du bloc de code ci-haut produit le résultat suivant dans la console
-
-``` bash
-{xml_nodeset (60)}
- [1] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-1">
- \r\n\r\n     ...
- [2] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-2">
- \r\n\r\n     ...
- [3] <a class="bill-tile-container senate" href="/legisinfo/en/bill/44-1/s-3">
- \r\n\r\n     ...
-```
-
-À partir de la liste d'éléments de classe bill-tile-container, nous appelons la fonction html_element, qui lorsque appliqué à une liste permet d'extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe parliament-session par le biais de la ligne de code suivante:
-
-``` bash
-BillTile_LEGISinfo |> html_element(".parliament-session") 
-```
-
-Ce qui produit le résultat suivant dans la console:
-
-``` bash
-{xml_nodeset (60)}
- [1] <div class="parliament-session">\n<span class="parl-session-number">
- 44th</span> Parlia ...
- [2] <div class="parliament-session">\n<span class="parl-session-number">
- 44th</span> Parlia ...
- [3] <div class="parliament-session">\n<span class="parl-session-number">
- 44th</span> Parlia ...
-```
-
-Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur "id attribute". Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le id attribute retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
-
-``` bash
-html_LEGISinfo |> html_elements("#StartOfContent")
-```
-
-``` bash
-{xml_nodeset (1)}
-[1] <a id="StartOfContent" tabindex="-1"></a>
-```
-
-Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l'imbrication des sélections. Lorsque la fonction html_element est appliquée à un vecteur de liste html_elements, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d'utiliser html_element à cette étape car il retourne un NA même lorsqu'il n'y a pas d'éléments correspondants, alors que html_elements ne retournera pas la valeur manquante. Dans l'exemple de LEGISinfo, c'est exactement ce que l'on a voulu faire pour obtenir les éléments de classe parliament-session. Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple, il ne suffit que d'appliquer la fonction html_text2 sur l'appel de html_element sur l'objet à moissonner, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction "inspect" de Google Chrome ainsi que les diverses fonctions du package rvest. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour moissonnés. Voici les différentes opérations et leurs résultats dans la console:
-
-Code
-
-``` bash
-BillTile_LEGISinfo |> html_element("h4") |> html_text2()
-```
-
-Console
-
-``` bash
-[1] "S-1"   "S-2"   "S-3"   "S-4"   "S-5"...
-```
-
-Code
-
-``` bash
-BillTile_LEGISinfo |> html_element(".parliament-session") |> html_text2().
-```
-
-Console
-
-``` bash
-[1] "44th Parliament, 1st session" "44th Parliament, 1st session"...
-```
-
-Code
-
-``` bash
-BillTile_LEGISinfo |> html_element("h5") |> html_text2()
-```
-
-Console
-
-``` bash
-[1] "An Act relating to railways"                                                                                                                                                                                                                                                                                  
- [2] "An Act to amend the Parliament of Canada Act and to make 
- consequential and related amendments to other Acts"                                                                                                                                                                                                  
- [3] "An Act to amend the Judges Act"   
-...
-```
-
-Code
-
-``` bash
-BillBS_LEGISinfo <- html_LEGISinfo |> html_elements(".bottom-section")
-BillBS_LEGISinfo |> html_element("dd") |> html_text2()
-```
-
-Console
-
-``` bash
-[1] "Introduced as pro forma bill"                                 
-"Senate bill awaiting first reading in the House of Commons"               
- [3] "Bill not proceeded with"                                              
- "Royal assent received"                                                    
- [5] "Royal assent received"                                                 
- "At second reading in the House of Commons"     
-...
-```
-
-Code
-
-``` bash
-Bill_stage <- html_LEGISinfo |> html_elements(".progress-bar-description")
-Bill_stage |> html_element("dd") |> html_text2()
-```
-
-Console
-
-``` bash
-[1] "First reading in the Senate"            
-"Third reading in the Senate"            
-"First reading in the Senate"           
-"Royal assent"                        
-"Royal assent"                          
- [6] "First reading in the House of Commons" 
- "First reading in the House of 
- Commons"  "Royal assent"                          
- "First reading in the House of Commons"  "Royal assent"        
-...
- 
-```
-
-Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu'à utiliser la fonction tibble du tidyverse. Ce paquetage permet de facilement créer des dataframes sur R. Voici le script à produire dans l'exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation :
-
-``` bash
-Table_LEGISinfo <- tibble(
-  Bill = Bill_LEGISinfo |> html_element("h4") |> html_text2(),
-  Session = Bill_LEGISinfo |> html_element(".parliament-session") |>
-  html_text2(),
-  Name = Bill_LEGISinfo |> html_element("h5") |> html_text2(),
-  Status = BillBS_LEGISinfo |> html_element("dd") |> html_text2(),
-  Stage = Bill_stage |> html_element("dd") |> html_text2()
+tbl_resume_chap_5_connaissance <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Covidence = c(
+    "Abonnement requis",
+    "Oui",
+    "Très populaire",
+    "Facilement compatible",
+    "Propriétaire",
+    "Plutôt flexible"
+  ),
+  Colandr = c(
+    "Gratuit",
+    "Modérée",
+    "En croissance",
+    "Facilement compatible",
+    "Open-source",
+    "Très flexible"
+  ),
+  Rayyan = c(
+    "Freemium",
+    "Oui",
+    "Populaire",
+    "Facilement compatible",
+    "Partiellement propriétaire",
+    "Plutôt flexible"
+  )
 )
+
+tbl_resume_chap_5_connaissance |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de gestion de la connaissance") |>
+  cols_label(
+    Critères = "Critères",
+    Covidence = "Covidence",
+    Colandr = "Colandr",
+    Rayyan = "Rayyan"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Covidence ~ pct(23),
+    Colandr ~ pct(23),
+    Rayyan ~ pct(22)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
-Il est important de noter que ce chapitre ne permet que de scraper des documents html uniques. Afin de scraper plusieurs page web simultanément, il faudra utiliser d'autres paquetages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que vous savez extraire des informations d'un document html pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
+## Manuel d'instruction: Comment utiliser Covidence
 
-Il est possible d'extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin de moissonner divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique passe du moissonnage pour devenir de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur le moissonnage.
+Reconnu pour ses trois phases méthodiques --- « Title and abstract screening », « Full text review » et « Extraction » --- Covidence facilite l'importation de données volumineuses depuis des bases de données bibliographiques et interroge plusieurs bibliothèques. Cela offre un accès à des milliers d'études pertinentes qui aident les chercheurs à élaborer un cadre théorique exhaustif. Comme mentionné dans la section précédente, les méthodes justifiants une utilisation de Covidence impliquent généralement un double codage, ce qui signifie que l'évaluation des études est effectuée manuellement par deux codeurs, permettant ainsi une analyse rigoureuse et détaillée de la littérature recueillie.
 
-``` bash
-BillTile_LEGISinfo |> html_attr("href")
+La première phase, le « Title and abstract screening », consiste à examiner les titres et résumés des articles récupérés. Pour optimiser cette tâche, il est crucial de définir des critères précis afin d'évaluer la pertinence des articles relativement au sujet étudié. Durant cette étape, souvent prolongée en raison du volume conséquent de la littérature, les chercheurs doivent régulièrement se consulter pour résoudre les divergences d'opinions et parvenir à un consensus.
+
+Suite à la révision des titres et des résumés, vient le « Full text review ». Cette deuxième phase implique l'examen complet des textes sélectionnés lors de l'étape précédente. Les chercheurs doivent alors voter « oui », « non », ou « peut-être » afin de décider de la conservation des textes, ce qui peut inclure ou exclure un article ou le faire progresser vers l'étape suivante. Cette phase, bien qu'elle concerne moins de documents, reste exigeante et chronophage principalement en raison des délibérations nécessaires pour arbitrer les divergences de points de vue.
+
+La phase finale, celle de l'extraction des données, implique la collecte d'informations pertinentes des études finalement retenues, basée sur un schéma de codification prédéfini. L'objectif est de parvenir à un consensus parmi les codeurs. L'extraction dévoile les cadres théoriques, les méthodologies employées ainsi que les conclusions principales des recherches sélectionnées.
+
+Une fois les étapes de la revue systématique achevées, la plateforme Covidence facilite l'exportation des données extraites sous forme de tableaux, de graphiques et de rapports, destinés à être utilisés dans des analyses subséquentes ou dans la rédaction d'articles scientifiques. Bien que Covidence soit largement utilisé et supporté par de nombreuses universités via des licences, d'autres plateformes comme Colandr et Rayyan sont également populaires parmi les chercheurs, chacune répondant à des besoins et des budgets variés.
+
+## Arpentage et choix éditorial: Les outils de gestion des références
+
+Dans le domaine des outils de gestion des références, Mendeley et EndNote sont deux solutions populaires utilisées par les étudiants et les chercheurs à travers le monde. Bien que similaires dans leurs fonctions principales, ils se distinguent par plusieurs aspects qui influencent le choix des utilisateurs en fonction de leurs besoins spécifiques.
+
+Mendeley, développé par Elsevier, est un logiciel gratuit avec des options payantes pour étendre l’espace de stockage en ligne. Il se caractérise par son réseau social intégré, permettant aux utilisateurs de partager leurs références et de collaborer avec d’autres chercheurs. Mendeley offre également une fonction d’annotation de documents PDF, un gestionnaire de citations, ainsi qu’une application de bureau et mobile. Toutefois, Mendeley est parfois critiqué pour sa dépendance vis-à-vis d’un service centralisé et pour ses politiques de confidentialité, liées à son appartenance à la compagnie Elsevier.
+
+EndNote, quant à lui, est un logiciel commercial développé par Clarivate. EndNote se distingue par ses nombreuses fonctionnalités pour la gestion de grandes bibliothèques de références, une compatibilité avancée avec les styles de citations et une intégration fluide avec Microsoft Word. Il est souvent préféré dans les environnements académiques qui exigent des références complexes ou un large nombre de sources. Cependant, son coût d’acquisition élevé et l’absence d’une communauté open source active peuvent être des freins pour certains utilisateurs, notamment ceux qui privilégient l’accès à des outils gratuits ou collaboratifs.
+
+### Choix éditorial : Pourquoi Zotero ?
+
+Dans l'écosystème des outils de gestion bibliographique, plusieurs solutions s'offrent aux chercheurs. Bien que chacune présente ses propres avantages, comme mentionné précédemment, notre choix s'est porté sur Zotero pour des raisons à la fois techniques, économiques et méthodologiques que nous détaillons ci-après. Zotero se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur GitHub, qui compte plus de 13 000 contributions. Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. Zotero est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque Zotero peut être synchronisée sur plusieurs appareils via le service cloud payant de Zotero ou en configurant un espace de stockage cloud personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant LaTeX ou Quarto, permettant de générer et de maintenir à jour automatiquement des fichiers .bib. De plus, Zotero fonctionne avec des logiciels de traitement de texte tels que LibreOffice et Microsoft Office, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche.
+
+Zotero offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. Avec Zotero, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
+
+Cependant, Zotero présente également quelques inconvénients, notamment sa gestion parfois difficile de très grandes bibliothèques contenant des milliers de fichiers, ce qui peut nécessiter l'achat d'espace de stockage supplémentaire. Bien que performant, le logiciel requiert parfois la saisie manuelle d'informations que le connecteur intégré ne détecte pas automatiquement, représentant un potentiel défis pour les utilisateurs. Ces quelques défis soulignent l'importance d'évaluer les besoins spécifiques en matière de gestion bibliographique avant de choisir Zotero comme solution.
+
+Dans le @sec-chap8, vous apprendrez à connaître et à utiliser le langage de balisage LaTeX. Un des avantages majeurs de Zotero réside justement dans sa capacité à s'intégrer parfaitement avec LaTeX : il est souvent utilisé en combinaison avec BibLaTeX via l'extension Better BibTeX pour exporter et actualiser automatiquement des bibliographies au format .bib. BibLaTeX, une extension moderne pour gérer les bibliographies dans LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. L'exportation de bibliothèques Zotero sous forme de fichiers .bib pour leur utilisation avec BibLaTeX est simplifiée grâce à Better BibTeX, qui assure la mise à jour automatique de ces fichiers. Il est recommandé de maintenir dans votre fichier .bib uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+
+```{r}
+#| tbl-cap: Résumé des principaux outils de gestion des références
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(gt)
+
+tbl_resume_chap_5_references <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Zotero = c(
+    "Gratuit",
+    "Très grande (7.5M+)",
+    "Très populaire",
+    "Facilement compatible",
+    "Open-source",
+    "Très flexible"
+  ),
+  Mendeley = c(
+    "Partiellement payant",
+    "Oui",
+    "Très populaire",
+    "Facilement compatible",
+    "Partiellement propriétaire",
+    "Plutôt flexible"
+  ),
+  EndNote = c(
+    "Payant",
+    "Oui",
+    "Populaire",
+    "Facilement compatible",
+    "Propriétaire",
+    "Peu flexible"
+  )
+)
+
+tbl_resume_chap_5_references |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de gestion des références") |>
+  cols_label(
+    Critères = "Critères",
+    Zotero = "Zotero",
+    Mendeley = "Mendeley",
+    EndNote = "EndNote"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Zotero ~ pct(23),
+    Mendeley ~ pct(23),
+    EndNote ~ pct(22)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
 ```
 
-La ligne de code ci-haut produit le résultat suivant dans la console
+## Manuel d'instruction: Comment utiliser Zotero
 
-``` bash
-1] "/legisinfo/en/bill/44-1/s-1"  
-"/legisinfo/en/bill/44-1/s-2" 
-"/legisinfo/en/bill/44-1/s-3"  
-"/legisinfo/en/bill/44-1/s-4"  
-"/legisinfo/en/bill/44-1/s-5"  
-"/legisinfo/en/bill/44-1/s-6"  
- [7] "/legisinfo/en/bill/44-1/s-7" 
- "/legisinfo/en/bill/44-1/s-8"  
- "/legisinfo/en/bill/44-1/s-9"  
- "/legisinfo/en/bill/44-1/s-10"  
- "/legisinfo/en/bill/44-1/s-11" 
- "/legisinfo/en/bill/44-1/s-12" 
-[13] "/legisinfo/en/bill/44-1/s-13" 
-"/legisinfo/en/bill/44-1/s-14" 
-"/legisinfo/en/bill/44-1/s-15"  
-"/legisinfo/en/bill/44-1/s-16" 
-"/legisinfo/en/bill/44-1/s-17" 
-"/legisinfo/en/bill/44-1/s-201"
-```
+### Installation et Configuration
 
-Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire au moissonnage, mais toutefois utilisé pour cet exemple.
+L'intégration de Zotero dans le processus de recherche académique permet une gestion structurée et efficace des références bibliographiques. 
+Pour tirer pleinement parti des fonctionnalités de cet outil, il est essentiel de suivre les étapes suivantes pour l'installation, la configuration, et l'utilisation des principales fonctionnalités de Zotero. 
+L'installation de Zotero commence par le téléchargement de l'application Zotero ainsi que de son extension pour navigateur, Zotero Connector. 
+Cette extension permet de capturer facilement des références à partir de sources en ligne. 
+Une fois l'installation terminée, il est recommandé de créer un compte Zotero via le lien d'inscription. 
+Ce compte facilitera la synchronisation des données entre différents appareils et permettra le partage de bibliothèques de références avec des collaborateurs.
 
-``` bash
-htmltest <- minimal_html("
-  <table class='mytable'>
-<tr><th>x</th>   <th>y</th></tr>
-<tr><td>1.5</td> <td>2.7</td></tr>
-<tr><td>4.9</td> <td>1.3</td></tr>
-<tr><td>7.2</td> <td>8.1</td></tr>
-</table>
-  ")
-  htmltest |>
-  html_element(".mytable") |> html_table()
-```
+![Interface principale de Zotero après installation et configuration initiale](images/chapitre_5_interface_zotero.png){width="80%" fig-align="center"}
 
-L'opération précédente produit le résultat suivant dans la console
+La configuration initiale est essentielle pour exploiter pleinement Zotero dans un cadre de collaboration. Les chercheurs peuvent créer et rejoindre des bibliothèques partagées, ce qui permet une gestion collective des références dans des projets communs.
 
-``` bash
-# A tibble: 3 × 2
-      x     y
-  <dbl> <dbl>
-1   1.5   2.7
-2   4.9   1.3
-3   7.2   8.1
-```
+### Ajouter des références à Zotero
 
-En conclusion de cette section, lorsque l'on moissonne un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur de votre navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant de scrapper le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), il est possible dans certains cas de télécharger les données directement sur le site web, ce qui rend parfois le besoin de moissonner désuet.
+Zotero offre plusieurs méthodes pour ajouter des références à une bibliothèque :
 
-## Conclusion et discussion:
+-   Glisser-déposer : L'utilisateur peut importer des documents, tels que des PDF, directement dans la bibliothèque Zotero. Zotero tentera automatiquement de récupérer les métadonnées associées. En cas d'échec, l'outil « Baguette magique » permet de saisir manuellement les informations requises.
 
-Ce chapitre a comme objectif de dresser un portrait des différents outils de collecte de données mis à la disposition des scientifiques s'intéressant aux sciences sociales. Bien que non exhaustif, ce chapitre fait un survol d'outils traditionnels de récolte de données numériques en sciences sociales. Par exemple, les outils de sondages ou de récolte de données médiatiques sont présentés dans les paragraphes ci-haut. En revanche, ce chapitre s'ancre autour du postulat qu'il ne faut pas se limiter aux outils de récolte de données traditionnels, et que la révolution numérique engendre d'importantes opportunités d'acquisition de données massives et exclusives par le biais des extracteurs de données, plus précisemment l'outil d'extraction *rvest*. Ces extracteurs ont pour but de moissonner les données présentes sur un site web afin de les rendre disponibles pour l'analyse scientifique.
+-   Utilisation de l'outil Baguette magique : Lorsque des identifiants uniques tels que DOI ou ISBN sont disponibles, Zotero extrait automatiquement les métadonnées complètes de la référence. Si les informations ne sont pas trouvées, l'utilisateur a la possibilité de compléter manuellement les champs nécessaires.
 
-Toutefois, un seul chapitre ne permet pas de relever l'ensemble des outils de collecte de données disponibles pour la communauté scientifique. Néanmoins, les outils présentés permettent un aperçu à la fois d'outils plus conventionnels et répandus de collecte de données numériques, mais également de dresser un portrait du potentiel d'extraction permis par la maîtrise de R.
+-   Zotero Connector : Cet outil capture les références directement depuis le navigateur, en les classant automatiquement dans les collections de la bibliothèque Zotero. Cela permet une gestion instantanée des articles scientifiques et autres ressources en ligne.
+
+### Optimisation des citations avec Better BibTeX
+
+L'installation de l'extension Better BibTeX est cruciale pour les chercheurs qui utilisent des systèmes de gestion documentaire comme LaTeX. Cette extension facilite la gestion des citations en générant des fichiers .bib mis à jour automatiquement.
+
+Pour installer Better BibTeX, dans Zotero, accédez au menu des modules complémentaires (via le menu `Outils` sur Windows/Linux ou le menu `Zotero` sur macOS, puis `Modules complémentaires`), puis sélectionnez l'option Installer un module à partir d'un fichier et choisissez le fichier `.xpi` préalablement téléchargé. Une fois l'installation terminée, configurez le module via les préférences de Zotero (menu `Édition > Préférences` sur Windows/Linux ou `Zotero > Préférences` sur macOS) dans l'onglet Better BibTeX.
+
+Afin d'assurer une cohérence dans les clés de citation utilisées au sein d'un groupe de travail, Better BibTeX permet de définir un format de clé de citation uniforme. Le format recommandé est basé sur le nom de l'auteur et l'année de publication, par exemple : `authEtal2.fold.lower.replace(find=".",replace=_) + len + shortyear | veryshorttitle + shortyear`. Cette uniformisation garantit une gestion efficace des citations dans les documents collaboratifs.
+
+### Génération du fichier .bib
+
+Une fois Better BibTeX configuré, il est possible d'exporter une collection Zotero au format BibLaTeX. Pour cela, faites un clic droit sur la collection souhaitée et sélectionnez Exporter la collection. Choisissez le format `Better BibLaTeX` et cochez l'option `[x] Keep updated`. Ce fichier `.bib` sera mis à jour automatiquement chaque fois que de nouvelles références seront ajoutées à Zotero. Cette méthode est particulièrement utile pour synchroniser les références dans des projets partagés via des systèmes de versionnement comme GitHub.
+
+Il est important de noter que toute modification effectuée dans Zotero (ajout, suppression de références) sera automatiquement synchronisée avec les autres membres du groupe. Cela implique qu'une gestion prudente des références est nécessaire pour éviter toute suppression accidentelle.
+
+#### Utilisation de Zotero lors de la rédaction
+
+Lors de la rédaction d'articles scientifiques, Zotero peut être intégré directement dans des éditeurs de texte compatibles avec LaTeX ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque Zotero.
+
+## Conclusion
+
+Ce chapitre a exploré l'écosystème des outils de synthèse de la connaissance et de gestion des références, soulignant leur rôle fondamental dans la démarche scientifique contemporaine. De la revue narrative aux méta-analyses, en passant par le snowballing et les revues de portée, nous avons vu comment différentes approches méthodologiques répondent à des besoins spécifiques de recherche. Cette diversité d'approches reflète la richesse et la complexité des questions de recherche en sciences sociales, nécessitant des outils adaptés à chaque contexte.
+
+L'évolution technologique a transformé radicalement la pratique de la recherche bibliographique. Là où les chercheurs dépendaient autrefois de méthodes manuelles laborieuses, ils disposent aujourd'hui d'outils sophistiqués comme Covidence pour les revues systématiques et Zotero pour la gestion des références. Ces plateformes ne se contentent pas de faciliter le travail individuel ; elles révolutionnent la collaboration scientifique en permettant le partage instantané de ressources et la coordination d'équipes dispersées géographiquement.
+
+Notre choix éditorial en faveur de Covidence et Zotero s'appuie sur des critères précis : accessibilité, transparence, compatibilité et flexibilité. Zotero, en particulier, illustre parfaitement l'esprit de la science ouverte grâce à son caractère open-source et sa gratuité, démocratisant l'accès aux outils de recherche de qualité. Cette philosophie d'ouverture s'avère importante dans un contexte où la collaboration interdisciplinaire et internationale devient la norme. Au-delà des aspects techniques, l'adoption de ces outils représente un investissement dans la rigueur scientifique. Une gestion méthodique de la littérature et des références ne constitue pas seulement une exigence formelle ; elle participe à la construction d'une base de connaissances fiable et reproductible. Dans un environnement informationnel de plus en plus dense, ces outils deviennent indispensables pour naviguer dans la production scientifique et maintenir les standards académiques.
+
+L'apprentissage de ces outils, bien qu'exigeant un investissement initial en temps, procure des bénéfices qui transcendent les projets individuels. La maîtrise de Zotero et de Covidence prépare les chercheurs aux défis futurs de la recherche collaborative et leur permet de se concentrer sur l'essentiel : la production de connaissances nouvelles dans leur domaine d'étude.
