@@ -203,6 +203,8 @@ Avec l'émergence des mégadonnées et de la science des données, le langage de
 Des entreprises telles que RStudio (renommée Posit) développent des outils intégrés qui rendent R plus accessible et qui permettent d'aller encore plus loin, poussant les limites d'un langage souvent perçu comme étant principalement utilisé pour l'analyse de données.
 L'écosystème R se diversifie avec des packages comme *ggplot2* (servant à la visualisation graphique), *dplyr* (servant à la manipulation et au traitement de données), ou *Shiny* (qui permet de faire applications Web interactives).
 
+=> ajouter importance Tidyverse dans apprentissage R pour débutants
+
 L’évolution des langages de programmation, notamment le langage de programmation R, illustre comment les besoins des chercheurs en termes de flexibilité, d’accessibilité et de partage ont façonné les outils que nous utilisons aujourd’hui.
 Au fil des décennies, les langages se sont adaptés aux nouvelles méthodes et à l’augmentation des capacités de calcul, offrant des possibilités toujours plus larges pour l’exploration et l’analyse de données.
 
