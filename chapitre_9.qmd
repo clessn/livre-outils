@@ -226,6 +226,9 @@ vitesse plus grande, grâce à ses capacités de traitement de données
 et d'auto améliorations, que si elle était uniquement dépendante
 de l'humain.
 
+=> ajouter dimension environnementale (bilan carbone des serveurs) difficile à calculer à cause de cette récente apparition (classement des différents niveaux de pollution de chaque IA inexistante auj par ex)
+
+
 En tant que chercheur en sciences sociales, pourquoi devrait-on
 être préoccupé par le développement de l'IA? Tout d'abord, il est
 important de commencer à réfléchir ainsi qu'à analyser les différents

@@ -1198,6 +1198,8 @@ lors de l'utilisation individuelle de ChatGPT n'est pas public et
 ne peut pas être consulté par les autres, il n'est pas recommandé
 d'insérer la référence en bibliographie.
 
+=> ajouter dimension inégalitaire de l'usage de l'IA/ de l'accès : apprendre à l'utiliser, et de façon intelligente, est un luxe (cf cours d'Adrien :) )
+
 Toutefois, à moins que la recherche porte directement sur ChatGPT,
 nous déconseillons fortement d'utiliser uniquement ce que le robot
 conversationnel fournit comme réponse. Reprenons l'exemple du

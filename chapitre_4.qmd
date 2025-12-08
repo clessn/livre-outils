@@ -111,7 +111,11 @@ Une donnée est considérée comme sensible si elle permet d'identifier directem
 
 Dans la plupart des institutions canadiennes, la gestion de données sensibles est encadrée par un comité d'éthique de la recherche. Lorsque vous soumettez votre protocole de recherche pour approbation éthique, vous devez spécifier comment vous allez collecter, entreposer, protéger et éventuellement détruire vos données sensibles. Le non-respect de ces engagements peut avoir des conséquences sérieuses, allant du retrait de votre approbation éthique à des sanctions institutionnelles.
 
-Les principes à respecter pour les données sensibles incluent la minimisation (ne collectez que les données nécessaires), l'anonymisation  (retirez ou masquez les identifiants dès que possible), le chiffrement (protégez les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans votre certificat éthique peuvent accéder aux données), et l'entreposage sécurisé (utilisez des serveurs approuvés, idéalement situés au Canada).
+Les principes à respecter pour les données sensibles incluent la minimisation (ne collectez que les données nécessaires), l'anonymisation  (retirez ou masquez les identifiants dès que possible)
+
+=> préciser différence entre pseudonymisation (remplacer les identifiants directs (noms) par un code unique (pseudonyme) pour ré-identifier la personne en cas de besoin si on a la clé de déchiffrement) =/= Anonymisation (rendre impossible l'identification manière permanente et irréversible)
+
+, le chiffrement (protégez les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans votre certificat éthique peuvent accéder aux données), et l'entreposage sécurisé (utilisez des serveurs approuvés, idéalement situés au Canada).
 
 À l'inverse, certaines données ne posent pas de problème de confidentialité. C'est le cas des statistiques publiques, des corpus textuels ouverts comme les articles de presse ou les transcriptions de débats parlementaires, des données administratives agrégées sans possibilité d'identification, ou encore de votre propre code d'analyse (scripts R par exemple). Pour ces données, les contraintes sont beaucoup plus souples. Vous pouvez les entreposer sur des plateformes grand public, les partager plus librement, et éventuellement les rendre publiques sans approbation éthique spécifique.
 

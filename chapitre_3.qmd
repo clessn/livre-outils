@@ -96,6 +96,8 @@ Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitr
 3.  Un avancement **itératif** et **incrémental** pour des **livraisons** régulières de petites parties fonctionnelles;
 4.  Une division du travail en **Stories** à l'intérieur d'un tableau **Kanban**.
 
+=> ajouter clarification différence entre Scrum et Kanban : axé sur la gestion du temps (Sprints de durée fixe) / axé sur la gestion du flux (visualisation du travail)
+
 ```{r, out.width="80%"}
 #| label: fig-scrum
 #| echo: false
