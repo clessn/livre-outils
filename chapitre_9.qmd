@@ -373,7 +373,7 @@ n'est pas mutuellement exclusive. En d'autres termes, les outils
 présentés ici ne se situent pas uniquement dans une étape précise.
 Ils les transcendent toutes. Cependant, selon leurs fonctionnalités
 respectives, certains s'insèrent mieux à certaines étapes de la
-production scientifique.
+production scientifique. => il s'agit de préciser que le véritable enjeu de l'IA réside dans la capacité à l'utiliser efficacement et intelligement afin d'améliorer son efficience, saisn altérer ses capacités cognitives ( notamment mémorisation et reflexion) 
 
 ### Avant la recherche: trouver des écrits et organiser ses sources
 
