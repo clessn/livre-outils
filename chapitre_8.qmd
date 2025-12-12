@@ -509,6 +509,24 @@ plusieurs articles différents. Il est donc utile d'ajouter au fur
 et à mesure les nouvelles références dans *Research Rabbit* afin
 de visualiser la couverture de notre revue des écrits.
 
+Un autre outil pertinent au cycle de la recherche, et plus 
+particulièrement avant la recherche, est Perplexity. Il s'agit d'un 
+moteur de recherche IA qui combine la « recherche et la synthèse 
+automatique pour faciliter l'exploration de l'information et des sources.
+Perplexity soutient les premières étapes du cycle de la recherche, soit la
+formulation d'une problématique et d'une question de recherche, le répérage 
+des théories et l'élaboration d'hypothèses en raison de sa capacité à 
+générer des résumés et des courtes revues de littérature, à comparer
+des concepts et à proposer des sources scientifiques. Cet outil permet de 
+repérer l'information, de la synthétiser et il cite systématiquement ses 
+sources. Ainsi, gâce à ses réponses structurées et appuyées par des sources, 
+Perplexity permet de rendre plus efficace et fiable la recherche 
+documentaire. Perplexity offre une interface conçue pour consolider 
+l'information, relier les données entre elles et présenter des réponses 
+structurées avec des sources vérifiables. Ce qui est essentiel pour soutenir 
+une démarche de recherche transparente. 
+
+
 ### Pendant la recherche: l'utilisation de grands modèles linguistiques
 pour analyser des données
 

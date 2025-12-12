@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sarah Dulude Bellavance</title>
+    <script src=https://cdn.tailwindcss.com></script>
+    <script src=https://unpkg.com/feather-icons></script>
+    <script src=https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #918C7E;
+            color: #918C7E
+            ;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+
+        .text-beige {
+            color:#f9f7f1 ;
+        }
+
+        .bg-beige {
+            background-color:white;
+        }
+
+        .text-brown {
+            color: black;
+        }
+
+        .bg-brown {
+            background-color: #918C7E
+            ;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #918C7E;
+        }
+    </style>
+</head>
+<body class="bg-beige min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <span class="text-brown text-2xl font-semibold">Sarah Dulude Bellavance</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#accueil" class="text-brown hover:text-black-700 transition">À propos</a>
+                    <a href="#parcours" class="text-brown hover:text-black-700 transition">Formation académique</a>
+                    <a href="#competences" class="text-brown hover:text-black-700 transition">Compétences</a>
+                    <a href="#competences" class="text-brown hover:text-black-700 transition">Recherche</a>
+                    <a href="#projets" class="text-brown hover:text-black-700 transition">Contact</a>
+
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-black-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#accueil" class="block px-3 py-2 text-brown hover:bg-beige">À propos</a>
+            <a href="#parcours" class="block px-3 py-2 text-brown hover:bg-beige">Formation académique</a>
+            <a href="#competences" class="block px-3 py-2 text-brown hover:bg-beige">Compétences</a>
+            <a href="#competences" class="block px-3 py-2 text-brown hover:bg-beige">Recherche</a>
+            <a href="#contact" class="block px-3 py-2 text-brown hover:bg-beige">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h1 class="text-3xl md:text-2xl font-bold text-background mb-4">Étudiante à la maîtrise en science politique - politique internationale <span class="border-b-2 border-brown"></span></h1>
+                <p class="text-1.5xl text-brown mb-5 leading-relaxed">
+                  Université Laval
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-brown text-beige rounded hover:bg-brown-700 transition">Me contacter</a>
+
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-brown text-center mb-12">Formation académique</h2>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="space-y-8 pl-8">
+                    <!-- Item 1 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute -left-8 top-1 h-4 w-4"></div>
+                        <div class="hover-scale bg-beige p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold text-brown mb-2">Maîtrise en science politique </h3>
+                            <p class="text-brown font-medium mb-2">Université Laval • 2025-2027</p>
+                            <p class="text-brown">Spécialisation : politique internationale</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute -left-8 top-1 h-4 w-4"></div>
+                        <div class="hover-scale bg-beige p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold text-brown mb-2">Baccalaréat en science politique</h3>
+                            <p class="text-brown font-medium mb-2">Université Laval • 2022-2025</p>
+                            <p class="text-brown">Spécialisation : relations internationales</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-brown text-center mb-12">Compétences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Langages -->
+            <div class="hover-scale bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="text-brown mr-3"></i>
+                    <h3 class="text-xl font-bold text-brown">Outils numériques</h3>
+                </div>
+                <ul class="space-y-2 text-brown">
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Gestion de projets
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        R
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Suite Office
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="hover-scale bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="text-brown mr-3"></i>
+                    <h3 class="text-xl font-bold text-brown">Académique</h3>
+                </div>
+                <ul class="space-y-2 text-brown">
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Analyse
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                      Rigueur scientifique
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Communication et rédaction
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Recherche
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="hover-scale bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="text-brown mr-3"></i>
+                    <h3 class="text-xl font-bold text-brown">Professionnelle</h3>
+                </div>
+                <ul class="space-y-2 text-brown">
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Travail d'équipe
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Capacité d'analyse et de synthèse
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Gestion du temps et organisation
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-brown rounded-full mr-2"></span>
+                        Langues (français et anglais)
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-30 bg-white px-10 sm:px-16 lg:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-brown text-center mb-12">Intérêts de recherche</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Projet 1 -->
+                <div class="hover-scale bg-beige rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-8">
+                         </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-8 py-1 bg-brown text-beige text-sm rounded-full">Relations internationales</span>
+                            <span class="px-8 py-1 bg-brown text-beige text-sm rounded-full">Enjeux politiques</span>
+
+
+                        </div>
+                    </div>
+                </div>
+              <!-- Projet 2 -->
+                <div class="hover-scale bg-beige rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-8">
+                         </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-6 py-1 bg-brown text-beige text-sm rounded-full">Conflits et guerres</span>
+                               <span class="px-6 py-1 bg-brown text-beige text-sm rounded-full">Politique étrangère</span>
+
+                        </div>
+                    </div>
+                </div>
+            <!-- Projet 3 -->
+                <div class="hover-scale bg-beige rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-8">
+                         </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-6 py-1 bg-brown text-beige text-sm rounded-full">Sécurité internationale</span>
+                               <span class="px-6 py-1 bg-brown text-beige text-sm rounded-full">Environnement</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-4 lg:px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-brown text-center mb-12">Contact</h2>
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <form class="space-y-3">
+                    <div>
+                        <label for="name" class="block text-brown mb-2">Nom complet</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-brown rounded focus:outline-none focus:ring-2 focus:ring-brown">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-brown mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-brown rounded focus:outline-none focus:ring-2 focus:ring-brown">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-brown mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-brown rounded focus:outline-none focus:ring-2 focus:ring-brown"></textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-3 bg-brown text-beige rounded hover:bg-brown-700 transition w-full md:w-auto">Envoyer</button>
+                </form>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                    <h3 class="text-xl font-bold text-brown mb-6">Coordonnées</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-brown mr-4 mt-1"></i>
+                            <div>
+                                <p class="text-brown font-medium">Email</p>
+                                <p class="text-brown">sarah.dulude-bellavance.1@ulaval.ca</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+
+
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-brown mr-4 mt-1"></i>
+                            <div>
+                                <p class="text-brown font-medium">Localisation</p>
+                                <p class="text-brown">Québec, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown text-beige py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-semibold">Sarah Dulude Bellavance</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#accueil" class="hover:text-beige-300 transition">Accueil</a>
+                    <a href="#parcours" class="hover:text-beige-300 transition">Formation académique</a>
+                    <a href="#competences" class="hover:text-beige-300 transition">Compétences</a>
+                    <a href="#competences" class="hover:text-beige-300 transition">Recherche</a>
+                    <a href="#contact" class="hover:text-beige-300 transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-beige-300 text-center">
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
