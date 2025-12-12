@@ -126,7 +126,7 @@ machine (machine learning), les réseaux neuronaux artificiels
 (artificial neural networks) ainsi que l'apprentissage profond (deep
 learning).
 
-L'apprentissage machine :
+L'apprentissage machine : => j'aurais ajouté la distinction entre l'IA générative et l'IA  de recommendation au début, dans la définition, afin de poser un cadre sémantique 
 
 \begin{singlespacing} \begin{displayquote} « [...] consiste à
 programmer des ordinateurs pour optimiser un critère de performance
