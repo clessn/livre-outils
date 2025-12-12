@@ -190,7 +190,7 @@ un siècle. Depuis l'arrivée de ChatGPT-4, celui-ci a revu sa
 prédiction pour la situer entre quelques années et quelques décennies
 [@bengio23]. Dans les dix dernières années seulement, les systèmes
 de reconnaissance d'images et de langages en sont venus à dépasser
-les capacités humaines [@roser22]. La @fig-evolution présente cette
+les capacités humaines dans certaines tâches spécifiques et standardisées [@roser22]. La @fig-evolution présente cette
 évolution.
 
 <!-- NOTE: Refaire le graphique manuellement -->
