@@ -835,6 +835,20 @@ produire un savoir quelconque met au défi nos conceptions
 épistémologiques. Générer des textes entiers avec l'aide de l'IA
 ne devrait donc pas être considéré.
 
+L'enjeu écologique que représente l'IA est également à prendre en compte. 
+L'intelligence artificielle impacte l'environnement dans la mesure où son 
+usage implique : "[des] besoins croissants en calcul et ressources informatiques 
+pour collecter les données d’apprentissage, entraîner les modèles d’IA et exécuter 
+les algorithmes de prédiction" (Garcia & Schbath, 2025, p.39). Certains travaux portant 
+sur l'estimation de l'empreinte carbone de modèles d'apprentissage profond (deep learning) 
+ont découvert que l'apprentissage des millions de paramètres de certains modèles 
+de langage peut émettre jusqu'à plus de 100 tonnes de dioxyde de carbone 
+(Garcia & Schbath, 2025, p.39). Par conséquent, on ne peut négligler la contribution 
+actuelle des nouvelles technologies comme les outils d'intelligence artificielle au 
+réchauffement global de la planète (van Steenberghe, 2020, p.21). La sensibilisation du monde 
+universitaire à une utilisation responsable de l'IA s'avère donc primordiale, compte tenu des 
+conséquences environnementales qui en découlent.
+
 Ainsi, l'avènement de l'IA en recherche apporte des questions et
 des réflexions épistémologiques[^chapitre_9-5] et
 méthodologiques[^chapitre_9-6] importantes. Ces questions sont
