@@ -191,7 +191,7 @@ prédiction pour la situer entre quelques années et quelques décennies
 [@bengio23]. Dans les dix dernières années seulement, les systèmes
 de reconnaissance d'images et de langages en sont venus à dépasser
 les capacités humaines [@roser22]. La @fig-evolution présente cette
-évolution^[Le graphiqe a été reproduit à partir des données et du 
+évolution^[Le graphiqe** (graphique) a été reproduit à partir des données et du 
 graphique de Our World in Data: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?time=1998..2023&tab=line].
 
 <!-- NOTE: Refaire le graphique manuellement -->
@@ -496,7 +496,7 @@ est toujours utile de classifier les ouvrages en fonction de leur
 date de parution, notamment afin de suivre l'évolution du débat
 scientifique à propos du sujet de notre recherche. Cette fonctionnalité
 de *Research Rabbit* facilite ainsi cette étape, en plus de permettre
-de découvrir des ouvrages qui ont été publiés avant et aprés ceux
+de découvrir des ouvrages qui ont été publiés avant et aprés** (après) ceux
 qui ont été préalablement identifié.
 
 Une troisième option est de sélectionner une seule source à la fois,
@@ -683,7 +683,7 @@ usages linguistiques nouveaux ou créatifs.  4.  Neuronale (*neural*)
 schémas de traduction, traitant des phrases entières et leur contexte,
 ce qui améliore la qualité et la fluidité des traductions, bien
 qu'elle ne remplace pas entièrement les traducteurs humains.  5.
-Hybride : les quatres approches peuvent également être combinées.
+Hybride : les quatres** (quatre) approches peuvent également être combinées.
 
 C'est au sein de l'approche neuronale que les avancées en intelligence
 artificielle ont permis de développer de nouveaux outils de traduction
@@ -700,6 +700,14 @@ sont devenus de plus en plus populaires et accessibles, permettant
 à des personnes de traduire des textes entiers, des sites Web, des
 documents, en quelques secondes, sans avoir besoin de connaître la
 langue cible.
+
+COMMENTAIRE: Concernant les outils de traduction, au-delà de préciser que ces
+outils ne remplacent pas les traducteurs humains, je pense qu'il serait 
+également utile de mentionner qu'il y a un enjeu de confidentialité des données
+à cet effet. Google Translate et DeepL, les plus populaires, conservent notamment
+les textes soumis pour entraîner leurs algorithmes et les données sensibles,
+comme celles qui sont non-anonymisées, pourrait être une brèche de confidentialité 
+selon les normes éthiques définies dans le cadre de la recherche.
 
 Il est très utile pour les chercheurs en sciences sociales numériques
 de connaître et d'utiliser les outils de traduction automatique,
