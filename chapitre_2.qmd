@@ -27,6 +27,8 @@ Ils permettent de se concentrer sur la logique et les objectifs de l’analyse, 
 Ce sont les langages les plus couramment utilisés en sciences sociales.
 Les langages de bas niveau, comme l’Assembleur, se rapprochent du langage machine.
 Ils offrent un contrôle fin sur l’ordinateur, mais sont plus difficiles à apprendre et rarement utilisés en sciences sociales.
+## Une courte phrase afin de décrire le contenu d’un code Assembleur serait pertinente, selon moi. Exemple : « Ce type de code est constitué de lettres et de chiffre qui ne forme pas toujours des mots du dictionnaire, ils sont aussi généralement regroupés sous forme de colonnes et de lignes. »
+
 
 Chaque langage possède des domaines d’application privilégiés.
 R est largement utilisé pour les statistiques et la visualisation.
