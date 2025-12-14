@@ -270,7 +270,7 @@ Parmi ce que certains considèrent comme les points faibles de RStudio, on retro
 Certains utilisateurs trouvent que le nombre de raccourcis est limité.
 D'autres jugent que l'organisation des différents panneaux n'est pas ergonomique, ou que la personnalisation de l'environnement de programmation est insuffisante.
 De plus, certains utilisateurs ont rapporté que RStudio était plus lent que d'autres alternatives pour certaines opérations, notamment celles impliquant de longs scripts.
-
+## Une partie où il est expliqué la simplicité d’une console R ordinaire pour montrer les avantages de Rstudio serait pertinente, selon moi. En effet, pour quelqu’un qui n’a utilisé que Rstudio ou qui n’a jamais codé, ce sont des avantages qui n’ont pas beaucoup de sens.
 
 ### Comment utiliser RStudio ?
 
