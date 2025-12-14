@@ -163,6 +163,8 @@ Si jusqu'à présent la visualisation des données a été présentée comme une
 
 Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En R, les packages `ggplotly` et `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
 
+Toutefois, le temps qu'ils peuvent prendre pour générer des graphiques diffère. Dans le cadre du développement d'une application, la compagnie Jumping Rivers, spécialisée dans la formation en science des données, s'est posé la question de savoir lequel entre les deux packages `ggplotly` et `plotly` serait le plus rapide pour générer un graphique interactif. Le résultat obtenu est qu'en moyenne `ggplotly` est environ 23 fois plus lent que `plotly` (Roe & Gillespie, 2017) Ainsi, les deux sont pratiques pour générer des graphiques interactifs, mais selon le temps que vous disposez, vous saurez lequel prioriser. 
+
 :::::: {.callout-note}
 Note: Le rendu de graphiques interactifs n'est pas possible dans un document PDF. Par conséquent, seuls les codes sont fournis ci-dessous. Vous pouvez essayer ces codes dans votre environnement de développement pour voir le résultat.
 :::
@@ -215,6 +217,7 @@ Nous vous recommandons vivement de consulter la documentation officielle des pac
 
 `shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
 
+C'est un package flexible car les applications `shiny` peuvent être déployées sur plusieurs plateformes comme les plateformes Cloud (AWS, Google Cloud, etc.) ou encore GitHub Pages afin d'héberger statiquement les applications simples. La réactivité de son système est également un atout car elle permet d'avoir une expérience fluide et interactive sans code complexe lors de son utilisation (Datanovia, 2025). 
 
 ##### Exemple de base avec `shiny`
 
