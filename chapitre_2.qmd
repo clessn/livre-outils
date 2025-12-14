@@ -56,6 +56,7 @@ En effet, cela permet au programmeur débutant de se concentrer sur les concepts
 L'environnement d'apprentissage et les ressources disponibles en ligne jouent également un rôle important sur le choix d'un langage de programmation.
 Python et R ont des communautés très actives en plus d'une grande quantité de documentations et d'innombrables tutoriels gratuits, permettant l'apprentissage autonome et efficace.
 Les programmeurs débutants peuvent s'inscrire sur des sites tels que DataCamp, Codecademy et Coursera, afin d'obtenir une structure dans leur apprentissage.
+## Une référence aux IA classiques comme outil d’apprentissage serait pertinente. « Les IA comme ChatGPT ou Gemini sont aussi très pertinents dans l’apprentissage du code. Elles permettent d’expliquer la logique d’un code ou d’une fonction, d’aider à comprendre pourquoi notre code ne marche pas et même de trouver des formulations ou des fonctions inattendues pour coder quelque chose. »
 
 En contraste aux langages de programmation précédemment mentionnés, dont le code source est ouvert, il existe des logiciels propriétaires comme SAS, STATA, Excel et SPSS.
 Ces logiciels présentent plusieurs avantages spécifiques qui peuvent justifier leur choix par rapport aux langages de programmation généralistes.
