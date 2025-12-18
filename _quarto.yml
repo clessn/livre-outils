@@ -23,6 +23,14 @@ bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
 lang: fr
 format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    highlight-style: github
+    code-fold: false
+    code-tools: false
   pdf:
     classoption: [oneside]        # mêmes marges à gauche/droite partout
     geometry: margin=30mm         # ajuste à ton goût
@@ -30,5 +38,10 @@ format:
       - text: |
           \usepackage{setspace}
           \usepackage{csquotes}
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
+    reference-doc: reference-template.docx
 
 editor: source
