@@ -6,125 +6,27 @@ Laurence-Olivier M. Foisy (Université Laval), \\
 Hubert Cadieux (Université Laval)}
 \end{center}
 
-Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
-artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son
-potentiel pour les sciences sociales. Dans un premier temps, et en
-trame de fond de ce chapitre, les lecteurs seront appelés à développer
-leurs intuitions dans leur utilisation de différents outils de l'IA.
-Avant tout, au moment d'écrire ces lignes, il est important de
-mentionner que l'étude de l'IA dans les sciences sociales est encore
-jeune. Par conséquent, beaucoup de questions restent encore en
-suspend. Face à ce constat, il est important de développer son
-regard critique afin d'orienter son utilisation de l'IA. Se poser
-des questions et tenter de trouver des réponses ne peut que générer
-des bénéfices. Ainsi, si ce chapitre permet d'éclairer certains
-enjeux, ou s'il stimule davantage de questionnement, alors il aura
-réussi son objectif.
+Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Dans un premier temps, et en trame de fond de ce chapitre, les lecteurs seront appelés à développer leurs intuitions dans leur utilisation de différents outils de l'IA. Avant tout, au moment d'écrire ces lignes, il est important de mentionner que l'étude de l'IA dans les sciences sociales est encore jeune. Par conséquent, beaucoup de questions restent encore en suspend. Face à ce constat, il est important de développer son regard critique afin d'orienter son utilisation de l'IA. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Ainsi, si ce chapitre permet d'éclairer certains enjeux, ou s'il stimule davantage de questionnement, alors il aura réussi son objectif.
 
-Dans un deuxième temps, ce chapitre vise à présenter certains outils
-de l'IA qui s'inscrivent dans les grandes étapes de la recherche.
-Il est important de mentionner que ces outils évoluent à une vitesse
-impressionnante.  Par conséquent, certaines fonctionnalités présentées
-dans ce chapitre peuvent possiblement changer dans les prochaines
-années. Les lecteurs sont appelés à consulter les dernières mises
-à jour de ces outils afin de connaître les derniers changements et
-les nouvelles fonctionnalités. Bien qu'il soit difficile de catégoriser
-ces outils de manière exclusive dans chacune de ces catégories, un
-certain ordre d'utilisation est proposé. Celui-ci est surtout
-illustratif afin de présenter les fonctionnalités principales.
-Cependant, les lecteurs sont appelés à réfléchir à propos de
-l'intégration de ces outils dans leur flux de travail en fonction
-de leur besoin.
+Dans un deuxième temps, ce chapitre vise à présenter certains outils de l'IA qui s'inscrivent dans les grandes étapes de la recherche. Il est important de mentionner que ces outils évoluent à une vitesse impressionnante. Par conséquent, certaines fonctionnalités présentées dans ce chapitre peuvent possiblement changer dans les prochaines années. Les lecteurs sont appelés à consulter les dernières mises à jour de ces outils afin de connaître les derniers changements et les nouvelles fonctionnalités. Bien qu'il soit difficile de catégoriser ces outils de manière exclusive dans chacune de ces catégories, un certain ordre d'utilisation est proposé. Celui-ci est surtout illustratif afin de présenter les fonctionnalités principales. Cependant, les lecteurs sont appelés à réfléchir à propos de l'intégration de ces outils dans leur flux de travail en fonction de leur besoin.
 
-La section point d'observation présentera une définition de l'IA, 
-l'évolution de cette dernière dans les dernières années ainsi 
-que la présence et l'utilisation de l'IA dans les sciences 
-sociales. Ensuite, la section arpentage et choix éditoriaux 
-présentera différents outils de l'IA qui s'insèrent bien dans 
-les diffèrentes étapes de la recherche, de la conception jusqu'à la 
-publication des réusltats. Finalement, avant de conclure le chapitre,
-il est intéressant de se demander ce que devient le chercheur à l'aube 
-de cette révolution technologique. 
+La section point d'observation présentera une définition de l'IA, l'évolution de cette dernière dans les dernières années ainsi que la présence et l'utilisation de l'IA dans les sciences sociales. Ensuite, la section arpentage et choix éditoriaux présentera différents outils de l'IA qui s'insèrent bien dans les diffèrentes étapes de la recherche, de la conception jusqu'à la publication des réusltats. Finalement, avant de conclure le chapitre, il est intéressant de se demander ce que devient le chercheur à l'aube de cette révolution technologique.
 
-## Point d'observation:
+## Point d'observation
 
 ### Définition et différents types d'IA
 
-Qu'est-ce que l'IA ? Est-ce quelque chose d'homogène, ou s'agit-il
-plutôt « des intelligences artificielles »? Dans un premier temps,
-il est important de préciser que l'IA est un champ d'études
-[@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets,
-relativement vaste et en constante expansion, qui s'intéresse, à
-sa façon, à l'IA. Pour préciser ce propos, prenons l'exemple de la
-science politique. Malgré la formulation au singulier, la science
-politique est un grand ensemble de différents sous-champs d'études,
-qui ont chacun leur propre objet d'intérêt. La philosophie politique,
-les relations internationales, la politique comparée et l'étude de
-l'opinion publique, par exemple, sont tous des sous-champs qui
-s'intéressent, à leur façon, au phénomène politique. Dans le même
-sens, et compte tenu de cette pluralité de perspectives, il est
-important de noter qu'il n'y a pas de consensus dans la définition
-de l'IA [@wang19; @konig_etal22]. De plus, la rapidité du développement
-de ce champ rend le traçage de frontières définitionnelles plutôt
-difficile : comment définir, d'une manière précise et consensuelle,
-quelque chose qui évolue constamment [@devedzic22; @bertolini20,
-pp. 15]?
+Qu'est-ce que l'IA ? Est-ce quelque chose d'homogène, ou s'agit-il plutôt « des intelligences artificielles »? Dans un premier temps, il est important de préciser que l'IA est un champ d'études [@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets, relativement vaste et en constante expansion, qui s'intéresse, à sa façon, à l'IA. Pour préciser ce propos, prenons l'exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d'études, qui ont chacun leur propre objet d'intérêt. La philosophie politique, les relations internationales, la politique comparée et l'étude de l'opinion publique, par exemple, sont tous des sous-champs qui s'intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu'il n'y a pas de consensus dans la définition de l'IA [@wang19; @konig_etal22]. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d'une manière précise et consensuelle, quelque chose qui évolue constamment [@devedzic22; @bertolini20, pp. 15]?
 
-Deux définitions de l’IA peuvent tout de même être retenues. La
-première vient de John McCarthy [-@mccarthy07, pp. 2] : « Il s'agit
-de la science et de l'ingénierie qui consistent à créer des machines
-intelligentes[^chapitre_9-1], en particulier des programmes
-informatiques intelligents. Elle est liée à la tâche similaire
-consistant à utiliser des ordinateurs pour comprendre l'intelligence
-humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont
-biologiquement observables. »[^chapitre_9-2]. La seconde définition
-provient de la compagnie IBM [-@ibm23] : « Dans sa forme la plus
-simple, l'IA est un domaine qui combine l'informatique et des
-ensembles de données robustes pour permettre la résolution de
-problèmes. Elle englobe également les sous-domaines de l'apprentissage
-automatique et de l'apprentissage profond, qui sont souvent mentionnés
-en conjonction avec l'IA. Ces disciplines sont composées d'algorithmes
-d'IA qui cherchent à créer des systèmes experts qui font des
-prédictions ou des classifications basées sur des données d'entrée
-». Ces extraits permettent de comprendre que l'IA consiste à
-reproduire artificiellement certaines capacités cognitives humaines,
-afin de rendre les machines « intelligentes » en leur donnant la
-capacité de résoudre des problèmes par elles-mêmes.
+Deux définitions de l’IA peuvent tout de même être retenues. La première vient de John McCarthy [-@mccarthy07, pp. 2] : « Il s'agit de la science et de l'ingénierie qui consistent à créer des machines intelligentes[^chapitre_9-1], en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l'intelligence humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont biologiquement observables. »[^chapitre_9-2]. La seconde définition provient de la compagnie IBM [-@ibm23] : « Dans sa forme la plus simple, l'IA est un domaine qui combine l'informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l'apprentissage automatique et de l'apprentissage profond, qui sont souvent mentionnés en conjonction avec l'IA. Ces disciplines sont composées d'algorithmes d'IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d'entrée ». Ces extraits permettent de comprendre que l'IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines « intelligentes » en leur donnant la capacité de résoudre des problèmes par elles-mêmes.
 
-[^chapitre_9-1]: Intelligence étant défini de la façon suivante :
-« L'intelligence est la partie informatique de la capacité à atteindre
-des objectifs dans le monde. On trouve différents types et degrés
-d'intelligence chez l'homme, chez de nombreux animaux et chez
-certaines machines. » [@mccarthy07, pp. 2]
+[^chapitre_9-1]: Intelligence étant défini de la façon suivante : « L'intelligence est la partie informatique de la capacité à atteindre des objectifs dans le monde. On trouve différents types et degrés d'intelligence chez l'homme, chez de nombreux animaux et chez certaines machines. » [@mccarthy07, pp. 2]
 
-[^chapitre_9-2]: Toutes les traductions ont été effectuées par le
-logiciel DeepL
+[^chapitre_9-2]: Toutes les traductions ont été effectuées par le logiciel DeepL
 
-Ces définitions restent toutefois à préciser, notamment dans le
-champ d'application de l'IA : qu'en est-il concrètement ? Comment
-est-ce utilisé ?  Comment ça fonctionne ? Si l’IA se distingue en
-plusieurs types, en faire la liste et identifier leurs différentes
-branches et applications possibles serait fastidieux et s'écarterait
-de l'objectif de ce chapitre introductif. Cependant, pour ceux
-désirant en savoir plus sur le sujet, les articles de McCarthy
-[-@mccarthy07] et de Hanchen et al.
-[-@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23], ainsi
-que le Cambridge Handbook of Artificial Intelligence [@konig_etal22]
-sont très riches et illustratifs.
+Ces définitions restent toutefois à préciser, notamment dans le champ d'application de l'IA : qu'en est-il concrètement ? Comment est-ce utilisé ? Comment ça fonctionne ? Si l’IA se distingue en plusieurs types, en faire la liste et identifier leurs différentes branches et applications possibles serait fastidieux et s'écarterait de l'objectif de ce chapitre introductif. Cependant, pour ceux désirant en savoir plus sur le sujet, les articles de McCarthy [-@mccarthy07] et de Hanchen et al. [-@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23], ainsi que le Cambridge Handbook of Artificial Intelligence [@konig_etal22] sont très riches et illustratifs.
 
-Avant toute chose, il est important de distinguer l'IA général
-(strong) du précis (narrow). Le premier, et le moins populaire en
-nombre de recherches et d'applications, cherche à développer une
-machine qui aurait les mêmes capacités cognitives que l'humain, non
-seulement en termes de résolution de problème, d'apprentissage et
-de planification, mais aussi qui serait dotée d'une conscience de
-soi [@ibm23; @konig_etal22]. Le deuxième est plus restrictif, se
-limitant à la réalisation d'un ou de plusieurs objectifs spécifiques.
-De ces deux visées, il y a trois principaux champs de recherche qui
-se penchent sur les méthodes de fonctionnement de l'IA : l'apprentissage
-machine (machine learning), les réseaux neuronaux artificiels
-(artificial neural networks) ainsi que l'apprentissage profond (deep
-learning).
+Avant toute chose, il est important de distinguer l'IA général (*strong*) du précis (*narrow*). Le premier, et le moins populaire en nombre de recherches et d'applications, cherche à développer une machine qui aurait les mêmes capacités cognitives que l'humain, non seulement en termes de résolution de problème, d'apprentissage et de planification, mais qui serait aussi dotée d'une conscience de soi [@ibm23; @konig_etal22]. Le deuxième est plus restrictif, se limitant à la réalisation d'un ou de plusieurs objectifs spécifiques. De ces deux visées, il y a trois principaux champs de recherche qui se penchent sur les méthodes de fonctionnement de l'IA : l'apprentissage machine (*machine learning*), les réseaux neuronaux artificiels (*artificial neural networks*) ainsi que l'apprentissage profond (*deep learning*).
 
 L'apprentissage machine :
 
@@ -137,65 +39,19 @@ paramètres du modèle à l'aide des données d'entraînement ou de
 l'expérience passée » (Alpaydin et Bach 2014, pp. 3).  \end{displayquote}
 \end{singlespacing}
 
-Le but est d'entraîner le modèle afin qu'il puisse reconnaître des
-tendances, et qu'il puisse décrire et/ou faire des prédictions à
-partir de ces tendances [@alpaydin_bach14, pp. 3]. Il est le champ
-le plus populaire dans la recherche faite sur l'IA, notamment parce
-qu'il constitue une base importante pour les autres recherches dans
-le domaine [@devedzic22].
+Le but est d'entraîner le modèle afin qu'il puisse reconnaître des tendances, et qu'il puisse décrire et/ou faire des prédictions à partir de ces tendances [@alpaydin_bach14, pp. 3]. Il est le champ le plus populaire dans la recherche faite sur l'IA, notamment parce qu'il constitue une base importante pour les autres recherches dans le domaine [@devedzic22].
 
-Ensuite, un sous-champ de l'apprentissage machine, l'apprentissage
-profond, « \[...\] fait référence à un réseau neuronal composé de
-plus de trois couches \[...\]. L'apprentissage en profondeur
-automatise une grande partie de l'extraction des caractéristiques,
-éliminant ainsi une partie de l'intervention humaine manuelle
-nécessaire et permettant l'utilisation d'ensembles de données plus
-importants. Il peut ingérer des données non structurées dans leur
-forme brute et déterminer automatiquement la hiérarchie des
-caractéristiques qui distinguent les différentes catégories de
-données les unes des autres, ne nécessitant pas d'intervention
-humaine. » [@ibm23]. Ainsi, l'apprentissage profond permet une
-certaine forme d'automatisation des tâches demandées à l'IA, en lui
-fournissant les capacités nécessaires d'apprendre par lui-même pour
-corriger et améliorer son fonctionnement. Pour ce faire, on doit
-développer des structures neuronales artificielles, qui s'inspirent
-des neurones du cerveau humain.
+Ensuite, un sous-champ de l'apprentissage machine, l'apprentissage profond, « \[...\] fait référence à un réseau neuronal composé de plus de trois couches \[...\]. L'apprentissage en profondeur automatise une grande partie de l'extraction des caractéristiques, éliminant ainsi une partie de l'intervention humaine manuelle nécessaire et permettant l'utilisation d'ensembles de données plus importants. Il peut ingérer des données non structurées dans leur forme brute et déterminer automatiquement la hiérarchie des caractéristiques qui distinguent les différentes catégories de données les unes des autres, ne nécessitant pas d'intervention humaine. » [@ibm23]. Ainsi, l'apprentissage profond permet une certaine forme d'automatisation des tâches demandées à l'IA, en lui fournissant les capacités nécessaires d'apprendre par lui-même pour corriger et améliorer son fonctionnement. Pour ce faire, on doit développer des structures neuronales artificielles, qui s'inspirent des neurones du cerveau humain.
 
-C'est d'ailleurs la tâche de ceux qui s'intéressent aux réseaux
-neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA)
-sont constitués d'une couche de nœuds, contenant une couche d'entrée,
-une ou plusieurs couches cachées et une couche de sortie. Chaque
-nœud, ou neurone artificiel, se connecte à un autre et possède un
-poids et un seuil associés. Si la sortie d'un nœud individuel est
-supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie
-des données à la couche suivante du réseau. Dans le cas contraire,
-aucune donnée n'est transmise à la couche suivante du réseau » (IBM
-2023b).  Ainsi, le but est de reproduire les structures cognitives
-humaines, afin de permettre à l'IA d'accomplir des tâches plus
-complexes. L'une des principales utilités de ce sous-champ est qu'il
-permet d'augmenter la rapidité du classement de données ; la
-reconnaissance vocale ou d'image, par exemple, ne prend que quelques
-minutes grâce à cela, contrairement à plusieurs heures, lorsque
-fait par des humains [@ibm23a].
+C'est d'ailleurs la tâche de ceux qui s'intéressent aux réseaux neuronaux artificiels : « Les réseaux neuronaux artificiels (RNA) sont constitués d'une couche de nœuds, contenant une couche d'entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque nœud, ou neurone artificiel, se connecte à un autre et possède un poids et un seuil associés. Si la sortie d'un nœud individuel est supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie des données à la couche suivante du réseau. Dans le cas contraire, aucune donnée n'est transmise à la couche suivante du réseau » (IBM 2023b). Ainsi, le but est de reproduire les structures cognitives humaines, afin de permettre à l'IA d'accomplir des tâches plus complexes. L'une des principales utilités de ce sous-champ est qu'il permet d'augmenter la rapidité du classement de données. La reconnaissance vocale ou d'image, par exemple, ne prend que quelques minutes grâce à cela, contrairement à plusieurs heures, lorsque fait par des humains [@ibm23a].
 
 ### L'évolution constante de l'IA
 
-Plusieurs chercheurs, dont le professeur Yoshua Bengio de l'Université
-de Montréal, ont lancé plusieurs avertissements sur le développement
-de l'IA, notamment à cause de la rapidité de son évolution. Dans
-un article paru dans The Economist, Dr. Bengio [-@bengio23] déclare
-qu'il prévoyait le développement d'une IA avec des capacités
-similaires à celles de l'humain d'ici quelques décennies, peut-être
-un siècle. Depuis l'arrivée de ChatGPT-4, celui-ci a revu sa
-prédiction pour la situer entre quelques années et quelques décennies
-[@bengio23]. Dans les dix dernières années seulement, les systèmes
-de reconnaissance d'images et de langages en sont venus à dépasser
-les capacités humaines [@roser22]. La @fig-evolution présente cette
-évolution^[Le graphiqe a été reproduit à partir des données et du 
-graphique de Our World in Data: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?time=1998..2023&tab=line].
+Plusieurs chercheurs, dont le professeur Yoshua Bengio de l'Université de Montréal, ont lancé des avertissements sur le développement de l'IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans *The Economist*, Dr. Bengio [-@bengio23] déclare qu'il prévoyait le développement d'une IA avec des capacités similaires à celles de l'humain d'ici quelques décennies, peut-être un siècle. Depuis l'arrivée de ChatGPT-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies [@bengio23]. Dans les dix dernières années seulement, les systèmes de reconnaissance d'images et de langages en sont venus à dépasser les capacités humaines [@roser22]. La @fig-evolution présente cette évolution[^chapitre_9-3].
+
+[^chapitre_9-3]: Le graphiqe a été reproduit à partir des données et du graphique de Our World in Data: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?time=1998..2023&tab=line
 
 <!-- NOTE: Refaire le graphique manuellement -->
-
 
 ```{r}
 #| fig-cap: "Évolution des performances de l'IA comparée aux capacités humaines"
@@ -212,418 +68,106 @@ ai_evolution
 ```
 
 <!-- ![Évolution de l'IA depuis -->
+
 <!-- 1998](images/chapitre9_figure1.png){#fig-evolution} -->
 
-Comme on le remarque, cette évolution ne suit pas une trajectoire
-linéaire.  Depuis 2015, la plupart de ces technologies ont évolué
-de manière quasi exponentielle. Cette progression fulgurante nous
-permet de faire quelques constats pour appréhender l'évolution
-future. Tout d'abord, le développement dans les capacités de l'IA
-permet d'accélérer de manière exponentielle le champ dans son
-ensemble, ce qui rend cette technologie exponentiellement plus
-puissante [@harari23]. Elle est capable de se faire évoluer à une
-vitesse plus grande, grâce à ses capacités de traitement de données
-et d'auto améliorations, que si elle était uniquement dépendante
-de l'humain.
+Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi exponentielle. Cette progression fulgurante nous permet de faire quelques constats pour appréhender l'évolution future. Tout d'abord, le développement dans les capacités de l'IA permet d'accélérer de manière exponentielle le champ dans son ensemble, ce qui rend cette technologie exponentiellement plus puissante [@harari23]. L'IA est capable de se faire évoluer à une vitesse plus grande, grâce à ses capacités de traitement de données et d'améliorations automatiques, que si elle était uniquement dépendante de l'humain.
 
-En tant que chercheur en sciences sociales, pourquoi devrait-on
-être préoccupé par le développement de l'IA? Tout d'abord, il est
-important de commencer à réfléchir ainsi qu'à analyser les différents
-impacts que l'IA a sur nos sociétés. Les avancer dans le domaine
-en plus de l'accessibilité à ces technologies, tel que Large Language
-Model (LLM), en font de nouveaux objets d'étude qui génèrent beaucoup
-de questions. Yuval Noah Harrari [-@harari23], historien et philosophe,
-explique dans un article que la capacité de l'IA à manipuler ainsi
-qu'à générer du langage en fait un outil puissant qui a le potentiel
-d'avoir de profonds impacts sur nos civilisations. Par conséquent,
-l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet
-de recherche dont tous les champs des sciences sociales et sciences
-humaines ont intérêt à se pencher. Présentement, il est anticipé
-que cette technologie puisse être utilisée pour « produire et
-diffuser des informations erronées et toxiques, éroder la confiance
-sociale et la démocratie ; surveiller, manipuler et soumettre les
-citoyens, en sapant les libertés individuelles et collectives ; ou
-créer des armes numériques ou physiques puissantes qui menacent la
-vie humaine » [@bremmer_suleyman23, pp. 32]. Compte tenu des
-conséquences potentielles que ces technologies peuvent avoir sur
-le monde social, tous les domaines scientifiques ont un fort incitatif
-à décloisonner leur savoir et leurs analyses, en plus de maximiser
-l'interdisciplinarité et la recherche collaborative. Une compréhension
-plus complète de ces changements ainsi qu'une communication de ce
-savoir ne pourra que générer des bénéfices pour le monde académique,
-social et politique.
+En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l'IA? Tout d'abord, il est important de commencer à réfléchir ainsi qu'à analyser les différents impacts que l'IA a sur nos sociétés. Les avancer dans le domaine en plus de l'accessibilité à ces technologies, tel que *Large Language Model* (LLM), en font de nouveaux objets d'étude qui génèrent beaucoup de questions. Yuval Noah Harrari [-@harari23], historien et philosophe, explique dans un article que la capacité de l'IA à manipuler ainsi qu'à générer du langage en fait un outil puissant qui a le potentiel d'avoir de profonds impacts sur nos civilisations. Par conséquent, l'étude des effets de l'IA sur nos sociétés devient un nouveau sujet de recherche dont tous les champs des sciences sociales et sciences humaines ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour « produire et diffuser des informations erronées et toxiques, éroder la confiance sociale et la démocratie ; surveiller, manipuler et soumettre les citoyens, en sapant les libertés individuelles et collectives ; ou créer des armes numériques ou physiques puissantes qui menacent la vie humaine » [@bremmer_suleyman23, pp. 32]. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l'interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu'une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.
 
 ### L'IA en sciences sociales
 
-Malgré que l'utilisation de l'IA en sciences sociales soit relativement
-récente, il y a déjà quelques recherches qui se sont penchées sur
-son utilisation dans un contexte scientifique. Tout d'abord, la
-recherche de Peterson et al. [-@peterson_etal21], qui s'intéresse
-à comprendre comment les individus prennent des décisions, utilise
-l'IA afin de traiter une importante quantité de données rapidement.
-Leur base de données est environ trente fois plus importante que
-celles des études précédentes. De plus, ils ont programmé différentes
-théories afin de vérifier laquelle correspondait le mieux aux
-régularités présentes dans les données. L'utilisation de l'IA dans
-cette recherche est très intéressante puisqu'elle permet de tester
-des théories existantes sur un vaste ensemble de données, qui
-auraient pris beaucoup plus de temps si cela avait été réalisé «
-manuellement ».
+Malgré que l'utilisation de l'IA en sciences sociales soit relativement récente, il y a déjà quelques recherches qui se sont penchées sur son utilisation dans un contexte scientifique. Tout d'abord, la recherche de Peterson et al. [-@peterson_etal21], qui s'intéresse à comprendre comment les individus prennent des décisions, utilise l'IA afin de traiter une importante quantité de données rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux régularités présentes dans les données. L'utilisation de l'IA dans cette recherche est très intéressante puisqu'elle permet de tester des théories existantes sur un vaste ensemble de données, qui auraient pris beaucoup plus de temps si cela avait été réalisé « manuellement ».
 
-Ensuite, la recherche de Park et al. [-@park_etal23] utilise l'IA
-pour créer des « generative agents » qui interagissent entre eux
-reproduisant des comportements individuels et collectifs humains.
-Leur objectif et d'en faire des proxys pour étudier le comportement
-humain. Leur modèle prend la forme d'une simulation interactive,
-similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au
-point, cette application de l'IA permettrait de tester des prototypes
-de systèmes sociaux ainsi que des théories [@park_etal23].
+Ensuite, la recherche de Park et al. [-@park_etal23] utilise l'IA pour créer des « generative agents » qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif et d'en faire des proxys pour étudier le comportement humain. Leur modèle prend la forme d'une simulation interactive, similaire au jeu vidéo Sims. Bien que ce ne soit pas encore au point, cette application de l'IA permettrait de tester des prototypes de systèmes sociaux ainsi que des théories [@park_etal23].
 
-Similairement, la recherche de Argyle et al. [-@argyle_etal23]
-utilise ChatGPT comme proxy pour étudier l'opinion publique dans
-certains sous-groupes sociaux. Leur objectif est de démontrer que
-ChatGPT peut être utilisé, avec un bon niveau de confiance, pour
-explorer et tester des hypothèses qui seraient coûteuses. En effet,
-le déploiement d'un sondage est toujours une sorte pari; ils sont
-en général relativement coûteux, et il est difficile de prévoir si
-les résultats obtenus seront significatifs. ChatGPT permettrait
-donc de faire un prétest afin d'améliorer et de corriger un
-questionnaire avant de le déployer sur des sujets humains.
+Similairement, la recherche de Argyle et al. [-@argyle_etal23] utilise ChatGPT comme proxy pour étudier l'opinion publique dans certains sous-groupes sociaux. Leur objectif est de démontrer que ChatGPT peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses. En effet, le déploiement d'un sondage est toujours une sorte pari; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront significatifs. ChatGPT permettrait donc de faire un prétest afin d'améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.
 
-Malgré ces avantages, il est important de souligner quelques limites
-quant à l'utilisation de l'IA en sciences sociales. La limite la
-plus importante est que l'IA ne remplace en aucun cas un être humain.
-Étant des chercheurs en sciences sociales et sciences humaines,
-nous dénaturerions nos disciplines si l'on se limitait à l'IA pour
-répondre à nos questions. Par conséquent, un test réalisé avec l'IA
-ne pourra jamais avoir le même niveau de confiance qu'une recherche
-réalisée avec des humains. Il est donc important de limiter
-l'utilisation de l'IA à des fins exploratoires. Une autre limite
-importante, mentionnée par Park et al. [-@park_etal23] dans leur
-recherche, est que l'IA peut être sujette à des hallucinations. En
-d'autres termes, l'IA peut fabriquer des informations de toute pièce
-[@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité
-des informations générées par l'IA. C'est pour cette raison,
-notamment, que nous devons toujours rester vigilants. Les conséquences
-d'attribuer une valeur scientifique à des informations qui seraient
-fausses seraient graves. La science ne vise pas à construire une
-compréhension fictive de la réalité. Une fausse compréhension des
-interactions et des dynamiques sociales pourrait avoir des conséquences
-importantes sur le bien-être de nos sociétés. Restons vigilants.
+Malgré ces avantages, il est important de souligner quelques limites quant à l'utilisation de l'IA en sciences sociales. La limite la plus importante est que l'IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l'on se limitait à l'IA pour répondre à nos questions. Par conséquent, un test réalisé avec l'IA ne pourra jamais avoir le même niveau de confiance qu'une recherche réalisée avec des humains. Il est donc important de limiter l'utilisation de l'IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. [-@park_etal23] dans leur recherche, est que l'IA peut être sujette à des hallucinations. En d'autres termes, l'IA peut fabriquer des informations de toute pièce [@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité des informations générées par l'IA. C'est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d'attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences importantes sur le bien-être de nos sociétés. Restons vigilants.
 
-## Arpentage et choix éditoriaux: les différents outils de l'IA
+## Arpentage et choix éditoriaux : les différents outils de l'IA
 
-Cette section vise à présenter différents outils de l'IA aux lecteurs.
-Ce qui est important de comprendre ici, et pour faire suite à la
-section précédente, c'est que les outils de l'IA risquent d'avoir
-changé entre le moment d'écrire ce chapitre et le moment où les
-lecteurs le liront. Certaines fonctionnalités pourraient toujours
-être les mêmes, certaines pourraient avoir été améliorées et d'autres
-pourraient être complètement nouvelles. Par conséquent, l'objectif
-ici est de présenter certaines utilités et fonctionnalités de l'IA,
-et surtout d'inciter les lecteurs à développer leurs propres capacités
-réflexives quant à leur utilisation de ces outils. Cette technologie
-offre de nouvelles opportunités, mais elle apporte aussi son lot
-d'enjeux et de questions dont il est important de soulever afin de
-développer une utilisation saine et intègre de ces outils.
+Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qu'il est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA peuvent avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de développer une utilisation saine et intègre de ces outils.
 
-Avant de situer les outils sélectionnés pour ce chapitre, il est
-important de mentionner que l'IA, et surtout l'apprentissage machine,
-n'est pas nouveau dans les sciences sociales. En fait, plusieurs
-méthodes utilisent des algorithmes, et ce depuis longtemps. Selon
-l'article de @rahal_etal24, l'apprentissage machine serait utilisé
-depuis bien avant 1960, même si ce n'était pas très répandu. Avant
-l'arrivé des robots conversationnels et des logiciels de traduction,
-les méthodes d'apprentissage machine étaient surtout confinées à
-l'étape de l'analyse des données. L'arrivée des grands modèles
-linguistiques ainsi que le perfectionnement des outils de traduction
-ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui,
-il est plus difficile de catégoriser ces outils, et de les confiner
-dans l'avant, le pendant ou après la recherche. À titre d'exemple,
-les outils de traduction peuvent très bien s'inscrire dans chacune
-de ces étapes. Ils peuvent être mobilisés pour traduire des articles
-et des livres lors de la construction du devis, traduire des sources
-premières telles que des articles de presse dans la partie des
-analyses et, finalement, assister à la traduction l'article final
-en plusieurs langues.  Bien qu'un tel usage ne soit pas nécessairement
-idéal, notamment parce que certaines nuances linguistiques ne sont
-pas totalement saisies par ces logiciels, il convient tout de même
-de reconnaître la transcendance de ces outils. Les lecteurs sont
-encouragés à réfléchir à cet aspect en fonction des différents
-outils de l'IA, à la lumière de ce qui sera présenté dans les
-prochaines sections.
+Avant de situer les outils sélectionnés pour ce chapitre, il est important de mentionner que l'IA, et surtout l'apprentissage machine, n'est pas nouveau dans les sciences sociales. En fait, plusieurs méthodes utilisent des algorithmes, et ce depuis longtemps. Selon l'article de @rahal_etal24, l'apprentissage machine serait utilisé depuis bien avant 1960, même si ce n'était pas très répandu. Avant l'arrivé des robots conversationnels et des logiciels de traduction, les méthodes d'apprentissage machine étaient surtout confinées à l'étape de l'analyse des données. L'arrivée des grands modèles linguistiques ainsi que le perfectionnement des outils de traduction ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui, il est plus difficile de catégoriser ces outils, et de les confiner dans l'avant, le pendant ou après la recherche. À titre d'exemple, les outils de traduction peuvent très bien s'inscrire dans chacune de ces étapes. Ils peuvent être mobilisés pour traduire des articles et des livres lors de la construction du devis, traduire des sources premières telles que des articles de presse dans la partie des analyses et, finalement, assister à la traduction l'article final en plusieurs langues. Bien qu'un tel usage ne soit pas nécessairement idéal, notamment parce que certaines nuances linguistiques ne sont pas totalement saisies par ces logiciels, il convient tout de même de reconnaître la transcendance de ces outils. Les lecteurs sont encouragés à réfléchir à cet aspect en fonction des différents outils de l'IA, à la lumière de ce qui sera présenté dans les prochaines sections.
 
-Comme le premier chapitre le mentionne, ce livre ne vise pas à
-présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs
-qui souhaitent en savoir plus à propos des méthodes d'apprentissage
-machine, comme le *clustering*, les arbres décisionnels et les
-régressions par pénalité, sont encouragés à consulter des plans de
-cours qui portent spécifiquement sur ce sujet et des livres qui
-présentent ces différentes méthodes et leur application avec certains
-langages de programmation. Sur ce dernier point, le livre de
-@boehmke_greenwell20 offre une excellente description de plusieurs de
-ces méthodes en plus de leur application dans `R`.
+Comme le premier chapitre le mentionne, ce livre ne vise pas à présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs qui souhaitent en savoir plus à propos des méthodes d'apprentissage machine, comme le *clustering*, les arbres décisionnels et les régressions par pénalité, sont encouragés à consulter des sources qui portent spécifiquement sur ce sujet et qui présentent ces différentes méthodes et leur application avec certains langages de programmation. Sur ce dernier point, le livre de @boehmke_greenwell20 offre une excellente description de plusieurs de ces méthodes en plus de leur application dans `R`.
 
-Trois catégories d'outils seront présentées: les « *Large Language
-Models* » (LLM), les assistants de traduction ainsi que les assistants
-de revue de littérature. La présentation de ces outils vise à suivre
-les grandes étapes de la recherche: avant, pendant et après. Comme
-il est souligné dans les paragraphes précédents, la catégorisation
-n'est pas mutuellement exclusive. En d'autres termes, les outils
-présentés ici ne se situent pas uniquement dans une étape précise.
-Ils les transcendent toutes. Cependant, selon leurs fonctionnalités
-respectives, certains s'insèrent mieux à certaines étapes de la
-production scientifique.
+Trois catégories d'outils seront présentées: les « *Large Language Models* » (LLM), les assistants de traduction, ainsi que les assistants de revue de littérature. La présentation de ces outils vise à suivre les grandes étapes de la recherche: avant, pendant et après. Comme il est souligné dans les paragraphes précédents, la catégorisation n'est pas mutuellement exclusive. En d'autres termes, les outils présentés ici ne se situent pas uniquement dans une étape précise. Ils les transcendent toutes. Cependant, selon leurs fonctionnalités respectives, certains s'insèrent mieux à certaines étapes de la production scientifique.
 
-### Avant la recherche: trouver des écrits et organiser ses sources
+### Avant la recherche : trouver des écrits et organiser ses sources
 
-Dans cette section, deux principaux outils sont présentés:
-*ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne
-qui facilite le début d'une revue des écrits, notamment lorsque la
-littérature sur un sujet ou sur une question est étrangère. Ces
-deux outils sont d'ailleurs compatibles avec *Zotero*, qui est
-présenté au @sec-chap5 de ce livre.
+Dans cette section, deux principaux outils sont présentés: *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne qui facilite le début d'une revue des écrits, notamment lorsque la littérature sur un sujet ou sur une question est étrangère. Ces deux outils sont d'ailleurs compatibles avec *Zotero*, qui est présenté au @sec-chap5 de ce livre.
 
-Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des
-articles et des livres scientifiques à partir d'une question de
-recherche préliminaire, ou à partir de concepts. L'application offre
-une version gratuite qui est toutefois limitée dans le nombre de
-crédits disponibles mensuellement afin de faire des recherches. Par
-conséquent, si le lecteur souhaite s'en tenir à la version gratuite,
-il faudra l'utiliser avec parcimonie.
+Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des articles et des livres scientifiques à partir d'une question de recherche préliminaire, ou à partir de concepts. L'application offre une version gratuite qui est toutefois limitée dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, si le lecteur souhaite s'en tenir à la version gratuite, il faudra l'utiliser avec parcimonie.
 
 ![Menu d'accueil d'Elicit](images/chapitre_9_elicit_menu.png){#fig-elicit}
 
-Par exemple, disons que l'on s'intéresse à la question suivante:
-qu'est-ce que la démocratie? Il peut être difficile de savoir par
-où commencer face à l'impressionnant volume d'écrits sur le sujet.
-*Elicit* offre une solution à ce problème. La @fig-elicit correspond
-au menu d'accueil du site web. Une fois là, nous inscrivons la
-question qui nous intéresse dans la case « *Ask a research question*
-». Les résultats générés sont représentés dans la @fig-results1 et
-@fig-results2
+Par exemple, disons que l'on s'intéresse à la question suivante: qu'est-ce que la démocratie? Il peut être difficile de savoir par où commencer face à l'impressionnant volume d'écrits sur le sujet. *Elicit* offre une solution à ce problème. La @fig-elicit correspond au menu d'accueil du site web. Une fois là, nous inscrivons la question qui nous intéresse dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
 
 ![Court résumé du sujet](images/chapitre_9_elicit_resume.png){#fig-results1}
 
 ![Suggestions de lectures](images/chapitre_9_elicit_suggestions.png){#fig-results2}
 
-Le logiciel offre donc un moyen intéressant afin de faire un premier
-« filtrage » de la littérature sur un sujet, tout en fournissant
-un résumé des sources suggérées à partir desquelles nous pouvons
-juger de sa pertinence en fonction de nos besoins.
+Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.
 
-Cependant, il est fortement recommandé d'utiliser le résumé produit
-par le logiciel, dans la @fig-results1, et ceux de chaque suggestion,
-dans la @fig-results2, à titre indicatif et uniquement pour notre
-propre réflexion. En d'autres termes, **ne jamais faire un copier-coller
-de ces résumés afin de les inclure dans notre travail de recherche**.
-Ce logiciel doit impérativement être accompagné d'une utilisation
-intègre de la littérature. Une bonne utilisation de ce logiciel
-devrait se limiter à trouver des articles et/ou des livres scientifiques
-selon nos besoins qui seront consultés par la suite pour rédiger
-notre revue des écrits et trouver des références supplémentaires.
+Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, *ne jamais faire un copier-coller de ces résumés afin de les inclure dans un travail de recherche*. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques qui seront consultés par la suite pour rédiger une revue des écrits et trouver des références supplémentaires.
 
-Un autre outil s’offre à nous afin de trouver des références
-supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais
-demande de se créer un compte afin de pouvoir utiliser ses services.
-Une fois que plusieurs articles et/ou chapitres de livre ont été
-lu, et qu'ils ont été ajoutés dans Zotero, il est possible d'importer
-la collection dans *Research Rabbit*. La @fig-rr1 présente le menu
-principal du site web.
+Un autre outil s’offre à nous afin de trouver des références supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que plusieurs articles et/ou chapitres de livre ont été lu, et qu'ils ont été ajoutés dans Zotero, il est possible d'importer la collection dans *Research Rabbit*. La @fig-rr1 présente le menu principal du site web.
 
 ![Menu principal](images/chapitre_9_research_rabbit_menu.png){#fig-rr1}
 
 ![Importation manuelle de documents](images/chapitre_9_research_rabbit_import.png){#fig-rr2}
 
-![Présentation de la littérature
-similaire](images/chapitre_9_research_rabbit_similar.png){#fig-rr3}
+![Présentation de la littérature similaire](images/chapitre_9_research_rabbit_similar.png){#fig-rr3}
 
 ![Vue « Timeline » des références](images/chapitre_9_research_rabbit_timeline.png){#fig-rr4}
 
-Avant toute chose, *Research Rabbit* doit être considéré comme un
-outil qui aidera à *complémenter* la revue des écrits. En d'autres
-termes, afin que ce logiciel soit utile, il faut déjà avoir des
-articles sous la main. *Elicit* peut aider pour cette tâche, mais
-aussi il est pratique de consulter des manuels de références comme
-des *hanbooks*[^chapitre_9-3] et autres ouvrages de référence afin
-de se faire une idée sur le sujet qui nous intéresse en plus de
-trouver des références. Au besoin, les bibliothécaires des différents
-départements universitaires sont aussi d'excellente ressource pour
-débuter une recherche.
+Avant toute chose, *Research Rabbit* doit être considéré comme un outil qui aidera à *complémenter* la revue des écrits. En d'autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. *Elicit* peut aider pour cette tâche, mais aussi il est pratique de consulter des manuels de références comme des *hanbooks*[^chapitre_9-4] et autres ouvrages de référence afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d'excellente ressource pour débuter une recherche.
 
-[^chapitre_9-3]: Il s'agit d'ouvrages généraux qui portent sur
-divers sujets.  Les éditeurs les plus connus sont notamment *Oxford*,
-*SAGE* et *Routledge*.
+[^chapitre_9-4]: Il s'agit d'ouvrages généraux qui portent sur divers sujets. Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.
 
-Utilisons un exemple concret afin d'illustrer l'utilisation de
-*Research Rabbit*. Supposons que nous nous intéressons à la question
-suivante : quel est le rôle des normes pacifistes sur les processus
-politiques au Japon? Dans un premier temps, un survol rapide de la
-littérature grâce aux ouvrages de références ainsi qu'avec Google
-Scholar a permis d'identifier quelques textes qui sont jugés comme
-pertinents afin de fournir une réponse à cette question. Ceux-ci
-sont ensuite ajouté dans une nouvelle collection Zotero^[Voir le
-@sec-chap5 au besoin.], qui contiendra uniquement les ouvrages pour
-ce projet. Ce dernier point est important afin d'éviter d'ajouter
-du « bruit » dans les suggestions de *Research Rabbit*. Une fois
-ces étapes faites, il est possible d'importer la collection dans
-*Research Rabbit*. Pour ce faire, il faut cliquer sur le bouton
-*Import Zotero Collection*, situé dans le coin supérieur gauche de
-la @fig-rr1.
+Utilisons un exemple concret afin d'illustrer l'utilisation de *Research Rabbit*. Supposons que nous nous intéressons à la question suivante : quel est le rôle des normes pacifistes sur les processus politiques au Japon? Dans un premier temps, un survol rapide de la littérature grâce aux ouvrages de références ainsi qu'avec Google Scholar a permis d'identifier quelques textes qui sont jugés comme pertinents afin de fournir une réponse à cette question. Ceux-ci sont ensuite ajouté dans une nouvelle collection Zotero[^chapitre_9-5], qui contiendra uniquement les ouvrages pour ce projet. Ce dernier point est important afin d'éviter d'ajouter du « bruit » dans les suggestions de *Research Rabbit*. Une fois ces étapes faites, il est possible d'importer la collection dans *Research Rabbit*. Pour ce faire, il faut cliquer sur le bouton *Import Zotero Collection*, situé dans le coin supérieur gauche de la @fig-rr1.
 
-Il se peut que le logiciel ne trouve pas tous les articles qui se
-trouvent dans la collection Zotero. Une solution, lorsque ce problème
-arrive, est de cliquer sur le bouton vert *Add Paper* situé dans
-la colonne de notre collection. La @fig-rr2 montre la barre de
-recherche qui apparaitra, et dans laquelle il est possible d'ajouter
-manuellement les articles au besoin. Une fois que les références
-ont été ajoutées, *Research Rabbit* pourra dresser une « cartographie
-» des différentes sources qui sont en lien avec ces articles. La
-@fig-rr3 présente cette cartographie.
+[^chapitre_9-5]: Voir le @sec-chap5 au besoin.
 
-Il est possible de trouver des articles supplémentaires à l'aide
-de trois fonctionnalités. La première est de consulter les *Similar
-Work*. Cette option est intéressante afin de visualiser tous les
-articles qui sont similaires aux ouvrages qui ont été identifiés
-au tout début.  Les points en vert sont les sources qui font partie
-de ma collection. Cependant, la visualisation offerte par cette
-option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre,
-en fonction des cinq articles que j'ai importés dans Zotero, il y
-a 1 501 articles similaires. Cela complique la tâche de ciblage.
-Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later
-Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il
-est toujours utile de classifier les ouvrages en fonction de leur
-date de parution, notamment afin de suivre l'évolution du débat
-scientifique à propos du sujet de notre recherche. Cette fonctionnalité
-de *Research Rabbit* facilite ainsi cette étape, en plus de permettre
-de découvrir des ouvrages qui ont été publiés avant et aprés ceux
-qui ont été préalablement identifié.
+Il se peut que le logiciel ne trouve pas tous les articles qui se trouvent dans la collection Zotero. Une solution, lorsque ce problème arrive, est de cliquer sur le bouton vert *Add Paper* situé dans la colonne de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra, et dans laquelle il est possible d'ajouter manuellement les articles au besoin. Une fois que les références ont été ajoutées, *Research Rabbit* pourra dresser une « cartographie » des différentes sources qui sont en lien avec ces articles. La @fig-rr3 présente cette cartographie.
 
-Une troisième option est de sélectionner une seule source à la fois,
-et de consulter les deux options suivantes : *All References* et
-*All Citations*. Elles permettent, respectivement, de visualiser
-tous les articles qui sont cités dans l'article selectionné, et de
-visualiser les travaux qui ont cité l’article en question.  Ces
-options sont donc très utiles pour passer au « peigne fin » chacun
-des articles afin de dénicher des sources supplémentaires selon la
-méthode « boule de neige ». Cependant, il faut faire attention dans
-l'utilisation de cette méthode. Il y a un risque « d'effet tunnel
-», soit que la revue des écrits qui sera faite à partir de ces
-sources manque de largeur et de représentativité dans le traitement
-du sujet.  C'est pourquoi il est important de diversifier ces sources
-et d'utiliser ces deux options d'une façon complémentaire avec
-plusieurs articles différents. Il est donc utile d'ajouter au fur
-et à mesure les nouvelles références dans *Research Rabbit* afin
-de visualiser la couverture de notre revue des écrits.
+Il est possible de trouver des articles supplémentaires à l'aide de trois fonctionnalités. La première est de consulter les *Similar Work*. Cette option est intéressante afin de visualiser tous les articles qui sont similaires aux ouvrages qui ont été identifiés au tout début. Les points en vert sont les sources qui font partie de ma collection. Cependant, la visualisation offerte par cette option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre, en fonction des cinq articles que nous avons importés dans Zotero, il y a 1 501 articles similaires. Cela complique la tâche de ciblage. Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il est toujours utile de classifier les ouvrages en fonction de leur date de parution, notamment afin de suivre l'évolution du débat scientifique à propos du sujet de notre recherche. Cette fonctionnalité de *Research Rabbit* facilite ainsi cette étape, en plus de permettre de découvrir des ouvrages qui ont été publiés avant et aprés ceux qui ont été préalablement identifié.
 
-### Pendant la recherche: l'utilisation de grands modèles linguistiques
+Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes : *All References* et *All Citations*. Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l'article selectionné, et de visualiser les travaux qui ont cité l’article en question. Ces options sont donc très utiles pour passer au « peigne fin » chacun des articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans l'utilisation de cette méthode. Il y a un risque « d'effet tunnel », soit que la revue des écrits qui sera faite à partir de ces sources manque de largeur et de représentativité dans le traitement du sujet. C'est pourquoi il est important de diversifier ces sources et d'utiliser ces deux options d'une façon complémentaire avec plusieurs articles différents. Il est donc utile d'ajouter au fur et à mesure les nouvelles références dans *Research Rabbit* afin de visualiser la couverture de notre revue des écrits.
 
-L'utilisation des LLMs via l'API d'OpenAI en R représente une avancée
-significative pour les chercheurs en sciences sociales, leur offrant
-des outils puissants pour naviguer et analyser l'immense paysage
-des données textuelles avec une précision et une efficacité accrues.
+### Pendant la recherche : l'utilisation de grands modèles linguistiques
 
-Bien qu'il soit possible de communiquer avec l'API d'OpenAI
-directement, le package `openai` en R offre une interface conviviale
-pour interagir avec les modèles de langage, permettant aux chercheurs
-de tirer parti de ces outils avancés sans nécessiter une expertise
-en informatique ou en apprentissage automatique. Le package fournit
-des fonctions pour générer du texte, analyser des sentiments,
-extraire des entités, et biens plus encore, facilitant l'intégration
-des LLMs dans le flux de travail des recherches existantes.
+L'utilisation des LLMs via l'API d'OpenAI en R représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l'immense paysage des données textuelles avec une précision et une efficacité accrues.
 
-@openai19 définit les grands modèles linguistiques (Large language
-models ou LLMs en anglais) comme des modèles d'apprentissage
-automatique de grande échelle, formés pour prédire le mot suivant
-dans un texte en se basant sur les mots précédents. Ils sont entraînés
-sur de vastes quantités de données textuelles, telles que des
-articles de journaux, des livres, des pages Web, des courriels, des
-messages de médias sociaux. Cette méthode d'entraînement simple
-permet aux modèles de démontrer naturellement des compétences dans
-de nombreuses tâches et domaines divers, sans nécessiter de formation
-spécifique à la tâche. Il est important de noter qu'ils ne sont que
-des algorithmes de prédiction textuelle et ne possèdent pas la
-faculté de réfléchir ou de comprendre.
+Bien qu'il soit possible de communiquer avec l'API d'OpenAI directement, le package `openai` en R offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et biens plus encore, facilitant l'intégration des LLMs dans le flux de travail des recherches existantes.
 
-L'intégration des grands modèles de langage via l'API d'OpenAI dans
-la recherche en sciences sociales numériques ouvre des horizons
-prometteurs pour l'analyse qualitative et quantitative des données
-textuelles. L'utilisation de ces modèles en R permet aux chercheurs
-d'exploiter des capacités avancées de traitement du langage naturel
-pour une variété d'applications allant de la simple extraction de
-données à des analyses complexes de contenu et de sentiment. Elle
-permet aussi de générer des données pour l'analyse de biais
-algorithmiques en comparant l'information générée par les modèles
-avec des données de référence générées par des humains. Les LLMs
-peuvent être utilisés pour l'analyse de sentiments, l'extraction
-d'entités et de relations, la génération de résumés de texte, la
-simulation de dialogue, la traduction et la localisation, et le
-développement d'outils personnalisés pour des besoins spécifiques
-de recherche.
+@openai19 définit les grands modèles linguistiques (*Large language models* ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages Web, des courriels, des messages de médias sociaux. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter qu'ils ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
 
-Voici quelques exemples d'utilisation des LLMs en sciences sociales.
-Pour des cas concrets d'application, voir la section « L'IA en
-sciences sociales » dans ce chapitre.
+L'intégration des grands modèles de langage via l'API d'OpenAI dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l'analyse qualitative et quantitative des données textuelles. L'utilisation de ces modèles en R permet aux chercheurs d'exploiter des capacités avancées de traitement du langage naturel pour une variété d'applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l'analyse de biais algorithmiques en comparant l'information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l'analyse de sentiments, l'extraction d'entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d'outils personnalisés pour des besoins spécifiques de recherche.
 
-1. Premièrement, les LLMs peuvent être utilisés pour l'analyse de
-sentiments, permettant aux chercheurs de détecter des nuances dans
-les opinions exprimées dans des corpus de données volumineux, tels
-que des commentaires sur les réseaux sociaux, des critiques de
-produits, ou des discours politiques. Cette analyse peut révéler
-des tendances de sentiment général ou être segmentée pour examiner
-des variations entre différents groupes démographiques ou chronologiques.
+Voici quelques exemples d'utilisation des LLMs en sciences sociales. Pour des cas concrets d'application, voir la section « L'IA en sciences sociales » dans ce chapitre.
 
-2. Deuxièmement, les LLMs offrent des capacités d'extraction d'entités
-et de relation, ce qui est crucial pour structurer des données non
-structurées comme des questions de sondage ouvertes. Les chercheurs
-peuvent extraire des personnes, des lieux, des institutions, et
-même des concepts ou des événements, liant ces entités à des thèmes
-spécifiques ou à des contextes historiques et sociopolitiques,
-enrichissant ainsi les bases de données pour des études plus poussées.
+1.  Premièrement, les LLMs peuvent être utilisés pour l'analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.
 
-3. Troisièmement, la génération automatique de résumés de textes
-par ces modèles permet de condenser de grandes quantités d'informations
-en résumés concis, facilitant l'analyse préliminaire de vastes
-archives de textes, comme des articles de presse, des mémoires
-juridiques, ou des écrits académiques. Cela aide les chercheurs à
-identifier rapidement les documents pertinents sans nécessiter la
-lecture intégrale des textes.
+2.  Deuxièmement, les LLMs offrent des capacités d'extraction d'entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et sociopolitiques, enrichissant ainsi les bases de données pour des études plus poussées.
 
-4. Quatrièmement, les modèles linguistiques peuvent être utilisés
-pour générer des simulations de dialogue ou des réponses à des
-questions hypothétiques, permettant aux chercheurs en sciences
-sociales de modéliser des interactions entre différents acteurs
-sociaux ou d'explorer des scénarios hypothétiques en études de
-comportement sans la mise en place de coûteuses études de terrain.
+3.  Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d'informations en résumés concis, facilitant l'analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.
 
-5. Cinquièmement, l'intégration de LLMs aide à surmonter les barrières
-linguistiques dans la recherche globale, en offrant des capacités
-de traduction et de localisation qui permettent une analyse plus
-inclusive des textes dans différentes langues, essentielle pour les
-études comparatives internationales.
+4.  Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d'explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.
 
-6. Sixièmement, les modèles de "speech-to-text" peuvent être utilisés
-pour transcrire automatiquement des enregistrements audio en texte,
-comme des entrevues, facilitant l'analyse de discours oraux ou de
-conversations enregistrées, et permettant aux chercheurs de travailler
-avec des données multimodales pour des études interdisciplinaires.
+5.  Cinquièmement, l'intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.
 
-7. Septièmement, les modèles de vision algorithmiques permettent
-l'analyse de contenu visuel, en extrayant des informations à partir
-d'images ou de vidéos pour compléter des analyses textuelles, ou
-pour étudier des phénomènes visuels comme la représentation des
-genres dans les médias ou les tendances de la mode.
+6.  Sixièmement, les modèles de "speech-to-text" peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l'analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.
 
-8. Enfin, les chercheurs peuvent utiliser les LLMs pour développer
-des outils personnalisés qui s'adaptent à des besoins spécifiques
-de recherche, comme l'analyse de discours ou la détection de
-changements dans le langage au fil du temps, fournissant ainsi des
-informations précieuses sur l'évolution des discours et pratiques
-culturelles.
+7.  Septièmement, les modèles de vision algorithmiques permettent l'analyse de contenu visuel, en extrayant des informations à partir d'images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.
+
+8.  Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s'adaptent à des besoins spécifiques de recherche, comme l'analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des informations précieuses sur l'évolution des discours et pratiques culturelles.
 
 Voici un exemple simple d'utilisation de l'API d'OpenAI :
 
-```r
+``` r
 
 library(openai)
 
@@ -652,235 +196,67 @@ output <- chat_prompt$choices$message.content
 print(output)
 ```
 
-### Après la recherche: traduire ses écrits pour la diffusion
+### Après la recherche : traduire ses écrits pour la diffusion
 
-L'IA a aussi permis la création de nouveaux outils de traduction
-automatique (*machine translation*). Pris au sens large, le concept
-de traduction automatique englobe n'importe quelle tâche de traduction
-qui est réalisée par un algorithme, une machine ou des ordinateurs.
-sans aucune aide d'un humain [@glover24; @tabsharani23]. Il existe
-différentes approches de traduction automatique:
+L'IA a aussi permis la création de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine ou des ordinateurs. sans aucune aide d'un humain [@glover24; @tabsharani23]. Il existe différentes approches de traduction automatique:
 
-1.  Basée sur des règles (*rules-based*): utilise des règles
-linguistiques et des dictionnaires pour transformer les mots et
-phrases d'une langue source en langue cible. Nécessite des experts
-pour créer et maintenir ces règles, ce qui rend le processus
-laborieux, mais efficace pour les langues à grammaire bien définie.
-2.  Statistique (*statistical*): analyse de grands volumes de textes
-bilingues pour identifier des motifs et probabilités. Utilise des
-modèles statistiques plutôt que des règles linguistiques pour
-déterminer les traductions les plus probables à partir des données
-d'apprentissage. Fonctionne bien avec des données volumineuses,
-mais peut parfois produire des traductions imprécises faute de
-contextualisation.  3.  Basée sur des exemples (*example-based*) :
-repose sur une base de données de phrases ou de segments précédemment
-traduits pour générer des traductions, en recherchant des exemples
-similaires dans la base de données et en récupérant les traductions
-les plus pertinentes, ce qui est utile pour des domaines spécifiques
-ou des textes très répétitifs, mais peut être limité face à des
-usages linguistiques nouveaux ou créatifs.  4.  Neuronale (*neural*)
-: utilise des modèles d'apprentissage profond pour apprendre les
-schémas de traduction, traitant des phrases entières et leur contexte,
-ce qui améliore la qualité et la fluidité des traductions, bien
-qu'elle ne remplace pas entièrement les traducteurs humains.  5.
-Hybride : les quatres approches peuvent également être combinées.
+1.  Basée sur des règles (*rules-based*): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d'une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux, mais efficace pour les langues à grammaire bien définie.
+2.  Statistique (*statistical*): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d'apprentissage. Fonctionne bien avec des données volumineuses, mais peut parfois produire des traductions imprécises faute de contextualisation. 3. Basée sur des exemples (*example-based*) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs. 4. Neuronale (*neural*) : utilise des modèles d'apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu'elle ne remplace pas entièrement les traducteurs humains. 5. Hybride : les quatres approches peuvent également être combinées.
 
-C'est au sein de l'approche neuronale que les avancées en intelligence
-artificielle ont permis de développer de nouveaux outils de traduction
-automatique. En effet, les réseaux neuronaux transformeurs (*transformer
-neural networks*) ont révolutionné le domaine de la traduction
-automatique en traitant des phrases entières dans leur contexte
-global plutôt que des mots isolés, ce qui a considérablement amélioré
-la qualité et la fluidité des traductions [@glover24; @tabsharani23].
-En tant que forme d'IA générative, ces outils exploitent le traitement
-du langage naturel (*natural language processing*), l'apprentissage
-profond (*deep learning*) et l'auto-attention (*self-attention*)
-pour réaliser ces avancées. Ces outils de traduction automatique
-sont devenus de plus en plus populaires et accessibles, permettant
-à des personnes de traduire des textes entiers, des sites Web, des
-documents, en quelques secondes, sans avoir besoin de connaître la
-langue cible.
+C'est au sein de l'approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (*transformer neural networks*) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions [@glover24; @tabsharani23]. En tant que forme d'IA générative, ces outils exploitent le traitement du langage naturel (*natural language processing*), l'apprentissage profond (*deep learning*) et l'auto-attention (*self-attention*) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites Web, des documents, en quelques secondes, sans avoir besoin de connaître la langue cible.
 
-Il est très utile pour les chercheurs en sciences sociales numériques
-de connaître et d'utiliser les outils de traduction automatique,
-car ils facilitent la recherche, la communication et la collaboration
-à l'échelle internationale, particulièrement dans le contexte d'un
-monde académique dominé par l'anglais. Toutefois, il est crucial
-de comprendre que ces outils ne remplacent pas complètement les
-traducteurs humains. Voici, d'une perspective générique, les avantages
-et inconvénients de ces outils par rapport à la traduction humaine
-[@glover24]:
+Il est très utile pour les chercheurs en sciences sociales numériques de connaître et d'utiliser les outils de traduction automatique, car ils facilitent la recherche, la communication et la collaboration à l'échelle internationale, particulièrement dans le contexte d'un monde académique dominé par l'anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d'une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine [@glover24]:
 
-::: {.center}
+::: center
 | Avantages | Inconvénients |
-|-----------|---------------|
+|-------------------------------|-----------------------------------------|
 | Amélioration de la productivité : traductions rapides et de grande échelle | Données biaisées : reproduction de stéréotypes et erreurs de genre |
 | Apprentissage autonome : amélioration continue grâce à l'apprentissage non supervisé | Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique |
 | Réduction des coûts : minimise le besoin d'intervention humaine | Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle |
-| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux | |
+| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux |  |
 :::
 
-Il existe des milliers d'outils de traduction automatique qui
-utilisent l'IA d'une façon ou d'une autre. Dans les prochaines
-pages, nous présenterons rapidement quelques-uns de ces outils
-gratuits parmi les plus populaires actuellement en mettant en lumière
-leurs forces et leurs faiblesses. Il est important de noter que ces
-outils sont en constante évolution et que leur qualité peut varier
-en fonction de la langue, du contexte et du type de texte à traduire.
-Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence
-artificielle, des ressources comme *TERMIUM Plus* et *Interactive
-Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel
-dans le travail de traduction[^chapitre_9-4].
+Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire. Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence artificielle, des ressources comme *TERMIUM Plus* et *Interactive Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel dans le travail de traduction[^chapitre_9-6].
 
-[^chapitre_9-4]: TERMIUM Plus et IATE sont des banques de données
-terminologiques de référence, gérées par des langagiers professionnels.
-Elles facilitent la compréhension des termes spécialisés en fournissant
-des définitions et des équivalents multilingues, assurant ainsi la
-cohérence terminologique des traductions.
+[^chapitre_9-6]: TERMIUM Plus et IATE sont des banques de données terminologiques de référence, gérées par des langagiers professionnels. Elles facilitent la compréhension des termes spécialisés en fournissant des définitions et des équivalents multilingues, assurant ainsi la cohérence terminologique des traductions.
 
 #### Google Traduction
 
-Très connue, l'une des forces de Google Traduction est son support
-d'une large variété de langues, tant des langues globalement utilisées
-et des langues plus régionales et moins utilisées. Google Traduction
-est basé sur de la traduction automatique neuronale, prenant donc
-le sens et le contexte d'une phrase en considération. De plus, il
-supporte aussi la traduction de documents complets.
+Très connue, l'une des forces de Google Traduction est son support d'une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. Google Traduction est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d'une phrase en considération. De plus, il supporte aussi la traduction de documents complets.
 
 #### DeepL
 
-DeepL se démarque par une qualité supérieure de traduction, mais
-dans un nombre de langues plus restreint que d'autres outils. Il
-est aussi basé sur de la traduction automatique neuronale, ce qui
-lui permet de prendre en compte le contexte et la complexité d'une
-structure de phrase.
+DeepL se démarque par une qualité supérieure de traduction, mais dans un nombre de langues plus restreint que d'autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d'une structure de phrase.
 
 #### Mate Translate
 
-Mate Translate est une extension de navigateur qui permet de traduire
-des pages web entières, des phrases ou des mots en un seul clic.
-Il supporte un grand nombre de langues et offre des fonctionnalités
-supplémentaires telles que la prononciation des mots et des phrases
-traduits. Son avantage réside vraiment dans sa facilité d'utilisation
-et sa rapidité.
+Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d'utilisation et sa rapidité.
 
 #### ChatGPT
 
-Évidemment, ChatGPT est un outil de traduction automatique basé sur
-des modèles de langage génératif. Il est très populaire pour sa
-capacité à générer du texte de manière fluide et naturelle, ce qui
-en fait un outil de traduction très efficace pour les textes longs
-et complexes. De plus, il est possible de raffiner la traduction
-en quelques itérations en suggérant des modifications au texte
-traduit.
+Évidemment, ChatGPT est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.
 
 #### Autres outils
 
-Comme mentionné plus haut, il existe une panoplie d'outils de
-traduction automatique qui utilisent l'IA et qui sont accessibles
-gratuitement. Cependant, considérant que ces outils sont en constante
-évolution, l'objectif de ce livre n'est pas d'en faire une description
-exhaustive, mais plutôt de donner un aperçu des possibilités offertes
-par ces outils. Parmi les autres outils populaires, on peut citer
-Microsoft Translator, Pairaphrase, Amazon Translate, Smartling,
-Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.
+Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive, mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer Microsoft Translator, Pairaphrase, Amazon Translate, Smartling, Unbabel, Linguee, Yandex.Translate, HIX Translate, etc.
 
 ## Quelle est la place du chercheur maintenant?
 
-Avec l'avènement de l'IA, il est tout à fait raisonnable de se
-demander quelle est la place du chercheur aujourd'hui. L'avenir du
-chercheur est-il en danger? Pourrait-on assister au développement
-des sciences sociales sans chercheur humain derrière? Si tel est
-le cas, est-ce que ça ne constituerait pas un paradoxe important?
-Est-ce que la machine est mieux placée pour comprendre la réalité
-du monde sociale, ainsi que ses mécanismes, que l'humain? D'une
-part, certains pensent que l'IA risque de générer des « laboratoires
-autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23,
-pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le
-processus scientifique, de la conception jusqu'à la communication,
-serait fait par l'IA. Le chercheur perdrait ainsi sa profession,
-et se limiterait à n'être qu'une partie de l'auditoire vers qui les
-résultats sont présentés.
+Avec l'avènement de l'IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd'hui. L'avenir du chercheur est-il en danger? Pourrait-on assister au développement des sciences sociales sans chercheur humain derrière? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l'humain? D'une part, certains pensent que l'IA risque de générer des « laboratoires autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le processus scientifique, de la conception jusqu'à la communication, serait fait par l'IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n'être qu'une partie de l'auditoire vers qui les résultats sont présentés.
 
-Bien que nous n'en sommes pas encore là, il est important de réfléchir
-aux différents enjeux qui se posent à l'aube d'une révolution
-technologique. Par exemple, étant donné que l'IA est, pour l'instant,
-très opaque dans tout le processus qui le mène de l'intrant vers
-le résultat, comment pourrait-on s'assurer que la machine a pris
-toutes les précautions nécessaires pour respecter les différents
-enjeux éthiques?  A-t-elle eu le consentement libre et éclairé de
-tous les participants?  De plus, quel est le niveau de confiance
-que nous pouvons avoir envers des résultats dont on ne connait pas
-le processus qui y a mené? Sur cette dernière question, l'une des
-caractéristiques fondamentales de la science est la reproductibilité
-des protocoles scientifiques [@king_etal21; @bourgeois21]. Toutes
-les recherches doivent présenter, d'une manière très précise, comment
-les données ont été choisies, comment elles ont été collectées et
-comment elles ont été analysées. Le terme transparence est très
-important, et résume l'esprit de toute communication scientifique.
-Or, c'est une limite importante de l'IA en ce moment: nous n'avons
-pas accès aux processus qui mènent de l'intrant à l'extrant
-[@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56].
-Cette opacité nous empêche d'évaluer correctement la validité d'un
-protocole scientifique qui serait réalisée par l'IA. La conséquence
-logique de cette situation est de toujours rester vigilant et de
-questionner constamment les informations fournies par le robot
-conversationnel. L'utilisation exclusive de tels logiciels, sans
-se référer à des sources scientifiques qui ont été publiées par des
-revues scientifiques ou des éditeurs scientifiques, ne devrait
-jamais être une option. Il n'est pas seulement question d'intégrité
-et d'éthique, mais de toute la conception de ce que constitue un
-savoir scientifique. L'utilisation de ChatGPT, par exemple, pour
-produire un savoir quelconque met au défi nos conceptions
-épistémologiques. Générer des textes entiers avec l'aide de l'IA
-ne devrait donc pas être considéré.
+Bien que nous n'en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se posent à l'aube d'une révolution technologique. Par exemple, étant donné que l'IA est, pour l'instant, très opaque dans tout le processus qui le mène de l'intrant vers le résultat, comment pourrait-on s'assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques? A-t-elle eu le consentement libre et éclairé de tous les participants? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené? Sur cette dernière question, l'une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques [@king_etal21; @bourgeois21]. Toutes les recherches doivent présenter, d'une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l'esprit de toute communication scientifique. Or, c'est une limite importante de l'IA en ce moment : nous n'avons pas accès aux processus qui mènent de l'intrant à l'extrant [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56]. Cette opacité nous empêche d'évaluer correctement la validité d'un protocole scientifique qui serait réalisée par l'IA.
 
-Ainsi, l'avènement de l'IA en recherche apporte des questions et
-des réflexions épistémologiques[^chapitre_9-5] et
-méthodologiques[^chapitre_9-6] importantes. Ces questions sont
-cruciales et doivent être abordées le plus rapidement possible. En
-tant que chercheur, nous devons nous questionner par rapport à
-l'utilisation de ces nouvelles technologies. Il faut être proactif
-et initier les réflexions sur la place du chercheur maintenant.
+La conséquence logique de cette situation est de toujours rester vigilant et de questionner constamment les informations fournies par le robot conversationnel. L'utilisation exclusive de tels logiciels, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n'est pas seulement question d'intégrité et d'éthique, mais de toute la conception de ce que constitue un savoir scientifique. L'utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques. Générer des textes entiers avec l'aide de l'IA ne devrait donc pas être considéré.
 
-[^chapitre_9-5]: L'épistémologie est l'une des branches de la
-philosophie des sciences qui s'intéresse au savoir et à la connaissance.
-De manière générale, et très simplifié, l'une des questions
-fondamentales de l'épistémologie et de se questionner quant à savoir
-ce qu'est un savoir qui serait scientifique.
+Ainsi, l'avènement de l'IA en recherche apporte des questions et des réflexions épistémologiques[^chapitre_9-7] et méthodologiques[^chapitre_9-8] importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheur, nous devons nous questionner par rapport à l'utilisation de ces nouvelles technologies. Il faut être proactif et initier les réflexions sur la place du chercheur maintenant.
 
-[^chapitre_9-6]: La méthodologie est le champ de la philosophie des
-sciences qui s'intéresse à l'étude des méthodes scientifiques ou
-techniques.
+[^chapitre_9-7]: L'épistémologie est l'une des branches de la philosophie des sciences qui s'intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l'une des questions fondamentales de l'épistémologie et de se questionner quant à savoir ce qu'est un savoir qui serait scientifique.
+
+[^chapitre_9-8]: La méthodologie est le champ de la philosophie des sciences qui s'intéresse à l'étude des méthodes scientifiques ou techniques.
 
 ## Conclusion
 
-Le but principal de ce chapitre était d'initier la discussion à
-propos de la place de l'IA dans les sciences sociales. L'objectif
-de la discussion était de pas encourager les lecteurs à ne pas
-utiliser l'IA. Au contraire, ce sont des outils qui offrent des
-fonctionnalités très utiles. Les différents outils présentés dans
-ce chapitre en témoigne. Malgré cela, il est important de rappeler
-que l'IA possède aussi son lot de défis et d'enjeux. Ceux-ci appelent
-donc à la prudence ainsi qu'à une utilisation réfléchie de ces
-outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23].
-Bien qu'elle offre de nombreux avantages, cette technologie offre
-beaucoup de raccourcis attirants qui pourraient potentiellement
-nuire à plusieurs de nos capacités intellectuelles et physiques
-[@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25a
-démontre que la rétention d'information du cerveau lors de l'utilisation
-de l'IA pour accomplir des tâches complètes à notre place est moindre
-que lorsque la tâche est accomplie sans l'utilisation de l'IA. De
-plus, les régions du cerveau qui sont mobilisées pour accomplir une
-même tâche, avec et sans l'IA, ne sont pas les mêmes. En ce sens,
-il est important de trouver l'équilibre entre une utilisation qui
-permet de dépasser les contraintes qui sont imposées par le temps
-ou par nos capacités intellectuelles sans pour autant tout reléguer
-à l'IA. Il ne faut pas perdre de vue non plus qu'il est important
-de développer ses propres capacités réflexives. Se poser des questions
-sur notre utilisation personnelle de ces outils constitue, dès
-aujourd'hui, le fondement des chercheurs en sciences sociales
-numériques.
+Le but principal de ce chapitre était d'initier la discussion à propos de la place de l'IA dans les sciences sociales. L'objectif de la discussion était de pas encourager les lecteurs à ne pas utiliser l'IA. Au contraire, ce sont des outils qui offrent des fonctionnalités très utiles. Les différents outils présentés dans ce chapitre en témoigne. Malgré cela, il est important de rappeler que l'IA possède aussi son lot de défis et d'enjeux. Ceux-ci appelent donc à la prudence ainsi qu'à une utilisation réfléchie de ces outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23]. Bien qu'elle offre de nombreux avantages, cette technologie offre beaucoup de raccourcis attirants qui pourraient potentiellement nuire à plusieurs de nos capacités intellectuelles et physiques [@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25a démontre que la rétention d'information du cerveau lors de l'utilisation de l'IA pour accomplir des tâches complètes à notre place est moindre que lorsque la tâche est accomplie sans l'utilisation de l'IA. De plus, les régions du cerveau qui sont mobilisées pour accomplir une même tâche, avec et sans l'IA, ne sont pas les mêmes. En ce sens, il est important de trouver l'équilibre entre une utilisation qui permet de dépasser les contraintes qui sont imposées par le temps ou par nos capacités intellectuelles sans pour autant tout reléguer à l'IA. Il ne faut pas perdre de vue non plus qu'il est important de développer ses propres capacités réflexives. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
 
 {{< pagebreak >}}
 
@@ -899,16 +275,9 @@ library(openai)
 
 #### Configuration de l'API
 
-Procurez vous une clé API sur le site d'OpenAI. Soyez conscient que
-vous aurez besoin d'une carte de crédit pour vous inscrire et que
-l'utilisation de l'API est payante. Renseignez-vous sur les modèles
-disponibles et leurs frais d'utilisation. En date de la publication
-du livre, le modèle de tarification d'OpenAi est de charger un prix
-spécifique par 1000 tokens. Le prix des Tokens en entrée est moins
-élevé que celui des tokens en sortie.
+Procurez-vous une clé API sur le site d'OpenAI. Soyez conscient que vous aurez besoin d'une carte de crédit pour vous inscrire et que l'utilisation de l'API est payante. Renseignez-vous sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des tokens en entrée est moins élevé que celui des tokens en sortie.
 
-Lorsque vous aurez votre clé API, utilisez le package usethis pour
-la configurer dans votre environnement R.
+Lorsque vous aurez votre clé API, utilisez le package *usethis* pour la configurer dans votre environnement R.
 
 ```{r}
 #| eval: false
@@ -926,10 +295,7 @@ OPENAI_API_KEY = inserez - votre - cle - api - ici - sans - guillemets
 
 #### Utilisation de l'API
 
-La fonction principale du package openai est create_chat_completion().
-Elle prend en entrée le modèle que vous souhaitez utiliser ainsi
-que le message que vous souhaitez envoyer au modèle en format list.
-Voici un modèle d'utilisation de la fonction:
+La fonction principale du package openai est create_chat_completion(). Elle prend en entrée le modèle que vous souhaitez utiliser ainsi que le message que vous souhaitez envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction:
 
 ```{r}
 #| eval: false
@@ -950,55 +316,37 @@ chat_prompt <- create_chat_completion(
 )
 ```
 
-Le résultat de votre requête sera contenu dans l'objet chat_prompt
-formatté en JSON. Vous pouvez accéder aux variables de la même façon
-qu'un dataframe normal. Le contenu de la réponse sera dans
-`chat_prompt$choices$content`.
+Le résultat de votre requête sera contenu dans l'objet chat_prompt formatté en JSON. Vous pouvez accéder aux variables de la même façon qu'un dataframe normal. Le contenu de la réponse sera dans `chat_prompt$choices$content`.
 
-Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer
-des instructions sur un ensemble d'observations à l'aide de boucles,
-utiliser des fonctions pour générer des messages et les appliquer
-à travers d'autres API, analyser des sites webs en temps réel en
-scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir
-aux possibilités que vous souhaitez explorer.
+Utiliser chatgpt de cette façon ouvre plein de possibilités. Appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites webs en temps réel en scraping avec des paquets tels rvest, etc. Ce sera à vous de réfléchir aux possibilités que vous souhaitez explorer.
 
 ## Notes
 
-- Les deux commandes suivantes permettent d'extraire de l'information
-supplémentaires:
-  - `chat_prompt$usage$prompt_tokens`: Permet d'accéder
-  aux statistiques d'utilisation de tokens. Vous pouvez donc calculer
-  le coût de votre requête en fonction du modèle que vous utilisez.
+-   Les deux commandes suivantes permettent d'extraire de l'information supplémentaires:
 
--   Ne pas oublier d'inclure .Renviron dans votre gitignore pour
-ne pas vous faire voler votre clé API.
+    -   `chat_prompt$usage$prompt_tokens`: Permet d'accéder aux statistiques d'utilisation de tokens. Vous pouvez donc calculer le coût de votre requête en fonction du modèle que vous utilisez.
 
--   Il est possible de créer des images avec la fonction
-create_image("Inserez votre texte ici")
+-   Ne pas oublier d'inclure .Renviron dans votre gitignore pour ne pas vous faire voler votre clé API.
 
--   Il est possible d'effectuer du speech-to-text avec la fonction
-create_transcription() et create_translation()
+-   Il est possible de créer des images avec la fonction create_image("Inserez votre texte ici")
 
--   Plus de documentation est disponible au
-https://irudnyts.github.io/openai/
+-   Il est possible d'effectuer du speech-to-text avec la fonction create_transcription() et create_translation()
 
--   Plus de fonctionalités sont disponibles en python, mais le
-package R est suffisant pour la plupart des utilisations.
+-   Plus de documentation est disponible au https://irudnyts.github.io/openai/
+
+-   Plus de fonctionalités sont disponibles en python, mais le package R est suffisant pour la plupart des utilisations.
 
 {{< pagebreak >}}
 
 ### Bonnes pratiques d'utilisation
 
-Harvard. 2023. « Guidelines for using ChatGPT and other Generative
-AI tools at Harvard ».
-https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard
+Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard
 
-MIT. 2023. « Advice and responses from faculty on ChatGTP and
-A.I.-assisted writing ».
-https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
+MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
 
 {{< pagebreak >}}
 
+```{=html}
 <!--
  # À voir
 
@@ -1303,3 +651,4 @@ partie des bonnes pratiques. Développer un esprit de synthèse est
 fondamental pour chaque étudiant universitaire, ainsi que pour les
 futurs chercheurs. Commencez dès maintenant à développer ces capacités
 plutôt que de demander à ChatGPT de le faire à votre place.  -->
+```
