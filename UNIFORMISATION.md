@@ -358,15 +358,41 @@ Chaque chapitre devrait suivre cette structure générale :
 
 ### Code et noms de logiciels
 
-- **Code inline** : utiliser backticks simples
-  - `` `R` ``, `` `RStudio` ``, `` `dplyr` ``
+#### Logiciels avec symboles spéciaux
 
-- **Noms de logiciels** : utiliser backticks pour les logiciels de programmation
-  - `` `R` ``, `` `Python` ``, `` `Git` ``
-  - Mais : SPSS, STATA, Excel (sans backticks)
+**R** : toujours utiliser la commande LaTeX pour le logo officiel
+- ✅ Correct : `\textsf{R}` (affiche le logo R avec la bonne police)
+- ❌ Incorrect : `` `R` `` (backticks - rendu incorrect)
+- ❌ Incorrect : `R` (texte simple)
 
-- **Expressions en anglais** : utiliser l'italique
-  - *open source*, *workflow*, *free software*
+**LaTeX** : toujours utiliser la commande LaTeX
+- ✅ Correct : `\LaTeX` (affiche le logo LaTeX avec mise en forme)
+- ❌ Incorrect : `LaTeX` (texte simple)
+
+#### Noms de logiciels et extensions
+
+- **Extensions/librairies R** : utiliser backticks
+  - `` `dplyr` ``, `` `tidyverse` ``, `` `ggplot2` ``
+
+- **Interfaces et éditeurs** : utiliser backticks pour logiciels de code
+  - `` `RStudio` ``, `` `VS Code` ``, `` `Quarto` ``
+
+- **Logiciels propriétaires** : en italique
+  - *SPSS*, *STATA*, *Excel*, *Microsoft Word*
+
+#### Noms de compagnies, plateformes et services
+
+**Toujours en italique** :
+- Compagnies : *IBM*, *Microsoft*, *StataCorp*, *Posit*
+- Plateformes : *GitHub*, *Stack Overflow*, *Dropbox*
+- Systèmes : *Firefox*, *Linux*, *OpenOffice*
+- Services web : *Open Science Framework*, *Datacamp*, *CodeAcademy*
+
+#### Expressions en anglais
+
+- **Termes techniques en anglais** : utiliser l'italique
+  - *open source*, *workflow*, *free software*, *shareware*
+  - *cloud*, *clustering*, *design*
 
 ### Emphases
 
