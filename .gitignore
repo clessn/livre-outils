@@ -34,7 +34,6 @@ $RECYCLE.BIN/
 
 # Fichiers de projet RStudio
 .Rproj.user/
-*.Rproj
 
 # Fichiers de sortie R
 *.rds
