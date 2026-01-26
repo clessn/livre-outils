@@ -1,9 +1,3 @@
----
-editor: 
-  markdown: 
-    wrap: paragraph
----
-
 # Outils de synthèses de la connaissance et de gestion des références {#sec-chap5}
 
 \begin{center}
