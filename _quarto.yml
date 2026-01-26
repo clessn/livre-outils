@@ -16,8 +16,9 @@ book:
     - chapitre_7.qmd
     - chapitre_8.qmd
     - chapitre_9.qmd
-    - conclusion.qmd
-    - annexe_1.qmd
+  appendices:
+    - annexe_a.qmd
+    - annexe_b.qmd
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
