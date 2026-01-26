@@ -3,7 +3,12 @@ project:
 output-dir: _book
 book:
   title: "Outils de recherche en sciences sociales numériques"
-  author: "Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)"
+  author:
+    - "Chaire de leadership en enseignement"
+    - "des sciences sociales numériques (CLESSN)"
+    - ""
+    - "Sous la direction de"
+    - "Alexis Bibeau-Gagnon, Adrien Cloutier, Yannick Dufresne"
   date: today
   chapters:
     - index.qmd

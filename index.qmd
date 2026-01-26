@@ -1,9 +1,9 @@
 # Prélude {.unnumbered}
 
 \begin{center}
-\textit{Yannick Dufresne (Université Laval), \\
-Alexis Bibeau-Gagnon (Université McGill), \\
-Adrien Cloutier (Université Laval)}
+\textit{Alexis Bibeau-Gagnon (Université McGill), \\
+Adrien Cloutier (Université Laval), \\
+Yannick Dufresne (Université Laval)}
 \end{center}
 
 Le premier conseil que nous donnons systématiquement à toute personne qui entame une carrière en recherche : apprenez à gérer votre temps… et les égos, y compris le vôtre. L’entrée dans le monde de la recherche en sciences sociales s’accompagne d’un paradoxe familier : il est tout à fait possible de dédier un nombre d’heures considérable à la recherche, tout en faisant usage de manière souvent inefficace de ce temps. Il est trop commun de voir des gens s’exténuer à multiplier les tâches (comme des poules sans tête), convaincus que le fait d’être occupé équivaut au fait de progresser. L’insécurité est aussi omniprésente dans le monde académique. Devant l’immensité de la connaissance et des compétences possibles, on oscille entre le syndrome de l’imposteur et un narcissisme défensif. L’immensité des possibilités nous pousse (parfois étrangement) à nous accrocher à ce que nous connaissons déjà et à rationaliser nos angles morts.
