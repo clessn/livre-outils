@@ -140,12 +140,14 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 
 | ❌ À éviter (anglais) | ✅ À utiliser (français) |
 |----------------------|-------------------------|
-| open source | code source ouvert / code ouvert |
+| open source | code source ouvert |
 | free software | logiciel libre |
 | workflow | flux de travail |
 | open science | science ouverte |
 | design de recherche | plan de recherche / protocole de recherche |
 | cloud | nuage / serveurs externes |
+
+**IMPORTANT** : Ne JAMAIS utiliser "code ouvert" seul. Toujours utiliser la forme complète "code source ouvert".
 
 ### Exceptions : Quand conserver l'anglais
 
@@ -169,7 +171,7 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 | Concept | Terme à utiliser | Notes |
 |---------|------------------|-------|
 | Logiciel libre | logiciel libre | Pas "logiciel gratuit" |
-| Code ouvert | code source ouvert / code ouvert | Les deux acceptés |
+| Code source ouvert | code source ouvert | Jamais "code ouvert" seul, jamais "open source" |
 | Logiciel privé | logiciel propriétaire | Pas "logiciel payant" |
 | Utilisateur | utilisateur | Pas "user" |
 | Communauté | communauté d'utilisateurs | Pas "community" |
