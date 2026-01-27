@@ -362,8 +362,9 @@ Chaque chapitre devrait suivre cette structure générale :
 
 #### Logiciels avec symboles spéciaux
 
-**R** : toujours utiliser la commande LaTeX pour le logo officiel
-- ✅ Correct : `\textsf{R}` (affiche le logo R avec la bonne police)
+**R** : toujours utiliser la commande LaTeX personnalisée
+- ✅ Correct : `\R` (affiche le logo R avec la bonne police - commande définie dans _quarto.yml)
+- ❌ Incorrect : `\textsf{R}` (ne fonctionne pas dans Quarto sans mode math)
 - ❌ Incorrect : `` `R` `` (backticks - rendu incorrect)
 - ❌ Incorrect : `R` (texte simple)
 

@@ -31,5 +31,6 @@ format:
       - text: |
           \usepackage{setspace}
           \usepackage{csquotes}
+          \newcommand{\R}{\textsf{R}}
 
 editor: source
