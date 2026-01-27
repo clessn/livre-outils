@@ -23,9 +23,7 @@ Nous sommes conscients que le sujet peut sembler rebutant de prime abord. Les co
 
 Afin de contrer le sentiment de vertige face au grand nombre et à la variété des outils de recherche, le livre est organisé de façon à suivre le cycle standard de la recherche, depuis l’organisation du travail jusqu’à la collecte, l’analyse, la visualisation de données, et finalement la rédaction. Cette structure nous permet de situer chaque outil dans une fonction précise et de montrer où il s’insère dans la chaîne de création scientifique.
 
-## Ce que couvre le livre
-
-Ce livre propose une introduction à la pratique des sciences sociales numériques, centrée non pas sur les méthodes, mais sur les outils qui facilitent la réalisation d’un projet de recherche. 
+Ce livre propose ainsi une introduction à la pratique des sciences sociales numériques, centrée non pas sur les méthodes, mais sur les outils qui facilitent la réalisation d’un projet de recherche. 
 
 Les outils présentés ont été sélectionnés selon six critères : 
 
@@ -37,7 +35,8 @@ Les outils présentés ont été sélectionnés selon six critères :
 6.	Adaptabilité et flexibilité.
 
 Les chapitres couvrent l’ensemble des étapes du travail scientifique. Chaque chapitre présente non seulement les outils, mais aussi une réflexion sur leur contribution à l’autonomie du chercheur et à la qualité scientifique.
-Le Chapitre 1, « Logiciel libre et code source ouvert », introduit la philosophie du logiciel libre et du code ouvert et montre pourquoi ces écosystèmes (transparents, collaboratifs, adaptables) offrent un socle essentiel pour les outils de recherche numériques. Le chapitre clarifie la distinction entre outils et méthodes, et explique pourquoi la culture du libre est particulièrement compatible avec les impératifs scientifiques contemporains.
+
+Le Chapitre 1, « Choisir ses outils de recherche à l'ère du numérique », introduit la philosophie du logiciel libre et du code ouvert et montre pourquoi ces écosystèmes (transparents, collaboratifs, adaptables) offrent un socle essentiel pour les outils de recherche numériques. Le chapitre clarifie la distinction entre outils et méthodes, et explique pourquoi la culture du libre est particulièrement compatible avec les impératifs scientifiques contemporains.
 
 Le Chapitre 2, « Langages de programmation », présente la programmation comme une des compétences essentielles des sciences sociales numériques. Le chapitre explique pourquoi R s’est imposé comme un langage privilégié. Il fournit une première immersion dans l’environnement de R et de RStudio et montre comment apprendre à automatiser, reproduire et structurer une analyse scientifique.
 
@@ -52,6 +51,7 @@ Le Chapitre 6, « Outils de collecte de données », couvre les techniques numé
 Le Chapitre 7, « Outils de visualisation graphique », retrace l'évolution de la visualisation en sciences sociales et introduit la grammaire des graphiques via ggplot2. Le chapitre insiste sur la clarté, l’esthétique et la reproductibilité, tout en ouvrant sur les possibilités de visualisations interactives.
 
 Le Chapitre 8, « Outils de rédaction en sciences sociales numériques: les langages de balisage », explique pourquoi les langages de balisage (LaTeX, Quarto, Markdown) permettent une rédaction plus propre, plus stable et plus reproductible que les traitements de texte traditionnels. Il guide les lecteurs dans leur apprentissage et signale les pièges courants.
+
 Le Chapitre 9, « Outils d’intelligence artificielle », présente les différents usages de l’IA dans la recherche, notamment l’aide dans la construction d’une revue de littérature, l’automatisation de tâches analytiques, la structuration de projet et le codage. Le chapitre discute aussi de la place du chercheur face à des outils puissants, mais épistémologiquement délicats.
 
 L'Annexe A, « Kit de démarrage pour les sciences sociales numériques », propose des trajectoires d'apprentissage selon trois niveaux (débutant, intermédiaire et avancé) en indiquant les outils prioritaires, les pièges à éviter et les combinaisons les plus efficaces. Elle sert de feuille de route concrète pour structurer sa progression.
