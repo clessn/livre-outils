@@ -200,12 +200,19 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 
 ### Structure des chapitres
 
-Chaque chapitre devrait suivre cette structure générale :
-1. Introduction (contexte et objectifs)
-2. Présentation du concept/outil
-3. Avantages et limites
-4. Exemples pratiques
-5. Tableaux récapitulatifs des critères
+**IMPORTANT** : Chaque chapitre doit obligatoirement suivre cette structure en trois sections principales :
+
+1. **Point d'observation** : Introduction et contexte (ex. : "Point d'observation : qu'est-ce que la programmation ?")
+2. **Arpentage et choix éditorial** : Présentation des options, comparaisons, avantages et limites (ex. : "Arpentage et choix éditorial : quel langage apprendre ?")
+3. **Manuel d'instruction** : Guide pratique et exemples concrets (ex. : "Manuel d'instruction : apprendre à programmer en $\textsf{R}$")
+
+Une section **En terminant** conclut chaque chapitre.
+
+**Format des titres de section** :
+- `## Point d'observation : [sous-titre spécifique au chapitre]`
+- `## Arpentage et choix éditorial : [sous-titre spécifique au chapitre]`
+- `## Manuel d'instruction : [sous-titre spécifique au chapitre]`
+- `## En terminant`
 
 ---
 

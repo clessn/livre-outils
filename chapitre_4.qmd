@@ -4,9 +4,11 @@
 \textit{Jérémy Gilbert (Western University)}
 \end{center}
 
-En débutant en recherche, vous êtes probablement dans une position où vous devez débuter prochainement la rédaction d'un mémoire ou d'une thèse. Vous avez peut-être commencer à prendre des notes sur la littérature, vous créez des fichiers, vous commencez à collecter des données. Rapidement, une question simple mais cruciale se pose : **où devriez-vous mettre tout ce contenu?**
+En débutant en recherche, vous êtes probablement dans une position où vous devez débuter prochainement la rédaction d'un mémoire ou d'une thèse. Vous avez peut-être commencé à prendre des notes sur la littérature, vous créez des fichiers, vous commencez à collecter des données. Rapidement, une question simple mais cruciale se pose : **où devriez-vous mettre tout ce contenu?**
 
-### Brève histoire de la gestion des données : du entreposage personnel à la science ouverte
+## Point d'observation : l'évolution de la gestion des données
+
+### Brève histoire de la gestion des données : de l'entreposage personnel à la science ouverte
 
 Il y a vingt ans, la gestion des données de recherche était généralement une affaire personnelle et locale. Chaque chercheur développait ses propres méthodes d'organisation, souvent artisanales : dossiers sur le bureau, copies de sauvegarde sur disque dur externe, fichiers envoyés par courriel aux collaborateurs. Les apports, les résultats et les processus scientifiques étaient soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs.
 
@@ -48,7 +50,9 @@ Ces trois catégories ne sont pas étanches. Un même projet mobilise les trois,
 
 Dans les sections qui suivent, nous explorerons d'abord ces trois catégories à travers quatre questions pratiques : où entreposer votre rédaction, où entreposer vos données pendant la recherche active, où déposer vos données finales, et comment gérer les données massives qui débordent des solutions standards. Nous consacrerons ensuite les deux dernières sections à un outil transversal qui traverse ces trois catégories et qui mérite une attention particulière : **Git et GitHub**. Bien que ces outils puissent sembler intimidants au premier abord, ils offrent une solution puissante pour gérer simultanément votre rédaction, votre code, votre documentation et la collaboration avec vos collègues. Nous verrons pourquoi de plus en plus de chercheurs en sciences sociales les adoptent, puis comment les mettre en place concrètement pour votre projet de recherche.
 
-## Où entreposer votre rédaction
+## Arpentage et choix éditorial : où entreposer vos données ?
+
+### Où entreposer votre rédaction
 
 La première question que vous vous poserez est probablement la plus immédiate : où allez-vous écrire votre mémoire ou votre thèse? Ce document central va évoluer pendant des mois, voire des années. Vous y travaillerez quotidiennement, votre directeur y ajoutera des commentaires, vous réviserez des chapitres entiers, vous fusionnerez peut-être des contributions de collaborateurs. Le choix de votre outil de rédaction et de la plateforme d'entreposage qui l'accompagne n'est donc pas anodin.
 
@@ -58,9 +62,9 @@ La première question que vous vous poserez est probablement la plus immédiate 
 
 **Google Docs** : Similaire à Microsoft Word dans sa présentation, Google Docs offre une alternative infonuagique. C'est un outil assez simple et permet de collaborer en temps réel. Plusieurs personnes peuvent éditer simultanément le même document, les commentaires s'ajoutent facilement, et l'historique des versions est illimité. Son utilisation nécessite cependant une connexion Internet pour un usage optimal. Également, la mise en page complexe est moins sophistiquée.
 
-**Overleaf** : Si vous rédigez en LaTeX, Overleaf est la plateforme collaborative de référence. Elle combine un éditeur LaTeX en ligne, la compilation automatique de votre document, et des fonctionnalités de collaboration similaires à Google Docs. C'est une bonne option pour les documents techniques et pour collaboration en temps réel, et cela permet l'intégration avec des modèles de revues académiques. Si vous ne connaissez la LaTeX, il y a une certaine courbe d'apprentissage à surmonter, mais qui peut en valoir la peine.
+**Overleaf** : Si vous rédigez en LaTeX, Overleaf est la plateforme collaborative de référence. Elle combine un éditeur LaTeX en ligne, la compilation automatique de votre document, et des fonctionnalités de collaboration similaires à Google Docs. C'est une bonne option pour les documents techniques et pour collaboration en temps réel, et cela permet l'intégration avec des modèles de revues académiques. Si vous ne connaissez pas LaTeX, il y a une certaine courbe d'apprentissage à surmonter, mais qui peut en valoir la peine.
 
-**Markdown** : Cela représente une approche différente de la rédaction, particulièrement adaptée aux chercheurs qui intègrent beaucoup d'analyses quantitatives dans leurs travaux. Markdown est un langage de balisage léger qui permet d'écrire en texte brut tout en spécifiant la structure du document (titres, listes, emphases). R Markdown et son successeur Quarto permettent de combiner du texte rédigé en Markdown avec du code et de générer automatiquement des documents finaux en PDF, Word ou HTML incluant vos analyses, graphiques et tableaux. L'avantage majeur est la reproductibilité complète : votre document contient à la fois votre texte et le code qui a produit vos résultats, ce qui facilite grandement les révisions et la validation. Pour la collaboration, les fichiers Markdown fonctionnent bien avec Git (comme nous le verrons plus loin), car ce sont des fichiers texte que Git peut suivre ligne par ligne. Ce livre, rédigé en Quarto, contient un chapitre enier sur les langages de balisages comme Markdown et LaTeX.
+**Markdown** : Cela représente une approche différente de la rédaction, particulièrement adaptée aux chercheurs qui intègrent beaucoup d'analyses quantitatives dans leurs travaux. Markdown est un langage de balisage léger qui permet d'écrire en texte brut tout en spécifiant la structure du document (titres, listes, emphases). R Markdown et son successeur Quarto permettent de combiner du texte rédigé en Markdown avec du code et de générer automatiquement des documents finaux en PDF, Word ou HTML incluant vos analyses, graphiques et tableaux. L'avantage majeur est la reproductibilité complète : votre document contient à la fois votre texte et le code qui a produit vos résultats, ce qui facilite grandement les révisions et la validation. Pour la collaboration, les fichiers Markdown fonctionnent bien avec Git (comme nous le verrons plus loin), car ce sont des fichiers texte que Git peut suivre ligne par ligne. Ce livre, rédigé en Quarto, contient un chapitre entier sur les langages de balisages comme Markdown et LaTeX.
 
 ### Le problème persistant du versionnement
 
@@ -91,7 +95,7 @@ Peu importe l'outil que vous choisissez, voici quelques principes à respecter :
 
 En résumé, pour la rédaction de votre mémoire ou thèse, privilégiez une solution infonuagique institutionnelle avec synchronisation automatique. Si vous êtes à l'aise techniquement et que vous rédigez en formats textuels, Git peut offrir un contrôle encore plus fin. Mais l'essentiel est d'avoir **au moins une sauvegarde automatique et hors de votre ordinateur personnel**.
 
-## Où entreposer vos données pendant la recherche
+### Où entreposer vos données pendant la recherche
 
 Au-delà de la rédaction de votre mémoire, vous allez collecter, manipuler et analyser des données. Ces données peuvent prendre plusieurs formes : transcriptions d'entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, images, tableaux, etc. Vos données de recherche peuvent poser des défis spécifiques en matière de sécurité, d'éthique et de collaboration.
 
@@ -111,7 +115,7 @@ Une donnée est considérée comme sensible si elle permet d'identifier directem
 
 Dans la plupart des institutions canadiennes, la gestion de données sensibles est encadrée par un comité d'éthique de la recherche. Lorsque vous soumettez votre protocole de recherche pour approbation éthique, vous devez spécifier comment vous allez collecter, entreposer, protéger et éventuellement détruire vos données sensibles. Le non-respect de ces engagements peut avoir des conséquences sérieuses, allant du retrait de votre approbation éthique à des sanctions institutionnelles.
 
-Les principes à respecter pour les données sensibles incluent la minimisation (ne collectez que les données nécessaires), l'anonymisation  (retirez ou masquez les identifiants dès que possible), le chiffrement (protégez les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans votre certificat éthique peuvent accéder aux données), et l'entreposage sécurisé (utilisez des serveurs approuvés, idéalement situés au Canada).
+Les principes à respecter pour les données sensibles incluent la minimisation (ne collectez que les données nécessaires), l'anonymisation (retirez ou masquez les identifiants dès que possible), le chiffrement (protégez les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans votre certificat éthique peuvent accéder aux données), et l'entreposage sécurisé (utilisez des serveurs approuvés, idéalement situés au Canada).
 
 À l'inverse, certaines données ne posent pas de problème de confidentialité. C'est le cas des statistiques publiques, des corpus textuels ouverts comme les articles de presse ou les transcriptions de débats parlementaires, des données administratives agrégées sans possibilité d'identification, ou encore de votre propre code d'analyse (scripts R par exemple). Pour ces données, les contraintes sont beaucoup plus souples. Vous pouvez les entreposer sur des plateformes grand public, les partager plus librement, et éventuellement les rendre publiques sans approbation éthique spécifique.
 
@@ -137,7 +141,7 @@ Considérant ce qui a été mentionné précédemment, voici un résumé de bonn
 
 En résumé, le choix de votre solution d'entreposage dépend avant tout de la **sensibilité de vos données**. Pour des données sensibles, privilégiez les solutions institutionnelles. Pour des données non-sensibles, vous avez plus de flexibilité. Mais encore une fois, **ne gardez jamais vos données uniquement sur votre ordinateur personnel**.
 
-## Où déposer vos données finales (archivage et science ouverte)
+### Où déposer vos données finales (archivage et science ouverte)
 
 Les deux sections précédentes concernaient vos données **actives** : celles que vous utilisez quotidiennement pendant votre recherche. Mais arrive un moment où votre projet se termine, votre mémoire est déposé, et vous vous apprêtez peut-être à publier un article. C'est à ce stade que vos données deviennent **finales** et que vous devez penser à leur archivage et à leur partage potentiel.
 
@@ -169,7 +173,7 @@ Plusieurs raisons justifient le dépôt de données finales :
 
 Borealis est le dépôt Dataverse canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans Borealis, avec un accompagnement complet pour les chercheurs qui souhaitent l'utiliser. Borealis accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l'accès. Vous pouvez choisir de rendre vos données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si vos contraintes éthiques l'exigent. 
 
-Les données déposées dans Borealis sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser Borealis,  vous créez un compte, vous créez un nouveau jeu de données, vous remplissez les champs de métadonnées, vous téléversez vos fichiers, et vous publiez. À ce moment, un DOI est attribué et vos données deviennent officiellement archivées. Il y a de fortes chances que votre bibliothèque institutionnel offre un support pour l'utilisation de Borealis.
+Les données déposées dans Borealis sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser Borealis, vous créez un compte, vous créez un nouveau jeu de données, vous remplissez les champs de métadonnées, vous téléversez vos fichiers, et vous publiez. À ce moment, un DOI est attribué et vos données deviennent officiellement archivées. Il y a de fortes chances que votre bibliothèque institutionnel offre un support pour l'utilisation de Borealis.
 
 ### Autres dépôts multidisciplinaires
 
@@ -191,11 +195,11 @@ Il n'est pas nécessaire de préserver toutes les données collectées pendant v
 
 En résumé, le dépôt de données finales est une étape importante qui garantit la pérennité de votre travail, contribue à la science ouverte, et peut augmenter l'impact de votre recherche. 
 
-## Où entreposer des données massives
+### Où entreposer des données massives
 
 Les sections précédentes ont couvert les besoins typiques de la plupart des projets de recherche aux cycles supérieurs : quelques gigaoctets de données, des fichiers de taille raisonnable, des outils standards. Mais certains projets génèrent des volumes de données qui dépassent largement ces limites. Si vous travaillez avec des images satellite, du *scraping web* à grande échelle, des enregistrements vidéo, ou des simulations computationnelles, les chances sont élevées que vous utilisiez des **données massives**.
 
-Qu'est-ce qu'une donnée massive en recherche? Il n'y a pas de définition universelle, mais voici quelques termes pratiques qui indiquent que vous entrez dans le domaine des données massives. Un **volume** de important de données; une **vélocité**, c'est-à-dire une collecte continue ou très fréquente de données; de la **variété**, présente dams des données hétérogènes nécessitant un traitement comme des images; ou une  **complexité computationnelle** lorsqu'il y a un besoin de traitements avec plusieurs jours de calcul. Si votre projet correspond à une ou plusieurs de ces caractéristiques, les solutions présentées plus tôt ne conviendront pas. Vous aurez besoin d'infrastructures spécialisées.
+Qu'est-ce qu'une donnée massive en recherche? Il n'y a pas de définition universelle, mais voici quelques termes pratiques qui indiquent que vous entrez dans le domaine des données massives. Un **volume** de important de données; une **vélocité**, c'est-à-dire une collecte continue ou très fréquente de données; de la **variété**, présente dans des données hétérogènes nécessitant un traitement comme des images; ou une  **complexité computationnelle** lorsqu'il y a un besoin de traitements avec plusieurs jours de calcul. Si votre projet correspond à une ou plusieurs de ces caractéristiques, les solutions présentées plus tôt ne conviendront pas. Vous aurez besoin d'infrastructures spécialisées.
 
 ### Le cycle de vie des données massives
 
@@ -217,7 +221,7 @@ Certaines institutions offrent des crédits pour des services infonuagiques acad
 
 En résumé, les données massives nécessitent une planification et des infrastructures spécialisées. **Calcul Québec et l'Alliance** sont vos meilleurs alliés pour des projets académiques d'envergure. Ne sous-estimez pas la courbe d'apprentissage, mais ne laissez pas cela vous décourager : les ressources et le support sont disponibles. Commencez tôt, documentez rigoureusement, et automatisez autant que possible.
 
-## Arpentage et choix éditorial : Pourquoi Git et GitHub pour votre projet de recherche?
+### Pourquoi Git et GitHub pour votre projet de recherche ?
 
 Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer votre rédaction, vos données pendant la recherche, vos données finales, et vos données massives. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces catégories : **Git et GitHub**. Git offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu'est Git, pourquoi il est devenu si populaire en recherche, et comment il pourrait s'intégrer dans votre flux de travail.
 
@@ -348,7 +352,7 @@ tbl_resume_chap_Y <- tibble(
 tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils de gestion de données')
 ```
 -->
-### Manuel d'instructions : Git et GitHub pour votre projet de recherche
+## Manuel d'instruction : Git et GitHub pour votre projet de recherche
 
 Maintenant que vous comprenez pourquoi Git et GitHub peuvent être utiles pour votre recherche, passons à la pratique. Cette section vous guidera dans les étapes essentielles pour mettre en place Git pour un projet typique de recherche en sciences sociales.
 
@@ -493,6 +497,9 @@ Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhens
 
 La décision entre l'utilisation du terminal et de GitHub Desktop dépend de vos préférences et de vos besoins. Pour les chercheurs qui débutent, GitHub Desktop offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes Git en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
 
+## En terminant
 
 
-\<!-- \`\`\`
+
+
+
