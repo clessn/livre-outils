@@ -1,4 +1,4 @@
-# Le logiciel libre et le code source ouvert {#sec-chap1}
+# Choisir ses outils à l'ère du numérique : contexte et critères de sélection {#sec-chap1}
 
 \begin{center}
 \textit{Jozef Rivest (University of Michigan), \\
@@ -23,9 +23,9 @@ Le logiciel libre a --- et continue d'avoir --- une place importante dans le dé
 
 Cette discussion sur le logiciel libre se veut une introduction aux critères qui ont justifié les choix des outils numériques de ce livre. 
 
-## Logiciels Libres
+## 1. Contexte : le numérique en sciences sociales
 
-### Le monde du libre
+### 1.1 Philosophie du logiciel libre
 
 *« Vous n'avez pas à suivre une recette avec précision. Vous pouvez laisser de côté certains ingrédients. Ajouter quelques champignons parce que vous en raffolez. Mettre moins de sel, car votre médecin vous le conseille --- peu importe. De surcroît, logiciels et recettes sont faciles à partager. En donnant une recette à un invité, un cuisinier n'y perd que du temps et le coût du papier sur lequel il l'inscrit. Partager un logiciel nécessite encore moins, habituellement quelques clics de souris et un minimum d'électricité. Dans tous les cas, la personne qui donne l'information y gagne deux choses : davantage d'amitié et la possibilité de récupérer en retour d'autres recettes intéressantes. »* - Richard Stallman [@williams_etal10]
 
@@ -35,7 +35,7 @@ Cette analogie illustre bien trois concepts au cœur de la philosophie de Richar
 
 [^chapitre_1-2]: Pour rester dans les analogies culinaires, le code source est au logiciel ce que la recette est à un plat: elle indique les actions à effectuer, une par une, pour arriver à un résultat précis. Encore une fois, ce dernier peut être adapté, modifié, bonifié.
 
-### Émergence et sémantique du *libre*
+### 1.2 Émergence et sémantique du *libre*
 
 Plusieurs situent les débuts du mouvement du logiciel libre avec la création de la licence publique générale GNU, en 1983, à partir de laquelle va se développer une multitude de logiciels libres. Parmi les plus populaires, se trouvent notamment le navigateur *Firefox*, la suite bureautique *OpenOffice* et l'emblématique système d'exploitation *Linux*, qui se développe d'ailleurs à partir de la licence GNU. Aujourd'hui, il s'agit d'un véritable phénomène sociétal: des milliers d'entreprises, d'organisations à but non lucratif, d'institutions ou encore de particuliers adoptent ces logiciels, dont la culture globale et les valeurs (entraide, collaboration, partage) s'arriment avec le virage technologique de plusieurs entreprises. Les logiciels libres ont différents usages, en passant par la conception Web, la gestion de contenu, les systèmes d'exploitation, la bureautique, entre autres. Ils permettent donc de répondre à plusieurs types de besoins numériques et informatiques.
 
@@ -51,7 +51,7 @@ Dans le cadre d'une formation universitaire, il peut être pertinent d'enseigner
 
 Il est important de souligner que la transition vers les logiciels libres ne doit pas se faire seulement sur des bases économiques, mais dans une perspective globale de changement de culture. Changer pour des raisons purement économiques viendrait à violer l'essence même de la philosophie du logiciel libre, qui se veut surtout être un esprit de collaboration et de transparence. Amélioration constante, entraide, savoir partagé et plusieurs milliers de contributeurs [@couture14], ces éléments résument très bien la philosophie du logiciel libre.
 
-### Illustrations
+### 1.3 Exemples concrets : logiciels libres et propriétaires
 
 Considérons quelques exemples de logiciels libres et de logiciels payants afin de mettre en relief les trois éléments présentés ci-haut: 1) la liberté de l'utilisation et de la contribution; 2) les coûts d'acquisition; et 3) les compétences acquises et développées. Dans les chapitres suivants, des outils numériques tels que \\textsf{R}, *SPSS*, *STATA*, qui permettent de mener des analyses statistiques, ou encore la suite *Office*, Quarto, LaTeX, qui permettent de formater un document écrit, sont présentés. Cette section ne remplace en aucun cas une lecture approfondie et détaillée des chapitres suivants. Au besoin, nous recommandons fortement aux lecteurs de se référer au reste du livre. En ce qui concerne le premier trio, \\textsf{R} est le seul logiciel libre du groupe. Il est accessible gratuitement à partir du site web de CRAN, et une grande communauté d'utilisateurs contribue activement à son développement. Par exemple, la compagnie *Posit* est derrière le développement de `RStudio`, Quarto et Positron qui sont toutes des extensions à code ouvert de \\textsf{R}. Ensuite, plusieurs utilisateurs ont développé des librairies avec des commandes et des fonctions supplémentaires, qui sont gratuites et dont le code est disponible sur des plateformes comme *GitHub*.
 
@@ -61,7 +61,7 @@ En ce qui concerne les langages de balisage, LaTeX ou Quarto peuvent être utili
 
 Deux éléments importants doivent toutefois être soulevés. Il ne faut pas penser que les logiciels libres sont dénués de support et de documentation. La plupart des logiciels libres et leurs extensions, comme les librairies sur \\textsf{R}, offrent de l'aide et des indications d'utilisation, et plusieurs forums d'utilisateurs permettent le partage de problèmes et de solutions. De plus, certains tutoriels sont disponibles sur YouTube ou sur des plateformes comme *Datacamp* et *CodeAcademy*. Les utilisateurs ne sont donc pas totalement laissés à eux-mêmes. De plus, plusieurs universités offrent des licences pour des logiciels aux étudiants et aux étudiantes, comme *Office* ou *SPSS*, pour éviter que ceux-ci aient à débourser d'importantes sommes pour acquérir ces logiciels.
 
-### Logiciel libre et code ouvert
+### 1.4 Logiciel libre et code ouvert
 
 Parallèlement au logiciel libre, il y a aussi le code ouvert, ou *open source*. À priori, la dénomination du logiciel libre et celle du *code ouvert* semblent suggérer qu'il s'agit de synonymes. Dans les deux cas, le lecteur pourrait croire que l'on fait référence à des logiciels, par exemple, qui sont exempts de restrictions d'utilisations et auquel les utilisateurs peuvent participer au développement. Cependant, il y a une distinction importante entre les deux.
 
@@ -79,7 +79,7 @@ Il est aussi utile de les distinguer des logiciels « non libres », soit le
 
 Le logiciel libre et le *code ouvert* ont certaines similitudes puisqu'ils adhèrent tous les deux à la même vision du logiciel, ainsi que de son accessibilité. Toutefois, il est important de les distinguer malgré tout, puisqu'ils ont des origines différentes et qu'ils mènent à certaines pratiques qui sont différentes. La prochaine section utilise un cas concret afin d'expliquer l'effet du libre et son utilité.
 
-## Les sciences sociales à l'ère du numérique: les enseignements de la philosophie du logiciel libre
+### 1.5 Enjeux pour les sciences sociales
 
 En quoi est-ce que ces deux concepts, issus du monde de l'informatique, sont-ils intéressants et/ou importants pour les sciences sociales ? Pour répondre à cette question, il est important de retourner à la base, c'est-à-dire de se questionner sur ce que constitue la recherche scientifique dans les sciences sociales.
 
@@ -107,11 +107,11 @@ Il est intéressant de concevoir la réalité sociale comme étant un prisme aya
 
 En somme, les enseignements de la philosophie du code ouvert, les avantages pratiques du logiciel libre et les outils qui en découlent ont le potentiel de permettre non seulement une plus grande transparence des protocoles scientifiques, mais aussi un plus grand partage du savoir, et ce, du début de la recherche jusqu'à la publication des résultats.
 
-## Inconvénients et défis
+## 2. Structure du livre : avantages et limites
 
 Jusqu'à présent, il a surtout été question des avantages liés aux logiciels libres. Toutefois, il n'y a pas que des points positifs, et il serait malhonnête de ne pas aborder certaines de leurs limites.
 
-### La courbe d'apprentissage
+### 2.1 La courbe d'apprentissage
 
 Dans leur texte, @paura_arhipova12 soulèvent une critique portée contre certains logiciels libres, notamment contre \\textsf{R}. Le problème principal d'enseigner avec des logiciels libres est qu'ils peuvent être compliqués à apprendre et à utiliser; par conséquent, les étudiants passeraient plus de temps à tenter de résoudre les erreurs de programmation plutôt qu'à apprendre et de mener leurs analyses[^chapitre_1-12]. Par exemple, \\textsf{R} demande l'apprentissage d'un langage de programmation afin de pouvoir utiliser le logiciel à son plein potentiel. De plus, la syntaxe de certaines librairies demande aussi un certain temps d'adaptation. À titre de comparaison, le logiciel *SPSS* offre une interface beaucoup plus intuitive que \\textsf{R}, dans lequel l'utilisateur peut simplement cliquer sur les différents menus dans la barre d'outils afin de sélectionner les analyses qu'il ou elle souhaite faire. *SPSS* présente ses résultats dans des tableaux qui sont clairs et lisibles, contrairement à \\textsf{R} où plusieurs fonctions présentent les résultats directement dans la console, sous un format moins "esthétique". De plus, la plupart des logiciels payants viennent avec un certain service à la clientèle. En d'autres termes, lorsque les utilisateurs rencontrent des problèmes techniques, ils peuvent se référer au manuel d'utilisateur ou bien par l'entremise de l’assistance technique qui est offerte par la compagnie. À l'opposé, la plupart des logiciels libres ne sont pas accompagnés d'un service à la clientèle. Les utilisateurs doivent donc se « débrouiller » par eux-mêmes lorsqu'ils rencontrent des difficultés et des problèmes.
 
@@ -121,7 +121,7 @@ Dans leur texte, @paura_arhipova12 soulèvent une critique portée contre certai
 
 Toutefois, lorsque l'on compare le coût d'apprentissage avec les bénéfices tirés, il est plus difficile de soutenir qu'il s'agit uniquement d'un désavantage. Dans un premier temps, la syntaxe de programmation de \\textsf{R} n'est pas parmi les plus complexes à apprendre, et elle s'intègre très bien avec certaines extensions, dont Quarto ou RMarkdown, qui offrent de multiples possibilités pour transmettre le résultat de ses recherches, que ce soit par l'entremise d'un rapport, d'un article scientifique, un site web ou même un blogue. Surtout, la logique derrière la syntaxe de base de \\textsf{R} et celle d'une nouvelle librairie reste sensiblement inchangée. Par conséquent, lorsque nous avons une bonne compréhension du fonctionnement de base de \\textsf{R}, l'apprentissage d'une nouvelle librairie se fait relativement rapidement. Certaines, comme `dplyr` du `tidyverse`, facilitent grandement la manipulation des données comparativement aux commandes de base. Dans un deuxième temps, en comparant le coût, soit celui d'apprendre le langage de \\textsf{R}, aux bénéfices, soit ceux de mener ses propres analyses de données et de formater les résultats pour les présenter, il est assez clair que tous ceux et celles qui souhaitent, de près ou de loin, travailler avec tout type de données, les bénéfices dépassent largement le coût. D'autant plus que ces compétences s'inscrivent dans la longue durée, alors que l'apprentissage est plutôt de courte à moyenne durée. Dans un troisième temps, bien que certains logiciels offrent des alternatives plus intuitives, elles n'offrent pas la même flexibilité que la plupart des logiciels libres, ou alors cette flexibilité induit certains coûts supplémentaires et l'achat de nouvelles fonctionnalités. Pour résumer, bien que l'apprentissage d'un langage de programmation demande un investissement en temps, les bénéfices générés par ces nouvelles compétences dépassent le coût initial. Finalement, bien que les logiciels libres n'offrent pas de service à la clientèle, il existe bien souvent des forums d'utilisateurs sur le web, tel que *Stackoverflow* où il est possible de trouver des réponses à ses questions et/ou de poser ses questions. Par conséquent, bien qu'il ne s'agit pas d'un service directement offert par l'outil numérique en question, il est toujours possible de trouver du support et de l'aide par l'entremise de la communauté d'utilisateurs.
 
-### Problème de transparence
+### 2.2 Problème de transparence
 
 L'arrivée des sciences informatiques a fait émerger des problèmes de reproductibilité des protocoles scientifiques [@janssen17]. Le problème principal est relatif à l'accès au code utilisé par les chercheurs. Par exemple, il est possible de réaliser des analyses statistiques avec \\textsf{R} sans partager le code utilisé, ce qui limite la transparence du processus scientifique. Dans cette situation, il est difficile de savoir si des erreurs de codage ont été commises, volontairement ou involontairement, affectant ainsi les résultats partagés.
 
@@ -131,17 +131,17 @@ Afin de remédier à ce problème, certains outils tels que GitHub[^chapitre_1-1
 
 Cependant, le partage du code reste encore majoritairement volontaire. @janssen_etal20 soutiennent que plus d'effort et d'actions concertés doivent être mis en place afin d'améliorer l'accessibilité aux codes. Toujours selon ces auteurs, les journaux scientifiques pourraient exiger que les auteurs rendent leur code public lors du processus de publication. D'ailleurs, les résultats d'une expérience sur les facteurs qui influencent les chercheurs à partager leur code démontrent que les initiatives individuelles ne seront pas suffisantes pour une augmentation du partage du code [@krahmer_etal23]. Par conséquent, rendre le code accessible devrait devenir un standard institutionnalisé.
 
-### Appropriation commerciale
+### 2.3 Appropriation commerciale
 
 Dans ce cas-ci, il s'agit plutôt d'un défi auquel le logiciel libre est confronté plutôt qu'une critique quant aux limites de son utilisation. En fait, l'accès au code source ainsi que la liberté et la possibilité de contribuer au développement du logiciel constituent un avantage intéressant pour les compagnies privées. Par conséquent, nous avons assisté à une intégration partielle du logiciel libre dans la logique capitaliste [@broca13; @bessen02]. Certaines compagnies profiteraient des utilisateurs comme une main-d'œuvre gratuite afin de bonifier leur logiciel, ce qui permet, dans certains cas, de générer des revenus commerciaux dont l'entreprise est la seule bénéficiaire [@couture20]. Attention, il ne faut pas penser que toutes les compagnies agissent de manière prédatrice. Le but ici est de souligner que certaines pratiques commerciales troublent l'essence du mouvement du logiciel libre, qui se veut davantage être un outil de collaboration accessible, plutôt qu'un moyen pour générer des profits. Il est important de garder en tête les valeurs et la philosophie qui ont donné lieu à ce mouvement.
 
-## La chronologie de la recherche
+### 2.4 La chronologie de la recherche
 
 Malgré ces limites et ces défis, nous pensons que les différents outils numériques ont leur place en sciences sociales, et qu'ils s'inscrivent parfaitement à chaque étape de la recherche. Bien que le partage soit encore majoritairement sur une base volontaire, adopter cette pratique dès maintenant est important pour s'engager vers une science plus ouverte et transparente. Quant à cette dernière caractéristique, il ne faut pas croire que le partage des résultats se limite à une conférence ou à une publication scientifique. Bien au contraire, tout chercheur qui souhaite être le plus transparent doit s'engager dans ce processus dès la conception de sa recherche.
 
 Avant de présenter différents outils qui existent pour cela, il faut préciser en quoi la transparence et l'accessibilité sont bénéfiques pour tous. D'une part, et comme nous l'avons présenté dans la section précédente, la transparence est une caractéristique fondamentale de toute recherche qui se veut scientifique. Elle est aussi liée à l'intégrité du chercheur. Il est impératif de faire état du processus qui mène à notre conclusion, de la sélection de nos données jusqu'à l'analyse. C'est de cette façon que nous pouvons juger de la validité et de la fiabilité des inférences, et surtout de ses limites. D'autre part, la transparence favorise aussi l'apprentissage [@king_etal21]. Rendre publics et accessibles, à l'aide des outils numériques, les données, le code et la ou les méthodes utilisées permet de contribuer non seulement aux débats méthodologiques, mais aussi permet à d'autres chercheurs d'apprendre sur l'utilité et l'utilisation de ces méthodes.
 
-### Avant la recherche
+#### Avant la recherche
 
 Au fil des prochains chapitres, les lecteurs apprendront un nouveau jargon. Au même titre qu'une langue comme le français, l'anglais ou le japonais, ce langage permet de communiquer, et surtout de réfléchir. Cette nouvelle langue, riche en nouveaux concepts, amènera le lecteur à développer une nouvelle manière de réfléchir à la recherche et à son organisation. Ainsi, le lecteur sera outillé pour visualiser sa recherche dans toute son ampleur, de cibler ses besoins en fonction de son but et de ses intérêts, et ainsi d'organiser son environnement de travail en conséquence.
 
@@ -151,13 +151,13 @@ De plus, motivé par cet objectif inhérent à la science, le chercheur doit s'e
 
 [^chapitre_1-15]: Lien vers le site web: https://osf.io
 
-### Pendant la recherche
+#### Pendant la recherche
 
 Une fois la recherche débutée, plusieurs outils s'offrent pour une gestion efficace du flux de travail. Plusieurs d'entre eux sont présentés dans les chapitres suivants. Ces outils permettent notamment de sauvegarder les données et l'avancement du projet sur des serveurs externes (le *cloud*), comme *Dropbox*, afin d'éviter de tout perdre en cas de problème. D'autres permettent de produire le matériel nécessaire pour l'analyse de nos données, tel que R. Certains permettent aussi de partager avec des collaborateurs l'avancement de notre projet et les scripts de nos analyses, comme Git et *GitHub*. D'autres permettent de structurer notre texte pour la production d'un article scientifique ou d'un chapitre de livre, comme Overleaf et Quarto. Ils permettent notamment d'ajouter des tableaux et des graphiques tirés directement des analyses, le tout dans un format respectant les exigences matérielles pour la publication.
 
 Il y a également des limites à tous ces outils. Chaque chapitre de ce livre présentera les points positifs et négatifs des outils qui y sont abordés.
 
-### Après la recherche
+#### Après la recherche
 
 Une fois l'article écrit et publié, les auteurs peuvent décider de rendre accessible le matériel produit et utilisé en version gratuite sur le web. Il s'agit du *open science*, ou de la *science ouverte* [@chakravorty_etal22].
 
@@ -167,7 +167,7 @@ Toutefois, le libre accès reste confronté à certains défis. D'une part, il y
 
 [^chapitre_1-16]: La recherche parachute est une « pratique extractive par laquelle des chercheurs - généralement issus de pays dotés de ressources élevées - effectuent des recherches et extraient des données et des échantillons de régions ou de populations autochtones, généralement des contextes ou des pays à faibles ressources, sans reconnaître de manière appropriée l'importance de l'infrastructure et de l'expertise locales. Ce faisant, les chercheurs étrangers ne parviennent pas à établir des collaborations équitables et à long terme avec des partenaires locaux. » [@odeny_bosurgi22]
 
-## Critères de sélection
+## 3. Critères de sélection
 
 <!-- NOTE: Premier paragraphe, je conserverais ce qui est rayé -->
 
@@ -224,39 +224,39 @@ tableau_criteres |>
 ```
 
 
-### Accessibilité (Gratuit ou peu dispendieux)
+### 3.1 Accessibilité
 
 L'accessibilité au plus grand nombre de ces outils est importante pour réussir à atteindre une science plus inclusive, dans le respect des moyens de chacun. L'accès à des outils de qualité ne devrait pas être empêché par des verrous d'accès payants.
 
 Cette accessibilité est aussi importante pour deux autres raisons. La première, comme le livre vise à donner des connaissances pratiques dans l'utilisation de ces outils numériques, il est important que les lecteurs aient facilement accès à ce qui est présenté. Cela permet de reproduire au fur et à mesure de la lecture les différentes étapes et pratiques qui sont présentées. La deuxième, qui est un corollaire de la première, est qu'une fois ces compétences acquises, les lecteurs pourront facilement les réutiliser pour réaliser les diverses tâches qu'ils et elles souhaitent accomplir.
 
-### Existence d'une communauté d'utilisateurs
+### 3.2 Existence d'une communauté d'utilisateurs
 
 Ensuite, l'existence d'une communauté d'utilisateurs pour les différents outils qui sont présentés dans ce livre a été considérée comme importante. Ces communautés permettent une grande collaboration entre les différents utilisateurs d'un même outil, et servent souvent de forum d'aide lorsque des problèmes surviennent. Par conséquent, les lecteurs auront accès à plusieurs forums d'aide sur internet, au besoin, pour la plupart des outils qui sont présentés dans ce livre. Ainsi, au besoin, ils auront accès à des ressources supplémentaires en ligne lorsqu'une question ou un problème surviendra.
 
 Il se peut que certains logiciels libres n'aient pas de guide d'utilisateur fourni avec le téléchargement du logiciel. Parfois, cela peut être difficile pour ceux qui souhaitent apprendre à utiliser certains de ces outils de se retrouver et de répondre aux questions qui surviennent. C'est pour ces raisons que nous avons considéré l'existence d'une communauté d'utilisateurs, et l'existence de forums d'aide sur le web. Par exemple, pour toutes les questions liées au code, nous pouvons aller sur le site web de **Stack Overflow**, qui est un important forum d'échange, et sur lequel nous pourrons trouver plusieurs informations et réponses à nos questions.
 
-### Popularité en sciences sociales
+### 3.3 Popularité en sciences sociales
 
 Nous avons choisi certains outils sur d'autres notamment à cause de leur popularité dans les disciplines en sciences sociales. Par exemple, en sciences sociales, pour les analyses quantitatives, c'est le logiciel R qui est prédominant aujourd'hui. Non seulement dans son utilisation, mais aussi dans des formations méthodologiques au prestige international, comme dans le cadre de la *Inter-university Consortium for Political and Social Research* (ICPSR), *Essex Summer School in Social Science Data Analysis*, *The European Consortium for Political Research*, et bien d'autres. Par conséquent, il s'agit d'une considération pratique. Dans le monde du numérique et de la programmation, certains de ces outils deviennent une forme de langage. Ainsi, la maîtrise de ce langage permet de dialoguer avec les autres chercheurs de notre champ, ce qui favorise les débats et la recherche collaborative, par exemple.
 
-### Compatibilité avec d'autres outils
+### 3.4 Compatibilité avec d'autres outils
 
 Plusieurs outils présentés sont issus de notre expérience de recherche et de notre utilisation, parce qu'ils permettent notamment une certaine synergie dans le processus de la recherche. Ainsi, ils s'intègrent bien les uns avec les autres et permettent une connectivité. Par exemple, Zotero, présenté dans le @sec-chap5, pour la gestion de sa bibliographie et Quarto, présenté dans le @sec-chap8, pour l'écriture de sa recherche se combinent et permettent ainsi de gagner beaucoup de temps dans l'écriture et la gestion des références. Cette intégration des différents outils est importante puisqu'elle favorise non seulement la productivité et une optimisation individuelle, mais aussi collaborative.
 
-### Transparence et réplicabilité
+### 3.5 Transparence et réplicabilité
 
 D'autres outils qui sont présentés visent à rendre accessibles les résultats de recherche au plus grand nombre. C'est notamment le cas de *GitHub*, qui est présenté dans le @sec-chap4. Ces plateformes d'entreposage permettent d'héberger des données et des bribes de code et de les rendre accessibles à l'ensemble des utilisateurs, ce qui favorise la reproduction et la transparence des recherches. Ces éléments sont importants pour la science en général, tout en s'inscrivant dans l'objectif de science ouverte.
 
 Cela favorise aussi l'apprentissage pour les individus qui souhaitent apprendre à réaliser certaines analyses. Il est ainsi possible de trouver de nombreux extraits de code sur ces plateformes, que nous pouvons simplement copier-coller dans nos propres analyses. Ce faisant, nous pouvons apprendre comment réaliser certaines tâches et effectuer certaines analyses grâce à ces bribes. Rendre accessible une partie de nos efforts et résultats de recherche produit donc d'importantes externalités positives.
 
-### Adaptabilité et flexibilité
+### 3.6 Adaptabilité et flexibilité
 
 <!-- NOTE: Yannick semble suggérer de combiner ce critère avec celui du 1.5.1 et de le nommer "Pérennité" -->
 
 Les outils présentés dans ce livre ont aussi une grande flexibilité et adaptabilité. Nous souhaitons que chacun puisse trouver des outils adaptés à ses besoins, immédiats comme futurs. Cette adaptabilité est essentielle, surtout lorsqu'on considère l'investissement en temps nécessaire pour la maîtrise de ces outils. Il est donc important que cet apprentissage ne soit pas à réitérer au complet dès que nos besoins changent. Certes, il se peut que certains approfondissements soient nécessaires dans le temps, mais ceux-ci devraient être minimes lorsque nous avons de bonnes bases. La logique de plusieurs de ces outils reste inchangée, il s'agit bien souvent d'apprendre une nouvelle commande, ce qui n'est pas très coûteux en temps lorsqu'on connaît le fonctionnement de l'outil. De plus, plusieurs de ces outils permettent d'avoir un plus grand contrôle sur la production et le formatage du texte et de graphiques, par exemple. Cette flexibilité est un grand avantage lors de la rédaction et de l'analyse des données.
 
-## En terminant
+## 4. En terminant
 
 Pour compléter ce chapitre introductif, il est important de mettre l'emphase sur un apprentissage important qui se fait de manière implicite dans l'acquisition de ces compétences pratiques: réfléchir de manière scientifique. À la lecture de ce livre, les lecteurs auront fait des acquis significatifs, et seront mieux outillés pour réfléchir, organiser et produire leurs recherches, qu'elles soient orientées vers le milieu académique ou professionnel. Il est possible de décliner le tout en trois principaux acquis.
 
