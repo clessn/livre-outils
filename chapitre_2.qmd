@@ -1,4 +1,4 @@
-# Les outils de programmation : $\textsf{R}$ comme point de départ {#sec-chap2}
+# Outils de programmation : $\textsf{R}$ comme point de départ {#sec-chap2}
 
 \begin{center}
 \textit{Marc-Antoine Rancourt (University of Toronto), \

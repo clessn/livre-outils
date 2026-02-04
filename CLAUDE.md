@@ -270,6 +270,10 @@ git commit -m "Correction des fautes de frappe dans le chapitre 1"
 git push origin main
 ```
 
+### Important Note for Claude Code (Commits)
+
+**Ne JAMAIS ajouter de "Co-Authored-By" dans les messages de commit.** Les commits appartiennent aux auteurs du projet, pas à Claude. Les messages de commit doivent être simples et descriptifs, sans mention de l'assistant IA.
+
 ## Writing Guidelines
 
 ### LaTeX in Quarto
