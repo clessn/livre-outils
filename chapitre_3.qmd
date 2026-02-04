@@ -1,4 +1,4 @@
-# Outils de gestion de flux de travaux: la méthode Agile pour le monde académique {#sec-chap3}
+# Outils de gestion de flux de travaux : la méthode Agile pour le monde académique {#sec-chap3}
 
 \begin{center}
 \textit{Adrien Cloutier (Université Laval), \\

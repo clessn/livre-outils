@@ -214,6 +214,23 @@ Une section **En terminant** conclut chaque chapitre.
 - `## Manuel d'instruction : [sous-titre spécifique au chapitre]`
 - `## En terminant`
 
+### Tableaux comparatifs
+
+**IMPORTANT** : Tous les tableaux comparatifs d'outils doivent utiliser les **mêmes 6 critères de sélection** à travers tous les chapitres du livre. Ces critères sont définis au chapitre 1 et doivent être appliqués uniformément.
+
+**Les 6 critères obligatoires** :
+
+| Critère | Valeurs possibles |
+|---------|-------------------|
+| Accessibilité | Gratuit / Gratuit (X Go) / Dispendieux / Gratuit (institutionnel) |
+| Existence d'une communauté d'utilisateurs | Très grande / Grande / En croissance / Petite |
+| Popularité en sciences sociales | Très populaire / Populaire / De plus en plus populaire / Peu populaire |
+| Compatibilité avec d'autres outils | Facilement compatible / Demande un peu d'ajustement / Pas compatible |
+| Transparence et réplicabilité | Excellente / Bonne / Faible |
+| Adaptabilité et flexibilité | Très flexible / Flexible / Plutôt flexible / Peu flexible / Rigide |
+
+**Ne jamais inventer de nouveaux critères** pour un tableau comparatif. Si un aspect spécifique doit être mentionné (ex. : serveurs canadiens, données sensibles), l'inclure dans le texte accompagnant le tableau plutôt que dans le tableau lui-même.
+
 ---
 
 ## Références et citations
