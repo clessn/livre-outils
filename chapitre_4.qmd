@@ -1,4 +1,4 @@
-# Les outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}
+# Outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}
 
 \begin{center}
 \textit{Adrien Cloutier (Université Laval), \\
@@ -191,16 +191,16 @@ tbl_outils |>
   cols_label(
     Critères = "Critères",
     `*OSF*` = md("*OSF*"),
-    `*GitHub*/*GitLab*` = md("*GitHub*/<br>*GitLab*"),
-    `Solutions institutionnelles` = md("Solutions<br>institutionnelles"),
-    `Solutions grand public` = md("Solutions<br>grand public")
+    `*GitHub*/*GitLab*` = md("*GitHub/ GitLab*"),
+    `Solutions institutionnelles` = "Institutionnelles",
+    `Solutions grand public` = "Grand public"
   ) |>
   tab_footnote(
-    footnote = md("*OneDrive*, *Nextcloud*"),
+    footnote = md("Ex. : *OneDrive*, *Nextcloud*"),
     locations = cells_column_labels(columns = `Solutions institutionnelles`)
   ) |>
   tab_footnote(
-    footnote = md("*Dropbox*, *Google Drive*"),
+    footnote = md("Ex. : *Dropbox*, *Google Drive*"),
     locations = cells_column_labels(columns = `Solutions grand public`)
   ) |>
   cols_align("left", columns = everything()) |>
