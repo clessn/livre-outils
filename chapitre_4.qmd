@@ -1,109 +1,63 @@
-# Les outils de gestion de données {#sec-chap4}
+# Les outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}
 
 \begin{center}
-\textit{Jérémy Gilbert (Western University)}
+\textit{Adrien Cloutier (Université Laval), \\
+Jérémy Gilbert (Western University)}
 \end{center}
 
-En débutant en recherche, vous êtes probablement dans une position où vous devez débuter prochainement la rédaction d'un mémoire ou d'une thèse. Vous avez peut-être commencé à prendre des notes sur la littérature, vous créez des fichiers, vous commencez à collecter des données. Rapidement, une question simple mais cruciale se pose : **où devriez-vous mettre tout ce contenu?**
+En début de parcours aux cycles supérieurs, le chercheur se trouve généralement dans une position où il doit amorcer la rédaction d'un mémoire ou d'une thèse. Il a peut-être commencé à prendre des notes sur la littérature, à créer des fichiers de codes, à collecter des données, à collaborer avec des coauteurs. Rapidement, une question simple, mais cruciale se pose : dans une optique de respect des valeurs scientifiques, **où entreposer tout ce contenu ?**
 
-## Point d'observation : l'évolution de la gestion des données
+## Point d'observation : brève histoire de la gestion des données
 
-### Brève histoire de la gestion des données : de l'entreposage personnel à la science ouverte
+La transparence et la réplicabilité sont des valeurs fondamentales de la recherche scientifique. Comme le soulignent @king_etal94 dans leur ouvrage de référence *Designing Social Inquiry*, les « procédures doivent être publiques » pour permettre la validation et la critique des résultats. Sans accès aux données, aux méthodes et aux processus ayant mené à une conclusion, la communauté scientifique ne peut ni reproduire ni vérifier les travaux de ses pairs.
 
-Il y a vingt ans, la gestion des données de recherche était généralement une affaire personnelle et locale. Chaque chercheur développait ses propres méthodes d'organisation, souvent artisanales : dossiers sur le bureau, copies de sauvegarde sur disque dur externe, fichiers envoyés par courriel aux collaborateurs. Les apports, les résultats et les processus scientifiques étaient soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs.
+Pourtant, ces idéaux ont longtemps été difficiles, voire impossibles à atteindre. C'est ce constat qui a donné naissance au mouvement de la **science ouverte**. Comme l'explique le gouvernement du Canada :
 
-Ce paradigme a progressivement changé avec l'émergence de la **science ouverte**, un mouvement visant à rendre les processus et pratiques scientifiques, y compris la méthodologie et les résultats de la recherche, plus ouverts et transparents. Au Canada, ce mouvement s'est concrétisé par plusieurs initiatives majeures. En février 2020, la conseillère scientifique en chef du Canada a publié la *Feuille de route pour la science ouverte*, définissant la science ouverte comme "la pratique qui consiste à rendre les intrants, les résultats et les processus scientifiques librement accessibles à tous avec un minimum de restrictions."
+> « La science ouverte n'est pas la façon dont la science a été historiquement conduite. La tradition, la culture et les mesures incitatives ont créé un environnement dans lequel les apports, les résultats et les processus scientifiques sont soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs eux-mêmes. La science ouverte est un mouvement visant à rendre les processus et pratiques scientifiques, y compris la méthodologie et les résultats de la recherche, plus ouverts et transparents. »^[https://science.gc.ca/site/science/fr/science-ouverte]
 
-En 2021, le Conseil de recherches en sciences naturelles et en génie (CRSNG), les Instituts de recherches en santé du Canada (IRSC) et le Conseil de recherches en sciences humaines (CRSH) ont lancé la **Politique des trois organismes sur la gestion des données de recherche**. Cette politique repose sur trois piliers qui vous concernent. Vous êtes encouragés à :
+Jusque dans les années 2000, chaque chercheur développait ses propres méthodes d'organisation, souvent artisanales : dossiers sur le bureau, copies de sauvegarde sur disque dur externe, fichiers envoyés par courriel aux collaborateurs. La démocratisation d'Internet dans les années 1990, puis l'arrivée de l'infonuagique et des outils collaboratifs dans les années 2010, ont progressivement rendu possible ce que les contraintes technologiques empêchaient auparavant : une gestion des données transparente, accessible et sécuritaire.
 
-1. Rédiger un **plan de gestion des données** (PGD) pour vos demandes de subvention
-2. Déposer vos données dans un **dépôt sécurisé** à la fin de votre projet
-3. Obtenir le **soutien** de votre institution pour y arriver
+Ce mouvement s'est concrétisé par des politiques à tous les niveaux. À l'échelle internationale, 194 pays ont adopté à l'UNESCO en 2021 la *Recommandation sur une science ouverte*^[https://unesdoc.unesco.org/ark:/48223/pf0000379949_fre], un cadre mondial soulignant l'importance de rendre la science plus accessible et transparente pour tous. Au Canada, la conseillère scientifique en chef, Mona Nemer, a publié la *Feuille de route pour la science ouverte*^[https://www.canada.ca/fr/innovation-sciences-developpement-economique/nouvelles/2020/02/feuille-de-route-pour-la-science-ouverte-visant-a-reduire-les-obstacles-et-a-accelerer-les-decouvertes.html] en 2020, suivie en 2021 par la **Politique des trois organismes sur la gestion des données de recherche**^[https://science.gc.ca/site/science/fr/financement-interorganismes-recherche/politiques-lignes-directrices/gestion-donnees-recherche/politique-trois-organismes-gestion-donnees-recherche] (CRSNG, IRSC et CRSH). Au Québec, les Fonds de recherche du Québec (FRQ) se sont également dotés d'une ambitieuse **Politique de diffusion en libre accès**^[https://frq.gouv.qc.ca/science-ouverte/politique-diffusion-2022/] en 2019, mise à jour en 2022. 
 
-Cette évolution reflète une transformation profonde : la gestion des données n'est plus une pratique marginale ou optionnelle, mais un élément central de la conduite *responsable* de la recherche.
+Toutes ces politiques lient de plus en plus directement le financement de la recherche à des responsabilités claires en matière de gestion des données. Règle générale, tout chercheur financé par ces organismes subventionnaires est maintenant tenu de rédiger un **plan de gestion des données**, de déposer ses données finales dans un **dépôt sécurisé** à la fin du projet pour en assurer la pérennité et l'accessibilité, et de rendre disponible en libre accès ses publications, codes et résultats.
 
-### Pourquoi la question "où entreposer?" est devenue essentielle
+Même en l'absence de financement ou d'une obligation formelle, ces principes constituent des bonnes pratiques pour tout projet de recherche. Une saine gestion des données, planifiée avant même le début du projet et maintenue tout au long du cycle de la recherche jusqu'à l'archivage final, est ce qui garantit la transparence, la reproductibilité et l'intégrité de la démarche scientifique. La gestion des données n'est plus une pratique marginale, optionnelle, complexe ou impossible, mais un élément central de la conduite *responsable* de la recherche. La question « où entreposer ses données ? » n'est plus seulement une question pratique de sauvegarde personnelle. Elle touche désormais à trois dimensions fondamentales :
 
-Aujourd'hui, lorsque l'on aborde le domaine de la recherche scientifique en sciences sociales numériques, la collaboration et la gestion efficace des données et du code sont devenues des éléments cruciaux pour progresser dans ses projets. La question "où je mets mes fichiers?" n'est plus seulement une question pratique de sauvegarde personnelle. Elle touche désormais à quatre dimensions fondamentales :
+**Transparence** : La reproductibilité des résultats de recherche exige de pouvoir accéder à chaque étape détaillée de l'évolution d'un projet.
 
-**Sécurité** : Les chercheurs manipulent une quantité croissante de données, dont certaines sont sensibles ou confidentielles. Un ordinateur qui plante, un disque dur qui lâche, un fichier perdu peuvent compromettre des mois de travail. Les solutions d'entreposage modernes offrent des sauvegardes automatiques, du chiffrement, et des contrôles d'accès sophistiqués.
+**Accessibilité** : Les projets de recherche impliquent régulièrement un partage de dossier entre de multiples chercheurs, puis avec la communauté scientifique et avec le public.
 
-**Transparence** : La reproductibilité des résultats de recherche exige de pouvoir retracer l'évolution d'un projet : quelles données ont été utilisées, quelles versions du code, quelles analyses ont été effectuées. Un bon système d'entreposage permet de documenter ces étapes et de les rendre accessibles pour validation.
+**Sécurité** : Les chercheurs manipulent une quantité croissante de données, dont certaines sont sensibles ou confidentielles.
 
-**Traçabilité** : Qui a modifié quoi, quand et pourquoi? Dans un contexte de collaboration, mais aussi pour votre propre mémoire à long terme, la capacité de suivre l'historique des modifications est essentielle. Cela permet également de revenir en arrière en cas d'erreur.
+La façon d'entreposer, de gérer et de partager ses données a donc un impact direct sur la qualité de la recherche, sur la capacité à collaborer efficacement, et sur la conformité aux exigences de l'institution et des organismes subventionnaires. 
 
-**Collaboration** : Les projets de recherche impliquent rarement une seule personne. Directeurs, codirecteurs, collègues, assistants de recherche doivent pouvoir travailler ensemble efficacement. Envoyer des fichiers par courriel avec des noms comme Analyse_v2_final.R n'est plus viable. Les outils modernes permettent le travail simultané, les commentaires intégrés, et la fusion intelligente des contributions.
+Pour prendre de bonnes décisions en matière de gestion des données, il est utile de situer ses besoins dans le cycle de vie de la recherche. Plutôt que de multiplier les outils au fil du projet, le chercheur gagne à réfléchir dès le départ à une stratégie cohérente qui répond aux exigences de la science ouverte. Pour chaque phase du cycle, la question de l'entreposage se pose différemment. Dans les sections qui suivent, nous explorons ces phases à travers des questions pratiques d'entreposage. Nous consacrons ensuite une attention particulière à **`Git` et *GitHub***, des outils transversaux qui permettent de gérer l'ensemble du cycle avec une seule solution : code, données, documentation et collaboration.
 
-Votre façon d'entreposer, de gérer et de partager vos données a donc un impact direct sur la qualité de vos recherches, sur votre capacité à collaborer efficacement, et sur votre conformité aux exigences de votre institution et des organismes subventionnaires.
+## Arpentage et choix éditorial : où entreposer ses données à chaque phase du cycle
 
-### Trois grandes catégories de besoins : rédiger, collaborer, archiver
+### Planification
 
-Face à cette complexité, il est utile de distinguer trois grandes catégories de besoins qui correspondent à différentes phases et différents types d'activités dans votre projet de recherche :
+Dès l'étape de **planification**, le chercheur est parfois contraint à rédiger un plan de gestion des données, voire à enregistrer ses hypothèses. *Comment organiser ses fichiers dès le départ pour conserver des traces de chaque décision et de chaque étape du processus de recherche ?*
 
-**Rédiger** : Vous écrivez votre document principal (mémoire, thèse, articles). Ce document évolue quotidiennement. Vous ajoutez des paragraphes, révisez des chapitres, votre directeur commente vos brouillons. Vous avez besoin d'un outil qui permet la **rédaction active**, avec synchronisation, versionnement automatique, et idéalement la collaboration en temps réel ou quasi-réel.
+Cette réflexion en amont évite de se retrouver avec des données éparpillées sur plusieurs plateformes, des versions contradictoires de fichiers, ou une documentation insuffisante pour permettre la réplication.
 
-**Collaborer** : Vous collectez des données, vous rédigez du code, vous générez des analyses. Ces fichiers sont en constante évolution et sont souvent partagés avec d'autres chercheurs. Certaines données sont sensibles (entrevues, informations personnelles) et requièrent des mesures de sécurité strictes. D'autres sont publiques ou destinées à l'être. Vous avez besoin d'un **espace de travail partagé** qui respecte les contraintes éthiques et permet la collaboration efficace.
+Les outils de rédaction (où écrire son mémoire, quelle plateforme utiliser pour collaborer avec son directeur) sont détaillés au @sec-chap8. Ici, l'enjeu est différent : il s'agit de planifier simultanément la gestion du texte, des données, des analyses et de leurs multiples versions dès le départ.
 
-**Archiver** : Votre projet se termine, votre mémoire est déposé, vous vous apprêtez à publier. Vous devez maintenant **préserver et partager** vos données selon les principes de la science ouverte. Ces données deviennent "finales" : elles ne changeront plus (ou très peu), elles doivent être documentées, elles doivent être trouvables et citables. Vous avez besoin d'un **dépôt de données** qui garantit la pérennité et l'accessibilité à long terme.
+Des outils comme *Open Science Framework* (*OSF*)^[https://help.osf.io/article/330-welcome-to-registrations] offrent une plateforme complète pour la recherche ouverte, permettant de gérer l'ensemble d'un projet de recherche, incluant la préinscription.
 
-Ces trois catégories ne sont pas étanches. Un même projet mobilise les trois, souvent simultanément. Un bon système de gestion des données de recherche doit donc intégrer ces différentes dimensions de manière cohérente.
+La **préinscription** consiste à planifier sa recherche avant de commencer et à soumettre ce plan à un registre public. Les hypothèses de départ, dérivées de la littérature, sont enregistrées sur la plateforme, et toute modification au devis initial peut être retracée. Cette pratique améliore la qualité et la transparence des recherches, renforce la crédibilité des résultats, et facilite la reproductibilité. Elle permet également de revendiquer ses idées plus tôt et de distinguer clairement la recherche exploratoire (générer des hypothèses) de la recherche confirmatoire (tester des hypothèses). Cette pratique est de plus en plus répandue en recherche quantitative et expérimentale, où les hypothèses et les analyses statistiques peuvent être spécifiées à l'avance. En recherche qualitative ou exploratoire, la préinscription est moins courante, car la démarche repose souvent sur une approche itérative où les questions de recherche évoluent au contact des données.
 
-Dans les sections qui suivent, nous explorerons d'abord ces trois catégories à travers quatre questions pratiques : où entreposer votre rédaction, où entreposer vos données pendant la recherche active, où déposer vos données finales, et comment gérer les données massives qui débordent des solutions standards. Nous consacrerons ensuite les deux dernières sections à un outil transversal qui traverse ces trois catégories et qui mérite une attention particulière : **Git et GitHub**. Bien que ces outils puissent sembler intimidants au premier abord, ils offrent une solution puissante pour gérer simultanément votre rédaction, votre code, votre documentation et la collaboration avec vos collègues. Nous verrons pourquoi de plus en plus de chercheurs en sciences sociales les adoptent, puis comment les mettre en place concrètement pour votre projet de recherche.
+Outre *OSF*, de multiples plateformes offrent l'enregistrement des hypothèses, comme *AsPredicted*^[https://aspredicted.org/] ou le *Center for Open Science*^[https://www.cos.io/initiatives/prereg].
 
-## Arpentage et choix éditorial : où entreposer vos données ?
+Au-delà de la préinscription des hypothèses, plusieurs organismes subventionnaires exigent maintenant la rédaction d'un **plan de gestion des données** (PGD) dès la demande de financement. Ce document décrit comment les données seront collectées, organisées, documentées, entreposées et éventuellement partagées tout au long du projet. Au Canada, l'**Assistant PGD**^[https://dmp-pgd.ca/] est l'outil officiel développé par l'Alliance de recherche numérique pour guider les chercheurs dans cette démarche. Il propose des modèles adaptés aux exigences des trois organismes fédéraux (CRSH, CRSNG, IRSC) et de plusieurs institutions.
 
-### Où entreposer votre rédaction
+### Collecte et analyse
 
-La première question que vous vous poserez est probablement la plus immédiate : où allez-vous écrire votre mémoire ou votre thèse? Ce document central va évoluer pendant des mois, voire des années. Vous y travaillerez quotidiennement, votre directeur y ajoutera des commentaires, vous réviserez des chapitres entiers, vous fusionnerez peut-être des contributions de collaborateurs. Le choix de votre outil de rédaction et de la plateforme d'entreposage qui l'accompagne n'est donc pas anodin.
+Le chercheur collecte, manipule et analyse des données. Ces données peuvent prendre plusieurs formes : transcriptions d'entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, de textes, d'images, de tableaux, etc. Les données de recherche peuvent poser des défis spécifiques en matière de sécurité, d'éthique et de collaboration.
 
-### Les solutions courantes : un aperçu
+La question centrale ici n'est pas seulement « où entreposer ? », mais surtout **« où peut-on entreposer selon la nature des données ? »** Car toutes les solutions ne se valent pas, et certaines sont inappropriées selon le type de données manipulées.
 
-**Microsoft Word + OneDrive institutionnel** : C'est probablement la solution la plus répandue dans les universités canadiennes. Si vous avez accès à la suite Microsoft 365 via votre institution (ce qui est généralement le cas), vous disposez de Word pour la rédaction et de OneDrive pour la synchronisation automatique. OneDrive offre une capacité d'entreposage intéressante, se synchronise avec votre ordinateur local, et permet de travailler hors ligne. La fonction de suivi des modifications de Word facilite la collaboration avec votre directeur, et OneDrive conserve un historique des versions pendant 30 jours, ce qui vous permet de récupérer une version antérieure en cas d'erreur. Toutefois, la collaboration en temps réel est moins fluide qu'avec d'autres options présentées ci-dessous. Les conflits de versions peuvent survenir si plusieurs personnes modifient simultanément le fichier sans coordination.
-
-**Google Docs** : Similaire à Microsoft Word dans sa présentation, Google Docs offre une alternative infonuagique. C'est un outil assez simple et permet de collaborer en temps réel. Plusieurs personnes peuvent éditer simultanément le même document, les commentaires s'ajoutent facilement, et l'historique des versions est illimité. Son utilisation nécessite cependant une connexion Internet pour un usage optimal. Également, la mise en page complexe est moins sophistiquée.
-
-**Overleaf** : Si vous rédigez en LaTeX, Overleaf est la plateforme collaborative de référence. Elle combine un éditeur LaTeX en ligne, la compilation automatique de votre document, et des fonctionnalités de collaboration similaires à Google Docs. C'est une bonne option pour les documents techniques et pour collaboration en temps réel, et cela permet l'intégration avec des modèles de revues académiques. Si vous ne connaissez pas LaTeX, il y a une certaine courbe d'apprentissage à surmonter, mais qui peut en valoir la peine.
-
-**Markdown** : Cela représente une approche différente de la rédaction, particulièrement adaptée aux chercheurs qui intègrent beaucoup d'analyses quantitatives dans leurs travaux. Markdown est un langage de balisage léger qui permet d'écrire en texte brut tout en spécifiant la structure du document (titres, listes, emphases). R Markdown et son successeur Quarto permettent de combiner du texte rédigé en Markdown avec du code et de générer automatiquement des documents finaux en PDF, Word ou HTML incluant vos analyses, graphiques et tableaux. L'avantage majeur est la reproductibilité complète : votre document contient à la fois votre texte et le code qui a produit vos résultats, ce qui facilite grandement les révisions et la validation. Pour la collaboration, les fichiers Markdown fonctionnent bien avec Git (comme nous le verrons plus loin), car ce sont des fichiers texte que Git peut suivre ligne par ligne. Ce livre, rédigé en Quarto, contient un chapitre entier sur les langages de balisages comme Markdown et LaTeX.
-
-### Le problème persistant du versionnement
-
-Quel que soit l'outil choisi, vous rencontrerez un problème classique : **comment gérer les versions de votre document?** Vous voudrez éviter de vous retrouver avec plusieurs versions du même fichier, nommé différent en fonction de sa version au fil des révisions et des relectures. Ce genre de nomenclature est source de confusion, d'erreurs, et de perte de temps. Vous ne savez plus quelle version est la plus récente, vous risquez d'écraser accidentellement du travail récent, et la collaboration devient un casse-tête.
-
-Les outils mentionnés ci-dessus offrent tous un certain niveau de versionnement automatique, mais avec des limites. OneDrive conserve 30 jours d'historique, Google Docs et Overleaf (version payante) offrent un historique complet, mais la navigation dans cet historique peut être fastidieuse si vous cherchez une version spécifique datant de plusieurs semaines.
-
-### Une solution plus rigoureuse : Git pour la rédaction
-
-Il existe une approche plus rigoureuse pour gérer le versionnement, particulièrement si vous rédigez en formats textuels (Markdown, LaTeX, ou même Word si vous acceptez certaines contraintes) : **Git**. Nous y reviendrons en détail un peu plus tard, mais sachez que Git permet de :
-
-- Enregistrer explicitement chaque version de votre document avec un message descriptif
-- Créer des "branches" pour tester différentes structures ou versions sans affecter votre version principale
-- Collaborer de manière asynchrone avec un contrôle précis sur qui change quoi
-- Conserver un historique complet et illimité de toutes vos modifications
-
-Si vous aimez avoir un contrôle précis sur vos fichiers et/ou prévoyez travailler avec des collègues sur des projets complexes, Git mérite votre attention. Nous y reviendrons.
-
-### Bonnes pratiques pour l'entreposage de votre rédaction
-
-Peu importe l'outil que vous choisissez, voici quelques principes à respecter :
-
-1. **Ne jamais garder un seul exemplaire local** : Votre ordinateur peut planter, être volé, ou subir une défaillance de disque dur. Utilisez systématiquement une solution infonuagique avec synchronisation automatique.
-
-2. **Sauvegardes croisées pour les documents critiques** : Si votre thèse représente des années de travail, envisagez une stratégie de sauvegarde redondante. Par exemple : travailler dans OneDrive, mais faire une copie hebdomadaire sur Google Drive ou sur un disque dur externe.
-
-3. **Attention aux données sensibles dans votre document** : Si votre mémoire contient des extraits d'entrevues ou des données sensibles, assurez-vous que la plateforme d'entreposage respecte les exigences éthiques de votre institution (nous y reviendrons dans la section suivante).
-
-En résumé, pour la rédaction de votre mémoire ou thèse, privilégiez une solution infonuagique institutionnelle avec synchronisation automatique. Si vous êtes à l'aise techniquement et que vous rédigez en formats textuels, Git peut offrir un contrôle encore plus fin. Mais l'essentiel est d'avoir **au moins une sauvegarde automatique et hors de votre ordinateur personnel**.
-
-### Où entreposer vos données pendant la recherche
-
-Au-delà de la rédaction de votre mémoire, vous allez collecter, manipuler et analyser des données. Ces données peuvent prendre plusieurs formes : transcriptions d'entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, images, tableaux, etc. Vos données de recherche peuvent poser des défis spécifiques en matière de sécurité, d'éthique et de collaboration.
-
-La question centrale ici n'est pas seulement "où entreposer?", mais surtout **"où puis-je entreposer selon la nature de mes données?"** Car toutes les solutions ne se valent pas, et certaines sont inappropriées selon le type de données que vous manipulez.
-
-### La distinction entre données sensibles et non-sensibles
-
-Avant de choisir une solution d'entreposage, vous devez d'abord déterminer si vos données sont **sensibles** ou non. Cette distinction n'est pas qu'une question théorique : elle a des implications éthiques et pratiques importantes.
+Avant de choisir une solution d'entreposage, il faut d'abord déterminer si les données sont **sensibles** ou non. Cette distinction n'est pas qu'une question théorique : elle a des implications éthiques et pratiques importantes.
 
 Une donnée est considérée comme sensible si elle permet d'identifier directement ou indirectement des individus, ou si elle contient des informations confidentielles ou privées. Voici des exemples courants en sciences sociales :
 
@@ -113,275 +67,221 @@ Une donnée est considérée comme sensible si elle permet d'identifier directem
 - **Enregistrements audio ou vidéo** de participants identifiables
 - **Données géolocalisées** précises (traces GPS, adresses)
 
-Dans la plupart des institutions canadiennes, la gestion de données sensibles est encadrée par un comité d'éthique de la recherche. Lorsque vous soumettez votre protocole de recherche pour approbation éthique, vous devez spécifier comment vous allez collecter, entreposer, protéger et éventuellement détruire vos données sensibles. Le non-respect de ces engagements peut avoir des conséquences sérieuses, allant du retrait de votre approbation éthique à des sanctions institutionnelles.
+Dans les universités canadiennes, la gestion de données sensibles est encadrée par un comité d'éthique de la recherche. Lorsqu'un chercheur soumet son protocole de recherche pour approbation éthique, il doit spécifier comment il va collecter, entreposer, protéger et éventuellement détruire ses données sensibles. Le non-respect de ces engagements peut avoir des conséquences sérieuses, allant du retrait de l'approbation éthique à des sanctions institutionnelles.
 
-Les principes à respecter pour les données sensibles incluent la minimisation (ne collectez que les données nécessaires), l'anonymisation (retirez ou masquez les identifiants dès que possible), le chiffrement (protégez les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans votre certificat éthique peuvent accéder aux données), et l'entreposage sécurisé (utilisez des serveurs approuvés, idéalement situés au Canada).
+Les principes à respecter pour les données sensibles incluent la minimisation (ne collecter que les données nécessaires), l'anonymisation (retirer ou masquer les identifiants dès que possible), le chiffrement (protéger les fichiers par mot de passe ou chiffrement), l'accès limité (seules les personnes autorisées dans le certificat éthique peuvent accéder aux données) et l'entreposage sécurisé (utiliser des serveurs approuvés, idéalement situés au Canada).
 
-À l'inverse, certaines données ne posent pas de problème de confidentialité. C'est le cas des statistiques publiques, des corpus textuels ouverts comme les articles de presse ou les transcriptions de débats parlementaires, des données administratives agrégées sans possibilité d'identification, ou encore de votre propre code d'analyse (scripts R par exemple). Pour ces données, les contraintes sont beaucoup plus souples. Vous pouvez les entreposer sur des plateformes grand public, les partager plus librement, et éventuellement les rendre publiques sans approbation éthique spécifique.
+À l'inverse, certaines données ne posent pas de problème de confidentialité. C'est le cas des statistiques publiques, des corpus textuels ouverts comme les articles de presse ou les transcriptions de débats parlementaires, des données administratives agrégées sans possibilité d'identification, ou encore du code d'analyse (scripts $\textsf{R}$ par exemple). Pour ces données, les contraintes sont beaucoup plus souples. On peut les entreposer sur des plateformes grand public, les partager plus librement, et éventuellement les rendre publiques sans approbation éthique spécifique.
 
-### Solutions d'entreposage pour données sensibles
+#### Solutions d'entreposage pour données sensibles
 
-Si vos données ne sont pas sensibles, vous avez beaucoup plus de flexibilité dans le choix de vos outils. Dropbox est très utilisé dans plusieurs milieux, même à titre d'utilisation personnelle. Dans le milieu académique, le partage de fichiers peu volumineux par Dropbox est très fréquent. Son utilisation est relativement accessible : 2 Go sont offerts gratuitement, puis un abonnement est nécessaire pour entreposer davantage. Dropbox se démarque par sa popularité et par son interface intuitive, s'intégrant facilement dans le gestionnaire de fichiers. Sa synchronisation est rapide et familière pour la plupart des utilisateurs, bien que sa capacité gratuite soit limitée et que ses serveurs américains le rendent problématique pour des données sensibles. Dropbox est ainsi très utile dans le cadre de gestion de données collaborative relativement simple.
+Pour les données sensibles, il est essentiel de privilégier des solutions institutionnelles qui respectent les exigences éthiques et légales. La plupart des universités canadiennes offrent des services d'entreposage sécurisé à leur communauté de recherche.
 
-Google Drive est facile d'utilisation par son intégration au sein des outils Google. La plateforme, en général, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. Google Drive offre 15 Go gratuits, et son utilisation est simple et intuitive. Pour des projets impliquant du code et des données non-sensibles de taille modérée, GitHub et GitLab sont d'excellentes options. Nous y reviendrons en détail plus loin, mais sachez qu'ils permettent non seulement d'entreposer vos fichiers, mais aussi de suivre rigoureusement leur évolution et de collaborer efficacement grâce au versionnement et aux *pull requests*. Ils sont gratuits pour les projets publics et très utilisés en recherche, bien qu'ils nécessitent une courbe d'apprentissage et ne soient pas adaptés pour des fichiers très volumineux.
+***OneDrive* institutionnel (avec serveurs canadiens)** : Plusieurs universités canadiennes ont négocié des ententes avec *Microsoft* pour que les données de leur *OneDrive* institutionnel soient hébergées sur des serveurs situés au Canada. Cette configuration respecte généralement les exigences des comités d'éthique. Il est important de vérifier auprès de son institution si cette option est disponible et si elle est approuvée pour les données sensibles.
 
-Considérant ce qui a été mentionné précédemment, voici un résumé de bonnes pratiques pour l'entreposage de données de recherche :
+***Nextcloud* institutionnel** : Certaines universités offrent *Nextcloud*, une plateforme de stockage libre qui peut être hébergée sur les serveurs de l'institution. C'est souvent la solution privilégiée pour les données hautement confidentielles, car les fichiers ne quittent jamais l'infrastructure universitaire. *Nextcloud* offre des fonctionnalités similaires à *Dropbox* (synchronisation, partage de fichiers), mais avec un contrôle total sur l'emplacement des données.
 
-1. **Identifiez la sensibilité de vos données dès le début** : consultez votre comité d'éthique si vous avez un doute.
+**Serveurs de recherche dédiés** : Certaines facultés ou groupes de recherche disposent de leurs propres serveurs sécurisés. Ces infrastructures sont particulièrement adaptées aux projets impliquant des données très sensibles ou des volumes importants.
 
-2. **Ne mélangez pas sensible et non-sensible sur la même plateforme** : séparez clairement vos données sensibles de vos données publiques.
+Avant de choisir une solution pour des données sensibles, il convient de consulter le bureau de soutien à la recherche de son institution pour connaître les options approuvées et les procédures à suivre.
 
-3. **Documentez vos données** : créez un fichier README expliquant ce que contient chaque dossier, comment les données ont été collectées, et quelles sont les conventions de nomenclature.
+#### Solutions d'entreposage pour données non sensibles
 
-4. **Sauvegardez régulièrement** : même sur des plateformes infonuagiques, faites des copies périodiques.
+Si les données ne sont pas sensibles, le chercheur dispose de beaucoup plus de flexibilité dans le choix de ses outils. *Dropbox* est très utilisé dans plusieurs milieux, même à titre d'utilisation personnelle. Dans le milieu académique, le partage de fichiers peu volumineux par *Dropbox* est très fréquent. Son utilisation est relativement accessible : 2 Go sont offerts gratuitement, puis un abonnement est nécessaire pour entreposer davantage. *Dropbox* se démarque par sa popularité et par son interface intuitive, s'intégrant facilement dans le gestionnaire de fichiers. Sa synchronisation est rapide et familière pour la plupart des utilisateurs, bien que sa capacité gratuite soit limitée et que ses serveurs américains le rendent problématique pour des données sensibles. *Dropbox* est ainsi très utile dans le cadre de gestion de données collaborative relativement simple.
 
-5. **Contrôlez les accès** : ne partagez vos dossiers qu'avec les personnes autorisées dans votre certificat éthique.
+*Google Drive* est facile d'utilisation par son intégration au sein des outils *Google*. La plateforme, en général, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. *Google Drive* offre 15 Go gratuits, et son utilisation est simple et intuitive. Pour des projets impliquant du code et des données non sensibles de taille modérée, *GitHub* et *GitLab* sont d'excellentes options. Nous y reviendrons en détail plus loin, mais sachez qu'ils permettent non seulement d'entreposer les fichiers, mais aussi de suivre rigoureusement leur évolution et de collaborer efficacement grâce au versionnement et aux demandes de fusion (*pull requests*). Ils sont gratuits, tant pour les projets publics que pour les dépôts privés (avec certaines limitations), et sont très utilisés en recherche. Ils nécessitent toutefois une courbe d'apprentissage et ne sont pas adaptés pour des fichiers très volumineux.
 
-6. **Préparez l'archivage dès maintenant** : réfléchissez à ce que vous devrez déposer à la fin de votre projet et organisez vos fichiers en conséquence.
+### Archivage et partage
 
-En résumé, le choix de votre solution d'entreposage dépend avant tout de la **sensibilité de vos données**. Pour des données sensibles, privilégiez les solutions institutionnelles. Pour des données non-sensibles, vous avez plus de flexibilité. Mais encore une fois, **ne gardez jamais vos données uniquement sur votre ordinateur personnel**.
+Les deux sections précédentes concernaient les données **actives** : celles que le chercheur utilise quotidiennement pendant sa recherche. Mais arrive un moment où le projet se termine, le mémoire est déposé, et le chercheur s'apprête peut-être à publier un article. C'est à ce stade que les données deviennent **finales** et qu'il faut penser à leur archivage et à leur partage potentiel.
 
-### Où déposer vos données finales (archivage et science ouverte)
+Le dépôt sécurisé suit une logique scientifique : cela rend les données trouvables, citables et potentiellement réutilisables par d'autres chercheurs, ce qui contribue à l'avancement de la science de façon *transparente*.
 
-Les deux sections précédentes concernaient vos données **actives** : celles que vous utilisez quotidiennement pendant votre recherche. Mais arrive un moment où votre projet se termine, votre mémoire est déposé, et vous vous apprêtez peut-être à publier un article. C'est à ce stade que vos données deviennent **finales** et que vous devez penser à leur archivage et à leur partage potentiel.
-
-Le dépôt sécurisé suit une logique scientifique : Cela rend vos données trouvables, citables, et potentiellement réutilisables par d'autres chercheurs, ce qui contribue à l'avancement de la science de façon *transparente*.
-
-### Données actives vs. données finales : quelle différence?
-
-Les **données actives** sont celles que vous manipulez pendant votre recherche. Elles évoluent constamment : vous ajoutez de nouvelles observations, vous corrigez des erreurs, vous créez de nouvelles variables. Ces données vivent dans votre espace de travail.
+Les **données actives** sont celles que le chercheur manipule pendant sa recherche. Elles évoluent constamment : il ajoute de nouvelles observations, corrige des erreurs, crée de nouvelles variables. Ces données vivent dans son espace de travail.
 
 Les **données finales** sont celles qui accompagnent une publication ou un mémoire déposé. Elles ne changeront plus, ou très peu. Au moment où elles sont hébergées dans un dépôt et qu'un identifiant unique leur est attribué (un DOI, par exemple), elles sont figées. Toute modification ultérieure entraîne la création d'une nouvelle version des données.
 
-Cette distinction est importante parce qu'elle détermine où et comment vous entreposez vos données. Les outils que vous utilisez pendant votre recherche (Nextcloud, GitHub) ne sont pas conçus pour l'archivage. À l'inverse, les dépôts de données (Borealis, Zenodo, etc.) ne sont pas pratiques pour un travail quotidien, mais excellent pour la préservation et le partage.
-
-### Pourquoi placer vos données dans un dépôt?
+Cette distinction est importante parce qu'elle détermine où et comment entreposer les données. Les outils utilisés pendant la recherche (*Nextcloud*, *GitHub*) ne sont pas conçus pour l'archivage. À l'inverse, les dépôts de données (*Borealis*, *Zenodo*, etc.) ne sont pas pratiques pour un travail quotidien, mais excellent pour la préservation et le partage.
 
 Plusieurs raisons justifient le dépôt de données finales :
 
-**Conformité aux exigences** : Certains organismes subventionnaires et certaines revues académiques exigent que vous déposiez vos données dans un dépôt reconnu. Ne pas le faire peut compromettre l'acceptation de votre article ou votre admissibilité à des subventions futures.
+**Conformité aux exigences** : Certains organismes subventionnaires et certaines revues académiques exigent le dépôt des données dans un dépôt reconnu. Ne pas le faire peut compromettre l'acceptation d'un article ou l'admissibilité à des subventions futures.
 
-**Conservation sûre** : Les dépôts de données offrent une infrastructure professionnelle de sauvegarde à long terme. Contrairement à votre compte OneDrive qui pourrait disparaître après votre départ de l'université, un dépôt institutionnel garantit que vos données seront accessibles pendant des décennies.
+**Conservation sûre** : Les dépôts de données offrent une infrastructure professionnelle de sauvegarde à long terme. Contrairement à un compte *OneDrive* qui pourrait disparaître après le départ de l'université, un dépôt institutionnel garantit que les données seront accessibles pendant des décennies.
 
-**Visibilité et impact** : Déposer vos données augmente la visibilité de votre recherche. D'autres chercheurs peuvent découvrir vos données, les citer, et potentiellement les réutiliser pour de nouvelles analyses. Cela augmente l'impact de votre travail au-delà de votre publication initiale.
+**Visibilité et impact** : Déposer ses données augmente la visibilité de la recherche. D'autres chercheurs peuvent découvrir ces données, les citer, et potentiellement les réutiliser pour de nouvelles analyses. Cela augmente l'impact du travail au-delà de la publication initiale.
 
-**Reproductibilité** : La science ouverte repose sur la capacité de reproduire et de vérifier les résultats. En rendant vos données accessibles (avec la documentation appropriée), vous permettez à d'autres chercheurs de reproduire vos analyses et de valider vos conclusions.
+**Reproductibilité** : La science ouverte repose sur la capacité de reproduire et de vérifier les résultats. En rendant les données accessibles (avec la documentation appropriée), le chercheur permet à d'autres de reproduire ses analyses et de valider ses conclusions.
 
 **Respect du principe FAIR** : Les données déposées dans un dépôt structuré deviennent facilement **trouvables** (avec des métadonnées), **accessibles** (via un identifiant permanent), **interopérables** (avec des formats standards), et **réutilisables** (avec une licence claire). Ce sont les quatre piliers du principe FAIR qui guide la gestion moderne des données de recherche.
 
-### Borealis : le dépôt Dataverse canadien
+#### Borealis : le dépôt Dataverse canadien
 
-Borealis est le dépôt Dataverse canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans Borealis, avec un accompagnement complet pour les chercheurs qui souhaitent l'utiliser. Borealis accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l'accès. Vous pouvez choisir de rendre vos données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si vos contraintes éthiques l'exigent. 
+*Borealis* est le dépôt *Dataverse* canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans *Borealis*, avec un accompagnement complet pour les chercheurs qui souhaitent l'utiliser. *Borealis* accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l'accès. Le chercheur peut choisir de rendre ses données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si ses contraintes éthiques l'exigent.
 
-Les données déposées dans Borealis sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser Borealis, vous créez un compte, vous créez un nouveau jeu de données, vous remplissez les champs de métadonnées, vous téléversez vos fichiers, et vous publiez. À ce moment, un DOI est attribué et vos données deviennent officiellement archivées. Il y a de fortes chances que votre bibliothèque institutionnel offre un support pour l'utilisation de Borealis.
-
-### Autres dépôts multidisciplinaires
+Les données déposées dans *Borealis* sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser *Borealis*, on crée un compte, puis un nouveau jeu de données, on remplit les champs de métadonnées, on téléverse les fichiers, et on publie. À ce moment, un DOI est attribué et les données deviennent officiellement archivées. Il y a de fortes chances que la bibliothèque institutionnelle offre un soutien pour l'utilisation de *Borealis*.
 
 Plusieurs autres dépôts multidisciplinaires sont disponibles :
 
-**Dépôt fédéré de données de recherche (DFDR)** : Comme Borealis, le DFDR est une infrastructure canadienne hébergée sur des serveurs canadiens. Il est gratuit pour les projets académiques, accepte tous les types de fichiers, et offre des fonctionnalités similaires à Borealis. Le choix entre Borealis et le DFDR dépend souvent de préférences institutionnelles ou de contraintes techniques spécifiques.
+**Dépôt fédéré de données de recherche (DFDR)** : Comme *Borealis*, le DFDR est une infrastructure canadienne hébergée sur des serveurs canadiens. Il est gratuit pour les projets académiques, accepte tous les types de fichiers, et offre des fonctionnalités similaires à *Borealis*. Le choix entre *Borealis* et le DFDR dépend souvent de préférences institutionnelles ou de contraintes techniques spécifiques.
 
-**Zenodo** : Hébergé par le CERN en Suisse, Zenodo est un dépôt multidisciplinaire très populaire en sciences. Il est gratuit jusqu'à 50 Go par jeu de données, offre une intégration étroite avec GitHub (idéal si vous déposez du code), et permet de déposer non seulement des données mais aussi des présentations, des rapports, etc. Zenodo est particulièrement apprécié pour sa simplicité et sa rapidité de dépôt.
+*Zenodo* : Hébergé par le CERN en Suisse, *Zenodo* est un dépôt multidisciplinaire très populaire en sciences. Il est gratuit jusqu'à 50 Go par jeu de données, offre une intégration étroite avec *GitHub* (idéal pour déposer du code), et permet de déposer non seulement des données mais aussi des présentations, des rapports, etc. *Zenodo* est particulièrement apprécié pour sa simplicité et sa rapidité de dépôt.
 
-**Open Science Framework (OSF)** : OSF est une plateforme complète pour la recherche ouverte. Au-delà du simple dépôt de données, OSF permet de gérer l'ensemble d'un projet de recherche : pré-enregistrement, collaboration, versionnement, liens avec d'autres dépôts. C'est une solution intéressante si vous adoptez une approche de science ouverte dès le début de votre projet.
+*Open Science Framework* (*OSF*) : *OSF* est une plateforme complète pour la recherche ouverte. Au-delà du simple dépôt de données, *OSF* permet de gérer l'ensemble d'un projet de recherche : pré-enregistrement, collaboration, versionnement, liens avec d'autres dépôts. C'est une solution intéressante pour ceux qui adoptent une approche de science ouverte dès le début de leur projet.
 
-**Figshare** : Similaire à Zenodo, Figshare offre un dépôt gratuit pour des fichiers de taille modérée, avec attribution de DOI et intégration avec des outils de recherche. Il est particulièrement utilisé pour déposer des figures, des tableaux supplémentaires, ou des jeux de données complémentaires à une publication.
+*Figshare* : Similaire à *Zenodo*, *Figshare* offre un dépôt gratuit pour des fichiers de taille modérée, avec attribution de DOI et intégration avec des outils de recherche. Il est particulièrement utilisé pour déposer des figures, des tableaux supplémentaires, ou des jeux de données complémentaires à une publication.
 
-Lorsque vous déposez vos données, vous devez également spécifier sous quelle **licence** vous les partagez. La licence définit ce que les autres chercheurs peuvent faire avec vos données : les télécharger, les réutiliser, les modifier, les republier, etc. Les licences Creative Commons (CC) sont les plus courantes pour les données de recherche.
+Lors du dépôt de données, il faut également spécifier sous quelle **licence** elles sont partagées. La licence définit ce que les autres chercheurs peuvent faire avec ces données : les télécharger, les réutiliser, les modifier, les republier, etc. Les licences Creative Commons (CC) sont les plus courantes pour les données de recherche.
 
-### Quelles données devriez-vous préserver?
+Il n'est pas nécessaire de préserver toutes les données collectées pendant un projet. Les données à préserver devraient être **réutilisables** (par soi-même ou d'autres), **compréhensibles** (avec une documentation adéquate), et avoir une **certaine valeur** (complexes, coûteuses à obtenir, ou impossibles à récolter à nouveau). Certaines données peuvent être détruites à la fin du projet : les notes préliminaires, les premières versions de documents, ou du matériel facile à recueillir à nouveau. Les données de recherche qui ne mèneront pas à une publication et qui ont servi pour l'enseignement ou un travail académique n'ont généralement pas besoin d'être conservées après l'obtention du diplôme, sauf si elles ont une valeur pour des projets futurs.
 
-Il n'est pas nécessaire de préserver toutes les données collectées pendant votre projet. Les données à préserver devraient être **réutilisables** (par vous ou d'autres), **compréhensibles** (avec une documentation adéquate), et avoir une **certaine valeur** (complexes, coûteuses à obtenir, ou impossibles à récolter à nouveau). Certaines données peuvent être détruites à la fin du projet : les notes préliminaires, les premières versions de documents, ou du matériel facile à recueillir à nouveau. Les données de recherche qui ne mèneront pas à une publication et qui ont servi pour l'enseignement ou un travail académique n'ont généralement pas besoin d'être conservées après l'obtention du diplôme, sauf si elles ont une valeur pour des projets futurs.
+En résumé, le dépôt de données finales est une étape importante qui garantit la pérennité du travail, contribue à la science ouverte, et peut augmenter l'impact de la recherche.
 
-En résumé, le dépôt de données finales est une étape importante qui garantit la pérennité de votre travail, contribue à la science ouverte, et peut augmenter l'impact de votre recherche. 
+### `Git` et *GitHub* tout au long d'un projet de recherche
 
-### Où entreposer des données massives
+Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer les données pendant la recherche et les données finales. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces phases : **`Git` et *GitHub***. `Git` offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu'est `Git`, pourquoi il est devenu si populaire en recherche, et comment il pourrait s'intégrer dans un flux de travail de recherche.
 
-Les sections précédentes ont couvert les besoins typiques de la plupart des projets de recherche aux cycles supérieurs : quelques gigaoctets de données, des fichiers de taille raisonnable, des outils standards. Mais certains projets génèrent des volumes de données qui dépassent largement ces limites. Si vous travaillez avec des images satellite, du *scraping web* à grande échelle, des enregistrements vidéo, ou des simulations computationnelles, les chances sont élevées que vous utilisiez des **données massives**.
+`Git`, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Avec l'essor des projets logiciels dans les décennies précédentes, un besoin s'est créé pour suivre l'évolution des fichiers de code au fil du temps. Quand plusieurs centaines de développeurs travaillent sur un même projet, ce suivi est essentiel pour éviter les conflits entre les versions. Bien que des systèmes centralisés existaient pour ce type de gestion, `Git` se distingue par sa décentralisation : chaque développeur détient une copie complète du projet, incluant toutes les modifications passées. Cela permet aux équipes de travailler de manière indépendante, sans dépendre d'un serveur central, ce qui réduit les risques de conflits. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications du code source. Chaque modification, ou validation (*commit*), est enregistrée avec un message explicatif et un identifiant unique, permettant aux collaborateurs de comprendre facilement les évolutions du projet et d'assurer l'intégrité des données.
 
-Qu'est-ce qu'une donnée massive en recherche? Il n'y a pas de définition universelle, mais voici quelques termes pratiques qui indiquent que vous entrez dans le domaine des données massives. Un **volume** de important de données; une **vélocité**, c'est-à-dire une collecte continue ou très fréquente de données; de la **variété**, présente dans des données hétérogènes nécessitant un traitement comme des images; ou une  **complexité computationnelle** lorsqu'il y a un besoin de traitements avec plusieurs jours de calcul. Si votre projet correspond à une ou plusieurs de ces caractéristiques, les solutions présentées plus tôt ne conviendront pas. Vous aurez besoin d'infrastructures spécialisées.
+*GitHub*, lancé en 2008, est né pour répondre aux besoins de collaboration croissants dans le monde du développement du logiciel libre. Avant *GitHub*, les développeurs pouvaient utiliser `Git` en local pour gérer les versions, mais il manquait un espace centralisé pour partager le code et coordonner les efforts. *GitHub* a donc apporté cette solution en intégrant `Git` à une plateforme web, où les développeurs pouvaient héberger leurs dépôts, collaborer, et suivre le développement en ligne. Ce qui distingue *GitHub*, c'est son aspect social : les fonctionnalités comme les demandes de fusion (*pull requests*), les gestionnaires de problèmes, et le suivi des modifications permettent aux équipes de travailler efficacement et d'interagir facilement autour du code. Cette combinaison d'outils a transformé *GitHub* en un espace incontournable pour les projets en libre accès, facilitant le partage des connaissances et la collaboration.
 
-### Le cycle de vie des données massives
+Si `Git` a été créé pour gérer du code informatique, pourquoi un étudiant en sciences sociales devrait-il s'y intéresser ? Parce que les problèmes que `Git` résout ne sont pas spécifiques à la programmation. Ce sont des problèmes universels de **gestion de versions**, de **collaboration** et de **traçabilité**. Qui n'a jamais eu un dossier rempli de fichiers nommés `Mémoire_v2_final.docx`, `Mémoire_v3_VRAIMENT_final.docx`, `Mémoire_final_corrigé_2.docx` ? Ce problème n'existe pas avec `Git`. À chaque étape significative du travail, on crée une validation (*commit*), une « version enregistrée » avec un message descriptif. On n'a jamais besoin de créer des copies multiples de ses fichiers. On travaille toujours sur la version actuelle, et `Git` conserve automatiquement tout l'historique. `Git` et *GitHub* incarnent efficacement l'évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d'historique des modifications, ils permettent aux chercheurs d'embrasser une philosophie *Agile* en assurant un suivi minutieux des changements, facilitant ainsi l'itération rapide et la reproductibilité des projets.
 
-Les données massives nécessitent une approche structurée qui couvre quatre phases distinctes :
+Le tableau suivant compare les principales solutions selon leur capacité à accompagner le chercheur à travers les trois phases du cycle de recherche.
 
-**Collecte** : Le cycle de vie d'une donnée commence au moment où elle est créée ou collectée. Pour des données massives, la collecte est souvent automatisée (scripts de scraping, API). Avant de commencer, déterminez clairement la valeur et la pertinence de vos données. Établissez des règles pour collecter les données d'une manière qui préserve leur utilité : documentez quand, où, comment et pourquoi elles ont été générées. Planifiez l'infrastructure dès le début : avez-vous besoin d'un serveur qui tourne en continu? D'un espace de stockage temporaire pour les données brutes?
+```{r}
+#| tbl-cap: Comparaison des outils de gestion de données selon les critères de sélection
+#| echo: false
+#| message: false
+#| warning: false
 
-**Entreposage** : Les données doivent être entreposées dans un environnement stable et adapté à leurs origines et à leurs applications potentielles. Pour des volumes importants, vous aurez besoin d'espaces de grande capacité, souvent avec des systèmes de fichiers distribués. Toute donnée digne d'être collectée mérite d'être protégée, ce qui suppose des sauvegardes régulières et une infrastructure fiable. Les données sensibles doivent être chiffrées pour respecter les exigences éthiques et réglementaires. C'est à cette étape que les infrastructures de calcul haute performance (comme Calcul Québec) deviennent essentielles, car elles offrent non seulement de l'entreposage massif, mais aussi les ressources computationnelles pour traiter et transformer vos données brutes.
+library(tidyverse)
+library(gt)
 
-**Partage** : Les données n'ont de valeur que si elles peuvent être mises à la disposition des utilisateurs autorisés. Pour des projets collaboratifs, établissez clairement qui peut accéder aux données, quand et comment. Les utilisateurs doivent pouvoir localiser, accéder, modifier et analyser les données selon les besoins. Documentez vos conventions de nomenclature, vos structures de fichiers, et les transformations appliquées. Cette documentation est cruciale pour que vos collaborateurs puissent comprendre et utiliser les données efficacement.
+tbl_outils <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  `*OSF*` = c(
+    "Gratuit", "Grande", "De plus en plus populaire",
+    "Facilement compatible", "Excellente", "Très flexible"
+  ),
+  `*GitHub*/*GitLab*` = c(
+    "Gratuit", "Très grande", "De plus en plus populaire",
+    "Facilement compatible", "Excellente", "Très flexible"
+  ),
+  `Solutions institutionnelles` = c(
+    "Gratuit (institutionnel)", "Grande", "Populaire",
+    "Facilement compatible", "Faible", "Peu flexible"
+  ),
+  `Solutions grand public` = c(
+    "Gratuit (limité)", "Très grande", "Très populaire",
+    "Facilement compatible", "Faible", "Peu flexible"
+  )
+)
 
-**Archivage** : À la fin du projet, vos données cessent d'être utilisées quotidiennement, mais elles conservent une valeur à long terme. Pour des données massives, l'archivage complet n'est pas toujours faisable ou nécessaire dans un dépôt comme Borealis. Vous devez décider quelles données conserver : les données brutes irremplaçables, un échantillon représentatif, les données agrégées, ou simplement les scripts et métadonnées permettant de régénérer les résultats. Les données archivées doivent rester organisées et protégées, même si leur accessibilité immédiate perd de son importance.
+tbl_outils |>
+  gt() |>
+  tab_caption("Comparaison des outils de gestion de données pour la recherche") |>
+  cols_label(
+    Critères = "Critères",
+    `*OSF*` = md("*OSF*"),
+    `*GitHub*/*GitLab*` = md("*GitHub*/<br>*GitLab*"),
+    `Solutions institutionnelles` = md("Solutions<br>institutionnelles"),
+    `Solutions grand public` = md("Solutions<br>grand public")
+  ) |>
+  tab_footnote(
+    footnote = md("*OneDrive*, *Nextcloud*"),
+    locations = cells_column_labels(columns = `Solutions institutionnelles`)
+  ) |>
+  tab_footnote(
+    footnote = md("*Dropbox*, *Google Drive*"),
+    locations = cells_column_labels(columns = `Solutions grand public`)
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(28),
+    everything() ~ pct(18)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(11),
+    data_row.padding = px(8),
+    column_labels.background.color = "white",
+    table.width = pct(100)
+  )
+```
 
-### Solutions pour données massives
+*OSF* et *GitHub*/*GitLab* se démarquent par leur capacité à accompagner le chercheur à travers les trois phases : planification (préinscription, documentation), collecte et analyse (versionnement, collaboration), et archivage (DOI via *Zenodo* pour *GitHub*, archivage intégré pour *OSF*). Les solutions institutionnelles et grand public restent utiles pour l'entreposage quotidien, mais ne répondent pas aux exigences de transparence et de réplicabilité de la science ouverte.
 
-Comme mentionné dans la section précédente, l'Alliance de recherche numérique du Canada opère des centres de calcul haute performance à travers le pays. Pour des données massives, ces infrastructures deviennent non seulement recommandées, mais essentielles. Au-delà du simple stockage sécurisé, elles offrent l'accès à des grappes de serveurs pour traiter vos données, ce qui est crucial lorsque vos analyses nécessitent plusieurs heures ou jours de calcul. Pour des projets nécessitant des ressources substantielles (plusieurs téraoctets de stockage ou des milliers d'heures de calcul), vous devrez soumettre une demande d'allocation annuelle avec justification scientifique lors des concours d'allocation.
+## Manuel d'instruction : utiliser `Git` et *GitHub* pour un projet de recherche
 
-Certaines institutions offrent des crédits pour des services infonuagiques académiques (AWS Educate, Google Cloud for Education, Microsoft Azure for Research). Ces services peuvent être utiles pour des projets nécessitant une grande flexibilité ou des outils spécifiques non disponibles sur Calcul Québec. Toutefois, les crédits gratuits sont généralement limités dans le temps et en montant. Comme il a été mentionné plus tôt, certaines facultés ou groupes de recherche disposent de leurs propres serveurs. Si vous faites partie d'un laboratoire avec de telles ressources, c'est souvent la solution la plus simple pour démarrer.
+Lorsqu'un projet est initialisé avec `Git`, un dossier caché appelé « .git » est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque validation (*commit*), sur les différentes « branches » créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version du travail ne soit perdue.
 
-En résumé, les données massives nécessitent une planification et des infrastructures spécialisées. **Calcul Québec et l'Alliance** sont vos meilleurs alliés pour des projets académiques d'envergure. Ne sous-estimez pas la courbe d'apprentissage, mais ne laissez pas cela vous décourager : les ressources et le support sont disponibles. Commencez tôt, documentez rigoureusement, et automatisez autant que possible.
+Contrairement aux outils comme *OneDrive* ou *Google Docs* qui font du versionnement automatique en arrière-plan, `Git` exige que l'utilisateur enregistre explicitement ses changements. Cela peut sembler contraignant au début, mais c'est en réalité une force : on décide consciemment quand créer une « version » et on documente pourquoi. Ce processus explicite crée une trace historique beaucoup plus riche et utile.
 
-### Pourquoi Git et GitHub pour votre projet de recherche ?
+`Git` et *GitHub* favorisent le travail collaboratif de manière plus structurée que les outils conventionnels. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier *Dropbox* partagé. Ainsi, contrairement aux outils classiques comme *Microsoft Word*, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, `Git` identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique.
 
-Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer votre rédaction, vos données pendant la recherche, vos données finales, et vos données massives. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces catégories : **Git et GitHub**. Git offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu'est Git, pourquoi il est devenu si populaire en recherche, et comment il pourrait s'intégrer dans votre flux de travail.
+`Git` fonctionne mieux avec des fichiers **textuels** : code, documents en format texte, fichiers de configuration, scripts, etc. Pour ces types de fichiers, `Git` peut montrer exactement quelles lignes ont changé entre deux versions, ce qui est extrêmement utile. `Git` fonctionne moins bien avec des fichiers **binaires** comme *Word* (.docx), *Excel*, PDF, des images ou des bases de données. Ces fichiers peuvent être stockés dans `Git`, mais on perd la capacité de voir les changements ligne par ligne. Pour un mémoire rédigé en *Word*, `Git` peut quand même être utile (il garde l'historique des versions du fichier), mais on n'exploite pas pleinement ses capacités.
 
-### L'histoire de Git : d'un outil de programmeurs à un outil de recherche
+C'est pourquoi `Git` est particulièrement populaire auprès des chercheurs qui :
 
-Git, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Avec l'essor des projets logiciels dans les décennies précédentes, un besoin s'est créé pour suivre l'évolution des fichiers de code au fil du temps. Quand plusieurs centaines de développeurs travaillent sur un même projet, ce suivi est essentiel pour éviter les conflits entre les versions. Bien que des systèmes centralisés existaient pour ce type de gestion, Git se distingue par sa décentralisation : chaque développeur détient une copie complète du projet, incluant toutes les modifications passées. Cela permet aux équipes de travailler de manière indépendante, sans dépendre d'un serveur central, ce qui réduit les risques de conflits. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications du code source. Chaque modification, ou *commit*, est enregistrée avec un message explicatif et un identifiant unique, permettant aux collaborateurs de comprendre facilement les évolutions du projet et d'assurer l'intégrité des données.
-
-GitHub, lancé en 2008, est né pour répondre aux besoins de collaboration croissants dans le monde du développement du logiciel libre. Avant GitHub, les développeurs pouvaient utiliser Git en local pour gérer les versions, mais il manquait un espace centralisé pour partager le code et coordonner les efforts. GitHub a donc apporté cette solution en intégrant Git à une plateforme web, où les développeurs pouvaient héberger leurs dépôts, collaborer, et suivre le développement en ligne. Ce qui distingue GitHub, c'est son aspect social : les fonctionnalités comme les *pull requests*, les gestionnaires de problèmes, et le suivi des modifications permettent aux équipes de travailler efficacement et d'interagir facilement autour du code. Cette combinaison d’outils a transformé GitHub en un espace incontournable pour les projets en libre accès, facilitant le partage des connaissances et la collaboration.
-
-### De la programmation à la recherche : pourquoi Git pour un mémoire?
-
-Si Git a été créé pour gérer du code informatique, pourquoi un étudiant en sciences sociales devrait-il s'y intéresser? Parce que les problèmes que Git résout ne sont pas spécifiques à la programmation. Ce sont des problèmes universels de **gestion de versions**, de **collaboration**, et de **traçabilité**. Repensez au problème évoqué précédemment : le fichier Analyse_v2_final.R. Ce problème n'existe pas avec Git. À chaque étape significative de votre travail, vous créez un *commit* (une "version enregistrée") avec un message descriptif. Vous n'avez jamais besoin de créer des copies multiples de vos fichiers. Vous travaillez toujours sur la version actuelle, et Git conserve automatiquement tout l'historique. Git et GitHub incarnent efficacement l'évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d'historique des modifications, ils permettent aux chercheurs d'embrasser une philosophie Agile en assurant un suivi minutieux des changements, facilitant ainsi l'itération rapide et la reproductibilité des projets.
-
-### Comment fonctionne Git?
-
-Lorsqu'un projet est initialisé avec Git, un dossier caché appelé ".git" est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque *commit*, sur les différentes "branches" créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail ne soit perdue.
-
-Contrairement aux outils comme OneDrive ou Google Docs qui font du versionnement automatique en arrière-plan, Git exige que vous enregistriez explicitement vos changements. Cela peut sembler contraignant au début, mais c'est en réalité une force : vous décidez consciemment quand créer une "version" et vous documentez pourquoi. Ce processus explicite crée une trace historique beaucoup plus riche et utile.
-
-Git et GitHub favorisent le travail collaboratif de manière plus structurée que les outils conventionnels. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier Dropbox partagé. Ainsi, contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique.
-
-### Pour quels types de fichiers Git est-il adapté?
-
-Git fonctionne mieux avec des fichiers **textuels** : code, documents en format texte, fichiers de configuration, scripts, etc. Pour ces types de fichiers, Git peut montrer exactement quelles lignes ont changé entre deux versions, ce qui est extrêmement utile. Git fonctionne moins bien avec des fichiers **binaires** comme Word (.docx), Excel, PDF, des images ou des bases de données. Ces fichiers peuvent être stockés dans Git, mais vous perdez la capacité de voir les changements ligne par ligne. Pour un mémoire rédigé en Word, Git peut quand même être utile (il garde l'historique des versions du fichier), mais vous n'exploitez pas pleinement ses capacités.
-
-C'est pourquoi Git est particulièrement populaire auprès des chercheurs qui :
-- Rédigent en LaTeX ou Markdown
+- Rédigent en \LaTeX{} ou `Markdown`
 - Écrivent du code pour leurs analyses
 - Collaborent sur des projets techniques avec plusieurs contributeurs
 - Valorisent la traçabilité complète de leur travail
 
-### Les avantages de Git et GitHub pour la recherche
+En sciences sociales numériques, où le partage et la collaboration sont essentiels, `Git` et *GitHub* offrent plusieurs avantages majeurs.
 
-En sciences sociales numériques, où le partage et la collaboration sont essentiels, Git et GitHub offrent plusieurs avantages majeurs. <!-- Tout d'abord, ils permettent de suivre les modifications apportées au texte ou au code, ce qui facilite la reproductibilité des résultats. Les chercheurs peuvent revenir à n'importe quelle version précédente de leur projet, une fonctionnalité particulièrement utile pour corriger des erreurs ou analyser l'impact de différentes approches. Lorsqu'un projet est initialisé avec Git, un dossier caché appelé .git est créé dans le répertoire. Ce dossier contient tout l'historique des modifications apportées, y compris les informations sur chaque *commit*, sur les différentes « branches » créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s'assurant qu'aucune version de leur travail ne soit perdue. -->
+1.  *Intégration et adoption répandue* : `Git` est devenu un standard *de facto* dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. *GitHub*, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
 
-<!-- Git et GitHub favorisent le travail collaboratif. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches (encore une fois, comprendre ici les différentes « versions ») pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier Dropbox partagé. Ainsi, contrairement aux outils classiques comme Microsoft Word, où deux personnes peuvent se retrouver avec des versions distinctes d'un même document et perdre beaucoup de temps à fusionner manuellement les modifications, Git identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique. -->
+2.  *Facilité de collaboration* : `Git` et *GitHub* sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de *GitHub*, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
 
-1.  *Intégration et adoption répandue* : Git est devenu un standard de facto dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. GitHub, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
+3.  *Suivi des versions et recherche reproductible* : Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. `Git` permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
 
-2.  *Facilité de collaboration* : Git et GitHub sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de GitHub, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
+4.  *Infrastructure et sécurité* : *GitHub* offre une infrastructure robuste pour l'entreposage sécurisé des dépôts `Git`. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de *GitHub* permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
 
-3.  *Suivi des versions et recherche reproductible* : Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. Git permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
+Bien qu'il existe plusieurs alternatives à l'utilisation combinée de `Git` et de *GitHub* sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer *Mercurial*, *Bitbucket*, *GitLab* et *SourceForge*. Chacun de ces outils offre des fonctionnalités similaires à celles de `Git` et *GitHub*. *GitHub* n'est pas un logiciel libre, mais il est gratuit pour ses fonctionnalités essentielles et est abondamment utilisé pour y déposer des codes sources ouverts. *GitLab*, quant à lui, offre une version communautaire à code source ouvert (*GitLab Community Edition*) qui peut être hébergée sur ses propres serveurs, ce qui en fait une option intéressante pour les institutions soucieuses de leur souveraineté numérique. Cela permet aux chercheurs en sciences sociales numériques de partager leurs textes et leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
 
-4.  *Infrastructure et sécurité* : GitHub offre une infrastructure robuste pour l'entreposage sécurisé des dépôts Git. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de GitHub permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
+En somme, `Git` et *GitHub* offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce au logiciel libre. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
 
-Bien qu'il existe plusieurs alternatives à l'utilisation combinée de Git et de GitHub sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer Mercurial, Bitbucket, GitLab et SourceForge. Chacun de ces outils offre des fonctionnalités similaires à celles de Git et GitHub. GitHub n'est pas un logiciel libre, mais il est gratuit pour ses fonctionnalités essentielles, et est abondamment utilisé pour y déposer des codes sources ouverts. Cela permet aux chercheurs en sciences sociales numériques de partager leurs textes et leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
+Maintenant que les avantages de `Git` et *GitHub* pour la recherche sont clairs, passons à la pratique. Cette section guide le chercheur dans les étapes essentielles pour mettre en place `Git` pour un projet typique de recherche en sciences sociales.
 
-En somme, Git et GitHub offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce au logiciel libre. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
+**Prérequis** : Il faut d'abord installer `Git` sur son ordinateur (téléchargeable depuis [git-scm.com](https://git-scm.com)) et créer un compte *GitHub* gratuit sur [github.com](https://github.com).
 
-<!-- Lorsqu'il s'agit d'entreposer vos données de recherche, la règle d'or est de ne jamais perdre d'informations précieuses. Cette préoccupation prend toute son importance lorsqu'un chercheur en sciences sociales, seul ou en équipe restreinte, se lance dans un projet. Pour répondre à ce besoin, les services d'entreposage infonuagiques se révèlent indispensables. Voici quelques avantages d'un entreposage sur le nuage pour la recherche :
+**Étape 1** : Création d'un répertoire local et initialisation de `Git`
 
-1.  *Sécurité des données* : Que vous travailliez avec des données sensibles ou non, la sécurité est essentielle pour protéger l’intégrité de vos fichiers. De bons outils garantissent que vos données ne sont pas exposées à des risques tels que des piratages ou des pertes accidentelles.
-
-2.  *Collaboration et partage* : En particulier dans le cadre de collaborations interinstitutionnelles, il est indispensable d’avoir des outils qui permettent de partager facilement des fichiers avec vos collègues, où qu’ils se trouvent.
-
-3.  *Sauvegarde et versionnage* : Une bonne gestion des données permet de garder des copies de sauvegarde de vos fichiers et de suivre l’historique des versions, vous offrant la possibilité de revenir à une version antérieure si nécessaire.
-
-Pour répondre aux besoins variés des chercheurs, des dizaines d'outils de gestion de données ont émergé. Nous allons ici comparer quatre d'entre eux : Dropbox, Google Drive, Nextcloud, et Microsoft OneDrive.
-
-Dropbox est très utilisé dans plusieurs milieux, même à titre d'utilisation personnelle. Dans le milieu académique, le partage de fichiers peu volumineux par Dropbox est très fréquent. Son utilisation est relativement accessible : 2 Go sont offerts gratuitement, puis un abonnement est nécessaire pour entreposer d'avantage. Dropbox se démarque par sa popularité et par son interface intuitive, s'intégrant facilement dans le gestionnaire de fichiers. Bien que ce soit simple d'utilisation, Dropbox ne permet pas une grande flexibilité et réplicabilité dès qu'il y a un besoin plus important pour des données à gros volume ou plus sensible. Dropbox est ainsi très utile dans le cadre de gestion de données collaborative relativement simple.
-
-Google Drive est très facile d'utilisation par son intégration au sein des outils Google. La plateforme, en générale, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. Google Drive offre 15 Go gratuits, et son utilisation est simple et intuitive. Cependant, son utilisation en local n'est pas très adaptée. Il nécessite souvent une interaction via son interface web pour le téléchargement ou le partage de fichiers. Si vous codez des analyses statistiques et manipulez des jeux de données en R, par exemple, Google Drive est peu adapté pour la sauvegarde de jeux de données directement dans votre arborescence.
-
-Microsoft OneDrive Fait partie de la suite Microsoft 365. C'est donc un choix judicieux pour les utilisateurs des outils Microsoft, pour leur compatibilité. Comme Dropbox, OneDrive permet la sauvegarde de fichiers en local, ce qui facilité son utilisation pour l'entreposage de fichiers manipulés avec un language de programmation. OneDrive est généralement perçu comme étant moins simple et rapide pour sa synchronisation que Dropbox, mais sa valeur de centralisation est indégnable si la suite Microsoft est employée.
-
-Nextcloud est une plateforme de stockage libre d'accès qui se distingue par sa flexibilité et son contrôle personnalisé. Contrairement à des services comme Dropbox, Nextcloud permet aux utilisateurs d’héberger leurs fichiers eux-mêmes, ce qui garantit une meilleure sécurité et confidentialité des données. C’est idéal pour les chercheurs qui veulent un accès libre et plus de contrôle sur leurs données. Cependant, Nextcloud nécessite plus de compétences techniques pour l'installation et la gestion, ce qui peut être un obstacle pour ceux qui recherchent une solution "clé en main". -->
-
-
-<!-- ### Entreposage de données sensibles
-
-Lorsqu'il s'agit d'entreposer des données sensibles, tels que des données de sondage comportant des informations personnelles identifiables, la sécurité et la confidentialité sont essentielles. Comme abordé précédemment, GitHub n'est pas adapté à l'entreposage de telles données en raison de ses caractéristiques publiques et de son orientation vers le code source ouvert. Une solution courante est d'utiliser des services de cloud sécurisés, tels qu'AWS, qui offrent des mesures de sécurité robustes pour protéger vos données sensibles.
-
-AWS regroupe un ensemble de services *cloud*  proposés par Amazon. Il offre une vaste gamme de services, allant de l'entreposage et de la gestion des données à la computation et à l'analyse avancée. AWS est conçu pour offrir une infrastructure hautement évolutive et sécurisée, ce qui en fait un choix attrayant pour les chercheurs qui gèrent des données sensibles. L'outil présente de multiples avantages:
-
-1.  *Sécurité robuste* : AWS met l'accent sur la sécurité, avec des fonctionnalités telles que le chiffrement des données en transit et au repos, la gestion des accès basée sur les rôles et la conformité à des normes de sécurité strictes.
-
-2.  *Scalabilité* : AWS permet de faire évoluer vos ressources en fonction des besoins, garantissant des performances optimales même lorsque vos projets de recherche croissent en taille et en complexité.
-
-3.  *Flexibilité* : AWS propose une variété de services adaptés à différentes utilisations, allant de l'entreposage de données au calcul intensif pour l'analyse avancée.
-
-4.  *Collaboration simplifiée* : Bien que le coût d'entrée soit généralement bas, la possibilité de partager des ressources avec des collègues et de travailler en équipe rend AWS adapté à la collaboration.
-
-AWS n'est pas le seul service cloud disponible. Microsoft Azure et Google Cloud Platform (GCP) sont des concurrents majeurs offrant des fonctionnalités similaires. Lorsque vous choisissez un fournisseur, prenez en compte les coûts, la convivialité et les fonctionnalités offertes. Le coût d'utilisation d'AWS peut varier en fonction des services utilisés, de la quantité de données entreposées et de la capacité de calcul requise. Lorsque vous travaillez seul, le coût peut sembler élevé par rapport à l'utilisation de solutions gratuites telles que Dropbox. Cependant, en équipe, la répartition des coûts peut rendre AWS plus abordable. -->
-
-
-<!-- L'entreposage des données est une étape cruciale dans la recherche en sciences sociales numériques. Choisissez des outils adaptés à la sensibilité des données, privilégiez des services sécurisés comme AWS pour les données sensibles, et utilisez Dropbox pour la collaboration et l'entreposage de fichiers non sensibles. Une gestion efficace des versions, de la structure des dossiers et de la sécurité garantira l'intégrité de vos données et facilitera la collaboration tout au long de vos projets de recherche. -->
-<!--
-```{r}
-#| echo: false
-#| warning: false
-library(tidyverse)
-library(tinytable)
-
-# Second table
-tbl_resume_chap_Y <- tibble(
-    "Critères" = c('Accessibilité (Gratuit ou peu dispendieux)', 
-                 'Existence d\'une communauté d\'utilisateurs', 
-                 'Popularité dans le champ', 
-                 'Compatibilité avec d\'autres outils', 
-                 'Transparence et réplicabilité',
-                 'Adaptabilité et flexibilité'),
-    "Dropbox" = c('Limitée - Abonnement mensuel', 
-                'Oui', 
-                'Oui', 
-                'Oui', 
-                'Limitée', 
-                'Limitée'),
-    "Google Drive" = c('Oui', 
-                     'Oui', 
-                     'Oui', 
-                     'Avec les outils Google', 
-                     'Moyenne',
-                     'Oui'),
-    "OneDrive" = c('Limitée', 
-                 'Oui', 
-                 'Limitée', 
-                 'Avec les outils Microsoft', 
-                 'Moyenne',
-                 'Moyenne'),
-    "Nextcloud" = c('Oui - Si auto-hébergé', 
-                    'Oui', 
-                    'Limitée', 
-                    'Oui, avec configuration', 
-                    'Oui', 
-                    'Très flexible')
-)
-
-tt(tbl_resume_chap_Y, width = 0.75, caption = 'Résumé des principaux outils de gestion de données')
-```
--->
-## Manuel d'instruction : Git et GitHub pour votre projet de recherche
-
-Maintenant que vous comprenez pourquoi Git et GitHub peuvent être utiles pour votre recherche, passons à la pratique. Cette section vous guidera dans les étapes essentielles pour mettre en place Git pour un projet typique de recherche en sciences sociales.
-
-**Prérequis** : Vous devez d'abord installer Git sur votre ordinateur (téléchargeable depuis [git-scm.com](https://git-scm.com)) et créer un compte GitHub gratuit sur [github.com](https://github.com).
-
-**Étape 1** : Création d'un répertoire local et initialisation de Git
-
-Ouvrez votre terminal (sur macOS et Linux) ou l'application Git Bash (sur Windows) et naviguez vers le dossier où vous souhaitez enregistrer votre projet.
+Il faut ouvrir le terminal (sur *macOS* et *Linux*) ou l'application `Git Bash` (sur *Windows*) et naviguer vers le dossier où l'on souhaite enregistrer le projet.
 
 ```bash
 cd chemin/vers/votre/dossier
 ```
 
-Créez un nouveau répertoire pour votre projet et accédez-y.
+On crée un nouveau répertoire pour le projet et on y accède.
 
 ```bash
 mkdir mon_projet
 cd mon_projet
 ```
 
-Initialisez Git dans ce répertoire.
+On initialise `Git` dans ce répertoire.
 
 ```bash
 git init
 ```
 
-**Étape 2** : Structurer votre projet
+**Étape 2** : Structurer le projet
 
-Une bonne organisation facilite la gestion à long terme. Créez une structure logique :
+Une bonne organisation facilite la gestion à long terme. On crée une structure logique :
 
 ```bash
 mkdir redaction
@@ -391,25 +291,25 @@ mkdir resultats
 mkdir documentation
 ```
 
-Votre projet ressemblera maintenant à ceci :
+Le projet ressemblera maintenant à ceci :
 
 ```
 mon_projet/
-├── redaction/          # Chapitres de votre mémoire
-├── code/               # Scripts d'analyse (R, Python)
+├── redaction/          # Chapitres du mémoire
+├── code/               # Scripts d'analyse ($\textsf{R}$, `Python`)
 ├── data/               # Données NON SENSIBLES uniquement
 ├── resultats/          # Graphiques et tableaux générés
 └── documentation/      # README, notes méthodologiques
 ```
 
-**Important** : Le dossier `data/` ne devrait contenir que des données **non sensibles**. Les données sensibles restent dans Nextcloud ou OneDrive institutionnel.
+**Important** : Le dossier `data/` ne devrait contenir que des données **non sensibles**. Les données sensibles restent dans *Nextcloud* ou *OneDrive* institutionnel.
 
 **Étape 3** : Le fichier .gitignore
 
-Créez un fichier `.gitignore` à la racine de votre projet pour indiquer à Git quels fichiers ne doivent **jamais** être ajoutés au dépôt :
+On crée un fichier `.gitignore` à la racine du projet pour indiquer à `Git` quels fichiers ne doivent **jamais** être ajoutés au dépôt :
 
 ```
-# Ne JAMAIS pousser sur GitHub:
+# Ne JAMAIS pousser sur GitHub :
 data/entrevues/              # Données sensibles
 data/sondages_bruts/         # Données avec infos personnelles
 
@@ -420,57 +320,57 @@ data/sondages_bruts/         # Données avec infos personnelles
 ~$*.docx
 ```
 
-**Étape 4** : Ajout de votre code et de vos fichiers
+**Étape 4** : Ajout du code et des fichiers
 
-Ajoutez vos fichiers R contenant le code pour vos analyses dans le répertoire. Par exemple, vous pouvez avoir des fichiers `analyse_medias.R` et `analyse_sondages.R`.
+On ajoute les fichiers $\textsf{R}$ contenant le code pour les analyses dans le répertoire. Par exemple, on peut avoir des fichiers `analyse_medias.R` et `analyse_sondages.R`.
 
-Utilisez la commande `git status` pour vérifier l'état de vos fichiers.
+On utilise la commande `git status` pour vérifier l'état des fichiers.
 
 ```bash
 git status
 ```
 
-**Étape 5** : Ajout, validation et dépôt de vos modifications
+**Étape 5** : Ajout, validation et dépôt des modifications
 
-Ajoutez vos fichiers pour qu'ils soient prêts à être validés.
+On ajoute les fichiers pour qu'ils soient prêts à être validés.
 
 ```bash
 git add -A
 ```
 
-Validez vos modifications avec un message descriptif.
+On valide les modifications avec un message descriptif.
 
 ```bash
 git commit -m "Structure initiale du projet avec code d'analyse"
 ```
 
-**Étape 6** : Création du répertoire sur GitHub et du lien avec votre répertoire local
+**Étape 6** : Création du répertoire sur *GitHub* et du lien avec le répertoire local
 
-Allez sur GitHub et connectez-vous à votre compte. Créez un nouveau répertoire (privé ou public selon vos besoins) avec le nom de votre projet.
+On va sur *GitHub* et on se connecte à son compte. On crée un nouveau répertoire (privé ou public selon les besoins) avec le nom du projet.
 
-De retour dans votre terminal, ajoutez le lien GitHub à votre répertoire local.
+De retour dans le terminal, on ajoute le lien *GitHub* au répertoire local.
 
 ```bash
 git remote add origin https://github.com/votre-utilisateur/mon_projet.git
 ```
 
-**Étape 7** : Pousser votre travail sur GitHub
+**Étape 7** : Pousser le travail sur *GitHub*
 
-Envoyez vos dépôts locaux vers GitHub.
+On envoie les dépôts locaux vers *GitHub*.
 
 ```bash
 git push -u origin main
 ```
 
-**Étape 8** : Collaboration avec vos collègues
+**Étape 8** : Collaboration avec les collègues
 
-Si vos collègues souhaitent contribuer à votre projet, ils peuvent dupliquer (en langage Git, on utilise le terme *Fork*) votre répertoire sur GitHub, ce qui créera une copie dans leur propre compte.
+Si des collègues souhaitent contribuer au projet, ils peuvent dupliquer (en langage `Git`, on utilise le terme *fork*) le répertoire sur *GitHub*, ce qui créera une copie dans leur propre compte.
 
-Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une *demande de pull request* pour vous demander la permission de fusionner leurs modifications dans votre répertoire principal.
+Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une demande de fusion (*pull request*) pour demander la permission de fusionner leurs modifications dans le répertoire principal.
 
-**Étape 9** : Acceptation des modifications de vos collègues
+**Étape 9** : Acceptation des modifications des collègues
 
-Lorsque vos collègues ont soumis des modifications et vous ont demandé de les fusionner, vous pouvez mettre à jour votre répertoire local avec leurs changements.
+Lorsque les collègues ont soumis des modifications et demandé de les fusionner, on peut mettre à jour le répertoire local avec leurs changements.
 
 ```bash
 git pull origin main
@@ -478,28 +378,55 @@ git pull origin main
 
 **Étape 10** : Répéter le processus
 
-Répétez les étapes au fur et à mesure que vous développez votre projet, ajoutez du code, effectuez des analyses et collaborez avec vos collègues. Assurez-vous de valider et de pousser régulièrement vos modifications pour maintenir le répertoire à jour. Faites des commits fréquents avec des messages clairs plutôt qu'un gros commit en fin de semaine.
+On répète les étapes au fur et à mesure que le projet se développe, que du code s'ajoute, que des analyses s'effectuent et que la collaboration avec les collègues se poursuit. Il convient de valider et de pousser régulièrement les modifications pour maintenir le répertoire à jour. Des validations (*commits*) fréquentes avec des messages clairs sont préférables à une grosse validation en fin de semaine.
 
-### Alternative : GitHub Desktop et intégrations
+### Alternative : *GitHub Desktop* et intégrations
 
-Alors que le terminal reste une approche fondamentale pour maîtriser Git et GitHub, il existe des outils conviviaux tels que **GitHub Desktop** qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme RStudio et VSCode ont également des interfaces pour faciliter ces opérations.
+Alors que le terminal reste une approche fondamentale pour maîtriser `Git` et *GitHub*, il existe des outils conviviaux tels que **`GitHub Desktop`** qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme `RStudio` et `VS Code` ont également des interfaces pour faciliter ces opérations.
 
 ```{r, out.width="80%"}
 #| label: fig-github
 #| echo: false
-#| fig-cap: "GitHub Desktop facilite l'utilisation conjointe de Git et de GitHub."
+#| fig-cap: "`GitHub Desktop` facilite l'utilisation conjointe de `Git` et de *GitHub*."
 knitr::include_graphics("images/chapitre_4_github_desktop.png", dpi = 600)
 ```
 
-GitHub Desktop fournit une vue claire de vos répertoires, de vos modifications, de vos branches et de vos demandes de fusion (*pull requests*). Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
+`GitHub Desktop` fournit une vue claire des répertoires, des modifications, des branches et des demandes de fusion (*pull requests*). Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L'application simplifie également la résolution des conflits lors de la fusion des branches.
 
-Toutefois, en utilisant GitHub Desktop, il est possible de perdre la compréhension des commandes Git en ligne de commande, ce qui pourrait devenir un inconvénient si vous devez travailler dans un environnement sans interface visuelle. De plus, GitHub Desktop est spécifiquement conçu pour interagir avec GitHub. Si vous devez travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
+Toutefois, en utilisant `GitHub Desktop`, il est possible de perdre la compréhension des commandes `Git` en ligne de commande, ce qui pourrait devenir un inconvénient dans un environnement sans interface visuelle. De plus, `GitHub Desktop` est spécifiquement conçu pour interagir avec *GitHub*. Pour ceux qui doivent travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
 
-La décision entre l'utilisation du terminal et de GitHub Desktop dépend de vos préférences et de vos besoins. Pour les chercheurs qui débutent, GitHub Desktop offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes Git en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
+La décision entre l'utilisation du terminal et de `GitHub Desktop` dépend des préférences et des besoins de chacun. Pour les chercheurs qui débutent, `GitHub Desktop` offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes `Git` en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
 
 ## En terminant
 
+La gestion des données de recherche est devenue une compétence essentielle pour tout chercheur en sciences sociales numériques. Ce chapitre a présenté les différentes dimensions de cette gestion : la planification en amont, la gestion des données actives (sensibles ou non) et l'archivage des données finales selon les principes de la science ouverte.
 
+Le choix des outils dépend des besoins spécifiques, mais quelques principes fondamentaux s'appliquent universellement : ne jamais conserver ses données uniquement en local, distinguer clairement les données sensibles des données non sensibles, documenter rigoureusement ses fichiers, et planifier l'archivage dès le début du projet.
 
+`Git` et *GitHub*, bien qu'initialement conçus pour les développeurs, offrent aux chercheurs un système de gestion de versions puissant qui favorise la traçabilité, la collaboration et la reproductibilité. L'investissement initial dans l'apprentissage de ces outils est largement compensé par les bénéfices à long terme pour la qualité et la transparence de la recherche.
 
+<!-- ### Où entreposer des données massives -->
 
+<!-- Les sections précédentes ont couvert les besoins typiques de la plupart des projets de recherche aux cycles supérieurs : quelques gigaoctets de données, des fichiers de taille raisonnable, des outils standards. Mais certains projets génèrent des volumes de données qui dépassent largement ces limites. Ceux qui travaillent avec des images satellite, du *web scraping* à grande échelle, des enregistrements vidéo, ou des simulations computationnelles ont de fortes chances d'utiliser des **données massives**. -->
+
+<!-- Qu'est-ce qu'une donnée massive en recherche ? Il n'y a pas de définition universelle, mais voici quelques indicateurs pratiques. Un **volume** important de données ; une **vélocité**, c'est-à-dire une collecte continue ou très fréquente de données ; de la **variété**, présente dans des données hétérogènes nécessitant un traitement comme des images ; ou une **complexité computationnelle** lorsqu'il y a un besoin de traitements avec plusieurs jours de calcul. Si un projet correspond à une ou plusieurs de ces caractéristiques, les solutions présentées plus tôt ne conviendront pas. Des infrastructures spécialisées deviennent nécessaires. -->
+
+<!-- ### Le cycle de vie des données massives -->
+
+<!-- Les données massives nécessitent une approche structurée qui couvre quatre phases distinctes : -->
+
+<!-- **Collecte** : Le cycle de vie d'une donnée commence au moment où elle est créée ou collectée. Pour des données massives, la collecte est souvent automatisée (scripts de *scraping*, API). Avant de commencer, il convient de déterminer clairement la valeur et la pertinence des données. Il faut établir des règles pour collecter les données d'une manière qui préserve leur utilité : documenter quand, où, comment et pourquoi elles ont été générées. Il faut planifier l'infrastructure dès le début : a-t-on besoin d'un serveur qui tourne en continu ? D'un espace de stockage temporaire pour les données brutes ? -->
+
+<!-- **Entreposage** : Les données doivent être entreposées dans un environnement stable et adapté à leurs origines et à leurs applications potentielles. Pour des volumes importants, des espaces de grande capacité sont nécessaires, souvent avec des systèmes de fichiers distribués. Toute donnée digne d'être collectée mérite d'être protégée, ce qui suppose des sauvegardes régulières et une infrastructure fiable. Les données sensibles doivent être chiffrées pour respecter les exigences éthiques et réglementaires. C'est à cette étape que les infrastructures de calcul haute performance (comme Calcul Québec) deviennent essentielles, car elles offrent non seulement de l'entreposage massif, mais aussi les ressources computationnelles pour traiter et transformer les données brutes. -->
+
+<!-- **Partage** : Les données n'ont de valeur que si elles peuvent être mises à la disposition des utilisateurs autorisés. Pour des projets collaboratifs, il faut établir clairement qui peut accéder aux données, quand et comment. Les utilisateurs doivent pouvoir localiser, accéder, modifier et analyser les données selon les besoins. Il convient de documenter les conventions de nomenclature, les structures de fichiers et les transformations appliquées. Cette documentation est cruciale pour que les collaborateurs puissent comprendre et utiliser les données efficacement. -->
+
+<!-- **Archivage** : À la fin du projet, les données cessent d'être utilisées quotidiennement, mais elles conservent une valeur à long terme. Pour des données massives, l'archivage complet n'est pas toujours faisable ou nécessaire dans un dépôt comme *Borealis*. Il faut décider quelles données conserver : les données brutes irremplaçables, un échantillon représentatif, les données agrégées, ou simplement les scripts et métadonnées permettant de régénérer les résultats. Les données archivées doivent rester organisées et protégées, même si leur accessibilité immédiate perd de son importance. -->
+
+<!-- ### Solutions pour données massives -->
+
+<!-- Comme mentionné dans la section précédente, l'Alliance de recherche numérique du Canada opère des centres de calcul haute performance à travers le pays. Pour des données massives, ces infrastructures deviennent non seulement recommandées, mais essentielles. Au-delà du simple stockage sécurisé, elles offrent l'accès à des grappes de serveurs pour traiter les données, ce qui est crucial lorsque les analyses nécessitent plusieurs heures ou jours de calcul. Pour des projets nécessitant des ressources substantielles (plusieurs téraoctets de stockage ou des milliers d'heures de calcul), il faut soumettre une demande d'allocation annuelle avec justification scientifique lors des concours d'allocation. -->
+
+<!-- Certaines institutions offrent des crédits pour des services infonuagiques académiques (*AWS Educate*, *Google Cloud for Education*, *Microsoft Azure for Research*). Ces services peuvent être utiles pour des projets nécessitant une grande flexibilité ou des outils spécifiques non disponibles sur Calcul Québec. Toutefois, les crédits gratuits sont généralement limités dans le temps et en montant. Comme mentionné plus tôt, certaines facultés ou groupes de recherche disposent de leurs propres serveurs. Pour ceux qui font partie d'un laboratoire avec de telles ressources, c'est souvent la solution la plus simple pour démarrer. -->
+
+<!-- En résumé, les données massives nécessitent une planification et des infrastructures spécialisées. **Calcul Québec et l'Alliance** sont les meilleurs alliés pour des projets académiques d'envergure. La courbe d'apprentissage ne doit pas être sous-estimée, mais ne doit pas non plus décourager : les ressources et le soutien sont disponibles. Il convient de commencer tôt, de documenter rigoureusement, et d'automatiser autant que possible. -->
