@@ -97,7 +97,12 @@ Le respect de ces quatre valeurs permet ainsi l'application de la dernière: un 
 
 ### L'approche Scrum adaptée au contexte académique
 
-Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur de plusieurs équipes de recherche. Il est à noter ici que l'Agilité se divise en de multiples méthodologies, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointe des approches Scrum et Kanban, particulièrement adaptée et utile au milieu académique, et qui reposent sur les caractéristiques suivantes:
+Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur de plusieurs équipes de recherche. Il est à noter ici que l'Agilité se divise en de multiples méthodologies, telles que Scrum, Kanban, XP, Crystal, Lean, etc. 
+
+Par exemple, la méthodologie Lean - fondée par Kiichiro Toyoda, fondateur de Toyota - est pertinente car elle aide à prévenir les catastrophes liées à la gestion de projet. Plus exactement, elle facilite le processus continu d'ajustement progressif qui va accélérer davantage la livraison de produits en optimisant les ressources et les efforts et en rendant le travail plus efficace. Les deux piliers fondamentaux de la méthodologie Lean sont l'amélioration continue et le respect des personnes. Néanmoins, une difficulté potentielle de cette méthodologie c'est la négligence des métriques qui sont pourtant utiles pour mesurer la réussite des projets et pour améliorer le travail de l'équipe. (Atlassian website)
+Lean s'intègre bien avec l'Agilité car les deux sont complémentaires. Si Lean se concentre principalement sur l'élimination du gaspillage et l'optimisation des processus de production afin de maximiser l'efficacité et la valeur ajoutée, lorsqu'on l'intègre avec la méthode Agile, l'adaptabilité et la réactivité sont pris en compte. Le Scaled Agile Framework est une illustration parfaite de cette synergie entre méthode Lean et méthode Agile. La combinaison des deux permet une structure à grande échelle dans les grandes entreprises. (Oliveira 2024)
+
+Toutefois, ce chapitre proposera l'application conjointe des approches Scrum et Kanban, particulièrement adaptée et utile au milieu académique, et qui reposent sur les caractéristiques suivantes:
 
 1.  Une cadence de travail soutenue grâce à un cycle de **Sprints**;
 2.  Un suivi régulier des objectifs grâce à de courts **Scrums**;
