@@ -301,7 +301,13 @@ Une section **En terminant** conclut chaque chapitre.
 **Tiret moyen** `–` (ou `--` en Markdown) : pour les incises
 - "Le logiciel libre --- et le code source ouvert --- favorise la collaboration"
 
-**Tiret long** `—` : rarement utilisé en français
+**Tiret long** `—` : **à éviter**. Privilégier les parenthèses pour les incises.
+
+❌ **À éviter :**
+- "Des outils — comme Elicit — facilitent la découverte"
+
+✅ **Préférer :**
+- "Des outils (comme Elicit) facilitent la découverte"
 
 ### Apostrophes
 
@@ -557,6 +563,7 @@ Lors de la révision d'un chapitre, vérifier :
 - [ ] Espaces insécables avant : ; ! ?
 - [ ] Apostrophes courbes ' utilisées (pas ')
 - [ ] Points de suspension : trois points sans espace avant (...)
+- [ ] Pas de tiret long `—` : utiliser des parenthèses pour les incises
 
 ### Formatage et style
 - [ ] Pas de point médian, parenthèses, ou barres obliques pour l'inclusivité
