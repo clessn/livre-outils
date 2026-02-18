@@ -1,0 +1,487 @@
+---
+title: "EIOM 2025"
+subtitle: "Systématiser sa revue de littérature"
+author:  
+  - Adrien Cloutier, doctorant en science politique à l'Université Laval
+fontsize: 8pt
+mainfont: Helvetica Neue
+
+date: "25 août 2025"
+output: 
+  beamer_presentation:
+    template: Theme_Pres_Clessn_CCSA.tex
+    
+    
+header-includes: 
+  - \pgfdeclareimage[height=1.3cm]{eiom}{images/Logonoir.png}
+  - \pgfdeclareimage[height=1cm]{logoclessn}{images/imageCLESSN.png}
+  - \logo{\pgfuseimage{eiom}\hspace*{0.2cm}~\pgfuseimage{logoclessn}\hspace*{0.2cm}~}
+ 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Une présentation « systématique »
+
+```{r echo=FALSE, out.width="100%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/antidote.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="80%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/top_uni.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="80%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/harvard.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="100%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/grimmer.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="100%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/recueil.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="90%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/nadjim.png")
+```
+
+# Mon premier contact avec le « systématique »
+
+```{r echo=FALSE, out.width="60%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/adrien.png")
+```
+
+
+#
+
+\LARGE\centering
+\textbf{ORDRE DU JOUR}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/summary.png")
+```
+
+# Ordre du jour
+
+1. Pourquoi systématiser sa revue de littérature
+2. Les différents types de « synthèses de la connaissance »
+3. Le « scoping » et ses [6] étapes
+4. Les ressources à votre portée
+
+# Qui suis-je?
+
+- Doctorant en science politique (directeur: Yannick Dufresne)
+- Membre du Centre d'analyses des politiques publiques (CAPP)
+- Membre de la Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)
+- Membre du Groupe de recherche en communication politique (GRCP)
+- Membre du Centre d'étude sur la citoyenneté démocratique (CÉCD)
+- Cocréateur de l'École interdisciplinaire outils et méthodes (EIOM)
+- Ancien coordonnateur du Réseau francophone international en conseils scientifiques (RFICS)
+- Formation comme scrum master (méthodes Agiles: https://www.scrum.org/)
+- Créateur du cours Outils numériques de recherche (POL-6068)
+  - Co-éditeur du livre Outils numériques de recherche
+  
+# Basé sur le cycle de la recherche
+
+\begin{center}
+\includegraphics[width=0.35\textwidth]{images/science.png}
+\end{center}
+
+# Basé sur le cycle de la recherche
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/science_outils.png}
+\end{center}
+
+# ICPSR (Michigan University)
+
+![](images/icpsr.png){ width=100% height=100%}
+
+#
+
+\LARGE\centering
+\textbf{Quelques synthèses... publiées!}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/future.png")
+```
+
+# Quelques synthèses... publiées!
+
+```{r echo=FALSE, out.width="60%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/revue.png")
+```
+
+# Quelques synthèses... publiées!
+
+```{r echo=FALSE, out.width="60%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/scoping.png")
+```
+
+# 
+
+\LARGE\centering
+\textbf{Pourquoi systématiser sa revue de littérature}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/cible.png")
+```
+
+# Pourquoi systématiser sa revue de littérature
+
+1. Pour brosser le portrait précis d'un champ (scoping review)
+2. Pour répondre à une question de recherche (revue systématique)
+3. Pour publier et contribuer à la littérature
+4. Pour ne pas réinventer la roue
+5. Pour ne pas sélectionner « au hasard »
+
+
+# Pourquoi systématiser sa revue de littérature
+
+```{r echo=FALSE, out.width="100%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/synthese-methodologies_arbre-decision-schema.pdf")
+```
+
+# 
+
+\LARGE\centering
+\textbf{Pourquoi NE PAS systématiser sa revue de littérature}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/cible.png")
+```
+
+# Pourquoi NE PAS systématiser sa revue de littérature
+
+1. Par manque de temps
+2. Par manque de ressources
+3. Parce qu'on souhaite un simple résumé sur une question
+
+# Pourquoi NE PAS systématiser sa revue de littérature
+
+1. Par manque de temps
+2. Par manque de ressources
+3. Parce qu'on souhaite un simple résumé sur une question
+
+\LARGE\centering
+\textbf{D'autres arguments?!}
+\smallbreak
+\smallbreak
+
+# En résumé
+
+```{r echo=FALSE, out.width="70%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/vin_bon.png")
+```
+
+# En résumé
+
+```{r echo=FALSE, out.width="80%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/vin_pasbon.png")
+```
+
+# En résumé
+
+```{r echo=FALSE, out.width="80%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/vin_meta.png")
+```
+
+# En résumé
+
+« L'analyse groupée de toutes les [45] études identifiées suggère une association entre la consommation d'alcool et la réduction du risque de coronaropathie. Cependant, cette association n'a pas été observée dans les études portant sur les personnes âgées de 55 ans ou moins au départ, dans les études de meilleure qualité ou dans les études qui contrôlaient selon la santé cardiaque. L'apparition d'une cardio-protection chez les personnes âgées peut refléter des biais de sélection systématiques qui s'accumulent au cours de la vie. » (Zhao, Stockwell et al., 2017 )
+
+#
+
+\LARGE\centering
+\textbf{Les différents types de « synthèses de la connaissance »}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/sample.png")
+```
+
+# Les différents types de « synthèses de la connaissance »
+
+```{r echo=FALSE, out.width="75%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/synthese-methodologies_tableau.pdf")
+```
+
+# Les différents types de « synthèses de la connaissance »
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/types_reviews.png")
+```
+
+# Les différents types de « synthèses de la connaissance »
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/types_reviews2.png")
+```
+
+# Les différents types de « synthèses de la connaissance »
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/types_reviews3.png")
+```
+
+
+#
+
+\LARGE\centering
+\textbf{Le scoping et ses [6] étapes}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/scale.png")
+```
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/dufour.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/scoping_definition.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="55%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/protocole1.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="55%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/protocole2.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="55%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/protocole3.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="55%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/protocole4.png")
+```
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+2. Repérer les études portant sur le sujet
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="65%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/emma.png")
+```
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+2. Repérer les études portant sur le sujet
+3. Sélectionner les références
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence1.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence2.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence3.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="70%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/prisma_poche.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="70%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/prisma.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="70%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/prisma_new.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/snowballing.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence3_5.png")
+```
+
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+2. Repérer les études portant sur le sujet
+3. Sélectionner les références
+4. Extraire les données
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence4.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence5.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence6.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/covidence7.png")
+```
+
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+2. Repérer les études portant sur le sujet
+3. Sélectionner les références
+4. Extraire les données
+5. Analyser les données
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/figure1.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/figure2.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/figure3.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/figure4.png")
+```
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/figure5.png")
+```
+
+# Le scoping et ses [6] étapes
+
+1. Planifier le projet 
+2. Repérer les études portant sur le sujet
+3. Sélectionner les références
+4. Extraire les données
+5. Analyser les données
+6. Finaliser l'étude de la portée
+
+# Le scoping et ses [6] étapes
+
+```{r echo=FALSE, out.width="85%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/finaliser.png")
+```
+
+
+#
+
+\LARGE\centering
+\textbf{Ressources}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/metho.png")
+```
+
+# Ressources
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/ressourcesJBI.png")
+```
+
+# Ressources
+
+```{r echo=FALSE, out.width="95%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/biblio.png")
+```
+
+#
+
+\LARGE\centering
+\textbf{Merci.}
+\smallbreak
+\smallbreak
+
+```{r echo=FALSE, out.width="25%", fig.align="center", fig.show="hold"}
+knitr::include_graphics("images/imageCLESSN.png")
+```
+
