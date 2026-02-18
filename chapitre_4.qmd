@@ -53,6 +53,8 @@ Au-delà de la préinscription des hypothèses, plusieurs organismes subventionn
 
 ### Collecte et analyse
 
+Avant de choisir où entreposer ses données, un principe s'impose : **ne jamais conserver de fichiers uniquement sur son ordinateur local**. Un disque dur peut tomber en panne, un ordinateur peut être volé ou perdu. Tout fichier qui n'existe qu'en local est un fichier à risque. Dès le début d'un projet, chaque document, chaque script, chaque donnée devrait être synchronisé sur un service infonuagique ou versionné sur *GitHub* — idéalement les deux, selon la nature des fichiers.
+
 Le chercheur collecte, manipule et analyse des données. Ces données peuvent prendre plusieurs formes : transcriptions d'entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, de textes, d'images, de tableaux, etc. Les données de recherche peuvent poser des défis spécifiques en matière de sécurité, d'éthique et de collaboration.
 
 La question centrale ici n'est pas seulement « où entreposer ? », mais surtout **« où peut-on entreposer selon la nature des données ? »** Car toutes les solutions ne se valent pas, et certaines sont inappropriées selon le type de données manipulées.
@@ -91,6 +93,24 @@ Si les données ne sont pas sensibles, le chercheur dispose de beaucoup plus de 
 
 *Google Drive* est facile d'utilisation par son intégration au sein des outils *Google*. La plateforme, en général, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. *Google Drive* offre 15 Go gratuits, et son utilisation est simple et intuitive. Pour des projets impliquant du code et des données non sensibles de taille modérée, *GitHub* et *GitLab* sont d'excellentes options. Nous y reviendrons en détail plus loin, mais sachez qu'ils permettent non seulement d'entreposer les fichiers, mais aussi de suivre rigoureusement leur évolution et de collaborer efficacement grâce au versionnement et aux demandes de fusion (*pull requests*). Ils sont gratuits, tant pour les projets publics que pour les dépôts privés (avec certaines limitations), et sont très utilisés en recherche. Ils nécessitent toutefois une courbe d'apprentissage et ne sont pas adaptés pour des fichiers très volumineux.
 
+#### Organiser son cloud comme on organise son bureau
+
+Un cloud mal structuré n'est guère mieux qu'un bureau encombré. Pour que les chemins de fichiers restent stables et que la collaboration soit fluide, il vaut la peine de réfléchir dès le départ à une arborescence logique et cohérente. Une structure simple pourrait ressembler à ceci :
+
+```
+Cloud (Dropbox / OneDrive)
+├── Travail/
+│   ├── Projet_these/
+│   ├── Publications/
+│   └── Enseignement/
+├── Etudes/
+│   ├── Cours_automne_2024/
+│   └── Notes/
+└── Personnel/
+```
+
+Cette organisation présente deux avantages majeurs. D'abord, les chemins de fichiers dans les scripts d'analyse restent prévisibles et stables d'un collaborateur à l'autre. Ensuite, elle facilite la distinction entre ce qui appartient au cloud (données, documents) et ce qui appartient à un dépôt `Git` (code, scripts) — ces deux espaces devant rester séparés.
+
 ### Archivage et partage
 
 Les deux sections précédentes concernaient les données **actives** : celles que le chercheur utilise quotidiennement pendant sa recherche. Mais arrive un moment où le projet se termine, le mémoire est déposé, et le chercheur s'apprête peut-être à publier un article. C'est à ce stade que les données deviennent **finales** et qu'il faut penser à leur archivage et à leur partage potentiel.
@@ -113,7 +133,7 @@ Plusieurs raisons justifient le dépôt de données finales :
 
 **Reproductibilité** : La science ouverte repose sur la capacité de reproduire et de vérifier les résultats. En rendant les données accessibles (avec la documentation appropriée), le chercheur permet à d'autres de reproduire ses analyses et de valider ses conclusions.
 
-**Respect du principe FAIR** : Les données déposées dans un dépôt structuré deviennent facilement **trouvables** (avec des métadonnées), **accessibles** (via un identifiant permanent), **interopérables** (avec des formats standards), et **réutilisables** (avec une licence claire). Ce sont les quatre piliers du principe FAIR qui guide la gestion moderne des données de recherche.
+**Respect du principe FAIR** : Les données déposées dans un dépôt structuré deviennent facilement **trouvables** (avec des métadonnées), **accessibles** (via un identifiant permanent), **interopérables** (avec des formats standards), et **réutilisables** (avec une licence claire). Ce sont les quatre piliers du principe FAIR qui guide la gestion moderne des données de recherche^[https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/gestion-information/orientation-evaluation-etat-preparation-gestion-donnees-selon-principes-donnees-faciles-trouver-accessibles-interoperables-reutilisables.html].
 
 #### Borealis : le dépôt Dataverse canadien
 
@@ -129,8 +149,6 @@ Plusieurs autres dépôts multidisciplinaires sont disponibles :
 
 *Open Science Framework* (*OSF*) : *OSF* est une plateforme complète pour la recherche ouverte. Au-delà du simple dépôt de données, *OSF* permet de gérer l'ensemble d'un projet de recherche : pré-enregistrement, collaboration, versionnement, liens avec d'autres dépôts. C'est une solution intéressante pour ceux qui adoptent une approche de science ouverte dès le début de leur projet.
 
-*Figshare* : Similaire à *Zenodo*, *Figshare* offre un dépôt gratuit pour des fichiers de taille modérée, avec attribution de DOI et intégration avec des outils de recherche. Il est particulièrement utilisé pour déposer des figures, des tableaux supplémentaires, ou des jeux de données complémentaires à une publication.
-
 Lors du dépôt de données, il faut également spécifier sous quelle **licence** elles sont partagées. La licence définit ce que les autres chercheurs peuvent faire avec ces données : les télécharger, les réutiliser, les modifier, les republier, etc. Les licences Creative Commons (CC) sont les plus courantes pour les données de recherche.
 
 Il n'est pas nécessaire de préserver toutes les données collectées pendant un projet. Les données à préserver devraient être **réutilisables** (par soi-même ou d'autres), **compréhensibles** (avec une documentation adéquate), et avoir une **certaine valeur** (complexes, coûteuses à obtenir, ou impossibles à récolter à nouveau). Certaines données peuvent être détruites à la fin du projet : les notes préliminaires, les premières versions de documents, ou du matériel facile à recueillir à nouveau. Les données de recherche qui ne mèneront pas à une publication et qui ont servi pour l'enseignement ou un travail académique n'ont généralement pas besoin d'être conservées après l'obtention du diplôme, sauf si elles ont une valeur pour des projets futurs.
@@ -145,7 +163,7 @@ Dans les sections précédentes, nous avons exploré différentes solutions pour
 
 *GitHub*, lancé en 2008, est né pour répondre aux besoins de collaboration croissants dans le monde du développement du logiciel libre. Avant *GitHub*, les développeurs pouvaient utiliser `Git` en local pour gérer les versions, mais il manquait un espace centralisé pour partager le code et coordonner les efforts. *GitHub* a donc apporté cette solution en intégrant `Git` à une plateforme web, où les développeurs pouvaient héberger leurs dépôts, collaborer, et suivre le développement en ligne. Ce qui distingue *GitHub*, c'est son aspect social : les fonctionnalités comme les demandes de fusion (*pull requests*), les gestionnaires de problèmes, et le suivi des modifications permettent aux équipes de travailler efficacement et d'interagir facilement autour du code. Cette combinaison d'outils a transformé *GitHub* en un espace incontournable pour les projets en libre accès, facilitant le partage des connaissances et la collaboration.
 
-Si `Git` a été créé pour gérer du code informatique, pourquoi un étudiant en sciences sociales devrait-il s'y intéresser ? Parce que les problèmes que `Git` résout ne sont pas spécifiques à la programmation. Ce sont des problèmes universels de **gestion de versions**, de **collaboration** et de **traçabilité**. Qui n'a jamais eu un dossier rempli de fichiers nommés `Memoire_v2_final.docx`, `Memoire_v3_VRAIMENT_final.docx`, `Memoire_final_corrige_2.docx` ? Ce problème n'existe pas avec `Git`. À chaque étape significative du travail, on crée une validation (*commit*), une « version enregistrée » avec un message descriptif. On n'a jamais besoin de créer des copies multiples de ses fichiers. On travaille toujours sur la version actuelle, et `Git` conserve automatiquement tout l'historique. `Git` et *GitHub* incarnent efficacement l'évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d'historique des modifications, ils permettent aux chercheurs d'embrasser une philosophie *Agile* en assurant un suivi minutieux des changements, facilitant ainsi l'itération rapide et la reproductibilité des projets.
+Si `Git` a été créé pour gérer du code informatique, pourquoi un étudiant en sciences sociales devrait-il s'y intéresser ? Parce que les problèmes que `Git` résout ne sont pas spécifiques à la programmation. Ce sont des problèmes universels de **gestion de versions**, de **collaboration** et de **traçabilité**. Qui n'a jamais eu un dossier rempli de fichiers nommés `Memoire_v2_final.docx`, `Memoire_v3_VRAIMENT_final.docx`, `Memoire_final_corrige_2.docx` ? Ce problème n'existe pas avec `Git`. À chaque étape significative du travail, on crée une validation (*commit*), une « version enregistrée » avec un message descriptif. On n'a jamais besoin de créer des copies multiples de ses fichiers. On travaille toujours sur la version actuelle, et `Git` conserve automatiquement tout l'historique. `Git` et *GitHub* incarnent efficacement l'évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d'historique des modifications, ils permettent aux chercheurs d'embrasser une philosophie *Agile* (présentée au @sec-chap3) en assurant un suivi minutieux des changements, facilitant ainsi l'itération rapide et la reproductibilité des projets.
 
 Le tableau suivant compare les principales solutions selon leur capacité à accompagner le chercheur à travers les trois phases du cycle de recherche.
 
@@ -240,23 +258,13 @@ C'est pourquoi `Git` est particulièrement populaire auprès des chercheurs qui 
 - Collaborent sur des projets techniques avec plusieurs contributeurs
 - Valorisent la traçabilité complète de leur travail
 
-En sciences sociales numériques, où le partage et la collaboration sont essentiels, `Git` et *GitHub* offrent plusieurs avantages majeurs.
-
-1.  *Intégration et adoption répandue* : `Git` est devenu un standard *de facto* dans l'industrie du développement logiciel. Sa popularité et son adoption répandue signifient que de nombreuses ressources d'apprentissage, des tutoriels et des forums de support sont disponibles en ligne, ce qui facilite l'utilisation de cet outil pour les chercheurs en sciences sociales débutants. *GitHub*, en tant que plateforme principale de gestion des versions, bénéficie également d'une grande base d'utilisateurs et d'une communauté active, ce qui encourage la collaboration et le partage des connaissances.
-
-2.  *Facilité de collaboration* : `Git` et *GitHub* sont conçus pour faciliter la collaboration entre les individus et les équipes. Les chercheurs en sciences sociales travaillent souvent ensemble sur des projets de recherche, et la capacité de suivre les modifications, de gérer les conflits et de fusionner les contributions devient essentielle. L'interface conviviale de *GitHub*, avec des fonctionnalités telles que les demandes de fusion et les commentaires en ligne, simplifie grandement la collaboration.
-
-3.  *Suivi des versions et recherche reproductible* : Les chercheurs en sciences sociales doivent s'assurer que leurs travaux sont reproductibles et vérifiables. `Git` permet de suivre les versions du code, ce qui signifie que les chercheurs peuvent retrouver facilement des versions antérieures pour reproduire des analyses spécifiques ou corriger des erreurs. Cette fonctionnalité est cruciale pour maintenir l'intégrité des résultats de recherche.
-
-4.  *Infrastructure et sécurité* : *GitHub* offre une infrastructure robuste pour l'entreposage sécurisé des dépôts `Git`. Les chercheurs peuvent être assurés que leurs travaux sont sauvegardés et protégés contre les pertes de données accidentelles. De plus, les contrôles d'accès et les autorisations granulaires de *GitHub* permettent aux chercheurs de contrôler qui peut accéder et contribuer à leurs projets.
-
-Bien qu'il existe plusieurs alternatives à l'utilisation combinée de `Git` et de *GitHub* sur le marché, ces deux plateformes liées continuent de dominer le domaine de la gestion de versions décentralisée. Parmi les alternatives notables, on peut citer *Mercurial*, *Bitbucket*, *GitLab* et *SourceForge*. Chacun de ces outils offre des fonctionnalités similaires à celles de `Git` et *GitHub*. *GitHub* n'est pas un logiciel libre, mais il est gratuit pour ses fonctionnalités essentielles et est abondamment utilisé pour y déposer des codes sources ouverts. *GitLab*, quant à lui, offre une version communautaire à code source ouvert (*GitLab Community Edition*) qui peut être hébergée sur ses propres serveurs, ce qui en fait une option intéressante pour les institutions soucieuses de leur souveraineté numérique. Cela permet aux chercheurs en sciences sociales numériques de partager leurs textes et leurs codes avec la communauté académique et de bénéficier des contributions d'autres chercheurs. Cela favorise un environnement de partage des connaissances et de collaboration fructueuse.
-
-En somme, `Git` et *GitHub* offrent aux chercheurs en sciences sociales numériques un moyen puissant de gérer leur code, de collaborer efficacement et de contribuer à la communauté académique grâce au logiciel libre. Bien que leur apprentissage puisse représenter un défi initial, les avantages qu'ils apportent en termes de suivi des versions, de collaboration et de partage des connaissances en font des outils essentiels dans l'arsenal de tout chercheur moderne.
+Bien qu'il existe des alternatives comme *GitLab* (déjà mentionné pour sa version à code source ouvert), `Git` et *GitHub* dominent largement le domaine grâce à leur communauté active et à leur adoption généralisée en milieu académique. Leur apprentissage représente un défi initial, mais les bénéfices en termes de traçabilité, de collaboration et de reproductibilité en font des outils essentiels pour le chercheur moderne.
 
 Maintenant que les avantages de `Git` et *GitHub* pour la recherche sont clairs, passons à la pratique. Cette section guide le chercheur dans les étapes essentielles pour mettre en place `Git` pour un projet typique de recherche en sciences sociales.
 
 **Prérequis** : Il faut d'abord installer `Git` sur son ordinateur (téléchargeable depuis [git-scm.com](https://git-scm.com)) et créer un compte *GitHub* gratuit sur [github.com](https://github.com).
+
+**Important** : Il ne faut pas initialiser un dépôt `Git` à l'intérieur d'un dossier synchronisé par un service infonuagique comme *Dropbox* ou *OneDrive*. Ces services tentent de synchroniser les fichiers en continu, ce qui entre en conflit avec les opérations de `Git` et génère des erreurs et des doublons. Le dossier du projet doit donc vivre *en dehors* du cloud. C'est `Git` lui-même (via *GitHub*) qui assure la sauvegarde et le partage du code.
 
 **Étape 1** : Création d'un répertoire local et initialisation de `Git`
 
@@ -289,17 +297,21 @@ mkdir code
 mkdir data
 mkdir resultats
 mkdir documentation
+touch README.md
 ```
+
+Le fichier `README.md` est la carte de visite du projet. Rédigé en `Markdown`, il accueille quiconque visite le dépôt sur *GitHub* et décrit en quelques lignes l'objectif du projet, son organisation et comment l'utiliser. C'est la première chose qu'un collaborateur ou un lecteur consultera.
 
 Le projet ressemblera maintenant à ceci :
 
 ```
 mon_projet/
+├── README.md           # Description du projet et guide d'utilisation
 ├── redaction/          # Chapitres du mémoire
 ├── code/               # Scripts d'analyse ($\textsf{R}$, `Python`)
 ├── data/               # Données NON SENSIBLES uniquement
 ├── resultats/          # Graphiques et tableaux générés
-└── documentation/      # README, notes méthodologiques
+└── documentation/      # Notes méthodologiques
 ```
 
 **Important** : Le dossier `data/` ne devrait contenir que des données **non sensibles**. Les données sensibles restent dans *Nextcloud* ou *OneDrive* institutionnel.
@@ -332,11 +344,13 @@ git status
 
 **Étape 5** : Ajout, validation et dépôt des modifications
 
-On ajoute les fichiers pour qu'ils soient prêts à être validés.
+On ajoute explicitement les dossiers et fichiers voulus pour qu'ils soient prêts à être validés.
 
 ```bash
-git add -A
+git add code/ documentation/ README.md
 ```
+
+Il est préférable de nommer les fichiers ou dossiers plutôt que d'utiliser `git add -A`, qui ajoute tout le contenu du répertoire — risqué si le `.gitignore` est incomplet. Pour les débutants, `git add -A` reste cependant la solution simple qui répond le plus souvent au besoin lorsque le `.gitignore` est bien configuré.
 
 On valide les modifications avec un message descriptif.
 
@@ -370,7 +384,7 @@ Lorsqu'ils ont fait des modifications dans leur copie, ils peuvent soumettre une
 
 **Étape 9** : Acceptation des modifications des collègues
 
-Lorsque les collègues ont soumis des modifications et demandé de les fusionner, on peut mettre à jour le répertoire local avec leurs changements.
+Lorsque des collègues ont soumis une demande de fusion (*pull request*), on l'examine et on l'accepte directement sur le site *GitHub* via l'interface web. Une fois la fusion effectuée sur *GitHub*, on met à jour sa copie locale pour intégrer les changements :
 
 ```bash
 git pull origin main
