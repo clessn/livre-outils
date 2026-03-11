@@ -18,7 +18,6 @@ book:
     - chapitre_9.qmd
   appendices:
     - annexe_a.qmd
-    - annexe_b.qmd
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa

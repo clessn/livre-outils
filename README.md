@@ -1,7 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -208,7 +205,7 @@ Dans cette section, vous serez amené à installer Zotero ainsi que Better BibTe
 - Installer [Zotero](https://www.zotero.org/download/)
 - Installer [Zotero Connector](https://www.zotero.org/download/)
 
-- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez-le avec Laurence-Olivier pour qu'il vous ajoute sur le groupe Zotero CLESSN.
+- Une fois Zotero installé, créer un [compte Zotero](https://www.zotero.org/user/register/). Prenez note de votre identifiant et partagez-le avec un mainteneur du projet pour qu'il vous ajoute sur le groupe Zotero CLESSN.
 
 - Allez dans vos courriels et suivez les directives pour joindre le groupe Zotero CLESSN.
 
@@ -253,7 +250,7 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 
 ## Étapes suivantes
 
-- **Attendre la revue** : Les mainteneurs du projet examineront vos modifications. Ils peuvent poser des questions ou demander des ajustements.
+- **Attendre la revue** : La branche `main` est protégée — toute PR doit être approuvée par **au moins un mainteneur** avant d'être fusionnée. Soyez patient, la revue peut prendre quelques jours.
 - **Répondre aux commentaires** : Si des modifications sont demandées, apportez-les localement, validez, poussez, et elles seront automatiquement mises à jour dans votre pull request.
 - **Restez engagé** : N'hésitez pas à contribuer davantage ou à poser des questions si vous avez des doutes.
 
@@ -261,7 +258,7 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 
 ## Besoin d'aide ?
 
-Si vous rencontrez des problèmes ou avez des questions, veuillez contacter les mainteneurs du projet ou demander pendant le cours. Nous sommes là pour vous aider à apprendre et à contribuer !
+Si vous rencontrez des problèmes ou avez des questions, veuillez contacter les mainteneurs du projet. Nous sommes là pour vous aider à apprendre et à contribuer !
 
 # Ressources supplémentaires
 

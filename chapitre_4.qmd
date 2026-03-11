@@ -71,7 +71,7 @@ Au-delà de la préinscription des hypothèses, plusieurs organismes subventionn
 
 ### Collecte et analyse
 
-Avant de choisir où entreposer ses données, un principe s'impose : **ne jamais conserver de fichiers uniquement sur son ordinateur local**. Un disque dur peut tomber en panne, un ordinateur peut être volé ou perdu. Tout fichier qui n'existe qu'en local est un fichier à risque. Dès le début d'un projet, chaque document, chaque script, chaque donnée devrait être synchronisé sur un service infonuagique ou versionné sur *GitHub* — idéalement les deux, selon la nature des fichiers.
+Avant de choisir où entreposer ses données, un principe s'impose : **ne jamais conserver de fichiers uniquement sur son ordinateur local**. Un disque dur peut tomber en panne, un ordinateur peut être volé ou perdu. Tout fichier qui n'existe qu'en local est un fichier à risque. Dès le début d'un projet, chaque document, chaque script, chaque donnée devrait être synchronisé sur un service infonuagique ou versionné sur *GitHub* (idéalement les deux, selon la nature des fichiers).
 
 Le chercheur collecte, manipule et analyse des données. Ces données peuvent prendre plusieurs formes : transcriptions d'entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, de textes, d'images, de tableaux, etc. Les données de recherche peuvent poser des défis spécifiques en matière de sécurité, d'éthique et de collaboration.
 
@@ -127,7 +127,7 @@ Cloud (Dropbox / OneDrive)
 └── Personnel/
 ```
 
-Cette organisation présente deux avantages majeurs. D'abord, les chemins de fichiers dans les scripts d'analyse restent prévisibles et stables d'un collaborateur à l'autre. Ensuite, elle facilite la distinction entre ce qui appartient au cloud (données, documents) et ce qui appartient à un dépôt `Git` (code, scripts) — ces deux espaces devant rester séparés.
+Cette organisation présente deux avantages majeurs. D'abord, les chemins de fichiers dans les scripts d'analyse restent prévisibles et stables d'un collaborateur à l'autre. Ensuite, elle facilite la distinction entre ce qui appartient au cloud (données, documents) et ce qui appartient à un dépôt `Git` (code, scripts), ces deux espaces devant rester séparés.
 
 ### Archivage et partage
 
@@ -372,7 +372,7 @@ On ajoute explicitement les dossiers et fichiers voulus pour qu'ils soient prêt
 git add code/ documentation/ README.md
 ```
 
-Il est préférable de nommer les fichiers ou dossiers plutôt que d'utiliser `git add -A`, qui ajoute tout le contenu du répertoire — risqué si le `.gitignore` est incomplet. Pour les débutants, `git add -A` reste cependant la solution simple qui répond le plus souvent au besoin lorsque le `.gitignore` est bien configuré.
+Il est préférable de nommer les fichiers ou dossiers plutôt que d'utiliser `git add -A`, qui ajoute tout le contenu du répertoire (risqué si le `.gitignore` est incomplet). Pour les débutants, `git add -A` reste cependant la solution simple qui répond le plus souvent au besoin lorsque le `.gitignore` est bien configuré.
 
 On valide les modifications avec un message descriptif.
 

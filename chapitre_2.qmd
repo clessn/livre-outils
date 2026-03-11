@@ -5,7 +5,7 @@
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 
-## Point d'observation : qu'est-ce que la programmation ? 
+## Point d'observation : qu'est-ce que la programmation ?
 
 La programmation est une manière de donner des instructions à un ordinateur pour qu’il exécute des tâches précises.
 On utilise pour cela des langages de programmation. 
