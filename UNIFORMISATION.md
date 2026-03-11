@@ -208,11 +208,26 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 
 Une section **En terminant** conclut chaque chapitre.
 
-**Format des titres de section** :
-- `## Point d'observation : [sous-titre spécifique au chapitre]`
-- `## Arpentage et choix éditorial : [sous-titre spécifique au chapitre]`
-- `## Manuel d'instruction : [sous-titre spécifique au chapitre]`
+**Format du titre principal (H1)** :
+- `# Outils de [domaine] : [sous-titre précisant l'approche ou l'angle] {#sec-chapX}`
+- Le sous-titre doit être court et capturer la progression ou l'angle du chapitre.
+- **Ne jamais laisser le titre H1 sans sous-titre.**
+
+Exemples conformes :
+- `# Outils de programmation : R comme point de départ {#sec-chap2}`
+- `# Outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}`
+- `# Outils de collecte de données : du sondage au *web scraping* {#sec-chap6}`
+
+**Format des titres de section (H2)** :
+- `## Point d'observation : [sous-titre concis, souvent une question ou un thème]`
+- `## Arpentage et choix éditorial : [sous-titre nommant les options ou le choix retenu]`
+- `## Manuel d'instruction : [sous-titre commençant par un verbe d'action ou "comment utiliser X"]`
 - `## En terminant`
+
+Exemples conformes par section :
+- Point d'observation : "qu'est-ce que la programmation ?", "brève histoire de la gestion des données", "la collecte de données à l'ère numérique"
+- Arpentage : "quel langage apprendre ?", "la méthode Agile", "les outils de synthèse de la connaissance", "les extracteurs de données web"
+- Manuel : "apprendre à programmer en $\textsf{R}$", "utiliser Git et GitHub pour un projet de recherche", "utiliser *rvest* pour extraire des données web"
 
 ### Tableaux comparatifs
 

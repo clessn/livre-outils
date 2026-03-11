@@ -1,4 +1,4 @@
-# Outils de collecte de données {#sec-chap6}
+# Outils de collecte de données : du sondage au *web scraping* {#sec-chap6}
 
 \begin{center}
 \textit{Jérémie Drouin (University of Toronto), \\
