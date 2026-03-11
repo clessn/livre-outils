@@ -347,7 +347,7 @@ Ce qui produit le résultat suivant dans la console:
  44th</span> Parlia ...
 ```
 
-Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur « *id attribute* ». Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le "id attribute" retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
+Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur « *id attribute* ». Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le « *id attribute* » retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
 
 ``` bash
 html_LEGISinfo |> html_elements("#StartOfContent")
@@ -360,7 +360,7 @@ html_LEGISinfo |> html_elements("#StartOfContent")
 
 Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l'imbrication des sélections. Lorsque la fonction `html_element` est appliquée à un vecteur de liste `html_elements`, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d'utiliser `html_element` à cette étape car il retourne un NA même lorsqu'il n'y a pas d'éléments correspondants, alors que `html_elements` ne retournera pas la valeur manquante. Dans l'exemple de LEGISinfo, c'est ce que nous avons voulu faire pour obtenir les éléments de classe parliament-session.
 
-Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple. Il suffit d'appliquer la fonction `html_text2` sur l'appel de `html_element` sur l'objet à extraire, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction *inspect* de *Google Chrome* ainsi que les diverses fonctions du package rvest. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console:
+Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple. Il suffit d'appliquer la fonction `html_text2` sur l'appel de `html_element` sur l'objet à extraire, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction *inspect* de *Google Chrome* ainsi que les diverses fonctions du package *rvest*. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console:
 
 Code
 
@@ -457,9 +457,9 @@ Table_LEGISinfo <- tibble(
 )
 ```
 
-Il est important de noter que ce chapitre ne permet que d'extraire des documents HTML uniques. Afin d'extraire plusieurs pages web simultanément, il faudra utiliser d'autres packages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que nous savons extraire des informations d'un document html pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
+Il est important de noter que ce chapitre ne permet que d'extraire des documents HTML uniques. Afin d'extraire plusieurs pages web simultanément, il faudra utiliser d'autres packages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que nous savons extraire des informations d'un document HTML pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
 
-Il est possible d'extraire les éléments en fonction de leur attribut grâce à `html_attr()`. Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin d'extraire divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique devient de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l'extraction de base.
+Il est possible d'extraire les éléments en fonction de leur attribut grâce à `html_attr()`. Un attribut est une information supplémentaire associée à une balise HTML. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin d'extraire divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique devient de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l'extraction de base.
 
 ``` bash
 BillTile_LEGISinfo |> html_attr("href")
@@ -488,7 +488,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 "/legisinfo/en/bill/44-1/s-201"
 ```
 
-Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction `minimal_html` pour créer un script html, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
+Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction `minimal_html` pour créer un script HTML, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
 
 ``` bash
 htmltest <- minimal_html("
@@ -514,7 +514,7 @@ L'opération précédente produit le résultat suivant dans la console
 3   7.2   8.1
 ```
 
-En conclusion de cette section, lorsqu'on extrait un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur du navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant d'extraire le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), où il est possible dans certains cas de télécharger les données directement sur le site web.
+En conclusion de cette section, lorsqu'on extrait un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur du navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur *inspect* suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant d'extraire le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), où il est possible dans certains cas de télécharger les données directement sur le site web.
 
 ## En terminant
 
