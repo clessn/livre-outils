@@ -10,7 +10,7 @@ La révolution numérique engendrée par l'émergence des données massives 
 
 Le chapitre qui suit vise à présenter la méthode de l'extraction de données web, ou *web scraping*, qui permet de récolter des données provenant de sites internet de manière automatisée. Si le chapitre offre également un bref survol de différents outils de collectes de données pouvant être exploités par les scientifiques désirant entreprendre des recherches en sciences sociales, ce dernier vise surtout à mettre l'accent sur les opportunités offertes par le numérique. En effet, la portée de ce chapitre s'étend plus loin que les outils traditionnels de collecte de données en abordant le potentiel émanant de la programmation en matière de récolte de données brutes pouvant être analysées par les chercheurs.
 
-Le chapitre débute par une description courte et non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leur capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. L'objectif de cette courte section est de présenter des outils plus traditionnels de collecte de données, certes efficaces, mais qui comportent un certain nombre de limites. Les sections suivantes, représentant le coeur de ce chapitre, mettent un accent particulier sur la méthode de l'extraction de données par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Nous démontrons comment les capacités de programmation avec $\textsf{R}$ permettent l'accès à un volume important de données qui peuvent alimenter de manière significative des projets de recherche. En somme, ce chapitre offre un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter l'extraction web et le package *rvest* et en offrant des exemples concrets de son utilisation.
+Le chapitre débute par une description courte et non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leurs capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. L'objectif de cette courte section est de présenter des outils plus traditionnels de collecte de données, certes efficaces, mais qui comportent un certain nombre de limites. Les sections suivantes, représentant le coeur de ce chapitre, mettent un accent particulier sur la méthode de l'extraction de données par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Nous démontrons comment les capacités de programmation avec $\textsf{R}$ permettent l'accès à un volume important de données qui peuvent alimenter de manière significative des projets de recherche. En somme, ce chapitre offre un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter l'extraction web et le package *rvest* et en offrant des exemples concrets de son utilisation.
 
 ## Point d'observation : les outils traditionnels de collecte de données numériques en sciences sociales
 
@@ -26,9 +26,9 @@ Parmi les plateformes web les plus reconnues de construction et d'administration
 
 *Qualtrics* offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, *Qualtrics* s'adapte à différents formats en fonction de l'appareil du répondant [@evans_mathur18]. Son principal désavantage provient de son coût d'acquisition, qui est extrêmement dispendieux. Cependant, certaines universités possèdent des licenses permettant l'utilisation de l'outil par la communauté étudiante et de nombreux professeurs possèdent des comptes *Qualtrics* qui permettent la construction de sondage.
 
-Bien que *Qualtrics* soit l'outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives. *REDCap* (Research Electronic Data Capture), développé par la Vanderbilt University, est accessible gratuitement aux institutions membres de son Consortium, qui regroupe plus de 5 900 établissements dans 145 pays. Conçu initialement pour la recherche clinique et biomédicale, il est de plus en plus adopté en sciences sociales pour sa flexibilité — logique de branchement, collecte longitudinale — et sa compatibilité avec des logiciels statistiques courants tels que $\textsf{R}$, SPSS et Stata.
+Bien que *Qualtrics* soit l'outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives. *REDCap* (Research Electronic Data Capture), développé par la Vanderbilt University, est accessible gratuitement aux institutions membres de son Consortium, qui regroupe plus de 5 900 établissements dans 145 pays. Conçu initialement pour la recherche clinique et biomédicale, il est de plus en plus adopté en sciences sociales pour sa flexibilité (logique de branchement, collecte longitudinale) et sa compatibilité avec des logiciels statistiques courants tels que $\textsf{R}$, SPSS et Stata.
 
-*SurveyMonkey* adopte un modèle freemium : une version de base gratuite mais limitée en fonctionnalités, et des plans payants à partir de 39 $ par mois. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées — exportation vers SPSS, randomisation par blocs, quotas — ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.
+*SurveyMonkey* adopte un modèle *freemium* : une version de base gratuite mais limitée en fonctionnalités, et des plans payants à partir de 39 $ par mois. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées (exportation vers SPSS, randomisation par blocs, quotas) ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.
 
 *Google Forms* est entièrement gratuit et s'intègre à l'écosystème *Google*, offrant une synchronisation en temps réel avec *Google Sheets*. Très accessible pour des collectes simples et rapides, il présente toutefois des limitations importantes pour la recherche : logique conditionnelle basique, absence de randomisation par blocs, et impossibilité d'exporter directement vers des logiciels statistiques comme SPSS ou $\textsf{R}$.
 
@@ -51,35 +51,35 @@ tbl_resume_chap_6_sondage <- tibble(
     "Adaptabilité et flexibilité"
   ),
   Qualtrics = c(
-    "Payant (institutionnel)",
+    "Gratuit (institutionnel)",
     "Très grande",
     "Très populaire",
-    "Bonne",
-    "Propriétaire",
+    "Facilement compatible",
+    "Faible",
     "Très flexible"
   ),
   REDCap = c(
     "Gratuit (institutionnel)",
     "Grande",
     "Populaire",
-    "Très bonne",
-    "Propriétaire (non-commercial)",
+    "Facilement compatible",
+    "Faible",
     "Très flexible"
   ),
   SurveyMonkey = c(
-    "Freemium / Payant",
+    "Dispendieux",
     "Grande",
     "Populaire",
-    "Partielle",
-    "Propriétaire",
-    "Modérément flexible"
+    "Demande un peu d'ajustement",
+    "Faible",
+    "Plutôt flexible"
   ),
   `Google Forms` = c(
     "Gratuit",
     "Très grande",
     "Populaire",
-    "Limitée",
-    "Propriétaire",
+    "Demande un peu d'ajustement",
+    "Faible",
     "Peu flexible"
   )
 )
@@ -135,13 +135,13 @@ Il faut toutefois être vigilant quant à la nature des données extraites. Avan
 
 L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter possédait, avant les changements de directions récents, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus d'extraction, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
 
-Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, La Presse change ses Unes plusieurs fois dans une même journée. En extractant l'accès aux fils RSS, il est possible de recevoir ces mises à jour automatiquement. Ce processus accélère grandement la collecte de données.
+Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, La Presse change ses Unes plusieurs fois dans une même journée. En extrayant l'accès aux fils RSS, il est possible de recevoir ces mises à jour automatiquement. Ce processus accélère grandement la collecte de données.
 
 Finalement, les API simplifient le travail de chacun par les mises à jour et maintenances. Pour être plus précis, les API, étant maintenus par les fournisseurs de services, sont modifiés au fur et à mesure que le site évolue. Par exemple, si la structure de X est modifiée, son API sera également modifié. Cela évite à ceux demandant l'accès d'ajuster leurs scripts d'extraction pour prendre en compte les changements sur le site.
 
-Il faut cependant être alerte de l'évolution constante de ces outils. En effet, la présence de données ouvertes et la création croissante d'API tend à modifier de manière progressive l'outil. Prenons l'exemple de l'API de X (anciennement Twitter), qui a restreint les accès accordés et augmentés les coûts pour récupérer les informations sur la plateforme. Il faut donc rester à l'affût de ces possibles modifications.
+Il faut cependant être alerte de l'évolution constante de ces outils. En effet, la présence de données ouvertes et la création croissante d'API tend à modifier de manière progressive l'outil. Prenons l'exemple de l'API de X (anciennement Twitter), qui a restreint les accès accordés et augmenté les coûts pour récupérer les informations sur la plateforme. Il faut donc rester à l'affût de ces possibles modifications.
 
-En somme, les extracteurs web sont des outils qui facilitent grandement l'acquisition de données massives. Plutôt que d'avoir à payer pour des données dont la qualité n'est pas assurée, l'utilisation d'extracteurs permet un accès plus facile et précis à des données provenant de sites web. L'utilisation de ces outils peut toutefois s'avérer complexe et nécessitent un certain nombre de connaissances en lien avec les langages de programmation. Le @sec-chap2 offre un survol du langage fonctionnel $\textsf{R}$, qui est utilisé par de nombreux développeurs lors de l'écriture d'extracteurs et qui permet d'utiliser le package *rvest*.
+En somme, les extracteurs web sont des outils qui facilitent grandement l'acquisition de données massives. Plutôt que d'avoir à payer pour des données dont la qualité n'est pas assurée, l'utilisation d'extracteurs permet un accès plus facile et précis à des données provenant de sites web. L'utilisation de ces outils peut toutefois s'avérer complexe et nécessite un certain nombre de connaissances en lien avec les langages de programmation. Le @sec-chap2 offre un survol du langage fonctionnel $\textsf{R}$, qui est utilisé par de nombreux développeurs lors de l'écriture d'extracteurs et qui permet d'utiliser le package *rvest*.
 
 ### Critères de sélection
 
@@ -174,27 +174,27 @@ tbl_resume_chap_6_collecte <- tibble(
     "Adaptabilité et flexibilité"
   ),
   Factiva = c(
-    "Payant (institutionnel)",
-    "Limitée",
+    "Gratuit (institutionnel)",
+    "Petite",
     "Populaire",
-    "Partielle (RTF, PDF)",
-    "Propriétaire",
+    "Demande un peu d'ajustement",
+    "Faible",
     "Peu flexible"
   ),
   Eureka = c(
-    "Payant (institutionnel)",
-    "Limitée (francophone)",
-    "Populaire (milieu francophone)",
-    "Partielle (texte intégral)",
-    "Propriétaire",
+    "Gratuit (institutionnel)",
+    "Petite",
+    "Populaire",
+    "Demande un peu d'ajustement",
+    "Faible",
     "Peu flexible"
   ),
   rvest = c(
-    "Gratuit (logiciel libre)",
+    "Gratuit",
     "Grande",
     "Très populaire",
-    "Excellente (R/tidyverse)",
-    "Code source ouvert",
+    "Facilement compatible",
+    "Excellente",
     "Très flexible"
   )
 )
@@ -234,7 +234,7 @@ La section suivante présente la méthode d'utilisation de l'outil *rvest*. Elle
 
 ### L'importance de comprendre la structure du code HTML
 
-Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le package *rvest*, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie "Hypertext Markup Language". Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des "tags", qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La @fig-html-input représente un exemple de base de code HTML.
+Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le package *rvest*, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie « Hypertext Markup Language ». Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des « *tags* », qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La @fig-html-input représente un exemple de base de code HTML.
 
 ```{r, out.width="80%"}
 #| label: fig-html-input
@@ -260,7 +260,7 @@ Cet ouvrage recommande l'utilisation du package *rvest* afin de récolter des do
 
 #### Fonctions de base du package rvest utilisant pour exemple le site de LEGISinfo
 
-La première étape est l'installation et le chargement des packages `tidyverse` et `rvest` sur la console `RStudio`. Il est important de les charger séparément car rvest ne fait pas partie des packages de base du *Tidyverse*. Nous installerons ce dernier car il amène des fonctions pratiques.
+La première étape est l'installation et le chargement des packages `tidyverse` et `rvest` sur la console `RStudio`. Il est important de les charger séparément car *rvest* ne fait pas partie des packages de base du *Tidyverse*. Nous installerons ce dernier car il amène des fonctions pratiques.
 
 ``` bash
 install.packages("rvest")
@@ -272,7 +272,7 @@ library(rvest)
 library(tidyverse)
 ```
 
-Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à extraire et la coller dans l'appel de la fonction `read_html()`. Il est important de stocker l'URL dans l'objet "html_LEGISinfo".
+Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à extraire et la coller dans l'appel de la fonction `read_html()`. Il est important de stocker l'URL dans l'objet `html_LEGISinfo`.
 
 ``` bash
 html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
@@ -292,7 +292,7 @@ content="text/html; charset=UTF-8">\n<meta
 <header class="d-print-none"><!-- ...
 ```
 
-Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (*cascading style sheets*), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des "sélecteurs CSS", ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases de l'extraction, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin de faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités.
+Une fois que les éléments que l'on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (*cascading style sheets*), langage définissant la forme visuelle d'un document HTML. Les éléments HTML sont identifiés avec des « sélecteurs CSS », ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases de l'extraction, il n'est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d'un document HTML est nécessaire afin de faire l'extraction d'éléments. L'important est d'être en mesure d'identifier les sélecteurs CSS liés aux éléments souhaités.
 
 D'abord, `html_elements` doit être utilisé en premier pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les nœuds qui correspondent à l'appel de la fonction. Le nombre d'observations est indiqué par `xml_nodeset()`. Comme `html_element` retourne seulement le premier élément qui correspond, il faut l'utiliser en deuxième, après `html_elements`. Cette seconde fonction à pour but de trouver les éléments qui deviendront les variables à extraire. Pour l'exemple de LEGISinfo, nous commencerons par extraire tous les éléments \\\<a\\\>. Comme `html_elements` retourne une liste, nous voulons commencer avec cette fonction.
 
@@ -311,7 +311,7 @@ Qui retourne les éléments suivants:
  [3] <a href="https://visit.parl.ca/index-e.html" rel="external">\n\t\t                    ...
 ```
 
-Suite à l'inspection des éléments <a>, ceux qui nous intéressent sont dans la classe "bill-tile-container". Il suffit d'ajouter un point "." avant la classe souhaitée lors de l'appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l'exemple de LEGISinfo, nous obtenons une liste d'éléments de classe bill-tile-container que nous allons stocker dans l'objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
+Suite à l'inspection des éléments <a>, ceux qui nous intéressent sont dans la classe `.bill-tile-container`. Il suffit d'ajouter un point "." avant la classe souhaitée lors de l'appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l'exemple de LEGISinfo, nous obtenons une liste d'éléments de classe bill-tile-container que nous allons stocker dans l'objet BillTile_LEGISinfo. Tous les éléments de cette classe auront donc tous une structure ou des comportements similaires entre eux.
 
 ``` bash
 BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
@@ -347,7 +347,7 @@ Ce qui produit le résultat suivant dans la console:
  44th</span> Parlia ...
 ```
 
-Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur "id attribute". Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le "id attribute" retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
+Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur « *id attribute* ». Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le "id attribute" retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
 
 ``` bash
 html_LEGISinfo |> html_elements("#StartOfContent")
@@ -360,7 +360,7 @@ html_LEGISinfo |> html_elements("#StartOfContent")
 
 Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extraire les éléments de classe parliament-session. Nous appelons cette étape l'imbrication des sélections. Lorsque la fonction `html_element` est appliquée à un vecteur de liste `html_elements`, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d'utiliser `html_element` à cette étape car il retourne un NA même lorsqu'il n'y a pas d'éléments correspondants, alors que `html_elements` ne retournera pas la valeur manquante. Dans l'exemple de LEGISinfo, c'est ce que nous avons voulu faire pour obtenir les éléments de classe parliament-session.
 
-Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple. Il suffit d'appliquer la fonction `html_text2` sur l'appel de `html_element` sur l'objet à extraire, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction "inspect" de Google Chrome ainsi que les diverses fonctions du package rvest. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console:
+Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple. Il suffit d'appliquer la fonction `html_text2` sur l'appel de `html_element` sur l'objet à extraire, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction *inspect* de *Google Chrome* ainsi que les diverses fonctions du package rvest. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console:
 
 Code
 
@@ -457,9 +457,9 @@ Table_LEGISinfo <- tibble(
 )
 ```
 
-Il est important de noter que ce chapitre ne permet que d'extraire des documents html uniques. Afin d'extraire plusieurs pages web simultanément, il faudra utiliser d'autres packages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que nous savons extraire des informations d'un document html pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
+Il est important de noter que ce chapitre ne permet que d'extraire des documents HTML uniques. Afin d'extraire plusieurs pages web simultanément, il faudra utiliser d'autres packages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. Maintenant que nous savons extraire des informations d'un document html pour le mettre dans une base de données, voici d'autres applications pratiques de rvest à cet effet.
 
-Il est possible d'extraire les éléments en fonction de leur attribut grâce à html_attr(). Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin d'extraire divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique devient de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l'extraction de base.
+Il est possible d'extraire les éléments en fonction de leur attribut grâce à `html_attr()`. Un attribut est une information supplémentaire associé à une balise html. Voici l'attribut href qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les href afin d'extraire divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique devient de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l'extraction de base.
 
 ``` bash
 BillTile_LEGISinfo |> html_attr("href")
@@ -488,7 +488,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 "/legisinfo/en/bill/44-1/s-201"
 ```
 
-Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction minimal_html pour créer un script html, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
+Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction `minimal_html` pour créer un script html, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
 
 ``` bash
 htmltest <- minimal_html("
@@ -514,7 +514,7 @@ L'opération précédente produit le résultat suivant dans la console
 3   7.2   8.1
 ```
 
-En conclusion de cette section, lorsqu'on extrait un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur de votre navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant d'extraire le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), où il est possible dans certains cas de télécharger les données directement sur le site web.
+En conclusion de cette section, lorsqu'on extrait un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s'y habitue rapidement. Ensuite, nous recommandons d'utiliser l'outil de développeur du navigateur web afin de pouvoir trouver les sélecteurs souhaités. L'interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur "inspect" suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script. Finalement, avant d'extraire le contenu d'un site web, il est important de vérifier s'il n'offre pas déjà une option pour télécharger les données ! C'est le cas de l'exemple utilisé ici (LEGISinfo), où il est possible dans certains cas de télécharger les données directement sur le site web.
 
 ## En terminant
 
