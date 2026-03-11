@@ -18,7 +18,7 @@ Il est recommandé de choisir un ordinateur doté d'une quantité de mémoire vi
 
 Sur Windows, il est possible de voir la quantité de mémoire vive utilisée en appuyant sur Ctrl + Alt + Suppr pour ouvrir le gestionnaire des tâches. Sur MacOS et Linux, il est possible d'utiliser le logiciel htop, disponible à l'adresse https://htop.dev/downloads.html, dans le terminal.
 
-Lors de la rédaction de cette annexe, ChatGPT recommandait d'avoir au moins 16 Go de mémoire vive pour un ordinateur de recherche et au minimum 8 Go.
+Lors de la rédaction de cette annexe, *ChatGPT* recommandait d'avoir au moins 16 Go de mémoire vive pour un ordinateur de recherche et au minimum 8 Go.
 
 ### Le processeur (CPU)
 
@@ -38,7 +38,7 @@ L'espace de stockage est un autre composant clé de l'ordinateur. Il permet de s
 
 Le SSD, quant à lui, est un disque électronique qui stocke les données sur des puces. Plus coûteux que le disque dur, il offre cependant une vitesse nettement supérieure. Il est donc recommandé de choisir un disque à état solide pour stocker les données, ce qui permettra à l'ordinateur de démarrer plus rapidement et d'ouvrir les programmes plus vite. De plus, le disque à état solide est plus fiable que le disque dur, car il n'a pas de pièces mobiles, réduisant ainsi les risques de panne.
 
-Il est primordial de disposer d'un espace de stockage suffisant pour conserver les données. Lors de la rédaction de cette annexe, ChatGPT recommandait d'avoir au moins 256 Go d'espace de stockage pour un ordinateur de recherche. Il peut être tentant d'acheter des ordinateurs avec un espace de stockage limité pour économiser de l'argent. Cependant, il est important de se rappeler que l'espace de stockage est essentiel et que les fabricants intègrent souvent le disque dur à la carte mère, rendant impossible l'ajout ultérieur de stockage supplémentaire. Il est donc primordial de choisir un ordinateur avec un espace de stockage adéquat dès l'achat.
+Il est primordial de disposer d'un espace de stockage suffisant pour conserver les données. Lors de la rédaction de cette annexe, *ChatGPT* recommandait d'avoir au moins 256 Go d'espace de stockage pour un ordinateur de recherche. Il peut être tentant d'acheter des ordinateurs avec un espace de stockage limité pour économiser de l'argent. Cependant, il est important de se rappeler que l'espace de stockage est essentiel et que les fabricants intègrent souvent le disque dur à la carte mère, rendant impossible l'ajout ultérieur de stockage supplémentaire. Il est donc primordial de choisir un ordinateur avec un espace de stockage adéquat dès l'achat.
 
 ## Acheter un ordinateur
 
