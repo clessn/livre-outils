@@ -26,13 +26,100 @@ Parmi les plateformes web les plus reconnues de construction et d'administration
 
 *Qualtrics* offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l'administration des sondages. Par exemple, *Qualtrics* s'adapte à différents formats en fonction de l'appareil du répondant [@evans_mathur18]. Son principal désavantage provient de son coût d'acquisition, qui est extrêmement dispendieux. Cependant, certaines universités possèdent des licenses permettant l'utilisation de l'outil par la communauté étudiante et de nombreux professeurs possèdent des comptes *Qualtrics* qui permettent la construction de sondage.
 
-Bien que *Qualtrics* soit l'outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives à *Qualtrics*, tels que Research Electronic Data Capture (*REDCap*), *SurveyMonkey* ou encore *Google Forms*, qui sont tous des outils permettant d'administrer des sondages.
+Bien que *Qualtrics* soit l'outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives. *REDCap* (Research Electronic Data Capture), développé par la Vanderbilt University, est accessible gratuitement aux institutions membres de son Consortium, qui regroupe plus de 5 900 établissements dans 145 pays. Conçu initialement pour la recherche clinique et biomédicale, il est de plus en plus adopté en sciences sociales pour sa flexibilité — logique de branchement, collecte longitudinale — et sa compatibilité avec des logiciels statistiques courants tels que $\textsf{R}$, SPSS et Stata.
+
+*SurveyMonkey* adopte un modèle freemium : une version de base gratuite mais limitée en fonctionnalités, et des plans payants à partir de 39 $ par mois. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées — exportation vers SPSS, randomisation par blocs, quotas — ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.
+
+*Google Forms* est entièrement gratuit et s'intègre à l'écosystème *Google*, offrant une synchronisation en temps réel avec *Google Sheets*. Très accessible pour des collectes simples et rapides, il présente toutefois des limitations importantes pour la recherche : logique conditionnelle basique, absence de randomisation par blocs, et impossibilité d'exporter directement vers des logiciels statistiques comme SPSS ou $\textsf{R}$.
+
+```{r}
+#| tbl-cap: Résumé des principaux outils de collecte de données de sondage
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(gt)
+
+tbl_resume_chap_6_sondage <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Qualtrics = c(
+    "Payant (institutionnel)",
+    "Très grande",
+    "Très populaire",
+    "Bonne",
+    "Propriétaire",
+    "Très flexible"
+  ),
+  REDCap = c(
+    "Gratuit (institutionnel)",
+    "Grande",
+    "Populaire",
+    "Très bonne",
+    "Propriétaire (non-commercial)",
+    "Très flexible"
+  ),
+  SurveyMonkey = c(
+    "Freemium / Payant",
+    "Grande",
+    "Populaire",
+    "Partielle",
+    "Propriétaire",
+    "Modérément flexible"
+  ),
+  `Google Forms` = c(
+    "Gratuit",
+    "Très grande",
+    "Populaire",
+    "Limitée",
+    "Propriétaire",
+    "Peu flexible"
+  )
+)
+
+tbl_resume_chap_6_sondage |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de collecte de données de sondage") |>
+  cols_label(
+    Critères = "Critères",
+    Qualtrics = "Qualtrics",
+    REDCap = "REDCap",
+    SurveyMonkey = "SurveyMonkey",
+    `Google Forms` = "Google Forms"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(30),
+    Qualtrics ~ pct(17),
+    REDCap ~ pct(18),
+    SurveyMonkey ~ pct(18),
+    `Google Forms` ~ pct(17)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
+```
 
 *Les données médiatiques*
 
 La recherche en sciences sociales se penche également sur l'analyse de contenu médiatique, qui permet une multitude de devis de recherche dans un grand nombre de sous-discipline des sciences sociales. L'émergence du numérique facilite largement la récolte de données médiatiques tout en favorisant de nouvelles avenues de recherche pour les chercheurs en sciences sociales en raison de l'importante quantité de données accessibles.
 
-À cet effet, l'outil *Factiva* offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par *Dow Jones* et offre également l'accès à des documents d'entreprises. L'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre accès à plus de 15 000 sources médiatiques provenant de 120 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, les documents peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, *Factiva* permet également de filtrer les doublons. *Factiva* permet ainsi d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur *Factiva*. Dans l'optique ou un média recherché n'est pas trouvable sur cette plateforme, le logiciel *Eureka* représente une bonne alternative. *Eureka* se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'*Eureka* est similaire à celle de *Factiva*.
+À cet effet, l'outil *Factiva* offre un accès à l'ensemble des articles d'une panoplie de médias provenant d'une vaste sélection de pays. Le moteur de recherche est opéré par *Dow Jones* et offre également l'accès à des documents d'entreprises. L'accès qu'il offre aux contenus médiatiques est particulièrement pertinent pour la communauté scientifique en communication et en sciences sociales. Il offre accès à plus de 30 000 sources médiatiques provenant de 200 pays. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu'à 100 articles chacun. En outre, les documents peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, *Factiva* permet également de filtrer les doublons. *Factiva* permet ainsi d'avoir accès facilement à des données utiles pour l'analyse textuelle d'articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs, cet outil optimise considérablement l'analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur *Factiva*. Dans l'optique ou un média recherché n'est pas trouvable sur cette plateforme, le logiciel *Eureka* représente une bonne alternative. *Eureka* se concentre principalement sur les médias francophones (autant au Québec qu'en Europe). La structure d'*Eureka* est similaire à celle de *Factiva*.
 
 Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques : les extracteurs web.
 
@@ -67,6 +154,79 @@ Les extracteurs sont des outils de recherche très en vogue dans la communauté 
 Cette méthode, avec le logiciel $\textsf{R}$, via l'outil *rvest* permet de récolter des données qui pourront ensuite être traitées et exploiter avec $\textsf{R}$, ce qui favorise donc la compatibilité de l'outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.
 
 Tel qu'explicité précédemment, la présence d'une grande communauté d'utilisateurs de l'outil favorise la transparence et la réplicabilité des différents résultats produits lors de l'utilisation d'extracteurs.
+
+```{r}
+#| tbl-cap: Résumé des principaux outils de collecte de données médiatiques et web
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(gt)
+
+tbl_resume_chap_6_collecte <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  Factiva = c(
+    "Payant (institutionnel)",
+    "Limitée",
+    "Populaire",
+    "Partielle (RTF, PDF)",
+    "Propriétaire",
+    "Peu flexible"
+  ),
+  Eureka = c(
+    "Payant (institutionnel)",
+    "Limitée (francophone)",
+    "Populaire (milieu francophone)",
+    "Partielle (texte intégral)",
+    "Propriétaire",
+    "Peu flexible"
+  ),
+  rvest = c(
+    "Gratuit (logiciel libre)",
+    "Grande",
+    "Très populaire",
+    "Excellente (R/tidyverse)",
+    "Code source ouvert",
+    "Très flexible"
+  )
+)
+
+tbl_resume_chap_6_collecte |>
+  gt() |>
+  tab_caption("Résumé des principaux outils de collecte de données médiatiques et web") |>
+  cols_label(
+    Critères = "Critères",
+    Factiva = "Factiva",
+    Eureka = "Eureka",
+    rvest = "rvest"
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(32),
+    Factiva ~ pct(23),
+    Eureka ~ pct(23),
+    rvest ~ pct(22)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(12),
+    data_row.padding = px(11),
+    column_labels.background.color = "white",
+    table.width = pct(95)
+  )
+```
 
 ## Manuel d'instruction : extraire des données avec $\textsf{R}$
 
