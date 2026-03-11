@@ -235,31 +235,9 @@ Mate Translate est une extension de navigateur qui permet de traduire des pages 
 
 Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive, mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer *Microsoft Translator*, *Pairaphrase*, *Amazon Translate*, *Smartling*, *Unbabel*, *Linguee*, *Yandex.Translate*, *HIX Translate*, etc.
 
-## Quelle est la place du chercheur maintenant?
+## Manuel d'instruction : utilisation du package OpenAI avec $\textsf{R}$
 
-Avec l'avènement de l'IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd'hui. L'avenir du chercheur est-il en danger? Pourrait-on assister au développement des sciences sociales sans chercheur humain derrière? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l'humain? D'une part, certains pensent que l'IA risque de générer des « laboratoires autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le processus scientifique, de la conception jusqu'à la communication, serait fait par l'IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n'être qu'une partie de l'auditoire vers qui les résultats sont présentés.
-
-Bien que nous n'en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se posent à l'aube d'une révolution technologique. Par exemple, étant donné que l'IA est, pour l'instant, très opaque dans tout le processus qui le mène de l'intrant vers le résultat, comment pourrait-on s'assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques? A-t-elle eu le consentement libre et éclairé de tous les participants? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené? Sur cette dernière question, l'une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques [@king_etal21; @bourgeois21]. Toutes les recherches doivent présenter, d'une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l'esprit de toute communication scientifique. Or, c'est une limite importante de l'IA en ce moment : nous n'avons pas accès aux processus qui mènent de l'intrant à l'extrant [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56]. Cette opacité nous empêche d'évaluer correctement la validité d'un protocole scientifique qui serait réalisée par l'IA.
-
-La conséquence logique de cette situation est de toujours rester vigilant et de questionner constamment les informations fournies par le robot conversationnel. L'utilisation exclusive de tels logiciels, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n'est pas seulement question d'intégrité et d'éthique, mais de toute la conception de ce que constitue un savoir scientifique. L'utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques. Générer des textes entiers avec l'aide de l'IA ne devrait donc pas être considéré.
-
-Ainsi, l'avènement de l'IA en recherche apporte des questions et des réflexions épistémologiques[^chapitre_9-7] et méthodologiques[^chapitre_9-8] importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheur, nous devons nous questionner par rapport à l'utilisation de ces nouvelles technologies. Il faut être proactif et initier les réflexions sur la place du chercheur maintenant.
-
-[^chapitre_9-7]: L'épistémologie est l'une des branches de la philosophie des sciences qui s'intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l'une des questions fondamentales de l'épistémologie et de se questionner quant à savoir ce qu'est un savoir qui serait scientifique.
-
-[^chapitre_9-8]: La méthodologie est le champ de la philosophie des sciences qui s'intéresse à l'étude des méthodes scientifiques ou techniques.
-
-## En terminant
-
-Le but principal de ce chapitre était d'initier la discussion à propos de la place de l'IA dans les sciences sociales. L'objectif de la discussion n'était pas de décourager les lecteurs d'utiliser l'IA. Au contraire, ce sont des outils qui offrent des fonctionnalités très utiles. Les différents outils présentés dans ce chapitre en témoigne. Malgré cela, il est important de rappeler que l'IA possède aussi son lot de défis et d'enjeux. Ceux-ci appelent donc à la prudence ainsi qu'à une utilisation réfléchie de ces outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23]. Bien qu'elle offre de nombreux avantages, cette technologie offre beaucoup de raccourcis attirants qui pourraient potentiellement nuire à plusieurs de nos capacités intellectuelles et physiques [@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25a démontre que la rétention d'information du cerveau lors de l'utilisation de l'IA pour accomplir des tâches complètes à notre place est moindre que lorsque la tâche est accomplie sans l'utilisation de l'IA. De plus, les régions du cerveau qui sont mobilisées pour accomplir une même tâche, avec et sans l'IA, ne sont pas les mêmes. En ce sens, il est important de trouver l'équilibre entre une utilisation qui permet de dépasser les contraintes qui sont imposées par le temps ou par nos capacités intellectuelles sans pour autant tout reléguer à l'IA. Il ne faut pas perdre de vue non plus qu'il est important de développer ses propres capacités réflexives. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
-
-{{< pagebreak >}}
-
-## Annexe
-
-### Manuel d'instruction : utilisation du package OpenAI avec $\textsf{R}$
-
-#### Installation et chargement du package
+### Installation et chargement du package
 
 ```{r}
 #| eval: false
@@ -268,7 +246,7 @@ install.packages("openai") ## au besoin
 library(openai)
 ```
 
-#### Configuration de l'API
+### Configuration de l'API
 
 Il est recommandé d'obtenir une clé API sur le site d'*OpenAI*. Il faut savoir qu'une carte de crédit est nécessaire pour s'inscrire et que l'utilisation de l'API est payante. Il convient de se renseigner sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des tokens en entrée est moins élevé que celui des tokens en sortie.
 
@@ -288,7 +266,7 @@ Ajoutez la ligne suivante à votre fichier `.Renviron`.
 OPENAI_API_KEY = inserez - votre - cle - api - ici - sans - guillemets
 ```
 
-#### Utilisation de l'API
+### Utilisation de l'API
 
 La fonction principale du package `openai` est `create_chat_completion()`. Elle prend en entrée le modèle à utiliser ainsi que le message à envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction :
 
@@ -315,6 +293,26 @@ Le résultat de la requête sera contenu dans l'objet `chat_prompt` formaté en 
 
 Utiliser ChatGPT de cette façon ouvre de nombreuses possibilités : appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites web en temps réel par moissonnage web avec des packages tels que `rvest`, etc.
 
+## En terminant
+
+Avec l'avènement de l'IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd'hui. L'avenir du chercheur est-il en danger? Pourrait-on assister au développement des sciences sociales sans chercheur humain derrière? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important? Est-ce que la machine est mieux placée pour comprendre la réalité du monde sociale, ainsi que ses mécanismes, que l'humain? D'une part, certains pensent que l'IA risque de générer des « laboratoires autonomes » [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 55]. Il n'est pas difficile d'imaginer un monde où tout le processus scientifique, de la conception jusqu'à la communication, serait fait par l'IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n'être qu'une partie de l'auditoire vers qui les résultats sont présentés.
+
+Bien que nous n'en sommes pas encore là, il est important de réfléchir aux différents enjeux qui se posent à l'aube d'une révolution technologique. Par exemple, étant donné que l'IA est, pour l'instant, très opaque dans tout le processus qui le mène de l'intrant vers le résultat, comment pourrait-on s'assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques? A-t-elle eu le consentement libre et éclairé de tous les participants? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont on ne connait pas le processus qui y a mené? Sur cette dernière question, l'une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques [@king_etal21; @bourgeois21]. Toutes les recherches doivent présenter, d'une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. Le terme transparence est très important, et résume l'esprit de toute communication scientifique. Or, c'est une limite importante de l'IA en ce moment : nous n'avons pas accès aux processus qui mènent de l'intrant à l'extrant [@hanchenwangtianfanfuyuanqiduwenhaogaokexinhuang_etal23, pp. 56]. Cette opacité nous empêche d'évaluer correctement la validité d'un protocole scientifique qui serait réalisée par l'IA.
+
+La conséquence logique de cette situation est de toujours rester vigilant et de questionner constamment les informations fournies par le robot conversationnel. L'utilisation exclusive de tels logiciels, sans se référer à des sources scientifiques qui ont été publiées par des revues scientifiques ou des éditeurs scientifiques, ne devrait jamais être une option. Il n'est pas seulement question d'intégrité et d'éthique, mais de toute la conception de ce que constitue un savoir scientifique. L'utilisation de ChatGPT, par exemple, pour produire un savoir quelconque met au défi nos conceptions épistémologiques. Générer des textes entiers avec l'aide de l'IA ne devrait donc pas être considéré.
+
+Ainsi, l'avènement de l'IA en recherche apporte des questions et des réflexions épistémologiques[^chapitre_9-7] et méthodologiques[^chapitre_9-8] importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheur, nous devons nous questionner par rapport à l'utilisation de ces nouvelles technologies. Il faut être proactif et initier les réflexions sur la place du chercheur maintenant.
+
+[^chapitre_9-7]: L'épistémologie est l'une des branches de la philosophie des sciences qui s'intéresse au savoir et à la connaissance. De manière générale, et très simplifié, l'une des questions fondamentales de l'épistémologie et de se questionner quant à savoir ce qu'est un savoir qui serait scientifique.
+
+[^chapitre_9-8]: La méthodologie est le champ de la philosophie des sciences qui s'intéresse à l'étude des méthodes scientifiques ou techniques.
+
+Le but principal de ce chapitre était d'initier la discussion à propos de la place de l'IA dans les sciences sociales. L'objectif de la discussion n'était pas de décourager les lecteurs d'utiliser l'IA. Au contraire, ce sont des outils qui offrent des fonctionnalités très utiles. Les différents outils présentés dans ce chapitre en témoigne. Malgré cela, il est important de rappeler que l'IA possède aussi son lot de défis et d'enjeux. Ceux-ci appelent donc à la prudence ainsi qu'à une utilisation réfléchie de ces outils. Il y a aussi le risque d'en devenir dépendant [@park_etal23]. Bien qu'elle offre de nombreux avantages, cette technologie offre beaucoup de raccourcis attirants qui pourraient potentiellement nuire à plusieurs de nos capacités intellectuelles et physiques [@grassini23]. Sur ce sujet, une récente étude de @kosmyna_etal25a démontre que la rétention d'information du cerveau lors de l'utilisation de l'IA pour accomplir des tâches complètes à notre place est moindre que lorsque la tâche est accomplie sans l'utilisation de l'IA. De plus, les régions du cerveau qui sont mobilisées pour accomplir une même tâche, avec et sans l'IA, ne sont pas les mêmes. En ce sens, il est important de trouver l'équilibre entre une utilisation qui permet de dépasser les contraintes qui sont imposées par le temps ou par nos capacités intellectuelles sans pour autant tout reléguer à l'IA. Il ne faut pas perdre de vue non plus qu'il est important de développer ses propres capacités réflexives. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd'hui, le fondement des chercheurs en sciences sociales numériques.
+
+{{< pagebreak >}}
+
+```{=html}
+<!--
 ## Notes
 
 -   Les deux commandes suivantes permettent d'extraire de l'information supplémentaires:
@@ -331,15 +329,13 @@ Utiliser ChatGPT de cette façon ouvre de nombreuses possibilités : appliquer d
 
 -   Plus de fonctionalités sont disponibles en python, mais le package R est suffisant pour la plupart des utilisations.
 
-{{< pagebreak >}}
-
 ### Bonnes pratiques d'utilisation
 
 Harvard. 2023. « Guidelines for using ChatGPT and other Generative AI tools at Harvard ». https://provost.harvard.edu/guidelines-using-chatgpt-and-other-generative-ai-tools-harvard
 
 MIT. 2023. « Advice and responses from faculty on ChatGTP and A.I.-assisted writing ». https://cmsw.mit.edu/advice-and-responses-from-faculty-on-chatgpt-and-a-i-assisted-writing/
-
-{{< pagebreak >}}
+-->
+```
 
 ```{=html}
 <!--
