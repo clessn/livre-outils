@@ -4,44 +4,118 @@
 \textit{Laurence-Olivier M. Foisy}
 \end{center}
 
-Cet annexe s'adresse à un public de nouveaux initiés en informatique. Son objectif est de convaincre les chercheurs de l'importance de se munir d'ordinateurs qui leur sont adéquats. En effet, un élément lie l'entièreté des outils présentés dans ce livre : l'ordinateur. L'ordinateur est la plateforme principale qui réunit tous les outils numériques nécessaires aux chercheurs. Que ce soit pour la collecte de données, le traitement de ces données, la visualisation, la rédaction ou la communication, l'ordinateur est l'outil principal. Il est donc crucial de bien le connaître, de le maintenir propre et organisé et de l'utiliser efficacement. Apprécier l'ordinateur sur lequel on travaille est un excellent moyen de rester motivé et productif.
+Cet annexe s'adresse à un public de nouveaux initiés en informatique.
+Son objectif est de convaincre les chercheurs de l'importance de se munir d'un ordinateur adapté à leurs besoins.
+En effet, un élément lie l'ensemble des outils présentés dans ce livre : l'ordinateur.
+C'est la plateforme principale qui réunit les outils numériques nécessaires à la recherche.
+Que ce soit pour la collecte de données, leur traitement, la visualisation, la rédaction ou la communication, l'ordinateur demeure l'outil central.
+Il est donc crucial de bien le connaître, de le maintenir propre et organisé, et de l'utiliser efficacement.
+Apprécier l'ordinateur sur lequel vous travaillez est aussi un excellent moyen de rester motivé et productif.
 
-Beaucoup de chercheurs acquièrent des ordinateurs sans effectuer de recherche préalable. Ils se retrouvent alors avec un appareil qui ne correspond pas à leurs besoins. Il est donc primordial de bien choisir son ordinateur. Pour cela, il est essentiel de connaître les différents composants d'un ordinateur et de comprendre leur fonction. Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD).
+C'est votre outil de tous les jours, celui avec lequel vous passerez des centaines, sinon des milliers d'heures pendant votre parcours universitaire.
+Il vaut donc la peine de prendre le temps d'en choisir un que vous aimez.
+Un ordinateur agréable à utiliser peut favoriser le travail, la motivation et la constance.
+À l'inverse, un appareil frustrant ou inconfortable risque de devenir une source de friction et de compliquer inutilement vos études.
+
+Beaucoup de chercheurs acquièrent des ordinateurs sans effectuer de recherche préalable.
+Ils se retrouvent alors avec un appareil qui ne correspond pas à leurs besoins.
+Il est donc primordial de bien choisir son ordinateur.
+Pour cela, il est essentiel de connaître les différents composants d'un ordinateur et de comprendre leur fonction.
+Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD).
  
 ## Les composants d'un ordinateur
 
 ### La mémoire vive (RAM)
 
-La mémoire vive (RAM) est une composante essentielle de l'ordinateur. Elle permet de stocker temporairement les données nécessaires au fonctionnement de l'ordinateur. Plus la mémoire vive est importante, plus l'ordinateur peut stocker de données simultanément, ce qui permet non seulement d'accélérer son fonctionnement mais aussi de pouvoir manipuler des fichiers plus volumineux. Si l'ordinateur n'a pas assez de mémoire vive, il devra stocker des données sur le disque dur, ce qui est beaucoup plus lent. Lorsque des objets sont chargés dans R, ils sont envoyés dans la mémoire vive. Si de grandes quantités de données sont gérées, il est suggéré d'avoir une mémoire vive conséquente pour effectuer des opérations rapidement.
+La mémoire vive (RAM) est une composante essentielle de l'ordinateur.
+Elle permet de stocker temporairement les données nécessaires à son fonctionnement.
+Plus la mémoire vive est importante, plus l'ordinateur peut stocker de données simultanément, ce qui permet non seulement d'accélérer son fonctionnement, mais aussi de manipuler des fichiers plus volumineux.
+Si l'ordinateur n'a pas assez de mémoire vive, il devra utiliser son espace de stockage de façon temporaire, ce qui est beaucoup plus lent.
+Lorsque vous chargez des objets dans R, ils sont envoyés dans la mémoire vive.
+Si vous gérez de grandes quantités de données, il est suggéré d'avoir une mémoire vive conséquente pour effectuer des opérations rapidement.
 
-Il est recommandé de choisir un ordinateur doté d'une quantité de mémoire vive suffisante pour les tâches à accomplir. Certaines tâches apparemment anodines nécessitent beaucoup de mémoire vive. Par exemple, avoir de nombreux onglets ouverts dans le navigateur internet peut consommer beaucoup de mémoire vive. Garder ses onglets ouverts peut ainsi ralentir l'ordinateur.
+Il est recommandé de choisir un ordinateur doté d'une quantité de mémoire vive suffisante pour vos tâches.
+Certaines tâches apparemment anodines nécessitent beaucoup de mémoire vive.
+Par exemple, avoir de nombreux onglets ouverts dans votre navigateur internet peut consommer beaucoup de mémoire vive.
+Si vous avez l'habitude de garder vos onglets ouverts, soyez conscient que cela peut ralentir votre ordinateur.
 
-Sur Windows, il est possible de voir la quantité de mémoire vive utilisée en appuyant sur Ctrl + Alt + Suppr pour ouvrir le gestionnaire des tâches. Sur MacOS et Linux, il est possible d'utiliser le logiciel htop, disponible à l'adresse https://htop.dev/downloads.html, dans le terminal.
+Sur Windows, vous pouvez voir la quantité de mémoire vive utilisée dans le gestionnaire des tâches.
+Sur macOS et Linux, vous pouvez utiliser un moniteur système ou, dans le terminal, un logiciel comme htop.
 
-Lors de la rédaction de cette annexe, *ChatGPT* recommandait d'avoir au moins 16 Go de mémoire vive pour un ordinateur de recherche et au minimum 8 Go.
+Pour un ordinateur de recherche, 16 Go de mémoire vive constituent un très bon point de départ. Un minimum de 8 Go peut suffire pour des usages légers, mais cette capacité devient rapidement limitante.
 
 ### Le processeur (CPU)
 
-Le processeur (CPU) est le cerveau de l'ordinateur. Il est responsable de l'exécution des programmes et des calculs. Plus le processeur est puissant, plus l'ordinateur peut effectuer des calculs rapidement. Cela est particulièrement le cas pour les chercheurs qui réalisent des calculs complexes. Si le processeur n'est pas suffisamment puissant, les calculs prendront beaucoup de temps à s'exécuter.
+Le processeur (CPU) est le cerveau de l'ordinateur.
+Il est responsable de l'exécution des programmes et des calculs.
+Plus le processeur est puissant, plus l'ordinateur peut effectuer des calculs rapidement.
+Cela est particulièrement le cas pour les chercheurs qui réalisent des calculs complexes.
+Si le processeur n'est pas suffisamment puissant, les calculs prendront beaucoup de temps à s'exécuter.
 
-Par exemple, l'analyse textuelle de grands corpus, comme l'examen de discours ou de publications sur les médias sociaux en sciences sociales numériques, nécessite un processeur capable de gérer de vastes quantités de données textuelles. De même, l'entraînement de modèles de machine learning, qui est crucial pour développer des prédictions ou des classifications basées sur des données historiques, bénéficie grandement d'un processeur rapide. Les chercheurs en sciences sociales travaillent également souvent avec de grandes bases de données démographiques ou économiques, et l'exécution de boucles sur ces ensembles de données pour des analyses statistiques ou économétriques peut être très gourmande en ressources.
+Par exemple, l'analyse textuelle de grands corpus, comme l'examen de discours ou de publications sur les médias sociaux en sciences sociales numériques, nécessite un processeur capable de gérer de vastes quantités de données textuelles.
+De même, l'entraînement de modèles de machine learning, qui est crucial pour développer des prédictions ou des classifications basées sur des données historiques, bénéficie grandement d'un processeur rapide.
+Les chercheurs en sciences sociales travaillent également souvent avec de grandes bases de données démographiques ou économiques, et l'exécution de boucles sur ces ensembles de données pour des analyses statistiques ou économétriques peut être très gourmande en ressources.
 
-Un bon processeur permettra d'effectuer ces tâches rapidement. La puissance d'un processeur se mesure en gigahertz (GHz). Plus le processeur a une fréquence élevée en gigahertz, plus il est puissant. Il est aussi pertinent de considérer le nombre de cœurs du processeur. Les cœurs d'un processeur sont des unités de calcul indépendantes. Plus un processeur a de cœurs, plus il peut réaliser de tâches simultanément. Il est intéressant de savoir qu'il est possible de paralléliser des tâches sur plusieurs cœurs de processeur, ce qui permet d'accélérer leur exécution. Toutefois, tous les logiciels ne parallélisent pas les tâches automatiquement. En R, des packages spécifiques doivent être téléchargés pour paralléliser les tâches. La parallélisation peut réduire le temps de calcul de plusieurs ordres de grandeur. Il est stratégique de choisir un processeur puissant pour réaliser des tâches complexes. Il est également possible d'utiliser htop pour observer l'utilisation des cœurs du processeur.
+Un bon processeur permettra d'effectuer ces tâches rapidement.
+Sa puissance ne se résume pas à sa fréquence en gigahertz (GHz) : l'architecture du processeur et le nombre de cœurs comptent aussi beaucoup.
+Les cœurs d'un processeur sont des unités de calcul indépendantes.
+Plus un processeur a de cœurs, plus il peut réaliser de tâches simultanément.
+Il est aussi possible de répartir certaines tâches sur plusieurs cœurs afin d'accélérer leur exécution.
+Toutefois, tous les logiciels ne le font pas automatiquement.
+Il est donc préférable de choisir un processeur suffisamment puissant pour les tâches que vous souhaitez accomplir.
+Encore une fois, un moniteur système ou un logiciel comme htop permet d'observer l'utilisation des cœurs de votre processeur.
 
-Les deux principaux fabricants de processeurs sont Intel et AMD. Lors de la rédaction de cette annexe, les deux manufacturiers offraient des processeurs de qualité. Il est également important de considérer les processeurs Apple avec leur architecture propre, connue sous le nom d'Apple Silicon, qui utilisent une architecture ARM différente des architectures x86 d'Intel et AMD. Ces processeurs, tels que le M1 et M2, sont efficaces pour les applications d'analyse de données grâce à leur efficacité énergétique et leur intégration étroite avec le matériel et le logiciel macOS. Toutefois, la sélection du processeur peut varier selon les préférences personnelles, les exigences spécifiques des tâches à accomplir, et le budget. Chaque type possède ses avantages.
+Parmi les fabricants de processeurs les plus répandus, on trouve Intel, AMD et Apple.
+Les processeurs Apple Silicon utilisent une architecture différente de celles d'Intel et d'AMD, mais ils conviennent eux aussi très bien à de nombreux usages de recherche.
+Le choix du processeur dépendra surtout de votre budget, de vos préférences et des logiciels que vous souhaitez utiliser.
 
-Pour les processeurs Intel, ceux de la série i7 sont les plus puissants. Les processeurs de la série i5 sont également de bonne qualité. Les processeurs de la série i3 sont moins puissants. Pour les processeurs AMD, ceux de la série Ryzen sont de bonne qualité, tandis que ceux de la série Athlon sont moins puissants. Idéalement, il serait recommandé d'avoir un processeur i7 ou Ryzen pour un ordinateur de recherche mais n'importe quel processeur Intel ou AMD pas trop vieux peut convenir.
+Il n'est pas nécessaire d'avoir le processeur le plus récent ou le plus puissant pour travailler efficacement.
+En pratique, pour la majorité des étudiantes et étudiants, un ordinateur bien entretenu, même âgé de six ou sept ans s'il est doté de bonnes spécifications, sera largement suffisant pour lire, écrire, coder et analyser des données.
+Un ordinateur d'occasion bien choisi peut donc représenter un excellent achat.
 
 ### L'espace de stockage (HDD ou SSD)
 
-L'espace de stockage est un autre composant clé de l'ordinateur. Il permet de stocker les données de manière permanente. Il existe deux types de stockage : le disque dur (HDD) et le disque à état solide (SSD). Le disque dur est un disque magnétique qui stocke les données sur des plateaux. Il est moins cher que le disque à état solide, mais également plus lent. Si l'ordinateur est équipé d'un disque dur, il est conseillé de le remplacer par un SSD pour améliorer significativement la vitesse d'opération.
+L'espace de stockage est un autre composant clé de l'ordinateur.
+Il permet de stocker les données de manière permanente.
+Il existe deux types de stockage : le disque dur (HDD) et le disque à état solide (SSD).
+Le disque dur est un disque magnétique qui stocke les données sur des plateaux de disques.
+Il est moins cher que le disque à état solide, mais également plus lent.
+Si votre ordinateur est équipé d'un disque dur, envisagez de le remplacer par un SSD pour améliorer significativement la vitesse d'opération de votre ordinateur.
 
-Le SSD, quant à lui, est un disque électronique qui stocke les données sur des puces. Plus coûteux que le disque dur, il offre cependant une vitesse nettement supérieure. Il est donc recommandé de choisir un disque à état solide pour stocker les données, ce qui permettra à l'ordinateur de démarrer plus rapidement et d'ouvrir les programmes plus vite. De plus, le disque à état solide est plus fiable que le disque dur, car il n'a pas de pièces mobiles, réduisant ainsi les risques de panne.
+Le SSD, quant à lui, est un disque électronique qui stocke les données sur des puces.
+Plus coûteux que le disque dur, il offre cependant une vitesse nettement supérieure.
+Il est donc recommandé de choisir un SSD pour stocker vos données, ce qui permettra à l'ordinateur de démarrer plus rapidement et d'ouvrir les programmes plus vite.
+De plus, le SSD est plus fiable que le disque dur, car il n'a pas de pièces mobiles, réduisant ainsi les risques de panne.
 
-Il est primordial de disposer d'un espace de stockage suffisant pour conserver les données. Lors de la rédaction de cette annexe, *ChatGPT* recommandait d'avoir au moins 256 Go d'espace de stockage pour un ordinateur de recherche. Il peut être tentant d'acheter des ordinateurs avec un espace de stockage limité pour économiser de l'argent. Cependant, il est important de se rappeler que l'espace de stockage est essentiel et que les fabricants intègrent souvent le disque dur à la carte mère, rendant impossible l'ajout ultérieur de stockage supplémentaire. Il est donc primordial de choisir un ordinateur avec un espace de stockage adéquat dès l'achat.
+Il est primordial de disposer d'un espace de stockage suffisant pour conserver vos données.
+Pour un ordinateur de recherche, il est recommandé d'avoir au moins 256 Go d'espace de stockage, et idéalement davantage pour travailler plus confortablement.
+Il peut être tentant d'acheter des ordinateurs avec un espace de stockage limité pour économiser de l'argent.
+Cependant, il est important de se rappeler que l'espace de stockage est essentiel et que certains fabricants intègrent le disque de stockage à la carte mère, rendant parfois impossible l'ajout ultérieur d'espace supplémentaire.
+Il est donc primordial de choisir un ordinateur avec un espace de stockage adéquat dès l'achat.
+
+### Quel ordinateur pour vos besoins?
+
+Pour la plupart des étudiantes et étudiants en sciences sociales, le plus important n'est pas d'avoir une carte graphique puissante, mais un ordinateur fiable, avec assez de mémoire vive, un disque SSD et une bonne autonomie.
+Pour lire, écrire, coder en R ou en Python, naviguer avec plusieurs onglets ouverts, participer à des visioconférences et utiliser des outils d'IA en ligne, 16 Go de mémoire vive et un SSD d'au moins 256 Go constituent un excellent point de départ.
+
+Une carte graphique dédiée, aussi appelée GPU, devient surtout utile pour des usages plus spécialisés, comme l'entraînement local de certains modèles d'apprentissage automatique, le montage vidéo, la 3D ou certains jeux.
+Pour la majorité des usages universitaires, le GPU intégré à l'ordinateur est suffisant.
+Autrement dit, la plupart des étudiants n'ont pas besoin d'un ordinateur spécialisé pour l'IA : pour utiliser des agents conversationnels ou d'autres outils d'IA en ligne, une bonne connexion internet et un ordinateur équilibré sont généralement bien plus importantes qu'une carte graphique haut de gamme.
 
 ## Acheter un ordinateur
 
-Il est judicieux de bien choisir son ordinateur. Pour cela, il est recommandé de faire des recherches préalables. MacOS est un choix populaire parmi les chercheurs, car il est stable et fiable. Tous les logiciels recommandés dans ce livre sont disponibles sur MacOS. Les ordinateurs proposés par Apple sont d'excellente qualité et ont généralement une longue durée de vie, ce qui en fait un bon investissement. Cependant, bien qu'offrant un excellent rapport qualité-prix, les ordinateurs Apple se situent dans une gamme de prix élevée. Pour ceux disposant d'un budget plus limité, il est possible de se tourner vers les ordinateurs d'occasion. Ces derniers sont souvent moins chers que les modèles neufs et peuvent également offrir un excellent rapport qualité-prix.
+Il est judicieux de bien choisir son ordinateur.
+Pour cela, il est recommandé de faire des recherches préalables.
+macOS est un choix populaire parmi les chercheurs, car il est stable et fiable.
+Tous les logiciels recommandés dans ce livre sont disponibles sur macOS.
+Les ordinateurs proposés par Apple sont souvent d'excellente qualité et ont généralement une longue durée de vie, ce qui en fait un bon investissement.
+Cependant, ils se situent souvent dans une gamme de prix élevée.
+Si vous disposez d'un budget plus limité, il est souvent préférable d'acheter un ordinateur d'occasion avec de bonnes spécifications qu'un ordinateur neuf mais sous-équipé.
+Un appareil un peu plus ancien avec 16 Go de mémoire vive et un SSD offrira souvent une meilleure expérience qu'un appareil neuf doté de seulement 8 Go de mémoire vive ou d'un stockage limité.
+La qualité de fabrication compte aussi beaucoup : un ordinateur solide, avec un bon clavier, une bonne charnière et une structure rigide, peut rester agréable à utiliser pendant de nombreuses années, alors qu'un appareil neuf mal construit peut devenir frustrant très rapidement.
 
-Plusieurs entreprises se débarrassent régulièrement de leur parc informatique, qui est ensuite racheté par des compagnies spécialisées dans la remise à neuf et la revente de ces équipements. Ces ordinateurs sont souvent de bonne qualité et proposent un excellent rapport qualité-prix. Il est possible de trouver des ordinateurs d'occasion de qualité sur des sites comme eBay ou Kijiji. Lors de la rédaction de cette annexe, il était possible de trouver un Thinkpad T480 avec 16 Go de mémoire vive, un SSD de 256 Go et un processeur i7 d'Intel pour environ 250-300 dollars canadiens.
+Plusieurs entreprises se débarrassent régulièrement de leur parc informatique, qui est ensuite racheté par des compagnies spécialisées dans la remise à neuf et la revente de ces équipements.
+Ces ordinateurs sont souvent de bonne qualité et proposent un excellent rapport qualité-prix.
+Comme règle simple, un ordinateur de six à sept ans avec 16 Go de mémoire vive, un SSD et un processeur correct peut encore très bien convenir aux besoins universitaires.
+Il est possible de trouver des ordinateurs d'occasion de qualité sur des sites comme eBay ou Marketplace.
+À titre d'exemple, un ThinkPad T480 avec 16 Go de mémoire vive, un SSD et un processeur i7 peut encore très bien faire le travail pour la rédaction, la programmation et l'analyse de données en sciences sociales.
