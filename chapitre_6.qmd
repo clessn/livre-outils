@@ -12,7 +12,7 @@ Le chapitre qui suit vise à présenter la méthode de l'extraction de données 
 
 Le chapitre débute par une description courte et non-exhaustive d'outils de collecte de divers types de données sélectionnés en raison de la portée de leur utilisation ou encore en raison de leurs capacités techniques. Cette section aborde, notamment, des outils de collecte de données de sondage ou encore des données textuelles de médias. L'objectif de cette courte section est de présenter des outils plus traditionnels de collecte de données, certes efficaces, mais qui comportent un certain nombre de limites. Les sections suivantes, représentant le coeur de ce chapitre, mettent un accent particulier sur la méthode de l'extraction de données par le biais de l'outil *rvest* et les opportunités de recherche qui en découlent. Nous démontrons comment les capacités de programmation avec $\textsf{R}$ permettent l'accès à un volume important de données qui peuvent alimenter de manière significative des projets de recherche. En somme, ce chapitre offre un tour d'horizon des outils disponibles à la communauté scientifique tout en présentant les manières d'exploiter l'extraction web et le package *rvest* et en offrant des exemples concrets de son utilisation.
 
-## Point d'observation : les outils traditionnels de collecte de données numériques en sciences sociales
+## Point d'observation : la collecte de données à l'ère numérique
 
 Toute recherche empirique repose sur l'analyse d'un objet de recherche, et doit donc comprendre une réflexion sur les manières d'observer l'objet d'étude. Avant l'utilisation de quelconque méthode, il faut un ensemble de données à analyser sur lesquelles les différentes méthodes seront appliquées. Le type de données à analyser dépend de l'objectif analytique de la recherche entreprise, mais surtout, de l'objet de recherche. Une fois que l'on sait *qu'est* ce qu'on veut étudier, il faut déterminer *comment* l'étudier, et ultimement, acquérir les données nécessaires à l'analyse. Les sciences sociales reposent sur l'analyse des sociétés et des phénomènes qui les caractérisent. Les objets d'études sont multiples, tout comme les manières de les observer. Les communautés scientifiques autant qualitatives que quantitatives ont donc besoin de données qui permettent de tels types d'analyses, et il existe un immense éventail d'outils permettant la collecte de données nécessaires à la tenue de recherche en sciences sociales.
 
@@ -123,7 +123,7 @@ La recherche en sciences sociales se penche également sur l'analyse de contenu 
 
 Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut toutefois pas tomber dans le piège de se limiter aux outils traditionnels de recherche. En effet, les récentes transformations technologiques élargissent considérablement le champ de possibilités offertes à la communauté scientifique, notamment en raison de la nature massive des données qui lui est accessible. Non seulement ces données sont nombreuses, mais elles sont accessibles par le biais de connaissances de base en programmation. La section suivante aborde un outil fondamental de la collecte de données en sciences sociales numériques : les extracteurs web.
 
-## Arpentage et choix éditorial : l'extraction de données web grâce à l'outil *rvest*
+## Arpentage et choix éditorial : les extracteurs de données web
 
 Les extracteurs de données sont des outils qui ont transformé la récolte de données en sciences sociales. Les extracteurs de données numériques sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique définie. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
 
@@ -228,7 +228,7 @@ tbl_resume_chap_6_collecte |>
   )
 ```
 
-## Manuel d'instruction : extraire des données avec $\textsf{R}$
+## Manuel d'instruction : utiliser *rvest* pour extraire des données web
 
 La section suivante présente la méthode d'utilisation de l'outil *rvest*. Elle démontre comment l'outil permet d'extraire des données du web, une méthode en vogue en sciences sociales.
 
