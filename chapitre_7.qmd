@@ -182,7 +182,7 @@ Si jusqu'à présent la visualisation des données a été présentée comme une
 
 #### Graphiques interactifs
 
-Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En $\textsf{R}$, les packages `ggplotly` et `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
+Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En $\textsf{R}$, la fonction `ggplotly()` et le package `plotly` permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.
 
 ::: callout-note
 Note : Le rendu de graphiques interactifs n'est pas possible dans un document PDF. Par conséquent, seuls les codes sont fournis ci-dessous. Ces codes peuvent être testés dans un environnement de développement pour voir le résultat.
@@ -230,11 +230,11 @@ fig <- plot_ly(
 fig
 ```
 
-Nous recommandons de consulter la documentation officielle des packages `plotly` et `ggplotly` pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir les graphiques interactifs.
+Nous recommandons de consulter la documentation officielle du package `plotly` (et de la fonction `ggplotly()`) pour découvrir toutes les options et fonctionnalités disponibles, afin d'enrichir les graphiques interactifs.
 
 #### Applications interactives avec Shiny
 
-`shiny` est un package R puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
+`shiny` est un package $\textsf{R}$ puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
 
 ##### Exemple de base avec `shiny`
 
@@ -263,7 +263,7 @@ ui <- fluidPage(
 # Serveur
 server <- function(input, output) {
   output$plot <- renderPlot({
-    ggplot(mtcars, aes_string(x = input$var, y = "mpg")) +
+    ggplot(mtcars, aes(x = .data[[input$var]], y = mpg)) +
       geom_point() +
       labs(title = paste("Effet de", input$var, "sur mpg"))
   })
