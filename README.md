@@ -1,4 +1,18 @@
 
+# Outils de recherche en sciences sociales numériques
+
+Manuscrit d'un livre académique rédigé par **Alexis Bibeau-Gagnon**,
+**Adrien Cloutier** et **Yannick Dufresne** (Université Laval / CLESSN).
+
+Ce livre présente une sélection d'outils numériques — libres, accessibles
+et largement adoptés — à l'intention des chercheurs et étudiants en sciences
+sociales. Il couvre la gestion de projet, les données, la bibliographie,
+la collecte, la visualisation, la rédaction et l'intelligence artificielle.
+
+> **Statut** : Manuscrit en cours d'évaluation éditoriale. Ce dépôt contient
+> les sources du livre (format Quarto). Aucune version diffusable n'est
+> disponible publiquement pour le moment.
+
 <!-- badges: start -->
 <!-- badges: end -->
 
