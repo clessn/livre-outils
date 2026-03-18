@@ -7,15 +7,21 @@ book:
   date: today
   chapters:
     - index.qmd
-    - chapitre_1.qmd
-    - chapitre_2.qmd
-    - chapitre_3.qmd
-    - chapitre_4.qmd
-    - chapitre_5.qmd
-    - chapitre_6.qmd
-    - chapitre_7.qmd
-    - chapitre_8.qmd
-    - chapitre_9.qmd
+    - part: "Fondations"
+      chapters:
+        - chapitre_1.qmd
+        - chapitre_2.qmd
+        - chapitre_3.qmd
+        - chapitre_4.qmd
+    - part: "Structure"
+      chapters:
+        - chapitre_5.qmd
+        - chapitre_6.qmd
+        - chapitre_7.qmd
+        - chapitre_8.qmd
+    - part: "Finitions"
+      chapters:
+        - chapitre_9.qmd
   appendices:
     - annexe_a.qmd
     - references.qmd

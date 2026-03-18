@@ -171,7 +171,8 @@ Voici un exemple simple d'utilisation de l'API d'*OpenAI* :
 
 library(openai)
 
-system <- "You are a helpful assistant" # Donne un rôle au modèle. Doit être clair et concis.
+system <- "You are a helpful assistant" # Donne un rôle au modèle.
+                                        # Doit être clair et concis.
 
 prompt <- "Quelle est la capitale du Québec?" # Le prompt
 

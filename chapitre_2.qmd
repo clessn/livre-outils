@@ -1,7 +1,7 @@
 # Outils de programmation : $\textsf{R}$ comme point de départ {#sec-chap2}
 
 \begin{center}
-\textit{Marc-Antoine Rancourt (University of Toronto), \
+\textit{Marc-Antoine Rancourt (University of Toronto), \\
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 

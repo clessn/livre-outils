@@ -1,8 +1,7 @@
 # Outils de synthèse de la connaissance et de gestion des références : pour une revue de littérature rigoureuse et publiable {#sec-chap5}
 
 \begin{center}
-\textit{Sarah-Jane Vincent (Stony Brook University), \\
-Camille Pelletier (Université Laval), \\
+\textit{Camille Pelletier (Université Laval), \\
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 
