@@ -10,7 +10,7 @@ sociales. Il couvre la gestion de projet, les données, la bibliographie,
 la collecte, la visualisation, la rédaction et l'intelligence artificielle.
 
 > **Statut** : Manuscrit en cours d'évaluation éditoriale. Ce dépôt contient
-> les sources du livre (format Quarto). Aucune version diffusible n'est
+> les sources du livre (format Quarto). Aucune version diffusable n'est
 > disponible publiquement pour le moment.
 
 <!-- badges: start -->
