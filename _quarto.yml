@@ -38,6 +38,7 @@ format:
       - text: |
           \usepackage{setspace}
           \usepackage{csquotes}
+          \usepackage[dvipsnames]{xcolor}
           \newcommand{\R}{\textsf{R}}
           \AtBeginDocument{\hypersetup{colorlinks=true,citecolor=NavyBlue,linkcolor=NavyBlue,urlcolor=NavyBlue}}
       - titlepage.tex
