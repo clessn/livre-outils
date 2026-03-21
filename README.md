@@ -1,4 +1,3 @@
-
 # Outils de recherche en sciences sociales numériques
 
 Manuscrit d'un livre académique rédigé par **Alexis Bibeau-Gagnon**,
