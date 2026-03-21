@@ -1,0 +1,161 @@
+# Glossaire {#sec-glossaire}
+
+Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés dans cet ouvrage. Les renvois indiquent le ou les chapitres où chaque notion est introduite ou approfondie.
+
+---
+
+**Agile**
+
+:   Approche itérative de gestion de projet qui privilégie la livraison progressive de résultats plutôt qu'une planification rigide à long terme. [→ @sec-chap3]
+
+**Anonymisation**
+
+:   Processus consistant à supprimer ou à transformer les informations permettant d'identifier des individus dans un jeu de données, afin de protéger leur vie privée. [→ @sec-chap4]
+
+**API** *(Application Programming Interface)*
+
+:   Interface permettant à deux logiciels de communiquer entre eux. En recherche, les API sont couramment utilisées pour extraire des données depuis des plateformes en ligne (médias sociaux, journaux, bases de données). [→ @sec-chap6]
+
+**Apprentissage machine** *(machine learning)*
+
+:   Sous-domaine de l'intelligence artificielle dans lequel un algorithme apprend automatiquement à effectuer une tâche à partir de données d'entraînement, sans être explicitement programmé pour chaque cas. [→ @sec-chap9]
+
+**Apprentissage profond** *(deep learning)*
+
+:   Technique d'apprentissage machine utilisant des réseaux de neurones artificiels à plusieurs couches pour modéliser des relations complexes dans les données. [→ @sec-chap9]
+
+**BibTeX**
+
+:   Format de fichier texte (`.bib`) utilisé pour stocker des références bibliographiques. Il est lu par LaTeX, Quarto et d'autres outils pour générer automatiquement des bibliographies formatées. [→ @sec-chap5, @sec-chap8]
+
+**Branche** *(branch)*
+
+:   Dans Git, copie parallèle d'un dépôt permettant de développer des modifications de façon isolée avant de les intégrer à la version principale. [→ @sec-chap4]
+
+**Code source**
+
+:   Texte lisible par un humain constituant un programme informatique, écrit dans un langage de programmation. Les logiciels libres rendent leur code source accessible publiquement. [→ @sec-chap1]
+
+**Commit**
+
+:   Dans Git, enregistrement d'un ensemble de modifications dans l'historique du dépôt, accompagné d'un message descriptif. [→ @sec-chap4]
+
+**CRAN** *(Comprehensive R Archive Network)*
+
+:   Dépôt centralisé hébergeant les packages R validés et mis à disposition de la communauté. [→ @sec-chap2]
+
+**Données massives** *(big data)*
+
+:   Ensembles de données dont le volume, la variété ou la vélocité dépassent les capacités des outils d'analyse traditionnels, nécessitant des infrastructures et des méthodes spécialisées. [→ @sec-chap1, @sec-chap6]
+
+**DOI** *(Digital Object Identifier)*
+
+:   Identifiant numérique permanent et unique attribué à une publication ou à un jeu de données, garantissant son accessibilité à long terme sur le Web. [→ @sec-chap4]
+
+**Git**
+
+:   Logiciel libre de contrôle de version permettant de suivre l'historique des modifications d'un projet, de collaborer à plusieurs et de revenir à des versions antérieures. [→ @sec-chap4]
+
+**GitHub**
+
+:   Plateforme en ligne hébergeant des dépôts Git et offrant des outils de collaboration (issues, pull requests, révision de code). [→ @sec-chap4]
+
+**HTML** *(HyperText Markup Language)*
+
+:   Langage de balisage utilisé pour structurer le contenu des pages Web. Utilisé aussi comme format de sortie par Quarto et Markdown. [→ @sec-chap6, @sec-chap8]
+
+**IDE** *(Environnement de développement intégré)*
+
+:   Logiciel regroupant un éditeur de code, un débogueur et d'autres outils facilitant la programmation. RStudio et VS Code en sont des exemples courants. [→ @sec-chap2]
+
+**Intelligence artificielle générative**
+
+:   Catégorie de systèmes d'IA capables de produire du contenu nouveau (texte, image, code) à partir d'une requête, en s'appuyant sur des modèles de langage de grande taille. [→ @sec-chap9]
+
+**Kanban**
+
+:   Méthode visuelle de gestion de projet organisée autour d'un tableau divisé en colonnes représentant les étapes d'avancement des tâches (ex. : À faire, En cours, Terminé). [→ @sec-chap3]
+
+**LaTeX**
+
+:   Langage de composition typographique utilisé pour produire des documents de haute qualité, particulièrement adapté aux équations mathématiques et aux longs documents structurés. [→ @sec-chap8]
+
+**Licence GPL** *(General Public License)*
+
+:   Licence de logiciel libre garantissant à tout utilisateur le droit d'utiliser, d'étudier, de modifier et de redistribuer le logiciel, à condition que les versions dérivées restent sous la même licence. [→ @sec-chap1]
+
+**LLM** *(Large Language Model)*
+
+:   Modèle d'intelligence artificielle entraîné sur de très grandes quantités de texte, capable de générer, de résumer ou de traduire du texte de façon cohérente. ChatGPT en est un exemple. [→ @sec-chap9]
+
+**Logiciel libre**
+
+:   Logiciel dont le code source est librement accessible, modifiable et redistribuable selon des conditions définies par sa licence. À distinguer du logiciel gratuit (*freeware*). [→ @sec-chap1]
+
+**Markdown**
+
+:   Langage de balisage léger permettant de formater du texte à l'aide de caractères simples (ex. : `**gras**`, `# titre`). Il est à la base de Quarto et R Markdown. [→ @sec-chap8]
+
+**Métadonnées**
+
+:   Données décrivant d'autres données, comme le titre, l'auteur, la date de création ou les mots-clés associés à un fichier ou à une référence bibliographique. [→ @sec-chap5]
+
+**Package**
+
+:   Extension installable dans un langage de programmation (R, Python) qui ajoute des fonctions ou des capacités non présentes dans la version de base. [→ @sec-chap2]
+
+**Pandoc**
+
+:   Convertisseur universel de documents capable de transformer un fichier d'un format (Markdown, LaTeX, Word) vers un autre (HTML, PDF, DOCX). Quarto l'utilise en coulisses. [→ @sec-chap8]
+
+**Préinscription** *(preregistration)*
+
+:   Pratique consistant à enregistrer publiquement, avant de collecter des données, les hypothèses et la méthodologie d'une étude, afin de renforcer la transparence et la reproductibilité. [→ @sec-chap1]
+
+**Principe FAIR**
+
+:   Ensemble de principes guidant la gestion des données de recherche : Faciles à trouver (*Findable*), Accessibles (*Accessible*), Interopérables (*Interoperable*) et Réutilisables (*Reusable*). [→ @sec-chap4]
+
+**Pull request**
+
+:   Dans GitHub, demande formelle d'intégrer les modifications d'une branche dans une autre, soumise à révision par les collaborateurs avant fusion. [→ @sec-chap4]
+
+**Python**
+
+:   Langage de programmation interprété, polyvalent et populaire en science des données, en apprentissage machine et en développement web. [→ @sec-chap2]
+
+**Quarto**
+
+:   Système de publication scientifique et technique permettant de combiner du texte narratif, du code et des résultats dans un même document, exportable en PDF, HTML ou Word. [→ @sec-chap8]
+
+**R**
+
+:   Langage de programmation et environnement logiciel libre spécialisé dans l'analyse statistique et la visualisation de données, très utilisé en sciences sociales. [→ @sec-chap2, @sec-chap7]
+
+**Reproductibilité**
+
+:   Capacité d'un autre chercheur à obtenir les mêmes résultats en utilisant les mêmes données et la même méthode. Pilier central de la science ouverte. [→ @sec-chap1]
+
+**Revue systématique**
+
+:   Synthèse exhaustive et rigoureuse de la littérature scientifique sur une question précise, suivant un protocole préétabli et documenté (ex. : PRISMA). [→ @sec-chap5]
+
+**Science ouverte**
+
+:   Mouvement visant à rendre la recherche scientifique plus transparente, accessible et reproductible, notamment par le partage des données, du code et des publications en libre accès. [→ @sec-chap1, @sec-chap4]
+
+**Scraping web** *(extraction automatisée)*
+
+:   Technique de collecte automatique de données à partir de pages Web, généralement à l'aide d'un script qui analyse le code HTML pour en extraire les informations pertinentes. [→ @sec-chap6]
+
+**Scrum**
+
+:   Cadre de travail Agile structurant le développement en cycles courts appelés *sprints*, avec des rôles définis (Scrum Master, Product Owner) et des rituels réguliers (mêlées quotidiennes, rétrospectives). [→ @sec-chap3]
+
+**YAML** *(YAML Ain't Markup Language)*
+
+:   Format de sérialisation de données lisible par l'humain, utilisé notamment pour configurer les métadonnées d'un document Quarto (titre, auteur, format de sortie). [→ @sec-chap8]
+
+**Zotero**
+
+:   Logiciel libre de gestion bibliographique permettant de collecter, organiser et citer des références, et de les exporter vers des formats comme BibTeX. [→ @sec-chap5]

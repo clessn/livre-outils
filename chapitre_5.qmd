@@ -5,6 +5,8 @@
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 
+![](images/chapitre_5_toolbox_tape_black.png){fig-align="center" width="12%"}
+
 La revue de littérature est souvent perçue comme une étape préliminaire. Elle constitue pourtant une contribution scientifique à part entière, à condition d'être conduite avec rigueur et méthode. Une telle démarche permet non seulement de cerner les zones de connaissances encore inexplorées, mais aussi de situer comment la recherche en cours s'inscrit dans un domaine circonscrit. Loin d'être une simple collection de sources choisies aléatoirement, la synthèse de la connaissance doit suivre une démarche méthodique et réfléchie, intégrant des critères tels que la pertinence, la crédibilité, la nouveauté sur le sujet, la diversité des perspectives, la qualité méthodologique, l'impact et la citation des travaux, et leur objectivité.
 
 En dressant un portrait structuré et critique de la littérature existante, le chercheur établit les fondements de sa démarche scientifique et éclaire la formulation de sa question de recherche. Une revue de littérature rigoureuse n'est pas un simple recensement de sources ; c'est une contribution scientifique à part entière qui délimite le champ, identifie les lacunes et justifie chaque nouvelle étude. Cette démarche s'accompagne nécessairement d'une gestion rigoureuse des sources bibliographiques, et c'est là que les outils présentés dans ce chapitre entrent en jeu.

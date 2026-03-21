@@ -4,6 +4,8 @@
 \textit{Adrien Cloutier (Université Laval)}
 \end{center}
 
+![](images/chapitre_3_toolbox_walkietalkie_black.png){fig-align="center" width="12%"}
+
 À l'ère du numérique, le monde de la recherche est en fulgurante transformation. Les outils de recherche sont plus nombreux que jamais et l'écart dans la littératie numérique des chercheurs, comme dans la population générale, se creuse chaque année. Avant même de se lancer dans la recherche scientifique (mais ceci est vrai pour tous les domaines d'emplois) les travailleurs qui prennent le temps de s'intéresser et de réfléchir à la gestion de leur « workflow » (l'OQLF recommande la traduction « flux de travaux », expression qui sera utilisée dans ce chapitre pour désigner l'ensemble des pratiques et outils visant à optimiser l'efficacité et la productivité), en visant l'apprentissage et l'utilisation des meilleurs outils numériques sur le marché, sortiront avec un avantage compétitif énorme par rapport à leurs collègues.
 
 Dans cette quête incessante de l'optimisation du travail, la réflexion sur les méthodes de travail et l'utilisation des bons outils devient une clé de la réussite. Que l'on soit chercheur en herbe ou professionnel chevronné, la manière dont on organise son flux de travaux et gère ses ressources peut déterminer la qualité, la quantité et l'impact de ses résultats professionnels.

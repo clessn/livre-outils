@@ -5,6 +5,8 @@
 Jérémy Gilbert (Western University)}
 \end{center}
 
+![](images/chapitre_4_toolbox_padlock_black.png){fig-align="center" width="12%"}
+
 En début de parcours aux cycles supérieurs, le chercheur se trouve généralement dans une position où il doit amorcer la rédaction d'un mémoire ou d'une thèse. Il a peut-être commencé à prendre des notes sur la littérature, à créer des fichiers de codes, à collecter des données, à collaborer avec des coauteurs. Rapidement, une question simple, mais cruciale se pose : dans une optique de respect des valeurs scientifiques, **où entreposer tout ce contenu ?**
 
 ## Point d'observation : brève histoire de la gestion des données

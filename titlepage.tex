@@ -1,0 +1,59 @@
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{titlepage}%
+    % Fond gris foncé (identique aux diapos du cours)
+    \pagecolor[RGB]{70,70,70}%
+    \color{white}%
+    %
+    % ── Bloc titre (haut gauche, comme les diapos) ──────────────────────
+    \vspace*{0.5cm}%
+    {\raggedright\fontsize{13}{16}\selectfont\textit{De l'idéation à la publication scientifique}\par}%
+    \vspace{0.3cm}%
+    {\raggedright\fontsize{26}{31}\bfseries\selectfont
+      Outils de recherche\\[0.15em]
+      en sciences sociales\\[0.15em]
+      numériques\par}%
+    \vspace{0.4cm}%
+    {\raggedright\fontsize{10}{13}\selectfont Sous la direction de\par}%
+    \vspace{0.2cm}%
+    {\raggedright\fontsize{10}{13}\selectfont
+      BIBEAU-GAGNON, Alexis\\
+      CLOUTIER, Adrien\\
+      DUFRESNE, Yannick\par}%
+    %
+    % ── Grande boîte à outils (centre) ──────────────────────────────────
+    \vfill%
+    \begin{center}%
+      \includegraphics[width=0.35\textwidth]{images/annexe_toolbox_box_yellow.png}%
+    \end{center}%
+    \vspace{0.5cm}%
+    %
+    % ── Rangée des 9 outils (bas) ───────────────────────────────────────
+    \begin{center}%
+      \includegraphics[height=1.1cm]{images/chapitre_1_toolbox_glasses_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_2_toolbox_hammer_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_3_toolbox_walkietalkie_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_5_toolbox_tape_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_4_toolbox_padlock_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_6_toolbox_shovel_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_7_toolbox_equerre_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_8_toolbox_pencil_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_9_toolbox_multitool_yellow.png}%
+    \end{center}%
+    \vspace{0.5cm}%
+    %
+    % ── CLESSN (bas de page) ────────────────────────────────────────────
+    {\centering\fontsize{8}{10}\selectfont
+      Une proposition complète de la\\
+      Chaire de leadership en enseignement des sciences sociales numériques\\
+      de l'Université Laval\par}%
+    \vspace{0.4cm}%
+  \end{titlepage}%
+  % Remettre fond blanc pour le reste du livre
+  \nopagecolor%
+  \color{black}%
+}%
+\makeatother
