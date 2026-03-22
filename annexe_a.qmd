@@ -1,8 +1,10 @@
-# L'ordinateur
+# L'ordinateur {#sec-annexe}
 
 \begin{center}
 \textit{Laurence-Olivier M. Foisy}
 \end{center}
+
+![](images/annexe_toolbox_box_black.png){fig-align="center" width="12%"}
 
 Cet annexe s'adresse à un public de nouveaux initiés en informatique. Son objectif est de convaincre les chercheurs de l'importance de se munir d'ordinateurs qui leur sont adéquats. En effet, un élément lie l'entièreté des outils présentés dans ce livre : l'ordinateur. L'ordinateur est la plateforme principale qui réunit tous les outils numériques nécessaires aux chercheurs. Que ce soit pour la collecte de données, le traitement de ces données, la visualisation, la rédaction ou la communication, l'ordinateur est l'outil principal. Il est donc crucial de bien le connaître, de le maintenir propre et organisé et de l'utiliser efficacement. Apprécier l'ordinateur sur lequel on travaille est un excellent moyen de rester motivé et productif.
 

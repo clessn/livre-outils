@@ -5,6 +5,8 @@
 Catherine Ouellet (Université de Montréal)}
 \end{center}
 
+![](images/chapitre_1_toolbox_glasses_black.png){fig-align="center" width="12%"}
+
 <!-- # Vers une science numérique plus transparente: l'apport du logiciel libre et du code source ouvert dans les sciences sociales {#sec-chap1 .unnumbered} -->
 
 Ce chapitre ne présente pas un outil en soi. Il vise à initier les lecteurs à la philosophie du logiciel libre et, surtout, à situer ces réflexions dans le contexte de la recherche en sciences sociales. À la fin de ce chapitre, les lecteurs sont en mesure de situer les nombreux outils numériques dans le grand univers des logiciels libres et propriétaires, et de comprendre les motivations derrière le développement et l'utilisation des logiciels. La sélection d'un outil dépasse le simple calcul des coûts et bénéfices utilitaires, gratuit contre payant. Ce choix s'inscrit dans un ensemble de réflexions philosophiques, éthiques et épistémologiques plus grand qui continue, encore à ce jour, à influencer les développeurs et les utilisateurs. Tout au long de ce chapitre, il est démontré que certaines de ces motivations rejoignent la méthode scientifique, au cœur de la quête de savoir et de compréhension du monde social [@king_etal21]. Ce chapitre jette ainsi la base réflexive derrière les choix des outils numériques présentés dans ce livre, dans lequel nous avons tenté de joindre les avantages des logiciels libres avec les autres critères de sélection nécessaires à prendre en compte, dans le but de créer un environnement de travail efficace autant sur le plan individuel que collaboratif.

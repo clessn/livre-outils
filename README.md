@@ -1,8 +1,21 @@
+# Outils de recherche en sciences sociales numériques
+
+Manuscrit d'un livre académique rédigé par **Alexis Bibeau-Gagnon**,
+**Adrien Cloutier** et **Yannick Dufresne** (Université Laval / CLESSN).
+
+Ce livre présente une sélection d'outils numériques — libres, accessibles
+et largement adoptés — à l'intention des chercheurs et étudiants en sciences
+sociales. Il couvre la gestion de projet, les données, la bibliographie,
+la collecte, la visualisation, la rédaction et l'intelligence artificielle.
+
+> **Statut** : Manuscrit en cours d'évaluation éditoriale. Ce dépôt contient
+> les sources du livre (format Quarto). Aucune version diffusable n'est
+> disponible publiquement pour le moment.
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-# Comment contribuer au projet du livre d'outils
+## Comment contribuer au projet du livre d'outils
 
 Bienvenue ! Ce guide vous aidera à contribuer à notre projet de livre hébergé sur GitHub. Ne vous inquiétez pas si vous êtes nouveau sur Git ou GitHub ; ce guide étape par étape est conçu pour les débutants ayant une expérience technique limitée.
 
@@ -260,7 +273,7 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 
 Si vous rencontrez des problèmes ou avez des questions, veuillez contacter les mainteneurs du projet. Nous sommes là pour vous aider à apprendre et à contribuer !
 
-# Ressources supplémentaires
+## Ressources supplémentaires
 
 - [Guides GitHub](https://guides.github.com/activities/hello-world/)
 - [Vidéos sur les bases de Git](https://www.youtube.com/watch?v=HVsySz-h9r4)
