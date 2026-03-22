@@ -34,13 +34,15 @@ format:
     classoption: [oneside]        # mêmes marges à gauche/droite partout
     geometry: margin=30mm         # ajuste à ton goût
     colorlinks: true
+    citecolor: NavyBlue
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
     include-in-header:
       - text: |
+          \PassOptionsToPackage{dvipsnames}{xcolor}
           \usepackage{setspace}
           \usepackage{csquotes}
-          \usepackage[dvipsnames]{xcolor}
           \newcommand{\R}{\textsf{R}}
-          \AtBeginDocument{\hypersetup{colorlinks=true,citecolor=NavyBlue,linkcolor=NavyBlue,urlcolor=NavyBlue}}
       - titlepage.tex
   docx:
     reference-doc: reference-template.docx
