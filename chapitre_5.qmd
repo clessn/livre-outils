@@ -1,10 +1,11 @@
 # Outils de synthèse de la connaissance et de gestion des références : pour une revue de littérature rigoureuse et publiable {#sec-chap5}
 
 \begin{center}
-\textit{Sarah-Jane Vincent (Stony Brook University), \\
-Camille Pelletier (Université Laval), \\
+\textit{Camille Pelletier (Université Laval), \\
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
+
+![](images/chapitre_5_toolbox_tape_black.png){fig-align="center" width="12%"}
 
 La revue de littérature est souvent perçue comme une étape préliminaire. Elle constitue pourtant une contribution scientifique à part entière, à condition d'être conduite avec rigueur et méthode. Une telle démarche permet non seulement de cerner les zones de connaissances encore inexplorées, mais aussi de situer comment la recherche en cours s'inscrit dans un domaine circonscrit. Loin d'être une simple collection de sources choisies aléatoirement, la synthèse de la connaissance doit suivre une démarche méthodique et réfléchie, intégrant des critères tels que la pertinence, la crédibilité, la nouveauté sur le sujet, la diversité des perspectives, la qualité méthodologique, l'impact et la citation des travaux, et leur objectivité.
 
