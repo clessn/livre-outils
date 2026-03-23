@@ -1,8 +1,10 @@
-# L'ordinateur
+# L'ordinateur {#sec-annexe}
 
 \begin{center}
 \textit{Laurence-Olivier M. Foisy}
 \end{center}
+
+![](images/annexe_toolbox_box_black.png){fig-align="center" width="12%"}
 
 Cet annexe s'adresse à un public de nouveaux initiés en informatique.
 Son objectif est de convaincre les chercheurs de l'importance de se munir d'un ordinateur adapté à leurs besoins.
