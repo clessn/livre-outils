@@ -5,6 +5,8 @@
 Hubert Cadieux (Université Laval)}
 \end{center}
 
+![](images/chapitre_7_toolbox_equerre_black.png){fig-align="center" width="12%"}
+
 Ce chapitre a pour objectif de souligner l'importance de la visualisation des données tout au long du processus de recherche, depuis l'obtention des données pour l'analyse exploratoire des données jusqu'à la création de graphiques pour la publication. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, les chercheurs peuvent rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s'agit de trouver la meilleure manière de rendre l'information digeste pour les experts ou pour le grand public.
 
 Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d'une recherche empirique. Il y a plusieurs façons de représenter les mêmes données. Les choix des chercheurs sont donc primordiaux même lorsqu’ils sont équipés des meilleurs outils comme ceux présentés dans ce chapitre. La visualisation graphique constitue un art appliqué dont la maîtrise renforce considérablement la communication scientifique et peut en accroître la portée. Au fil du temps, cet art s’est transformé grâce au développement d’outils toujours plus performants et à l’accès croissant à des données variées et volumineuses.

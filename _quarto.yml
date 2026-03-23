@@ -7,17 +7,24 @@ book:
   date: today
   chapters:
     - index.qmd
-    - chapitre_1.qmd
-    - chapitre_2.qmd
-    - chapitre_3.qmd
-    - chapitre_4.qmd
-    - chapitre_5.qmd
-    - chapitre_6.qmd
-    - chapitre_7.qmd
-    - chapitre_8.qmd
-    - chapitre_9.qmd
+    - part: "Fondations"
+      chapters:
+        - chapitre_1.qmd
+        - chapitre_2.qmd
+        - chapitre_3.qmd
+        - chapitre_4.qmd
+    - part: "Structure"
+      chapters:
+        - chapitre_5.qmd
+        - chapitre_6.qmd
+        - chapitre_7.qmd
+        - chapitre_8.qmd
+    - part: "Finitions"
+      chapters:
+        - chapitre_9.qmd
   appendices:
     - annexe_a.qmd
+    - glossaire.qmd
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
@@ -26,10 +33,21 @@ format:
   pdf:
     classoption: [oneside]        # mêmes marges à gauche/droite partout
     geometry: margin=30mm         # ajuste à ton goût
+    colorlinks: true
+    citecolor: NavyBlue
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
     include-in-header:
       - text: |
+          \PassOptionsToPackage{dvipsnames}{xcolor}
           \usepackage{setspace}
           \usepackage{csquotes}
           \newcommand{\R}{\textsf{R}}
+      - titlepage.tex
+  docx:
+    reference-doc: reference-template.docx
+  html:
+    theme: cosmo
+    toc: true
 
 editor: source
