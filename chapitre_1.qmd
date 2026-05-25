@@ -143,6 +143,11 @@ Malgré ces limites et ces défis, nous pensons que les différents outils numé
 
 Avant de présenter différents outils qui existent pour cela, il faut préciser en quoi la transparence et l'accessibilité sont bénéfiques pour tous. D'une part, et comme nous l'avons présenté dans la section précédente, la transparence est une caractéristique fondamentale de toute recherche qui se veut scientifique. Elle est aussi liée à l'intégrité du chercheur. Il est impératif de faire état du processus qui mène à notre conclusion, de la sélection de nos données jusqu'à l'analyse. C'est de cette façon que nous pouvons juger de la validité et de la fiabilité des inférences, et surtout de ses limites. D'autre part, la transparence favorise aussi l'apprentissage [@king_etal21]. Rendre publics et accessibles, à l'aide des outils numériques, les données, le code et la ou les méthodes utilisées permet de contribuer non seulement aux débats méthodologiques, mais aussi permet à d'autres chercheurs d'apprendre sur l'utilité et l'utilisation de ces méthodes.
 
+Finalement, la transparence dans les sciences sociales est aussi une question d'imputabilité. La recherche scientifique est, dans bien des cas, financée par des fonds publics. À partir des taxes et des impôts qui sont collectés, le gouvernement finance des projets de recherche qui sont sélectionnés sur une base compétitive. La communauté scientifique est donc redevable face à la population et aux décideurs publics des décisions et des progrès faits en utilisant cet argent. Ainsi, l'utilisation de logiciels libres et ouverts ainsi que la diffusion publique du processus de recherche devraient être au coeur des priorités de tous les chercheurs non seulement pour des raisons d'imputabilité, mais aussi pour des raisons de qualité démocratique de nos systèmes politiques.
+
+Les prochaines sous-sections présentent comment ces outils s'inscrivent à chaque étape du processus de recherche scientifique. Le but ici est de nourrir la réflection quant 
+à l'utilisation personnelle de ces outils et d'encourager une science plus ouverte.
+
 ### Avant la recherche
 
 Au fil des prochains chapitres, les lecteurs apprendront un nouveau jargon. Au même titre qu'une langue comme le français, l'anglais ou le japonais, ce langage permet de communiquer, et surtout de réfléchir. Cette nouvelle langue, riche en nouveaux concepts, amènera le lecteur à développer une nouvelle manière de réfléchir à la recherche et à son organisation. Ainsi, le lecteur sera outillé pour visualiser sa recherche dans toute son ampleur, de cibler ses besoins en fonction de son but et de ses intérêts, et ainsi d'organiser son environnement de travail en conséquence.
@@ -219,7 +224,7 @@ tableau_criteres |>
   opt_table_lines() |>
   tab_options(
     table.font.size = px(12),
-    data_row.padding = px(11),   # <— augmente l’espace vertical
+    data_row.padding = px(11), # <— augmente l’espace vertical
     column_labels.background.color = "white",
     table.width = pct(95)
   )
