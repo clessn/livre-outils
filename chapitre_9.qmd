@@ -16,6 +16,8 @@ La section point d'observation présentera une définition de l'IA, l'évolution
 
 ## Point d'observation : qu'est-ce que l'intelligence artificielle ?
 
+<!-- TODO: Ajouter c'est quoi un LLM, comment ça fonctionne (Deep Learning, CNN et Transformer), avantages et inconvénients des modèles locaux -->
+
 ### Définition et différents types d'IA
 
 Qu'est-ce que l'IA ? Est-ce quelque chose d'homogène, ou s'agit-il plutôt « des intelligences artificielles »? Dans un premier temps, il est important de préciser que l'IA est un champ d'études [@devedzic22]. Par conséquent, il s'agit d'un ensemble d'objets, relativement vaste et en constante expansion, qui s'intéresse, à sa façon, à l'IA. Pour préciser ce propos, prenons l'exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d'études, qui ont chacun leur propre objet d'intérêt. La philosophie politique, les relations internationales, la politique comparée et l'étude de l'opinion publique, par exemple, sont tous des sous-champs qui s'intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu'il n'y a pas de consensus dans la définition de l'IA [@wang19; @konig_etal22]. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile : comment définir, d'une manière précise et consensuelle, quelque chose qui évolue constamment [@devedzic22; @bertolini20, pp. 15]?
@@ -88,6 +90,8 @@ Similairement, la recherche de Argyle et al. [-@argyle_etal23] utilise *ChatGPT*
 Malgré ces avantages, il est important de souligner quelques limites quant à l'utilisation de l'IA en sciences sociales. La limite la plus importante est que l'IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l'on se limitait à l'IA pour répondre à nos questions. Par conséquent, un test réalisé avec l'IA ne pourra jamais avoir le même niveau de confiance qu'une recherche réalisée avec des humains. Il est donc important de limiter l'utilisation de l'IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. [-@park_etal23] dans leur recherche, est que l'IA peut être sujette à des hallucinations. En d'autres termes, l'IA peut fabriquer des informations de toute pièce [@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité des informations générées par l'IA. C'est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d'attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences importantes sur le bien-être de nos sociétés. Restons vigilants.
 
 ## Arpentage et choix éditorial : les différents outils de l'IA
+
+<!-- TODO: revoir cette section pour uniformiser et retirer les outils/produits. Conserver la temporalité de la recherche. Ajouter optimization des acquis. -->
 
 Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qu'il est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA peuvent avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de développer une utilisation saine et intègre de ces outils.
 
@@ -174,7 +178,7 @@ Voici un exemple simple d'utilisation de l'API d'*OpenAI* :
 library(openai)
 
 system <- "You are a helpful assistant" # Donne un rôle au modèle.
-                                        # Doit être clair et concis.
+# Doit être clair et concis.
 
 prompt <- "Quelle est la capitale du Québec?" # Le prompt
 
@@ -218,25 +222,6 @@ Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'u
 
 [^chapitre_9-6]: TERMIUM Plus et IATE sont des banques de données terminologiques de référence, gérées par des langagiers professionnels. Elles facilitent la compréhension des termes spécialisés en fournissant des définitions et des équivalents multilingues, assurant ainsi la cohérence terminologique des traductions.
 
-#### *Google Traduction*
-
-Très connue, l'une des forces de *Google Traduction* est son support d'une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. *Google Traduction* est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d'une phrase en considération. De plus, il supporte aussi la traduction de documents complets.
-
-#### DeepL
-
-DeepL se démarque par une qualité supérieure de traduction, mais dans un nombre de langues plus restreint que d'autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d'une structure de phrase.
-
-#### Mate Translate
-
-Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d'utilisation et sa rapidité.
-
-#### *ChatGPT*
-
-Évidemment, *ChatGPT* est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.
-
-#### Autres outils
-
-Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive, mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer *Microsoft Translator*, *Pairaphrase*, *Amazon Translate*, *Smartling*, *Unbabel*, *Linguee*, *Yandex.Translate*, *HIX Translate*, etc.
 
 ## Manuel d'instruction : utilisation du package *OpenAI* avec $\textsf{R}$
 
@@ -266,7 +251,7 @@ Il faut ajouter la ligne suivante au fichier `.Renviron`.
 
 ```{r}
 #| eval: false
-OPENAI_API_KEY=VOTRE_CLE_API_OPENAI_ICI
+OPENAI_API_KEY = VOTRE_CLE_API_OPENAI_ICI
 ```
 
 ### Utilisation de l'API
@@ -646,3 +631,27 @@ fondamental pour chaque étudiant universitaire, ainsi que pour les
 futurs chercheurs. Commencez dès maintenant à développer ces capacités
 plutôt que de demander à ChatGPT de le faire à votre place.  -->
 ```
+
+<!--
+
+#### *Google Traduction*
+
+Très connue, l'une des forces de *Google Traduction* est son support d'une large variété de langues, tant des langues globalement utilisées et des langues plus régionales et moins utilisées. *Google Traduction* est basé sur de la traduction automatique neuronale, prenant donc le sens et le contexte d'une phrase en considération. De plus, il supporte aussi la traduction de documents complets.
+
+#### DeepL
+
+DeepL se démarque par une qualité supérieure de traduction, mais dans un nombre de langues plus restreint que d'autres outils. Il est aussi basé sur de la traduction automatique neuronale, ce qui lui permet de prendre en compte le contexte et la complexité d'une structure de phrase.
+
+#### Mate Translate
+
+Mate Translate est une extension de navigateur qui permet de traduire des pages web entières, des phrases ou des mots en un seul clic. Il supporte un grand nombre de langues et offre des fonctionnalités supplémentaires telles que la prononciation des mots et des phrases traduits. Son avantage réside vraiment dans sa facilité d'utilisation et sa rapidité.
+
+#### *ChatGPT*
+
+Évidemment, *ChatGPT* est un outil de traduction automatique basé sur des modèles de langage génératif. Il est très populaire pour sa capacité à générer du texte de manière fluide et naturelle, ce qui en fait un outil de traduction très efficace pour les textes longs et complexes. De plus, il est possible de raffiner la traduction en quelques itérations en suggérant des modifications au texte traduit.
+
+#### Autres outils
+
+Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive, mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer *Microsoft Translator*, *Pairaphrase*, *Amazon Translate*, *Smartling*, *Unbabel*, *Linguee*, *Yandex.Translate*, *HIX Translate*, etc.
+
+-->
