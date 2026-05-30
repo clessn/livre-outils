@@ -93,197 +93,25 @@ Similairement, la recherche de Argyle et al. [-@argyle_etal23] utilise *ChatGPT*
 
 Malgré ces avantages, il est important de souligner quelques limites quant à l'utilisation de l'IA en sciences sociales. La limite la plus importante est que l'IA ne remplace en aucun cas un être humain. Étant des chercheurs en sciences sociales et sciences humaines, nous dénaturerions nos disciplines si l'on se limitait à l'IA pour répondre à nos questions. Par conséquent, un test réalisé avec l'IA ne pourra jamais avoir le même niveau de confiance qu'une recherche réalisée avec des humains. Il est donc important de limiter l'utilisation de l'IA à des fins exploratoires. Une autre limite importante, mentionnée par Park et al. [-@park_etal23] dans leur recherche, est que l'IA peut être sujette à des hallucinations. En d'autres termes, l'IA peut fabriquer des informations de toute pièce [@weise_metz23]. Cela pose un sérieux problème quant à la fiabilité des informations générées par l'IA. C'est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d'attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences importantes sur le bien-être de nos sociétés. Restons vigilants.
 
-## Arpentage et choix éditorial : les différents outils de l'IA
+## Arpentage et choix éditorial : l'IA à toutes les étapes de la recherche, guide pratique pour une utilisation informée de l'IA
 
 <!-- TODO: revoir cette section pour uniformiser et retirer les outils/produits. Conserver la temporalité de la recherche. Ajouter optimization des acquis. -->
 
-Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qu'il est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA peuvent avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de développer une utilisation saine et intègre de ces outils.
+Dans le premier chapitre de ce livre, les auteurs ont proposé d'aborder la recherche selon une certaine temporalité : avant, pendant et après. Les chapitres qui ont suivi ont tous introduit des outils numériques qui s'inserts dans une ou plusieurs étapes de cette temporalité. L'IA est probablement l'outil le plus transversal. Il s'insert dans chacune de ces étapes. De plus, plusieurs des outils présentés précédemment ont incorporé certaines fonctionalités avec l'IA. Par exemple, les interfaces de programmations come VS Code offrent l'intégration de plusieurs modèles d'IA au sein de leur interface.
 
-Avant de situer les outils sélectionnés pour ce chapitre, il est important de mentionner que l'IA, et surtout l'apprentissage machine, n'est pas nouveau dans les sciences sociales. En fait, plusieurs méthodes utilisent des algorithmes, et ce depuis longtemps. Selon l'article de @rahal_etal24, l'apprentissage machine serait utilisé depuis bien avant 1960, même si ce n'était pas très répandu. Avant l'arrivé des robots conversationnels et des logiciels de traduction, les méthodes d'apprentissage machine étaient surtout confinées à l'étape de l'analyse des données. L'arrivée des grands modèles linguistiques ainsi que le perfectionnement des outils de traduction ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui, il est plus difficile de catégoriser ces outils, et de les confiner dans l'avant, le pendant ou après la recherche. À titre d'exemple, les outils de traduction peuvent très bien s'inscrire dans chacune de ces étapes. Ils peuvent être mobilisés pour traduire des articles et des livres lors de la construction du devis, traduire des sources premières telles que des articles de presse dans la partie des analyses et, finalement, assister à la traduction l'article final en plusieurs langues. Bien qu'un tel usage ne soit pas nécessairement idéal, notamment parce que certaines nuances linguistiques ne sont pas totalement saisies par ces logiciels, il convient tout de même de reconnaître la transcendance de ces outils. Les lecteurs sont encouragés à réfléchir à cet aspect en fonction des différents outils de l'IA, à la lumière de ce qui sera présenté dans les prochaines sections.
+Cette accessibilité grandissante et l'intégration facile de plusieurs modèles différents offrent d'importants avantages. Il est notamment plus facile d'utiliser des modèles d'IA afin de régler des problèmes de programmations -- pour faire du *debuging*. Sans aucun doute, il s'agit d'une fonctionalité qui est très utile pour aider dans le processus de recherche et identifier des erreurs et des problèmes lorsqu'on en rencontre.
 
-Comme le premier chapitre le mentionne, ce livre ne vise pas à présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs qui souhaitent en savoir plus à propos des méthodes d'apprentissage machine, comme le *clustering*, les arbres décisionnels et les régressions par pénalité, sont encouragés à consulter des sources qui portent spécifiquement sur ce sujet et qui présentent ces différentes méthodes et leur application avec certains langages de programmation. Sur ce dernier point, le livre de @boehmke_greenwell20 offre une excellente description de plusieurs de ces méthodes en plus de leur application dans $\textsf{R}$.
+Toutefois, il faut faire preuve d'une certaine prudence. Cette section du chapitre souhaite encourager les lecteurs à ne pas devenir *dépendant* de l'IA. L'accessibilité grandissante de cet outil peut nous mener à une utilisation constante de l'IA pour achever les différentes tâches nécessaires dans le processus de la recherche. Une telle utilisation comporte plusieurs problèmes dont il est important d'identifier et d'en être conscient. Autrement, ce sont nos capacités cognitives et réflexives qui en paieront le prix, mais aussi notre profession de chercheur qui en sera impacté. 
 
-Trois catégories d'outils seront présentées: les « *Large Language Models* » (LLM), les assistants de traduction, ainsi que les assistants de revue de littérature. La présentation de ces outils vise à suivre les grandes étapes de la recherche: avant, pendant et après. Comme il est souligné dans les paragraphes précédents, la catégorisation n'est pas mutuellement exclusive. En d'autres termes, les outils présentés ici ne se situent pas uniquement dans une étape précise. Ils les transcendent toutes. Cependant, selon leurs fonctionnalités respectives, certains s'insèrent mieux à certaines étapes de la production scientifique.
+### Dette cognitive
 
-### Avant la recherche : trouver des écrits et organiser ses sources
+Dans cette sous-section, nous souhaitons présenter pourquoi l'IA devrait être utilisée pour *polir* des tâches que l'on est déjà capable de faire nous-même et non pas pour faire des tâches que l'on ne peut pas performer nous-même. 
 
-Dans cette section, deux principaux outils sont présentés: *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne qui facilitent le début d'une revue des écrits, notamment lorsque la littérature sur un sujet ou sur une question est étrangère. Ces deux outils sont d'ailleurs compatibles avec *Zotero*, qui est présenté au @sec-chap5 de ce livre.
+Le concept de dette cognitive arrive the @kosmyna_etal25a. Dans leur recherche, ils étudient comment l'activité cérébrale est affectée par l'utilisation d'un moteur de recherche, d'un LLM ou de l'utilisation d'aucun support externe dans l'écriture d'un essai. Comparativement aux participants qui n'avaient pas accès à aucun support externe afin d'écrire leur texte, et qui sont d'ailleurs le groupe ayant la plus forte activité cérébrale et la plus complète, le groupe qui devait accomplir la même tâche à l'aide d'un LLM avait une réduction de près de 55\% dans leur activité cérébrale. Le groupe qui avait accès à un moteur de recherche se situe entre les deux avec une diminution de 34\% d'activité cérébrale, mais où celle-ci était surtout concentrée dans les cortices visuel et occipital. En comparaison, le groupe ayant accès à un LLM avait la plus faible activité cérébrale, et ce pour l'ensemble du cerveau. Leurs résultats montrent aussi que l'utilisation d'un support externe, et notamment l'utilisation d'un LLM, affecte négativement la consolidation de la mémoire, l'efficacité de l'autosurveillance ainsi que le degré d'agentivité percu dans la réalisation de la tâche (p.147). Dans la discussion de leurs résultats, les auteurs sont concernés par une conséquence important de l'IA sur l'éducation : « [...] bien qu'utile pour supporter la performance, [les outils d'IA] pourraient involontairement nuire aux processus cognitifs, à la rétention et à l'engagement authentic avec les matériaux écrits. Si les utilisateurs sont trop dépendant des outils de l'IA, ils pourraient atteindre une fluidité de surface, mais échouer à internaliser le savoir ou à ressentir un sentiment de propriété. » (p. 148) [Traduction des auteurs] 
 
-Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des articles et des livres scientifiques à partir d'une question de recherche préliminaire, ou à partir de concepts. L'application offre une version gratuite qui est toutefois limitée dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, si le lecteur souhaite s'en tenir à la version gratuite, il faudra l'utiliser avec parcimonie.
+<!-- TODO: Ajouter un paragraphe de recommandations, et sur le biais du survivant -->
 
-![Menu d'accueil d'*Elicit*](images/chapitre_9_elicit_menu.png){#fig-elicit}
-
-Par exemple, disons que l'on s'intéresse à la question suivante: qu'est-ce que la démocratie? Il peut être difficile de savoir par où commencer face à l'impressionnant volume d'écrits sur le sujet. *Elicit* offre une solution à ce problème. La @fig-elicit correspond au menu d'accueil du site web. Une fois là, nous inscrivons la question qui nous intéresse dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
-
-![Court résumé du sujet](images/chapitre_9_elicit_resume.png){#fig-results1}
-
-![Suggestions de lectures](images/chapitre_9_elicit_suggestions.png){#fig-results2}
-
-Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.
-
-Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, *ne jamais faire un copier-coller de ces résumés afin de les inclure dans un travail de recherche*. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques qui seront consultés par la suite pour rédiger une revue des écrits et trouver des références supplémentaires.
-
-Un autre outil s’offre à nous afin de trouver des références supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que plusieurs articles et/ou chapitres de livre ont été lu, et qu'ils ont été ajoutés dans *Zotero*, il est possible d'importer la collection dans *ResearchRabbit*. La @fig-rr1 présente le menu principal du site web.
-
-![Menu principal](images/chapitre_9_research_rabbit_menu.png){#fig-rr1}
-
-![Importation manuelle de documents](images/chapitre_9_research_rabbit_import.png){#fig-rr2}
-
-![Présentation de la littérature similaire](images/chapitre_9_research_rabbit_similar.png){#fig-rr3}
-
-![Vue « Timeline » des références](images/chapitre_9_research_rabbit_timeline.png){#fig-rr4}
-
-Avant toute chose, *ResearchRabbit* doit être considéré comme un outil qui aidera à *complémenter* la revue des écrits. En d'autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. *Elicit* peut aider pour cette tâche, mais aussi il est pratique de consulter des manuels de références comme des *handbooks*[^chapitre_9-4] et autres ouvrages de référence afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d'excellente ressource pour débuter une recherche.
-
-[^chapitre_9-4]: Il s'agit d'ouvrages généraux qui portent sur divers sujets. Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.
-
-Utilisons un exemple concret afin d'illustrer l'utilisation de *ResearchRabbit*. Supposons que nous nous intéressons à la question suivante : quel est le rôle des normes pacifistes sur les processus politiques au Japon? Dans un premier temps, un survol rapide de la littérature grâce aux ouvrages de références ainsi qu'avec *Google Scholar* a permis d'identifier quelques textes qui sont jugés comme pertinents afin de fournir une réponse à cette question. Ceux-ci sont ensuite ajoutés dans une nouvelle collection *Zotero*[^chapitre_9-5], qui contiendra uniquement les ouvrages pour ce projet. Ce dernier point est important afin d'éviter d'ajouter du « bruit » dans les suggestions de *ResearchRabbit*. Une fois ces étapes faites, il est possible d'importer la collection dans *ResearchRabbit*. Pour ce faire, il faut cliquer sur le bouton `Import Zotero Collection`, situé dans le coin supérieur gauche de la @fig-rr1.
-
-[^chapitre_9-5]: Voir le @sec-chap5 au besoin.
-
-Il se peut que le logiciel ne trouve pas tous les articles qui se trouvent dans la collection *Zotero*. Une solution, lorsque ce problème arrive, est de cliquer sur le bouton vert *Add Paper* situé dans la colonne de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra, et dans laquelle il est possible d'ajouter manuellement les articles au besoin. Une fois que les références ont été ajoutées, *ResearchRabbit* pourra dresser une « cartographie » des différentes sources qui sont en lien avec ces articles. La @fig-rr3 présente cette cartographie.
-
-Il est possible de trouver des articles supplémentaires à l'aide de trois fonctionnalités. La première est de consulter les *Similar Work*. Cette option est intéressante afin de visualiser tous les articles qui sont similaires aux ouvrages qui ont été identifiés au tout début. Les points en vert sont les sources qui font partie de ma collection. Cependant, la visualisation offerte par cette option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre, en fonction des cinq articles que nous avons importés dans *Zotero*, il y a 1 501 articles similaires. Cela complique la tâche de ciblage. Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il est toujours utile de classifier les ouvrages en fonction de leur date de parution, notamment afin de suivre l'évolution du débat scientifique à propos du sujet de notre recherche. Cette fonctionnalité de *ResearchRabbit* facilite ainsi cette étape, en plus de permettre de découvrir des ouvrages qui ont été publiés avant et après ceux qui ont été préalablement identifiés.
-
-Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes : *All References* et *All Citations*. Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l'article selectionné, et de visualiser les travaux qui ont cité l’article en question. Ces options sont donc très utiles pour passer au « peigne fin » chacun des articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans l'utilisation de cette méthode. Il y a un risque « d'effet tunnel », soit que la revue des écrits qui sera faite à partir de ces sources manque de largeur et de représentativité dans le traitement du sujet. C'est pourquoi il est important de diversifier ces sources et d'utiliser ces deux options d'une façon complémentaire avec plusieurs articles différents. Il est donc utile d'ajouter au fur et à mesure les nouvelles références dans *ResearchRabbit* afin de visualiser la couverture de notre revue des écrits.
-
-### Pendant la recherche : l'utilisation de grands modèles linguistiques
-
-L'utilisation des LLMs via l'API d'*OpenAI* en $\textsf{R}$ représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l'immense paysage des données textuelles avec une précision et une efficacité accrues.
-
-Bien qu'il soit possible de communiquer avec l'API d'*OpenAI* directement, le package `openai` en $\textsf{R}$ offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et biens plus encore, facilitant l'intégration des LLMs dans le flux de travail des recherches existantes.
-
-@openai19 définit les grands modèles linguistiques (*Large language models* ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages Web, des courriels, des messages de médias sociaux. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter qu'ils ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
-
-L'intégration des grands modèles de langage via l'API d'*OpenAI* dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l'analyse qualitative et quantitative des données textuelles. L'utilisation de ces modèles en $\textsf{R}$ permet aux chercheurs d'exploiter des capacités avancées de traitement du langage naturel pour une variété d'applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l'analyse de biais algorithmiques en comparant l'information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l'analyse de sentiments, l'extraction d'entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d'outils personnalisés pour des besoins spécifiques de recherche.
-
-Voici quelques exemples d'utilisation des LLMs en sciences sociales. Pour des cas concrets d'application, voir la section « L'IA en sciences sociales » dans ce chapitre.
-
-1.  Premièrement, les LLMs peuvent être utilisés pour l'analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.
-
-2.  Deuxièmement, les LLMs offrent des capacités d'extraction d'entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et sociopolitiques, enrichissant ainsi les bases de données pour des études plus poussées.
-
-3.  Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d'informations en résumés concis, facilitant l'analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.
-
-4.  Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d'explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.
-
-5.  Cinquièmement, l'intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.
-
-6.  Sixièmement, les modèles de « speech-to-text » peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l'analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.
-
-7.  Septièmement, les modèles de vision algorithmiques permettent l'analyse de contenu visuel, en extrayant des informations à partir d'images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.
-
-8.  Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s'adaptent à des besoins spécifiques de recherche, comme l'analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des informations précieuses sur l'évolution des discours et pratiques culturelles.
-
-Voici un exemple simple d'utilisation de l'API d'*OpenAI* :
-
-``` r
-
-library(openai)
-
-system <- "You are a helpful assistant" # Donne un rôle au modèle.
-# Doit être clair et concis.
-
-prompt <- "Quelle est la capitale du Québec?" # Le prompt
-
-chat_prompt <- openai::create_chat_completion(
-  model = "gpt-3.5-turbo-0125",
-  messages = list(
-    list("role" = "system", "content" = system),
-    list(
-      "role" = "user",
-      "content" = prompt
-    )
-  )
-)
-
-output <- chat_prompt$choices$message.content
-
-print(output)
-```
-
-### Après la recherche : traduire ses écrits pour la diffusion
-
-L'IA a aussi permis la création de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine ou des ordinateurs, sans aucune aide d'un humain [@glover24; @tabsharani23]. Il existe différentes approches de traduction automatique :
-
-1.  Basée sur des règles (*rules-based*): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d'une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux, mais efficace pour les langues à grammaire bien définie.
-2.  Statistique (*statistical*): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d'apprentissage. Fonctionne bien avec des données volumineuses, mais peut parfois produire des traductions imprécises faute de contextualisation. 3. Basée sur des exemples (*example-based*) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs. 4. Neuronale (*neural*) : utilise des modèles d'apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu'elle ne remplace pas entièrement les traducteurs humains. 5. Hybride : les quatres approches peuvent également être combinées.
-
-C'est au sein de l'approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (*transformer neural networks*) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions [@glover24; @tabsharani23]. En tant que forme d'IA générative, ces outils exploitent le traitement du langage naturel (*natural language processing*), l'apprentissage profond (*deep learning*) et l'auto-attention (*self-attention*) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites Web, des documents, en quelques secondes, sans avoir besoin de connaître la langue cible.
-
-Il est très utile pour les chercheurs en sciences sociales numériques de connaître et d'utiliser les outils de traduction automatique, car ils facilitent la recherche, la communication et la collaboration à l'échelle internationale, particulièrement dans le contexte d'un monde académique dominé par l'anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d'une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine [@glover24]:
-
-::: center
-| Avantages | Inconvénients |
-|-------------------------------|-----------------------------------------|
-| Amélioration de la productivité : traductions rapides et de grande échelle | Données biaisées : reproduction de stéréotypes et erreurs de genre |
-| Apprentissage autonome : amélioration continue grâce à l'apprentissage non supervisé | Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique |
-| Réduction des coûts : minimise le besoin d'intervention humaine | Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle |
-| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux |  |
-:::
-
-Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire. Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence artificielle, des ressources comme *TERMIUM Plus* et *Interactive Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel dans le travail de traduction[^chapitre_9-6].
-
-[^chapitre_9-6]: TERMIUM Plus et IATE sont des banques de données terminologiques de référence, gérées par des langagiers professionnels. Elles facilitent la compréhension des termes spécialisés en fournissant des définitions et des équivalents multilingues, assurant ainsi la cohérence terminologique des traductions.
-
-
-## Manuel d'instruction : utilisation du package *OpenAI* avec $\textsf{R}$
-
-### Installation et chargement du package
-
-```{r}
-#| eval: false
-
-install.packages("openai") ## au besoin
-library(openai)
-```
-
-### Configuration de l'API
-
-Il est recommandé d'obtenir une clé API sur le site d'*OpenAI*. Il faut savoir qu'une carte de crédit est nécessaire pour s'inscrire et que l'utilisation de l'API est payante. Il convient de se renseigner sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des tokens en entrée est moins élevé que celui des tokens en sortie.
-
-Lorsque la clé API est obtenue, le package `usethis` peut être utilisé pour la configurer dans l'environnement $\textsf{R}$.
-
-```{r}
-#| eval: false
-
-install.packages("usethis") ## au besoin
-usethis::edit_r_environ()
-```
-
-Il faut ajouter la ligne suivante au fichier `.Renviron`.
-
-```{r}
-#| eval: false
-OPENAI_API_KEY = VOTRE_CLE_API_OPENAI_ICI
-```
-
-### Utilisation de l'API
-
-La fonction principale du package `openai` est `create_chat_completion()`. Elle prend en entrée le modèle à utiliser ainsi que le message à envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction :
-
-```{r}
-#| eval: false
-
-chat_prompt <- create_chat_completion(
-  model = "gpt-3.5-turbo",
-  messages = list(
-    list(
-      "role" = "system",
-      "content" = "You are a helpful
-	    assistant."
-    ),
-    list(
-      "role" = "user",
-      "content" = "Please do the following:"
-    )
-  )
-)
-```
-
-Le résultat de la requête sera contenu dans l'objet `chat_prompt` formaté en JSON. Les variables sont accessibles de la même façon qu'un dataframe normal. Le contenu de la réponse se trouve dans `chat_prompt$choices$content`.
-
-Utiliser *ChatGPT* de cette façon ouvre de nombreuses possibilités : appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites web en temps réel par moissonnage web avec des packages tels que `rvest`, etc.
+L'utilisation de l'IA pose aussi des défis importants dans la reproduction de la science. Les résultats de @brodeur_etal26 démontrent que l'IA sous-performent comparativement aux humains dans la détection d'erreurs dans les recherches et dans la reproduction des résultats scientifiques. Ces résultats sont très importants puisqu'ils soulignent la précaution que tous les chercheurs se doivent dans l'utilisation de l'intelligence artificielle. Selon ces auteurs, l'IA atteindra ses meilleures performances lorsqu'elle *complémente* le travail du chercheur, et non pas lorsqu'elle remplace celui-ci. En ce sens, une utilisation complémentaire de l'IA s'impose, dans laquelle le chercheur reste au centre des décisions, de l'interprétation, du jugement et des des échecs complexes [@brodeur_etal26].
 
 ## En terminant
 
@@ -637,6 +465,194 @@ plutôt que de demander à ChatGPT de le faire à votre place.  -->
 ```
 
 <!--
+
+Cette section vise à présenter différents outils de l'IA aux lecteurs. Ce qu'il est important de comprendre ici, et pour faire suite à la section précédente, c'est que les outils de l'IA peuvent avoir changé entre le moment d'écrire ce chapitre et le moment où les lecteurs le liront. Certaines fonctionnalités pourraient toujours être les mêmes, certaines pourraient avoir été améliorées et d'autres pourraient être complètement nouvelles. Par conséquent, l'objectif ici est de présenter certaines utilités et fonctionnalités de l'IA, et surtout d'inciter les lecteurs à développer leurs propres capacités réflexives quant à leur utilisation de ces outils. Cette technologie offre de nouvelles opportunités, mais elle apporte aussi son lot d'enjeux et de questions dont il est important de soulever afin de développer une utilisation saine et intègre de ces outils.
+
+Avant de situer les outils sélectionnés pour ce chapitre, il est important de mentionner que l'IA, et surtout l'apprentissage machine, n'est pas nouveau dans les sciences sociales. En fait, plusieurs méthodes utilisent des algorithmes, et ce depuis longtemps. Selon l'article de @rahal_etal24, l'apprentissage machine serait utilisé depuis bien avant 1960, même si ce n'était pas très répandu. Avant l'arrivé des robots conversationnels et des logiciels de traduction, les méthodes d'apprentissage machine étaient surtout confinées à l'étape de l'analyse des données. L'arrivée des grands modèles linguistiques ainsi que le perfectionnement des outils de traduction ont chamboulé la conception de l'utilité de ces outils. Aujourd'hui, il est plus difficile de catégoriser ces outils, et de les confiner dans l'avant, le pendant ou après la recherche. À titre d'exemple, les outils de traduction peuvent très bien s'inscrire dans chacune de ces étapes. Ils peuvent être mobilisés pour traduire des articles et des livres lors de la construction du devis, traduire des sources premières telles que des articles de presse dans la partie des analyses et, finalement, assister à la traduction l'article final en plusieurs langues. Bien qu'un tel usage ne soit pas nécessairement idéal, notamment parce que certaines nuances linguistiques ne sont pas totalement saisies par ces logiciels, il convient tout de même de reconnaître la transcendance de ces outils. Les lecteurs sont encouragés à réfléchir à cet aspect en fonction des différents outils de l'IA, à la lumière de ce qui sera présenté dans les prochaines sections.
+
+Comme le premier chapitre le mentionne, ce livre ne vise pas à présenter des méthodes, mais plutôt des outils. Ainsi, les lecteurs qui souhaitent en savoir plus à propos des méthodes d'apprentissage machine, comme le *clustering*, les arbres décisionnels et les régressions par pénalité, sont encouragés à consulter des sources qui portent spécifiquement sur ce sujet et qui présentent ces différentes méthodes et leur application avec certains langages de programmation. Sur ce dernier point, le livre de @boehmke_greenwell20 offre une excellente description de plusieurs de ces méthodes en plus de leur application dans $\textsf{R}$.
+
+Trois catégories d'outils seront présentées: les « *Large Language Models* » (LLM), les assistants de traduction, ainsi que les assistants de revue de littérature. La présentation de ces outils vise à suivre les grandes étapes de la recherche: avant, pendant et après. Comme il est souligné dans les paragraphes précédents, la catégorisation n'est pas mutuellement exclusive. En d'autres termes, les outils présentés ici ne se situent pas uniquement dans une étape précise. Ils les transcendent toutes. Cependant, selon leurs fonctionnalités respectives, certains s'insèrent mieux à certaines étapes de la production scientifique.
+
+### Avant la recherche : trouver des écrits et organiser ses sources
+
+Dans cette section, deux principaux outils sont présentés: *ResearchRabbit* et *Elicit*. Il s'agit de deux ressources en ligne qui facilitent le début d'une revue des écrits, notamment lorsque la littérature sur un sujet ou sur une question est étrangère. Ces deux outils sont d'ailleurs compatibles avec *Zotero*, qui est présenté au @sec-chap5 de ce livre.
+
+Tout d'abord, *Elicit*, qui grâce à l'IA, propose des résumés, des articles et des livres scientifiques à partir d'une question de recherche préliminaire, ou à partir de concepts. L'application offre une version gratuite qui est toutefois limitée dans le nombre de crédits disponibles mensuellement afin de faire des recherches. Par conséquent, si le lecteur souhaite s'en tenir à la version gratuite, il faudra l'utiliser avec parcimonie.
+
+![Menu d'accueil d'*Elicit*](images/chapitre_9_elicit_menu.png){#fig-elicit}
+
+Par exemple, disons que l'on s'intéresse à la question suivante: qu'est-ce que la démocratie? Il peut être difficile de savoir par où commencer face à l'impressionnant volume d'écrits sur le sujet. *Elicit* offre une solution à ce problème. La @fig-elicit correspond au menu d'accueil du site web. Une fois là, nous inscrivons la question qui nous intéresse dans la case « *Ask a research question* ». Les résultats générés sont représentés dans la @fig-results1 et @fig-results2
+
+![Court résumé du sujet](images/chapitre_9_elicit_resume.png){#fig-results1}
+
+![Suggestions de lectures](images/chapitre_9_elicit_suggestions.png){#fig-results2}
+
+Le logiciel offre donc un moyen intéressant afin de faire un premier « filtrage » de la littérature sur un sujet, tout en fournissant un résumé des sources suggérées à partir desquelles nous pouvons juger de sa pertinence en fonction de nos besoins.
+
+Cependant, il est fortement recommandé d'utiliser le résumé produit par le logiciel, dans la @fig-results1, et ceux de chaque suggestion, dans la @fig-results2, à titre indicatif et uniquement pour notre propre réflexion. En d'autres termes, *ne jamais faire un copier-coller de ces résumés afin de les inclure dans un travail de recherche*. Ce logiciel doit impérativement être accompagné d'une utilisation intègre de la littérature. Une bonne utilisation de ce logiciel devrait se limiter à trouver des articles et/ou des livres scientifiques qui seront consultés par la suite pour rédiger une revue des écrits et trouver des références supplémentaires.
+
+Un autre outil s’offre à nous afin de trouver des références supplémentaires: *ResearchRabbit*. Ce logiciel est gratuit, mais demande de se créer un compte afin de pouvoir utiliser ses services. Une fois que plusieurs articles et/ou chapitres de livre ont été lu, et qu'ils ont été ajoutés dans *Zotero*, il est possible d'importer la collection dans *ResearchRabbit*. La @fig-rr1 présente le menu principal du site web.
+
+![Menu principal](images/chapitre_9_research_rabbit_menu.png){#fig-rr1}
+
+![Importation manuelle de documents](images/chapitre_9_research_rabbit_import.png){#fig-rr2}
+
+![Présentation de la littérature similaire](images/chapitre_9_research_rabbit_similar.png){#fig-rr3}
+
+![Vue « Timeline » des références](images/chapitre_9_research_rabbit_timeline.png){#fig-rr4}
+
+Avant toute chose, *ResearchRabbit* doit être considéré comme un outil qui aidera à *complémenter* la revue des écrits. En d'autres termes, afin que ce logiciel soit utile, il faut déjà avoir des articles sous la main. *Elicit* peut aider pour cette tâche, mais aussi il est pratique de consulter des manuels de références comme des *handbooks*[^chapitre_9-4] et autres ouvrages de référence afin de se faire une idée sur le sujet qui nous intéresse en plus de trouver des références. Au besoin, les bibliothécaires des différents départements universitaires sont aussi d'excellente ressource pour débuter une recherche.
+
+[^chapitre_9-4]: Il s'agit d'ouvrages généraux qui portent sur divers sujets. Les éditeurs les plus connus sont notamment *Oxford*, *SAGE* et *Routledge*.
+
+Utilisons un exemple concret afin d'illustrer l'utilisation de *ResearchRabbit*. Supposons que nous nous intéressons à la question suivante : quel est le rôle des normes pacifistes sur les processus politiques au Japon? Dans un premier temps, un survol rapide de la littérature grâce aux ouvrages de références ainsi qu'avec *Google Scholar* a permis d'identifier quelques textes qui sont jugés comme pertinents afin de fournir une réponse à cette question. Ceux-ci sont ensuite ajoutés dans une nouvelle collection *Zotero*[^chapitre_9-5], qui contiendra uniquement les ouvrages pour ce projet. Ce dernier point est important afin d'éviter d'ajouter du « bruit » dans les suggestions de *ResearchRabbit*. Une fois ces étapes faites, il est possible d'importer la collection dans *ResearchRabbit*. Pour ce faire, il faut cliquer sur le bouton `Import Zotero Collection`, situé dans le coin supérieur gauche de la @fig-rr1.
+
+[^chapitre_9-5]: Voir le @sec-chap5 au besoin.
+
+Il se peut que le logiciel ne trouve pas tous les articles qui se trouvent dans la collection *Zotero*. Une solution, lorsque ce problème arrive, est de cliquer sur le bouton vert *Add Paper* situé dans la colonne de notre collection. La @fig-rr2 montre la barre de recherche qui apparaitra, et dans laquelle il est possible d'ajouter manuellement les articles au besoin. Une fois que les références ont été ajoutées, *ResearchRabbit* pourra dresser une « cartographie » des différentes sources qui sont en lien avec ces articles. La @fig-rr3 présente cette cartographie.
+
+Il est possible de trouver des articles supplémentaires à l'aide de trois fonctionnalités. La première est de consulter les *Similar Work*. Cette option est intéressante afin de visualiser tous les articles qui sont similaires aux ouvrages qui ont été identifiés au tout début. Les points en vert sont les sources qui font partie de ma collection. Cependant, la visualisation offerte par cette option peut rapidement devenir chargée. Comme la @fig-rr3 l'illustre, en fonction des cinq articles que nous avons importés dans *Zotero*, il y a 1 501 articles similaires. Cela complique la tâche de ciblage. Ainsi, la deuxième option est d'utiliser *Earlier Work* et *Later Work*, surtout avec la vue *Timeline* comme dans la @fig-rr4. Il est toujours utile de classifier les ouvrages en fonction de leur date de parution, notamment afin de suivre l'évolution du débat scientifique à propos du sujet de notre recherche. Cette fonctionnalité de *ResearchRabbit* facilite ainsi cette étape, en plus de permettre de découvrir des ouvrages qui ont été publiés avant et après ceux qui ont été préalablement identifiés.
+
+Une troisième option est de sélectionner une seule source à la fois, et de consulter les deux options suivantes : *All References* et *All Citations*. Elles permettent, respectivement, de visualiser tous les articles qui sont cités dans l'article selectionné, et de visualiser les travaux qui ont cité l’article en question. Ces options sont donc très utiles pour passer au « peigne fin » chacun des articles afin de dénicher des sources supplémentaires selon la méthode « boule de neige ». Cependant, il faut faire attention dans l'utilisation de cette méthode. Il y a un risque « d'effet tunnel », soit que la revue des écrits qui sera faite à partir de ces sources manque de largeur et de représentativité dans le traitement du sujet. C'est pourquoi il est important de diversifier ces sources et d'utiliser ces deux options d'une façon complémentaire avec plusieurs articles différents. Il est donc utile d'ajouter au fur et à mesure les nouvelles références dans *ResearchRabbit* afin de visualiser la couverture de notre revue des écrits.
+
+### Pendant la recherche : l'utilisation de grands modèles linguistiques
+
+L'utilisation des LLMs via l'API d'*OpenAI* en $\textsf{R}$ représente une avancée significative pour les chercheurs en sciences sociales, leur offrant des outils puissants pour naviguer et analyser l'immense paysage des données textuelles avec une précision et une efficacité accrues.
+
+Bien qu'il soit possible de communiquer avec l'API d'*OpenAI* directement, le package `openai` en $\textsf{R}$ offre une interface conviviale pour interagir avec les modèles de langage, permettant aux chercheurs de tirer parti de ces outils avancés sans nécessiter une expertise en informatique ou en apprentissage automatique. Le package fournit des fonctions pour générer du texte, analyser des sentiments, extraire des entités, et biens plus encore, facilitant l'intégration des LLMs dans le flux de travail des recherches existantes.
+
+@openai19 définit les grands modèles linguistiques (*Large language models* ou LLMs en anglais) comme des modèles d'apprentissage automatique de grande échelle, formés pour prédire le mot suivant dans un texte en se basant sur les mots précédents. Ils sont entraînés sur de vastes quantités de données textuelles, telles que des articles de journaux, des livres, des pages Web, des courriels, des messages de médias sociaux. Cette méthode d'entraînement simple permet aux modèles de démontrer naturellement des compétences dans de nombreuses tâches et domaines divers, sans nécessiter de formation spécifique à la tâche. Il est important de noter qu'ils ne sont que des algorithmes de prédiction textuelle et ne possèdent pas la faculté de réfléchir ou de comprendre.
+
+L'intégration des grands modèles de langage via l'API d'*OpenAI* dans la recherche en sciences sociales numériques ouvre des horizons prometteurs pour l'analyse qualitative et quantitative des données textuelles. L'utilisation de ces modèles en $\textsf{R}$ permet aux chercheurs d'exploiter des capacités avancées de traitement du langage naturel pour une variété d'applications allant de la simple extraction de données à des analyses complexes de contenu et de sentiment. Elle permet aussi de générer des données pour l'analyse de biais algorithmiques en comparant l'information générée par les modèles avec des données de référence générées par des humains. Les LLMs peuvent être utilisés pour l'analyse de sentiments, l'extraction d'entités et de relations, la génération de résumés de texte, la simulation de dialogue, la traduction et la localisation, et le développement d'outils personnalisés pour des besoins spécifiques de recherche.
+
+Voici quelques exemples d'utilisation des LLMs en sciences sociales. Pour des cas concrets d'application, voir la section « L'IA en sciences sociales » dans ce chapitre.
+
+1.  Premièrement, les LLMs peuvent être utilisés pour l'analyse de sentiments, permettant aux chercheurs de détecter des nuances dans les opinions exprimées dans des corpus de données volumineux, tels que des commentaires sur les réseaux sociaux, des critiques de produits, ou des discours politiques. Cette analyse peut révéler des tendances de sentiment général ou être segmentée pour examiner des variations entre différents groupes démographiques ou chronologiques.
+
+2.  Deuxièmement, les LLMs offrent des capacités d'extraction d'entités et de relation, ce qui est crucial pour structurer des données non structurées comme des questions de sondage ouvertes. Les chercheurs peuvent extraire des personnes, des lieux, des institutions, et même des concepts ou des événements, liant ces entités à des thèmes spécifiques ou à des contextes historiques et sociopolitiques, enrichissant ainsi les bases de données pour des études plus poussées.
+
+3.  Troisièmement, la génération automatique de résumés de textes par ces modèles permet de condenser de grandes quantités d'informations en résumés concis, facilitant l'analyse préliminaire de vastes archives de textes, comme des articles de presse, des mémoires juridiques, ou des écrits académiques. Cela aide les chercheurs à identifier rapidement les documents pertinents sans nécessiter la lecture intégrale des textes.
+
+4.  Quatrièmement, les modèles linguistiques peuvent être utilisés pour générer des simulations de dialogue ou des réponses à des questions hypothétiques, permettant aux chercheurs en sciences sociales de modéliser des interactions entre différents acteurs sociaux ou d'explorer des scénarios hypothétiques en études de comportement sans la mise en place de coûteuses études de terrain.
+
+5.  Cinquièmement, l'intégration de LLMs aide à surmonter les barrières linguistiques dans la recherche globale, en offrant des capacités de traduction et de localisation qui permettent une analyse plus inclusive des textes dans différentes langues, essentielle pour les études comparatives internationales.
+
+6.  Sixièmement, les modèles de « speech-to-text » peuvent être utilisés pour transcrire automatiquement des enregistrements audio en texte, comme des entrevues, facilitant l'analyse de discours oraux ou de conversations enregistrées, et permettant aux chercheurs de travailler avec des données multimodales pour des études interdisciplinaires.
+
+7.  Septièmement, les modèles de vision algorithmiques permettent l'analyse de contenu visuel, en extrayant des informations à partir d'images ou de vidéos pour compléter des analyses textuelles, ou pour étudier des phénomènes visuels comme la représentation des genres dans les médias ou les tendances de la mode.
+
+8.  Enfin, les chercheurs peuvent utiliser les LLMs pour développer des outils personnalisés qui s'adaptent à des besoins spécifiques de recherche, comme l'analyse de discours ou la détection de changements dans le langage au fil du temps, fournissant ainsi des informations précieuses sur l'évolution des discours et pratiques culturelles.
+
+Voici un exemple simple d'utilisation de l'API d'*OpenAI* :
+
+``` r
+
+library(openai)
+
+system <- "You are a helpful assistant" # Donne un rôle au modèle.
+# Doit être clair et concis.
+
+prompt <- "Quelle est la capitale du Québec?" # Le prompt
+
+chat_prompt <- openai::create_chat_completion(
+  model = "gpt-3.5-turbo-0125",
+  messages = list(
+    list("role" = "system", "content" = system),
+    list(
+      "role" = "user",
+      "content" = prompt
+    )
+  )
+)
+
+output <- chat_prompt$choices$message.content
+
+print(output)
+```
+
+### Après la recherche : traduire ses écrits pour la diffusion
+
+L'IA a aussi permis la création de nouveaux outils de traduction automatique (*machine translation*). Pris au sens large, le concept de traduction automatique englobe n'importe quelle tâche de traduction qui est réalisée par un algorithme, une machine ou des ordinateurs, sans aucune aide d'un humain [@glover24; @tabsharani23]. Il existe différentes approches de traduction automatique :
+
+1.  Basée sur des règles (*rules-based*): utilise des règles linguistiques et des dictionnaires pour transformer les mots et phrases d'une langue source en langue cible. Nécessite des experts pour créer et maintenir ces règles, ce qui rend le processus laborieux, mais efficace pour les langues à grammaire bien définie.
+2.  Statistique (*statistical*): analyse de grands volumes de textes bilingues pour identifier des motifs et probabilités. Utilise des modèles statistiques plutôt que des règles linguistiques pour déterminer les traductions les plus probables à partir des données d'apprentissage. Fonctionne bien avec des données volumineuses, mais peut parfois produire des traductions imprécises faute de contextualisation. 3. Basée sur des exemples (*example-based*) : repose sur une base de données de phrases ou de segments précédemment traduits pour générer des traductions, en recherchant des exemples similaires dans la base de données et en récupérant les traductions les plus pertinentes, ce qui est utile pour des domaines spécifiques ou des textes très répétitifs, mais peut être limité face à des usages linguistiques nouveaux ou créatifs. 4. Neuronale (*neural*) : utilise des modèles d'apprentissage profond pour apprendre les schémas de traduction, traitant des phrases entières et leur contexte, ce qui améliore la qualité et la fluidité des traductions, bien qu'elle ne remplace pas entièrement les traducteurs humains. 5. Hybride : les quatres approches peuvent également être combinées.
+
+C'est au sein de l'approche neuronale que les avancées en intelligence artificielle ont permis de développer de nouveaux outils de traduction automatique. En effet, les réseaux neuronaux transformeurs (*transformer neural networks*) ont révolutionné le domaine de la traduction automatique en traitant des phrases entières dans leur contexte global plutôt que des mots isolés, ce qui a considérablement amélioré la qualité et la fluidité des traductions [@glover24; @tabsharani23]. En tant que forme d'IA générative, ces outils exploitent le traitement du langage naturel (*natural language processing*), l'apprentissage profond (*deep learning*) et l'auto-attention (*self-attention*) pour réaliser ces avancées. Ces outils de traduction automatique sont devenus de plus en plus populaires et accessibles, permettant à des personnes de traduire des textes entiers, des sites Web, des documents, en quelques secondes, sans avoir besoin de connaître la langue cible.
+
+Il est très utile pour les chercheurs en sciences sociales numériques de connaître et d'utiliser les outils de traduction automatique, car ils facilitent la recherche, la communication et la collaboration à l'échelle internationale, particulièrement dans le contexte d'un monde académique dominé par l'anglais. Toutefois, il est crucial de comprendre que ces outils ne remplacent pas complètement les traducteurs humains. Voici, d'une perspective générique, les avantages et inconvénients de ces outils par rapport à la traduction humaine [@glover24]:
+
+::: center
+| Avantages | Inconvénients |
+|-------------------------------|-----------------------------------------|
+| Amélioration de la productivité : traductions rapides et de grande échelle | Données biaisées : reproduction de stéréotypes et erreurs de genre |
+| Apprentissage autonome : amélioration continue grâce à l'apprentissage non supervisé | Manque de subtilité : difficultés avec les expressions idiomatiques et le jargon spécifique |
+| Réduction des coûts : minimise le besoin d'intervention humaine | Difficultés avec le contexte : erreurs de cohérence et de pertinence contextuelle |
+| Amélioration de l'accessibilité : accessible en plusieurs langues et adapté aux besoins spéciaux |  |
+:::
+
+Il existe des milliers d'outils de traduction automatique qui utilisent l'IA d'une façon ou d'une autre. Dans les prochaines pages, nous présenterons rapidement quelques-uns de ces outils gratuits parmi les plus populaires actuellement en mettant en lumière leurs forces et leurs faiblesses. Il est important de noter que ces outils sont en constante évolution et que leur qualité peut varier en fonction de la langue, du contexte et du type de texte à traduire. Par ailleurs, bien qu'ils ne relèvent pas de l'intelligence artificielle, des ressources comme *TERMIUM Plus* et *Interactive Terminology for Europe (IATE)* jouent un rôle complémentaire essentiel dans le travail de traduction[^chapitre_9-6].
+
+[^chapitre_9-6]: TERMIUM Plus et IATE sont des banques de données terminologiques de référence, gérées par des langagiers professionnels. Elles facilitent la compréhension des termes spécialisés en fournissant des définitions et des équivalents multilingues, assurant ainsi la cohérence terminologique des traductions.
+
+
+## Manuel d'instruction : utilisation du package *OpenAI* avec $\textsf{R}$
+
+### Installation et chargement du package
+
+```{r}
+#| eval: false
+
+install.packages("openai") ## au besoin
+library(openai)
+```
+
+### Configuration de l'API
+
+Il est recommandé d'obtenir une clé API sur le site d'*OpenAI*. Il faut savoir qu'une carte de crédit est nécessaire pour s'inscrire et que l'utilisation de l'API est payante. Il convient de se renseigner sur les modèles disponibles et leurs frais d'utilisation. En date de la publication du livre, le modèle de tarification d'OpenAi est de charger un prix spécifique par 1000 tokens. Le prix des tokens en entrée est moins élevé que celui des tokens en sortie.
+
+Lorsque la clé API est obtenue, le package `usethis` peut être utilisé pour la configurer dans l'environnement $\textsf{R}$.
+
+```{r}
+#| eval: false
+
+install.packages("usethis") ## au besoin
+usethis::edit_r_environ()
+```
+
+Il faut ajouter la ligne suivante au fichier `.Renviron`.
+
+```{r}
+#| eval: false
+OPENAI_API_KEY = VOTRE_CLE_API_OPENAI_ICI
+```
+
+### Utilisation de l'API
+
+La fonction principale du package `openai` est `create_chat_completion()`. Elle prend en entrée le modèle à utiliser ainsi que le message à envoyer au modèle en format list. Voici un modèle d'utilisation de la fonction :
+
+```{r}
+#| eval: false
+
+chat_prompt <- create_chat_completion(
+  model = "gpt-3.5-turbo",
+  messages = list(
+    list(
+      "role" = "system",
+      "content" = "You are a helpful
+	    assistant."
+    ),
+    list(
+      "role" = "user",
+      "content" = "Please do the following:"
+    )
+  )
+)
+```
+
+Le résultat de la requête sera contenu dans l'objet `chat_prompt` formaté en JSON. Les variables sont accessibles de la même façon qu'un dataframe normal. Le contenu de la réponse se trouve dans `chat_prompt$choices$content`.
+
+Utiliser *ChatGPT* de cette façon ouvre de nombreuses possibilités : appliquer des instructions sur un ensemble d'observations à l'aide de boucles, utiliser des fonctions pour générer des messages et les appliquer à travers d'autres API, analyser des sites web en temps réel par moissonnage web avec des packages tels que `rvest`, etc.
 
 #### *Google Traduction*
 
