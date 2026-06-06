@@ -8,7 +8,7 @@ Hubert Cadieux (Université Laval)}
 
 ![](images/chapitre_9_toolbox_multitool_black.png){fig-align="center" width="12%"}
 
-Avec l'arrivée de l'intelligence artificielle, les questions suivantes se pose : pourquoi un livre d'outils numériques à l'ère de l'IA? Qu'est-ce que le chercheur devient? Bien évidemment, ces deux questions ne sont que la pointe de l'iceberg, mais dans le contexte de ce livre elles apparaissent être centrales. 
+Avec l'arrivée de l'intelligence artificielle, les questions suivantes se posent : pourquoi un livre d'outils numériques à l'ère de l'IA? Que devient le chercheur? Bien évidemment, ces deux questions ne sont que la pointe de l'iceberg, mais dans le contexte de ce livre, elles apparaissent centrales.
 
 Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel pour les sciences sociales. Puisque l'IA est en évolution constante, présenter des outils comme les chapitres le font ne serait pas d'une grande utilité. Entre l'écriture de ce chapitre et sa lecture, les outils présentés auront sûrement beaucoup changés. Par conséquent, l'approche de ce chapitre vise à fournir des clés de compréhension ainsi qu'à aiguiser le regard critique des lecteurs afin qu'ils puissent comprendre les bases du fonctionnement des modèles de language (LLM) tout en ayant un regard critique sur leur propre utilisation de ces outils. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Ainsi, si ce chapitre permet d'éclairer certains enjeux, ou s'il stimule davantage de questionnement, alors il aura réussi son objectif.
 
