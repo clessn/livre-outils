@@ -145,8 +145,7 @@ Avant de présenter différents outils qui existent pour cela, il faut préciser
 
 Finalement, la transparence dans les sciences sociales est aussi une question d'imputabilité. La recherche scientifique est, dans bien des cas, financée par des fonds publics. À partir des taxes et des impôts qui sont collectés, le gouvernement finance des projets de recherche qui sont sélectionnés sur une base compétitive. La communauté scientifique est donc redevable face à la population et aux décideurs publics des décisions et des progrès faits en utilisant cet argent. Ainsi, l'utilisation de logiciels libres et ouverts ainsi que la diffusion publique du processus de recherche devraient être au coeur des priorités de tous les chercheurs non seulement pour des raisons d'imputabilité, mais aussi pour des raisons de qualité démocratique de nos systèmes politiques.
 
-Les prochaines sous-sections présentent comment ces outils s'inscrivent à chaque étape du processus de recherche scientifique. Le but ici est de nourrir la réflection quant 
-à l'utilisation personnelle de ces outils et d'encourager une science plus ouverte.
+Les prochaines sous-sections présentent comment ces outils s'inscrivent à chaque étape du processus de recherche scientifique. Le but ici est de nourrir la réflexion quant à l'utilisation personnelle de ces outils et d'encourager une science plus ouverte.
 
 ### Avant la recherche
 
