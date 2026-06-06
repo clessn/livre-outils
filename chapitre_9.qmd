@@ -125,7 +125,7 @@ Dans ce cas, utiliser l'IA pour accomplir des tâches que nous ne sommes pas cap
 
 ### L'IA et la science
 
-L'utilisation de l'IA pose aussi des défis importants dans la reproduction de la science. Les résultats de @brodeur_etal26 démontrent que l'IA sous-performent comparativement aux humains dans la détection d'erreurs dans les recherches et dans la reproduction des résultats scientifiques. Ces résultats sont très importants puisqu'ils soulignent la précaution que tous les chercheurs se doivent dans l'utilisation de l'intelligence artificielle. Selon ces auteurs, l'IA atteindra ses meilleures performances lorsqu'elle *complémente* le travail du chercheur, et non pas lorsqu'elle remplace celui-ci. En ce sens, une utilisation complémentaire de l'IA s'impose, dans laquelle le chercheur reste au centre des décisions, de l'interprétation, du jugement et des des échecs complexes [@brodeur_etal26].
+L'utilisation de l'IA pose aussi des défis importants dans la reproduction de la science. Les résultats de @brodeur_etal26 démontrent que l'IA sous-performe comparativement aux humains dans la détection d'erreurs dans les recherches et dans la reproduction des résultats scientifiques. Ces résultats sont très importants puisqu'ils soulignent la prudence dont tous les chercheurs doivent faire preuve dans l'utilisation de l'intelligence artificielle. Selon ces auteurs, l'IA atteindra ses meilleures performances lorsqu'elle *complémente* le travail du chercheur, et non pas lorsqu'elle remplace celui-ci. En ce sens, une utilisation complémentaire de l'IA s'impose, dans laquelle le chercheur reste au centre des décisions, de l'interprétation, du jugement et de la gestion des échecs complexes [@brodeur_etal26].
 
 ## En terminant
 
