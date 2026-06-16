@@ -143,11 +143,71 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{titlepage}%
+    % Fond gris foncé (identique aux diapos du cours)
+    \pagecolor[RGB]{70,70,70}%
+    \color{white}%
+    %
+    % ── Bloc titre (haut gauche, comme les diapos) ──────────────────────
+    \vspace*{0.5cm}%
+    {\raggedright\fontsize{13}{16}\selectfont\textit{De l'idéation à la publication scientifique}\par}%
+    \vspace{0.3cm}%
+    {\raggedright\fontsize{26}{31}\bfseries\selectfont
+      Outils de recherche\\[0.15em]
+      en sciences sociales\\[0.15em]
+      numériques\par}%
+    \vspace{0.4cm}%
+    {\raggedright\fontsize{10}{13}\selectfont Sous la direction de\par}%
+    \vspace{0.2cm}%
+    {\raggedright\fontsize{10}{13}\selectfont
+      BIBEAU-GAGNON, Alexis\\
+      CLOUTIER, Adrien\\
+      DUFRESNE, Yannick\par}%
+    %
+    % ── Grande boîte à outils (centre) ──────────────────────────────────
+    \vfill%
+    \begin{center}%
+      \includegraphics[width=0.35\textwidth]{images/annexe_toolbox_box_yellow.png}%
+    \end{center}%
+    \vspace{0.5cm}%
+    %
+    % ── Rangée des 9 outils (bas) ───────────────────────────────────────
+    \begin{center}%
+      \includegraphics[height=1.1cm]{images/chapitre_1_toolbox_glasses_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_2_toolbox_hammer_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_3_toolbox_walkietalkie_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_5_toolbox_tape_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_4_toolbox_padlock_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_6_toolbox_shovel_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_7_toolbox_equerre_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_8_toolbox_pencil_yellow.png}\hspace{0.5em}%
+      \includegraphics[height=1.1cm]{images/chapitre_9_toolbox_multitool_yellow.png}%
+    \end{center}%
+    \vspace{0.5cm}%
+    %
+    % ── CLESSN (bas de page) ────────────────────────────────────────────
+    {\centering\fontsize{8}{10}\selectfont
+      Une proposition complète de la\\
+      Chaire de leadership en enseignement des sciences sociales numériques\\
+      de l'Université Laval\par}%
+    \vspace{0.4cm}%
+  \end{titlepage}%
+  % Remettre fond blanc pour le reste du livre
+  \nopagecolor%
+  \color{black}%
+}%
+\makeatother
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{longtable}
 \usepackage{colortbl}
 \usepackage{array}
+\PassOptionsToPackage{dvipsnames}{xcolor}
 \usepackage{setspace}
 \usepackage{csquotes}
 \newcommand{\R}{\textsf{R}}
@@ -242,20 +302,20 @@
   pdfauthor={CLESSN --- Sous la direction de A. Bibeau-Gagnon, A. Cloutier, Y. Dufresne},
   pdflang={fr},
   colorlinks=true,
-  linkcolor={blue},
+  linkcolor={NavyBlue},
   filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
+  citecolor={NavyBlue},
+  urlcolor={NavyBlue},
   pdfcreator={LaTeX via pandoc}}
 
 \title{Outils de recherche en sciences sociales numériques}
 \author{CLESSN --- Sous la direction de A. Bibeau-Gagnon, A. Cloutier,
 Y. Dufresne}
-\date{2026-03-21}
+\date{2026-06-16}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, breakable, sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table des matières}
 {
@@ -279,26 +339,27 @@ Yannick Dufresne (Université Laval)}
 
 Le premier conseil que nous donnons systématiquement à toute personne
 qui entame une carrière en recherche : apprenez à gérer votre
-temps\ldots{} et les égos, y compris le vôtre. L'entrée dans le monde de
-la recherche en sciences sociales s'accompagne d'un paradoxe familier :
-il est tout à fait possible de dédier un nombre d'heures considérable à
-la recherche, tout en faisant usage de manière souvent inefficace de ce
-temps. Il est trop commun de voir des gens s'exténuer à multiplier les
-tâches (comme des poules sans tête), convaincus que le fait d'être
-occupé équivaut au fait de progresser. L'insécurité est aussi
-omniprésente dans le monde académique. Devant l'immensité de la
-connaissance et des compétences possibles, on oscille entre le syndrome
-de l'imposteur et un narcissisme défensif. L'immensité des possibilités
-nous pousse (parfois étrangement) à nous accrocher à ce que nous
-connaissons déjà et à rationaliser nos angles morts.
+temps\ldots{} et les égos (y compris le vôtre). L'entrée dans le monde
+de la recherche en sciences sociales s'accompagne d'un paradoxe familier
+: il est tout à fait possible de dédier un nombre d'heures considérable
+à la recherche, tout en faisant usage de manière inefficace de ce temps.
+Il est trop commun de voir des gens s'exténuer à multiplier les tâches
+comme des poules sans tête, convaincus que le fait d'être occupé
+équivaut au fait de progresser. L'insécurité est omniprésente dans le
+monde académique. Devant l'immensité de la connaissance et des
+compétences possibles, on oscille entre le syndrome de l'imposteur et un
+narcissisme défensif. Ce vertige des possibilités nous pousse, parfois
+étrangement, à nous accrocher à ce que nous connaissons déjà et à
+rationaliser nos angles morts. Ce réflexe est compréhensible (et très
+humain), mais il est coûteux. Dans un contexte où les outils de
+recherche se multiplient et se transforment à une vitesse sans
+précédent, il est devenu franchement risqué.
 
-Or, une part fondamentale de ce problème touche directement aux
-\emph{outils de recherche}. Ces outils ont un potentiel transformatif
-immense, pouvant transformer nos pratiques et manières de faire. Mais
-ils représentent également de redoutables gouffres de temps. Ça demande
-du courage de remettre en question nos manières de faire de la
-recherche\ldots{} et l'apprentissage de nouveaux outils nous demande
-d'affronter des habitudes ancrées depuis longtemps. Beaucoup de
+Ces outils ont un potentiel transformatif immense pour le travail
+scientifique. Mais ils représentent également de redoutables gouffres de
+temps. Ça demande du courage de remettre en question ses manières de
+faire de la recherche. L'apprentissage de nouveaux outils nous force à
+réviser des habitudes parfois ancrées depuis longtemps. Beaucoup de
 chercheurs continuent de travailler avec l'équivalent académique d'un
 vieux marteau simplement parce que ça fonctionne « assez bien ». Un
 marteau est très utile et son utilisation est largement répandue dans la
@@ -310,20 +371,20 @@ les tâches spécifiques liées à notre travail. Pourquoi serait-ce
 différent pour la recherche ?
 
 Ce livre défend l'idée que la maîtrise des outils numériques spécialisés
-est devenue un élément indispensable dans l'optimisation de la capacité
-de recherche. Leur apprentissage offre une opportunité considérable pour
-ceux et celles qui se destinent à une carrière en recherche, dans le
-monde universitaire comme ailleurs.
+est devenue indispensable pour faire de la recherche rigoureuse,
+reproductible et transparente. Leur apprentissage offre un avantage
+considérable à ceux et celles qui se destinent à une carrière en
+recherche, dans le monde universitaire comme ailleurs.
 
 L'objectif de ce livre est aussi d'éliminer les barrières à
 l'utilisation de certaines méthodes de recherche. Nous ne prenons pas
 parti dans le clivage qualitatif/quantitatif. Notre vision commune
 repose plutôt sur l'idée que les chercheurs en sciences sociales doivent
 utiliser les méthodes les plus appropriées à leurs questions de
-recherche (Shapiro 2002). Certaines questions nécessitent l'utilisation
-de modèles statistiques complexes, d'autres, des entretiens, des
-archives ou même une pelle. Il n'y a pas de hiérarchie de valeur. La
-recherche est comme une lampe de poche qui éclaire un phénomène, et la
+recherche (Shapiro, 2002). Certaines questions nécessitent l'utilisation
+de modèles statistiques complexes, d'autres des entretiens, des archives
+ou même une pelle. Il n'y a pas de hiérarchie de valeur. La recherche
+est comme une lampe de poche qui éclaire un phénomène, et la
 multiplication des angles d'éclairage ne peut qu'être bénéfique à notre
 savoir collectif.
 
@@ -337,6 +398,18 @@ L'apprentissage des outils permet ainsi d'éviter des choix
 méthodologiques sous-optimaux qui sont faits non par conviction, mais
 par manque de compétences techniques.
 
+Ce livre est ancré dans les sciences sociales (c'est son contexte de
+naissance, son terrain naturel, et le cadre de référence de ses
+exemples). Mais les outils qu'il présente sont fondamentalement
+interdisciplinaires. \(\textsf{R}\), Git, Zotero, Quarto ou
+l'intelligence artificielle ne connaissent pas les frontières entre la
+sociologie, l'histoire, la communication, la santé publique, le droit ou
+l'éducation. Des chercheurs de toutes ces disciplines les utilisent
+quotidiennement, pour des questions radicalement différentes. Le lecteur
+issu d'une discipline voisine y trouvera tout autant son compte. Les
+exemples y sont peut-être moins nombreux dans son domaine spécifique,
+mais les outils, eux, lui appartiennent.
+
 L'ère numérique a fait exploser le nombre de nouveaux outils permettant
 de collecter, de gérer et d'analyser le volume lui aussi croissant de
 données disponibles. La rapidité d'innovation technique dans ce domaine
@@ -349,144 +422,307 @@ aujourd'hui un océan d'outils qui comportent tous leur propre courbe
 d'apprentissage, leur propre spécificité et qui sont parfois
 incompatibles entre eux\ldots{} C'est un océan difficile à naviguer.
 Comme c'est souvent le cas, la technologie peut simplifier nos vies
-mais, par manque de coordination, finit par la complexifier.
+mais, par manque de coordination, finir par la complexifier.
 
-L'idée maîtresse derrière ce livre découle directement de la volonté de
-confronter ce paradoxe. Ce livre est le fruit d'une longue réflexion sur
-les différentes fonctions que remplissent les outils de recherche. Il
-est aussi né de plusieurs années d'expérience concrète à examiner leur
-accessibilité, la maturité de leurs communautés d'utilisateurs, leur
-popularité dans la discipline, leur compatibilité avec d'autres outils,
-leur transparence et leur adaptabilité. Ainsi, dans ce livre, nous ne
-faisons pas que présenter une série d'outils. Nous proposons un ensemble
-cohérent d'outils qui méritent réellement l'investissement de temps
-requis pour les maîtriser.
+L'arrivée de l'intelligence artificielle générative a ajouté une
+nouvelle couche à ce paradoxe. Depuis 2022, des outils comme
+\emph{ChatGPT} ont fait irruption dans les pratiques de recherche avec
+une rapidité déconcertante, soulevant une question que beaucoup se
+posent maintenant sincèrement : pourquoi investir des heures à apprendre
+\(\textsf{R}\), Git ou Zotero si une IA peut tout faire à notre place ?
+C'est une question légitime. Et la réponse de ce livre est claire :
+parce que l'IA amplifie un chercheur compétent. Elle ne remplace pas les
+fondations. Un chercheur qui ne maîtrise pas ses outils ne sera pas
+libéré par l'IA. Il en sera dépendant, sans pouvoir évaluer la qualité
+de ce qu'elle produit. La maîtrise des outils numériques n'est pas
+rendue obsolète par l'intelligence artificielle. Elle est devenue la
+condition pour en faire un usage éclairé.
 
-Nous sommes conscients que le sujet peut sembler rebutant de prime
-abord. Les cours de méthodes sont rarement populaires. Ils restent
-souvent vus comme des passages obligés un peu pénibles. Une grande
-partie de notre mission avec ce livre est donc fortement motivée par
-l'idée de percer cette aversion que plusieurs personnes ont pu
-développer envers les méthodes de recherche en montrant que les outils
-de recherche ne sont ni ésotériques, ni réservés aux plus techniques.
-Pour y arriver, nous prenons grand soin de décrire les nombreux
-avantages des outils présentés, tout en indiquant des moyens simples et
-concrets d'acquérir les compétences nécessaires à leur maîtrise. Tous
-les auteurs et autrices des chapitres étaient d'ailleurs encore
-étudiants lors de la rédaction du livre. La plupart n'avaient aucune
-expérience avec les outils numériques avant le début de leurs études.
-Nous espérons que cette perspective rendra l'ouvrage plus accessible à
-celles et ceux qui hésitent encore.
+Ce livre est né dans une salle de classe. Il est le fruit d'une
+expérience d'enseignement menée à la Chaire de leadership en
+enseignement des sciences sociales numériques (CLESSN) de l'Université
+Laval, où le constat s'est imposé année après année : les étudiants en
+sciences sociales arrivent avec de bonnes questions, mais sans les
+outils pour y répondre efficacement. Cet ouvrage est notre tentative de
+combler ce fossé.
 
-Afin de contrer le sentiment de vertige face au grand nombre et à la
-variété des outils de recherche, le livre est organisé de façon à suivre
-le cycle standard de la recherche, depuis l'organisation du travail
-jusqu'à la collecte, l'analyse, la visualisation de données, et
-finalement la rédaction. Cette structure nous permet de situer chaque
-outil dans une fonction précise et de montrer où il s'insère dans la
-chaîne de création scientifique.
+Huit ans. C'est le temps qu'il a fallu pour arriver jusqu'ici. Le
+contenu a été réécrit, retesté, parfois abandonné, souvent repris. Des
+outils que nous enseignions ont disparu ; d'autres ont émergé sans crier
+gare. La pandémie a tout bouleversé. L'intelligence artificielle
+générative a changé les règles du jeu en cours de route. Depuis 2024, ce
+contenu a pris la forme d'un cours officiel à l'Université Laval
+(POL-6078, \emph{Outils numériques en sciences sociales}), où les
+étudiants contribuent directement au livre via des \emph{pull requests}
+sur le dépôt \emph{GitHub} du projet. Ce livre porte leur empreinte,
+même quand leurs noms n'y apparaissent pas.
 
-Ce livre propose ainsi une introduction à la pratique des sciences
-sociales numériques, centrée non pas sur les méthodes, mais sur les
-outils qui facilitent la réalisation d'un projet de recherche.
+Il est aussi rédigé en français, et ce choix n'est pas anodin. La
+quasi-totalité des ressources de qualité sur les outils numériques de
+recherche est disponible en anglais. Écrire ce livre en français est un
+acte délibéré de démocratisation, à l'intention de toute la communauté
+scientifique francophone, au Québec et ailleurs.
 
-Les outils présentés ont été sélectionnés selon six critères :
+Il n'est pas non plus définitif. Il a été conçu pour évoluer avec les
+technologies, les usages, les retours de la communauté. Ce qu'il pose,
+en revanche, a vocation à durer : une réflexion sur ce que c'est que de
+choisir ses outils, et pourquoi cette réflexion est si souvent absente
+de la formation en sciences sociales. On y apprend les méthodes.
+Rarement les outils. Pourtant ce sont deux choses fondamentalement
+différentes : la méthode offre la recette, l'outil fournit l'équipement.
+L'un sans l'autre, c'est un chercheur à moitié équipé.
+
+Les résultats sont là. Depuis les premières sessions du cours, des
+étudiants ont décroché des contrats en recherche, en partie grâce aux
+compétences acquises ici. Des messages de remerciement nous parviennent
+régulièrement. Ce monde peut sembler rude au premier abord, la courbe
+d'apprentissage abrupte. Mais en y allant étape par étape, chapitre par
+chapitre, on entre dans un univers riche, vibrant et profondément utile
+pour toute une carrière.
+
+Ce qui distingue aussi cet ouvrage de la plupart des manuels de méthodes
+: tous les auteurs et autrices des chapitres étaient encore étudiants au
+moment de la rédaction. Les chapitres qui suivent ont été rédigés par
+des personnes qui ont elles-mêmes traversé la courbe d'apprentissage de
+ces outils, souvent sans formation préalable. Nous espérons que cette
+proximité avec l'expérience de l'apprentissage rendra le livre plus
+utile à ceux et celles qui en sont au même point.
+
+C'est aussi pourquoi cet ouvrage ne prétend pas être exhaustif. Il ne
+recense pas tous les outils disponibles, ne couvre pas toutes les
+méthodes, et ne remplace pas une formation approfondie en statistiques
+ou en méthodologie de recherche. C'est une sélection assumée : les
+auteurs ont fait des choix, les ont défendus, et les assument. Le
+critère ultime n'était pas la popularité ni la nouveauté, mais la valeur
+réelle pour un chercheur en sciences sociales qui veut travailler de
+manière rigoureuse, reproductible et autonome.
+
+Car c'est bien d'autonomie qu'il s'agit. Le chercheur qui ne choisit pas
+ses outils laisse ses outils dicter sa méthode. Et la méthode dictée par
+les contraintes techniques plutôt que par la question de recherche est
+rarement la meilleure.
+
+Ces choix reposent sur six critères appliqués systématiquement à chaque
+outil présenté dans ce livre (détaillés au Chapitre~\ref{sec-chap1}) :
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Accessibilité ;
+  Accessibilité \emph{(Qui peut accéder à cet outil, et à quel coût ?)}
+  ;
 \item
-  Existence d'une communauté active ;
+  Existence d'une communauté active \emph{(En cas de problème, vers
+  quelle communauté se tourner ?)} ;
 \item
-  Popularité dans la discipline ;
+  Popularité dans la discipline \emph{(Cet outil facilite-t-il la
+  collaboration avec mes pairs ?)} ;
 \item
-  Compatibilité entre outils ;
+  Compatibilité avec d'autres outils \emph{(S'intègre-t-il dans mon flux
+  de travaux existant ?)} ;
 \item
-  Transparence et réplicabilité ;
+  Transparence et réplicabilité \emph{(Un collègue pourrait-il
+  reproduire mon travail avec cet outil ?)} ;
 \item
-  Adaptabilité et flexibilité.
+  Adaptabilité et flexibilité \emph{(Évoluera-t-il avec mes besoins ?)}.
 \end{enumerate}
 
-Les chapitres couvrent l'ensemble des étapes du travail scientifique.
-Chaque chapitre présente non seulement les outils, mais aussi une
-réflexion sur leur contribution à l'autonomie du chercheur et à la
-qualité scientifique.
+Ces critères sont techniques, mais le choix d'un outil n'est jamais un
+acte neutre. Derrière chaque décision se cache une posture : certains
+outils concentrent le pouvoir entre les mains de quelques entreprises,
+d'autres le distribuent à une communauté ouverte. Certains rendent la
+recherche reproductible et vérifiable ; d'autres l'opacifient. Choisir,
+ou ne pas choisir, c'est donc aussi prendre position. Le
+Chapitre~\ref{sec-chap1} développe cette réflexion en profondeur, à
+travers la philosophie du logiciel libre et du code source ouvert. Elle
+traverse aussi le reste du livre : les enjeux éthiques de la collecte de
+données (au Chapitre~\ref{sec-chap6}) ou de l'usage de l'intelligence
+artificielle (au Chapitre~\ref{sec-chap9}) en sont des manifestations
+concrètes. Nous ne prétendons pas offrir de réponses définitives, mais
+nous croyons que poser ces questions fait partie de la formation d'un
+chercheur.
 
-Le Chapitre 1, « Choisir ses outils de recherche à l'ère du numérique »,
-introduit la philosophie du logiciel libre et du code ouvert et montre
-pourquoi ces écosystèmes (transparents, collaboratifs, adaptables)
-offrent un socle essentiel pour les outils de recherche numériques. Le
-chapitre clarifie la distinction entre outils et méthodes, et explique
-pourquoi la culture du libre est particulièrement compatible avec les
-impératifs scientifiques contemporains.
+La reproductibilité d'une recherche passe aussi par la citation
+explicite des outils utilisés et la transparence sur les raisons de leur
+choix. Cette pratique reste pourtant rare dans les publications en
+sciences sociales (Arel-Bundock \& McCrain, 2023). Ce livre en fait un
+principe structurant : chaque outil présenté est accompagné des raisons
+qui ont guidé sa sélection. Nous encourageons d'ailleurs les chercheurs
+à adopter cette même rigueur dans leurs propres travaux : citer les
+logiciels et outils utilisés dans une publication, c'est permettre à
+d'autres de reproduire, d'évaluer et de bâtir sur ce travail. Cette
+transparence est elle-même une forme de responsabilité scientifique.
 
-Le Chapitre 2, « Langages de programmation », présente la programmation
-comme une des compétences essentielles des sciences sociales numériques.
-Le chapitre explique pourquoi R s'est imposé comme un langage
-privilégié. Il fournit une première immersion dans l'environnement de R
-et de RStudio et montre comment apprendre à automatiser, reproduire et
-structurer une analyse scientifique.
+Ainsi, les réponses à ces questions varient selon le contexte : la
+discipline, l'institution, l'époque, les valeurs, le type de recherche,
+la taille de l'équipe, les ressources disponibles, les technologies
+émergentes. Un chercheur en sociologie qualitative, une équipe de
+science politique computationnelle ou un étudiant au doctorat dans une
+université à ressources davantage limitées n'arriveront pas
+nécessairement aux mêmes choix. C'est normal, et c'est même souhaitable.
+Les choix éditoriaux de ce livre reflètent un contexte précis : des
+sciences sociales numériques, en 2026, pour un lectorat francophone en
+début de carrière. Dans dix ans, certaines de nos recommandations auront
+peut-être changé. Les 6 critères, eux, resteront pertinents.
 
-Le Chapitre 3, « Outils de gestion de flux de travaux: la méthode Agile
-pour le monde académique », met l'accent sur l'organisation du travail
-scientifique : comment planifier, diviser et suivre les tâches de
-recherche à l'aide d'outils inspirés de l'Agile, dont Notion. Le
-chapitre montre comment ces outils augmentent la productivité, la
-collaboration et la clarté dans les projets complexes.
+Chaque chapitre de ce livre est structuré en trois sections pour guider
+cette réflexion. Le \textbf{Point d'observation} situe l'outil dans son
+contexte historique et conceptuel. L'\textbf{Arpentage et choix
+éditorial} présente les options disponibles, les compare selon les six
+critères, et explique les choix retenus dans ce livre (et les raisons
+qui les motivent). Le \textbf{Manuel d'instruction} offre un guide
+pratique pour commencer à utiliser l'outil retenu. Cette structure
+permet au lecteur de suivre notre raisonnement pas à pas, de le
+questionner, et d'en arriver à ses propres conclusions.
 
-Le Chapitre 4, « Les outils de gestion de données », explore où et
-comment entreposer des données, des brouillons et des fichiers actifs,
-en distinguant données sensibles, données massives et données finales.
-Il présente Git et GitHub, les dépôts institutionnels, et les bonnes
-pratiques qui assurent sécurité, versionnage et science ouverte.
+Ces outils sont présentés en trois sections, organisées comme on bâtit
+une maison.
 
-Le Chapitre 5, « Outils de synthèses de la connaissance et de gestion
-des références », présente une approche systématique de la revue de
-littérature, grâce à des outils comme Covidence et Zotero. Le chapitre
-insiste sur la traçabilité, la collaboration et la facilité
-d'intégration entre gestion des sources, rédaction et balisage.
+Les \textbf{Fondations} (chapitres 1 à 4) posent les bases sans
+lesquelles rien de solide ne tient : choisir des outils libres et
+transparents, apprendre à programmer, organiser son flux de travaux et
+gérer ses données. On ne bâtit pas sur du sable.
 
-Le Chapitre 6, « Outils de collecte de données », couvre les techniques
-numériques de collecte, notamment le web scraping avec rvest, et montre
-comment comprendre, extraire et structurer des données issues du Web. Le
-chapitre présente aussi les précautions méthodologiques nécessaires pour
-garantir qualité et validité.
+La \textbf{Structure} (chapitres 5 à 8) couvre les étapes centrales du
+cycle de recherche : synthétiser la littérature, collecter des données,
+les visualiser et les rédiger. C'est la charpente du projet
+scientifique.
 
-Le Chapitre 7, « Outils de visualisation graphique », retrace
-l'évolution de la visualisation en sciences sociales et introduit la
-grammaire des graphiques via ggplot2. Le chapitre insiste sur la clarté,
-l'esthétique et la reproductibilité, tout en ouvrant sur les
-possibilités de visualisations interactives.
+Les \textbf{Finitions} (chapitre 9) sont consacrées à l'intelligence
+artificielle. Ce n'est pas un hasard si ce chapitre arrive en dernier :
+l'IA présuppose tout ce qui précède. Les finitions révèlent la qualité
+du travail (elles ne le remplacent pas).
 
-Le Chapitre 8, « Outils de rédaction en sciences sociales numériques:
-les langages de balisage », explique pourquoi les langages de balisage
-(LaTeX, Quarto, Markdown) permettent une rédaction plus propre, plus
-stable et plus reproductible que les traitements de texte traditionnels.
-Il guide les lecteurs dans leur apprentissage et signale les pièges
-courants.
+De la question initiale à la contribution finale, chaque étape du
+processus scientifique mobilise différents outils. C'est ce que
+représente la figure ci-dessous (notre boussole éditoriale pour
+l'ensemble de ce livre).
 
-Le Chapitre 9, « Outils d'intelligence artificielle », présente les
-différents usages de l'IA dans la recherche, notamment l'aide dans la
-construction d'une revue de littérature, l'automatisation de tâches
-analytiques, la structuration de projet et le codage. Le chapitre
-discute aussi de la place du chercheur face à des outils puissants, mais
-épistémologiquement délicats.
+\begin{figure}
 
-L'Annexe A, « Kit de démarrage pour les sciences sociales numériques »,
-propose des trajectoires d'apprentissage selon trois niveaux (débutant,
-intermédiaire et avancé) en indiquant les outils prioritaires, les
-pièges à éviter et les combinaisons les plus efficaces. Elle sert de
-feuille de route concrète pour structurer sa progression.
+{\centering \includegraphics[width=0.55\textwidth,height=\textheight]{images/prelude_science_outils.png}
 
-L'Annexe B, « L'ordinateur », démystifie l'ordinateur comme
-environnement de recherche, en présentant les composantes essentielles
-(RAM, CPU, SSD) et les critères pour choisir une machine adaptée aux
-sciences sociales numériques. Elle permet de comprendre l'impact
-matériel sur l'efficacité du travail scientifique.
+}
 
-\bookmarksetup{startatroot}
+\caption{Le cycle de la recherche et ses outils}
+
+\end{figure}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Voici comment chaque chapitre s'inscrit dans cette progression.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_1_toolbox_glasses_black.png}
+\textbf{Le monde du libre.} Le Chapitre~\ref{sec-chap1} pose la question
+fondamentale : avec quels outils choisit-on de faire de la science, et
+pourquoi ? Les lunettes symbolisent le regard critique et philosophique
+qu'on pose sur les outils eux-mêmes : distinguer le logiciel libre du
+propriétaire, comprendre les valeurs qui les sous-tendent, juger leur
+compatibilité avec les exigences de la science ouverte. Ce chapitre pose
+aussi la distinction fondamentale entre outils et méthodes.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_2_toolbox_hammer_black.png}
+\textbf{Outils de programmation.} La programmation est l'outil qui
+traverse tout le cycle de recherche. Comme le marteau sur un chantier,
+elle est présente à chaque étape : collecter des données, les
+transformer, les analyser, les visualiser, les communiquer. Le
+Chapitre~\ref{sec-chap2} explique pourquoi \(\textsf{R}\) s'est imposé
+comme le langage de référence en sciences sociales et propose une
+première immersion dans son environnement et sa logique.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_3_toolbox_walkietalkie_black.png}
+\textbf{Outils de gestion de projet.} Faire de la recherche, c'est
+souvent gérer de nombreuses tâches en parallèle : écrire, collaborer,
+déléguer, suivre, livrer. Le walkie-talkie symbolise cette coordination
+constante entre les membres d'une équipe, entre les projets et les
+échéances. Le Chapitre~\ref{sec-chap3} introduit la méthode Agile et ses
+outils (comme \emph{Notion}) pour structurer un flux de travaux
+efficace, que l'on travaille seul ou en équipe.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_4_toolbox_padlock_black.png}
+\textbf{Outils de gestion des données.} Gérer ses données n'est pas une
+formalité administrative. C'est une décision scientifique fondatrice,
+prise dès le premier jour, qui engage la transparence et la
+reproductibilité de toute une recherche. Le Chapitre~\ref{sec-chap4}
+outille cette discipline avec Git, \emph{GitHub} et les dépôts
+institutionnels. Le cadenas ouvert en résume l'esprit : une science qui
+protège sans se fermer, qui structure pour que d'autres puissent
+vérifier, reproduire et bâtir.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_5_toolbox_tape_black.png}
+\textbf{Outils de synthèse de la connaissance.} Le
+Chapitre~\ref{sec-chap5} défend la thèse que la revue de littérature est
+une contribution scientifique à part entière. Le ruban adhésif mesure et
+relie, comme la synthèse de la connaissance qui tisse les fils de la
+littérature existante pour en mesurer l'état, les lacunes, et y situer
+une nouvelle contribution. Le chapitre présente \emph{Covidence} et
+\emph{Zotero}, en insistant sur la traçabilité et la reproductibilité du
+processus.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_6_toolbox_shovel_black.png}
+\textbf{Outils de collecte de données.} Le Chapitre~\ref{sec-chap6}
+explore les multiples façons de collecter des données à l'ère numérique.
+La pelle creuse : elle symbolise l'acte central de la recherche
+empirique, la recherche des données. Le chapitre couvre les sondages en
+ligne (\emph{Qualtrics}, \emph{REDCap}), les bases de données
+médiatiques, et le \emph{web scraping} avec \texttt{rvest}, tout en
+abordant les enjeux éthiques de la collecte numérique.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_7_toolbox_equerre_black.png}
+\textbf{Outils de visualisation graphique.} Le Chapitre~\ref{sec-chap7}
+couvre la visualisation de bout en bout, de l'exploration initiale
+jusqu'à la communication des résultats, en s'appuyant sur
+\texttt{ggplot2} et sa grammaire des graphiques. C'est l'équerre qui
+mesure avec précision, calcule les angles et trace des lignes droites,
+pour offrir des résultats lisibles et communicables.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_8_toolbox_pencil_black.png}
+\textbf{Outils de rédaction.} Le Chapitre~\ref{sec-chap8} plaide pour
+les langages de balisage (\LaTeX, \texttt{Quarto}, Markdown) comme
+alternatives aux traitements de texte traditionnels et propriétaires. Le
+crayon écrit : il représente l'acte final du cycle, mettre en forme et
+publier sa contribution. Plus propres, plus stables, plus
+reproductibles, ces outils permettent une rédaction scientifique à la
+hauteur des exigences modernes.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/chapitre_9_toolbox_multitool_black.png}
+\textbf{Outils d'intelligence artificielle.} Le Chapitre~\ref{sec-chap9}
+présente les usages de l'intelligence artificielle en recherche. L'outil
+multifonction traverse le cycle en entier, comme l'IA qui peut
+intervenir à chaque étape, de la revue de littérature à la rédaction.
+Mais cette puissance présuppose tout ce qui précède. Le chapitre invite
+le chercheur à développer un regard critique sur ces outils dont les
+biais, les limites et les implications épistémologiques sont encore mal
+compris.
+
+\includegraphics[width=0.03\textwidth,height=\textheight]{images/annexe_toolbox_box_black.png}
+\textbf{L'ordinateur.} L'Annexe~\ref{sec-annexe}, probablement à
+consulter d'emblée pour certains chercheurs en herbe, démystifie
+l'environnement matériel de la recherche numérique. Un bon coffre est
+une base nécessaire pour entreposer tous les outils. RAM, processeur,
+stockage : cette annexe explique comment choisir une machine adaptée aux
+exigences des sciences sociales numériques.
+
+Avant les étudiants, il y a eu des collègues et des amis. Axel Déry,
+Nadjim Fréchet, Judith Bourque, Justine Béchard, William Poirier et
+Camille Tremblay-Antoine ont travaillé sur les premières versions de ce
+contenu, souvent sans savoir ce qu'il deviendrait. Ce livre leur doit
+beaucoup.
+
+Rien de tout cela n'aurait évolué sans les étudiants du cours POL-6078,
+qui ont contribué directement à son amélioration : une correction ici,
+une suggestion là, parfois une refonte complète d'un passage. C'est
+cette boucle entre l'enseignement et l'écriture qui fait de ce livre ce
+qu'il est. Merci à ces contributeurs (pseudonymes GitHub) : ChloeBlx,
+JanelLaplante, JuliaDulude, Juma2985, Lamiko17, LoicRobinson, MADUP212,
+NCA0226, NicholasGaudet, Noboe2025, Velomicka, VictorVerville,
+WilliamBeaudry, adja925, amedee-account, chiara032003, flavielachance,
+jd-ODD, katelinevalentin1-netizen, laurianne-martin, sarahdb1,
+theofaitdodo, tomlaf12, watellephil, zahramayo.
+
+C'est à eux, et à tous ceux qui viendront après, que ce livre est dédié.
+
+\part{Fondations}
 
 \hypertarget{sec-chap1}{%
 \chapter{Choisir ses outils de recherche à l'ère du
@@ -496,6 +732,14 @@ numérique}\label{sec-chap1}}
 \textit{Jozef Rivest (University of Michigan), \\
 Catherine Ouellet (Université de Montréal)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_1_toolbox_glasses_black.png}
+
+}
+
+\end{figure}
 
 Ce chapitre ne présente pas un outil en soi. Il vise à initier les
 lecteurs à la philosophie du logiciel libre et, surtout, à situer ces
@@ -1476,19 +1720,23 @@ d'analyser les données. Ces compétences contribuent au développement
 d'un jugement critique, très utile lors de la lecture d'articles et
 d'ouvrages scientifiques.
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap2}{%
 \chapter{\texorpdfstring{Outils de programmation : \(\textsf{R}\) comme
 point de
 départ}{Outils de programmation : \textbackslash textsf\{R\} comme point de départ}}\label{sec-chap2}}
 
 \begin{center}
-\textit{Marc-Antoine Rancourt (University of Toronto), \
+\textit{Marc-Antoine Rancourt (University of Toronto), \\
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 
-vier M. Foisy (Université Laval)\} \textbackslash end\{center\}
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_2_toolbox_hammer_black.png}
+
+}
+
+\end{figure}
 
 \hypertarget{point-dobservation-quest-ce-que-la-programmation}{%
 \section{Point d'observation : qu'est-ce que la programmation
@@ -1965,16 +2213,21 @@ programmation \(\textsf{R}\) est plus qu'un simple outil statistique, il
 est au centre d'une grande communauté de personnes qui ont à cœur des
 principes liés à l'inclusion et à l'avancement humain.
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap3}{%
 \chapter{Outils de gestion de projet : la méthode Agile pour le monde
 académique}\label{sec-chap3}}
 
 \begin{center}
-\textit{Adrien Cloutier (Université Laval), \\
-Jérémy Gilbert (Western University)}
+\textit{Adrien Cloutier (Université Laval)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_3_toolbox_walkietalkie_black.png}
+
+}
+
+\end{figure}
 
 À l'ère du numérique, le monde de la recherche est en fulgurante
 transformation. Les outils de recherche sont plus nombreux que jamais et
@@ -2847,8 +3100,6 @@ de chacun : l'important est de prendre le temps de réfléchir à son
 propre flux de travaux et de l'adapter à ses besoins, à sa personnalité
 et à son contexte.
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap4}{%
 \chapter{Outils de gestion de données : de l'entreposage personnel à la
 science ouverte}\label{sec-chap4}}
@@ -2857,6 +3108,14 @@ science ouverte}\label{sec-chap4}}
 \textit{Adrien Cloutier (Université Laval), \\
 Jérémy Gilbert (Western University)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_4_toolbox_padlock_black.png}
+
+}
+
+\end{figure}
 
 En début de parcours aux cycles supérieurs, le chercheur se trouve
 généralement dans une position où il doit amorcer la rédaction d'un
@@ -3795,7 +4054,7 @@ reproductibilité. L'investissement initial dans l'apprentissage de ces
 outils est largement compensé par les bénéfices à long terme pour la
 qualité et la transparence de la recherche.
 
-\bookmarksetup{startatroot}
+\part{Structure}
 
 \hypertarget{sec-chap5}{%
 \chapter{Outils de synthèse de la connaissance et de gestion des
@@ -3803,10 +4062,17 @@ références : pour une revue de littérature rigoureuse et
 publiable}\label{sec-chap5}}
 
 \begin{center}
-\textit{Sarah-Jane Vincent (Stony Brook University), \\
-Camille Pelletier (Université Laval), \\
+\textit{Camille Pelletier (Université Laval), \\
 Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_5_toolbox_tape_black.png}
+
+}
+
+\end{figure}
 
 La revue de littérature est souvent perçue comme une étape préliminaire.
 Elle constitue pourtant une contribution scientifique à part entière, à
@@ -4497,8 +4763,6 @@ démarche : l'un pour structurer et rendre transparente la sélection des
 collaboration. Leur maîtrise représente un investissement dont les
 bénéfices s'étendent bien au-delà d'un seul projet.
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap6}{%
 \chapter{\texorpdfstring{Outils de collecte de données : du sondage au
 \emph{web
@@ -4509,6 +4773,14 @@ scraping}}{Outils de collecte de données : du sondage au web scraping}}\label{s
 Benjamin Carignan (Université Laval), \\
 Arnaud Beaulé (Université Laval)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_6_toolbox_shovel_black.png}
+
+}
+
+\end{figure}
 
 La révolution numérique engendrée par l'émergence des données massives
 et de l'intelligence artificielle représente un important défi pour la
@@ -4819,6 +5091,19 @@ lors de l'écriture d'extracteurs et qui permet d'utiliser le package
 \hypertarget{crituxe8res-de-suxe9lection}{%
 \subsection{Critères de sélection}\label{crituxe8res-de-suxe9lection}}
 
+D'emblée, il convient de souligner que d'autres langages de
+programmation, notamment Python, offrent également des outils très
+performants pour le moissonnage de données sur le Web. Des bibliothèques
+telles que Beautiful Soup, Scrapy ou Selenium sont largement utilisées
+et permettent de réaliser des tâches comparables, voire plus avancées
+dans certains contextes. Toutefois, le présent ouvrage vise avant tout à
+initier les chercheurs et étudiants en sciences sociales à la
+programmation à l'aide de R. Dans cette optique, l'utilisation de rvest
+s'inscrit dans une démarche pédagogique cohérente qui permet d'intégrer
+les opérations de collecte, de traitement et d'analyse des données au
+sein d'un même environnement de travail, sans nécessiter l'apprentissage
+d'un second langage de programmation.
+
 L'extracteur \emph{rvest} est un outil accessible, particulièrement
 comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins
 de circonstances exceptionnelles, l'extraction avec \emph{rvest} est
@@ -4914,7 +5199,7 @@ base de code HTML.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre_6_html_input.png}
+{\centering \includegraphics[width=0.3125in,height=\textheight]{images/chapitre_6_html_input.png}
 
 }
 
@@ -4933,7 +5218,7 @@ démontre le texte produit par le code HTML.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{images/chapitre_6_html_output.png}
+{\centering \includegraphics[width=0.26042in,height=\textheight]{images/chapitre_6_html_output.png}
 
 }
 
@@ -4981,11 +5266,8 @@ dernier car il amène des fonctions pratiques.
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{install.packages}\ErrorTok{(}\StringTok{"rvest"}\KeywordTok{)}
-
 \ExtensionTok{install.packages}\ErrorTok{(}\StringTok{"tidyverse"}\KeywordTok{)}
-
 \ExtensionTok{library}\ErrorTok{(}\ExtensionTok{rvest}\KeywordTok{)}
-
 \ExtensionTok{library}\ErrorTok{(}\ExtensionTok{tidyverse}\KeywordTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -4998,7 +5280,6 @@ page web à extraire et la coller dans l'appel de la fonction
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{html\_LEGISinfo} \OperatorTok{\textless{}}\NormalTok{{-} read\_html}\ErrorTok{(}\StringTok{"https://www.parl.ca/legisinfo/en/bills"}\KeywordTok{)}
-
 \ExtensionTok{html\_LEGISinfo}
 \end{Highlighting}
 \end{Shaded}
@@ -5165,15 +5446,11 @@ souhaitées, nous allons également créer deux autres objets qui seront à
 leur tour extraits. Voici les différentes opérations et leurs résultats
 dans la console:
 
-Code
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{BillTile\_LEGISinfo} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"h4"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5181,15 +5458,11 @@ Console
 \end{Highlighting}
 \end{Shaded}
 
-Code
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{BillTile\_LEGISinfo} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{".parliament{-}session"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5197,15 +5470,11 @@ Console
 \end{Highlighting}
 \end{Shaded}
 
-Code
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{BillTile\_LEGISinfo} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"h5"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5217,16 +5486,12 @@ Console
 \end{Highlighting}
 \end{Shaded}
 
-Code
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{BillBS\_LEGISinfo} \OperatorTok{\textless{}}\NormalTok{{-} html\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_elements}\KeywordTok{(}\StringTok{".bottom{-}section"}\KeywordTok{)}
 \ExtensionTok{BillBS\_LEGISinfo} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"dd"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5240,16 +5505,12 @@ Console
 \end{Highlighting}
 \end{Shaded}
 
-Code
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ExtensionTok{Bill\_stage} \OperatorTok{\textless{}}\NormalTok{{-} html\_LEGISinfo }\KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_elements}\KeywordTok{(}\StringTok{".progress{-}bar{-}description"}\KeywordTok{)}
 \ExtensionTok{Bill\_stage} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_element}\KeywordTok{(}\StringTok{"dd"}\KeywordTok{)} \KeywordTok{|}\OperatorTok{\textgreater{}}\NormalTok{ html\_text2}\KeywordTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-Console
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5258,12 +5519,11 @@ Console
 \StringTok{"First reading in the Senate"}           
 \StringTok{"Royal assent"}                        
 \StringTok{"Royal assent"}                          
- \ExtensionTok{[6]} \StringTok{"First reading in the House of Commons"} 
- \StringTok{"First reading in the House of }
-\StringTok{ Commons"}  \StringTok{"Royal assent"}                          
- \StringTok{"First reading in the House of Commons"}  \StringTok{"Royal assent"}        
+\ExtensionTok{[6]} \StringTok{"First reading in the House of Commons"} 
+\StringTok{"First reading in the House of }
+\StringTok{Commons"}  \StringTok{"Royal assent"}                          
+\StringTok{"First reading in the House of Commons"}  \StringTok{"Royal assent"}        
 \ExtensionTok{...}
- 
 \end{Highlighting}
 \end{Shaded}
 
@@ -5319,21 +5579,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 \ExtensionTok{1]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}1"}  
 \StringTok{"/legisinfo/en/bill/44{-}1/s{-}2"} 
 \StringTok{"/legisinfo/en/bill/44{-}1/s{-}3"}  
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}4"}  
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}5"}  
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}6"}  
- \ExtensionTok{[7]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}7"} 
- \StringTok{"/legisinfo/en/bill/44{-}1/s{-}8"}  
- \StringTok{"/legisinfo/en/bill/44{-}1/s{-}9"}  
- \StringTok{"/legisinfo/en/bill/44{-}1/s{-}10"}  
- \StringTok{"/legisinfo/en/bill/44{-}1/s{-}11"} 
- \StringTok{"/legisinfo/en/bill/44{-}1/s{-}12"} 
-\ExtensionTok{[13]} \StringTok{"/legisinfo/en/bill/44{-}1/s{-}13"} 
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}14"} 
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}15"}  
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}16"} 
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}17"} 
-\StringTok{"/legisinfo/en/bill/44{-}1/s{-}201"}
+\ExtensionTok{...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -5412,8 +5658,6 @@ conventionnels et répandus de collecte de données numériques, mais
 également de dresser un portrait du potentiel d'extraction permis par la
 maîtrise de \(\textsf{R}\).
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap7}{%
 \chapter{Outils de visualisation graphique : de l'exploration à la
 communication scientifique}\label{sec-chap7}}
@@ -5422,6 +5666,14 @@ communication scientifique}\label{sec-chap7}}
 \textit{Alexandre Bouillon (Université Laval), \\
 Hubert Cadieux (Université Laval)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_7_toolbox_equerre_black.png}
+
+}
+
+\end{figure}
 
 Ce chapitre a pour objectif de souligner l'importance de la
 visualisation des données tout au long du processus de recherche, depuis
@@ -5801,7 +6053,7 @@ fonction \texttt{ggplotly()} et le package \texttt{plotly} permettent de
 créer facilement des graphiques interactifs à partir de visualisations
 statiques.
 
-\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, arc=.35mm, titlerule=0mm, leftrule=.75mm, breakable, opacitybacktitle=0.6, bottomrule=.15mm, toptitle=1mm, colback=white, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, toprule=.15mm, opacityback=0, coltitle=black]
+\begin{tcolorbox}[enhanced jigsaw, left=2mm, colback=white, arc=.35mm, bottomtitle=1mm, opacityback=0, rightrule=.15mm, coltitle=black, bottomrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, toptitle=1mm, leftrule=.75mm, breakable, toprule=.15mm, opacitybacktitle=0.6]
 
 Note : Le rendu de graphiques interactifs n'est pas possible dans un
 document PDF. Par conséquent, seuls les codes sont fournis ci-dessous.
@@ -5938,8 +6190,6 @@ sciences sociales disposent aujourd'hui d'outils puissants pour
 explorer, comprendre et partager les données de façon claire et
 efficace.
 
-\bookmarksetup{startatroot}
-
 \hypertarget{sec-chap8}{%
 \chapter{Outils de rédaction en sciences sociales numériques : les
 langages de balisage}\label{sec-chap8}}
@@ -5949,6 +6199,14 @@ langages de balisage}\label{sec-chap8}}
 Étienne Proulx (Université Laval), \\
 Maxime Blanchard (McGill University)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_8_toolbox_pencil_black.png}
+
+}
+
+\end{figure}
 
 En lisant un article scientifique, une page Web ou un curriculum vitæ
 professionnel, comme plusieurs lecteurs l'auront sans doute deviné, le
@@ -7111,7 +7369,7 @@ des documents professionnels dans différents formats personnalisés,
 produits avec des processus automatisés, avec une grande qualité
 graphique.
 
-\bookmarksetup{startatroot}
+\part{Finitions}
 
 \hypertarget{sec-chap9}{%
 \chapter{Outils d'intelligence artificielle}\label{sec-chap9}}
@@ -7121,6 +7379,14 @@ graphique.
 Laurence-Olivier M. Foisy (Université Laval), \\
 Hubert Cadieux (Université Laval)}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/chapitre_9_toolbox_multitool_black.png}
+
+}
+
+\end{figure}
 
 Ce chapitre vise à initier les lecteurs à ce qu'est l'intelligence
 artificielle (IA), aux enjeux qu'elle engendre ainsi qu'à son potentiel
@@ -7788,7 +8054,8 @@ Voici un exemple simple d'utilisation de l'API d'\emph{OpenAI} :
 
 \FunctionTok{library}\NormalTok{(openai)}
 
-\NormalTok{system }\OtherTok{\textless{}{-}} \StringTok{"You are a helpful assistant"} \CommentTok{\# Donne un rôle au modèle. Doit être clair et concis.}
+\NormalTok{system }\OtherTok{\textless{}{-}} \StringTok{"You are a helpful assistant"} \CommentTok{\# Donne un rôle au modèle.}
+                                        \CommentTok{\# Doit être clair et concis.}
 
 \NormalTok{prompt }\OtherTok{\textless{}{-}} \StringTok{"Quelle est la capitale du Québec?"} \CommentTok{\# Le prompt}
 
@@ -8151,12 +8418,20 @@ fondement des chercheurs en sciences sociales numériques.
 \addcontentsline{toc}{part}{Annexes}
 \appendix
 
-\hypertarget{lordinateur}{%
-\chapter{L'ordinateur}\label{lordinateur}}
+\hypertarget{sec-annexe}{%
+\chapter{L'ordinateur}\label{sec-annexe}}
 
 \begin{center}
 \textit{Laurence-Olivier M. Foisy}
 \end{center}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.12\textwidth,height=\textheight]{images/annexe_toolbox_box_black.png}
+
+}
+
+\end{figure}
 
 Cet annexe s'adresse à un public de nouveaux initiés en informatique.
 Son objectif est de convaincre les chercheurs de l'importance de se
@@ -8331,6 +8606,179 @@ cette annexe, il était possible de trouver un Thinkpad T480 avec 16 Go
 de mémoire vive, un SSD de 256 Go et un processeur i7 d'Intel pour
 environ 250-300 dollars canadiens.
 
+\hypertarget{sec-glossaire}{%
+\chapter{Glossaire}\label{sec-glossaire}}
+
+Ce glossaire regroupe les principaux termes techniques et conceptuels
+utilisés dans cet ouvrage. Les renvois indiquent le ou les chapitres où
+chaque notion est introduite ou approfondie.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{description}
+\item[\textbf{Agile}]
+Approche itérative de gestion de projet qui privilégie la livraison
+progressive de résultats plutôt qu'une planification rigide à long
+terme. →~\ref{sec-chap3}
+\item[\textbf{Anonymisation}]
+Processus consistant à supprimer ou à transformer les informations
+permettant d'identifier des individus dans un jeu de données, afin de
+protéger leur vie privée. →~\ref{sec-chap4}
+\item[\textbf{API} \emph{(Application Programming Interface)}]
+Interface permettant à deux logiciels de communiquer entre eux. En
+recherche, les API sont couramment utilisées pour extraire des données
+depuis des plateformes en ligne (médias sociaux, journaux, bases de
+données). →~\ref{sec-chap6}
+\item[\textbf{Apprentissage machine} \emph{(machine learning)}]
+Sous-domaine de l'intelligence artificielle dans lequel un algorithme
+apprend automatiquement à effectuer une tâche à partir de données
+d'entraînement, sans être explicitement programmé pour chaque cas.
+→~\ref{sec-chap9}
+\item[\textbf{Apprentissage profond} \emph{(deep learning)}]
+Technique d'apprentissage machine utilisant des réseaux de neurones
+artificiels à plusieurs couches pour modéliser des relations complexes
+dans les données. →~\ref{sec-chap9}
+\item[\textbf{BibTeX}]
+Format de fichier texte (\texttt{.bib}) utilisé pour stocker des
+références bibliographiques. Il est lu par LaTeX, Quarto et d'autres
+outils pour générer automatiquement des bibliographies formatées.
+→~\ref{sec-chap5}
+\item[\textbf{Branche} \emph{(branch)}]
+Dans Git, copie parallèle d'un dépôt permettant de développer des
+modifications de façon isolée avant de les intégrer à la version
+principale. →~\ref{sec-chap4}
+\item[\textbf{Code source}]
+Texte lisible par un humain constituant un programme informatique, écrit
+dans un langage de programmation. Les logiciels libres rendent leur code
+source accessible publiquement. →~\ref{sec-chap1}
+\item[\textbf{Commit}]
+Dans Git, enregistrement d'un ensemble de modifications dans
+l'historique du dépôt, accompagné d'un message descriptif.
+→~\ref{sec-chap4}
+\item[\textbf{CRAN} \emph{(Comprehensive R Archive Network)}]
+Dépôt centralisé hébergeant les packages R validés et mis à disposition
+de la communauté. →~\ref{sec-chap2}
+\item[\textbf{Données massives} \emph{(big data)}]
+Ensembles de données dont le volume, la variété ou la vélocité dépassent
+les capacités des outils d'analyse traditionnels, nécessitant des
+infrastructures et des méthodes spécialisées. →~\ref{sec-chap1}
+\item[\textbf{DOI} \emph{(Digital Object Identifier)}]
+Identifiant numérique permanent et unique attribué à une publication ou
+à un jeu de données, garantissant son accessibilité à long terme sur le
+Web. →~\ref{sec-chap4}
+\item[\textbf{Git}]
+Logiciel libre de contrôle de version permettant de suivre l'historique
+des modifications d'un projet, de collaborer à plusieurs et de revenir à
+des versions antérieures. →~\ref{sec-chap4}
+\item[\textbf{GitHub}]
+Plateforme en ligne hébergeant des dépôts Git et offrant des outils de
+collaboration (issues, pull requests, révision de code).
+→~\ref{sec-chap4}
+\item[\textbf{HTML} \emph{(HyperText Markup Language)}]
+Langage de balisage utilisé pour structurer le contenu des pages Web.
+Utilisé aussi comme format de sortie par Quarto et Markdown.
+→~\ref{sec-chap6}
+\item[\textbf{IDE} \emph{(Environnement de développement intégré)}]
+Logiciel regroupant un éditeur de code, un débogueur et d'autres outils
+facilitant la programmation. RStudio et VS Code en sont des exemples
+courants. →~\ref{sec-chap2}
+\item[\textbf{Intelligence artificielle générative}]
+Catégorie de systèmes d'IA capables de produire du contenu nouveau
+(texte, image, code) à partir d'une requête, en s'appuyant sur des
+modèles de langage de grande taille. →~\ref{sec-chap9}
+\item[\textbf{Kanban}]
+Méthode visuelle de gestion de projet organisée autour d'un tableau
+divisé en colonnes représentant les étapes d'avancement des tâches (ex.
+: À faire, En cours, Terminé). →~\ref{sec-chap3}
+\item[\textbf{LaTeX}]
+Langage de composition typographique utilisé pour produire des documents
+de haute qualité, particulièrement adapté aux équations mathématiques et
+aux longs documents structurés. →~\ref{sec-chap8}
+\item[\textbf{Licence GPL} \emph{(General Public License)}]
+Licence de logiciel libre garantissant à tout utilisateur le droit
+d'utiliser, d'étudier, de modifier et de redistribuer le logiciel, à
+condition que les versions dérivées restent sous la même licence.
+→~\ref{sec-chap1}
+\item[\textbf{LLM} \emph{(Large Language Model)}]
+Modèle d'intelligence artificielle entraîné sur de très grandes
+quantités de texte, capable de générer, de résumer ou de traduire du
+texte de façon cohérente. ChatGPT en est un exemple. →~\ref{sec-chap9}
+\item[\textbf{Logiciel libre}]
+Logiciel dont le code source est librement accessible, modifiable et
+redistribuable selon des conditions définies par sa licence. À
+distinguer du logiciel gratuit (\emph{freeware}). →~\ref{sec-chap1}
+\item[\textbf{Markdown}]
+Langage de balisage léger permettant de formater du texte à l'aide de
+caractères simples (ex. : \texttt{**gras**}, \texttt{\#\ titre}). Il est
+à la base de Quarto et R Markdown. →~\ref{sec-chap8}
+\item[\textbf{Métadonnées}]
+Données décrivant d'autres données, comme le titre, l'auteur, la date de
+création ou les mots-clés associés à un fichier ou à une référence
+bibliographique. →~\ref{sec-chap5}
+\item[\textbf{Package}]
+Extension installable dans un langage de programmation (R, Python) qui
+ajoute des fonctions ou des capacités non présentes dans la version de
+base. →~\ref{sec-chap2}
+\item[\textbf{Pandoc}]
+Convertisseur universel de documents capable de transformer un fichier
+d'un format (Markdown, LaTeX, Word) vers un autre (HTML, PDF, DOCX).
+Quarto l'utilise en coulisses. →~\ref{sec-chap8}
+\item[\textbf{Préinscription} \emph{(preregistration)}]
+Pratique consistant à enregistrer publiquement, avant de collecter des
+données, les hypothèses et la méthodologie d'une étude, afin de
+renforcer la transparence et la reproductibilité. →~\ref{sec-chap1}
+\item[\textbf{Principe FAIR}]
+Ensemble de principes guidant la gestion des données de recherche :
+Faciles à trouver (\emph{Findable}), Accessibles (\emph{Accessible}),
+Interopérables (\emph{Interoperable}) et Réutilisables
+(\emph{Reusable}). →~\ref{sec-chap4}
+\item[\textbf{Pull request}]
+Dans GitHub, demande formelle d'intégrer les modifications d'une branche
+dans une autre, soumise à révision par les collaborateurs avant fusion.
+→~\ref{sec-chap4}
+\item[\textbf{Python}]
+Langage de programmation interprété, polyvalent et populaire en science
+des données, en apprentissage machine et en développement web.
+→~\ref{sec-chap2}
+\item[\textbf{Quarto}]
+Système de publication scientifique et technique permettant de combiner
+du texte narratif, du code et des résultats dans un même document,
+exportable en PDF, HTML ou Word. →~\ref{sec-chap8}
+\item[\textbf{R}]
+Langage de programmation et environnement logiciel libre spécialisé dans
+l'analyse statistique et la visualisation de données, très utilisé en
+sciences sociales. →~\ref{sec-chap2}
+\item[\textbf{Reproductibilité}]
+Capacité d'un autre chercheur à obtenir les mêmes résultats en utilisant
+les mêmes données et la même méthode. Pilier central de la science
+ouverte. →~\ref{sec-chap1}
+\item[\textbf{Revue systématique}]
+Synthèse exhaustive et rigoureuse de la littérature scientifique sur une
+question précise, suivant un protocole préétabli et documenté (ex. :
+PRISMA). →~\ref{sec-chap5}
+\item[\textbf{Science ouverte}]
+Mouvement visant à rendre la recherche scientifique plus transparente,
+accessible et reproductible, notamment par le partage des données, du
+code et des publications en libre accès. →~\ref{sec-chap1}
+\item[\textbf{Scraping web} \emph{(extraction automatisée)}]
+Technique de collecte automatique de données à partir de pages Web,
+généralement à l'aide d'un script qui analyse le code HTML pour en
+extraire les informations pertinentes. →~\ref{sec-chap6}
+\item[\textbf{Scrum}]
+Cadre de travail Agile structurant le développement en cycles courts
+appelés \emph{sprints}, avec des rôles définis (Scrum Master, Product
+Owner) et des rituels réguliers (mêlées quotidiennes, rétrospectives).
+→~\ref{sec-chap3}
+\item[\textbf{YAML} \emph{(YAML Ain't Markup Language)}]
+Format de sérialisation de données lisible par l'humain, utilisé
+notamment pour configurer les métadonnées d'un document Quarto (titre,
+auteur, format de sortie). →~\ref{sec-chap8}
+\item[\textbf{Zotero}]
+Logiciel libre de gestion bibliographique permettant de collecter,
+organiser et citer des références, et de les exporter vers des formats
+comme BibTeX. →~\ref{sec-chap5}
+\end{description}
+
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
@@ -8352,6 +8800,11 @@ Learning}} (3e éd.). MIT Press.
 \leavevmode\vadjust pre{\hypertarget{ref-arel-bundock22a}{}}%
 Arel-Bundock, V. (2022). \emph{Modelsummary: {Data} and {Model
 Summaries} in {R}}. \url{https://modelsummary.com/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-arel-bundock_mccrain23}{}}%
+Arel-Bundock, V., \& McCrain, J. (2023). Software {Citations} in
+{Political Science}. \emph{PS: Political Science \& Politics},
+\emph{56}(3), 398‑401. \url{https://doi.org/10.1017/S1049096523000239}
 
 \leavevmode\vadjust pre{\hypertarget{ref-argyle_etal23}{}}%
 Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., \&
@@ -8783,6 +9236,12 @@ Serwadda, D., Ndebele, P., Grabowski, M. K., Bajunirwe, F., \& Wanyenze,
 R. K. (2018). Open Data Sharing and the {Global South}---{Who} Benefits?
 \emph{Science}, \emph{359}(6376), 642‑643.
 \url{https://doi.org/10.1126/science.aap8395}
+
+\leavevmode\vadjust pre{\hypertarget{ref-shapiro02}{}}%
+Shapiro, I. (2002). Problems, {Methods}, and {Theories} in the {Study}
+of {Politics}, or {What}'s {Wrong} with {Political Science} and {What}
+to {Do About} It. \emph{Political Theory}, \emph{30}(4), 596‑619.
+\url{https://doi.org/10.1177/0090591702030004008}
 
 \leavevmode\vadjust pre{\hypertarget{ref-sievert20}{}}%
 Sievert, C. (2020). \emph{Interactive {Web-Based Data Visualization}

@@ -30,7 +30,7 @@ Parmi les plateformes web les plus reconnues de construction et d'administration
 
 Bien que *Qualtrics* soit l'outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives. *REDCap* (Research Electronic Data Capture), développé par la Vanderbilt University, est accessible gratuitement aux institutions membres de son Consortium, qui regroupe plus de 5 900 établissements dans 145 pays. Conçu initialement pour la recherche clinique et biomédicale, il est de plus en plus adopté en sciences sociales pour sa flexibilité (logique de branchement, collecte longitudinale) et sa compatibilité avec des logiciels statistiques courants tels que $\textsf{R}$, SPSS et Stata.
 
-*SurveyMonkey* adopte un modèle *freemium* : une version de base gratuite mais limitée en fonctionnalités, et des plans payants à partir de 39 \$ par mois. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées (exportation vers SPSS, randomisation par blocs, quotas) ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.
+*SurveyMonkey* adopte un modèle *freemium* : une version de base gratuite mais limitée en fonctionnalités, et des plans payants à partir de 39 $ par mois. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées (exportation vers SPSS, randomisation par blocs, quotas) ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.
 
 *Google Forms* est entièrement gratuit et s'intègre à l'écosystème *Google*, offrant une synchronisation en temps réel avec *Google Sheets*. Très accessible pour des collectes simples et rapides, il présente toutefois des limitations importantes pour la recherche : logique conditionnelle basique, absence de randomisation par blocs, et impossibilité d'exporter directement vers des logiciels statistiques comme SPSS ou $\textsf{R}$.
 
@@ -147,6 +147,8 @@ En somme, les extracteurs web sont des outils qui facilitent grandement l'acquis
 
 ### Critères de sélection
 
+D'emblée, il convient de souligner que d’autres langages de programmation, notamment Python, offrent également des outils très performants pour le moissonnage de données sur le Web. Des bibliothèques telles que Beautiful Soup, Scrapy ou Selenium sont largement utilisées et permettent de réaliser des tâches comparables, voire plus avancées dans certains contextes. Toutefois, le présent ouvrage vise avant tout à initier les chercheurs et étudiants en sciences sociales à la programmation à l’aide de R. Dans cette optique, l’utilisation de rvest s’inscrit dans une démarche pédagogique cohérente qui permet d’intégrer les opérations de collecte, de traitement et d’analyse des données au sein d’un même environnement de travail, sans nécessiter l’apprentissage d’un second langage de programmation.
+
 L'extracteur *rvest* est un outil accessible, particulièrement comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins de circonstances exceptionnelles, l'extraction avec *rvest* est gratuite. Le coût serait plutôt dans l'acquisition de connaissances préalables en code puis dans l'apprentissage de la méthode d'utilisation. Malgré cette nuance, l'absence de coûts monétaires liés à cet outil favorise son accessibilité à l'ensemble de la communauté scientifique. Il est par exemple possible d'étudier l'opinion publique grâce à l'extraction de publications sur des médias socionumériques, plutôt que de construire et administrer des sondages coûteux (voir par exemple l'article de Barbera et al., 2015).
 
 Additionnellement, l'outil jouit d'une grande communauté d'utilisateurs rendant accessible leurs connaissances, ce qui favorise la diffusion des savoirs liés à l'utilisation de cet outil. De nombreux forums d'aide peuvent alors être consultés gratuitement par les chercheurs voulant se familiariser avec le package, et plus largement, l'extraction de données web. De nombreux forums sont présents sur le site Stack Overflow, et certains chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil sont également disponible gratuitement en ligne (voir par exemple le chapitre *Web scraping* du livre *R for Data Science* d'Hadley Wickham, 2022, qui présente comment utiliser l'outil *rvest*). Bien que des outils comme *Qualtrics* et *Factiva* aient également un grand nombre d'utilisateurs, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.
@@ -242,6 +244,7 @@ Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le pa
 #| label: fig-html-input
 #| echo: false
 #| fig-cap: "Exemple de code HTML"
+#| out-width: "30"
 knitr::include_graphics("images/chapitre_6_html_input.png", dpi = 600)
 ```
 
@@ -251,6 +254,7 @@ Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p p
 #| label: fig-html-output
 #| echo: false
 #| fig-cap: "Exemple du résultat de code HTML"
+#| out-width: "25"
 knitr::include_graphics("images/chapitre_6_html_output.png", dpi = 600)
 ```
 
@@ -266,11 +270,8 @@ La première étape est l'installation et le chargement des packages `tidyverse`
 
 ``` bash
 install.packages("rvest")
-
 install.packages("tidyverse")
-
 library(rvest)
-
 library(tidyverse)
 ```
 
@@ -278,7 +279,6 @@ Pour débuter l'extraction des données, il suffit de copier l'URL de la page we
 
 ``` bash
 html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
-
 html_LEGISinfo
 ```
 
@@ -364,37 +364,26 @@ Nous avons créé précédemment l'objet BillTile_LEGISinfo pour ensuite y extra
 
 Nous sommes maintenant arrivés à l'étape d'extraire les données souhaitées. C'est assez simple. Il suffit d'appliquer la fonction `html_text2` sur l'appel de `html_element` sur l'objet à extraire, dans ce cas ci BillTile_LEGISinfo. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction *inspect* de *Google Chrome* ainsi que les diverses fonctions du package *rvest*. Afin d'extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console:
 
-Code
 
 ``` bash
 BillTile_LEGISinfo |> html_element("h4") |> html_text2()
 ```
 
-Console
-
 ``` bash
 [1] "S-1"   "S-2"   "S-3"   "S-4"   "S-5"...
 ```
-
-Code
 
 ``` bash
 BillTile_LEGISinfo |> html_element(".parliament-session") |> html_text2()
 ```
 
-Console
-
 ``` bash
 [1] "44th Parliament, 1st session" "44th Parliament, 1st session"...
 ```
 
-Code
-
 ``` bash
 BillTile_LEGISinfo |> html_element("h5") |> html_text2()
 ```
-
-Console
 
 ``` bash
 [1] "An Act relating to railways"                                                                                                                                                                                                                                                                                  
@@ -404,14 +393,10 @@ Console
 ...
 ```
 
-Code
-
 ``` bash
 BillBS_LEGISinfo <- html_LEGISinfo |> html_elements(".bottom-section")
 BillBS_LEGISinfo |> html_element("dd") |> html_text2()
 ```
-
-Console
 
 ``` bash
 [1] "Introduced as pro forma bill"                                 
@@ -423,14 +408,10 @@ Console
 ...
 ```
 
-Code
-
 ``` bash
 Bill_stage <- html_LEGISinfo |> html_elements(".progress-bar-description")
 Bill_stage |> html_element("dd") |> html_text2()
 ```
-
-Console
 
 ``` bash
 [1] "First reading in the Senate"            
@@ -438,12 +419,11 @@ Console
 "First reading in the Senate"           
 "Royal assent"                        
 "Royal assent"                          
- [6] "First reading in the House of Commons" 
- "First reading in the House of 
- Commons"  "Royal assent"                          
- "First reading in the House of Commons"  "Royal assent"        
+[6] "First reading in the House of Commons" 
+"First reading in the House of 
+Commons"  "Royal assent"                          
+"First reading in the House of Commons"  "Royal assent"        
 ...
- 
 ```
 
 Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu'à utiliser la fonction `tibble` du *tidyverse*. Ce package permet de facilement créer des dataframes sur $\textsf{R}$. Voici le script à produire dans l'exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation :
@@ -473,21 +453,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 1] "/legisinfo/en/bill/44-1/s-1"  
 "/legisinfo/en/bill/44-1/s-2" 
 "/legisinfo/en/bill/44-1/s-3"  
-"/legisinfo/en/bill/44-1/s-4"  
-"/legisinfo/en/bill/44-1/s-5"  
-"/legisinfo/en/bill/44-1/s-6"  
- [7] "/legisinfo/en/bill/44-1/s-7" 
- "/legisinfo/en/bill/44-1/s-8"  
- "/legisinfo/en/bill/44-1/s-9"  
- "/legisinfo/en/bill/44-1/s-10"  
- "/legisinfo/en/bill/44-1/s-11" 
- "/legisinfo/en/bill/44-1/s-12" 
-[13] "/legisinfo/en/bill/44-1/s-13" 
-"/legisinfo/en/bill/44-1/s-14" 
-"/legisinfo/en/bill/44-1/s-15"  
-"/legisinfo/en/bill/44-1/s-16" 
-"/legisinfo/en/bill/44-1/s-17" 
-"/legisinfo/en/bill/44-1/s-201"
+...
 ```
 
 Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction `minimal_html` pour créer un script HTML, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
