@@ -240,21 +240,21 @@ La section suivante présente la méthode d'utilisation de l'outil *rvest*. Elle
 
 Afin d'être à l'aise avec les extracteurs web, et dans notre cas précis le package *rvest*, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l'acronyme signifie « Hypertext Markup Language ». Il s'agit d'un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des « *tags* », qui définissent le début ou la fin d'une section du site. Ce sont ces différentes sections qui seront accessibles pour l'extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La @fig-html-input représente un exemple de base de code HTML.
 
-```{r, out.width="80%"}
+```{r}
 #| label: fig-html-input
 #| echo: false
 #| fig-cap: "Exemple de code HTML"
-#| out-width: "30"
+#| out-width: "30%"
 knitr::include_graphics("images/chapitre_6_html_input.png", dpi = 600)
 ```
 
 Dans l'exemple ci-haut, le tag \<h1 représente le titre du HTML. Le signe \<p permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle p\>. Les sections \<p\> délimitent les paragraphes écrits dans chacunes des sections. Les sigles \<h2\> produisent une sous-section et un sous titre, qui pourra être complémenté d'un paragraphe écrit. La @fig-html-output démontre le texte produit par le code HTML.
 
-```{r, out.width="80%"}
+```{r}
 #| label: fig-html-output
 #| echo: false
 #| fig-cap: "Exemple du résultat de code HTML"
-#| out-width: "25"
+#| out-width: "25%"
 knitr::include_graphics("images/chapitre_6_html_output.png", dpi = 600)
 ```
 

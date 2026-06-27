@@ -83,6 +83,11 @@ _Shared*
 *.snm
 *.vrb
 
+# Fichiers .tex générés par Quarto et fichiers temporaires de pdfcrop
+# (NE PAS ignorer titlepage.tex, qui est une source versionnée)
+index.tex
+tmp-pdfcrop-*.tex
+
 # -----------------------------------------------------------------------------
 # Formats de documents bureautiques
 # -----------------------------------------------------------------------------
