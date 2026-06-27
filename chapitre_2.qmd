@@ -260,6 +260,8 @@ Certains utilisateurs trouvent que le nombre de raccourcis est limité.
 D'autres jugent que l'organisation des différents panneaux n'est pas ergonomique, ou que la personnalisation de l'environnement de programmation est insuffisante.
 De plus, certains utilisateurs ont rapporté que `RStudio` était plus lent que d'autres alternatives pour certaines opérations, notamment celles impliquant de longs scripts.
 
+Il convient aussi de mentionner que *Posit* développe un second environnement de travail, `Positron`, qui prend en charge à la fois $\textsf{R}$ et `Python`. `Positron` est construit sur `Code OSS`, la base de logiciel libre maintenue par *Microsoft* sur laquelle repose également `Visual Studio Code`. Les licences des deux outils diffèrent toutefois. Bien que gratuit et bâti sur une fondation libre, `Positron` est distribué sous la *Elastic License*, qui rend son code consultable mais en restreint la modification et la redistribution. `RStudio`, lui, demeure un logiciel libre pleinement maintenu par l'entreprise et sa communauté. Les deux restent d'excellents choix, selon la préférence de chacun.
+
 ### Comment utiliser RStudio ?
 
 Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de `RStudio` est composée de quatre volets principaux.
