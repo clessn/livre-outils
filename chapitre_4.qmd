@@ -420,7 +420,7 @@ On répète les étapes au fur et à mesure que le projet se développe, que du 
 
 ### Alternative : *GitHub Desktop* et intégrations
 
-Alors que le terminal reste une approche fondamentale pour maîtriser `Git` et *GitHub*, il existe des outils conviviaux tels que **`GitHub Desktop`** qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme `RStudio` et `VS Code` ont également des interfaces pour faciliter ces opérations.
+Alors que le terminal reste une approche fondamentale pour maîtriser `Git` et *GitHub*, il existe des outils conviviaux tels que **`GitHub Desktop`** qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme `RStudio` et `VS Code` intègrent aussi `Git` directement dans leur interface. On peut y valider, créer des branches et pousser ses modifications sans quitter son éditeur, et `VS Code` propose en plus des extensions populaires comme `GitLens` qui enrichissent la visualisation de l'historique et des changements.
 
 ```{r, out.width="80%"}
 #| label: fig-github
@@ -434,6 +434,8 @@ knitr::include_graphics("images/chapitre_4_github_desktop.png", dpi = 600)
 Toutefois, en utilisant `GitHub Desktop`, il est possible de perdre la compréhension des commandes `Git` en ligne de commande, ce qui pourrait devenir un inconvénient dans un environnement sans interface visuelle. De plus, `GitHub Desktop` est spécifiquement conçu pour interagir avec *GitHub*. Pour ceux qui doivent travailler avec d'autres plateformes de gestion de versions, cela pourrait poser des problèmes.
 
 La décision entre l'utilisation du terminal et de `GitHub Desktop` dépend des préférences et des besoins de chacun. Pour les chercheurs qui débutent, `GitHub Desktop` offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes `Git` en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d'autres chercheurs qui utilisent des approches basées sur le terminal.
+
+Plus récemment, l'arrivée des intelligences artificielles génératives a encore abaissé la barrière d'entrée de `Git` et de *GitHub*. Ces assistants maîtrisent parfaitement les commandes `Git` et peuvent interagir directement avec *GitHub*, qu'ils opèrent eux-mêmes en ligne de commande ou par l'entremise de protocoles d'intégration comme le *Model Context Protocol* (MCP). Il devient ainsi possible de confier l'ensemble du processus à un agent tel que *Claude*, de la création d'une branche à la rédaction d'une demande de fusion détaillée, jusqu'à la fusion finale, sans avoir à mémoriser ni même à taper la moindre commande. Comme le rappelle le @sec-chap9, ces outils évoluent très vite, mais ils rendent aujourd'hui la gestion de versions accessible à quiconque, même sans maîtrise technique préalable.
 
 ## En terminant
 
