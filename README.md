@@ -1,4 +1,5 @@
 # Outils de recherche en sciences sociales numériques
+### De l'idéation à la publication scientifique
 
 Manuscrit d'un livre académique dirigé par **Alexis Bibeau-Gagnon**,
 **Adrien Cloutier** et **Yannick Dufresne** (Université Laval / CLESSN).
@@ -7,9 +8,10 @@ Ce livre présente une sélection d'outils numériques à l'intention des cherch
 sociales. Il couvre la gestion de projet, les données, la bibliographie,
 la collecte, la visualisation, la rédaction et l'intelligence artificielle.
 
-> **Statut** : Manuscrit en cours d'évaluation éditoriale. Ce dépôt contient
-> les sources du livre (format Quarto). Aucune version diffusable n'est
-> disponible publiquement pour le moment.
+> **Statut** : Manuscrit **accepté pour publication** aux Presses de l'Université Laval
+> (confirmation du 15 juin 2026), dans la collection « Méthodes de recherche en sciences
+> humaines ». La version complète et définitive est attendue à l'été 2026. Ce dépôt contient
+> les sources ouvertes du livre (format Quarto), une démarche reconnue par les PUL.
 
 <!-- badges: start -->
 <!-- badges: end -->
