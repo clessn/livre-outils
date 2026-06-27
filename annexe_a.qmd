@@ -102,7 +102,7 @@ Pour lire, écrire, coder en R ou en Python, naviguer avec plusieurs onglets ouv
 
 Une carte graphique dédiée, aussi appelée GPU, devient surtout utile pour des usages plus spécialisés, comme l'entraînement local de certains modèles d'apprentissage automatique, le montage vidéo, la 3D ou certains jeux.
 Pour la majorité des usages universitaires, le GPU intégré à l'ordinateur est suffisant.
-Autrement dit, la plupart des étudiants n'ont pas besoin d'un ordinateur spécialisé pour l'IA : pour utiliser des agents conversationnels ou d'autres outils d'IA en ligne, une bonne connexion internet et un ordinateur équilibré sont généralement bien plus importantes qu'une carte graphique haut de gamme.
+Autrement dit, la plupart des étudiants n'ont pas besoin d'un ordinateur spécialisé pour l'IA : pour utiliser des agents conversationnels ou d'autres outils d'IA en ligne, une bonne connexion internet et un ordinateur équilibré sont généralement bien plus importants qu'une carte graphique haut de gamme.
 
 ## Acheter un ordinateur
 
