@@ -47,7 +47,7 @@ Les synthèses de la connaissance ont longtemps été davantage associées aux s
 
 ## Arpentage et choix éditorial : les outils de synthèse de la connaissance
 
-Plusieurs outils existent afin de faciliter la vie des chercheurs qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme *EndNote* et *Zotero*. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une licence institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de *Covidence*, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est probablement l’outil le plus populaire pour les revues systématiques dans certains domaines, y compris les sciences sociales. Gratuit, il offre une interface intuitive et utilise des algorithmes pour faciliter le tri des articles. Toutefois, il propose moins d'options pour l’extraction des données en comparaison à *Covidence*.
+Plusieurs outils existent afin de faciliter la vie des chercheurs qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme *EndNote* et *Zotero*. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une licence institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de *Covidence*, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est un autre outil répandu pour les revues systématiques, y compris en sciences sociales. Il offre une interface intuitive et des algorithmes facilitant le tri des articles, mais son accès gratuit est limité (trois revues actives) et certaines fonctions utiles à une revue systématique, comme la génération du diagramme PRISMA, sont réservées aux formules payantes. Il propose en outre moins d'options pour l’extraction des données en comparaison à *Covidence*.
 
 ### Choix éditorial : pourquoi *Covidence* ?
 
@@ -58,6 +58,8 @@ Bien que *Covidence* soit développé par une organisation à but non lucratif, 
 En outre, l'interface intuitive de *Covidence* réduit la courbe d'apprentissage, guidant les utilisateurs à travers les différentes phases de la revue systématique de manière structurée et simplifiée par rapport aux méthodes traditionnelles. Ses fonctionnalités de double codage, de filtrage et d'extraction de données garantissent une méthodologie rigoureuse et standardisée, indispensable pour assurer la qualité des revues systématiques. De plus, *Covidence* excelle dans la facilitation de la collaboration entre chercheurs. La plateforme permet à plusieurs utilisateurs de travailler simultanément sur un même projet, d'échanger sur l'inclusion ou l'exclusion d'études, et de résoudre efficacement les divergences, ce qui s'avère particulièrement précieux pour les projets de grande envergure impliquant des équipes dispersées géographiquement.
 
 Cependant, l'utilisation de *Covidence* présente certaines contraintes. Le coût de l'abonnement peut constituer un frein pour certains chercheurs. De plus, bien que *Covidence* propose des modèles standards pour l'extraction de données et l'évaluation de la qualité, ces derniers peuvent ne pas convenir à tous les types d'études, en particulier celles nécessitant une personnalisation plus poussée. Malgré ces défis, *Covidence* demeure un atout précieux pour la réalisation de revues systématiques, bien qu'il soit essentiel de peser soigneusement ses avantages et inconvénients en fonction des besoins spécifiques de chaque projet de recherche.
+
+Ce coût soulève une question légitime dans un ouvrage qui privilégie les outils libres et gratuits. Pourquoi, dès lors, recommander un outil payant ? Deux raisons motivent ce choix. D'abord, *Covidence* est devenu un standard dans les bibliothèques universitaires, qui sont nombreuses à le soutenir et à le rendre accessible gratuitement à leurs membres au moyen d'une licence institutionnelle. Ensuite, sa longévité. Soutenu de façon stable depuis 2014, il offre une pérennité que peu d'outils du domaine garantissent. Notre recommandation est donc conditionnelle. Lorsqu'un établissement met *Covidence* à la disposition de ses membres sans frais, il y a tout intérêt à l'utiliser ; dans le cas contraire, plutôt que de souscrire un abonnement personnel, mieux vaut se tourner vers une solution de logiciel libre comme *Colandr*.
 
 ```{r}
 #| tbl-cap: Résumé des principaux outils de gestion de la connaissance
@@ -78,7 +80,7 @@ tbl_resume_chap_5_connaissance <- tibble(
     "Adaptabilité et flexibilité"
   ),
   Covidence = c(
-    "Gratuit (institutionnel)",
+    "Payant (souvent institutionnel)",
     "Grande",
     "Très populaire",
     "Facilement compatible",
@@ -94,7 +96,7 @@ tbl_resume_chap_5_connaissance <- tibble(
     "Très flexible"
   ),
   Rayyan = c(
-    "Gratuit",
+    "Freemium",
     "Grande",
     "Populaire",
     "Facilement compatible",
