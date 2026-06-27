@@ -43,6 +43,18 @@ Un acteur majeur de cette période est le politologue et statisticien Edward Tuf
 
 Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives (*big data*) et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques.
 
+### Les bonnes pratiques de visualisation graphique
+
+Ainsi, dans la lignée de Tufte, plusieurs chercheurs se sont efforcés à trouver les meilleures façons de transmettre l'information par des graphiques. Vincent Arel-Bundock [-@arel-bundock21] résume ces bonnes pratiques en quatre principes fondamentaux.
+
+Le premier est celui de l'intégrité. Un graphique doit représenter fidèlement les données : les choix de mise en forme, comme l'échelle des axes ou le type de graphique retenu, ne doivent pas déformer la réalité ni induire le lecteur en erreur. Un axe des ordonnées tronqué, par exemple, peut donner l'impression d'une variation bien plus marquée qu'elle ne l'est réellement.
+
+Le deuxième principe est la simplicité. Dans la continuité directe de Tufte, il s'agit d'éliminer tout élément superflu qui n'ajoute pas d'information. Les grilles trop chargées, les couleurs inutiles ou les effets tridimensionnels décoratifs détournent l'attention du message principal. Un bon graphique va à l'essentiel.
+
+Le troisième principe est celui du contexte. Un graphique doit être auto-suffisant : le lecteur doit pouvoir le comprendre sans avoir à se référer au texte qui l'entoure. Cela implique un titre clair, des axes correctement identifiés, des variables nommées et une légende lorsque nécessaire.
+
+Enfin, le quatrième principe est l'esthétisme. Arel-Bundock rappelle que les trois premiers principes ne sont pas des règles absolues. Des choix visuels assumés peuvent contribuer à capter l'attention et à renforcer le message, à condition de ne pas tromper le lecteur.
+
 ## Arpentage et choix éditorial : les systèmes graphiques dans $\textsf{R}$
 
 Le langage $\textsf{R}$ s'est imposé comme un outil de référence pour la visualisation de données, particulièrement dans les domaines de la recherche et de l'analyse statistique. Plusieurs facteurs expliquent cette popularité : $\textsf{R}$ est un logiciel libre et gratuit, bénéficiant d'une communauté d'utilisateurs très active qui développe et maintient des milliers de packages spécialisés. Cette nature libre assure une transparence complète du code, facilitant la reproductibilité des analyses, un critère essentiel dans la recherche scientifique.
