@@ -1,5 +1,5 @@
 # Outils de recherche en sciences sociales numériques
-### De l'idéation à la publication scientifique
+## De l'idéation à la publication scientifique
 
 Manuscrit d'un livre académique dirigé par **Alexis Bibeau-Gagnon**,
 **Adrien Cloutier** et **Yannick Dufresne** (Université Laval / CLESSN).
