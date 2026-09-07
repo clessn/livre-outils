@@ -304,3 +304,5 @@ Sa longévité dans plusieurs domaines ainsi que la forte croissance de sa base 
 Pour ceux qui sont particulièrement intéressés par le langage de programmation $\textsf{R}$ et qui souhaitent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur $\textsf{R}$ --- notamment *RConference* et *useR!* --- ainsi qu'un journal académique, *The R Journal*.
 On retrouve également différentes communautés, telles que *R-Ladies*, qui mettent de l'avant la diversité des genres dans la communauté du langage de programmation $\textsf{R}$.
 Le langage de programmation $\textsf{R}$ est plus qu'un simple outil statistique, il est au centre d'une grande communauté de personnes qui ont à cœur des principes liés à l'inclusion et à l'avancement humain.
+
+\pagesdenotes

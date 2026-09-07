@@ -335,3 +335,5 @@ Les logiciels libres permettent aux utilisateurs de jouir d'une plus grande libe
 
 -->
 ````
+
+\pagesdenotes

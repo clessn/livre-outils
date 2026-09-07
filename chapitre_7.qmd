@@ -294,3 +294,5 @@ Pour explorer davantage les possibilités de `shiny`, nous recommandons de consu
 ## En terminant
 
 Dans ce chapitre, nous avons montré comment la visualisation graphique peut accompagner l’analyse de données et faire parler les résultats. En démontrant les fonctionnalités de base des packages `ggplot2`, `plotly` et `shiny`, ce chapitre a montré comment les sciences sociales disposent aujourd’hui d’outils puissants pour explorer, comprendre et partager les données de façon claire et efficace.
+
+\pagesdenotes
