@@ -192,7 +192,6 @@ Dans chacun des chapitres qui suivent, des tableaux récapitulatifs sont présen
 
 ```{r}
 #| tbl-cap: Tableau des critères de sélection
-#| tbl-pos: H
 #| message: false
 #| echo: false
 #| warning: FALSE

@@ -46,6 +46,8 @@ format:
           \usepackage{setspace}
           \usepackage{csquotes}
           \newcommand{\R}{\textsf{R}}
+          \usepackage{float}
+          \floatplacement{table}{H}
       - titlepage.tex
       - notes-pages.tex
   docx:
