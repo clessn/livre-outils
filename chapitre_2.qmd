@@ -156,7 +156,7 @@ tbl_resume_chap_prog |>
   # Libellés de colonnes (avec saut de ligne dans l’en-tête long)
   cols_label(
     Critères = "Critères",
-    `Logiciels propriétaires (SAS, SPSS, STATA)` = md("Logiciels propriétaires<br>(*SAS*, *SPSS*, *STATA*)"),
+    `Logiciels propriétaires (SAS, SPSS, STATA)` = md("Logiciels propriétaires (*SAS*, *SPSS*, *STATA*)"),
     Python = md("`Python`"),
     Julia = md("`Julia`"),
     R = "R"
