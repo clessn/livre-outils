@@ -272,6 +272,18 @@ Un clic sur une base de données dans les variables ouvre l'explorateur de donn�
 Pour exécuter du code, on place le curseur sur une ligne de son script et on appuie sur Cmd+Entrée sur *macOS*, ou Ctrl+Entrée sur *Windows* et *Linux*.
 La ligne part dans la console, le résultat s'affiche et les objets créés apparaissent dans les variables.
 On peut aussi sélectionner plusieurs lignes et les exécuter d'un coup.
+Voici à quoi ressemblent des premières lignes, qui lisent les données des passagers du Titanic, les affichent et en tirent un graphique.
+
+```{r}
+#| eval: false
+library(tidyverse)
+titanic <- read_csv("data/titanic.csv")
+glimpse(titanic)
+ggplot(titanic, aes(x = factor(classe), fill = factor(survie))) +
+  geom_bar(position = "fill") +
+  labs(x = "Classe", y = "Proportion", fill = "Survie")
+```
+
 Le script `positron_demo.R`, dans le dossier `R` du dépôt du livre, fait le tour de ces volets en quelques lignes avec les données du Titanic (@fig-positron).
 
 ![Positron après l'exécution du script d'exemple : l'explorateur de fichiers, l'éditeur, la console, les variables en mémoire et le graphique](images/chapitre_2_positron.png){#fig-positron fig-align="center" width="100%"}
@@ -294,7 +306,7 @@ Pour la recherche, c'est un problème.
 
 La raison tient en un mot, la validation.
 Un résultat scientifique vaut ce que vaut le code qui l'a produit, et un code que personne ne comprend ne peut être ni vérifié ni reproduit.
-Les études sur le sujet convergent.
+Les études sur le sujet convergent, dont deux encore en prépublication.
 Les programmeurs qui s'appuient sur un assistant produisent plus souvent du code fautif, tout en étant plus convaincus de sa qualité [@perry_etal23].
 Des développeurs expérimentés qui se croyaient plus rapides avec l'IA se sont révélés plus lents une fois mesurés [@becker_etal25].
 Déléguer sa réflexion à un assistant laisse aussi des traces, une forme de dette cognitive que l'on paie quand vient le moment de comprendre par soi-même [@kosmyna_etal25a].
@@ -317,7 +329,7 @@ L'assistant a accès au script ouvert et au contexte de la session, ce qui rend 
 Bien utilisé, il accélère le travail, aide à déboguer, suggère des façons de faire que l'on ne connaissait pas et oblige à formuler clairement ce que l'on cherche.
 Mal utilisé, il produit vite beaucoup de code que personne ne relira.
 La différence entre les deux ne tient pas à l'outil.
-Elle tient à la personne qui le tient.
+Elle tient à la personne qui s'en sert.
 Le @sec-chap9 revient en détail sur les usages de l'intelligence artificielle en recherche.
 
 ### Apprendre R pour vrai
