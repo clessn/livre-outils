@@ -19,7 +19,7 @@ book:
         - chapitre_6.qmd
         - chapitre_7.qmd
         - chapitre_8.qmd
-    - part: "Finitions"
+    - part: "Finition"
       chapters:
         - chapitre_9.qmd
   appendices:
