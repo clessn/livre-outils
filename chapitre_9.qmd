@@ -713,3 +713,5 @@ Mate Translate est une extension de navigateur qui permet de traduire des pages 
 Comme mentionné plus haut, il existe une panoplie d'outils de traduction automatique qui utilisent l'IA et qui sont accessibles gratuitement. Cependant, considérant que ces outils sont en constante évolution, l'objectif de ce livre n'est pas d'en faire une description exhaustive, mais plutôt de donner un aperçu des possibilités offertes par ces outils. Parmi les autres outils populaires, on peut citer *Microsoft Translator*, *Pairaphrase*, *Amazon Translate*, *Smartling*, *Unbabel*, *Linguee*, *Yandex.Translate*, *HIX Translate*, etc.
 
 -->
+
+\pagesdenotes

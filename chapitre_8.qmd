@@ -325,3 +325,5 @@ Un des pièges qui peut sembler évident, mais qui mérite d'être répété, es
 Enfin, il faut éviter les conflits Git lors de la collaboration sur *GitHub* en coordonnant efficacement les travaux d'équipe et en utilisant Git de manière optimale pour tirer parti des langages de balisage. Il est donc important de se renseigner quant aux bonnes pratiques à suivre afin de collaborer efficacement avec Git. À cet égard, le @sec-chap4 présente un guide détaillé des meilleures pratiques pour utiliser Git et *GitHub* dans un contexte de recherche collaborative.
 
 Pour conclure, la dernière étape pour devenir expert en langages de balisage est d'être créatif. Il est recommandé d'explorer les différentes balises et de les utiliser de manière inventive. Les langages de balisage permettront d'effectuer des tâches que l'utilisateur n'aurait pas pu réaliser facilement en utilisant un logiciel de traitement de texte classique. Ils permettront de produire des documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique.
+
+\pagesdenotes
