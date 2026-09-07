@@ -491,3 +491,5 @@ Ce chapitre a comme objectif de dresser un portrait des différents outils de co
 En revanche, ce chapitre s'ancre autour du postulat qu'il ne faut pas se limiter aux outils de récolte de données traditionnels, et que la révolution numérique engendre d'importantes opportunités d'acquisition de données massives et exclusives par le biais des extracteurs de données, plus précisément l'outil d'extraction *rvest*. Ces extracteurs ont pour but de récolter des données issues d'un site web afin de les rendre disponibles pour l'analyse scientifique.
 
 Bien qu'un seul chapitre ne permet pas de relever l'ensemble des outils de collecte de données disponibles pour la communauté scientifique, les outils présentés permettent un aperçu à la fois d'outils plus conventionnels et répandus de collecte de données numériques, mais également de dresser un portrait du potentiel d'extraction permis par la maîtrise de $\textsf{R}$.
+
+\pagesdenotes
