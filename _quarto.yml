@@ -28,6 +28,9 @@ book:
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
+crossref:
+  tbl-title: Tableau
+  tbl-prefix: Tableau
 lang: fr
 format:
   pdf:
