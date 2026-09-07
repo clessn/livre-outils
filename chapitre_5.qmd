@@ -282,3 +282,5 @@ Ce chapitre a défendu une thèse centrale : la revue de littérature est une d�
 Les sciences sociales produisent aujourd'hui de plus en plus de synthèses de la connaissance, et leur valeur est pleinement reconnue dans les grandes revues du domaine. Pour un étudiant à la maîtrise ou au doctorat, réaliser une revue systématique comme première étude représente une occasion rare : cartographier un champ, identifier les lacunes, repérer les auteurs clés et les questions en suspens, puis publier cette contribution avant même d'avoir collecté une seule donnée empirique. Les études suivantes s'en trouvent d'autant plus solides et ciblées.
 
 *Covidence* et *Zotero* sont les outils qui soutiennent cette démarche : l'un pour structurer et rendre transparente la sélection des études, l'autre pour gérer les références avec rigueur et faciliter la collaboration. Leur maîtrise représente un investissement dont les bénéfices s'étendent bien au-delà d'un seul projet.
+
+\pagesdenotes

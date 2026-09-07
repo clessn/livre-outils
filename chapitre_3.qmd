@@ -352,3 +352,5 @@ Depuis son lancement, *Notion* est en constante évolution. Impossible de savoir
 ## En terminant
 
 La gestion de projet est une compétence transversale qui peut transformer la manière dont le chercheur aborde ses projets académiques et professionnels. La philosophie Agile, avec ses valeurs de collaboration, de flexibilité et de livraisons régulières, offre un cadre particulièrement adapté au milieu universitaire, où les projets de recherche évoluent constamment au gré des découvertes et des nouvelles orientations. En combinant les approches Scrum et Kanban à l'aide d'outils comme *Notion*, il est possible de structurer son travail de manière itérative, de suivre ses progrès et de collaborer efficacement avec ses collègues. Il faut cependant garder en tête que ces outils et méthodes ne sont que des moyens au service des objectifs de chacun : l'important est de prendre le temps de réfléchir à son propre flux de travaux et de l'adapter à ses besoins, à sa personnalité et à son contexte.
+
+\pagesdenotes
