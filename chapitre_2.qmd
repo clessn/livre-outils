@@ -272,7 +272,9 @@ Un clic sur une base de données dans les variables ouvre l'explorateur de donn�
 Pour exécuter du code, on place le curseur sur une ligne de son script et on appuie sur Cmd+Entrée sur *macOS*, ou Ctrl+Entrée sur *Windows* et *Linux*.
 La ligne part dans la console, le résultat s'affiche et les objets créés apparaissent dans les variables.
 On peut aussi sélectionner plusieurs lignes et les exécuter d'un coup.
-Le script `positron_demo.R`, dans le dossier `R` du dépôt du livre, fait le tour de ces volets en quelques lignes avec les données du Titanic.
+Le script `positron_demo.R`, dans le dossier `R` du dépôt du livre, fait le tour de ces volets en quelques lignes avec les données du Titanic (@fig-positron).
+
+![Positron après l'exécution du script d'exemple : l'explorateur de fichiers, l'éditeur, la console, les variables en mémoire et le graphique](images/chapitre_2_positron.png){#fig-positron fig-align="center" width="100%"}
 
 Deux habitudes valent la peine dès le début.
 Ouvrir un dossier plutôt qu'un fichier, pour que tous les chemins d'accès partent du bon endroit.
