@@ -11,25 +11,15 @@ En début de parcours aux cycles supérieurs, le chercheur se trouve généralem
 
 ## Point d'observation : brève histoire de la gestion des données
 
-La transparence et la réplicabilité sont des valeurs fondamentales de la recherche scientifique. Comme le soulignent @king_etal94 dans leur ouvrage de référence *Designing Social Inquiry*, les « procédures doivent être publiques » pour permettre la validation et la critique des résultats. Sans accès aux données, aux méthodes et aux processus ayant mené à une conclusion, la communauté scientifique ne peut ni reproduire ni vérifier les travaux de ses pairs.
+La transparence et la réplicabilité sont des valeurs fondamentales de la recherche scientifique. Comme le soulignent @king_etal21 dans leur ouvrage de référence *Designing Social Inquiry*, les « procédures doivent être publiques » pour permettre la validation et la critique des résultats. Sans accès aux données, aux méthodes et aux processus ayant mené à une conclusion, la communauté scientifique ne peut ni reproduire ni vérifier les travaux de ses pairs.
 
 Pourtant, ces idéaux ont longtemps été difficiles, voire impossibles à atteindre. C'est ce constat qui a donné naissance au mouvement de la science ouverte. Comme l'explique le gouvernement du Canada :
 
-> « La science ouverte n'est pas la façon dont la science a été historiquement conduite. La tradition, la culture et les mesures incitatives ont créé un environnement dans lequel les apports, les résultats et les processus scientifiques sont soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs eux-mêmes. La science ouverte est un mouvement visant à rendre les processus et pratiques scientifiques, y compris la méthodologie et les résultats de la recherche, plus ouverts et transparents. »[^chapitre_4-1]
-
-[^chapitre_4-1]: https://science.gc.ca/site/science/fr/science-ouverte
+> « La science ouverte n'est pas la façon dont la science a été historiquement conduite. La tradition, la culture et les mesures incitatives ont créé un environnement dans lequel les apports, les résultats et les processus scientifiques sont soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs eux-mêmes. La science ouverte est un mouvement visant à rendre les processus et pratiques scientifiques, y compris la méthodologie et les résultats de la recherche, plus ouverts et transparents. » [@gouvernementducanada22]
 
 Jusque dans les années 2000, chaque chercheur développait ses propres méthodes d'organisation, souvent artisanales : dossiers sur le bureau, copies de sauvegarde sur disque dur externe, fichiers envoyés par courriel aux collaborateurs. La démocratisation d'Internet dans les années 1990, puis l'arrivée de l'infonuagique et des outils collaboratifs dans les années 2010, ont progressivement rendu possible ce que les contraintes technologiques empêchaient auparavant : une gestion des données transparente, accessible et sécuritaire.
 
-Ce mouvement s'est concrétisé par des politiques à tous les niveaux. À l'échelle internationale, 194 pays ont adopté à l'UNESCO en 2021 la *Recommandation sur une science ouverte*[^chapitre_4-2], un cadre mondial soulignant l'importance de rendre la science plus accessible et transparente pour tous. Au Canada, la conseillère scientifique en chef, Mona Nemer, a publié la *Feuille de route pour la science ouverte*[^chapitre_4-3] en 2020, suivie en 2021 par la Politique des trois organismes sur la gestion des données de recherche[^chapitre_4-4] (CRSNG, IRSC et CRSH). Au Québec, les Fonds de recherche du Québec (FRQ) se sont également dotés d'une ambitieuse Politique de diffusion en libre accès[^chapitre_4-5] en 2019, mise à jour en 2022.
-
-[^chapitre_4-2]: https://unesdoc.unesco.org/ark:/48223/pf0000379949_fre
-
-[^chapitre_4-3]: https://www.canada.ca/fr/innovation-sciences-developpement-economique/nouvelles/2020/02/feuille-de-route-pour-la-science-ouverte-visant-a-reduire-les-obstacles-et-a-accelerer-les-decouvertes.html
-
-[^chapitre_4-4]: https://science.gc.ca/site/science/fr/financement-interorganismes-recherche/politiques-lignes-directrices/gestion-donnees-recherche/politique-trois-organismes-gestion-donnees-recherche
-
-[^chapitre_4-5]: https://frq.gouv.qc.ca/science-ouverte/politique-diffusion-2022/
+Ce mouvement s'est concrétisé par des politiques à tous les niveaux. À l'échelle internationale, les 193 États membres de l'UNESCO ont adopté en 2021 la *Recommandation sur une science ouverte* [@unesco21], un cadre mondial soulignant l'importance de rendre la science plus accessible et transparente pour tous. Au Canada, la conseillère scientifique en chef, Mona Nemer, a publié la *Feuille de route pour la science ouverte* en 2020 [@gouvernementducanada20], suivie en 2021 par la *Politique des trois organismes sur la gestion des données de recherche* (CRSNG, IRSC et CRSH) [@gouvernementducanada21]. Au Québec, les Fonds de recherche du Québec (FRQ) se sont également dotés d'une ambitieuse *Politique de diffusion en libre accès* en 2019, mise à jour en 2022 [@fondsderechercheduquebec22].
 
 Toutes ces politiques lient de plus en plus directement le financement de la recherche à des responsabilités claires en matière de gestion des données. Règle générale, tout chercheur financé par ces organismes subventionnaires est maintenant tenu de rédiger un plan de gestion des données, de déposer ses données finales dans un dépôt sécurisé à la fin du projet pour en assurer la pérennité et l'accessibilité, et de rendre disponible en libre accès ses publications, codes et résultats.
 
@@ -53,23 +43,15 @@ Dès l'étape de planification, le chercheur est parfois contraint à rédiger u
 
 Cette réflexion en amont évite de se retrouver avec des données éparpillées sur plusieurs plateformes, des versions contradictoires de fichiers, ou une documentation insuffisante pour permettre la réplication.
 
-Les outils de rédaction (où écrire son mémoire? quelle plateforme utiliser pour collaborer avec son directeur?) sont détaillés au @sec-chap8. Ici, l'enjeu est différent : il s'agit de planifier simultanément la gestion du texte, des données, des analyses et de leurs multiples versions dès le départ.
+Les outils de rédaction (où écrire son mémoire, quelle plateforme utiliser pour collaborer avec son directeur) sont détaillés au @sec-chap8. Ici, l'enjeu est différent : il s'agit de planifier simultanément la gestion du texte, des données, des analyses et de leurs multiples versions dès le départ.
 
-Des outils comme *Open Science Framework* (*OSF*)[^chapitre_4-6] offrent une plateforme complète pour la recherche ouverte, permettant de gérer l'ensemble d'un projet de recherche, incluant la préinscription.
-
-[^chapitre_4-6]: https://help.osf.io/article/330-welcome-to-registrations
+Des outils comme l'[*Open Science Framework*](https://osf.io) (*OSF*) offrent une plateforme complète pour la recherche ouverte, permettant de gérer l'ensemble d'un projet de recherche, incluant la préinscription.
 
 La préinscription consiste à planifier sa recherche avant de commencer et à soumettre ce plan à un registre public. Les hypothèses de départ, dérivées de la littérature, sont enregistrées sur la plateforme, et toute modification au devis initial peut être retracée. Cette pratique améliore la qualité et la transparence des recherches, renforce la crédibilité des résultats, et facilite la reproductibilité. Elle permet également de revendiquer ses idées plus tôt et de distinguer clairement la recherche exploratoire (générer des hypothèses) de la recherche confirmatoire (tester des hypothèses). Cette pratique est de plus en plus répandue en recherche quantitative et expérimentale, où les hypothèses et les analyses statistiques peuvent être spécifiées à l'avance. En recherche qualitative ou exploratoire, la préinscription est moins courante, car la démarche repose souvent sur une approche itérative où les questions de recherche évoluent au contact des données.
 
-Outre *OSF*, de multiples plateformes offrent l'enregistrement des hypothèses, comme *AsPredicted*[^chapitre_4-7] ou le *Center for Open Science*[^chapitre_4-8].
+Outre *OSF*, d'autres registres accueillent la préinscription, comme [*AsPredicted*](https://aspredicted.org), dont le formulaire court convient bien aux devis expérimentaux simples.
 
-[^chapitre_4-7]: https://aspredicted.org/
-
-[^chapitre_4-8]: https://www.cos.io/initiatives/prereg
-
-Au-delà de la préinscription des hypothèses, plusieurs organismes subventionnaires exigent maintenant la rédaction d'un plan de gestion des données (PGD) dès la demande de financement. Ce document décrit comment les données seront collectées, organisées, documentées, entreposées et éventuellement partagées tout au long du projet. Au Canada, l'Assistant PGD[^chapitre_4-9] est l'outil officiel développé par l'Alliance de recherche numérique pour guider les chercheurs dans cette démarche. Il propose des modèles adaptés aux exigences des trois organismes fédéraux (CRSH, CRSNG, IRSC) et de plusieurs autres institutions.
-
-[^chapitre_4-9]: https://dmp-pgd.ca/
+Au-delà de la préinscription des hypothèses, plusieurs organismes subventionnaires exigent maintenant la rédaction d'un plan de gestion des données (PGD) dès la demande de financement. Ce document décrit comment les données seront collectées, organisées, documentées, entreposées et éventuellement partagées tout au long du projet. Au Canada, l'[Assistant PGD](https://dmp-pgd.ca) est l'outil officiel développé par l'Alliance de recherche numérique pour guider les chercheurs dans cette démarche. Il propose des modèles adaptés aux exigences des trois organismes fédéraux (CRSH, CRSNG, IRSC) et de plusieurs autres institutions.
 
 ### Collecte et analyse
 
@@ -153,15 +135,11 @@ Plusieurs raisons justifient le dépôt de données finales :
 
 **Reproductibilité** : La science ouverte repose sur la capacité de reproduire et de vérifier les résultats. En rendant les données accessibles (avec la documentation appropriée), le chercheur permet à d'autres de reproduire ses analyses et de valider ses conclusions.
 
-**Respect du principe FAIR**[^chapitre_4-10] : Les données déposées dans un dépôt structuré deviennent facilement *trouvables* (avec des métadonnées), *accessibles* (via un identifiant permanent), *interopérables* (avec des formats standards), et *réutilisables* (avec une licence claire). Ce sont les quatre piliers du principe FAIR qui guide la gestion moderne des données de recherche.
-
-[^chapitre_4-10]: https://www.go-fair.org/fair-principles/
+**Respect du principe FAIR** [@wilkinson_etal16] : Les données déposées dans un dépôt structuré deviennent facilement *trouvables* (avec des métadonnées), *accessibles* (via un identifiant permanent), *interopérables* (avec des formats standards), et *réutilisables* (avec une licence claire). Ce sont les quatre piliers du principe FAIR (*findable*, *accessible*, *interoperable*, *reusable*) qui guide la gestion moderne des données de recherche.
 
 #### Borealis : le dépôt Dataverse canadien
 
-*Borealis*[^chapitre_4-11] est le dépôt *Dataverse* canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans *Borealis*, avec un accompagnement complet pour les chercheurs qui souhaitent l'utiliser. *Borealis* accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l'accès. Le chercheur peut choisir de rendre ses données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si ses contraintes éthiques l'exigent.
-
-[^chapitre_4-11]: https://borealisdata.ca/fr/
+[*Borealis*](https://borealisdata.ca) est le dépôt *Dataverse* canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans *Borealis*, avec un accompagnement complet pour les chercheurs qui souhaitent l'utiliser. *Borealis* accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l'accès. Le chercheur peut choisir de rendre ses données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si ses contraintes éthiques l'exigent.
 
 Les données déposées dans *Borealis* sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser *Borealis*, on crée un compte, puis un nouveau jeu de données, on remplit les champs de métadonnées, on téléverse les fichiers, et on publie. À ce moment, un DOI est attribué et les données deviennent officiellement archivées. Il y a de fortes chances que la bibliothèque institutionnelle offre un soutien pour l'utilisation de *Borealis*.
 
@@ -181,7 +159,7 @@ En résumé, le dépôt de données finales est une étape importante qui garant
 
 ### `Git` et *GitHub* tout au long d'un projet de recherche
 
-Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer les données pendant la recherche et les données finales. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces phases : **`Git` et *GitHub***. `Git` offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu'est `Git`, pourquoi il est devenu si populaire en recherche, et comment il pourrait s'intégrer dans un flux de travail de recherche.
+Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer les données pendant la recherche et les données finales. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces phases : `Git` et *GitHub*. `Git` offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu'est `Git`, pourquoi il est devenu si populaire en recherche, et comment il pourrait s'intégrer dans un flux de travail de recherche.
 
 `Git`, développé par Linus Torvalds en 2005, s'est imposé comme le système de gestion de versions décentralisé de référence. Avec l'essor des projets logiciels dans les décennies précédentes, un besoin s'est créé pour suivre l'évolution des fichiers de code au fil du temps. Quand plusieurs centaines de développeurs travaillent sur un même projet, ce suivi est essentiel pour éviter les conflits entre les versions. Bien que des systèmes centralisés existaient pour ce type de gestion, `Git` se distingue par sa décentralisation : chaque développeur détient une copie complète du projet, incluant toutes les modifications passées. Cela permet aux équipes de travailler de manière indépendante, sans dépendre d'un serveur central, ce qui réduit les risques de conflits. Sa principale force réside dans sa capacité à suivre l'évolution d'un projet en enregistrant les modifications du code source. Chaque modification, ou validation (*commit*), est enregistrée avec un message explicatif et un identifiant unique, permettant aux collaborateurs de comprendre facilement les évolutions du projet et d'assurer l'intégrité des données.
 
@@ -338,11 +316,11 @@ mon_projet/
 └── documentation/      # Notes méthodologiques
 ```
 
-*Important* : Le dossier `data/` ne devrait contenir que des données *non sensibles*. Les données sensibles restent dans *Nextcloud* ou *OneDrive* institutionnel.
+**Important** : Le dossier `data/` ne devrait contenir que des données *non sensibles*. Les données sensibles restent dans *Nextcloud* ou *OneDrive* institutionnel.
 
 **Étape 3** : Le fichier .gitignore
 
-On crée un fichier `.gitignore` à la racine du projet pour indiquer à `Git` quels fichiers ne doivent **jamais** être ajoutés au dépôt :
+On crée un fichier `.gitignore` à la racine du projet pour indiquer à `Git` quels fichiers ne doivent *jamais* être ajoutés au dépôt :
 
 ```         
 # Ne JAMAIS pousser sur GitHub :
@@ -420,7 +398,7 @@ On répète les étapes au fur et à mesure que le projet se développe, que du 
 
 ### Alternative : *GitHub Desktop* et intégrations
 
-Alors que le terminal reste une approche fondamentale pour maîtriser `Git` et *GitHub*, il existe des outils conviviaux tels que **`GitHub Desktop`** qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme `RStudio` et `VS Code` intègrent aussi `Git` directement dans leur interface. On peut y valider, créer des branches et pousser ses modifications sans quitter son éditeur, et `VS Code` propose en plus des extensions populaires comme `GitLens` qui enrichissent la visualisation de l'historique et des changements.
+Alors que le terminal reste une approche fondamentale pour maîtriser `Git` et *GitHub*, il existe des outils conviviaux tels que `GitHub Desktop` qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme `Positron` et `VS Code` intègrent aussi `Git` directement dans leur interface. On peut y valider, créer des branches et pousser ses modifications sans quitter son éditeur, et `VS Code` propose en plus des extensions populaires comme `GitLens` qui enrichissent la visualisation de l'historique et des changements.
 
 ```{r, out.width="80%"}
 #| label: fig-github
@@ -444,31 +422,5 @@ La gestion des données de recherche est devenue une compétence essentielle pou
 Le choix des outils dépend des besoins spécifiques, mais quelques principes fondamentaux s'appliquent universellement : ne jamais conserver ses données uniquement en local, distinguer clairement les données sensibles des données non sensibles, documenter rigoureusement ses fichiers, et planifier l'archivage dès le début du projet.
 
 `Git` et *GitHub*, bien qu'initialement conçus pour les développeurs, offrent aux chercheurs un système de gestion de versions puissant qui favorise la traçabilité, la collaboration et la reproductibilité. L'investissement initial dans l'apprentissage de ces outils est largement compensé par les bénéfices à long terme pour la qualité et la transparence de la recherche.
-
-<!-- ### Où entreposer des données massives -->
-
-<!-- Les sections précédentes ont couvert les besoins typiques de la plupart des projets de recherche aux cycles supérieurs : quelques gigaoctets de données, des fichiers de taille raisonnable, des outils standards. Mais certains projets génèrent des volumes de données qui dépassent largement ces limites. Ceux qui travaillent avec des images satellite, du *web scraping* à grande échelle, des enregistrements vidéo, ou des simulations computationnelles ont de fortes chances d'utiliser des **données massives**. -->
-
-<!-- Qu'est-ce qu'une donnée massive en recherche ? Il n'y a pas de définition universelle, mais voici quelques indicateurs pratiques. Un **volume** important de données ; une **vélocité**, c'est-à-dire une collecte continue ou très fréquente de données ; de la **variété**, présente dans des données hétérogènes nécessitant un traitement comme des images ; ou une **complexité computationnelle** lorsqu'il y a un besoin de traitements avec plusieurs jours de calcul. Si un projet correspond à une ou plusieurs de ces caractéristiques, les solutions présentées plus tôt ne conviendront pas. Des infrastructures spécialisées deviennent nécessaires. -->
-
-<!-- ### Le cycle de vie des données massives -->
-
-<!-- Les données massives nécessitent une approche structurée qui couvre quatre phases distinctes : -->
-
-<!-- **Collecte** : Le cycle de vie d'une donnée commence au moment où elle est créée ou collectée. Pour des données massives, la collecte est souvent automatisée (scripts de *scraping*, API). Avant de commencer, il convient de déterminer clairement la valeur et la pertinence des données. Il faut établir des règles pour collecter les données d'une manière qui préserve leur utilité : documenter quand, où, comment et pourquoi elles ont été générées. Il faut planifier l'infrastructure dès le début : a-t-on besoin d'un serveur qui tourne en continu ? D'un espace de stockage temporaire pour les données brutes ? -->
-
-<!-- **Entreposage** : Les données doivent être entreposées dans un environnement stable et adapté à leurs origines et à leurs applications potentielles. Pour des volumes importants, des espaces de grande capacité sont nécessaires, souvent avec des systèmes de fichiers distribués. Toute donnée digne d'être collectée mérite d'être protégée, ce qui suppose des sauvegardes régulières et une infrastructure fiable. Les données sensibles doivent être chiffrées pour respecter les exigences éthiques et réglementaires. C'est à cette étape que les infrastructures de calcul haute performance (comme Calcul Québec) deviennent essentielles, car elles offrent non seulement de l'entreposage massif, mais aussi les ressources computationnelles pour traiter et transformer les données brutes. -->
-
-<!-- **Partage** : Les données n'ont de valeur que si elles peuvent être mises à la disposition des utilisateurs autorisés. Pour des projets collaboratifs, il faut établir clairement qui peut accéder aux données, quand et comment. Les utilisateurs doivent pouvoir localiser, accéder, modifier et analyser les données selon les besoins. Il convient de documenter les conventions de nomenclature, les structures de fichiers et les transformations appliquées. Cette documentation est cruciale pour que les collaborateurs puissent comprendre et utiliser les données efficacement. -->
-
-<!-- **Archivage** : À la fin du projet, les données cessent d'être utilisées quotidiennement, mais elles conservent une valeur à long terme. Pour des données massives, l'archivage complet n'est pas toujours faisable ou nécessaire dans un dépôt comme *Borealis*. Il faut décider quelles données conserver : les données brutes irremplaçables, un échantillon représentatif, les données agrégées, ou simplement les scripts et métadonnées permettant de régénérer les résultats. Les données archivées doivent rester organisées et protégées, même si leur accessibilité immédiate perd de son importance. -->
-
-<!-- ### Solutions pour données massives -->
-
-<!-- Comme mentionné dans la section précédente, l'Alliance de recherche numérique du Canada opère des centres de calcul haute performance à travers le pays. Pour des données massives, ces infrastructures deviennent non seulement recommandées, mais essentielles. Au-delà du simple stockage sécurisé, elles offrent l'accès à des grappes de serveurs pour traiter les données, ce qui est crucial lorsque les analyses nécessitent plusieurs heures ou jours de calcul. Pour des projets nécessitant des ressources substantielles (plusieurs téraoctets de stockage ou des milliers d'heures de calcul), il faut soumettre une demande d'allocation annuelle avec justification scientifique lors des concours d'allocation. -->
-
-<!-- Certaines institutions offrent des crédits pour des services infonuagiques académiques (*AWS Educate*, *Google Cloud for Education*, *Microsoft Azure for Research*). Ces services peuvent être utiles pour des projets nécessitant une grande flexibilité ou des outils spécifiques non disponibles sur Calcul Québec. Toutefois, les crédits gratuits sont généralement limités dans le temps et en montant. Comme mentionné plus tôt, certaines facultés ou groupes de recherche disposent de leurs propres serveurs. Pour ceux qui font partie d'un laboratoire avec de telles ressources, c'est souvent la solution la plus simple pour démarrer. -->
-
-<!-- En résumé, les données massives nécessitent une planification et des infrastructures spécialisées. **Calcul Québec et l'Alliance** sont les meilleurs alliés pour des projets académiques d'envergure. La courbe d'apprentissage ne doit pas être sous-estimée, mais ne doit pas non plus décourager : les ressources et le soutien sont disponibles. Il convient de commencer tôt, de documenter rigoureusement, et d'automatiser autant que possible. -->
 
 \pagesdenotes
