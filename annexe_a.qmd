@@ -23,7 +23,7 @@ Beaucoup de chercheurs acquièrent des ordinateurs sans effectuer de recherche p
 Ils se retrouvent alors avec un appareil qui ne correspond pas à leurs besoins.
 Il est donc primordial de bien choisir son ordinateur.
 Pour cela, il est essentiel de connaître les différents composants d'un ordinateur et de comprendre leur fonction.
-Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD). Le chapitre guide donc le lecteur vers l'ordinateur approprié à ses objectifs personnels de recherche.
+Cette annexe présentera un bref aperçu de la mémoire (RAM), du processeur (CPU) et de l'espace de stockage (HDD ou SSD). Elle guide donc le lecteur vers l'ordinateur approprié à ses objectifs de recherche.
  
 ## Les composants d'un ordinateur
 
@@ -33,7 +33,7 @@ La mémoire vive (RAM) est une composante essentielle de l'ordinateur.
 Elle permet de stocker temporairement les données nécessaires à son fonctionnement.
 Plus la mémoire vive est importante, plus l'ordinateur peut stocker de données simultanément, ce qui permet non seulement d'accélérer son fonctionnement, mais aussi de manipuler des fichiers plus volumineux.
 Si l'ordinateur n'a pas assez de mémoire vive, il devra utiliser son espace de stockage de façon temporaire, ce qui est beaucoup plus lent.
-Par exemple, lorsque vous chargez des objets dans R, ils sont envoyés dans la mémoire vive.
+Par exemple, lorsque vous chargez des objets dans $\textsf{R}$, ils sont envoyés dans la mémoire vive.
 Si vous gérez de grandes quantités de données, il est suggéré d'avoir une mémoire vive conséquente pour effectuer des opérations rapidement.
 
 Il est recommandé de choisir un ordinateur doté d'une quantité de mémoire vive suffisante pour vos tâches.
@@ -68,7 +68,7 @@ Il est donc préférable de choisir un processeur suffisamment puissant pour les
 Encore une fois, un moniteur système ou un logiciel comme *htop* permet d'observer l'utilisation des cœurs de votre processeur.
 
 Parmi les fabricants de processeurs les plus répandus, on trouve *Intel*, *AMD* et *Apple*.
-Les processeurs *Apple* utilisent une architecture différente de celles d'*Intel* et d'*AMD*, mais ils conviennent eux aussi très bien à de nombreux usages de recherche.
+Les processeurs *Apple Silicon* utilisent une architecture différente de celles d'*Intel* et d'*AMD*, mais ils conviennent eux aussi très bien à de nombreux usages de recherche.
 Le choix du processeur dépendra surtout de votre budget, de vos préférences et des logiciels que vous souhaitez utiliser.
 
 Il n'est pas nécessaire d'avoir le processeur le plus récent ou le plus puissant pour travailler efficacement.
@@ -95,10 +95,10 @@ Il peut être tentant d'acheter des ordinateurs avec un espace de stockage limit
 Cependant, il est important de se rappeler que l'espace de stockage est essentiel et que certains fabricants intègrent le disque de stockage à la carte mère, rendant parfois impossible l'ajout ultérieur d'espace supplémentaire.
 Il est donc primordial de choisir un ordinateur avec un espace de stockage adéquat dès l'achat.
 
-### Quel ordinateur pour vos besoins?
+### Quel ordinateur pour vos besoins&nbsp;?
 
 Pour la plupart des étudiants en sciences sociales, le plus important n'est pas d'avoir une carte graphique puissante, mais un ordinateur fiable, avec assez de mémoire vive, un disque SSD et une bonne autonomie.
-Pour lire, écrire, coder en R, naviguer avec plusieurs onglets ouverts, participer à des visioconférences et utiliser des outils d'IA en ligne, 16 Go de mémoire vive et un SSD d'au moins 256 Go constituent un excellent point de départ.
+Pour lire, écrire, coder en $\textsf{R}$, naviguer avec plusieurs onglets ouverts, participer à des visioconférences et utiliser des outils d'IA en ligne, 16 Go de mémoire vive et un SSD d'au moins 256 Go constituent un excellent point de départ.
 
 Une carte graphique dédiée, aussi appelée GPU, devient surtout utile pour des usages plus spécialisés, comme l'entraînement local de certains modèles d'apprentissage automatique, le montage vidéo, la 3D ou certains jeux.
 Pour la majorité des usages universitaires, le GPU intégré à l'ordinateur est suffisant.
