@@ -160,7 +160,7 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 2. **Noms propres et noms de logiciels** :
    - "Open Science Framework" (nom de plateforme)
    - "GitHub", "Stack Overflow" (noms de services)
-   - `RStudio`, `Quarto` (noms de logiciels)
+   - `Positron`, `Quarto` (noms de logiciels)
 
 3. **Termes techniques non traduisibles ou citations** :
    - "*free* en anglais" (quand on explique l'ambiguïté du terme)
@@ -194,7 +194,7 @@ Lorsque les stratégies ci-dessus alourdissent le texte :
 ### Cohérence dans les exemples
 
 - Utiliser `R` comme exemple principal pour les analyses statistiques
-- Utiliser `RStudio` comme interface de référence
+- Utiliser `Positron` comme interface de référence (successeur de `RStudio` chez *Posit*)
 - Utiliser Git/GitHub pour la gestion de versions
 - Utiliser Zotero pour la bibliographie
 
@@ -424,7 +424,7 @@ Exemples conformes par section :
   - `` `dplyr` ``, `` `tidyverse` ``, `` `ggplot2` ``
 
 - **Interfaces et éditeurs** : utiliser backticks pour logiciels de code
-  - `` `RStudio` ``, `` `VS Code` ``, `` `Quarto` ``
+  - `` `Positron` ``, `` `RStudio` ``, `` `VS Code` ``, `` `Quarto` ``
 
 - **Logiciels propriétaires** : en italique
   - *SPSS*, *STATA*, *Excel*, *Microsoft Word*
@@ -443,11 +443,36 @@ Exemples conformes par section :
   - *open source*, *workflow*, *free software*, *shareware*
   - *cloud*, *clustering*, *design*
 
-### Emphases
+### Emphases : italique dans la prose, gras pour la structure
 
-- **Gras** : pour les termes importants à retenir
-- *Italique* : pour les expressions étrangères et les titres d'ouvrages
-- `Code` : pour les noms de logiciels, fonctions, commandes
+**Règle générale** : dans un texte suivi, la mise en relief se fait en *italique*, jamais en gras. Le gras est réservé aux éléments qui structurent la page. C'est la convention de l'édition française : le gras attire l'œil hors de la ligne de lecture, ce qui convient à une étiquette mais casse un paragraphe.
+
+**Italique** :
+
+- mise en relief d'un terme : « il faut d'abord déterminer si les données sont *sensibles* » ;
+- expressions étrangères : *workflow*, *open source*, *pull request* ;
+- titres d'ouvrages, de revues et de documents officiels : *Designing Social Inquiry*, *Recommandation sur une science ouverte* ;
+- noms de compagnies, de plateformes et de services : *GitHub*, *Dropbox*, *Zenodo*.
+
+**Gras** — uniquement dans ces trois cas :
+
+- tête d'énumération ou de paragraphe, suivie de deux-points : « **Transparence** : la reproductibilité exige... » ;
+- étiquette de progression dans un manuel d'instruction : **Étape 1**, **Prérequis**, **Important** ;
+- entrée de glossaire.
+
+**Code** (`` ` ``) : noms de logiciels de programmation, fonctions, commandes, fichiers et chemins (`Git`, `Positron`, `dplyr`, `git status`, `README.md`).
+
+**Jamais** de gras à l'intérieur d'une phrase. Si un terme doit ressortir au milieu d'un paragraphe, il passe en italique.
+
+❌ **À éviter :**
+- « il existe un outil transversal : **`Git` et *GitHub*** »
+- « les données sont **sensibles** ou non »
+
+✅ **Préférer :**
+- « il existe un outil transversal : `Git` et *GitHub* »
+- « les données sont *sensibles* ou non »
+
+**Comment distinguer une emphase d'un mot anglais, puisque les deux sont en italique ?** Le contexte suffit, et le livre glose systématiquement les termes anglais à leur première apparition (« le flux de travail (*workflow*) »). C'est l'usage courant en édition ; il n'y a pas lieu de créer une distinction typographique supplémentaire.
 
 ### Listes et énumérations
 
@@ -584,6 +609,7 @@ Lors de la révision d'un chapitre, vérifier :
 - [ ] Pas de point médian, parenthèses, ou barres obliques pour l'inclusivité
 - [ ] Les noms de logiciels de programmation sont entre backticks `` `R` ``
 - [ ] Les expressions anglaises sont en italique *workflow*
+- [ ] Aucun gras à l'intérieur d'une phrase (emphase en italique, gras réservé aux têtes d'énumération et aux étiquettes)
 - [ ] Les références croisées utilisent `@sec-chapX`
 - [ ] Les citations utilisent `@auteur_annee`
 - [ ] Le ton est académique mais accessible
