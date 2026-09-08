@@ -42,7 +42,7 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 **CRAN** *(Comprehensive R Archive Network)*
 
-:   Dépôt centralisé hébergeant les packages R validés et mis à disposition de la communauté. [→ @sec-chap2]
+:   Dépôt centralisé hébergeant les packages R validés et mis à la disposition de la communauté. [→ @sec-chap2]
 
 **Données massives** *(big data)*
 
