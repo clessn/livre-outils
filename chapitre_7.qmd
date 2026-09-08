@@ -55,6 +55,8 @@ Le troisième principe est celui du contexte. Un graphique doit être autosuffis
 
 Enfin, le quatrième principe est l'esthétisme. Arel-Bundock rappelle que les trois premiers principes ne sont pas des règles absolues. Des choix visuels assumés peuvent contribuer à capter l'attention et à renforcer le message, à condition de ne pas tromper le lecteur.
 
+Écrire du `ggplot2` avec un assistant conversationnel fonctionne remarquablement bien. La grammaire des graphiques est régulière et abondamment documentée, si bien qu'une demande formulée en français, un nuage de points coloré par groupe avec une courbe de tendance, produit le plus souvent du code utilisable du premier coup. Combinée à `Quarto`, qui exécute ce code et insère la figure dans le document, cette façon de faire donne de premières versions en quelques minutes. Rien n'empêche ensuite de soumettre le code ou l'image obtenue à un assistant pour explorer des variantes de mise en forme, des palettes ou des thèmes, jusqu'à trouver ce qui sert le mieux le propos.
+
 ## Arpentage et choix éditorial : les systèmes graphiques dans $\textsf{R}$
 
 Le langage $\textsf{R}$ s'est imposé comme un outil de référence pour la visualisation de données, particulièrement dans les domaines de la recherche et de l'analyse statistique. Plusieurs facteurs expliquent cette popularité : $\textsf{R}$ est un logiciel libre et gratuit, bénéficiant d'une communauté d'utilisateurs très active qui développe et maintient des milliers de packages spécialisés. Cette nature libre assure une transparence complète du code, facilitant la reproductibilité des analyses, un critère essentiel dans la recherche scientifique.
