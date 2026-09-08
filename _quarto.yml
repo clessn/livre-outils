@@ -19,7 +19,7 @@ book:
         - chapitre_6.qmd
         - chapitre_7.qmd
         - chapitre_8.qmd
-    - part: "Finitions"
+    - part: "Finition"
       chapters:
         - chapitre_9.qmd
   appendices:
@@ -28,6 +28,9 @@ book:
     - references.qmd
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
+crossref:
+  tbl-title: Tableau
+  tbl-prefix: Tableau
 lang: fr
 format:
   pdf:
@@ -43,7 +46,10 @@ format:
           \usepackage{setspace}
           \usepackage{csquotes}
           \newcommand{\R}{\textsf{R}}
+          \usepackage{float}
+          \floatplacement{table}{H}
       - titlepage.tex
+      - notes-pages.tex
   docx:
     reference-doc: reference-template.docx
   html:

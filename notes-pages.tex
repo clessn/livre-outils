@@ -1,0 +1,17 @@
+% Pages de notes de l'édition imprimée : deux pages lignées à la fin de chaque chapitre.
+% Appel : \pagesdenotes (ignoré dans les sorties non PDF).
+\newcounter{lignenotes}
+\newcommand{\pagedenotes}{%
+  \clearpage
+  \section*{Notes}%
+  \setcounter{lignenotes}{0}%
+  \begingroup
+  \setlength{\parskip}{0pt}%
+  \loop\ifnum\value{lignenotes}<22
+    \vspace{\dimexpr 8mm-\baselineskip\relax}%
+    \noindent{\color{gray!55}\rule{\linewidth}{0.4pt}}\par
+    \stepcounter{lignenotes}%
+  \repeat
+  \endgroup
+}
+\newcommand{\pagesdenotes}{\pagedenotes\pagedenotes}
