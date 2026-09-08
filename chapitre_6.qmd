@@ -127,15 +127,15 @@ Ces outils sont très utiles et relativement faciles à utiliser. Il ne faut tou
 
 ## Arpentage et choix éditorial : les extracteurs de données web
 
-Les extracteurs de données numériques, qui ont transformé la récolte de données en sciences sociales, sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
+Les extracteurs de données numériques, qui ont transformé la récolte de données en sciences sociales, sont des infrastructures de code permettant d'extraire des données brutes d'une source numérique. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.
 
-L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non-fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal structurées. Ainsi, l'accès à des données massives représente un défi considérable pour les chercheurs tentant d'entreprendre des recherches utilisant un volume important de données.
+L'émergence du numérique représente une opportunité hors pair d'accès à un volume important de données, qui permettent une analyse approfondie des phénomènes politiques contemporains. Toutefois, l'accès à de telles données peut s'avérer complexe, non fiable ou encore coûteux. Par exemple, des données parlementaires peuvent être accessibles sur les sites internet des parlements et institutions en questions. L'accès à ces données se voit toutefois complexifié par la nécessité d'avoir des identifiants ou encore de payer pour les données. De plus, la qualité de ces données n'est pas assurée, en plus du fait qu'elles peuvent être mal structurées. Ainsi, l'accès à des données massives représente un défi considérable pour les chercheurs tentant d'entreprendre des recherches utilisant un volume important de données.
 
 C'est dans cette optique que les extracteurs de données numériques peuvent être utiles. Il faut faire ici la distinction entre l'outil, soit l'extracteur de données, et la méthode, l'extraction web. Plus précisément, cette dernière est la méthode qui permet l'extraction de données provenant de sites web qui seront ensuite converties dans un format utile aux scientifiques. L'extracteur est l'outil qui permet cette méthode. Il sera question dans les lignes qui suivent de l'outil *rvest*, un package sur $\textsf{R}$, qui permet de récolter des données de site web gratuitement et efficacement.
 
-Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites web étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteurs et de propriété intellectuelles ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
+Il faut toutefois être vigilant quant à la nature des données extraites. Avant d'extraire quelconque information, il est absolument primordial de s'assurer que les données soient publiques, faute de quoi l'extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites web étudiés afin de s'assurer de la légalité de l'extraction de données. Il est également important de respecter toute norme de droit d'auteur et de propriété intellectuelle ou physique des données. De plus, ce n'est pas parce que des données sont publiques qu'il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites quelconque information privée qui pourrait permettre d'identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.)
 
-L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à un tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter/X possédait, avant les changements de directions, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus d'extraction, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
+L'utilisation de cet outil est toutefois facilitée par l'existence d'API (*Application Programming Interface*) sur les plateformes exploitées. L'API d'un site ou d'une application, souvent fournie par le site, permet à une tierce partie d'avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l'extraction de données. Par exemple, Twitter/X possédait, avant les changements de directions, un API qui facilitait l'élaboration d'un extracteur. En contrepartie, Facebook ne possède pas d'API, ce qui rend l'accès à ses données beaucoup plus complexe. Un API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l'automatisation, les API réduisent les chances d'erreurs dans le processus d'extraction, ils ont tendance à maintenir une interface plus stable et conviviale. C'est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.
 
 Un extracteur peut également offrir l'accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu'il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, *La Presse* change ses Unes plusieurs fois dans une même journée. En extrayant l'accès aux fils RSS, il est possible de recevoir ces mises à jour automatiquement. Ce processus accélère grandement la collecte de données.
 
@@ -151,9 +151,11 @@ D'emblée, il convient de souligner que d’autres langages de programmation, no
 
 L'extracteur *rvest* est un outil accessible, particulièrement comme il s'agit d'un outil libre de coûts monétaires. En effet, à moins de circonstances exceptionnelles, l'extraction avec *rvest* est gratuite. Le coût serait plutôt dans l'acquisition de connaissances préalables en code puis dans l'apprentissage de la méthode d'utilisation. Malgré cette nuance, l'absence de coûts monétaires liés à cet outil favorise son accessibilité à l'ensemble de la communauté scientifique. Il est par exemple possible d'étudier l'opinion publique grâce à l'extraction de publications sur des médias socionumériques, plutôt que de construire et administrer des sondages coûteux (voir par exemple l'article de Barbera et al., 2015).
 
-Additionnellement, l'outil jouit d'une grande communauté d'utilisateurs rendant accessible leurs connaissances, ce qui favorise la diffusion des savoirs liés à l'utilisation de cet outil. De nombreux forums d'aide peuvent alors être consultés gratuitement par les chercheurs voulant se familiariser avec le package, et plus largement, l'extraction de données web. De nombreux forums sont présents sur le site *Stack Overflow*, et certains chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil sont également disponible gratuitement en ligne (voir par exemple le chapitre *Web scraping* du livre *R for Data Science* de Hadley Wickham, 2022, qui présente comment utiliser l'outil *rvest*). Bien que des outils comme *Qualtrics* et *Factiva* aient également un grand nombre d'utilisateurs, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.
+Additionnellement, l'outil jouit d'une grande communauté d'utilisateurs rendant accessible leurs connaissances, ce qui favorise la diffusion des savoirs liés à l'utilisation de cet outil. De nombreux forums d'aide peuvent alors être consultés gratuitement par les chercheurs voulant se familiariser avec le package, et plus largement, l'extraction de données web. De nombreux forums sont présents sur le site *Stack Overflow*, et certains chapitres d'ouvrages collectifs vulgarisant l'utilisation de l'outil sont également disponibles gratuitement en ligne (voir par exemple le chapitre sur l'extraction web de *R for Data Science*, qui présente comment utiliser l'outil *rvest* [@wickham_etal23]). Bien que des outils comme *Qualtrics* et *Factiva* aient également un grand nombre d'utilisateurs, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.
 
-En fin de compte, cette méthode, avec le logiciel $\textsf{R}$, via l'outil *rvest* permet de récolter des données qui pourront ensuite être traitées et exploiter avec $\textsf{R}$, ce qui favorise donc la compatibilité de l'outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.
+Les extracteurs sont des outils de recherche très en vogue dans la communauté des sciences sociales. La possibilité d'obtenir une quantité importante de données de manière efficace et gratuite représente une opportunité largement exploitée par les chercheurs en sciences sociales, comme en témoigne l'émergence de cours dédiés à l'extraction web dans de nombreuses écoles méthodologiques de renom, telles qu'ICPSR ou ECPR.
+
+En fin de compte, cette méthode, avec le logiciel $\textsf{R}$, via l'outil *rvest* permet de récolter des données qui pourront ensuite être traitées et exploitées avec $\textsf{R}$, ce qui favorise donc la compatibilité de l'outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.
 
 ```{r}
 #| tbl-cap: Résumé des principaux outils de collecte de données médiatiques et web
@@ -254,7 +256,9 @@ Dans l'exemple ci-haut, le tag \<h1> représente le titre du HTML. Le signe \<p>
 knitr::include_graphics("images/chapitre_6_html_output.png", dpi = 600)
 ```
 
-La structure de base du langage HTML est somme toute simple et intuitive et tous les sites web sur internet sont fondés sur du code HTML. N'importe qui étant intéressé à extraire des données de sites web et tirer profit de la simplicité et l'accessibilité des données qui peuvent en émerger devraient donc se familiariser avec ce langage. De nombreuses sources en ligne sont disponibles afin d'apprendre sur le fonctionnement du code HTML. Il est donc fortement encouragé d'explorer plus en profondeur les structures du code HTML afin d'obtenir une compréhension accrue du fonctionnement des sites web dont on souhaite l'extraction. Comme le code HTML de chaque site est accessible grâce à l'URL, les données présentes sur des sites web sont facilement accessible à la communauté scientifique.
+La structure de base du langage HTML est somme toute simple et intuitive, et toute page web est livrée au navigateur sous cette forme. C'est ce qui rend l'extraction possible : le code HTML d'une page est accessible à partir de son URL, donc les données qu'elle affiche le sont aussi. Quiconque souhaite extraire des données de sites web gagne à se familiariser avec ce langage, et de nombreuses ressources en ligne permettent de l'apprendre.
+
+Une nuance s'impose toutefois. Certains sites construisent leur contenu avec du `JavaScript` une fois la page chargée. Le HTML que reçoit `read_html()` ne contient alors qu'une coquille vide, et l'extraction revient les mains vides sans message d'erreur. C'est le cas de la plupart des médias socionumériques et des tableaux de bord interactifs. Devant une page qui semble ne rien contenir, il faut soupçonner ce mécanisme avant de conclure à une erreur de sélecteur. L'extraction demande alors un outil capable de simuler un navigateur, comme *Selenium*, ou le recours à l'API du site lorsqu'elle existe.
 
 ### Le package *rvest* : son fonctionnement et ses possibilités
 
@@ -262,7 +266,7 @@ Cet ouvrage recommande l'utilisation du package *rvest* afin de récolter des do
 
 #### Fonctions de base du package rvest utilisant pour exemple le site de LEGISinfo
 
-La première étape est l'installation et le chargement des packages `tidyverse` et `rvest` sur la console `RStudio`. Il est important de les charger séparément car *rvest* ne fait pas partie des packages de base du *Tidyverse*. Nous installerons ce dernier car il amène des fonctions pratiques.
+La première étape est l'installation et le chargement des packages `tidyverse` et `rvest` dans la console de `Positron`. Il est important de les charger séparément car *rvest* ne fait pas partie des packages de base du *Tidyverse*. Nous installerons ce dernier car il amène des fonctions pratiques.
 
 ``` bash
 install.packages("rvest")
@@ -271,14 +275,14 @@ library(rvest)
 library(tidyverse)
 ```
 
-Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à extraire et la coller dans l'appel de la fonction `read_html()`. Ici, nous utilisons le site web du Parlement Canadian pour extraire les données des débats parlementaires. Il est important de stocker l'URL dans l'objet `html_LEGISinfo`.
+Pour débuter l'extraction des données, il suffit de copier l'URL de la page web à extraire et la coller dans l'appel de la fonction `read_html()`. Ici, nous utilisons le site web du Parlement canadien pour extraire les données des débats parlementaires. Il est important de stocker l'URL dans l'objet `html_LEGISinfo`.
 
 ``` bash
 html_LEGISinfo <- read_html("https://www.parl.ca/legisinfo/en/bills")
 html_LEGISinfo
 ```
 
-Lors de l'exécution des lignes de code ci-hautes, la console retournera les éléments suivants:
+Lors de l'exécution des lignes de code ci-haut, la console retournera les éléments suivants :
 
 ``` bash
 {html_document}
@@ -298,7 +302,7 @@ D'abord, `html_elements` doit être utilisé pour trouver toutes les observation
 html_LEGISinfo |> html_elements("a")
 ```
 
-Qui retourne les éléments suivants:
+Cet appel retourne les éléments suivants :
 
 ``` bash
 {xml_nodeset (180)}
@@ -315,7 +319,7 @@ Suite à l'inspection des éléments \<a>, ceux qui nous intéressent sont dans 
 BillTile_LEGISinfo <- html_LEGISinfo |> html_elements(".bill-tile-container")
 ```
 
-L'exécution du bloc de code ci-haut produit le résultat suivant dans la console
+L'exécution du bloc de code ci-haut produit le résultat suivant dans la console :
 
 ``` bash
 {xml_nodeset (60)}
@@ -435,9 +439,7 @@ Table_LEGISinfo <- tibble(
 )
 ```
 
-Il est important de noter que ce chapitre ne permet que d'extraire des documents HTML uniques. Afin d'extraire plusieurs pages web simultanément, il faudra utiliser d'autres packages ainsi que des boucles, ce qui est trop complexe pour cet ouvrage d'introduction. 
-
-Maintenant que nous savons extraire des informations d'un document HTML pour le mettre dans une base de données, voici d'autres applications pratiques de *rvest* à cet effet.
+Nous savons maintenant extraire des informations d'un document HTML et les ranger dans une base de données. C'est l'essentiel du travail, et un lecteur pressé peut passer directement à la conclusion du chapitre. Ce qui suit s'adresse aux plus aventureux : deux usages de *rvest* qui sortent du cas simple, et auxquels il sera toujours temps de revenir.
 
 Il est possible d'extraire les éléments en fonction de leur attribut grâce à `html_attr()`. Un attribut est une information supplémentaire associée à une balise HTML. Voici l'attribut *href* qui permet d'extraire l'URL du projet de loi en question. De cette façon, il est possible de boucler sur les *href* afin d'extraire divers niveaux d'une page HTML. Lorsque l'extraction se fait sur plusieurs niveaux, la pratique devient de l'indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l'extraction de base.
 
@@ -445,7 +447,7 @@ Il est possible d'extraire les éléments en fonction de leur attribut grâce à
 BillTile_LEGISinfo |> html_attr("href")
 ```
 
-La ligne de code ci-haut produit le résultat suivant dans la console
+La ligne de code ci-haut produit le résultat suivant dans la console :
 
 ``` bash
 1] "/legisinfo/en/bill/44-1/s-1"  
@@ -454,7 +456,7 @@ La ligne de code ci-haut produit le résultat suivant dans la console
 ...
 ```
 
-Il est également possible d'extraire des tables. Pour cet exemple, le site de LEGISinfo ne comporte malheureusement pas de tables, le script de https://r4ds.hadley.nz/webscraping sera donc utilisé. Celui-ci utilise la fonction `minimal_html` pour créer un script HTML, qui n'est pas nécessaire à l'extraction, mais toutefois utilisé pour cet exemple.
+*rvest* extrait aussi les tableaux HTML, et d'une seule fonction. L'exemple qui suit est repris du chapitre sur l'extraction web de *R for Data Science* [@wickham_etal23]. Il fabrique son propre tableau avec `minimal_html()`, une fonction qui construit un document HTML à partir de texte. Elle n'a rien à voir avec l'extraction, elle sert seulement à rendre l'exemple autonome : sur un vrai site, l'objet viendrait de `read_html()`.
 
 ``` bash
 htmltest <- minimal_html("
