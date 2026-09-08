@@ -7,7 +7,7 @@ Laurence-Olivier M. Foisy (Université Laval)}
 
 ![](images/chapitre_5_toolbox_tape_black.png){fig-align="center" width="12%"}
 
-La revue de littérature est souvent perçue comme une étape préliminaire. Elle constitue pourtant une contribution scientifique à part entière, à condition d'être conduite avec rigueur et méthode. Une telle démarche permet non seulement de cerner les zones de connaissances encore inexplorées, mais aussi de situer comment la recherche en cours s'inscrit dans un domaine circonscrit. Loin d'être une simple collection de sources choisies aléatoirement, la synthèse de la connaissance doit suivre une démarche méthodique et réfléchie, intégrant des critères tels que la pertinence, la crédibilité, la nouveauté sur le sujet, la diversité des perspectives, la qualité méthodologique, l'impact et le nombre de citation des travaux, et leur objectivité.
+La revue de littérature est souvent perçue comme une étape préliminaire. Elle constitue pourtant une contribution scientifique à part entière, à condition d'être conduite avec rigueur et méthode. Une telle démarche permet non seulement de cerner les zones de connaissances encore inexplorées, mais aussi de situer comment la recherche en cours s'inscrit dans un domaine circonscrit. Loin d'être une simple collection de sources choisies aléatoirement, la synthèse de la connaissance doit suivre une démarche méthodique et réfléchie, intégrant des critères tels que la pertinence, la crédibilité, la nouveauté sur le sujet, la diversité des perspectives, la qualité méthodologique, l'impact et le nombre de citations des travaux, et leur objectivité.
 
 En dressant un portrait structuré et critique de la littérature existante, le chercheur établit les fondements de sa démarche scientifique et éclaire la formulation de sa question de recherche. Une revue de littérature rigoureuse n'est pas un simple recensement de sources, c'est une contribution scientifique à part entière qui délimite le champ, identifie les lacunes et justifie chaque nouvelle étude. 
 
@@ -21,7 +21,7 @@ Les synthèses de la connaissance ainsi que la gestion des références ont long
 
 Le développement des technologies de l'information et la montée en puissance des bases de données en ligne ont ouvert la voie à l'émergence d'outils numériques de synthèse de la connaissance et de gestion des références. À mesure que les ordinateurs devenaient plus accessibles et que l'informatique évoluait, de nouvelles possibilités se sont offertes pour organiser et gérer la littérature de manière plus efficace. C’est dans ce contexte que les premiers outils numériques de synthèse de la connaissance et de gestion des références ont vu le jour.
 
-Ces logiciels de première génération, tels que *EndNote* (1988) et *Bookends* (1988), répondaient à un besoin pressant : faciliter l’organisation des références ainsi que leur insertion automatique dans des documents, tout en générant des bibliographies conformes à différents standards éditoriaux. Cependant, ces outils se sont rapidement sophistiqués à travers les années. Les logiciels de gestion de références sont devenus des plateformes centralisées permettant aux chercheurs de stocker des milliers de citations, de les classer par mots-clés ou thématiques et de les retrouver facilement. Les utilisateurs pouvaient aussi importer des références directement depuis des bases de données en ligne comme PubMed ou JSTOR, automatisant encore davantage le processus. Aujourd’hui, les outils de synthèse de la connaissance et de gestion des références, tels que *Zotero*, *Mendeley* ou *Covidence* , permettent non seulement de gérer des bibliographies, mais également de collaborer à plusieurs sur des revues systématiques, d’annoter des articles, d’organiser des données et de générer des rapports structurés. Leurs fonctionnalités *cloud* facilitent également la synchronisation entre différents appareils et assurent un accès en tout lieu.
+Ces logiciels de première génération, tels que *EndNote* (1988) et *Bookends* (1988), répondaient à un besoin pressant : faciliter l’organisation des références ainsi que leur insertion automatique dans des documents, tout en générant des bibliographies conformes à différents standards éditoriaux. Cependant, ces outils se sont rapidement sophistiqués à travers les années. Les logiciels de gestion de références sont devenus des plateformes centralisées permettant aux chercheurs de stocker des milliers de citations, de les classer par mots-clés ou thématiques et de les retrouver facilement. Les utilisateurs pouvaient aussi importer des références directement depuis des bases de données en ligne comme PubMed ou JSTOR, automatisant encore davantage le processus. Aujourd’hui, les outils de synthèse de la connaissance et de gestion des références, tels que *Zotero* (2006), *Mendeley* (2008) ou *Covidence* (2014), permettent non seulement de gérer des bibliographies, mais également de collaborer à plusieurs sur des revues systématiques, d’annoter des articles, d’organiser des données et de générer des rapports structurés. Leurs fonctionnalités *cloud* facilitent également la synchronisation entre différents appareils et assurent un accès en tout lieu.
 
 Bien que ce chapitre aborde à la fois les outils de synthèse de la connaissance et de gestion des références, il est essentiel de préciser que ces deux types d'outils ont des utilités et fonctionnalités distinctes. D'une part, les outils de synthèse de la connaissance, comme *Covidence*, *Colandr* et *Rayyan*, sont conçus pour gérer des processus de recherche plus complexes, tels que les revues systématiques, en facilitant la sélection, l'évaluation critique et la synthèse des études. D'autre part, les outils de gestion des références, tels que *EndNote* et *Zotero*, se concentrent sur l'organisation, l'annotation et la création de bibliographies à partir de références.
 
@@ -33,7 +33,7 @@ La réalisation d’une revue de littérature rigoureuse suit un *pipeline* stru
 
 Ce chapitre ne couvre pas l’ensemble de ce *pipeline*. Les outils de découverte assistée par intelligence artificielle sont utiles, mais leur évolution rapide les rend difficiles à présenter de manière pérenne. Surtout, ils ne constituent pas la partie la plus déficiente des pratiques de recherche actuelles : la plupart des chercheurs savent chercher des sources. Ce qui est moins maîtrisé (et plus déterminant pour la qualité d’une contribution scientifique), c’est la rigueur de la méthode : comment les études ont été identifiées, selon quels critères elles ont été sélectionnées, et comment elles sont gérées de manière transparente et reproductible. C’est précisément sur ces aspects que ce chapitre se concentre.
 
-Au-delà de la revue narrative, certaines méthodes comme le *snowballing* et la revue de portée (*scoping review*) offrent une approche plus systématique et ciblée. La méthode du snowballing se distingue par son adaptabilité et sa capacité à englober un large spectre de travaux pertinents, en particulier dans les phases préliminaires de la recherche où la question d'étude peut ne pas être entièrement définie. Le snowballing est une technique de recherche bibliographique qui se fonde sur la sélection initiale de quelques publications clés dans le champ d'intérêt. Par la suite, à partir de ces références clés, le chercheur identifie de manière itérative d'autres travaux pertinents en examinant les références citées (*backward snowballing*) ou les articles citant ces travaux (*forward snowballing*) [@nightingaleGuideSystematicLiterature2009].
+Au-delà de la revue narrative, certaines méthodes comme le *snowballing* et la revue de portée (*scoping review*) offrent une approche plus systématique et ciblée. La méthode du snowballing se distingue par son adaptabilité et sa capacité à englober un large spectre de travaux pertinents, en particulier dans les phases préliminaires de la recherche où la question d'étude peut ne pas être entièrement définie. Le snowballing est une technique de recherche bibliographique qui se fonde sur la sélection initiale de quelques publications clés dans le champ d'intérêt. Par la suite, à partir de ces références clés, le chercheur identifie de manière itérative d'autres travaux pertinents en examinant les références citées (*backward snowballing*) ou les articles citant ces travaux (*forward snowballing*) [@wohlin14]. Cette approche n'est pas un pis-aller : combinée à une recherche par base de données, elle permet d'identifier des études qu'aucune des deux méthodes ne trouve seule [@wohlin_etal22].
 
 Un deuxième type de synthèse de la connaissance est la revue de portée, ou *scoping review*, qui représente une approche systématique et structurée de revue de la littérature. Elle est principalement utilisée afin d'explorer des questions de recherche étendues ou complexes. Son objectif fondamental est de cartographier l'état actuel des connaissances sur un sujet donné, en identifiant les concepts clés, les principaux domaines de recherche ainsi que les lacunes existantes dans un domaine d'étude spécifique [@munn_etal18]. Cette méthode se distingue par son champ d'application large et son objectif exploratoire, permettant ainsi une compréhension holistique des thématiques étudiées.
 
@@ -47,7 +47,7 @@ Les synthèses de la connaissance ont longtemps été davantage associées aux s
 
 ## Arpentage et choix éditorial : les outils de synthèse de la connaissance
 
-Plusieurs outils existent afin de faciliter la vie des chercheurs qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme *EndNote* et *Zotero*. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une licence institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de *Covidence*, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est un autre outil répandu pour les revues systématiques, y compris en sciences sociales. Il offre une interface intuitive et des algorithmes facilitant le tri des articles, mais son accès gratuit est limité (trois revues actives) et certaines fonctions utiles à une revue systématique, comme la génération du diagramme PRISMA, sont réservées aux formules payantes. Il propose en outre moins d'options pour l’extraction des données en comparaison à *Covidence*.
+Plusieurs outils existent afin de faciliter la vie des chercheurs qui souhaitent effectuer des synthèses de la connaissance, chacun répondant à des besoins spécifiques. *Covidence*, *Colandr* et *Rayyan* sont trois outils populaires dans le monde académique, offrant chacun des fonctions similaires. *Covidence* est surtout utilisé pour les revues systématiques, particulièrement dans les domaines de la santé, mais il est également adaptable aux sciences sociales. Il se distingue par son interface conviviale, sa gestion collaborative efficace, et son intégration avec des outils comme *EndNote* et *Zotero*. Il est payant, ce qui peut être un frein pour certains utilisateurs, mais de nombreux établissements d'enseignement ont une licence institutionnelle. Il est généralement l'outil privilégié par les bibliothèques universitaires. *Colandr*, quant à lui, est un outil gratuit et à code source ouvert qui se distingue par l’utilisation de l’intelligence artificielle pour optimiser la sélection des études et automatiser certaines tâches. Il est particulièrement adapté aux projets interdisciplinaires, notamment dans les domaines de l’environnement ou des politiques publiques. Son interface est moins intuitive que celle de *Covidence*, mais il reste un excellent choix pour ceux qui cherchent un outil gratuit et collaboratif. Finalement, *Rayyan* est un autre outil répandu pour les revues systématiques, y compris en sciences sociales. Il offre une interface intuitive et des algorithmes facilitant le tri des articles, mais son accès gratuit est limité (trois revues actives) et certaines fonctions utiles à une revue systématique, comme la génération du diagramme PRISMA, sont réservées aux formules payantes. Il propose en outre moins d'options pour l’extraction des données en comparaison à *Covidence*. *Covidence* et *Rayyan* sont tous deux des logiciels propriétaires, alors que *Colandr* est le seul des trois dont le code est ouvert.
 
 ### Choix éditorial : pourquoi *Covidence* ?
 
@@ -80,11 +80,11 @@ tbl_resume_chap_5_connaissance <- tibble(
     "Adaptabilité et flexibilité"
   ),
   Covidence = c(
-    "Payant (souvent institutionnel)",
+    "Dispendieux",
     "Grande",
     "Très populaire",
     "Facilement compatible",
-    "Propriétaire",
+    "Bonne",
     "Plutôt flexible"
   ),
   Colandr = c(
@@ -92,15 +92,15 @@ tbl_resume_chap_5_connaissance <- tibble(
     "En croissance",
     "En croissance",
     "Facilement compatible",
-    "Code source ouvert",
+    "Excellente",
     "Très flexible"
   ),
   Rayyan = c(
-    "Freemium",
+    "Gratuit (limité)",
     "Grande",
     "Populaire",
     "Facilement compatible",
-    "Partiellement propriétaire",
+    "Bonne",
     "Plutôt flexible"
   )
 )
@@ -156,13 +156,13 @@ Dans le domaine des outils de gestion des références, *Mendeley* et *EndNote* 
 
 ### Choix éditorial : pourquoi *Zotero* ?
 
-Dans l'écosystème des outils de gestion bibliographique, plusieurs solutions s'offrent aux chercheurs. Bien que chacune présente ses propres avantages, notre choix s'est porté sur *Zotero* pour des raisons à la fois techniques, économiques et méthodologiques que nous détaillons ci-après. *Zotero* se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur *GitHub*, qui compte plus de 13 000 contributions. Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. *Zotero* est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque *Zotero* peut être synchronisée sur plusieurs appareils via le service *cloud* payant de *Zotero* ou en configurant un espace de stockage *cloud* personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant \LaTeX ou Quarto, permettant d'exporter des fichiers `.bib` et de les intégrer facilement dans un flux de travail de rédaction scientifique. De plus, *Zotero* fonctionne avec des logiciels de traitement de texte tels que *LibreOffice* et *Microsoft Office*, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche. Dans le contexte d'une revue systématique, cette centralisation est particulièrement précieuse : elle garantit que chaque référence retenue ou écartée est traçable, organisée et partageable avec les autres membres de l'équipe de recherche.
+Dans l'écosystème des outils de gestion bibliographique, plusieurs solutions s'offrent aux chercheurs. Bien que chacune présente ses propres avantages, notre choix s'est porté sur *Zotero* pour des raisons à la fois techniques, économiques et méthodologiques que nous détaillons ci-après. *Zotero* se distingue des autres outils de gestion des références par sa gratuité et son accessibilité en tant que logiciel libre, avec un code ouvert largement soutenu par une communauté active sur *GitHub*, qui compte plus de 13 000 contributions. Ce logiciel propose une vaste gamme de fonctionnalités et permet l'ajout d'extensions pour enrichir son utilisation, ce qui le rend particulièrement puissant tout en restant facile à utiliser. *Zotero* est compatible avec diverses plateformes, notamment Windows, Mac, Linux, iOS et Android, facilitant ainsi la collaboration entre les membres d'une équipe de recherche qui utilisent différents systèmes. La bibliothèque *Zotero* peut être synchronisée sur plusieurs appareils via le service *cloud* payant de *Zotero* ou en configurant un espace de stockage *cloud* personnel. Ce logiciel s'intègre parfaitement dans les projets de recherche utilisant \LaTeX{} ou Quarto, permettant d'exporter des fichiers `.bib` et de les intégrer facilement dans un flux de travail de rédaction scientifique. De plus, *Zotero* fonctionne avec des logiciels de traitement de texte tels que *LibreOffice* et *Microsoft Office*, et offre la possibilité de créer des bibliographies et des citations dans plus de 9 000 styles de citation différents, répondant ainsi aux divers besoins des chercheurs. En outre, il permet d'ajouter directement les documents PDF des références et d'y prendre des notes, ce qui simplifie considérablement la centralisation de l'information pertinente pour la recherche. Dans le contexte d'une revue systématique, cette centralisation est particulièrement précieuse : elle garantit que chaque référence retenue ou écartée est traçable, organisée et partageable avec les autres membres de l'équipe de recherche.
 
 *Zotero* offre l'avantage significatif de centraliser les sources bibliographiques et les fichiers associés, simplifiant grandement le partage de documents au sein des équipes de recherche. Avec *Zotero*, il est possible d'ajouter des PDF et de les synchroniser dans des groupes de travail, ce qui élimine le besoin de recourir à des dossiers partagés ou d'envoyer des documents par courriel ou via des plateformes de partage de fichiers. Cette centralisation permet également de réaliser des recherches par mot-clé à travers l'ensemble des sources d'une bibliothèque, facilitant la récupération rapide de sources spécifiques.
 
 Cependant, *Zotero* présente également quelques inconvénients, notamment sa gestion parfois difficile de très grandes bibliothèques contenant des milliers de fichiers, ce qui peut nécessiter l'achat d'espace de stockage supplémentaire. Bien que performant, le logiciel requiert parfois la saisie manuelle d'informations que le connecteur intégré ne détecte pas automatiquement, représentant un potentiel défi pour les utilisateurs. Ces quelques défis soulignent l'importance d'évaluer les besoins spécifiques en matière de gestion bibliographique avant de choisir *Zotero* comme solution.
 
-Le @sec-chap8 présente le langage de balisage \LaTeX. Un des avantages majeurs de *Zotero* réside justement dans sa capacité à s'intégrer parfaitement avec \LaTeX : *Zotero* permet nativement de gérer les clés de citation et d'exporter des bibliographies au format BibLaTeX vers un fichier `.bib`. (Pour les projets nécessitant une synchronisation continue et automatique du fichier `.bib`, l'extension Better BibTeX reste une option complémentaire utile.) BibLaTeX, une extension moderne pour gérer les bibliographies dans \LaTeX et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. Il est recommandé de maintenir dans le fichier `.bib` uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
+Le @sec-chap8 présente le langage de balisage \LaTeX. Un des avantages majeurs de *Zotero* réside justement dans sa capacité à s'intégrer parfaitement avec \LaTeX{} : *Zotero* permet nativement de gérer les clés de citation et d'exporter des bibliographies au format BibLaTeX vers un fichier `.bib`. (Pour les projets nécessitant une synchronisation continue et automatique du fichier `.bib`, l'extension Better BibTeX reste une option complémentaire utile.) BibLaTeX, une extension moderne pour gérer les bibliographies dans \LaTeX{} et Quarto, s'utilise couramment avec Biber, un outil de traitement bibliographique avancé compatible avec BibLaTeX. Biber propose des fonctionnalités telles que le tri poussé, la gestion de multiples bibliographies et le traitement de divers formats de données bibliographiques. BibLaTeX, prenant en charge de nombreuses langues, est idéal pour la rédaction de documents destinés à un public international. Il est recommandé de maintenir dans le fichier `.bib` uniquement les références utilisées, organisées par ordre alphabétique, afin de faciliter la collaboration et le partage des ressources.
 
 ```{r}
 #| tbl-cap: Résumé des principaux outils de gestion des références
@@ -184,10 +184,10 @@ tbl_resume_chap_5_references <- tibble(
   ),
   Zotero = c(
     "Gratuit",
-    "Très grande (7.5M+)",
+    "Très grande",
     "Très populaire",
     "Facilement compatible",
-    "Code source ouvert",
+    "Excellente",
     "Très flexible"
   ),
   Mendeley = c(
@@ -195,15 +195,15 @@ tbl_resume_chap_5_references <- tibble(
     "Grande",
     "Très populaire",
     "Facilement compatible",
-    "Partiellement propriétaire",
+    "Bonne",
     "Plutôt flexible"
   ),
   EndNote = c(
-    "Payant",
+    "Dispendieux",
     "Grande",
     "Populaire",
     "Facilement compatible",
-    "Propriétaire",
+    "Faible",
     "Peu flexible"
   )
 )
@@ -261,7 +261,7 @@ La configuration initiale est essentielle pour exploiter pleinement *Zotero* dan
 
 ### Gestion des clés de citation et export `.bib`
 
-*Zotero* gère nativement les clés de citation, ce qui permet de citer des références directement dans un document \LaTeX ou Quarto sans extension Zotero Les clés sont générées automatiquement à partir des métadonnées de chaque référence et peuvent être consultées et modifiées directement dans l'interface de *Zotero*.
+*Zotero* gère nativement les clés de citation, ce qui permet de citer des références directement dans un document \LaTeX{} ou Quarto sans extension Zotero tierce. Les clés sont générées automatiquement à partir des métadonnées de chaque référence et peuvent être consultées et modifiées directement dans l'interface de *Zotero*.
 
 Pour les projets collaboratifs qui nécessitent une synchronisation continue du fichier `.bib`, l'extension Better BibTeX offre des fonctionnalités complémentaires. Pour l'installer, il faut accéder au menu des modules complémentaires (via le menu `Outils` sur Windows/Linux ou le menu `Zotero` sur macOS, puis `Modules complémentaires`), sélectionner l'option Installer un module à partir d'un fichier et choisir le fichier `.xpi` préalablement téléchargé. Une fois l'installation terminée, il convient de configurer le module via les préférences de *Zotero* (menu `Édition > Préférences` sur Windows/Linux ou `Zotero > Préférences` sur macOS) dans l'onglet Better BibTeX.
 
@@ -273,11 +273,11 @@ Il est important de noter que toute modification effectuée dans *Zotero* (ajout
 
 ### Utilisation de *Zotero* lors de la rédaction
 
-Lors de la rédaction d'articles scientifiques, *Zotero* peut être intégré directement dans des éditeurs de texte compatibles avec \LaTeX ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque *Zotero*.
+Lors de la rédaction d'articles scientifiques, *Zotero* peut être intégré directement dans des éditeurs de texte compatibles avec \LaTeX{} ou Markdown. L'insertion de références se fait simplement en utilisant la commande `@` dans l'éditeur de texte, permettant de sélectionner rapidement la référence souhaitée à partir de la bibliothèque *Zotero*.
 
 ## En terminant
 
-Ce chapitre a défendu l'idée que la revue de littérature est une démarche scientifique à part entière, qui exige une méthodologie transparente et reproductible. Qu'il s'agisse du snowballing, de la revue de portée ou de la revue systématique, ces méthodes partagent une exigence commune : documenter rigoureusement comment la littérature a été identifiée, sélectionnée et analysée. Cette rigueur n'est pas une formalité, mais elle qui distingue une contribution scientifique solide d'une simple recension de sources.
+Ce chapitre a défendu l'idée que la revue de littérature est une démarche scientifique à part entière, qui exige une méthodologie transparente et reproductible. Qu'il s'agisse du snowballing, de la revue de portée ou de la revue systématique, ces méthodes partagent une exigence commune : documenter rigoureusement comment la littérature a été identifiée, sélectionnée et analysée. Cette rigueur n'est pas une formalité, mais c'est elle qui distingue une contribution scientifique solide d'une simple recension de sources.
 
 Les sciences sociales produisent aujourd'hui de plus en plus de synthèses de la connaissance, et leur valeur est pleinement reconnue dans les grandes revues du domaine. Pour un étudiant à la maîtrise ou au doctorat, réaliser une revue systématique comme première étude représente une occasion rare : cartographier un champ, identifier les lacunes, repérer les auteurs clés et les questions en suspens, puis publier cette contribution avant même d'avoir collecté une seule donnée empirique. Les études suivantes s'en trouvent d'autant plus solides et ciblées.
 
