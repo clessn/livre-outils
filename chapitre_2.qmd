@@ -1,4 +1,4 @@
-# Outils de programmation : $\textsf{R}$ comme point de départ {#sec-chap2}
+# Outils de programmation : pourquoi $\textsf{R}$, et par où commencer {#sec-chap2}
 
 \begin{center}
 \textit{Marc-Antoine Rancourt (University of Toronto), \\
@@ -7,10 +7,12 @@ Laurence-Olivier M. Foisy (Université Laval)}
 
 ![](images/chapitre_2_toolbox_hammer_black.png){fig-align="center" width="12%"}
 
+Ce chapitre n'apprend pas à programmer. D'excellentes ressources le font déjà, gratuitement et en français, et nous y renvoyons à la fin. Son rôle est de mettre la table. Il explique ce qu'est la programmation, pourquoi un chercheur en sciences sociales gagne à s'y mettre et pourquoi, parmi tous les langages, nous avons choisi $\textsf{R}$. Il installe ensuite un environnement de travail moderne, `Positron`, et montre comment s'y retrouver. Il se termine sur la question que tout le monde se pose maintenant, soit quoi faire de l'intelligence artificielle quand on écrit du code. Le marteau de la boîte à outils, c'est ici. On le retrouvera à chaque étape du livre, pour collecter des données, les transformer, les analyser et les présenter. Mieux vaut savoir le tenir avant de commencer.
+
 ## Point d'observation : qu'est-ce que la programmation ?
 
 La programmation est une manière de donner des instructions à un ordinateur pour qu’il exécute des tâches précises.
-On utilise pour cela des langages de programmation. 
+On utilise pour cela des langages de programmation.
 Ces langages ont des règles beaucoup plus strictes que les langues traditionnelles comme le français ou l’anglais.
 Chaque ligne (ou phrase) doit être claire et respecter une syntaxe définie pour que l’ordinateur comprenne.
 Une simple erreur de syntaxe comme l'oubli d'une virgule ou une faute de frappe peut empêcher un programme de fonctionner correctement.
@@ -26,7 +28,7 @@ Ils permettent de se concentrer sur la logique et les objectifs de l'analyse, sa
 On peut dire qu'un langage de haut niveau ressemble à la conduite d'une voiture : on se concentre sur la direction à prendre, et la mécanique interne se gère toute seule.
 Ce sont les langages les plus couramment utilisés en sciences sociales.
 
-Les langages de bas niveau, comme l'Assembleur, se rapprochent du langage machine.
+Les langages de bas niveau, comme l'assembleur, se rapprochent du langage machine.
 Pour reprendre l'image de la voiture, c'est comme travailler directement sous le capot, en réglant soi-même chaque mécanisme pour obtenir un contrôle maximal.
 Cet avantage s'accompagne toutefois d'une contrepartie : ces langages sont plus difficiles à apprendre et restent rarement utilisés en sciences sociales.
 
@@ -55,33 +57,35 @@ Il est recommandé de commencer son apprentissage avec des langages tels que `Py
 En effet, cela permet au programmeur débutant de se concentrer sur les concepts fondamentaux de la programmation, tels que les variables, les boucles et les fonctions, sans être découragé par une syntaxe complexe.
 L'environnement d'apprentissage et les ressources disponibles en ligne jouent également un rôle important dans le choix d'un langage de programmation.
 `Python` et $\textsf{R}$ ont des communautés très actives en plus d'une grande quantité de documentation et d'innombrables tutoriels gratuits, permettant l'apprentissage autonome et efficace.
-Les programmeurs débutants peuvent s'inscrire sur des sites tels que *DataCamp*, *Codecademy* et *Coursera*, afin d'obtenir une structure dans leur apprentissage.
-Les IA comme *ChatGPT* ou *Gemini* sont aussi très pertinentes dans l'apprentissage du code. Elles permettent d'expliquer la logique d'un code ou d'une fonction, d'aider à comprendre pourquoi notre code ne marche pas et même de trouver des formulations ou des fonctions inattendues pour coder quelque chose.
+Les ressources pour apprendre sont abondantes, nous y revenons à la fin du chapitre, et les assistants d'intelligence artificielle changent aussi la donne, dans un sens comme dans l'autre.
 
 Contrairement aux langages de programmation précédemment mentionnés, dont le code source est ouvert, il existe des logiciels propriétaires comme *SAS*, *STATA*, *Excel* et *SPSS*.
 Ces logiciels présentent plusieurs avantages spécifiques qui peuvent justifier leur choix par rapport aux langages de programmation généralistes.
 L'accessibilité et la facilité d'utilisation constituent l'argument principal en leur faveur.
-Les logiciels propriétaires peuvent être installés et utilisés rapidement, contrairement aux langages de programmation qui exigent une maîtrise de la syntaxe et des concepts algorithmiques.
-Ces logiciels se distinguent des langages de programmation par leur interface graphique intuitive permettant de réaliser rapidement des analyses statistiques complexes.
+Les logiciels propriétaires peuvent être installés et utilisés rapidement.
+Ils se distinguent des langages de programmation par leur interface graphique intuitive, qui permet de réaliser rapidement des analyses statistiques complexes.
 Cette approche dite du *point-and-click* élimine pour plusieurs utilisateurs la barrière d'entrée technique.
 De plus, elle permet aux chercheurs de se concentrer sur l'interprétation des résultats plutôt que sur l'apprentissage de la programmation.
 Ceci est particulièrement utile pour des utilisateurs occasionnels ou pour des chercheurs dans des domaines où l'analyse statistique n'est qu'un outil parmi d'autres.
 
 ### Pourquoi choisir le langage de programmation $\textsf{R}$ ?
 
-Le langage de programmation $\textsf{R}$ présente des avantages uniques qui en font un choix pertinent pour la recherche en sciences sociales numériques spécifiquement, et la science des données plus généralement.
+Le langage de programmation $\textsf{R}$ présente des avantages uniques qui en font un choix pertinent pour la recherche en sciences sociales numériques.
 Le principal avantage est que le code source est ouvert.
-Cela signifie que le langage de programmation $\textsf{R}$ est gratuit d'utilisation et développé par les utilisateurs et non par une grande entreprise. Cela lui procure une plus grande flexibilité et permet aux utilisateurs de modifier le langage pour répondre à leurs besoins spécifiques.
+Cela signifie que le langage de programmation $\textsf{R}$ est gratuit d'utilisation et développé par les utilisateurs et non par une grande entreprise.
+Cela lui procure une plus grande flexibilité et permet aux utilisateurs de modifier le langage pour répondre à leurs besoins spécifiques.
 Le nombre d'utilisateurs est d'ailleurs en croissance importante depuis plusieurs années.
 Pour les institutions académiques, les startups ou les organisations à budget limité, le langage de programmation $\textsf{R}$ permet d'accéder à des capacités d'analyse de niveau professionnel sans investissement financier important.
 Cette gratuité ne se limite pas aux coûts d'achat de licence.
 Elle s'étend à l'ensemble de l'écosystème $\textsf{R}$, notamment à l'accès à la formation, à la documentation et aux différentes fonctionnalités.
 Les extensions (souvent appelées *packages*) sont des groupes de fonctionnalités créés et utilisés par les usagers du langage de programmation $\textsf{R}$ afin d'étendre les possibilités offertes de base.
-De nouveaux *packages* comportant notamment de nouvelles méthodes statistiques et de visualisations graphiques sont constamment ajoutés et améliorés. Ainsi, le développement du langage se fait de manière décentralisée et toute personne sachant programmer en $\textsf{R}$ peut collaborer à cette communauté.
+De nouveaux *packages* comportant notamment de nouvelles méthodes statistiques et de visualisations graphiques sont constamment ajoutés et améliorés.
+Ainsi, le développement du langage se fait de manière décentralisée et toute personne sachant programmer en $\textsf{R}$ peut collaborer à cette communauté.
 Les *packages* sont regroupés sur le *Comprehensive R Archive Network* (CRAN) (voir <https://cran.r-project.org/> pour plus d'informations).
 Bien que le site ait une politique de dépôt stricte et que les *packages* doivent être suffisamment documentés, il n'y a pas d'autorité décisionnelle centrale.
 
-Cette richesse de l'écosystème signifie que pratiquement toutes les techniques et méthodes statistiques, des plus classiques aux plus récentes, sont disponibles et utilisables dans $\textsf{R}$. Il est souvent dit que $\textsf{R}$ est un langage de programmation développé par des statisticiens, pour des statisticiens.
+Cette richesse de l'écosystème signifie que pratiquement toutes les techniques et méthodes statistiques, des plus classiques aux plus récentes, sont disponibles et utilisables dans $\textsf{R}$.
+Il est souvent dit que $\textsf{R}$ est un langage de programmation développé par des statisticiens, pour des statisticiens.
 Qui plus est, les différents *packages* sont généralement très « clés en main », ce qui est avantageux pour les programmeurs débutants.
 Ils sont aussi souvent bâtis sur des fondations communes permettant également aux programmeurs plus avancés de personnaliser et d'adapter leur code aux besoins de leurs analyses.
 Les caractéristiques du langage de programmation $\textsf{R}$ permettent aussi la réplicabilité des résultats, même lorsqu'il y a des changements de version ou de nouvelles fonctions.
@@ -91,19 +95,17 @@ Ces formalités rendent le processus plus lent et réduisent l'éventail des pos
 Le fait que *SAS* et *SPSS* permettent à leurs utilisateurs d'intégrer des éléments de programmation $\textsf{R}$ à leurs logiciels est un indicateur fort de l'utilité de $\textsf{R}$ pour tous.
 
 Bien entendu, il existe un constant débat en sciences sociales numériques sur le langage de programmation le plus approprié à apprendre et à enseigner.
-<!-- Comme discuté ci-dessus, apprendre le langage de programmation R a de nombreux avantages. -->
-<!-- Toutefois, certains notent que le langage de programmation R peut avoir des inconvénients. -->
-<!-- La courbe d'apprentissage peut être plus grande que celle de logiciels à licence. -->
-<!-- Bien que l'apprentissage de ces logiciels aient aussi un coût d'entrée, ils peuvent apparaître être plus intuitifs et facile d'accès. -->
-<!-- Le développement en source ouverte, spécifiquement celui du langage de programmation R, peut sembler se faire de façon anarchique. -->
+<!-- Comme discuté ci-dessus, apprendre le langage de programmation R a de nombreux avantages. --> <!-- Toutefois, certains notent que le langage de programmation R peut avoir des inconvénients. --> <!-- La courbe d'apprentissage peut être plus grande que celle de logiciels à licence. --> <!-- Bien que l'apprentissage de ces logiciels aient aussi un coût d'entrée, ils peuvent apparaître être plus intuitifs et facile d'accès. --> <!-- Le développement en source ouverte, spécifiquement celui du langage de programmation R, peut sembler se faire de façon anarchique. -->
 
 <!-- Considérant les avantages et les inconvénients sur langage de programmation R, certains chercheurs en sciences sociales numériques préfèrent d'autres langages de programmation tels que Python et Julia. -->
+
 `Python` est un langage de programmation considéré comme plus généraliste qui permet de développer des applications web, des logiciels et des modèles d'apprentissage machine et d'intelligence artificielle.
 Sa syntaxe est considérée par certains comme étant plus intuitive et proche du langage naturel, en plus de bénéficier d'une communauté d'utilisateurs plus vaste et diversifiée que $\textsf{R}$.
 De plus, dans certains domaines, le marché de l'emploi offre plus d'opportunités pour les utilisateurs de `Python`.
 Toutefois, il n'est pas aussi performant que $\textsf{R}$ pour l'analyse et la visualisation de données.
 Pour sa part, `Julia` est avantageux pour des calculs intensifs ou de la modélisation mathématique.
-En fait, `Julia` est conçu pour être aussi rapide que `C` ou `Fortran` tout en restant aussi simple que `Python`. Le langage a été créé dès le départ pour le calcul haute performance et la recherche scientifique moderne.
+En fait, `Julia` est conçu pour être aussi rapide que `C` ou `Fortran` tout en restant aussi simple que `Python`.
+Le langage a été créé dès le départ pour le calcul haute performance et la recherche scientifique moderne.
 Toutefois, `Julia` reste moins populaire que $\textsf{R}$, avec moins de *packages* spécialisés, surtout pour les analyses statistiques.
 Bien que pertinent et important, le débat sur le choix d'un langage de programmation est sans fin.
 Il n'y a pas de réponse définitive et objective à savoir quel langage de programmation un chercheur en sciences sociales numériques devrait apprendre.
@@ -154,10 +156,10 @@ tbl_resume_chap_prog |>
   # Libellés de colonnes (avec saut de ligne dans l’en-tête long)
   cols_label(
     Critères = "Critères",
-    `Logiciels propriétaires (SAS, SPSS, STATA)` = md("Logiciels propriétaires<br>(*SAS*, *SPSS*, *STATA*)"),
+    `Logiciels propriétaires (SAS, SPSS, STATA)` = md("Logiciels propriétaires (*SAS*, *SPSS*, *STATA*)"),
     Python = md("`Python`"),
     Julia = md("`Julia`"),
-    R = md("$\textsf{R}$")
+    R = "R"
   ) |>
   # Alignements + largeurs
   cols_align("left", columns = everything()) |>
@@ -208,12 +210,12 @@ L'écosystème $\textsf{R}$ se diversifie avec des *packages* comme `ggplot2` (s
 L’évolution des langages de programmation, notamment le langage de programmation $\textsf{R}$, illustre comment les besoins des chercheurs en termes de flexibilité, d’accessibilité et de partage ont façonné les outils que nous utilisons aujourd’hui.
 Au fil des décennies, les langages se sont adaptés aux nouvelles méthodes et à l’augmentation des capacités de calcul, offrant des possibilités toujours plus larges pour l’exploration et l’analyse de données.
 
-## Manuel d'instruction : apprendre à programmer en $\textsf{R}$
+## Manuel d'instruction : s'installer et faire ses premiers pas
 
 ### Où coder en $\textsf{R}$ ?
 
 La programmation peut se faire de différentes façons, mais un point commun entre tous les langages est la nécessité pour l'utilisateur de communiquer avec son ordinateur.
-Cette communication peut se faire par le terminal ou directement dans l'éditeur du langage.
+Cette communication peut se faire par le terminal ou directement dans l'éditeur R.
 Elle peut aussi se faire dans un environnement de développement intégré (IDE).
 Les IDE permettent aux programmeurs de centraliser les différents aspects de l'écriture d'un programme informatique.
 Ils permettent de réaliser toutes les activités courantes d'un programmeur --- l'édition du code, la construction des exécutables et le débogage --- au même endroit.
@@ -224,83 +226,135 @@ Certains environnements de développement intégré sont dédiés à un langage 
 Par conséquent, ils contiennent des fonctionnalités qui sont plus adaptées aux paradigmes de programmation du langage auquel ils sont associés.
 Enfin, il existe de nombreux environnements de développement intégré multilingues qui peuvent notamment comprendre le langage de programmation $\textsf{R}$, mais aussi le langage de balisage \LaTeX, le langage de programmation `Python`, etc.
 
-Comme mentionné précédemment, le langage de programmation $\textsf{R}$ est l'un des langages de statistiques et d'exploration de données les plus populaires en sciences sociales numériques.
-Le langage de programmation $\textsf{R}$ est pris en charge par de nombreux environnements de programmation.
-Plusieurs ont été spécialement conçus pour la programmation en $\textsf{R}$, le plus notable étant `RStudio`, tandis que d'autres sont des environnements de programmation universels, tels que `Visual Studio Code` qui prennent en charge $\textsf{R}$ via des extensions et des modules complémentaires.
+Comme mentionné précédemment, $\textsf{R}$ est l'un des langages les plus populaires en sciences sociales numériques, et de nombreux environnements le prennent en charge.
+Pendant plus de dix ans, `RStudio` a été l'environnement de référence, et beaucoup de chercheurs l'utilisent encore.
+Depuis 2025, son concepteur, l'entreprise *Posit*, concentre ses nouveautés dans `Positron`, un environnement conçu pour $\textsf{R}$ et `Python`.
+C'est celui que nous présentons dans ce livre et que nous utilisons dans nos cours.
+D'autres environnements plus généralistes, comme `Visual Studio Code`, prennent en charge $\textsf{R}$ par des extensions.
 
-### Qu'est-ce que RStudio ?
+Deux téléchargements suffisent pour commencer.
+D'abord $\textsf{R}$ lui-même, sur le site du CRAN (<https://cran.r-project.org>), en choisissant son système d'exploitation.
+Ensuite `Positron`, sur le site de *Posit* (<https://positron.posit.co/download.html>).
+`Positron` reconnaît l'installation de $\textsf{R}$ au premier démarrage.
 
-`RStudio` (maintenant développé par *Posit*) est un projet de logiciel libre destiné à regrouper les différentes composantes du langage de programmation $\textsf{R}$ en un seul outil.
-`RStudio` fonctionne sur tous les systèmes d'exploitation, y compris *Windows*, *macOS* et *Linux*.
-Il existe trois versions de `RStudio` : `RStudio Desktop`, qui est une version gratuite pour usage sur les ordinateurs personnels, `RStudio Server`, une version web accessible via le navigateur, et `RStudio Workbench` : une version professionnelle avec fonctionnalités avancées pour les entreprises.
-`RStudio` facilite l'utilisation du langage de programmation $\textsf{R}$ en offrant de nombreux outils permettant à l'utilisateur de réaliser aisément ses tâches.
-Parmi les outils les plus utiles, on retrouve notamment une fenêtre d'aide, de la documentation sur les différents *packages* $\textsf{R}$, un navigateur de l'environnement de travail, une visionneuse de données, ainsi que la prise en charge de la coloration syntaxique.
-De plus, `RStudio` permet de coder dans plusieurs langages et de gérer une grande variété de formats.
+### Qu'est-ce que Positron ?
 
-### Pourquoi choisir RStudio ?
+`Positron` est un environnement de développement intégré créé par *Posit*, l'entreprise derrière `RStudio`, `Quarto` et le `tidyverse`.
+Il est gratuit, fonctionne sur *Windows*, *macOS* et *Linux*, et prend en charge $\textsf{R}$ et `Python` sur un pied d'égalité.
+Il est construit sur `Code OSS`, la base libre de `Visual Studio Code`, ce qui lui donne un éditeur moderne et l'accès à des milliers d'extensions.
+*Posit* y a ajouté ce qui manque à un éditeur généraliste pour faire de l'analyse de données.
+Une console $\textsf{R}$ intégrée, un volet qui montre les objets en mémoire, un explorateur de données pour feuilleter une base comme une feuille de calcul, un volet pour les graphiques et un autre pour l'aide.
 
-`RStudio` présente plusieurs avantages.
-Son utilisation est facile à apprendre pour les débutants.
-Les principaux éléments d'un IDE sont intégrés dans une interface à quatre volets.
-Cette disposition comprend une console, un éditeur de code source à onglets pour organiser les fichiers d'un projet, un espace dédié à l'environnement de travail, et un quatrième volet permettant d'afficher des graphiques ou de consulter la documentation sur les différents *packages*.
-Ce volet permet également d'accéder au répertoire des *packages* disponibles pour $\textsf{R}$ et à l'arborescence des fichiers de l'utilisateur.
-De plus, l'IDE `RStudio` permet de créer des projets qui organisent automatiquement les fichiers, scripts, données et résultats.
-Cela facilite grandement la reproductibilité et le partage du travail.
+Sa licence mérite une phrase.
+`Positron` est gratuit et son code est consultable, mais il est distribué sous l'*Elastic License*, qui en restreint la modification et la redistribution, alors que `RStudio` reste un logiciel libre au sens du @sec-chap1.
+C'est un compromis que nous assumons, pour les raisons pratiques exposées dans les critères de sélection.
 
-Il existe plusieurs autres aspects de `RStudio` que les programmeurs apprécient.
-Parmi eux, le fait que l'application peut être utilisée via un navigateur web pour un accès à distance.
-Malgré son nom, `RStudio` prend en charge plusieurs langages de programmation ainsi que différents langages de balisage.
-Par exemple, `RStudio` excelle dans la création de documents `R Markdown` (ou `Quarto`), permettant de mélanger code, texte et résultats pour créer des rapports, présentations ou sites web dynamiques.
-Il permet aussi d'utiliser des langages de balisage tels que `Markdown` et \LaTeX.
-Qui plus est, de nouvelles fonctionnalités sont régulièrement ajoutées pour répondre aux besoins de la communauté scientifique.
-`RStudio` inclut également nativement le contrôle de version `Git`, facilitant la collaboration et le suivi des modifications pour le travail en équipe.
+### Pourquoi Positron ?
 
-Parmi ce que certains considèrent comme les points faibles de `RStudio`, on retrouve des éléments liés à la configuration.
-Certains utilisateurs trouvent que le nombre de raccourcis est limité.
-D'autres jugent que l'organisation des différents panneaux n'est pas ergonomique, ou que la personnalisation de l'environnement de programmation est insuffisante.
-De plus, certains utilisateurs ont rapporté que `RStudio` était plus lent que d'autres alternatives pour certaines opérations, notamment celles impliquant de longs scripts.
+Nous avons enseigné $\textsf{R}$ avec `RStudio` pendant des années, et il fait encore très bien le travail.
+Trois raisons nous ont fait changer.
+D'abord, *Posit* recommande maintenant `Positron` à quiconque commence et y réserve ses nouveautés, `RStudio` n'étant plus qu'entretenu.
+Ensuite, `Positron` fait tourner $\textsf{R}$ à part de l'éditeur, de sorte qu'un plantage de $\textsf{R}$ ne fait généralement pas tomber tout l'environnement, et il permet de passer d'une version de $\textsf{R}$ à l'autre, ou de $\textsf{R}$ à `Python`, sans tout relancer.
+Enfin, il a été conçu pour les assistants d'intelligence artificielle, dont nous parlons plus loin.
+Un lecteur qui connaît déjà `RStudio` n'a rien à désapprendre.
+L'organisation en volets est la même et les fichiers sont les mêmes.
+Celui qui préfère y rester peut suivre ce livre sans problème.
 
-Il convient aussi de mentionner que *Posit* développe un second environnement de travail, `Positron`, qui prend en charge à la fois $\textsf{R}$ et `Python`. `Positron` est construit sur `Code OSS`, la base de logiciel libre maintenue par *Microsoft* sur laquelle repose également `Visual Studio Code`. Les licences des deux outils diffèrent toutefois. Bien que gratuit et bâti sur une fondation libre, `Positron` est distribué sous la *Elastic License*, qui rend son code consultable mais en restreint la modification et la redistribution. `RStudio`, lui, demeure un logiciel libre pleinement maintenu par l'entreprise et sa communauté. Les deux restent d'excellents choix, selon la préférence de chacun.
+### Comment utiliser Positron ?
 
-### Comment utiliser RStudio ?
+`Positron` s'ouvre sur une fenêtre en quatre zones, proche de celle de `RStudio`.
+À gauche, une barre d'activité et l'explorateur de fichiers, qui montre le contenu du dossier de travail.
+Au centre, l'éditeur, où l'on écrit ses scripts et ses documents `Quarto`.
+Sous l'éditeur, la console, où $\textsf{R}$ exécute le code et affiche les résultats, et un terminal pour parler directement à l'ordinateur.
+À droite, le volet *Session*, avec les variables en haut, c'est-à-dire les bases de données, les vecteurs et les fonctions en mémoire, et les graphiques en bas.
+Un clic sur une base de données dans les variables ouvre l'explorateur de données, qui permet de la feuilleter, de la trier et de la filtrer sans écrire une ligne.
 
-Bien que de nombreux éléments puissent être personnalisés, la disposition par défaut de `RStudio` est composée de quatre volets principaux.
-Dans le coin supérieur gauche se trouve le volet principal.
-C'est dans celui-ci que l'utilisateur passera la majeure partie de son temps.
-On y modifie des fichiers de différents formats et il est possible d'y afficher des bases de données.
-Dans le coin inférieur gauche se trouvent la console et le terminal. Dans la console, on peut interagir avec $\textsf{R}$ de la même manière que dans le volet principal, mais le code ne sera pas enregistré.
-Le terminal, quant à lui, est le point d'accès pour la communication entre l'utilisateur et son ordinateur.
-Bien que les différents systèmes d'exploitation soient livrés avec un terminal intégré, il est également possible d'y accéder à partir de `RStudio`.
+Pour exécuter du code, on place le curseur sur une ligne de son script et on appuie sur Cmd+Entrée sur *macOS*, ou Ctrl+Entrée sur *Windows* et *Linux*.
+La ligne part dans la console, le résultat s'affiche et les objets créés apparaissent dans les variables.
+On peut aussi sélectionner plusieurs lignes et les exécuter d'un coup.
+Voici à quoi ressemblent des premières lignes, qui lisent les données des passagers du Titanic, les affichent et en tirent un graphique.
 
-Dans le coin supérieur droit, on retrouve l'espace de travail.
-Ce volet contient trois éléments : l'environnement global, l'historique et les connexions.
-L'environnement global est l'endroit où l'utilisateur peut voir les bases de données, les fonctions et les différents autres objets $\textsf{R}$ actifs.
-Il peut cliquer sur les divers éléments actifs pour les consulter.
-L'onglet historique permet à l'utilisateur de consulter les derniers morceaux de code $\textsf{R}$ qu'il a exécutés ainsi que les dernières commandes saisies dans la console.
-L'onglet connexions, quant à lui, permet de connecter l'IDE à une variété de sources de données et d'explorer les objets et données qu'elles contiennent.
-Il est conçu pour fonctionner avec divers outils permettant de travailler avec des bases de données en $\textsf{R}$ dans `RStudio`.
+```{r}
+#| eval: false
+library(tidyverse)
+titanic <- read_csv("data/titanic.csv")
+glimpse(titanic)
+ggplot(titanic, aes(x = factor(classe), fill = factor(survie))) +
+  geom_bar(position = "fill") +
+  labs(x = "Classe", y = "Proportion", fill = "Survie")
+```
 
-Le volet dans le coin inférieur droit, quant à lui, contient plusieurs outils très utiles pour les utilisateurs de `RStudio`.
-L'onglet *Files* permet de naviguer dans les fichiers présents sur l'ordinateur sans avoir à quitter `RStudio`.
-L'onglet *Plots* permet de visualiser les graphiques générés à partir de $\textsf{R}$, que ce soit en utilisant `ggplot2`, `lattice` ou *base* $\textsf{R}$.
-L'onglet *Packages* permet de consulter les *packages* installés précédemment par l'utilisateur et d'en consulter la documentation.
-C'est aussi un des endroits où il est possible d'installer des *packages* avec `RStudio`.
-L'onglet *Help* permet à l'utilisateur de rechercher et de consulter de la documentation sur de nombreux sujets, notamment sur les différentes fonctions en $\textsf{R}$ ainsi que sur les *packages*.
-L'onglet *Viewer*, quant à lui, permet de visualiser du contenu web local.
+Le script `positron_demo.R`, dans le dossier `R` du dépôt du livre, fait le tour de ces volets en quelques lignes avec les données du Titanic (@fig-positron).
 
-Enfin, l'utilisateur peut modifier les dimensions par défaut de chacun des quatre volets principaux.
-En cliquant sur la séparation entre les sections, il est possible d'ajuster la répartition horizontale de l'espace.
-De plus, chaque côté dispose d'une autre séparation permettant d'ajuster l'espace vertical.
-Qui plus est, la barre de titre de chaque volet comporte des icônes pour réduire un composant, maximiser un volet verticalement ou modifier la taille de l'espace de travail.
+![Positron après l'exécution du script d'exemple : l'explorateur de fichiers, l'éditeur, la console, les variables en mémoire et le graphique](images/chapitre_2_positron.png){#fig-positron fig-align="center" width="100%"}
+
+Deux habitudes valent la peine dès le début.
+Ouvrir un dossier plutôt qu'un fichier, pour que tous les chemins d'accès partent du bon endroit.
+Et garder son code dans un script, pas seulement dans la console, pour pouvoir le relancer, le relire et le partager.
+La palette de commandes, Cmd+Maj+P ou Ctrl+Maj+P, donne accès à tout le reste, y compris l'installation d'extensions, par exemple pour le contrôle de version présenté au @sec-chap4, ou pour l'assistant d'intelligence artificielle.
+
+### Programmer avec l'intelligence artificielle : le codage par instinct
+
+Depuis quelques années, on n'écrit plus du code seul.
+Les assistants comme *Claude*, *ChatGPT* ou *Copilot* proposent des lignes, expliquent une erreur, traduisent une idée en fonction $\textsf{R}$ en quelques secondes.
+En 2025, Andrej Karpathy a donné un nom à la version extrême de cette pratique, le *vibe coding*, qu'on peut traduire par codage par instinct[^chapitre_2-1].
+On décrit ce qu'on veut, on accepte ce que la machine propose, on relance quand ça ne marche pas, et on ne lit plus vraiment le code.
+Pour un prototype du dimanche, pourquoi pas.
+Pour la recherche, c'est un problème.
+
+[^chapitre_2-1]: Expression lancée par Andrej Karpathy en février 2025 sur le réseau X.
+
+La raison tient en un mot, la validation.
+Un résultat scientifique vaut ce que vaut le code qui l'a produit, et un code que personne ne comprend ne peut être ni vérifié ni reproduit.
+Les études sur le sujet convergent, dont deux encore en prépublication.
+Les programmeurs qui s'appuient sur un assistant produisent plus souvent du code fautif, tout en étant plus convaincus de sa qualité [@perry_etal23].
+Des développeurs expérimentés qui se croyaient plus rapides avec l'IA se sont révélés plus lents une fois mesurés [@becker_etal25].
+Déléguer sa réflexion à un assistant laisse aussi des traces, une forme de dette cognitive que l'on paie quand vient le moment de comprendre par soi-même [@kosmyna_etal25a].
+En science, le risque va plus loin que le code.
+L'IA donne facilement l'impression de comprendre un phénomène qu'on n'a pas vraiment étudié [@messeri_crockett24].
+
+Il existe pourtant une bonne façon de faire, et elle ressemble à ce que ce livre défend depuis le prélude.
+L'IA amplifie un chercheur compétent, elle ne le remplace pas.
+Concrètement, cela veut dire travailler par petits pas, une fonction ou un bloc à la fois, plutôt que de demander un script complet.
+Lire chaque proposition et n'accepter que ce que l'on comprend.
+Demander à l'assistant d'expliquer une ligne obscure avant de l'utiliser, c'est d'ailleurs l'un de ses meilleurs usages.
+Vérifier les résultats sur un petit exemple dont on connaît la réponse.
+Garder ses données sensibles hors des services en ligne.
+Et se rappeler que l'assistant a lu des millions de scripts, mais pas nos données ni notre question de recherche.
+
+Dans `Positron`, ces assistants s'intègrent directement à l'environnement.
+Depuis l'été 2026, `Positron` est livré avec son propre assistant, que l'on branche sur le fournisseur de son choix, *Anthropic* pour *Claude*, *OpenAI* ou *GitHub Copilot*, avec sa propre clé d'accès.
+On peut aussi installer *Claude* comme extension, comme dans `Visual Studio Code`.
+L'assistant a accès au script ouvert et au contexte de la session, ce qui rend ses réponses bien plus justes qu'un copier-coller dans une fenêtre de clavardage.
+Bien utilisé, il accélère le travail, aide à déboguer, suggère des façons de faire que l'on ne connaissait pas et oblige à formuler clairement ce que l'on cherche.
+Mal utilisé, il produit vite beaucoup de code que personne ne relira.
+La différence entre les deux ne tient pas à l'outil.
+Elle tient à la personne qui s'en sert.
+Le @sec-chap9 revient en détail sur les usages de l'intelligence artificielle en recherche.
+
+### Apprendre R pour vrai
+
+Reste à apprendre le langage lui-même, et ce n'est pas l'affaire d'un chapitre.
+Deux ressources gratuites suffisent pour commencer et pour aller loin.
+En français, *Introduction à R et au tidyverse* de Julien Barnier [-@barnier24] est un livre en ligne complet, clair et tenu à jour, qui part de zéro.
+En anglais, *R for Data Science* [@wickham_etal23], écrit par les concepteurs du `tidyverse`, est la référence de toute la communauté, lui aussi accessible gratuitement en ligne.
+Les deux se lisent avec `Positron` ouvert à côté, en tapant les exemples soi-même.
+Des plateformes comme *DataCamp* ou *Codecademy* offrent une structure plus scolaire, contre abonnement.
+Pour les questions qui bloquent, la communauté est là, sur des forums comme *Stack Overflow* ou *Posit Community*.
+Le meilleur conseil reste le plus simple.
+Prendre ses propres données, se poser une vraie question et chercher comment y répondre.
+On apprend un langage en s'en servant.
 
 ## En terminant
 
 Le langage de programmation $\textsf{R}$ est un outil très utile pour toutes sortes de tâches, notamment liées aux statistiques et à la visualisation graphique.
 Sa maîtrise est requise pour accéder à plusieurs emplois, tant dans le monde académique que dans les secteurs public et privé.
-Bien que le langage de programmation $\textsf{R}$ ne doive pas obligatoirement être utilisé avec `RStudio`, nous pensons que, pour la plupart des utilisateurs, leur utilisation conjointe est bénéfique.
-`RStudio` permet également d'utiliser différents langages de balisage compatibles avec $\textsf{R}$, facilitant ainsi l'utilisation de plusieurs outils complémentaires.
+$\textsf{R}$ ne s'utilise pas obligatoirement avec `Positron`, mais pour la plupart des lecteurs, le duo est le bon point de départ, et il ouvre la porte aux langages de balisage et aux outils des chapitres suivants.
+Quant à l'intelligence artificielle, elle rend l'apprentissage plus rapide et plus agréable, à une condition, celle de rester la personne qui comprend le code.
 L'apprentissage du langage de programmation $\textsf{R}$ apparaît comme une valeur sûre.
 Sa longévité dans plusieurs domaines ainsi que la forte croissance de sa base d'utilisateurs laissent présager que connaître au moins les bases de $\textsf{R}$ constitue un énorme avantage.
 Pour ceux qui sont particulièrement intéressés par le langage de programmation $\textsf{R}$ et qui souhaitent s'impliquer dans sa communauté, il existe plusieurs conférences internationales et nationales sur $\textsf{R}$ --- notamment *RConference* et *useR!* --- ainsi qu'un journal académique, *The R Journal*.
 On retrouve également différentes communautés, telles que *R-Ladies*, qui mettent de l'avant la diversité des genres dans la communauté du langage de programmation $\textsf{R}$.
-Le langage de programmation $\textsf{R}$ est plus qu'un simple outil statistique, il est au centre d'une grande communauté de personnes qui ont à cœur des principes liés à l'inclusion et à l'avancement humain.
+Le langage de programmation $\textsf{R}$ est plus qu'un simple outil statistique, il est au centre d'une grande communauté de personnes qui ont à cœur des principes liés à l'inclusion et à l'avancement de la science.
+
+\pagesdenotes
