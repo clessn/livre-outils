@@ -255,9 +255,9 @@ Contrairement aux outils comme *OneDrive* ou *Google Docs* qui font du versionne
 
 C'est pourquoi `Git` est particulièrement populaire auprès des chercheurs qui :
 
--   Rédigent en \LaTeX{} ou `Markdown`;
--   Écrivent du code pour leurs analyses;
--   Collaborent sur des projets techniques avec plusieurs contributeurs;
+-   Rédigent en \LaTeX{} ou `Markdown`&nbsp;;
+-   Écrivent du code pour leurs analyses&nbsp;;
+-   Collaborent sur des projets techniques avec plusieurs contributeurs&nbsp;;
 -   Valorisent la traçabilité complète de leur travail.
 
 Bien qu'il existe des alternatives comme *GitLab* (déjà mentionné pour sa version à code source ouvert), `Git` et *GitHub* dominent largement le domaine grâce à leur communauté active et à leur adoption généralisée en milieu académique. Leur apprentissage représente un défi initial, mais les bénéfices en termes de traçabilité, de collaboration et de reproductibilité en font des outils essentiels pour le chercheur moderne.

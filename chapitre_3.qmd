@@ -48,7 +48,7 @@ Ainsi, pour être considéré Agile, un respect des valeurs et des principes dem
 
 Pour illustrer la différence entre les deux approches, un exemple fréquemment donné est celui du logiciel *Excel* de *Microsoft*, dont le développement était, à l'origine, issu d'une méthode traditionnelle de gestion de projet. La compagnie rendait disponible à l'utilisateur des versions créées à l'interne, par des développeurs respectant des budgets, des calendriers et des directives provenant de leur gestionnaire. Dans les années 1990 et 2000, le public a ainsi connu Excel 97, puis Excel 2000, et Excel 2007.
 
-La logique de la gestion de projet Agile est inversée: un logiciel se construit sur de courtes périodes *itératives*, en offrant à chaque fin d'itération un nouvel *incrément* du produit en fonction du besoin communiqué par l'utilisateur. Ainsi, *Apple* propose des mises à jour régulières de ses logiciels, réglant des *bugs* ou offrant un nouveau service attendu de sa clientèle. La très forte majorité des entreprises informatiques ont aujourd'hui délaissé les méthodes traditionnelles pour se retourner vers le travail Agile, *itératif et incrémental*.
+La logique de la gestion de projet Agile est inversée&nbsp;: un logiciel se construit sur de courtes périodes *itératives*, en offrant à chaque fin d'itération un nouvel *incrément* du produit en fonction du besoin communiqué par l'utilisateur. Ainsi, *Apple* propose des mises à jour régulières de ses logiciels, réglant des *bugs* ou offrant un nouveau service attendu de sa clientèle. La très forte majorité des entreprises informatiques ont aujourd'hui délaissé les méthodes traditionnelles pour se retourner vers le travail Agile, *itératif et incrémental*.
 
 Si ces philosophies de gestion de projet peuvent sembler à première vue en complète opposition, elles offrent chacune des avantages et des inconvénients qui peuvent encourager le développement d'une utilisation mixte, précisément adaptée aux besoins de son utilisateur. Et si ces méthodes ont été développées pour optimiser la production en entreprise ou le développement logiciel, elles sont aujourd'hui répandues dans toutes les sphères de travail de la société. Au Québec, par exemple, plusieurs municipalités, caisses, milieux d'enseignement et entreprises de tous les secteurs opèrent actuellement un virage *Agile*. Chaque année en octobre, depuis déjà plus de 15 ans, la ville de Québec accueille [l'*Agile Tour*](https://www.agilequebec.ca/fr/), grand évènement organisé par l'organisme *Agile Québec* lors duquel se rencontrent plus de 700 adeptes de l'Agilité pour « partager leurs savoirs, leurs expériences et leurs dernières découvertes ».
 
@@ -62,36 +62,36 @@ La suite de ce chapitre propose une marche à suivre Agile adaptée au milieu ac
 
 ### Les valeurs fondamentales de l'Agilité
 
-Comme le logiciel libre, l'Agilité est avant tout une philosophie : une façon de percevoir son travail, son temps, la division de son travail, les relations et l'implication de son équipe, afin de produire des livrables structurés qui répondent à des besoins concrets. Cette philosophie repose sur quatre grandes valeurs fondamentales visant à valoriser:
+Comme le logiciel libre, l'Agilité est avant tout une philosophie : une façon de percevoir son travail, son temps, la division de son travail, les relations et l'implication de son équipe, afin de produire des livrables structurés qui répondent à des besoins concrets. Cette philosophie repose sur quatre grandes valeurs fondamentales visant à valoriser&nbsp;:
 
-1.  **Les individus et leurs interactions**, plutôt que les processus et les outils;
-2.  **Des solutions opérationnelles**, plutôt qu'une documentation exhaustive;
-3.  **La collaboration avec les clients**, plutôt que des négociations contractuelles;
-4.  **L'adaptation au changement**, plutôt que le respect d'un plan;
+1.  **Les individus et leurs interactions**, plutôt que les processus et les outils&nbsp;;
+2.  **Des solutions opérationnelles**, plutôt qu'une documentation exhaustive&nbsp;;
+3.  **La collaboration avec les clients**, plutôt que des négociations contractuelles&nbsp;;
+4.  **L'adaptation au changement**, plutôt que le respect d'un plan&nbsp;;
 
-Dans le contexte du milieu académique, cela pourrait se traduire par:
+Dans le contexte du milieu académique, cela pourrait se traduire par&nbsp;:
 
-1.  **Des échanges constructifs avec la direction et les pairs**, plutôt que les apprentissages isolés des méthodologies et des outils de recherche;
-2.  **Des résultats tangibles et réguliers**, plutôt qu'une idéation interminable;
-3.  **Une contribution scientifique utile à la société et à l'avancement des connaissances**, plutôt qu'un acharnement intellectuel aussitôt tabletté;
+1.  **Des échanges constructifs avec la direction et les pairs**, plutôt que les apprentissages isolés des méthodologies et des outils de recherche&nbsp;;
+2.  **Des résultats tangibles et réguliers**, plutôt qu'une idéation interminable&nbsp;;
+3.  **Une contribution scientifique utile à la société et à l'avancement des connaissances**, plutôt qu'un acharnement intellectuel aussitôt tabletté&nbsp;;
 4.  **L'adaptation aux nouvelles découvertes et aux nouvelles idées**, plutôt que l'application rigide du devis de recherche initial.
 
 Loin de dire que l'apprentissage d'outils n'est pas utile en Agilité, la première valeur rappelle que la recherche académique est avant tout une aventure collaborative lors de laquelle les discussions avec les collègues permettent de résoudre de nombreux défis, de comprendre les contributions recherchées et de créer des publications ou projets pertinents et de qualité. L'utilité des méthodes de travail et des outils est optimisée à l'intérieur d'une équipe engagée.
 
 La deuxième valeur présente le cœur de l'application concrète de l'Agilité : un projet Agile doit être divisé, dès le départ, en de nombreux livrables, chacun avec une date d'échéance déterminée. Plutôt que de prendre des mois, voire des années à rédiger un devis --- qui sera largement modifié dans tous les cas, la version finale d'une thèse n'a bien souvent rien à voir avec son idéation initiale --- un projet Agile produit une grande quantité de petits « incréments », qui permettent de le faire avancer concrètement. Chaque livrable (une petite partie du projet, par exemple « 2 pages de la revue de littérature ») peuvent ensuite être évaluée, adaptée et potentiellement permettre une réévaluation du devis initial.
 
-La troisième valeur répond à un impératif de la science: offrir des contributions originales répondant à des lacunes de la littérature. Le @sec-chap5 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'études et à repérer les failles et apports potentiels. La quatrième valeur présente l'importance de l'adaptation au changement. En recherche, il est essentiel d'accepter que les résultats puissent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
+La troisième valeur répond à un impératif de la science&nbsp;: offrir des contributions originales répondant à des lacunes de la littérature. Le @sec-chap5 traitera de cet aspect et présentera des outils pour réaliser des revues systématiques de la littérature, de sorte à circonscrire un champ d'études et à repérer les failles et apports potentiels. La quatrième valeur présente l'importance de l'adaptation au changement. En recherche, il est essentiel d'accepter que les résultats puissent dévier des hypothèses initiales, et être capable de réajuster son plan en fonction de l'évolution des données et de nouvelles orientations méthodologiques ou théoriques.
 
-Le respect de ces quatre valeurs permet ainsi l'application de la dernière: un projet Agile divisé en de multiples petits livrables peut et doit être révisé régulièrement. Des résultats concrets permettent des rétroactions fréquentes, qui viendront alimenter la réflexion sur le devis initial au fur et à mesure de l'évolution parallèle de la science, de la technologie, des méthodologies, de l'arrivée de nouvelles questions de recherche et de nouveaux besoins de la société.
+Le respect de ces quatre valeurs permet ainsi l'application de la dernière&nbsp;: un projet Agile divisé en de multiples petits livrables peut et doit être révisé régulièrement. Des résultats concrets permettent des rétroactions fréquentes, qui viendront alimenter la réflexion sur le devis initial au fur et à mesure de l'évolution parallèle de la science, de la technologie, des méthodologies, de l'arrivée de nouvelles questions de recherche et de nouveaux besoins de la société.
 
 ### L'approche Scrum adaptée au contexte académique
 
-Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur de plusieurs équipes de recherche. Il est à noter ici que l'Agilité se divise en de multiples méthodologies, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointe des approches Scrum [@schwaber_sutherland20] et Kanban [@anderson10], particulièrement adaptée et utile au milieu académique, et qui reposent sur les caractéristiques suivantes:
+Ces valeurs ouvrent la porte à la méthode de travail proposée dans ce chapitre pour appliquer concrètement l'Agilité au contexte académique. Il s'agit d'une proposition unique, testée et adaptée à l'intérieur de plusieurs équipes de recherche. Il est à noter ici que l'Agilité se divise en de multiples méthodologies, telles que Scrum, Kanban, XP, Crystal, Lean, etc. Ce chapitre proposera l'application conjointe des approches Scrum [@schwaber_sutherland20] et Kanban [@anderson10], particulièrement adaptée et utile au milieu académique, et qui reposent sur les caractéristiques suivantes&nbsp;:
 
-1.  Une cadence de travail soutenue grâce à un cycle de **Sprints**;
-2.  Un suivi régulier des objectifs grâce à de courts **Scrums**;
-3.  Un avancement **itératif** et **incrémental** pour des **livraisons** régulières de petites parties fonctionnelles;
-4.  Une division du travail en **Stories** à l'intérieur d'un tableau **Kanban**.
+1.  Une cadence de travail soutenue grâce à un cycle de *Sprints*&nbsp;;
+2.  Un suivi régulier des objectifs grâce à de courts *Scrums*&nbsp;;
+3.  Un avancement *itératif* et *incrémental* pour des *livraisons* régulières de petites parties fonctionnelles&nbsp;;
+4.  Une division du travail en *Stories* à l'intérieur d'un tableau *Kanban*.
 
 ```{r, out.width="80%"}
 #| label: fig-scrum
@@ -106,19 +106,19 @@ Le processus commence par l'organisation d'une « planification de sprint ». Un
 
 La planification de sprint est menée par le *Scrum Master*, un membre désigné par l'équipe pour faire le lien entre le *Product Owner* (dans notre contexte, la direction de l'équipe de recherche) et tous les membres de l'équipe qui travaillent concrètement sur les projets et publications (les étudiants, par exemple). Dans le langage universitaire, le Scrum Master pourrait représenter le rôle de *coordonnateur*. Il est toutefois recommandé que le Scrum Master ait suivi une formation, voire obtenu sa certification. De nombreuses entreprises offrent des formations de deux ou trois jours au Québec, pour quelques milliers de dollars, et l'examen de certification se passe en ligne sur le site de [Scrum.org](https://www.scrum.org/professional-scrum-certifications), pour quelques centaines de dollars. Une formation Agile comme Scrum Master a une réelle valeur sur le marché de l'emploi, et les entreprises qui cherchent des Scrum Masters certifiés offrent des salaires nettement au-dessus de la moyenne.
 
-Chaque projet est dirigé par un chargé de projet, dont le rôle est de veiller à la coordination de son équipe. Le chargé de projet organise les rencontres d'équipe au besoin, divise les tâches entre les membres, prend la parole lors de la planification de sprint pour présenter la revue du sprint, et annoncer les prochains objectifs prévus, qui seront ensuite discutés en groupe. Quand tous les objectifs pour tous les projets et pour toutes les publications ont été clairement établis, approuvés par l'ensemble des membres, en considération du temps que tous sont réalistement en mesure d'accorder, puis après avoir déterminé la date de la prochaine planification de sprint, la séance est levée. Une activité sociale d'équipe est à ce moment fortement encouragée!
+Chaque projet est dirigé par un chargé de projet, dont le rôle est de veiller à la coordination de son équipe. Le chargé de projet organise les rencontres d'équipe au besoin, divise les tâches entre les membres, prend la parole lors de la planification de sprint pour présenter la revue du sprint, et annoncer les prochains objectifs prévus, qui seront ensuite discutés en groupe. Quand tous les objectifs pour tous les projets et pour toutes les publications ont été clairement établis, approuvés par l'ensemble des membres, en considération du temps que tous sont réalistement en mesure d'accorder, puis après avoir déterminé la date de la prochaine planification de sprint, la séance est levée. Une activité sociale d'équipe est à ce moment fortement encouragée&nbsp;!
 
-Pour assurer un suivi régulier de l'avancement des objectifs, le Scrum Master met à l'agenda un ou deux *scrums* par semaine. Il s'agit de très courtes rencontres où l'ensemble de l'équipe se retrouve, idéalement entre 15 et 30 minutes maximum, selon le nombre de projets, et lors desquelles chaque chargé de projet doit répondre à trois questions:
+Pour assurer un suivi régulier de l'avancement des objectifs, le Scrum Master met à l'agenda un ou deux *scrums* par semaine. Il s'agit de très courtes rencontres où l'ensemble de l'équipe se retrouve, idéalement entre 15 et 30 minutes maximum, selon le nombre de projets, et lors desquelles chaque chargé de projet doit répondre à trois questions&nbsp;:
 
-1.  Qu'est-ce qui a été accompli par mon équipe depuis le dernier scrum?
-2.  Qu'est-ce qui sera fait d'ici le prochain scrum?
-3.  Y a-t-il des blocages?
+1.  Qu'est-ce qui a été accompli par mon équipe depuis le dernier scrum&nbsp;?
+2.  Qu'est-ce qui sera fait d'ici le prochain scrum&nbsp;?
+3.  Y a-t-il des blocages&nbsp;?
 
 Tour à tour, le Scrum Master nomme les projets et les publications, dans leur ordre de priorité, et offre la parole aux chargés de projet pour résumer les avancées de leur équipe. Contrairement à la planification de sprint, la direction n'a pas besoin d'assister à ces scrums. Le *Scrum Master* s'assure, si nécessaire, de la tenir informé des bloquants ou des ajustements à mener au calendrier ou aux prochains livrables. Les scrums sont l'occasion pour l'équipe d'assurer un suivi régulier des *livraisons* attendues d'ici la fin du sprint.
 
 L'une des caractéristiques fondamentales des méthodes Agiles est le développement des projets de manière *itérative* et *incrémentale*. L'itération est le processus répété et cyclique mené grâce aux sprints. Une équipe Agile est en tout temps en sprint, jusqu'à la livraison finale du projet ou de la publication (si fin prévue il y a). Un incrément est la réalisation d'une petite partie dite « fonctionnelle » du projet, qui peut être soumise à évaluation. Dans le cadre académique, un incrément pourrait être la remise d'une première version d'une revue de littérature, la réalisation d'une première étape d'un code R pour l'analyse de données de thèse, le premier jet d'un devis, etc. Plutôt que d'attendre à la toute fin du processus pour le dépôt complet d'un projet, une équipe Agile divise son projet en de multiples itérations, qu'elle soumet pour évaluation à chaque planification de sprint lors de la phase de la *revue de sprint*. Par une démonstration, toute l'équipe peut alors constater et discuter du nouvel incrément proposé, par exemple la présentation de la section méthodologie d'un article scientifique, et déterminer ensuite les objectifs du prochain sprint pour la livraison de l'incrément suivant, disons la collecte de données. Tout projet est ainsi divisé en phase, en « séquence de développement », d'un sprint à l'autre, de manière itérative, de sorte à livrer des incréments fonctionnels du projet qui peuvent être discutés et révisés.
 
-Contrairement aux méthodes traditionnelles, il est essentiel de comprendre que les méthodes Agiles se nomment « Agile » pour une raison : elles encouragent la flexibilité. Plutôt que de passer d'un sprint à l'autre en suivant un plan rigide déterminé des mois, voire des années auparavant en fonction d'un budget et d'un calendrier coulés dans le béton, les méthodes Agiles mettent de l'avant le « cycle » de travail, les *itérations*, qui permettent de revoir le plan, de l'adapter en cours de route, particulièrement lors de la planification de sprint. Normalement, lorsque les objectifs de sprint ont été validés par l'équipe, il n'est pas recommandé de les changer en cours de sprint. Par contre, de retour en *planif*, chaque membre de l'équipe a son mot à dire sur la suite; sur ce qui fonctionne bien, sur ce qui devrait être adapté, toujours avec le projet final en tête.
+Contrairement aux méthodes traditionnelles, il est essentiel de comprendre que les méthodes Agiles se nomment « Agile » pour une raison : elles encouragent la flexibilité. Plutôt que de passer d'un sprint à l'autre en suivant un plan rigide déterminé des mois, voire des années auparavant en fonction d'un budget et d'un calendrier coulés dans le béton, les méthodes Agiles mettent de l'avant le « cycle » de travail, les *itérations*, qui permettent de revoir le plan, de l'adapter en cours de route, particulièrement lors de la planification de sprint. Normalement, lorsque les objectifs de sprint ont été validés par l'équipe, il n'est pas recommandé de les changer en cours de sprint. Par contre, de retour en *planif*, chaque membre de l'équipe a son mot à dire sur la suite&nbsp;; sur ce qui fonctionne bien, sur ce qui devrait être adapté, toujours avec le projet final en tête.
 
 ### L'Agilité au quotidien : travailler seul
 
@@ -132,30 +132,30 @@ L'efficacité et les nombreuses possibilités qu'offre cette méthode ont géné
 
 Tous les outils numériques de gestion de projets actuels (ou presque) sont conçus sur les enseignements des méthodes Agiles. Pour le contexte académique, ce chapitre propose en premier lieu l'application de l'approche Scrum, détaillé précédemment. Une seconde approche Agile, la méthode (et l'outil) Kanban, se combine aisément et efficacement à l'approche Scrum et au travail scientifique. Le Kanban est l'outil par excellence mis de l'avant dans les très populaires logiciels de gestion de projet *Trello*, *Jira*, *Monday*, *Asana* et *Notion* (cette liste n'est pas limitative. À ce jour, il existe des dizaines de logiciels de gestion de projets tout aussi populaires les uns que les autres comme *ClickUp*, *Wrike*, *Basecamp*, et même la plateforme de communication *Slack*, qui propose depuis 2024 sa solution de gestion de projet pour répondre aux attentes en gestion de projet de ses clients).
 
-Offert de base dans tous les outils numériques nommés ci-dessus, le Kanban permet d'intégrer et de visualiser, dans un tableau comptant au minimum 3 colonnes (« À faire », « En cours », « Terminé »), les « tâches » à réaliser dans une échéance pour avancer la réalisation des objectifs de sprint. En Agilité, une tâche est nommée *Story*. Une story est un livrable, un morceau du projet (le « quoi »), pris en charge volontairement ou délégué à un membre de l'équipe par le chargé de projet. On utilise le terme story pour distinguer de la rapide tâche; une story peut quelques fois comporter plusieurs tâches (le « comment »).
+Offert de base dans tous les outils numériques nommés ci-dessus, le Kanban permet d'intégrer et de visualiser, dans un tableau comptant au minimum 3 colonnes (« À faire », « En cours », « Terminé »), les « tâches » à réaliser dans une échéance pour avancer la réalisation des objectifs de sprint. En Agilité, une tâche est nommée *Story*. Une story est un livrable, un morceau du projet (le « quoi »), pris en charge volontairement ou délégué à un membre de l'équipe par le chargé de projet. On utilise le terme story pour distinguer de la rapide tâche&nbsp;; une story peut quelques fois comporter plusieurs tâches (le « comment »).
 
 ### Un exemple concret : planifier une étude scientifique
 
-Voici un exemple d'application de tous les concepts Agile vus jusqu'à présent. Dans le milieu académique, un *projet* pourrait être la création d'une étude scientifique. La création de cette étude pourrait être divisée en dix *sprints* de quatre semaines, présentant ainsi dix *livrables* clairs qui permettent un suivi en planification de sprint (bien sûr, certaines études peuvent prendre des années à aboutir, certaines collectes de données sont plus longues, mais là n'est pas le point: toute étude menée en gestion de projet Agile peut être réfléchie d'emblée en fonction de son contexte et de ses objectifs, et être divisée en un nombre logique et réaliste de sprints, que ce soit 5 ou 15):
+Voici un exemple d'application de tous les concepts Agile vus jusqu'à présent. Dans le milieu académique, un *projet* pourrait être la création d'une étude scientifique. La création de cette étude pourrait être divisée en dix *sprints* de quatre semaines, présentant ainsi dix *livrables* clairs qui permettent un suivi en planification de sprint (bien sûr, certaines études peuvent prendre des années à aboutir, certaines collectes de données sont plus longues, mais là n'est pas le point&nbsp;: toute étude menée en gestion de projet Agile peut être réfléchie d'emblée en fonction de son contexte et de ses objectifs, et être divisée en un nombre logique et réaliste de sprints, que ce soit 5 ou 15)&nbsp;:
 
--   1er sprint : Idéation et structuration d'une question de recherche;
--   2e sprint : Première version d'une revue de littérature;
--   3e sprint : Rédaction du devis, choix théoriques, enregistrement des hypothèses, demande éthique;
--   4e sprint : Préparation méthodologique, raffinement de la revue de littérature;
--   5e sprint : Collecte des données;
--   6e sprint : Analyse des données;
--   7e sprint : Rédaction des résultats;
--   8e sprint : Rédaction de l'étude complète (introduction, discussion);
--   9e sprint : Révision du texte;
+-   1er sprint : Idéation et structuration d'une question de recherche&nbsp;;
+-   2e sprint : Première version d'une revue de littérature&nbsp;;
+-   3e sprint : Rédaction du devis, choix théoriques, enregistrement des hypothèses, demande éthique&nbsp;;
+-   4e sprint : Préparation méthodologique, raffinement de la revue de littérature&nbsp;;
+-   5e sprint : Collecte des données&nbsp;;
+-   6e sprint : Analyse des données&nbsp;;
+-   7e sprint : Rédaction des résultats&nbsp;;
+-   8e sprint : Rédaction de l'étude complète (introduction, discussion)&nbsp;;
+-   9e sprint : Révision du texte&nbsp;;
 -   10e sprint : Soumission.
 
-En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchies et réparties à l'avance (par exemple: il faudra engager deux auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les objectifs de sprint deviennent évidents et prévisibles, et chaque story peut être rédigée pour accomplir ces objectifs.
+En divisant un projet de cette manière, les ressources nécessaires peuvent être réfléchies et réparties à l'avance (par exemple&nbsp;: il faudra engager deux auxiliaires de recherche pour la collecte de données du 5e sprint). Tous les objectifs de sprint deviennent évidents et prévisibles, et chaque story peut être rédigée pour accomplir ces objectifs.
 
-Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et remplir un Kanban, qui se compose ici de quatre colonnes:
+Un outil numérique comme *Notion* peut ensuite être utilisé pour créer et remplir un Kanban, qui se compose ici de quatre colonnes&nbsp;:
 
-1.  **À venir** : c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser pour chaque objectif lors de sprints futurs s'y trouvent déjà, en ordre, de sorte à visualiser le travail précis « à venir »;
-2.  **À faire** : c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation;
-3.  **En cours** : Quand une story du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement;
+1.  **À venir** : c'est le *backlog* (le « registre des tâches ») du projet. Toutes les stories qui seront à réaliser pour chaque objectif lors de sprints futurs s'y trouvent déjà, en ordre, de sorte à visualiser le travail précis « à venir »&nbsp;;
+2.  **À faire** : c'est le *backlog* du sprint. Toutes les stories qui sont à réaliser à l'intérieur du sprint en cours s'y trouvent, avec une date d'échéance et une assignation&nbsp;;
+3.  **En cours** : Quand une story du sprint est engagée, le membre de l'équipe à qui elle est assignée doit la déplacer dans cette colonne, pour signaler son avancement&nbsp;;
 4.  **Terminé** : Toutes les stories du sprint en cours qui sont accomplies y apparaissent.
 
 ```{r}
@@ -169,7 +169,7 @@ En sortant de la première planification de sprint, l'équipe de recherche se re
 
 À la fin du sprint, lors de la rencontre de planification du sprint suivant, une équipe Agile débute toujours par la *revue de sprint*, qui permet de s'assurer que toutes les stories qui avaient été déplacées, il y a quatre semaines, de la colonne « À venir » à « À faire », se trouvent désormais dans « Terminé ». Grâce à la réalisation de toutes les stories, les objectifs de sprint devraient être considérés comme accomplis. Il est maintenant temps de se préparer à l'atteinte des objectifs du sprint suivant, en vidant la colonne « Terminé », puis en déplaçant les stories du sprint suivant, qui étaient dans « À venir », dans « À faire » en leur ajoutant une échéance et une assignation. Le cycle peut alors recommencer. Une itération est terminée, un incrément du projet a été livré, et une nouvelle phase de développement est prête à être entamée.
 
-En mélangeant de cette manière les approches Agile *Scrum* et *Kanban*, on obtient tout simplement l'approche *Scrumban*!
+En mélangeant de cette manière les approches Agile *Scrum* et *Kanban*, on obtient tout simplement l'approche *Scrumban*&nbsp;!
 
 ### Panorama des outils disponibles
 
@@ -273,7 +273,7 @@ Notre choix d'outil de gestion de projet compatible avec la philosophie Agile s'
 
 Créé en 2013 par Ivan Zhao et Simon Last, *Notion* se présente comme un outil de gestion de projet « tout-en-un », offrant à l'utilisateur des pages blanches qu'il doit lui-même remplir en fonction de ses besoins. Les pages peuvent intégrer du texte, des bases de données, des images, des vidéos, des PDF, des liens Web, et bien plus. Chaque page peut ainsi devenir un outil de documentation, ou un tableau Kanban rempli de stories, ou des notes de rencontres, ou un calendrier des livrables de sprint. Il importe à l'utilisateur de connaitre ses besoins, et d'être créatif.
 
-Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches.
+Cette liberté peut représenter un défi. Il est nécessaire d'avoir l'esprit « architecte » pour apprécier *Notion.* En comparaison, *monday.com* ou *Trello* offrent un cadre de travail déjà défini et balisé à l'utilisateur. Les instructions à l'entrée sont claires&nbsp;: l'utilisateur a un Kanban à remplir, et il peut facilement faire le suivi de ses tâches.
 
 Sur *Notion*, tout (ou presque) est possible. Notion possède d'ailleurs [son propre langage de formules](https://www.notion.so/fr/help/formulas) pour coder des fonctions originales dans des bases de données.
 
