@@ -40,17 +40,33 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 :   Dans Git, enregistrement d'un ensemble de modifications dans l'historique du dépôt, accompagné d'un message descriptif. [→ @sec-chap4]
 
+**Covidence**
+
+:   Plateforme en ligne de gestion des revues systématiques. Elle structure les phases de tri, distribue les études entre les évaluateurs et documente chaque décision. [→ @sec-chap5]
+
 **CRAN** *(Comprehensive R Archive Network)*
 
 :   Dépôt centralisé hébergeant les packages R validés et mis à la disposition de la communauté. [→ @sec-chap2]
+
+**Dette cognitive**
+
+:   Perte de capacité qui résulte de la délégation répétée d'une tâche intellectuelle à un outil. Le travail est fait, mais l'apprentissage qu'il aurait produit n'a pas lieu. [→ @sec-chap9]
+
+**DOI** *(Digital Object Identifier)*
+
+:   Identifiant numérique permanent et unique attribué à une publication ou à un jeu de données, garantissant son accessibilité à long terme sur le Web. [→ @sec-chap4]
 
 **Données massives** *(big data)*
 
 :   Ensembles de données dont le volume, la variété ou la vélocité dépassent les capacités des outils d'analyse traditionnels, nécessitant des infrastructures et des méthodes spécialisées. [→ @sec-chap1, @sec-chap6]
 
-**DOI** *(Digital Object Identifier)*
+**Données sensibles**
 
-:   Identifiant numérique permanent et unique attribué à une publication ou à un jeu de données, garantissant son accessibilité à long terme sur le Web. [→ @sec-chap4]
+:   Données permettant d'identifier directement ou indirectement des personnes, ou contenant des informations confidentielles. Leur conservation et leur partage sont encadrés par le comité d'éthique de la recherche. [→ @sec-chap4]
+
+**ggplot2**
+
+:   Package R de visualisation fondé sur la grammaire des graphiques. Un graphique s'y construit par couches successives plutôt qu'en choisissant un type prédéfini. [→ @sec-chap7]
 
 **Git**
 
@@ -60,13 +76,21 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 :   Plateforme en ligne hébergeant des dépôts Git et offrant des outils de collaboration (issues, pull requests, révision de code). [→ @sec-chap4]
 
+**Grammaire des graphiques** *(grammar of graphics)*
+
+:   Cadre théorisé par Leland Wilkinson qui décrit un graphique comme la combinaison de composants indépendants, les données, les correspondances visuelles, les objets géométriques et les échelles. [→ @sec-chap7]
+
+**Hallucination**
+
+:   Production, par un modèle de langage, d'une information fausse mais formulée avec assurance. Elle découle du fonctionnement même du modèle, qui optimise la vraisemblance du texte et non sa véracité. [→ @sec-chap9]
+
 **HTML** *(HyperText Markup Language)*
 
 :   Langage de balisage utilisé pour structurer le contenu des pages Web. Utilisé aussi comme format de sortie par Quarto et Markdown. [→ @sec-chap6, @sec-chap8]
 
 **IDE** *(Environnement de développement intégré)*
 
-:   Logiciel regroupant un éditeur de code, un débogueur et d'autres outils facilitant la programmation. RStudio et VS Code en sont des exemples courants. [→ @sec-chap2]
+:   Logiciel regroupant un éditeur de code, un débogueur et d'autres outils facilitant la programmation. Positron, RStudio et VS Code en sont des exemples courants. [→ @sec-chap2]
 
 **Intelligence artificielle générative**
 
@@ -108,6 +132,10 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 :   Convertisseur universel de documents capable de transformer un fichier d'un format (Markdown, LaTeX, Word) vers un autre (HTML, PDF, DOCX). Quarto l'utilise en coulisses. [→ @sec-chap8]
 
+**Positron**
+
+:   Environnement de développement intégré créé par Posit pour l'analyse de données, présenté dans ce livre comme le successeur de RStudio. Construit sur la même base que VS Code, il exécute R et Python et accepte les extensions de ce dernier. [→ @sec-chap2]
+
 **Préinscription** *(preregistration)*
 
 :   Pratique consistant à enregistrer publiquement, avant de collecter des données, les hypothèses et la méthodologie d'une étude, afin de renforcer la transparence et la reproductibilité. [→ @sec-chap1]
@@ -136,9 +164,17 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 :   Capacité d'un autre chercheur à obtenir les mêmes résultats en utilisant les mêmes données et la même méthode. Pilier central de la science ouverte. [→ @sec-chap1]
 
+**Revue de portée** *(scoping review)*
+
+:   Synthèse qui cartographie l'état des connaissances sur une question large, en repérant les concepts clés et les lacunes, sans évaluer la qualité méthodologique de chaque étude retenue. [→ @sec-chap5]
+
 **Revue systématique**
 
 :   Synthèse exhaustive et rigoureuse de la littérature scientifique sur une question précise, suivant un protocole préétabli et documenté (ex. : PRISMA). [→ @sec-chap5]
+
+**rvest**
+
+:   Package R d'extraction de données web. Il lit le code HTML d'une page et en extrait les éléments désignés par des sélecteurs CSS. [→ @sec-chap6]
 
 **Science ouverte**
 
@@ -151,6 +187,14 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 **Scrum**
 
 :   Cadre de travail Agile structurant le développement en cycles courts appelés *sprints*, avec des rôles définis (Scrum Master, Product Owner) et des rituels réguliers (mêlées quotidiennes, rétrospectives). [→ @sec-chap3]
+
+**Sélecteur CSS**
+
+:   Expression qui désigne un ou plusieurs éléments d'une page web à partir de leur balise, de leur classe ou de leur identifiant. C'est ce qui permet à un extracteur de cibler l'information voulue. [→ @sec-chap6]
+
+**Snowballing**
+
+:   Technique de repérage bibliographique qui part de quelques publications clés, puis remonte vers les références qu'elles citent ou vers les articles qui les citent. Elle s'utilise à l'intérieur de n'importe quel type de revue. [→ @sec-chap5]
 
 **YAML** *(YAML Ain't Markup Language)*
 
