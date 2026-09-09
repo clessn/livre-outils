@@ -37,23 +37,25 @@ Au 19e siècle, la visualisation connaît une véritable accélération, qualifi
 knitr::include_graphics("images/chapitre_7_minard_napoleon.png", dpi = 600)
 ```
 
-L’entrée dans le 20e siècle et l’ère informatique ouvre une nouvelle phase pour la visualisation. La capacité des ordinateurs à traiter rapidement de grandes quantités de données transforme en profondeur les pratiques. Dès les années 1960, les premières visualisations générées par ordinateur permettent d’envisager des représentations plus complexes et dynamiques. Dans les décennies suivantes, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large.
+L’entrée dans le XXe siècle et l’ère informatique ouvre une nouvelle phase pour la visualisation. La capacité des ordinateurs à traiter rapidement de grandes quantités de données transforme en profondeur les pratiques. Dès les années 1960, les premières visualisations générées par ordinateur permettent d’envisager des représentations plus complexes et dynamiques. Dans les décennies suivantes, des logiciels comme *SAS* et *SPSS* ont rendu ces outils accessibles à un public plus large.
 
-Un acteur majeur de cette période est le politologue et statisticien Edward Tufte, dont les ouvrages ont profondément marqué la réflexion sur la visualisation des données [@friendly_wainer21]. Dans des livres devenus des références, tels que *The Visual Display of Quantitative Information* (1983, rééd. 2001), *Envisioning Information* (1990) et *Visual Explanations* (1997), Tufte développe une véritable philosophie de la communication graphique. Il insiste sur la nécessité de maximiser le rapport « data-ink ratio », c’est-à-dire de réduire les éléments décoratifs superflus afin de concentrer l’attention du lecteur sur l’information essentielle.
+Un acteur majeur de cette période est le politologue et statisticien Edward Tufte, dont les ouvrages ont profondément marqué la réflexion sur la visualisation des données [@friendly_wainer21]. Dans des livres devenus des références, tels que *The Visual Display of Quantitative Information* (1983, rééd. 2001), *Envisioning Information* (1990) et *Visual Explanations* (1997), Tufte développe une véritable philosophie de la communication graphique. Il insiste sur la nécessité de maximiser le rapport *data-ink*, c’est-à-dire de réduire les éléments décoratifs superflus afin de concentrer l’attention du lecteur sur l’information essentielle.
 
 Aujourd'hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l'essor des données massives et de l'intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d'informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques.
 
 ### Les bonnes pratiques de visualisation graphique
 
-Ainsi, dans la lignée de Tufte, plusieurs chercheurs se sont efforcés à trouver les meilleures façons de transmettre l'information par des graphiques. Arel-Bundock [-@arel-bundock21] résume ces bonnes pratiques en quatre principes fondamentaux.
+Ainsi, dans la lignée de Tufte, plusieurs chercheurs se sont efforcés de trouver les meilleures façons de transmettre l'information par des graphiques. Arel-Bundock [-@arel-bundock21] résume ces bonnes pratiques en quatre principes fondamentaux.
 
 Le premier est celui de l'intégrité. Un graphique doit représenter fidèlement les données : les choix de mise en forme, comme l'échelle des axes ou le type de graphique retenu, ne doivent pas déformer la réalité ni induire le lecteur en erreur. Un axe des ordonnées tronqué, par exemple, peut donner l'impression d'une variation bien plus marquée qu'elle ne l'est réellement.
 
 Le deuxième principe est la simplicité. Dans la continuité directe de Tufte, il s'agit d'éliminer tout élément superflu qui n'ajoute pas d'information. Les grilles trop chargées, les couleurs inutiles ou les effets tridimensionnels décoratifs détournent l'attention du message principal. Un bon graphique va à l'essentiel.
 
-Le troisième principe est celui du contexte. Un graphique doit être auto-suffisant : le lecteur doit pouvoir le comprendre sans avoir à se référer au texte qui l'entoure. Cela implique un titre clair, des axes correctement identifiés, des variables nommées et une légende lorsque nécessaire.
+Le troisième principe est celui du contexte. Un graphique doit être autosuffisant : le lecteur doit pouvoir le comprendre sans avoir à se référer au texte qui l'entoure. Cela implique un titre clair, des axes correctement identifiés, des variables nommées et une légende lorsque nécessaire.
 
 Enfin, le quatrième principe est l'esthétisme. Arel-Bundock rappelle que les trois premiers principes ne sont pas des règles absolues. Des choix visuels assumés peuvent contribuer à capter l'attention et à renforcer le message, à condition de ne pas tromper le lecteur.
+
+Écrire du `ggplot2` avec un assistant conversationnel fonctionne remarquablement bien. La grammaire des graphiques est régulière et abondamment documentée, si bien qu'une demande formulée en français, un nuage de points coloré par groupe avec une courbe de tendance, produit le plus souvent du code utilisable du premier coup. Combinée à `Quarto`, qui exécute ce code et insère la figure dans le document, cette façon de faire donne de premières versions en quelques minutes. Rien n'empêche ensuite de soumettre le code ou l'image obtenue à un assistant pour explorer des variantes de mise en forme, des palettes ou des thèmes, jusqu'à trouver ce qui sert le mieux le propos.
 
 ## Arpentage et choix éditorial : les systèmes graphiques dans $\textsf{R}$
 
@@ -65,11 +67,9 @@ Au sein de l'écosystème $\textsf{R}$, plusieurs systèmes graphiques coexisten
 
 Dans $\textsf{R}$ de base (*base R*), les graphiques sont créés de manière procédurale, en construisant les éléments un par un. Le package `lattice` offre une approche plus structurée, particulièrement efficace pour les graphiques conditionnels.
 
-Cependant, c'est `ggplot2` qui révolutionne véritablement la création de graphiques en $\textsf{R}$ en implémentant une grammaire cohérente de la visualisation. Dans ce livre, notre choix éditorial se porte sur `ggplot2`, développé par Hadley Wickham, qui repose sur la « Grammaire des graphiques » (*Grammar of Graphics*) théorisée par Leland Wilkinson [@wilkinson05]. Cette approche conceptualise un graphique comme la combinaison de composants indépendants : les données, les mappings esthétiques (couleur, forme, taille), les objets géométriques (points, lignes, barres), les transformations statistiques, et les systèmes de coordonnées.
+Cependant, c'est `ggplot2` qui révolutionne véritablement la création de graphiques en $\textsf{R}$ en implémentant une grammaire cohérente de la visualisation. Dans ce livre, notre choix éditorial se porte sur `ggplot2`, développé par Hadley Wickham, qui repose sur la « Grammaire des graphiques » (*Grammar of Graphics*) théorisée par Leland Wilkinson [@wilkinson05]. Plutôt que d'offrir un catalogue de types de graphiques, cette approche traite un graphique comme un assemblage de composants indépendants que l'on combine. Le manuel d'instruction en détaille les pièces.
 
-Cette grammaire présente plusieurs avantages pédagogiques et pratiques. Elle offre un cadre conceptuel unifié pour comprendre et créer des visualisations, réduisant l'apprentissage par cœur de syntaxes spécifiques. Les graphiques se construisent par couches successives, permettant une approche itérative et modulaire. Cette logique facilite non seulement l'apprentissage pour les novices, mais permet également aux utilisateurs expérimentés de concevoir des visualisations innovantes en combinant les composants de manière créative.
-
-Les sections suivantes de ce chapitre exploreront en détail les principes de `ggplot2` et illustreront comment cette grammaire des graphiques peut transformer l'approche de la visualisation de données.
+Cette grammaire présente plusieurs avantages pédagogiques et pratiques. Elle offre un cadre conceptuel unifié qui dispense d'apprendre par cœur la syntaxe de chaque type de graphique. Elle facilite l'apprentissage pour les novices, tout en permettant aux utilisateurs expérimentés de concevoir des visualisations inhabituelles en combinant les composants autrement.
 
 ```{r}
 #| tbl-cap: Comparaison des systèmes graphiques dans R
@@ -200,7 +200,7 @@ Les graphiques interactifs permettent une exploration dynamique des données, of
 
 [^chapitre_7-2]: Un graphique interactif ne peut pas s'afficher dans un document imprimé. Les exemples qui suivent en donnent donc uniquement le code, à exécuter dans un environnement de développement pour en voir le résultat.
 
-##### Exemple avec `ggplotly`
+#### Exemple avec `ggplotly`
 
 `ggplotly` permet de transformer un graphique `ggplot2` en une visualisation interactive.
 
@@ -226,7 +226,7 @@ p <- ggplot(mtcars, aes(x = hp, y = mpg)) +
 ggplotly(p)
 ```
 
-Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`:
+Et voici un exemple avec `plotly`, un package qui n'emprunte pas la grammaire de `ggplot2`&nbsp;:
 
 ```{r}
 #| eval: false
@@ -248,7 +248,7 @@ Nous recommandons de consulter la documentation officielle du package `plotly` (
 
 `shiny` est un package $\textsf{R}$ puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.
 
-##### Exemple de base avec `shiny`
+#### Exemple de base avec `shiny`
 
 Voici un exemple simple d'application `shiny` où l'utilisateur peut sélectionner une variable pour tracer un graphique interactif. Si le package `shiny` est installé, il suffit de copier ce code dans un script $\textsf{R}$ sous `Positron`, puis de lancer l'application web directement.
 
@@ -291,6 +291,8 @@ Pour explorer davantage les possibilités de `shiny`, nous recommandons de consu
 
 ## En terminant
 
-Dans ce chapitre, nous avons montré comment la visualisation graphique peut accompagner l’analyse de données et illustrer les résultats. En démontrant les fonctionnalités de base des packages `ggplot2`, `plotly` et `shiny`, ce chapitre a montré comment les sciences sociales disposent aujourd’hui d’outils puissants pour explorer, comprendre et partager les données de façon claire et efficace.
+Ce chapitre a suivi la visualisation sur tout le parcours d'une recherche, de l'exploration des données jusqu'au graphique publié. `ggplot2` en constitue le cœur, parce que sa grammaire permet de construire un graphique par assemblage plutôt que de le choisir dans un catalogue. `plotly` et `shiny` prolongent cette logique lorsque le lecteur doit pouvoir manipuler lui-même ce qu'on lui montre.
+
+L'outil ne décide toutefois de rien. Les mêmes données admettent plusieurs représentations honnêtes, et le choix entre elles revient au chercheur. C'est là que les quatre principes présentés plus haut gardent leur valeur, l'intégrité d'abord, puis la simplicité, le contexte et l'esthétisme. Le meilleur graphique est celui dont le lecteur saisit le message sans avoir à le déchiffrer.
 
 \pagesdenotes
