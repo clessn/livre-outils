@@ -1,4 +1,4 @@
-f# Outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}
+# Outils de gestion de données : de l'entreposage personnel à la science ouverte {#sec-chap4}
 
 \begin{center}
 \textit{Adrien Cloutier (Université Laval), \\
