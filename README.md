@@ -10,8 +10,9 @@ la collecte, la visualisation, la rédaction et l'intelligence artificielle.
 
 > **Statut** : Manuscrit **accepté pour publication** aux Presses de l'Université Laval
 > (confirmation du 15 juin 2026), dans la collection « Méthodes de recherche en sciences
-> humaines ». La version complète et définitive est attendue à l'été 2026. Ce dépôt contient
-> les sources ouvertes du livre (format Quarto), une démarche reconnue par les PUL.
+> humaines ». Le manuscrit définitif est remis aux PUL à l'automne 2026 pour la révision
+> linguistique ; la version en ligne continue d'évoluer. Ce dépôt contient les sources
+> ouvertes du livre (format Quarto), une démarche reconnue par les PUL.
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -96,10 +97,10 @@ Vous devriez voir la version de Git installée.
 
 2. Ouvrez le fichier que vous souhaitez modifier à l'aide de votre éditeur de texte. Par exemple :
 
-   - **Utiliser RStudio** :
+   - **Utiliser Positron** (l'interface de référence du livre) :
 
      ```bash
-     rstudio chapitre_1.qmd
+     positron chapitre_1.qmd
      ```
      
 3. Apportez vos modifications et enregistrez le fichier.
