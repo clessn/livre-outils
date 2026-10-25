@@ -123,3 +123,6 @@ tmp-pdfcrop-*.tex
 /.quarto/
 
 **/*.quarto_ipynb
+
+# Réglages propres à un poste de travail (Claude Code)
+CLAUDE.local.md
