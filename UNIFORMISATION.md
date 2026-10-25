@@ -93,44 +93,45 @@ Ce document établit les règles d'uniformisation pour l'écriture et la révisi
 
 ## Langage inclusif
 
-### Règle générale : Inclusif simple, sinon masculin
+### Règle générale : neutre d'abord, masculin générique en dernier recours
 
 **Stratégies d'écriture inclusive (par ordre de préférence) :**
 
-#### 1. Termes neutres et collectifs
+#### 1. Termes collectifs et neutres
 ✅ **Préférer :**
-- "les chercheurs" (au lieu de "les chercheuses et chercheurs")
-- "le lectorat" (au lieu de "les lecteurs et lectrices")
-- "les utilisateurs" (générique)
-- "la communauté scientifique"
-- "le personnel"
+- "le lectorat" (au lieu de "les lecteurs et les lectrices")
+- "la communauté scientifique", "la communauté étudiante"
+- "le personnel de recherche", "l'équipe"
+- "les personnes qui...", quand la tournure reste légère
 
-#### 2. Doublets complets (usage modéré)
-Utiliser **uniquement quand le contexte le justifie** et **sans alourdir** :
+#### 2. Mots épicènes
+Les mots dont la forme ne varie pas selon le genre.
 
 ✅ **Acceptable :**
-- "les étudiants et les étudiantes" (si utilisé 1-2 fois dans un chapitre)
-- "ceux et celles qui souhaitent"
+- "les journalistes", "les élèves", "les spécialistes", "les responsables"
 
-❌ **À éviter** (répétition excessive) :
-- "les chercheurs et chercheuses doivent organiser leur espace de travail. Les développeurs et développeuses contribuent..."
+⚠️ Au singulier, ne pas les faire précéder d'un déterminant double : « le ou la journaliste » retombe dans le doublet.
 
 #### 3. Masculin générique par défaut
-Lorsque les stratégies ci-dessus alourdissent le texte :
+Lorsque les deux stratégies ci-dessus alourdissent le texte :
 
 ✅ **Utiliser le masculin générique :**
 - "les chercheurs"
 - "les étudiants"
-- "les développeurs"
 - "le lecteur"
+
+Le prélude déclare cet ordre de préférence en note de bas de page, pour que le lectorat sache à quoi s'en tenir.
 
 ### Formes à éviter
 
 ❌ **Ne JAMAIS utiliser :**
+- Doublets complets : "les chercheurs et les chercheuses", "ceux et celles qui souhaitent" — retirés de tout le livre par la décision de l'issue #139
 - Point médian : "les chercheur·euse·s"
 - Parenthèses : "les chercheur(euse)s"
 - Tiret : "chercheur-euse-s"
 - Barre oblique : "chercheur/euse/s"
+
+**Vérifié le 25 octobre 2026** : aucune de ces formes ne subsiste dans les douze fichiers du livre.
 
 ---
 
@@ -473,6 +474,41 @@ Exemples conformes par section :
 - « les données sont *sensibles* ou non »
 
 **Comment distinguer une emphase d'un mot anglais, puisque les deux sont en italique ?** Le contexte suffit, et le livre glose systématiquement les termes anglais à leur première apparition (« le flux de travail (*workflow*) »). C'est l'usage courant en édition ; il n'y a pas lieu de créer une distinction typographique supplémentaire.
+
+### Phrases destinées aux encadrés
+
+Une ou deux phrases par chapitre sont choisies comme les plus représentatives du message, pour que le graphiste les sorte en encadré dans l'édition imprimée.
+
+**Cette convention ne vit pas dans le balisage.** Les phrases ne sont ni en gras ni marquées d'aucune façon dans les fichiers `.qmd` : la section « Emphases » ci-dessus interdit le gras à l'intérieur d'une phrase, et une marque posée dans le texte serait effacée à la première révision — ce qui s'est produit deux fois. La liste ci-dessous est le seul endroit où la convention existe, et c'est elle qu'on remet avec le manuscrit.
+
+**Critère de choix** : la phrase doit tenir debout seule, agrandie et sortie de son paragraphe. Pas de pronom qui renvoie ailleurs, pas de « cette septième fonction », pas de « ce qui la distingue ».
+
+| Section | Phrase retenue |
+|---|---|
+| Prélude | « L'IA amplifie un chercheur compétent. Elle ne remplace pas les fondations. » |
+| Prélude | « la méthode offre la recette, l'outil fournit l'équipement » |
+| Chapitre 1 | « Les outils sont à la science ce que le mélangeur, la cuillère et la spatule sont à la cuisine. » |
+| Chapitre 2 | « L'intelligence artificielle rend l'apprentissage plus rapide et plus agréable, à une condition, celle de rester la personne qui comprend le code. » |
+| Chapitre 3 | « La gestion de projet est une compétence transversale qui peut transformer la manière dont le chercheur aborde ses projets académiques et professionnels. » |
+| Chapitre 3 | « L'important est de prendre le temps de réfléchir à son propre flux de travaux et de l'adapter à ses besoins, à sa personnalité et à son contexte. » |
+| Chapitre 4 | « Tout fichier qui n'existe qu'en local est un fichier à risque. » |
+| Chapitre 5 | « La revue de littérature passe souvent pour une formalité, l'étape qu'on expédie avant de commencer la vraie recherche. C'est une erreur de perspective. » |
+| Chapitre 6 | « L'extraction web donne accès à des données qu'aucune plateforme ne met à disposition, et place le chercheur en amont de la mise en forme plutôt qu'en aval. » |
+| Chapitre 7 | « Le meilleur graphique est celui dont le lecteur saisit le message sans avoir à le déchiffrer. » |
+| Chapitre 8 | « Il n'est pas nécessaire de tout comprendre des langages de balisage pour produire un document de qualité. » |
+| Chapitre 9 | « Le chercheur reste imputable de ce qu'il produit. » |
+| Annexe | aucune — c'est une annexe pratique, un encadré y diluerait le procédé |
+
+Le chapitre 3 en compte deux pour l'instant, le choix final revient à son auteur.
+
+**Quatre de ces phrases sont légèrement ajustées** par rapport au texte courant, pour couper une amorce qui ne tient pas hors contexte. Le livre n'est pas modifié ; c'est la citation de la liste qui l'est.
+
+| Section | Le texte dit |
+|---|---|
+| Prélude | « ...parce que l'IA amplifie un chercheur compétent. » |
+| Chapitre 2 | « Quant à l'intelligence artificielle, elle rend l'apprentissage... » |
+| Chapitre 6 | « Il consacre l'essentiel de son propos à l'extraction web avec *rvest*, parce que c'est la voie qui donne accès... » |
+| Chapitre 9 | « La première, et la plus importante, est que le chercheur reste imputable de ce qu'il produit. » |
 
 ### Listes et énumérations
 

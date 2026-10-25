@@ -1,7 +1,7 @@
 # L'ordinateur {#sec-annexe}
 
 \begin{center}
-\textit{Laurence-Olivier M. Foisy}
+\textit{Laurence-Olivier M. Foisy (Université Laval)}
 \end{center}
 
 ![](images/annexe_toolbox_box_black.png){fig-align="center" width="12%"}
