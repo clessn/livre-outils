@@ -8,7 +8,7 @@ Arnaud Beaulé (Université Laval)}
 
 ![](images/chapitre_6_toolbox_shovel_black.png){fig-align="center" width="12%"}
 
-La révolution numérique et l'intelligence artificielle posent un défi à la recherche en sciences sociales [@manovich11; @burrows_savage14]. Elles ouvrent aussi une possibilité, celle d'observer les phénomènes sociaux à une échelle et avec une variété de sources qui étaient hors d'atteinte il y a vingt ans [@connelly_etal16; @kramer_etal14; @schroeder14]. Encore faut-il pouvoir aller chercher ces données. Au défi éthique et théorique que pose leur usage s'ajoute un défi technique, qui est celui dont ce chapitre s'occupe [@burrows_savage14].
+`\lettrine{L}{a}`{=latex} révolution numérique et l'intelligence artificielle posent un défi à la recherche en sciences sociales [@manovich11; @burrows_savage14]. Elles ouvrent aussi une possibilité, celle d'observer les phénomènes sociaux à une échelle et avec une variété de sources qui étaient hors d'atteinte il y a vingt ans [@connelly_etal16; @kramer_etal14; @schroeder14]. Encore faut-il pouvoir aller chercher ces données. Au défi éthique et théorique que pose leur usage s'ajoute un défi technique, qui est celui dont ce chapitre s'occupe [@burrows_savage14].
 
 Ce chapitre présente la méthode de l'extraction de données web, ou *web scraping*, qui permet de récolter de façon automatisée des données provenant de sites internet.
 

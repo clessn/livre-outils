@@ -7,7 +7,7 @@ Laurence-Olivier M. Foisy (Université Laval)}
 
 ![](images/chapitre_5_toolbox_tape_black.png){fig-align="center" width="12%"}
 
-La revue de littérature passe souvent pour une formalité, l'étape qu'on expédie avant de commencer la vraie recherche. C'est une erreur de perspective. Bien conduite, elle est une contribution scientifique en soi. Elle délimite un champ, montre ce qui a déjà été tenté, fait apparaître les questions que personne n'a encore posées, et justifie l'étude qui va suivre.
+`\lettrine{L}{a}`{=latex} revue de littérature passe souvent pour une formalité, l'étape qu'on expédie avant de commencer la vraie recherche. C'est une erreur de perspective. Bien conduite, elle est une contribution scientifique en soi. Elle délimite un champ, montre ce qui a déjà été tenté, fait apparaître les questions que personne n'a encore posées, et justifie l'étude qui va suivre.
 
 Ce qui la rend scientifique tient à sa méthode plutôt qu'au nombre de textes lus. Une revue solide documente comment les études ont été trouvées, selon quels critères elles ont été retenues ou écartées, et comment elles ont été analysées. La revue rapide, la revue de portée et la revue systématique répondent chacune à cette exigence à leur façon. Ces méthodes s'enseignent à l'université et leurs résultats se publient.
 

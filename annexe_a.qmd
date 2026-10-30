@@ -6,7 +6,7 @@
 
 ![](images/annexe_toolbox_box_black.png){fig-align="center" width="12%"}
 
-Cet annexe s'adresse à un public de nouveaux initiés en informatique.
+`\lettrine{C}{et}`{=latex} annexe s'adresse à un public de nouveaux initiés en informatique.
 Son objectif est de convaincre les chercheurs de l'importance de se munir d'un ordinateur adapté à leurs besoins.
 En effet, un élément lie l'ensemble des outils présentés dans ce livre : l'ordinateur.
 C'est la plateforme qui réunit les outils numériques nécessaires à la recherche.
