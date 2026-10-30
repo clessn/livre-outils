@@ -51,6 +51,11 @@ format:
           \newcommand{\R}{\textsf{R}}
           \usepackage{float}
           \floatplacement{table}{H}
+          \usepackage{lettrine}
+          \setcounter{DefaultLines}{3}
+          \renewcommand{\DefaultLhang}{0.1}
+          \renewcommand{\DefaultLoversize}{0.1}
+          \renewcommand{\DefaultNindent}{0.2em}
       - titlepage.tex
       - notes-pages.tex
   docx:
