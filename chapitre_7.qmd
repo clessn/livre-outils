@@ -188,7 +188,7 @@ print(p_boxplot)
 #| error: false
 #| fig-cap: "Ici, on obtient un diagramme linéaire. Il est important de rappeler la nécessité d'adapter sa visualisation aux données que l'on observe. Chaque observation étant individuelle, un diagramme linéaire n'est pas la meilleure manière de visualiser des données." 
 # Ajout d'une ligne de tendance
-p3 <- p2 + geom_line(method = "lm")
+p3 <- p2 + geom_line()
 print(p3)
 ```
 
