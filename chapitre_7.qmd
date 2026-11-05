@@ -162,7 +162,8 @@ Cette approche modulaire et incrémentale distingue `ggplot2` des systèmes grap
 
 En voici un exemple d'ajout progressif de couches (*layers*) avec le jeu de données `mtcars`, qui accompagne l'installation de $\textsf{R}$ :
 
-```{r}
+```{r, out.width="80%"}
+#| fig-cap: "Le code ci-dessus donne un ggplot vide : les axes x et y sont affichés, mais comme nous n'avons toujours pas spécifié quel genre de graphique nous souhaitons produire, aucune donnée n'apparaît." 
 library(ggplot2)
 
 # Couche de base avec les données
@@ -171,18 +172,28 @@ print(p1)
 ```
 
 ```{r}
+#| fig-cap: "Maintenant que nous avons spécifié quel genre de graphique nous souhaitons obtenir, dans ce cas-ci un nuage de points (scatter plot) avec geom_point, les données apparaissent."
 # Ajout des points
 p2 <- p1 + geom_point()
 print(p2)
 ```
 
 ```{r}
+#| fig-cap: "Avec geom_boxplot, on pourrait créer un diagramme en boîtes (boxplot) comme celui présenté ci-dessus. On pourrait visualiser la distribution de l'efficacité énergétique des voitures selon le nombre de cylindres."
+# Ajout des barres
+p_boxplot <- ggplot(mtcars, aes(x= factor(cyl), y = mpg, color)) + geom_boxplot()
+print(p_boxplot)
+```
+```{r}
+#| error: false
+#| fig-cap: "Ici, on obtient un diagramme linéaire. Il est important de rappeler la nécessité d'adapter sa visualisation aux données que l'on observe. Chaque observation étant individuelle, un diagramme linéaire n'est pas la meilleure manière de visualiser des données." 
 # Ajout d'une ligne de tendance
-p3 <- p2 + geom_smooth(method = "lm")
+p3 <- p2 + geom_line(method = "lm")
 print(p3)
 ```
 
 ```{r}
+#| fig-cap: "Avec labs, on ajoute des étiquettes (labels) à différentes composantes du graphique. Dans ce cas-ci, on modifie le titre, l'axe des x et l'axe des y."
 # Ajout de labels
 p4 <- p3 + labs(title = "Consommation vs Poids", 
                 x = "Poids (1000 lbs)", 
@@ -205,7 +216,7 @@ Les graphiques interactifs permettent une exploration dynamique des données, of
 `ggplotly` permet de transformer un graphique `ggplot2` en une visualisation interactive.
 
 ```{r}
-#| message: false
+ #| message: false
 library(ggplot2)
 library(plotly)
 ```
