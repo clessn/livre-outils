@@ -353,7 +353,7 @@ Ce qui produit le résultat suivant dans la console&nbsp;:
  44th</span> Parlia ...
 ```
 
-Bien que moins utile pour la mise en situation actuelle, il est également possible d'extraire les éléments en fonction de leur « *id attribute* ». Pour ce faire, il faut mettre un hashtag (#) avant l'élément à extraire lors de l'appel de la fonction. Le « *id attribute* » retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération
+Bien que moins utile pour la mise en situation actuelle, il est également possible d’extraire les éléments en fonction de leur « id attribute ». Le id attribute réfère à une étiquette d’identification d’une balise ou d’un élément précis unique dans le code. Dans un document HTML, chaque valeur id appartient à un seul élément. En sélecteur CSS, avec le package rvest d’extraction de données web, il suffit de mettre un hashtag (#) avant l’élément à extraire pour le cibler directement. Voici la ligne de code et le résultat produit par une telle opération
 
 ``` bash
 html_LEGISinfo |> html_elements("#StartOfContent")
