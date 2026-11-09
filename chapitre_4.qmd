@@ -95,6 +95,13 @@ Si les données ne sont pas sensibles, le chercheur dispose de beaucoup plus de 
 
 *Google Drive* est facile d'utilisation par son intégration au sein des outils *Google*. La plateforme, en général, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. *Google Drive* offre 15 Go gratuits, et son utilisation est simple et intuitive. Pour des projets impliquant du code et des données non sensibles de taille modérée, *GitHub* et *GitLab* sont d'excellentes options. Nous y reviendrons en détail plus loin, mais sachez qu'ils permettent non seulement d'entreposer les fichiers, mais aussi de suivre rigoureusement leur évolution et de collaborer efficacement grâce au versionnement et aux demandes de fusion (*pull requests*). Ils sont gratuits, tant pour les projets publics que pour les dépôts privés (avec certaines limitations), et sont très utilisés en recherche. Ils nécessitent toutefois une courbe d'apprentissage et ne sont pas adaptés pour des fichiers très volumineux.
 
+| Espace | Type de contenu approprié | Rôle scientifique |
+|---|---|---|
+| Infonuagique (Dropbox / OneDrive) | Données brutes volumineuses, fichiers binaires (`.docx`, `.pdf`, `.png`), documents de travail | Sauvegarde continue des données actives |
+| Dépôt Git / GitHub | Code R, scripts d'analyse, fichiers texte (`.qmd`, `.md`, `.bib`), documentation | Traçabilité, versionnement du code et reproductibilité |
+| Dépôt certifié (Borealis / OSF) | Données finales, codebooks et matériel réplicable | Conservation à long terme avec identifiant unique (DOI, lorsque disponible) et partage public |
+: Types d'espaces de stockage {#tbl-stockage}
+
 #### Organiser son cloud comme on organise son bureau
 
 Un cloud mal structuré n'est guère mieux qu'un bureau encombré. Pour que les chemins de fichiers restent stables et que la collaboration soit fluide, il vaut la peine de réfléchir dès le départ à une arborescence logique et cohérente. Une structure simple pourrait ressembler à ceci :
