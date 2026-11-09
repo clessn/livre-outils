@@ -59,7 +59,7 @@ La plupart des langages de balisage permettent de remplir l'une des deux fonctio
 
 [^chapitre_8-2]: Pour la création de pages Web, bien que des plateformes comme *WordPress* facilitent cette tâche, *HTML* offre plus de personnalisation et d'automatisation. Il s'agit encore d'une question d'abstraction&nbsp;: WordPress simplifie l'usage en s'appuyant sur *HTML* et `JavaScript`.
 
-Pour l'écriture de documents très simples comme une liste d'épicerie ou des notes rapides pendant une conférence, les logiciels de traitement de texte sont tout à fait convenables : ils sont simples et rapides à utiliser, un formatage professionnel du document n'est pas de mise. Utiliser un langage de balisage pour des tâches de base peut en effet rendre la tâche inutilement longue et complexe. Toutefois, plus la complexité d'un document augmente, plus il devient difficile d'obtenir un résultat satisfaisant en utilisant un logiciel de traitement de texte tel que *Word*, *Pages* ou *Writer*. A contrario, \LaTeX{} permet de produire des documents de tous les niveaux de complexité, tel que démontré sur la @fig-latex-vs-word. Quant à *Markdown*, sa courbe d'apprentissage se situerait logiquement entre celles de \LaTeX{} et de *Word*, puisque ses balises sont simplifiées. Plus généralement, utiliser un langage de balisage comme \LaTeX{} ou *Markdown*[^chapitre_8-3] comporte plusieurs avantages par rapport aux logiciels de traitement de texte traditionnels (voir le Tableau 8.1). Ces avantages font tous appel à un mélange de quatre concepts principaux : *automatisation*, *personnalisation*, *flexibilité* et *qualité graphique*.
+Pour l'écriture de documents très simples comme une liste d'épicerie ou des notes rapides pendant une conférence, les logiciels de traitement de texte sont tout à fait convenables : ils sont simples et rapides à utiliser, un formatage professionnel du document n'est pas de mise. Utiliser un langage de balisage pour des tâches de base peut en effet rendre la tâche inutilement longue et complexe. Toutefois, plus la complexité d'un document augmente, plus il devient difficile d'obtenir un résultat satisfaisant en utilisant un logiciel de traitement de texte tel que *Word*, *Pages* ou *Writer*. A contrario, \LaTeX{} permet de produire des documents de tous les niveaux de complexité, tel que démontré sur la @fig-latex-vs-word. Quant à *Markdown*, sa courbe d'apprentissage se situerait logiquement entre celles de \LaTeX{} et de *Word*, puisque ses balises sont simplifiées. Plus généralement, utiliser un langage de balisage comme \LaTeX{} ou *Markdown*[^chapitre_8-3] comporte plusieurs avantages par rapport aux logiciels de traitement de texte traditionnels (voir le @tbl-outils-redaction). Ces avantages font tous appel à un mélange de quatre concepts principaux : *automatisation*, *personnalisation*, *flexibilité* et *qualité graphique*.
 
 [^chapitre_8-3]: Les avantages et désavantages de *Markdown* cités dans cette section s'appliquent également à *Quarto* et à $\textsf{R}$ *Markdown*, puisque ces derniers font appel au langage *Markdown*.
 
@@ -71,7 +71,8 @@ Pour l'écriture de documents très simples comme une liste d'épicerie ou des n
 knitr::include_graphics("images/chapitre_8_word_vs_latex.png")
 ```
 
-```{r tab_avantages}
+```{r}
+#| label: tbl-outils-redaction
 #| tbl-cap: Comparaison des outils de rédaction
 #| echo: false
 #| warning: false

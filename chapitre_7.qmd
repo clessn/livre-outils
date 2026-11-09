@@ -63,7 +63,7 @@ Le langage $\textsf{R}$ s'est imposé comme un outil de référence pour la visu
 
 La flexibilité de $\textsf{R}$ constitue également un atout majeur. Contrairement aux logiciels propriétaires comme *Excel* ou *Tableau*, $\textsf{R}$ permet une personnalisation poussée des visualisations et s'intègre facilement dans des flux de travail automatisés. Cette adaptabilité en fait un choix privilégié pour les analystes qui souhaitent créer des visualisations sur mesure plutôt que de se limiter à des modèles prédéfinis.
 
-Au sein de l'écosystème $\textsf{R}$, plusieurs systèmes graphiques coexistent, chacun avec ses spécificités. Le tableau 7.1 présente une comparaison de ces différentes approches.
+Au sein de l'écosystème $\textsf{R}$, plusieurs systèmes graphiques coexistent, chacun avec ses spécificités. Le @tbl-systemes-graphiques présente une comparaison de ces différentes approches.
 
 Dans $\textsf{R}$ de base (*base R*), les graphiques sont créés de manière procédurale, en construisant les éléments un par un. Le package `lattice` offre une approche plus structurée, particulièrement efficace pour les graphiques conditionnels.
 
@@ -72,6 +72,7 @@ Cependant, c'est `ggplot2` qui révolutionne véritablement la création de grap
 Cette grammaire présente plusieurs avantages pédagogiques et pratiques. Elle offre un cadre conceptuel unifié qui dispense d'apprendre par cœur la syntaxe de chaque type de graphique. Elle facilite l'apprentissage pour les novices, tout en permettant aux utilisateurs expérimentés de concevoir des visualisations inhabituelles en combinant les composants autrement.
 
 ```{r}
+#| label: tbl-systemes-graphiques
 #| tbl-cap: Comparaison des systèmes graphiques dans R
 #| echo: false
 #| warning: false
