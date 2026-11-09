@@ -138,7 +138,7 @@ Ce glossaire regroupe les principaux termes techniques et conceptuels utilisés 
 
 **Préinscription** *(preregistration)*
 
-:   Pratique consistant à enregistrer publiquement, avant de collecter des données, les hypothèses et la méthodologie d'une étude, afin de renforcer la transparence et la reproductibilité. [→ @sec-chap1]
+:   Pratique consistant à enregistrer publiquement, avant de collecter des données, les hypothèses et la méthodologie d'une étude, afin de renforcer la transparence et la reproductibilité. [→ @sec-chap1, @sec-chap4]
 
 **Principe FAIR**
 
