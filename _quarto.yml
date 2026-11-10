@@ -51,6 +51,9 @@ format:
           \newcommand{\R}{\textsf{R}}
           \usepackage{float}
           \floatplacement{table}{H}
+          % Version du livre : changer ces deux lignes, la page de titre les lit
+          \newcommand{\versionlivre}{0.9}
+          \newcommand{\etatversion}{Manuscrit soumis aux Presses de l'Université Laval \textperiodcentered{} novembre 2026}
       - titlepage.tex
       - notes-pages.tex
   docx:
