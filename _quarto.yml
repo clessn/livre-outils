@@ -28,6 +28,7 @@ book:
     - references.qmd
 filters:
   - filtres/espaces-francaises.lua
+  - filtres/lignes-tableaux.lua
 
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
