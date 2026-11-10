@@ -12,7 +12,9 @@ Le livre a deux vies : une édition imprimée, figée, et cette version en ligne
 
 | Fichier | Contenu |
 |---|---|
-| `index.qmd` | Prélude |
+| `index.qmd` | Page de bienvenue du site (web seulement, absente du PDF) |
+| `prelude.qmd` | Prélude |
+| `_variables.yml` | Numéro de version du livre, lu par le PDF et par le site |
 | `chapitre_1.qmd` à `chapitre_4.qmd` | Fondations : logiciel libre, programmation, gestion de projet, gestion des données |
 | `chapitre_5.qmd` à `chapitre_8.qmd` | Structure : synthèse de la connaissance, collecte, visualisation, rédaction |
 | `chapitre_9.qmd` | Finition : intelligence artificielle |

@@ -110,6 +110,8 @@ tmp-pdfcrop-*.tex
 # Fichiers web générés
 *.html
 *.css
+# … sauf la feuille de style de la version web
+!styles.css
 *.js
 
 # Fichiers JSON de configuration temporaires

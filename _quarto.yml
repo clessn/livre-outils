@@ -3,10 +3,24 @@ project:
 output-dir: _book
 book:
   title: "Outils de recherche en sciences sociales numériques"
-  author: "CLESSN — Sous la direction de A. Bibeau-Gagnon, A. Cloutier, Y. Dufresne"
+  subtitle: "De l'idéation à la publication scientifique"
+  site-url: https://clessn.github.io/livre-outils/
+  repo-url: https://github.com/clessn/livre-outils
+  repo-actions: [edit, issue]
+  image: images/couverture.png
+  open-graph: true
+  output-file: livre-outils
+  page-footer:
+    left: "Version {{< var version >}} · {{< var etat >}}"
+    right: "[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) · [Sources](https://github.com/clessn/livre-outils)"
+  author:
+    - "Alexis Bibeau-Gagnon"
+    - "Adrien Cloutier"
+    - "Yannick Dufresne"
   date: today
   chapters:
     - index.qmd
+    - prelude.qmd
     - part: "Fondations"
       chapters:
         - chapitre_1.qmd
@@ -29,6 +43,8 @@ book:
 filters:
   - filtres/espaces-francaises.lua
   - filtres/lignes-tableaux.lua
+  - filtres/version-web.lua
+  - filtres/web-seulement.lua
 
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
@@ -36,6 +52,10 @@ crossref:
   tbl-title: Tableau
   tbl-prefix: Tableau
 lang: fr
+language:
+  title-block-author-single: "Sous la direction de"
+  title-block-author-plural: "Sous la direction de"
+  title-block-published: "Mise à jour"
 format:
   pdf:
     classoption: [oneside]        # mêmes marges à gauche/droite partout
@@ -52,15 +72,26 @@ format:
           \newcommand{\R}{\textsf{R}}
           \usepackage{float}
           \floatplacement{table}{H}
-          % Version du livre : changer ces deux lignes, la page de titre les lit
-          \newcommand{\versionlivre}{0.9}
-          \newcommand{\etatversion}{Manuscrit soumis aux Presses de l'Université Laval \textperiodcentered{} novembre 2026}
+          % Version du livre : elle s'écrit dans _variables.yml, lue ici pour la page de titre
+          \newcommand{\versionlivre}{\ignorespaces {{< var version >}}\unskip}
+          \newcommand{\etatversion}{\ignorespaces {{< var etat >}}\unskip}
       - titlepage.tex
       - notes-pages.tex
   docx:
     reference-doc: reference-template.docx
   html:
     theme: cosmo
+    css: styles.css
     toc: true
+    toc-title: "Sur cette page"
+    include-in-header:
+      - text: |
+          <!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+          <style>
+          .quarto-title-meta-contents p.date::after {
+            content: "Version {{< var version >}}";
+            display: block;
+          }
+          </style>
 
 editor: source

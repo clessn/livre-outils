@@ -1,0 +1,72 @@
+/* Version web du livre : quelques ajustements au thème. */
+
+/* Le nom du langage R, en caractères sans empattement comme dans le PDF */
+.langage-r { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* Noms des auteurs sous le titre d'un chapitre */
+.auteurs-chapitre {
+  text-align: center;
+  color: #555;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Icône de la boîte à outils en tête de chapitre */
+main > .quarto-figure:first-of-type img,
+main > p:first-of-type > img {
+  max-width: 110px;
+}
+
+/* ── Page de bienvenue ──────────────────────────────────────────────── */
+
+/* La couverture, à droite du texte qui l'entoure */
+img.couverture-accueil {
+  float: right;
+  width: 250px;
+  margin: 0.3rem 0 1.2rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.bouton-livre,
+.bouton-livre-clair {
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  margin: 0 0.4rem 0.5rem 0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.bouton-livre { background: #464646; color: #fff; border: 1px solid #464646; }
+.bouton-livre:hover { background: #222; color: #f5d800; }
+.bouton-livre-clair { background: #fff; color: #464646; border: 1px solid #bbb; }
+.bouton-livre-clair:hover { border-color: #464646; color: #111; }
+
+.comment-citer {
+  clear: both;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+.comment-citer summary { cursor: pointer; color: #2a6ebb; }
+.comment-citer[open] {
+  background: #f7f7f7;
+  border-left: 4px solid #f5d800;
+  padding: 0.7rem 1rem;
+}
+.comment-citer p:last-child { margin-bottom: 0; }
+
+/* Sur un écran étroit, la couverture passe au-dessus du texte */
+@media (max-width: 700px) {
+  img.couverture-accueil {
+    float: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* ── Mise en page générale ──────────────────────────────────────────── */
+
+/* Plus d'air entre le menu de gauche et le texte, sur les grands écrans */
+@media (min-width: 992px) {
+  main.content { padding-left: 2.5rem; }
+}
