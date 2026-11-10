@@ -84,5 +84,14 @@ format:
     css: styles.css
     toc: true
     toc-title: "Sur cette page"
+    include-in-header:
+      - text: |
+          <!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+          <style>
+          .quarto-title-meta-contents p.date::after {
+            content: "Version {{< var version >}}";
+            display: block;
+          }
+          </style>
 
 editor: source

@@ -27,18 +27,6 @@ img.couverture-accueil {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
-.pastille-version {
-  display: inline-block;
-  background: #f5d800;
-  color: #222;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.15rem 0.55rem;
-  border-radius: 2px;
-  margin-right: 0.5rem;
-}
-.etat-version { display: block; color: #666; font-size: 0.9rem; margin-top: 0.5rem; }
-
 .bouton-livre,
 .bouton-livre-clair {
   font-size: 0.9rem;

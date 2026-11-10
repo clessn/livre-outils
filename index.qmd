@@ -3,13 +3,11 @@
 ::: {.content-visible when-format="html"}
 ![](images/couverture.png){.couverture-accueil fig-alt="Couverture du livre : une boîte à outils jaune sur fond gris"}
 
-[Version {{< var version >}}]{.pastille-version} [{{< var etat >}}]{.etat-version}
-
 Vous êtes sur le site du livre *Outils de recherche en sciences sociales numériques*, un ouvrage collectif de la Chaire de leadership en enseignement des sciences sociales numériques (CLESSN) de l'Université Laval. Il présente les outils numériques qui servent à chaque étape d'une recherche, de la première idée jusqu'à la publication.
 
 Vous y apprendrez à choisir vos outils et à comprendre ce que le logiciel libre change à la recherche, à programmer en $\textsf{R}$, à gérer un projet et ses données, à faire une revue de littérature rigoureuse, à collecter des données et à les visualiser, à rédiger avec `Quarto` et \LaTeX{}, puis à utiliser l'intelligence artificielle sans lui confier votre jugement. Chaque chapitre a été écrit par des personnes qui venaient elles-mêmes d'apprendre ces outils.
 
-Ce livre a deux vies. L'édition imprimée paraîtra aux Presses de l'Université Laval en 2027. La version en ligne, que vous lisez, est gratuite et le restera. Elle continue d'évoluer, entre autres grâce aux étudiants du cours *Outils numériques en sciences sociales* (POL-6078), et chaque révision porte un numéro. Le [journal des versions](https://github.com/clessn/livre-outils/releases) dit ce qui distingue chacune.
+Ce livre a deux vies. L'édition imprimée paraîtra aux Presses de l'Université Laval en 2027. La version en ligne, que vous lisez, est gratuite et le restera. Elle continue d'évoluer, entre autres grâce aux étudiants du cours *Outils numériques en sciences sociales* (POL-6078), et chaque révision porte un numéro. Vous lisez la version {{< var version >}}. Le [journal des versions](https://github.com/clessn/livre-outils/releases) dit ce qui distingue chacune.
 
 [Télécharger le PDF](https://github.com/clessn/livre-outils/releases/latest/download/livre-outils.pdf){.btn .bouton-livre} [Journal des versions](https://github.com/clessn/livre-outils/releases){.btn .bouton-livre-clair} [Contribuer](https://github.com/clessn/livre-outils#comment-contribuer-au-projet-du-livre-doutils){.btn .bouton-livre-clair}
 
