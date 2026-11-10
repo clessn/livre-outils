@@ -27,14 +27,16 @@ Bienvenue ! Ce guide vous aidera à contribuer à notre projet de livre héber
 2. [Installation de Git](#installation-de-git)
 3. [Forker le dépôt](#forker-le-dépôt)
 4. [Cloner votre fork](#cloner-votre-fork)
-5. [Apporter des modifications localement](#apporter-des-modifications-localement)
-6. [Valider vos modifications](#valider-vos-modifications)
-7. [Pousser les modifications sur GitHub](#pousser-les-modifications-sur-github)
-8. [Créer une Pull Request](#créer-une-pull-request)
-9. [Compiler le livre complet](#compiler-le-livre-complet)
-10. [À propos du fichier .gitignore](#à-propos-du-fichier-gitignore)
-11. [Gestion de la bibliographie avec Zotero](#gestion-de-la-bibliographie-avec-zotero)
-12. [Étapes suivantes](#étapes-suivantes)
+5. [Mettre votre fork à jour](#mettre-votre-fork-à-jour)
+6. [Créer une branche pour votre contribution](#créer-une-branche-pour-votre-contribution)
+7. [Apporter des modifications localement](#apporter-des-modifications-localement)
+8. [Valider vos modifications](#valider-vos-modifications)
+9. [Pousser les modifications sur GitHub](#pousser-les-modifications-sur-github)
+10. [Créer une Pull Request](#créer-une-pull-request)
+11. [Compiler le livre complet](#compiler-le-livre-complet)
+12. [À propos du fichier .gitignore](#à-propos-du-fichier-gitignore)
+13. [Gestion de la bibliographie avec Zotero](#gestion-de-la-bibliographie-avec-zotero)
+14. [Étapes suivantes](#étapes-suivantes)
 
 ---
 
@@ -68,6 +70,8 @@ Vous devriez voir la version de Git installée.
 2. Cliquez sur le bouton **Fork** dans le coin supérieur droit de la page.
 3. Cela crée une copie du dépôt sous votre compte GitHub.
 
+**Pourquoi un fork, et pas simplement un clone ?** Le dépôt est public, donc vous pouvez le cloner directement sur votre ordinateur. Vous ne pourrez toutefois pas y renvoyer vos modifications, parce que seuls les responsables du livre ont le droit d'écrire dans le dépôt de la CLESSN. Le fork est votre copie à vous sur GitHub, celle où vous avez le droit de pousser votre travail. C'est à partir de cette copie que vous proposerez vos modifications, au moyen d'une *pull request*.
+
 ## Cloner votre fork
 
 1. Naviguez vers votre dépôt forké sur GitHub (il devrait être `github.com/VOTRE-NOM-D'UTILISATEUR/livre-outils`).
@@ -87,15 +91,40 @@ Vous devriez voir la version de Git installée.
 
    Remplacez `VOTRE-NOM-D'UTILISATEUR` par votre nom d'utilisateur GitHub.
 
-## Apporter des modifications localement
-
-1. Accédez au dossier du projet :
+6. Accédez au dossier du projet :
 
    ```bash
    cd livre-outils
    ```
 
-2. Ouvrez le fichier que vous souhaitez modifier à l'aide de votre éditeur de texte. Par exemple :
+## Mettre votre fork à jour
+
+Votre fork est une photo du livre au moment où vous l'avez créé. Le livre, lui, continue de changer, parce que d'autres contributions y sont fusionnées chaque semaine. Si vous travaillez à partir d'un fork qui date, vous modifierez un texte qui n'existe peut-être plus sous cette forme, et votre contribution entrera en conflit avec la version actuelle.
+
+Avant de commencer une contribution, et chaque fois que vous en commencez une nouvelle :
+
+1. Allez sur la page de votre fork sur GitHub.
+2. Cliquez sur **Sync fork**, puis sur **Update branch**. Si GitHub indique que votre branche est déjà à jour, il n'y a rien à faire.
+3. Ramenez ensuite ces changements sur votre ordinateur :
+
+   ```bash
+   git checkout main
+   git pull
+   ```
+
+## Créer une branche pour votre contribution
+
+Ne travaillez pas directement sur la branche `main` de votre fork. Créez une branche pour chaque contribution, avec un nom qui dit ce qu'elle contient :
+
+```bash
+git checkout -b correction-chapitre-1
+```
+
+Une branche garde vos contributions séparées les unes des autres. Si vous travaillez sur `main`, tout ce que vous pousserez par la suite s'ajoutera à votre première *pull request*, même si cela n'a aucun rapport avec elle. Avec une branche par contribution, vous pouvez en proposer plusieurs en même temps, et chacune peut être révisée et acceptée séparément. Votre branche `main`, elle, reste une copie fidèle du livre, facile à remettre à jour.
+
+## Apporter des modifications localement
+
+1. Ouvrez le fichier que vous souhaitez modifier à l'aide de votre éditeur de texte. Par exemple :
 
    - **Utiliser Positron** (l'interface de référence du livre) :
 
@@ -103,7 +132,7 @@ Vous devriez voir la version de Git installée.
      positron chapitre_1.qmd
      ```
      
-3. Apportez vos modifications et enregistrez le fichier.
+2. Apportez vos modifications et enregistrez le fichier.
 
 ## Valider vos modifications
 
@@ -128,27 +157,23 @@ Vous devriez voir la version de Git installée.
 
 ## Pousser les modifications sur GitHub
 
-Envoyez vos modifications validées vers votre dépôt GitHub :
+Envoyez votre branche vers votre fork sur GitHub, en reprenant le nom que vous lui avez donné :
 
 ```bash
-git push origin main
+git push --set-upstream origin correction-chapitre-1
 ```
 
-Si vous obtenez une erreur concernant la branche inexistante, vous devrez peut-être définir la branche distante :
-
-```bash
-git push --set-upstream origin main
-```
+L'option `--set-upstream` n'est nécessaire que la première fois. Si vous ajoutez d'autres modifications à la même branche par la suite, `git push` suffit.
 
 ## Créer une Pull Request
 
-1. Allez sur votre dépôt forké sur GitHub.
+1. Allez sur votre dépôt forké sur GitHub. Juste après un `git push`, GitHub affiche un bandeau avec le bouton **Compare & pull request**. S'il est là, cliquez dessus et passez à l'étape 4.
 
-2. Cliquez sur l'onglet **Pull Requests**.
+2. Sinon, cliquez sur l'onglet **Pull Requests**, puis sur **New Pull Request**.
 
-3. Cliquez sur **New Pull Request**.
+3. Choisissez votre branche (par exemple `correction-chapitre-1`) comme branche à comparer.
 
-4. Assurez-vous que vous comparez votre branche `main` à la branche `main` du dépôt original.
+4. Assurez-vous que la *pull request* va de votre branche vers la branche `main` du dépôt original, `clessn/livre-outils`.
 
 5. Cliquez sur **Create Pull Request**.
 
@@ -267,6 +292,7 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 
 - **Attendre la revue** : La branche `main` est protégée — toute PR doit être approuvée par **au moins un mainteneur** avant d'être fusionnée. Soyez patient, la revue peut prendre quelques jours.
 - **Répondre aux commentaires** : Si des modifications sont demandées, apportez-les localement, validez, poussez, et elles seront automatiquement mises à jour dans votre pull request.
+- **Pour une nouvelle contribution** : ne réutilisez pas la même branche. [Mettez votre fork à jour](#mettre-votre-fork-à-jour), puis [créez une nouvelle branche](#créer-une-branche-pour-votre-contribution).
 - **Restez engagé** : N'hésitez pas à contribuer davantage ou à poser des questions si vous avez des doutes.
 
 ---
