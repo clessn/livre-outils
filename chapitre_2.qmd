@@ -1,4 +1,4 @@
-# Outils de programmation : pourquoi $\textsf{R}$, et par où commencer {#sec-chap2}
+# Outils de programmation : pourquoi R, et par où commencer {#sec-chap2}
 
 \begin{center}
 \textit{Marc-Antoine Rancourt (University of Toronto), \\

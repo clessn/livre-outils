@@ -1,0 +1,27 @@
+/* Version web du livre : quelques ajustements au thème. */
+
+/* Noms des auteurs sous le titre d'un chapitre */
+.auteurs-chapitre {
+  text-align: center;
+  color: #555;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Icône de la boîte à outils en tête de chapitre */
+main > .quarto-figure:first-of-type img,
+main > p:first-of-type > img {
+  max-width: 110px;
+}
+
+/* Bloc « À propos de cette version » du prélude */
+.a-propos-version {
+  border-left: 4px solid #f5d800;
+  background: #f7f7f7;
+  padding: 0.9rem 1.1rem;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+.a-propos-version p:last-child { margin-bottom: 0; }
+
+/* Le nom du langage R, en caractères sans empattement comme dans le PDF */
+.langage-r { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }

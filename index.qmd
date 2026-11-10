@@ -6,6 +6,18 @@ Adrien Cloutier (Université Laval), \\
 Yannick Dufresne (Université Laval)}
 \end{center}
 
+::: {.content-visible when-format="html"}
+::: {.a-propos-version}
+**Version {{< var version >}}** · {{< var etat >}}
+
+Ce livre a deux vies. L'édition imprimée paraîtra aux Presses de l'Université Laval en 2027 et correspondra à la version 1.0. La version en ligne que vous lisez continue d'évoluer, et son numéro change à chaque révision. Le [journal des versions](https://github.com/clessn/livre-outils/releases) dit ce qui distingue chacune.
+
+**Pour citer cette version.** Bibeau-Gagnon, A., Cloutier, A. et Dufresne, Y. (dir.). (2026). *Outils de recherche en sciences sociales numériques : de l'idéation à la publication scientifique* (version {{< var version >}}). CLESSN, Université Laval. <https://clessn.github.io/livre-outils/>
+
+Le texte est diffusé sous licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr). Pour proposer une correction ou un ajout, voyez le [guide de contribution](https://github.com/clessn/livre-outils#comment-contribuer-au-projet-du-livre-doutils).
+:::
+:::
+
 Le premier conseil que nous donnons systématiquement à toute personne qui entame une carrière en recherche : apprenez à gérer votre temps. L’entrée dans le monde de la recherche en sciences sociales s’accompagne d’un paradoxe familier : il est tout à fait possible de dédier un nombre d’heures considérable à la recherche, tout en faisant un usage inefficace de ce temps. Il est trop commun de voir des gens s’exténuer à multiplier les tâches, convaincus que le fait d’être occupé équivaut au fait de progresser. L’insécurité est omniprésente dans le monde académique. Devant l’immensité de la connaissance et des compétences possibles, on oscille entre le syndrome de l’imposteur et un narcissisme défensif. Ce vertige des possibilités nous pousse, parfois étrangement, à nous accrocher à ce que nous connaissons déjà et à rationaliser nos angles morts. Ce réflexe est compréhensible (et très humain), mais il est coûteux. Et dans un contexte où les outils de recherche se multiplient et se transforment à une vitesse sans précédent, il est devenu franchement risqué.
 
 Les outils de recherche ont un potentiel transformatif immense pour le travail scientifique. Mais ils représentent également de redoutables gouffres de temps. Ça demande du courage de remettre en question ses manières de faire de la recherche. L'apprentissage de nouveaux outils nous force à réviser des habitudes parfois ancrées depuis longtemps. Beaucoup de chercheurs continuent de travailler avec l’équivalent académique d’un vieux marteau simplement parce que ça fonctionne « assez bien ». Un marteau est très utile et son utilisation est largement répandue dans la population, mais est-ce qu’un apprenti charpentier ne devrait pas apprendre à maîtriser des outils plus spécialisés comme une cloueuse pneumatique s’il veut en faire un métier ? Il semble, en effet, judicieux de sélectionner les outils optimaux qui nous permettront d’exceller dans les tâches spécifiques liées à notre travail. Et cela n'est pas différent pour la recherche.

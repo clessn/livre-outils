@@ -1,0 +1,5 @@
+# Version du livre. C'est le seul endroit où elle s'écrit :
+# la page de titre du PDF, le pied de page du site et le bloc
+# « À propos de cette version » la lisent d'ici.
+version: "0.9"
+etat: "Manuscrit soumis aux Presses de l'Université Laval · novembre 2026"
