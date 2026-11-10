@@ -1,6 +1,8 @@
 # Outils de recherche en sciences sociales numériques
 ## De l'idéation à la publication scientifique
 
+**Lire le livre en ligne : <https://clessn.github.io/livre-outils/>** · [Télécharger le PDF](https://github.com/clessn/livre-outils/releases/latest/download/livre-outils.pdf) · [Journal des versions](https://github.com/clessn/livre-outils/releases)
+
 Manuscrit d'un livre académique dirigé par **Alexis Bibeau-Gagnon**,
 **Adrien Cloutier** et **Yannick Dufresne** (Université Laval / CLESSN).
 
@@ -300,6 +302,23 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 ## Licence
 
 Le texte et les figures du livre sont diffusés sous la licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : vous pouvez les lire et les partager tels quels, en citant la source, sans usage commercial et sans modification. Les extraits de code sont sous licence MIT et peuvent être réutilisés et adaptés librement. Le détail est dans [LICENSE.md](LICENSE.md).
+
+## Versions et mise en ligne
+
+Le livre porte un numéro de version, affiché sur la page de titre du PDF et sur le site.
+
+- `0.9` : manuscrit soumis aux Presses de l'Université Laval.
+- `1.0` : texte de l'édition imprimée, et son équivalent en ligne.
+- `1.1`, `1.2`, etc. : révisions de la version en ligne.
+- `2.0` : prochaine édition imprimée.
+
+Le site n'est pas republié à chaque modification fusionnée. Il l'est à chaque nouvelle version, pour que le numéro affiché corresponde toujours au texte qu'on lit. Une contribution acceptée paraît donc en ligne avec la révision suivante.
+
+Pour publier une version, les responsables du livre :
+
+1. changent le numéro et la mention dans `_variables.yml`, le seul endroit où ils s'écrivent ;
+2. compilent le PDF (`quarto render index.qmd --to pdf`) et créent une *release* GitHub portant ce numéro, avec `_book/livre-outils.pdf` en pièce jointe ;
+3. compilent la version web (`quarto render --to html`) et la poussent sur la branche `gh-pages`, que GitHub sert à l'adresse du site.
 
 ---
 
