@@ -16,27 +16,16 @@ main > p:first-of-type > img {
   max-width: 110px;
 }
 
-/* ── Page d'accueil ─────────────────────────────────────────────────── */
+/* ── Page de bienvenue ──────────────────────────────────────────────── */
 
-.accueil {
-  display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 2rem;
-  align-items: center;
-  margin: 1.5rem 0 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.accueil-couverture img {
-  width: 100%;
+/* La couverture, à droite du texte qui l'entoure */
+img.couverture-accueil {
+  float: right;
+  width: 250px;
+  margin: 0.3rem 0 1.2rem 2rem;
   border-radius: 3px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
-.accueil-couverture p { margin: 0; }
-
-.accueil-texte { min-width: 0; }
-.accueil-texte p { margin-bottom: 1rem; }
 
 .pastille-version {
   display: inline-block;
@@ -64,14 +53,12 @@ main > p:first-of-type > img {
 .bouton-livre-clair:hover { border-color: #464646; color: #111; }
 
 .comment-citer {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  clear: both;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
   color: #444;
 }
-.comment-citer summary {
-  cursor: pointer;
-  color: #2a6ebb;
-}
+.comment-citer summary { cursor: pointer; color: #2a6ebb; }
 .comment-citer[open] {
   background: #f7f7f7;
   border-left: 4px solid #f5d800;
@@ -81,8 +68,10 @@ main > p:first-of-type > img {
 
 /* Sur un écran étroit, la couverture passe au-dessus du texte */
 @media (max-width: 700px) {
-  .accueil { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
-  .accueil-couverture { max-width: 200px; margin: 0 auto; }
-  .accueil-texte { text-align: center; }
-  .comment-citer { text-align: left; }
+  img.couverture-accueil {
+    float: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto 1.5rem;
+  }
 }

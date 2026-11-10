@@ -20,6 +20,7 @@ book:
   date: today
   chapters:
     - index.qmd
+    - prelude.qmd
     - part: "Fondations"
       chapters:
         - chapitre_1.qmd
@@ -43,6 +44,7 @@ filters:
   - filtres/espaces-francaises.lua
   - filtres/lignes-tableaux.lua
   - filtres/version-web.lua
+  - filtres/web-seulement.lua
 
 bibliography: livre-outils.bib
 csl: https://www.zotero.org/styles/apa
