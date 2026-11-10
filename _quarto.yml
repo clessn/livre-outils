@@ -7,7 +7,9 @@ book:
   site-url: https://clessn.github.io/livre-outils/
   repo-url: https://github.com/clessn/livre-outils
   repo-actions: [edit, issue]
-  cover-image: images/couverture.png
+  image: images/couverture.png
+  open-graph: true
+  output-file: livre-outils
   page-footer:
     left: "Version {{< var version >}} · {{< var etat >}}"
     right: "[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) · [Sources](https://github.com/clessn/livre-outils)"

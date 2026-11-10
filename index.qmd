@@ -7,14 +7,27 @@ Yannick Dufresne (Université Laval)}
 \end{center}
 
 ::: {.content-visible when-format="html"}
-::: {.a-propos-version}
-**Version {{< var version >}}** · {{< var etat >}}
+::: {.accueil}
+::: {.accueil-couverture}
+![](images/couverture.png){fig-alt="Couverture du livre : une boîte à outils jaune sur fond gris"}
+:::
 
-Ce livre a deux vies. L'édition imprimée paraîtra aux Presses de l'Université Laval en 2027 et correspondra à la version 1.0. La version en ligne que vous lisez continue d'évoluer, et son numéro change à chaque révision. Le [journal des versions](https://github.com/clessn/livre-outils/releases) dit ce qui distingue chacune.
+::: {.accueil-texte}
+[Version {{< var version >}}]{.pastille-version} [{{< var etat >}}]{.etat-version}
 
-**Pour citer cette version.** Bibeau-Gagnon, A., Cloutier, A. et Dufresne, Y. (dir.). (2026). *Outils de recherche en sciences sociales numériques : de l'idéation à la publication scientifique* (version {{< var version >}}). CLESSN, Université Laval. <https://clessn.github.io/livre-outils/>
+Ce livre a deux vies. L'édition imprimée paraîtra aux Presses de l'Université Laval en 2027. La version en ligne, que vous lisez, continue d'évoluer avec les personnes qui l'enseignent et qui l'apprennent.
 
-Le texte est diffusé sous licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr). Pour proposer une correction ou un ajout, voyez le [guide de contribution](https://github.com/clessn/livre-outils#comment-contribuer-au-projet-du-livre-doutils).
+[Télécharger le PDF](https://github.com/clessn/livre-outils/releases/latest/download/livre-outils.pdf){.btn .bouton-livre} [Journal des versions](https://github.com/clessn/livre-outils/releases){.btn .bouton-livre-clair} [Contribuer](https://github.com/clessn/livre-outils#comment-contribuer-au-projet-du-livre-doutils){.btn .bouton-livre-clair}
+
+<details class="comment-citer">
+<summary>Comment citer ce livre</summary>
+
+Bibeau-Gagnon, A., Cloutier, A. et Dufresne, Y. (dir.). (2026). *Outils de recherche en sciences sociales numériques : de l'idéation à la publication scientifique* (version {{< var version >}}). CLESSN, Université Laval. <https://clessn.github.io/livre-outils/>
+
+La version 1.0 correspondra à l'édition imprimée. Chaque révision en ligne porte ensuite un nouveau numéro (1.1, 1.2, etc.), à indiquer dans la référence. Le texte est diffusé sous licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr).
+
+</details>
+:::
 :::
 :::
 

@@ -1,5 +1,8 @@
 /* Version web du livre : quelques ajustements au thème. */
 
+/* Le nom du langage R, en caractères sans empattement comme dans le PDF */
+.langage-r { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /* Noms des auteurs sous le titre d'un chapitre */
 .auteurs-chapitre {
   text-align: center;
@@ -13,15 +16,73 @@ main > p:first-of-type > img {
   max-width: 110px;
 }
 
-/* Bloc « À propos de cette version » du prélude */
-.a-propos-version {
-  border-left: 4px solid #f5d800;
-  background: #f7f7f7;
-  padding: 0.9rem 1.1rem;
-  margin: 1.5rem 0 2rem;
-  font-size: 0.95rem;
-}
-.a-propos-version p:last-child { margin-bottom: 0; }
+/* ── Page d'accueil ─────────────────────────────────────────────────── */
 
-/* Le nom du langage R, en caractères sans empattement comme dans le PDF */
-.langage-r { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.accueil {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accueil-couverture img {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+.accueil-couverture p { margin: 0; }
+
+.accueil-texte { min-width: 0; }
+.accueil-texte p { margin-bottom: 1rem; }
+
+.pastille-version {
+  display: inline-block;
+  background: #f5d800;
+  color: #222;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin-right: 0.5rem;
+}
+.etat-version { display: block; color: #666; font-size: 0.9rem; margin-top: 0.5rem; }
+
+.bouton-livre,
+.bouton-livre-clair {
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  margin: 0 0.4rem 0.5rem 0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.bouton-livre { background: #464646; color: #fff; border: 1px solid #464646; }
+.bouton-livre:hover { background: #222; color: #f5d800; }
+.bouton-livre-clair { background: #fff; color: #464646; border: 1px solid #bbb; }
+.bouton-livre-clair:hover { border-color: #464646; color: #111; }
+
+.comment-citer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+.comment-citer summary {
+  cursor: pointer;
+  color: #2a6ebb;
+}
+.comment-citer[open] {
+  background: #f7f7f7;
+  border-left: 4px solid #f5d800;
+  padding: 0.7rem 1rem;
+}
+.comment-citer p:last-child { margin-bottom: 0; }
+
+/* Sur un écran étroit, la couverture passe au-dessus du texte */
+@media (max-width: 700px) {
+  .accueil { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
+  .accueil-couverture { max-width: 200px; margin: 0 auto; }
+  .accueil-texte { text-align: center; }
+  .comment-citer { text-align: left; }
+}

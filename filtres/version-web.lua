@@ -44,6 +44,8 @@ end
 local function auteurs(t)
   local dedans = t:match("\\begin{center}%s*\\textit{(.-)}%s*\\end{center}")
   if not dedans then return nil end
+  -- Sur la page d'accueil, les trois noms figurent déjà dans le bloc de titre.
+  if (quarto.doc.input_file or ""):match("index%.qmd$") then return {} end
   local lignes = {}
   for morceau in (dedans .. "\\\\"):gmatch("(.-)\\\\") do
     local nom = morceau:gsub("^%s+", ""):gsub("[%s,]+$", "")
