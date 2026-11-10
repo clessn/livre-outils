@@ -6,7 +6,7 @@
 
 ![](images/annexe_toolbox_box_black.png){fig-align="center" width="12%"}
 
-Cet annexe s'adresse à un public de nouveaux initiés en informatique.
+Cette annexe s'adresse à un public de nouveaux initiés en informatique.
 Son objectif est de convaincre les chercheurs de l'importance de se munir d'un ordinateur adapté à leurs besoins.
 En effet, un élément lie l'ensemble des outils présentés dans ce livre : l'ordinateur.
 C'est la plateforme qui réunit les outils numériques nécessaires à la recherche.
@@ -100,7 +100,7 @@ Il est donc primordial de choisir un ordinateur avec un espace de stockage adéq
 Pour la plupart des étudiants en sciences sociales, le plus important n'est pas d'avoir une carte graphique puissante, mais un ordinateur fiable, avec assez de mémoire vive, un disque SSD et une bonne autonomie.
 Pour lire, écrire, coder en $\textsf{R}$, naviguer avec plusieurs onglets ouverts, participer à des visioconférences et utiliser des outils d'IA en ligne, 16 Go de mémoire vive et un SSD d'au moins 256 Go constituent un excellent point de départ.
 
-Une carte graphique dédiée, aussi appelée GPU, devient surtout utile pour des usages plus spécialisés, comme l'entraînement local de certains modèles d'apprentissage automatique, le montage vidéo, la 3D ou certains jeux.
+Une carte graphique dédiée, aussi appelée GPU, devient surtout utile pour des usages plus spécialisés, comme l'entraînement local de certains modèles d'apprentissage machine, le montage vidéo, la 3D ou certains jeux.
 Pour la majorité des usages universitaires, le GPU intégré à l'ordinateur est suffisant.
 Autrement dit, la plupart des étudiants n'ont pas besoin d'un ordinateur spécialisé pour l'IA : pour utiliser des agents conversationnels ou d'autres outils d'IA en ligne, une bonne connexion internet et un ordinateur équilibré sont généralement bien plus importants qu'une carte graphique haut de gamme.
 
