@@ -33,8 +33,8 @@ img.couverture-accueil {
   color: #222;
   font-weight: 600;
   font-size: 0.85rem;
-  padding: 0.15rem 0.6rem;
-  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
   margin-right: 0.5rem;
 }
 .etat-version { display: block; color: #666; font-size: 0.9rem; margin-top: 0.5rem; }
@@ -74,4 +74,11 @@ img.couverture-accueil {
     width: 200px;
     margin: 0 auto 1.5rem;
   }
+}
+
+/* ── Mise en page générale ──────────────────────────────────────────── */
+
+/* Plus d'air entre le menu de gauche et le texte, sur les grands écrans */
+@media (min-width: 992px) {
+  main.content { padding-left: 2.5rem; }
 }
