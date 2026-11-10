@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - 4&nbsp; Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_5.html" rel="next">
+<link href="./chapitre_3.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - 4&nbsp; Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/chapitre_4_toolbox_padlock_black.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_1.html">Fondations</a></li><li class="breadcrumb-item"><a href="./chapitre_4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données : de l'entreposage personnel à la science ouverte</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#point-dobservation-brève-histoire-de-la-gestion-des-données" id="toc-point-dobservation-brève-histoire-de-la-gestion-des-données" class="nav-link active" data-scroll-target="#point-dobservation-brève-histoire-de-la-gestion-des-données"><span class="header-section-number">4.1</span> Point d’observation&nbsp;: brève histoire de la gestion des données</a></li>
+  <li><a href="#arpentage-et-choix-éditorial-où-entreposer-ses-données-à-chaque-phase-du-cycle" id="toc-arpentage-et-choix-éditorial-où-entreposer-ses-données-à-chaque-phase-du-cycle" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial-où-entreposer-ses-données-à-chaque-phase-du-cycle"><span class="header-section-number">4.2</span> Arpentage et choix éditorial&nbsp;: où entreposer ses données à chaque phase du cycle</a>
+  <ul class="collapse">
+  <li><a href="#planification" id="toc-planification" class="nav-link" data-scroll-target="#planification"><span class="header-section-number">4.2.1</span> Planification</a></li>
+  <li><a href="#collecte-et-analyse" id="toc-collecte-et-analyse" class="nav-link" data-scroll-target="#collecte-et-analyse"><span class="header-section-number">4.2.2</span> Collecte et analyse</a></li>
+  <li><a href="#archivage-et-partage" id="toc-archivage-et-partage" class="nav-link" data-scroll-target="#archivage-et-partage"><span class="header-section-number">4.2.3</span> Archivage et partage</a></li>
+  <li><a href="#git-et-github-tout-au-long-dun-projet-de-recherche" id="toc-git-et-github-tout-au-long-dun-projet-de-recherche" class="nav-link" data-scroll-target="#git-et-github-tout-au-long-dun-projet-de-recherche"><span class="header-section-number">4.2.4</span> <code>Git</code> et <em>GitHub</em> tout au long d’un projet de recherche</a></li>
+  </ul></li>
+  <li><a href="#manuel-dinstruction-utiliser-git-et-github-pour-un-projet-de-recherche" id="toc-manuel-dinstruction-utiliser-git-et-github-pour-un-projet-de-recherche" class="nav-link" data-scroll-target="#manuel-dinstruction-utiliser-git-et-github-pour-un-projet-de-recherche"><span class="header-section-number">4.3</span> Manuel d’instruction&nbsp;: utiliser <code>Git</code> et <em>GitHub</em> pour un projet de recherche</a>
+  <ul class="collapse">
+  <li><a href="#alternative-github-desktop-et-intégrations" id="toc-alternative-github-desktop-et-intégrations" class="nav-link" data-scroll-target="#alternative-github-desktop-et-intégrations"><span class="header-section-number">4.3.1</span> Alternative&nbsp;: <em>GitHub Desktop</em> et intégrations</a></li>
+  </ul></li>
+  <li><a href="#en-terminant" id="toc-en-terminant" class="nav-link" data-scroll-target="#en-terminant"><span class="header-section-number">4.4</span> En terminant</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_4.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap4" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Adrien Cloutier (Université Laval)<br>
+Jérémy Gilbert (Western University)</em></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre_4_toolbox_padlock_black.png" class="img-fluid figure-img" style="width:12.0%"></p>
+</figure>
+</div>
+<p>En début de parcours aux cycles supérieurs, le chercheur se trouve généralement dans une position où il doit amorcer la rédaction d’un mémoire ou d’une thèse. Il a peut-être commencé à prendre des notes sur la littérature, à créer des fichiers de codes, à collecter des données, à collaborer avec des coauteurs. Rapidement, une question simple, mais cruciale se pose&nbsp;: dans une optique de respect des valeurs scientifiques, où entreposer tout ce contenu ?</p>
+<section id="point-dobservation-brève-histoire-de-la-gestion-des-données" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="point-dobservation-brève-histoire-de-la-gestion-des-données"><span class="header-section-number">4.1</span> Point d’observation&nbsp;: brève histoire de la gestion des données</h2>
+<p>La transparence et la réplicabilité sont des valeurs fondamentales de la recherche scientifique. Comme le soulignent <span class="citation" data-cites="king_etal21">King et al. (<a href="references.html#ref-king_etal21" role="doc-biblioref">2021</a>)</span> dans leur ouvrage de référence <em>Designing Social Inquiry</em>, les «&nbsp;procédures doivent être publiques&nbsp;» pour permettre la validation et la critique des résultats. Sans accès aux données, aux méthodes et aux processus ayant mené à une conclusion, la communauté scientifique ne peut ni reproduire ni vérifier les travaux de ses pairs.</p>
+<p>Pourtant, ces idéaux ont longtemps été difficiles, voire impossibles à atteindre. C’est ce constat qui a donné naissance au mouvement de la science ouverte. Comme l’explique le gouvernement du Canada&nbsp;:</p>
+<blockquote class="blockquote">
+<p>«&nbsp;La science ouverte n’est pas la façon dont la science a été historiquement conduite. La tradition, la culture et les mesures incitatives ont créé un environnement dans lequel les apports, les résultats et les processus scientifiques sont soit fermés, soit accessibles moyennant des frais, soit uniquement accessibles aux chercheurs et à leurs collaborateurs eux-mêmes. La science ouverte est un mouvement visant à rendre les processus et pratiques scientifiques, y compris la méthodologie et les résultats de la recherche, plus ouverts et transparents.&nbsp;» <span class="citation" data-cites="gouvernementducanada22">(<a href="references.html#ref-gouvernementducanada22" role="doc-biblioref">Gouvernement du Canada, 2022</a>)</span></p>
+</blockquote>
+<p>Jusque dans les années 2000, chaque chercheur développait ses propres méthodes d’organisation, souvent artisanales&nbsp;: dossiers sur le bureau, copies de sauvegarde sur disque dur externe, fichiers envoyés par courriel aux collaborateurs. La démocratisation d’Internet dans les années 1990, puis l’arrivée de l’infonuagique et des outils collaboratifs dans les années 2010, ont progressivement rendu possible ce que les contraintes technologiques empêchaient auparavant&nbsp;: une gestion des données transparente, accessible et sécuritaire.</p>
+<p>Ce mouvement s’est concrétisé par des politiques à tous les niveaux. À l’échelle internationale, les 193 États membres de l’UNESCO ont adopté en 2021 la <em>Recommandation sur une science ouverte</em> <span class="citation" data-cites="unesco21">(<a href="references.html#ref-unesco21" role="doc-biblioref">UNESCO, 2021</a>)</span>, un cadre mondial soulignant l’importance de rendre la science plus accessible et transparente pour tous. Au Canada, la conseillère scientifique en chef, Mona Nemer, a publié la <em>Feuille de route pour la science ouverte</em> en 2020 <span class="citation" data-cites="gouvernementducanada20">(<a href="references.html#ref-gouvernementducanada20" role="doc-biblioref">Gouvernement du Canada, 2020</a>)</span>, suivie en 2021 par la <em>Politique des trois organismes sur la gestion des données de recherche</em> (CRSNG, IRSC et CRSH) <span class="citation" data-cites="gouvernementducanada21">(<a href="references.html#ref-gouvernementducanada21" role="doc-biblioref">Gouvernement du Canada, 2021</a>)</span>. Au Québec, les Fonds de recherche du Québec (FRQ) se sont également dotés d’une ambitieuse <em>Politique de diffusion en libre accès</em> en 2019, mise à jour en 2022 <span class="citation" data-cites="fondsderechercheduquebec22">(<a href="references.html#ref-fondsderechercheduquebec22" role="doc-biblioref">Fonds de recherche du Québec, 2022</a>)</span>.</p>
+<p>Toutes ces politiques lient de plus en plus directement le financement de la recherche à des responsabilités claires en matière de gestion des données. Règle générale, tout chercheur financé par ces organismes subventionnaires est maintenant tenu de rédiger un plan de gestion des données, de déposer ses données finales dans un dépôt sécurisé à la fin du projet pour en assurer la pérennité et l’accessibilité, et de rendre disponible en libre accès ses publications, codes et résultats.</p>
+<p>Même en l’absence de financement ou d’une obligation formelle, ces principes constituent des bonnes pratiques pour tout projet de recherche. Une saine gestion des données, planifiée avant même le début du projet et maintenue tout au long du cycle de la recherche jusqu’à l’archivage final, est ce qui garantit la transparence, la reproductibilité et l’intégrité de la démarche scientifique. La gestion des données n’est plus une pratique marginale, optionnelle, complexe ou impossible, mais un élément central de la conduite <em>responsable</em> de la recherche. La question «&nbsp;où entreposer ses données ?&nbsp;» n’est plus seulement une question pratique de sauvegarde personnelle. Elle touche désormais à trois dimensions fondamentales&nbsp;:</p>
+<p><strong>Transparence</strong>&nbsp;: La reproductibilité des résultats de recherche exige de pouvoir accéder à chaque étape détaillée de l’évolution d’un projet.</p>
+<p><strong>Accessibilité</strong>&nbsp;: Les projets de recherche impliquent régulièrement un partage de dossier entre de multiples chercheurs, puis avec la communauté scientifique et avec le public.</p>
+<p><strong>Sécurité</strong>&nbsp;: Les chercheurs manipulent une quantité croissante de données, dont certaines sont sensibles ou confidentielles.</p>
+<p>La façon d’entreposer, de gérer et de partager ses données a donc un impact direct sur la qualité de la recherche, sur la capacité à collaborer efficacement, et sur la conformité aux exigences de l’institution et des organismes subventionnaires.</p>
+<p>Pour prendre de bonnes décisions en matière de gestion des données, il est utile de situer ses besoins dans le cycle de vie de la recherche. Plutôt que de multiplier les outils au fil du projet, le chercheur gagne à réfléchir dès le départ à une stratégie cohérente qui répond aux exigences de la science ouverte. Pour chaque phase du cycle, la question de l’entreposage se pose différemment. Dans les sections qui suivent, nous explorons ces phases à travers des questions pratiques d’entreposage. Nous consacrons ensuite une attention particulière à <code>Git</code> et <em>GitHub</em>, des outils transversaux qui permettent de gérer l’ensemble du cycle avec une seule solution&nbsp;: code, données, documentation et collaboration.</p>
+</section>
+<section id="arpentage-et-choix-éditorial-où-entreposer-ses-données-à-chaque-phase-du-cycle" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial-où-entreposer-ses-données-à-chaque-phase-du-cycle"><span class="header-section-number">4.2</span> Arpentage et choix éditorial&nbsp;: où entreposer ses données à chaque phase du cycle</h2>
+<section id="planification" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="planification"><span class="header-section-number">4.2.1</span> Planification</h3>
+<p>Dès l’étape de planification, le chercheur est parfois contraint à rédiger un plan de gestion des données, voire à enregistrer ses hypothèses. <em>Comment organiser ses fichiers dès le départ pour conserver des traces de chaque décision et de chaque étape du processus de recherche ?</em></p>
+<p>Cette réflexion en amont évite de se retrouver avec des données éparpillées sur plusieurs plateformes, des versions contradictoires de fichiers, ou une documentation insuffisante pour permettre la réplication.</p>
+<p>Les outils de rédaction (où écrire son mémoire, quelle plateforme utiliser pour collaborer avec son directeur) sont détaillés au <a href="chapitre_8.html"><span>Chapitre&nbsp;8</span></a>. Ici, l’enjeu est différent&nbsp;: il s’agit de planifier simultanément la gestion du texte, des données, des analyses et de leurs multiples versions dès le départ.</p>
+<p>Des outils comme l’<a href="https://osf.io"><em>Open Science Framework</em></a> (<em>OSF</em>) offrent une plateforme complète pour la recherche ouverte, permettant de gérer l’ensemble d’un projet de recherche, incluant la préinscription.</p>
+<p>La préinscription consiste à planifier sa recherche avant de commencer et à soumettre ce plan à un registre public. Les hypothèses de départ, dérivées de la littérature, sont enregistrées sur la plateforme, et toute modification au devis initial peut être retracée. Cette pratique améliore la qualité et la transparence des recherches, renforce la crédibilité des résultats, et facilite la reproductibilité. Elle permet également de revendiquer ses idées plus tôt et de distinguer clairement la recherche exploratoire (générer des hypothèses) de la recherche confirmatoire (tester des hypothèses). Cette pratique est de plus en plus répandue en recherche quantitative et expérimentale, où les hypothèses et les analyses statistiques peuvent être spécifiées à l’avance. En recherche qualitative ou exploratoire, la préinscription est moins courante, car la démarche repose souvent sur une approche itérative où les questions de recherche évoluent au contact des données.</p>
+<p>Outre <em>OSF</em>, d’autres registres accueillent la préinscription, comme <a href="https://aspredicted.org"><em>AsPredicted</em></a>, dont le formulaire court convient bien aux devis expérimentaux simples.</p>
+<p>Au-delà de la préinscription des hypothèses, plusieurs organismes subventionnaires exigent maintenant la rédaction d’un plan de gestion des données (PGD) dès la demande de financement. Ce document décrit comment les données seront collectées, organisées, documentées, entreposées et éventuellement partagées tout au long du projet. Au Canada, l’<a href="https://dmp-pgd.ca">Assistant PGD</a> est l’outil officiel développé par l’Alliance de recherche numérique pour guider les chercheurs dans cette démarche. Il propose des modèles adaptés aux exigences des trois organismes fédéraux (CRSH, CRSNG, IRSC) et de plusieurs autres institutions.</p>
+</section>
+<section id="collecte-et-analyse" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="collecte-et-analyse"><span class="header-section-number">4.2.2</span> Collecte et analyse</h3>
+<p>Avant de choisir où entreposer ses données, un principe s’impose&nbsp;: <em>ne jamais conserver de fichiers uniquement sur son ordinateur local</em>. Un disque dur peut tomber en panne, un ordinateur peut être volé ou perdu. Tout fichier qui n’existe qu’en local est un fichier à risque. Dès le début d’un projet, chaque document, chaque script, chaque donnée devrait être synchronisé sur un service infonuagique ou versionné sur <em>GitHub</em> (idéalement les deux, selon la nature des fichiers).</p>
+<p>Le chercheur collecte, manipule et analyse des données. Ces données peuvent prendre plusieurs formes&nbsp;: transcriptions d’entrevues, enregistrements audio, données de sondages, bases de données statistiques, scripts de code, de textes, d’images, de tableaux, etc. Les données de recherche peuvent poser des défis spécifiques en matière de sécurité, d’éthique et de collaboration.</p>
+<p>La question centrale ici n’est pas seulement «&nbsp;où entreposer ?&nbsp;», mais surtout <em>«&nbsp;où peut-on entreposer les données selon leur nature ?&nbsp;»</em> Car toutes les solutions ne se valent pas, et certaines sont inappropriées selon le type de données manipulées.</p>
+<p>Avant de choisir une solution d’entreposage, il faut d’abord déterminer si les données sont <em>sensibles</em> ou non. Cette distinction n’est pas qu’une question théorique&nbsp;: elle a des implications éthiques et pratiques importantes.</p>
+<p>Une donnée est considérée comme sensible si elle permet d’identifier directement ou indirectement des individus, ou si elle contient des informations confidentielles ou privées. Voici des exemples courants en sciences sociales&nbsp;:</p>
+<ul>
+<li><strong>Entrevues ou groupes de discussion</strong> contenant des informations personnelles (noms, lieux, événements personnels)</li>
+<li><strong>Sondages ou questionnaires</strong> incluant des données démographiques détaillées qui pourraient identifier des participants</li>
+<li><strong>Données administratives</strong> obtenues auprès d’organisations (dossiers médicaux, dossiers scolaires, données d’entreprise)</li>
+<li><strong>Enregistrements audio ou vidéo</strong> de participants identifiables</li>
+<li><strong>Données géolocalisées</strong> précises (traces GPS, adresses)</li>
+</ul>
+<p>Dans les universités canadiennes, la gestion de données sensibles est encadrée par un comité d’éthique de la recherche. Lorsqu’un chercheur soumet son protocole de recherche pour approbation éthique, il doit spécifier comment il va collecter, entreposer, protéger et éventuellement détruire ses données sensibles. Le non-respect de ces engagements peut avoir des conséquences sérieuses, allant du retrait de l’approbation éthique à des sanctions institutionnelles.</p>
+<p>Les principes à respecter pour les données sensibles incluent la minimisation (ne collecter que les données nécessaires), l’anonymisation (retirer ou masquer les identifiants dès que possible), le chiffrement (protéger les fichiers par mot de passe ou chiffrement), l’accès limité (seules les personnes autorisées dans le certificat éthique peuvent accéder aux données) et l’entreposage sécurisé (utiliser des serveurs approuvés, idéalement situés au Canada).</p>
+<p>À l’inverse, certaines données ne posent pas de problème de confidentialité. C’est le cas des statistiques publiques, des corpus textuels ouverts comme les articles de presse ou les transcriptions de débats parlementaires, ou encore des données administratives agrégées sans possibilité d’identification. Pour ces données, les contraintes sont beaucoup plus souples. On peut les entreposer sur des plateformes grand public, les partager plus librement, et éventuellement les rendre publiques sans approbation éthique spécifique.</p>
+<section id="solutions-dentreposage-pour-données-sensibles" class="level4" data-number="4.2.2.1">
+<h4 data-number="4.2.2.1" class="anchored" data-anchor-id="solutions-dentreposage-pour-données-sensibles"><span class="header-section-number">4.2.2.1</span> Solutions d’entreposage pour données sensibles</h4>
+<p>Pour les données sensibles, il est essentiel de privilégier des solutions institutionnelles qui respectent les exigences éthiques et légales. La plupart des universités canadiennes offrent des services d’entreposage sécurisé à leur communauté de recherche.</p>
+<p><strong><em>OneDrive</em></strong> <strong>institutionnel (avec serveurs canadiens)</strong>&nbsp;: Plusieurs universités canadiennes ont négocié des ententes avec <em>Microsoft</em> pour que les données de leur <em>OneDrive</em> institutionnel soient hébergées sur des serveurs situés au Canada. Cette configuration respecte généralement les exigences des comités d’éthique. Il est important de vérifier auprès de son institution si cette option est disponible et si elle est approuvée pour les données sensibles.</p>
+<p><strong><em>Nextcloud</em></strong> <strong>institutionnel</strong>&nbsp;: Certaines universités offrent <em>Nextcloud</em>, une plateforme de stockage libre qui peut être hébergée sur les serveurs de l’institution. C’est souvent la solution privilégiée pour les données hautement confidentielles, car les fichiers ne quittent jamais l’infrastructure universitaire. <em>Nextcloud</em> offre des fonctionnalités similaires à <em>Dropbox</em> (synchronisation, partage de fichiers), mais avec un contrôle total sur l’emplacement des données.</p>
+<p><strong>Serveurs de recherche dédiés</strong>&nbsp;: Certaines facultés ou groupes de recherche disposent de leurs propres serveurs sécurisés. Ces infrastructures sont particulièrement adaptées aux projets impliquant des données très sensibles ou des volumes importants.</p>
+<p>Avant de choisir une solution pour des données sensibles, il convient de consulter le bureau de soutien à la recherche de son institution pour connaître les options approuvées et les procédures à suivre.</p>
+</section>
+<section id="solutions-dentreposage-pour-données-non-sensibles" class="level4" data-number="4.2.2.2">
+<h4 data-number="4.2.2.2" class="anchored" data-anchor-id="solutions-dentreposage-pour-données-non-sensibles"><span class="header-section-number">4.2.2.2</span> Solutions d’entreposage pour données non sensibles</h4>
+<p>Si les données ne sont pas sensibles, le chercheur dispose de beaucoup plus de flexibilité dans le choix de ses outils. <em>Dropbox</em> est très utilisé dans plusieurs milieux, même à titre d’utilisation personnelle. Dans le milieu académique, le partage de fichiers peu volumineux par <em>Dropbox</em> est très fréquent. Son utilisation est relativement accessible&nbsp;: 2 Go sont offerts gratuitement, puis un abonnement est nécessaire pour entreposer davantage. <em>Dropbox</em> se démarque par sa popularité et par son interface intuitive, s’intégrant facilement dans le gestionnaire de fichiers. Sa synchronisation est rapide et familière pour la plupart des utilisateurs, bien que sa capacité gratuite soit limitée et que ses serveurs américains le rendent problématique pour des données sensibles. <em>Dropbox</em> est ainsi très utile dans le cadre de gestion de données collaborative relativement simple.</p>
+<p><em>Google Drive</em> est facile d’utilisation par son intégration au sein des outils <em>Google</em>. La plateforme, en général, est fréquemment utilisée dans le cadre de rédaction, pour son suivi des modifications et la possibilité de travailler à plusieurs sur un document en même temps. <em>Google Drive</em> offre 15 Go gratuits, et son utilisation est simple et intuitive. Pour des projets impliquant du code et des données non sensibles de taille modérée, <em>GitHub</em> et <em>GitLab</em> sont d’excellentes options. Nous y reviendrons en détail plus loin, mais sachez qu’ils permettent non seulement d’entreposer les fichiers, mais aussi de suivre rigoureusement leur évolution et de collaborer efficacement grâce au versionnement et aux demandes de fusion (<em>pull requests</em>). Ils sont gratuits, tant pour les projets publics que pour les dépôts privés (avec certaines limitations), et sont très utilisés en recherche. Ils nécessitent toutefois une courbe d’apprentissage et ne sont pas adaptés pour des fichiers très volumineux.</p>
+</section>
+<section id="organiser-son-cloud-comme-on-organise-son-bureau" class="level4" data-number="4.2.2.3">
+<h4 data-number="4.2.2.3" class="anchored" data-anchor-id="organiser-son-cloud-comme-on-organise-son-bureau"><span class="header-section-number">4.2.2.3</span> Organiser son cloud comme on organise son bureau</h4>
+<p>Un cloud mal structuré n’est guère mieux qu’un bureau encombré. Pour que les chemins de fichiers restent stables et que la collaboration soit fluide, il vaut la peine de réfléchir dès le départ à une arborescence logique et cohérente. Une structure simple pourrait ressembler à ceci&nbsp;:</p>
+<pre><code>Cloud (Dropbox / OneDrive)
+├── Travail/
+│   ├── Projet_these/
+│   ├── Publications/
+│   └── Enseignement/
+├── Etudes/
+│   ├── Cours_automne_2024/
+│   └── Notes/
+└── Personnel/</code></pre>
+<p>Cette organisation présente deux avantages majeurs. D’abord, les chemins de fichiers dans les scripts d’analyse restent prévisibles et stables d’un collaborateur à l’autre. Ensuite, elle facilite la distinction entre ce qui appartient au cloud (données, documents) et ce qui appartient à un dépôt <code>Git</code> (code, scripts), ces deux espaces devant rester séparés.</p>
+</section>
+</section>
+<section id="archivage-et-partage" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="archivage-et-partage"><span class="header-section-number">4.2.3</span> Archivage et partage</h3>
+<p>Les deux sections précédentes concernaient les données <em>actives</em>&nbsp;: celles que le chercheur utilise quotidiennement pendant sa recherche. Mais arrive un moment où le projet se termine, le mémoire est déposé, et le chercheur s’apprête peut-être à publier un article. C’est à ce stade que les données deviennent <em>finales</em> et qu’il faut penser à leur archivage et à leur partage potentiel.</p>
+<p>Le dépôt sécurisé suit une logique scientifique&nbsp;: cela rend les données trouvables, citables et potentiellement réutilisables par d’autres chercheurs, ce qui contribue à l’avancement de la science de façon <em>transparente</em>.</p>
+<p>Les <em>données actives</em> sont celles que le chercheur manipule pendant sa recherche. Elles évoluent constamment&nbsp;: il ajoute de nouvelles observations, corrige des erreurs, crée de nouvelles variables. Ces données vivent dans son espace de travail.</p>
+<p>Les <em>données finales</em> sont celles qui accompagnent une publication ou un mémoire déposé. Elles ne changeront plus, ou très peu. Au moment où elles sont hébergées dans un dépôt et qu’un identifiant unique leur est attribué (un DOI, par exemple), elles sont figées. Toute modification ultérieure entraîne la création d’une nouvelle version des données.</p>
+<p>Cette distinction est importante parce qu’elle détermine où et comment entreposer les données. Les outils utilisés pendant la recherche (<em>Nextcloud</em>, <em>GitHub</em>) ne sont pas conçus pour l’archivage. À l’inverse, les dépôts de données (<em>Borealis</em>, <em>Zenodo</em>, etc.) ne sont pas pratiques pour un travail quotidien, mais excellent pour la préservation et le partage.</p>
+<p>Plusieurs raisons justifient le dépôt de données finales&nbsp;:</p>
+<p><strong>Conformité aux exigences</strong>&nbsp;: Certains organismes subventionnaires et certaines revues académiques exigent le dépôt des données dans un dépôt reconnu. Ne pas le faire peut compromettre l’acceptation d’un article ou l’admissibilité à des subventions futures.</p>
+<p><strong>Conservation sûre</strong>&nbsp;: Les dépôts de données offrent une infrastructure professionnelle de sauvegarde à long terme. Contrairement à un compte <em>OneDrive</em> qui pourrait disparaître après le départ de l’université, un dépôt institutionnel garantit que les données seront accessibles pendant des décennies.</p>
+<p><strong>Visibilité et impact</strong>&nbsp;: Déposer ses données augmente la visibilité de la recherche. D’autres chercheurs peuvent découvrir ces données, les citer, et potentiellement les réutiliser pour de nouvelles analyses. Cela augmente l’impact du travail au-delà de la publication initiale.</p>
+<p><strong>Reproductibilité</strong>&nbsp;: La science ouverte repose sur la capacité de reproduire et de vérifier les résultats. En rendant les données accessibles (avec la documentation appropriée), le chercheur permet à d’autres de reproduire ses analyses et de valider ses conclusions.</p>
+<p><strong>Respect du principe FAIR</strong> <span class="citation" data-cites="wilkinson_etal16">(<a href="references.html#ref-wilkinson_etal16" role="doc-biblioref">Wilkinson et al., 2016</a>)</span>&nbsp;: Les données déposées dans un dépôt structuré deviennent facilement <em>trouvables</em> (avec des métadonnées), <em>accessibles</em> (via un identifiant permanent), <em>interopérables</em> (avec des formats standards), et <em>réutilisables</em> (avec une licence claire). Ce sont les quatre piliers du principe FAIR (<em>findable</em>, <em>accessible</em>, <em>interoperable</em>, <em>reusable</em>) qui guide la gestion moderne des données de recherche.</p>
+<section id="borealis-le-dépôt-dataverse-canadien" class="level4" data-number="4.2.3.1">
+<h4 data-number="4.2.3.1" class="anchored" data-anchor-id="borealis-le-dépôt-dataverse-canadien"><span class="header-section-number">4.2.3.1</span> Borealis&nbsp;: le dépôt Dataverse canadien</h4>
+<p><a href="https://borealisdata.ca"><em>Borealis</em></a> est le dépôt <em>Dataverse</em> canadien, une infrastructure nationale accessible à tous les chercheurs canadiens. Plusieurs institutions canadiennes mettent à la disposition de leur communauté de recherche une collection institutionnelle dans <em>Borealis</em>, avec un accompagnement complet pour les chercheurs qui souhaitent l’utiliser. <em>Borealis</em> accepte tous les types de fichiers, héberge les données sur des serveurs canadiens sécurisés, émet des DOI (identifiants permanents) pour chaque jeu de données, et permet un contrôle précis de l’accès. Le chercheur peut choisir de rendre ses données entièrement publiques, de les mettre en embargo pour une période déterminée, ou de les garder en accès restreint si ses contraintes éthiques l’exigent.</p>
+<p>Les données déposées dans <em>Borealis</em> sont repérables via des moteurs de recherche grâce aux métadonnées structurées. Pour utiliser <em>Borealis</em>, on crée un compte, puis un nouveau jeu de données, on remplit les champs de métadonnées, on téléverse les fichiers, et on publie. À ce moment, un DOI est attribué et les données deviennent officiellement archivées. Il y a de fortes chances que la bibliothèque institutionnelle offre un soutien pour l’utilisation de <em>Borealis</em>.</p>
+<p>Plusieurs autres dépôts multidisciplinaires sont disponibles&nbsp;:</p>
+<p><strong>Dépôt fédéré de données de recherche (DFDR)</strong>&nbsp;: Comme <em>Borealis</em>, le DFDR est une infrastructure canadienne hébergée sur des serveurs canadiens. Il est gratuit pour les projets académiques, accepte tous les types de fichiers, et offre des fonctionnalités similaires à <em>Borealis</em>. Le choix entre <em>Borealis</em> et le DFDR dépend souvent de préférences institutionnelles ou de contraintes techniques spécifiques.</p>
+<p><em>Zenodo</em>&nbsp;: Hébergé par le CERN en Suisse, <em>Zenodo</em> est un dépôt multidisciplinaire très populaire en sciences. Il est gratuit jusqu’à 50 Go par jeu de données, offre une intégration étroite avec <em>GitHub</em> (idéal pour déposer du code), et permet de déposer non seulement des données mais aussi des présentations, des rapports, etc. <em>Zenodo</em> est particulièrement apprécié pour sa simplicité et sa rapidité de dépôt.</p>
+<p><em>Open Science Framework</em> (<em>OSF</em>)&nbsp;: <em>OSF</em> est une plateforme complète pour la recherche ouverte. Au-delà du simple dépôt de données, <em>OSF</em> permet de gérer l’ensemble d’un projet de recherche&nbsp;: préinscription, collaboration, versionnement, liens avec d’autres dépôts. C’est une solution intéressante pour ceux qui adoptent une approche de science ouverte dès le début de leur projet.</p>
+<p>Lors du dépôt de données, il faut également spécifier sous quelle <em>licence</em> elles sont partagées. La licence définit ce que les autres chercheurs peuvent faire avec ces données&nbsp;: les télécharger, les réutiliser, les modifier, les republier, etc. Les licences Creative Commons (CC) sont les plus courantes pour les données de recherche.</p>
+<p>Il n’est pas nécessaire de préserver toutes les données collectées pendant un projet. Les données à préserver devraient être <em>réutilisables</em> (par soi-même ou d’autres), <em>compréhensibles</em> (avec une documentation adéquate), et avoir une <em>certaine valeur</em> (complexes, coûteuses à obtenir, ou impossibles à récolter à nouveau). Certaines données peuvent être détruites à la fin du projet&nbsp;: les notes préliminaires, les premières versions de documents, ou du matériel facile à recueillir à nouveau. Les données de recherche qui ne mèneront pas à une publication et qui ont servi pour l’enseignement ou un travail académique n’ont généralement pas besoin d’être conservées après l’obtention du diplôme, sauf si elles ont une valeur pour des projets futurs.</p>
+<p>En résumé, le dépôt de données finales est une étape importante qui garantit la pérennité du travail, contribue à la science ouverte, et peut augmenter l’impact de la recherche.</p>
+</section>
+</section>
+<section id="git-et-github-tout-au-long-dun-projet-de-recherche" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="git-et-github-tout-au-long-dun-projet-de-recherche"><span class="header-section-number">4.2.4</span> <code>Git</code> et <em>GitHub</em> tout au long d’un projet de recherche</h3>
+<p>Dans les sections précédentes, nous avons exploré différentes solutions pour entreposer les données pendant la recherche et les données finales. Chaque solution a ses forces, mais il existe un outil transversal qui mérite une attention particulière, car il peut traverser plusieurs de ces phases&nbsp;: <code>Git</code> et <em>GitHub</em>. <code>Git</code> offre un niveau de contrôle, de traçabilité et de collaboration qui dépasse largement les outils conventionnels. Cette section explique ce qu’est <code>Git</code>, pourquoi il est devenu si populaire en recherche, et comment il pourrait s’intégrer dans un flux de travail de recherche.</p>
+<p><code>Git</code>, développé par Linus Torvalds en 2005, s’est imposé comme le système de gestion de versions décentralisé de référence. Avec l’essor des projets logiciels dans les décennies précédentes, un besoin s’est créé pour suivre l’évolution des fichiers de code au fil du temps. Quand plusieurs centaines de développeurs travaillent sur un même projet, ce suivi est essentiel pour éviter les conflits entre les versions. Bien que des systèmes centralisés aient existé pour ce type de gestion, <code>Git</code> se distingue par sa décentralisation&nbsp;: chaque développeur détient une copie complète du projet, incluant toutes les modifications passées. Cela permet aux équipes de travailler de manière indépendante, sans dépendre d’un serveur central, ce qui réduit les risques de conflits. Sa principale force réside dans sa capacité à suivre l’évolution d’un projet en enregistrant les modifications du code source. Chaque modification, ou validation (<em>commit</em>), est enregistrée avec un message explicatif et un identifiant unique, permettant aux collaborateurs de comprendre facilement les évolutions du projet et d’assurer l’intégrité des données.</p>
+<p><em>GitHub</em>, lancé en 2008, est né pour répondre aux besoins de collaboration croissants dans le monde du développement du logiciel libre. Avant <em>GitHub</em>, les développeurs pouvaient utiliser <code>Git</code> en local pour gérer les versions, mais il manquait un espace centralisé pour partager le code et coordonner les efforts. <em>GitHub</em> a donc apporté cette solution en intégrant <code>Git</code> à une plateforme web, où les développeurs pouvaient héberger leurs dépôts, collaborer, et suivre le développement en ligne. Ce qui distingue <em>GitHub</em>, c’est son aspect social&nbsp;: les fonctionnalités comme les demandes de fusion (<em>pull requests</em>), les gestionnaires de problèmes, et le suivi des modifications permettent aux équipes de travailler efficacement et d’interagir facilement autour du code. Cette combinaison d’outils a transformé <em>GitHub</em> en un espace incontournable pour les projets en libre accès, facilitant le partage des connaissances et la collaboration.</p>
+<p>Si <code>Git</code> a été créé pour gérer du code informatique, pourquoi un étudiant en sciences sociales devrait-il s’y intéresser ? Parce que les problèmes que <code>Git</code> résout ne sont pas spécifiques à la programmation. Ce sont des problèmes universels de <em>gestion de versions</em>, de <em>collaboration</em> et de <em>traçabilité</em>. Qui n’a jamais eu un dossier rempli de fichiers nommés <code>Memoire_v2_final.docx</code>, <code>Memoire_v3_VRAIMENT_final.docx</code>, <code>Memoire_final_corrige_2.docx</code> ? Ce problème n’existe pas avec <code>Git</code>. À chaque étape significative du travail, on crée une validation (<em>commit</em>), une «&nbsp;version enregistrée&nbsp;» avec un message descriptif. On n’a jamais besoin de créer des copies multiples de ses fichiers. On travaille toujours sur la version actuelle, et <code>Git</code> conserve automatiquement tout l’historique. <code>Git</code> et <em>GitHub</em> incarnent efficacement l’évolution vers des méthodes de travail plus flexibles, collaboratives et transparentes. Grâce à leur capacité de gestion de versions et d’historique des modifications, ils permettent aux chercheurs d’embrasser une philosophie <em>Agile</em> (présentée au <a href="chapitre_3.html"><span>Chapitre&nbsp;3</span></a>) en assurant un suivi minutieux des changements, facilitant ainsi l’itération rapide et la reproductibilité des projets.</p>
+<p>Le tableau suivant compare les principales solutions selon leur capacité à accompagner le chercheur à travers les trois phases du cycle de recherche.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="oggauatjvy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oggauatjvy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#oggauatjvy thead, #oggauatjvy tbody, #oggauatjvy tfoot, #oggauatjvy tr, #oggauatjvy td, #oggauatjvy th {
+  border-style: none;
+}
+
+#oggauatjvy p {
+  margin: 0;
+  padding: 0;
+}
+
+#oggauatjvy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#oggauatjvy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oggauatjvy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oggauatjvy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#oggauatjvy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#oggauatjvy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#oggauatjvy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#oggauatjvy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#oggauatjvy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#oggauatjvy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#oggauatjvy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oggauatjvy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oggauatjvy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oggauatjvy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#oggauatjvy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oggauatjvy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#oggauatjvy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#oggauatjvy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#oggauatjvy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oggauatjvy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#oggauatjvy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oggauatjvy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#oggauatjvy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oggauatjvy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oggauatjvy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oggauatjvy .gt_left {
+  text-align: left;
+}
+
+#oggauatjvy .gt_center {
+  text-align: center;
+}
+
+#oggauatjvy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oggauatjvy .gt_font_normal {
+  font-weight: normal;
+}
+
+#oggauatjvy .gt_font_bold {
+  font-weight: bold;
+}
+
+#oggauatjvy .gt_font_italic {
+  font-style: italic;
+}
+
+#oggauatjvy .gt_super {
+  font-size: 65%;
+}
+
+#oggauatjvy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#oggauatjvy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#oggauatjvy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#oggauatjvy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#oggauatjvy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#oggauatjvy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#oggauatjvy .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#oggauatjvy .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#oggauatjvy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" style="table-layout:fixed;width:100%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><p>Comparaison des outils de gestion de données selon les critères de
+sélection</p></caption>
+  <colgroup>
+    <col style="width:28%;">
+    <col style="width:18%;">
+    <col style="width:18%;">
+    <col style="width:18%;">
+    <col style="width:18%;">
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Critères">Critères</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="a*OSF*"><span data-qmd-base64="Kk9TRio="><span class="gt_from_md"><em>OSF</em></span></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="a*GitHub*/*GitLab*"><span data-qmd-base64="KkdpdEh1Yi8gR2l0TGFiKg=="><span class="gt_from_md"><em>GitHub/ GitLab</em></span></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Solutions-institutionnelles">Institutionnelles<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Solutions-grand-public">Grand public<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Critères" class="gt_row gt_left">Accessibilité</td>
+<td headers="*OSF*" class="gt_row gt_left">Gratuit</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">Gratuit</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Gratuit (institutionnel)</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Gratuit (limité)</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Existence d'une communauté d'utilisateurs</td>
+<td headers="*OSF*" class="gt_row gt_left">Grande</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">Très grande</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Grande</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Très grande</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Popularité en sciences sociales</td>
+<td headers="*OSF*" class="gt_row gt_left">De plus en plus populaire</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">De plus en plus populaire</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Populaire</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Très populaire</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Compatibilité avec d'autres outils</td>
+<td headers="*OSF*" class="gt_row gt_left">Facilement compatible</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">Facilement compatible</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Facilement compatible</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Facilement compatible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Transparence et réplicabilité</td>
+<td headers="*OSF*" class="gt_row gt_left">Excellente</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">Excellente</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Faible</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Faible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Adaptabilité et flexibilité</td>
+<td headers="*OSF*" class="gt_row gt_left">Très flexible</td>
+<td headers="*GitHub*/*GitLab*" class="gt_row gt_left">Très flexible</td>
+<td headers="Solutions institutionnelles" class="gt_row gt_left">Peu flexible</td>
+<td headers="Solutions grand public" class="gt_row gt_left">Peu flexible</td></tr>
+  </tbody>
+  
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> <span data-qmd-base64="RXguIDogKk9uZURyaXZlKiwgKk5leHRjbG91ZCo="><span class="gt_from_md">Ex. : <em>OneDrive</em>, <em>Nextcloud</em></span></span></td>
+    </tr>
+    <tr>
+      <td class="gt_footnote" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span> <span data-qmd-base64="RXguIDogKkRyb3Bib3gqLCAqR29vZ2xlIERyaXZlKg=="><span class="gt_from_md">Ex. : <em>Dropbox</em>, <em>Google Drive</em></span></span></td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</div>
+</div>
+<p><em>OSF</em> et <em>GitHub</em>/<em>GitLab</em> se démarquent par leur capacité à accompagner le chercheur à travers les trois phases&nbsp;: planification (préinscription, documentation), collecte et analyse (versionnement, collaboration), et archivage (DOI via <em>Zenodo</em> pour <em>GitHub</em>, archivage intégré pour <em>OSF</em>). Les solutions institutionnelles et grand public restent utiles pour l’entreposage quotidien, mais ne répondent pas aux exigences de transparence et de réplicabilité de la science ouverte.</p>
+</section>
+</section>
+<section id="manuel-dinstruction-utiliser-git-et-github-pour-un-projet-de-recherche" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="manuel-dinstruction-utiliser-git-et-github-pour-un-projet-de-recherche"><span class="header-section-number">4.3</span> Manuel d’instruction&nbsp;: utiliser <code>Git</code> et <em>GitHub</em> pour un projet de recherche</h2>
+<p>Lorsqu’un projet est initialisé avec <code>Git</code>, un dossier caché appelé «&nbsp;.git&nbsp;» est créé dans le répertoire. Ce dossier contient tout l’historique des modifications apportées, y compris les informations sur chaque validation (<em>commit</em>), sur les différentes «&nbsp;branches&nbsp;» créées (versions parallèles du projet) et sur les métadonnées associées. Ainsi, même en travaillant avec plusieurs collaborateurs, chacun peut voir quels changements ont été effectués, par qui et pourquoi, tout en s’assurant qu’aucune version du travail ne soit perdue.</p>
+<p>Contrairement aux outils comme <em>OneDrive</em> ou <em>Google Docs</em> qui font du versionnement automatique en arrière-plan, <code>Git</code> exige que l’utilisateur enregistre explicitement ses changements. Cela peut sembler contraignant au début, mais c’est en réalité une force&nbsp;: on décide consciemment quand créer une «&nbsp;version&nbsp;» et on documente pourquoi. Ce processus explicite crée une trace historique beaucoup plus riche et utile.</p>
+<p><code>Git</code> et <em>GitHub</em> favorisent le travail collaboratif de manière plus structurée que les outils conventionnels. Plusieurs chercheurs peuvent travailler sur le même projet simultanément, chacun dans sa branche de développement. Une fois les modifications effectuées, il est possible de fusionner les branches pour intégrer les changements. Cette approche évite les conflits majeurs. Un conflit survient lorsque deux collaborateurs modifient et enregistrent le même fichier ou la même partie de texte de manière indépendante, comme cela peut arriver dans un dossier <em>Dropbox</em> partagé. Ainsi, contrairement aux outils classiques comme <em>Microsoft Word</em>, où deux personnes peuvent se retrouver avec des versions distinctes d’un même document et perdre beaucoup de temps à fusionner manuellement les modifications, <code>Git</code> identifie automatiquement les zones conflictuelles et aide à les résoudre de façon plus méthodique.</p>
+<p><code>Git</code> fonctionne mieux avec des fichiers <em>textuels</em>&nbsp;: code, documents en format texte, fichiers de configuration, scripts, etc. Pour ces types de fichiers, <code>Git</code> peut montrer exactement quelles lignes ont changé entre deux versions, ce qui est extrêmement utile. <code>Git</code> fonctionne moins bien avec des fichiers <em>binaires</em> comme <em>Word</em> (.docx), <em>Excel</em>, PDF, des images ou des bases de données. Ces fichiers peuvent être stockés dans <code>Git</code>, mais on perd la capacité de voir les changements ligne par ligne. Pour un mémoire rédigé en <em>Word</em>, <code>Git</code> peut quand même être utile (il garde l’historique des versions du fichier), mais on n’exploite pas pleinement ses capacités.</p>
+<p>C’est pourquoi <code>Git</code> est particulièrement populaire auprès des chercheurs qui&nbsp;:</p>
+<ul>
+<li>Rédigent en LaTeX ou <code>Markdown</code> ;</li>
+<li>Écrivent du code pour leurs analyses ;</li>
+<li>Collaborent sur des projets techniques avec plusieurs contributeurs ;</li>
+<li>Valorisent la traçabilité complète de leur travail.</li>
+</ul>
+<p>Bien qu’il existe des alternatives comme <em>GitLab</em> (déjà mentionné pour sa version à code source ouvert), <code>Git</code> et <em>GitHub</em> dominent largement le domaine grâce à leur communauté active et à leur adoption généralisée en milieu académique. Leur apprentissage représente un défi initial, mais les bénéfices en termes de traçabilité, de collaboration et de reproductibilité en font des outils essentiels pour le chercheur moderne.</p>
+<p>Maintenant que les avantages de <code>Git</code> et <em>GitHub</em> pour la recherche sont clairs, passons à la pratique. Cette section guide le chercheur dans les étapes essentielles pour mettre en place <code>Git</code> pour un projet typique de recherche en sciences sociales.</p>
+<p><strong>Prérequis</strong>&nbsp;: Il faut d’abord installer <code>Git</code> sur son ordinateur (téléchargeable depuis <a href="https://git-scm.com">git-scm.com</a>) et créer un compte <em>GitHub</em> gratuit sur <a href="https://github.com">github.com</a>.</p>
+<p><strong>Important</strong>&nbsp;: Il ne faut pas initialiser un dépôt <code>Git</code> à l’intérieur d’un dossier synchronisé par un service infonuagique comme <em>Dropbox</em> ou <em>OneDrive</em>. Ces services tentent de synchroniser les fichiers en continu, ce qui entre en conflit avec les opérations de <code>Git</code> et génère des erreurs et des doublons. Le dossier du projet doit donc vivre <em>en dehors</em> du cloud. C’est <code>Git</code> lui-même (via <em>GitHub</em>) qui assure la sauvegarde et le partage du code.</p>
+<p><strong>Étape 1</strong>&nbsp;: Création d’un répertoire local et initialisation de <code>Git</code></p>
+<p>Il faut ouvrir le terminal (sur <em>macOS</em> et <em>Linux</em>) ou l’application <code>Git Bash</code> (sur <em>Windows</em>) et naviguer vers le dossier où l’on souhaite enregistrer le projet.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> chemin/vers/votre/dossier</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>On crée un nouveau répertoire pour le projet et on y accède.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> mon_projet</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mon_projet</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>On initialise <code>Git</code> dans ce répertoire.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 2</strong>&nbsp;: Structurer le projet</p>
+<p>Une bonne organisation facilite la gestion à long terme. On crée une structure logique&nbsp;:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> redaction</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> code</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> data</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> resultats</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> documentation</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> README.md</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Le fichier <code>README.md</code> est la carte de visite du projet. Rédigé en <code>Markdown</code>, il accueille quiconque visite le dépôt sur <em>GitHub</em> et décrit en quelques lignes l’objectif du projet, son organisation et comment l’utiliser. C’est la première chose qu’un collaborateur ou un lecteur consultera.</p>
+<p>Le projet ressemblera maintenant à ceci&nbsp;:</p>
+<pre><code>mon_projet/
+├── README.md           # Description du projet et guide d'utilisation
+├── redaction/          # Chapitres du mémoire
+├── code/               # Scripts d'analyse (R)
+├── data/               # Données NON SENSIBLES uniquement
+├── resultats/          # Graphiques et tableaux générés
+└── documentation/      # Notes méthodologiques</code></pre>
+<p><strong>Important</strong>&nbsp;: Le dossier <code>data/</code> ne devrait contenir que des données <em>non sensibles</em>. Les données sensibles restent dans <em>Nextcloud</em> ou <em>OneDrive</em> institutionnel.</p>
+<p><strong>Étape 3</strong>&nbsp;: Le fichier .gitignore</p>
+<p>On crée un fichier <code>.gitignore</code> à la racine du projet pour indiquer à <code>Git</code> quels fichiers ne doivent <em>jamais</em> être ajoutés au dépôt&nbsp;:</p>
+<pre><code># Ne JAMAIS pousser sur GitHub :
+data/entrevues/              # Données sensibles
+data/sondages_bruts/         # Données avec infos personnelles
+
+# Fichiers système et temporaires
+.DS_Store
+.Rhistory
+*.tmp
+~$*.docx</code></pre>
+<p><strong>Étape 4</strong>&nbsp;: Ajout du code et des fichiers</p>
+<p>On ajoute les fichiers <span class="langage-r">R</span> contenant le code pour les analyses dans le répertoire. Par exemple, on peut avoir des fichiers <code>analyse_medias.R</code> et <code>analyse_sondages.R</code>.</p>
+<p>On utilise la commande <code>git status</code> pour vérifier l’état des fichiers.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 5</strong>&nbsp;: Ajout, validation et dépôt des modifications</p>
+<p>On ajoute explicitement les dossiers et fichiers voulus pour qu’ils soient prêts à être validés.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add code/ documentation/ README.md</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Il est préférable de nommer les fichiers ou dossiers plutôt que d’utiliser <code>git add -A</code>, qui ajoute tout le contenu du répertoire (risqué si le <code>.gitignore</code> est incomplet). Pour les débutants, <code>git add -A</code> reste cependant la solution simple qui répond le plus souvent au besoin lorsque le <code>.gitignore</code> est bien configuré.</p>
+<p>On valide les modifications avec un message descriptif.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Structure initiale du projet avec code d'analyse"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 6</strong>&nbsp;: Création du répertoire sur <em>GitHub</em> et du lien avec le répertoire local</p>
+<p>On va sur <em>GitHub</em> et on se connecte à son compte. On crée un nouveau répertoire (privé ou public selon les besoins) avec le nom du projet.</p>
+<p>De retour dans le terminal, on ajoute le lien <em>GitHub</em> au répertoire local.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/votre-utilisateur/mon_projet.git</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 7</strong>&nbsp;: Pousser le travail sur <em>GitHub</em></p>
+<p>On envoie les dépôts locaux vers <em>GitHub</em>.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 8</strong>&nbsp;: Collaboration avec les collègues</p>
+<p>Si des collègues souhaitent contribuer au projet, ils peuvent dupliquer (en langage <code>Git</code>, on utilise le terme <em>fork</em>) le répertoire sur <em>GitHub</em>, ce qui créera une copie dans leur propre compte.</p>
+<p>Lorsqu’ils ont fait des modifications dans leur copie, ils peuvent soumettre une demande de fusion (<em>pull request</em>) pour demander la permission de fusionner leurs modifications dans le répertoire principal.</p>
+<p><strong>Étape 9</strong>&nbsp;: Acceptation des modifications des collègues</p>
+<p>Lorsque des collègues ont soumis une demande de fusion (<em>pull request</em>), on l’examine et on l’accepte directement sur le site <em>GitHub</em> via l’interface web. Une fois la fusion effectuée sur <em>GitHub</em>, on met à jour sa copie locale pour intégrer les changements&nbsp;:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Étape 10</strong>&nbsp;: Répéter le processus</p>
+<p>On répète les étapes au fur et à mesure que le projet se développe, que du code s’ajoute, que des analyses s’effectuent et que la collaboration avec les collègues se poursuit. Il convient de valider et de pousser régulièrement les modifications pour maintenir le répertoire à jour. Des validations (<em>commits</em>) fréquentes avec des messages clairs sont préférables à une grosse validation en fin de semaine.</p>
+<section id="alternative-github-desktop-et-intégrations" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="alternative-github-desktop-et-intégrations"><span class="header-section-number">4.3.1</span> Alternative&nbsp;: <em>GitHub Desktop</em> et intégrations</h3>
+<p>Alors que le terminal reste une approche fondamentale pour maîtriser <code>Git</code> et <em>GitHub</em>, il existe des outils conviviaux tels que <code>GitHub Desktop</code> qui offrent une alternative intuitive. Cet outil simplifie le processus de gestion de versions décentralisée, en particulier pour ceux qui souhaitent commencer par une approche visuelle. La plupart des environnements de code comme <code>Positron</code> et <code>VS Code</code> intègrent aussi <code>Git</code> directement dans leur interface. On peut y valider, créer des branches et pousser ses modifications sans quitter son éditeur, et <code>VS Code</code> propose en plus des extensions populaires comme <code>GitLens</code> qui enrichissent la visualisation de l’historique et des changements.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-github" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_4_github_desktop.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.1: <code>GitHub Desktop</code> facilite l’utilisation conjointe de <code>Git</code> et de <em>GitHub</em>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><code>GitHub Desktop</code> fournit une vue claire des répertoires, des modifications, des branches et des demandes de fusion (<em>pull requests</em>). Il élimine la nécessité de mémoriser les commandes en ligne de terminal, ce qui peut être un défi pour certains chercheurs. L’application simplifie également la résolution des conflits lors de la fusion des branches.</p>
+<p>Toutefois, en utilisant <code>GitHub Desktop</code>, il est possible de perdre la compréhension des commandes <code>Git</code> en ligne de commande, ce qui pourrait devenir un inconvénient dans un environnement sans interface visuelle. De plus, <code>GitHub Desktop</code> est spécifiquement conçu pour interagir avec <em>GitHub</em>. Pour ceux qui doivent travailler avec d’autres plateformes de gestion de versions, cela pourrait poser des problèmes.</p>
+<p>La décision entre l’utilisation du terminal et de <code>GitHub Desktop</code> dépend des préférences et des besoins de chacun. Pour les chercheurs qui débutent, <code>GitHub Desktop</code> offre une transition en douceur vers les concepts de gestion de versions. Cependant, il est important de ne pas se limiter à une interface visuelle. Comprendre les commandes <code>Git</code> en ligne de commande reste essentiel pour résoudre des problèmes complexes, gérer des projets avancés et collaborer avec d’autres chercheurs qui utilisent des approches basées sur le terminal.</p>
+<p>Plus récemment, l’arrivée des intelligences artificielles génératives a encore abaissé la barrière d’entrée de <code>Git</code> et de <em>GitHub</em>. Ces assistants maîtrisent parfaitement les commandes <code>Git</code> et peuvent interagir directement avec <em>GitHub</em>, qu’ils opèrent eux-mêmes en ligne de commande ou par l’entremise de protocoles d’intégration comme le <em>Model Context Protocol</em> (MCP). Il devient ainsi possible de confier l’ensemble du processus à un agent tel que <em>Claude</em> ou <em>ChatGPT</em>, de la création d’une branche à la rédaction d’une demande de fusion détaillée, jusqu’à la fusion finale, sans avoir à mémoriser ni même à taper la moindre commande. Comme le rappelle le <a href="chapitre_9.html"><span>Chapitre&nbsp;9</span></a>, ces outils évoluent vite, mais ils rendent aujourd’hui la gestion de versions accessible à quiconque, même sans maîtrise technique préalable.</p>
+</section>
+</section>
+<section id="en-terminant" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="en-terminant"><span class="header-section-number">4.4</span> En terminant</h2>
+<p>La gestion des données de recherche est devenue une compétence essentielle pour tout chercheur en sciences sociales numériques. Ce chapitre a présenté les différentes dimensions de cette gestion&nbsp;: la planification en amont, la gestion des données actives (sensibles ou non) et l’archivage des données finales selon les principes de la science ouverte.</p>
+<p>Le choix des outils dépend des besoins spécifiques, mais quelques principes fondamentaux s’appliquent universellement&nbsp;: ne jamais conserver ses données uniquement en local, distinguer clairement les données sensibles des données non sensibles, documenter rigoureusement ses fichiers, et planifier l’archivage dès le début du projet.</p>
+<p><code>Git</code> et <em>GitHub</em>, bien qu’initialement conçus pour les développeurs, offrent aux chercheurs un système de gestion de versions puissant qui favorise la traçabilité, la collaboration et la reproductibilité. L’investissement initial dans l’apprentissage de ces outils est largement compensé par les bénéfices à long terme pour la qualité et la transparence de la recherche.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-fondsderechercheduquebec22" class="csl-entry" role="listitem">
+Fonds de recherche du Québec. (2022). <em>Politique de diffusion en libre accès</em>. Fonds de recherche du Québec. <a href="https://frq.gouv.qc.ca/science-ouverte/politique-diffusion-2022/">https://frq.gouv.qc.ca/science-ouverte/politique-diffusion-2022/</a>
+</div>
+<div id="ref-gouvernementducanada20" class="csl-entry" role="listitem">
+Gouvernement du Canada. (2020). <em>Feuille de route pour la science ouverte</em>. Bureau de la conseillère scientifique en chef du Canada. <a href="https://science.gc.ca/site/science/fr/bureau-conseillere-scientifique-chef/science-ouverte/feuille-route-pour-science-ouverte">https://science.gc.ca/site/science/fr/bureau-conseillere-scientifique-chef/science-ouverte/feuille-route-pour-science-ouverte</a>
+</div>
+<div id="ref-gouvernementducanada21" class="csl-entry" role="listitem">
+Gouvernement du Canada. (2021). <em>Politique des trois organismes sur la gestion des données de recherche</em>. Conseil de recherches en sciences humaines, Conseil de recherches en sciences naturelles et en génie et Instituts de recherche en santé du Canada. <a href="https://science.gc.ca/site/science/fr/financement-interorganismes-recherche/politiques-lignes-directrices/gestion-donnees-recherche/politique-trois-organismes-gestion-donnees-recherche">https://science.gc.ca/site/science/fr/financement-interorganismes-recherche/politiques-lignes-directrices/gestion-donnees-recherche/politique-trois-organismes-gestion-donnees-recherche</a>
+</div>
+<div id="ref-gouvernementducanada22" class="csl-entry" role="listitem">
+Gouvernement du Canada. (2022, février 14). <em>Science ouverte</em>. <a href="https://science.gc.ca/site/science/fr/science-ouverte">https://science.gc.ca/site/science/fr/science-ouverte</a>
+</div>
+<div id="ref-king_etal21" class="csl-entry" role="listitem">
+King, G., Keohane, R. O., &amp; Verba, S. (2021). <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> (Nouvelle édition). Princeton University Press.
+</div>
+<div id="ref-unesco21" class="csl-entry" role="listitem">
+UNESCO. (2021). <em>Recommandation de l’UNESCO sur une science ouverte</em>. Organisation des Nations Unies pour l’éducation, la science et la culture. <a href="https://unesdoc.unesco.org/ark:/48223/pf0000379949_fre">https://unesdoc.unesco.org/ark:/48223/pf0000379949_fre</a>
+</div>
+<div id="ref-wilkinson_etal16" class="csl-entry" role="listitem">
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., da Silva Santos, L. B., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The <span>FAIR Guiding Principles</span> for Scientific Data Management and Stewardship. <em>Scientific Data</em>, <em>3</em>(1), 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_3.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_5.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

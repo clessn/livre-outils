@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - 9&nbsp; Outils d’intelligence artificielle</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./annexe_a.html" rel="next">
+<link href="./chapitre_8.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - 9&nbsp; Outils d’intelligence artificielle">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/chapitre_9_toolbox_multitool_black.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_9.html">Finition</a></li><li class="breadcrumb-item"><a href="./chapitre_9.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d'intelligence artificielle</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#point-dobservation-quest-ce-que-lintelligence-artificielle" id="toc-point-dobservation-quest-ce-que-lintelligence-artificielle" class="nav-link active" data-scroll-target="#point-dobservation-quest-ce-que-lintelligence-artificielle"><span class="header-section-number">9.1</span> Point d’observation&nbsp;: qu’est-ce que l’intelligence artificielle ?</a>
+  <ul class="collapse">
+  <li><a href="#définition-et-différents-types-dia" id="toc-définition-et-différents-types-dia" class="nav-link" data-scroll-target="#définition-et-différents-types-dia"><span class="header-section-number">9.1.1</span> Définition et différents types d’IA</a></li>
+  <li><a href="#lévolution-constante-de-lia" id="toc-lévolution-constante-de-lia" class="nav-link" data-scroll-target="#lévolution-constante-de-lia"><span class="header-section-number">9.1.2</span> L’évolution constante de l’IA</a></li>
+  <li><a href="#lia-en-sciences-sociales" id="toc-lia-en-sciences-sociales" class="nav-link" data-scroll-target="#lia-en-sciences-sociales"><span class="header-section-number">9.1.3</span> L’IA en sciences sociales</a></li>
+  </ul></li>
+  <li><a href="#arpentage-et-choix-éditorial-lia-à-toutes-les-étapes-de-la-recherche-guide-pratique-pour-une-utilisation-informée-de-lia" id="toc-arpentage-et-choix-éditorial-lia-à-toutes-les-étapes-de-la-recherche-guide-pratique-pour-une-utilisation-informée-de-lia" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial-lia-à-toutes-les-étapes-de-la-recherche-guide-pratique-pour-une-utilisation-informée-de-lia"><span class="header-section-number">9.2</span> Arpentage et choix éditorial&nbsp;: l’IA à toutes les étapes de la recherche, guide pratique pour une utilisation informée de l’IA</a>
+  <ul class="collapse">
+  <li><a href="#dette-cognitive" id="toc-dette-cognitive" class="nav-link" data-scroll-target="#dette-cognitive"><span class="header-section-number">9.2.1</span> Dette cognitive</a></li>
+  <li><a href="#clés-dapprentissage" id="toc-clés-dapprentissage" class="nav-link" data-scroll-target="#clés-dapprentissage"><span class="header-section-number">9.2.2</span> Clés d’apprentissage</a></li>
+  <li><a href="#lia-et-la-science" id="toc-lia-et-la-science" class="nav-link" data-scroll-target="#lia-et-la-science"><span class="header-section-number">9.2.3</span> L’IA et la science</a></li>
+  </ul></li>
+  <li><a href="#en-terminant" id="toc-en-terminant" class="nav-link" data-scroll-target="#en-terminant"><span class="header-section-number">9.3</span> En terminant</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_9.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap9" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Jozef Rivest (University of Michigan)<br>
+Laurence-Olivier M. Foisy (Université Laval)<br>
+Hubert Cadieux (Université Laval)</em></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre_9_toolbox_multitool_black.png" class="img-fluid figure-img" style="width:12.0%"></p>
+</figure>
+</div>
+<p>Avec l’arrivée de l’intelligence artificielle, les questions suivantes se posent&nbsp;: pourquoi un livre d’outils numériques à l’ère de l’intelligence artificielle (IA) ? Que devient le chercheur ? Bien évidemment, ces deux questions ne sont que la pointe de l’iceberg, mais dans le contexte de ce livre, elles apparaissent centrales.</p>
+<p>Ce chapitre vise à initier les lecteurs à ce qu’est l’IA, aux enjeux qu’elle engendre ainsi qu’à son potentiel pour les sciences sociales. Puisque l’IA est en évolution constante, présenter des outils comme le font les chapitres précédents ne serait pas d’une grande utilité. Entre l’écriture de ce chapitre et sa lecture, les outils présentés auront sûrement beaucoup changé. Par conséquent, l’approche de ce chapitre vise à fournir des clés de compréhension ainsi qu’à aiguiser le regard critique des lecteurs afin qu’ils puissent comprendre les bases du fonctionnement des modèles de langage (LLM) et développer un regard critique sur leur propre utilisation de ces outils. Se poser des questions et tenter de trouver des réponses ne peut que générer des bénéfices. Ainsi, si ce chapitre permet d’éclairer certains enjeux, ou s’il stimule davantage de questionnement, alors il aura réussi son objectif.</p>
+<p>L’IA nécessite une certaine réflexion afin d’en faire une utilisation responsable et éthique. Comme les lecteurs l’auront remarqué, ce livre souhaite offrir des outils et des techniques afin que les lecteurs puissent optimiser leur espace et leur flux de travail. Mais que veut dire l’optimisation au juste ? Que cherche-t-on à optimiser ? En résumé, la réponse offerte par ce livre est d’optimiser son temps et son apprentissage. Dans cette quête d’optimisation, l’IA apparaît comme un outil qui offre des avantages intéressants. Effectivement, elle peut accomplir des tâches à une vitesse remarquable ! Cependant, sommes-nous réellement en train d’optimiser notre apprentissage ? La réponse à cette question est quelque peu complexe&nbsp;: ça dépend. L’IA peut effectivement nous aider à optimiser notre temps, mais elle peut aussi être détrimentale pour notre apprentissage.</p>
+<p>Cet enjeu d’optimisation touche aussi à la seconde question qui est posée en début de chapitre à propos du futur du chercheur. Comme il en sera discuté plus tard dans ce chapitre, utiliser l’IA pour accomplir des tâches nouvelles, comme écrire un script de code en entier dans un langage que l’on ne connaît pas, <em>n’est clairement pas</em> optimal. Non seulement c’est une opportunité manquée d’apprendre une nouvelle chose et de diversifier ses compétences en tant que chercheur, mais aussi pour deux autres raisons. La première, et la plus importante, est que le chercheur reste imputable de ce qu’il produit. Si des erreurs s’introduisent dans les résultats de sa recherche et si ces erreurs mènent à des décisions politiques ou sociales néfastes, ce ne sera pas l’IA qui sera blâmée, mais bien le chercheur. La seconde est que des études récentes démontrent que l’utilisation de l’IA pour accomplir des tâches peut mener à une dette cognitive <span class="citation" data-cites="kosmyna_etal25a">(<a href="references.html#ref-kosmyna_etal25a" role="doc-biblioref">Kosmyna et al., 2025</a>)</span>. Les apprentissages que nous ne faisons pas à un certain moment risquent fortement d’avoir des conséquences négatives sur notre capacité à en apprendre davantage et à nous développer dans le futur. Il ne faut pas oublier que l’apprentissage est fortement <em>cumulatif</em>. Par conséquent, si les bases ne sont jamais apprises, alors on aura beaucoup de difficultés à progresser. Cela étant dit, l’IA reste tout de même un outil formidable, mais qui nécessite une certaine réflexion afin d’en faire une utilisation informée, responsable et qui ne nuit pas à notre développement cognitif.</p>
+<p>Ce chapitre est divisé en trois grandes sections. Dans un premier temps, certaines définitions seront présentées afin que les lecteurs puissent renforcer leurs intuitions à propos de l’IA et des grands modèles de langage. Le but sera notamment de distinguer certains concepts. Nous nous en tiendrons à une approche conceptuelle plutôt que formelle dans ce chapitre. Les détails mathématiques et statistiques ne seront pas présentés en détail. Pour les lecteurs qui souhaitent en savoir plus, nous vous dirigerons vers les ressources appropriées. À la fin de cette première section, les lecteurs auront une compréhension élémentaire du fonctionnement de ces modèles ainsi que de leurs limitations. Ensuite, une brève présentation de l’évolution de l’IA dans les dernières années sera introduite afin de mettre en contexte ses développements ainsi que l’évolution rapide de la performance de ces modèles. Dans un troisième temps, nous introduirons une réflexion quant à l’optimisation de son environnement de travail avec l’IA ainsi que sur les impacts importants qu’une utilisation irréfléchie peut amener. L’objectif sera surtout de mettre en garde les lecteurs contre la dette cognitive qui se cache derrière l’utilisation de l’IA pour accomplir des tâches à notre place. Finalement, nous terminerons le chapitre avec une réflexion à propos de la place du chercheur aujourd’hui à l’ère de l’IA.</p>
+<section id="point-dobservation-quest-ce-que-lintelligence-artificielle" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="point-dobservation-quest-ce-que-lintelligence-artificielle"><span class="header-section-number">9.1</span> Point d’observation&nbsp;: qu’est-ce que l’intelligence artificielle ?</h2>
+<section id="définition-et-différents-types-dia" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="définition-et-différents-types-dia"><span class="header-section-number">9.1.1</span> Définition et différents types d’IA</h3>
+<p>Qu’est-ce que l’IA ? Est-ce quelque chose d’homogène, ou s’agit-il plutôt «&nbsp;des intelligences artificielles&nbsp;» ? Dans un premier temps, il est important de préciser que l’IA est un champ d’études <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span>. Par conséquent, il s’agit d’un ensemble d’objets, relativement vaste et en constante expansion, qui s’intéresse, à sa façon, à l’IA. Pour préciser ce propos, prenons l’exemple de la science politique. Malgré la formulation au singulier, la science politique est un grand ensemble de différents sous-champs d’études, qui ont chacun leur propre objet d’intérêt. La philosophie politique, les relations internationales, la politique comparée et l’étude de l’opinion publique, par exemple, sont tous des sous-champs qui s’intéressent, à leur façon, au phénomène politique. Dans le même sens, et compte tenu de cette pluralité de perspectives, il est important de noter qu’il n’y a pas de consensus sur la définition de l’IA <span class="citation" data-cites="wang19 konig_etal22">(<a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>; <a href="references.html#ref-wang19" role="doc-biblioref">P. Wang, 2019</a>)</span>. De plus, la rapidité du développement de ce champ rend le traçage de frontières définitionnelles plutôt difficile&nbsp;: comment définir, d’une manière précise et consensuelle, quelque chose qui évolue constamment <span class="citation" data-cites="devedzic22 bertolini20">(<a href="references.html#ref-bertolini20" role="doc-biblioref">Bertolini, 2020, p. 15</a>; <a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span> ?</p>
+<p>Deux définitions de l’IA peuvent tout de même être retenues. La première vient de John McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007, p. 2</a>)</span>&nbsp;: «&nbsp;Il s’agit de la science et de l’ingénierie qui consistent à créer des machines intelligentes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, en particulier des programmes informatiques intelligents. Elle est liée à la tâche similaire consistant à utiliser des ordinateurs pour comprendre l’intelligence humaine, mais l’IA ne doit pas se limiter aux méthodes qui sont biologiquement observables.&nbsp;»<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. La seconde définition provient de la compagnie IBM <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">2023a</a>)</span>&nbsp;: «&nbsp;Dans sa forme la plus simple, l’IA est un domaine qui combine l’informatique et des ensembles de données robustes pour permettre la résolution de problèmes. Elle englobe également les sous-domaines de l’apprentissage automatique et de l’apprentissage profond, qui sont souvent mentionnés en conjonction avec l’IA. Ces disciplines sont composées d’algorithmes d’IA qui cherchent à créer des systèmes experts qui font des prédictions ou des classifications basées sur des données d’entrée&nbsp;». Ces extraits permettent de comprendre que l’IA consiste à reproduire artificiellement certaines capacités cognitives humaines, afin de rendre les machines «&nbsp;intelligentes&nbsp;» en leur donnant la capacité de résoudre des problèmes par elles-mêmes.</p>
+<p>Ces définitions restent toutefois à préciser, notamment dans le champ d’application de l’IA&nbsp;: qu’en est-il concrètement ? Comment est-ce utilisé ? Comment ça fonctionne ? Si l’IA se distingue en plusieurs types, en faire la liste et identifier leurs différentes branches et applications possibles serait fastidieux et s’écarterait de l’objectif de ce chapitre introductif. Cependant, pour ceux désirant en savoir plus sur le sujet, les articles de McCarthy <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">2007</a>)</span> et de Wang et al. <span class="citation" data-cites="wang_etal23">(<a href="references.html#ref-wang_etal23" role="doc-biblioref">2023</a>)</span>, ainsi que le <em>Cambridge Handbook of Artificial Intelligence</em> <span class="citation" data-cites="konig_etal22">(<a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>)</span> sont très riches et illustratifs.</p>
+<p>Avant toute chose, il est important de distinguer l’IA générale (<em>strong</em>) de l’IA précise (<em>narrow</em>). La première, et la moins populaire en nombre de recherches et d’applications, cherche à développer une machine qui aurait les mêmes capacités cognitives que l’humain, non seulement en termes de résolution de problème, d’apprentissage et de planification, mais qui serait aussi dotée d’une conscience de soi <span class="citation" data-cites="ibm23 konig_etal22">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM, 2023a</a>; <a href="references.html#ref-konig_etal22" role="doc-biblioref">König et al., 2022</a>)</span>. La seconde est plus restrictive, se limitant à la réalisation d’un ou de plusieurs objectifs spécifiques. Trois notions reviennent par ailleurs dès qu’on parle du fonctionnement de l’IA, et elles s’emboîtent plutôt qu’elles ne se juxtaposent. L’apprentissage machine (<em>machine learning</em>) est le champ général. Les réseaux neuronaux artificiels (<em>artificial neural networks</em>) en sont une famille de modèles, et l’apprentissage profond (<em>deep learning</em>) désigne ces réseaux lorsqu’ils comptent plusieurs couches.</p>
+<p>L’apprentissage machine&nbsp;:</p>
+<blockquote class="blockquote">
+<p>« […] consiste à programmer des ordinateurs pour optimiser un critère de performance à l’aide de données d’exemple ou d’expériences passées. Nous avons un modèle défini jusqu’à certains paramètres, et l’apprentissage est l’exécution d’un programme informatique pour optimiser les paramètres du modèle à l’aide des données d’entraînement ou de l’expérience passée » (Alpaydin et Bach, 2014, p.&nbsp;3).</p>
+</blockquote>
+<p>Le but est d’entraîner le modèle afin qu’il puisse reconnaître des tendances, et qu’il puisse décrire et/ou faire des prédictions à partir de ces tendances <span class="citation" data-cites="alpaydin_bach14">(<a href="references.html#ref-alpaydin_bach14" role="doc-biblioref">Alpaydin &amp; Bach, 2014, p. 3</a>)</span>. Il s’agit du champ le plus populaire dans la recherche faite sur l’IA, notamment parce qu’il constitue une base importante pour les autres recherches dans le domaine <span class="citation" data-cites="devedzic22">(<a href="references.html#ref-devedzic22" role="doc-biblioref">Devedzic, 2022</a>)</span>.</p>
+<p>Les réseaux neuronaux artificiels sont des structures qui s’inspirent des neurones du cerveau humain&nbsp;: «&nbsp;Les réseaux neuronaux artificiels (RNA) sont constitués d’une couche de nœuds, contenant une couche d’entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque nœud, ou neurone artificiel, se connecte à un autre et possède un poids et un seuil associés. Si la sortie d’un nœud individuel est supérieure à la valeur seuil spécifiée, ce nœud est activé et envoie des données à la couche suivante du réseau. Dans le cas contraire, aucune donnée n’est transmise à la couche suivante du réseau&nbsp;» <span class="citation" data-cites="ibm23a">(<a href="references.html#ref-ibm23a" role="doc-biblioref">IBM, 2023b</a>)</span>. Ainsi, le but est de reproduire les structures cognitives humaines, afin de permettre à l’IA d’accomplir des tâches plus complexes. L’une des principales utilités de cette famille de modèles est qu’elle permet d’augmenter la rapidité du classement de données. La reconnaissance vocale ou d’image, par exemple, ne prend que quelques minutes grâce à cela, contrairement à plusieurs heures, lorsque fait par des humains <span class="citation" data-cites="ibm23a">(<a href="references.html#ref-ibm23a" role="doc-biblioref">IBM, 2023b</a>)</span>.</p>
+<p>L’apprentissage profond, enfin, «&nbsp;[…] fait référence à un réseau neuronal composé de plus de trois couches […]. L’apprentissage en profondeur automatise une grande partie de l’extraction des caractéristiques, éliminant ainsi une partie de l’intervention humaine manuelle nécessaire et permettant l’utilisation d’ensembles de données plus importants. Il peut ingérer des données non structurées dans leur forme brute et déterminer automatiquement la hiérarchie des caractéristiques qui distinguent les différentes catégories de données les unes des autres, ne nécessitant pas d’intervention humaine.&nbsp;» <span class="citation" data-cites="ibm23">(<a href="references.html#ref-ibm23" role="doc-biblioref">IBM, 2023a</a>)</span>. Ainsi, l’apprentissage profond permet une certaine forme d’automatisation des tâches demandées à l’IA, en lui fournissant les capacités nécessaires d’apprendre par lui-même pour corriger et améliorer son fonctionnement.</p>
+<p>L’apprentissage profond et les réseaux neuronaux sont au cœur des avancements récents de l’IA et des grands modèles de langage. Bien que l’article date un peu, <span class="citation" data-cites="lecun_etal15">LeCun et al. (<a href="references.html#ref-lecun_etal15" role="doc-biblioref">2015</a>)</span> offrent un excellent tour d’horizon de l’apprentissage profond et comment cette méthode a permis de faire des avancements importants dans les dernières années. La description et l’explication du fonctionnement des réseaux neuronaux demanderait beaucoup d’espace, d’autant plus que c’est un sujet plutôt technique. En ce sens, une telle tâche tombe à l’extérieur des objectifs de ce livre. Pour les lecteurs qui souhaiteraient en savoir plus, les livres de <span class="citation" data-cites="james_etal21">James et al. (<a href="references.html#ref-james_etal21" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="hastie_etal17">Hastie et al. (<a href="references.html#ref-hastie_etal17" role="doc-biblioref">2017</a>)</span> et de <span class="citation" data-cites="goodfellow_etal16a">Goodfellow et al. (<a href="references.html#ref-goodfellow_etal16a" role="doc-biblioref">2016</a>)</span> sont d’excellentes ressources à consulter qui expliquent aussi les fondements mathématiques et statistiques derrière l’apprentissage profond.</p>
+<p>Toutefois, il est important de mentionner quelques éléments à propos du fonctionnement de ces modèles statistiques. Tout d’abord, les modèles neuronaux ne produisent pas de nouvelles choses. Bien que cela puisse sembler contre-intuitif étant donné la capacité des LLM à générer du texte, des images et même des vidéos, ces productions ne sont pas «&nbsp;nouvelles&nbsp;» à proprement parler. Les réseaux neuronaux identifient des <em>régularités statistiques</em>. En d’autres mots, à partir de données d’entraînement, ils identifient des motifs d’association afin de faire des prédictions sur de nouvelles données. L’exemple suivant, qui provient d’IBM<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, illustre très bien cette idée d’association et de prédiction. Disons que l’on souhaite développer un logiciel afin d’identifier des courriels frauduleux. On utiliserait un ensemble de données textuelles qui contiendrait un mélange de courriels frauduleux et non frauduleux. Le but est que ce logiciel puisse filtrer les messages frauduleux afin que les utilisateurs puissent en être informés. De plus, on souhaite que les messages non frauduleux ne soient pas filtrés puisqu’ils sont probablement importants pour les utilisateurs. À partir de ces données, un modèle par réseaux neuronaux serait entraîné afin de détecter des régularités, comme l’association entre certains mots et leur fréquence, qui permettent de classifier les courriels dans ces deux catégories avec un haut niveau de précision. Une fois que le modèle est bien calibré, il peut être utilisé pour prédire à l’aide de probabilités si un courriel futur est frauduleux. Le modèle ne comprend pas au même niveau qu’un être humain le contenu de ces courriels. Il est seulement capable de détecter des régularités et de faire une prédiction statistique sur la probabilité qu’un courriel soit frauduleux ou non. En ce sens, la capacité de ce modèle à générer de bonnes prédictions est hautement dépendante du nombre de données d’entraînement et de leur qualité. De mauvaises données, des données manquantes ou des données hautement biaisées ne produiront pas un modèle très utile. Au contraire, le modèle pourrait même être sous-optimal et mener à de très mauvaises prédictions. De plus, l’entraînement du modèle se fait sur des données passées. Le modèle ne peut pas apprendre le futur, et peut aussi être relativement mauvais pour faire des prédictions s’il n’est pas mis à jour régulièrement en le réajustant avec de nouvelles données. Un grand modèle de langage repose sur le même principe, à ceci près que la prédiction porte sur le mot suivant. À partir du texte qui précède, le modèle choisit la suite la plus probable. Rien dans ce calcul ne vérifie l’exactitude du résultat, ce qui explique qu’un modèle puisse produire une référence bibliographique qui n’existe pas.</p>
+</section>
+<section id="lévolution-constante-de-lia" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="lévolution-constante-de-lia"><span class="header-section-number">9.1.2</span> L’évolution constante de l’IA</h3>
+<p>Plusieurs chercheurs ont lancé des avertissements sur le développement de l’IA, notamment à cause de la rapidité de son évolution. Dans un article paru dans <em>The Economist</em>, Bengio <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">2023</a>)</span> déclare qu’il prévoyait le développement d’une IA avec des capacités similaires à celles de l’humain d’ici quelques décennies, peut-être un siècle. Depuis l’arrivée de <em>ChatGPT</em>-4, celui-ci a revu sa prédiction pour la situer entre quelques années et quelques décennies <span class="citation" data-cites="bengio23">(<a href="references.html#ref-bengio23" role="doc-biblioref">Bengio, 2023</a>)</span>. Dans les dix dernières années seulement, les systèmes de reconnaissance d’images et de langages en sont venus à dépasser les capacités humaines <span class="citation" data-cites="roser22">(<a href="references.html#ref-roser22" role="doc-biblioref">Roser, 2022</a>)</span>. La <a href="#fig-evolution">Figure&nbsp;<span>9.1</span></a> présente cette évolution<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<div class="cell" width="6" data-heigth="6">
+<div class="cell-output-display">
+<div id="fig-evolution" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="chapitre_9_files/figure-html/fig-evolution-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;9.1: Évolution des performances de l’IA comparée aux capacités humaines. Source&nbsp;: Our World in Data.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Comme on le remarque, cette évolution ne suit pas une trajectoire linéaire. Depuis 2015, la plupart de ces technologies ont évolué de manière quasi exponentielle. Cette progression fulgurante nous permet de faire quelques constats pour appréhender l’évolution future. Tout d’abord, le développement dans les capacités de l’IA permet d’accélérer de manière exponentielle le champ dans son ensemble, ce qui rend cette technologie exponentiellement plus puissante <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">Harari, 2023</a>)</span>. Grâce à ses capacités de traitement de données et d’amélioration automatique, l’IA évolue plus vite qu’elle ne le ferait si elle dépendait uniquement de l’humain.</p>
+<p>En tant que chercheur en sciences sociales, pourquoi devrait-on être préoccupé par le développement de l’IA ? Tout d’abord, il est important de commencer à réfléchir ainsi qu’à analyser les différents impacts que l’IA a sur nos sociétés. Les avancées dans le domaine en plus de l’accessibilité à ces technologies en font de nouveaux objets d’étude qui génèrent beaucoup de questions. Harari <span class="citation" data-cites="harari23">(<a href="references.html#ref-harari23" role="doc-biblioref">2023</a>)</span> explique dans un article que la capacité de l’IA à manipuler ainsi qu’à générer du langage en fait un outil puissant qui a le potentiel d’avoir de profonds impacts sur nos civilisations. Par conséquent, l’étude des effets de l’IA sur nos sociétés devient un nouveau sujet de recherche sur lequel tous les champs des sciences sociales ont intérêt à se pencher. Présentement, il est anticipé que cette technologie puisse être utilisée pour «&nbsp;produire et diffuser des informations erronées et toxiques, éroder la confiance sociale et la démocratie ; surveiller, manipuler et soumettre les citoyens, en sapant les libertés individuelles et collectives ; ou créer des armes numériques ou physiques puissantes qui menacent la vie humaine&nbsp;» <span class="citation" data-cites="bremmer_suleyman23">(<a href="references.html#ref-bremmer_suleyman23" role="doc-biblioref">Bremmer &amp; Suleyman, 2023, p. 32</a>)</span>. Compte tenu des conséquences potentielles que ces technologies peuvent avoir sur le monde social, tous les domaines scientifiques ont un fort incitatif à décloisonner leur savoir et leurs analyses, en plus de maximiser l’interdisciplinarité et la recherche collaborative. Une compréhension plus complète de ces changements ainsi qu’une communication de ce savoir ne pourra que générer des bénéfices pour le monde académique, social et politique.</p>
+</section>
+<section id="lia-en-sciences-sociales" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="lia-en-sciences-sociales"><span class="header-section-number">9.1.3</span> L’IA en sciences sociales</h3>
+<p>Bien que l’utilisation de l’IA en sciences sociales soit relativement récente, il y a déjà quelques recherches qui se sont penchées sur son utilisation dans un contexte scientifique. Tout d’abord, la recherche de Peterson et al. <span class="citation" data-cites="peterson_etal21">(<a href="references.html#ref-peterson_etal21" role="doc-biblioref">2021</a>)</span>, qui s’intéresse à comprendre comment les individus prennent des décisions, utilise l’IA afin de traiter une importante quantité de données rapidement. Leur base de données est environ trente fois plus importante que celles des études précédentes. De plus, ils ont programmé différentes théories afin de vérifier laquelle correspondait le mieux aux régularités présentes dans les données. L’utilisation de l’IA dans cette recherche est très intéressante puisqu’elle permet de tester des théories existantes sur un vaste ensemble de données, qui auraient pris beaucoup plus de temps si cela avait été réalisé manuellement.</p>
+<p>Ensuite, la recherche de Park et al. <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">2023</a>)</span> utilise l’IA pour créer des <em>generative agents</em> qui interagissent entre eux reproduisant des comportements individuels et collectifs humains. Leur objectif est d’en faire des proxys pour étudier le comportement humain. Leur modèle prend la forme d’une simulation interactive, similaire au jeu vidéo <em>Sims</em>. Bien que ce ne soit pas encore au point, cette application de l’IA permettrait de tester des prototypes de systèmes sociaux ainsi que des théories <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al., 2023</a>)</span>.</p>
+<p>Similairement, la recherche de Argyle et al. <span class="citation" data-cites="argyle_etal23">(<a href="references.html#ref-argyle_etal23" role="doc-biblioref">2023</a>)</span> utilise <em>ChatGPT</em> comme proxy pour étudier l’opinion publique dans certains sous-groupes sociaux. Leur objectif est de démontrer que <em>ChatGPT</em> peut être utilisé, avec un bon niveau de confiance, pour explorer et tester des hypothèses qui seraient coûteuses. En effet, le déploiement d’un sondage est toujours une sorte de pari ; ils sont en général relativement coûteux, et il est difficile de prévoir si les résultats obtenus seront pertinents. <em>ChatGPT</em> permettrait donc de faire un prétest afin d’améliorer et de corriger un questionnaire avant de le déployer sur des sujets humains.</p>
+<p>Malgré ces avantages, il est important de souligner quelques limites quant à l’utilisation de l’IA en sciences sociales. La limite la plus importante est que l’IA ne remplace en aucun cas un être humain. Comme chercheurs en sciences sociales, nous dénaturerions nos disciplines si l’on se limitait à l’IA pour répondre à nos questions. Par conséquent, un test réalisé avec l’IA ne peut pas se substituer à une collecte auprès de personnes réelles, et les résultats qu’il produit demandent d’être validés autrement. Il est donc prudent, en l’état des connaissances, de réserver l’IA à des usages exploratoires. Une autre limite importante est que l’IA peut être sujette à des hallucinations <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al., 2023</a>)</span>. En d’autres termes, l’IA peut fabriquer des informations de toutes pièces <span class="citation" data-cites="weise_metz23">(<a href="references.html#ref-weise_metz23" role="doc-biblioref">Weise &amp; Metz, 2023</a>)</span>. Cela pose un sérieux problème quant à la fiabilité des informations générées par l’IA. C’est pour cette raison, notamment, que nous devons toujours rester vigilants. Les conséquences d’attribuer une valeur scientifique à des informations qui seraient fausses seraient graves. La science ne vise pas à construire une compréhension fictive de la réalité. Une fausse compréhension des interactions et des dynamiques sociales pourrait avoir des conséquences importantes sur le bien-être de nos sociétés. Restons vigilants.</p>
+</section>
+</section>
+<section id="arpentage-et-choix-éditorial-lia-à-toutes-les-étapes-de-la-recherche-guide-pratique-pour-une-utilisation-informée-de-lia" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial-lia-à-toutes-les-étapes-de-la-recherche-guide-pratique-pour-une-utilisation-informée-de-lia"><span class="header-section-number">9.2</span> Arpentage et choix éditorial&nbsp;: l’IA à toutes les étapes de la recherche, guide pratique pour une utilisation informée de l’IA</h2>
+<p>Dans le premier chapitre de ce livre, les auteurs ont proposé d’aborder la recherche selon une certaine temporalité&nbsp;: avant, pendant et après. Les chapitres qui ont suivi ont tous introduit des outils numériques qui s’insèrent dans une ou plusieurs étapes de cette temporalité. L’IA est probablement l’outil le plus transversal&nbsp;: elle s’insère dans chacune de ces étapes. De plus, plusieurs des outils présentés précédemment ont incorporé certaines fonctionnalités d’IA. Par exemple, les interfaces de programmation comme <code>VS Code</code> offrent l’intégration de plusieurs modèles d’IA au sein de leur interface.</p>
+<p>Cette accessibilité grandissante et l’intégration facile de plusieurs modèles différents offrent d’importants avantages. Il est notamment plus facile d’utiliser des modèles d’IA afin de régler des problèmes de programmation, c’est-à-dire faire du débogage (<em>debugging</em>). Sans aucun doute, il s’agit d’une fonctionnalité très utile pour la recherche, qui aide à repérer les erreurs et les problèmes lorsqu’on en rencontre.</p>
+<p>Toutefois, il faut faire preuve d’une certaine prudence. Cette section du chapitre souhaite encourager les lecteurs à ne pas devenir <em>dépendants</em> de l’IA. L’accessibilité grandissante de cet outil peut nous mener à une utilisation constante de l’IA pour achever les différentes tâches nécessaires dans le processus de la recherche. Une telle utilisation comporte plusieurs problèmes qu’il est important d’identifier et dont il faut rester conscient. Autrement, ce sont nos capacités cognitives et réflexives qui en paieront le prix, mais aussi notre profession de chercheur qui en sera transformée.</p>
+<p>Dans cette sous-section, nous souhaitons présenter pourquoi l’IA devrait être utilisée pour <em>peaufiner</em> des tâches que l’on est déjà capable de faire soi-même, et non pas des tâches que l’on ne saurait pas réaliser seul.</p>
+<section id="dette-cognitive" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="dette-cognitive"><span class="header-section-number">9.2.1</span> Dette cognitive</h3>
+<p>Le concept de dette cognitive est présenté par <span class="citation" data-cites="kosmyna_etal25a">Kosmyna et al. (<a href="references.html#ref-kosmyna_etal25a" role="doc-biblioref">2025</a>)</span>. Dans leur recherche, ils étudient comment l’activité cérébrale est affectée par l’utilisation d’un moteur de recherche ou d’un LLM. Comparativement aux participants qui n’avaient accès à aucun support externe afin d’écrire leur texte, et qui sont d’ailleurs le groupe ayant la plus forte activité cérébrale et la plus complète, le groupe qui devait accomplir la même tâche à l’aide d’un LLM avait une réduction de près de 55% de leur activité cérébrale. Le groupe qui avait accès à un moteur de recherche se situe entre les deux avec une diminution de 34% d’activité cérébrale, mais où celle-ci était surtout concentrée dans les cortices visuel et occipital. En comparaison, le groupe ayant accès à un LLM avait la plus faible activité cérébrale, et ce pour l’ensemble du cerveau. Leurs résultats montrent aussi que l’utilisation d’un support externe, et notamment l’utilisation d’un LLM, affecte négativement la consolidation de la mémoire, l’efficacité de l’autosurveillance ainsi que le degré d’agentivité perçu dans la réalisation de la tâche <span class="citation" data-cites="kosmyna_etal25a">(<a href="references.html#ref-kosmyna_etal25a" role="doc-biblioref">Kosmyna et al., 2025, p. 147</a>)</span>. Dans la discussion de leurs résultats, les auteurs sont préoccupés par une conséquence importante de l’IA sur l’éducation&nbsp;: «&nbsp;[…] bien qu’utile pour soutenir la performance, [les outils d’IA] pourraient involontairement nuire aux processus cognitifs, à la rétention et à l’engagement authentique avec les matériaux écrits. Si les utilisateurs sont trop dépendants des outils de l’IA, ils pourraient atteindre une fluidité de surface, mais échouer à internaliser le savoir ou à ressentir un sentiment de propriété.&nbsp;» <span class="citation" data-cites="kosmyna_etal25a">(<a href="references.html#ref-kosmyna_etal25a" role="doc-biblioref">Kosmyna et al., 2025, p. 148</a>, traduction des auteurs)</span></p>
+<p>De plus, comme l’apprentissage est un processus qui est fortement cumulatif, il est important de comprendre que si l’on souhaite développer et renforcer son jugement critique, de même que sa capacité à produire des recherches qui offrent des solutions à des problèmes, alors il est important de maîtriser son sujet d’étude. Cette maîtrise se construit dans le temps, et se renforce au travers d’un processus itératif, ce qui demande d’investir du temps. Évidemment, plus de temps n’est pas nécessairement synonyme d’une meilleure compréhension. Apprendre demande de s’investir activement, et de ne pas être simplement passif <span class="citation" data-cites="bucinca_etal21">(<a href="references.html#ref-bucinca_etal21" role="doc-biblioref">Buçinca et al., 2021</a>)</span>.</p>
+<p>En ce sens, une utilisation optimale de l’IA aiderait dans la gestion du temps sans pour autant nuire à notre apprentissage. Ce qui semble maximiser cet idéal serait donc d’utiliser les outils de l’IA afin de peaufiner des tâches que nous avons déjà accomplies au préalable, et non pas pour accomplir des tâches que nous n’avons pas encore accomplies ou que nous ne savons pas faire par nous-mêmes.</p>
+</section>
+<section id="clés-dapprentissage" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="clés-dapprentissage"><span class="header-section-number">9.2.2</span> Clés d’apprentissage</h3>
+<p>La sous-section précédente ne doit pas être comprise comme décourageant l’utilisation de l’IA. Au contraire, cet outil offre de puissantes solutions, et ne pas l’intégrer dans son environnement de travail serait une erreur. Mais cette intégration demande d’être réfléchie, pour ne pas nuire à son propre développement. Trois questions aident à s’y retrouver.</p>
+<p><strong>Suis-je capable de faire cette tâche par moi-même ?</strong> Si la réponse est non, l’IA ne devrait pas être la première ressource vers laquelle on se tourne. On devrait plutôt se saisir de cette occasion pour approfondir sa connaissance et ses capacités. L’IA est plus utile lorsque nous sommes déjà capables d’accomplir une tâche et que nous souhaitons en améliorer une partie.</p>
+<p><strong>Suis-je capable de juger ce que l’IA me rend ?</strong> Des études récentes démontrent que l’humain a tendance à être trop confiant dans les recommandations de l’IA et à prendre de mauvaises décisions <span class="citation" data-cites="jacobs_etal21">(<a href="references.html#ref-jacobs_etal21" role="doc-biblioref">Jacobs et al., 2021</a>)</span>. L’information générée par l’IA doit toujours être évaluée par le chercheur, et pour faire cette évaluation, il faut au préalable comprendre son domaine et y avoir une certaine expertise. L’apport de l’IA arrive donc <em>après</em> la connaissance, et non pas avant. Dans le prélude de ce livre, nous avançons que «&nbsp;[…] l’IA amplifie un chercheur compétent. Elle ne remplace pas les fondations. Un chercheur qui ne maîtrise pas ses outils ne sera pas libéré par l’IA. Il en sera dépendant, sans pouvoir évaluer la qualité de ce qu’elle produit.&nbsp;»</p>
+<p><strong>Qu’est-ce que je perds à ne pas faire cette tâche moi-même ?</strong> La maîtrise d’un sujet se construit dans le temps et se renforce par un processus itératif, d’essais et d’erreurs. En déléguant une tâche à l’IA, on retire une de ces itérations. C’est cette perte que décrit la dette cognitive. L’apprentissage actif consiste en un engagement plus élevé avec la matière, par exemple expliquer le contenu d’un cours à un non-initié, construire des aide-mémoires, annoter ses lectures puis les résumer dans ses mots.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Bien que cet effort puisse mener à l’impression d’avoir moins appris <span class="citation" data-cites="deslauriers_etal19">(<a href="references.html#ref-deslauriers_etal19" role="doc-biblioref">Deslauriers et al., 2019</a>)</span>, les études démontrent que ce sentiment est faux, et que les étudiants qui s’y engagent performent mieux aux examens et comprennent mieux la matière.</p>
+</section>
+<section id="lia-et-la-science" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="lia-et-la-science"><span class="header-section-number">9.2.3</span> L’IA et la science</h3>
+<p>Pour quelles tâches devrait-on utiliser l’IA ? Est-ce pour <em>produire</em> quelque chose de nouveau, ou est-ce plutôt pour <em>peaufiner</em> ? La distinction ici est très importante. Produire, c’est demander à l’IA ce qu’on n’aurait pas su faire soi-même. Peaufiner, c’est lui demander d’améliorer ce qu’on a déjà fait. La différence ne tient pas à la taille de la tâche mais à la capacité de juger le résultat, qui suppose d’avoir fait le chemin une première fois. Dans un article paru dans la revue <em>Science</em>, plusieurs chercheurs se disent inquiets des conséquences de l’IA dans la production scientifique <span class="citation" data-cites="zhao26">(<a href="references.html#ref-zhao26" role="doc-biblioref">Zhao, 2026</a>)</span>. Ces chercheurs estiment que l’IA accélère le processus de la recherche sans nécessairement en améliorer le contenu. Elle tend à se concentrer sur les sujets les plus populaires, mais aussi à être plus hermétique entre les différentes littératures. C’est un enjeu majeur puisque selon certaines recherches, l’IA <em>n’innove pas</em>, mais tend plutôt à reproduire et complémenter des sujets qui sont déjà populaires et bien documentés <span class="citation" data-cites="hao_etal26">(<a href="references.html#ref-hao_etal26" role="doc-biblioref">Hao et al., 2026</a>)</span>. En ce sens, l’IA produit sur ce qu’elle connaît, plutôt que sur ce qu’elle ne connaît pas. Par ailleurs, <span class="citation" data-cites="hao_etal26">Hao et al. (<a href="references.html#ref-hao_etal26" role="doc-biblioref">2026</a>)</span> observent une tendance à la convergence&nbsp;: les solutions proposées se ressemblent davantage entre elles que celles produites sans assistance. Ces travaux sont récents et portent sur les modèles disponibles au moment de leur écriture, ce qui invite à les lire comme un signal à surveiller plutôt que comme une propriété définitive de la technologie.</p>
+<p>Un modèle est entraîné sur la littérature publiée, qui ne représente pas l’ensemble de la recherche menée. Les résultats nuls sont rarement publiés, les travaux qui ne sont pas en anglais sont sous-représentés, et une part importante des travaux reste derrière des murs payants ou dans la littérature grise. Le portrait qu’un modèle donne d’un champ est donc celui de sa portion visible, ce qu’on appelle un biais du survivant. Le <a href="chapitre_5.html"><span>Chapitre&nbsp;5</span></a> signale le même risque pour la synthèse de la connaissance, où l’omission de la littérature grise peut fausser le portrait obtenu.</p>
+<p>L’utilisation de l’IA pose aussi des défis importants dans la reproduction de la science. Les résultats de <span class="citation" data-cites="brodeur_etal26">Brodeur et al. (<a href="references.html#ref-brodeur_etal26" role="doc-biblioref">2026</a>)</span> démontrent que l’IA sous-performe comparativement aux humains dans la détection d’erreurs dans les recherches et dans la reproduction des résultats scientifiques. Bien entendu, ces résultats changeront probablement dans les prochaines années. La capacité de l’IA a déjà beaucoup évolué depuis l’arrivée de <em>ChatGPT</em> en 2022. Malgré tout, il vaut mieux faire preuve de prudence puisque les résultats des recherches peuvent avoir des impacts importants sur les décisions politiques ainsi que sur l’avancement des connaissances.</p>
+<p>Ces résultats soulignent l’importance de la prudence dont tous les chercheurs doivent faire preuve dans l’utilisation de l’intelligence artificielle. Selon ces auteurs, l’IA atteint ses meilleures performances lorsqu’elle <em>complémente</em> le travail du chercheur, et non pas lorsqu’elle remplace celui-ci. En ce sens, une utilisation complémentaire de l’IA s’impose, dans laquelle le chercheur reste au centre des décisions, de l’interprétation, du jugement et de la gestion des échecs complexes <span class="citation" data-cites="brodeur_etal26">(<a href="references.html#ref-brodeur_etal26" role="doc-biblioref">Brodeur et al., 2026</a>)</span>.</p>
+<p>Cela étant dit, il ne faut pas croire non plus que l’IA n’a que des aspects néfastes pour la science et pour le chercheur. Les éléments ci-haut, et la mise en garde qui est faite, concernent la production même de savoir. Or, la production est un processus qui peut être réduit en plusieurs tâches, et c’est la base de ce livre. À chacune de ces tâches, l’IA peut être un outil fort utile pour nous aider à <em>peaufiner</em> certains éléments. Bien entendu, et comme nous l’avons mentionné plus tôt, le chercheur doit veiller à ne pas devenir dépendant de l’IA.</p>
+<p>Dans les sous-sections suivantes, nous proposons des exemples d’utilisation de l’IA à chaque étape de la recherche qui nous apparaissent respecter le cadre d’optimisation dont il est question ici, et dans lequel le chercheur reste le principal agent dans la production, ainsi que des exemples de «&nbsp;bonnes&nbsp;» et de «&nbsp;mauvaises&nbsp;» utilisations suivant les limites de l’intégration de l’IA dans le processus de recherche.</p>
+<section id="avant-la-recherche" class="level4" data-number="9.2.3.1">
+<h4 data-number="9.2.3.1" class="anchored" data-anchor-id="avant-la-recherche"><span class="header-section-number">9.2.3.1</span> Avant la recherche</h4>
+<p>Chaque recherche débute avec une idée que l’on souhaite explorer. Cette idée doit s’ancrer dans la littérature. Dans le <a href="chapitre_5.html"><span>Chapitre&nbsp;5</span></a>, les lecteurs ont été initiés à <em>Zotero</em> afin d’organiser leurs références bibliographiques. <em>Zotero</em> est un outil puissant qui sauve énormément de temps, d’autant plus qu’il permet de lire et d’annoter des fichiers PDF au sein même de l’application. Avant tout, il faut trouver des articles. Plusieurs moteurs de recherche spécialisés existent déjà, tels que <em>Google Scholar</em>, ou les services offerts par la plupart des bibliothèques universitaires. Certaines IA ont aussi été développées afin d’identifier des articles scientifiques, telles que <em>Elicit</em>, <em>Consensus</em> ou <em>ResearchRabbit</em> ; le <a href="chapitre_5.html"><span>Chapitre&nbsp;5</span></a> y revient.</p>
+<p>Une fois que plusieurs sources ont été identifiées, il faut les lire et les annoter. Rappelons-nous que le processus d’apprentissage demande un engagement actif. Ainsi, utiliser l’IA pour résumer et annoter des textes constitue un engagement passif et ne permet pas au chercheur de s’engager dans son projet de recherche. De plus, si le travail de compréhension et d’analyse critique, la première étape dans l’écriture d’un projet de recherche, n’est pas fait par le chercheur, il est fort probable que tout le reste du projet sera réalisé par l’IA. Il est donc important que le chercheur fasse cette première étape lui-même.</p>
+<p>Toutefois, là où l’IA peut être utile, c’est dans le développement d’une structure pour la revue des écrits. Une fois que le chercheur a lu les textes qu’il avait identifiés <em>et</em> qu’il a produit un brouillon de l’organisation de la revue des écrits, il peut être utile d’échanger certaines idées à propos de celle-ci avec l’IA. Cela permet de recevoir une première vague de commentaires et d’aider dans l’organisation de ses pensées. Ici, il s’agit surtout de <em>peaufiner</em> son organisation. Cela étant dit, nous encourageons fortement les lecteurs à faire les tâches d’écriture et de lecture par eux-mêmes. L’utilisation de l’IA est équivalente à l’utilisation d’un réviseur. En d’autres termes, l’IA est utile pour recevoir des commentaires. Cela peut prendre la forme de demander une note sur 10 de notre brouillon, tout en spécifiant les contraintes et qu’il s’agit d’une version préliminaire. Après avoir reçu les commentaires, c’est le chercheur qui décide et qui fait les modifications, si nécessaire.</p>
+<p>En résumé, avant la recherche&nbsp;:</p>
+<ul>
+<li><strong>Mauvaise utilisation.</strong> Laisser l’IA lire et résumer les textes à la place du chercheur, ou lui faire écrire la revue des écrits. La conséquence est une dépendance pour le reste du projet et une difficulté persistante à analyser des textes scientifiques de manière critique, ce qui est une compétence de base du métier.</li>
+<li><strong>Bonne utilisation.</strong> Lire les textes et les résumer dans ses mots, puis faire un premier jet de la structure de la revue des écrits et se servir de l’IA comme réviseure. La conséquence est une meilleure compréhension de son sujet et un regard critique plus sûr sur la littérature.</li>
+</ul>
+</section>
+<section id="pendant-la-recherche" class="level4" data-number="9.2.3.2">
+<h4 data-number="9.2.3.2" class="anchored" data-anchor-id="pendant-la-recherche"><span class="header-section-number">9.2.3.2</span> Pendant la recherche</h4>
+<p>Bien évidemment, l’utilité de l’IA au sein du processus de recherche est déjà populaire. Avec l’adoption des outils de l’apprentissage machine dans les sciences sociales et du <em>text as data</em>, l’IA et les LLM sont devenus très populaires dans les tâches de classification et d’analyse de documents <span class="citation" data-cites="benoit_etal26 burnham_etal25 heseltine_clemmvonhohenberg24 ornstein_etal25 tornberg25">(e.g. <a href="references.html#ref-benoit_etal26" role="doc-biblioref">Benoit et al., 2026</a>; <a href="references.html#ref-burnham_etal25" role="doc-biblioref">Burnham et al., 2025</a>; <a href="references.html#ref-heseltine_clemmvonhohenberg24" role="doc-biblioref">Heseltine &amp; Clemm von Hohenberg, 2024</a>; <a href="references.html#ref-ornstein_etal25" role="doc-biblioref">Ornstein et al., 2025</a>; <a href="references.html#ref-tornberg25" role="doc-biblioref">Törnberg, 2025</a>)</span>. D’autres recherches plus récentes ont même utilisé l’IA dans des contextes d’expériences afin d’étudier comment les gens changent de croyances.</p>
+<p>Par exemple, dans leur expérience, <span class="citation" data-cites="velez_liu25">Velez &amp; Liu (<a href="references.html#ref-velez_liu25" role="doc-biblioref">2025</a>)</span> demandent aux répondants d’un sondage de répondre à une question ouverte afin de mesurer le positionnement sur certains enjeux, où ces réponses étaient ensuite analysées par <em>ChatGPT-3</em> dans le but de fournir des échelles personnalisées aux répondants. D’autres se sont aussi intéressés aux performances de l’IA à fournir de l’information précise ainsi qu’à classifier des phénomènes politiques <span class="citation" data-cites="foisy_etal26 m_foisy_etal26">(<a href="references.html#ref-foisy_etal26" role="doc-biblioref">Foisy et al., 2026</a>; <a href="references.html#ref-m_foisy_etal26" role="doc-biblioref">M. Foisy et al., 2026</a>)</span>. Ces exemples ne constituent qu’une partie des développements récents dans l’utilisation de l’IA dans les sciences sociales. Il y a encore beaucoup de tests et de recherche à propos des capacités de l’IA en tant qu’outil scientifique ou dans l’étude des biais contenus dans l’IA.</p>
+<p>Ici, la frontière entre <em>produire</em> et <em>peaufiner</em> est un peu plus mince. Dans plusieurs des cas mentionnés ci-haut, l’IA est utilisée pour accompagner le chercheur afin de traiter une grande quantité de texte. C’est un apport important. La plupart des outils statistiques qui sont utilisés en sciences sociales, et surtout l’inférence statistique, reposent sur des propriétés dites asymptotiques. En d’autres termes, plus l’échantillon est grand, meilleurs sont les différents outils statistiques, et plus les inférences que nous tentons de faire seront «&nbsp;robustes&nbsp;». Une des utilités de l’IA, au-delà d’être l’outil principal de notre recherche, est de nous aider dans l’écriture et dans la correction du code pour produire nos analyses. En effet, l’IA peut être fort utile pour identifier les erreurs et nous aider lorsqu’on rencontre un problème. Toutefois, l’IA ne doit pas se substituer complètement au chercheur dans l’écriture du code. Il reste important que le chercheur soit en mesure de vérifier, et par conséquent de lire, le code qui a été généré. L’IA peut faire des erreurs ! Malgré ces avancements, et ce que les recherches mentionnées ci-haut montrent, l’IA et les nouveaux outils méthodologiques ne remplacent pas l’humain, mais le complètent <span class="citation" data-cites="grimmer_etal22">(<a href="references.html#ref-grimmer_etal22" role="doc-biblioref">Grimmer et al., 2022</a>)</span>.</p>
+<p>L’utilisation de l’IA pendant la recherche peut prendre des formes diverses, et il est donc difficile d’offrir des recommandations complètes et définitives sur une utilisation convenable de l’IA. Toutefois, il est possible de suggérer un certain cadre. Pour faire court, le chercheur doit rester au cœur du processus de recherche et des décisions qui sont prises. Sa compréhension du contexte qu’il étudie ainsi que son jugement sont les éléments qui permettront de faire en sorte que la science fournira des réponses qui feront progresser notre compréhension du monde social <span class="citation" data-cites="benoit25">(<a href="references.html#ref-benoit25" role="doc-biblioref">Benoit, 2025</a>)</span>. L’IA raisonne et fait des prédictions à partir des données passées. En ce sens, elle peut renforcer le statu quo plutôt que de questionner les postulats qui le maintiennent en place <span class="citation" data-cites="benoit25">(<a href="references.html#ref-benoit25" role="doc-biblioref">Benoit, 2025</a>)</span>.</p>
+<p>En résumé, pendant la recherche&nbsp;:</p>
+<ul>
+<li><strong>Mauvaise utilisation.</strong> Confier à l’IA l’entièreté des analyses, du code statistique jusqu’à l’interprétation des résultats. Le jugement du chercheur est alors complètement évacué, alors qu’il reste imputable de ce qui est produit.</li>
+<li><strong>Bonne utilisation.</strong> Confier à l’IA le traitement de grands volumes de texte, par exemple le classement de documents selon une grille de codage, en faisant coder à la main une fraction du corpus, un dixième par exemple, pour mesurer l’accord entre l’humain et la machine et en tirer un score de fiabilité (kappa de Cohen, alpha de Krippendorff ou score F1). Le chercheur garde l’interprétation, la validation, et il est en mesure de répondre des résultats.</li>
+</ul>
+</section>
+<section id="après-la-recherche" class="level4" data-number="9.2.3.3">
+<h4 data-number="9.2.3.3" class="anchored" data-anchor-id="après-la-recherche"><span class="header-section-number">9.2.3.3</span> Après la recherche</h4>
+<p>Une fois la recherche faite, il est temps d’écrire et de diffuser nos résultats. Ici aussi, une utilisation «&nbsp;responsable&nbsp;» de l’IA s’inscrit dans un processus actif et non passif. Généralement, la tâche d’écriture est plus facile à la fin de la recherche, lorsque le chercheur maîtrise son sujet et est resté l’agent principal dans la conception du devis de recherche et dans la production des résultats. En ce sens, l’IA peut être utile afin de revoir, d’évaluer et de faire des suggestions sur ce que le chercheur a produit. Mais le chercheur doit rester au centre des décisions et évaluer si les recommandations faites par l’IA sont utiles et ne dérogent pas du propos et de l’argument qu’il souhaite faire.</p>
+<p>En somme, cette sous-section souhaitait présenter certaines clés de réflexion aux lecteurs afin qu’ils puissent situer l’IA dans chacune des étapes de la recherche en fonction des enjeux d’apprentissage et de transparence dont il a été question plus tôt. Ce chapitre ne souhaite pas décourager les lecteurs d’utiliser l’IA, bien au contraire. Il est important de développer ses compétences dans l’utilisation de l’IA et de savoir comment écrire des <em>prompts</em> qui permettent de maximiser le retour des agents conversationnels, par exemple. Ce sont de nouvelles compétences qui doivent être développées et comprises par les chercheurs. Cependant, il est aussi très important de comprendre les limites et les enjeux derrière une utilisation qui mène à une dépendance envers l’IA, et de comprendre qu’au-delà des coûts personnels au niveau de l’apprentissage, il y a aussi des coûts collectifs dans la production d’une science plus transparente et qui ne fait pas seulement «&nbsp;remâcher&nbsp;» ce qui a été produit au préalable. Oui, l’IA est un outil puissant qui offre des capacités utiles pour la production scientifique, mais elle a aussi son coût et ses défis&nbsp;: elle peut nuire au processus scientifique, à l’avancement des connaissances et aux prises des décisions publiques.</p>
+</section>
+</section>
+</section>
+<section id="en-terminant" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="en-terminant"><span class="header-section-number">9.3</span> En terminant</h2>
+<p>Avec l’avènement de l’IA, il est tout à fait raisonnable de se demander quelle est la place du chercheur aujourd’hui. L’avenir du chercheur est-il en danger ? Pourrait-on assister au développement des sciences sociales sans chercheur humain ? Si tel est le cas, est-ce que ça ne constituerait pas un paradoxe important ? Est-ce que la machine est mieux placée pour comprendre la réalité du monde social, ainsi que ses mécanismes, que l’humain ? D’une part, certains pensent que l’IA risque de générer des «&nbsp;laboratoires autonomes&nbsp;» <span class="citation" data-cites="wang_etal23">(<a href="references.html#ref-wang_etal23" role="doc-biblioref">H. Wang et al., 2023, p. 55</a>)</span>. Il n’est pas difficile d’imaginer un monde où tout le processus scientifique, de la conception jusqu’à la communication, serait fait par l’IA. Le chercheur perdrait ainsi sa profession, et se limiterait à n’être qu’une partie de l’auditoire vers qui les résultats sont présentés.</p>
+<p>Bien que nous n’en soyons pas encore là, il est important de réfléchir aux différents enjeux qui se posent à l’aube d’une révolution technologique. Par exemple, étant donné que pour l’instant le processus qui mène de l’intrant vers le résultat d’une IA est plutôt opaque, comment peut-on s’assurer que la machine a pris toutes les précautions nécessaires pour respecter les différents enjeux éthiques ? De plus, quel est le niveau de confiance que nous pouvons avoir envers des résultats dont la production nous est largement inaccessible ?</p>
+<p>Cette dernière question est une limite importante de l’IA en ce moment&nbsp;: nous avons un accès limité aux processus qui mènent de l’intrant à l’extrant. Mais l’opacité des IA existantes empêche d’évaluer correctement la validité de leur protocole scientifique. Or, l’une des caractéristiques fondamentales de la science est la reproductibilité des protocoles scientifiques <span class="citation" data-cites="king_etal21 bourgeois21">(<a href="references.html#ref-bourgeois21" role="doc-biblioref">Bourgeois, 2021</a>; <a href="references.html#ref-king_etal21" role="doc-biblioref">King et al., 2021</a>)</span>. Toutes les recherches doivent présenter, d’une manière très précise, comment les données ont été choisies, comment elles ont été collectées et comment elles ont été analysées. La transparence résume l’esprit de toute communication scientifique.</p>
+<p>Ainsi, l’avènement de l’IA en recherche apporte des questions et des réflexions épistémologiques<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> et méthodologiques<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> importantes. Ces questions sont cruciales et doivent être abordées le plus rapidement possible. En tant que chercheurs, nous devons nous questionner sur l’utilisation de ces nouvelles technologies. Il faut être proactif et amorcer ces réflexions maintenant.</p>
+<p>Le but principal de ce chapitre était d’amorcer la discussion à propos de la place de l’IA dans les sciences sociales. L’objectif de la discussion n’était pas de décourager les lecteurs d’utiliser l’IA. Au contraire, elle offre des fonctionnalités utiles. Les différents outils présentés dans ce livre en témoignent. Malgré cela, il est important de rappeler que l’IA possède aussi son lot de défis et d’enjeux. Ceux-ci appellent donc à la prudence ainsi qu’à une utilisation réfléchie de ces outils. Bien qu’elle offre de nombreux avantages, cette technologie ouvre beaucoup de raccourcis attirants qui pourraient potentiellement nuire à plusieurs de nos capacités intellectuelles et physiques <span class="citation" data-cites="grassini23">(<a href="references.html#ref-grassini23" role="doc-biblioref">Grassini, 2023</a>)</span>. Il y a aussi le risque d’en devenir dépendant <span class="citation" data-cites="park_etal23">(<a href="references.html#ref-park_etal23" role="doc-biblioref">Park et al., 2023</a>)</span>. En ce sens, il est important de trouver un équilibre entre les contraintes de temps ou de connaissances propres aux êtres humains, et les possibilités nouvelles offertes par l’IA. Il ne faut pas perdre de vue non plus qu’il est important de développer ses propres capacités réflexives. Se poser des questions sur notre utilisation personnelle de ces outils constitue, dès aujourd’hui, un élément fondamental de la recherche en sciences sociales numériques.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-alpaydin_bach14" class="csl-entry" role="listitem">
+Alpaydin, E., &amp; Bach, F. (2014). <em>Introduction to <span>Machine Learning</span></em> (3e éd.). MIT Press. <a href="https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851">https://ebookcentral.proquest.com/lib/umontreal-ebooks/detail.action?docID=3339851</a>
+</div>
+<div id="ref-argyle_etal23" class="csl-entry" role="listitem">
+Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J. R., Rytting, C., &amp; Wingate, D. (2023). Out of <span>One</span>, <span>Many</span>: <span>Using Language Models</span> Ot <span>Simulate Human Samples</span>. <em>Political Analysis</em>, <em>31</em>(3), 337‑351. <a href="https://doi.org/10.1017/pan.2023.2">https://doi.org/10.1017/pan.2023.2</a>
+</div>
+<div id="ref-bengio23" class="csl-entry" role="listitem">
+Bengio, Y. (2023, juillet 21). One of the "Godfathers of <span>AI</span>" Airs His Concerns. <em>The Economist</em>. <a href="https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns">https://www.economist.com/by-invitation/2023/07/21/one-of-the-godfathers-of-ai-airs-his-concerns</a>
+</div>
+<div id="ref-benoit25" class="csl-entry" role="listitem">
+Benoit, K. (2025). Forging the Future: <span>How AI</span> Is Rewriting the Rules of Knowledge, Expertise, and Practice. <em>Asian Management Insights</em>, 2‑8.
+</div>
+<div id="ref-benoit_etal26" class="csl-entry" role="listitem">
+Benoit, K., De Marchi, S., Laver, C., Laver, M., &amp; Ma, J. (2026). Using Large Language Models to Analyze Political Texts through Natural Language Understanding. <em>American Journal of Political Science</em>, <em>n/a</em>(n/a). <a href="https://doi.org/10.1111/ajps.70050">https://doi.org/10.1111/ajps.70050</a>
+</div>
+<div id="ref-bertolini20" class="csl-entry" role="listitem">
+Bertolini, A. (2020). <em>Artificial <span>Intelligence</span> and <span>Civil Liability</span></em> [Policy Department for Citizen's Rights and Constitutional Affairs]. European Union. <a href="https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf">https://www.europarl.europa.eu/RegData/etudes/STUD/2020/621926/IPOL_STU(2020)621926_EN.pdf</a>
+</div>
+<div id="ref-bourgeois21" class="csl-entry" role="listitem">
+Bourgeois, I. (2021). Qu’est-Ce Que La Recherche Sociale? In <em>Recherche Sociale. <span>De</span> La Problématique à La Collecte Des Données</em> (7e éd., p. 1‑14). Presses de l’Université du Québec.
+</div>
+<div id="ref-bremmer_suleyman23" class="csl-entry" role="listitem">
+Bremmer, I., &amp; Suleyman, M. (2023). The <span>AI Power Paradox</span>. <em>Foreign Affairs</em>, <em>102</em>(5), 26‑43.
+</div>
+<div id="ref-brodeur_etal26" class="csl-entry" role="listitem">
+Brodeur, A., Valenta, D., Marcoci, A., Aparicio, J. P., Mikola, D., Barbarioli, B., Alexander, R., Deer, L., Stafford, T., Vilhuber, L., Bensch, G., Motoki, F., Abdelhady, M., Abdelmoula, Y., Baki, G. A., Aguirre, T., Aiyer, S., Akhtar, S., Akhtar, F., … Zozoungbo, C. (2026). <span>AI-assisted</span> Teams Outperform <span>AI-led</span> Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science. <em>Proceedings of the National Academy of Sciences</em>, <em>123</em>(22), e2524747123. <a href="https://doi.org/10.1073/pnas.2524747123">https://doi.org/10.1073/pnas.2524747123</a>
+</div>
+<div id="ref-bucinca_etal21" class="csl-entry" role="listitem">
+Buçinca, Z., Malaya, M. B., &amp; Gajos, K. Z. (2021). To Trust or to Think: <span>Cognitive</span> Forcing Functions Can Reduce Overreliance on <span>AI</span> in <span>AI-assisted</span> Decision-Making. <em>Proceedings of the ACM on Human-Computer Interaction</em>, <em>5</em>, 1‑21. <a href="https://doi.org/10.1145/3449287">https://doi.org/10.1145/3449287</a>
+</div>
+<div id="ref-burnham_etal25" class="csl-entry" role="listitem">
+Burnham, M., Kahn, K., Wang, R. Y., &amp; Peng, R. X. (2025). Political <span>DEBATE</span>: <span>Efficient</span> Zero-Shot and Few-Shot Classifiers for Political Text. <em>Political Analysis</em>, 1‑15. <a href="https://doi.org/10.1017/pan.2025.10028">https://doi.org/10.1017/pan.2025.10028</a>
+</div>
+<div id="ref-deslauriers_etal19" class="csl-entry" role="listitem">
+Deslauriers, L., McCarty, L. S., Miller, K., Callaghan, K., &amp; Kestin, G. (2019). Measuring Actual Learning versus Feeling of Learning in Response to Being Actively Engaged in the Classroom. <em>Proceedings of the National Academy of Sciences</em>, <em>116</em>(39), 19251‑19257. <a href="https://doi.org/10.1073/pnas.1821936116">https://doi.org/10.1073/pnas.1821936116</a>
+</div>
+<div id="ref-devedzic22" class="csl-entry" role="listitem">
+Devedzic, V. (2022). Identity of <span>AI</span>. <em>Discover Artificial Intelligence</em>, <em>2</em>(23). <a href="https://doi.org/10.1007/s44163-022-00038-0">https://doi.org/10.1007/s44163-022-00038-0</a>
+</div>
+<div id="ref-foisy_etal26" class="csl-entry" role="listitem">
+Foisy, L.-O. M., Proulx, É., Cadieux, H., Gilbert, J., Rivest, J., Bouillon, A., &amp; Dufresne, Y. (2026). Prompting the Machine: <span>Introducing</span> an <span>LLM</span> Data Extraction Method for Social Scientists. <em>Social Science Computer Review</em>, <em>44</em>(3), 428‑441. <a href="https://doi.org/10.1177/08944393251344865">https://doi.org/10.1177/08944393251344865</a>
+</div>
+<div id="ref-goodfellow_etal16a" class="csl-entry" role="listitem">
+Goodfellow, I., Courville, A., &amp; Bengio, Y. (2016). <em>Deep Learning</em> (p. 1). The MIT Press.
+</div>
+<div id="ref-grassini23" class="csl-entry" role="listitem">
+Grassini, S. (2023). Shaping the <span>Future</span> of <span>Education</span>: <span>Exploring</span> the <span>Potential</span> and <span>Consequences</span> of <span>AI</span> and <span>ChatGPT</span> in <span>Educational Settings</span>. <em>Education Science</em>, <em>13</em>(7). <a href="https://doi.org/10.3390/educsci13070692">https://doi.org/10.3390/educsci13070692</a>
+</div>
+<div id="ref-grimmer_etal22" class="csl-entry" role="listitem">
+Grimmer, J., Roberts, M. E., &amp; Stewart, B. M. (2022). <em>Text as Data: A New Framework for Machine Learning and the Social Sciences</em> (p. 336). Princeton University Press.
+</div>
+<div id="ref-hao_etal26" class="csl-entry" role="listitem">
+Hao, Q., Xu, F., Li, Y., &amp; Evans, J. (2026). Artificial Intelligence Tools Expand Scientists’ Impact but Contract Science’s Focus. <em>Nature</em>, <em>649</em>(8099), 1237‑1243. <a href="https://doi.org/10.1038/s41586-025-09922-y">https://doi.org/10.1038/s41586-025-09922-y</a>
+</div>
+<div id="ref-harari23" class="csl-entry" role="listitem">
+Harari, Y. N. (2023, avril 28). Yuval <span>Noah Harari</span> Argues That <span>AI</span> Has Hacked the Operating System of Human Civilisation. <em>The Economist</em>. <a href="https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation">https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation</a>
+</div>
+<div id="ref-hastie_etal17" class="csl-entry" role="listitem">
+Hastie, T., Tibshirani, R., &amp; Friedman, J. H. (2017). <em>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</em> (Second edition, p. 1). Springer.
+</div>
+<div id="ref-heseltine_clemmvonhohenberg24" class="csl-entry" role="listitem">
+Heseltine, M., &amp; Clemm von Hohenberg, B. (2024). Large Language Models as a Substitute for Human Experts in Annotating Political Text. <em>Research &amp; Politics</em>, <em>11</em>(1), 20531680241236239. <a href="https://doi.org/10.1177/20531680241236239">https://doi.org/10.1177/20531680241236239</a>
+</div>
+<div id="ref-ibm23" class="csl-entry" role="listitem">
+IBM. (2023a). <em>What Are <span>Neural Networks</span>? | <span>IBM</span></em>. <a href="https://www.ibm.com/topics/neural-networks">https://www.ibm.com/topics/neural-networks</a>
+</div>
+<div id="ref-ibm23a" class="csl-entry" role="listitem">
+IBM. (2023b). <em>What Is <span>Artificial Intelligence</span> (<span>AI</span>) ? | <span>IBM</span></em>. IBM. <a href="https://www.ibm.com/topics/artificial-intelligence">https://www.ibm.com/topics/artificial-intelligence</a>
+</div>
+<div id="ref-jacobs_etal21" class="csl-entry" role="listitem">
+Jacobs, M., Pradier, M. F., McCoy, T. H., Perlis, R. H., Doshi-Velez, F., &amp; Gajos, K. Z. (2021). How Machine-Learning Recommendations Influence Clinician Treatment Selections: The Example of Antidepressant Selection. <em>Translational Psychiatry</em>, <em>11</em>(1), 108. <a href="https://doi.org/10.1038/s41398-021-01224-x">https://doi.org/10.1038/s41398-021-01224-x</a>
+</div>
+<div id="ref-james_etal21" class="csl-entry" role="listitem">
+James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2021). <em>An Introduction to Statistical Learning: With Applications in <span>R</span></em>. Springer US. <a href="https://doi.org/10.1007/978-1-0716-1418-1">https://doi.org/10.1007/978-1-0716-1418-1</a>
+</div>
+<div id="ref-king_etal21" class="csl-entry" role="listitem">
+King, G., Keohane, R. O., &amp; Verba, S. (2021). <em>Designing <span>Social Inquiry</span>. <span>Scientific Inference</span> in <span>Qualitative Research</span>.</em> (Nouvelle édition). Princeton University Press.
+</div>
+<div id="ref-konig_etal22" class="csl-entry" role="listitem">
+König, P. D., Krafft, T. D., Schulz, W., &amp; Zweig, K. A. (2022). Essence of <span>AI</span>. <span>What Is AI</span>? In and M. Cannarsa Cristina Poncibò (Éd.), <em>The <span>Cambridge Handbook</span> of <span>Artificial Intelligence</span></em> (p. 18‑34). Cambridge University Press. <a href="https://doi.org/10.1017/9781009072168.005">https://doi.org/10.1017/9781009072168.005</a>
+</div>
+<div id="ref-kosmyna_etal25a" class="csl-entry" role="listitem">
+Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., &amp; Maes, P. (2025, juin 10). <em>Your <span>Brain</span> on <span>ChatGPT</span>: <span>Accumulation</span> of <span>Cognitive Debt</span> When <span>Using</span> an <span>AI Assistant</span> for <span>Essay Writing Task</span></em>. <a href="https://doi.org/10.48550/arXiv.2506.08872">https://doi.org/10.48550/arXiv.2506.08872</a>
+</div>
+<div id="ref-lecun_etal15" class="csl-entry" role="listitem">
+LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep Learning. <em>Nature</em>, <em>521</em>(7553), 436‑444. <a href="https://doi.org/10.1038/nature14539">https://doi.org/10.1038/nature14539</a>
+</div>
+<div id="ref-m_foisy_etal26" class="csl-entry" role="listitem">
+M. Foisy, L.-O., Drouin, J., Pelletier, C., Rivest, J., Cadieux, H., &amp; Dufresne, Y. (2026). Ain’t No Party like a <span>GPT</span> Party: Assessing <span>OpenAI</span>’s <span>GPT</span> Political Alignment Classification Capabilities. <em>Journal of Information Technology &amp; Politics</em>, <em>23</em>(2), 1‑13. <a href="https://doi.org/10.1080/19331681.2024.2444587">https://doi.org/10.1080/19331681.2024.2444587</a>
+</div>
+<div id="ref-mccarthy07" class="csl-entry" role="listitem">
+McCarthy, J. (2007). <em><span>WHAT IS ARTIFICIAL INTELLIGENCE</span>?</em>
+</div>
+<div id="ref-ornstein_etal25" class="csl-entry" role="listitem">
+Ornstein, J., Blasingame, E., &amp; Truscott, J. (2025). How to Train Your Stochastic Parrot: Large Language Models for Political Texts. <em>Political Science Research and Methods</em>. <a href="https://doi.org/10.1017/psrm.2024.64">https://doi.org/10.1017/psrm.2024.64</a>
+</div>
+<div id="ref-park_etal23" class="csl-entry" role="listitem">
+Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., &amp; Bernstein, M. S. (2023). Generative <span>Agents</span>: <span>Interactive Simulacra</span> of <span>Human Behavior</span>. <em>arXiv</em>. <a href="https://doi.org/10.48550/arXiv.2304.03442">https://doi.org/10.48550/arXiv.2304.03442</a>
+</div>
+<div id="ref-peterson_etal21" class="csl-entry" role="listitem">
+Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., &amp; Griffiths, T. L. (2021). Using <span>Large-Scale Experiments</span> and <span>Machine Learning</span> to <span>Discover Theories</span> of <span>Human Decision-Making</span>. <em>Science</em>, <em>372</em>(6547), 1209‑1214. <a href="https://doi.org/10.1126/science.abe2629">https://doi.org/10.1126/science.abe2629</a>
+</div>
+<div id="ref-roser22" class="csl-entry" role="listitem">
+Roser, M. (2022, décembre 6). <em>The <span>Brief History</span> of <span>Artificial Intelligence</span>: <span>The World Has Changed Fast</span> – <span>What Might Be Next</span>?</em> Our World in Data. <a href="https://ourworldindata.org/brief-history-of-ai">https://ourworldindata.org/brief-history-of-ai</a>
+</div>
+<div id="ref-tornberg25" class="csl-entry" role="listitem">
+Törnberg, P. (2025). Large Language Models Outperform Expert Coders and Supervised Classifiers at Annotating Political Social Media Messages. <em>Social Science Computer Review</em>, <em>43</em>(6), 1181‑1195. <a href="https://doi.org/10.1177/08944393241286471">https://doi.org/10.1177/08944393241286471</a>
+</div>
+<div id="ref-velez_liu25" class="csl-entry" role="listitem">
+Velez, Y. R., &amp; Liu, P. (2025). Confronting Core Issues: A Critical Assessment of Attitude Polarization Using Tailored Experiments. <em>American Political Science Review</em>, <em>119</em>(2), 1036‑1053. <a href="https://doi.org/10.1017/S0003055424000819">https://doi.org/10.1017/S0003055424000819</a>
+</div>
+<div id="ref-wang_etal23" class="csl-entry" role="listitem">
+Wang, H., Fu, T., Du, Y., Gao, W., Huang, K., Liu, Z., Chandak, P., Liu, S., Van Katwyk, P., Deac, A., Anandkumar, A., Bergen, K., Gomes, C. P., Ho, S., Kohli, P., Lasenby, J., Leskovec, J., Liu, T.-Y., Manrai, A., … Zitnik, M. (2023). Scientific Discovery in the Age of Artificial Intelligence. <em>Nature</em>, <em>620</em>(7972), 47‑60. <a href="https://doi.org/10.1038/s41586-023-06221-2">https://doi.org/10.1038/s41586-023-06221-2</a>
+</div>
+<div id="ref-wang19" class="csl-entry" role="listitem">
+Wang, P. (2019). On <span>Defining Artificial Intelligence</span>. <em>Journal of Artificial General Intelligence</em>, <em>10</em>(2), 1‑37. <a href="https://doi.org/10.2478/jagi-2019-0002">https://doi.org/10.2478/jagi-2019-0002</a>
+</div>
+<div id="ref-weise_metz23" class="csl-entry" role="listitem">
+Weise, K., &amp; Metz, C. (2023, mai 9). When <span>A</span>.<span>I</span>. <span>Chatbots Hallucinate</span>. <em>The New York Times</em>. <a href="https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html">https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html</a>
+</div>
+<div id="ref-zhao26" class="csl-entry" role="listitem">
+Zhao, C. (2026). <span>AI</span> Has Supercharged Scientists—but May Have Shrunk Science. <em>Science</em>, <em>391</em>(6783). <a href="https://doi.org/10.1126/science.zc518iv">https://doi.org/10.1126/science.zc518iv</a>
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Intelligence étant défini de la façon suivante&nbsp;: «&nbsp;L’intelligence est la partie informatique de la capacité à atteindre des objectifs dans le monde. On trouve différents types et degrés d’intelligence chez l’homme, chez de nombreux animaux et chez certaines machines.&nbsp;» <span class="citation" data-cites="mccarthy07">(<a href="references.html#ref-mccarthy07" role="doc-biblioref">McCarthy, 2007, p. 2</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Sauf mention contraire, les traductions ont été effectuées par le logiciel <em>DeepL</em>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>La page d’IBM consacrée aux réseaux neuronaux&nbsp;: <a href="https://www.ibm.com/think/topics/neural-networks" class="uri">https://www.ibm.com/think/topics/neural-networks</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Le graphique a été reproduit à partir des données et du graphique de Our World in Data&nbsp;: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?time=1998..2023&amp;tab=line<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Pour une courte liste d’apprentissage passif et l’équivalent actif, les lecteurs peuvent consulter cette page de l’université Johns Hopkins&nbsp;: <a href="https://academicsupport.jhu.edu/study-aids/active-versus-passive-learning/" class="uri">https://academicsupport.jhu.edu/study-aids/active-versus-passive-learning/</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>L’épistémologie est l’une des branches de la philosophie des sciences qui s’intéresse au savoir et à la connaissance. De manière générale, et très simplifiée, l’une des questions fondamentales de l’épistémologie est de se demander ce qu’est un savoir scientifique.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>La méthodologie est le champ de la philosophie des sciences qui s’intéresse à l’étude des méthodes scientifiques ou techniques.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_8.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./annexe_a.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - 6&nbsp; Outils de collecte de données&nbsp;: du sondage au web scraping</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_7.html" rel="next">
+<link href="./chapitre_5.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - 6&nbsp; Outils de collecte de données&nbsp;: du sondage au web scraping">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/chapitre_6_toolbox_shovel_black.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html">Structure</a></li><li class="breadcrumb-item"><a href="./chapitre_6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données : du sondage au *web scraping*</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#point-dobservation-la-collecte-de-données-à-lère-numérique" id="toc-point-dobservation-la-collecte-de-données-à-lère-numérique" class="nav-link active" data-scroll-target="#point-dobservation-la-collecte-de-données-à-lère-numérique"><span class="header-section-number">6.1</span> Point d’observation&nbsp;: la collecte de données à l’ère numérique</a></li>
+  <li><a href="#arpentage-et-choix-éditorial-les-extracteurs-de-données-web" id="toc-arpentage-et-choix-éditorial-les-extracteurs-de-données-web" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial-les-extracteurs-de-données-web"><span class="header-section-number">6.2</span> Arpentage et choix éditorial&nbsp;: les extracteurs de données web</a>
+  <ul class="collapse">
+  <li><a href="#critères-de-sélection" id="toc-critères-de-sélection" class="nav-link" data-scroll-target="#critères-de-sélection"><span class="header-section-number">6.2.1</span> Critères de sélection</a></li>
+  </ul></li>
+  <li><a href="#manuel-dinstruction-utiliser-rvest-pour-extraire-des-données-web" id="toc-manuel-dinstruction-utiliser-rvest-pour-extraire-des-données-web" class="nav-link" data-scroll-target="#manuel-dinstruction-utiliser-rvest-pour-extraire-des-données-web"><span class="header-section-number">6.3</span> Manuel d’instruction&nbsp;: utiliser <em>rvest</em> pour extraire des données web</a>
+  <ul class="collapse">
+  <li><a href="#limportance-de-comprendre-la-structure-du-code-html" id="toc-limportance-de-comprendre-la-structure-du-code-html" class="nav-link" data-scroll-target="#limportance-de-comprendre-la-structure-du-code-html"><span class="header-section-number">6.3.1</span> L’importance de comprendre la structure du code HTML</a></li>
+  <li><a href="#le-package-rvest-son-fonctionnement-et-ses-possibilités" id="toc-le-package-rvest-son-fonctionnement-et-ses-possibilités" class="nav-link" data-scroll-target="#le-package-rvest-son-fonctionnement-et-ses-possibilités"><span class="header-section-number">6.3.2</span> Le package <em>rvest</em>&nbsp;: son fonctionnement et ses possibilités</a></li>
+  </ul></li>
+  <li><a href="#en-terminant" id="toc-en-terminant" class="nav-link" data-scroll-target="#en-terminant"><span class="header-section-number">6.4</span> En terminant</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_6.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap6" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Jérémie Drouin (University of Toronto)<br>
+Benjamin Carignan (Université Laval)<br>
+Arnaud Beaulé (Université Laval)</em></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre_6_toolbox_shovel_black.png" class="img-fluid figure-img" style="width:12.0%"></p>
+</figure>
+</div>
+<p>La révolution numérique et l’intelligence artificielle posent un défi à la recherche en sciences sociales <span class="citation" data-cites="manovich11 burrows_savage14">(<a href="references.html#ref-burrows_savage14" role="doc-biblioref">Burrows &amp; Savage, 2014</a>; <a href="references.html#ref-manovich11" role="doc-biblioref">Manovich, 2011</a>)</span>. Elles ouvrent aussi une possibilité, celle d’observer les phénomènes sociaux à une échelle et avec une variété de sources qui étaient hors d’atteinte il y a vingt ans <span class="citation" data-cites="connelly_etal16 kramer_etal14 schroeder14">(<a href="references.html#ref-connelly_etal16" role="doc-biblioref">Connelly et al., 2016</a>; <a href="references.html#ref-kramer_etal14" role="doc-biblioref">Kramer et al., 2014</a>; <a href="references.html#ref-schroeder14" role="doc-biblioref">Schroeder, 2014</a>)</span>. Encore faut-il pouvoir aller chercher ces données. Au défi éthique et théorique que pose leur usage s’ajoute un défi technique, qui est celui dont ce chapitre s’occupe <span class="citation" data-cites="burrows_savage14">(<a href="references.html#ref-burrows_savage14" role="doc-biblioref">Burrows &amp; Savage, 2014</a>)</span>.</p>
+<p>Ce chapitre présente la méthode de l’extraction de données web, ou <em>web scraping</em>, qui permet de récolter de façon automatisée des données provenant de sites internet.</p>
+<p>Les sciences sociales collectent leurs données de bien des façons, de l’entretien à l’observation en passant par les données administratives. Nous nous en tenons ici à ce qui se fait depuis un ordinateur, c’est-à-dire aux outils numériques de collecte. C’est un choix de cadrage et non un jugement sur la valeur des autres méthodes, et il explique pourquoi certaines approches très répandues ne figurent pas dans ces pages.</p>
+<p>Le chapitre s’ouvre sur deux familles d’outils numériques déjà bien installées, les plateformes de sondage et les bases de données médiatiques. Il consacre ensuite l’essentiel de son propos à l’extraction web avec le package <em>rvest</em>, en montrant comment quelques bases de programmation donnent accès à des données qu’aucun de ces outils ne fournit.</p>
+<section id="point-dobservation-la-collecte-de-données-à-lère-numérique" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="point-dobservation-la-collecte-de-données-à-lère-numérique"><span class="header-section-number">6.1</span> Point d’observation&nbsp;: la collecte de données à l’ère numérique</h2>
+<p>Toute recherche empirique repose sur l’analyse d’un objet de recherche, et doit donc comprendre une réflexion sur les manières d’observer l’objet d’étude. Avant l’utilisation d’une quelconque méthode, il faut un ensemble de données à analyser sur lesquelles les différentes méthodes seront appliquées. Le type de données à analyser dépend de l’objectif analytique de la recherche entreprise, mais surtout, de l’objet de recherche. Une fois que l’on sait <em>ce qu’on veut étudier</em>, il faut déterminer <em>comment</em> l’étudier, et ultimement, acquérir les données nécessaires à l’analyse. Les sciences sociales reposent sur l’analyse des sociétés et des phénomènes qui les caractérisent. Les objets d’études sont multiples, tout comme les manières de les observer. Les communautés scientifiques autant qualitatives que quantitatives ont donc besoin de données qui permettent de tels types d’analyses, et il existe un immense éventail d’outils permettant la collecte de données nécessaires à la tenue de recherche en sciences sociales.</p>
+<p>Nous présentons ci-dessous deux familles d’outils numériques particulièrement prisées en sciences sociales, celles qui servent à produire des données de sondage et celles qui donnent accès aux contenus médiatiques, ainsi que la façon dont le numérique a transformé l’acquisition de ces données. Il est important de noter que les données de sondages et les textes médiatiques se prêtent tout aussi bien aux analyses quantitatives que qualitatives. L’objectif de cette section est donc de présenter des outils qui se démarquent par la portée des données qu’ils permettent de récolter.</p>
+<p><em>Les données de sondages</em></p>
+<p>Plusieurs thèmes de recherche fondamentaux en sciences sociales sont traditionnellement étudiés par le biais de données de sondages. L’émergence des technologies numériques a grandement transformé la collecte de données de sondages, qui sont désormais conceptualisés et administrés de manière beaucoup plus efficace. En effet, les outils numériques permettent de créer un questionnaire, de cibler une population et de la contacter, d’entreposer les données des répondants pour ainsi les visualiser, le tout à un coût réduit et plus rapidement que s’il avait été conduit manuellement <span class="citation" data-cites="nayak_ka19">(<a href="references.html#ref-nayak_ka19" role="doc-biblioref">Nayak &amp; KA, 2019</a>)</span>. Ainsi, les sondages en ligne ont une portée internationale, permettent le suivi des réponses dans le temps, offrent des options qui contraignent le répondant à répondre à certaines questions, et permettent d’utiliser des arbres de logique avancés que les sondages manuels ne permettent pas.</p>
+<p><em>Qualtrics</em> est l’outil le plus utilisé en sciences sociales pour l’administration de sondages, tant dans le milieu académique que dans le secteur privé. Il sert aussi au marketing et à la gestion de l’expérience client, si bien que le maîtriser est une compétence qui vaut au-delà de la recherche.</p>
+<p><em>Qualtrics</em> offre plusieurs services pratiques pour la collecte de données, avec des options flexibles pour la programmation et l’administration des sondages. Par exemple, <em>Qualtrics</em> s’adapte à différents formats en fonction de l’appareil du répondant <span class="citation" data-cites="evans_mathur18">(<a href="references.html#ref-evans_mathur18" role="doc-biblioref">Evans &amp; Mathur, 2018</a>)</span>. Son principal désavantage provient de son coût d’acquisition, qui est extrêmement dispendieux. Cependant, certaines universités possèdent des licences permettant l’utilisation de l’outil par la communauté étudiante et de nombreux professeurs possèdent des comptes <em>Qualtrics</em> qui permettent la construction de sondage.</p>
+<p>Bien que <em>Qualtrics</em> soit l’outil de sondage le plus utilisé, il convient toutefois de mentionner certaines alternatives. <em>REDCap</em> (Research Electronic Data Capture), développé par la Vanderbilt University, est accessible gratuitement aux institutions membres de son consortium, qui regroupe plusieurs milliers d’établissements dans le monde. Conçu initialement pour la recherche clinique et biomédicale, il est de plus en plus adopté en sciences sociales pour sa flexibilité (logique de branchement, collecte longitudinale) et sa compatibilité avec des logiciels statistiques courants tels que <span class="langage-r">R</span>, SPSS et Stata.</p>
+<p><em>SurveyMonkey</em> adopte un modèle <em>freemium</em>&nbsp;: une version de base gratuite mais limitée en fonctionnalités, et des plans payants pour les fonctions avancées. Si sa prise en main est rapide et intuitive, ses fonctionnalités avancées (exportation vers SPSS, randomisation par blocs, quotas) ne sont disponibles que sur les plans supérieurs. La plateforme est propriétaire et soulève des préoccupations quant à la confidentialité des données, notamment en ce qui a trait aux réglementations sur la protection des renseignements personnels.</p>
+<p><em>Google Forms</em> est entièrement gratuit et s’intègre à l’écosystème <em>Google</em>, offrant une synchronisation en temps réel avec <em>Google Sheets</em>. Très accessible pour des collectes simples et rapides, il présente toutefois des limitations importantes pour la recherche&nbsp;: logique conditionnelle basique, absence de randomisation par blocs, et impossibilité d’exporter directement vers des logiciels statistiques comme SPSS ou <span class="langage-r">R</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="wzdfauvsyf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wzdfauvsyf table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wzdfauvsyf thead, #wzdfauvsyf tbody, #wzdfauvsyf tfoot, #wzdfauvsyf tr, #wzdfauvsyf td, #wzdfauvsyf th {
+  border-style: none;
+}
+
+#wzdfauvsyf p {
+  margin: 0;
+  padding: 0;
+}
+
+#wzdfauvsyf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 95%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#wzdfauvsyf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wzdfauvsyf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wzdfauvsyf .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wzdfauvsyf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wzdfauvsyf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wzdfauvsyf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wzdfauvsyf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wzdfauvsyf .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#wzdfauvsyf .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#wzdfauvsyf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wzdfauvsyf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wzdfauvsyf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wzdfauvsyf .gt_row {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wzdfauvsyf .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wzdfauvsyf .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wzdfauvsyf .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wzdfauvsyf .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#wzdfauvsyf .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wzdfauvsyf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wzdfauvsyf .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wzdfauvsyf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wzdfauvsyf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wzdfauvsyf .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wzdfauvsyf .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wzdfauvsyf .gt_left {
+  text-align: left;
+}
+
+#wzdfauvsyf .gt_center {
+  text-align: center;
+}
+
+#wzdfauvsyf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wzdfauvsyf .gt_font_normal {
+  font-weight: normal;
+}
+
+#wzdfauvsyf .gt_font_bold {
+  font-weight: bold;
+}
+
+#wzdfauvsyf .gt_font_italic {
+  font-style: italic;
+}
+
+#wzdfauvsyf .gt_super {
+  font-size: 65%;
+}
+
+#wzdfauvsyf .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#wzdfauvsyf .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wzdfauvsyf .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#wzdfauvsyf .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#wzdfauvsyf .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wzdfauvsyf .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wzdfauvsyf .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#wzdfauvsyf .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wzdfauvsyf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" style="table-layout:fixed;width:95%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><p>Résumé des principaux outils de collecte de données de sondage</p></caption>
+  <colgroup>
+    <col style="width:30%;">
+    <col style="width:17%;">
+    <col style="width:18%;">
+    <col style="width:18%;">
+    <col style="width:17%;">
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Critères">Critères</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Qualtrics">Qualtrics</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="REDCap">REDCap</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="SurveyMonkey">SurveyMonkey</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Google-Forms">Google Forms</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Critères" class="gt_row gt_left">Accessibilité</td>
+<td headers="Qualtrics" class="gt_row gt_left">Gratuit (institutionnel)</td>
+<td headers="REDCap" class="gt_row gt_left">Gratuit (institutionnel)</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Dispendieux</td>
+<td headers="Google Forms" class="gt_row gt_left">Gratuit</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Existence d'une communauté d'utilisateurs</td>
+<td headers="Qualtrics" class="gt_row gt_left">Très grande</td>
+<td headers="REDCap" class="gt_row gt_left">Grande</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Grande</td>
+<td headers="Google Forms" class="gt_row gt_left">Très grande</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Popularité en sciences sociales</td>
+<td headers="Qualtrics" class="gt_row gt_left">Très populaire</td>
+<td headers="REDCap" class="gt_row gt_left">Populaire</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Populaire</td>
+<td headers="Google Forms" class="gt_row gt_left">Populaire</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Compatibilité avec d'autres outils</td>
+<td headers="Qualtrics" class="gt_row gt_left">Facilement compatible</td>
+<td headers="REDCap" class="gt_row gt_left">Facilement compatible</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Demande un peu d'ajustement</td>
+<td headers="Google Forms" class="gt_row gt_left">Demande un peu d'ajustement</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Transparence et réplicabilité</td>
+<td headers="Qualtrics" class="gt_row gt_left">Faible</td>
+<td headers="REDCap" class="gt_row gt_left">Faible</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Faible</td>
+<td headers="Google Forms" class="gt_row gt_left">Faible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Adaptabilité et flexibilité</td>
+<td headers="Qualtrics" class="gt_row gt_left">Très flexible</td>
+<td headers="REDCap" class="gt_row gt_left">Très flexible</td>
+<td headers="SurveyMonkey" class="gt_row gt_left">Plutôt flexible</td>
+<td headers="Google Forms" class="gt_row gt_left">Peu flexible</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<p><em>Les données médiatiques</em></p>
+<p>La recherche en sciences sociales se penche également sur l’analyse de contenu médiatique, qui permet une multitude de devis de recherche dans un grand nombre de sous-disciplines des sciences sociales. L’émergence du numérique facilite largement la récolte de données médiatiques tout en favorisant de nouvelles avenues de recherche pour les chercheurs en sciences sociales en raison de l’importante quantité de données accessibles.</p>
+<p>À cet effet, l’outil <em>Factiva</em> offre un accès à l’ensemble des articles d’une panoplie de médias provenant d’une vaste sélection de pays. Le moteur de recherche est opéré par <em>Dow Jones</em> et offre également l’accès à des documents d’entreprises. Il donne accès à plusieurs dizaines de milliers de sources médiatiques dans le monde. Il permet de télécharger une quantité illimitée de documents RTF, un format de fichier de texte, pouvant contenir jusqu’à 100 articles chacun. En outre, les documents peuvent être sélectionnés automatiquement en cochant le bouton proposant de sélectionner les 100 articles de la page de résultat. Chaque page de résultat contient 100 articles à la fois. Enfin, <em>Factiva</em> permet également de filtrer les doublons. <em>Factiva</em> permet ainsi d’avoir accès facilement à des données utiles pour l’analyse textuelle d’articles médiatiques. Comme les textes deviennent accessibles rapidement et simplement aux chercheurs, cet outil optimise considérablement l’analyse de contenu par thèmes ou par ton. Cependant, ce ne sont pas tous les médias qui sont accessibles sur <em>Factiva</em>. Dans l’optique où un média recherché n’est pas trouvable sur cette plateforme, le logiciel <em>Eureka</em> représente une bonne alternative. <em>Eureka</em> se concentre principalement sur les médias francophones (autant au Québec qu’en Europe). La structure d’<em>Eureka</em> est similaire à celle de <em>Factiva</em>.</p>
+<p><em>Qualtrics</em> et <em>Factiva</em> couvrent des besoins précis, et les données qu’ils livrent ont été mises en forme par quelqu’un d’autre avant d’arriver au chercheur. La section suivante porte sur une autre façon de faire, qui consiste à aller chercher soi-même ce qui se trouve sur le web.</p>
+</section>
+<section id="arpentage-et-choix-éditorial-les-extracteurs-de-données-web" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial-les-extracteurs-de-données-web"><span class="header-section-number">6.2</span> Arpentage et choix éditorial&nbsp;: les extracteurs de données web</h2>
+<p>Les extracteurs de données numériques, qui ont transformé la récolte de données en sciences sociales, sont des infrastructures de code permettant d’extraire des données brutes d’une source numérique. Cette section explique comment ces extracteurs peuvent être utiles dans un contexte de recherche en sciences sociales numériques.</p>
+<p>L’émergence du numérique donne accès à des sources qui permettent d’analyser finement les phénomènes politiques contemporains. Cet accès est rarement simple. Les données parlementaires, par exemple, se trouvent sur les sites des institutions concernées, mais leur consultation peut exiger des identifiants ou un paiement, leur qualité n’est pas garantie et leur structure est souvent irrégulière. C’est là que le défi se pose pour le chercheur.</p>
+<p>C’est dans cette optique que les extracteurs de données numériques peuvent être utiles. Il faut faire ici la distinction entre l’outil, soit l’extracteur de données, et la méthode, l’extraction web. Plus précisément, cette dernière est la méthode qui permet l’extraction de données provenant de sites web qui seront ensuite converties dans un format utile aux scientifiques. L’extracteur est l’outil qui permet cette méthode. Il sera question dans les lignes qui suivent de l’outil <em>rvest</em>, un package sur <span class="langage-r">R</span>, qui permet de récolter des données de site web gratuitement et efficacement.</p>
+<p>Il faut toutefois être vigilant quant à la nature des données extraites. Avant d’extraire une quelconque information, il est absolument primordial de s’assurer que les données soient publiques, faute de quoi l’extraction serait illégale. Il est donc recommandé de prendre connaissance des termes et conditions des sites web étudiés afin de s’assurer de la légalité de l’extraction de données. Il est également important de respecter toute norme de droit d’auteur et de propriété intellectuelle ou physique des données. De plus, ce n’est pas parce que des données sont publiques qu’il est nécessairement légal de les extraire et de les utiliser en recherche. En effet, il ne faut pas faire ressortir dans les données extraites une quelconque information privée qui pourrait permettre d’identifier des individus (comme des numéros de téléphone, des adresses courriels, des codes postaux, etc.).</p>
+<p>L’utilisation de cet outil est toutefois facilitée par l’existence d’API (<em>Application Programming Interface</em>) sur les plateformes exploitées. L’API d’un site ou d’une application, souvent fournie par le site, permet à une tierce partie d’avoir accès à du code expliquant le fonctionnement de la plateforme étudiée, ce qui en facilite l’extraction de données. Par exemple, Twitter/X possédait, avant les changements de direction, une API qui facilitait l’élaboration d’un extracteur. En contrepartie, Facebook ne possède pas d’API, ce qui rend l’accès à ses données beaucoup plus complexe. Une API fournit des données structurées dans un format lisible tel que JSON (JavaScript Object Notation). En raison de l’automatisation, les API réduisent les chances d’erreurs dans le processus d’extraction, elles ont tendance à maintenir une interface plus stable et conviviale. C’est un grand changement comparé aux fichiers HTML, où ces derniers ont des mises en page qui changent fréquemment de structure.</p>
+<p>Un extracteur peut également offrir l’accès à des données médiatiques, en codant un accès à des fils RSS ou encore aux HTML des médias extraits. Les fils RSS sont des formats de données qu’il est possible de recevoir automatiquement lors de mise à jour sur un site particulier. Par exemple, <em>La Presse</em> change ses Unes plusieurs fois dans une même journée. En extrayant l’accès aux fils RSS, il est possible de recevoir ces mises à jour automatiquement. Ce processus accélère grandement la collecte de données.</p>
+<p>Finalement, les API simplifient le travail de chacun par les mises à jour et maintenances. Pour être plus précis, les API, étant maintenues par les fournisseurs de services, sont modifiées au fur et à mesure que le site évolue. Par exemple, si la structure de X est modifiée, son API sera également modifiée. Cela évite à ceux demandant l’accès d’ajuster leurs scripts d’extraction pour prendre en compte les changements sur le site.</p>
+<p>Il faut cependant être alerte de l’évolution constante de ces outils. En effet, la présence de données ouvertes et la création croissante d’API tend à modifier de manière progressive l’outil. Prenons l’exemple de l’API de X, qui a restreint les accès accordés et augmenté les coûts pour récupérer les informations sur la plateforme. Il faut donc rester à l’affût de ces possibles modifications.</p>
+<p>En somme, les extracteurs web sont des outils qui facilitent grandement l’acquisition de données massives. Plutôt que d’avoir à payer pour des données dont la qualité n’est pas assurée, l’utilisation d’extracteurs permet un accès plus facile et précis à des données provenant de sites web. L’utilisation de ces outils peut toutefois s’avérer complexe et nécessite un certain nombre de connaissances en lien avec les langages de programmation. Le <a href="chapitre_2.html"><span>Chapitre&nbsp;2</span></a> offre un survol du langage fonctionnel <span class="langage-r">R</span>, qui est utilisé par de nombreux développeurs lors de l’écriture d’extracteurs et qui permet d’utiliser le package <em>rvest</em>.</p>
+<section id="critères-de-sélection" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="critères-de-sélection"><span class="header-section-number">6.2.1</span> Critères de sélection</h3>
+<p>D’emblée, il convient de souligner que d’autres langages de programmation, notamment Python, offrent également des outils très performants pour le moissonnage de données sur le Web. Des bibliothèques telles que <em>Beautiful Soup</em>, <em>Scrapy</em> ou <em>Selenium</em> sont largement utilisées et permettent de réaliser des tâches comparables, voire plus avancées dans certains contextes. Toutefois, le présent ouvrage vise avant tout à initier les chercheurs et étudiants en sciences sociales à la programmation à l’aide de R. Dans cette optique, l’utilisation de <em>rvest</em> s’inscrit dans une démarche pédagogique cohérente qui permet d’intégrer les opérations de collecte, de traitement et d’analyse des données au sein d’un même environnement de travail, sans nécessiter l’apprentissage d’un second langage de programmation.</p>
+<p>L’extracteur <em>rvest</em> est un outil accessible, particulièrement comme il s’agit d’un outil libre de coûts monétaires. En effet, à moins de circonstances exceptionnelles, l’extraction avec <em>rvest</em> est gratuite. Le coût serait plutôt dans l’acquisition de connaissances préalables en code puis dans l’apprentissage de la méthode d’utilisation. Malgré cette nuance, l’absence de coûts monétaires liés à cet outil favorise son accessibilité à l’ensemble de la communauté scientifique. Il est par exemple possible d’étudier l’opinion publique grâce à l’extraction de publications sur des médias socionumériques, plutôt que de construire et administrer des sondages coûteux (voir par exemple l’article de Barbera et al., 2015).</p>
+<p>Additionnellement, l’outil jouit d’une grande communauté d’utilisateurs rendant accessibles leurs connaissances, ce qui favorise la diffusion des savoirs liés à l’utilisation de cet outil. De nombreux forums d’aide peuvent alors être consultés gratuitement par les chercheurs voulant se familiariser avec le package, et plus largement, l’extraction de données web. De nombreux forums sont présents sur le site <em>Stack Overflow</em>, et certains chapitres d’ouvrages collectifs vulgarisant l’utilisation de l’outil sont également disponibles gratuitement en ligne (voir par exemple le chapitre sur l’extraction web de <em>R for Data Science</em>, qui présente comment utiliser l’outil <em>rvest</em> <span class="citation" data-cites="wickham_etal23">(<a href="references.html#ref-wickham_etal23" role="doc-biblioref">Wickham et al., 2023</a>)</span>). Bien que des outils comme <em>Qualtrics</em> et <em>Factiva</em> aient également un grand nombre d’utilisateurs, ces outils ne se démarquent pas par la transparence et le partage de leur communauté utilisatrice.</p>
+<p>Les extracteurs sont des outils de recherche très en vogue dans la communauté des sciences sociales. La possibilité d’obtenir une quantité importante de données de manière efficace et gratuite représente une opportunité largement exploitée par les chercheurs en sciences sociales, comme en témoigne l’émergence de cours dédiés à l’extraction web dans de nombreuses écoles méthodologiques de renom, telles qu’ICPSR ou ECPR.</p>
+<p>En fin de compte, cette méthode, avec le logiciel <span class="langage-r">R</span>, via l’outil <em>rvest</em> permet de récolter des données qui pourront ensuite être traitées et exploitées avec <span class="langage-r">R</span>, ce qui favorise donc la compatibilité de l’outil. De plus, les données extraites peuvent être exportées dans de nombreux formats tels que des fichiers .csv, .RDS, .xlsx, et plus encore.</p>
+<p><em>rvest</em> est enfin très adaptable. Le même package sert à extraire trois lignes d’un tableau ou à parcourir des centaines de pages, et le code écrit pour un site se transpose à un autre en changeant les sélecteurs. Comme l’extraction se fait dans <span class="langage-r">R</span>, elle s’insère directement dans le script qui nettoie et analyse les données, sans passer par un format d’échange. C’est ce qui le distingue d’une plateforme fermée comme <em>Factiva</em>, dont on ne peut modifier ni la portée ni le format de sortie.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="qyhfszfaiq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qyhfszfaiq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qyhfszfaiq thead, #qyhfszfaiq tbody, #qyhfszfaiq tfoot, #qyhfszfaiq tr, #qyhfszfaiq td, #qyhfszfaiq th {
+  border-style: none;
+}
+
+#qyhfszfaiq p {
+  margin: 0;
+  padding: 0;
+}
+
+#qyhfszfaiq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 95%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qyhfszfaiq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qyhfszfaiq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qyhfszfaiq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qyhfszfaiq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qyhfszfaiq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qyhfszfaiq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qyhfszfaiq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qyhfszfaiq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qyhfszfaiq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qyhfszfaiq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qyhfszfaiq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qyhfszfaiq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qyhfszfaiq .gt_row {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qyhfszfaiq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qyhfszfaiq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qyhfszfaiq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qyhfszfaiq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qyhfszfaiq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qyhfszfaiq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qyhfszfaiq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qyhfszfaiq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qyhfszfaiq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qyhfszfaiq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qyhfszfaiq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qyhfszfaiq .gt_left {
+  text-align: left;
+}
+
+#qyhfszfaiq .gt_center {
+  text-align: center;
+}
+
+#qyhfszfaiq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qyhfszfaiq .gt_font_normal {
+  font-weight: normal;
+}
+
+#qyhfszfaiq .gt_font_bold {
+  font-weight: bold;
+}
+
+#qyhfszfaiq .gt_font_italic {
+  font-style: italic;
+}
+
+#qyhfszfaiq .gt_super {
+  font-size: 65%;
+}
+
+#qyhfszfaiq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qyhfszfaiq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qyhfszfaiq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qyhfszfaiq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qyhfszfaiq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qyhfszfaiq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qyhfszfaiq .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qyhfszfaiq .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qyhfszfaiq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" style="table-layout:fixed;width:95%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><p>Résumé des principaux outils de collecte de données médiatiques et
+web</p></caption>
+  <colgroup>
+    <col style="width:32%;">
+    <col style="width:23%;">
+    <col style="width:23%;">
+    <col style="width:22%;">
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Critères">Critères</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Factiva">Factiva</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Eureka">Eureka</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="rvest">rvest</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Critères" class="gt_row gt_left">Accessibilité</td>
+<td headers="Factiva" class="gt_row gt_left">Gratuit (institutionnel)</td>
+<td headers="Eureka" class="gt_row gt_left">Gratuit (institutionnel)</td>
+<td headers="rvest" class="gt_row gt_left">Gratuit</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Existence d'une communauté d'utilisateurs</td>
+<td headers="Factiva" class="gt_row gt_left">Petite</td>
+<td headers="Eureka" class="gt_row gt_left">Petite</td>
+<td headers="rvest" class="gt_row gt_left">Grande</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Popularité en sciences sociales</td>
+<td headers="Factiva" class="gt_row gt_left">Populaire</td>
+<td headers="Eureka" class="gt_row gt_left">Populaire</td>
+<td headers="rvest" class="gt_row gt_left">Très populaire</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Compatibilité avec d'autres outils</td>
+<td headers="Factiva" class="gt_row gt_left">Demande un peu d'ajustement</td>
+<td headers="Eureka" class="gt_row gt_left">Demande un peu d'ajustement</td>
+<td headers="rvest" class="gt_row gt_left">Facilement compatible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Transparence et réplicabilité</td>
+<td headers="Factiva" class="gt_row gt_left">Faible</td>
+<td headers="Eureka" class="gt_row gt_left">Faible</td>
+<td headers="rvest" class="gt_row gt_left">Excellente</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Adaptabilité et flexibilité</td>
+<td headers="Factiva" class="gt_row gt_left">Peu flexible</td>
+<td headers="Eureka" class="gt_row gt_left">Peu flexible</td>
+<td headers="rvest" class="gt_row gt_left">Très flexible</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="manuel-dinstruction-utiliser-rvest-pour-extraire-des-données-web" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="manuel-dinstruction-utiliser-rvest-pour-extraire-des-données-web"><span class="header-section-number">6.3</span> Manuel d’instruction&nbsp;: utiliser <em>rvest</em> pour extraire des données web</h2>
+<p>La section suivante présente la méthode d’utilisation de l’outil <em>rvest</em>. Elle démontre comment l’outil permet d’extraire des données du web.</p>
+<section id="limportance-de-comprendre-la-structure-du-code-html" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="limportance-de-comprendre-la-structure-du-code-html"><span class="header-section-number">6.3.1</span> L’importance de comprendre la structure du code HTML</h3>
+<p>Afin d’être à l’aise avec les extracteurs web, et dans notre cas précis le package <em>rvest</em>, il peut être un atout de se familiariser avec la structure de base du langage HTML, dont l’acronyme signifie «&nbsp;Hypertext Markup Language&nbsp;». Il s’agit d’un langage de code qui permet la description du contenu de la page web. La structure du code HTML est hiérarchique, ce qui signifie que le code est divisé en différentes sections qui occupent différents rôles. Ces sections sont délimitées par des «&nbsp;<em>tags</em>&nbsp;», qui définissent le début ou la fin d’une section du site. Ce sont ces différentes sections qui seront accessibles pour l’extraction, et le code HTML permet de comprendre ce qui se situe dans ces sections. La <a href="#fig-html-input">Figure&nbsp;<span>6.1</span></a> représente un exemple de base de code HTML.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-html-input" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_6_html_input.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;6.1: Exemple de code HTML</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans l’exemple ci-haut, le tag &lt;h1&gt; représente le titre du HTML. Le signe &lt;p&gt; permet de débuter le paragraphe de texte suivant le titre, et cette section devra être terminée par le sigle &lt;/p&gt;. Les sections &lt;p&gt; délimitent les paragraphes écrits dans chacune des sections. Les sigles &lt;h2&gt; produisent une sous-section et un sous-titre, qui pourra être complémenté d’un paragraphe écrit. La <a href="#fig-html-output">Figure&nbsp;<span>6.2</span></a> démontre le texte produit par le code HTML.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-html-output" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_6_html_output.png" class="img-fluid figure-img" style="width:25.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;6.2: Exemple du résultat de code HTML</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La structure de base du langage HTML est somme toute simple et intuitive, et toute page web est livrée au navigateur sous cette forme. C’est ce qui rend l’extraction possible&nbsp;: le code HTML d’une page est accessible à partir de son URL, donc les données qu’elle affiche le sont aussi. Quiconque souhaite extraire des données de sites web gagne à se familiariser avec ce langage, et de nombreuses ressources en ligne permettent de l’apprendre.</p>
+<p>Une nuance s’impose toutefois. Certains sites construisent leur contenu avec du <code>JavaScript</code> une fois la page chargée. Le HTML que reçoit <code>read_html()</code> ne contient alors qu’une coquille vide, et l’extraction revient les mains vides sans message d’erreur. C’est le cas de la plupart des médias socionumériques et des tableaux de bord interactifs. Devant une page qui semble ne rien contenir, il faut soupçonner ce mécanisme avant de conclure à une erreur de sélecteur. L’extraction demande alors un outil capable de simuler un navigateur, comme <em>Selenium</em>, ou le recours à l’API du site lorsqu’elle existe.</p>
+</section>
+<section id="le-package-rvest-son-fonctionnement-et-ses-possibilités" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="le-package-rvest-son-fonctionnement-et-ses-possibilités"><span class="header-section-number">6.3.2</span> Le package <em>rvest</em>&nbsp;: son fonctionnement et ses possibilités</h3>
+<p>Cet ouvrage recommande l’utilisation du package <em>rvest</em> afin de récolter des données sur des pages web, qu’elles aient ou non une API. <em>rvest</em> est construit autour des packages <code>xml2</code> et <code>httr</code> afin de faciliter la manipulation du HTML et XML. <em>rvest</em> est principalement conçu pour extraire une seule page web. Pour extraire de multiples pages, d’autres packages sont recommandés, notamment <code>polite</code>. Ce chapitre se concentre uniquement sur <em>rvest</em>.</p>
+<section id="fonctions-de-base-du-package-rvest-utilisant-pour-exemple-le-site-de-legisinfo" class="level4" data-number="6.3.2.1">
+<h4 data-number="6.3.2.1" class="anchored" data-anchor-id="fonctions-de-base-du-package-rvest-utilisant-pour-exemple-le-site-de-legisinfo"><span class="header-section-number">6.3.2.1</span> Fonctions de base du package rvest utilisant pour exemple le site de LEGISinfo</h4>
+<p>La première étape est l’installation et le chargement des packages <code>tidyverse</code> et <code>rvest</code> dans la console de <code>Positron</code>. Il est important de les charger séparément car <em>rvest</em> ne fait pas partie des packages de base du <em>Tidyverse</em>. Nous installerons ce dernier car il amène des fonctions pratiques.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"rvest"</span><span class="kw">)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"tidyverse"</span><span class="kw">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">rvest</span><span class="kw">)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">tidyverse</span><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Pour débuter l’extraction des données, il suffit de copier l’URL de la page web à extraire et la coller dans l’appel de la fonction <code>read_html()</code>. Ici, nous utilisons le site web du Parlement canadien pour extraire les données des débats parlementaires. Il est important de stocker l’URL dans l’objet <code>html_LEGISinfo</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="op">&lt;</span>- read_html<span class="er">(</span><span class="st">"https://www.parl.ca/legisinfo/en/bills"</span><span class="kw">)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Lors de l’exécution des lignes de code ci-haut, la console retournera les éléments suivants&nbsp;:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{html_document}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>html <span class="va">lang</span><span class="op">=</span><span class="st">"en"</span> <span class="ex">xml:lang=</span><span class="st">"en"</span> xmlns=<span class="st">"http://www.w3.org/1999/xhtml"</span><span class="op">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="op">&lt;</span>head<span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>meta http-equiv=<span class="st">"Content-Type"</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="va">content</span><span class="op">=</span><span class="st">"text/html; charset=UTF-8"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>meta </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[2]</span> <span class="op">&lt;</span>body class=<span class="st">"body-wrapper ce-parl vh-100"</span><span class="op">&gt;</span><span class="dt">\r\n</span>    </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>header <span class="va">class</span><span class="op">=</span><span class="st">"d-print-none"</span><span class="op">&gt;&lt;</span>!-- <span class="ex">...</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Une fois que les éléments que l’on souhaite extraire sont déterminés, il faut les trouver dans le document HTML. Pour ce faire, il faut se référer au style CSS (<em>cascading style sheets</em>), langage définissant la forme visuelle d’un document HTML. Les éléments HTML sont identifiés avec des «&nbsp;sélecteurs CSS&nbsp;», ayant pour but de les regrouper pour faciliter leur extraction. Pour les bases de l’extraction, il n’est pas primordial de comprendre les détails des sélecteurs CSS. Seule la compréhension de la structure d’un document HTML est nécessaire afin de faire l’extraction d’éléments. L’important est d’être en mesure d’identifier les sélecteurs CSS liés aux éléments souhaités.</p>
+<p>D’abord, <code>html_elements</code> doit être utilisé pour trouver toutes les observations souhaitées, car cette fonction retourne une liste de tous les nœuds qui correspondent à l’appel de la fonction. Le nombre d’observations est indiqué par <code>xml_nodeset()</code>. Comme <code>html_element</code> retourne seulement le premier élément qui correspond, il faut l’utiliser en deuxième, après <code>html_elements</code>. Cette seconde fonction a pour but de trouver les éléments qui deviendront les variables à extraire. Pour l’exemple de LEGISinfo, nous commencerons par extraire tous les éléments &lt;a&gt;. Comme <code>html_elements</code> retourne une liste, nous voulons commencer avec cette fonction.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"a"</span><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Cet appel retourne les éléments suivants&nbsp;:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">180</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>a href=<span class="st">"#StartOfContent"</span> class=<span class="st">"ce-parl-skipnav sr-only </span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="st"> sr-only-focusable"</span><span class="op">&gt;</span>Skip to m ...</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>a href=<span class="st">"//www.parl.ca"</span> class=<span class="st">"ce-parl-btn float-left text-nowrap"</span><span class="op">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">Parliament</span> of Cana ...</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>a href=<span class="st">"https://visit.parl.ca/index-e.html"</span> rel=<span class="st">"external"</span><span class="op">&gt;</span><span class="dt">\n\t\t</span>                    ...</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Suite à l’inspection des éléments &lt;a&gt;, ceux qui nous intéressent sont dans la classe <code>.bill-tile-container</code>. Il suffit d’ajouter un point (<code>.</code>) avant la classe souhaitée lors de l’appel de la fonction afin de rechercher les éléments en fonction de leur classe. Les classes HTML servent à catégoriser les éléments HTML selon un style prédéterminé. Pour l’exemple de LEGISinfo, nous obtenons une liste d’éléments de classe <code>bill-tile-container</code> que nous allons stocker dans l’objet <code>BillTile_LEGISinfo</code>. Tous les éléments de cette classe auront donc une structure ou des comportements similaires entre eux.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".bill-tile-container"</span><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>L’exécution du bloc de code ci-haut produit le résultat suivant dans la console&nbsp;:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">60</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-1"</span><span class="op">&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">\r\n\r\n</span>     ...</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-2"</span><span class="op">&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">\r\n\r\n</span>     ...</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>a class=<span class="st">"bill-tile-container senate"</span> href=<span class="st">"/legisinfo/en/bill/44-1/s-3"</span><span class="op">&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a> <span class="ex">\r\n\r\n</span>     ...</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>À partir de la liste d’éléments de classe <code>bill-tile-container</code>, nous appelons la fonction <code>html_element</code>. Lorsqu’elle est appliquée à une liste, cette fonction permet d’extraire la première correspondance de tous les éléments de cette liste au lieu de seulement retourner le premier nœud correspondant du document HTML. Nous cherchons à extraire ici les éléments de classe <code>parliament-session</code> par le biais de la ligne de code suivante&nbsp;:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ce qui produit le résultat suivant dans la console&nbsp;:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">60</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[1]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">44th</span><span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">44th</span><span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="op">&lt;</span>div class=<span class="st">"parliament-session"</span><span class="op">&gt;</span><span class="dt">\n</span><span class="op">&lt;</span>span class=<span class="st">"parl-session-number"</span><span class="op">&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a> <span class="ex">44th</span><span class="op">&lt;</span>/span<span class="op">&gt;</span> Parlia ...</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bien que moins utile pour la mise en situation actuelle, il est également possible d’extraire les éléments en fonction de leur «&nbsp;<em>id attribute</em>&nbsp;». Pour ce faire, il faut mettre un hashtag (#) avant l’élément à extraire lors de l’appel de la fonction. Le «&nbsp;<em>id attribute</em>&nbsp;» retourne toujours un seul élément car ils sont uniques à chaque document HTML. Voici la ligne de code et le résultat produit par une telle opération&nbsp;:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">html_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">"#StartOfContent"</span><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">{xml_nodeset</span> <span class="er">(</span><span class="ex">1</span><span class="kw">)</span><span class="er">}</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="op">&lt;</span>a id=<span class="st">"StartOfContent"</span> tabindex=<span class="st">"-1"</span><span class="op">&gt;&lt;</span>/a<span class="op">&gt;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nous avons créé précédemment l’objet <code>BillTile_LEGISinfo</code> pour ensuite y extraire les éléments de classe <code>parliament-session</code>. Nous appelons cette étape l’imbrication des sélections. Lorsque la fonction <code>html_element</code> est appliquée à un vecteur de liste <code>html_elements</code>, la console retourne le premier nœud correspondant de chaque élément de la liste. Il est important d’utiliser <code>html_element</code> à cette étape car il retourne un <code>NA</code> même lorsqu’il n’y a pas d’éléments correspondants, alors que <code>html_elements</code> ne retournera pas la valeur manquante. Dans l’exemple de LEGISinfo, c’est ce que nous avons voulu faire pour obtenir les éléments de classe <code>parliament-session</code>.</p>
+<p>Nous sommes maintenant arrivés à l’étape d’extraire les données souhaitées. C’est assez simple. Il suffit d’appliquer la fonction <code>html_text2</code> sur l’appel de <code>html_element</code> sur l’objet à extraire, dans ce cas-ci <code>BillTile_LEGISinfo</code>. Il est important de prendre en compte que nous connaissons ici les éléments à extraire, car le script du document a été scruté préalablement grâce à la fonction <em>inspect</em> de <em>Google Chrome</em> ainsi que les diverses fonctions du package <em>rvest</em>. Afin d’extraire les autres informations souhaitées, nous allons également créer deux autres objets qui seront à leur tour extraits. Voici les différentes opérations et leurs résultats dans la console&nbsp;:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h4"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"S-1"</span>   <span class="st">"S-2"</span>   <span class="st">"S-3"</span>   <span class="st">"S-4"</span>   <span class="st">"S-5"</span>...</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"44th Parliament, 1st session"</span> <span class="st">"44th Parliament, 1st session"</span>...</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h5"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"An Act relating to railways"</span>                                                                                                                                                                                                                                                                                  </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a> <span class="ex">[2]</span> <span class="st">"An Act to amend the Parliament of Canada Act and to make </span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="st"> consequential and related amendments to other Acts"</span>                                                                                                                                                                                                  </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="st">"An Act to amend the Judges Act"</span>   </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillBS_LEGISinfo</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".bottom-section"</span><span class="kw">)</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ex">BillBS_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"Introduced as pro forma bill"</span>                                 </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Senate bill awaiting first reading in the House of Commons"</span>               </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">[3]</span> <span class="st">"Bill not proceeded with"</span>                                              </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a> <span class="st">"Royal assent received"</span>                                                    </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">[5]</span> <span class="st">"Royal assent received"</span>                                                 </span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a> <span class="st">"At second reading in the House of Commons"</span>     </span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Bill_stage</span> <span class="op">&lt;</span>- html_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_elements<span class="kw">(</span><span class="st">".progress-bar-description"</span><span class="kw">)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Bill_stage</span> <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[1]</span> <span class="st">"First reading in the Senate"</span>            </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Third reading in the Senate"</span>            </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="st">"First reading in the Senate"</span>           </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="st">"Royal assent"</span>                        </span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="st">"Royal assent"</span>                          </span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[6]</span> <span class="st">"First reading in the House of Commons"</span> </span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="st">"First reading in the House of </span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="st">Commons"</span>  <span class="st">"Royal assent"</span>                          </span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="st">"First reading in the House of Commons"</span>  <span class="st">"Royal assent"</span>        </span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Maintenant que nous avons tous les éléments souhaités, il ne reste plus qu’à utiliser la fonction <code>tibble</code> du <em>tidyverse</em>. Ce package permet de facilement créer des dataframes sur <span class="langage-r">R</span>. Voici le script à produire dans l’exemple de LEGISinfo, ainsi que son résultat, un dataframe contenant le numéro de projet de loi, sa session parlementaire, son nom, son statut et son dernier stage de réalisation&nbsp;:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Table_LEGISinfo</span> <span class="op">&lt;</span>- tibble<span class="er">(</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Bill</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h4"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Session</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">".parliament-session"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text2()</span><span class="ex">,</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Name</span> = Bill_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"h5"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Status</span> = BillBS_LEGISinfo <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span><span class="ex">,</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Stage</span> = Bill_stage <span class="kw">|</span><span class="op">&gt;</span> html_element<span class="kw">(</span><span class="st">"dd"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_text2<span class="kw">()</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nous savons maintenant extraire des informations d’un document HTML et les ranger dans une base de données. C’est l’essentiel du travail, et un lecteur pressé peut passer directement à la conclusion du chapitre. Ce qui suit s’adresse aux plus aventureux&nbsp;: deux usages de <em>rvest</em> qui sortent du cas simple, et auxquels il sera toujours temps de revenir.</p>
+<p>Il est possible d’extraire les éléments en fonction de leur attribut grâce à <code>html_attr()</code>. Un attribut est une information supplémentaire associée à une balise HTML. Voici l’attribut <em>href</em> qui permet d’extraire l’URL du projet de loi en question. De cette façon, il est possible de boucler sur les <em>href</em> afin d’extraire divers niveaux d’une page HTML. Lorsque l’extraction se fait sur plusieurs niveaux, la pratique devient de l’indexation. Cette pratique, bien que fondamentale, ne sera pas abordée en raison de sa complexité avancée. Tel que mentionné plus haut, cet ouvrage ne se concentre que sur l’extraction de base.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">BillTile_LEGISinfo</span> <span class="kw">|</span><span class="op">&gt;</span> html_attr<span class="kw">(</span><span class="st">"href"</span><span class="kw">)</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>La ligne de code ci-haut produit le résultat suivant dans la console&nbsp;:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1]</span> <span class="st">"/legisinfo/en/bill/44-1/s-1"</span>  </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="st">"/legisinfo/en/bill/44-1/s-2"</span> </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="st">"/legisinfo/en/bill/44-1/s-3"</span>  </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>rvest</em> extrait aussi les tableaux HTML, et d’une seule fonction. L’exemple qui suit est repris du chapitre sur l’extraction web de <em>R for Data Science</em> <span class="citation" data-cites="wickham_etal23">(<a href="references.html#ref-wickham_etal23" role="doc-biblioref">Wickham et al., 2023</a>)</span>. Il fabrique son propre tableau avec <code>minimal_html()</code>, une fonction qui construit un document HTML à partir de texte. Elle n’a rien à voir avec l’extraction, elle sert seulement à rendre l’exemple autonome&nbsp;: sur un vrai site, l’objet viendrait de <code>read_html()</code>.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">htmltest</span> <span class="op">&lt;</span>- minimal_html<span class="er">(</span><span class="st">"</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="st">  &lt;table class='mytable'&gt;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;tr&gt;&lt;th&gt;x&lt;/th&gt;   &lt;th&gt;y&lt;/th&gt;&lt;/tr&gt;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;tr&gt;&lt;td&gt;1.5&lt;/td&gt; &lt;td&gt;2.7&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;tr&gt;&lt;td&gt;4.9&lt;/td&gt; &lt;td&gt;1.3&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;tr&gt;&lt;td&gt;7.2&lt;/td&gt; &lt;td&gt;8.1&lt;/td&gt;&lt;/tr&gt;</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;/table&gt;</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="st">  "</span><span class="kw">)</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">htmltest</span> <span class="kw">|</span><span class="op">&gt;</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">html_element</span><span class="er">(</span><span class="st">".mytable"</span><span class="kw">)</span> <span class="kw">|</span><span class="op">&gt;</span> html_table<span class="kw">()</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>L’opération précédente produit le résultat suivant dans la console&nbsp;:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A tibble: 3 × 2</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>      <span class="ex">x</span>     y</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">&lt;</span>dbl<span class="op">&gt;</span> <span class="op">&lt;</span>dbl<span class="op">&gt;</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span>   1.5   2.7</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="ex">2</span>   4.9   1.3</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="ex">3</span>   7.2   8.1</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En conclusion de cette section, lorsqu’on extrait un document HTML, il est important de ne pas se laisser intimider par la structure du document. Il ne faut pas perdre patience afin de trouver les bons sélecteurs. Ce sont des structures peu familières au début, mais on s’y habitue rapidement. Ensuite, nous recommandons d’utiliser l’outil de développeur du navigateur web afin de pouvoir trouver les sélecteurs souhaités. L’interface de Chrome est particulièrement conviviale, et est recommandée. Il suffit de cliquer sur <em>inspect</em> suite à un clic droit, et il est possible de chercher les éléments souhaités dans le script HTML. Finalement, avant d’extraire le contenu d’un site web, il est important de vérifier s’il n’offre pas déjà une option pour télécharger les données ! C’est le cas de l’exemple utilisé ici (LEGISinfo), où il est possible dans certains cas de télécharger les données directement sur le site web.</p>
+</section>
+</section>
+</section>
+<section id="en-terminant" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="en-terminant"><span class="header-section-number">6.4</span> En terminant</h2>
+<p>Ce chapitre a pour objectif de dresser un portrait des différents outils de collecte de données mis à la disposition des scientifiques s’intéressant aux sciences sociales. Bien que non exhaustif, ce chapitre fait un survol d’outils traditionnels de récolte de données numériques en sciences sociales tels que les outils de sondages ou de récolte de données médiatiques.</p>
+<p>Il consacre l’essentiel de son propos à l’extraction web avec <em>rvest</em>, parce que c’est la voie qui donne accès à des données qu’aucune plateforme ne met à disposition, et parce qu’elle place le chercheur en amont de la mise en forme plutôt qu’en aval.</p>
+<p>Un seul chapitre ne saurait couvrir tous les outils de collecte à la disposition de la communauté scientifique. Ceux qui sont présentés ici donnent un aperçu des plateformes les plus répandues et du potentiel d’extraction que la maîtrise de <span class="langage-r">R</span> met à portée.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-burrows_savage14" class="csl-entry" role="listitem">
+Burrows, R., &amp; Savage, M. (2014). After the Crisis? <span>Big Data</span> and the Methodological Challenges of Empirical Sociology. <em>Big Data &amp; Society</em>, <em>1</em>(1), 2053951714540280. <a href="https://doi.org/10.1177/2053951714540280">https://doi.org/10.1177/2053951714540280</a>
+</div>
+<div id="ref-connelly_etal16" class="csl-entry" role="listitem">
+Connelly, R., Playford, C. J., Gayle, V., &amp; Dibben, C. (2016). The Role of Administrative Data in the Big Data Revolution in Social Science Research. <em>Social science research</em>, <em>59</em>, 1‑12. <a href="https://doi.org/10.1016/j.ssresearch.2016.04.015">https://doi.org/10.1016/j.ssresearch.2016.04.015</a>
+</div>
+<div id="ref-evans_mathur18" class="csl-entry" role="listitem">
+Evans, J. R., &amp; Mathur, A. (2018). The Value of Online Surveys: <span>A</span> Look Back and a Look Ahead. <em>Internet research</em>, <em>28</em>(4), 854‑887. <a href="https://doi.org/10.1108/IntR-03-2018-0089">https://doi.org/10.1108/IntR-03-2018-0089</a>
+</div>
+<div id="ref-kramer_etal14" class="csl-entry" role="listitem">
+Kramer, A. D. I., Guillory, J. E., &amp; Hancock, J. T. (2014). Experimental Evidence of Massive-Scale Emotional Contagion through Social Networks. <em>Proceedings of the National Academy of Sciences</em>, <em>111</em>(24), 8788‑8790. <a href="https://doi.org/10.1073/pnas.1320040111">https://doi.org/10.1073/pnas.1320040111</a>
+</div>
+<div id="ref-manovich11" class="csl-entry" role="listitem">
+Manovich, L. (2011). Trending: <span>The</span> Promises and the Challenges of Big Social Data. <em>Debates in the digital humanities</em>, <em>2</em>(1), 460‑475. <a href="http://manovich.net/content/old/03-articles/64-article-2011/64-article-2011.pdf">http://manovich.net/content/old/03-articles/64-article-2011/64-article-2011.pdf</a>
+</div>
+<div id="ref-nayak_ka19" class="csl-entry" role="listitem">
+Nayak, M., &amp; KA, N. (2019). Strengths and Weakness of Online Surveys. 24, 31–38. <em>DOI</em>, <em>10</em>, 0837‑2405053138.
+</div>
+<div id="ref-schroeder14" class="csl-entry" role="listitem">
+Schroeder, R. (2014). Big <span>Data</span> and the Brave New World of Social Media Research. <em>Big Data &amp; Society</em>, <em>1</em>(2), 2053951714563194. <a href="https://doi.org/10.1177/2053951714563194">https://doi.org/10.1177/2053951714563194</a>
+</div>
+<div id="ref-wickham_etal23" class="csl-entry" role="listitem">
+Wickham, H., Çetinkaya-Rundel, M., &amp; Grolemund, G. (2023). <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em> (Second edition). O’Reilly.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_5.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_7.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

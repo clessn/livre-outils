@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - Prélude</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_1.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - Prélude">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/prelude_science_outils.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="709">
+<meta property="og:image:width" content="580">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prelude.html">Prélude</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Prélude</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Alexis Bibeau-Gagnon (Université McGill)<br>
+Adrien Cloutier (Université Laval)<br>
+Yannick Dufresne (Université Laval)</em></p>
+</div>
+<p>Le premier conseil que nous donnons systématiquement à toute personne qui entame une carrière en recherche&nbsp;: apprenez à gérer votre temps. L’entrée dans le monde de la recherche en sciences sociales s’accompagne d’un paradoxe familier&nbsp;: il est tout à fait possible de dédier un nombre d’heures considérable à la recherche, tout en faisant un usage inefficace de ce temps. Il est trop commun de voir des gens s’exténuer à multiplier les tâches, convaincus que le fait d’être occupé équivaut au fait de progresser. L’insécurité est omniprésente dans le monde académique. Devant l’immensité de la connaissance et des compétences possibles, on oscille entre le syndrome de l’imposteur et un narcissisme défensif. Ce vertige des possibilités nous pousse, parfois étrangement, à nous accrocher à ce que nous connaissons déjà et à rationaliser nos angles morts. Ce réflexe est compréhensible (et très humain), mais il est coûteux. Et dans un contexte où les outils de recherche se multiplient et se transforment à une vitesse sans précédent, il est devenu franchement risqué.</p>
+<p>Les outils de recherche ont un potentiel transformatif immense pour le travail scientifique. Mais ils représentent également de redoutables gouffres de temps. Ça demande du courage de remettre en question ses manières de faire de la recherche. L’apprentissage de nouveaux outils nous force à réviser des habitudes parfois ancrées depuis longtemps. Beaucoup de chercheurs continuent de travailler avec l’équivalent académique d’un vieux marteau simplement parce que ça fonctionne «&nbsp;assez bien&nbsp;». Un marteau est très utile et son utilisation est largement répandue dans la population, mais est-ce qu’un apprenti charpentier ne devrait pas apprendre à maîtriser des outils plus spécialisés comme une cloueuse pneumatique s’il veut en faire un métier ? Il semble, en effet, judicieux de sélectionner les outils optimaux qui nous permettront d’exceller dans les tâches spécifiques liées à notre travail. Et cela n’est pas différent pour la recherche.</p>
+<p>Ce livre défend l’idée que la maîtrise des outils numériques est devenue indispensable pour faire de la recherche rigoureuse, reproductible et transparente. Leur apprentissage offre un avantage considérable à ceux qui se destinent à une carrière en recherche, dans le monde universitaire comme ailleurs.</p>
+<p>L’objectif de ce livre est aussi d’éliminer les barrières à l’utilisation de certaines méthodes de recherche. Nous ne prenons pas parti dans le clivage qualitatif/quantitatif. Notre vision repose plutôt sur l’idée que les chercheurs en sciences sociales doivent utiliser les méthodes les plus appropriées pour répondre à leurs questions de recherche <span class="citation" data-cites="shapiro02">(<a href="references.html#ref-shapiro02" role="doc-biblioref">Shapiro, 2002</a>)</span>. Certaines questions nécessitent l’utilisation de modèles statistiques complexes, d’autres des entretiens, des archives ou d’un marteau ! Il n’y a pas de hiérarchie de méthodes. La recherche est comme une lampe de poche qui éclaire un phénomène, et la multiplication des angles d’éclairage ne peut qu’être bénéfique à notre savoir collectif.</p>
+<p>Toutefois, il existe des méthodes plus ou moins appropriées selon les questions de recherche, et aucune formation ne devrait restreindre ces choix. En ce sens, nous croyons fermement que la formation aux outils de recherche peut permettre à tous d’avoir une boîte à outils suffisamment fournie pour choisir la meilleure méthode afin de répondre aux questions de recherche qui les intéressent. L’apprentissage des outils permet ainsi d’éviter des choix méthodologiques sous-optimaux qui sont faits non par conviction, mais par manque de compétences techniques.</p>
+<p>Ce livre est ancré dans les sciences sociales. C’est son contexte de naissance, son terrain naturel, et le cadre de référence de ses exemples. Mais les outils qu’il présente sont fondamentalement interdisciplinaires. <span class="langage-r">R</span>, Git, Zotero, Quarto ou l’intelligence artificielle ne connaissent pas les frontières entre la sociologie, l’histoire, la médecine moléculaire, la santé publique, le droit ou l’éducation. Des chercheurs de toutes ces disciplines les utilisent quotidiennement, pour tenter de répondre à des questions radicalement différentes. Le lecteur issu d’une discipline voisine y trouvera tout autant son compte. Les exemples y sont peut-être moins nombreux dans son domaine spécifique, mais les outils, eux, lui sont communs.</p>
+<p>L’ère numérique a fait exploser le nombre de nouveaux outils permettant de collecter, de gérer et d’analyser le volume lui aussi croissant de données disponibles. La rapidité d’innovation technique dans ce domaine peut donner le vertige. Gestion de données massives, extraction automatisée, plateformes collaboratives, langages de programmation, génération de graphiques visuels, intelligence artificielle, etc. Chaque besoin en recherche est devenu une opportunité pour développer un nouvel outil. Mais le problème, c’est qu’à force de proliférer, il existe aujourd’hui un océan d’outils qui comportent tous leur propre courbe d’apprentissage, leur propre spécificité et qui sont parfois incompatibles les uns avec les autres… C’est un océan difficile à naviguer. Comme c’est souvent le cas, la technologie peut simplifier nos vies mais, par manque de coordination, aussi finir par la complexifier.</p>
+<p>L’arrivée de l’intelligence artificielle générative a ajouté une nouvelle couche à ce problème. Depuis 2022, des outils comme <em>ChatGPT</em>, <em>Claude</em> ou <em>Copilot</em> ont fait irruption dans les pratiques de recherche avec une rapidité déconcertante, soulevant une question que beaucoup se posent maintenant sincèrement&nbsp;: pourquoi investir des heures à apprendre <span class="langage-r">R</span>, Git ou Zotero si une IA peut tout faire à notre place ? C’est une question légitime. Et la réponse de ce livre est claire&nbsp;: parce que l’IA amplifie un chercheur compétent. Elle ne remplace pas les fondations. Un chercheur qui ne maîtrise pas ses outils ne sera pas libéré par l’IA. Il en sera dépendant, sans pouvoir évaluer la qualité de ce qu’elle produit. La maîtrise des outils numériques n’est pas rendue obsolète par l’IA. Au contraire, elle est devenue la condition pour en faire un usage éclairé.</p>
+<hr>
+<p>Ce livre est né dans une salle de classe. Il est le fruit d’une expérience d’enseignement menée à la Chaire de leadership en enseignement des sciences sociales numériques (CLESSN) et au Centre d’analyse des politiques publiques (CAPP) de l’Université Laval, où le constat s’est imposé année après année&nbsp;: les étudiants en sciences sociales arrivent avec de bonnes questions, mais sans les outils pour y répondre efficacement. Cet ouvrage est notre tentative de combler ce fossé.</p>
+<p>Huit ans. C’est le temps qu’il a fallu pour arriver jusqu’ici. Le contenu a été réécrit, retesté, parfois abandonné, souvent repris. Des outils que nous enseignions ont disparu ; d’autres ont émergé. La pandémie a tout bouleversé, puis l’intelligence artificielle générative a changé les règles du jeu en cours de route. Depuis 2024, le contenu de ce livre a pris la forme d’un cours officiel à l’Université Laval (POL-6078, <em>Outils numériques en sciences sociales</em>), où les étudiants contribuent directement au livre via des <em>pull requests</em> sur le <a href="https://github.com/clessn/livre-outils">dépôt <em>GitHub</em></a> du projet. Même quand leurs noms n’apparaissent pas dans le texte, il porte leur empreinte.</p>
+<p>Ce livre a d’ailleurs une double vie. Il paraît en version imprimée aux Presses de l’Université Laval, une première édition officielle et figée, millésime 2027. Mais il vit aussi en libre accès sur <em>GitHub</em>, dans une version évolutive que la communauté enrichit au fil des générations d’étudiants. À notre connaissance, c’est une première pour les PUL&nbsp;: un même ouvrage fixé sur papier, objet de collection, témoin d’un moment précis dans le temps, création d’une équipe particulière, et continuellement mis à jour en ligne par ceux qui l’enseignent et l’apprennent.</p>
+<p>Pourquoi imprimer un livre qui parle d’outils numériques ? Car nous passons déjà nos journées devant un écran, et la fatigue qui vient avec est bien réelle <span class="citation" data-cites="Bailenson_2021">(<a href="references.html#ref-Bailenson_2021" role="doc-biblioref">Bailenson, 2021</a>)</span>. Les étudiants nous en parlent, les professeurs aussi. Le papier a aussi des avantages qu’on avait un peu oubliés. On comprend mieux un texte lu sur papier que sur un écran, et cet écart s’est agrandi avec les années <span class="citation" data-cites="Delgado_2018">(<a href="references.html#ref-Delgado_2018" role="doc-biblioref">Delgado et al., 2018</a>)</span>. Écrire ses notes à la main aide à retenir ce qu’on apprend <span class="citation" data-cites="Mueller_2014">(<a href="references.html#ref-Mueller_2014" role="doc-biblioref">Mueller &amp; Oppenheimer, 2014</a>)</span>. Un ordinateur ouvert en classe dérange d’ailleurs autant celui qui l’utilise que ses voisins <span class="citation" data-cites="Sana_2013">(<a href="references.html#ref-Sana_2013" role="doc-biblioref">Sana et al., 2013</a>)</span>. Chaque notification ajoute un peu de stress <span class="citation" data-cites="mark_etal08">(<a href="references.html#ref-mark_etal08" role="doc-biblioref">Mark et al., 2008</a>)</span>, et un stress qui s’installe nuit à la mémoire et à l’apprentissage <span class="citation" data-cites="lupien_etal09">(<a href="references.html#ref-lupien_etal09" role="doc-biblioref">Lupien et al., 2009</a>)</span>. Dans nos propres cours, nous sommes revenus au papier, au recueil et au crayon. Cal Newport appelle ça le travail en profondeur (le <em>deep work</em>) <span class="citation" data-cites="newport16">(<a href="references.html#ref-newport16" role="doc-biblioref">Newport, 2016</a>)</span>. C’est pour cette raison que l’édition imprimée se termine, à chaque chapitre, par deux pages de notes. Lisez le chapitre, essayez l’outil, puis écrivez ce que vous en retenez.</p>
+<p>Ce livre est aussi rédigé en français, et ce choix n’est pas anodin. La quasi-totalité des ressources de qualité sur les outils numériques de recherche est disponible en anglais. Écrire ce livre en français est un acte délibéré de vulgarisation, à l’intention de toute la communauté scientifique francophone, au Québec et ailleurs<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Le contenu du livre n’est pas non plus définitif. Il a été conçu pour évoluer avec les technologies, les usages, les changements dans la communauté. Ce qu’il pose, en revanche, a vocation à durer&nbsp;: une réflexion sur le choix de ses outils, et pourquoi cette réflexion est si souvent absente de la formation en sciences sociales. Généralement, on y apprend les méthodes. Rarement les outils. Et pourtant ce sont deux choses fondamentalement différentes&nbsp;: <em>la méthode offre la recette, l’outil fournit l’équipement</em>. L’un sans l’autre donne un chercheur à moitié équipé.</p>
+<p>Sur le terrain, les résultats sont là. Depuis le lancement du cours sur les <em>Outils numériques en sciences sociales</em>, des étudiants ont décroché des contrats en recherche, en partie grâce aux compétences techniques acquises. Des messages de remerciement nous parviennent régulièrement. Le monde des outils numériques peut sembler rude au premier abord, la courbe d’apprentissage abrupte. Mais en y allant étape par étape, chapitre par chapitre, on entre dans un univers riche, vibrant et profondément utile pour toute une carrière.</p>
+<p>Ce qui distingue aussi cet ouvrage de la plupart des manuels, c’est que tous les auteurs des chapitres étaient encore étudiants au moment de la rédaction. Les chapitres qui suivent ont été rédigés par des personnes qui ont elles-mêmes traversé la courbe d’apprentissage de ces outils, souvent sans formation préalable. Nous espérons que cette proximité avec l’expérience de l’apprentissage rendra le livre plus utile à ceux qui en sont au même point.</p>
+<p>C’est aussi pourquoi cet ouvrage ne prétend pas être exhaustif. Il ne recense pas tous les outils disponibles, ne couvre pas toutes les méthodes, et ne remplace pas une formation approfondie en statistiques ou en méthodologie de recherche. C’est une sélection assumée&nbsp;: les auteurs ont fait des choix, les ont défendus, et les assument. Le critère ultime n’était pas la popularité ni la nouveauté, mais la valeur réelle des outils pour un chercheur en sciences sociales qui veut travailler de manière rigoureuse, reproductible et autonome.</p>
+<p>Plus précisément, le choix des outils présentés dans ce livre repose sur six critères (détaillés au <a href="chapitre_1.html"><span>Chapitre&nbsp;1</span></a>)&nbsp;:</p>
+<ol type="1">
+<li>Accessibilité <em>(Qui peut accéder à cet outil, et à quel coût ?)</em> ;</li>
+<li>Existence d’une communauté active <em>(En cas de problème, vers quelle communauté se tourner ?)</em> ;</li>
+<li>Popularité dans la discipline <em>(Cet outil facilite-t-il la collaboration avec les pairs ?)</em> ;</li>
+<li>Compatibilité avec d’autres outils <em>(S’intègre-t-il dans un flux de travaux existant ?)</em> ;</li>
+<li>Transparence et réplicabilité <em>(Un collègue pourrait-il reproduire un travail avec cet outil ?)</em> ;</li>
+<li>Adaptabilité et flexibilité <em>(Évoluera-t-il avec les besoins ?)</em>.</li>
+</ol>
+<p>Ces critères sont techniques, mais le choix d’un outil n’est jamais un acte neutre. Derrière chaque décision se cache une posture&nbsp;: certains outils concentrent le pouvoir entre les mains de quelques entreprises, tandis que d’autres le distribuent à une communauté ouverte. Certains rendent la recherche reproductible et vérifiable ; d’autres l’opacifient. Choisir, ou ne pas choisir, c’est donc prendre position. Le <a href="chapitre_1.html"><span>Chapitre&nbsp;1</span></a> développe cette réflexion en profondeur, à travers la philosophie du logiciel libre et du code source ouvert. Cette philosophie traverse aussi le reste du livre. Les enjeux éthiques de la collecte de données (au <a href="chapitre_6.html"><span>Chapitre&nbsp;6</span></a>) ou de l’usage de l’intelligence artificielle (au <a href="chapitre_9.html"><span>Chapitre&nbsp;9</span></a>) en sont des manifestations concrètes.</p>
+<p>La reproductibilité d’une recherche passe aussi par la citation explicite des outils utilisés et la transparence sur les raisons de leur choix. Cette pratique reste pourtant rare dans les publications en sciences sociales <span class="citation" data-cites="arel-bundock_mccrain23">(<a href="references.html#ref-arel-bundock_mccrain23" role="doc-biblioref">Arel-Bundock &amp; McCrain, 2023</a>)</span>. Ce livre en fait un principe structurant&nbsp;: chaque outil présenté est accompagné des raisons qui ont guidé sa sélection. Nous encourageons d’ailleurs les chercheurs à adopter cette même rigueur dans leurs propres travaux. Citer les logiciels et outils utilisés dans une publication scientifique, c’est permettre à d’autres de reproduire, d’évaluer et de bâtir sur ce travail. Cette transparence est elle-même une forme de responsabilité scientifique.</p>
+<p>Ce livre ne fait pas exception. Il est écrit en Markdown et en LaTeX, composé avec Quarto, versionné avec Git et publié en libre accès sur <em>GitHub</em> ; sa bibliographie est tenue dans <em>Zotero</em>. Pendant la révision, des outils d’intelligence artificielle ont servi à vérifier la cohérence entre les chapitres, à relever des répétitions et des erreurs de langue, et à proposer des reformulations. Chaque proposition a été acceptée ou refusée par les auteurs, qui restent responsables du texte. Le propos du livre, lui, est issu d’un travail inductif, de huit ans d’apprentissage, d’enseignement, d’essais, d’erreurs, et précède nombre de ces outils. Le <a href="chapitre_9.html"><span>Chapitre&nbsp;9</span></a> expose cette distinction entre produire et peaufiner.</p>
+<p>Ainsi, les réponses aux questions qui guident le choix des outils varient selon le contexte&nbsp;: la discipline, l’institution, les valeurs, le type de recherche, la taille de l’équipe, les ressources disponibles, les technologies émergentes. Un chercheur en sociologie qualitative, une équipe de science politique computationnelle ou un étudiant au doctorat en psychologie dans une université avec des ressources limitées n’arriveront pas nécessairement aux mêmes choix. C’est normal, et c’est même souhaitable. Les choix éditoriaux de ce livre reflètent un contexte précis&nbsp;: les sciences sociales numériques, au milieu des années 2020, pour un lectorat francophone en début de carrière. Dans dix ans, certaines de nos recommandations auront peut-être changé. Mais les six critères, eux, resteront pertinents.</p>
+<hr>
+<p>Chaque chapitre de ce livre est structuré en trois sections. Le <strong>Point d’observation</strong> situe l’outil dans son contexte historique et conceptuel. L’<strong>Arpentage et le choix éditorial</strong> présente les options disponibles, les compare selon les six critères, et explique les choix retenus dans ce livre et les raisons qui les motivent. Le <strong>Manuel d’instruction</strong> offre un guide pratique pour commencer à utiliser l’outil retenu. Cette structure permet au lecteur de suivre notre raisonnement pas à pas.</p>
+<p>Le livre est également construit en trois sections, organisé comme on bâtit une maison.</p>
+<p>Les <strong>Fondations</strong> (chapitres 1 à 4) posent les bases sans lesquelles rien de solide ne tient&nbsp;: choisir des outils libres et transparents, apprendre à programmer, organiser son flux de travaux et gérer ses données. On ne bâtit pas sur du sable.</p>
+<p>La <strong>Structure</strong> (chapitres 5 à 8) couvre les étapes centrales du cycle de recherche&nbsp;: synthétiser la littérature, collecter des données et les visualiser, et puis rédiger. C’est la charpente du projet scientifique.</p>
+<p>La <strong>Finition</strong> (chapitre 9) est consacrée à l’intelligence artificielle. Ce n’est pas un hasard si ce chapitre arrive en dernier. L’IA ne doit pas réaliser le travail à votre place. Elle peut aider à le peaufiner, à augmenter sa validité et sa fiabilité, si elle est bien intégrée. Mais une belle finition ne pourra jamais sauver une charpente bancale.</p>
+<p>De la question initiale à la contribution scientifique finale, chaque étape du processus de recherche mobilise différents outils. C’est ce que représente la figure ci-dessous, qui constitue notre boussole éditoriale pour l’ensemble de ce livre.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/prelude_science_outils.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption class="figure-caption">Le cycle de la recherche et ses outils</figcaption>
+</figure>
+</div>
+<p>Voici comment chaque chapitre s’inscrit dans cette progression. Chacun est associé à un objet de la boîte à outils, des lunettes au coffre.</p>
+<p><img src="images/chapitre_1_toolbox_glasses_black.png" class="img-fluid" style="width:3.0%"> <strong>Le monde du libre.</strong> Le <a href="chapitre_1.html"><span>Chapitre&nbsp;1</span></a> pose la question fondamentale&nbsp;: avec quels outils choisit-on de faire de la science, et pourquoi ? Les lunettes symbolisent le regard critique et philosophique qu’on pose sur les outils eux-mêmes&nbsp;: distinguer le logiciel libre du logiciel propriétaire, comprendre les valeurs qui les sous-tendent, juger leur compatibilité avec les exigences de la science ouverte. Ce chapitre pose aussi la distinction fondamentale entre outils et méthodes.</p>
+<p><img src="images/chapitre_2_toolbox_hammer_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de programmation.</strong> La programmation est l’outil qui traverse tout le cycle de recherche. Comme le marteau sur un chantier, elle est présente à chaque étape&nbsp;: collecter des données, les transformer, les analyser, les visualiser, les communiquer. Le <a href="chapitre_2.html"><span>Chapitre&nbsp;2</span></a> explique pourquoi <span class="langage-r">R</span> s’est imposé comme le langage de référence en sciences sociales et propose une première immersion dans son environnement et sa logique.</p>
+<p><img src="images/chapitre_3_toolbox_walkietalkie_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de gestion de projet.</strong> Faire de la recherche, c’est souvent gérer de nombreuses tâches en parallèle&nbsp;: écrire, collaborer, déléguer, suivre, livrer. Le talkie-walkie symbolise cette coordination constante entre les membres d’une équipe, entre les projets et les échéances. Le <a href="chapitre_3.html"><span>Chapitre&nbsp;3</span></a> introduit la méthode Agile et ses outils (comme <em>Notion</em>) pour structurer un flux de travaux efficace, que l’on travaille seul ou en équipe.</p>
+<p><img src="images/chapitre_4_toolbox_padlock_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de gestion des données.</strong> Gérer ses données n’est pas une formalité administrative. C’est une décision scientifique fondatrice, prise dès le premier jour, qui engage la transparence et la reproductibilité de toute une recherche. Le <a href="chapitre_4.html"><span>Chapitre&nbsp;4</span></a> outille cette discipline avec Git, <em>GitHub</em> et les dépôts institutionnels. Le cadenas ouvert en résume l’esprit&nbsp;: une science qui protège sans se fermer, qui structure pour que d’autres puissent vérifier, reproduire et bâtir.</p>
+<p><img src="images/chapitre_5_toolbox_tape_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de synthèse de la connaissance.</strong> Le <a href="chapitre_5.html"><span>Chapitre&nbsp;5</span></a> défend l’idée que la revue de littérature est une contribution scientifique à part entière. Le ruban à mesurer sert à prendre l’étendue de ce qui existe avant de bâtir, comme la synthèse de la connaissance qui mesure l’état d’un champ, en relève les lacunes, et y situe une nouvelle contribution. Le chapitre présente <em>Covidence</em> et <em>Zotero</em>, en insistant sur la traçabilité et la reproductibilité du processus.</p>
+<p><img src="images/chapitre_6_toolbox_shovel_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de collecte de données.</strong> Le <a href="chapitre_6.html"><span>Chapitre&nbsp;6</span></a> explore les multiples façons de collecter des données à l’ère numérique. La pelle creuse&nbsp;: elle symbolise l’acte central de la recherche empirique, la recherche des données. Le chapitre couvre les sondages en ligne (<em>Qualtrics</em>, <em>REDCap</em>), les bases de données médiatiques, et le <em>web scraping</em> avec <code>rvest</code>, tout en abordant les enjeux éthiques de la collecte numérique.</p>
+<p><img src="images/chapitre_7_toolbox_equerre_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de visualisation graphique.</strong> Le <a href="chapitre_7.html"><span>Chapitre&nbsp;7</span></a> couvre la visualisation de bout en bout, de l’exploration initiale jusqu’à la communication des résultats, en s’appuyant sur <code>ggplot2</code> et sa grammaire des graphiques. C’est l’équerre qui mesure avec précision, calcule les angles et trace des lignes droites, pour offrir des résultats lisibles et communicables.</p>
+<p><img src="images/chapitre_8_toolbox_pencil_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils de rédaction.</strong> Le <a href="chapitre_8.html"><span>Chapitre&nbsp;8</span></a> présente les langages de balisage (LaTeX, <code>Quarto</code>, Markdown) comme alternatives aux traitements de texte traditionnels et propriétaires. Le crayon écrit&nbsp;: il représente l’acte final du cycle, mettre en forme et publier sa contribution. Plus propres, plus stables, plus reproductibles, ces outils permettent une rédaction scientifique à la hauteur des exigences actuelles.</p>
+<p><img src="images/chapitre_9_toolbox_multitool_black.png" class="img-fluid" style="width:3.0%"> <strong>Outils d’intelligence artificielle.</strong> Le <a href="chapitre_9.html"><span>Chapitre&nbsp;9</span></a> présente les usages de l’intelligence artificielle en recherche. L’outil multifonction traverse le cycle en entier, comme l’IA peut intervenir à chaque étape, de la revue de littérature à la rédaction. Mais cette puissance présuppose tout ce qui précède. Le chapitre invite le chercheur à développer un regard critique sur ces outils dont les biais, les limites et les implications épistémologiques sont encore mal compris.</p>
+<p><img src="images/annexe_toolbox_box_black.png" class="img-fluid" style="width:3.0%"> <strong>L’ordinateur.</strong> L’<a href="annexe_a.html"><span>Annexe&nbsp;A</span></a>, probablement à consulter d’emblée pour certains chercheurs en herbe, démystifie l’environnement matériel de la recherche numérique. Un bon coffre est une base nécessaire pour entreposer tous les outils. RAM, processeur, stockage&nbsp;: cette annexe explique comment choisir une machine adaptée aux exigences des sciences sociales numériques.</p>
+<hr>
+<p>Avant les étudiants, il y a eu des collègues et des amis. Axel Déry, Nadjim Fréchet, Olivier Banville, Flavie Lachance, Judith Bourque, Justine Béchard, William Poirier, Maria Alexandrov, Patrick Poncet et Camille Tremblay-Antoine ont travaillé sur les premières versions de ce contenu, souvent sans savoir ce qu’il deviendrait. Ce livre leur doit beaucoup.</p>
+<p>Rien de tout cela n’aurait évolué sans les étudiants du cours POL-6078, qui ont contribué directement à son amélioration&nbsp;: une correction ici, une suggestion là, parfois une refonte complète d’un passage. C’est cette boucle entre l’enseignement et l’écriture qui fait de ce livre ce qu’il est. Merci à ces contributeurs (pseudonymes GitHub)&nbsp;: ChloeBlx, JanelLaplante, JuliaDulude, Juma2985, Lamiko17, LoicRobinson, MADUP212, NCA0226, NicholasGaudet, Noboe2025, Velomicka, VictorVerville, WilliamBeaudry, adja925, amedee-account, chiara032003, jd-ODD, katelinevalentin1-netizen, laurianne-martin, sarahdb1, theofaitdodo, tomlaf12, watellephil, zahramayo.</p>
+<p>C’est à eux, et à tous ceux qui viendront après, que ce livre est dédié.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-arel-bundock_mccrain23" class="csl-entry" role="listitem">
+Arel-Bundock, V., &amp; McCrain, J. (2023). Software <span>Citations</span> in <span>Political Science</span>. <em>PS: Political Science &amp; Politics</em>, <em>56</em>(3), 398‑401. <a href="https://doi.org/10.1017/S1049096523000239">https://doi.org/10.1017/S1049096523000239</a>
+</div>
+<div id="ref-Bailenson_2021" class="csl-entry" role="listitem">
+Bailenson, J. N. (2021). Nonverbal Overload: <span>A</span> Theoretical Argument for the Causes of <span>Zoom</span> Fatigue. <em>Technology, Mind, and Behavior</em>, <em>2</em>(1), 1‑6. <a href="https://doi.org/10.1037/tmb0000030">https://doi.org/10.1037/tmb0000030</a>
+</div>
+<div id="ref-Delgado_2018" class="csl-entry" role="listitem">
+Delgado, P., Vargas, C., Ackerman, R., &amp; Salmerón, L. (2018). Don’t Throw Away Your Printed Books: <span>A</span> Meta-Analysis on the Effects of Reading Media on Reading Comprehension. <em>Educational Research Review</em>, <em>25</em>, 23‑38. <a href="https://doi.org/10.1016/j.edurev.2018.09.003">https://doi.org/10.1016/j.edurev.2018.09.003</a>
+</div>
+<div id="ref-lupien_etal09" class="csl-entry" role="listitem">
+Lupien, S. J., McEwen, B. S., Gunnar, M. R., &amp; Heim, C. (2009). Effects of Stress throughout the Lifespan on the Brain, Behaviour and Cognition. <em>Nature Reviews Neuroscience</em>, <em>10</em>(6), 434‑445. <a href="https://doi.org/10.1038/nrn2639">https://doi.org/10.1038/nrn2639</a>
+</div>
+<div id="ref-mark_etal08" class="csl-entry" role="listitem">
+Mark, G., Gudith, D., &amp; Klocke, U. (2008). The Cost of Interrupted Work: More Speed and Stress. <em>Proceedings of the <span>SIGCHI</span> Conference on Human Factors in Computing Systems, Chi ’08</em>, 107‑110. <a href="https://doi.org/10.1145/1357054.1357072">https://doi.org/10.1145/1357054.1357072</a>
+</div>
+<div id="ref-Mueller_2014" class="csl-entry" role="listitem">
+Mueller, P. A., &amp; Oppenheimer, D. M. (2014). The Pen Is Mightier than the Keyboard: <span>Advantages</span> of Longhand over Laptop Note Taking. <em>Psychological Science</em>, <em>25</em>(6), 1159‑1168. <a href="https://doi.org/10.1177/0956797614524581">https://doi.org/10.1177/0956797614524581</a>
+</div>
+<div id="ref-newport16" class="csl-entry" role="listitem">
+Newport, C. (2016). <em>Deep Work: <span>Rules</span> for Focused Success in a Distracted World</em>. Grand Central Publishing.
+</div>
+<div id="ref-Sana_2013" class="csl-entry" role="listitem">
+Sana, F., Weston, T., &amp; Cepeda, N. J. (2013). Laptop Multitasking Hinders Classroom Learning for Both Users and Nearby Peers. <em>Computers &amp; Education</em>, <em>62</em>, 24‑31. <a href="https://doi.org/10.1016/j.compedu.2012.10.003">https://doi.org/10.1016/j.compedu.2012.10.003</a>
+</div>
+<div id="ref-shapiro02" class="csl-entry" role="listitem">
+Shapiro, I. (2002). Problems, <span>Methods</span>, and <span>Theories</span> in the <span>Study</span> of <span>Politics</span>, or <span>What</span>’s <span>Wrong</span> with <span>Political Science</span> and <span>What</span> to <span>Do About</span> It. <em>Political Theory</em>, <em>30</em>(4), 596‑619. <a href="https://doi.org/10.1177/0090591702030004008">https://doi.org/10.1177/0090591702030004008</a>
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>L’utilisation du français apporte certains défis, notamment dans la façon dont nous désignons les personnes. Nous privilégions les termes collectifs et neutres, «&nbsp;le lectorat&nbsp;» plutôt que «&nbsp;le lecteur ou la lectrice&nbsp;». Quand la phrase ne s’y prête pas, nous employons un terme épicène, et quand celui-ci alourdit le texte, le masculin générique, qui désigne alors indifféremment toutes les personnes. Nous n’employons ni les doublets complets, ni les formes tronquées par un point médian. Bien sûr, ce livre s’adresse à toutes les personnes s’intéressant à la recherche scientifique.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Bienvenue</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_1.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/prelude.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

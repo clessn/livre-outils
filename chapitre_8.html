@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - 8&nbsp; Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_9.html" rel="next">
+<link href="./chapitre_7.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - 8&nbsp; Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/chapitre_8_toolbox_pencil_black.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="218">
+<meta property="og:image:width" content="216">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html">Structure</a></li><li class="breadcrumb-item"><a href="./chapitre_8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques : les langages de balisage</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#point-dobservation-quest-ce-quun-langage-de-balisage" id="toc-point-dobservation-quest-ce-quun-langage-de-balisage" class="nav-link active" data-scroll-target="#point-dobservation-quest-ce-quun-langage-de-balisage"><span class="header-section-number">8.1</span> Point d’observation&nbsp;: qu’est-ce qu’un langage de balisage ?</a></li>
+  <li><a href="#arpentage-et-choix-éditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage" id="toc-arpentage-et-choix-éditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage"><span class="header-section-number">8.2</span> Arpentage et choix éditorial&nbsp;: quand et pourquoi utiliser un langage de balisage ?</a>
+  <ul class="collapse">
+  <li><a href="#avantages" id="toc-avantages" class="nav-link" data-scroll-target="#avantages"><span class="header-section-number">8.2.1</span> Avantages</a></li>
+  <li><a href="#inconvénients" id="toc-inconvénients" class="nav-link" data-scroll-target="#inconvénients"><span class="header-section-number">8.2.2</span> Inconvénients</a></li>
+  </ul></li>
+  <li><a href="#manuel-dinstruction-comment-utiliser-un-langage-de-balisage" id="toc-manuel-dinstruction-comment-utiliser-un-langage-de-balisage" class="nav-link" data-scroll-target="#manuel-dinstruction-comment-utiliser-un-langage-de-balisage"><span class="header-section-number">8.3</span> Manuel d’instruction&nbsp;: comment utiliser un langage de balisage ?</a>
+  <ul class="collapse">
+  <li><a href="#environnements-dédition-et-de-compilation" id="toc-environnements-dédition-et-de-compilation" class="nav-link" data-scroll-target="#environnements-dédition-et-de-compilation"><span class="header-section-number">8.3.1</span> Environnements d’édition et de compilation</a></li>
+  </ul></li>
+  <li><a href="#en-terminant" id="toc-en-terminant" class="nav-link" data-scroll-target="#en-terminant"><span class="header-section-number">8.4</span> En terminant</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_8.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap8" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Alexandre Fortier-Chouinard (Université Laval)<br>
+Étienne Proulx (Université Laval)<br>
+Maxime Blanchard (McGill University)</em></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre_8_toolbox_pencil_black.png" class="img-fluid figure-img" style="width:12.0%"></p>
+</figure>
+</div>
+<p>En lisant un article scientifique, une page Web ou un curriculum vitæ professionnel, comme plusieurs lecteurs l’auront sans doute deviné, le texte n’est pas toujours produit à l’aide d’un logiciel de traitement de texte comme <em>Microsoft Word</em>, <em>Apple Pages</em> ou <em>LibreOffice Writer</em>. La mise en page complexe réglée au millimètre près, la qualité des figures et des tableaux, l’utilisation de gabarits professionnels, le style des références ou encore la présence d’éléments interactifs sont difficiles et parfois impossibles à reproduire à l’aide d’un logiciel de traitement de texte régulier. L’ajout d’extraits de code, de tableaux de régression ou encore de figures de haute qualité graphique, ainsi que leur personnalisation, nécessitent une interface particulière.</p>
+<p>Pour ces raisons et plusieurs autres, les chercheurs en sciences sociales font souvent appel aux langages de balisage, ou <em>markup languages</em>. Ceux-ci permettent de produire des documents et pages Web sans les limitations des logiciels de traitement de texte. Le présent livre, par exemple, est écrit à l’aide du langage de balisage <em>Markdown</em> avec l’aide du système de publication <em>Quarto</em>. Les logiciels de traitement de texte et les langages de balisage font tous partie de la catégorie des <em>outils de rédaction</em>.</p>
+<p>Il est d’ailleurs important de distinguer les langages de balisage des langages de programmation, qui sont abordés plus en détail dans le <a href="chapitre_2.html"><span>Chapitre&nbsp;2</span></a>. En effet, ceux-ci sont similaires à certains égards, mais ont des vocations différentes. Les deux s’appuient sur un langage informatisé, mais les langages et leurs objectifs diffèrent. Un langage de programmation définit des processus informatisés alors qu’un langage de balisage permet d’encoder du contenu de manière à ce que celui-ci soit lisible tant pour l’humain que pour son ordinateur.</p>
+<p>D’entrée de jeu, il peut sembler curieux d’apprendre des langages de balisage alors que les logiciels de traitement de texte sont nombreux, simples d’approche et en amélioration constante. Ce chapitre n’a pas pour objectif de décourager l’utilisation de ces logiciels, qui sont utiles et même souvent essentiels pour la production rapide de documents ainsi que pour des tâches de suivi des modifications et de travail avec des équipes multidisciplinaires. Le chapitre tentera plutôt de démontrer que la maîtrise des langages de balisage constitue un avantage pour ceux qui souhaitent s’initier au monde de la recherche académique, même si quelques difficultés initiales d’apprentissage peuvent se présenter. Il s’agira de répondre, tour à tour, aux trois grandes questions suivantes&nbsp;: <em>Qu’est-ce qu’un langage de balisage ? Comment utiliser un langage de balisage ? Quand et pourquoi utiliser un langage de balisage ?</em> L’accent sera mis sur <em>Quarto</em> ainsi que sur les langages <em>Markdown</em> et LaTeX, bien que d’autres langages soient aussi abordés.</p>
+<section id="point-dobservation-quest-ce-quun-langage-de-balisage" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="point-dobservation-quest-ce-quun-langage-de-balisage"><span class="header-section-number">8.1</span> Point d’observation&nbsp;: qu’est-ce qu’un langage de balisage ?</h2>
+<p>Un langage de balisage constitue un ensemble de commandes qui peuvent être entremêlées à du texte afin de produire une action informatique. Chaque langage contient son propre ensemble de commandes cohérentes et complémentaires. De manière plus formelle, ces commandes sont nommées <em>balises</em> (<em>tags</em> en anglais) et inscrites par le chercheur au travers du texte. Les balises constituent une manière de communiquer avec le logiciel utilisé dans un langage qu’il peut comprendre. Par exemple, une balise permet d’indiquer au programme qui exécutera la commande que l’on désire qu’une section du texte soit écrite en caractères gras, en italique, à double interligne ou encore que l’on souhaite positionner une image d’une certaine manière au travers du texte. Cette interaction est rendue possible par la standardisation des langages de balisage&nbsp;: chaque balise correspond à une action précise, peu importe le logiciel utilisé, la langue dans laquelle le texte est rédigé, le type d’ordinateur utilisé, etc. Dans le document source, les balises sont entremêlées au contenu du document. Au moment de compiler ce dernier, les balises produisent les actions informatisées qu’elles commandent et laissent comme document final le contenu mis en page tel que défini par l’auteur via les balises utilisées. La compilation est le processus par lequel un document écrit en langage de balisage est transformé en fichier textuel, en format PDF dans le cas de LaTeX&nbsp;par exemple. La <a href="#fig-vscode">Figure&nbsp;<span>8.1</span></a> montre un exemple d’utilisation du langage de balisage <em>Markdown</em> dans un fichier <em>Quarto</em> sur la plateforme-logiciel <code>Visual Studio Code</code> (<code>VS Code</code>). L’écran à droite de l’image montre le fichier PDF résultant du formatage réalisé dans la partie centrale de l’écran. Les balises utilisées sont décrites plus loin dans ce chapitre.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-vscode" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_vscode.png" class="img-fluid figure-img" width="553"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.1: Exemple d’utilisation du langage de balisage Markdown dans un fichier Quarto sur la plateforme VS Code</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Le premier langage de balisage, le Generalized Markup Language (GML), a été inventé en 1969 par les chercheurs Charles F. Goldfarb, Ed Mosher et Ray Lorie pour la compagnie IBM. Goldfarb et ses collègues devaient intégrer trois applications créées avec des langages différents et avec une logique différente pour les besoins d’un bureau de droit. Même après avoir créé un programme qui permettait aux trois applications d’interagir, ces langages demeuraient différents et avaient chacun leur propre fonctionnement. Le développement de GML a permis de résoudre ce problème en standardisant et en structurant le langage&nbsp;: les mêmes commandes étaient utilisées pour accomplir les mêmes tâches dans chaque programme <span class="citation" data-cites="goldfarb96">(<a href="references.html#ref-goldfarb96" role="doc-biblioref">Goldfarb, 1996</a>)</span>. GML a été amélioré durant les décennies suivantes et a été suivi par d’autres langages de balisage, dont LaTeX&nbsp;en 1985, <span class="smallcaps">Bib</span>TeX&nbsp;en 1988, <em>HTML</em> en 1993, <em>XML</em> en 1998, <em>Markdown</em> en 2004 et <span class="langage-r">R</span> <em>Markdown</em> en 2012 <span class="citation" data-cites="encyclopaediabritannica23a hameed23a markdownguide23a worldwidewebconsortium98 xie23a">(<a href="references.html#ref-encyclopaediabritannica23a" role="doc-biblioref">Encyclopaedia Britannica, 2023</a>; <a href="references.html#ref-hameed23a" role="doc-biblioref">Hameed, 2023</a>; <a href="references.html#ref-markdownguide23a" role="doc-biblioref">Markdown Guide, 2023</a>; <a href="references.html#ref-worldwidewebconsortium98" role="doc-biblioref">World Wide Web Consortium, 1998</a>; <a href="references.html#ref-xie23a" role="doc-biblioref">Xie, 2023</a>)</span>.</p>
+<p>Les langages de balisage permettent d’effectuer différentes tâches. <em>HTML</em>, qui est sans doute le plus connu des langages de balisage, permet de formater des sites Web. <em>XML</em>, quant à lui, permet de structurer de larges volumes de données. LaTeX permet pour sa part de formater du texte et de créer des documents en format PDF. <em>Markdown</em> permet également de créer des documents en format PDF, mais aussi en format <em>HTML</em> ou DOCX (format utilisé pour les documents <em>Word</em>), contrairement à LaTeX. <span class="langage-r">R</span> <em>Markdown</em> permet aussi d’ajouter des extraits de code <span class="langage-r">R</span> à un fichier en langage <em>Markdown</em>. Enfin, depuis 2022, le système de publication scientifique et technique multilingue <em>Quarto</em> permet de créer des documents qui intègrent des extraits de code <span class="langage-r">R</span>, LaTeX, Python, Julia ou JavaScript, créés dans différents types d’environnements, à un fichier en langage <em>Markdown</em> <span class="citation" data-cites="allaire22">(<a href="references.html#ref-allaire22" role="doc-biblioref">Allaire, 2022</a>)</span>. LaTeX, <em>Markdown</em>, <span class="langage-r">R</span> <em>Markdown</em> et <em>Quarto</em> permettent aussi d’intégrer les références bibliographiques du système de traitement de références <span class="smallcaps">Bib</span>TeX. Les langages de balisage communiquent ainsi souvent les uns avec les autres au sein d’un même fichier. Le <a href="chapitre_5.html"><span>Chapitre&nbsp;5</span></a> explique la manière de citer les références en langage <span class="smallcaps">Bib</span>TeX par le biais de <em>Zotero</em> et de Better <span class="smallcaps">Bib</span>TeX.</p>
+<p>Pour mieux comprendre ces différents langages, il est utile de les concevoir selon différents niveaux d’abstraction. L’abstraction, définie comme le processus qui consiste à simplifier des systèmes complexes en se concentrant sur les aspects essentiels <span class="citation" data-cites="kramer07 hazzan02">(<a href="references.html#ref-hazzan02" role="doc-biblioref">Hazzan, 2002</a>; <a href="references.html#ref-kramer07" role="doc-biblioref">Kramer, 2007</a>)</span>, constitue un concept fondamental en informatique. Dans le contexte des langages de balisage, cette perspective permet de distinguer différents niveaux selon leur complexité syntaxique et leur facilité d’utilisation. Comme le souligne <span class="citation" data-cites="neumanns19">Neumanns (<a href="references.html#ref-neumanns19" role="doc-biblioref">2019</a>)</span>, il existe une tension fondamentale entre la facilité d’usage et la puissance pour les documents complexes. Bien que les langages de balisage forment en réalité un continuum entre puissance et simplicité <span class="citation" data-cites="arloing_etal16">(<a href="references.html#ref-arloing_etal16" role="doc-biblioref">Arloing et al., 2016</a>)</span>, ce chapitre propose de les organiser selon trois niveaux d’abstraction pour faciliter leur compréhension. Cette simplification pédagogique, illustrée dans la <a href="#fig-niveaux-abstraction">Figure&nbsp;<span>8.2</span></a>, permet de distinguer les principales approches de balisage selon leur complexité d’usage.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-niveaux-abstraction" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_niveaux_abstraction.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.2: Niveaux d’abstraction des langages de balisage selon leur complexité syntaxique et leur flexibilité d’usage</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Les langages à syntaxe complexe constituent le premier niveau de cette hiérarchisation. Ces langages nécessitent de spécifier explicitement de nombreux détails techniques <span class="citation" data-cites="gratzer08">(<a href="references.html#ref-gratzer08" role="doc-biblioref">Grätzer, 2008</a>)</span>. L’utilisateur doit comprendre et contrôler directement les mécanismes sous-jacents&nbsp;: balises détaillées en <em>HTML</em>, schémas complexes en <em>XML</em>, commandes typographiques précises en LaTeX. Au deuxième niveau, un langage comme <em>Markdown</em> simplifie l’interaction en cachant la complexité technique derrière une syntaxe intuitive <span class="citation" data-cites="arloing_etal16">(<a href="references.html#ref-arloing_etal16" role="doc-biblioref">Arloing et al., 2016</a>)</span>. L’utilisateur se concentre sur le contenu plutôt que sur les détails de formatage, le système gérant automatiquement la conversion vers différents formats.</p>
+<p>Le troisième niveau comprend les systèmes de publication computationnelle. Contrairement aux langages traditionnels qui peuvent être étendus pour supporter l’exécution de code, <span class="langage-r">R</span> <em>Markdown</em> et <em>Quarto</em> sont conçus dès le départ pour intégrer programmation lettrée et recherche reproductible <span class="citation" data-cites="knuth84 allaire22">(<a href="references.html#ref-allaire22" role="doc-biblioref">Allaire, 2022</a>; <a href="references.html#ref-knuth84" role="doc-biblioref">Knuth, 1984</a>)</span>. Ces systèmes masquent automatiquement la complexité du balisage, de l’exécution du code et de la génération de résultats dans un flux de travail unifié. Au cœur de cet écosystème se trouve <em>Pandoc</em>, présenté comme un convertisseur universel de documents <span class="citation" data-cites="Pandoc">(<a href="references.html#ref-Pandoc" role="doc-biblioref"><em>Pandoc - Index</em>, s.&nbsp;d.</a>)</span>. <em>Pandoc</em> peut convertir entre de nombreux formats différents grâce à son architecture modulaire&nbsp;: il lit un document dans un format donné, le convertit en représentation intermédiaire, puis l’écrit dans le format de sortie désiré. Cette capacité de conversion universelle explique pourquoi <em>Quarto</em> et <span class="langage-r">R</span> <em>Markdown</em> peuvent produire des documents PDF, DOCX et <em>HTML</em> à partir d’une seule source <em>Markdown</em>. Cette hiérarchisation illustre comment l’abstraction permet de gérer la complexité <span class="citation" data-cites="kramer07">(<a href="references.html#ref-kramer07" role="doc-biblioref">Kramer, 2007</a>)</span>&nbsp;: chaque niveau supérieur simplifie l’usage tout en s’appuyant sur les capacités techniques des niveaux inférieurs.</p>
+<p>Les balises constituent une manière de donner manuellement des commandes au logiciel utilisé. Par contraste, avec <em>Microsoft Word</em>, une panoplie de boutons permettent de formater le texte. Les balises exercent les mêmes fonctions de formatage pour les fichiers produits en LaTeX&nbsp;ou en <em>Markdown</em>, mais doivent être ajoutées à l’écrit par l’utilisateur. Lorsque l’on appuie sur un bouton pour formater le texte ou que l’on utilise une commande comme <code>Ctrl-G</code> ou <code>Cmd-I</code> dans <em>Word</em>, en réalité, cette commande ajoute des balises au travers du texte, mais rend celles-ci invisibles dans l’interface utilisée. Cela permet d’avoir un texte élégant et facile à lire, mais comporte aussi plusieurs inconvénients. Le principal inconvénient est de limiter le pouvoir de l’utilisateur sur le formatage de son texte. En effet, si les boutons à sa disposition dans le logiciel de traitement de texte ne lui permettent pas de réaliser une action, celle-ci sera éternellement impossible à réaliser pour lui. A contrario, les langages de balisage permettent un contrôle presque infini sur les opérations que l’on souhaite réaliser. Incidemment, dans la mesure où l’on utilise le langage approprié pour la tâche que l’on souhaite accomplir, il est possible de donner exactement la commande nécessaire pour réaliser cette action. Bien que l’utilisation de langages de balisage puisse paraître complexe à première vue, il convient de rester attentif aux avantages qu’ils procurent. Les langages de balisage, au-delà du coût d’apprentissage et de l’interface de travail moins intuitive qu’un document <em>Word</em>, offrent notamment une plus grande flexibilité.</p>
+<p>Afin d’utiliser un langage de balisage, il est impératif que le logiciel ou environnement de développement intégré utilisé puisse prendre en compte ce langage. Un logiciel permet rarement d’utiliser n’importe quel langage. Par exemple, le logiciel TeXShop permet seulement d’utiliser le langage LaTeX. Il est aussi important de bien utiliser le langage de balisage. En effet, comme pour les langages de programmation, les langages de balisage ne peuvent pas déduire ce que l’on souhaite leur faire comprendre. Pour mettre du texte en gras, il faut utiliser les bonnes balises. La moindre erreur peut être coûteuse, puisqu’une erreur dans la balise utilisée risque de produire une commande incompréhensible et un message d’erreur, le logiciel ne réussissant pas à associer la balise mal inscrite à une action informatisée. Conséquemment, il est impératif de bien vérifier les balises utilisées afin d’éviter toute erreur qui empêcherait le document d’être compilé, c’est-à-dire d’être traduit dans son format final<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Chaque caractère dans une balise est important et il y a rarement plus d’une seule manière de commander une action. Par exemple, en LaTeX, il n’y a qu’une seule manière de mettre du texte en gras. Il faut précisément utiliser cette commande&nbsp;: <code>\textbf{}</code>. Le positionnement des balises est lui aussi critique&nbsp;: il délimite la portion de texte à laquelle doit être appliquée l’action commandée par la balise.</p>
+<p>Dans le contexte de la recherche en sciences sociales, la programmation est généralement utilisée afin de récolter, d’analyser et de présenter visuellement des données. Une fois cartes, tableaux et graphiques produits, ceux-ci peuvent être enregistrés (par exemple en format PDF ou PNG) et inclus au sein d’un document qui sera formaté en utilisant un langage de balisage. En <span class="langage-r">R</span> <em>Markdown</em> et en <em>Quarto</em>, des extraits de langage de programmation peuvent être inclus dans des sections bien délimitées de documents écrits en langage de balisage. Plus généralement, le langage de programmation contribue à l’analyse alors que le langage de balisage est essentiellement utile afin de présenter les travaux de recherche, que ce soit dans un document écrit ou sur un site Web. C’est principalement de cette manière que sont utilisés les langages de programmation et de balisage dans le cadre de la recherche en sciences sociales.</p>
+</section>
+<section id="arpentage-et-choix-éditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial-quand-et-pourquoi-utiliser-un-langage-de-balisage"><span class="header-section-number">8.2</span> Arpentage et choix éditorial&nbsp;: quand et pourquoi utiliser un langage de balisage ?</h2>
+<p>La plupart des langages de balisage permettent de remplir l’une des deux fonctions suivantes, qui sont particulièrement importantes dans le contexte de la recherche en sciences sociales&nbsp;: produire des documents écrits et formater des pages Web. Dans les deux cas, ces actions peuvent être réalisées à partir de logiciels simples, mais ces logiciels ont des limites importantes auxquelles les langages de balisage apportent des solutions<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Pour l’écriture de documents très simples comme une liste d’épicerie ou des notes rapides pendant une conférence, les logiciels de traitement de texte sont tout à fait convenables&nbsp;: ils sont simples et rapides à utiliser, un formatage professionnel du document n’est pas de mise. Utiliser un langage de balisage pour des tâches de base peut en effet rendre la tâche inutilement longue et complexe. Toutefois, plus la complexité d’un document augmente, plus il devient difficile d’obtenir un résultat satisfaisant en utilisant un logiciel de traitement de texte tel que <em>Word</em>, <em>Pages</em> ou <em>Writer</em>. A contrario, LaTeX&nbsp;permet de produire des documents de tous les niveaux de complexité, tel que démontré sur la <a href="#fig-latex-vs-word">Figure&nbsp;<span>8.3</span></a>. Quant à <em>Markdown</em>, sa courbe d’apprentissage se situerait logiquement entre celles de LaTeX&nbsp;et de <em>Word</em>, puisque ses balises sont simplifiées. Plus généralement, utiliser un langage de balisage comme LaTeX&nbsp;ou <em>Markdown</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> comporte plusieurs avantages par rapport aux logiciels de traitement de texte traditionnels (voir le <a href="#tbl-outils-redaction">Tableau&nbsp;<span>8.1</span></a>). Ces avantages font tous appel à un mélange de quatre concepts principaux&nbsp;: <em>automatisation</em>, <em>personnalisation</em>, <em>flexibilité</em> et <em>qualité graphique</em>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-latex-vs-word" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_word_vs_latex.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.3: Utilité relative de Word et des langages de balisage selon la complexité et la taille du document &nbsp;: Inspiré de <span class="citation" data-cites="quangtrungluu23">Quang Trung Luu (<a href="references.html#ref-quangtrungluu23" role="doc-biblioref">2023</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-outils-redaction" class="anchored">
+
+<div id="zuyvtcfvvs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zuyvtcfvvs table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zuyvtcfvvs thead, #zuyvtcfvvs tbody, #zuyvtcfvvs tfoot, #zuyvtcfvvs tr, #zuyvtcfvvs td, #zuyvtcfvvs th {
+  border-style: none;
+}
+
+#zuyvtcfvvs p {
+  margin: 0;
+  padding: 0;
+}
+
+#zuyvtcfvvs .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 95%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zuyvtcfvvs .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zuyvtcfvvs .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zuyvtcfvvs .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zuyvtcfvvs .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zuyvtcfvvs .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zuyvtcfvvs .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zuyvtcfvvs .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zuyvtcfvvs .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zuyvtcfvvs .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zuyvtcfvvs .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zuyvtcfvvs .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zuyvtcfvvs .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zuyvtcfvvs .gt_row {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zuyvtcfvvs .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zuyvtcfvvs .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zuyvtcfvvs .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zuyvtcfvvs .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zuyvtcfvvs .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zuyvtcfvvs .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zuyvtcfvvs .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zuyvtcfvvs .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zuyvtcfvvs .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zuyvtcfvvs .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zuyvtcfvvs .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zuyvtcfvvs .gt_left {
+  text-align: left;
+}
+
+#zuyvtcfvvs .gt_center {
+  text-align: center;
+}
+
+#zuyvtcfvvs .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zuyvtcfvvs .gt_font_normal {
+  font-weight: normal;
+}
+
+#zuyvtcfvvs .gt_font_bold {
+  font-weight: bold;
+}
+
+#zuyvtcfvvs .gt_font_italic {
+  font-style: italic;
+}
+
+#zuyvtcfvvs .gt_super {
+  font-size: 65%;
+}
+
+#zuyvtcfvvs .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zuyvtcfvvs .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zuyvtcfvvs .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zuyvtcfvvs .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zuyvtcfvvs .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zuyvtcfvvs .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zuyvtcfvvs .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#zuyvtcfvvs .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#zuyvtcfvvs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" style="table-layout:fixed;width:95%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Tableau&nbsp;8.1:  <p>Comparaison des outils de rédaction</p> </caption>
+  <colgroup>
+    <col style="width:35%;">
+    <col style="width:16%;">
+    <col style="width:16%;">
+    <col style="width:16%;">
+    <col style="width:17%;">
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Critères">Critères</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="LaTeX">LaTeX</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="R-Markdown">R Markdown</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Quarto">Quarto</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Word">Word</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Critères" class="gt_row gt_left">Accessibilité</td>
+<td headers="LaTeX" class="gt_row gt_left">Gratuit</td>
+<td headers="R Markdown" class="gt_row gt_left">Gratuit</td>
+<td headers="Quarto" class="gt_row gt_left">Gratuit</td>
+<td headers="Word" class="gt_row gt_left">Dispendieux</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Existence d'une communauté d'utilisateurs</td>
+<td headers="LaTeX" class="gt_row gt_left">Très grande</td>
+<td headers="R Markdown" class="gt_row gt_left">Grande</td>
+<td headers="Quarto" class="gt_row gt_left">En croissance<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></td>
+<td headers="Word" class="gt_row gt_left">Très grande</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Popularité en sciences sociales</td>
+<td headers="LaTeX" class="gt_row gt_left">Très populaire</td>
+<td headers="R Markdown" class="gt_row gt_left">Populaire</td>
+<td headers="Quarto" class="gt_row gt_left">De plus en plus populaire</td>
+<td headers="Word" class="gt_row gt_left">Très populaire</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Compatibilité avec d'autres outils</td>
+<td headers="LaTeX" class="gt_row gt_left">Facilement compatible</td>
+<td headers="R Markdown" class="gt_row gt_left">Facilement compatible</td>
+<td headers="Quarto" class="gt_row gt_left">Facilement compatible</td>
+<td headers="Word" class="gt_row gt_left">Demande un peu d'ajustement</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Transparence et réplicabilité</td>
+<td headers="LaTeX" class="gt_row gt_left">Excellente<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span></td>
+<td headers="R Markdown" class="gt_row gt_left">Excellente</td>
+<td headers="Quarto" class="gt_row gt_left">Excellente</td>
+<td headers="Word" class="gt_row gt_left">Faible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Adaptabilité et flexibilité</td>
+<td headers="LaTeX" class="gt_row gt_left">Très flexible</td>
+<td headers="R Markdown" class="gt_row gt_left">Très flexible</td>
+<td headers="Quarto" class="gt_row gt_left">Très flexible</td>
+<td headers="Word" class="gt_row gt_left">Flexible</td></tr>
+  </tbody>
+  
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Quarto est relativement récent et semble prendre de plus en plus la place de R Markdown parmi la communauté d'utilisateurs de R. Le nombre d'utilisateurs de Quarto est donc appelé à croître dans les prochaines années.</td>
+    </tr>
+    <tr>
+      <td class="gt_footnote" colspan="5"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span> Bien que LaTeX offre une bonne transparence et réplicabilité, son utilisation via Overleaf peut être limitée sans version payante, notamment pour l'intégration avec GitHub et Dropbox. Ces limitations ne s'appliquent pas à des environnements comme RStudio ou VS Code.</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</div>
+</div>
+</div>
+<section id="avantages" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="avantages"><span class="header-section-number">8.2.1</span> Avantages</h3>
+<section id="référencement" class="level4" data-number="8.2.1.1">
+<h4 data-number="8.2.1.1" class="anchored" data-anchor-id="référencement"><span class="header-section-number">8.2.1.1</span> Référencement</h4>
+<p>Premièrement, LaTeX&nbsp;et <em>Markdown</em> permettent d’intégrer une bibliographie <em>automatique</em> et professionnelle en utilisant <span class="smallcaps">Bib</span>TeX. Cette bibliographie peut être adaptée très facilement en différents styles bibliographiques reconnus ou en un style bibliographique <em>personnalisé</em> à partir d’un des nombreux gabarits professionnels disponibles. Avec <span class="smallcaps">Bib</span>TeX, il n’y a pas à vérifier si le titre de l’article est toujours en italique, si le numéro de volume est toujours entre parenthèses ou si le nom de famille des deuxièmes auteurs est toujours avant ou après le prénom puisque toutes ces opérations sont effectuées de manière <em>automatique</em>. <span class="smallcaps">Bib</span>TeX&nbsp;comprend également les différences entre les types de sources (articles scientifiques, livres, sites Internet, etc.) et ajuste leur présentation en conséquence. De plus, si l’une des sources citées n’est pas incluse dans la bibliographie, une erreur s’affiche, permettant d’identifier le problème plutôt que de se retrouver avec une référence manquante. À l’inverse, si une source est retirée du texte, elle disparait <em>automatiquement</em> de la bibliographie dans le document final mais demeure présente dans le fichier où se trouvent les références bibliographiques. Cela évite les aller-retour pour vérifier que chaque source de la bibliographie se trouve au moins une fois dans le texte et que chaque source dans le texte est citée en bibliographie. Grâce aux balises, en cliquant sur les références incluses dans le document, on se retrouve immédiatement plus loin dans le document, à l’endroit où se trouve l’entrée bibliographique associée. Les références <span class="smallcaps">Bib</span>TeX&nbsp;pour articles scientifiques peuvent généralement être copiées-collées à partir de Google Scholar, en cliquant en dessous d’une source sur «&nbsp;Citer&nbsp;» puis «&nbsp;BibTeX&nbsp;». <span class="smallcaps">Bib</span>TeX&nbsp;rend donc extrêmement simple et efficace l’utilisation des références bibliographiques grâce à sa capacité à <em>personnaliser</em> et <em>automatiser</em> leur présentation<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+</section>
+<section id="figures-et-tableaux" class="level4" data-number="8.2.1.2">
+<h4 data-number="8.2.1.2" class="anchored" data-anchor-id="figures-et-tableaux"><span class="header-section-number">8.2.1.2</span> Figures et tableaux</h4>
+<p>L’intégration de figures et de tableaux dans le texte est aussi rendue très simple et professionnelle grâce à LaTeX&nbsp;et à <em>Markdown</em>. La taille de la figure ou du tableau, son positionnement et son intégration par rapport au texte environnant peuvent être réglés avec précision. Cependant, l’ajout de texte avant ou après la figure ou le tableau ne produira pas des résultats inattendus tels qu’une demi-page vide avant un graphique ou un titre de tableau complètement en bas d’une page. En définissant des paramètres pour l’ensemble du texte, le chercheur peut <em>personnaliser</em> entièrement la présentation des figures et des tableaux. De plus, la <em>qualité des figures et des tableaux</em> ne diminue pas lors de leur intégration&nbsp;: les figures restent aussi belles qu’elles l’étaient originalement, ce qui n’est pas toujours le cas dans les logiciels de traitement de texte. Les figures et les tableaux sont aussi numérotés <em>automatiquement</em>, ce qui veut dire que l’utilisateur n’a jamais à se préoccuper de modifier les numéros si l’ordre des figures et tableaux est modifié dans le texte. Grâce aux balises, en cliquant sur le numéro associé à la figure ou au tableau dans le texte, le document se retrouve automatiquement à l’endroit où se trouve la figure ou le tableau. De plus, les figures peuvent être intégrées en format PDF, ce qui permet au lecteur de sélectionner le texte se trouvant sur le graphique directement, incluant les titres des axes et les annotations, ce qui n’est pas possible avec les images PNG intégrées dans <em>Word</em> ou autres logiciels similaires.</p>
+<p>Surtout, l’intégration de graphiques produits par <span class="langage-r">R</span> au texte en langage de balisage est simplifiée et <em>automatisée</em>. En effet, même lorsque les données ou le code pour produire un graphique changent, <span class="langage-r">R</span> resauvegarde le fichier dans le même chemin d’arborescence (<em>path</em>) particulier que l’on a indiqué, par exemple <code>C:/Users/Jean/Dropbox/projet1/graphs/Figure1.pdf</code>. Le langage de balisage peut ensuite indiquer le même chemin d’arborescence, de sorte qu’il n’est pas nécessaire de recopier-coller la figure à l’intérieur du document chaque fois que des changements y sont apportés ; la figure est mise à jour <em>automatiquement</em>. En plus, les figures et tableaux qui sont ajoutés peuvent être automatiquement ajoutés à une liste de tableaux et à une liste de figures juste après la table des matières, dans le cas d’une thèse par exemple.</p>
+<p>L’intégration de figures et de tableaux est particulièrement simple et <em>flexible</em> avec <em>Quarto</em>. Contrairement à LaTeX, qui nécessite la production de tableaux et de figures dans un document en langage de programmation (comme <span class="langage-r">R</span>), <em>Quarto</em> permet de créer une figure grâce à du code <span class="langage-r">R</span> <em>et</em> d’intégrer celle-ci au texte dans un même document. Cela se fait grâce à l’intégration de blocs de code <span class="langage-r">R</span> (<em>code chunks</em>) dans le document. Le code est produit dans le bloc de code et la figure ou le tableau qui en résulte apparait à la fois dans le document <em>Quarto</em>, où des balises supplémentaires permettent d’adapter le formatage, et sur le document fini. Cependant, certains <em>packages</em> <span class="langage-r">R</span> tels que <code>modelsummary</code> et <code>stargazer</code> permettent de créer des tableaux de régression de grande qualité en format LaTeX&nbsp;<span class="citation" data-cites="arel-bundock22a hlavac22a">(<a href="references.html#ref-arel-bundock22a" role="doc-biblioref">Arel-Bundock, 2022</a>; <a href="references.html#ref-hlavac22a" role="doc-biblioref">Hlavac, 2022</a>)</span>. Les tableaux de régression en format <em>Markdown</em> sont pour l’instant plus difficiles à produire au-delà d’un certain niveau de complexité, en raison des limitations du langage <em>Markdown</em>. Cela dit, il est facile de produire des tableaux de très grande qualité en langage LaTeX&nbsp;dans un fichier <em>Markdown</em> ou <em>Quarto</em>.</p>
+</section>
+<section id="équations" class="level4" data-number="8.2.1.3">
+<h4 data-number="8.2.1.3" class="anchored" data-anchor-id="équations"><span class="header-section-number">8.2.1.3</span> Équations</h4>
+<p>LaTeX&nbsp;permet également d’ajouter des équations mathématiques poussées pour les projets de recherche qui les nécessitent. En effet, il existe des balises pour chaque symbole mathématique, et celles-ci peuvent être agencées de manière à former des équations cohérentes. Ces équations peuvent être intégrées au sein même d’une phrase ou être mises de l’avant dans un paragraphe à part centré. Voici un exemple d’équation pour une régression multiple écrite en LaTeX&nbsp;:</p>
+<p><span class="math display">\[\begin{equation}
+    Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \cdots + \beta_k X_k + \epsilon
+\end{equation}\]</span></p>
+</section>
+<section id="table-des-matières-et-mise-en-page" class="level4" data-number="8.2.1.4">
+<h4 data-number="8.2.1.4" class="anchored" data-anchor-id="table-des-matières-et-mise-en-page"><span class="header-section-number">8.2.1.4</span> Table des matières et mise en page</h4>
+<p><em>Markdown</em> et LaTeX&nbsp;permettent aussi la gestion <em>automatisée</em> de la table des matières, et les références aux pages appropriées à partir de la table des matières se mettent à jour en continu. La table des matières prend en compte l’architecture du texte choisie manuellement par le chercheur, qui est définie par des balises définissant différents niveaux hiérarchiques de sections, sous-sections ou chapitres. Des manières <em>automatiques</em> de référencer les figures et les tableaux dans des sections distinctes de la table des matières sont également offertes, encore une fois <em>personnalisables</em> au goût du chercheur.</p>
+<p>Bien que la mise en page de documents produits via <em>Markdown</em> et LaTeX&nbsp;puisse être définie entièrement manuellement par les personnes plus expérimentées, les novices apprécieront les nombreux gabarits (<em>templates</em>) qui permettent de gérer <em>automatiquement</em> la mise en page clés en main. Les gabarits permettent de rendre l’apparence d’un document plus esthétique et uniforme et peuvent être utilisés tels quels ou servir de point de départ pour un chercheur souhaitant y apporter certaines modifications sans toutefois partir d’une feuille blanche. La majorité des personnes qui utilisent ces langages, même les plus expérimentées, utilisent ces gabarits comme base lorsqu’elles rédigent un document. Ces gabarits constituent une mine d’or puisqu’ils rendent accessible le code <em>Markdown</em> ou LaTeX&nbsp;ayant servi à la conception du gabarit, permettant au chercheur de comprendre comment est obtenu le résultat que lui offre le gabarit. Incidemment, il est possible d’identifier les sections de code produisant certains éléments de mise en page (positionnement des numéros de page, positionnement du nom des auteurs en début de document, etc.) et les modifier ou s’en inspirer afin de modifier d’autres gabarits. L’utilisation de ces gabarits peut s’avérer complexe au départ, mais retravailler ces gabarits peut permettre de devenir autonome et de produire exactement le résultat désiré en termes de mise en page, et surtout de les réutiliser. En comparaison, les logiciels de traitement de texte rendent souvent très ardue la mise en page uniforme d’un document, puisque cet élément ne peut pas être <em>automatisé</em>. La liste des gabarits disponibles est extrêmement large, et ceux-ci ont une variété de fonctions. En effet, une variété de gabarits professionnels et de haute <em>qualité graphique</em> sont offerts gratuitement en ligne pour des articles, des livres, des rapports, des <em>curriculum vitæs</em> (<a href="#fig-cv">Figure&nbsp;<span>8.4</span></a>) ou encore des factures professionnelles (<a href="#fig-invoice">Figure&nbsp;<span>8.5</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-cv" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_exemple_cv.png" class="img-fluid figure-img" width="2382"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.4: Exemple de gabarit LaTeX&nbsp;de curriculum vitae &nbsp;: <span class="citation" data-cites="liantze23">LianTze (<a href="references.html#ref-liantze23" role="doc-biblioref">2023</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-invoice" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_exemple_facture.png" class="img-fluid figure-img" width="827"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.5: Exemple de gabarit LaTeX&nbsp;de facture &nbsp;: <span class="citation" data-cites="roux13">Roux (<a href="references.html#ref-roux13" role="doc-biblioref">2013</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La <a href="#fig-cv">Figure&nbsp;<span>8.4</span></a> et la <a href="#fig-invoice">Figure&nbsp;<span>8.5</span></a> ne sont que quelques exemples des milliers de gabarits de documents LaTeX disponibles en ligne. Plusieurs d’entre eux peuvent être téléchargés à partir du site Web d’<span class="citation" data-cites="overleaf23">Overleaf (<a href="references.html#ref-overleaf23" role="doc-biblioref">2023</a>)</span>. Les utilisateurs peuvent y naviguer et voir quel gabarit convient le mieux à leurs besoins. Certaines manières plutôt spécifiques de formater le texte sont présentement disponibles avec LaTeX&nbsp;ou <em>Markdown</em> bien que non disponibles en <em>Word</em>, ce qui constitue une autre démonstration de leur grande <em>flexibilité</em> et capacité de <em>personnalisation</em>. Bien qu’il soit rare que l’on ait absolument besoin de personnaliser le texte ainsi, ces possibilités peuvent s’avérer utiles lorsque l’on rédige un texte qui doit se conformer en tout point à un gabarit spécifique. En effet, certaines revues scientifiques, maisons d’édition et universités, dans le cadre de la rédaction d’articles, de mémoires et de thèses par exemple, imposent ce type de gabarit inflexible et parfois plutôt capricieux.</p>
+</section>
+<section id="compatibilité-entre-types-de-documents" class="level4" data-number="8.2.1.5">
+<h4 data-number="8.2.1.5" class="anchored" data-anchor-id="compatibilité-entre-types-de-documents"><span class="header-section-number">8.2.1.5</span> Compatibilité entre types de documents</h4>
+<p>Un autre avantage non négligeable de <em>Markdown</em>, qui le distingue à cet égard de LaTeX, est la <em>flexibilité</em> des formats de documents qui peuvent être produits. En effet, <em>Pandoc</em> <em>Markdown</em>, une extension du langage <em>Markdown</em> de base, permet d’intégrer dans un seul document plusieurs langages de balisage différents tels que <em>Markdown</em>, LaTeX&nbsp;et <em>HTML</em>. <em>Quarto</em> utilise <em>Pandoc</em> <em>Markdown</em> et est également habilité à travailler avec des extraits de code <span class="langage-r">R</span> ou Python. Ceci permet donc à l’utilisateur de bénéficier des fonctionnalités de différents langages dans un seul document, rendant ainsi possible une variété de <em>personnalisations</em> qui ne seraient pas possibles autrement. Qui plus est, puisque <em>Markdown</em> permet de créer des fichiers <em>Word</em> réguliers, PDF professionnels et <em>HTML</em> à partir d’un même document, l’utilisateur peut choisir à sa convenance et à tout moment de quelle manière sera compilé le document rédigé. Cette possibilité de créer des documents <em>Word</em> est particulièrement pratique dans le cadre de collaboration avec des chercheurs n’utilisant pas les langages de balisage ainsi que lors de l’envoi de manuscrits à des revues scientifiques, puisque certaines d’entre elles exigent de recevoir ceux-ci sous forme de document <em>Word</em>.</p>
+</section>
+<section id="popularité" class="level4" data-number="8.2.1.6">
+<h4 data-number="8.2.1.6" class="anchored" data-anchor-id="popularité"><span class="header-section-number">8.2.1.6</span> Popularité</h4>
+<p>La popularité de certains langages de balisage dans le monde de la recherche confère un avantage considérable à ceux qui savent les utiliser. La maîtrise de ces langages offre aux chercheurs une polyvalence lorsqu’ils doivent collaborer avec diverses équipes de recherche utilisant différentes méthodes de travail. Par exemple, depuis sa création, LaTeX&nbsp;a été adopté largement par le milieu de la publication de travaux scientifiques <span class="citation" data-cites="gaudeul07">(<a href="references.html#ref-gaudeul07" role="doc-biblioref">Gaudeul, 2007</a>)</span>. À titre indicatif, <em>Overleaf</em>, l’éditeur en ligne mentionné précédemment, était utilisé en 2022 par 11 millions d’utilisateurs dans 189 pays autour du globe. Plus de 2000 compagnies et 6800 universités utilisent <em>Overleaf</em> pour écrire en LaTeX&nbsp;<span class="citation" data-cites="Wow">(<a href="references.html#ref-Wow" role="doc-biblioref">Overleaf, 2024</a>)</span>. La popularité des langages de balisage en fait donc des outils utiles pour une personne qui voudrait poursuivre une carrière en recherche académique.</p>
+</section>
+<section id="gestion-des-embûches" class="level4" data-number="8.2.1.7">
+<h4 data-number="8.2.1.7" class="anchored" data-anchor-id="gestion-des-embûches"><span class="header-section-number">8.2.1.7</span> Gestion des embûches</h4>
+<p>Bien que l’apprentissage de LaTeX&nbsp;et de <em>Markdown</em> puisse être parsemé de nombreuses embûches, ces deux langages bénéficient d’une communauté d’utilisateurs en ligne sur laquelle il est possible de s’appuyer afin de résoudre tout problème rencontré, vu la popularité de ces langages. Ces individus, particulièrement les plus expérimentés, sont nombreux à partager leur expérience à leurs collègues rencontrant des problèmes afin de contribuer à régler ceux-ci. Cette communauté est présente sur une multitude de sites Web, bien que le point de rencontre principal soit le forum <span class="citation" data-cites="stackoverflow23">Stack Overflow (<a href="references.html#ref-stackoverflow23" role="doc-biblioref">2023</a>)</span>, qui est également utilisé pour régler des problèmes de programmation. Une simple recherche sur Google d’un problème rencontré avec LaTeX&nbsp;ou <em>Markdown</em> offrira des liens vers des échanges pertinents ayant eu lieu sur Stack Overflow ou encore vers de la documentation technique. L’utilisateur peut donc filtrer les résultats et observer les nombreuses solutions envisageables à son problème afin de définir laquelle est la plus appropriée dans sa situation. Il est important de noter, toutefois, que cette communauté est nettement plus développée pour les utilisateurs de LaTeX&nbsp;que de <em>Markdown</em>, puisque ce dernier langage est moins répandu que le premier.</p>
+<p>Également, avec l’émergence de l’intelligence artificielle (IA), de nombreux modèles d’IA génératifs commencent à émerger comme des ressources d’aide utiles pour les chercheurs. Les auteurs du présent chapitre prônent une attitude de curiosité par rapport au développement des différents systèmes d’IA qui peuvent venir assister l’utilisateur d’un langage de balisage. Par exemple, au moment de la rédaction du présent chapitre, plusieurs grands modèles de langage (<em>large language models</em>, LLM) sont disponibles pour le grand public, incluant les modèles de ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), etc. D’autre part, l’utilisation d’agents d’IA tels que Claude Code (Anthropic), OpenCode (Anomaly) et Codex (OpenAI) faisant appel à plusieurs modèles permet de générer ou de corriger du texte en langage de balisage. Pour en savoir plus sur l’utilisation des outils d’IA en recherche, le <a href="chapitre_9.html"><span>Chapitre&nbsp;9</span></a> offre une vue d’ensemble sur ces questions.</p>
+<p>Le développement des outils faisant appel à l’IA est rapide et constant. Il n’existe donc pas une seule bonne manière d’utiliser l’IA, et les pratiques d’utilisation changent rapidement. Le lecteur est encouragé à se tenir à jour par rapport à celles-ci et à expérimenter différents flux de travail assistés par l’IA en ce qui concerne la rédaction en langages de balisage. Le corpus de données sur lequel différents LLM sont formés inclut une grande variété de langages et de styles d’écriture, incluant LaTeX&nbsp;et <em>Markdown</em>. Ainsi, il est possible de poser des questions en langage courant aux modèles ou agents lorsque des problèmes de balisage sont rencontrés. Ceux-ci fourniront en réponse le texte avec les balises adéquates pour régler le problème ou le régleront directement dans votre fichier. Cela s’applique même pour des problèmes pour lesquels la réponse n’est pas directement indiquée sur Stack Overflow, lorsque la logique des langages est comprise par ces modèles basés sur l’IA. Il arrive que les réponses des modèles de langage soient erronées, tout comme certaines réponses sur Stack Overflow peuvent ne pas être adaptées à régler un problème similaire vécu sur un autre ordinateur, avec des paramètres différents. Il demeure donc important de vérifier les réponses des modèles basés sur l’IA afin de ne pas avoir de mauvaises surprises lors de la compilation du code. Ainsi, il est utile de s’appuyer autant sur la communauté d’utilisateurs de langages de balisage qui échange des ressources en ligne que sur les modèles de langage basés sur l’IA.</p>
+</section>
+<section id="philosophie-du-code-source-ouvert-et-du-logiciel-libre" class="level4" data-number="8.2.1.8">
+<h4 data-number="8.2.1.8" class="anchored" data-anchor-id="philosophie-du-code-source-ouvert-et-du-logiciel-libre"><span class="header-section-number">8.2.1.8</span> Philosophie du code source ouvert et du logiciel libre</h4>
+<p>L’utilisation des langages de balisage s’inscrit bien dans la philosophie du logiciel libre. Le langage LaTeX&nbsp;est distribué sous la licence <em>LaTeX Project Public License</em> (LPPL), alors que <em>Quarto</em> 1.4 est distribué sous la licence du Massachusetts Institute of Technology (MIT). Moyennant le respect de leurs licences respectives, ces licences permettent ainsi aux utilisateurs de LaTeX&nbsp;et de <em>Quarto</em> d’utiliser ces langages comme ils le souhaitent, de redistribuer des copies, de modifier le fonctionnement de ces langages et d’en redistribuer des versions améliorées. Bien que LaTeX&nbsp;et <em>Quarto</em> ne soient pas des logiciels, leur licence d’utilisation est cohérente avec la philosophie du logiciel libre et permet à ces langages d’être utilisés dans de nombreux logiciels.</p>
+<p>D’autre part, LaTeX&nbsp;et <em>Quarto</em> sont deux langages à code source ouvert (<em>open source</em>). Ainsi, leur distribution est entièrement gratuite, il n’y a rien à payer. Leur code source est disponible et les changements à ce code doivent être indiqués. Les licences LPPL et MIT ne discriminent pas certains groupes ou personnes, et elles ne restreignent personne dans l’utilisation pour un domaine d’activité. Ces deux licences ne sont pas spécifiques pour un produit, ce qui signifie que ces deux langages peuvent être utilisés dans plusieurs logiciels et programmes, dont certains sont payants (<em>Overleaf</em> comporte ainsi une version payante). Ces licences sont également technologiquement neutres, rendant ainsi LaTeX&nbsp;et <em>Quarto</em> accessibles aux utilisateurs de tous les systèmes d’exploitation.</p>
+</section>
+</section>
+<section id="inconvénients" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="inconvénients"><span class="header-section-number">8.2.2</span> Inconvénients</h3>
+<p>Il existe toutefois des désavantages inhérents à l’utilisation des langages de balisage. L’un des principaux désavantages de <em>Markdown</em> et de LaTeX&nbsp;est le fait qu’ils ne comportent aucun système de suivi des modifications lors de travaux collaboratifs. Pour réviser un travail fait en langage de balisage, des commentaires peuvent être ajoutés sur le fichier sortant (nécessairement PDF pour un fichier sortant produit avec LaTeX). Des commentaires peuvent aussi être faits directement dans le document LaTeX&nbsp;ou <em>Markdown</em>, à l’aide de balises spécifiques. Ces commentaires n’apparaissent cependant pas dans le fichier sortant. Le suivi des modifications en LaTeX&nbsp;et <em>Markdown</em> nécessite donc souvent l’utilisation de Git et de <em>GitHub</em>, qui sont abordés plus en détail dans le <a href="chapitre_4.html"><span>Chapitre&nbsp;4</span></a>. Même avec une plateforme de gestion des versions comme <em>GitHub</em>, les longs paragraphes ayant fait l’objet de plusieurs modifications peuvent être longs à comparer par rapport aux logiciels de traitement de texte, qui permettent de visualiser les propositions d’ajouts et de retraits de caractères de manière plus intuitive. Le suivi des modifications en logiciel de traitement de texte permet également de distinguer les auteurs de différents commentaires par leurs noms, alors que les ajouts et retraits itératifs en <em>GitHub</em> peuvent rendre difficile l’identification de l’auteur d’une modification. Pour ces raisons, et aussi pour faciliter la mise en page par les éditeurs, certaines revues scientifiques refusent les fichiers PDF et demandent que les soumissions soient faites en format DOCX, ce qui pose problème pour les utilisateurs de LaTeX&nbsp;mais pas ceux de <em>Markdown</em> ou <em>Quarto</em>.</p>
+<p>Les langages de balisage comportent également un autre désavantage important dans certains cas&nbsp;: l’absence d’un correcteur de fautes de français complet, en particulier pour corriger les fautes autres que celles d’orthographe en français. Parmi les principaux endroits permettant l’édition en langages de balisage, <code>Visual Studio Code</code> (<code>VS Code</code>) et <em>Overleaf</em> comprennent tous deux une extension LanguageTool (LTeX pour <code>VS Code</code>, à ne pas confondre avec LaTeX), qui permet la révision orthographique et syntaxique dans plusieurs langues. <code>VS Code</code> possède également une extension <em>Antidote</em> pour les personnes qui paient déjà pour ce logiciel. D’autres extensions linguistiques existent également pour <code>VS Code</code>, de même que pour les logiciels de traitement de texte comme <em>Word</em>.</p>
+<p><code>Positron</code>, l’environnement de développement de <em>Posit</em> présenté au <a href="chapitre_2.html"><span>Chapitre&nbsp;2</span></a>, est construit sur la même base technologique que <code>VS Code</code>. Il accepte donc les mêmes extensions de vérification, <em>LanguageTool</em> comprise. Il n’offre en revanche aucun correcteur intégré. L’équipe de développement suit cette demande depuis 2023, en reconnaissant qu’une expérience d’écriture agréable dès l’installation supposerait de ne pas avoir à chercher une extension, mais rien n’était livré au moment d’écrire ces lignes.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>Cependant, <code>RStudio</code> ne possède qu’un correcteur orthographique de base, disponible en plusieurs langues. Ce correcteur ne repère pas les erreurs de syntaxe, de grammaire ou de forme, entre autres. Ces éléments sont pourtant essentiels pour la rédaction de textes académiques<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, d’autant plus que les utilisateurs de LaTeX ont tendance à faire davantage de fautes d’orthographe et de grammaire lors de la rédaction que les utilisateurs de <em>Word</em> <span class="citation" data-cites="knauff_nejasmic14">(<a href="references.html#ref-knauff_nejasmic14" role="doc-biblioref">Knauff &amp; Nejasmic, 2014</a>)</span>. Bien que <code>RStudio</code> soit excellent pour la programmation en <span class="langage-r">R</span> et l’analyse de données, les auteurs du présent ouvrage suggèrent fortement que les utilisateurs des langages de balisage fassent appel à <code>VS Code</code>, <code>Positron</code>, ou <em>Overleaf</em> plutôt qu’à <code>RStudio</code> pour l’édition de leurs documents, afin de profiter d’extensions de correction grammaticale plus complètes comme LanguageTool/LTeX. Une approche hybride (<code>RStudio</code> pour l’analyse de données, <code>Positron</code>/<code>VS Code</code>/<em>Overleaf</em> pour la rédaction) peut s’avérer particulièrement efficace.</p>
+<p>Enfin, les langages de balisage, contrairement aux logiciels de traitement de texte, nécessitent d’être compilés, ce qui implique que deux fichiers coexistent&nbsp;: le fichier où le langage de balisage est utilisé (format <code>.tex</code> pour LaTeX, <code>.md</code> pour <em>Markdown</em> ou encore <code>.qmd</code> pour <em>Quarto</em>) ainsi que le fichier où le texte final balisé apparait (généralement <code>.pdf</code>, <code>.docx</code> ou <code>.html</code>). La compilation peut prendre un temps variable selon la complexité du document, mais dure typiquement une quinzaine de secondes. Le fait de devoir travailler avec deux fichiers en parallèle et de ne pas voir immédiatement l’effet des balises sur le document final constitue ainsi un autre désavantage des langages de balisage.</p>
+<p>LaTeX&nbsp;comporte aussi quelques difficultés techniques particulières qui peuvent être réglées ou diminuées en travaillant en <em>Markdown</em>. Premièrement, LaTeX&nbsp;est difficile à apprendre. Certaines tâches qui peuvent sembler simples comme l’ajout d’un tableau peuvent nécessiter de nombreuses lignes de code. De plus, à la moindre erreur de frappe dans l’utilisation d’une balise, le code risque de ne pas fonctionner et de ne pas produire le document PDF souhaité. C’est ce qu’on appelle une erreur de compilation. <em>Markdown</em> est un langage plus simple à apprendre, avec des balises plus courtes et intuitives. Il occasionne donc moins d’erreurs de compilation.</p>
+<p>Deuxièmement, LaTeX est peu compatible avec les logiciels de traitement de texte comme <em>Word</em>. Dans un sens, pour transférer un fichier créé à partir d’un logiciel de traitement de texte vers LaTeX, les balises doivent être ajoutées manuellement une par une. Dans l’autre sens, pour transférer un document LaTeX vers un fichier de traitement de texte, le convertisseur <em>Pandoc</em> peut être utilisé, mais celui-ci ne repère pas toutes les balises. Il est alors souvent nécessaire de faire des aller-retour entre le fichier LaTeX original et le fichier converti en format DOCX pour s’assurer du succès de la conversion. Parfois, les balises doivent même être retirées une par une et le formatage doit être refait en utilisant les boutons fournis sur le logiciel de traitement de texte. Une autre option consiste à copier le texte directement à partir du fichier PDF produit par LaTeX vers un logiciel de traitement de texte, mais cette méthode présente aussi des défis&nbsp;: les fins de ligne sont interprétées par <em>Word</em>, <em>Pages</em> ou <em>Writer</em> comme des retours plutôt que des espaces, et les accents sont souvent mal copiés et doivent être réécrits manuellement.</p>
+<p><em>Markdown</em> et <em>Quarto</em> évitent en grande partie ce problème en permettant d’écrire un fichier DOCX à partir du langage de balisage. Le formatage du fichier DOCX demeure un peu compliqué cependant et doit être fait à partir du modèle d’un autre document DOCX formaté tel que souhaité. <em>Quarto</em> facilite particulièrement cette tâche en permettant d’écrire un texte en format <em>Markdown</em> et de produire un fichier DOCX à partir d’un gabarit <em>Word</em>. Cependant, les fichiers DOCX ne peuvent toujours pas être transformés en format <em>Markdown</em>. Pour les fichiers <em>Word</em> à transformer en format <em>Markdown</em>, les balises plus simples en <em>Markdown</em> qu’en LaTeX rendent néanmoins la tâche plus simple.</p>
+<p>Somme toute, <em>Word</em> n’est pas à antagoniser et demeure très utile pour des tâches simples. Cependant, dans le monde académique, la production de fichiers de qualité faisant appel à des graphiques, tableaux et blocs de code personnalisés de qualité et automatisés est simplifiée en utilisant des langages de balisage. Il n’est ainsi pas anodin que ces langages soient adoptés par plusieurs dans le monde académique, surtout pour la rédaction de manuscrits au formatage très strict comme des mémoires et des thèses (plusieurs universités possèdent ainsi des gabarits LaTeX de mémoires et de thèses). Pour ces raisons, il est avantageux pour une personne poursuivant des études supérieures en sciences sociales, par exemple, de passer outre la difficulté initiale d’apprentissage des langages de balisage. L’apprentissage de ces langages permettra de s’aligner sur les pratiques répandues dans le milieu académique et d’améliorer davantage la qualité de la production d’écrits scientifiques.</p>
+</section>
+</section>
+<section id="manuel-dinstruction-comment-utiliser-un-langage-de-balisage" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="manuel-dinstruction-comment-utiliser-un-langage-de-balisage"><span class="header-section-number">8.3</span> Manuel d’instruction&nbsp;: comment utiliser un langage de balisage ?</h2>
+<p>En pratique, comment utilise-t-on <em>Markdown</em>, LaTeX&nbsp;et <span class="smallcaps">Bib</span>TeX ? D’emblée, LaTeX&nbsp;a une syntaxe particulière qui demande un certain temps d’adaptation. Pour écrire une phrase simple comme celle-ci, la phrase peut être écrite telle quelle. Par contre, pour mettre un <strong>mot</strong> en caractères gras, il faut utiliser la balise suivante&nbsp;: <code>\textbf{mot}</code>. Pour mettre le <span style="color: red;">mot</span> en rouge, la balise est <code>\textcolor{red}{mot}</code>. Pour le mettre en italique et en note de bas de page<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, les balises <code>\footnote{\emph{mot}}</code> peuvent être utilisées. Ainsi, des balises peuvent contenir d’autres balises. En langage LaTeX, une balise commence toujours par une barre oblique inversée. Par la suite, le nom de la fonction (<em>emph</em>, <em>textbf</em>, <em>textcolor</em>, etc.) est appelé. Enfin, généralement, le mot à formater est placé entre accolades (<code>{}</code>).</p>
+<p>Chaque document LaTeX commence par un préambule. Celui-ci présente des informations telles que la taille des caractères, le type de document, le format de mise en page, la police de caractères, l’utilisation d’en-têtes et de pieds de page, ainsi que l’utilisation de <em>packages</em> LaTeX&nbsp;permettant différentes fonctionnalités de personnalisation du document. Il n’est pas nécessaire ni souhaitable d’apprendre l’ensemble des fonctions et des <em>packages</em> LaTeX&nbsp;qui existent. Au contraire, il est souvent mieux pour l’utilisateur de commencer par un gabarit de document qui convient au type de document désiré et ensuite de rechercher en anglais sur Stack Overflow la manière d’ajouter des éléments de formatage qui lui sont inconnus, par exemple en recherchant <code>highlight latex text</code>.</p>
+<p><em>Markdown</em> fonctionne de manière similaire à LaTeX, mais se démarque par sa plus grande flexibilité et sa syntaxe beaucoup plus légère. Par contre, il nécessite parfois l’utilisation de balises LaTeX&nbsp;afin de réaliser certaines tâches, comme changer la couleur du texte. Tout document <em>Markdown</em> débute avec un court bloc de syntaxe YAML (acronyme de <em>Yet Another Markup Language</em>) qui définit les paramètres généraux du document. Voici un bloc YAML typique pour un document <em>Quarto</em>&nbsp;:</p>
+<pre><code>---
+title: "Baliser les sciences sociales"
+subtitle: "Langages et pratiques"
+date: today
+author:
+  - Alexandre Fortier-Chouinard^[Université Laval]
+  - Étienne Proulx^[Université Laval]
+  - Maxime Blanchard^[McGill University]
+format: pdf
+toc: true
+date-format: "MMMM D, YYYY"
+bibliography: other_files/livre-outils.bib
+---</code></pre>
+<p>Outre le titre, le sous-titre et le nom des auteurs, on trouve aussi dans l’en-tête YAML la présence d’une table des matières (<code>toc</code>), la date et son format, le format du document compilé (dans ce cas-ci, PDF) ainsi que le chemin d’arborescence afin d’accéder au document <span class="smallcaps">Bib</span>TeX&nbsp;où sont enregistrées les références utilisées. Il est aussi possible d’y définir la taille de la police de caractères ou encore le gabarit <em>Word</em> servant à définir le format d’un document DOCX à produire. De manière particulièrement importante, l’entête YAML est l’endroit où sont chargés les <em>packages</em> LaTeX&nbsp;qui seront utilisés. En effet, la majorité des <em>packages</em> et fonctions LaTeX&nbsp;sont utilisables dans <em>Markdown</em>, alors que l’inverse n’est pas vrai. Il est donc possible de personnaliser un document <em>Markdown</em> en utilisant des <em>packages</em> ayant été créés pour LaTeX.</p>
+<p>La syntaxe à utiliser au travers du texte en <em>Markdown</em> est somme toute plutôt simple. Pour mettre un ou plusieurs <strong>mots en gras</strong>, il suffit de les entourer de deux astérisques (<code>**mots en gras**</code>) ; pour les mettre <em>en italique</em>, il faut les encadrer d’un seul astérisque (<code>*en italique*</code>). Pour définir un titre de section ou de sous-section, il suffit de mettre des <code>#</code> devant le titre en question. Plus on ajoute de <code>#</code>, plus le titre sera petit et plus il sera considéré à un niveau hiérarchique inférieur dans la structure du texte. La syntaxe <em>Markdown</em> est donc plus légère que celle de LaTeX, dans le but d’en rendre la lecture plus simple pour les utilisateurs.</p>
+<p>Bien que des gabarits <em>Markdown</em> soient disponibles, ceux-ci sont plus rares. Ils se trouvent pour la plupart sur <em>GitHub</em> et sont rendus disponibles par leur créateur. Cela étant dit, leur personnalisation peut s’avérer plutôt complexe. En somme, <em>Markdown</em> est particulièrement pratique pour les documents ne nécessitant pas de respecter un gabarit précis et requérant simplement un document d’allure simple et professionnelle.</p>
+<p>Pour sa part, <span class="smallcaps">Bib</span>TeX&nbsp;a une syntaxe relativement simple. D’emblée, les références <span class="smallcaps">Bib</span>TeX pour des articles et ouvrages scientifiques sont disponibles sur Google Scholar. La <a href="#fig-ggscholar">Figure&nbsp;<span>8.6</span></a> montre comment accéder facilement à ces références. Toutefois, pour citer des sites Web ou des articles de médias, la référence doit être écrite à la main selon un format précis. Une bibliographie sur <span class="smallcaps">Bib</span>TeX&nbsp;peut ressembler à ceci&nbsp;:</p>
+<pre><code>@book{darwin03,
+  address = {London},
+  author = {Darwin, Charles},
+  publisher = {John Murray},
+  title = {{On the Origin of Species by Means of Natural Selection
+or the Preservation of Favoured Races in the Struggle for Life}},
+  year = {1859}
+}
+
+@article{goldfarb96,
+  title={The Roots of SGML: A Personal Recollection},
+  author={Goldfarb, Charles F},
+  journal={Technical communication},
+  volume={46},
+  number={1},
+  pages={75},
+  year={1999},
+  publisher={Society for Technical Communication}
+}</code></pre>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ggscholar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_google_scholar_bibtex.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.6: Capture d’écran d’un exemple illustrant comment trouver le <span class="smallcaps">Bib</span>TeX&nbsp;sur Google Scholar.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Un fichier <span class="smallcaps">Bib</span>TeX&nbsp;ne contient rien de plus qu’une série de publications commençant chacune par la balise <code>@</code> suivie du type d’article (<em>article</em>, <em>book</em> pour un livre, <em>incollection</em> pour un chapitre de livre, <em>inproceedings</em> pour une présentation dans une conférence, <em>unpublished</em> pour un article non publié et <em>online</em> pour un site Web sont parmi les plus connus) et des informations sur la publication mises entre accolades. La première information entre accolades est le code de la référence, par exemple <code>goldfarb96</code>. Dans le fichier LaTeX, l’auteur doit écrire <code>\cite{goldfarb96}</code> pour voir dans le document PDF compilé <span class="citation" data-cites="goldfarb96">Goldfarb (<a href="references.html#ref-goldfarb96" role="doc-biblioref">1996</a>)</span> ; le lien est automatiquement cliquable et renvoie à la notice bibliographique correspondante. L’ordre des publications dans le document <span class="smallcaps">Bib</span>TeX&nbsp;a peu d’importance, puisque LaTeX&nbsp;réordonne par défaut la bibliographie en ordre alphabétique.</p>
+<section id="environnements-dédition-et-de-compilation" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="environnements-dédition-et-de-compilation"><span class="header-section-number">8.3.1</span> Environnements d’édition et de compilation</h3>
+<p>Contrairement à <em>Microsoft Word</em> et <em>Apple Pages</em>, il existe plusieurs options d’environnements d’édition et de compilation spécifiques à chaque langage. Ces environnements sont des plateformes et des logiciels conçus pour faciliter l’édition, la mise en forme et la compilation de documents dans des langages de balisage tels que LaTeX&nbsp;et <em>Markdown</em>. Ils permettent également de rendre plus efficace et conviviale la production de documents tout en fournissant des fonctionnalités spécifiques aux besoins de chaque langage. Il existe une grande diversité d’environnements d’édition et de compilation, et le choix est libre pour le chercheur de trouver celui qui convient le mieux à ses besoins ou aux besoins de son groupe de recherche. Les trois options discutées ici sont parmi les plus utilisées par les chercheurs en sciences sociales et peuvent être regroupées en deux catégories&nbsp;: les logiciels de bureau et les éditeurs en ligne. La <a href="#fig-environnements-edition">Figure&nbsp;<span>8.7</span></a> présente une vue d’ensemble des principaux environnements d’édition disponibles pour les chercheurs en sciences sociales, organisés selon leur type (logiciels de bureau vs éditeurs en ligne) et les langages de balisage qu’ils supportent.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-environnements-edition" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_8_environnements_edition.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;8.7: Vue d’ensemble des environnements d’édition pour langages de balisage</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>D’abord, il existe plusieurs logiciels de bureau qui offrent un environnement d’édition et/ou de compilation pour les langages de balisage. Ces logiciels fournissent les programmes principaux, les extensions essentielles et des outils complémentaires de compilation et de visualisation afin de permettre la production de documents écrits en langages de balisage. Deux environnements régulièrement utilisés pour travailler en langage de balisage sont les logiciels de bureau <code>VS Code</code> et <code>RStudio</code>, également abordés dans le <a href="chapitre_2.html"><span>Chapitre&nbsp;2</span></a>. <code>VS Code</code> prend en compte un plus grand nombre de langages de programmation et est utilisé par les programmeurs de tous domaines, tandis que <code>RStudio</code> est surtout utile pour les chercheurs en sciences sociales qui travaillent surtout en <span class="langage-r">R</span>.</p>
+<p>Utiliser <code>VS Code</code> ou <code>RStudio</code> pour travailler en langage de balisage permet de produire des documents avec différents langages de balisage et programmation, ainsi que de naviguer entre eux, à partir d’une même fenêtre. Il suffit d’installer certains <em>packages</em> contenant les fichiers nécessaires à l’utilisation des langages de balisage. Par exemple, il est possible de produire des documents en LaTeX&nbsp;en utilisant le code suivant dans la console pour installer le <em>package</em> nécessaire à l’utilisation de la distribution LaTeX&nbsp;TinyTeX<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>&nbsp;: <code>install.packages("tinytex")</code>. Pour l’écriture en langage de balisage, il est en effet nécessaire d’installer l’une des nombreuses distributions LaTeX&nbsp;en ligne afin de pouvoir compiler ces documents dans un environnement local. Suivant le même principe, il est possible de produire des documents en <span class="langage-r">R</span> <em>Markdown</em> sur <code>RStudio</code> en installant le <em>package</em> suivant&nbsp;: <code>install.packages("rmarkdown")</code>. Pour <em>Quarto</em>, le téléchargement se fait en ligne, directement à partir du site Web de <span class="citation" data-cites="quarto23a">Quarto (<a href="references.html#ref-quarto23a" role="doc-biblioref">2023</a>)</span>.</p>
+<p>Lorsque vient le temps de collaborer à plusieurs sur un document écrit en <em>Markdown</em> ou en LaTeX, les logiciels de bureau évoqués précédemment nécessitent l’utilisation de <em>GitHub</em> et de <code>Git</code>. L’utilisation de ces éditeurs peut présenter un défi supplémentaire pour les équipes de recherche non initiées. Il existe ainsi des éditeurs en ligne qui permettent de collaborer en temps réel sans passer par <code>Git</code> et <em>GitHub</em>, de manière similaire à <em>Google Docs</em>. Le plus connu de ces éditeurs en ligne est <em>Overleaf</em>, qui permet de produire des documents en langage LaTeX<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. Puisqu’<em>Overleaf</em> permet d’avoir accès à ses documents LaTeX&nbsp;à partir de n’importe quel navigateur, il n’y a pas de dépendance à un logiciel local sur un ordinateur, ce qui constitue un avantage important. La contrepartie de cet avantage est qu’en utilisant <em>Overleaf</em>, l’équipe de recherche est dépendante d’une connexion à Internet. En utilisant le package LaTeX&nbsp;<code>markdown</code>, <em>Overleaf</em> peut également inclure du code <em>Markdown</em>. Cependant, <em>Overleaf</em> ne permet pas de créer des documents en format DOCX ou <em>HTML</em>, ce qui constitue une limite de l’application. <em>Overleaf</em> comporte un compteur de mots intégré, ce qui n’est pas le cas des logiciels et environnements présentés plus haut.</p>
+</section>
+</section>
+<section id="en-terminant" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="en-terminant"><span class="header-section-number">8.4</span> En terminant</h2>
+<p>Maintenant que le lecteur de ce chapitre a une meilleure idée de ce que sont les langages de balisage et de leur utilité, la prochaine étape consiste à expérimenter par lui-même. Le chapitre se termine donc par un résumé des étapes à suivre pour devenir expert dans les langages de balisage.</p>
+<p>La première étape consiste à commencer à expérimenter dès que possible, sans se laisser freiner par l’incompréhension. Il n’est pas nécessaire de tout comprendre des langages de balisage pour produire un document de qualité. Avec cet état d’esprit, le lecteur franchira les difficultés initiales de l’apprentissage des langages de balisage plus rapidement. Avant de commencer, il doit s’assurer d’avoir un ordinateur de bonne qualité qui lui permet de travailler rapidement (voir l’<a href="annexe_a.html"><span>Annexe&nbsp;A</span></a> à ce sujet).</p>
+<p>En deuxième lieu, il ne faut pas hésiter à utiliser les ressources disponibles pour gagner du temps. Les <em>cheat sheets</em> disponibles en ligne, l’aide de LLMs qui connaissent les langages de balisage (par exemple, <em>ChatGPT</em>) et le recours à des sites comme <em>Stack Overflow</em> peuvent être très utiles. Si on ne fait pas appel à des ressources externes, il peut être facile de devenir fâché contre soi-même ou contre l’infrastructure informatique. Il est parfaitement normal de demander de l’aide externe. Même les experts le font.</p>
+<p>La troisième étape est de ne surtout pas sous-estimer l’aide de ses pairs. Il ne faut pas hésiter à poser des questions et à demander de l’aide à des personnes plus expérimentées pour résoudre des problèmes que l’on ne parvient pas à résoudre avec les ressources externes.</p>
+<p>Avant d’aborder la quatrième et dernière étape, il est important de mentionner quelques pièges à éviter lors de la transition de débutant à expert. Tout d’abord, il faut porter attention aux exigences des revues lors de la soumission d’articles scientifiques. Certaines demandent des articles au format <em>Word</em> tandis que d’autres préfèrent les langages de balisage. Savoir comment convertir correctement les documents est donc un atout.</p>
+<p>De plus, il ne faut pas se limiter à un seul langage de balisage et se montrer polyvalent, car travailler en collaboration peut nécessiter de s’adapter aux pratiques des partenaires. Il faut également éviter les erreurs lors de la compilation des documents écrits en langage de balisage en portant une attention particulière aux balises et en ne les laissant pas s’accumuler. Une bonne façon de veiller à ce que les erreurs ne s’accumulent pas est de compiler fréquemment les documents en cours de production.</p>
+<p>Un des pièges qui peut sembler évident, mais qui mérite d’être répété, est l’attention portée à la qualité de la langue écrite. L’utilisateur doit être à l’affût de la présence de correcteurs automatiques ou non dans ses environnements d’édition. S’il y en a un, il faut aussi vérifier si ce correcteur automatique est dans la bonne langue (français canadien, anglais canadien, etc.).</p>
+<p>Enfin, il faut éviter les conflits <code>Git</code> lors de la collaboration sur <em>GitHub</em> en coordonnant efficacement les travaux d’équipe et en utilisant <code>Git</code> de manière optimale pour tirer parti des langages de balisage. Il est donc important de se renseigner quant aux bonnes pratiques à suivre afin de collaborer efficacement avec <code>Git</code>. À cet égard, le <a href="chapitre_4.html"><span>Chapitre&nbsp;4</span></a> présente un guide détaillé des meilleures pratiques pour utiliser <code>Git</code> et <em>GitHub</em> dans un contexte de recherche collaborative.</p>
+<p>Pour conclure, la dernière étape pour devenir expert en langages de balisage est d’être créatif. Il est recommandé d’explorer les différentes balises et de les utiliser de manière inventive. Les langages de balisage permettront d’effectuer des tâches que l’utilisateur n’aurait pas pu réaliser facilement en utilisant un logiciel de traitement de texte classique. Ils permettront de produire des documents professionnels dans différents formats personnalisés, produits avec des processus automatisés, avec une grande qualité graphique.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-allaire22" class="csl-entry" role="listitem">
+Allaire, J. J. (2022). <em>Reproducible <span>Publications</span> with <span>Julia</span> and <span>Quarto</span></em>. <a href="https://jjallaire.github.io/quarto-juliacon-2022/#/title-slide">https://jjallaire.github.io/quarto-juliacon-2022/#/title-slide</a>
+</div>
+<div id="ref-arel-bundock22a" class="csl-entry" role="listitem">
+Arel-Bundock, V. (2022). <em>Modelsummary: <span>Data</span> and <span>Model Summaries</span> in <span>R</span></em>. <a href="https://modelsummary.com/">https://modelsummary.com/</a>
+</div>
+<div id="ref-arloing_etal16" class="csl-entry" role="listitem">
+Arloing, T., Dubois, Y., Ducasse, S., &amp; Cassou, D. (2016). Pillar: <span>A Versatile</span> and <span>Extensible Lightweight Markup Language</span>. <em>Proceedings of the 11th Edition of the <span>International Workshop</span> on <span>Smalltalk Technologies</span>, <span>IWST</span>’16</em>, 1‑5. <a href="https://doi.org/10.1145/2991041.2991066">https://doi.org/10.1145/2991041.2991066</a>
+</div>
+<div id="ref-encyclopaediabritannica23a" class="csl-entry" role="listitem">
+Encyclopaedia Britannica. (2023). <em><span>LaTeX</span></em>. <a href="https://www.britannica.com/technology/LaTeX-computer-programming-language">https://www.britannica.com/technology/LaTeX-computer-programming-language</a>
+</div>
+<div id="ref-gaudeul07" class="csl-entry" role="listitem">
+Gaudeul, A. (2007). Do <span>Open Source Developers Respond</span> to <span>Competition</span>? <span>The LATEX Case Study</span>. <em>Review of Network Economics</em>, <em>6</em>(2). <a href="https://doi.org/10.2202/1446-9022.1119">https://doi.org/10.2202/1446-9022.1119</a>
+</div>
+<div id="ref-goldfarb96" class="csl-entry" role="listitem">
+Goldfarb, C. F. (1996). <em>The <span>Roots</span> of <span>SGML</span> – <span>A Personal Recollection</span></em>. <a href="http://www.sgmlsource.com/history/roots.htm">http://www.sgmlsource.com/history/roots.htm</a>
+</div>
+<div id="ref-gratzer08" class="csl-entry" role="listitem">
+Grätzer, G. (2008). A Gentle Learning Curve for <span>LaTeX</span>. <em>PracTeX Journal</em>.
+</div>
+<div id="ref-hameed23a" class="csl-entry" role="listitem">
+Hameed, S. (Réalisateur). (2023). <em><span>HTML History</span> | <span>Explained</span></em> [Enregistrement vidéo]. <a href="https://linuxhint.com/html-history/">https://linuxhint.com/html-history/</a>
+</div>
+<div id="ref-hazzan02" class="csl-entry" role="listitem">
+Hazzan, O. (2002). Reducing Abstraction Level When Learning Computability Theory Concepts. <em>Proceedings of the 7th Annual Conference on <span>Innovation</span> and Technology in Computer Science Education, <span>ITiCSE</span> ’02</em>, 156‑160. <a href="https://doi.org/10.1145/544414.544461">https://doi.org/10.1145/544414.544461</a>
+</div>
+<div id="ref-hlavac22a" class="csl-entry" role="listitem">
+Hlavac, M. (2022). <em>Stargazer: Beautiful <span>LATEX</span>, <span>HTML</span> and <span>ASCII</span> Tables from <span>R</span> Statistical Output</em>.
+</div>
+<div id="ref-just13" class="csl-entry" role="listitem">
+Just, J. (2013, mars 25). <em>Les Distributions - <span>Groupe</span> Francophone Des <span>Utilisateurs</span> de <span>TeX</span>, <span>LaTeX</span> et Logiciels Compagnons</em>. <a href="https://www.gutenberg-asso.fr/Les-distributions">https://www.gutenberg-asso.fr/Les-distributions</a>
+</div>
+<div id="ref-knauff_nejasmic14" class="csl-entry" role="listitem">
+Knauff, M., &amp; Nejasmic, J. (2014). An <span>Efficiency Comparison</span> of <span>Document Preparation Systems Used</span> in <span>Academic Research</span> and <span>Development</span>. <em>PLoS ONE</em>, <em>9</em>(12), e115069. <a href="https://doi.org/10.1371/journal.pone.0115069">https://doi.org/10.1371/journal.pone.0115069</a>
+</div>
+<div id="ref-knuth84" class="csl-entry" role="listitem">
+Knuth, D. E. (1984). Literate <span>Programming</span>. <em>The Computer Journal</em>, <em>27</em>(2), 97‑111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>
+</div>
+<div id="ref-kramer07" class="csl-entry" role="listitem">
+Kramer, J. (2007). Is Abstraction the Key to Computing? <em>Commun. ACM</em>, <em>50</em>(4), 36‑42. <a href="https://doi.org/10.1145/1232743.1232745">https://doi.org/10.1145/1232743.1232745</a>
+</div>
+<div id="ref-liantze23" class="csl-entry" role="listitem">
+LianTze, L. (2023). <em><span>ModèleCV</span></em>. <a href="https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv">https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv</a>
+</div>
+<div id="ref-markdownguide23a" class="csl-entry" role="listitem">
+Markdown Guide. (2023). <em>Getting <span>Started</span></em>. <a href="https://www.markdownguide.org/getting-started/">https://www.markdownguide.org/getting-started/</a>
+</div>
+<div id="ref-neumanns19" class="csl-entry" role="listitem">
+Neumanns, C. (2019, avril 16). <em>We Need a New Document Markup Language — Here Is Why</em>. freeCodeCamp.org. <a href="https://www.freecodecamp.org/news/we-need-a-new-document-markup-language-c22e0ec44e15/">https://www.freecodecamp.org/news/we-need-a-new-document-markup-language-c22e0ec44e15/</a>
+</div>
+<div id="ref-overleaf23" class="csl-entry" role="listitem">
+Overleaf. (2023). <em>Modèles</em>. <a href="https://fr.overleaf.com/latex/templates">https://fr.overleaf.com/latex/templates</a>
+</div>
+<div id="ref-Wow" class="csl-entry" role="listitem">
+Overleaf. (2024). <em>Wow! <span>Ten</span> Million Users!</em> <a href="https://www.overleaf.com/blog/wow-ten-million-users">https://www.overleaf.com/blog/wow-ten-million-users</a>
+</div>
+<div id="ref-Pandoc" class="csl-entry" role="listitem">
+<em>Pandoc - Index</em>. (s.&nbsp;d.). Consulté 31 mai 2025, à l'adresse <a href="https://pandoc.org/">https://pandoc.org/</a>
+</div>
+<div id="ref-quangtrungluu23" class="csl-entry" role="listitem">
+Quang Trung Luu. (2023, octobre 20). <em><span>LaTeX</span> vs. <span>Word</span>: <span>Main Differences</span></em>. <a href="https://www.baeldung.com/cs/latex-vs-word-main-differences">https://www.baeldung.com/cs/latex-vs-word-main-differences</a>
+</div>
+<div id="ref-quarto23a" class="csl-entry" role="listitem">
+Quarto. (2023). <em>Get <span>Started</span></em>. <a href="https://quarto.org/docs/get-started/">https://quarto.org/docs/get-started/</a>
+</div>
+<div id="ref-roux13" class="csl-entry" role="listitem">
+Roux, E. (2013). <em>Yet <span>Another Invoice Template</span></em>. Overleaf. <a href="https://www.overleaf.com/latex/templates/yet-another-invoice-template/ykjwmwqqjhgh">https://www.overleaf.com/latex/templates/yet-another-invoice-template/ykjwmwqqjhgh</a>
+</div>
+<div id="ref-stackoverflow23" class="csl-entry" role="listitem">
+Stack Overflow. (2023). <em>Stack <span>Overflow</span></em>. <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
+</div>
+<div id="ref-worldwidewebconsortium98" class="csl-entry" role="listitem">
+World Wide Web Consortium. (1998). <em>Extensible <span>Markup Language</span> (<span>XML</span>) 1.0</em>. <a href="https://www.w3.org/TR/1998/REC-xml-19980210.html">https://www.w3.org/TR/1998/REC-xml-19980210.html</a>
+</div>
+<div id="ref-xie23a" class="csl-entry" role="listitem">
+Xie, Y. (2023). <em>Markdown</em>. <a href="https://github.com/rstudio/markdown">https://github.com/rstudio/markdown</a>
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Certains logiciels et environnements de développement intégrés permettent d’identifier les balises problématiques plus facilement que d’autres. Certains ne produisent qu’un message d’erreur sans donner d’indication sur la source du problème, alors que d’autres ciblent très spécifiquement la ligne de syntaxe où se situe la balise problématique.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Pour la création de pages Web, bien que des plateformes comme <em>WordPress</em> facilitent cette tâche, <em>HTML</em> offre plus de personnalisation et d’automatisation. Il s’agit encore d’une question d’abstraction&nbsp;: WordPress simplifie l’usage en s’appuyant sur <em>HTML</em> et <code>JavaScript</code>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Les avantages et désavantages de <em>Markdown</em> cités dans cette section s’appliquent également à <em>Quarto</em> et à <span class="langage-r">R</span> <em>Markdown</em>, puisque ces derniers font appel au langage <em>Markdown</em>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>L’utilisation d’un logiciel de traitement de texte, en particulier lorsque combiné avec une extension <em>Zotero</em>, peut également produire un résultat automatisé et personnalisé à un certain degré. Cependant, au moment où ce chapitre est écrit, le retrait d’une citation du texte principal en <em>Word</em> avec <em>Zotero</em> n’enlève pas immédiatement cette citation de la bibliographie, et l’ajout de liens vers la bibliographie doit se faire source par source, ce qui prend un temps important et peut occasionner des erreurs humaines. Ainsi, les logiciels de traitement de texte peuvent devenir contraignants lorsqu’un utilisateur cherche à accomplir une tâche qui ne cadre pas avec leurs fonctionnalités de base. Dans ces cas, les langages de balisage plus complexes et donc de plus bas niveau d’abstraction peuvent offrir plus de contrôle à l’utilisateur.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>La demande est suivie publiquement dans le gestionnaire de problèmes de <code>Positron</code>&nbsp;: <a href="https://github.com/posit-dev/positron/issues/1485" class="uri">https://github.com/posit-dev/positron/issues/1485</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Pour les utilisateurs de <code>RStudio</code>, il est souvent nécessaire de modifier le texte dans un logiciel de traitement de texte externe pour faire une révision linguistique complète, puis d’intégrer les corrections en collant le texte corrigé dans le document original en <em>Markdown</em> ou LaTeX. Une application de bureau <em>Grammarly</em> peut également être intégrée sur <code>RStudio</code>. Cette application repère les erreurs de syntaxe, mais ne corrige que l’anglais, et certains soucis de repérage des mots aux bons endroits dans le texte en rendent présentement l’utilisation difficile.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><em>mot</em><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Outre TinyTeX, il existe d’autres distributions telles que MacTeX&nbsp;pour Mac et MikTeX&nbsp;pour <em>Windows</em> <span class="citation" data-cites="just13">(<a href="references.html#ref-just13" role="doc-biblioref">Just, 2013</a>)</span>. Ces distributions se distinguent par les différents <em>packages</em> avec lesquels elles sont compatibles.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><code>VS Code</code> possède également une extension, <em>Live Share</em>, qui permet de travailler en temps réel sur un même document.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_7.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_9.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Outils de recherche en sciences sociales numériques - 7&nbsp; Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapitre_8.html" rel="next">
+<link href="./chapitre_6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<!-- Le numéro de version, sous la date de mise à jour du bloc de titre -->
+<style>
+.quarto-title-meta-contents p.date::after {
+  content: "Version 0.9";
+  display: block;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Outils de recherche en sciences sociales numériques - 7&nbsp; Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://clessn.github.io/livre-outils/images/chapitre_7_toolbox_equerre_black.png">
+<meta property="og:site-name" content="Outils de recherche en sciences sociales numériques">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapitre_5.html">Structure</a></li><li class="breadcrumb-item"><a href="./chapitre_7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique : de l'exploration à la communication scientifique</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Outils de recherche en sciences sociales numériques</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/clessn/livre-outils" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Recherche"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenue</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prelude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prélude</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Fondations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choisir ses outils de recherche à l’ère du numérique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Outils de programmation&nbsp;: pourquoi R, et par où commencer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Outils de gestion de projet&nbsp;: la méthode Agile pour le monde académique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Outils de gestion de données&nbsp;: de l’entreposage personnel à la science ouverte</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Structure</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Outils de synthèse de la connaissance et de gestion des références&nbsp;: pour une revue de littérature rigoureuse et publiable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Finition</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapitre_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Outils d’intelligence artificielle</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Annexes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./annexe_a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">L’ordinateur</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossaire</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Références</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#point-dobservation-historique-de-la-visualisation-graphique" id="toc-point-dobservation-historique-de-la-visualisation-graphique" class="nav-link active" data-scroll-target="#point-dobservation-historique-de-la-visualisation-graphique"><span class="header-section-number">7.1</span> Point d’observation&nbsp;: historique de la visualisation graphique</a>
+  <ul class="collapse">
+  <li><a href="#les-bonnes-pratiques-de-visualisation-graphique" id="toc-les-bonnes-pratiques-de-visualisation-graphique" class="nav-link" data-scroll-target="#les-bonnes-pratiques-de-visualisation-graphique"><span class="header-section-number">7.1.1</span> Les bonnes pratiques de visualisation graphique</a></li>
+  </ul></li>
+  <li><a href="#arpentage-et-choix-éditorial-les-systèmes-graphiques-dans-textsfr" id="toc-arpentage-et-choix-éditorial-les-systèmes-graphiques-dans-textsfr" class="nav-link" data-scroll-target="#arpentage-et-choix-éditorial-les-systèmes-graphiques-dans-textsfr"><span class="header-section-number">7.2</span> Arpentage et choix éditorial&nbsp;: les systèmes graphiques dans <span class="langage-r">R</span></a></li>
+  <li><a href="#manuel-dinstruction-la-grammaire-des-graphiques-et-ggplot2" id="toc-manuel-dinstruction-la-grammaire-des-graphiques-et-ggplot2" class="nav-link" data-scroll-target="#manuel-dinstruction-la-grammaire-des-graphiques-et-ggplot2"><span class="header-section-number">7.3</span> Manuel d’instruction&nbsp;: la grammaire des graphiques et <code>ggplot2</code></a>
+  <ul class="collapse">
+  <li><a href="#aller-plus-loin-la-visualisation-interactive-des-données" id="toc-aller-plus-loin-la-visualisation-interactive-des-données" class="nav-link" data-scroll-target="#aller-plus-loin-la-visualisation-interactive-des-données"><span class="header-section-number">7.3.1</span> Aller plus loin&nbsp;: la visualisation interactive des données</a></li>
+  </ul></li>
+  <li><a href="#en-terminant" id="toc-en-terminant" class="nav-link" data-scroll-target="#en-terminant"><span class="header-section-number">7.4</span> En terminant</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/clessn/livre-outils/edit/main/chapitre_7.qmd" class="toc-action">Modifier cette page</a></p><p><a href="https://github.com/clessn/livre-outils/issues/new" class="toc-action">Faire part d'un problème</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chap7" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Outils de visualisation graphique&nbsp;: de l’exploration à la communication scientifique</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="auteurs-chapitre">
+<p><em>Alexandre Bouillon (Université Laval)<br>
+Hubert Cadieux (Université Laval)</em></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chapitre_7_toolbox_equerre_black.png" class="img-fluid figure-img" style="width:12.0%"></p>
+</figure>
+</div>
+<p>Ce chapitre a pour objectif de souligner l’importance de la visualisation des données tout au long du processus de recherche, depuis l’obtention des données pour l’analyse exploratoire des données jusqu’à la création de graphiques pour la publication. La visualisation permet de valider les données, de déceler des anomalies, de découvrir des motifs et de formuler des hypothèses. En créant des graphiques simples, les chercheurs peuvent rapidement obtenir une compréhension initiale de la structure des données et des relations potentielles entre les variables. Par la suite, il s’agit de trouver la meilleure manière de rendre l’information digeste pour les experts ou pour le grand public.</p>
+<p>Ainsi, la visualisation graphique des données est centrale, non seulement pour explorer et comprendre les données tout au long du processus de recherche, mais aussi pour vulgariser les résultats d’une recherche empirique. Il y a plusieurs façons de représenter les mêmes données. Les choix des chercheurs sont donc primordiaux même lorsqu’ils sont équipés des meilleurs outils comme ceux présentés dans ce chapitre. La visualisation graphique constitue un art appliqué dont la maîtrise renforce considérablement la communication scientifique et peut en accroître la portée. Au fil du temps, cet art s’est transformé grâce au développement d’outils toujours plus performants et à l’accès croissant à des données variées et volumineuses.</p>
+<section id="point-dobservation-historique-de-la-visualisation-graphique" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="point-dobservation-historique-de-la-visualisation-graphique"><span class="header-section-number">7.1</span> Point d’observation&nbsp;: historique de la visualisation graphique</h2>
+<p>Pour comprendre l’évolution de la visualisation graphique, il est utile de se tourner vers des travaux qui en tracent le développement historique. L’un des projets les plus complets à ce sujet est le <em>Milestones Project</em> de Michael Friendly et Daniel J. Denis. Cette initiative vise à compiler de manière exhaustive les jalons significatifs de la visualisation de données, de ses débuts à ses avancées contemporaines, et à rendre cette histoire accessible sous une forme interactive. Accessible en ligne, le <em>Milestones Project</em> propose une base de données dynamique qui recense les grands événements, les outils, les auteurs, et les approches ayant façonné le champ de la visualisation graphique <span class="citation" data-cites="friendly_etal16">(<a href="references.html#ref-friendly_etal16" role="doc-biblioref">Friendly et al., 2016</a>)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-milestones_project" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_7_milestones_projet.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.1: La ligne du temps du Milestones project.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>L’histoire de la visualisation graphique est marquée par une évolution continue, où chaque époque a apporté de nouvelles façons de représenter et de comprendre les données. Depuis les premières tentatives rudimentaires jusqu’à l’ère numérique actuelle, les avancées reflètent autant le développement des outils que l’évolution des besoins sociaux et scientifiques.</p>
+<p>Les origines de la visualisation graphique remontent à des efforts visant à vulgariser des données à l’aide d’images. Dès le XVIIe siècle, les cartes thématiques apparaissent, représentant visuellement des phénomènes physiques et sociaux. Ces premières tentatives permettent de traduire des concepts abstraits (comme les populations ou les routes commerciales) en formes visuelles. Le XVIIIe siècle voit l’émergence des premiers graphiques statistiques avec l’œuvre de William Playfair, qui introduit des outils tels que les diagrammes en barres et les graphiques en lignes. Ces innovations ouvrent la voie à une approche plus intuitive de la présentation des données, permettant aux lecteurs de mieux comprendre les relations quantitatives <span class="citation" data-cites="friendly_wainer21">(<a href="references.html#ref-friendly_wainer21" role="doc-biblioref">Friendly &amp; Wainer, 2021</a>)</span>.</p>
+<p>Au XIXe siècle, la visualisation connaît une véritable accélération, qualifiée de premier âge d’or <span class="citation" data-cites="friendly08">(<a href="references.html#ref-friendly08" role="doc-biblioref">Friendly, 2008</a>)</span>. C’est une période caractérisée par une floraison d’innovations en matière de visualisation des données, principalement en réponse à une collecte systématique et extensive de données par les gouvernements et les scientifiques. Charles Joseph Minard se distingue à cette époque par ses cartes de flux, dont la célèbre représentation de la campagne russe de Napoléon en 1812, qui illustre avec clarté les pertes humaines au fil de la progression de l’armée. Cette carte narrative complexe superpose des informations géographiques, temporelles et statistiques, démontrant le potentiel des graphiques pour raconter des histoires puissantes et nuancées. L’essor de la statistique comme discipline académique contribue également à l’épanouissement de nouvelles formes de visualisation. Dans la deuxième moitié du XIXe siècle, Francis Galton, avec ses diagrammes de corrélation, amorce l’exploration de la relation entre variables, ouvrant la voie à des outils analytiques tels que le nuage de points. L’introduction de ces représentations graphiques met en évidence le rôle fondamental des visualisations dans la compréhension de phénomènes complexes <span class="citation" data-cites="friendly_wainer21">(<a href="references.html#ref-friendly_wainer21" role="doc-biblioref">Friendly &amp; Wainer, 2021</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-minard_napoleon" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_7_minard_napoleon.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.2: Carte des flux de l’invasion de la Russie par Napoléon de Charles Joseph Minard &nbsp;: Image récupérée sur https://ageofrevolution.org/200-object/flow-map-of-napoleons-invasion-of-russia/.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>L’entrée dans le XXe siècle et l’ère informatique ouvre une nouvelle phase pour la visualisation. La capacité des ordinateurs à traiter rapidement de grandes quantités de données transforme en profondeur les pratiques. Dès les années 1960, les premières visualisations générées par ordinateur permettent d’envisager des représentations plus complexes et dynamiques. Dans les décennies suivantes, des logiciels comme <em>SAS</em> et <em>SPSS</em> ont rendu ces outils accessibles à un public plus large.</p>
+<p>Un acteur majeur de cette période est le politologue et statisticien Edward Tufte, dont les ouvrages ont profondément marqué la réflexion sur la visualisation des données <span class="citation" data-cites="friendly_wainer21">(<a href="references.html#ref-friendly_wainer21" role="doc-biblioref">Friendly &amp; Wainer, 2021</a>)</span>. Dans des livres devenus des références, tels que <em>The Visual Display of Quantitative Information</em> (1983, rééd. 2001), <em>Envisioning Information</em> (1990) et <em>Visual Explanations</em> (1997), Tufte développe une véritable philosophie de la communication graphique. Il insiste sur la nécessité de maximiser le rapport <em>data-ink</em>, c’est-à-dire de réduire les éléments décoratifs superflus afin de concentrer l’attention du lecteur sur l’information essentielle.</p>
+<p>Aujourd’hui, la visualisation graphique continue d’évoluer à un rythme effréné, s’appuyant sur des technologies toujours plus sophistiquées. Avec l’essor des données massives et de l’intelligence artificielle, les outils de visualisation sont devenus essentiels pour interpréter rapidement des volumes importants d’informations. Les visualisations sont désormais interactives, dynamiques, et conçues pour s’adapter à différents publics, allant des décideurs aux scientifiques.</p>
+<section id="les-bonnes-pratiques-de-visualisation-graphique" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="les-bonnes-pratiques-de-visualisation-graphique"><span class="header-section-number">7.1.1</span> Les bonnes pratiques de visualisation graphique</h3>
+<p>Ainsi, dans la lignée de Tufte, plusieurs chercheurs se sont efforcés de trouver les meilleures façons de transmettre l’information par des graphiques. Arel-Bundock <span class="citation" data-cites="arel-bundock21">(<a href="references.html#ref-arel-bundock21" role="doc-biblioref">2021</a>)</span> résume ces bonnes pratiques en quatre principes fondamentaux.</p>
+<p>Le premier est celui de l’intégrité. Un graphique doit représenter fidèlement les données&nbsp;: les choix de mise en forme, comme l’échelle des axes ou le type de graphique retenu, ne doivent pas déformer la réalité ni induire le lecteur en erreur. Un axe des ordonnées tronqué, par exemple, peut donner l’impression d’une variation bien plus marquée qu’elle ne l’est réellement.</p>
+<p>Le deuxième principe est la simplicité. Dans la continuité directe de Tufte, il s’agit d’éliminer tout élément superflu qui n’ajoute pas d’information. Les grilles trop chargées, les couleurs inutiles ou les effets tridimensionnels décoratifs détournent l’attention du message principal. Un bon graphique va à l’essentiel.</p>
+<p>Le troisième principe est celui du contexte. Un graphique doit être autosuffisant&nbsp;: le lecteur doit pouvoir le comprendre sans avoir à se référer au texte qui l’entoure. Cela implique un titre clair, des axes correctement identifiés, des variables nommées et une légende lorsque nécessaire.</p>
+<p>Enfin, le quatrième principe est l’esthétisme. Arel-Bundock rappelle que les trois premiers principes ne sont pas des règles absolues. Des choix visuels assumés peuvent contribuer à capter l’attention et à renforcer le message, à condition de ne pas tromper le lecteur.</p>
+<p>Écrire du <code>ggplot2</code> avec un assistant conversationnel fonctionne remarquablement bien. La grammaire des graphiques est régulière et abondamment documentée, si bien qu’une demande formulée en français, un nuage de points coloré par groupe avec une courbe de tendance, produit le plus souvent du code utilisable du premier coup. Combinée à <code>Quarto</code>, qui exécute ce code et insère la figure dans le document, cette façon de faire donne de premières versions en quelques minutes. Rien n’empêche ensuite de soumettre le code ou l’image obtenue à un assistant pour explorer des variantes de mise en forme, des palettes ou des thèmes, jusqu’à trouver ce qui sert le mieux le propos.</p>
+</section>
+</section>
+<section id="arpentage-et-choix-éditorial-les-systèmes-graphiques-dans-textsfr" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="arpentage-et-choix-éditorial-les-systèmes-graphiques-dans-textsfr"><span class="header-section-number">7.2</span> Arpentage et choix éditorial&nbsp;: les systèmes graphiques dans <span class="langage-r">R</span></h2>
+<p>Le langage <span class="langage-r">R</span> s’est imposé comme un outil de référence pour la visualisation de données, particulièrement dans les domaines de la recherche et de l’analyse statistique. Plusieurs facteurs expliquent cette popularité&nbsp;: <span class="langage-r">R</span> est un logiciel libre et gratuit, bénéficiant d’une communauté d’utilisateurs très active qui développe et maintient des milliers de packages spécialisés. Cette nature libre assure une transparence complète du code, facilitant la reproductibilité des analyses, un critère essentiel dans la recherche scientifique.</p>
+<p>La flexibilité de <span class="langage-r">R</span> constitue également un atout majeur. Contrairement aux logiciels propriétaires comme <em>Excel</em> ou <em>Tableau</em>, <span class="langage-r">R</span> permet une personnalisation poussée des visualisations et s’intègre facilement dans des flux de travail automatisés. Cette adaptabilité en fait un choix privilégié pour les analystes qui souhaitent créer des visualisations sur mesure plutôt que de se limiter à des modèles prédéfinis.</p>
+<p>Au sein de l’écosystème <span class="langage-r">R</span>, plusieurs systèmes graphiques coexistent, chacun avec ses spécificités. Le <a href="#tbl-systemes-graphiques">Tableau&nbsp;<span>7.1</span></a> présente une comparaison de ces différentes approches.</p>
+<p>Dans <span class="langage-r">R</span> de base (<em>base R</em>), les graphiques sont créés de manière procédurale, en construisant les éléments un par un. Le package <code>lattice</code> offre une approche plus structurée, particulièrement efficace pour les graphiques conditionnels.</p>
+<p>Cependant, c’est <code>ggplot2</code> qui révolutionne véritablement la création de graphiques en <span class="langage-r">R</span> en implémentant une grammaire cohérente de la visualisation. Dans ce livre, notre choix éditorial se porte sur <code>ggplot2</code>, développé par Hadley Wickham, qui repose sur la «&nbsp;Grammaire des graphiques&nbsp;» (<em>Grammar of Graphics</em>) théorisée par Leland Wilkinson <span class="citation" data-cites="wilkinson05">(<a href="references.html#ref-wilkinson05" role="doc-biblioref">Wilkinson, 2005</a>)</span>. Plutôt que d’offrir un catalogue de types de graphiques, cette approche traite un graphique comme un assemblage de composants indépendants que l’on combine. Le manuel d’instruction en détaille les pièces.</p>
+<p>Cette grammaire présente plusieurs avantages pédagogiques et pratiques. Elle offre un cadre conceptuel unifié qui dispense d’apprendre par cœur la syntaxe de chaque type de graphique. Elle facilite l’apprentissage pour les novices, tout en permettant aux utilisateurs expérimentés de concevoir des visualisations inhabituelles en combinant les composants autrement.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-systemes-graphiques" class="anchored">
+
+<div id="trhtmdalss" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#trhtmdalss table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#trhtmdalss thead, #trhtmdalss tbody, #trhtmdalss tfoot, #trhtmdalss tr, #trhtmdalss td, #trhtmdalss th {
+  border-style: none;
+}
+
+#trhtmdalss p {
+  margin: 0;
+  padding: 0;
+}
+
+#trhtmdalss .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 95%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#trhtmdalss .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#trhtmdalss .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#trhtmdalss .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#trhtmdalss .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#trhtmdalss .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#trhtmdalss .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#trhtmdalss .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#trhtmdalss .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#trhtmdalss .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#trhtmdalss .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#trhtmdalss .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#trhtmdalss .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#trhtmdalss .gt_row {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#trhtmdalss .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#trhtmdalss .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#trhtmdalss .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#trhtmdalss .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#trhtmdalss .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#trhtmdalss .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#trhtmdalss .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#trhtmdalss .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#trhtmdalss .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#trhtmdalss .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#trhtmdalss .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#trhtmdalss .gt_left {
+  text-align: left;
+}
+
+#trhtmdalss .gt_center {
+  text-align: center;
+}
+
+#trhtmdalss .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#trhtmdalss .gt_font_normal {
+  font-weight: normal;
+}
+
+#trhtmdalss .gt_font_bold {
+  font-weight: bold;
+}
+
+#trhtmdalss .gt_font_italic {
+  font-style: italic;
+}
+
+#trhtmdalss .gt_super {
+  font-size: 65%;
+}
+
+#trhtmdalss .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#trhtmdalss .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#trhtmdalss .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#trhtmdalss .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#trhtmdalss .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#trhtmdalss .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#trhtmdalss .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#trhtmdalss .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#trhtmdalss div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" style="table-layout:fixed;width:95%;" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Tableau&nbsp;7.1:  <p>Comparaison des systèmes graphiques dans R</p> </caption>
+  <colgroup>
+    <col style="width:40%;">
+    <col style="width:20%;">
+    <col style="width:20%;">
+    <col style="width:20%;">
+  </colgroup>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Critères">Critères</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="Base-R">Base R</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="lattice">lattice</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="ggplot2">ggplot2</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Critères" class="gt_row gt_left">Accessibilité</td>
+<td headers="Base R" class="gt_row gt_left">Gratuit</td>
+<td headers="lattice" class="gt_row gt_left">Gratuit</td>
+<td headers="ggplot2" class="gt_row gt_left">Gratuit</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Existence d'une communauté d'utilisateurs</td>
+<td headers="Base R" class="gt_row gt_left">Très grande</td>
+<td headers="lattice" class="gt_row gt_left">Grande</td>
+<td headers="ggplot2" class="gt_row gt_left">Très grande</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Popularité en sciences sociales</td>
+<td headers="Base R" class="gt_row gt_left">Très populaire</td>
+<td headers="lattice" class="gt_row gt_left">Populaire</td>
+<td headers="ggplot2" class="gt_row gt_left">Très populaire</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Compatibilité avec d'autres outils</td>
+<td headers="Base R" class="gt_row gt_left">Facilement compatible</td>
+<td headers="lattice" class="gt_row gt_left">Facilement compatible</td>
+<td headers="ggplot2" class="gt_row gt_left">Facilement compatible</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Transparence et réplicabilité</td>
+<td headers="Base R" class="gt_row gt_left">Excellente</td>
+<td headers="lattice" class="gt_row gt_left">Excellente</td>
+<td headers="ggplot2" class="gt_row gt_left">Excellente</td></tr>
+    <tr><td headers="Critères" class="gt_row gt_left">Adaptabilité et flexibilité</td>
+<td headers="Base R" class="gt_row gt_left">Flexible</td>
+<td headers="lattice" class="gt_row gt_left">Plutôt flexible</td>
+<td headers="ggplot2" class="gt_row gt_left">Très flexible</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="manuel-dinstruction-la-grammaire-des-graphiques-et-ggplot2" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="manuel-dinstruction-la-grammaire-des-graphiques-et-ggplot2"><span class="header-section-number">7.3</span> Manuel d’instruction&nbsp;: la grammaire des graphiques et <code>ggplot2</code></h2>
+<p>La force de <code>ggplot2</code> réside dans sa mise en œuvre de la <em>Grammar of Graphics</em>, qui décompose tout graphique en éléments fondamentaux. Hadley Wickham <span class="citation" data-cites="wickham10">(<a href="references.html#ref-wickham10" role="doc-biblioref">Wickham, 2010</a>)</span> développe une approche dite <em>layered grammar of graphics</em>, où un graphique est construit par superposition de couches (<em>layers</em>). Chacune de ces couches combine des données, une transformation statistique éventuelle, un objet géométrique (<em>geom</em>), et des mappings esthétiques définis par l’utilisateur. Cette architecture reflète la vision de Wilkinson, Anand et Grossman <span class="citation" data-cites="wilkinson_etal05">(<a href="references.html#ref-wilkinson_etal05" role="doc-biblioref">Wilkinson et al., 2005</a>)</span>, qui ont cherché à formaliser les principes universels de la visualisation.</p>
+<p>Concrètement, <code>ggplot2</code> permet de spécifier de manière explicite et déclarative les différents composants d’un graphique. La fonction <code>aes()</code> définit les <em>mappings esthétiques</em>, c’est-à-dire le lien entre les variables du jeu de données et leurs attributs visuels (position sur les axes, couleur, taille, forme). Les <em>objets géométriques</em> (<em>geoms</em>) déterminent la nature de la représentation&nbsp;: <code>geom_point()</code> trace des points, <code>geom_line()</code> des lignes, <code>geom_bar()</code> des barres, etc. Chaque <em>geom</em> peut être associé à une <em>transformation statistique</em> (<em>stat</em>), par exemple <code>stat_smooth()</code> pour ajouter un lissage ou <code>stat_bin()</code> pour construire un histogramme.</p>
+<p>À ces éléments s’ajoutent les <em>échelles</em> (par exemple, <code>scale_x_log10()</code>, <code>scale_color_manual()</code>), qui traduisent les valeurs des données en valeurs perceptibles, et les <em>systèmes de coordonnées</em> (<code>coord_cartesian()</code>, <code>coord_polar()</code>), qui définissent la projection de l’espace graphique. Les <em>facettes</em> (<code>facet_wrap()</code>, <code>facet_grid()</code>) permettent de subdiviser le graphique en multiples panneaux pour comparer des sous-groupes. Enfin, la fonction <code>theme()</code> ajuste l’apparence générale du graphique (grilles, polices, arrière-plans), tandis que <code>labs()</code> ajoute des titres et des étiquettes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-grammar_graphic" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/chapitre_7_grammaire_graphique.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.3: La logique en couches de la grammaire des graphiques &nbsp;: <a href="https://ggplot2.tidyverse.org/articles/ggplot2.html">Site officiel de ggplot2</a>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Cette approche modulaire et incrémentale distingue <code>ggplot2</code> des systèmes graphiques traditionnels. Comme le souligne Wickham <span class="citation" data-cites="wickham09">(<a href="references.html#ref-wickham09" role="doc-biblioref">Wickham, 2009, 1</a>)</span>, l’utilisateur peut commencer par un nuage de points simple, puis enrichir le graphique par ajouts successifs&nbsp;: annotations, résumés statistiques, facettes ou encore ajustements esthétiques. Cette logique rend possible la création de graphiques élégants et reproductibles, mais surtout adaptés aux besoins analytiques précis du chercheur. Elle transforme la visualisation en un véritable langage, où chaque composant est indépendant et combinable, facilitant ainsi l’exploration et la communication des données.</p>
+<p>En voici un exemple d’ajout progressif de couches (<em>layers</em>) avec le jeu de données <code>mtcars</code>, qui accompagne l’installation de <span class="langage-r">R</span>&nbsp;:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Couche de base avec les données</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p1)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="chapitre_7_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajout des points</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> p1 <span class="sc">+</span> <span class="fu">geom_point</span>()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p2)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="chapitre_7_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajout d'une ligne de tendance</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p3)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="chapitre_7_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajout de labels</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>p4 <span class="ot">&lt;-</span> p3 <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Consommation vs Poids"</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">x =</span> <span class="st">"Poids (1000 lbs)"</span>, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">y =</span> <span class="st">"Miles par gallon"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p4)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="chapitre_7_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="aller-plus-loin-la-visualisation-interactive-des-données" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="aller-plus-loin-la-visualisation-interactive-des-données"><span class="header-section-number">7.3.1</span> Aller plus loin&nbsp;: la visualisation interactive des données</h3>
+<p>Si jusqu’à présent la visualisation des données a été présentée comme une étape servant à exposer les résultats de recherches, elle peut également être perçue comme un outil précieux pour l’exploration de données multidimensionnelles. En effet, les visualisations interactives offrent la possibilité d’explorer et même d’analyser les données directement à partir des graphiques ou tableaux. Cela permet non seulement de mieux appréhender la structure des données, mais aussi de les inspecter plus efficacement, tout en suscitant des questions de recherche qui auraient pu être négligées autrement <span class="citation" data-cites="sievert20">(<a href="references.html#ref-sievert20" role="doc-biblioref">Sievert, 2020</a>)</span>.</p>
+<section id="graphiques-interactifs" class="level4" data-number="7.3.1.1">
+<h4 data-number="7.3.1.1" class="anchored" data-anchor-id="graphiques-interactifs"><span class="header-section-number">7.3.1.1</span> Graphiques interactifs</h4>
+<p>Les graphiques interactifs permettent une exploration dynamique des données, offrant aux utilisateurs la possibilité de zoomer, survoler des points pour obtenir plus d’informations, et d’examiner les relations entre variables de manière plus intuitive. En <span class="langage-r">R</span>, la fonction <code>ggplotly()</code> et le package <code>plotly</code> permettent de créer facilement des graphiques interactifs à partir de visualisations statiques.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="exemple-avec-ggplotly" class="level4" data-number="7.3.1.2">
+<h4 data-number="7.3.1.2" class="anchored" data-anchor-id="exemple-avec-ggplotly"><span class="header-section-number">7.3.1.2</span> Exemple avec <code>ggplotly</code></h4>
+<p><code>ggplotly</code> permet de transformer un graphique <code>ggplot2</code> en une visualisation interactive.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ce package, webshot2, peut être nécessaire pour visualiser</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#  des graphiques interactifs</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("webshot2")</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un graphique ggplot</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> hp, <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Effet de hp sur mpg"</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Transformation en graphique interactif</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(p)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Et voici un exemple avec <code>plotly</code>, un package qui n’emprunte pas la grammaire de <code>ggplot2</code>&nbsp;:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d'un graphique interactif avec plotly</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mtcars,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>hp, <span class="at">y =</span> <span class="sc">~</span>mpg,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">'scatter'</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">'markers'</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Effet de hp sur mpg"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Nous recommandons de consulter la documentation officielle du package <code>plotly</code> (et de la fonction <code>ggplotly()</code>) pour découvrir toutes les options et fonctionnalités disponibles, afin d’enrichir les graphiques interactifs.</p>
+</section>
+<section id="applications-interactives-avec-shiny" class="level4" data-number="7.3.1.3">
+<h4 data-number="7.3.1.3" class="anchored" data-anchor-id="applications-interactives-avec-shiny"><span class="header-section-number">7.3.1.3</span> Applications interactives avec Shiny</h4>
+<p><code>shiny</code> est un package <span class="langage-r">R</span> puissant qui permet de créer des applications web interactives sans avoir besoin de compétences avancées en développement web. Il permet de relier facilement des données, des visualisations et des contrôles interactifs, rendant les analyses accessibles à un large public via une interface web.</p>
+</section>
+<section id="exemple-de-base-avec-shiny" class="level4" data-number="7.3.1.4">
+<h4 data-number="7.3.1.4" class="anchored" data-anchor-id="exemple-de-base-avec-shiny"><span class="header-section-number">7.3.1.4</span> Exemple de base avec <code>shiny</code></h4>
+<p>Voici un exemple simple d’application <code>shiny</code> où l’utilisateur peut sélectionner une variable pour tracer un graphique interactif. Si le package <code>shiny</code> est installé, il suffit de copier ce code dans un script <span class="langage-r">R</span> sous <code>Positron</code>, puis de lancer l’application web directement.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Interface utilisateur</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">"Exemple d'application Shiny"</span>),</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">selectInput</span>(<span class="st">"var"</span>, <span class="st">"Choisir une variable:"</span>,</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>                  <span class="at">choices =</span> <span class="fu">names</span>(mtcars))</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotOutput</span>(<span class="st">"plot"</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Serveur</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>plot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> .data[[input<span class="sc">$</span>var]], <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>      <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Effet de"</span>, input<span class="sc">$</span>var, <span class="st">"sur mpg"</span>))</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Lancement de l'application</span></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Cette application simple permet à l’utilisateur de choisir une variable dans le jeu de données mtcars pour voir son impact sur la consommation de carburant (<code>mpg</code>), visualisée à travers un graphique interactif.</p>
+<p>Pour explorer davantage les possibilités de <code>shiny</code>, nous recommandons de consulter la documentation officielle du package <code>shiny</code> ainsi que la galerie d’exemples que <em>Posit</em> met en ligne, qui présente des applications plus complexes et des fonctionnalités avancées.</p>
+</section>
+</section>
+</section>
+<section id="en-terminant" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="en-terminant"><span class="header-section-number">7.4</span> En terminant</h2>
+<p>Ce chapitre a suivi la visualisation sur tout le parcours d’une recherche, de l’exploration des données jusqu’au graphique publié. <code>ggplot2</code> en constitue le cœur, parce que sa grammaire permet de construire un graphique par assemblage plutôt que de le choisir dans un catalogue. <code>plotly</code> et <code>shiny</code> prolongent cette logique lorsque le lecteur doit pouvoir manipuler lui-même ce qu’on lui montre.</p>
+<p>L’outil ne décide toutefois de rien. Les mêmes données admettent plusieurs représentations honnêtes, et le choix entre elles revient au chercheur. C’est là que les quatre principes présentés plus haut gardent leur valeur, l’intégrité d’abord, puis la simplicité, le contexte et l’esthétisme. Le meilleur graphique est celui dont le lecteur saisit le message sans avoir à le déchiffrer.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-arel-bundock21" class="csl-entry" role="listitem">
+Arel-Bundock, V. (2021). <em>Analyse Causale et Méthodes Quantitatives</em>. Les Presses de l’Université de Montréal.
+</div>
+<div id="ref-friendly08" class="csl-entry" role="listitem">
+Friendly, M. (2008). The <span>Golden Age</span> of <span>Statistical Graphics</span>. <em>Statistical Science</em>, <em>23</em>(4), 502‑535. <a href="https://www.jstor.org/stable/20697655">https://www.jstor.org/stable/20697655</a>
+</div>
+<div id="ref-friendly_etal16" class="csl-entry" role="listitem">
+Friendly, M., Sigal, M., &amp; Harnanansingh, D. (2016). The <span>Milestones Project</span>: <span>A Database</span> for the <span>History</span> of <span>Data Visualization</span>. In <em>Visible <span>Numbers</span></em>. Routledge.
+</div>
+<div id="ref-friendly_wainer21" class="csl-entry" role="listitem">
+Friendly, M., &amp; Wainer, H. (2021). <em>A <span>History</span> of <span>Data Visualization</span> and <span>Graphic Communication</span></em>. Harvard University Press. <a href="https://doi.org/10.4159/9780674259034">https://doi.org/10.4159/9780674259034</a>
+</div>
+<div id="ref-sievert20" class="csl-entry" role="listitem">
+Sievert, C. (2020). <em>Interactive <span>Web-Based Data Visualization</span> with <span>R</span>, Plotly, and Shiny</em>. CRC Press. <a href="https://books.google.com?id=7zPNDwAAQBAJ">https://books.google.com?id=7zPNDwAAQBAJ</a>
+</div>
+<div id="ref-wickham09" class="csl-entry" role="listitem">
+Wickham, H. (2009). <em>Ggplot2: <span>Elegant Graphics</span> for <span>Data Analysis</span></em>. Springer New York. <a href="https://doi.org/10.1007/978-0-387-98141-3">https://doi.org/10.1007/978-0-387-98141-3</a>
+</div>
+<div id="ref-wickham10" class="csl-entry" role="listitem">
+Wickham, H. (2010). A <span>Layered Grammar</span> of <span>Graphics</span>. <em>Journal of Computational and Graphical Statistics</em>, <em>19</em>(1), 3‑28. <a href="https://doi.org/10.1198/jcgs.2009.07098">https://doi.org/10.1198/jcgs.2009.07098</a>
+</div>
+<div id="ref-wilkinson05" class="csl-entry" role="listitem">
+Wilkinson, L. (2005). <em>The <span>Grammar</span> of <span>Graphics</span></em> (2ᵉ éd.). Springer New York.
+</div>
+<div id="ref-wilkinson_etal05" class="csl-entry" role="listitem">
+Wilkinson, L., Anand, A., &amp; Grossman, R. (2005). <em>Graph-<span>Theoretic Scagnostics</span></em>. 157‑164.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Pour plus d’informations sur le Milestones Project, consultez le site web du projet&nbsp;: <a href="https://www.datavis.ca/milestones/index.php?page=introduction" class="uri">https://www.datavis.ca/milestones/index.php?page=introduction</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Un graphique interactif ne peut pas s’afficher dans un document imprimé. Les exemples qui suivent en donnent donc uniquement le code, à exécuter dans un environnement de développement pour en voir le résultat.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapitre_6.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Outils de collecte de données&nbsp;: du sondage au <em>web scraping</em></span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapitre_8.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Outils de rédaction en sciences sociales numériques&nbsp;: les langages de balisage</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Version 0.9 · Manuscrit soumis aux Presses de l’Université Laval · novembre 2026</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr">CC BY-NC-ND 4.0</a> · <a href="https://github.com/clessn/livre-outils">Sources</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>
