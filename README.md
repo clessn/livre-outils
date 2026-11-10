@@ -21,6 +21,8 @@ la collecte, la visualisation, la rédaction et l'intelligence artificielle.
 
 Bienvenue ! Ce guide vous aidera à contribuer à notre projet de livre hébergé sur GitHub. Ne vous inquiétez pas si vous êtes nouveau sur Git ou GitHub ; ce guide étape par étape est conçu pour les débutants ayant une expérience technique limitée.
 
+En proposant une modification, vous acceptez qu'elle soit publiée sous la [licence du livre](LICENSE.md) et qu'elle puisse être reprise dans ses éditions imprimées.
+
 ## Table des matières
 
 1. [Prérequis](#prérequis)
@@ -294,6 +296,10 @@ Il y a différentes façons d'ajouter des références au groupe Zotero CLESSN.
 - **Répondre aux commentaires** : Si des modifications sont demandées, apportez-les localement, validez, poussez, et elles seront automatiquement mises à jour dans votre pull request.
 - **Pour une nouvelle contribution** : ne réutilisez pas la même branche. [Mettez votre fork à jour](#mettre-votre-fork-à-jour), puis [créez une nouvelle branche](#créer-une-branche-pour-votre-contribution).
 - **Restez engagé** : N'hésitez pas à contribuer davantage ou à poser des questions si vous avez des doutes.
+
+## Licence
+
+Le texte et les figures du livre sont diffusés sous la licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : vous pouvez les lire et les partager tels quels, en citant la source, sans usage commercial et sans modification. Les extraits de code sont sous licence MIT et peuvent être réutilisés et adaptés librement. Le détail est dans [LICENSE.md](LICENSE.md).
 
 ---
 
