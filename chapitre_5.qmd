@@ -262,6 +262,8 @@ La configuration initiale est essentielle pour exploiter pleinement *Zotero* dan
 
 -   *Zotero Connector* : Cet outil capture les références directement depuis le navigateur, en les classant automatiquement dans les collections de la bibliothèque *Zotero*. Cela permet une gestion instantanée des articles scientifiques et autres ressources en ligne.
 
+À noter que lors d’une importation automatique, par exemple avec Zotero Connector ou un DOI, il est important de vérifier la notice contenant les informations de la source dans le volet de droite de Zotero. Celle-ci peut produire des erreurs, notamment un nom d’auteur mal segmenté ou un mot écrit entièrement en majuscules, qui doivent être corrigées manuellement. Sans cette vérification subséquente, la bibliographie finale créée par Zotero pourrait contenir des coquilles. 
+
 ### Gestion des clés de citation et export `.bib`
 
 *Zotero* gère nativement les clés de citation, ce qui permet de citer des références directement dans un document \LaTeX{} ou Quarto sans extension *Zotero* tierce. Les clés sont générées automatiquement à partir des métadonnées de chaque référence et peuvent être consultées et modifiées directement dans l'interface de *Zotero*.
