@@ -155,7 +155,7 @@ Concrètement, `ggplot2` permet de spécifier de manière explicite et déclarat
 ```{r, out.width="80%"}
 #| label: fig-grammar_graphic
 #| echo: false
-#| fig-cap: "La logique en couches de la grammaire des graphiques \\newline \\textit{Source}&nbsp;: [Site officiel de ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html)."
+#| fig-cap: "La logique en couches de la grammaire des graphiques \\newline \\textit{Source}&nbsp;: site officiel de ggplot2, https://ggplot2.tidyverse.org/articles/ggplot2.html."
 knitr::include_graphics("images/chapitre_7_grammaire_graphique.png", dpi = 600)
 ```
 
