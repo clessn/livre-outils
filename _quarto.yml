@@ -61,6 +61,9 @@ format:
     classoption: [oneside]        # mêmes marges à gauche/droite partout
     geometry: margin=30mm         # ajuste à ton goût
     colorlinks: true
+    # Sur papier, l'adresse d'un lien est invisible : Pandoc la reporte en
+    # note de bas de page. Le PDF seulement ; le site garde ses liens cliquables.
+    links-as-notes: true
     citecolor: NavyBlue
     linkcolor: NavyBlue
     urlcolor: NavyBlue
