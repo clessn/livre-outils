@@ -1,0 +1,169 @@
+# Le serveur en sciences sociales {#sec-annexe-b}
+
+\begin{center}
+\textit{Charles-Olivier Côté (Université Laval) et Aurélien Chêne (Université Laval)}
+\end{center}
+
+## Introduction
+
+L'@sec-annexe a montré qu'un ordinateur bien choisi suffit à la plupart des travaux en sciences sociales. Il arrive pourtant un moment où il ne suffit plus. Avec les besoins qui changent, comme les collectes de données sur le Web, l'analyse de corpus gigantesques, le partage sécurisé de données, les avantages d'un ordinateur peuvent être mis à mal. @lazer_etal20 [p. 1060] constatent que les universités ont encore de la difficulté à fournir des infrastructures pour le calcul de jeux de données sensibles. Dans les trois cas, la réponse est un serveur. Cette annexe pose seulement les bases des serveurs. La première partie décrira ce qu'est un serveur, les notions indispensables pour en parler ainsi que les grandes familles entre lesquelles choisir. La deuxième partie se concentrera sur l'utilité du serveur en sciences sociales. La troisième évoquera brièvement son usage personnel.
+
+### Qu'est-ce qu'un serveur ?
+
+Un serveur est fait des mêmes composants que l'ordinateur décrit à l'@sec-annexe : un processeur, de la mémoire vive et un espace de stockage et, dans de nombreux cas, une carte graphique. Un serveur se distingue donc moins par sa nature que par son usage, qui tient en trois traits.
+
+Par rapport à un ordinateur classique, le premier rôle d'un serveur est d'être allumé en permanence. Cela est nécessaire, car les conteneurs ou les utilisateurs (les clients) doivent avoir la capacité d'envoyer des requêtes en permanence aux serveurs. Par exemple, des calculs complexes peuvent exiger plusieurs jours de calcul constant qui ne peuvent être interrompus. Une requête lancée le vendredi peut être toujours active le lundi si nécessaire.
+
+Ensuite, la capacité d'y accéder à distance est devenue une norme dans le domaine. Les utilisateurs peuvent accéder au serveur à partir d'Internet, d'un tunnel (*Tailscale*) ou sur le réseau local.
+
+Enfin, il rend un service à d'autres machines ou à d'autres utilisateurs. Il peut, par exemple, héberger un site Web, conserver des données dans un espace infonuagique (comme *Google Drive* ou *Dropbox*) ou exécuter les calculs de plusieurs opérations. Si un serveur a accès aux conteneurs, il n'y a presque pas de limite.
+
+Un serveur est souvent plus puissant, mais cette puissance est une option et non une nécessité. Un vieil ordinateur laissé allumé dans un placard est considéré comme un serveur. À l'autre extrême, les grands fournisseurs regroupent des milliers de serveurs dans des bâtiments entiers. On les appelle les centres de données.
+
+### Notions de base
+
+**Client et serveur** : toute communication en réseau répartit deux rôles. Le client est celui qui demande au système d'exécuter une opération. Le système, ici, est le serveur.
+
+**Adresse IP** : chaque appareil en réseau local ou sur Internet a besoin d'une adresse pour envoyer et recevoir des données. À l'image de la poste, l'adresse IP est l'adresse postale d'un ordinateur.
+
+**Accès à distance (SSH)** : le protocole SSH permet d'ouvrir une session sur une machine distante de façon sécurisée. Il offre une clé au client qui peut déverrouiller une serrure dans le serveur. Cette clé lui donne les accès voulus par l'administrateur.
+
+**Linux** : *Linux* est un système d'exploitation libre (voir le @sec-chap1). La diversité de ses *distros* (distributions *Linux*) a fait de *Linux* un incontournable dans le monde de l'informatique. Il domine le calcul intensif : en novembre 2026, les 500 superordinateurs les plus puissants du monde fonctionnaient tous sous *Linux* [@top50026].
+
+**Conteneurs (Docker)** : un conteneur est l'emballage qui permet à une application de fonctionner sur n'importe quel serveur. `Docker` en est l'outil le plus connu. En recherche, on l'adopte d'abord pour la transparence et la reproductibilité [@nust_etal20, p. 1].
+
+**Réseau privé virtuel maillé (VPN *mesh*)** : à l'instar d'un VPN conventionnel, un VPN *mesh* relie directement ses utilisateurs comme s'ils étaient sur un réseau local sans ouvrir de ports ni configurer de pare-feu.
+
+### Les grandes familles de serveurs
+
+**Le serveur personnel** : c'est souvent un vieil ordinateur reconditionné sous *Linux* et laissé allumé en permanence. Comme l'@sec-annexe le mentionnait, un vieux modèle reste tout de même efficace malgré son âge. Il est peu coûteux et il laisse, toutefois, la sécurité et la maintenance à la charge de l'administrateur.
+
+**Le serveur institutionnel** : le serveur institutionnel est une infrastructure informatique hébergée par une institution et mise au profit des membres de celle-ci pour leurs besoins computationnels. À l'Université Laval, *VALERIA* réunit stockage, calcul et outils comme `JupyterHub` et `RStudio`, hébergés sur le campus. Les professeurs et leurs équipes y disposent de ressources de base subventionnées [@valeria25].
+
+**Les grappes de calcul** : une grappe relie des centaines, voire des milliers de serveurs. Au Canada, l'*Alliance de recherche numérique du Canada* et ses partenaires régionaux, dont *Calcul Québec*, en donnent l'accès gratuitement aux chercheurs universitaires et à leurs équipes, par le parrainage d'un professeur [@alliancederecherchenumeriqueducanada; @universitemcgill]. @bonnett09 observait déjà que la plupart des chercheurs en sciences humaines et sociales ignoraient comment exploiter cette puissance ; les organisations interrogées par @arbuckle25 [p. 14] font encore le même constat.
+
+**L'infonuagique commerciale** : *Amazon Web Services* (*AWS*), *Google Cloud* et *Microsoft Azure* louent des serveurs à la demande, facturés à l'usage et sans investissement initial. Des crédits gratuits existent pour les étudiants et les chercheurs, de l'ordre de quelques centaines à quelques milliers de dollars américains en 2026 [@amazonwebservices; @google; @microsoft]. Souples, ces services coûtent toutefois vite cher, et héberger des données au Canada ne les soustrait pas aux lois étrangères [@gouvernementducanada18].
+
+Le tableau suivant compare ces quatre familles selon les critères de sélection présentés au @sec-chap1.[^annexe_b-1]
+
+```{r}
+#| tbl-cap: Comparaison des familles de serveurs selon les critères de sélection
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(gt)
+
+tbl_serveurs <- tibble(
+  Critères = c(
+    "Accessibilité",
+    "Existence d'une communauté d'utilisateurs",
+    "Popularité en sciences sociales",
+    "Compatibilité avec d'autres outils",
+    "Transparence et réplicabilité",
+    "Adaptabilité et flexibilité"
+  ),
+  `Serveur personnel` = c(
+    "Gratuit (matériel réutilisé)", "Très grande", "Peu populaire",
+    "Demande un peu d'ajustement", "Bonne", "Très flexible"
+  ),
+  `Serveur institutionnel` = c(
+    "Gratuit (institutionnel)", "Petite", "Peu populaire",
+    "Facilement compatible", "Bonne", "Plutôt flexible"
+  ),
+  `Grappes de calcul` = c(
+    "Gratuit (institutionnel)", "Grande", "Peu populaire",
+    "Demande un peu d'ajustement", "Bonne", "Plutôt flexible"
+  ),
+  `Infonuagique commerciale` = c(
+    "Dispendieux", "Très grande", "Peu populaire",
+    "Facilement compatible", "Bonne", "Très flexible"
+  )
+)
+
+tbl_serveurs |>
+  gt() |>
+  tab_caption("Comparaison des familles de serveurs pour la recherche") |>
+  cols_label(
+    Critères = "Critères",
+    `Serveur personnel` = "Personnel",
+    `Serveur institutionnel` = "Institutionnel",
+    `Grappes de calcul` = "Grappes de calcul",
+    `Infonuagique commerciale` = "Infonuagique commerciale"
+  ) |>
+  tab_footnote(
+    footnote = md("Ex. : *VALERIA* (Université Laval)"),
+    locations = cells_column_labels(columns = `Serveur institutionnel`)
+  ) |>
+  tab_footnote(
+    footnote = md("Ex. : *Calcul Québec*, *Alliance de recherche numérique du Canada*"),
+    locations = cells_column_labels(columns = `Grappes de calcul`)
+  ) |>
+  tab_footnote(
+    footnote = md("Ex. : *AWS*, *Google Cloud*, *Microsoft Azure*"),
+    locations = cells_column_labels(columns = `Infonuagique commerciale`)
+  ) |>
+  cols_align("left", columns = everything()) |>
+  cols_width(
+    Critères ~ pct(28),
+    everything() ~ pct(18)
+  ) |>
+  tab_style(
+    style = list(cell_text(weight = "bold")),
+    locations = cells_column_labels(everything())
+  ) |>
+  opt_table_lines() |>
+  tab_options(
+    table.font.size = px(11),
+    data_row.padding = px(8),
+    column_labels.background.color = "white",
+    table.width = pct(100)
+  )
+```
+
+[^annexe_b-1]: La popularité en sciences sociales est une estimation des auteurs. Aucune mesure de l'usage des serveurs en sciences sociales n'a été trouvée ; @barjak_etal09 [p. 583] et @bonnett09 décrivent toutefois une adoption encore faible des infrastructures numériques en sciences humaines et sociales. Le tableau ne tient pas compte des données sensibles : même hébergées au Canada, celles confiées à un fournisseur commercial peuvent relever de lois étrangères [@gouvernementducanada18] (voir le @sec-chap4).
+
+## Le serveur personnel en recherche
+
+Pour la recherche, le serveur personnel se situe entre l'ordinateur personnel et les infrastructures institutionnelles. Il offre la souveraineté sur les données, étant donné que le serveur physique se trouve chez son propriétaire. Il est disponible continuellement comme espace de stockage et possède une puissance conséquente pour des tâches de recherche à moindre prix. Si le chercheur possède déjà un vieil ordinateur, comme décrit à l'@sec-annexe, aucun coût supplémentaire n'est requis pour effectuer les tâches décrites ci-dessous.
+
+### La collecte de données
+
+En recherche, lors de la collecte de données, les tâches peuvent être pharamineuses, ne peuvent être interrompues ou il peut y avoir un manque de transparence avec un LLM classique. Avec un ordinateur conventionnel, au long de la journée, il faudrait ne jamais interrompre un script $\textsf{R}$ ou `Python` pour ne pas mettre fin à la collecte tout en cochant toutes les cases de la reproductibilité. C'est là qu'un serveur personnel est utile. Avec des outils comme `RStudio Server` ou un conteneur maison, il est possible de faire du *web scraping* sans interruption et de centraliser les données là où le chercheur en a la souveraineté totale. Par exemple, si le but est de collecter les manchettes de tous les médias québécois lors d'une campagne électorale, le serveur personnel servira d'outil pour collecter, à intervalles réguliers, et entreposer les données. Toutefois, il ne faut pas oublier de respecter les conditions d'utilisation des sources des données, car certaines ne le permettent pas. Pour plus d'information sur la collecte de données, le @sec-chap6 de ce livre est une excellente introduction à ce monde.
+
+### Données centralisées et sécurisées
+
+Avoir des données centralisées exploitables efficacement pour collaborer entre collègues tout en manipulant une base de données est un atout important en recherche. Le serveur personnel permet de rendre disponible une seule version d'un même document avec un espace de fichiers partagé. Avec deux disques durs différents, la perte de données est très improbable grâce à des disques en miroir. Malgré ce système, il est important de garder plusieurs copies des documents importants. Concrètement, quatre collègues pourraient travailler simultanément sur un même projet pendant que le serveur s'occupe des sauvegardes automatiques et d'autres tâches connexes.
+
+### Intelligence artificielle, transparence et reproductibilité
+
+Pour exploiter les données, différentes méthodes sont utilisées dans la recherche universitaire. L'une d'elles, l'intelligence artificielle, divise par son manque de transparence et de reproductibilité. Le serveur personnel vient, en partie, régler ce problème. Avec des conteneurs comme `Ollama` ou `OpenCode`, il est possible d'utiliser des modèles ouverts comme *Llama*, *Mistral* ou *Qwen*. Les composants comme la RAM et la carte graphique du serveur détermineront la puissance du modèle que le serveur pourra exécuter. D'un autre côté, il est aussi possible d'entraîner son propre modèle sur un serveur personnel à partir de bases de données déjà présentes localement. Un bon exemple d'utilisation de l'intelligence artificielle en recherche est d'entraîner un modèle, ou d'en télécharger un préexistant, à classer le ton de milliers d'articles selon des paramètres prédéfinis. Cependant, selon la capacité physique du serveur, le temps d'exécution peut être plus lent en échange d'une reproductibilité accrue.
+
+### Connexion à distance et diffusion des données
+
+Comme mentionné un peu plus haut, `RStudio Server` est l'une des solutions qui font partie du catalogue qu'offre le serveur personnel. Il permet de partager le même environnement, comme *Google Docs*, sans interrompre la tâche en cours même lorsque les utilisateurs sont hors ligne. Pour y accéder de partout, le système de VPN *mesh* est l'option la plus populaire. La plus connue est *Tailscale*. À l'aide d'une simple adresse de messagerie, il relie tous les utilisateurs au serveur qui s'y connecte à l'aide d'une URL unique.
+
+Par la suite, cela permet la diffusion des données soit dans un tableau de bord, une application ou un site Web directement hébergé sur le serveur personnel. Par exemple, il serait possible de faire un tableau de bord regroupant un kanban sur l'avancement du projet, l'arborescence des fichiers pertinents et l'état des processus en cours. Avec de l'initiative, un serveur personnel, hébergé par un collègue, offre la possibilité à une équipe de recherche d'améliorer son organisation et son flux de travail.
+
+### Limites et précautions
+
+Il n'y a pas seulement des avantages à l'utilisation d'un serveur. Il y a tout de même quelques limites importantes. L'entretien d'un serveur n'est pas exigeant, mais il demande de l'assiduité pour faire les mises à jour régulières du système ou des applications. Aussi, pour éviter des failles de sécurité importantes, il est important de bien configurer le serveur avant la première utilisation. Aujourd'hui, il est plus facile de le faire à l'aide de l'intelligence artificielle. Par contre, cela nécessite une courbe d'apprentissage importante pour un débutant. Il faut aussi être à l'affût des règlements sur les données comme la Loi 25, qui protège les renseignements personnels collectés et détenus. Par ailleurs, le processus d'analyse peut être assujetti à l'approbation par un comité d'éthique qui supervise la recherche, car certaines données doivent rester sur des infrastructures institutionnelles.
+
+De plus, le serveur peut aussi avoir des défaillances physiques. Une panne ou un bris des composants du serveur peuvent mettre à mal l'intégrité des données et leur disponibilité. Une panne de courant peut aussi en être la cause. Enfin, l'électricité et le temps d'entretien sont les coûts cachés que l'hébergeur devra assumer.
+
+### Quoi choisir pour quel besoin ?
+
+En fonction de l'utilisation nécessaire, différentes solutions peuvent être envisagées si un serveur personnel n'est pas disponible. Dans les cas où le chercheur doit manipuler des données très sensibles, le choix judicieux serait de prendre un serveur institutionnel comme *VALERIA*, à l'Université Laval. Si le besoin réside dans un calcul massif, *Calcul Québec* et l'*Alliance de recherche numérique du Canada* offrent des services en recherche pour ces besoins précis. Si le chercheur a tout simplement peu de temps pour entretenir un serveur personnel, les serveurs institutionnels ou les services infonuagiques commerciaux peuvent très bien répondre à ses besoins. Si, malgré tout, le chercheur décide d'aller de l'avant avec un serveur personnel, celui-ci peut aussi lui servir pour des besoins personnels.
+
+## L'usage personnel
+
+La plupart des tâches du serveur personnel peuvent servir aussi bien pour la recherche que pour des usages personnels. Il ne faudrait pas gâcher un potentiel inutilisé. De ce fait, le service infonuagique peut aussi servir pour des usages personnels en changeant simplement les accès des utilisateurs pour arrêter d'utiliser des services avec des usages limités comme *Google Drive* ou *Dropbox* en profitant des mêmes avantages de connectivité qu'avec l'équipe de recherche. Cela permet de rajouter une couche de sécurité supplémentaire aux appareils connectés en faisant des sauvegardes directement dans le serveur.
+
+D'un autre côté, sur un espace de stockage différent de celui des recherches, il est possible de créer une bibliothèque multimédia avec `Jellyfin` et de créer son propre catalogue *Netflix* ou *Spotify*. Une autre utilisation fréquente est l'utilisation d'un bloqueur de publicité directement sur le routeur pour limiter les publicités pour tous les utilisateurs du réseau Wi-Fi. En plus d'héberger divers services comme des émulateurs de jeux rétro ou un site Web personnel, le serveur permet à son administrateur d'avoir la souveraineté sur ses données et d'en contrôler les entrées et les sorties. Dans un monde interconnecté comme celui d'aujourd'hui, cette souveraineté est rare. Dans l'esprit du logiciel libre, le serveur personnel offre une pleine liberté à l'administrateur de faire ce qu'il veut de son outil.
+
+## En terminant
+
+Un vieil ordinateur d'une dizaine d'années est amplement suffisant pour bénéficier des principaux avantages que peut offrir l'outil polyvalent qu'est le serveur personnel. Plus il est récent, plus d'opérations pourront être faites simultanément sur l'appareil. L'important, c'est de bien évaluer ses besoins et de choisir le type de serveur nécessaire pour arriver à son objectif.
+
+\pagesdenotes

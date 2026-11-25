@@ -38,6 +38,7 @@ book:
         - chapitre_9.qmd
   appendices:
     - annexe_a.qmd
+    - annexe_b.qmd
     - glossaire.qmd
     - references.qmd
 filters:
