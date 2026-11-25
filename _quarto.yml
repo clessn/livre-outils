@@ -66,6 +66,11 @@ format:
     urlcolor: NavyBlue
     include-in-header:
       - text: |
+          \usepackage{lettrine}
+          \setcounter{DefaultLines}{3}
+          \renewcommand{\DefaultLhang}{0.1}
+          \renewcommand{\DefaultLoversize}{0.1}
+          \renewcommand{\DefaultNindent}{0.2em}
           \PassOptionsToPackage{dvipsnames}{xcolor}
           \usepackage{setspace}
           \usepackage{csquotes}
@@ -77,6 +82,7 @@ format:
           \newcommand{\etatversion}{\ignorespaces {{< var etat >}}\unskip}
       - titlepage.tex
       - notes-pages.tex
+
   docx:
     reference-doc: reference-template.docx
   html:
